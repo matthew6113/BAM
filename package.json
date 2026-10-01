@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "glyphs": "node scripts/build-glyphs.mjs",
-    "screenshots": "playwright test tests/screenshots.spec.ts"
+    "screenshots": "playwright test tests/screenshots.spec.ts",
+    "e2e": "playwright test tests/interaction.spec.ts"
   },
   "dependencies": {
     "maplibre-gl": "6.11.2",

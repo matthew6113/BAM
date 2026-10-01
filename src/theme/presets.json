@@ -1,0 +1,38 @@
+{
+  "note": "Alternative starting points for the style panel. These are explorations, not the palette: theme.json is the default the map ships with.",
+  "presets": [
+    {
+      "name": "Warm paper",
+      "colors": {
+        "land": "#FBFAF6",
+        "water": "#E6EAEC",
+        "shoreline": "#9CA6AE",
+        "outsideRegion": "#F2F0EA",
+        "buildings": "#232220",
+        "labels": "#3A3835"
+      }
+    },
+    {
+      "name": "Monochrome print",
+      "colors": {
+        "land": "#FFFFFF",
+        "water": "#EEEEEE",
+        "shoreline": "#8C8C8C",
+        "outsideRegion": "#F7F7F7",
+        "buildings": "#111111",
+        "labels": "#333333"
+      }
+    },
+    {
+      "name": "Blue water",
+      "colors": {
+        "land": "#FFFFFF",
+        "water": "#DCE6EE",
+        "shoreline": "#8FA3B5",
+        "outsideRegion": "#F5F5F3",
+        "buildings": "#1E1E1E",
+        "labels": "#3B3B3B"
+      }
+    }
+  ]
+}

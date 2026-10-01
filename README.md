@@ -28,6 +28,7 @@ npm run dev      # http://127.0.0.1:5173
 | `npm run dev` | Dev server, with the style panel available |
 | `npm run build` | Type-check and production build into `dist/` |
 | `npm test` | Schema check of `data/projects.json`, theme and contrast tests |
+| `npm run e2e` | Playwright keyboard and control tests |
 | `npm run screenshots` | Playwright screenshots of key views into `docs/screenshots/m1/` |
 
 ## The data pipeline
