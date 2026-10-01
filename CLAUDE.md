@@ -54,4 +54,13 @@ Workflow
 
 ## Commands
 
-To be filled in once the repo is scaffolded (dev server, data pipeline, tests, deploy).
+- `npm install` then `make data`: full data pipeline (Overture fetch, process, Tippecanoe
+  tiles, fonts, glyphs, manifest). Needs uv and Tippecanoe 2.79.0. Raw downloads are cached
+  in `data/raw/`; individual steps are `make fetch|process|buildings|tiles|fonts|glyphs|manifest`.
+- `npm run dev`: dev server on http://127.0.0.1:5173 (style panel: Alt+Shift+S or `?style=1`).
+- `npm test`: schema check of `data/projects.json` plus theme and contrast tests.
+- `npx tsc --noEmit`: type-check. `npm run build`: production build.
+- `npm run screenshots`: Playwright screenshots of key views into `docs/screenshots/m1/`
+  (headless Chromium with SwiftShader WebGL; set `SHOTS_DIR` to write elsewhere).
+- Deploy: not set up yet (Milestone 5). Tiles are too large for a static host and will go to
+  object storage; set `VITE_TILE_BASE_URL` to point the app at them.

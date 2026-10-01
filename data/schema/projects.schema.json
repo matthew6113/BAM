@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bay-area-megaprojects/data/schema/projects.schema.json",
+  "title": "Bay Area megaprojects: researched project list",
+  "type": "object",
+  "required": ["_meta", "stages", "projects"],
+  "additionalProperties": false,
+  "properties": {
+    "_meta": {
+      "type": "object",
+      "required": ["title", "lastVerified", "notes"],
+      "properties": {
+        "title": { "type": "string" },
+        "preparedBy": { "type": "string" },
+        "lastVerified": { "type": "string", "format": "date" },
+        "notes": { "type": "array", "items": { "type": "string" } },
+        "dropped": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "reason"],
+            "properties": {
+              "name": { "type": "string" },
+              "reason": { "type": "string" },
+              "source": { "type": "string", "format": "uri" }
+            }
+          }
+        },
+        "candidatesNotYetResearched": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "stages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "label", "meaning", "order", "treatment"],
+        "additionalProperties": false,
+        "properties": {
+          "key": { "$ref": "#/$defs/stageKey" },
+          "label": { "type": "string" },
+          "meaning": { "type": "string" },
+          "order": { "type": "integer" },
+          "treatment": { "type": "string" }
+        }
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/project" }
+    }
+  },
+  "$defs": {
+    "stageKey": {
+      "enum": ["proposed", "entitlement", "entitled", "infrastructure", "construction", "partial", "complete", "paused", "distressed"]
+    },
+    "count": { "type": ["number", "null"], "minimum": 0 },
+    "project": {
+      "type": "object",
+      "required": [
+        "id", "name", "city", "county", "subregion", "approxCenter", "acres", "program", "developer",
+        "publicPartners", "stage", "stageNote", "timeline", "summary", "sources", "verify", "lastVerified"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "name": { "type": "string", "minLength": 1 },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "city": { "type": "string" },
+        "county": { "type": "string" },
+        "subregion": { "enum": ["San Francisco", "Peninsula", "South Bay", "East Bay", "North Bay"] },
+        "approxCenter": {
+          "type": "array",
+          "prefixItems": [
+            { "type": "number", "minimum": -123.75, "maximum": -121.0 },
+            { "type": "number", "minimum": 36.75, "maximum": 39.0 }
+          ],
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "acres": { "$ref": "#/$defs/count" },
+        "acresNote": { "type": ["string", "null"] },
+        "program": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "homes": { "$ref": "#/$defs/count" },
+            "affordableHomes": { "$ref": "#/$defs/count" },
+            "affordablePct": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+            "officeLabSqft": { "$ref": "#/$defs/count" },
+            "commercialSqftTotal": { "$ref": "#/$defs/count" },
+            "retailSqft": { "$ref": "#/$defs/count" },
+            "hotelKeys": { "$ref": "#/$defs/count" },
+            "openSpaceAcres": { "$ref": "#/$defs/count" },
+            "notes": { "type": ["string", "null"] }
+          }
+        },
+        "developer": { "type": ["string", "null"] },
+        "publicPartners": { "type": "array", "items": { "type": "string" } },
+        "stage": { "$ref": "#/$defs/stageKey" },
+        "stageNote": { "type": "string" },
+        "timeline": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["date", "event"],
+            "additionalProperties": false,
+            "properties": {
+              "date": { "type": "string" },
+              "event": { "type": "string" }
+            }
+          }
+        },
+        "nextMilestone": { "type": ["string", "null"] },
+        "summary": { "type": "string", "minLength": 1 },
+        "massingNotes": { "type": ["string", "null"] },
+        "officialLinks": { "type": "array", "items": { "type": "string", "format": "uri" } },
+        "sources": { "type": "array", "minItems": 1, "items": { "type": "string", "format": "uri" } },
+        "verify": { "type": "array", "items": { "type": "string" } },
+        "lastVerified": { "type": "string", "format": "date" },
+        "unsourced": {
+          "description": "Values held out of the map until they have a citable source.",
+          "type": "object",
+          "required": ["note"],
+          "properties": { "note": { "type": "string" } }
+        }
+      }
+    }
+  }
+}
