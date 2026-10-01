@@ -252,7 +252,7 @@
         37.756
       ],
       "acres": 29,
-      "acresNote": "Reported as a 29-acre site; Perkins&Will's project page lists ~21 acres for its plan area.",
+      "acresNote": "The Draft EIR (Oct 2018, p. S-2) describes an approximately 29.0-acre site made up of five sub-areas: the 21-acre Power Station sub-area, a 4.8-acre PG&E sub-area, a 2.9-acre Port sub-area, a 0.2-acre Southern sub-area and a small City sub-area. Perkins&Will's ~21 acres matches the Power Station sub-area.",
       "program": {
         "homes": 2601,
         "affordableHomes": null,
@@ -293,8 +293,8 @@
         }
       ],
       "nextMilestone": "Planning decision on the requested amendments; next residential block start.",
-      "summary": "A decommissioned power plant on the Central Waterfront being turned into a dense neighborhood of about 2,600 homes, labs and offices, with the 300-foot brick stack kept as its landmark. It opens a stretch of bayfront that was closed to the public for 150 years.",
-      "massingNotes": "Known pieces: Station A (historic, adaptive reuse); 300-ft brick stack (landmark); Unit 3 power block (~250-key hotel); Block 2 seven-story lab (Herzog & de Meuron); Block 7 high-rise rental, 325 units (Foster + Partners); Sophie Maxwell, 8 stories (complete); Power Station Park at the center. Trace blocks and heights from SF Planning's Master Plan and Design Standards.",
+      "summary": "A decommissioned power plant on the Central Waterfront being turned into a dense neighborhood of about 2,600 homes, labs and offices, with its 300-foot concrete boiler stack kept as a landmark. It opens a stretch of bayfront that was closed to the public for 150 years.",
+      "massingNotes": "Known pieces: Station A (historic, adaptive reuse); 300-ft reinforced concrete boiler stack (landmark; Draft EIR pp. 2-7, 4.D-8); Unit 3 power block (~250-key hotel); Block 2 seven-story lab (Herzog & de Meuron); Block 7 high-rise rental, 325 units (Foster + Partners); Sophie Maxwell, 8 stories (complete); Power Station Park at the center. Trace blocks and heights from SF Planning's Master Plan and Design Standards.",
       "officialLinks": [
         "https://sfplanning.org/potrero-power-station",
         "https://dogpatchpowerstation.com/"
@@ -304,7 +304,8 @@
         "https://www.sfchronicle.com/realestate/article/one-s-f-s-biggest-developments-changing-plans-22365461.php",
         "https://sfplanning.org/potrero-power-station",
         "https://perkinswill.com/project/potrero-power-station/",
-        "https://sfyimby.com/category/potrero-power-station"
+        "https://sfyimby.com/category/potrero-power-station",
+        "https://sfplanning.s3.amazonaws.com/sfmea/2017-011878ENV_DEIR_Volume_1.pdf"
       ],
       "verify": [
         "Final site acreage",
@@ -459,10 +460,10 @@
         -122.392,
         37.77
       ],
-      "acres": 303,
-      "acresNote": "Approximate; verify.",
+      "acres": null,
+      "acresNote": null,
       "program": {
-        "homes": 6500,
+        "homes": null,
         "affordableHomes": null,
         "affordablePct": null,
         "officeLabSqft": null,
@@ -470,20 +471,15 @@
         "retailSqft": null,
         "hotelKeys": null,
         "openSpaceAcres": null,
-        "notes": "Reference project. Approximate figures from general knowledge; verify homes, commercial space and park acreage. Includes UCSF's Mission Bay campus and Chase Center."
+        "notes": "Reference project. Includes UCSF's Mission Bay campus and Chase Center. Program figures are held in 'unsourced' until verified."
       },
-      "developer": "Multiple (master developer history to verify)",
+      "developer": null,
       "publicPartners": [
         "SF OCII"
       ],
       "stage": "partial",
       "stageNote": "Largely built out after about 25 years. OCII expects to finish ten more parks and remaining infrastructure over roughly the next eight years.",
-      "timeline": [
-        {
-          "date": "1998",
-          "event": "Redevelopment plans adopted (verify)."
-        }
-      ],
+      "timeline": [],
       "nextMilestone": null,
       "summary": "The former rail yards south of downtown, now a largely finished neighborhood of housing, biotech, UCSF's campus and Chase Center. Included as the map's reference for what a completed master plan looks like.",
       "massingNotes": "Use real building footprints and heights from the base dataset rather than modeled massing.",
@@ -497,7 +493,20 @@
         "Master developer history",
         "Plan adoption year"
       ],
-      "lastVerified": "2026-10-01"
+      "lastVerified": "2026-10-01",
+      "unsourced": {
+        "note": "Held out of the map until each value has a citable source. program.notes said these were approximate figures from general knowledge.",
+        "acres": 303,
+        "acresNote": "Approximate; verify.",
+        "program.homes": 6500,
+        "developer": "Multiple (master developer history to verify)",
+        "timeline": [
+          {
+            "date": "1998",
+            "event": "Redevelopment plans adopted (verify)."
+          }
+        ]
+      }
     },
     {
       "id": "treasure-island",
