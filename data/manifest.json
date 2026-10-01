@@ -1,0 +1,83 @@
+{
+  "overtureRelease": "2026-09-23.1",
+  "fetchBbox": [
+    -123.75,
+    36.75,
+    -121.0,
+    39.0
+  ],
+  "counties": [
+    "Alameda County",
+    "Contra Costa County",
+    "Marin County",
+    "Napa County",
+    "San Francisco",
+    "San Mateo County",
+    "Santa Clara County",
+    "Solano County",
+    "Sonoma County"
+  ],
+  "tippecanoe": "tippecanoe v2.79.0",
+  "googleFontsCommit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+  "buildings": {
+    "fetched": 3883566,
+    "in_region": 2547306,
+    "with_height": 1003219,
+    "ml_height_dropped": 1021947,
+    "written": 2547306
+  },
+  "inputs": {
+    "buildings.parquet": {
+      "rows": 3883566,
+      "bytes": 574114011,
+      "sha256": "e553338d9cd9fe92d23538293ece7ceb4e985aaf5f3847aaadf8b3cb11a1dee5"
+    },
+    "counties.parquet": {
+      "rows": 33,
+      "bytes": 1597472,
+      "sha256": "232e0583fdb3af0649ffa9c9b5f3a8eb078a4c408093a0d56fc9e941a75f3201"
+    },
+    "localities.parquet": {
+      "rows": 1134,
+      "bytes": 129420,
+      "sha256": "6bb3652ab7ef5ddec26448aeee12ece4eb188ed9e873c492484b5be261d86c1e"
+    },
+    "salt_ponds.parquet": {
+      "rows": 46,
+      "bytes": 42132,
+      "sha256": "07c8806bcb77edabb2ab258f2e33758f4c37f2d4032376bfd710a329637b466e"
+    },
+    "segments.parquet": {
+      "rows": 22325,
+      "bytes": 5817783,
+      "sha256": "b6ebc2fc40ceff3357ffcc2ae6e9e50230599abe659df3785549eb5c31933d80"
+    },
+    "water.parquet": {
+      "rows": 127059,
+      "bytes": 42264777,
+      "sha256": "540a4b1594df0f8d5862950f26749536f55deacdb659fc5b4dd16cadbcd6a82a"
+    }
+  },
+  "outputs": {
+    "tiles/base.pmtiles": {
+      "bytes": 5755921,
+      "sha256": "5a442139cbdf5884865107c902c16e0f4b6734c91c4667eacbe0c397bec7e7e3"
+    },
+    "tiles/buildings-detail.pmtiles": {
+      "bytes": 168999083,
+      "sha256": "4b7899eed1b44dc0e3d44a198a004ae87b97172fe82dfc78c55502641d0012cb"
+    },
+    "tiles/buildings-overview-all.pmtiles": {
+      "bytes": 80096127,
+      "sha256": "e42b870264fc821b476998080312d83ba19eb3371e4133a6d08935da1c6730db"
+    },
+    "tiles/buildings-overview-light.pmtiles": {
+      "bytes": 19998775,
+      "sha256": "1bb6972533c9c40fef836a18e8b4f6244517729a0c18957e1f7e83bab8d7a460"
+    },
+    "data/labels.geojson": {
+      "bytes": 10545,
+      "sha256": "891e14583c6379230c40a83bcbe695217be03fa44f88ec717fe42e17ccbb37d5"
+    }
+  }
+}

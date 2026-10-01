@@ -1,0 +1,17 @@
+[project]
+name = "bam-pipeline"
+version = "0.1.0"
+description = "Data pipeline for the Bay Area megaprojects map: Overture extract, clip, tile."
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "overturemaps==1.0.2",
+  "pyarrow>=20",
+  "geopandas>=1.1",
+  "shapely>=2.1",
+  "pyproj>=3.7",
+  "pyogrio>=0.11",
+  "fonttools[woff]>=4.59",
+]
+
+[tool.uv]
+package = false
