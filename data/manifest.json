@@ -1,0 +1,91 @@
+{
+  "overtureRelease": "2026-09-23.1",
+  "fetchBbox": [
+    -123.75,
+    36.75,
+    -121.0,
+    39.0
+  ],
+  "counties": [
+    "Alameda County",
+    "Contra Costa County",
+    "Marin County",
+    "Napa County",
+    "San Francisco",
+    "San Mateo County",
+    "Santa Clara County",
+    "Solano County",
+    "Sonoma County"
+  ],
+  "tippecanoe": "tippecanoe v2.79.0",
+  "googleFontsCommit": "9710da1eacb3be272583c3224dcb70f9da6eadbb",
+  "buildings": {
+    "fetched": 3883566,
+    "in_region": 2547306,
+    "with_height": 1003219,
+    "ml_height_dropped": 1021947,
+    "written": 2547306
+  },
+  "inputs": {
+    "buildings.parquet": {
+      "rows": 3883566,
+      "bytes": 574114011,
+      "sha256": "e553338d9cd9fe92d23538293ece7ceb4e985aaf5f3847aaadf8b3cb11a1dee5"
+    },
+    "counties.parquet": {
+      "rows": 33,
+      "bytes": 1597472,
+      "sha256": "232e0583fdb3af0649ffa9c9b5f3a8eb078a4c408093a0d56fc9e941a75f3201"
+    },
+    "localities.parquet": {
+      "rows": 1134,
+      "bytes": 129420,
+      "sha256": "6bb3652ab7ef5ddec26448aeee12ece4eb188ed9e873c492484b5be261d86c1e"
+    },
+    "salt_ponds.parquet": {
+      "rows": 46,
+      "bytes": 42132,
+      "sha256": "07c8806bcb77edabb2ab258f2e33758f4c37f2d4032376bfd710a329637b466e"
+    },
+    "segments.parquet": {
+      "rows": 22325,
+      "bytes": 5834539,
+      "sha256": "f695307b73e6fe70a663f6230b819289ba98bef51c20c2baf3d8217cf2c12006"
+    },
+    "water.parquet": {
+      "rows": 127059,
+      "bytes": 42264777,
+      "sha256": "540a4b1594df0f8d5862950f26749536f55deacdb659fc5b4dd16cadbcd6a82a"
+    }
+  },
+  "outputs": {
+    "tiles/base.pmtiles": {
+      "bytes": 6157944,
+      "sha256": "68ac7024e38319b71cf3abae880817a7118ad20e2ce1807880fa350a72f6f037"
+    },
+    "tiles/buildings-overview-all.pmtiles": {
+      "bytes": 80096127,
+      "sha256": "e42b870264fc821b476998080312d83ba19eb3371e4133a6d08935da1c6730db"
+    },
+    "tiles/buildings-overview-light.pmtiles": {
+      "bytes": 19998775,
+      "sha256": "1bb6972533c9c40fef836a18e8b4f6244517729a0c18957e1f7e83bab8d7a460"
+    },
+    "tiles/buildings-z13.pmtiles": {
+      "bytes": 47314912,
+      "sha256": "2e7345e4a96c755e7eda9c9fba374f1253dd0c5ec0c0daa09f57e4d0290de156"
+    },
+    "tiles/buildings-z14.pmtiles": {
+      "bytes": 55938461,
+      "sha256": "f9cbefdbfd4c695621ac12a23ff1b69c1b83b47b80aadc610a9e048f67f133a6"
+    },
+    "tiles/buildings-z15.pmtiles": {
+      "bytes": 66052837,
+      "sha256": "2a83657b52e85a9f3962baea9eee4b309de831cbe883aca3e630a141ab487d25"
+    },
+    "data/labels.geojson": {
+      "bytes": 10545,
+      "sha256": "891e14583c6379230c40a83bcbe695217be03fa44f88ec717fe42e17ccbb37d5"
+    }
+  }
+}

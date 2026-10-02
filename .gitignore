@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.DS_Store
+.env
+data/raw/
+*.log
+data/build/
+public/generated/
+*.pmtiles
+pipeline/.venv/
+__pycache__/
+test-results/
+playwright-report/

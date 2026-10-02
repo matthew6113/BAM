@@ -1,0 +1,59 @@
+{
+  "name": "Placeholder",
+  "note": "Placeholder colors from docs/SPEC.md section 4. Matthew will supply the final palette: replace this file (or export one from the style panel) and nothing else needs to change.",
+  "colors": {
+    "land": "#FFFFFF",
+    "water": "#ECEFF2",
+    "shoreline": "#A7B0BA",
+    "outsideRegion": "#F6F6F4",
+    "buildings": "#1E1E1E",
+    "labels": "#3B3B3B",
+    "context": "#C5CAD0",
+    "contextExtrusion": "#C9CDD2",
+    "selection": "#000000",
+    "panelBackground": "#FFFFFF",
+    "panelText": "#1E1E1E",
+    "panelRule": "#E3E3E3"
+  },
+  "stages": {
+    "proposed": "#9DB4E0",
+    "entitlement": "#7898D4",
+    "entitled": "#4F78C4",
+    "infrastructure": "#3459A8",
+    "construction": "#1E3F86",
+    "partial": "#5A6B8C",
+    "complete": "@buildings",
+    "paused": "#C08A1E",
+    "distressed": "#A3242B"
+  },
+  "opacity": {
+    "buildings": 0.85,
+    "buildingsRegional": 0.6,
+    "contextExtrusion": 0.45
+  },
+  "type": {
+    "ui": "Libre Franklin",
+    "text": "Source Serif 4",
+    "mapLabels": "Libre Franklin"
+  },
+  "map": {
+    "shorelineWidth": 1,
+    "heightExaggeration": 1,
+    "light": {
+      "color": "#FFFFFF",
+      "azimuth": 210,
+      "polar": 40,
+      "intensity": 0.35
+    }
+  },
+  "layers": {
+    "buildings": true,
+    "water": true,
+    "shoreline": true,
+    "saltPonds": true,
+    "outsideRegion": true,
+    "labels": true,
+    "context": true,
+    "overview": "all"
+  }
+}

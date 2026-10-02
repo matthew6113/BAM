@@ -1,0 +1,1694 @@
+{
+  "_meta": {
+    "title": "Bay Area megaprojects: researched project list",
+    "preparedBy": "Claude (claude.ai chat) for Matthew Huguet",
+    "lastVerified": "2026-10-01",
+    "notes": [
+      "Every figure here came from the listed sources as of the lastVerified date. Items in each project's 'verify' list are known gaps; do not fill them by guessing.",
+      "approxCenter values are rough [lon, lat] points for placing a marker only. Real site boundaries must come from official plan documents or parcel data, saved per project with their source.",
+      "Program numbers are planned or approved figures, not built totals, unless the note says otherwise.",
+      "Summaries and stage notes are written for the map's project panel and can be edited freely."
+    ],
+    "dropped": [
+      {
+        "name": "Point Molate (Richmond)",
+        "reason": "Housing plan collapsed; Richmond backed a $40M sale of the land to the East Bay Regional Park District in 2024, so it is becoming a park.",
+        "source": "https://richmondconfidential.org/2024/07/12/richmond-point-molate-sale-east-bay-regional-park-district/"
+      },
+      {
+        "name": "Howard Terminal (Oakland)",
+        "reason": "The A's ballpark plan died when the team left Oakland."
+      }
+    ],
+    "candidatesNotYetResearched": [
+      "Mare Island (Vallejo)",
+      "Sonoma Developmental Center (Glen Ellen)",
+      "BART station-area housing (North Berkeley, Ashby, etc.)"
+    ]
+  },
+  "stages": [
+    {
+      "key": "proposed",
+      "label": "Proposed",
+      "meaning": "Plan announced or application filed; no formal approvals.",
+      "order": 1,
+      "treatment": "Outline only (dashed). No fill. Massing, if any, drawn as wireframe."
+    },
+    {
+      "key": "entitlement",
+      "label": "In entitlement",
+      "meaning": "Formal review underway: EIR, specific plan, hearings, land deal.",
+      "order": 2,
+      "treatment": "Outline plus faint fill."
+    },
+    {
+      "key": "entitled",
+      "label": "Entitled",
+      "meaning": "Approvals in hand; no construction yet.",
+      "order": 3,
+      "treatment": "Light solid fill."
+    },
+    {
+      "key": "infrastructure",
+      "label": "Site work",
+      "meaning": "Demolition, remediation, grading, utilities or streets underway; no vertical buildings yet.",
+      "order": 4,
+      "treatment": "Light fill with a site-work cue (e.g., hatch on the parcel)."
+    },
+    {
+      "key": "construction",
+      "label": "Under construction",
+      "meaning": "Vertical construction underway on at least one building.",
+      "order": 5,
+      "treatment": "Mid-tone solid fill."
+    },
+    {
+      "key": "partial",
+      "label": "Partly built",
+      "meaning": "Project-level only: some buildings delivered, more planned.",
+      "order": 6,
+      "treatment": "Per-building: delivered buildings in the complete style, the rest by their own stage."
+    },
+    {
+      "key": "complete",
+      "label": "Complete",
+      "meaning": "Built out.",
+      "order": 7,
+      "treatment": "Ink, matching the existing city: the project has become part of the map."
+    },
+    {
+      "key": "paused",
+      "label": "Paused",
+      "meaning": "Developer or city has halted work; approvals may remain in force.",
+      "order": 8,
+      "treatment": "Off-ramp color. Shown as a break in the timeline bar."
+    },
+    {
+      "key": "distressed",
+      "label": "Distressed",
+      "meaning": "Default, receivership, failed financing or similar threatens the project.",
+      "order": 9,
+      "treatment": "Second off-ramp color. Shown as a break in the timeline bar."
+    }
+  ],
+  "projects": [
+    {
+      "id": "candlestick-point",
+      "name": "Candlestick Point",
+      "aliases": [
+        "Candlestick",
+        "Candlestick Park site"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.386,
+        37.711
+      ],
+      "acres": 280,
+      "acresNote": "Most outlets say 280 acres; some say 270.",
+      "program": {
+        "homes": 7200,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 2000000,
+        "commercialSqftTotal": 3000000,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 100,
+        "notes": "About 3M sq ft of commercial space in total (office/R&D, retail, restaurants, possibly a hotel). About 2M sq ft of office/R&D entitlements were moved here from Hunters Point Shipyard to create an innovation district."
+      },
+      "developer": "FivePoint Holdings (Lennar spinoff)",
+      "publicPartners": [
+        "SF Office of Community Investment and Infrastructure (OCII)"
+      ],
+      "stage": "infrastructure",
+      "stageNote": "Broke ground Sept 10, 2026 on the infrastructure backbone for the first seven blocks (six residential, one commercial). No vertical buildings yet.",
+      "timeline": [
+        {
+          "date": "2008",
+          "event": "SF voters set a conceptual framework for redeveloping Candlestick Point and Hunters Point Shipyard together."
+        },
+        {
+          "date": "late 2024",
+          "event": "City permits 7,200 homes at Candlestick and shifts ~2M sq ft of commercial entitlements from Hunters Point Shipyard; the two projects are decoupled."
+        },
+        {
+          "date": "by Aug 2026",
+          "event": "Development agreement amended to split three large phases into seven smaller ones, reducing the capital needed per step."
+        },
+        {
+          "date": "2026-09-10",
+          "event": "Infrastructure groundbreaking."
+        }
+      ],
+      "nextMilestone": "Vertical construction on the first blocks (no public date).",
+      "summary": "The former Candlestick Park stadium site and its parking lots, planned as a bayfront neighborhood with 7,200 homes, an office/R&D innovation district and about 100 acres of open space. It spent years stuck behind the Hunters Point Shipyard cleanup scandal until the city legally separated the two projects.",
+      "massingNotes": "Illustrative until block plans are traced from the project's design documents. Mostly mid-rise residential blocks with some towers; tower heights need verification.",
+      "officialLinks": [],
+      "sources": [
+        "https://sfstandard.com/2026/09/10/candlestick-park-bayview-redevelopment-fivepoint/",
+        "https://www.sfchronicle.com/bayarea/article/housing-candlestick-point-22424741.php",
+        "https://therealdeal.com/san-francisco/2026/08/07/fivepoint-eyes-candlestick-sell-off/",
+        "https://therealdeal.com/san-francisco/2025/04/28/fivepoint-sets-early-2026-start-for-candlestick-project/",
+        "https://sfist.com/2026/06/17/candlestick-point-development-to-finally-start-construction-this-summer/"
+      ],
+      "verify": [
+        "Acreage (270 vs 280)",
+        "Tower heights",
+        "Affordable housing share",
+        "Site boundary"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "hunters-point-shipyard",
+      "name": "Hunters Point Shipyard",
+      "aliases": [
+        "The San Francisco Shipyard",
+        "Shipyard Phase 2"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.368,
+        37.725
+      ],
+      "acres": 420,
+      "acresNote": "FivePoint's San Francisco Shipyard project area, per 2018 reporting.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Phase 1 (hilltop) is partly built with a few hundred homes. Phase 2 was planned for roughly 4,000+ homes and millions of sq ft of R&D, but ~2M sq ft of commercial entitlements has since moved to Candlestick. Current Phase 2 program needs verification."
+      },
+      "developer": "FivePoint Holdings",
+      "publicPartners": [
+        "U.S. Navy (land and cleanup)",
+        "SF OCII"
+      ],
+      "stage": "paused",
+      "stageNote": "Phase 2 is on hold while the Navy retests soil after allegations that a former cleanup contractor falsified data. FivePoint has pushed its Phase 2 start to 2038. Phase 1 roads and about 7 acres of parks are scheduled for 2026–2030.",
+      "timeline": [
+        {
+          "date": "1999",
+          "event": "Lennar awarded rights to develop the shipyard."
+        },
+        {
+          "date": "2008",
+          "event": "Voters approve the combined Candlestick/Shipyard framework."
+        },
+        {
+          "date": "2016",
+          "event": "FivePoint spun off from Lennar."
+        },
+        {
+          "date": "2025",
+          "event": "FivePoint moves the Hunters Point start to 2038 and decouples it from Candlestick."
+        },
+        {
+          "date": "2026–2030",
+          "event": "Phase 1 roads and parks (about 7 acres)."
+        }
+      ],
+      "nextMilestone": "Navy completes soil retesting and conveys remaining parcels.",
+      "summary": "The former naval shipyard on San Francisco's southeastern tip, once the anchor of a combined 12,000-home plan with Candlestick. A radiological cleanup scandal froze the second phase; the city has since let Candlestick move ahead alone.",
+      "massingNotes": "Show delivered Phase 1 hilltop buildings; show Phase 2 as boundary and zones only until a current plan exists.",
+      "officialLinks": [],
+      "sources": [
+        "https://therealdeal.com/san-francisco/2025/04/28/fivepoint-sets-early-2026-start-for-candlestick-project/",
+        "https://www.sfchronicle.com/bayarea/article/housing-candlestick-point-22424741.php",
+        "https://onesanfrancisco.org/node/1217",
+        "https://www.bisnow.com/news/san-francisco/construction-development/these-5-decommissioned-military-bases-are-the-bay-areas-biggest-development-opportunities-74375",
+        "https://www.sfchronicle.com/bayarea/article/Huge-Candlestick-project-going-ahead-as-cleanup-14039536.php"
+      ],
+      "verify": [
+        "Current Phase 2 program",
+        "Phase 1 homes delivered",
+        "Boundary of Phase 2 parcels"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "potrero-power-station",
+      "name": "Potrero Power Station",
+      "aliases": [
+        "Power Station",
+        "PPS",
+        "Dogpatch Power Station"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.384,
+        37.756
+      ],
+      "acres": 29,
+      "acresNote": "The Draft EIR (Oct 2018, p. S-2) describes an approximately 29.0-acre site made up of five sub-areas: the 21-acre Power Station sub-area, a 4.8-acre PG&E sub-area, a 2.9-acre Port sub-area, a 0.2-acre Southern sub-area and a small City sub-area. Perkins&Will's ~21 acres matches the Power Station sub-area.",
+      "program": {
+        "homes": 2601,
+        "affordableHomes": null,
+        "affordablePct": 30,
+        "officeLabSqft": 1600000,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": 250,
+        "openSpaceAcres": 6.9,
+        "notes": "Office and lab space, retail, PDR/arts uses, and adaptive reuse of historic Station A."
+      },
+      "developer": "Fifth Space (formerly Associate Capital)",
+      "publicPartners": [
+        "SF Planning (development agreement)"
+      ],
+      "stage": "partial",
+      "stageNote": "Partly built. The Sophie Maxwell Building (affordable, 1212 Maryland St.) opened in Oct 2025. UCSF's Block 2 cancer research building (Herzog & de Meuron) has been under construction since Aug 2025, with below-grade work continuing through 2027. In July 2026 the developer asked the Planning Commission to amend its city agreement (commercial uses, affordable housing delivery, building design and heights).",
+      "timeline": [
+        {
+          "date": "2020-04",
+          "event": "Master Plan and development agreement approved (effective May 25, 2020)."
+        },
+        {
+          "date": "2025-08",
+          "event": "Construction starts on Block 2 (UCSF research building)."
+        },
+        {
+          "date": "2025-10",
+          "event": "Sophie Maxwell Building opens."
+        },
+        {
+          "date": "2026-02",
+          "event": "Foundation and excavation work on Block 2."
+        },
+        {
+          "date": "2026-07",
+          "event": "Developer seeks amendments to the development agreement."
+        }
+      ],
+      "nextMilestone": "Planning decision on the requested amendments; next residential block start.",
+      "summary": "A decommissioned power plant on the Central Waterfront being turned into a dense neighborhood of about 2,600 homes, labs and offices, with its 300-foot concrete boiler stack kept as a landmark. It opens a stretch of bayfront that was closed to the public for 150 years.",
+      "massingNotes": "Known pieces: Station A (historic, adaptive reuse); 300-ft reinforced concrete boiler stack (landmark; Draft EIR pp. 2-7, 4.D-8); Unit 3 power block (~250-key hotel); Block 2 seven-story lab (Herzog & de Meuron); Block 7 high-rise rental, 325 units (Foster + Partners); Sophie Maxwell, 8 stories (complete); Power Station Park at the center. Trace blocks and heights from SF Planning's Master Plan and Design Standards.",
+      "officialLinks": [
+        "https://sfplanning.org/potrero-power-station",
+        "https://dogpatchpowerstation.com/"
+      ],
+      "sources": [
+        "https://sfyimby.com/2026/02/excavation-work-underway-for-potrero-power-station-block-2-san-francisco.html",
+        "https://www.sfchronicle.com/realestate/article/one-s-f-s-biggest-developments-changing-plans-22365461.php",
+        "https://sfplanning.org/potrero-power-station",
+        "https://perkinswill.com/project/potrero-power-station/",
+        "https://sfyimby.com/category/potrero-power-station",
+        "https://sfplanning.s3.amazonaws.com/sfmea/2017-011878ENV_DEIR_Volume_1.pdf"
+      ],
+      "verify": [
+        "Final site acreage",
+        "Block-by-block heights",
+        "Outcome of July 2026 amendment request"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "pier-70",
+      "name": "Pier 70",
+      "aliases": [
+        "Pier 70 Waterfront Site",
+        "28-Acre Site"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.384,
+        37.761
+      ],
+      "acres": 28,
+      "acresNote": "The Brookfield/Port waterfront site; the wider Pier 70 area is about 69 acres.",
+      "program": {
+        "homes": 2000,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": 2000000,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 9,
+        "notes": "2,000+ homes at full buildout; a July 2026 proposal would add roughly 600 (about 2,800 total)."
+      },
+      "developer": "Brookfield Properties",
+      "publicPartners": [
+        "Port of San Francisco"
+      ],
+      "stage": "partial",
+      "stageNote": "Phase 1 streets and the restored Building 12 are done; General Catalyst leased ~70,000 sq ft there in Jan 2026. No new construction was expected in 2026. Brookfield's July 2026 proposal adds density so its first market-rate building (~420 units) can start in 2027; Phase 1 would total about 700 homes.",
+      "timeline": [
+        {
+          "date": "2014-11",
+          "event": "SF voters approve Prop F allowing taller buildings at the site."
+        },
+        {
+          "date": "2017–2018",
+          "event": "Project approved; first phase of construction begins."
+        },
+        {
+          "date": "2026-01",
+          "event": "General Catalyst signs ~70,000 sq ft in Building 12."
+        },
+        {
+          "date": "2026-07",
+          "event": "Brookfield proposes ~600 more homes and taller buildings."
+        }
+      ],
+      "nextMilestone": "City review of the density increase; first market-rate building targeted for 2027.",
+      "summary": "A historic shipyard south of Mission Bay being remade into a neighborhood of homes, offices, makers' space and nine acres of waterfront parks, with landmark industrial buildings restored. Building 12, the old mold loft, is now its anchor.",
+      "massingNotes": "Retained historic buildings (Building 12 and others) plus new mid-rise blocks; verify heights against the project's Design for Development.",
+      "officialLinks": [
+        "https://sfport.com/projects-programs/pier-70-28-acre-site"
+      ],
+      "sources": [
+        "https://hoodline.com/2026/01/general-catalyst-grabs-huge-waterfront-footprint-at-pier-70/",
+        "https://therealdeal.com/san-francisco/2026/07/16/brookfield-wants-more-apartments-at-pier-70-project/",
+        "https://sfport.com/sites/default/files/Pier%2070.pdf"
+      ],
+      "verify": [
+        "Prop F year and details",
+        "Heights in the July 2026 proposal",
+        "Delivered buildings list"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "mission-rock",
+      "name": "Mission Rock",
+      "aliases": [
+        "Seawall Lot 337",
+        "Lot A"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.389,
+        37.775
+      ],
+      "acres": 28,
+      "acresNote": null,
+      "program": {
+        "homes": 1200,
+        "affordableHomes": null,
+        "affordablePct": 40,
+        "officeLabSqft": 1400000,
+        "commercialSqftTotal": null,
+        "retailSqft": 200000,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Up to 1.4M sq ft of office; ~200K sq ft of retail and local manufacturing; rehabilitated Pier 48; a new parking structure. 5-acre China Basin Park delivered."
+      },
+      "developer": "Mission Rock Partners (SF Giants + Tishman Speyer)",
+      "publicPartners": [
+        "Port of San Francisco"
+      ],
+      "stage": "partial",
+      "stageNote": "Phase 1 finished in 2023: four buildings including Visa's ~300,000 sq ft headquarters and two 23-story residential towers, plus China Basin Park. The other seven of eleven planned buildings have no announced start.",
+      "timeline": [
+        {
+          "date": "2015",
+          "event": "SF voters approve taller heights for the site."
+        },
+        {
+          "date": "2020",
+          "event": "Phase 1 construction under way."
+        },
+        {
+          "date": "2023",
+          "event": "Phase 1 complete."
+        }
+      ],
+      "nextMilestone": "Start of the next phase (not announced).",
+      "summary": "The Giants' former parking lot across McCovey Cove from Oracle Park, being built out as a waterfront neighborhood. The first four buildings and a five-acre park are done; the rest of the plan waits on the office market.",
+      "massingNotes": "Heights up to 240 ft (three at 240 ft, two at 190 ft, the rest lower, per forum compilations of the plan); verify against the Design Controls. Phase 1 buildings A, B, F, G are complete.",
+      "officialLinks": [],
+      "sources": [
+        "https://bisnow.com/san-francisco/news/office/visa-to-build-global-hq-at-giants-tishman-speyers-mission-rock-101678",
+        "https://sfyimby.com/category/Visa",
+        "https://skyscraperpage.com/forum/showthread.php?p=8971024",
+        "https://socketsite.com/archives/tag/seawall-lot-swl-337"
+      ],
+      "verify": [
+        "Year of voter approval (2015)",
+        "Remaining phase timing",
+        "Exact heights"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "mission-bay",
+      "name": "Mission Bay",
+      "aliases": [
+        "Mission Bay Redevelopment"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.392,
+        37.77
+      ],
+      "acres": null,
+      "acresNote": null,
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Reference project. Includes UCSF's Mission Bay campus and Chase Center. Program figures are held in 'unsourced' until verified."
+      },
+      "developer": null,
+      "publicPartners": [
+        "SF OCII"
+      ],
+      "stage": "partial",
+      "stageNote": "Largely built out after about 25 years. OCII expects to finish ten more parks and remaining infrastructure over roughly the next eight years.",
+      "timeline": [],
+      "nextMilestone": null,
+      "summary": "The former rail yards south of downtown, now a largely finished neighborhood of housing, biotech, UCSF's campus and Chase Center. Included as the map's reference for what a completed master plan looks like.",
+      "massingNotes": "Use real building footprints and heights from the base dataset rather than modeled massing.",
+      "officialLinks": [],
+      "sources": [
+        "https://onesanfrancisco.org/node/693"
+      ],
+      "verify": [
+        "Acreage",
+        "Homes",
+        "Master developer history",
+        "Plan adoption year"
+      ],
+      "lastVerified": "2026-10-01",
+      "unsourced": {
+        "note": "Held out of the map until each value has a citable source. program.notes said these were approximate figures from general knowledge.",
+        "acres": 303,
+        "acresNote": "Approximate; verify.",
+        "program.homes": 6500,
+        "developer": "Multiple (master developer history to verify)",
+        "timeline": [
+          {
+            "date": "1998",
+            "event": "Redevelopment plans adopted (verify)."
+          }
+        ]
+      }
+    },
+    {
+      "id": "treasure-island",
+      "name": "Treasure Island and Yerba Buena Island",
+      "aliases": [
+        "Treasure Island",
+        "TI/YBI"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.372,
+        37.823
+      ],
+      "acres": 405,
+      "acresNote": null,
+      "program": {
+        "homes": 8000,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 300,
+        "notes": "About 300 acres of parks and open space planned."
+      },
+      "developer": "Treasure Island Development Group (Lennar, Stockbridge Capital Group, Wilson Meany)",
+      "publicPartners": [
+        "Treasure Island Development Authority (TIDA)"
+      ],
+      "stage": "partial",
+      "stageNote": "Phase one finished in July 2026 with the opening of 490 Avenue of the Palms (148 condos). More than 1,000 people now live in the new buildings, the ferry has run since 2022, and Bay FC's training facility topped out in mid-2026. The city recently approved more density and some condo-to-rental conversions.",
+      "timeline": [
+        {
+          "date": "2016",
+          "event": "Infrastructure work begins."
+        },
+        {
+          "date": "2022",
+          "event": "Ferry service starts."
+        },
+        {
+          "date": "2024",
+          "event": "Isle House (22 stories), the island's first high-rise, nears opening."
+        },
+        {
+          "date": "2026-06",
+          "event": "1,000+ residents; Bay FC facility tops out."
+        },
+        {
+          "date": "2026-07",
+          "event": "Phase one complete."
+        }
+      ],
+      "nextMilestone": "Next phase of residential blocks.",
+      "summary": "A former naval base in the middle of the Bay becoming a new neighborhood of 8,000 homes, with Yerba Buena Island's hillside homes above. Phase one is complete and the first thousand residents have moved in.",
+      "massingNotes": "Tallest built so far: Isle House, 22 stories (David Baker Architects). Planned towers reach about 40 stories (verify). Yerba Buena Island has low hillside townhomes and The Bristol apartments.",
+      "officialLinks": [],
+      "sources": [
+        "https://sfyimby.com/2026/07/phase-one-of-treasure-island-redevelopment-opens-san-francisco.html",
+        "https://media.api.sf.gov/documents/070826_Communications.pdf",
+        "https://en.wikipedia.org/wiki/Treasure_Island_Development",
+        "https://www.sfchronicle.com/sf/article/treasure-island-real-estate-19666552.php",
+        "https://www.bisnow.com/news/san-francisco/construction-development/these-5-decommissioned-military-bases-are-the-bay-areas-biggest-development-opportunities-74375"
+      ],
+      "verify": [
+        "Affordable share",
+        "Planned tower heights",
+        "Isle House opening date"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "india-basin",
+      "name": "India Basin",
+      "aliases": [
+        "700 Innes",
+        "India Basin Mixed-Use Project"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.377,
+        37.733
+      ],
+      "acres": 29,
+      "acresNote": "Roughly 29 acres including public parks; the private 700 Innes parcel is about 15 acres.",
+      "program": {
+        "homes": 1575,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": 209100,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 24.5,
+        "notes": "Buildings up to about 14 stories / 160 ft in earlier plans."
+      },
+      "developer": "BUILD (Build Inc.)",
+      "publicPartners": [
+        "SF Recreation and Parks (shoreline parks)"
+      ],
+      "stage": "distressed",
+      "stageNote": "Build Inc. defaulted on its financing (reported Sept 2026), putting the private 1,575-home phase in doubt; the next step may be a restructuring, transfer or foreclosure rather than construction. The public parks are moving: 900 Innes was finished in late 2024 and India Basin Shoreline Park is under construction (2025–2027).",
+      "timeline": [
+        {
+          "date": "2022–2024",
+          "event": "900 Innes park built."
+        },
+        {
+          "date": "2025–2027",
+          "event": "India Basin Shoreline Park construction."
+        },
+        {
+          "date": "2026-09",
+          "event": "Developer default reported."
+        }
+      ],
+      "nextMilestone": "Resolution of the default (cure, sale or foreclosure).",
+      "summary": "San Francisco's largest privately owned development site, on the Bayview waterfront, planned for 1,575 homes alongside a string of new public shoreline parks. The parks are being built; the housing is now in financial limbo.",
+      "massingNotes": null,
+      "officialLinks": [],
+      "sources": [
+        "https://hoodline.com/2026/09/build-inc-default-puts-india-basin-s-1-575-home-plan-in-doubt/",
+        "https://sfyimby.com/category/india-basin",
+        "https://www.bcdc.ca.gov/wp-content/uploads/sites/354/2024/12/Applicant-Presentation-IBSP.pdf",
+        "https://bisnow.com/san-francisco/news/mixed-use/end-of-approvals-process-in-sight-for-build-incs-india-basin-project-80608",
+        "https://socketsite.com/archives/tag/700-innes-avenue"
+      ],
+      "verify": [
+        "Current lender/ownership status",
+        "Approved heights"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "piers-30-32",
+      "name": "Piers 30–32 and Seawall Lot 330",
+      "aliases": [
+        "Piers 30-32",
+        "SWL 330"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.387,
+        37.785
+      ],
+      "acres": 15.3,
+      "acresNote": "About 13 acres of pier plus the 2.3-acre Seawall Lot 330 across the Embarcadero.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Earlier plan: ~376,000 sq ft of office and ~30,700 sq ft of retail on rebuilt piers (removing ~45% of the pier deck), plus housing on Seawall Lot 330. The housing on the seawall lot (700+ units) now proceeds separately."
+      },
+      "developer": "Strada Investment Group (formerly with Trammell Crow Co.)",
+      "publicPartners": [
+        "Port of San Francisco"
+      ],
+      "stage": "paused",
+      "stageNote": "In 2026 the Port split the deal: housing on Seawall Lot 330 moves ahead on its own, while negotiations over rebuilding Piers 30–32 are paused to study ways to make it feasible amid high office vacancy.",
+      "timeline": [
+        {
+          "date": "2021",
+          "event": "Port enters exclusive negotiations with Strada-TCC."
+        },
+        {
+          "date": "2024",
+          "event": "Board of Supervisors finds the project fiscally feasible."
+        },
+        {
+          "date": "2026-03",
+          "event": "Port reports on splitting the piers from the seawall lot housing."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "Decaying piers at the foot of Bryant Street that have defeated every development attempt for a quarter century. The housing across the street may finally go forward; the pier rebuild is on hold.",
+      "massingNotes": null,
+      "officialLinks": [
+        "https://sfport.com/piers-30-32-and-seawall-lot-330"
+      ],
+      "sources": [
+        "https://www.sfport.com/sites/default/files/2026-03/item_11b_piers_30-32_feasibility_improvement_ideas_-_info.docx.pdf",
+        "https://sfyimby.com/category/piers-30-32",
+        "https://www.sfexaminer.com/archives/port-commission-backs-850-unit-development-plan-for-piers-30-32/article_41bcc7ad-de2c-53b6-ac5d-e779bde3645b.html"
+      ],
+      "verify": [
+        "Seawall Lot 330 unit count and approval status"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "stonestown",
+      "name": "Stonestown",
+      "aliases": [
+        "Stonestown Galleria redevelopment"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.477,
+        37.729
+      ],
+      "acres": 30,
+      "acresNote": "About 30 acres of surface parking around the mall; the full site is roughly 40 acres.",
+      "program": {
+        "homes": 3491,
+        "affordableHomes": null,
+        "affordablePct": 20,
+        "officeLabSqft": 96000,
+        "commercialSqftTotal": null,
+        "retailSqft": 160000,
+        "hotelKeys": null,
+        "openSpaceAcres": 6,
+        "notes": "Buildings of 4 to 18 stories; ~200 senior homes; ~63,000 sq ft of community space. The existing mall stays."
+      },
+      "developer": "Brookfield Properties",
+      "publicPartners": [
+        "SF Planning"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved by the Board of Supervisors in 2024. A special tax district to fund about $438M of streets, parks and utilities has been moving through City Hall. Build-out is expected in phases over about 20 years.",
+      "timeline": [
+        {
+          "date": "2024",
+          "event": "Board of Supervisors approval."
+        }
+      ],
+      "nextMilestone": "Financing district and first-phase permits.",
+      "summary": "Brookfield's plan to replace the parking lots around Stonestown Galleria with about 3,500 homes, a retail main street and six acres of parks, while keeping the mall. It is the largest housing plan on San Francisco's west side in decades.",
+      "massingNotes": null,
+      "officialLinks": [],
+      "sources": [
+        "https://www.connectcre.com/?p=412409",
+        "https://preview-prod.w.sfchronicle.com/bayarea/article/sf-laurel-heights-housing-to-break-ground-21293298.php",
+        "https://www.kqed.org/news/11996058/sf-supervisors-greenlight-stonestown-galleria-revamp-to-add-3500-homes"
+      ],
+      "verify": [
+        "Groundbreaking date",
+        "Tax district status"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "balboa-reservoir",
+      "name": "Balboa Reservoir",
+      "aliases": [],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.453,
+        37.726
+      ],
+      "acres": 17,
+      "acresNote": null,
+      "program": {
+        "homes": 1100,
+        "affordableHomes": 550,
+        "affordablePct": 50,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 4.2,
+        "notes": "Includes a 2-acre central park and housing for City College and SFUSD educators."
+      },
+      "developer": "BRIDGE Housing and AvalonBay",
+      "publicPartners": [
+        "SF Public Utilities Commission (landowner)",
+        "Mayor's Office of Housing and Community Development"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved in 2020. Two 100%-affordable buildings (about 290 homes) go first; Building A (159 homes) was slated to start construction in April 2026 and finish in early 2028, pending financing and shared infrastructure.",
+      "timeline": [
+        {
+          "date": "2020-08",
+          "event": "Board of Supervisors approval."
+        },
+        {
+          "date": "2021",
+          "event": "Development agreement executed."
+        },
+        {
+          "date": "2026-04",
+          "event": "Planned construction start for Building A."
+        }
+      ],
+      "nextMilestone": "Confirm that the first affordable buildings started.",
+      "summary": "A 17-acre city-owned parking lot across from City College becoming 1,100 homes, half of them affordable, around a central park.",
+      "massingNotes": null,
+      "officialLinks": [],
+      "sources": [
+        "https://www.sf.gov/meeting--november-07--2025--citywide-affordable-housing-loan-committee-meeting",
+        "https://sfbos.org/sites/default/files/r0339-23.pdf",
+        "https://onesanfrancisco.org/node/1211",
+        "https://www.inglesidelight.com/balboa-reservoir-project-construction-start-date/"
+      ],
+      "verify": [
+        "Whether construction began in 2026"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "parkmerced",
+      "name": "Parkmerced",
+      "aliases": [],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.481,
+        37.718
+      ],
+      "acres": 152,
+      "acresNote": null,
+      "program": {
+        "homes": 5679,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 80000,
+        "commercialSqftTotal": null,
+        "retailSqft": 230000,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "5,679 net new homes for 8,900 total; 64,000 sq ft community center; the 11 existing towers stay."
+      },
+      "developer": "Development parcel controlled by Yellowstone since July 2026 (previously Maximus Real Estate Partners)",
+      "publicPartners": [
+        "SF Planning"
+      ],
+      "stage": "distressed",
+      "stageNote": "Approved in 2011 but never broke ground. Maximus defaulted on about $1.8B of loans and the complex went into court receivership in March 2025. In July 2026 Yellowstone took over the development portion; no new construction timeline has been confirmed.",
+      "timeline": [
+        {
+          "date": "2011-05-24",
+          "event": "Board of Supervisors approval."
+        },
+        {
+          "date": "2015",
+          "event": "Phase 1 approved (~1,668 homes)."
+        },
+        {
+          "date": "2019",
+          "event": "$1.775B refinancing."
+        },
+        {
+          "date": "2025-03",
+          "event": "Receiver appointed after loan default."
+        },
+        {
+          "date": "2026-07",
+          "event": "Yellowstone takes over the development portion."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "A WWII-era garden-apartment complex on the southwest edge of the city, approved to nearly triple in size. Fifteen years later, nothing has been built and the property has changed hands through default.",
+      "massingNotes": null,
+      "officialLinks": [
+        "https://sfplanning.org/project/parkmerced"
+      ],
+      "sources": [
+        "https://sfplanning.org/project/parkmerced",
+        "https://www.bisnow.com/news/san-francisco/multifamily/douglas-wilson-cos-takes-reins-parkmerced-apartment-complex-in-court-appointed-receivership-129470",
+        "https://www.thepromote.com/p/yellowstone-s-sf-megamove-blue-collar-bullion",
+        "https://therealdeal.com/sanfrancisco/2022/08/12/maximus-unveils-plans-for-sfs-parkmerced"
+      ],
+      "verify": [
+        "New owner's plans and timeline"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "brisbane-baylands",
+      "name": "Brisbane Baylands",
+      "aliases": [
+        "The Baylands"
+      ],
+      "city": "Brisbane",
+      "county": "San Mateo",
+      "subregion": "Peninsula",
+      "approxCenter": [
+        -122.397,
+        37.693
+      ],
+      "acres": 684,
+      "acresNote": "About 680 acres including a 122-acre lagoon; a small portion lies in San Francisco.",
+      "program": {
+        "homes": 2200,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 6500000,
+        "commercialSqftTotal": 7000000,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 100,
+        "notes": "1,800–2,200 homes; up to 7M sq ft non-residential (6.5M office + 500K hotel); 100+ acres of parks; restoration of the historic Bayshore Roundhouse."
+      },
+      "developer": "Baylands Development Inc. (property owned primarily by Sunquest Properties)",
+      "publicPartners": [
+        "City of Brisbane"
+      ],
+      "stage": "entitlement",
+      "stageNote": "Final EIR and the staff-recommended 2026 Specific Plan were released May 14, 2026. Planning Commission hearings ran June through August; City Council deliberations are expected this fall. If approved, remediation and grading could start in 2027, with buildings one to two years later.",
+      "timeline": [
+        {
+          "date": "2018-11",
+          "event": "Brisbane voters approve Measure JJ allowing housing at the Baylands."
+        },
+        {
+          "date": "2025-04",
+          "event": "Draft EIR released."
+        },
+        {
+          "date": "2026-05-14",
+          "event": "Final EIR and 2026 Draft Specific Plan released."
+        },
+        {
+          "date": "2026-06/08",
+          "event": "Planning Commission hearings."
+        }
+      ],
+      "nextMilestone": "City Council vote (expected fall 2026).",
+      "summary": "A former rail yard and landfill on the San Francisco border that could roughly double the size of Brisbane, a city of fewer than 5,000 people. Two decades in planning, it is now in its final review.",
+      "massingNotes": null,
+      "officialLinks": [
+        "https://www.brisbaneca.gov/775/2026-Baylands-Specific-Plan",
+        "https://thebaylands.com/info"
+      ],
+      "sources": [
+        "https://localnewsmatters.org/2026/04/27/decades-in-the-works-brisbane-development-to-add-2000-housing-units-nears-final-review/",
+        "https://hoodline.com/2026/04/tiny-brisbane-braces-for-baylands-mega-buildout-of-2-000-homes/",
+        "https://www.brisbaneca.gov/774/2026-Final-EIR",
+        "https://www.brisbaneca.gov/Archive.aspx?ADID=252"
+      ],
+      "verify": [
+        "Council vote outcome"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "willow-village",
+      "name": "Willow Village",
+      "aliases": [
+        "Meta Willow Village"
+      ],
+      "city": "Menlo Park",
+      "county": "San Mateo",
+      "subregion": "Peninsula",
+      "approxCenter": [
+        -122.152,
+        37.482
+      ],
+      "acres": 56,
+      "acresNote": null,
+      "program": {
+        "homes": 1500,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 1750000,
+        "commercialSqftTotal": null,
+        "retailSqft": 125000,
+        "hotelKeys": 200,
+        "openSpaceAcres": null,
+        "notes": "Parks include a ~3.5-acre park, 1.5-acre town square and a 2-acre elevated park over Willow Road."
+      },
+      "developer": "Meta (Peninsula Innovation Partners)",
+      "publicPartners": [
+        "City of Menlo Park"
+      ],
+      "stage": "paused",
+      "stageNote": "Approved Dec 6, 2022. Meta paused it May 1, 2026, citing economic uncertainty and AI spending. Nothing has been built; the development agreement remains in force through 2032.",
+      "timeline": [
+        {
+          "date": "2022-12-06",
+          "event": "City Council approval."
+        },
+        {
+          "date": "2026-05-01",
+          "event": "Meta pauses the project."
+        },
+        {
+          "date": "2026-05-18",
+          "event": "Planning Commission finds Meta in good-faith compliance."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "Meta's planned mixed-use neighborhood next to its Menlo Park campus in Belle Haven, with 1,500 homes, offices, a hotel and an elevated park. It was the largest project in the city's history before Meta shelved it.",
+      "massingNotes": null,
+      "officialLinks": [
+        "https://www.menlopark.gov/willowvillage"
+      ],
+      "sources": [
+        "https://www.almanacnews.com/menlo-park/2026/05/01/meta-halts-massive-mixed-use-development-in-menlo-park/",
+        "https://www.almanacnews.com/housing/2026/05/19/menlo-park-planning-commission-finds-halted-development-willow-village-in-compliance-with-agreement/",
+        "https://en.wikipedia.org/wiki/Willow_Village"
+      ],
+      "verify": [],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "parkline",
+      "name": "Parkline",
+      "aliases": [
+        "SRI campus redevelopment",
+        "333 Ravenswood"
+      ],
+      "city": "Menlo Park",
+      "county": "San Mateo",
+      "subregion": "Peninsula",
+      "approxCenter": [
+        -122.177,
+        37.457
+      ],
+      "acres": 63,
+      "acresNote": "Reported as 63–64 acres.",
+      "program": {
+        "homes": 800,
+        "affordableHomes": 251,
+        "affordablePct": null,
+        "officeLabSqft": 925000,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 12,
+        "notes": "Approved figures. The June 2026 Phase 2 proposal: 1,082 homes (293 below market rate, incl. 220 single-family and 108 townhomes), ~901,000 sq ft office/R&D, ~40,600 sq ft retail, 14 acres of open space."
+      },
+      "developer": "Lane Partners",
+      "publicPartners": [
+        "City of Menlo Park"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved Sept 30, 2025. A revised Phase 2 plan filed in June 2026 would add 282 homes and retail and assumes SRI leaves the campus; demolition is targeted before the end of 2027.",
+      "timeline": [
+        {
+          "date": "2025-09-30",
+          "event": "City Council approval."
+        },
+        {
+          "date": "2026-06-04",
+          "event": "Phase 2 proposal submitted."
+        }
+      ],
+      "nextMilestone": "City review of Phase 2 (applicant hopes for about 12 months).",
+      "summary": "The redevelopment of SRI International's research campus near downtown Menlo Park into homes, offices and parks, now being revised toward more housing.",
+      "massingNotes": null,
+      "officialLinks": [
+        "https://www.menlopark.gov/Government/Departments/Community-Development/Projects/Under-review/Parkline-Phase-2"
+      ],
+      "sources": [
+        "https://www.menlopark.gov/News-articles/City-news/20260622Parkline-Phase-2-proposal-submitted",
+        "https://hoodline.com/2026/06/menlo-park-research-icon-gets-bulldozed-for-1-082-new-homes/",
+        "https://www.almanacnews.com/menlo-park/2026/06/12/change-of-plans-research-campus-to-leave-menlo-park-make-way-for-more-housing/"
+      ],
+      "verify": [],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "related-santa-clara",
+      "name": "Related Santa Clara",
+      "aliases": [
+        "CityPlace Santa Clara"
+      ],
+      "city": "Santa Clara",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "approxCenter": [
+        -121.972,
+        37.408
+      ],
+      "acres": 240,
+      "acresNote": null,
+      "program": {
+        "homes": 1680,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 5000000,
+        "commercialSqftTotal": 9200000,
+        "retailSqft": null,
+        "hotelKeys": 700,
+        "openSpaceAcres": 30,
+        "notes": "Original program: 9.2M sq ft total, ~5M sq ft office, ~1M sq ft retail/entertainment. A large share of the office area may now become light industrial (likely data centers)."
+      },
+      "developer": "Related Companies",
+      "publicPartners": [
+        "City of Santa Clara (landowner, ground lease)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved in 2016 but still unbuilt after repeated delays. In a narrow 4–3 vote, the city council let Related convert a large share of the planned office space to light industrial use, most likely data centers, which would pay double ground rent.",
+      "timeline": [
+        {
+          "date": "2016",
+          "event": "City Council approval of the $6.5B plan (then CityPlace)."
+        },
+        {
+          "date": "2019",
+          "event": "Related announces vertical construction to begin the following year."
+        },
+        {
+          "date": "July (year to verify)",
+          "event": "Council approves the office-to-industrial change, 4–3."
+        }
+      ],
+      "nextMilestone": "First phase construction, likely data centers first.",
+      "summary": "Silicon Valley's largest-ever approved private development, on a former landfill and golf course across from Levi's Stadium. A decade after approval it remains mostly unbuilt and is pivoting toward data centers.",
+      "massingNotes": null,
+      "officialLinks": [
+        "https://santaclaraca.gov/business-development/related-santa-clara"
+      ],
+      "sources": [
+        "https://www.svvoice.com/data-centers-likely-in-related-santa-claras-future/",
+        "https://www.constructiondive.com/news/relateds-8b-bay-area-project-near-stadium-to-start-in-2020/554919/",
+        "https://www.svvoice.com/santa-claras-amenity-problem-is-bigger-than-the-super-bowl-and-world-cup/amp/"
+      ],
+      "verify": [
+        "Year of the 4–3 council vote",
+        "Current phasing"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "downtown-west",
+      "name": "Google Downtown West",
+      "aliases": [
+        "Downtown West"
+      ],
+      "city": "San Jose",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "approxCenter": [
+        -121.903,
+        37.331
+      ],
+      "acres": 80,
+      "acresNote": null,
+      "program": {
+        "homes": 4000,
+        "affordableHomes": null,
+        "affordablePct": 25,
+        "officeLabSqft": 7300000,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Plus shops, plazas, parks and trails; preserved historic buildings."
+      },
+      "developer": "Google",
+      "publicPartners": [
+        "City of San Jose"
+      ],
+      "stage": "paused",
+      "stageNote": "Approved in 2021 and paused by Google in 2023. Blocks around Diridon Station sit cleared and fenced; the city has little power to compel construction, and some council members are floating a sports-and-entertainment district for the area.",
+      "timeline": [
+        {
+          "date": "2021",
+          "event": "City approval; state streamlining law signed."
+        },
+        {
+          "date": "2023",
+          "event": "Google pauses the project."
+        },
+        {
+          "date": "2026-03",
+          "event": "Reporting finds most of the 80 acres still empty."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "Google's planned mixed-use campus around San Jose's Diridon Station, once the centerpiece of the city's downtown plans. The land has been cleared, but nothing has been built.",
+      "massingNotes": null,
+      "officialLinks": [],
+      "sources": [
+        "https://www.pressdemocrat.com/2026/03/12/google-san-jose-campus-downtown/",
+        "https://www.planetizen.com/news/2026/03/137141-google-razed-80-acres-downtown-san-jose-then-nothing-happened",
+        "https://www.cbsnews.com/sanfrancisco/news/newsom-sb7-environmental-review-san-jose-downtown-west-google"
+      ],
+      "verify": [],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "north-bayshore",
+      "name": "North Bayshore Master Plan",
+      "aliases": [
+        "Google North Bayshore"
+      ],
+      "city": "Mountain View",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "approxCenter": [
+        -122.077,
+        37.418
+      ],
+      "acres": 153,
+      "acresNote": null,
+      "program": {
+        "homes": 7000,
+        "affordableHomes": null,
+        "affordablePct": 15,
+        "officeLabSqft": 3000000,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 26,
+        "notes": "The surrounding precise plan allows up to 9,850 homes across the district."
+      },
+      "developer": "Google",
+      "publicPartners": [
+        "City of Mountain View"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved June 13, 2023. Since then Google terminated its Landings office project in North Bayshore and put its nearby Middlefield Park site up for sale; reporting through mid-2025 shows no homes under the master plan have broken ground.",
+      "timeline": [
+        {
+          "date": "2023-06-13",
+          "event": "City Council approval."
+        },
+        {
+          "date": "2024",
+          "event": "Google terminates the Landings office project."
+        },
+        {
+          "date": "2025",
+          "event": "Google explores selling Middlefield Park."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "Google's plan to turn the office parks around its headquarters into three walkable neighborhoods with 7,000 homes. Approved, but Google has been pulling back from Bay Area development.",
+      "massingNotes": null,
+      "officialLinks": [],
+      "sources": [
+        "https://www.cbsnews.com/sanfrancisco/news/google-north-bayshore-master-plan-mountain-view-approved-development/",
+        "https://www.almanacnews.com/?p=59885",
+        "https://www.mv-voice.com/housing/2025/06/02/mountain-view-faces-housing-uncertainty-as-google-looks-to-sell-off-middlefield-park-property/"
+      ],
+      "verify": [
+        "2026 status"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "moffett-park",
+      "name": "Moffett Park Specific Plan",
+      "aliases": [
+        "Moffett Park"
+      ],
+      "city": "Sunnyvale",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "approxCenter": [
+        -122.022,
+        37.41
+      ],
+      "acres": 1270,
+      "acresNote": null,
+      "program": {
+        "homes": 20000,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 10000000,
+        "commercialSqftTotal": null,
+        "retailSqft": 650000,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Target of 15–20% affordable. 10M+ sq ft of new office/R&D on top of ~22M existing or approved; ~200K sq ft institutional."
+      },
+      "developer": "Multiple property owners",
+      "publicPartners": [
+        "City of Sunnyvale"
+      ],
+      "stage": "entitled",
+      "stageNote": "Plan adopted July 2023 to turn an office-park district into a mixed-use eco-innovation district. Individual projects still need their own approvals.",
+      "timeline": [
+        {
+          "date": "2023-07",
+          "event": "City Council adopts the plan."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "A rezoning of Sunnyvale's bayside office parks to allow up to 20,000 homes. It's a zoning plan rather than a single development.",
+      "massingNotes": "Plan-scale: show the boundary and land-use zones only. No invented buildings.",
+      "officialLinks": [],
+      "sources": [
+        "https://sfyimby.com/2023/07/sunnyvale-city-council-approves-moffett-park-specific-plan.html",
+        "https://siliconvalleyathome.org/resources/sunnyvale-moffett-park-specific-plan/"
+      ],
+      "verify": [
+        "Projects approved under the plan since 2023"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "the-rise",
+      "name": "The Rise",
+      "aliases": [
+        "Vallco",
+        "Vallco Town Center"
+      ],
+      "city": "Cupertino",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "approxCenter": [
+        -122.009,
+        37.325
+      ],
+      "acres": 50,
+      "acresNote": null,
+      "program": {
+        "homes": 2669,
+        "affordableHomes": 356,
+        "affordablePct": null,
+        "officeLabSqft": 1950000,
+        "commercialSqftTotal": null,
+        "retailSqft": 226400,
+        "hotelKeys": null,
+        "openSpaceAcres": 7,
+        "notes": "Affordable count cut from 890 to 356 in a Nov 2025 revision. Tallest building about 200 ft. Approved under SB 35."
+      },
+      "developer": "Sand Hill Property Company (first building with Eden Housing)",
+      "publicPartners": [
+        "City of Cupertino"
+      ],
+      "stage": "infrastructure",
+      "stageNote": "Demolition, soil cleanup, grading and utilities are underway or done. A permit application was filed in Feb 2026 for the first building, 232 affordable homes with Eden Housing, with construction expected to start by the end of 2026.",
+      "timeline": [
+        {
+          "date": "2019",
+          "event": "Vallco mall demolished."
+        },
+        {
+          "date": "2024",
+          "event": "Modified plan approved."
+        },
+        {
+          "date": "2025-11",
+          "event": "Revision cuts affordable homes from 890 to 356."
+        },
+        {
+          "date": "2026-02",
+          "event": "Permit application for the first building (232 affordable homes)."
+        }
+      ],
+      "nextMilestone": "Vertical construction on Town Square West.",
+      "summary": "The redevelopment of the dead Vallco Mall near Apple Park into Cupertino's largest-ever housing project, pushed through under state streamlining law after a decade of fights.",
+      "massingNotes": null,
+      "officialLinks": [],
+      "sources": [
+        "https://siliconvalleyathome.org/affordable-housing-moves-forward-in-cupertino-at-the-rise/",
+        "https://sanjosespotlight.com/cupertino-vallco-development-reduces-its-affordable-housing/",
+        "https://sfyimby.com/?p=32289",
+        "https://siliconvalleyathome.org/cupertinos-long-awaited-project-to-begin-construction-in-2026/"
+      ],
+      "verify": [
+        "Whether the first building started"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "concord-naval-weapons-station",
+      "name": "Concord Naval Weapons Station",
+      "aliases": [
+        "Concord Reuse Project",
+        "CNWS"
+      ],
+      "city": "Concord",
+      "county": "Contra Costa",
+      "subregion": "East Bay",
+      "approxCenter": [
+        -121.965,
+        37.975
+      ],
+      "acres": 2422,
+      "acresNote": "Acreage being conveyed by the Navy for redevelopment; part of a much larger former base.",
+      "program": {
+        "homes": 12000,
+        "affordableHomes": null,
+        "affordablePct": 25,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "12,000+ homes; estimated ~$6B; the Navy receives ~$628M over a 30-year build-out; extensive parks and open space."
+      },
+      "developer": "Brookfield (master developer)",
+      "publicPartners": [
+        "City of Concord (Local Reuse Authority)",
+        "U.S. Navy"
+      ],
+      "stage": "entitlement",
+      "stageNote": "Concord approved the Navy term sheet on May 26, 2026, and the Navy approved it in September. Next comes the Specific Plan: work starts this winter, with community engagement in early 2027.",
+      "timeline": [
+        {
+          "date": "2016",
+          "event": "Lennar selected (withdrew in 2020)."
+        },
+        {
+          "date": "2023-08",
+          "event": "Brookfield selected."
+        },
+        {
+          "date": "2026-05-26",
+          "event": "City approves the Navy term sheet."
+        },
+        {
+          "date": "2026-09",
+          "event": "Navy approves the term sheet."
+        }
+      ],
+      "nextMilestone": "Specific Plan drafting (winter 2026–27).",
+      "summary": "A WWII-era munitions depot by North Concord BART being turned into a new community of 12,000+ homes over 30 years. The financial deal with the Navy is finally done; the detailed plan comes next.",
+      "massingNotes": "Plan-scale: show boundary only until the Specific Plan defines land uses.",
+      "officialLinks": [
+        "https://www.concordreuseproject.org"
+      ],
+      "sources": [
+        "https://www.claycord.com/2026/09/24/u-s-navy-approves-key-financial-agreement-for-concord-naval-weapons-station-redevelopment/",
+        "https://localnewsmatters.org/2026/05/27/concord-reaches-milestone-agreement-to-transform-former-naval-weapons-station/",
+        "https://www.connectcre.com/stories/navy-city-of-concord-agree-on-transfer-of-former-naval-weapons-station/",
+        "https://www.cityofconcord.org/CivicAlerts.aspx?AID=901"
+      ],
+      "verify": [
+        "Boundary of the conveyance area"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "oakland-coliseum",
+      "name": "Oakland Coliseum",
+      "aliases": [
+        "Coliseum site"
+      ],
+      "city": "Oakland",
+      "county": "Alameda",
+      "subregion": "East Bay",
+      "approxCenter": [
+        -122.2,
+        37.752
+      ],
+      "acres": 112,
+      "acresNote": null,
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "AASEG's vision: $5B+ of housing, retail, entertainment and sports. No approved program yet."
+      },
+      "developer": "African American Sports & Entertainment Group (AASEG), with Loop Capital, via Oakland Acquisition Company",
+      "publicPartners": [
+        "City of Oakland",
+        "Alameda County"
+      ],
+      "stage": "proposed",
+      "stageNote": "Ownership is still changing hands. Oakland's amended July 2026 deal sells the ~9-acre arena parcel first for $50M, closing as early as Sept 2026 and no later than Jan 2027. Alameda County approved a nonbinding term sheet for its half in May 2026. The city must approve any development plan.",
+      "timeline": [
+        {
+          "date": "2023-01",
+          "event": "City enters exclusive negotiations with AASEG."
+        },
+        {
+          "date": "2024",
+          "event": "City authorizes sale of its half."
+        },
+        {
+          "date": "2026-05-28",
+          "event": "County approves term sheet for its half."
+        },
+        {
+          "date": "2026-07",
+          "event": "City amends its sale agreement; arena parcel to close first."
+        }
+      ],
+      "nextMilestone": "Arena parcel closing (Sept 2026–Jan 2027).",
+      "summary": "The former home of the A's and Raiders, being sold to a Black-led Oakland development group that envisions a multibillion-dollar mixed-use district by the Coliseum BART station.",
+      "massingNotes": null,
+      "officialLinks": [
+        "https://www.oaklandca.gov/Government/Departments/City-Administrator/Oakland-Coliseum-Redevelopment-Project"
+      ],
+      "sources": [
+        "https://kioncentralcoast.com/news/2026/07/13/oakland-leaders-consider-coliseum-sale-that-includes-future-ticket-revenues/",
+        "https://www.kalw.org/bay-area-news/2026-01-27/meeting-to-be-held-soon-on-the-fate-of-the-oakland-coliseum",
+        "https://www.cbsnews.com/sanfrancisco/news/alameda-county-supervisors-approve-selling-its-share-of-oakland-coliseum/"
+      ],
+      "verify": [
+        "Whether the arena parcel sale closed"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "alameda-point",
+      "name": "Alameda Point (Site A)",
+      "aliases": [
+        "Alameda Point",
+        "Naval Air Station Alameda"
+      ],
+      "city": "Alameda",
+      "county": "Alameda",
+      "subregion": "East Bay",
+      "approxCenter": [
+        -122.3,
+        37.78
+      ],
+      "acres": 68,
+      "acresNote": "Site A only; the former naval air station is much larger.",
+      "program": {
+        "homes": 800,
+        "affordableHomes": 200,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": 600000,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 15,
+        "notes": "Includes the Seaplane Lagoon ferry terminal. Phase 1: ~673 homes, 8 acres of parks."
+      },
+      "developer": "Alameda Point Partners (Trammell Crow Residential, srmERNST, Eden Housing and others)",
+      "publicPartners": [
+        "City of Alameda"
+      ],
+      "stage": "partial",
+      "stageNote": "Phase 1 of Site A (apartments, townhomes, affordable senior housing, parks and the Seaplane Lagoon ferry terminal) has been building out since its 2018 groundbreaking. Current completion status needs verification.",
+      "timeline": [
+        {
+          "date": "2015-06",
+          "event": "Site A development plan approved."
+        },
+        {
+          "date": "2018-05",
+          "event": "Groundbreaking."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "The front door of the former Naval Air Station Alameda, becoming a ferry-served waterfront neighborhood of 800 homes and new commercial space.",
+      "massingNotes": null,
+      "officialLinks": [],
+      "sources": [
+        "https://rebusinessonline.com/trammell-crow-led-group-to-build-500m-mixed-use-project-in-bay-area/",
+        "https://rebusinessonline.com/city-of-alameda-alameda-point-partners-break-ground-on-1b-mixed-use-development-on-former-naval-air-station/",
+        "https://www.bisnow.com/news/oakland/mixed-use/residential-construction-underway-on-1b-east-bay-waterfront-project-99726"
+      ],
+      "verify": [
+        "2026 status of each block",
+        "Plans for Site B"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "brooklyn-basin",
+      "name": "Brooklyn Basin",
+      "aliases": [
+        "Oak to Ninth"
+      ],
+      "city": "Oakland",
+      "county": "Alameda",
+      "subregion": "East Bay",
+      "approxCenter": [
+        -122.257,
+        37.788
+      ],
+      "acres": 64,
+      "acresNote": null,
+      "program": {
+        "homes": 3100,
+        "affordableHomes": 465,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": 200000,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 30,
+        "notes": "Two marinas; bounded by Embarcadero, Fallon Street, Tenth Avenue and the Estuary. A proposal to add ~600 units would push completion toward 2038."
+      },
+      "developer": "Signature Development Group with Zarsion Holdings and Reynolds & Brown (affordable homes by MidPen Housing)",
+      "publicPartners": [
+        "City of Oakland",
+        "Oakland Housing Authority"
+      ],
+      "stage": "partial",
+      "stageNote": "Several apartment buildings and the first waterfront parks are open; more parcels are in permitting. Current counts need verification.",
+      "timeline": [
+        {
+          "date": "2014",
+          "event": "City acquires parcels for 465 affordable homes."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "A former industrial waterfront along the Oakland Estuary being built out as a neighborhood of 3,100 homes with 30 acres of parks and two marinas.",
+      "massingNotes": null,
+      "officialLinks": [],
+      "sources": [
+        "https://www.oakha.org/?p=37354",
+        "https://www.bisnow.com/news/oakland/multifamily/brooklyn-basin-project-seeks-to-extend-timeline-add-more-apartments-94013",
+        "https://sfyimby.com/category/brooklyn-basin/page/3"
+      ],
+      "verify": [
+        "Buildings complete as of 2026",
+        "Status of the 600-unit increase"
+      ],
+      "lastVerified": "2026-10-01"
+    },
+    {
+      "id": "suisun-expansion",
+      "name": "Suisun Expansion (California Forever)",
+      "aliases": [
+        "California Forever",
+        "Suisun Expansion Project"
+      ],
+      "city": "Suisun City (proposed annexation)",
+      "county": "Solano",
+      "subregion": "North Bay",
+      "approxCenter": [
+        -121.93,
+        38.2
+      ],
+      "acres": 22873,
+      "acresNote": "Annexation area; includes a new 15,737-acre community and a 5,726-acre Travis Protection Zone. Boundary in data must come from the EIR's Notice of Preparation figures.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "California Forever's CEO has described ~175,000 homes over 40 years plus jobs and entertainment. A separate Solano Shipyard proposal covers ~7,500 acres near Collinsville."
+      },
+      "developer": "California Forever",
+      "publicPartners": [
+        "City of Suisun City (lead agency)",
+        "Solano LAFCO"
+      ],
+      "stage": "entitlement",
+      "stageNote": "California Forever applied in Oct 2025 to have Suisun City annex its land. The EIR is in progress (results expected fall 2026), with certification targeted for winter 2026 and approval hearings in spring 2027.",
+      "timeline": [
+        {
+          "date": "2024",
+          "event": "Original countywide ballot measure withdrawn."
+        },
+        {
+          "date": "2025-01",
+          "event": "Suisun City begins exploring annexation."
+        },
+        {
+          "date": "2025-10",
+          "event": "Application submitted and accepted."
+        },
+        {
+          "date": "2025-11",
+          "event": "Notice of Preparation of the EIR."
+        }
+      ],
+      "nextMilestone": "Draft EIR (fall 2026).",
+      "summary": "The Silicon Valley-backed plan for a new city on Solano County farmland, now pursued as an expansion of Suisun City instead of a county ballot measure.",
+      "massingNotes": "Plan-scale: boundary and land-use zones only.",
+      "officialLinks": [],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/2025110452",
+        "https://www.dailyrepublic.com/news/eir-scoping-meeting-monday-for-suisun-city-expansion/article_18c40cb1-5d49-4ff7-b86c-de57ce4fed85.html",
+        "https://vallejosun.com/suisun-city-manager-addresses-concerns-about-citys-expansion-plan/",
+        "https://www.planetizen.com/news/2025/10/136186-california-forever-funders-have-new-idea-take-over-existing-town",
+        "https://www.publicceo.com/?p=96914"
+      ],
+      "verify": [
+        "Annexation boundary",
+        "Draft EIR release"
+      ],
+      "lastVerified": "2026-10-01"
+    }
+  ]
+}
