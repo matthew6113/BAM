@@ -26,7 +26,8 @@ const params = new URLSearchParams(location.search);
 /** The style panel is a design tool: on in development, or in any build with ?style=1. */
 const STYLE_PANEL_ENABLED = import.meta.env.DEV || params.get('style') === '1';
 const STORAGE_KEY = 'bam.theme.v1';
-const SITE_TITLE = document.title;
+/** The page title on the home view (a deep-linked page starts with its project's title). */
+const SITE_TITLE = 'Bay Area megaprojects';
 
 function loadTheme(): Theme {
   let theme = structuredClone(defaultTheme);
@@ -235,7 +236,7 @@ export function App() {
     <div class={`app ${panelOpen ? 'with-panel' : ''} ${project ? 'with-project' : ''}`}>
       <a class="skip-link" href="#controls-start">Skip to map controls</a>
       <header class="title">
-        <h1>Bay Area megaprojects</h1>
+        <h1>{SITE_TITLE}</h1>
         <ProjectIndex openId={openId} onOpen={(id, opener) => void openProject(id, { opener })} />
       </header>
       <MapView theme={theme} mode={mode} selection={selection} onReady={onReady}

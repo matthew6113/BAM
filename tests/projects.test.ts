@@ -1,0 +1,132 @@
+import { describe, expect, it } from 'vitest';
+import {
+  boundaryOf,
+  centroidOf,
+  getProject,
+  linePrefix,
+  MAPPED_PROJECTS,
+  massingOf,
+  metres,
+  boundaryLine,
+  siteOf,
+  bboxOf,
+} from '../src/projects/data';
+import { STAGE_KEYS } from '../src/theme/theme';
+import { formatDate, formatSqft, sourceText } from '../src/ui/format';
+import { pathForProject, projectIdFromPath } from '../src/router';
+
+const inside = ([x, y]: [number, number], [x0, y0, x1, y1]: number[]) => x >= x0 && x <= x1 && y >= y0 && y <= y1;
+
+describe('traced project geometry', () => {
+  it('maps Potrero Power Station', () => {
+    expect(MAPPED_PROJECTS.map((p) => p.id)).toContain('potrero-power-station');
+  });
+
+  for (const project of MAPPED_PROJECTS) {
+    describe(project.id, () => {
+      const boundary = boundaryOf(project.id)!;
+      const meta = boundary.properties ?? {};
+
+      it('has exactly one site polygon', () => {
+        expect(boundary.features.filter((f) => f.properties.kind === 'site')).toHaveLength(1);
+      });
+
+      it('says where the boundary came from and how accurate it is', () => {
+        expect(['official', 'traced', 'approximate']).toContain(meta.accuracy);
+        expect(String(meta.source)).toMatch(/\S/);
+        // Every fact shown must trace to a source in the project's list.
+        expect(project.sources).toContain(meta.sourceUrl);
+      });
+
+      const massing = massingOf(project.id);
+      if (!massing) return;
+
+      it('gives every massing feature a stage, a source and an honest height', () => {
+        for (const f of massing.features) {
+          const p = f.properties;
+          expect(STAGE_KEYS, p.label).toContain(p.stage);
+          expect(p.source, p.label).toMatch(/\S/);
+          expect(typeof p.illustrative, p.label).toBe('boolean');
+          if (p.height_ft !== null) expect(p.height_ft, p.label).toBeGreaterThan(0);
+          if (p.podium_ft != null) expect(p.podium_ft, p.label).toBeLessThan(p.height_ft ?? Infinity);
+          if (p.illustrative) expect(p.source, p.label).toMatch(/^illustrative/);
+        }
+      });
+
+      it('labels illustrative massing as such', () => {
+        const illustrative = massing.features.some((f) => f.properties.illustrative);
+        expect(Boolean(massing.properties?.illustrative)).toBe(illustrative);
+        if (illustrative) expect(String(massing.properties?.summary)).toMatch(/illustrative/i);
+      });
+
+      it('keeps the massing on the site', () => {
+        const [x0, y0, x1, y1] = bboxOf(siteOf(project.id)!.geometry);
+        const pad = 0.0005;
+        for (const f of massing.features) {
+          expect(inside(centroidOf(f.geometry), [x0 - pad, y0 - pad, x1 + pad, y1 + pad]), f.properties.label).toBe(true);
+        }
+      });
+
+      it('lands its camera on the site', () => {
+        if (!project.camera) return;
+        const site = siteOf(project.id)!.geometry;
+        expect(metres(project.camera.center, centroidOf(site))).toBeLessThan(300);
+      });
+    });
+  }
+
+  it('keeps the Potrero stack at its sourced 300 ft', () => {
+    const stack = massingOf('potrero-power-station')!.features.find((f) => f.properties.kind === 'landmark')!;
+    expect(stack.properties.height_ft).toBe(300);
+    expect(stack.properties.source).toMatch(/2-7.*4\.D-8/);
+  });
+});
+
+describe('geometry helpers', () => {
+  it('finds the centroid of a building-sized ring precisely', () => {
+    const stack = massingOf('potrero-power-station')!.features.find((f) => f.properties.kind === 'landmark')!;
+    const c = centroidOf(stack.geometry);
+    const [x0, y0, x1, y1] = bboxOf(stack.geometry);
+    expect(inside(c, [x0, y0, x1, y1])).toBe(true);
+    expect(metres(c, [(x0 + x1) / 2, (y0 + y1) / 2])).toBeLessThan(2);
+  });
+
+  it('cuts a line by length', () => {
+    const line = boundaryLine(siteOf('potrero-power-station')!.geometry);
+    const len = (l: typeof line) =>
+      (l.geometry.coordinates as [number, number][]).slice(1).reduce((s, p, i) => s + metres(l.geometry.coordinates[i] as [number, number], p), 0);
+    const whole = len(line);
+    expect(len(linePrefix(line, 0.5)) / whole).toBeCloseTo(0.5, 3);
+    expect(linePrefix(line, 1)).toBe(line);
+    expect(linePrefix(line, 0).geometry.coordinates.length).toBeGreaterThanOrEqual(2);
+  });
+});
+
+describe('panel formatting', () => {
+  it('writes square feet as the data states them', () => {
+    expect(formatSqft(1_600_000)).toBe('1.6 million sq ft');
+    expect(formatSqft(1_234_567)).toBe('1,234,567 sq ft');
+    expect(formatSqft(250_000)).toBe('250,000 sq ft');
+  });
+
+  it('writes dates in sentence form', () => {
+    expect(formatDate('2025-10')).toBe('Oct 2025');
+    expect(formatDate('2026-10-01')).toBe('Oct 1, 2026');
+    expect(formatDate('Spring 2027')).toBe('Spring 2027');
+  });
+
+  it('shows sources as host and path', () => {
+    expect(sourceText('https://www.sfchronicle.com/realestate/article/x.php')).toBe('sfchronicle.com/realestate/article/x.php');
+  });
+});
+
+describe('deep links', () => {
+  it('reads and writes /p/{id}', () => {
+    expect(projectIdFromPath('/p/potrero-power-station')).toBe('potrero-power-station');
+    expect(projectIdFromPath('/p/potrero-power-station/')).toBe('potrero-power-station');
+    expect(projectIdFromPath('/')).toBeNull();
+    expect(projectIdFromPath('/p/Not_An_Id')).toBeNull();
+    expect(pathForProject('potrero-power-station')).toBe('/p/potrero-power-station');
+    expect(getProject('potrero-power-station')?.name).toBe('Potrero Power Station');
+  });
+});
