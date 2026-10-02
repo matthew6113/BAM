@@ -188,3 +188,120 @@ Note: HE-B1 also says "over 25,000 square feet of commercial". That looks like a
 
 - More 2017 CPC minutes exist under `YYYYMMDD_cal.min.pdf`. 20170824, 0831, 0907, 0928, 1005 and 1012 returned 200; 0810, 0817 and 0921 returned 403. The 2014–2015 dates also use this pattern (e.g. 20141113_cal.min.pdf, 20150212_cal.min.pdf per WebSearch). The `cpcmin` set could be extended with it.
 - Page numbers for CPC minutes are the printed "Page N of M" of the page the item sits on (the header precedes that page's content). DEIR pages are printed page labels.
+
+---
+
+# Update with full network access (2026-10-02)
+
+Read from the Port, OCII, DataSF and Legistar once network access was broadened. Where this
+section and the one above differ, this section is newer.
+
+Main changes: Pier 70's Aug 2026 density proposal now has an official source (proposed, not
+approved). Mission Rock Phase 1 finished in 2025, not 2023. The Piers 30–32 / Seawall Lot 330
+split was approved in July 2025, not March 2026. Seawall Lot 330 has a 568-unit SB 423
+application (May 2026). Pier 70's open-space conflict is resolved: 9 acres covers the 35-acre
+SUD, 6.5 acres the 28-Acre Site.
+
+## pier-70
+
+Sources:
+- P70-2608: Port Commission Item 11A, Aug 11, 2026. https://www.sfport.com/sites/default/files/2026-08/item_11a_p70_project_update_-_term_sheet_overview_-_information.pdf
+- P70-MIN2608: minutes of that meeting. https://www.sfport.com/media/11558/download?inline
+- P70-WEB: https://www.sfport.com/projects-programs/pier-70-28-acre-site
+- P70-2008: Port Item 9B, Aug 7, 2020. https://www.sfport.com/sites/default/files/2021-08/Item%209B%20Pier%2070%20Project%20Update_final.pdf
+- P70-JUL26: https://www.sfport.com/meetings/port-commission-july-14-2026
+
+| field | data value | official value | status | source | quote |
+|---|---|---|---|---|---|
+| homes | 2,000 | 28-Acre Site 1,100–2,150 (SUD-wide 1,500–3,000) | CONFLICT (use up to 2,150) | P70-WEB; P70-2608 p2 | "1,100 - 2,150 residential units, 320+ (30%) affordable" |
+| affordablePct | null | 30% approved; proposed "no less than 20%", 327 stand-alone affordable units | NEW | P70-WEB; P70-2608 p5 | "Adjust the Project-wide affordable housing rate from 30% to no less than 20%" |
+| openSpaceAcres | 9 | 6.5 on the 28-Acre Site; 9 across the 35-acre SUD | RESOLVED (6.5) | P70-WEB; P70-2608 p2 | "6.5 acres of waterfront and upland parks" |
+| July 2026 proposal | press | Proposed in Port staff report; Port and BoS action "by the end of this year or early next year" | NEW (proposed) | P70-2608 pp1–2, 6 | "Increase the height of certain residential parcels from 65 to 90 feet … could result in an additional 600 homes on site." |
+| heights | — | Approved 65 and 90 ft; proposal raises some residential parcels 65→90 ft (Prop F maximum) | CONFIRMED + NEW | P70-2608 p6 | "which is the maximum allowed by ballot measure (Proposition F, 2014)" |
+| Building 12 | done | Rehab completed Jan 2022; ~90% leased; General Catalyst not named | CONFIRMED (tenant UNCONFIRMED) | P70-2608 p3 | "In January 2022, Developer completed the rehabilitation of historic Building 12" |
+| Phase 1 streets | done | Accepted 2024; Phase 1 parks and vertical buildings not started | CONFIRMED | P70-2608 pp1, 3 | "These improvements were accepted by the City and Port in 2024." |
+| Phase 1 scope | ~700 homes (press) | 588 homes anticipated, 3 acres of parks, up to 460k sf commercial | CONFLICT | P70-2608 p3 | "an anticipated 588 residential units" |
+| ~420-unit first building; 2027 start | press | Not in official docs; 2027 only as Brookfield's statement in minutes | UNCONFIRMED | P70-MIN2608 p7 | "positioning the project to advance beginning in 2027" |
+| down-market delay | — | Hit the 60-month maximum June 2026; extended to Dec 26, 2026 | NEW | P70-2608 p4 | "extend the down market delay for an additional six months to December 26, 2026" |
+| construction start | "2017–2018" | Demolition Aug 2018; construction Mar 2019; DDA dated May 2, 2018 | CONFIRMED (dates corrected) | P70-2608 p3; P70-2008 p3 | "began Phase 1 site preparation and demolition in August 2018, followed by construction in March 2019" |
+| developer | Brookfield | "FC Pier 70, an affiliate of Brookfield Properties" | CONFIRMED | P70-WEB | — |
+
+Boundary: DataSF Special Use Districts (`5yf5-ms5f`, "Public Domain U.S. Government"), feature
+"Pier 70" (~35.6 ac = the 35-acre SUD). The 28-Acre Site is approximately the SUD minus the
+block 4110 and 4120 parcels (DataSF Parcels `acdm-wktn`, ODC-PDDL); label it approximate.
+Plan figure: https://www.sfport.com/files/2021-11/pier_70_sud_land_use_plan.pdf
+
+Still open: adopted D4D parcel heights (https://www.sfport.com/media/8123/download?inline=, 95 MB);
+which parcels go 65→90 ft.
+
+## mission-rock
+
+Sources:
+- MR-2606: Port Item 11A and Res. 26-34, June 9, 2026. https://www.sfport.com/sites/default/files/2026-06/item_11a_mission_rock_phase_2_update_and_port_capital.pdf
+- MR-MIN2606: https://www.sfport.com/media/11337/download?inline
+- MR-2310: Port Item 8B, Oct 10, 2023. https://www.sfport.com/files/2023-10/101023_8b_mission_rock_budget_port_capital_parcel_lease_amendment_final.pdf
+- DBI permits (DataSF `i98e-djp9`), blocks 8719A/B/C.
+
+| field | data value | official value | status | source | quote |
+|---|---|---|---|---|---|
+| Phase 1 complete | 2023 | 2025 | CONFLICT | MR-2606 pp1, 3 | "Phase 1, completed in 2025, delivered 537 apartments (including 132 Below Market Rate units), 550,000 square feet of office space, substantial retail, the 5-acre China Basin Park" |
+| Phase 1 buildings | — | A ("The Canyon") and F residential (537 units); B and G office/life science; TCOs G Jan-23, A May-23, B Jun-23 | CONFIRMED | MR-2310 p5 | "two primarily residential apartment buildings (Parcel A, "The Canyon", and Parcel F) totaling 537 units" |
+| Visa HQ | ~300k sf | Parcel G is Visa's global HQ; size not stated | CONFIRMED (size UNCONFIRMED) | MR-2310 p5 | "Parcel G will serve as Visa's global headquarters." |
+| tower heights | two 23-story | Permit applications: F 23 stories (258 units); A 24 stories (283 units); G 13; B 8 | CONFLICT | DBI 201910073784, 201910073782, 201910073785, 201910285744 | "to erect a 24 story, type 1a , 283 residential building" |
+| homes | 1,200 | "up to 1,200" (2023); "at least 1,000" (2026) | CONFIRMED | MR-2310 p4 | "will include up to 1,200 units of new, rental housing" |
+| affordablePct | 40 | 40% | CONFIRMED | MR-2310 p4 | "Forty percent (40%) of the residential units in Mission Rock will be below market rate." |
+| officeLabSqft | 1.4M | 1.4M | CONFIRMED | MR-2606 p3 | "1.4 million square feet of new commercial and office space" |
+| openSpaceAcres | null | 8 | NEW | MR-2310 p4 | "eight acres of parks and open spaces" |
+| retailSqft | 200,000 | Phase 1 52,000 gsf; total not restated (DEIR 241,000–244,800) | UNCONFIRMED total | MR-2606 p3 | "52,000 gross square feet of retail space" |
+| remaining phases | no start | $10M Port Phase 2 pre-development (Res. 26-34); construction "as early as 2027"; amendments to Port Fall 2026, BoS Fall 2026/Winter 2027 | CONFLICT (update) | MR-2606 pp2, 6 | "position Phase 2 to begin construction as early as 2027" |
+| approvals | — | Port Res. 18-03 (Jan 2018); BoS Res. 42-18 (DDA), Ord. 33-18 (DA), Feb 2018 | NEW | MR-2606 p8 | "approved the DDA by Resolution No. 42-18 and … the Development Agreement … by Ordinance No. 33-18" |
+
+Boundary: DataSF SUD layer `5yf5-ms5f`, feature "Mission Rock" (~27.7 ac vs official 28).
+
+## mission-bay
+
+Sources: OCII https://sfocii.org/mission-bay, https://sfocii.org/projects/mission-bay-north/overview,
+https://sfocii.org/projects/mission-bay-south/overview, parks map (Oct 2021)
+https://sfocii.org/files/inline-images/Mission%20Bay%20South%20Open%20Space.png
+
+| field | official value | status | quote |
+|---|---|---|---|
+| acres | 303 (North 65, South 238) | CONFIRMED | "covers 303 acres of land between the San Francisco Bay and Interstate-280" |
+| homes | 6,535 (2,964 + 3,571) | CONFIRMED | "Total Housing 2,964 units" / "Total Housing 3,571 units" |
+| affordableHomes | 1,916 (698 + 1,218) | NEW | "Affordable Housing 698 units" / "Affordable Housing 1,218 units" |
+| openSpaceAcres | 40.5 (6.5 + 34) | NEW | "Parks and Open Space 6.5 acres" / "34 acres" |
+| commercial | South 6.1M sf plus 429 hotel rooms; North 200k sf | NEW | "Commercial and Institutional 6.1 million square feet and 429 hotel rooms" |
+| plan adoption | Nov 1998 | CONFIRMED | "established the Mission Bay North and South Redevelopment Project Areas in November 1998." |
+| developer | Catellus (original), now FOCIL-MB LLC | NEW | "original master developer, Catellus Development Corporation (now held by FOCIL-MB LLC)" |
+| "ten more parks over eight years" | from the City Capital Plan **2022** edition (onesanfrancisco.org/node/693); stale | STALE | "The construction of 10 additional parks in Mission Bay is anticipated over the next eight years" |
+
+Boundary: DataSF Former Redevelopment Agency Project Areas (`m288-24sn`, ODC-PDDL), features
+"Mission Bay - North" and "Mission Bay - South" (~316 ac together, including water/street
+edges; cite 303).
+
+## piers-30-32
+
+Sources:
+- P30-2603: Port Item 11B, Mar 6, 2026. https://www.sfport.com/sites/default/files/2026-03/item_11b_piers_30-32_feasibility_improvement_ideas_-_info.docx.pdf
+- P30-2507: Port Item 12A and Res. 25-40, July 2025. https://www.sfport.com/media/10606/download?inline=
+- P30-MIN2507: https://www.sfport.com/media/10698/download?inline
+- BOS-240342: Res. 247-24. https://sfgov.legistar.com/View.ashx?M=F&ID=12946504&GUID=9CA150DB-7928-4DCF-974E-F61EA9B3F21F (file: https://sfgov.legistar.com/LegislationDetail.aspx?ID=6611808&GUID=73D61F5F-476D-4D2A-8606-C577FA08763B)
+- TS-2024: term sheet, Jan 17, 2024. https://sfgov.legistar.com/View.ashx?M=F&ID=12825404&GUID=D1962148-C9BC-461D-BEAB-ACE96775317D
+- PLN: DataSF Planning records `qvu5-m3a2`, record 2025-011323PRJ.
+- P30-WEB: https://www.sfport.com/projects-programs/piers-30-32-and-seawall-lot-330
+
+| field | data value | official value | status | source | quote |
+|---|---|---|---|---|---|
+| acres | 15.3 | 15.3 | CONFIRMED | BOS-240342 p1 | "an approximately 15.3-acre site generally located along the Embarcadero between Bryant and Beale Streets" |
+| 2021 ENA | 2021 | Port approved Feb 9, 2021 (Res. 21-08); executed March 2021 | CONFIRMED | P30-2603 p3 | "In March 2021, Port and Strada-TCC entered into an Exclusive Negotiating Agreement" |
+| 2024 BoS | fiscal feasibility | Res. 247-24, adopted Apr 30, 2024; Port endorsed term sheet Jan 23, 2024 (Res. 24-10) | CONFIRMED | BOS-240342 | "Resolution finding … is fiscally feasible under Administrative Code, Chapter 29" |
+| split | 2026-03 | July 2025 (Res. 25-40); agreements executed Oct 24, 2025; March 2026 was the 6-month update | CONFLICT | P30-2603 p1 | "In July 2025 by Resolution No. 25-40, the Port Commission authorized terminating the Exclusive Negotiating Agreement" |
+| stage | paused | Piers negotiations paused 18 months to study feasibility | CONFIRMED | P30-2603 pp1, 4 | "agreed to pause active negotiations on Piers 30-32 for a period of 18 months" |
+| office | ~376,000 | ~375,000 GSF (+55k mezzanine) | CONFLICT (minor) | TS-2024 p12 | "Approximately 375,000 GSF office space in Pier Shed" |
+| retail | ~30,700 | ~70,000 sf | CONFLICT | TS-2024 p12 | "Approximately 70,000 SF retail space, including a market hall" |
+| 45% deck removal | 45% | ~45% (6 acres), earlier proposal | CONFIRMED (dated) | P30-WEB | "removal of approximately 45% of the existing Pier (6-acres)" |
+| SWL 330 units | 700+ | Term sheet 713 (186 BMR); SB 423 application May 13, 2026: 568 units (86 affordable), 23 stories/230 ft + 10 stories/105 ft, under review | CONFLICT → NEW | P30-2507 p4; PLN | "Per SB 423, the proposed project is a 568-unit, multifamily residential project located on Seawall Lot 330" |
+| developer | Strada | Strada Investment Group affiliates | CONFIRMED | P30-2603 p1 | "affiliates of Strada Investment Group" |
+
+Boundary: DataSF Parcels (`acdm-wktn`, ODC-PDDL): piers 9900/030 + 9900/032 (~13.1 ac); SWL 330
+3771/002 + 3770/002 (~2.33 ac). Plan figure: TS-2024 Exhibit A.
