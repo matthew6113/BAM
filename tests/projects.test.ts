@@ -11,6 +11,7 @@ import {
   siteOf,
   bboxOf,
 } from '../src/projects/data';
+import { isOfficialSource } from '../src/projects/official';
 import { STAGE_KEYS } from '../src/theme/theme';
 import { formatDate, formatSqft, sourceText } from '../src/ui/format';
 import { pathForProject, projectIdFromPath } from '../src/router';
@@ -29,6 +30,11 @@ describe('traced project geometry', () => {
 
       it('has exactly one site polygon', () => {
         expect(boundary.features.filter((f) => f.properties.kind === 'site')).toHaveLength(1);
+      });
+
+      it('cites official sources only', () => {
+        const unofficial = project.sources.filter((u) => !isOfficialSource(u));
+        expect(unofficial, 'move press-only facts and their sources into `reported`').toEqual([]);
       });
 
       it('says where the boundary came from and how accurate it is', () => {
@@ -79,6 +85,18 @@ describe('traced project geometry', () => {
     const stack = massingOf('potrero-power-station')!.features.find((f) => f.properties.kind === 'landmark')!;
     expect(stack.properties.height_ft).toBe(300);
     expect(stack.properties.source).toMatch(/2-7.*4\.D-8/);
+  });
+});
+
+describe('official sources', () => {
+  it('tells agencies from the press', () => {
+    expect(isOfficialSource('https://sfplanning.s3.amazonaws.com/sfmea/x.pdf')).toBe(true);
+    expect(isOfficialSource('https://data.sfgov.org/d/abcd-1234')).toBe(true);
+    expect(isOfficialSource('https://www.sfmta.com/reports/x.pdf')).toBe(true);
+    expect(isOfficialSource('https://www.cityofalameda.ca.gov/x')).toBe(true);
+    expect(isOfficialSource('https://sfyimby.com/2026/02/x.html')).toBe(false);
+    expect(isOfficialSource('https://www.sfchronicle.com/x')).toBe(false);
+    expect(isOfficialSource('https://sfplanning.org.example.com/x')).toBe(false);
   });
 });
 

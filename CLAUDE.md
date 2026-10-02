@@ -24,6 +24,11 @@ Accuracy
 - Never invent a fact, number, date, boundary or height. If it isn't in
   `data/projects.json` or a source you can cite, mark it as needing verification.
 - Every project fact shown in the UI must trace to a source URL in the data.
+- Official sources only (Matthew, 2026-10-02): public agencies and bodies, their adopted
+  plans, hearing records, permits and GIS (`src/projects/official.ts` lists the hosts; a test
+  enforces it for mapped projects). Facts that only the press or a developer reports go in
+  the project's `reported` record, which the map never shows, until an official source
+  confirms them. Superseded documents aren't drawn as if current.
 - Label approximations in the data and in the UI ("Illustrative massing",
   "Approximate boundary").
 - Keep `lastVerified` dates honest. Update them only when you actually re-check.

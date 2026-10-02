@@ -89,7 +89,9 @@ export function App() {
   /** Open a project: panel in, fly to its camera, draw the boundary, raise its buildings. */
   const openProject = useCallback(async (id: string, opts: { push?: boolean; opener?: HTMLElement | null } = {}) => {
     const project = getProject(id);
-    if (!map || !project) return;
+    const site = siteOf(id);
+    // Only mapped projects open: their facts have been checked against official sources.
+    if (!map || !project || !site) return;
     const f = flight.current;
     const token = ++f.token;
     const current = () => flight.current.token === token;
@@ -104,13 +106,6 @@ export function App() {
     document.title = `${project.name} · ${SITE_TITLE}`;
     setOpenId(id);
 
-    const site = siteOf(id);
-    if (!site) {
-      // Not mapped yet: the panel opens, the camera stays put.
-      setSelection(null);
-      delete document.body.dataset.flight;
-      return;
-    }
     const massing = massingOf(id);
     setMode('3d');
     map.setMaxPitch(MAX_PITCH_3D);
@@ -177,7 +172,7 @@ export function App() {
     if (!map) return;
     const sync = (initial: boolean) => {
       const id = projectIdFromPath();
-      if (id && !getProject(id)) {
+      if (id && !siteOf(id)) {
         navigate(null, true);
         return;
       }

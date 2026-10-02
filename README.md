@@ -6,7 +6,8 @@ America". Only the projects get color and height. Click a project and the camera
 in, the site boundary draws, and the proposed buildings rise.
 
 Status: **Milestone 2** (Potrero Power Station as a complete vertical slice: boundary,
-block massing by stage, fly-in, panel, deep link). See `docs/SPEC.md` for the full spec
+massing by stage, fly-in, panel, deep link). Facts come from official sources only; Potrero's
+approved block heights are drawn once its Design for Development can be read. See `docs/SPEC.md` for the full spec
 and milestones, `docs/DECISIONS.md` for choices made so far, and `CHANGELOG.md` for data
 changes.
 
@@ -115,7 +116,7 @@ data/            projects.json (source of truth), schema, CREDITS.md, manifest.j
 docs/            SPEC.md, DECISIONS.md, PLANNING-AUDIT.md, screenshots/
 pipeline/        Python data pipeline (uv)
 data/boundaries/ traced project sites (GeoJSON, with source and accuracy)
-data/massing/    traced or illustrative project massing by block and stage
+data/massing/    project massing by block and stage, from official sources
 scripts/         glyph builder, screenshot and camera helpers, deep-link page plugin
 src/             app: map/ (style, project layers, view), projects/ (data, fly-in), theme/, ui/
 tests/           Vitest unit tests, Playwright interaction and screenshot specs
