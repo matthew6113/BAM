@@ -94,6 +94,7 @@ describe('official sources', () => {
     expect(isOfficialSource('https://data.sfgov.org/d/abcd-1234')).toBe(true);
     expect(isOfficialSource('https://www.sfmta.com/reports/x.pdf')).toBe(true);
     expect(isOfficialSource('https://www.cityofalameda.ca.gov/x')).toBe(true);
+    expect(isOfficialSource('https://sfgov.legistar.com/LegislationDetail.aspx?ID=1')).toBe(true);
     expect(isOfficialSource('https://sfyimby.com/2026/02/x.html')).toBe(false);
     expect(isOfficialSource('https://www.sfchronicle.com/x')).toBe(false);
     expect(isOfficialSource('https://sfplanning.org.example.com/x')).toBe(false);

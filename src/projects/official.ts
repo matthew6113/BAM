@@ -12,6 +12,7 @@ const OFFICIAL_HOSTS = [
   'sfport.com',
   'sfmta.com',
   'sfbos.org',
+  'sfgov.legistar.com', // Board of Supervisors legislative files (ordinances, attachments)
   'codelibrary.amlegal.com', // publisher of the San Francisco Municipal Code
   'ceqanet.lci.ca.gov',
   'regents.universityofcalifornia.edu',

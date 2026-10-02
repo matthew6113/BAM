@@ -8,14 +8,12 @@ for h in sfplanning.org data.sfgov.org codelibrary.amlegal.com ceqanet.lci.ca.go
   printf "%-26s " $h; curl -s -o /dev/null -w "%{http_code}\n" --max-time 15 https://$h/; done
 ```
 
-If these still fail, the environment's network access hasn't been broadened. Matthew
-changes it in the cloud environment settings. As of 2026-10-02 (second session) they still
-failed, as did every other agency host tried (OCII, TIDA, Port, sfbos, Legistar, CEQAnet,
-media.api.sf.gov and the South Bay, Peninsula and East Bay cities). WebFetch is blocked too;
-WebSearch works, but only for finding exact filenames. Its summaries aren't sources: one
-gave Potrero's Design for Development motion as 26038 when the minutes say 20638.
+Network access was broadened on 2026-10-02: sfplanning.org, data.sfgov.org, CEQAnet,
+sfgov.legistar.com, sfbos.org, the Port, UC Regents and the city sites respond. amlegal still
+returns 403 to scripts (bot blocking). WebSearch summaries aren't sources: one gave
+Potrero's Design for Development motion as 26038 when the minutes say 20638.
 
-## Reachable even without broader access
+## SF Planning's document store (S3)
 
 SF Planning keeps its files in an S3 bucket that has been reachable all along. The
 subdomain becomes a folder:
@@ -52,7 +50,7 @@ Hearing packets are often under the case number, e.g. `cpcpackets/2014-002541ENV
 - `docs/official-research/` holds per-project tables (data value, official value, status,
   source and page, verbatim quote) for the 11 other San Francisco projects, checked
   2026-10-02. They aren't applied to `data/projects.json` yet; see "Next" below.
-- Potrero: the minutes add an official post-approval record, now in the timeline:
+- Potrero (from the minutes): an official post-approval record, now in the timeline:
   Station A (Block 15) approved Oct 22, 2020 (Motion 20801, 11 stories, up to 403,750 sq ft
   office); about 896,323 sq ft office authorized site-wide Oct 21, 2021 (Motion 21019); the
   life-science block rule removed Jul 28, 2022 (Res. 21156). Also seen, not yet used: an
@@ -60,18 +58,29 @@ Hearing packets are often under the case number, e.g. `cpcpackets/2014-002541ENV
   (2017-011878PHA-04), and an EIR addendum for the re-phasing (Sept 9, 2020). The EIR
   certification (Jan 30, 2020) is No. 20635.
 
-## Potrero Power Station: leads
+## Potrero Power Station: done (2026-10-02)
 
-| Need | Official source | Notes |
-|---|---|---|
-| Approved block heights | Design for Development, approved by Planning Commission Motion 20638 (Jan 30, 2020) | Linked from sfplanning.org/potrero-power-station. Also on file with the Board of Supervisors, File No. 200040. Minutes: new buildings 65 to 240 ft, height district 65/240-PPS on map HT08. |
-| Official boundary | Special Use District and zoning layers (data.sfgov.org); parcels 4175/002, 4175/017, 4175/018 (part), 4232/001, 4232/006, plus non-assessed Port and City land | Would replace the traced boundary ("approximate") with official geometry. |
-| Affordable share (press: 30%) | Development Agreement (Board ordinance, 2020) | sfplanning.org hosts a DA terms PDF. |
-| Construction status | DBI permits; UC Regents approval of the Block 2 building (Sept 2024 meeting, `regents.universityofcalifornia.edu/regmeet/sept24/f5attach6.pdf`); MOHCD (Mayor's Office of Housing) for the Sophie Maxwell Building | Needed before the stage returns to "partly built". |
-| 2025–26 amendments | Addendum 2 to the EIR (CEQAnet SCH 2017112005, received 7/29/2026); Planning Commission recommendation; Board of Supervisors action | Search summaries say heights rise (65 to 180 ft, 300 ft on Block 6). Read the official text and check whether the Board adopted them. |
-
-The press-only facts waiting for confirmation are in the project's `reported` record in
-`data/projects.json`, and the open items are in its `verify` list.
+Network access was broadened on 2026-10-02 and every lead below was read:
+- Design for Development, Feb 26, 2020 (Motion 20638):
+  `sfplanning.org/sites/default/files/documents/citywide/potreropower_D4D_final.pdf`.
+  Figure 6.2.3 Building Height Plan (p. 245) gives each block's height (85 to 240 ft).
+  **Not traced yet**: that is the next massing step and brings buildings back on the map.
+- Development agreement: Board File 200040, Ordinance 62-20, finally passed Apr 21, 2020,
+  effective May 24, 2020 (not May 25). The recorded agreement (Recital H) says affordable
+  housing is "intended to constitute thirty percent (30%)" of all units. First amendment:
+  Ordinance 67-24 (EIFD).
+- 2026 amendments: Addendum 2 (CEQAnet, July 16, 2026) proposes +8 ft on residential blocks
+  and more on Blocks 1, 5, 11, 12 and 15 (its Figure 6). The search summary's "65 to 180 ft,
+  300 on Block 6" was wrong. Planning Commission recommended them July 30, 2026 (Res. 21945);
+  the Board's Land Use Committee recommended File 260724 on Sept 28, 2026; the full Board's
+  vote and the SUD ordinance (File 260770) are pending. Until enacted, the 2020 D4D governs.
+- Built: the Sophie Maxwell Building, 1212 Maryland St. (DBI permit 202212229038: 8 stories,
+  105 homes, 100% affordable; issued Oct 25, 2023; completed Aug 28, 2026). Stage is now
+  "partly built".
+- UCSF Block 2: Regents approved Sept 19, 2024 (300,000 gsf, 8 stories, 130 ft plus an
+  18-ft screen). Construction start (press: Aug 2025) still needs an official source.
+- The SF Legistar API (webapi.legistar.com) stops around 2020; read file pages on
+  sfgov.legistar.com instead. sfgov.legistar.com is now an official host.
 
 ## The other 24 projects
 

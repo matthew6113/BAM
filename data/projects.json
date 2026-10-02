@@ -2,7 +2,7 @@
   "_meta": {
     "title": "Bay Area megaprojects: researched project list",
     "preparedBy": "Claude (claude.ai chat) for Matthew Huguet",
-    "lastVerified": "2026-10-01",
+    "lastVerified": "2026-10-02",
     "notes": [
       "Every figure here came from the listed sources as of the lastVerified date. Items in each project's 'verify' list are known gaps; do not fill them by guessing.",
       "approxCenter values are rough [lon, lat] points for placing a marker only. Real site boundaries must come from official plan documents or parcel data, saved per project with their source.",
@@ -265,7 +265,7 @@
       "program": {
         "homes": 2601,
         "affordableHomes": null,
-        "affordablePct": null,
+        "affordablePct": 30,
         "officeLabSqft": 1459978,
         "commercialSqftTotal": null,
         "retailSqft": 99464,
@@ -273,20 +273,20 @@
         "openSpaceAcres": 6.9,
         "notes": "Office and lab space, retail, PDR/arts uses, and adaptive reuse of historic Station A."
       },
-      "developer": "California Barrel Company, LLC (Associate Capital)",
+      "developer": "California Barrel Company LLC (Fifth Space)",
       "publicPartners": [
         "SF Planning (development agreement)"
       ],
-      "stage": "entitled",
-      "stageNote": "Approved. The Planning Commission certified the environmental review and approved the Design for Development on Jan 30, 2020, and the development agreement took effect on May 25, 2020. Construction status is being confirmed against city records.",
+      "stage": "partial",
+      "stageNote": "Partly built. The Sophie Maxwell Building at 1212 Maryland St. (8 stories, 105 homes, 100% affordable) has been built: the city marked its building permit complete on Aug 28, 2026. The UC Regents approved UCSF's clinical and life sciences building on Block 2 in Sept 2024. Amendments to the development agreement, Special Use District and Design for Development, which would raise some height limits, are before the Board of Supervisors.",
       "timeline": [
         {
           "date": "2020-01-30",
-          "event": "Planning Commission certifies the environmental review (No. 20635), approves the Design for Development (Motion 20638) and recommends the zoning, Special Use District and development agreement."
+          "event": "Planning Commission certifies the environmental review (Motion 20635), approves the Design for Development (Motion 20638) and recommends the zoning, Special Use District and development agreement."
         },
         {
-          "date": "2020-04",
-          "event": "Master Plan and development agreement approved (effective May 25, 2020)."
+          "date": "2020-04-21",
+          "event": "Board of Supervisors approves the development agreement (Ordinance 62-20), effective May 24, 2020."
         },
         {
           "date": "2020-10-22",
@@ -299,14 +299,39 @@
         {
           "date": "2022-07-28",
           "event": "Planning Commission drops the phasing-plan rule that one of the five commercial blocks be reserved for life science (Resolution 21156)."
+        },
+        {
+          "date": "2023-10-25",
+          "event": "Building permit issued for the Sophie Maxwell Building, 105 affordable homes at 1212 Maryland St."
+        },
+        {
+          "date": "2024-09-19",
+          "event": "UC Regents approve UCSF's clinical and life sciences building on Block 2: about 300,000 sq ft, 8 stories, 130 ft to the roof."
+        },
+        {
+          "date": "2026-07-16",
+          "event": "Planning publishes an addendum to the environmental review for amendments that would raise some height limits."
+        },
+        {
+          "date": "2026-07-30",
+          "event": "Planning Commission recommends the amended development agreement (Resolution 21945)."
+        },
+        {
+          "date": "2026-08-28",
+          "event": "City marks the Sophie Maxwell Building's permit complete."
+        },
+        {
+          "date": "2026-09-28",
+          "event": "Board's Land Use and Transportation Committee recommends the amended development agreement to the full Board."
         }
       ],
-      "nextMilestone": "Planning decision on the requested amendments; next residential block start.",
+      "nextMilestone": "Board of Supervisors final vote on the amended development agreement and Special Use District.",
       "summary": "A decommissioned power plant on the Central Waterfront being turned into a dense neighborhood of about 2,600 homes, labs and offices, with its 300-foot concrete boiler stack kept as a landmark. It opens a stretch of bayfront that was closed to the public for 150 years.",
-      "massingNotes": "Official only (2026-10-02): the site boundary (Draft EIR Fig. 2-2) and the 300-ft boiler stack (Draft EIR pp. 2-7, 4.D-8). Approved block heights come from the Design for Development (Planning Commission Motion 20638, Jan 30, 2020; new buildings 65 to 240 ft per the hearing minutes) once it can be read; the 2018 Draft EIR blocks are superseded and not drawn. A 2025-26 amendment to the D4D and Special Use District may change heights; check its status.",
+      "massingNotes": "Official only. Drawn now: the site boundary (Draft EIR Fig. 2-2) and the 300-ft boiler stack (Draft EIR pp. 2-7, 4.D-8). Approved block heights are in the Design for Development (Feb 26, 2020; Motion 20638), Figure 6.2.3 Building Height Plan (p. 245): 85 to 240 ft by block, with the existing stack and Unit 3. Not yet traced. The 2018 Draft EIR blocks are superseded and not drawn. Addendum 2 (July 2026) proposes higher limits (Figure 6): +8 ft on residential blocks and more on Blocks 1, 5, 11, 12 and 15; these aren't in force until the Board adopts the amendments. Built: the Sophie Maxwell Building (8 stories). Approved: UCSF Block 2 (8 stories, 130 ft plus an 18-ft screen).",
       "officialLinks": [
         "https://sfplanning.org/potrero-power-station",
-        "https://dogpatchpowerstation.com/"
+        "https://sfplanning.org/sites/default/files/documents/citywide/potreropower_D4D_final.pdf",
+        "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8127453&GUID=CC4AC1DD-BF51-4585-86E8-0A5D44AA3745"
       ],
       "sources": [
         "https://sfplanning.org/potrero-power-station",
@@ -314,21 +339,25 @@
         "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200130_cal_min.pdf",
         "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20201022_cal_min.pdf",
         "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20211021_cal_min.pdf",
-        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20220728_cal_min.pdf"
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20220728_cal_min.pdf",
+        "https://sfplanning.org/sites/default/files/documents/citywide/potreropower_D4D_final.pdf",
+        "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4309068&GUID=8B324A64-AFE8-42E4-A852-95B310939CAF",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=9329583&GUID=19C31465-6E5B-404C-B6F6-D0552D82C0D6",
+        "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8127453&GUID=CC4AC1DD-BF51-4585-86E8-0A5D44AA3745",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=15807606&GUID=2D132AF3-74D6-4275-8AB9-A23CD4E46247",
+        "https://ceqanet.lci.ca.gov/2017112005/9",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202212229038",
+        "https://regents.universityofcalifornia.edu/regmeet/sept24/f5attach6.pdf",
+        "https://regents.universityofcalifornia.edu/minutes/2024/board9.19.pdf"
       ],
       "verify": [
-        "Final site acreage",
-        "Affordable share (Development Agreement)",
-        "Construction and completion status (permits, UCSF and MOHCD records)",
-        "Approved block heights (Design for Development)",
-        "Status of the 2025-26 amendments to the Development Agreement, Design for Development and Special Use District"
+        "Sophie Maxwell Building opening date (press: Oct 2025; permit completed Aug 28, 2026)",
+        "UCSF Block 2 construction start (press: Aug 2025)",
+        "Board of Supervisors final action on the 2026 amendments (Files 260724 and 260770)",
+        "Trace Design for Development Figure 6.2.3 block heights into massing"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "stage": "partial",
-        "stageNote": "Partly built. The Sophie Maxwell Building (affordable, 1212 Maryland St.) opened in Oct 2025. UCSF's Block 2 cancer research building (Herzog & de Meuron) has been under construction since Aug 2025, with below-grade work continuing through 2027. In July 2026 the developer asked the Planning Commission to amend its city agreement (commercial uses, affordable housing delivery, building design and heights).",
-        "developer": "Fifth Space (formerly Associate Capital)",
-        "program.affordablePct": 30,
         "timeline": [
           {
             "date": "2025-08",
@@ -341,13 +370,9 @@
           {
             "date": "2026-02",
             "event": "Foundation and excavation work on Block 2."
-          },
-          {
-            "date": "2026-07",
-            "event": "Developer seeks amendments to the development agreement."
           }
         ],
-        "massing": "Block 2 (UCSF research building, Herzog & de Meuron) under construction; Sophie Maxwell Building (affordable, 1212 Maryland St.) complete, 8 stories.",
+        "massing": "Block 2 (UCSF building, Herzog & de Meuron) under construction since Aug 2025.",
         "sources": [
           "https://sfyimby.com/2026/02/excavation-work-underway-for-potrero-power-station-block-2-san-francisco.html",
           "https://www.sfchronicle.com/realestate/article/one-s-f-s-biggest-developments-changing-plans-22365461.php",
@@ -355,7 +380,7 @@
           "https://sfyimby.com/category/potrero-power-station"
         ]
       },
-      "lastVerified": "2026-10-01"
+      "lastVerified": "2026-10-02"
     },
     {
       "id": "pier-70",
