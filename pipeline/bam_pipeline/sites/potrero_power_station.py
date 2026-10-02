@@ -10,11 +10,11 @@ Source: Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1
 What this is and isn't:
 - The 2018 Draft EIR describes the project as first proposed. The plan approved in 2020
   (the "project variant" in the Responses to Comments, the Design for Development and
-  Planning Code Figure 249.87-4) changed the land use plan and heights (65 to 240 ft).
-  So the block massing here is ILLUSTRATIVE: right site, right block pattern, 2018
-  heights. Replace it with the D4D once it can be read.
-- The site boundary is the same 29-acre site in both (Planning Commission minutes,
-  Jan 30, 2020).
+  Planning Code Figure 249.87-4) modified the land use plan; search summaries put its
+  heights at 65 to 240 ft, not yet confirmed in a primary source. So the block massing
+  here is ILLUSTRATIVE: right site, right block pattern, 2018 heights. Replace it with
+  the D4D once it can be read.
+- The site is the same ~29-acre site (Planning Commission minutes, Jan 30, 2020).
 
 Georeferencing:
 - Figure 2-2: street-name labels in the PDF give street centrelines in figure
@@ -322,7 +322,7 @@ def main() -> None:
             "phase": None,
             "illustrative": True,
             "source": f"illustrative: height district traced from {doc}, {FIG_2_7['figure']}, p. {FIG_2_7['printed_page']}. "
-                      "2018 proposal; the 2020 approved plan differs.",
+                      "2018 proposal; may differ from the plan approved in 2020.",
         }
         if z["block"] == "9":
             props["note"] = "Drawn as an outline: the 2018 plan gives two configurations, with or without the Unit 3 Power Block."
@@ -356,8 +356,8 @@ def main() -> None:
         "properties": {
             "project": PROJECT_ID,
             "illustrative": True,
-            "summary": ("Block massing is illustrative: height districts from the 2018 Draft EIR (Fig. 2-7), which the "
-                        "2020 approved plan revised. Blocks are drawn as podium solids with the upper height limit as a "
+            "summary": ("Block massing is illustrative: height districts proposed in the 2018 Draft EIR (Fig. 2-7), which "
+                        "may differ from the plan approved in 2020. Blocks are drawn as podium solids with the upper height limit as a "
                         "faint envelope; tower positions are not specified in the source."),
             "georeference": {"figure_2_7": fig27.report(), "registered_to": "Figure 2-2 site boundary"},
             "license": "Block shapes: traced from a public SF Planning document. Footprints of the stack and Sophie Maxwell "

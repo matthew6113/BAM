@@ -3,7 +3,7 @@
  "properties": {
   "project": "potrero-power-station",
   "illustrative": true,
-  "summary": "Block massing is illustrative: height districts from the 2018 Draft EIR (Fig. 2-7), which the 2020 approved plan revised. Blocks are drawn as podium solids with the upper height limit as a faint envelope; tower positions are not specified in the source.",
+  "summary": "Block massing is illustrative: height districts proposed in the 2018 Draft EIR (Fig. 2-7), which may differ from the plan approved in 2020. Blocks are drawn as podium solids with the upper height limit as a faint envelope; tower positions are not specified in the source.",
   "georeference": {
    "figure_2_7": {
     "scale_m_per_unit": 0.60402,
@@ -34,7 +34,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -143,7 +143,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -244,7 +244,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -365,7 +365,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -458,7 +458,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -535,7 +535,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -632,7 +632,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -705,7 +705,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -762,7 +762,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -843,7 +843,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -916,7 +916,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -1033,7 +1033,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -1126,7 +1126,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -1219,7 +1219,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -1340,7 +1340,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs.",
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020.",
     "note": "Drawn as an outline: the 2018 plan gives two configurations, with or without the Unit 3 Power Block."
    },
    "geometry": {
@@ -1386,7 +1386,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -1467,7 +1467,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -1568,7 +1568,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -1653,7 +1653,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
@@ -1794,7 +1794,7 @@
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; the 2020 approved plan differs."
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
    },
    "geometry": {
     "type": "MultiPolygon",
