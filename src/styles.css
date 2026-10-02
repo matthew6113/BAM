@@ -229,6 +229,413 @@ body {
   color: inherit;
 }
 
+/* ---------------------------------------------------------------- project index */
+
+.project-index {
+  margin-top: 6px;
+  pointer-events: auto;
+  max-width: 260px;
+}
+
+.index-toggle {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid var(--color-panel-rule);
+  background: var(--color-panel-background);
+  color: var(--color-panel-text);
+  font: 600 12px/1 var(--font-ui);
+  padding: 6px 8px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.index-toggle svg {
+  width: 12px;
+  height: 12px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.project-index ul {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+  background: var(--color-panel-background);
+  border: 1px solid var(--color-panel-rule);
+}
+
+.project-index li button {
+  appearance: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: var(--color-panel-text);
+  font: 13px/1.3 var(--font-ui);
+  text-align: left;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+
+.project-index li + li button {
+  border-top: 1px solid var(--color-panel-rule);
+}
+
+.project-index li button:hover {
+  background: color-mix(in srgb, var(--color-panel-rule) 45%, transparent);
+}
+
+.project-index li button[aria-current='true'] .name {
+  font-weight: 600;
+}
+
+.project-index .stage,
+.map-tooltip span,
+.stage-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: color-mix(in srgb, var(--color-panel-text) 72%, transparent);
+}
+
+.project-index .stage i,
+.map-tooltip i,
+.stage-chip i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex: none;
+}
+
+.project-index .small {
+  margin: 0;
+  padding: 6px 10px 7px;
+  font-size: 11.5px;
+  color: color-mix(in srgb, var(--color-panel-text) 62%, transparent);
+  background: var(--color-panel-background);
+  border: 1px solid var(--color-panel-rule);
+  border-top: 0;
+}
+
+.index-toggle:focus-visible,
+.project-index li button:focus-visible,
+.project-panel :focus-visible {
+  outline: 2px solid var(--color-selection);
+  outline-offset: 1px;
+}
+
+/* ---------------------------------------------------------------- hover tooltip */
+
+.map-tooltip {
+  position: absolute;
+  z-index: 2;
+  transform: translate(12px, -50%);
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px 8px;
+  background: var(--color-panel-background);
+  border: 1px solid var(--color-panel-rule);
+  box-shadow: 0 1px 3px color-mix(in srgb, var(--color-panel-text) 12%, transparent);
+  white-space: nowrap;
+}
+
+.map-tooltip strong {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------------- project panel */
+
+.project-panel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(400px, 45%);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  z-index: 3;
+  background: var(--color-panel-background);
+  border-left: 1px solid var(--color-panel-rule);
+  padding: 18px 22px 28px;
+  animation: panel-in 320ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes panel-in {
+  from {
+    transform: translateX(24px);
+    opacity: 0;
+  }
+}
+
+.with-project .controls {
+  right: calc(min(400px, 45%) + 16px);
+}
+
+.with-project.with-panel .controls {
+  right: 356px;
+}
+
+.with-project .style-toggle {
+  right: calc(min(400px, 45%) + 16px);
+}
+
+.project-panel header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.project-panel h2 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.15;
+  font-weight: 650;
+  letter-spacing: -0.005em;
+}
+
+/* The heading takes focus when the panel opens so screen readers start there; it isn't a control. */
+.project-panel h2:focus,
+.project-panel h2:focus-visible {
+  outline: none;
+}
+
+.project-panel .meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 12px;
+  margin: 6px 0 0;
+  font-size: 13px;
+}
+
+.project-panel .close {
+  appearance: none;
+  flex: none;
+  border: 0;
+  background: none;
+  width: 32px;
+  height: 32px;
+  margin: -4px -8px 0 0;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: var(--color-panel-text);
+}
+
+.project-panel .close svg {
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
+  stroke-width: 1.5;
+}
+
+.project-panel h3 {
+  margin: 0 0 8px;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.project-panel section {
+  border-top: 1px solid var(--color-panel-rule);
+  padding: 14px 0;
+}
+
+.project-panel a {
+  color: inherit;
+  text-decoration-color: color-mix(in srgb, var(--color-panel-text) 35%, transparent);
+  text-underline-offset: 2px;
+}
+
+.project-panel a:hover {
+  text-decoration-color: currentColor;
+}
+
+.project-panel .small {
+  margin: 6px 0 0;
+  font-size: 12.5px;
+  color: color-mix(in srgb, var(--color-panel-text) 72%, transparent);
+}
+
+/* Stage bar: proposed to complete, filled up to the current stage. */
+.stage-bar {
+  margin: 16px 0 14px;
+}
+
+.stage-bar ol {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.stage-bar li {
+  height: 6px;
+  background: var(--color-panel-rule);
+}
+
+.stage-bar li.current {
+  box-shadow: 0 0 0 1px var(--color-panel-background), 0 0 0 2px var(--color-panel-text);
+}
+
+.stage-bar-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  font-size: 11px;
+  color: color-mix(in srgb, var(--color-panel-text) 62%, transparent);
+}
+
+.stage-offramp {
+  margin: 4px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.model-note {
+  margin: 0 0 14px;
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 1.45;
+  background: color-mix(in srgb, var(--color-panel-rule) 35%, var(--color-panel-background));
+}
+
+.model-note strong {
+  font-weight: 600;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 16px;
+  margin: 0;
+}
+
+.numbers div {
+  min-width: 0;
+}
+
+.numbers dt {
+  font-size: 11.5px;
+  color: color-mix(in srgb, var(--color-panel-text) 66%, transparent);
+}
+
+.numbers dd {
+  margin: 1px 0 0;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.project-panel .summary {
+  margin: 0 0 12px;
+  font-family: var(--font-text);
+  font-size: 15.5px;
+  line-height: 1.5;
+}
+
+.project-panel .summary + .small {
+  margin-top: -6px;
+}
+
+.project-panel section > h3 + .summary {
+  margin-top: 0;
+}
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+}
+
+.timeline li {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 8px;
+  padding: 3px 0;
+}
+
+.timeline .when {
+  color: color-mix(in srgb, var(--color-panel-text) 66%, transparent);
+}
+
+.project-panel .links,
+.project-panel .sources {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  font-size: 12.5px;
+  word-break: break-word;
+}
+
+.project-panel .links li,
+.project-panel .sources li {
+  margin: 3px 0;
+}
+
+.prev-next {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  border-top: 1px solid var(--color-panel-rule);
+  padding-top: 14px;
+}
+
+.prev-next button {
+  appearance: none;
+  border: 1px solid var(--color-panel-rule);
+  background: var(--color-panel-background);
+  color: var(--color-panel-text);
+  font: 600 12px/1.2 var(--font-ui);
+  padding: 7px 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Reduced motion: dip to paper, jump, come back up. */
+.dip {
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  background: var(--color-land);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 160ms linear;
+}
+
+.dip.on {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project-panel {
+    animation: none;
+  }
+}
+
 /* ---------------------------------------------------------------- style panel */
 
 .style-toggle {
@@ -430,5 +837,48 @@ body {
 
   .with-panel .controls {
     right: 10px;
+  }
+}
+
+@media (max-width: 719px) {
+  /* The project panel becomes a bottom sheet over the lower half of the map. */
+  .project-panel {
+    top: auto;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    border-left: 0;
+    border-top: 1px solid var(--color-panel-rule);
+    box-shadow: 0 -2px 10px color-mix(in srgb, var(--color-panel-text) 10%, transparent);
+    padding: 14px 16px calc(24px + env(safe-area-inset-bottom));
+    animation-name: sheet-in;
+  }
+
+  @keyframes sheet-in {
+    from {
+      transform: translateY(32px);
+      opacity: 0;
+    }
+  }
+
+  .project-panel h2 {
+    font-size: 19px;
+  }
+
+  .with-project .controls {
+    right: 10px;
+    bottom: calc(50% + 12px);
+  }
+
+  .with-project .credits {
+    bottom: calc(50% + 6px);
+  }
+
+  .with-project .project-index {
+    display: none;
+  }
+
+  .with-project .style-toggle {
+    right: 16px;
   }
 }
