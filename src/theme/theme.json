@@ -38,7 +38,7 @@
     "opacity": {
       "proposed": 0.3,
       "entitlement": 0.5,
-      "entitled": 0.78,
+      "entitled": 0.5,
       "infrastructure": 0.85,
       "construction": 0.92,
       "partial": 0.85,
