@@ -282,11 +282,23 @@
       "timeline": [
         {
           "date": "2020-01-30",
-          "event": "Planning Commission certifies the environmental review, approves the Design for Development and recommends the zoning, Special Use District and development agreement."
+          "event": "Planning Commission certifies the environmental review (No. 20635), approves the Design for Development (Motion 20638) and recommends the zoning, Special Use District and development agreement."
         },
         {
           "date": "2020-04",
           "event": "Master Plan and development agreement approved (effective May 25, 2020)."
+        },
+        {
+          "date": "2020-10-22",
+          "event": "Planning Commission approves Station A (Block 15): the historic hall is rehabilitated with a six-story addition, making an 11-story building with up to 403,750 sq ft of office (Motion 20801)."
+        },
+        {
+          "date": "2021-10-21",
+          "event": "Planning Commission authorizes about 896,323 sq ft of office across the site, from the reserve for projects that build affordable housing (Motion 21019)."
+        },
+        {
+          "date": "2022-07-28",
+          "event": "Planning Commission drops the phasing-plan rule that one of the five commercial blocks be reserved for life science (Resolution 21156)."
         }
       ],
       "nextMilestone": "Planning decision on the requested amendments; next residential block start.",
@@ -299,7 +311,10 @@
       "sources": [
         "https://sfplanning.org/potrero-power-station",
         "https://sfplanning.s3.amazonaws.com/sfmea/2017-011878ENV_DEIR_Volume_1.pdf",
-        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200130_cal_min.pdf"
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200130_cal_min.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20201022_cal_min.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20211021_cal_min.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20220728_cal_min.pdf"
       ],
       "verify": [
         "Final site acreage",
