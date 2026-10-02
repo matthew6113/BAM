@@ -3,6 +3,25 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-02 (official sources only)
+
+Matthew asked for official sources only. For **potrero-power-station**:
+- Press-only facts moved into a new `reported` record that the map never shows: the
+  "partly built" stage and its stage note, the developer name "Fifth Space (formerly Associate Capital)",
+  the 30% affordable share, the 2025 and 2026 timeline entries, and the press sources.
+- `stage`: partial → **entitled**, the latest status official sources confirm so far.
+  It returns to "partly built" once city or UC records confirm the construction and the completed building.
+- `stageNote`: rewritten from the minutes (EIR certified and Design for Development
+  approved Jan 30, 2020) and the existing sfplanning.org source (agreement effective May 25, 2020).
+- `developer`: **California Barrel Company, LLC (Associate Capital)**, the Development
+  Agreement party and project sponsor named in the minutes of Jan 30, 2020 and Sept 5, 2019.
+- `timeline`: added the Jan 30, 2020 Planning Commission approvals.
+- `program.affordablePct`: 30 → null (moved to `reported` until the Development Agreement is read).
+- `verify`: added the affordable share, construction status, approved block heights and the
+  status of the 2025–26 amendments.
+- Massing: the 2018 Draft EIR blocks and the Sophie Maxwell Building are no longer drawn;
+  only the 300-ft stack remains.
+
 ## 2026-10-02 (official sources)
 
 Matthew asked for official sources only. Checked against the San Francisco Planning
