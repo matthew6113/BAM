@@ -1,0 +1,2052 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "potrero-power-station",
+  "illustrative": true,
+  "summary": "Block massing is illustrative: height districts proposed in the 2018 Draft EIR (Fig. 2-7), which may differ from the plan approved in 2020. Blocks are drawn as podium solids with the upper height limit as a faint envelope; tower positions are not specified in the source.",
+  "georeference": {
+   "figure_2_7": {
+    "scale_m_per_unit": 0.60402,
+    "rotation_deg": 4.98,
+    "rms_m": 1.23,
+    "controls": [
+     {
+      "label": "outline inliers (5885 of 9808 pixels)",
+      "residual_m": 1.23
+     }
+    ]
+   },
+   "registered_to": "Figure 2-2 site boundary"
+  },
+  "license": "Block shapes: traced from a public SF Planning document. Footprints of the stack and Sophie Maxwell Building: OpenStreetMap contributors (ODbL 1.0)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "1",
+    "label": "Block 1",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3847598,
+        37.7576084
+       ],
+       [
+        -122.3847576,
+        37.7575867
+       ],
+       [
+        -122.384736,
+        37.7575772
+       ],
+       [
+        -122.3846904,
+        37.7572633
+       ],
+       [
+        -122.3847172,
+        37.7572562
+       ],
+       [
+        -122.3847219,
+        37.757234
+       ],
+       [
+        -122.3847697,
+        37.7572309
+       ],
+       [
+        -122.384849,
+        37.7571986
+       ],
+       [
+        -122.3848459,
+        37.7571005
+       ],
+       [
+        -122.3849268,
+        37.7570844
+       ],
+       [
+        -122.3849501,
+        37.7571102
+       ],
+       [
+        -122.385072,
+        37.7570915
+       ],
+       [
+        -122.3850896,
+        37.7572651
+       ],
+       [
+        -122.3850565,
+        37.7572782
+       ],
+       [
+        -122.3850858,
+        37.7573637
+       ],
+       [
+        -122.3850659,
+        37.7573704
+       ],
+       [
+        -122.3850708,
+        37.7574192
+       ],
+       [
+        -122.3850987,
+        37.7574229
+       ],
+       [
+        -122.385121,
+        37.7575744
+       ],
+       [
+        -122.3851084,
+        37.7575862
+       ],
+       [
+        -122.3847598,
+        37.7576084
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "1",
+    "label": "Block 1",
+    "stage": "entitled",
+    "height_ft": 180,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3854638,
+        37.7575634
+       ],
+       [
+        -122.3854553,
+        37.7575476
+       ],
+       [
+        -122.3853596,
+        37.7575537
+       ],
+       [
+        -122.3853545,
+        37.7575704
+       ],
+       [
+        -122.3851494,
+        37.7575835
+       ],
+       [
+        -122.3851246,
+        37.7573393
+       ],
+       [
+        -122.3851378,
+        37.757333
+       ],
+       [
+        -122.3851334,
+        37.7572896
+       ],
+       [
+        -122.3851186,
+        37.7572796
+       ],
+       [
+        -122.3851103,
+        37.7571983
+       ],
+       [
+        -122.3851303,
+        37.7571915
+       ],
+       [
+        -122.3851286,
+        37.7571752
+       ],
+       [
+        -122.3854231,
+        37.7571619
+       ],
+       [
+        -122.3854288,
+        37.7571506
+       ],
+       [
+        -122.3854698,
+        37.757148
+       ],
+       [
+        -122.3854717,
+        37.7570987
+       ],
+       [
+        -122.385499,
+        37.7570969
+       ],
+       [
+        -122.385539,
+        37.7575586
+       ],
+       [
+        -122.3854638,
+        37.7575634
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "2",
+    "label": "Block 2",
+    "stage": "construction",
+    "height_ft": 125,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.384523,
+        37.7575799
+       ],
+       [
+        -122.3845096,
+        37.7575152
+       ],
+       [
+        -122.3844549,
+        37.7575187
+       ],
+       [
+        -122.3844292,
+        37.7575367
+       ],
+       [
+        -122.3844523,
+        37.7576281
+       ],
+       [
+        -122.3841316,
+        37.757654
+       ],
+       [
+        -122.3841231,
+        37.7576382
+       ],
+       [
+        -122.3840616,
+        37.7576421
+       ],
+       [
+        -122.384029,
+        37.7576606
+       ],
+       [
+        -122.3837762,
+        37.7576768
+       ],
+       [
+        -122.3837677,
+        37.7576609
+       ],
+       [
+        -122.383672,
+        37.757667
+       ],
+       [
+        -122.3836335,
+        37.7572872
+       ],
+       [
+        -122.3836592,
+        37.7572692
+       ],
+       [
+        -122.3837548,
+        37.757263
+       ],
+       [
+        -122.3837562,
+        37.7572083
+       ],
+       [
+        -122.383804,
+        37.7572053
+       ],
+       [
+        -122.3838292,
+        37.7571818
+       ],
+       [
+        -122.3838332,
+        37.7571543
+       ],
+       [
+        -122.3844552,
+        37.7571145
+       ],
+       [
+        -122.3844648,
+        37.7571412
+       ],
+       [
+        -122.3845058,
+        37.7571386
+       ],
+       [
+        -122.3845504,
+        37.7575781
+       ],
+       [
+        -122.384523,
+        37.7575799
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "3",
+    "label": "Block 3",
+    "stage": "entitled",
+    "height_ft": 125,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3826074,
+        37.7577515
+       ],
+       [
+        -122.3826057,
+        37.7577352
+       ],
+       [
+        -122.3825847,
+        37.7577311
+       ],
+       [
+        -122.3825363,
+        37.7572535
+       ],
+       [
+        -122.3825636,
+        37.7572518
+       ],
+       [
+        -122.3825866,
+        37.7573432
+       ],
+       [
+        -122.382737,
+        37.7573336
+       ],
+       [
+        -122.3827553,
+        37.7573105
+       ],
+       [
+        -122.3827493,
+        37.7572508
+       ],
+       [
+        -122.382776,
+        37.7572437
+       ],
+       [
+        -122.3827738,
+        37.757222
+       ],
+       [
+        -122.3833548,
+        37.7571848
+       ],
+       [
+        -122.3834018,
+        37.7575805
+       ],
+       [
+        -122.3833608,
+        37.7575832
+       ],
+       [
+        -122.3833225,
+        37.7576129
+       ],
+       [
+        -122.3833382,
+        37.7576993
+       ],
+       [
+        -122.3826074,
+        37.7577515
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "4",
+    "label": "Block 4",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.381848,
+        37.7575214
+       ],
+       [
+        -122.3818606,
+        37.7575097
+       ],
+       [
+        -122.3818496,
+        37.7574012
+       ],
+       [
+        -122.3819043,
+        37.7573977
+       ],
+       [
+        -122.3819163,
+        37.7573805
+       ],
+       [
+        -122.3819904,
+        37.7573649
+       ],
+       [
+        -122.3819963,
+        37.757288
+       ],
+       [
+        -122.3820305,
+        37.7572859
+       ],
+       [
+        -122.3820778,
+        37.7577525
+       ],
+       [
+        -122.3820647,
+        37.7577588
+       ],
+       [
+        -122.3820674,
+        37.757786
+       ],
+       [
+        -122.3818897,
+        37.7577973
+       ],
+       [
+        -122.381848,
+        37.7575214
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "4",
+    "label": "Block 4",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3821408,
+        37.7574918
+       ],
+       [
+        -122.3821238,
+        37.7574601
+       ],
+       [
+        -122.3820965,
+        37.7574619
+       ],
+       [
+        -122.3820921,
+        37.7574185
+       ],
+       [
+        -122.3820773,
+        37.7574085
+       ],
+       [
+        -122.3820704,
+        37.7572724
+       ],
+       [
+        -122.3821114,
+        37.7572698
+       ],
+       [
+        -122.3821298,
+        37.7573833
+       ],
+       [
+        -122.3822733,
+        37.7573741
+       ],
+       [
+        -122.3822774,
+        37.7573465
+       ],
+       [
+        -122.3822974,
+        37.7573398
+       ],
+       [
+        -122.382276,
+        37.7572647
+       ],
+       [
+        -122.3823238,
+        37.7572616
+       ],
+       [
+        -122.3823323,
+        37.7572775
+       ],
+       [
+        -122.3823528,
+        37.7572762
+       ],
+       [
+        -122.3823707,
+        37.7573843
+       ],
+       [
+        -122.3823664,
+        37.7574774
+       ],
+       [
+        -122.3821408,
+        37.7574918
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "4",
+    "label": "Block 4",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3821015,
+        37.7576472
+       ],
+       [
+        -122.3821141,
+        37.7576355
+       ],
+       [
+        -122.3821086,
+        37.7575812
+       ],
+       [
+        -122.3823763,
+        37.7575751
+       ],
+       [
+        -122.3823801,
+        37.7576131
+       ],
+       [
+        -122.3824085,
+        37.7576222
+       ],
+       [
+        -122.3824118,
+        37.7576547
+       ],
+       [
+        -122.3823367,
+        37.7576595
+       ],
+       [
+        -122.3823173,
+        37.7576717
+       ],
+       [
+        -122.3823266,
+        37.7577639
+       ],
+       [
+        -122.3821216,
+        37.757777
+       ],
+       [
+        -122.3821015,
+        37.7576472
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "5",
+    "label": "Block 5",
+    "stage": "entitled",
+    "height_ft": 180,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3851466,
+        37.7561309
+       ],
+       [
+        -122.3853573,
+        37.7561065
+       ],
+       [
+        -122.385388,
+        37.7561373
+       ],
+       [
+        -122.3854085,
+        37.756136
+       ],
+       [
+        -122.3854162,
+        37.756212
+       ],
+       [
+        -122.3851975,
+        37.756226
+       ],
+       [
+        -122.3851576,
+        37.7562394
+       ],
+       [
+        -122.3851466,
+        37.7561309
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "5",
+    "label": "Block 5",
+    "stage": "entitled",
+    "height_ft": 180,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3852118,
+        37.7568422
+       ],
+       [
+        -122.3851617,
+        37.7563484
+       ],
+       [
+        -122.3851817,
+        37.7563417
+       ],
+       [
+        -122.38518,
+        37.7563254
+       ],
+       [
+        -122.3855417,
+        37.7562968
+       ],
+       [
+        -122.3855455,
+        37.7561983
+       ],
+       [
+        -122.3859009,
+        37.7561755
+       ],
+       [
+        -122.3859168,
+        37.7561964
+       ],
+       [
+        -122.3859373,
+        37.7561951
+       ],
+       [
+        -122.3859531,
+        37.7562159
+       ],
+       [
+        -122.3860021,
+        37.7566989
+       ],
+       [
+        -122.3859138,
+        37.75671
+       ],
+       [
+        -122.3859163,
+        37.7568026
+       ],
+       [
+        -122.3852118,
+        37.7568422
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "6",
+    "label": "Block 6",
+    "stage": "entitled",
+    "height_ft": 300,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3846656,
+        37.7568826
+       ],
+       [
+        -122.384636,
+        37.7568626
+       ],
+       [
+        -122.3846118,
+        37.7566239
+       ],
+       [
+        -122.3846263,
+        37.7565629
+       ],
+       [
+        -122.3847824,
+        37.756542
+       ],
+       [
+        -122.3850085,
+        37.756533
+       ],
+       [
+        -122.3850379,
+        37.756755
+       ],
+       [
+        -122.3849695,
+        37.7567594
+       ],
+       [
+        -122.3849507,
+        37.756777
+       ],
+       [
+        -122.3849567,
+        37.7568367
+       ],
+       [
+        -122.3849321,
+        37.7568656
+       ],
+       [
+        -122.3846656,
+        37.7568826
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "7",
+    "label": "Block 7",
+    "stage": "entitled",
+    "height_ft": 180,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3842738,
+        37.7568858
+       ],
+       [
+        -122.384276,
+        37.7569075
+       ],
+       [
+        -122.3836199,
+        37.7569494
+       ],
+       [
+        -122.3835977,
+        37.7569345
+       ],
+       [
+        -122.3835963,
+        37.756918
+       ],
+       [
+        -122.3839465,
+        37.7568971
+       ],
+       [
+        -122.3839307,
+        37.7567308
+       ],
+       [
+        -122.3837553,
+        37.7567412
+       ],
+       [
+        -122.3837416,
+        37.7565971
+       ],
+       [
+        -122.3835704,
+        37.7566072
+       ],
+       [
+        -122.383566,
+        37.7565542
+       ],
+       [
+        -122.383578,
+        37.756537
+       ],
+       [
+        -122.3837205,
+        37.756517
+       ],
+       [
+        -122.3837262,
+        37.7565057
+       ],
+       [
+        -122.3838577,
+        37.7565137
+       ],
+       [
+        -122.3839392,
+        37.756503
+       ],
+       [
+        -122.3839378,
+        37.7564212
+       ],
+       [
+        -122.3838689,
+        37.7564201
+       ],
+       [
+        -122.3838667,
+        37.7563984
+       ],
+       [
+        -122.3843457,
+        37.7563733
+       ],
+       [
+        -122.3844015,
+        37.7568558
+       ],
+       [
+        -122.3843194,
+        37.756861
+       ],
+       [
+        -122.3842738,
+        37.7568858
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "8",
+    "label": "Block 8",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3829674,
+        37.7567563
+       ],
+       [
+        -122.3828307,
+        37.756765
+       ],
+       [
+        -122.3828159,
+        37.756755
+       ],
+       [
+        -122.3824868,
+        37.7567652
+       ],
+       [
+        -122.3824758,
+        37.7566566
+       ],
+       [
+        -122.3824889,
+        37.7566503
+       ],
+       [
+        -122.382485,
+        37.7566123
+       ],
+       [
+        -122.382526,
+        37.7566097
+       ],
+       [
+        -122.3825318,
+        37.7565984
+       ],
+       [
+        -122.3826485,
+        37.7565964
+       ],
+       [
+        -122.3826586,
+        37.756492
+       ],
+       [
+        -122.3829593,
+        37.7564728
+       ],
+       [
+        -122.3829681,
+        37.7565596
+       ],
+       [
+        -122.382984,
+        37.7565805
+       ],
+       [
+        -122.382978,
+        37.7566573
+       ],
+       [
+        -122.3829931,
+        37.7567383
+       ],
+       [
+        -122.3829674,
+        37.7567563
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "8",
+    "label": "Block 8",
+    "stage": "entitled",
+    "height_ft": 125,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.383051,
+        37.7566308
+       ],
+       [
+        -122.3830089,
+        37.7566226
+       ],
+       [
+        -122.3830165,
+        37.756562
+       ],
+       [
+        -122.3830507,
+        37.7565598
+       ],
+       [
+        -122.3830592,
+        37.7565756
+       ],
+       [
+        -122.383148,
+        37.75657
+       ],
+       [
+        -122.3831537,
+        37.7565587
+       ],
+       [
+        -122.383201,
+        37.7565502
+       ],
+       [
+        -122.3832111,
+        37.7564458
+       ],
+       [
+        -122.3832384,
+        37.756444
+       ],
+       [
+        -122.3832412,
+        37.7564712
+       ],
+       [
+        -122.3832759,
+        37.7564744
+       ],
+       [
+        -122.3832897,
+        37.7566101
+       ],
+       [
+        -122.383256,
+        37.7566177
+       ],
+       [
+        -122.3832588,
+        37.7566448
+       ],
+       [
+        -122.3830537,
+        37.7566579
+       ],
+       [
+        -122.383051,
+        37.7566308
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "8",
+    "label": "Block 8",
+    "stage": "entitled",
+    "height_ft": 125,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3832204,
+        37.7568767
+       ],
+       [
+        -122.3832248,
+        37.7569201
+       ],
+       [
+        -122.383239,
+        37.7569246
+       ],
+       [
+        -122.3832582,
+        37.756978
+       ],
+       [
+        -122.3828481,
+        37.7570042
+       ],
+       [
+        -122.3828322,
+        37.7569834
+       ],
+       [
+        -122.3827707,
+        37.7569873
+       ],
+       [
+        -122.3827661,
+        37.7570095
+       ],
+       [
+        -122.3825337,
+        37.7570243
+       ],
+       [
+        -122.3825309,
+        37.7569972
+       ],
+       [
+        -122.3825099,
+        37.7569931
+       ],
+       [
+        -122.3825118,
+        37.7569438
+       ],
+       [
+        -122.3827862,
+        37.7569372
+       ],
+       [
+        -122.3827843,
+        37.7568499
+       ],
+       [
+        -122.3824972,
+        37.7568683
+       ],
+       [
+        -122.3824923,
+        37.7568194
+       ],
+       [
+        -122.382559,
+        37.7567988
+       ],
+       [
+        -122.3828061,
+        37.7567939
+       ],
+       [
+        -122.3828187,
+        37.7567822
+       ],
+       [
+        -122.3830106,
+        37.7567754
+       ],
+       [
+        -122.38305,
+        37.7567565
+       ],
+       [
+        -122.3833091,
+        37.7567344
+       ],
+       [
+        -122.3833212,
+        37.7568538
+       ],
+       [
+        -122.3832204,
+        37.7568767
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "9",
+    "label": "Block 9",
+    "stage": "entitled",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020.",
+    "note": "Drawn as an outline: the 2018 plan gives two configurations, with or without the Unit 3 Power Block."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3815031,
+        37.7558831
+       ],
+       [
+        -122.3821661,
+        37.7558408
+       ],
+       [
+        -122.3822915,
+        37.757078
+       ],
+       [
+        -122.3816285,
+        37.7571204
+       ],
+       [
+        -122.3815031,
+        37.7558831
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "10",
+    "label": "Block 10",
+    "stage": "entitled",
+    "height_ft": 125,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3845315,
+        37.7558316
+       ],
+       [
+        -122.3845725,
+        37.755829
+       ],
+       [
+        -122.3845845,
+        37.7558118
+       ],
+       [
+        -122.3847212,
+        37.7558031
+       ],
+       [
+        -122.3847239,
+        37.7556937
+       ],
+       [
+        -122.3848742,
+        37.7556841
+       ],
+       [
+        -122.3848833,
+        37.7557054
+       ],
+       [
+        -122.3849259,
+        37.755719
+       ],
+       [
+        -122.3849823,
+        37.756207
+       ],
+       [
+        -122.3848388,
+        37.7562161
+       ],
+       [
+        -122.3848199,
+        37.7562337
+       ],
+       [
+        -122.3848282,
+        37.7563151
+       ],
+       [
+        -122.384581,
+        37.75632
+       ],
+       [
+        -122.3845315,
+        37.7558316
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "11",
+    "label": "Block 11",
+    "stage": "entitled",
+    "height_ft": 125,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3842519,
+        37.7559915
+       ],
+       [
+        -122.3842473,
+        37.7560136
+       ],
+       [
+        -122.3841311,
+        37.7560211
+       ],
+       [
+        -122.3841276,
+        37.7560541
+       ],
+       [
+        -122.3836013,
+        37.7560877
+       ],
+       [
+        -122.3835933,
+        37.7560773
+       ],
+       [
+        -122.3835318,
+        37.7560812
+       ],
+       [
+        -122.3835291,
+        37.7560541
+       ],
+       [
+        -122.383508,
+        37.75605
+       ],
+       [
+        -122.3834943,
+        37.7559143
+       ],
+       [
+        -122.3835279,
+        37.7559067
+       ],
+       [
+        -122.383532,
+        37.7558791
+       ],
+       [
+        -122.3836829,
+        37.7558749
+       ],
+       [
+        -122.3836867,
+        37.7557764
+       ],
+       [
+        -122.3842471,
+        37.7557406
+       ],
+       [
+        -122.384263,
+        37.7557614
+       ],
+       [
+        -122.3842835,
+        37.7557601
+       ],
+       [
+        -122.3843066,
+        37.755988
+       ],
+       [
+        -122.3842519,
+        37.7559915
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "12",
+    "label": "Block 12",
+    "stage": "entitled",
+    "height_ft": 95,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3824017,
+        37.7558585
+       ],
+       [
+        -122.3824496,
+        37.7558554
+       ],
+       [
+        -122.3824518,
+        37.7558771
+       ],
+       [
+        -122.3824261,
+        37.7558952
+       ],
+       [
+        -122.382439,
+        37.7559544
+       ],
+       [
+        -122.3825626,
+        37.755952
+       ],
+       [
+        -122.3825871,
+        37.7559231
+       ],
+       [
+        -122.3825794,
+        37.7558471
+       ],
+       [
+        -122.3832014,
+        37.7558074
+       ],
+       [
+        -122.3832212,
+        37.7560027
+       ],
+       [
+        -122.3830651,
+        37.7560236
+       ],
+       [
+        -122.3830682,
+        37.7561218
+       ],
+       [
+        -122.3826518,
+        37.7561538
+       ],
+       [
+        -122.3824252,
+        37.7561574
+       ],
+       [
+        -122.3824017,
+        37.7558585
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "13",
+    "label": "Block 13",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3869458,
+        37.7577964
+       ],
+       [
+        -122.3869373,
+        37.7577805
+       ],
+       [
+        -122.3868827,
+        37.757784
+       ],
+       [
+        -122.3868641,
+        37.7578726
+       ],
+       [
+        -122.386831,
+        37.7578856
+       ],
+       [
+        -122.3868343,
+        37.7579182
+       ],
+       [
+        -122.386766,
+        37.7579226
+       ],
+       [
+        -122.3867608,
+        37.7579393
+       ],
+       [
+        -122.3866457,
+        37.7579576
+       ],
+       [
+        -122.386263,
+        37.757982
+       ],
+       [
+        -122.3862534,
+        37.7579553
+       ],
+       [
+        -122.3861577,
+        37.7579615
+       ],
+       [
+        -122.3861525,
+        37.7579782
+       ],
+       [
+        -122.3861194,
+        37.7579912
+       ],
+       [
+        -122.385907,
+        37.7579993
+       ],
+       [
+        -122.385898,
+        37.7579781
+       ],
+       [
+        -122.3858775,
+        37.7579794
+       ],
+       [
+        -122.3857938,
+        37.7571546
+       ],
+       [
+        -122.3859362,
+        37.7571345
+       ],
+       [
+        -122.3859529,
+        37.7570952
+       ],
+       [
+        -122.3860002,
+        37.7570868
+       ],
+       [
+        -122.3860026,
+        37.7570429
+       ],
+       [
+        -122.386857,
+        37.7569883
+       ],
+       [
+        -122.3868616,
+        37.7569661
+       ],
+       [
+        -122.3869573,
+        37.75696
+       ],
+       [
+        -122.3869589,
+        37.7569763
+       ],
+       [
+        -122.3869874,
+        37.7569854
+       ],
+       [
+        -122.3870604,
+        37.7577727
+       ],
+       [
+        -122.3869458,
+        37.7577964
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "14",
+    "label": "Block 14",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: height district traced from Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-7, Proposed Height District Plan, p. 2-20. 2018 proposal; may differ from the plan approved in 2020."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.385551,
+        37.7580166
+       ],
+       [
+        -122.385542,
+        37.7579954
+       ],
+       [
+        -122.3854982,
+        37.7579709
+       ],
+       [
+        -122.385496,
+        37.7579491
+       ],
+       [
+        -122.3854534,
+        37.7579355
+       ],
+       [
+        -122.3854512,
+        37.7579138
+       ],
+       [
+        -122.3853943,
+        37.7578956
+       ],
+       [
+        -122.385391,
+        37.757863
+       ],
+       [
+        -122.3854525,
+        37.7578591
+       ],
+       [
+        -122.3854634,
+        37.7578311
+       ],
+       [
+        -122.3855312,
+        37.7578213
+       ],
+       [
+        -122.3855263,
+        37.7577724
+       ],
+       [
+        -122.3853827,
+        37.7577816
+       ],
+       [
+        -122.3853814,
+        37.7578363
+       ],
+       [
+        -122.3853472,
+        37.7578385
+       ],
+       [
+        -122.3853177,
+        37.7578185
+       ],
+       [
+        -122.3853264,
+        37.7577688
+       ],
+       [
+        -122.3854011,
+        37.7577586
+       ],
+       [
+        -122.385386,
+        37.7576776
+       ],
+       [
+        -122.3855158,
+        37.7576693
+       ],
+       [
+        -122.3855243,
+        37.7576852
+       ],
+       [
+        -122.385559,
+        37.7576884
+       ],
+       [
+        -122.3855921,
+        37.758014
+       ],
+       [
+        -122.385551,
+        37.7580166
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "landmark",
+    "label": "Stack",
+    "name": "Unit 3 Boiler Stack",
+    "stage": "complete",
+    "height_ft": 300,
+    "base_ft": 0,
+    "illustrative": false,
+    "source": "height: Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), pp. 2-7 and 4.D-8 ('the reinforced concrete Boiler Stack ... at 300 feet in height'); footprint: OpenStreetMap w678950945 via Overture 2026-09-23.1",
+    "note": "OpenStreetMap footprint mapped at 91.44 m (300 ft), matching the Draft EIR's 300-ft Boiler Stack (pp. 2-7, 4.D-8) and its position south of the Unit 3 Power Block (Fig. 2-7).",
+    "osm": "w678950945"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.381913,
+       37.755992
+      ],
+      [
+       -122.3819019,
+       37.7559814
+      ],
+      [
+       -122.3818841,
+       37.7559726
+      ],
+      [
+       -122.3818637,
+       37.7559691
+      ],
+      [
+       -122.3818375,
+       37.755973
+      ],
+      [
+       -122.38182,
+       37.7559822
+      ],
+      [
+       -122.3818111,
+       37.7559905
+      ],
+      [
+       -122.3818027,
+       37.7560057
+      ],
+      [
+       -122.3818015,
+       37.7560223
+      ],
+      [
+       -122.3818074,
+       37.7560381
+      ],
+      [
+       -122.3818193,
+       37.756051
+      ],
+      [
+       -122.3818367,
+       37.7560603
+      ],
+      [
+       -122.381857,
+       37.7560644
+      ],
+      [
+       -122.3818764,
+       37.756063
+      ],
+      [
+       -122.3819013,
+       37.7560526
+      ],
+      [
+       -122.3819144,
+       37.7560397
+      ],
+      [
+       -122.3819211,
+       37.756024
+      ],
+      [
+       -122.3819206,
+       37.7560074
+      ],
+      [
+       -122.381913,
+       37.755992
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Sophie Maxwell Building",
+    "stage": "complete",
+    "height_ft": null,
+    "base_ft": 0,
+    "illustrative": false,
+    "source": "footprint: OpenStreetMap w1499496425@1 via Overture 2026-09-23.1; completion (Oct 2025) per data/projects.json",
+    "note": "Height not yet sourced (reported as 8 stories); drawn flat until a height in feet is cited."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3835855,
+       37.7569186
+      ],
+      [
+       -122.3839465,
+       37.7568971
+      ],
+      [
+       -122.3839307,
+       37.7567308
+      ],
+      [
+       -122.3837553,
+       37.7567412
+      ],
+      [
+       -122.3837416,
+       37.7565971
+      ],
+      [
+       -122.3835561,
+       37.7566081
+      ],
+      [
+       -122.3835855,
+       37.7569186
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

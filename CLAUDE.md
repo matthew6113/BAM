@@ -58,10 +58,13 @@ Workflow
   tiles, fonts, glyphs, manifest). Needs uv and Tippecanoe 2.79.0. Raw downloads are cached
   in `data/raw/`; individual steps are `make fetch|process|buildings|tiles|fonts|glyphs|manifest`.
 - `npm run dev`: dev server on http://127.0.0.1:5173 (style panel: Alt+Shift+S or `?style=1`).
-- `npm test`: schema check of `data/projects.json` plus theme and contrast tests.
+- `make sites`: re-trace project boundaries and massing from source documents (outputs committed).
+- `npm test`: schema check of `data/projects.json`, traced-geometry provenance, theme and contrast tests.
+- `npm run e2e`: Playwright interaction tests (controls, fly-in, panel, deep links).
 - `npx tsc --noEmit`: type-check. `npm run build`: production build.
-- `npm run screenshots`: Playwright screenshots of key views into `docs/screenshots/m1/`
-  (headless Chromium with SwiftShader WebGL; set `SHOTS_DIR` to write elsewhere).
+- `npm run screenshots`: Playwright screenshots of key views into `docs/screenshots/m1/` and
+  `m2/` (headless Chromium with SwiftShader WebGL; set `SHOTS_DIR` to write elsewhere).
+  Fly-in frames use `?test=1&at=<seconds>`, which holds the flight still.
 - Deploy: push to `main`. `.github/workflows/deploy.yml` builds the data and site and publishes
   to GitHub Pages (https://matthew6113.github.io/BAM/, base path `/BAM/` via `BASE_PATH`).
   Pull requests build and test only. Every tile file must stay under 100 MB.

@@ -11,8 +11,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "glyphs": "node scripts/build-glyphs.mjs",
-    "screenshots": "playwright test tests/screenshots.spec.ts",
-    "e2e": "playwright test tests/interaction.spec.ts"
+    "screenshots": "playwright test tests/screenshots",
+    "e2e": "playwright test tests/interaction.spec.ts tests/project.spec.ts"
   },
   "dependencies": {
     "maplibre-gl": "6.11.2",
@@ -22,6 +22,7 @@
   "devDependencies": {
     "@playwright/test": "1.56.1",
     "@preact/preset-vite": "2.10.6",
+    "@types/geojson": "7946.0.16",
     "@types/node": "22.20.4",
     "ajv": "8.20.0",
     "ajv-formats": "3.0.1",

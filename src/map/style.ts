@@ -1,5 +1,6 @@
 import type { StyleSpecification, LayerSpecification, ExpressionSpecification } from 'maplibre-gl';
 import type { Theme } from '../theme/theme';
+import { contextFilter, projectLayers, projectSources, type Selection } from './projectLayers';
 import {
   CONTEXT_EXTRUSION_MIN_ZOOM,
   DETAIL_MAX_ZOOM,
@@ -14,6 +15,8 @@ export type ViewMode = '2d' | '3d';
 
 export interface StyleOptions {
   mode: ViewMode;
+  /** The project being flown to or viewed, if any. */
+  selection?: Selection | null;
 }
 
 const OSM_CREDIT =
@@ -38,6 +41,7 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
   const fonts = fontStacks(theme.type.mapLabels);
   const w = theme.map.shorelineWidth;
   const showSaltPonds = L.saltPonds;
+  const selection = opts.selection ?? null;
 
   const waterFilter: ExpressionSpecification = showSaltPonds
     ? ['==', ['geometry-type'], 'Polygon']
@@ -224,20 +228,23 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
       'source-layer': 'buildings',
       minzoom: z,
       ...(z < DETAIL_MAX_ZOOM ? { maxzoom: z + 1 } : {}),
-      filter: ['has', 'h'],
-      layout: { visibility: visible(L.buildings && opts.mode === '3d') },
+      // With a project selected: only the surroundings, which fade in once the camera lands.
+      filter: contextFilter(selection),
+      layout: { visibility: visible(L.buildings && (opts.mode === '3d' || !!selection)) },
       paint: {
         'fill-extrusion-color': c.contextExtrusion,
         'fill-extrusion-height': ['*', ['get', 'h'], theme.map.heightExaggeration],
         'fill-extrusion-base': 0,
-        'fill-extrusion-opacity': [
+        'fill-extrusion-opacity': selection && selection.phase !== 'landed' ? 0 : [
           'interpolate', ['linear'], ['zoom'],
           CONTEXT_EXTRUSION_MIN_ZOOM, 0,
           CONTEXT_EXTRUSION_MIN_ZOOM + 1, theme.opacity.contextExtrusion,
         ],
+        'fill-extrusion-opacity-transition': { duration: 800, delay: 0 },
         'fill-extrusion-vertical-gradient': true,
       },
     })),
+    ...projectLayers(theme, selection, fonts),
     waterLabel(1, 6),
     waterLabel(2, 7.8),
     waterLabel(3, 10),
@@ -272,6 +279,7 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
         ]),
       ),
       labels: { type: 'geojson', data: LABELS_URL },
+      ...projectSources(selection),
     },
     layers,
   };

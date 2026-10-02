@@ -11,6 +11,11 @@ dependencies = [
   "pyproj>=3.7",
   "pyogrio>=0.11",
   "fonttools[woff]>=4.59",
+  # Tracing project boundaries and blocks from official plan PDFs (bam_pipeline.trace)
+  "pdfplumber>=0.11",
+  "pypdf>=5",
+  "opencv-python-headless>=4.10",
+  "pillow>=11",
 ]
 
 [tool.uv]

@@ -44,6 +44,19 @@ For example, the Potrero Power Station Mixed-Use Development Project Draft EIR (
 Planning, Case No. 2017-011878ENV, Oct 2018) is at
 https://sfplanning.s3.amazonaws.com/sfmea/2017-011878ENV_DEIR_Volume_1.pdf.
 
+## Traced project geometry (`data/boundaries/`, `data/massing/`)
+
+| Project | What | Source | License / notes |
+|---|---|---|---|
+| Potrero Power Station | Site boundary and five sub-areas | Draft EIR (above), Figure 2-2, p. 2-6: vector shapes, georeferenced to OpenStreetMap street centrelines (13 intersections, RMS 3.4 m) | Public record of the City and County of San Francisco. The shapes are traced facts; the PDF itself is not redistributed (it is downloaded by checksum into the git-ignored `data/raw/docs/`). |
+| Potrero Power Station | Block height districts (illustrative) | Draft EIR, Figure 2-7, p. 2-20, registered onto the Figure 2-2 boundary (RMS 1.2 m) | As above. Heights are the 2018 proposal and are labelled illustrative in the data and the panel. |
+| Potrero Power Station | Footprints of the Unit 3 stack and the Sophie Maxwell Building | OpenStreetMap ways 678950945 (stack) and 1499496425 (Sophie Maxwell), via Overture | ODbL 1.0, covered by the map's OpenStreetMap credit. |
+
+Every boundary file names its source document, page, accuracy and georeferencing
+residuals; every massing feature names its source. The in-map credit line notes that
+project geometry is traced from public planning documents, and each project panel links
+the document.
+
 ## Fonts
 
 From google/fonts at commit `9710da1eacb3be272583c3224dcb70f9da6eadbb`:

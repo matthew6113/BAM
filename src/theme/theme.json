@@ -29,7 +29,23 @@
   "opacity": {
     "buildings": 0.85,
     "buildingsRegional": 0.6,
-    "contextExtrusion": 0.45
+    "contextExtrusion": 0.45,
+    "siteFill": 0.14,
+    "massingEnvelope": 0.16
+  },
+  "massing": {
+    "note": "Extrusion opacity per stage: the more certain a building, the more solid it is drawn.",
+    "opacity": {
+      "proposed": 0.3,
+      "entitlement": 0.5,
+      "entitled": 0.5,
+      "infrastructure": 0.85,
+      "construction": 0.92,
+      "partial": 0.85,
+      "complete": 0.95,
+      "paused": 0.75,
+      "distressed": 0.75
+    }
   },
   "type": {
     "ui": "Libre Franklin",

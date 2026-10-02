@@ -3,6 +3,19 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-02
+
+- **potrero-power-station, camera:** added (`center` [-122.3838, 37.7566], zoom 16.4,
+  pitch 58, bearing -30). A display setting, not a fact; tuned from screenshots.
+- **potrero-power-station, traced geometry:** new `data/boundaries/potrero-power-station.geojson`
+  (site and five sub-areas, Draft EIR Fig. 2-2, p. 2-6) and
+  `data/massing/potrero-power-station.geojson` (illustrative height districts, Fig. 2-7,
+  p. 2-20; stack 300 ft, pp. 2-7 and 4.D-8). Source:
+  https://sfplanning.s3.amazonaws.com/sfmea/2017-011878ENV_DEIR_Volume_1.pdf
+- **schema:** projects may carry an optional `camera`.
+
+`lastVerified` was not changed: no project facts were re-checked.
+
 ## 2026-10-01
 
 Approved by Matthew after the planning audit (`docs/PLANNING-AUDIT.md`).

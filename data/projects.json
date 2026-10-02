@@ -251,6 +251,7 @@
         -122.384,
         37.756
       ],
+      "camera": { "center": [-122.3838, 37.7566], "zoom": 16.4, "pitch": 58, "bearing": -30 },
       "acres": 29,
       "acresNote": "The Draft EIR (Oct 2018, p. S-2) describes an approximately 29.0-acre site made up of five sub-areas: the 21-acre Power Station sub-area, a 4.8-acre PG&E sub-area, a 2.9-acre Port sub-area, a 0.2-acre Southern sub-area and a small City sub-area. Perkins&Will's ~21 acres matches the Power Station sub-area.",
       "program": {
