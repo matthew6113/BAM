@@ -54,13 +54,14 @@ jobs:
 
       - run: echo "$HOME/.local/tippecanoe/bin" >> "$GITHUB_PATH"
 
-      # The tiles, glyphs and fonts only change when the pipeline does.
+      # The tiles, glyphs and fonts only change when the pipeline does. Project tracing
+      # (sites/, trace.py) writes committed GeoJSON, not tiles, so it doesn't count.
       - name: Restore generated map data
         id: generated-cache
         uses: actions/cache@v6
         with:
           path: public/generated
-          key: generated-${{ env.OVERTURE_RELEASE }}-${{ hashFiles('pipeline/**', 'scripts/build-glyphs.mjs', 'package-lock.json') }}
+          key: generated-${{ env.OVERTURE_RELEASE }}-${{ hashFiles('pipeline/**', '!pipeline/bam_pipeline/sites/**', '!pipeline/bam_pipeline/trace.py', 'scripts/build-glyphs.mjs', 'package-lock.json') }}
 
       - name: Restore the Overture extract
         id: raw-cache
