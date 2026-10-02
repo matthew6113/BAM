@@ -35,8 +35,8 @@ test('a deep link opens the project with its full sources list', async ({ page }
   await expect(page).toHaveTitle('Potrero Power Station · Bay Area megaprojects');
   await expect(panel.getByRole('heading', { level: 2 })).toBeFocused();
   await expect(panel.locator('.sources li')).toHaveCount(POTRERO.sources.length);
-  await expect(panel).toContainText('Illustrative massing');
   await expect(panel).toContainText('Approximate boundary');
+  await expect(panel).toContainText('held back until official records confirm them');
   await expect(panel).toContainText(`Last verified Oct 1, 2026`);
   await expect.poll(() => phase(page), { timeout: 60_000 }).toBe('risen');
   const cam = await camera(page);
@@ -107,10 +107,15 @@ test('the full-motion fly-in draws the boundary, lands, then raises the blocks',
   await expect.poll(() => phase(page), { timeout: 30_000 }).toBe('risen');
   const cam = await camera(page);
   expect(cam.pitch).toBeCloseTo(POTRERO.camera!.pitch, 0);
-  const rise = await page.evaluate(() =>
-    (window as any).__map.getFeatureState({ source: 'project-massing', id: 1 }).rise,
-  );
-  expect(rise).toBe(1);
+  // Every building still to be built has finished rising (the stack is already built).
+  const rises = await page.evaluate(async () => {
+    const map = (window as any).__map;
+    const data = await map.getSource('project-massing').getData();
+    return data.features
+      .filter((f: any) => f.properties.stage !== 'complete')
+      .map((f: any) => map.getFeatureState({ source: 'project-massing', id: f.properties.fid }).rise);
+  });
+  expect(rises.every((r: number) => r === 1)).toBe(true);
 });
 
 test('on a phone the panel is a bottom sheet and the site stays in view above it', async ({ page }) => {
@@ -140,4 +145,11 @@ test('Whole Bay closes the project and goes back to the whole region', async ({ 
   const cam = await camera(page);
   expect(cam.pitch).toBe(0);
   expect(cam.zoom).toBeLessThan(11);
+});
+
+test('a project not yet on the map does not open its unchecked record', async ({ page }) => {
+  await page.goto('/p/mission-rock?test=1');
+  await ready(page);
+  await expect.poll(() => new URL(page.url()).pathname).toBe('/');
+  await expect(page.locator('.project-panel')).toHaveCount(0);
 });

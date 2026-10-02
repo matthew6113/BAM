@@ -251,68 +251,95 @@
         -122.384,
         37.756
       ],
-      "camera": { "center": [-122.3838, 37.7566], "zoom": 16.4, "pitch": 58, "bearing": -30 },
+      "camera": {
+        "center": [
+          -122.3838,
+          37.7566
+        ],
+        "zoom": 16.4,
+        "pitch": 58,
+        "bearing": -30
+      },
       "acres": 29,
       "acresNote": "The Draft EIR (Oct 2018, p. S-2) describes an approximately 29.0-acre site made up of five sub-areas: the 21-acre Power Station sub-area, a 4.8-acre PG&E sub-area, a 2.9-acre Port sub-area, a 0.2-acre Southern sub-area and a small City sub-area. Perkins&Will's ~21 acres matches the Power Station sub-area.",
       "program": {
         "homes": 2601,
         "affordableHomes": null,
-        "affordablePct": 30,
-        "officeLabSqft": 1600000,
+        "affordablePct": null,
+        "officeLabSqft": 1459978,
         "commercialSqftTotal": null,
-        "retailSqft": null,
+        "retailSqft": 99464,
         "hotelKeys": 250,
         "openSpaceAcres": 6.9,
         "notes": "Office and lab space, retail, PDR/arts uses, and adaptive reuse of historic Station A."
       },
-      "developer": "Fifth Space (formerly Associate Capital)",
+      "developer": "California Barrel Company, LLC (Associate Capital)",
       "publicPartners": [
         "SF Planning (development agreement)"
       ],
-      "stage": "partial",
-      "stageNote": "Partly built. The Sophie Maxwell Building (affordable, 1212 Maryland St.) opened in Oct 2025. UCSF's Block 2 cancer research building (Herzog & de Meuron) has been under construction since Aug 2025, with below-grade work continuing through 2027. In July 2026 the developer asked the Planning Commission to amend its city agreement (commercial uses, affordable housing delivery, building design and heights).",
+      "stage": "entitled",
+      "stageNote": "Approved. The Planning Commission certified the environmental review and approved the Design for Development on Jan 30, 2020, and the development agreement took effect on May 25, 2020. Construction status is being confirmed against city records.",
       "timeline": [
+        {
+          "date": "2020-01-30",
+          "event": "Planning Commission certifies the environmental review, approves the Design for Development and recommends the zoning, Special Use District and development agreement."
+        },
         {
           "date": "2020-04",
           "event": "Master Plan and development agreement approved (effective May 25, 2020)."
-        },
-        {
-          "date": "2025-08",
-          "event": "Construction starts on Block 2 (UCSF research building)."
-        },
-        {
-          "date": "2025-10",
-          "event": "Sophie Maxwell Building opens."
-        },
-        {
-          "date": "2026-02",
-          "event": "Foundation and excavation work on Block 2."
-        },
-        {
-          "date": "2026-07",
-          "event": "Developer seeks amendments to the development agreement."
         }
       ],
       "nextMilestone": "Planning decision on the requested amendments; next residential block start.",
       "summary": "A decommissioned power plant on the Central Waterfront being turned into a dense neighborhood of about 2,600 homes, labs and offices, with its 300-foot concrete boiler stack kept as a landmark. It opens a stretch of bayfront that was closed to the public for 150 years.",
-      "massingNotes": "Known pieces: Station A (historic, adaptive reuse); 300-ft reinforced concrete boiler stack (landmark; Draft EIR pp. 2-7, 4.D-8); Unit 3 power block (~250-key hotel); Block 2 seven-story lab (Herzog & de Meuron); Block 7 high-rise rental, 325 units (Foster + Partners); Sophie Maxwell, 8 stories (complete); Power Station Park at the center. Trace blocks and heights from SF Planning's Master Plan and Design Standards.",
+      "massingNotes": "Official only (2026-10-02): the site boundary (Draft EIR Fig. 2-2) and the 300-ft boiler stack (Draft EIR pp. 2-7, 4.D-8). Approved block heights come from the Design for Development (Planning Commission Motion 20638, Jan 30, 2020; new buildings 65 to 240 ft per the hearing minutes) once it can be read; the 2018 Draft EIR blocks are superseded and not drawn. A 2025-26 amendment to the D4D and Special Use District may change heights; check its status.",
       "officialLinks": [
         "https://sfplanning.org/potrero-power-station",
         "https://dogpatchpowerstation.com/"
       ],
       "sources": [
-        "https://sfyimby.com/2026/02/excavation-work-underway-for-potrero-power-station-block-2-san-francisco.html",
-        "https://www.sfchronicle.com/realestate/article/one-s-f-s-biggest-developments-changing-plans-22365461.php",
         "https://sfplanning.org/potrero-power-station",
-        "https://perkinswill.com/project/potrero-power-station/",
-        "https://sfyimby.com/category/potrero-power-station",
-        "https://sfplanning.s3.amazonaws.com/sfmea/2017-011878ENV_DEIR_Volume_1.pdf"
+        "https://sfplanning.s3.amazonaws.com/sfmea/2017-011878ENV_DEIR_Volume_1.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200130_cal_min.pdf"
       ],
       "verify": [
         "Final site acreage",
-        "Block-by-block heights",
-        "Outcome of July 2026 amendment request"
+        "Affordable share (Development Agreement)",
+        "Construction and completion status (permits, UCSF and MOHCD records)",
+        "Approved block heights (Design for Development)",
+        "Status of the 2025-26 amendments to the Development Agreement, Design for Development and Special Use District"
       ],
+      "reported": {
+        "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
+        "stage": "partial",
+        "stageNote": "Partly built. The Sophie Maxwell Building (affordable, 1212 Maryland St.) opened in Oct 2025. UCSF's Block 2 cancer research building (Herzog & de Meuron) has been under construction since Aug 2025, with below-grade work continuing through 2027. In July 2026 the developer asked the Planning Commission to amend its city agreement (commercial uses, affordable housing delivery, building design and heights).",
+        "developer": "Fifth Space (formerly Associate Capital)",
+        "program.affordablePct": 30,
+        "timeline": [
+          {
+            "date": "2025-08",
+            "event": "Construction starts on Block 2 (UCSF research building)."
+          },
+          {
+            "date": "2025-10",
+            "event": "Sophie Maxwell Building opens."
+          },
+          {
+            "date": "2026-02",
+            "event": "Foundation and excavation work on Block 2."
+          },
+          {
+            "date": "2026-07",
+            "event": "Developer seeks amendments to the development agreement."
+          }
+        ],
+        "massing": "Block 2 (UCSF research building, Herzog & de Meuron) under construction; Sophie Maxwell Building (affordable, 1212 Maryland St.) complete, 8 stories.",
+        "sources": [
+          "https://sfyimby.com/2026/02/excavation-work-underway-for-potrero-power-station-block-2-san-francisco.html",
+          "https://www.sfchronicle.com/realestate/article/one-s-f-s-biggest-developments-changing-plans-22365461.php",
+          "https://perkinswill.com/project/potrero-power-station/",
+          "https://sfyimby.com/category/potrero-power-station"
+        ]
+      },
       "lastVerified": "2026-10-01"
     },
     {

@@ -172,6 +172,9 @@ export function ProjectPanel({ project, onClose, onPrev, onNext, prevName, nextN
           <p class="small">Still being checked: {project.verify.map((v) => v.charAt(0).toLowerCase() + v.slice(1)).join('; ')}.</p>
         )}
         {typeof mMeta.summary === 'string' && <p class="small">{mMeta.summary}</p>}
+        {'reported' in project && (
+          <p class="small">Details reported in the press are held back until official records confirm them.</p>
+        )}
       </section>
 
       {(onPrev || onNext) && (

@@ -4,16 +4,16 @@ Source: Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1
 (SF Planning Case No. 2017-011878ENV, October 2018).
 
 - Boundary and sub-areas: Figure 2-2 (p. 2-6), vector shapes in the PDF.
-- Blocks and height limits: Figure 2-7, Proposed Height District Plan (p. 2-20), a raster.
+- Blocks and height limits (2018 proposal, not drawn): Figure 2-7, Proposed Height District Plan (p. 2-20), a raster.
 - Stack height (300 ft): pp. 2-7 and 4.D-8.
 
 What this is and isn't:
 - The 2018 Draft EIR describes the project as first proposed. The plan approved in 2020
   (the "project variant" in the Responses to Comments, the Design for Development and
-  Planning Code Figure 249.87-4) modified the land use plan; search summaries put its
-  heights at 65 to 240 ft, not yet confirmed in a primary source. So the block massing
-  here is ILLUSTRATIVE: right site, right block pattern, 2018 heights. Replace it with
-  the D4D once it can be read.
+  Planning Code Figure 249.87-4) modified the land use plan and limits new buildings to
+  65 to 240 ft (Planning Commission minutes, Jan 30, 2020).
+  The 2018 blocks are superseded, so they are traced but not drawn (DRAW_DEIR_BLOCKS):
+  the map shows official, current facts only. Draw the D4D's blocks once it can be read.
 - The site is the same ~29-acre site (Planning Commission minutes, Jan 30, 2020).
 
 Georeferencing:
@@ -104,6 +104,11 @@ SOPHIE_MAXWELL = {"name": "Sophie Maxwell Building"}
 
 # Per-block stage, from data/projects.json (stageNote). Everything else is entitled.
 STAGES = {"2": "construction"}
+
+# Official sources only (Matthew, 2026-10-02). The Draft EIR's height districts are the 2018
+# proposal, superseded by the Design for Development approved in 2020, so they are traced (to
+# check against the D4D later) but not drawn. True emits them again, labelled illustrative.
+DRAW_DEIR_BLOCKS = False
 
 
 def _streets() -> gpd.GeoDataFrame:
@@ -305,7 +310,7 @@ def main() -> None:
     }
 
     features = []
-    for z in sorted(zones, key=lambda z: (int(z["block"]), z["height_ft"] or 0)):
+    for z in sorted(zones, key=lambda z: (int(z["block"]), z["height_ft"] or 0)) if DRAW_DEIR_BLOCKS else []:
         geom = z["utm"].difference(sophie_utm) if z["block"] == "7" else z["utm"]
         if geom.is_empty or geom.area < 20:
             continue
@@ -339,29 +344,23 @@ def main() -> None:
         },
         "geometry": mapping(stack.geometry.iloc[0]),
     })
-    features.append({
-        "type": "Feature",
-        "properties": {
-            "kind": "building", "label": "Sophie Maxwell Building", "stage": "complete", "height_ft": None, "base_ft": 0,
-            "illustrative": False,
-            "source": f"footprint: OpenStreetMap {sophie['osm'].iloc[0]} via Overture {config.OVERTURE_RELEASE}; "
-                      "completion (Oct 2025) per data/projects.json",
-            "note": "Height not yet sourced (reported as 8 stories); drawn flat until a height in feet is cited.",
-        },
-        "geometry": mapping(sophie.geometry.iloc[0]),
-    })
-
     massing_fc = {
         "type": "FeatureCollection",
         "properties": {
             "project": PROJECT_ID,
-            "illustrative": True,
-            "summary": ("Block massing is illustrative: height districts proposed in the 2018 Draft EIR (Fig. 2-7), which "
-                        "may differ from the plan approved in 2020. Blocks are drawn as podium solids with the upper height limit as a "
-                        "faint envelope; tower positions are not specified in the source."),
-            "georeference": {"figure_2_7": fig27.report(), "registered_to": "Figure 2-2 site boundary"},
-            "license": "Block shapes: traced from a public SF Planning document. Footprints of the stack and Sophie Maxwell "
-                       "Building: OpenStreetMap contributors (ODbL 1.0).",
+            "illustrative": DRAW_DEIR_BLOCKS,
+            "summary": (
+                "Block massing is illustrative: height districts proposed in the 2018 Draft EIR (Fig. 2-7), which "
+                "may differ from the plan approved in 2020. Blocks are drawn as podium solids with the upper height "
+                "limit as a faint envelope; tower positions are not specified in the source."
+                if DRAW_DEIR_BLOCKS else
+                "Only official, current facts are drawn: the 300-ft boiler stack. Block massing waits for the "
+                "Design for Development approved in 2020; the 2018 Draft EIR blocks are superseded and not drawn."
+            ),
+            **({"georeference": {"figure_2_7": fig27.report(), "registered_to": "Figure 2-2 site boundary"}}
+               if DRAW_DEIR_BLOCKS else {}),
+            "license": ("Block shapes: traced from a public SF Planning document. " if DRAW_DEIR_BLOCKS else "")
+                       + "Stack footprint: OpenStreetMap contributors (ODbL 1.0).",
         },
         "features": features,
     }

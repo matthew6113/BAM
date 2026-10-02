@@ -124,15 +124,6 @@ test('07 traced boundary and blocks from above', async ({ page }) => {
 // Options for review: one change each from the landed view.
 const OPTIONS: { name: string; tweak: string }[] = [
   {
-    // Shipped: the spec's "light fill" for entitled buildings, so Block 2 (under construction) reads as more certain.
-    name: 'a-entitled-light-fill-0.5',
-    tweak: '',
-  },
-  {
-    name: 'a-entitled-solid-0.78',
-    tweak: "window.__map.setPaintProperty('project-massing-entitled', 'fill-extrusion-opacity', 0.78)",
-  },
-  {
     name: 'b-camera-from-southeast',
     tweak: "window.__map.jumpTo({ center: [-122.3838, 37.7566], zoom: 16.4, pitch: 58, bearing: 30 })",
   },

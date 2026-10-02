@@ -142,6 +142,15 @@
           "type": "object",
           "required": ["note"],
           "properties": { "note": { "type": "string" } }
+        },
+        "reported": {
+          "description": "Facts with only press or other non-official sources, held out of the map until an official source confirms them. Keys mirror the project's own fields (dotted for nested ones).",
+          "type": "object",
+          "required": ["note", "sources"],
+          "properties": {
+            "note": { "type": "string" },
+            "sources": { "type": "array", "items": { "type": "string", "format": "uri" } }
+          }
         }
       }
     }

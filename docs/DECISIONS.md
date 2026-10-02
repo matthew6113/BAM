@@ -89,3 +89,13 @@ Choices that shape the map, in the order they were made. The evidence is in
 
 **Deep links:** `/p/{id}`. The build writes `p/{id}/index.html` (with the project's title and summary) and `404.html`, since Pages has no rewrites.
 
+## 2026-10-02: official sources only (Matthew)
+
+Matthew: "I want only official." What it means here:
+- **Sources:** every fact shown traces to a public agency or body: adopted plans, hearing minutes, permits, official GIS, the published code. A test enforces this for mapped projects (`src/projects/official.ts`).
+- **Press-only facts** move to the project's `reported` record, which the map never shows. For Potrero that is the 2025–26 construction and opening dates, the 2026 amendment request, the "Fifth Space" name and the 30% affordable share. The panel says that reported details are held back.
+- **Potrero's stage** is "entitled" until official records (permits, UCSF, the Mayor's Office of Housing) confirm construction and the completed building. Press reports put it at "partly built".
+- **Potrero's blocks:** the 2018 Draft EIR blocks are superseded and are not drawn. The map shows the traced site boundary and the 300-ft stack only. The approved block heights come from the Design for Development once it can be read. The Planning Commission minutes of Jan 30, 2020 confirm the approved range for new buildings: 65 to 240 ft.
+- **Unmapped projects:** they don't open from a deep link. Their records haven't been checked against official sources yet.
+- **Network:** Matthew is broadening the environment's network access so the official sites (sfplanning.org, data.sfgov.org, the code, CEQAnet, UC Regents) can be read.
+

@@ -3,6 +3,45 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-02 (official sources only)
+
+Matthew asked for official sources only. For **potrero-power-station**:
+- Press-only facts moved into a new `reported` record that the map never shows: the
+  "partly built" stage and its stage note, the developer name "Fifth Space (formerly Associate Capital)",
+  the 30% affordable share, the 2025 and 2026 timeline entries, and the press sources.
+- `stage`: partial → **entitled**, the latest status official sources confirm so far.
+  It returns to "partly built" once city or UC records confirm the construction and the completed building.
+- `stageNote`: rewritten from the minutes (EIR certified and Design for Development
+  approved Jan 30, 2020) and the existing sfplanning.org source (agreement effective May 25, 2020).
+- `developer`: **California Barrel Company, LLC (Associate Capital)**, the Development
+  Agreement party and project sponsor named in the minutes of Jan 30, 2020 and Sept 5, 2019.
+- `timeline`: added the Jan 30, 2020 Planning Commission approvals.
+- `program.affordablePct`: 30 → null (moved to `reported` until the Development Agreement is read).
+- `verify`: added the affordable share, construction status, approved block heights and the
+  status of the 2025–26 amendments.
+- Massing: the 2018 Draft EIR blocks and the Sophie Maxwell Building are no longer drawn;
+  only the 300-ft stack remains.
+
+## 2026-10-02 (official sources)
+
+Matthew asked for official sources only. Checked against the San Francisco Planning
+Commission's minutes of January 30, 2020, the hearing that certified the EIR and
+approved the Design for Development (Motion 20638), the Special Use District, the
+zoning map change and the Development Agreement:
+https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200130_cal_min.pdf
+
+- **potrero-power-station, program.officeLabSqft:** 1,600,000 → **1,459,978** (gross sq ft
+  of "commercial office/laboratory use", minutes items 13 and 14a, p. 9). The 1.6 million
+  figure came from press coverage and has no official source.
+- **potrero-power-station, program.retailSqft:** null → **99,464** (gross sq ft of
+  "commercial-retail use", same items).
+- **potrero-power-station, sources:** added the minutes.
+- Confirmed by the same minutes, unchanged: 2,601 homes, 250 hotel rooms, 6.9 acres of
+  open space, approximately 29 acres. The minutes also give the approved height range
+  for new buildings (65 to 240 ft) and the new height district (65/240-PPS on map HT08).
+
+`lastVerified` was not changed: the rest of the record has not been re-checked yet.
+
 ## 2026-10-02
 
 - **potrero-power-station, camera:** added (`center` [-122.3838, 37.7566], zoom 16.4,

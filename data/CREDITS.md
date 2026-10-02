@@ -49,8 +49,11 @@ https://sfplanning.s3.amazonaws.com/sfmea/2017-011878ENV_DEIR_Volume_1.pdf.
 | Project | What | Source | License / notes |
 |---|---|---|---|
 | Potrero Power Station | Site boundary and five sub-areas | Draft EIR (above), Figure 2-2, p. 2-6: vector shapes, georeferenced to OpenStreetMap street centrelines (13 intersections, RMS 3.4 m) | Public record of the City and County of San Francisco. The shapes are traced facts; the PDF itself is not redistributed (it is downloaded by checksum into the git-ignored `data/raw/docs/`). |
-| Potrero Power Station | Block height districts (illustrative) | Draft EIR, Figure 2-7, p. 2-20, registered onto the Figure 2-2 boundary (RMS 1.2 m) | As above. Heights are the 2018 proposal and are labelled illustrative in the data and the panel. |
-| Potrero Power Station | Footprints of the Unit 3 stack and the Sophie Maxwell Building | OpenStreetMap ways 678950945 (stack) and 1499496425 (Sophie Maxwell), via Overture | ODbL 1.0, covered by the map's OpenStreetMap credit. |
+| Potrero Power Station | Footprint of the Unit 3 boiler stack | OpenStreetMap way 678950945, via Overture; height 300 ft from the Draft EIR, pp. 2-7 and 4.D-8 | ODbL 1.0, covered by the map's OpenStreetMap credit. |
+
+The Draft EIR's 2018 height districts (Figure 2-7) are still traced by the pipeline, to
+check against the approved Design for Development, but are not drawn: they were
+superseded in 2020.
 
 Every boundary file names its source document, page, accuracy and georeferencing
 residuals; every massing feature names its source. The in-map credit line notes that
