@@ -51,7 +51,7 @@ EXTRACTS: dict[str, tuple[str, str, list[str], pc.Expression | None]] = {
     "segments": (
         "transportation",
         "segment",
-        ["id", "geometry", "bbox", "subtype", "class", "names", "rail_flags"],
+        ["id", "geometry", "bbox", "subtype", "class", "subclass", "names", "rail_flags"],
         (pc.field("subtype") == "rail")
         | (pc.field("subtype") == "water")
         | ((pc.field("subtype") == "road") & pc.field("class").isin(["motorway", "trunk"])),

@@ -1,12 +1,15 @@
 import region from '../generated/region.json';
 import projects from '../../data/projects.json';
 
-/** Where the PMTiles archives live. Defaults to the dev server; set VITE_TILE_BASE_URL for object storage. */
-export const TILE_BASE_URL: string =
-  (import.meta.env.VITE_TILE_BASE_URL as string | undefined) ?? `${location.origin}/generated/tiles`;
+/** Absolute URL of the site root, including the base path on GitHub Pages (/BAM/). */
+const SITE = `${location.origin}${import.meta.env.BASE_URL}`;
 
-export const GLYPHS_URL = `${location.origin}/generated/glyphs/{fontstack}/{range}.pbf`;
-export const LABELS_URL = `${location.origin}/generated/data/labels.geojson`;
+/** Where the PMTiles archives live. Defaults to the site itself; set VITE_TILE_BASE_URL for object storage. */
+export const TILE_BASE_URL: string =
+  (import.meta.env.VITE_TILE_BASE_URL as string | undefined) ?? `${SITE}generated/tiles`;
+
+export const GLYPHS_URL = `${SITE}generated/glyphs/{fontstack}/{range}.pbf`;
+export const LABELS_URL = `${SITE}generated/data/labels.geojson`;
 
 export const OVERTURE_RELEASE = region.overtureRelease;
 
@@ -31,5 +34,8 @@ export const MIN_ZOOM = 6;
 export const MAX_ZOOM = 18;
 /** Overview building tiles cover z6-z12; detail tiles (with heights) take over at z13. */
 export const DETAIL_MIN_ZOOM = 13;
+export const DETAIL_MAX_ZOOM = 15;
+/** One detail archive per zoom keeps every file under 100 MB. */
+export const DETAIL_ZOOMS = [13, 14, 15] as const;
 /** Existing buildings extrude (faintly) only this close in, and only in 3D mode. */
 export const CONTEXT_EXTRUSION_MIN_ZOOM = 14;

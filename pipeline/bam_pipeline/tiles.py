@@ -1,9 +1,10 @@
 """Tile the processed layers into PMTiles with Tippecanoe (2.79.0).
 
-Three archives in public/generated/tiles/:
+Archives in public/generated/tiles/:
 - base.pmtiles: region mask, water, shoreline, context lines (z4-z14)
 - buildings-overview-{variant}.pmtiles: every footprint as shape only (z6-z12)
-- buildings-detail.pmtiles: full footprints with mapped heights, attribute h (z13-z15)
+- buildings-z13/z14/z15.pmtiles: full footprints with mapped heights, attribute h, one
+  archive per zoom (z15 is overzoomed beyond 15)
 
 The overview has two variants for the M1 look review:
 - "all": no tile size limit. Every building is kept; sub-pixel footprints are
@@ -12,7 +13,7 @@ The overview has two variants for the M1 look review:
 - "light": the standard 500 KB tile budget, dropping buildings in the densest
   areas. Lighter, but dense cores thin out.
 
-    uv run --directory pipeline python -m bam_pipeline.tiles [base] [overview-all] [overview-light] [detail]
+    uv run --directory pipeline python -m bam_pipeline.tiles [base] [overview-all] [overview-light] [buildings-z13] ...
 """
 
 from __future__ import annotations
@@ -83,15 +84,18 @@ BUILDS = {
         "--drop-densest-as-needed",
         str(B / "buildings.fgb"),
     ],
-    "buildings-detail": [
-        "-Z13", "-z15", "-l", "buildings", "-y", "h",
-        "--no-feature-limit", "--no-tile-size-limit",
-        str(B / "buildings.fgb"),
-    ],
+    # Detail tiles are split by zoom so every file stays under 100 MB (GitHub's per-file limit).
+    **{
+        f"buildings-z{z}": [
+            f"-Z{z}", f"-z{z}", "-l", "buildings", "-y", "h",
+            "--no-feature-limit", "--no-tile-size-limit",
+            str(B / "buildings.fgb"),
+        ]
+        for z in (13, 14, 15)
+    },
 }
 
-ALIASES = {"overview-all": "buildings-overview-all", "overview-light": "buildings-overview-light",
-           "detail": "buildings-detail"}
+ALIASES = {"overview-all": "buildings-overview-all", "overview-light": "buildings-overview-light"}
 
 
 def main(argv: list[str]) -> None:

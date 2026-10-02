@@ -2,7 +2,9 @@ import type { StyleSpecification, LayerSpecification, ExpressionSpecification } 
 import type { Theme } from '../theme/theme';
 import {
   CONTEXT_EXTRUSION_MIN_ZOOM,
+  DETAIL_MAX_ZOOM,
   DETAIL_MIN_ZOOM,
+  DETAIL_ZOOMS,
   GLYPHS_URL,
   LABELS_URL,
   TILE_BASE_URL,
@@ -132,6 +134,18 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
       paint: { 'line-color': c.shoreline, 'line-width': shorelineWidth },
     },
     {
+      id: 'context-highway',
+      type: 'line',
+      source: 'base',
+      'source-layer': 'context',
+      filter: ['==', ['get', 'kind'], 'highway'],
+      layout: { visibility: visible(L.context), 'line-join': 'round', 'line-cap': 'round' },
+      paint: {
+        'line-color': c.context,
+        'line-width': ['interpolate', ['exponential', 1.5], ['zoom'], 9, 0.4, 12, 0.8, 16, 2],
+      },
+    },
+    {
       id: 'context-freeway',
       type: 'line',
       source: 'base',
@@ -140,7 +154,7 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
       layout: { visibility: visible(L.context), 'line-join': 'round', 'line-cap': 'round' },
       paint: {
         'line-color': c.context,
-        'line-width': ['interpolate', ['exponential', 1.5], ['zoom'], 8, 0.5, 12, 1.2, 16, 3],
+        'line-width': ['interpolate', ['exponential', 1.5], ['zoom'], 7, 0.45, 12, 1.2, 16, 3],
       },
     },
     {
@@ -152,7 +166,12 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
       layout: { visibility: visible(L.context), 'line-join': 'round' },
       paint: {
         'line-color': c.context,
-        'line-width': ['interpolate', ['linear'], ['zoom'], 9, 0.6, 14, 1.4],
+        // Transit lines read a little stronger than freight track.
+        'line-width': [
+          'interpolate', ['linear'], ['zoom'],
+          8, ['case', ['==', ['get', 'transit'], true], 0.7, 0.5],
+          14, ['case', ['==', ['get', 'transit'], true], 1.5, 1.1],
+        ],
         'line-dasharray': [4, 2],
       },
     },
@@ -186,22 +205,25 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
         ],
       },
     },
-    {
-      id: 'buildings',
+    // Street-level buildings come from one archive per zoom (see pipeline tiles.py).
+    ...DETAIL_ZOOMS.map((z): LayerSpecification => ({
+      id: `buildings-z${z}`,
       type: 'fill',
-      source: 'buildings-detail',
+      source: `buildings-z${z}`,
       'source-layer': 'buildings',
-      minzoom: DETAIL_MIN_ZOOM,
+      minzoom: z,
+      ...(z < DETAIL_MAX_ZOOM ? { maxzoom: z + 1 } : {}),
       layout: { visibility: visible(L.buildings) },
       paint: { 'fill-color': c.buildings, 'fill-opacity': theme.opacity.buildings },
-    },
-    {
-      // Faint context massing for buildings with a mapped or measured height (3D mode only).
-      id: 'buildings-context-3d',
+    })),
+    // Faint context massing for buildings with a mapped or measured height (3D mode only).
+    ...DETAIL_ZOOMS.filter((z) => z >= CONTEXT_EXTRUSION_MIN_ZOOM).map((z): LayerSpecification => ({
+      id: `buildings-context-3d-z${z}`,
       type: 'fill-extrusion',
-      source: 'buildings-detail',
+      source: `buildings-z${z}`,
       'source-layer': 'buildings',
-      minzoom: CONTEXT_EXTRUSION_MIN_ZOOM,
+      minzoom: z,
+      ...(z < DETAIL_MAX_ZOOM ? { maxzoom: z + 1 } : {}),
       filter: ['has', 'h'],
       layout: { visibility: visible(L.buildings && opts.mode === '3d') },
       paint: {
@@ -215,7 +237,7 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
         ],
         'fill-extrusion-vertical-gradient': true,
       },
-    },
+    })),
     waterLabel(1, 6),
     waterLabel(2, 7.8),
     waterLabel(3, 10),
@@ -243,11 +265,12 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
         url: `pmtiles://${TILE_BASE_URL}/${overview}.pmtiles`,
         attribution: OSM_CREDIT,
       },
-      'buildings-detail': {
-        type: 'vector',
-        url: `pmtiles://${TILE_BASE_URL}/buildings-detail.pmtiles`,
-        attribution: OSM_CREDIT,
-      },
+      ...Object.fromEntries(
+        DETAIL_ZOOMS.map((z) => [
+          `buildings-z${z}`,
+          { type: 'vector' as const, url: `pmtiles://${TILE_BASE_URL}/buildings-z${z}.pmtiles`, attribution: OSM_CREDIT },
+        ]),
+      ),
       labels: { type: 'geojson', data: LABELS_URL },
     },
     layers,

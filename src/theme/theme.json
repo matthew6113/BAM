@@ -53,7 +53,7 @@
     "saltPonds": true,
     "outsideRegion": true,
     "labels": true,
-    "context": false,
+    "context": true,
     "overview": "all"
   }
 }

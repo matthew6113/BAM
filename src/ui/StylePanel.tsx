@@ -52,7 +52,7 @@ const LAYER_LABELS: Record<Exclude<keyof Theme['layers'], 'overview'>, string> =
   saltPonds: 'Salt ponds drawn as water',
   outsideRegion: 'Tint land outside the nine counties',
   labels: 'Labels',
-  context: 'Freeways, rail and ferries',
+  context: 'Freeways, highways, railroads and ferries',
 };
 
 function ColorField({ label, value, onInput }: { label: string; value: string; onInput: (v: string) => void }) {

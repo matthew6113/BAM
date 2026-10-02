@@ -184,8 +184,10 @@ def build_shoreline(water: gpd.GeoDataFrame) -> None:
 
 # ---------------------------------------------------------------- context lines
 
-RAIL_TRANSIT_CLASSES = {"subway", "light_rail", "tram", "monorail"}
-RAIL_TRANSIT_NAMES = ("caltrain", "smart")
+# Railroads: transit (BART, Muni, VTA, cable cars, SFO AirTrain) and active standard-gauge
+# railroads (Caltrain, SMART, Union Pacific and BNSF lines, Capitol Corridor/ACE track).
+# Narrow-gauge, funicular and "unknown" track (often heritage or disused) are left out.
+RAIL_CLASSES = {"subway", "light_rail", "tram", "monorail", "standard_gauge"}
 RAIL_EXCLUDE_FLAGS = {"is_abandoned", "is_disused", "is_under_construction"}
 
 
@@ -200,29 +202,42 @@ def _flag_values(flags) -> set[str]:
     return out
 
 
+def _rail_minzoom(cls: str, name: str, km: float) -> int:
+    """Named lines and long stretches from the regional view; yards and spurs only up close."""
+    if cls != "standard_gauge" or name or km >= 1.0:
+        return 8
+    return 13 if km < 0.3 else 11
+
+
 def build_context(region) -> None:
     s = gpd.read_parquet(config.RAW / "segments.parquet")
     s["name"] = s["names"].apply(lambda n: (n or {}).get("primary") or "")
+    s["km"] = s.geometry.to_crs(EQUAL_AREA).length.to_numpy() / 1000
     feats = []
-    counts = {"freeway": 0, "rail": 0, "ferry": 0}
+    counts = {"freeway": 0, "highway": 0, "rail": 0, "ferry": 0}
     prepared = shapely.prepared.prep(region.buffer(0.02))
-    for geom, subtype, cls, name, flags in zip(s.geometry, s["subtype"], s["class"], s["name"], s["rail_flags"]):
-        kind = None
-        if subtype == "road" and cls == "motorway":
-            kind = "freeway"
-        elif subtype == "rail":
+    rows = zip(s.geometry, s["subtype"], s["class"], s["subclass"], s["name"], s["rail_flags"], s["km"])
+    for geom, subtype, cls, subclass, name, flags, km in rows:
+        if subtype == "road" and cls in ("motorway", "trunk"):
+            kind = "freeway" if cls == "motorway" else "highway"
+            # On- and off-ramps only once interchanges are legible.
+            minzoom = 12 if subclass == "link" else (7 if cls == "motorway" else 9)
+        elif subtype == "rail" and cls in RAIL_CLASSES:
             if _flag_values(flags) & RAIL_EXCLUDE_FLAGS:
                 continue
-            if cls in RAIL_TRANSIT_CLASSES or (
-                cls == "standard_gauge" and any(k in name.lower() for k in RAIL_TRANSIT_NAMES)
-            ):
-                kind = "rail"
+            kind = "rail"
+            minzoom = _rail_minzoom(cls, name, km)
         elif subtype == "water":
-            kind = "ferry"
-        if kind is None or not prepared.intersects(geom):
+            kind, minzoom = "ferry", 8
+        else:
+            continue
+        if not prepared.intersects(geom):
             continue
         counts[kind] += 1
-        feats.append(_feature(geom, {"kind": kind}, 8 if kind == "freeway" else 9))
+        props = {"kind": kind}
+        if kind == "rail":
+            props["transit"] = cls != "standard_gauge" or "caltrain" in name.lower() or "smart" in name.lower()
+        feats.append(_feature(geom, props, minzoom))
     _write_geojsonl(config.BUILD / "context.geojsonl", feats)
     print(f"[process] context: {counts}")
 
