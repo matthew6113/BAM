@@ -258,9 +258,9 @@
         "homes": 2601,
         "affordableHomes": null,
         "affordablePct": 30,
-        "officeLabSqft": 1600000,
+        "officeLabSqft": 1459978,
         "commercialSqftTotal": null,
-        "retailSqft": null,
+        "retailSqft": 99464,
         "hotelKeys": 250,
         "openSpaceAcres": 6.9,
         "notes": "Office and lab space, retail, PDR/arts uses, and adaptive reuse of historic Station A."
@@ -306,7 +306,8 @@
         "https://sfplanning.org/potrero-power-station",
         "https://perkinswill.com/project/potrero-power-station/",
         "https://sfyimby.com/category/potrero-power-station",
-        "https://sfplanning.s3.amazonaws.com/sfmea/2017-011878ENV_DEIR_Volume_1.pdf"
+        "https://sfplanning.s3.amazonaws.com/sfmea/2017-011878ENV_DEIR_Volume_1.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200130_cal_min.pdf"
       ],
       "verify": [
         "Final site acreage",
