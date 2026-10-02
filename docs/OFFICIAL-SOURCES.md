@@ -47,16 +47,28 @@ Hearing packets are often under the case number, e.g. `cpcpackets/2014-002541ENV
 
 ## Findings so far
 
-- `docs/official-research/` holds per-project tables (data value, official value, status,
-  source and page, verbatim quote) for the 11 other San Francisco projects, checked
-  2026-10-02. They aren't applied to `data/projects.json` yet; see "Next" below.
-- Potrero (from the minutes): an official post-approval record, now in the timeline:
-  Station A (Block 15) approved Oct 22, 2020 (Motion 20801, 11 stories, up to 403,750 sq ft
-  office); about 896,323 sq ft office authorized site-wide Oct 21, 2021 (Motion 21019); the
-  life-science block rule removed Jul 28, 2022 (Res. 21156). Also seen, not yet used: an
-  informational hearing on Jul 15, 2021 on a ~237-ft, 27-story, 325-home tower on Block 7
-  (2017-011878PHA-04), and an EIR addendum for the re-phasing (Sept 9, 2020). The EIR
-  certification (Jan 30, 2020) is No. 20635.
+All 25 projects have been checked against official sources (2026-10-02). Per-project tables
+(data value, official value, status, source and page, verbatim quote, best boundary source)
+are in `docs/official-research/`:
+- `candlestick-shipyard-treasure-island.md`, `pier70-mission-rock-mission-bay-piers30-32.md`,
+  `india-basin-balboa-stonestown-parkmerced.md`: a first pass from SF Planning's bucket, then
+  an "Update with full network access" section that supersedes it.
+- `brisbane-willow-parkline-north-bayshore.md`, `related-downtown-west-moffett-the-rise.md`,
+  `concord-coliseum-alameda-brooklyn-suisun.md`.
+
+Only Potrero has been applied to `data/projects.json`. Every other record has conflicts
+(superseded programs, wrong dates, press-only stages) and press-only facts that belong in
+`reported`.
+
+Open policy calls for Matthew:
+- Several cities run official sites on non-government domains (`concordreuseproject.org`,
+  `suisunexpansion.com`, `acgov.org`, the Legistar and Granicus hosts, ArcGIS org paths,
+  `sfrecpark.org`). They need adding to `src/projects/official.ts`, ideally path-scoped for
+  shared vendor hosts.
+- DBI permit data is a proxy for construction and completion (it records permit dates, not
+  openings). Several stages (Balboa Reservoir "under construction") rest on it.
+- Some city sites block scripts with Akamai (Oakland, Alameda, Santa Clara, San Jose,
+  Sunnyvale, Cupertino, Suisun); their Legistar systems work instead.
 
 ## Potrero Power Station: done (2026-10-02)
 
