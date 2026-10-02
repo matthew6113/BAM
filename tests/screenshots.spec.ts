@@ -39,7 +39,8 @@ const SHOTS: Shot[] = [
   },
   { name: 'options/c-salt-ponds-as-water', path: '/?test=1&salt=1#map=11/37.47/-122.05' },
   { name: 'options/c-salt-ponds-as-land', path: '/?test=1&salt=0#map=11/37.47/-122.05' },
-  { name: 'options/d-context-lines-on', path: '/?test=1&context=1#map=10.6/37.79/-122.30' },
+  { name: 'options/d-context-lines-off', path: '/?test=1&context=0#map=10.6/37.79/-122.30' },
+  { name: '09-oakland-context-z13', path: '/?test=1#map=13.2/37.805/-122.29' },
   { name: 'options/e-outside-region-tint-on', path: '/?test=1&mask=1#map=8.6/38.05/-121.75' },
   { name: 'options/e-outside-region-tint-off', path: '/?test=1&mask=0#map=8.6/38.05/-121.75' },
 ];

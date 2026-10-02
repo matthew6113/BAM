@@ -49,8 +49,8 @@
     },
     "segments.parquet": {
       "rows": 22325,
-      "bytes": 5817783,
-      "sha256": "b6ebc2fc40ceff3357ffcc2ae6e9e50230599abe659df3785549eb5c31933d80"
+      "bytes": 5834539,
+      "sha256": "f695307b73e6fe70a663f6230b819289ba98bef51c20c2baf3d8217cf2c12006"
     },
     "water.parquet": {
       "rows": 127059,
@@ -60,12 +60,8 @@
   },
   "outputs": {
     "tiles/base.pmtiles": {
-      "bytes": 5755921,
-      "sha256": "5a442139cbdf5884865107c902c16e0f4b6734c91c4667eacbe0c397bec7e7e3"
-    },
-    "tiles/buildings-detail.pmtiles": {
-      "bytes": 168999083,
-      "sha256": "4b7899eed1b44dc0e3d44a198a004ae87b97172fe82dfc78c55502641d0012cb"
+      "bytes": 6157944,
+      "sha256": "68ac7024e38319b71cf3abae880817a7118ad20e2ce1807880fa350a72f6f037"
     },
     "tiles/buildings-overview-all.pmtiles": {
       "bytes": 80096127,
@@ -74,6 +70,18 @@
     "tiles/buildings-overview-light.pmtiles": {
       "bytes": 19998775,
       "sha256": "1bb6972533c9c40fef836a18e8b4f6244517729a0c18957e1f7e83bab8d7a460"
+    },
+    "tiles/buildings-z13.pmtiles": {
+      "bytes": 47314912,
+      "sha256": "2e7345e4a96c755e7eda9c9fba374f1253dd0c5ec0c0daa09f57e4d0290de156"
+    },
+    "tiles/buildings-z14.pmtiles": {
+      "bytes": 55938461,
+      "sha256": "f9cbefdbfd4c695621ac12a23ff1b69c1b83b47b80aadc610a9e048f67f133a6"
+    },
+    "tiles/buildings-z15.pmtiles": {
+      "bytes": 66052837,
+      "sha256": "2a83657b52e85a9f3962baea9eee4b309de831cbe883aca3e630a141ab487d25"
     },
     "data/labels.geojson": {
       "bytes": 10545,
