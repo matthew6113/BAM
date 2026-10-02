@@ -111,3 +111,95 @@ Documents: CPC `2008.0021EMTZW.pdf` (memo for the 2010-12-16 hearing plus the 20
 Boundary leads: bounds and Assessor's Blocks on DEIR_VI-01 p.16 (Vidal Dr, Font Blvd, Pinto Ave and Serrano Dr to the north; 19th Ave and Junipero Serra Blvd to the east; Brotherhood Way to the south; Lake Merced Blvd to the west; Blocks 7303, 7303A, 7308–7311, 7314, 7316, 7319–7326, 7330–7345, 7333 A-B, 7333E, 7353–7373). Full block/lot list on EMTZW.pdf p.1. DEIR Figure III.1 (page III.5).
 
 Still open: the development agreement (`default.sfplanning.org/publications_reports/parkmerced/R18273_PM_DA.pdf`, blocked); the EIR certification motion and date; 2015 Phase 1 records.
+
+---
+
+# Update with full network access (2026-10-02)
+
+Read from the Board of Supervisors, MOHCD, Rec and Park, DBI permits (DataSF `i98e-djp9`; data.sfgov.org now redirects to data.sf.gov) and the Assessor-Recorder stamps on recorded agreements. Where this section and the one above differ, this section is newer.
+
+Shorthand: BOS = `https://sfbos.org/sites/default/files/`, BOSA = `https://sfbos.archive.sf.gov/sites/default/files/`, MEDIA = `https://media.api.sf.gov/documents/`.
+
+Caution: SF Planning's India Basin page carries an HTML comment (invisible to visitors) with stale text, including "became effective on October 3, 2019". Strip comments before quoting sfplanning.org pages.
+
+## india-basin
+
+| field | official value | status | source | quote |
+|---|---|---|---|---|
+| Board approvals | Ord. 251-18 (SUD/zoning, file 180680), 252-18 (DA, 180681), 261-18 (General Plan, 180816); first reading 2018-10-16, final passage 2018-10-23 | NEW | BOS o0251-18.pdf p30; o0252-18.pdf p13; o0261-18.pdf p7 | "Date Passed: October 23, 2018" |
+| DA recorded | 2019-10-16, DOC-2019-K843986-00 | NEW | https://sfplanning.s3.amazonaws.com/default/files/devagreements/indiabasin/IndiaBasin_Development_Agreement_Recorded.pdf p1 | "Wednesday, OCT 16, 2019 10:27:01" |
+| 700 Innes | developer owns 14.7 ac, options on 2.4 more | CONFIRMED | o0252-18.pdf p2 | "owns the approximately 14. 7 acre site along Innes Street ... holds options to purchase an additional 2.4 acres" |
+| program | up to 1,575 units; 209,106 sf commercial; 15.5 ac publicly accessible open space in the DA | CONFIRMED | o0252-18.pdf p2 | "up to 1,575 dwelling units, approximately 676,052 square feet (15.5 acres) of publicly accessible open space" |
+| affordablePct | 25% | NEW | o0252-18.pdf p1 | "including 25% affordable housing and 11 acres of parks and open space" |
+| 900 Innes | park project broke ground 2021; 900 Innes opened Oct 2024 | CONFLICT (data: 2022–2024) | sfrecpark.org/m/newsflash/home/detail/2951; …/detail/2258 | "The India Basin Waterfront Park project broke ground in 2021. The park's southern portion at 900 Innes Ave. opened in fall 2024" |
+| Shoreline Park | groundbreaking 2025-08-19; completion expected 2028 | CONFLICT (data: 2025–2027) | sfrecpark.org detail/2951; sf.gov release (below); sfrecpark.org/CivicAlerts.aspx?AID=2535 | "began in fall 2025 and is anticipated to be completed in 2028" |
+| combined park | 10-acre India Basin Waterfront Park | NEW | sf.gov release | "turning it into 10 acres of vibrant public space" |
+| private site | DBI grading permits for 700 Innes (filed 2022) still in plan check; none issued | NEW | DBI 202205033459, 202204212681 | "clearing, grubbing, rough grading & soil import on the site of 700 innes." |
+| 2026 default; "distressed" | no official record | UNCONFIRMED | — | — |
+
+sf.gov release: https://www.sf.gov/news-mayor-lurie-breaks-ground-on-final-phase-of-india-basin-waterfront-park-project-upgrading-open-space-in-bayview-hunters-points
+
+Official stage: entitled (no issued permits on the private site). Boundary: DataSF Special Use Districts (`5yf5-ms5f`, "Public Domain U.S. Government"), feature "India Basin SUD" (~30.2 ac, development site only; parks need separate geometry). Fallback: recorded DA Exhibits A, B, D.
+
+## balboa-reservoir
+
+| field | official value | status | source | quote |
+|---|---|---|---|---|
+| Board approval | Ord. 141-20 (SUD, file 200422), 142-20 (DA, 200423), 143-20 (General Plan, 200635); first reading 2020-08-11, final passage 2020-08-18 | CONFIRMED + dates | BOS o0142-20.pdf p13 | "August 18, 2020 Board of Supervisors - FINALLY PASSED" |
+| DA recorded | 2021-03-10 | CONFIRMED | MEDIA Approved_Balboa_Reservoir_Building_A_Loan_Evaluation_-_LC_5-2-25.pdf p6 | "The DA was recorded on Marth 10, 2021." (sic) |
+| affordable | 50%, ~550 units | CONFIRMED | o0142-20.pdf p3; BOS r0339-23.pdf p1 | "50%, or 550 homes, as affordable housing units" |
+| acres | DA 17.6; SUD Project Site 16.5; land sold ~16 | CONFIRMED (approx.) | o0142-20.pdf p1; o0141-20.pdf p7 | "approximately 17.6-acre site" |
+| openSpaceAcres | ~4 | CONFLICT (data 4.2) | o0142-20.pdf p3 | "approximately 4 acres of publicly accessible open spaces" |
+| landowner | SFPUC sold the site to BHC Balboa Builders on 2022-12-20 ($11.4M) | CONFLICT | r0339-23.pdf p1 | "On December 20, 2022 ... the SFPUC sold the approximately 16-acre Balboa Reservoir ... to BHC Balboa Builders, LLC" |
+| developer | DA party Reservoir Community Partners, LLC; MOHCD: BRIDGE and Avalon Bay selected 2017 | CONFIRMED | sf.gov loan committee 2025-11-07 | "BRIDGE Housing Corporation ... and Avalon Bay were selected as the Master Plan developers" |
+| first affordable buildings | E (128) + A (159) = 287 | CONFIRMED | BOSA r0414-25.pdf | "construction of approximately 287 new" |
+| Building E | site permit 2025-01-08; first construction document 2025-11-25 | NEW | DBI 202207289451 | "bldg e ... erect a 7-story ... with 128 residential units & community facility." |
+| Building A | site permit 2025-09-03; first construction document 2026-06-11; tower crane permit 2026-08-21; MOHCD plan: start April 2026, complete January 2028 | CONFIRMED (start ~June–Aug 2026) | DBI 202503313370, 202605201591; https://www.sf.gov/meeting--november-07--2025--citywide-affordable-housing-loan-committee-meeting | "The Sponsor plans to start construction in April 2026 and complete construction by January 2028." |
+| market-rate | Block C/D (243 units) and 170 Meyer (174) permits filed 2026-08-26 | NEW | DBI 202607094805, 202607084737 | "market-rate multi-family residential with 243 units" |
+
+Stage (inferred from permits): under construction. Boundary: DataSF `5yf5-ms5f`, feature "Balboa Reservoir" (~16.6 ac = SUD Project Site; excludes the SFPUC pipeline strip). Parcels: block 3180, lots 190, 201, 202, 204, 205 (DataSF `acdm-wktn`, PDDL).
+
+## stonestown
+
+| field | data value | official value | status | source | quote |
+|---|---|---|---|---|---|
+| EIR | — | certified 2024-05-09 (Motion 21559); CEQA findings Motion 21560; no appeal | NEW | MEDIA 2024-0000037_NOD_-_Stonestown_Development_Project.pdf p2 | "The Final Environmental Impact Report (FEIR) was certified on May 9, 2024 ... no appeals were filed." |
+| Board approval | 2024 | Ord. 204-24 (zoning/SUD, file 240409), 205-24 (DA, 240410), 208-24 (General Plan, 240575); first reading 2024-07-16, final passage 2024-07-23; NOD approval date 2024-08-01 | CONFIRMED + dates | BOSA o0204-24.pdf p64; o0205-24.pdf p14; NOD p1 | "July 23, 2024 Board of Supervisors - FINALLY PASSED" |
+| DA | — | dated 2025-05-06; recorded 2025-07-07 (Doc. 2025049884) | NEW | MEDIA Stonestown_IFP_1-8-26.pdf p12 | "Development Agreement dated as of May 6, 2025, and recorded in the Official Records on July 7, 2025" |
+| acres | 30 | ~30 ac project site; ~27 ac redeveloped inside the 43-ac mall site | CONFIRMED | NOD pp1–2; o0205-24.pdf p9 | "Lot Size: Approximately 30 acres" |
+| acresNote ~40 | ~40 | 43 (incl. 2 ac right-of-way) | CONFLICT | NOD p2 | "in the 43- acre (including 2 acres of public right-of-way) Stonestown Galleria shopping mall site" |
+| homes | 3,491 | up to 3,491 with the Variant Sub-Area (3,341 without) | CONFIRMED | o0205-24.pdf p4 | "up to approximately 3,341 residential units (or approximately 3,491 residential units with the addition of the Variant Sub-Area)" |
+| affordablePct | 20 | 20% required; financing plan projects 350 inclusionary, 0 stand-alone | CONFIRMED (gap noted) | Board hearing notice (sfgov.legistar.com View.ashx ID=13062979) p2 | "with a requirement that 20% of the total units be affordable" |
+| retail / office | 160,000 / 96,000 | same | CONFIRMED | o0205-24.pdf p5 | "up to approximately 160,000 square feet of net new Retail" |
+| community | ~63,000 | 53,000 (63,000 with variant) | CONFIRMED | o0205-24.pdf p5 | — |
+| openSpaceAcres | 6 | ~6 net new | CONFIRMED | o0205-24.pdf p5 | "approximately 6 net new acres of privately owned, publicly accessible open space" |
+| heights | 4–18 stories | 30–190 ft; draft EIR 3–18 stories | CONFLICT | NOD p2; MEDIA Stonestown_-_EIR.pdf p131 | "heights ranging from 30 to 190 feet" |
+| senior homes | ~200 | 201 | CONFIRMED | Stonestown_-_EIR.pdf p659 | "(including 201 senior housing units)" |
+| mall stays | — | 710,000 sf stays; outside the SUD | CONFIRMED | NOD p2 | "710,000 square feet of the existing mall will remain" |
+| developer | Brookfield | DA parties Stonestown NW Parcel LLC and affiliates; applicant Brookfield Properties | CONFIRMED | NOD p1 | "Project Applicant: Christie Donnelly, Brookfield Properties" |
+| tax district | "moving through City Hall" | EIFD No. 2 formed and financing plan adopted 2026-02-12 (Res. 2026-03); $438.06M (2025 dollars) | CONFLICT (done) | MEDIA Reso_2026-03.pdf pp9, 13; IFP pp6, 14 | "approximately $438 million (estimated in 2025 dollars)" |
+| phasing | ~20 yrs | 9 areas, 2028–2051 (developer projection) | CONFIRMED (approx.) | IFP p11 | "Total ... 3,491 ... 2028-2051" |
+| permits | — | none for new buildings on blocks 7295/7296 since 2022 | NEW | DBI | — |
+
+Boundary: DataSF `5yf5-ms5f`, feature "Stonestown Special Use District" (~38.5 ac, larger than 30; unchecked). Alternatives: EIFD boundary (IFP Exhibits A and B, "coterminous with the boundaries of the Subject Property"); Board map sfgov.legistar.com View.ashx?M=F&ID=13028771&GUID=5365CA6A-04A7-4732-8598-F2737A74BDD6.
+
+## parkmerced
+
+| field | data value | official value | status | source | quote |
+|---|---|---|---|---|---|
+| Board approval | 2011-05-24 | first reading 2011-05-24; final passage 2011-06-07 (6–5): Ord. 89-11 (DA), 90-11 (SUD), 91-11 (zoning map), 92-11 (General Plan); effective 2011-07-09 | CONFLICT (use 2011-06-07) | https://sfbos.org/ftp/uploadedfiles/bdsupvrs/ordinances11/o0089-11.pdf; recorded DA p11 | "On June 7, 2011, the Board adopted Ordinance No. 89-11 ... The Enacting Ordinance took effect on July 9, 2011." |
+| EIR | — | certified 2011-02-10 | NEW | DA p10 | "certified by the Planning Commission on February 10, 2011" |
+| acres | 152 | ~152 | CONFIRMED | DA p9 | "the approximately 152-acre site" |
+| homes | 5,679 net / 8,900 | same | CONFIRMED (adopted DA) | DA p9 | "1,683 existing-to-be-retained units + 1,538 newly constructed Replacement Units + 5,679 newly constructed units = 8,900 units" |
+| commercial | 230k retail / 80k office | 310,000 sf commercial (split only in 2010 documents) | CONFIRMED total | DA p32 | "310,000 square feet of commercial use, 64,000 square feet of recreational/fitness center/community center use" |
+| affordable | (2010: 852) | 15% inclusionary, on-site, off-site or fee; Phase 1 ~220 on-site BMR anticipated | NEW (don't show 852) | sfplanning.org/project/parkmerced | "approximately 220 BMR units" |
+| heights | — | 35–145 ft | CONFIRMED | DesignReview_StaffReport.pdf p2 | "range in height from 35 feet to 145 feet" |
+| Phase 1 | 2015 | approved 2015-06-03, ~1,668 units in 4 subphases | CONFIRMED | sfplanning.org/project/parkmerced | "On June 3, 2015, the City approved Phase 1 ... approximately 1,668 residential dwelling units" |
+| final maps | — | Board Motion M23-149, 2023-12-12, Final Maps 10699/10700 (Subphases 1C, 1D) | NEW | https://sfgov.legistar.com/LegislationDetail.aspx?ID=6446248&GUID=D6849B97-2F87-42EE-8615-2E4085DA91B4 | "Enactment #: M23-149" |
+| permits | never broke ground | 199 Vidal (64 units) issued 2018-10-29, no construction recorded; three 2022 filings (471, 268, 151 units) still filed | CONFIRMED (nothing completed) | DBI 201511132572, 202212138195, 202212208799, 202212198663 | "to erect a 14-story, 471-dwelling units" |
+| 2019 refinancing; 2025 receivership; 2026 Yellowstone | — | no official record | UNCONFIRMED | — | — |
+| developer | — | Parkmerced Investors Properties LLC (DA); Parkmerced Owner, LLC (2015) | NEW | DA p7 | "PARKMERCED INVESTORS PROPERTIES, LLC" |
+
+Official stage: entitled. Boundary: DataSF `5yf5-ms5f`, feature "Parkmerced" (~161 ac, likely includes streets). Also DA Exhibits A and B: https://default.sfplanning.org/publications_reports/parkmerced/Parkmerced_Development_Agreement_As_Recorded.pdf
+
+Hosts: add `sfrecpark.org` (Rec and Park) to the official list. Credits: DataSF "Zoning Map - Special Use Districts" (`5yf5-ms5f`, Public Domain U.S. Government) and "Parcels – Active and Retired" (`acdm-wktn`, ODC PDDL 1.0).
