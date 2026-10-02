@@ -10,6 +10,7 @@ rise in place, and a panel explains what it is, where it stands, and the sources
 - `docs/SPEC.md`: full design, interaction, data and technical spec, plus milestones.
 - `data/projects.json`: 25 researched projects with stage, program, timeline, summary and
   sources (verified Oct 1, 2026). Treat it as the source of truth for project facts.
+- `docs/OFFICIAL-SOURCES.md`: where the official-source research stands and the leads to follow.
 
 ## The look in one line
 
