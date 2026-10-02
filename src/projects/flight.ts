@@ -15,6 +15,13 @@ export const RETURN_MS = 3000;
 export const RISE_MS = 1200;
 export const RISE_STAGGER_MS = 600;
 
+/**
+ * Review screenshots only (?test=1&at=2.6): hold the fly-in still at that many seconds
+ * in. Software WebGL can't keep up with the real thing, so frames are taken this way.
+ */
+const query = new URLSearchParams(typeof location === 'undefined' ? '' : location.search);
+const HOLD_AT_MS = query.has('test') && query.has('at') ? Number(query.get('at')) * 1000 : null;
+
 /** Where the fly-in lands when a project has no tuned camera yet. */
 export const DEFAULT_PITCH = 58;
 
@@ -107,13 +114,25 @@ export async function flyIn(
     if (current()) setBoundary(map, boundary);
     return;
   }
+  const drawnAt = (t: number) => easeInOutCubic(clamp01((t - 0.35) / 0.55));
+  if (HOLD_AT_MS !== null) {
+    if (HOLD_AT_MS >= FLIGHT_MS) {
+      map.jumpTo({ ...camera, padding });
+      setBoundary(map, boundary);
+      return;
+    }
+    // A flight whose easing never moves holds the camera at that point of the path.
+    const t = HOLD_AT_MS / FLIGHT_MS;
+    setBoundary(map, drawnAt(t) > 0 ? linePrefix(boundary, drawnAt(t)) : null);
+    map.flyTo({ ...camera, padding, duration: 1e9, curve: 1.42, easing: () => easeInOutCubic(t), essential: true });
+    return new Promise(() => {});
+  }
   setBoundary(map, null);
   const start = performance.now();
   const onMove = () => {
     if (!current()) return;
-    const t = (performance.now() - start) / FLIGHT_MS;
-    const drawn = clamp01((t - 0.35) / 0.55);
-    if (drawn > 0) setBoundary(map, linePrefix(boundary, easeInOutCubic(drawn)));
+    const drawn = drawnAt((performance.now() - start) / FLIGHT_MS);
+    if (drawn > 0) setBoundary(map, linePrefix(boundary, drawn));
   };
   map.on('move', onMove);
   await new Promise<void>((resolve) => {
@@ -161,6 +180,14 @@ export function riseMassing(map: MapLibreMap, massing: Massing, center: [number,
     onDone?.();
     return () => {};
   }
+  const riseAt = (i: (typeof items)[number], ms: number) =>
+    easeOutCubic(clamp01((ms - (i.d / maxD) * RISE_STAGGER_MS) / RISE_MS));
+  if (HOLD_AT_MS !== null) {
+    const ms = HOLD_AT_MS - FLIGHT_MS;
+    items.forEach((i) => set(i.id, riseAt(i, ms)));
+    if (items.every((i) => riseAt(i, ms) >= 1)) onDone?.();
+    return () => {};
+  }
   const start = performance.now();
   let raf = 0;
   let done = false;
@@ -175,9 +202,9 @@ export function riseMassing(map: MapLibreMap, massing: Massing, center: [number,
     const now = performance.now() - start;
     let all = true;
     for (const i of items) {
-      const t = clamp01((now - (i.d / maxD) * RISE_STAGGER_MS) / RISE_MS);
-      if (t < 1) all = false;
-      set(i.id, easeOutCubic(t));
+      const v = riseAt(i, now);
+      if (v < 1) all = false;
+      set(i.id, v);
     }
     if (all) finish();
     else raf = requestAnimationFrame(frame);

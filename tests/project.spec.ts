@@ -128,3 +128,16 @@ test('on a phone the panel is a bottom sheet and the site stays in view above it
   expect(pt.x).toBeGreaterThan(0);
   expect(pt.x).toBeLessThan(390);
 });
+
+test('Whole Bay closes the project and goes back to the whole region', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto('/p/potrero-power-station?test=1');
+  await ready(page);
+  await expect.poll(() => phase(page), { timeout: 60_000 }).toBe('risen');
+  await page.getByRole('button', { name: 'Whole Bay' }).click();
+  await expect(page.getByRole('complementary', { name: 'Potrero Power Station' })).toHaveCount(0);
+  await expect.poll(() => phase(page), { timeout: 30_000 }).toBeNull();
+  const cam = await camera(page);
+  expect(cam.pitch).toBe(0);
+  expect(cam.zoom).toBeLessThan(11);
+});
