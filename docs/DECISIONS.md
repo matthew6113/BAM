@@ -66,3 +66,26 @@ Choices that shape the map, in the order they were made. The evidence is in
 - **Tile files:** street-level building tiles are split into one archive per zoom (13, 14, 15) so no file exceeds 100 MB.
 - **Archive:** the Overture extract is kept as a GitHub release asset, so builds keep working after Overture removes the release.
 - **Tiles on object storage:** still possible later through `VITE_TILE_BASE_URL`.
+
+## 2026-10-02: Milestone 2, Potrero Power Station (open for Matthew's review)
+
+**Source for the blocks: the 2018 Draft EIR, labelled illustrative.** The approved plan's Design for Development and Planning Code Figure 249.87-4 could not be reached from the build environment (sfplanning.org and data.sfgov.org are blocked here; only known PDF links on sfplanning.s3.amazonaws.com work). So:
+- The site boundary and five sub-areas are traced from DEIR Figure 2-2 (vector shapes, 13 street intersections, RMS 3.4 m). The site is 29.1 acres traced against the DEIR's "approximately 29.0 acres".
+- The blocks are the height districts in DEIR Figure 2-7 (the 2018 proposal), labelled "Illustrative massing" in the data and the panel. Search summaries say the approved plan runs 65 to 240 ft; that is not used until read in a primary source.
+- Each block is a solid to its podium height with the upper height limit as a faint envelope, because the figure doesn't place towers.
+- Block 9 (Unit 3) is a dashed outline with no height: the DEIR gives two configurations.
+- Block 2 is "under construction" (from the stage note); the rest are "entitled". The Sophie Maxwell Building is complete but drawn flat: its height in feet isn't sourced yet.
+- The stack is 300 ft (DEIR pp. 2-7, 4.D-8) on its OpenStreetMap footprint.
+
+**Fly-in:** 4.5 s flight (`flyTo`, ease in and out), the boundary drawing itself from 35% to 90% of it; then the surroundings within 700 m extrude faintly (0.8 s fade) and the blocks rise over 1.2 s, staggered outward over 0.6 s. Escape, close or back flies back over 3 s to where the viewer was, in the mode (2D or 3D) they were in. Reduced motion: a 160 ms dip to paper, a jump, and no rise.
+
+**Landing camera:** from the south-southwest (bearing -30), pitch 58, zoom 16.4 for a 1440 x 900 window with the panel; smaller views zoom out to keep the site in frame. Option shown: from the southeast.
+
+**Massing opacity by stage (theme `massing.opacity`):** entitled 0.5 (the spec's "light fill"), under construction 0.92, complete 0.95 in ink. Option shown: entitled at 0.78.
+
+**Panel:** 400 px on the right; a bottom sheet over the lower half below 720 px. The caveats (illustrative massing, approximate boundary, with the source link) sit right under the stage bar. Numbers are shown only as stored, so the affordable share stays a percentage. Renderings: none with permission yet, so the official pages are linked.
+
+**Projects list:** a small "Projects" disclosure under the title is the keyboard route in until the Milestone 3 index.
+
+**Deep links:** `/p/{id}`. The build writes `p/{id}/index.html` (with the project's title and summary) and `404.html`, since Pages has no rewrites.
+

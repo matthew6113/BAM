@@ -5,7 +5,8 @@ is drawn as quiet ink footprints, in the style of the NYT's "A Map of Every Buil
 America". Only the projects get color and height. Click a project and the camera flies
 in, the site boundary draws, and the proposed buildings rise.
 
-Status: **Milestone 1** (base map, no projects yet). See `docs/SPEC.md` for the full spec
+Status: **Milestone 2** (Potrero Power Station as a complete vertical slice: boundary,
+block massing by stage, fly-in, panel, deep link). See `docs/SPEC.md` for the full spec
 and milestones, `docs/DECISIONS.md` for choices made so far, and `CHANGELOG.md` for data
 changes.
 
@@ -27,9 +28,10 @@ npm run dev      # http://127.0.0.1:5173
 | `make fetch` / `process` / `buildings` / `tiles` / `fonts` / `glyphs` / `manifest` | One pipeline step at a time |
 | `npm run dev` | Dev server, with the style panel available |
 | `npm run build` | Type-check and production build into `dist/` |
-| `npm test` | Schema check of `data/projects.json`, theme and contrast tests |
-| `npm run e2e` | Playwright keyboard and control tests |
-| `npm run screenshots` | Playwright screenshots of key views into `docs/screenshots/m1/` |
+| `make sites` | Re-trace project boundaries and massing from their source documents (output is committed) |
+| `npm test` | Schema check of `data/projects.json`, traced geometry provenance, theme, contrast and helper tests |
+| `npm run e2e` | Playwright tests: map controls, fly-in, panel, deep links, Escape and back button |
+| `npm run screenshots` | Playwright screenshots of key views into `docs/screenshots/m1/` and `m2/` |
 
 ## The data pipeline
 
@@ -45,6 +47,8 @@ dependency).
    - `buildings-z13`, `-z14`, `-z15`: street-level footprints with heights, one archive per zoom (47, 56 and 66 MB) so every file stays under GitHub's 100 MB limit
 5. **fonts / glyphs:** Libre Franklin and Source Serif 4 (OFL) as WOFF2 for the interface and SDF glyph PBFs for map labels.
 6. **manifest:** writes `data/manifest.json` with the row counts, sizes and SHA-256 of every input and output. Compare it after a rebuild.
+
+7. **sites** (`make sites`, not part of `make data`): traces each mapped project's boundary and block massing from its official document into `data/boundaries/{id}.geojson` and `data/massing/{id}.geojson`, which are committed. `pipeline/bam_pipeline/trace.py` has the shared tools: download by checksum, a similarity fit from figure street labels to OpenStreetMap intersections, ICP registration for raster figures, and colour-to-polygon tracing. Each output records its source page, accuracy and residuals.
 
 **Reproducing the data:** Overture keeps each release for only about 60 days. Archive
 `data/raw/overture/2026-09-23.1/` (about 620 MB) somewhere durable, such as object
@@ -68,6 +72,21 @@ One-time setup:
 
 To host the tiles elsewhere, for example object storage, build with
 `VITE_TILE_BASE_URL=https://…/tiles`. The host needs HTTP Range support and CORS.
+
+## Projects
+
+A project is drawn on the map once it has a traced boundary in `data/boundaries/`
+(Milestone 2: Potrero Power Station only). Its facts come from `data/projects.json`;
+its optional `camera` sets where the fly-in lands, framed for a 1440 x 900 window with
+the panel open (smaller views zoom out to fit). `node scripts/cameras.mjs <outdir> <id>
+name=lng,lat,zoom,pitch,bearing ...` screenshots candidate cameras for tuning.
+
+- Click a site, pick it from **Projects**, or open `/p/{id}` (on Pages:
+  https://matthew6113.github.io/BAM/p/potrero-power-station/). The build writes a page
+  per project with its title and summary for link previews, plus a `404.html` fallback.
+- **Escape**, the close button or the browser's back button flies back out.
+- With reduced motion, the flight is a quick dip to paper and the blocks appear at once.
+- For review screenshots only, `?test=1&at=2.6` holds the fly-in still 2.6 s in.
 
 ## Theme and style panel
 
@@ -95,9 +114,11 @@ URL options, handy for sharing a view or for screenshots:
 data/            projects.json (source of truth), schema, CREDITS.md, manifest.json
 docs/            SPEC.md, DECISIONS.md, PLANNING-AUDIT.md, screenshots/
 pipeline/        Python data pipeline (uv)
-scripts/         glyph builder, screenshot helper
-src/             app: map/ (style, view, config), theme/, ui/
-tests/           Vitest unit tests, Playwright screenshot spec
+data/boundaries/ traced project sites (GeoJSON, with source and accuracy)
+data/massing/    traced or illustrative project massing by block and stage
+scripts/         glyph builder, screenshot and camera helpers, deep-link page plugin
+src/             app: map/ (style, project layers, view), projects/ (data, fly-in), theme/, ui/
+tests/           Vitest unit tests, Playwright interaction and screenshot specs
 ```
 
 ## Licenses

@@ -3,16 +3,18 @@
 
 PY = uv run --directory pipeline python -m
 
-.PHONY: help data tools fetch process buildings tiles fonts glyphs manifest dev build test screenshots clean-build
+.PHONY: help data tools fetch process buildings tiles fonts glyphs manifest sites dev build test e2e screenshots clean-build
 
 help:
 	@echo "make data         Full data pipeline: fetch, process, tile, fonts, glyphs, manifest"
 	@echo "make tools        Check that uv, node and tippecanoe are installed"
 	@echo "make fetch        Download the Overture extracts into data/raw/ (cached)"
 	@echo "make tiles        Rebuild PMTiles from data/build/"
+	@echo "make sites        Re-trace project boundaries and massing from their source documents"
 	@echo "make dev          Start the dev server (http://127.0.0.1:5173)"
-	@echo "make test         Data schema and theme tests"
-	@echo "make screenshots  Playwright screenshots of key views into docs/screenshots/"
+	@echo "make test         Data, geometry, theme and helper tests"
+	@echo "make e2e          Playwright interaction tests (map controls, fly-in, panel, deep links)"
+	@echo "make screenshots  Playwright screenshots of key views into docs/screenshots/m1 and m2"
 
 data: tools fetch process buildings tiles fonts glyphs manifest
 
@@ -44,6 +46,11 @@ glyphs:
 manifest:
 	$(PY) bam_pipeline.manifest
 
+# Traced project geometry is committed in data/boundaries/ and data/massing/; this redoes it.
+# Downloads each source document once (checked by SHA-256) into data/raw/docs/.
+sites:
+	$(PY) bam_pipeline.sites.potrero_power_station
+
 dev:
 	npx vite --host 127.0.0.1
 
@@ -53,8 +60,11 @@ build:
 test:
 	npm test
 
+e2e:
+	npm run e2e
+
 screenshots:
-	npx playwright test tests/screenshots.spec.ts
+	npm run screenshots
 
 clean-build:
 	rm -rf data/build public/generated
