@@ -28,6 +28,7 @@ export function normalizeTheme(input: unknown): Theme {
   Object.assign(merged.colors, pickStrings(t.colors));
   Object.assign(merged.stages, pickStrings(t.stages));
   Object.assign(merged.opacity, pickNumbers(t.opacity));
+  if (t.massing) Object.assign(merged.massing.opacity, pickNumbers(t.massing.opacity));
   Object.assign(merged.type, pickStrings(t.type));
   if (t.map) {
     if (typeof t.map.shorelineWidth === 'number') merged.map.shorelineWidth = t.map.shorelineWidth;
