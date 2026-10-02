@@ -42,7 +42,7 @@ dependency).
 4. **tiles:** Tippecanoe builds three PMTiles archives in `public/generated/tiles/`:
    - `base`: about 6 MB
    - `buildings-overview-all`: zoom 6 to 12, about 80 MB
-   - `buildings-detail`: zoom 13 to 15, with heights, about 170 MB
+   - `buildings-z13`, `-z14`, `-z15`: street-level footprints with heights, one archive per zoom (47, 56 and 66 MB) so every file stays under GitHub's 100 MB limit
 5. **fonts / glyphs:** Libre Franklin and Source Serif 4 (OFL) as WOFF2 for the interface and SDF glyph PBFs for map labels.
 6. **manifest:** writes `data/manifest.json` with the row counts, sizes and SHA-256 of every input and output. Compare it after a rebuild.
 
@@ -51,6 +51,23 @@ dependency).
 storage or a GitHub release, and check it against `data/manifest.json`. To move to a new
 release, change `OVERTURE_RELEASE` in `pipeline/bam_pipeline/config.py`, rebuild, and
 note the change in `CHANGELOG.md`.
+
+## Deploying
+
+The site is published to GitHub Pages at https://matthew6113.github.io/BAM/ by
+`.github/workflows/deploy.yml`.
+
+- **Push to main:** builds the map data, runs the tests, builds the site with base path `/BAM/` and deploys it.
+- **Pull requests:** build and test only.
+- **Caching:** the tiles are cached between runs and rebuilt only when the pipeline changes.
+- **Archive:** on main, the Overture extract is also saved as a release asset (`overture-2026-09-23.1`). Builds keep working after Overture removes the release.
+
+One-time setup:
+1. The repository must be public, or on a paid plan.
+2. In Settings, then Pages, set Source to **GitHub Actions**.
+
+To host the tiles elsewhere, for example object storage, build with
+`VITE_TILE_BASE_URL=https://…/tiles`. The host needs HTTP Range support and CORS.
 
 ## Theme and style panel
 
@@ -69,7 +86,7 @@ URL options, handy for sharing a view or for screenshots:
 - `?view=3d` starts in 3D.
 - `?overview=light` uses the lighter low-zoom building tiles.
 - `?salt=0` draws salt ponds as land.
-- `?context=1` shows freeways, rail and ferries.
+- `?context=0` hides freeways, highways, railroads and ferries (shown by default).
 - `?mask=0` turns off the tint outside the nine counties.
 
 ## Layout

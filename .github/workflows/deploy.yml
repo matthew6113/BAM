@@ -1,0 +1,125 @@
+# Builds the map data and the site, and deploys to GitHub Pages from main.
+# Pull requests build and test only. Settings -> Pages -> Source must be "GitHub Actions".
+name: Build and deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # Keep in sync with pipeline/bam_pipeline/config.py and the Makefile requirements.
+  OVERTURE_RELEASE: "2026-09-23.1"
+  TIPPECANOE_VERSION: "2.79.0"
+  # GitHub Pages serves the project site from /BAM/.
+  BASE_PATH: /BAM/
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    permissions:
+      # Write is only used on main, to archive the Overture extract as a release asset.
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: astral-sh/setup-uv@v7
+
+      - run: npm ci
+
+      - name: Restore Tippecanoe
+        id: tippecanoe-cache
+        uses: actions/cache@v6
+        with:
+          path: ~/.local/tippecanoe
+          key: tippecanoe-${{ env.TIPPECANOE_VERSION }}-ubuntu-24.04
+
+      - name: Build Tippecanoe
+        if: steps.tippecanoe-cache.outputs.cache-hit != 'true'
+        run: |
+          git clone --depth 1 --branch "$TIPPECANOE_VERSION" https://github.com/felt/tippecanoe /tmp/tippecanoe
+          make -C /tmp/tippecanoe -j"$(nproc)"
+          make -C /tmp/tippecanoe install PREFIX="$HOME/.local/tippecanoe"
+
+      - run: echo "$HOME/.local/tippecanoe/bin" >> "$GITHUB_PATH"
+
+      # The tiles, glyphs and fonts only change when the pipeline does.
+      - name: Restore generated map data
+        id: generated-cache
+        uses: actions/cache@v6
+        with:
+          path: public/generated
+          key: generated-${{ env.OVERTURE_RELEASE }}-${{ hashFiles('pipeline/**', 'scripts/build-glyphs.mjs', 'package-lock.json') }}
+
+      - name: Restore the Overture extract
+        id: raw-cache
+        if: steps.generated-cache.outputs.cache-hit != 'true'
+        uses: actions/cache@v6
+        with:
+          path: data/raw
+          key: raw-${{ env.OVERTURE_RELEASE }}-${{ hashFiles('pipeline/bam_pipeline/fetch.py', 'pipeline/bam_pipeline/fonts.py') }}
+
+      # Overture removes releases after about 60 days. When this one is gone, fall back to
+      # the copy archived in this repository's releases (see the archive step below).
+      - name: Fetch the Overture extract
+        if: steps.generated-cache.outputs.cache-hit != 'true' && steps.raw-cache.outputs.cache-hit != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if ! make fetch; then
+            echo "::warning::Overture release $OVERTURE_RELEASE is not available; using the archived copy."
+            dest="data/raw/overture/$OVERTURE_RELEASE"
+            mkdir -p "$dest"
+            gh release download "overture-$OVERTURE_RELEASE" --dir "$dest" --pattern '*.parquet' --clobber
+          fi
+
+      - name: Build map data (process, buildings, tiles, fonts, glyphs)
+        if: steps.generated-cache.outputs.cache-hit != 'true'
+        run: make process buildings tiles fonts glyphs
+
+      - name: Archive the Overture extract as a release asset
+        if: steps.generated-cache.outputs.cache-hit != 'true' && github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="overture-$OVERTURE_RELEASE"
+          if ! gh release view "$tag" >/dev/null 2>&1; then
+            gh release create "$tag" --title "Overture Maps extract, release $OVERTURE_RELEASE" --notes \
+              "Bay Area extract of Overture Maps release $OVERTURE_RELEASE, kept so the map can be rebuilt after Overture removes the release. Data © OpenStreetMap contributors, Overture Maps Foundation; buildings also from Microsoft and Esri Community Maps contributors. License: ODbL 1.0. See data/CREDITS.md."
+          fi
+          gh release upload "$tag" data/raw/overture/"$OVERTURE_RELEASE"/*.parquet --clobber
+
+      - run: npm test
+
+      - run: npm run build
+
+      - name: Upload the site
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

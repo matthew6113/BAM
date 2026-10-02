@@ -3,6 +3,8 @@ import { defineConfig } from 'vite';
 import preact from '@preact/preset-vite';
 
 export default defineConfig({
+  // GitHub Pages serves the site from /BAM/; the deploy workflow sets BASE_PATH.
+  base: process.env.BASE_PATH ?? '/',
   plugins: [preact()],
   server: { port: 5173, strictPort: true },
   preview: { port: 4173, strictPort: true },

@@ -44,10 +44,25 @@ Choices that shape the map, in the order they were made. The evidence is in
 
 **Salt ponds:** drawn as water. The toggle changes little, because most South Bay ponds are already mapped as water and the large white areas are tidal marsh.
 
-**Context lines:** freeways, rail and ferries are off by default, as the spec says they are optional.
+**Context lines:** freeways, rail and ferries are off by default, as the spec says they are optional. (Superseded 2026-10-02: on by default.)
 
 **Style panel:** on in development, or with `?style=1` in any build. The shortcut is Alt+Shift+S, not a bare "S", per WCAG 2.1.4.
 
 **3D toggle:** 3D tilts the map and shows faint context massing (theme `contextExtrusion`) for buildings with real heights at zoom 14 and above. 2D is flat with tilt and rotate disabled.
 
 **"Partly built" placeholder:** `#5A6B8C`. The spec has no color for this stage.
+
+## 2026-10-02: context lines and hosting (Matthew)
+
+**Context lines are on by default.** Matthew asked to keep the railroads and freeways. The layer now draws:
+- Freeways (OSM motorways) and highways (trunk roads). On- and off-ramps appear from zoom 12.
+- Railroads: transit (BART, Muni, VTA, cable cars, SFO AirTrain) and every active standard-gauge line (Caltrain, SMART, Union Pacific and BNSF track). Named lines and stretches over 1 km show from the regional view; unnamed yards and spurs only up close.
+- Ferry routes.
+- Left out: narrow-gauge, funicular and "unknown" track.
+
+**Hosting:** GitHub Pages, with the repository made public.
+- **Deploys:** every push to main via `.github/workflows/deploy.yml`.
+- **Address:** the site is served from `/BAM/`.
+- **Tile files:** street-level building tiles are split into one archive per zoom (13, 14, 15) so no file exceeds 100 MB.
+- **Archive:** the Overture extract is kept as a GitHub release asset, so builds keep working after Overture removes the release.
+- **Tiles on object storage:** still possible later through `VITE_TILE_BASE_URL`.

@@ -62,5 +62,6 @@ Workflow
 - `npx tsc --noEmit`: type-check. `npm run build`: production build.
 - `npm run screenshots`: Playwright screenshots of key views into `docs/screenshots/m1/`
   (headless Chromium with SwiftShader WebGL; set `SHOTS_DIR` to write elsewhere).
-- Deploy: not set up yet (Milestone 5). Tiles are too large for a static host and will go to
-  object storage; set `VITE_TILE_BASE_URL` to point the app at them.
+- Deploy: push to `main`. `.github/workflows/deploy.yml` builds the data and site and publishes
+  to GitHub Pages (https://matthew6113.github.io/BAM/, base path `/BAM/` via `BASE_PATH`).
+  Pull requests build and test only. Every tile file must stay under 100 MB.

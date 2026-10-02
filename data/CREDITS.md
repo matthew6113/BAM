@@ -30,7 +30,8 @@ guidelines allow.
 ODbL data and are published under ODbL 1.0, with their attribution and license written
 into the tile metadata. The pipeline in `pipeline/` rebuilds them from the public
 Overture release, and the clipped extract should be archived (see README) because
-Overture removes releases after about 60 days.
+Overture removes releases after about 60 days. The deploy workflow keeps a copy as the
+GitHub release `overture-2026-09-23.1` in this repository, under the same license and attribution.
 
 Microsoft distributes its building footprints under ODbL (US Building Footprints) and
 CDLA-Permissive-2.0 (Global ML Building Footprints). This map uses them only through
