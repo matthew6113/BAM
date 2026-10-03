@@ -1,0 +1,210 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "willow-village",
+  "source": "traced: Menlo Park Ordinance No. 1095, Willow Village Development Agreement (adopted Dec 13, 2022), Exhibit A-2-1 Main Project Site legal description (pp. 75-76) and Exhibit A-1-1 site plat (p. 70)",
+  "sourceUrl": "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/1095-willow-village-development-agreement.pdf",
+  "sourceLabel": "development agreement map (PDF)",
+  "accuracy": "traced",
+  "accuracyNote": "The Main Project Site drawn from its metes-and-bounds description (closes to 0.01 ft), placed on the City of Menlo Park parcel lines by a rotation-and-shift fit (RMS 0.2 m over the closest 80% of boundary points; 90% within 2.4 m). 59.17 acres as drawn; the description states 59.17 acres. The two Hamilton parcels (about 3 acres) are not included.",
+  "license": "Shape from a public City of Menlo Park ordinance; placement on City of Menlo Park parcels (CC0).",
+  "georeference": {
+   "scale_m_per_unit": 0.3048,
+   "rotation_deg": 0.506,
+   "rms_m": 0.17,
+   "controls": [
+    {
+     "label": "described boundary vs Menlo Park parcel lines: trimmed RMS over the closest 80% of 994 points",
+     "residual_m": 0.17
+    }
+   ],
+   "method": "trimmed ICP",
+   "points": 994,
+   "inlier_share": 0.8,
+   "median_m": 0.18,
+   "p90_m": 2.35
+  },
+  "legalDescription": {
+   "courses": 13,
+   "misclosure_ft": 0.0058,
+   "area_sqft": 2577443.7,
+   "stated_sqft": 2577434.2
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.1523705,
+       37.4766134
+      ],
+      [
+       -122.1522147,
+       37.4769193
+      ],
+      [
+       -122.152008,
+       37.4772764
+      ],
+      [
+       -122.1519983,
+       37.4772932
+      ],
+      [
+       -122.1519887,
+       37.4773102
+      ],
+      [
+       -122.1519791,
+       37.4773271
+      ],
+      [
+       -122.1519697,
+       37.4773441
+      ],
+      [
+       -122.1519604,
+       37.4773611
+      ],
+      [
+       -122.1519511,
+       37.4773781
+      ],
+      [
+       -122.151942,
+       37.4773952
+      ],
+      [
+       -122.1519329,
+       37.4774123
+      ],
+      [
+       -122.1519239,
+       37.4774294
+      ],
+      [
+       -122.1519151,
+       37.4774466
+      ],
+      [
+       -122.1519063,
+       37.4774638
+      ],
+      [
+       -122.1507855,
+       37.4796641
+      ],
+      [
+       -122.1507795,
+       37.4796759
+      ],
+      [
+       -122.1507736,
+       37.4796878
+      ],
+      [
+       -122.1507678,
+       37.4796997
+      ],
+      [
+       -122.150762,
+       37.4797116
+      ],
+      [
+       -122.1507563,
+       37.4797235
+      ],
+      [
+       -122.1507506,
+       37.4797354
+      ],
+      [
+       -122.150745,
+       37.4797474
+      ],
+      [
+       -122.1507395,
+       37.4797593
+      ],
+      [
+       -122.1507341,
+       37.4797713
+      ],
+      [
+       -122.1507287,
+       37.4797833
+      ],
+      [
+       -122.1507234,
+       37.4797954
+      ],
+      [
+       -122.1507181,
+       37.4798074
+      ],
+      [
+       -122.150715,
+       37.4798127
+      ],
+      [
+       -122.1505495,
+       37.4801885
+      ],
+      [
+       -122.1504574,
+       37.4803694
+      ],
+      [
+       -122.1459092,
+       37.480686
+      ],
+      [
+       -122.1457363,
+       37.4806984
+      ],
+      [
+       -122.1455634,
+       37.4807113
+      ],
+      [
+       -122.1453907,
+       37.4807249
+      ],
+      [
+       -122.145218,
+       37.480739
+      ],
+      [
+       -122.1450454,
+       37.4807537
+      ],
+      [
+       -122.1460251,
+       37.476394
+      ],
+      [
+       -122.1501007,
+       37.4762897
+      ],
+      [
+       -122.1523705,
+       37.4766134
+      ],
+      [
+       -122.1523705,
+       37.4766134
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

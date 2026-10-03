@@ -24,8 +24,9 @@ export function Credits({ collapse }: Props) {
         Map data <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors</a> and{' '}
         <a href="https://overturemaps.org">Overture Maps Foundation</a> (release {OVERTURE_RELEASE}, ODbL).
         Building footprints from OpenStreetMap, Microsoft and Esri Community Maps contributors; heights
-        from OpenStreetMap and USGS lidar. Project boundaries and blocks traced from public planning
-        documents, cited in each project's panel.
+        from OpenStreetMap and USGS lidar. Project boundaries come from city and county GIS (DataSF;
+        Menlo Park; Mountain View; San José, CC-BY; Sunnyvale; Brisbane; Oakland; Santa Clara and Alameda
+        counties) or are traced from public planning documents, cited in each project's panel.
       </p>
       <button type="button" class="credits-toggle" aria-expanded={open} aria-controls="credits-body"
         onClick={() => setOpen(!open)}>

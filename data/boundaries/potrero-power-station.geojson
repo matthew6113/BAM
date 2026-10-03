@@ -4,6 +4,8 @@
   "project": "potrero-power-station",
   "source": "traced: Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1 (Case No. 2017-011878ENV, Oct 2018), Figure 2-2, Project Site Sub-Areas and Ownership, p. 2-6",
   "sourceUrl": "https://sfplanning.s3.amazonaws.com/sfmea/2017-011878ENV_DEIR_Volume_1.pdf",
+  "sourceLabel": "Draft EIR, Oct 2018 (PDF)",
+  "accuracyShort": "about \u00b13 m",
   "accuracy": "traced",
   "accuracyNote": "Vector shapes from the EIR figure, georeferenced to OpenStreetMap street centrelines at 13 intersections (RMS 3.4 m). Approximate boundary: parcel lines were not available.",
   "georeference": {

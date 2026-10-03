@@ -1,0 +1,106 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "oakland-coliseum",
+  "source": "Alameda County Assessor parcels 41-3901-8 (Stadium) and 41-3901-9 (Arena)",
+  "sourceLabel": "Alameda County parcels",
+  "sourceUrl": "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0",
+  "query": "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0/query?where=APN+in+%28%2741-3901-8%27%2C+%2741-3901-9%27%29&outFields=%2A&outSR=4326&f=geojson",
+  "accuracy": "official",
+  "accuracyNote": "The Stadium and Arena parcels, about 112 acres. 111.8 acres as drawn.",
+  "license": "Alameda County open data (county disclaimer)",
+  "features_used": 2
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2063151,
+       37.7536728
+      ],
+      [
+       -122.2044202,
+       37.7545012
+      ],
+      [
+       -122.2034944,
+       37.7545889
+      ],
+      [
+       -122.2020693,
+       37.7551367
+      ],
+      [
+       -122.2017375,
+       37.7551405
+      ],
+      [
+       -122.1959182,
+       37.7500698
+      ],
+      [
+       -122.2011425,
+       37.7467403
+      ],
+      [
+       -122.2016003,
+       37.747262
+      ],
+      [
+       -122.201679,
+       37.7473167
+      ],
+      [
+       -122.2017354,
+       37.747381
+      ],
+      [
+       -122.2018374,
+       37.7473297
+      ],
+      [
+       -122.2027716,
+       37.7483187
+      ],
+      [
+       -122.2050568,
+       37.7509224
+      ],
+      [
+       -122.20494,
+       37.7509915
+      ],
+      [
+       -122.2050915,
+       37.7511644
+      ],
+      [
+       -122.2058031,
+       37.7522238
+      ],
+      [
+       -122.2059989,
+       37.7525713
+      ],
+      [
+       -122.2061197,
+       37.7528926
+      ],
+      [
+       -122.2063151,
+       37.7536728
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

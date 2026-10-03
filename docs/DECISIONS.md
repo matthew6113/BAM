@@ -69,12 +69,14 @@ Choices that shape the map, in the order they were made. The evidence is in
 
 ## 2026-10-02: Milestone 2, Potrero Power Station (open for Matthew's review)
 
-**Source for the blocks: the 2018 Draft EIR, labelled illustrative.** The approved plan's Design for Development and Planning Code Figure 249.87-4 could not be reached from the build environment (sfplanning.org and data.sfgov.org are blocked here; only known PDF links on sfplanning.s3.amazonaws.com work). So:
-- The site boundary and five sub-areas are traced from DEIR Figure 2-2 (vector shapes, 13 street intersections, RMS 3.4 m). The site is 29.1 acres traced against the DEIR's "approximately 29.0 acres".
-- The blocks are the height districts in DEIR Figure 2-7 (the 2018 proposal), labelled "Illustrative massing" in the data and the panel. Search summaries say the approved plan runs 65 to 240 ft; that is not used until read in a primary source.
-- Each block is a solid to its podium height with the upper height limit as a faint envelope, because the figure doesn't place towers.
-- Block 9 (Unit 3) is a dashed outline with no height: the DEIR gives two configurations.
-- Block 2 is "under construction" (from the stage note); the rest are "entitled". The Sophie Maxwell Building is complete but drawn flat: its height in feet isn't sourced yet.
+**Source for the blocks: the approved Design for Development (2026-10-03).** Matthew asked for the D4D's height plan to be traced (2026-10-03). This replaces the 2018 Draft EIR blocks, which were dropped on 2026-10-02 as superseded.
+- The site boundary and five sub-areas are still traced from DEIR Figure 2-2 (vector shapes, 13 street intersections, RMS 3.4 m), 29.1 acres.
+- Blocks come from D4D Figure 6.2.3, Building Height Plan (p. 245). The legend's 85 and 125 ft fills are spot colours that PDF parsers can't read, so the page is rendered at 200 dpi and each block's pixels are classified against the legend; labels and dimension lines printed on the fills take the colour of the nearest fill.
+- Georeferenced on seven street intersections measured from the figure's curb lines, including Phase 1 streets now in OpenStreetMap (Maryland, Humboldt): RMS 2.0 m. Registering the figure's dash-dot site line to the 2018 boundary failed (the two boundaries differ), so it isn't used.
+- Each block is a solid to its height limit, labelled "Illustrative massing": the limits are an envelope, not building designs. "180'/85'" tower zones (Blocks 1, 5, 7) are an 85-ft solid with a faint envelope to 180, 220 or 240 ft. "MAX" dimensions in the figure are plan lengths and aren't used.
+- Block 9 is a dashed outline: the D4D gives two configurations, with or without Unit 3.
+- Every block is "entitled". The Sophie Maxwell Building (DBI permit complete Aug 28, 2026) is cut out of Block 7 and left to the base map; UCSF's Block 2 building has no official construction record yet.
+- The 2026 amendments (Addendum 2: +8 ft on residential blocks and more on Blocks 1, 5, 11, 12, 15) aren't drawn until the Board adopts them.
 - The stack is 300 ft (DEIR pp. 2-7, 4.D-8) on its OpenStreetMap footprint.
 
 **Fly-in:** 4.5 s flight (`flyTo`, ease in and out), the boundary drawing itself from 35% to 90% of it; then the surroundings within 700 m extrude faintly (0.8 s fade) and the blocks rise over 1.2 s, staggered outward over 0.6 s. Escape, close or back flies back over 3 s to where the viewer was, in the mode (2D or 3D) they were in. Reduced motion: a 160 ms dip to paper, a jump, and no rise.
@@ -99,3 +101,32 @@ Matthew: "I want only official." What it means here:
 - **Unmapped projects:** they don't open from a deep link. Their records haven't been checked against official sources yet.
 - **Network:** Matthew is broadening the environment's network access so the official sites (sfplanning.org, data.sfgov.org, the code, CEQAnet, UC Regents) can be read.
 
+
+## Milestone 3 (2026-10-03)
+
+**Boundaries from official GIS first.** 20 projects take their site from a layer their city or
+county publishes (special use district, redevelopment area, height district, specific plan
+boundary, planned development zoning, or the parcels named in the approval), fetched and
+unioned by `make sites`. Where the layer is a proxy, the boundary is labelled approximate:
+North Bayshore (approval parcels, which the plan only partly covers), Brisbane Baylands (the
+city's draft boundary layer), Downtown West (net zoning acres, 58 of 80 gross) and Brooklyn Basin
+(development parcels only, without the parks). Willow Village, Concord, Alameda Point and the
+Suisun expansion have no usable layer and are traced from official figures.
+
+**One control is both legend and filter.** The index shows each stage with its colour and count;
+pressing a stage hides it from the list and the map. Search (name, aliases, city, county) and an
+area select narrow it further. The same filter hides markers, sites and labels on the map, so
+the legend always describes what is drawn. Labels stay sparse: the legend lives in the index,
+not on the map.
+
+**Records applied when mapped.** As each project went on the map its record was rewritten from
+its findings file (official values only; press facts in `reported`), and the official-sources
+test now covers it.
+
+**Traced boundaries (four projects without a usable layer).** Willow Village is plotted from its
+development agreement's legal description (13 courses, closes to 0.006 ft, 59.17 acres) and placed
+on Menlo Park's parcel lines; the Hamilton Avenue parcels in a separate exhibit aren't included.
+Concord is the Navy's EDC property map, read from its vector fills and fitted to OpenStreetMap
+roads (scale within 0.1% of the map's bar). Alameda Point is the 2022 Site A plan's parcel diagram
+on 8 street intersections. The Suisun annexation area is traced from a small raster figure and
+labelled approximate (about 30 m). See `pipeline/bam_pipeline/sites/traced_boundaries.py`.

@@ -1,0 +1,138 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "mission-rock",
+  "source": "DataSF Zoning Map \u2013 Special Use Districts, \u201cMission Rock\u201d",
+  "sourceLabel": "DataSF special use districts",
+  "sourceUrl": "https://data.sf.gov/d/5yf5-ms5f",
+  "query": "https://data.sf.gov/resource/5yf5-ms5f.geojson?%24where=name+%3D+%27Mission+Rock%27&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The Mission Rock Special Use District (Seawall Lot 337 and Pier 48). 27.8 acres as drawn.",
+  "license": "Public Domain U.S. Government (DataSF)",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3899013,
+       37.7764899
+      ],
+      [
+       -122.3898698,
+       37.776515
+      ],
+      [
+       -122.3898554,
+       37.7765001
+      ],
+      [
+       -122.3898123,
+       37.7765044
+      ],
+      [
+       -122.3898211,
+       37.7765908
+      ],
+      [
+       -122.3876002,
+       37.7767482
+      ],
+      [
+       -122.3874559,
+       37.7767158
+      ],
+      [
+       -122.3873499,
+       37.7766365
+      ],
+      [
+       -122.3873011,
+       37.776528
+      ],
+      [
+       -122.3873102,
+       37.7763223
+      ],
+      [
+       -122.3871032,
+       37.7763255
+      ],
+      [
+       -122.3870779,
+       37.7761043
+      ],
+      [
+       -122.3850164,
+       37.7763346
+      ],
+      [
+       -122.3849861,
+       37.7763082
+      ],
+      [
+       -122.3848277,
+       37.7753943
+      ],
+      [
+       -122.3848796,
+       37.7753869
+      ],
+      [
+       -122.384877,
+       37.7753302
+      ],
+      [
+       -122.3869964,
+       37.7750819
+      ],
+      [
+       -122.387103,
+       37.7750535
+      ],
+      [
+       -122.3871838,
+       37.7750067
+      ],
+      [
+       -122.3873217,
+       37.774997
+      ],
+      [
+       -122.3871868,
+       37.7732502
+      ],
+      [
+       -122.3872052,
+       37.7732383
+      ],
+      [
+       -122.3876401,
+       37.7732116
+      ],
+      [
+       -122.3875672,
+       37.7730535
+      ],
+      [
+       -122.3895625,
+       37.772938
+      ],
+      [
+       -122.3899013,
+       37.7764899
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,4 +1,5 @@
-import { useCallback, useEffect, useRef, useState } from 'preact/hooks';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'preact/hooks';
+import { matchesFilter, NO_FILTER, type ProjectFilter } from './projects/filter';
 import type { Map as MapLibreMap } from 'maplibre-gl';
 import { homeCamera, MapView, MAX_PITCH_3D, syncStyle } from './map/MapView';
 import type { Selection } from './map/projectLayers';
@@ -75,6 +76,8 @@ export function App() {
   const [interacted, setInteracted] = useState(false);
   const [selection, setSelection] = useState<Selection | null>(null);
   const [openId, setOpenId] = useState<string | null>(null);
+  const [filter, setFilter] = useState<ProjectFilter>(NO_FILTER);
+  const hidden = useMemo(() => MAPPED_PROJECTS.filter((p) => !matchesFilter(p, filter)).map((p) => p.id), [filter]);
   const styleToggle = useRef<HTMLButtonElement>(null);
   const flight = useRef<FlightState>({ token: 0, finishRise: null, returnCamera: null, returnMode: '2d', opener: null });
   const live = useRef({ theme, mode, openId });
@@ -146,10 +149,9 @@ export function App() {
     const opener = f.opener;
     f.returnCamera = null;
     f.opener = null;
-    requestAnimationFrame(() => {
-      const target = opener?.isConnected ? opener : map.getCanvas();
-      target.focus({ preventScroll: true });
-    });
+    // Focus now, not on the next frame: frames can be slow mid-flight, and the opener sits
+    // outside the panel that is about to unmount.
+    (opener?.isConnected ? opener : map.getCanvas()).focus({ preventScroll: true });
     if (back) await flyOut(map, back);
     if (flight.current.token !== token) return;
     setSelection(null);
@@ -232,9 +234,10 @@ export function App() {
       <a class="skip-link" href="#controls-start">Skip to map controls</a>
       <header class="title">
         <h1>{SITE_TITLE}</h1>
-        <ProjectIndex openId={openId} onOpen={(id, opener) => void openProject(id, { opener })} />
+        <ProjectIndex openId={openId} onOpen={(id, opener) => void openProject(id, { opener })}
+          filter={filter} onFilter={setFilter} />
       </header>
-      <MapView theme={theme} mode={mode} selection={selection} onReady={onReady}
+      <MapView theme={theme} mode={mode} selection={selection} hidden={hidden} onReady={onReady}
         onFirstInteraction={() => setInteracted(true)}
         onSelectProject={(id) => void openProject(id)} />
       <span id="controls-start" tabIndex={-1} />
