@@ -805,7 +805,7 @@
       ],
       "nextMilestone": null,
       "summary": "A 303-acre redevelopment area between the Bay and Interstate 280, planned in 1998 and now largely built: about 6,500 homes, UCSF's research campus, the Warriors' event center and about 40 acres of parks. Included as the map's reference for what a completed master plan looks like.",
-      "massingNotes": "Boundary: DataSF Former Redevelopment Agency Project Areas (m288-24sn, ODC-PDDL), features \"Mission Bay - North\" and \"Mission Bay - South\" (about 316 acres with water and street edges; cite 303). Existing buildings come from the base footprint data; any massing is decided in Milestone 4.",
+      "massingNotes": "Boundary: DataSF Former Redevelopment Agency Project Areas (m288-24sn, ODC-PDDL), features \"Mission Bay - North\" and \"Mission Bay - South\" (about 316 acres with water and street edges; cite 303). Existing buildings come from the base footprint data. Massing: only the two plan blocks still to build, Block 4 East and Block 12 West (affordable housing; MOHCD pipeline, DBI permits), drawn to the Mission Bay South Design for Development height zones (Nov 2025, Map 4 and Height Zone Chart: 65-ft base, towers to 160 ft on part of each zone) and 250 ft on the north half of Block 4 East (Redevelopment Plan Sec. 304.5, Ord. 022-26; split line approximate); illustrative. Blocks 29–30 (no start date) and UCSF land are not drawn.",
       "officialLinks": [
         "https://sfocii.org/mission-bay",
         "https://sfocii.org/projects/mission-bay-north/overview",
@@ -819,7 +819,13 @@
         "https://sfplanning.s3.amazonaws.com/archives/sfhousingelement.org/files/AppendixB1.pdf",
         "https://sfplanning.s3.amazonaws.com/sfmea/Pier70DEIRFull.pdf",
         "https://onesanfrancisco.org/node/693",
-        "https://data.sf.gov/d/m288-24sn"
+        "https://data.sf.gov/d/m288-24sn",
+        "https://sfocii.org/files/2026-08/Design%20for%20Development%20for%20the%20Mission%20Bay%20South%20Project%20Area%20November%2017%2C%202025.pdf",
+        "https://sfocii.org/files/inline-files/6th%20Redevelopment%20Plan%20Amendment%20for%20the%20MBS%20Redevelopment%20Project.pdf",
+        "https://sfocii.org/sites/default/files/inline-files/MB%20Land%20Use%20Map%20Oct%202023_0.pdf",
+        "https://data.sf.gov/d/aaxw-2cb8",
+        "https://data.sf.gov/d/i98e-djp9",
+        "https://data.sf.gov/d/acdm-wktn"
       ],
       "verify": [
         "whether the density increase on the last two affordable parcels (up to 815 more homes, 980 in all) was enacted",

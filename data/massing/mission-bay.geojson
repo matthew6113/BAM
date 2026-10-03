@@ -1,0 +1,294 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "mission-bay",
+  "illustrative": true,
+  "summary": "Mission Bay is largely built, so only the two plan blocks official sources show as still to come are drawn: Block 4 East (affordable housing, entitled with building permits issued in 2026) and Block 12 West (an affordable housing site with no project yet). Both are illustrative: each parcel is drawn to its height limit in the Mission Bay South Design for Development (65-ft base, 160-ft towers, and 250 ft on the northern half of Block 4 East), not as a building design. Completed buildings, including the most recent (Block 1's hotel, Blocks 9 and 9A, and 1450 Owens Street), are already in the base map. Not drawn: the entitled Warriors hotel and residential building on Blocks 29-30, which has no start date or official footprint; UCSF's campus; parks and streets.",
+  "note": "Only the blocks left to build are drawn, to their height limits rather than as designs; the rest of Mission Bay is already built.",
+  "sourceUrl": "https://sfocii.org/files/2026-08/Design%20for%20Development%20for%20the%20Mission%20Bay%20South%20Project%20Area%20November%2017%2C%202025.pdf",
+  "sourceLabel": "Design for Development, 2025 (PDF)",
+  "georeference": {
+   "parcels": "GIS layer, used as published (no tracing)",
+   "land_use_map": {
+    "scale_m_per_unit": 0.939,
+    "rotation_deg": 4.465,
+    "rms_m": 5.5,
+    "controls": [
+     {
+      "label": "3rd Street / Channel Street",
+      "residual_m": 3.2
+     },
+     {
+      "label": "3rd Street / Mission Rock Street",
+      "residual_m": 1.21
+     },
+     {
+      "label": "3rd Street / China Basin Street",
+      "residual_m": 1.0
+     },
+     {
+      "label": "4th Street / China Basin Street",
+      "residual_m": 1.77
+     },
+     {
+      "label": "3rd Street / 16th Street",
+      "residual_m": 4.87
+     },
+     {
+      "label": "4th Street / 16th Street",
+      "residual_m": 4.48
+     },
+     {
+      "label": "Owens Street / 16th Street",
+      "residual_m": 9.45
+     },
+     {
+      "label": "Illinois Street / 16th Street",
+      "residual_m": 2.83
+     },
+     {
+      "label": "3rd Street / Mariposa Street",
+      "residual_m": 7.76
+     },
+     {
+      "label": "Owens Street / Mariposa Street",
+      "residual_m": 9.21
+     }
+    ],
+    "use": "block names only"
+   },
+   "block_4e_split": "equal-area halves parallel to Mission Rock Street (approximate; the plan maps no line)"
+  },
+  "statusSources": {
+   "mohcd": "https://data.sf.gov/d/aaxw-2cb8",
+   "dbi": "https://data.sf.gov/d/i98e-djp9",
+   "housingElement": "https://sfplanning.s3.amazonaws.com/archives/sfhousingelement.org/files/AppendixB1.pdf (p. 4: two affordable parcels remain; Blocks 29-30 units have no start date)"
+  },
+  "recentCompletionsInBase": [
+   "Block 1 hotel (100 Channel St)",
+   "Block 9 (410 China Basin St)",
+   "Block 9A (400 China Basin St)",
+   "Blocks 41-43 parcel 7 (1450 Owens St)"
+  ],
+  "license": "Block shapes: DataSF parcels (Public Domain U.S. Government). Heights: OCII Mission Bay South Design for Development and Redevelopment Plan (public records)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "4E",
+    "label": "Block 4 East (north)",
+    "stage": "entitled",
+    "height_ft": 250,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": "Affordable housing",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit, not a building design: 250 ft for affordable housing on the northern half of Block 4 East (Mission Bay South Redevelopment Plan (as amended by Ordinance 022-26, Feb 13, 2026), Sec. 304.5, p. 20; Height Zone Chart, p. 24 footnote); base height 65 ft in HZ-3, Mission Bay South Design for Development (OCII, as amended Nov 17, 2025), Map 4 \"Height\", p. 22 and Height Zone Chart, p. 24 (https://sfocii.org/files/2026-08/Design%20for%20Development%20for%20the%20Mission%20Bay%20South%20Project%20Area%20November%2017%2C%202025.pdf); footprint: assessor parcel 8711029B in DataSF Parcels \u2013 Active and Retired (https://data.sf.gov/d/acdm-wktn), split into equal-area halves parallel to Mission Rock Street (approximate); block named on the OCII Mission Bay Land Use Map, October 2023; status: MOHCD Affordable Housing Pipeline (DataSF) (https://data.sf.gov/d/aaxw-2cb8) and DBI permits (https://data.sf.gov/d/i98e-djp9)",
+    "note": "Northern half of Block 4 East (approximate split): 250-ft limit for affordable housing, 65-ft base height. Entitlement approved Nov 18, 2025; DBI building permits 202512161871 (16 stories, 165 homes) and 202512172072 (23 stories, 233 homes) issued in 2026. MOHCD lists both phases as pre-construction, starting 2027 and 2028.",
+    "fid": 1
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.389847,
+        37.7728283
+       ],
+       [
+        -122.389811,
+        37.7724517
+       ],
+       [
+        -122.3903837,
+        37.7724173
+       ],
+       [
+        -122.3904197,
+        37.7727938
+       ],
+       [
+        -122.389847,
+        37.7728283
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "4E",
+    "label": "Block 4 East (south)",
+    "stage": "entitled",
+    "height_ft": 160,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": "Affordable housing",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit, not a building design: 160 ft tower height in HZ-3; base height 65 ft in HZ-3, Mission Bay South Design for Development (OCII, as amended Nov 17, 2025), Map 4 \"Height\", p. 22 and Height Zone Chart, p. 24 (https://sfocii.org/files/2026-08/Design%20for%20Development%20for%20the%20Mission%20Bay%20South%20Project%20Area%20November%2017%2C%202025.pdf); footprint: assessor parcel 8711029B in DataSF Parcels \u2013 Active and Retired (https://data.sf.gov/d/acdm-wktn), split into equal-area halves parallel to Mission Rock Street (approximate); block named on the OCII Mission Bay Land Use Map, October 2023; status: MOHCD Affordable Housing Pipeline (DataSF) (https://data.sf.gov/d/aaxw-2cb8) and DBI permits (https://data.sf.gov/d/i98e-djp9)",
+    "note": "Southern half of Block 4 East (approximate split): 65-ft base height, 90-ft midrise and 160-ft towers allowed on a share of HZ-3. Entitlement approved Nov 18, 2025; DBI building permits 202512161871 (16 stories, 165 homes) and 202512172072 (23 stories, 233 homes) issued in 2026. MOHCD lists both phases as pre-construction, starting 2027 and 2028.",
+    "fid": 2
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.389775,
+        37.7720751
+       ],
+       [
+        -122.3903477,
+        37.7720407
+       ],
+       [
+        -122.3903837,
+        37.7724173
+       ],
+       [
+        -122.389811,
+        37.7724517
+       ],
+       [
+        -122.389775,
+        37.7720751
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "12W",
+    "label": "Block 12 West",
+    "stage": "entitled",
+    "height_ft": 160,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": "Affordable housing",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit, not a building design: 160 ft tower height, 65 ft base height in HZ-2, Mission Bay South Design for Development (OCII, as amended Nov 17, 2025), Map 4 \"Height\", p. 22 and Height Zone Chart, p. 24 (https://sfocii.org/files/2026-08/Design%20for%20Development%20for%20the%20Mission%20Bay%20South%20Project%20Area%20November%2017%2C%202025.pdf); footprint: assessor parcel 8710006 in DataSF Parcels \u2013 Active and Retired (https://data.sf.gov/d/acdm-wktn); block named on the OCII Mission Bay Land Use Map, October 2023; status: MOHCD Affordable Housing Pipeline (DataSF) (https://data.sf.gov/d/aaxw-2cb8)",
+    "note": "Affordable housing site with no project yet: MOHCD lists it as \"Multiphase Project before Predevelopment\", starting about 2028. 65-ft base height, 90-ft midrise and 160-ft towers allowed on a share of HZ-2.",
+    "fid": 3
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.39465,
+        37.7708498
+       ],
+       [
+        -122.3946989,
+        37.770844
+       ],
+       [
+        -122.3947491,
+        37.770832
+       ],
+       [
+        -122.3947938,
+        37.7708152
+       ],
+       [
+        -122.3948351,
+        37.7707936
+       ],
+       [
+        -122.3948742,
+        37.7707658
+       ],
+       [
+        -122.3949057,
+        37.7707356
+       ],
+       [
+        -122.394933,
+        37.7707
+       ],
+       [
+        -122.3949523,
+        37.7706639
+       ],
+       [
+        -122.3955226,
+        37.7706295
+       ],
+       [
+        -122.3955663,
+        37.7707009
+       ],
+       [
+        -122.3956244,
+        37.7707618
+       ],
+       [
+        -122.3956961,
+        37.7708128
+       ],
+       [
+        -122.3957788,
+        37.7708519
+       ],
+       [
+        -122.3956984,
+        37.7709683
+       ],
+       [
+        -122.3955935,
+        37.7710774
+       ],
+       [
+        -122.3949531,
+        37.7715854
+       ],
+       [
+        -122.3944681,
+        37.7711985
+       ],
+       [
+        -122.3945786,
+        37.771109
+       ],
+       [
+        -122.394607,
+        37.7710769
+       ],
+       [
+        -122.3946305,
+        37.7710398
+       ],
+       [
+        -122.3946469,
+        37.7710002
+       ],
+       [
+        -122.3946558,
+        37.7709568
+       ],
+       [
+        -122.39465,
+        37.7708498
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
