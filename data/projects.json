@@ -1039,7 +1039,7 @@
       ],
       "nextMilestone": "Completion of India Basin Waterfront Park (expected 2028) and issued permits for the private 700 Innes site.",
       "summary": "A Bayview waterfront site approved in 2018 for up to 1,575 homes, a quarter of them affordable, alongside a string of new public shoreline parks. The city's parks are being built; the private site has no issued permits yet.",
-      "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"India Basin SUD\" (about 30.2 acres, the development site only; the parks need separate geometry), with the recorded development agreement's Exhibits A, B and D as a fallback. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"India Basin SUD\" (about 30.2 acres, the development site only; the parks need separate geometry), with the recorded development agreement's Exhibits A, B and D as a fallback. Massing: parcel height limits traced from the adopted Design Standards and Guidelines (July 2018, Motion 20252), Figure 5-3, p. 263: 20–80 ft across the 700 Innes parcels, with two tower zones up to 160 ft (85 ft minimum, Standard 5.2.3); open space parcels and the city parks are not drawn (illustrative, drawn to the limit). The Oct 2024 amendment does not change heights.",
       "officialLinks": [
         "https://sfplanning.s3.amazonaws.com/default/files/devagreements/indiabasin/IndiaBasin_Development_Agreement_Recorded.pdf",
         "https://sfrecpark.org/m/newsflash/home/detail/2951",
@@ -1063,7 +1063,8 @@
         "https://www.sf.gov/news-mayor-lurie-breaks-ground-on-final-phase-of-india-basin-waterfront-park-project-upgrading-open-space-in-bayview-hunters-points",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202205033459",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202204212681",
-        "https://data.sf.gov/d/5yf5-ms5f"
+        "https://data.sf.gov/d/5yf5-ms5f",
+        "https://sfplanning.s3.amazonaws.com/default/files/devagreements/indiabasin/IndiaBasin_Design_Standards_and_Guidelines.pdf"
       ],
       "verify": [
         "the developer default reported by the press in Sept 2026 (no public record found)",

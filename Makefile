@@ -55,6 +55,7 @@ sites:
 	$(PY) bam_pipeline.sites.massing_mission_rock
 	$(PY) bam_pipeline.sites.massing_pier_70
 	$(PY) bam_pipeline.sites.massing_stonestown
+	$(PY) bam_pipeline.sites.massing_india_basin
 	$(PY) bam_pipeline.sites.traced_boundaries
 
 dev:
