@@ -320,6 +320,8 @@ def main() -> None:
             "project": PROJECT_ID,
             "source": f"traced: {doc}, {FIG_2_2['figure']}, p. {FIG_2_2['printed_page']}",
             "sourceUrl": DEIR["url"],
+            "sourceLabel": "Draft EIR, Oct 2018 (PDF)",
+            "accuracyShort": f"about ±{fig22.rms_m:.0f} m",
             "accuracy": "traced",
             "accuracyNote": (
                 f"Vector shapes from the EIR figure, georeferenced to OpenStreetMap street centrelines at "

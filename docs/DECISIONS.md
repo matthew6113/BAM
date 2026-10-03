@@ -101,3 +101,24 @@ Matthew: "I want only official." What it means here:
 - **Unmapped projects:** they don't open from a deep link. Their records haven't been checked against official sources yet.
 - **Network:** Matthew is broadening the environment's network access so the official sites (sfplanning.org, data.sfgov.org, the code, CEQAnet, UC Regents) can be read.
 
+
+## Milestone 3 (2026-10-03)
+
+**Boundaries from official GIS first.** 20 projects take their site from a layer their city or
+county publishes (special use district, redevelopment area, height district, specific plan
+boundary, planned development zoning, or the parcels named in the approval), fetched and
+unioned by `make sites`. Where the layer is a proxy, the boundary is labelled approximate:
+North Bayshore (approval parcels, which the plan only partly covers), Brisbane Baylands (the
+city's draft boundary layer), Downtown West (net zoning acres, 58 of 80 gross) and Brooklyn Basin
+(development parcels only, without the parks). Willow Village, Concord, Alameda Point and the
+Suisun expansion have no usable layer and are traced from official figures.
+
+**One control is both legend and filter.** The index shows each stage with its colour and count;
+pressing a stage hides it from the list and the map. Search (name, aliases, city, county) and an
+area select narrow it further. The same filter hides markers, sites and labels on the map, so
+the legend always describes what is drawn. Labels stay sparse: the legend lives in the index,
+not on the map.
+
+**Records applied when mapped.** As each project went on the map its record was rewritten from
+its findings file (official values only; press facts in `reported`), and the official-sources
+test now covers it.

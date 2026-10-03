@@ -94,10 +94,19 @@ export function contextFilter(selection: Selection | null): ExpressionSpecificat
 }
 
 /** Project layers drawn under the place labels. */
-export function projectLayers(theme: Theme, selection: Selection | null, fonts: { medium: string[]; regular: string[] }): LayerSpecification[] {
+export function projectLayers(
+  theme: Theme,
+  selection: Selection | null,
+  fonts: { medium: string[]; regular: string[] },
+  hidden: string[] = [],
+): LayerSpecification[] {
   const c = theme.colors;
   const stageCol = stageColorExpression(theme);
   const selectedId = selection?.id ?? '';
+  // Every other project, unless the index filter hides it.
+  const others: ExpressionSpecification = hidden.length
+    ? ['all', ['!=', ['get', 'id'], selectedId], ['!', ['in', ['get', 'id'], ['literal', hidden]]]]
+    : ['!=', ['get', 'id'], selectedId];
   const landed = selection?.phase === 'landed';
   const exaggeration = theme.map.heightExaggeration;
   // Before landing, buildings that have not risen yet stand at zero height.
@@ -116,7 +125,7 @@ export function projectLayers(theme: Theme, selection: Selection | null, fonts: 
       type: 'fill',
       source: 'project-sites',
       minzoom: 11.5,
-      filter: ['!=', ['get', 'id'], selectedId],
+      filter: others,
       paint: {
         'fill-color': stageCol,
         'fill-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, theme.opacity.siteFill],
@@ -127,7 +136,7 @@ export function projectLayers(theme: Theme, selection: Selection | null, fonts: 
       type: 'line',
       source: 'project-sites',
       minzoom: 11.5,
-      filter: ['!=', ['get', 'id'], selectedId],
+      filter: others,
       layout: { 'line-join': 'round' },
       paint: {
         'line-color': stageCol,
@@ -185,7 +194,7 @@ export function projectLayers(theme: Theme, selection: Selection | null, fonts: 
       type: 'circle',
       source: 'project-points',
       maxzoom: 13,
-      filter: ['!=', ['get', 'id'], selectedId],
+      filter: others,
       paint: {
         'circle-color': stageCol,
         'circle-radius': ['interpolate', ['linear'], ['zoom'], 6, 4, 10, 6, 12.5, 7],
@@ -201,7 +210,7 @@ export function projectLayers(theme: Theme, selection: Selection | null, fonts: 
       source: 'project-points',
       minzoom: 12,
       maxzoom: 15.5,
-      filter: ['!=', ['get', 'id'], selectedId],
+      filter: others,
       layout: {
         'text-field': ['get', 'name'],
         'text-font': fonts.medium,

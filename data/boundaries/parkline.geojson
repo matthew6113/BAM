@@ -1,0 +1,154 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "parkline",
+  "source": "City of Menlo Park parcels, the six APNs in Council resolution 25-143-CC",
+  "sourceLabel": "Menlo Park parcels",
+  "sourceUrl": "https://services7.arcgis.com/uRrQ0O3z2aaiIWYU/arcgis/rest/services/City_of_Menlo_Park_Parcels/FeatureServer/7",
+  "query": "https://services7.arcgis.com/uRrQ0O3z2aaiIWYU/arcgis/rest/services/City_of_Menlo_Park_Parcels/FeatureServer/7/query?where=APN+in+%28%27062390050%27%2C+%27062390660%27%2C+%27062390670%27%2C+%27062390730%27%2C+%27062390760%27%2C+%27062390780%27%29&outFields=%2A&outSR=4326&f=geojson",
+  "accuracy": "official",
+  "accuracyNote": "The six parcels approved for the Parkline master plan (about 64 acres). 64.2 acres as drawn.",
+  "license": "CC0 (City of Menlo Park)",
+  "features_used": 6
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.1777178,
+       37.4571983
+      ],
+      [
+       -122.1776949,
+       37.4571915
+      ],
+      [
+       -122.1776098,
+       37.4573009
+      ],
+      [
+       -122.1776271,
+       37.4573152
+      ],
+      [
+       -122.1758104,
+       37.4596529
+      ],
+      [
+       -122.1754491,
+       37.4600288
+      ],
+      [
+       -122.1751819,
+       37.4600172
+      ],
+      [
+       -122.1741542,
+       37.4594992
+      ],
+      [
+       -122.1741401,
+       37.4593179
+      ],
+      [
+       -122.1745284,
+       37.4588216
+      ],
+      [
+       -122.1717295,
+       37.4574107
+      ],
+      [
+       -122.1717888,
+       37.4573341
+      ],
+      [
+       -122.1717037,
+       37.4572891
+      ],
+      [
+       -122.1730549,
+       37.455584
+      ],
+      [
+       -122.1715138,
+       37.4548048
+      ],
+      [
+       -122.1722648,
+       37.453858
+      ],
+      [
+       -122.173893,
+       37.4546778
+      ],
+      [
+       -122.1740582,
+       37.4544671
+      ],
+      [
+       -122.1741499,
+       37.4542622
+      ],
+      [
+       -122.1741721,
+       37.4541174
+      ],
+      [
+       -122.174145,
+       37.4539007
+      ],
+      [
+       -122.1752234,
+       37.4544445
+      ],
+      [
+       -122.1758162,
+       37.4536964
+      ],
+      [
+       -122.1777247,
+       37.4546582
+      ],
+      [
+       -122.1778965,
+       37.454758
+      ],
+      [
+       -122.1781201,
+       37.4549393
+      ],
+      [
+       -122.1785698,
+       37.4554391
+      ],
+      [
+       -122.1786977,
+       37.4555434
+      ],
+      [
+       -122.17888,
+       37.4556597
+      ],
+      [
+       -122.1788748,
+       37.4557095
+      ],
+      [
+       -122.1777178,
+       37.4571983
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

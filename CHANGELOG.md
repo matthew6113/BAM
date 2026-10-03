@@ -3,6 +3,21 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-03 (Milestone 3: official records for every project)
+
+Every project record other than Potrero was rewritten from the official findings in
+`docs/official-research/` (checked 2026-10-02): official values in, conflicts settled by the
+newest official document, press-only facts and their sources moved to each record's
+`reported` object, `unsourced` removed (Mission Bay's figures are now official). Stage changes:
+- **india-basin**: distressed → entitled (no official record of the default; private site has no issued permits).
+- **parkmerced**: distressed → entitled (no official record of the receivership).
+- **balboa-reservoir**: entitled → construction (DBI first construction documents for Buildings E and A).
+Notable corrections: Candlestick groundbreaking Sept 9, 2026 (not 10) and office 2.8M sq ft;
+Mission Rock Phase 1 finished 2025; Piers 30–32 split July 2025, Seawall Lot 330 application 568
+homes; Treasure Island density increase not approved; Willow Village 1,730 homes; Alameda Point
+1,300-home cap; Brooklyn Basin 3,700 homes; Concord 12,272 homes; Coliseum sold as one closing.
+Each record's `sources` also cites the GIS layer its boundary comes from.
+
 ## 2026-10-03 (official records and the Design for Development)
 
 For **potrero-power-station**, from official records read once network access opened:

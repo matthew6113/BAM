@@ -34,6 +34,8 @@ interface StyleInputs {
   theme: Theme;
   mode: ViewMode;
   selection: Selection | null;
+  /** Projects hidden by the index filter; kept from the last call when left out. */
+  hidden?: string[];
 }
 
 const applied = new WeakMap<maplibregl.Map, StyleInputs>();
@@ -44,9 +46,11 @@ const applied = new WeakMap<maplibregl.Map, StyleInputs>();
  */
 export function syncStyle(map: maplibregl.Map, next: StyleInputs) {
   const prev = applied.get(map);
+  next = { ...next, hidden: next.hidden ?? prev?.hidden ?? [] };
   if (
     prev && prev.theme === next.theme && prev.mode === next.mode &&
-    prev.selection?.id === next.selection?.id && prev.selection?.phase === next.selection?.phase
+    prev.selection?.id === next.selection?.id && prev.selection?.phase === next.selection?.phase &&
+    (prev.hidden ?? []).join() === next.hidden!.join()
   ) return;
   applied.set(map, next);
   map.setStyle(buildStyle(next.theme, next), { diff: true });
@@ -66,12 +70,13 @@ interface Props {
   theme: Theme;
   mode: ViewMode;
   selection: Selection | null;
+  hidden: string[];
   onReady: (map: maplibregl.Map) => void;
   onFirstInteraction?: () => void;
   onSelectProject?: (id: string) => void;
 }
 
-export function MapView({ theme, mode, selection, onReady, onFirstInteraction, onSelectProject }: Props) {
+export function MapView({ theme, mode, selection, hidden, onReady, onFirstInteraction, onSelectProject }: Props) {
   const container = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const [hover, setHover] = useState<Hover | null>(null);
@@ -84,7 +89,7 @@ export function MapView({ theme, mode, selection, onReady, onFirstInteraction, o
     const startsFromHash = /(^#|&)map=/.test(location.hash);
     const map = new maplibregl.Map({
       container: container.current,
-      style: buildStyle(theme, { mode, selection }),
+      style: buildStyle(theme, { mode, selection, hidden }),
       bounds: startsFromHash ? undefined : HOME_BOUNDS,
       maxBounds: MAX_BOUNDS,
       minZoom: MIN_ZOOM,
@@ -98,7 +103,7 @@ export function MapView({ theme, mode, selection, onReady, onFirstInteraction, o
       pitchWithRotate: mode === '3d',
       fadeDuration: 150,
     });
-    applied.set(map, { theme, mode, selection });
+    applied.set(map, { theme, mode, selection, hidden });
     map.keyboard.enable();
     if (mode === '2d') map.touchZoomRotate.disableRotation();
 
@@ -146,8 +151,8 @@ export function MapView({ theme, mode, selection, onReady, onFirstInteraction, o
 
   useEffect(() => {
     const map = mapRef.current;
-    if (map) syncStyle(map, { theme, mode, selection });
-  }, [theme, mode, selection]);
+    if (map) syncStyle(map, { theme, mode, selection, hidden });
+  }, [theme, mode, selection, hidden]);
 
   useEffect(() => {
     const map = mapRef.current;

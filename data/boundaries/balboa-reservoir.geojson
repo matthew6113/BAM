@@ -1,0 +1,50 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "balboa-reservoir",
+  "source": "DataSF Zoning Map \u2013 Special Use Districts, \u201cBalboa Reservoir\u201d",
+  "sourceLabel": "DataSF special use districts",
+  "sourceUrl": "https://data.sf.gov/d/5yf5-ms5f",
+  "query": "https://data.sf.gov/resource/5yf5-ms5f.geojson?%24where=name+%3D+%27Balboa+Reservoir%27&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The Balboa Reservoir Special Use District (the 16.5-acre Project Site); the SFPUC pipeline strip along the south edge is outside it. 16.6 acres as drawn.",
+  "license": "Public Domain U.S. Government (DataSF)",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4560352,
+       37.727388
+      ],
+      [
+       -122.453761,
+       37.7273768
+      ],
+      [
+       -122.4537221,
+       37.7241312
+      ],
+      [
+       -122.456021,
+       37.7246289
+      ],
+      [
+       -122.4560352,
+       37.727388
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

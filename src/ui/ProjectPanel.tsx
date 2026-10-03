@@ -109,11 +109,13 @@ export function ProjectPanel({ project, onClose, onPrev, onNext, prevName, nextN
             <a href={mMeta.sourceUrl}>Design for Development, 2020 (PDF)</a>.{' '}
           </>
         )}
-        {bMeta.accuracy === 'traced' && <strong>Approximate boundary, </strong>}
-        {bMeta.accuracy === 'traced' && <>traced from the Draft EIR (about ±3 m). </>}
+        {bMeta.accuracy === 'official' ? <>Boundary from </> : <strong>Approximate boundary, </strong>}
+        {bMeta.accuracy === 'traced' && <>traced{typeof bMeta.accuracyShort === 'string' && ` (${bMeta.accuracyShort})`} from </>}
+        {bMeta.accuracy === 'approximate' && <>from </>}
         {typeof bMeta.sourceUrl === 'string' && (
-          <a href={bMeta.sourceUrl}>Draft EIR, Oct 2018 (PDF)</a>
+          <a href={bMeta.sourceUrl}>{typeof bMeta.sourceLabel === 'string' ? bMeta.sourceLabel : 'the source'}</a>
         )}
+        .
       </p>
 
       <KeyNumbers project={project} />

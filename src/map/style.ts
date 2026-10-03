@@ -17,6 +17,8 @@ export interface StyleOptions {
   mode: ViewMode;
   /** The project being flown to or viewed, if any. */
   selection?: Selection | null;
+  /** Projects the index filter hides from the map. */
+  hidden?: string[];
 }
 
 const OSM_CREDIT =
@@ -244,7 +246,7 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
         'fill-extrusion-vertical-gradient': true,
       },
     })),
-    ...projectLayers(theme, selection, fonts),
+    ...projectLayers(theme, selection, fonts, opts.hidden ?? []),
     waterLabel(1, 6),
     waterLabel(2, 7.8),
     waterLabel(3, 10),

@@ -4,6 +4,7 @@
 import { test, expect, type Page } from '@playwright/test';
 import data from '../data/projects.json' with { type: 'json' };
 import { formatDate } from '../src/ui/format';
+import { existsSync } from 'node:fs';
 
 const POTRERO = data.projects.find((p) => p.id === 'potrero-power-station')!;
 const SITE: [number, number] = [-122.3838, 37.7563];
@@ -149,7 +150,9 @@ test('Whole Bay closes the project and goes back to the whole region', async ({ 
 });
 
 test('a project not yet on the map does not open its unchecked record', async ({ page }) => {
-  await page.goto('/p/mission-rock?test=1');
+  const unmapped = data.projects.find((p) => !existsSync(`data/boundaries/${p.id}.geojson`));
+  test.skip(!unmapped, 'every project is on the map');
+  await page.goto(`/p/${unmapped!.id}?test=1`);
   await ready(page);
   await expect.poll(() => new URL(page.url()).pathname).toBe('/');
   await expect(page.locator('.project-panel')).toHaveCount(0);
