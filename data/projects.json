@@ -1897,7 +1897,7 @@
       ],
       "nextMilestone": null,
       "summary": "Google's approved plan for about 80 acres around Diridon Station in downtown San José: up to 7.3 million sq ft of office, about 4,000 homes, a hotel and 15 acres of open space. The city reports no new construction has begun and no timeline for a restart.",
-      "massingNotes": "Boundary: City of San José Zoning Districts open data (CC-BY, credit \"City of San José\"), OPN_OpenDataService MapServer layer 401, REZONINGFILE like 'PDC19-039%' or '19039' (two polygons under blocks D5–D7 store the file number that way): 16 DC(PD) polygons approved May 25, 2021, 62.8 acres as drawn against the plan's about 58 net acres. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: City of San José Zoning Districts open data (CC-BY, credit \"City of San José\"), OPN_OpenDataService MapServer layer 401, REZONINGFILE like 'PDC19-039%' or '19039' (two polygons under blocks D5–D7 store the file number that way): 16 DC(PD) polygons approved May 25, 2021, 62.8 acres as drawn against the plan's about 58 net acres. Massing: 23 blocks traced from the October 2020 draft Design Standards and Guidelines (Draft EIR Appendix M), Figs. 5.9 and 5.12, georeferenced to 613 existing buildings (RMS 1.4 m): 40–290 ft, all illustrative. The approved 2021 version (with errata) could not be retrieved (sanjoseca.gov blocks scripted access); the approved Development Agreement (Ord. 30610) matches 8 of its 9 listed heights (E1: 260 ft in the agreement, 280 ft in the draft), and blocks H5 and H6, which the General Plan resolution says have lower limits, are outlined without a height. Needs verification against the approved DWDSG.",
       "officialLinks": [
         "https://sanjose.legistar.com/LegislationDetail.aspx?ID=9022&GUID=A707E4E6-4619-43CD-A312-DDC466FF9F25",
         "https://sanjose.legistar.com/LegislationDetail.aspx?ID=9066&GUID=153A21E6-3F49-4E8C-9E35-EA0B9127E6D2"
@@ -1911,12 +1911,17 @@
         "https://legistar.granicus.com/sanjose/attachments/1c8ecd38-02ca-489d-9ca2-c708a1102813.pdf",
         "https://legistar.granicus.com/sanjose/attachments/0b810cf1-d5af-4c58-9bf1-2f86f9063689.pdf",
         "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202120220SB7",
-        "https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataService/MapServer/401"
+        "https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataService/MapServer/401",
+        "https://ceqanet.lci.ca.gov/2019080493/4",
+        "https://ceqanet.lci.ca.gov/2019080493/4/Attachment/WFPURX",
+        "https://legistar.granicus.com/sanjose/attachments/4fa89312-fd9b-4f85-932d-8d5c463c0e8f.pdf",
+        "https://legistar.granicus.com/sanjose/attachments/d9985f7d-1a96-43f8-a1e5-96ad5a17618b.pdf"
       ],
       "verify": [
         "the final adoption date and numbers of the 2021 ordinances (set for June 8, 2021)",
         "when Google paused the project (press: 2023)",
-        "the current condition of the site (press: cleared and fenced)"
+        "the current condition of the site (press: cleared and fenced)",
+        "Downtown West block heights against the approved Design Standards and Guidelines (2021, with errata dated May 7, 2021) on sanjoseca.gov"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
