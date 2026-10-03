@@ -1609,7 +1609,7 @@
       ],
       "nextMilestone": null,
       "summary": "A mixed-use neighborhood planned by Meta's Peninsula Innovation Partners in Menlo Park, with up to 1,730 homes, offices, shops, a hotel and 20 acres of open space including an elevated park. Approved in 2022, it was paused in May 2026.",
-      "massingNotes": "Boundary: trace the development agreement's Exhibit A-2-1 legal description of the 59.17-acre main site (pp. 75–76) with the Exhibit A-1-1 map; alternatively, Menlo Park parcels (CC0, services7.arcgis.com org uRrQ0O3z2aaiIWYU, layer 7) for 1350–1390 Willow Rd, 925–1098 Hamilton Ave and 1005–1275 Hamilton Ct. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: trace the development agreement's Exhibit A-2-1 legal description of the 59.17-acre main site (pp. 75–76) with the Exhibit A-1-1 map; alternatively, Menlo Park parcels (CC0, services7.arcgis.com org uRrQ0O3z2aaiIWYU, layer 7) for 1350–1390 Willow Rd, 925–1098 Hamilton Ave and 1005–1275 Hamilton Ct. Massing: 20 buildings traced from the approved master plan set (Oct 2022), Sheet G3.04, each drawn to its own maximum height, which CDP §2.3.5 makes binding (15–118 ft; zone caps 85 ft R-MU and 120 ft O), georeferenced to the traced site boundary (RMS 0.5 m) and checked against the 2023 architectural control plans; all illustrative and entitled (the project is paused). Parks, the town square and the elevated park are not drawn.",
       "officialLinks": [
         "https://www.menlopark.gov/Government/Departments/Community-Development/Projects/Approved-projects/Willow-Village",
         "https://www.menlopark.gov/News-articles/City-news/20260504-Willow-Village-project-paused"
@@ -1619,7 +1619,17 @@
         "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/1095-willow-village-development-agreement.pdf",
         "https://www.menlopark.gov/News-articles/City-news/20260504-Willow-Village-project-paused",
         "https://www.menlopark.gov/files/sharedassets/public/v/3/agendas-and-minutes/planning-commission/2026-meetings/agenda/20260518-planning-commission-agenda-packet-amended.pdf",
-        "https://www.menlopark.gov/files/sharedassets/public/v/1/agendas-and-minutes/planning-commission/2026-meetings/agenda/20260608-planning-commisison-agenda-packet.pdf"
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/agendas-and-minutes/planning-commission/2026-meetings/agenda/20260608-planning-commisison-agenda-packet.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/meeting-and-collaboration-space-and-elevated-park.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/mixed-use-parcel-2.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/mixed-use-parcel-3-plan-set.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/office-campus.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/town-square.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/willow-village-hotel.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/willow-village-parcel-6.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/willow-village-parcel-7.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/notice-of-terms-and-conditions-of-conditional-development-permit.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/2/community-development/documents/projects/under-review/willow-village/october-2022/masterplan-plan-set.pdf"
       ],
       "verify": [
         "the Council resolution numbers for the Dec 6, 2022 approvals",

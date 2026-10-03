@@ -63,6 +63,7 @@ sites:
 	$(PY) bam_pipeline.sites.massing_related_santa_clara
 	$(PY) bam_pipeline.sites.massing_parkmerced
 	$(PY) bam_pipeline.sites.massing_parkline
+	$(PY) bam_pipeline.sites.massing_willow_village
 	$(PY) bam_pipeline.sites.traced_boundaries
 
 dev:
