@@ -737,7 +737,8 @@
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910073782",
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910073785",
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910285744",
-        "https://data.sf.gov/d/5yf5-ms5f"
+        "https://data.sf.gov/d/5yf5-ms5f",
+        "https://data.sf.gov/d/h9wh-cg3m"
       ],
       "verify": [
         "the total retail program at full build-out",
@@ -1385,7 +1386,8 @@
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202605201591",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202607094805",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202607084737",
-        "https://data.sf.gov/d/5yf5-ms5f"
+        "https://data.sf.gov/d/5yf5-ms5f",
+        "https://sfplanning.org/sites/default/files/documents/citywide/balboareservoir_dsg.pdf"
       ],
       "verify": [
         "whether the final development agreement kept about 150 homes with a City College employee preference",

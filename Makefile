@@ -51,6 +51,8 @@ manifest:
 sites:
 	$(PY) bam_pipeline.sites.potrero_power_station
 	$(PY) bam_pipeline.sites.official_boundaries
+	$(PY) bam_pipeline.sites.massing_balboa_reservoir
+	$(PY) bam_pipeline.sites.massing_mission_rock
 	$(PY) bam_pipeline.sites.traced_boundaries
 
 dev:
