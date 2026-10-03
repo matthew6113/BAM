@@ -1,5 +1,5 @@
 import { useState } from 'preact/hooks';
-import { MAPPED_PROJECTS, STAGES, stageLabel } from '../projects/data';
+import { MAPPED_PROJECTS, PROJECTS, STAGES, stageLabel } from '../projects/data';
 import { isFiltered, matchesFilter, NO_FILTER, type ProjectFilter } from '../projects/filter';
 
 interface Props {
@@ -84,7 +84,7 @@ export function ProjectIndex({ openId, onOpen, filter, onFilter }: Props) {
         {isFiltered(filter) && (
           <button type="button" class="clear" onClick={() => onFilter(NO_FILTER)}>Show all projects</button>
         )}
-        {MAPPED_PROJECTS.length < 25 && (
+        {MAPPED_PROJECTS.length < PROJECTS.length && (
           <p class="small">More projects are being mapped.</p>
         )}
       </div>

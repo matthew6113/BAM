@@ -18,6 +18,10 @@
       {
         "name": "Howard Terminal (Oakland)",
         "reason": "The A's ballpark plan died when the team left Oakland."
+      },
+      {
+        "name": "Piers 30–32 and Seawall Lot 330 (San Francisco)",
+        "reason": "Removed from the map at Matthew's request (2026-10-03): the pier deal is paused and the seawall lot housing is only an application under review."
       }
     ],
     "candidatesNotYetResearched": [
@@ -1109,104 +1113,6 @@
           "https://bisnow.com/san-francisco/news/mixed-use/end-of-approvals-process-in-sight-for-build-incs-india-basin-project-80608",
           "https://socketsite.com/archives/tag/700-innes-avenue",
           "https://www.bcdc.ca.gov/wp-content/uploads/sites/354/2024/12/Applicant-Presentation-IBSP.pdf"
-        ]
-      },
-      "lastVerified": "2026-10-02"
-    },
-    {
-      "id": "piers-30-32",
-      "name": "Piers 30–32 and Seawall Lot 330",
-      "aliases": [
-        "Piers 30-32",
-        "SWL 330"
-      ],
-      "city": "San Francisco",
-      "county": "San Francisco",
-      "subregion": "San Francisco",
-      "approxCenter": [
-        -122.387,
-        37.785
-      ],
-      "acres": 15.3,
-      "acresNote": "The Board's 2024 fiscal feasibility resolution (Resolution 247-24) describes an approximately 15.3-acre site: Piers 30–32 (about 13 acres; 12.7 by lot size in the 2012 notice of preparation) and the 2.3-acre Seawall Lot 330 across the Embarcadero.",
-      "program": {
-        "homes": 568,
-        "affordableHomes": 86,
-        "affordablePct": null,
-        "officeLabSqft": 375000,
-        "commercialSqftTotal": null,
-        "retailSqft": 70000,
-        "hotelKeys": null,
-        "openSpaceAcres": null,
-        "notes": "Homes are from the May 2026 SB 423 application for Seawall Lot 330 (568 homes, 86 affordable; towers of 23 stories/230 ft and 10 stories/105 ft), under Planning review. The 2024 term sheet had 713 homes (186 below market rate) there. Office (about 375,000 GSF in the pier shed, plus about 55,000 of mezzanine) and retail (about 70,000 sq ft including a market hall) are from the 2024 term sheet for the piers, now paused. An earlier proposal removed about 45% (6 acres) of the pier deck."
-      },
-      "developer": "Affiliates of Strada Investment Group (Strada-TCC in the 2021 negotiating agreement)",
-      "publicPartners": [
-        "Port of San Francisco"
-      ],
-      "stage": "paused",
-      "stageNote": "Paused. In July 2025 the Port Commission authorized ending the exclusive negotiating agreement (Resolution 25-40); under new agreements signed Oct 24, 2025, negotiations on Piers 30–32 are paused for 18 months to study feasibility. An SB 423 application for 568 homes on Seawall Lot 330 has been under Planning review since May 2026.",
-      "timeline": [
-        {
-          "date": "2021-02-09",
-          "event": "Port Commission approves an exclusive negotiating agreement with Strada-TCC (Resolution 21-08), signed in March 2021."
-        },
-        {
-          "date": "2024-01-23",
-          "event": "Port Commission endorses the term sheet (Resolution 24-10)."
-        },
-        {
-          "date": "2024-04-30",
-          "event": "Board of Supervisors finds the project fiscally feasible (Resolution 247-24)."
-        },
-        {
-          "date": "2025-07",
-          "event": "Port Commission authorizes terminating the exclusive negotiating agreement and separating the piers from Seawall Lot 330 (Resolution 25-40)."
-        },
-        {
-          "date": "2025-10-24",
-          "event": "New agreements signed; negotiations on Piers 30–32 are paused for 18 months."
-        },
-        {
-          "date": "2026-03-06",
-          "event": "Port staff give the Port Commission an update on ideas to make the pier rebuild feasible."
-        },
-        {
-          "date": "2026-05-13",
-          "event": "SB 423 application filed for 568 homes on Seawall Lot 330 (555 Beale St.)."
-        }
-      ],
-      "nextMilestone": "Planning's decision on the Seawall Lot 330 SB 423 application; the end of the 18-month pause on the piers.",
-      "summary": "Decaying piers at the foot of Bryant Street and a seawall lot across the Embarcadero. The housing on the seawall lot is moving through Planning; the pier rebuild is on hold.",
-      "massingNotes": "Boundary: DataSF Parcels (acdm-wktn, PDDL): Piers 30–32 are 9900/030 and 9900/032 (about 13.1 acres) and Seawall Lot 330 is 3771/002 and 3770/002 (about 2.33 acres); the 2024 term sheet's Exhibit A shows the plan. Massing: Seawall Lot 330 drawn to its zoning envelope, 65/105-R (DataSF Height and Bulk Districts h9wh-cg3m; 65-ft podium, 105-ft towers), illustrative and not the proposal; the 568-home SB 423 application (towers of 23 stories/230 ft and 10 stories/105 ft) can't be placed from official plans yet. Piers 30–32 are an outline only: 40-X zoning, but the deck is to be rebuilt smaller and no plan places a building.",
-      "officialLinks": [
-        "https://www.sfport.com/projects-programs/piers-30-32-and-seawall-lot-330",
-        "https://www.sfport.com/sites/default/files/2026-03/item_11b_piers_30-32_feasibility_improvement_ideas_-_info.docx.pdf"
-      ],
-      "sources": [
-        "https://www.sfport.com/sites/default/files/2026-03/item_11b_piers_30-32_feasibility_improvement_ideas_-_info.docx.pdf",
-        "https://www.sfport.com/media/10606/download?inline=",
-        "https://www.sfport.com/media/10698/download?inline",
-        "https://sfgov.legistar.com/View.ashx?M=F&ID=12946504&GUID=9CA150DB-7928-4DCF-974E-F61EA9B3F21F",
-        "https://sfgov.legistar.com/LegislationDetail.aspx?ID=6611808&GUID=73D61F5F-476D-4D2A-8606-C577FA08763B",
-        "https://sfgov.legistar.com/View.ashx?M=F&ID=12825404&GUID=D1962148-C9BC-461D-BEAB-ACE96775317D",
-        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2025-011323PRJ",
-        "https://www.sfport.com/projects-programs/piers-30-32-and-seawall-lot-330",
-        "https://sfplanning.s3.amazonaws.com/sfmea/2012.0718E_NOP.pdf",
-        "https://data.sf.gov/d/acdm-wktn",
-        "https://data.sf.gov/d/h9wh-cg3m"
-      ],
-      "verify": [
-        "the exact date of Port Resolution 25-40 in July 2025",
-        "Planning's decision on the Seawall Lot 330 application"
-      ],
-      "reported": {
-        "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "program.notes": "Earlier plan: ~376,000 sq ft of office and ~30,700 sq ft of retail on rebuilt piers; 700+ homes on Seawall Lot 330.",
-        "summary": "The piers have defeated every development attempt for a quarter century.",
-        "sources": [
-          "https://sfyimby.com/category/piers-30-32",
-          "https://www.sfexaminer.com/archives/port-commission-backs-850-unit-development-plan-for-piers-30-32/article_41bcc7ad-de2c-53b6-ac5d-e779bde3645b.html"
         ]
       },
       "lastVerified": "2026-10-02"

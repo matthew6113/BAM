@@ -151,14 +151,6 @@ SPECS: dict[str, dict] = {
         "note": "Treasure Island and Yerba Buena Island height districts. The Job Corps campus and federal land are outside them.",
         "license": "Public Domain U.S. Government (DataSF)",
     },
-    "piers-30-32": {
-        "label": "DataSF parcels",
-        **socrata(DATASF, SF_PARCELS, "blklot in ('9900030', '9900032', '3771002', '3770002') and active = true"),
-        "layer": "DataSF Parcels, 9900/030 and 9900/032 (the piers) and 3771/002 and 3770/002 (Seawall Lot 330)",
-        "accuracy": "official",
-        "note": "Assessor's parcels for Piers 30–32 and Seawall Lot 330.",
-        "license": "ODC Public Domain Dedication and License (DataSF)",
-    },
     "parkline": {
         "label": "Menlo Park parcels",
         **arcgis(MENLO_PARCELS, f"APN in ({_sql_list(['062390050', '062390660', '062390670', '062390730', '062390760', '062390780'])})"),

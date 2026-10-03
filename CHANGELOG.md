@@ -3,6 +3,11 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-03 (Piers 30–32 removed)
+
+**piers-30-32** removed from the map at Matthew's request: the record, its boundary and its
+massing are deleted and the project is listed under `_meta.dropped`. 24 projects remain.
+
 ## 2026-10-03 (Milestone 4, batch 2: massing for five more San Francisco projects)
 
 `massingNotes` updated and each massing source (design documents, DBI permits for built
