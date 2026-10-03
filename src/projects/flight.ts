@@ -70,7 +70,13 @@ export function landingCamera(map: MapLibreMap, project: Project, site: Polygon 
     return { ...project.camera, zoom: project.camera.zoom + Math.min(0, fit) };
   }
   const [x0, y0, x1, y1] = bboxOf(site);
-  const fitted = map.cameraForBounds([x0, y0, x1, y1], { padding: { top: 60, bottom: 60, left: 60, right: 60 } });
+  // Fit to the part of the map the panel leaves visible.
+  const fitted = map.cameraForBounds([x0, y0, x1, y1], {
+    padding: {
+      top: 60 + (padding.top ?? 0), bottom: 60 + (padding.bottom ?? 0),
+      left: 60 + (padding.left ?? 0), right: 60 + (padding.right ?? 0),
+    },
+  });
   return {
     // The middle of the bounds the zoom was fitted to: a site in pieces (a pier and a lot
     // across the street) stays in frame, where the area-weighted centroid would not.
