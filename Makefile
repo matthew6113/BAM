@@ -60,6 +60,7 @@ sites:
 	$(PY) bam_pipeline.sites.massing_mission_bay
 	$(PY) bam_pipeline.sites.massing_treasure_island
 	$(PY) bam_pipeline.sites.massing_candlestick_point
+	$(PY) bam_pipeline.sites.massing_hunters_point_shipyard
 	$(PY) bam_pipeline.sites.traced_boundaries
 
 dev:

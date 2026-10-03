@@ -1,0 +1,6580 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "hunters-point-shipyard",
+  "illustrative": true,
+  "summary": "Illustrative massing: each Phase 2 development block is drawn to its height limit in the 2018 Design for Development (Fig. 4.4c), from 40 to 120 ft, not as a building design. Two towers, 370 ft and 270 ft, are drawn where the figure places them; the plan lets each move within its block. Parks and open space, the Phase 1 hilltop and the Navy-era buildings the plan keeps aren't massed. Blocks 1, 5 and 6 are drawn as the plan draws them, partly beyond the Phase 2 zoning district. Nothing has been built on Phase 2: it is a Superfund site still owned by the Navy, which expects to hand it over, except Parcel F, in 2036\u20132038.",
+  "note": "Blocks are drawn to their height limits in the 2018 Design for Development, not as building designs; real buildings will be smaller.",
+  "sourceUrl": "https://sfocii.org/sites/default/files/inline-files/1.%20HUNTERS%20POINT%20SHIPYARD%20PHASE%202%20DESIGN%20FOR%20DEVELOPMENT.pdf",
+  "sourceLabel": "Design for Development, 2018 (PDF)",
+  "georeference": {
+   "figure_4_4c": {
+    "scale_m_per_unit": 0.72067,
+    "rotation_deg": 1.516,
+    "rms_m": 3.61,
+    "method": "raster correlation of the figure's road fills with OpenStreetMap roads (scale, rotation, shift), then trimmed ICP of road pixels onto road centrelines; road pixels span the road width, so part of the residual is half a road's width",
+    "points": 28661,
+    "inlier_share": 0.5,
+    "median_m": 6.66,
+    "p90_m": 34.99,
+    "correlation": 0.455
+   },
+   "check_against_site": {
+    "blocks_m2": 419434,
+    "outside_site_m2": 25330,
+    "outside_share_by_block": {
+     "1": 0.643,
+     "2": 0.04,
+     "3": 0.031,
+     "5": 0.202,
+     "6": 0.073,
+     "9": 0.007
+    },
+    "note": "Blocks are drawn as the D4D draws them, not clipped to the site. Blocks 1, 5 and 6 reach onto land the zoning map puts in the Phase 1 height district (HP-RA) or a 40-X district."
+   }
+  },
+  "documents": {
+   "design_for_development": {
+    "title": "Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII)",
+    "url": "https://sfocii.org/sites/default/files/inline-files/1.%20HUNTERS%20POINT%20SHIPYARD%20PHASE%202%20DESIGN%20FOR%20DEVELOPMENT.pdf",
+    "sha256": "0e0f0f99d47888427c9ceb640ef4de65d19a1bce5f9a47f71d70cda0ef6bfeac",
+    "pages": "Fig. 4.4c p. 61, Std. 4.3.1 p. 59, Sec. 4.9 and Fig. 4.9a p. 92, Fig. 4.0a note p. 45"
+   },
+   "redevelopment_plan": {
+    "title": "Hunters Point Shipyard Redevelopment Plan (as amended Nov 14, 2024; OCII)",
+    "url": "https://sfocii.org/sites/default/files/2025-10/2024%20Hunters%20Point%20Shipyard%20Redevelopment%20Plan.pdf",
+    "sha256": "4842f6211a6c67d9057a009b5982d48cb0906c9bae0d65af74888201c63d6aea",
+    "finding": "Sec. II.D.4, p. 23: no building may exceed 370 ft; heights are set by the Phase 2 Design for Development."
+   },
+   "status": [
+    "OCII Annual Housing Production Report FY 2023-24, p. 6: Phase 2 is a Superfund site still owned by the Navy; no construction on any Phase 2 parcel.",
+    "OCII Commission memo, Sept 3, 2024 (2024 Modified Project Variant), pp. 10-11: conveyance of the Shipyard Site, excluding Parcel F, expected 2036-2038."
+   ]
+  },
+  "license": "Block shapes: traced from a public OCII document. Georeference: OpenStreetMap contributors (ODbL 1.0), via Overture Maps."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "1",
+    "label": "Block 1",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61",
+    "note": "The D4D draws this block partly outside the Phase 2 height district on the zoning map (the site outline here), on land zoned for Phase 1 (HP-RA) or 40-X. It is drawn as the D4D shows it."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3720284,
+        37.7266195
+       ],
+       [
+        -122.371963,
+        37.7266205
+       ],
+       [
+        -122.3707245,
+        37.7261527
+       ],
+       [
+        -122.3706092,
+        37.726122
+       ],
+       [
+        -122.3705276,
+        37.7261298
+       ],
+       [
+        -122.3705111,
+        37.7261236
+       ],
+       [
+        -122.3704787,
+        37.7261371
+       ],
+       [
+        -122.3704296,
+        37.7261378
+       ],
+       [
+        -122.3703973,
+        37.7261513
+       ],
+       [
+        -122.3702426,
+        37.7261798
+       ],
+       [
+        -122.3702102,
+        37.7261933
+       ],
+       [
+        -122.3701366,
+        37.7261944
+       ],
+       [
+        -122.3700436,
+        37.7260724
+       ],
+       [
+        -122.3700102,
+        37.726047
+       ],
+       [
+        -122.3699774,
+        37.726041
+       ],
+       [
+        -122.369945,
+        37.7260545
+       ],
+       [
+        -122.3695626,
+        37.7261384
+       ],
+       [
+        -122.3695226,
+        37.7261716
+       ],
+       [
+        -122.3693517,
+        37.7262067
+       ],
+       [
+        -122.3692781,
+        37.7262079
+       ],
+       [
+        -122.3692436,
+        37.7261369
+       ],
+       [
+        -122.369243,
+        37.726111
+       ],
+       [
+        -122.3692173,
+        37.7260659
+       ],
+       [
+        -122.3692167,
+        37.7260399
+       ],
+       [
+        -122.369191,
+        37.7259948
+       ],
+       [
+        -122.3691203,
+        37.7257816
+       ],
+       [
+        -122.3689718,
+        37.7254006
+       ],
+       [
+        -122.3689698,
+        37.7253227
+       ],
+       [
+        -122.3690022,
+        37.7253092
+       ],
+       [
+        -122.3693276,
+        37.7252391
+       ],
+       [
+        -122.3698073,
+        37.7251211
+       ],
+       [
+        -122.3699376,
+        37.7250996
+       ],
+       [
+        -122.3701989,
+        37.7250825
+       ],
+       [
+        -122.370232,
+        37.725095
+       ],
+       [
+        -122.37024,
+        37.7250884
+       ],
+       [
+        -122.3703054,
+        37.7250873
+       ],
+       [
+        -122.3704612,
+        37.7251044
+       ],
+       [
+        -122.3705598,
+        37.7251223
+       ],
+       [
+        -122.370741,
+        37.7251715
+       ],
+       [
+        -122.3713353,
+        37.7253895
+       ],
+       [
+        -122.3716415,
+        37.7255341
+       ],
+       [
+        -122.3719223,
+        37.7256402
+       ],
+       [
+        -122.3719386,
+        37.7256399
+       ],
+       [
+        -122.3723515,
+        37.7257959
+       ],
+       [
+        -122.372557,
+        37.7258381
+       ],
+       [
+        -122.3725584,
+        37.7258966
+       ],
+       [
+        -122.3723389,
+        37.7262768
+       ],
+       [
+        -122.3720284,
+        37.7266195
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "2",
+    "label": "Block 2",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3683263,
+        37.7264177
+       ],
+       [
+        -122.3682446,
+        37.726419
+       ],
+       [
+        -122.3682279,
+        37.7264062
+       ],
+       [
+        -122.3682274,
+        37.7263867
+       ],
+       [
+        -122.3682017,
+        37.7263417
+       ],
+       [
+        -122.3682011,
+        37.7263157
+       ],
+       [
+        -122.3681754,
+        37.7262706
+       ],
+       [
+        -122.3681748,
+        37.7262446
+       ],
+       [
+        -122.3681491,
+        37.7261996
+       ],
+       [
+        -122.3681485,
+        37.7261736
+       ],
+       [
+        -122.3681228,
+        37.7261285
+       ],
+       [
+        -122.3681222,
+        37.7261025
+       ],
+       [
+        -122.3680965,
+        37.7260575
+       ],
+       [
+        -122.3680959,
+        37.7260315
+       ],
+       [
+        -122.3680702,
+        37.7259864
+       ],
+       [
+        -122.3680696,
+        37.7259604
+       ],
+       [
+        -122.3680439,
+        37.7259154
+       ],
+       [
+        -122.3679645,
+        37.7256827
+       ],
+       [
+        -122.3679475,
+        37.725657
+       ],
+       [
+        -122.3679371,
+        37.7255662
+       ],
+       [
+        -122.3679613,
+        37.7255528
+       ],
+       [
+        -122.3684657,
+        37.725441
+       ],
+       [
+        -122.3688558,
+        37.7253439
+       ],
+       [
+        -122.3689538,
+        37.7253359
+       ],
+       [
+        -122.3689636,
+        37.7254007
+       ],
+       [
+        -122.3689806,
+        37.7254264
+       ],
+       [
+        -122.3691302,
+        37.7258529
+       ],
+       [
+        -122.3692524,
+        37.7261628
+       ],
+       [
+        -122.369254,
+        37.7262277
+       ],
+       [
+        -122.3691888,
+        37.7262353
+       ],
+       [
+        -122.3683263,
+        37.7264177
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "3",
+    "label": "Block 3",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3682035,
+        37.7264131
+       ],
+       [
+        -122.3681381,
+        37.7264141
+       ],
+       [
+        -122.3680642,
+        37.7264023
+       ],
+       [
+        -122.3678817,
+        37.7263012
+       ],
+       [
+        -122.3676483,
+        37.726123
+       ],
+       [
+        -122.367648,
+        37.72611
+       ],
+       [
+        -122.3672228,
+        37.7257853
+       ],
+       [
+        -122.3672213,
+        37.7257268
+       ],
+       [
+        -122.3678475,
+        37.7255806
+       ],
+       [
+        -122.3679211,
+        37.7255795
+       ],
+       [
+        -122.3679394,
+        37.7256571
+       ],
+       [
+        -122.3679564,
+        37.7256829
+       ],
+       [
+        -122.3680358,
+        37.7259155
+       ],
+       [
+        -122.3680614,
+        37.7259606
+       ],
+       [
+        -122.3680884,
+        37.7260576
+       ],
+       [
+        -122.3681666,
+        37.7262448
+       ],
+       [
+        -122.3681673,
+        37.7262707
+       ],
+       [
+        -122.3681929,
+        37.7263158
+       ],
+       [
+        -122.3682035,
+        37.7264131
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "4",
+    "label": "Block 4",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3640559,
+        37.7280372
+       ],
+       [
+        -122.3639905,
+        37.7280382
+       ],
+       [
+        -122.3639241,
+        37.7280003
+       ],
+       [
+        -122.3639228,
+        37.7279483
+       ],
+       [
+        -122.3653078,
+        37.7264064
+       ],
+       [
+        -122.3653239,
+        37.7263932
+       ],
+       [
+        -122.3653402,
+        37.7263929
+       ],
+       [
+        -122.3654284,
+        37.7263201
+       ],
+       [
+        -122.3654268,
+        37.7262552
+       ],
+       [
+        -122.3655903,
+        37.7262526
+       ],
+       [
+        -122.3656634,
+        37.726232
+       ],
+       [
+        -122.3658106,
+        37.7262297
+       ],
+       [
+        -122.3658271,
+        37.7262359
+       ],
+       [
+        -122.3658205,
+        37.726301
+       ],
+       [
+        -122.3655817,
+        37.7265646
+       ],
+       [
+        -122.3655081,
+        37.7265657
+       ],
+       [
+        -122.3654914,
+        37.726553
+       ],
+       [
+        -122.3654751,
+        37.7265533
+       ],
+       [
+        -122.3654191,
+        37.7266061
+       ],
+       [
+        -122.3653455,
+        37.7266072
+       ],
+       [
+        -122.3653055,
+        37.7266404
+       ],
+       [
+        -122.3652022,
+        37.7267654
+       ],
+       [
+        -122.3640559,
+        37.7280372
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "5",
+    "label": "Block 5",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61",
+    "note": "The D4D draws this block partly outside the Phase 2 height district on the zoning map (the site outline here), on land zoned for Phase 1 (HP-RA). It is drawn as the D4D shows it."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3646364,
+        37.7283594
+       ],
+       [
+        -122.3645463,
+        37.7283544
+       ],
+       [
+        -122.3640817,
+        37.7280888
+       ],
+       [
+        -122.3640734,
+        37.7280824
+       ],
+       [
+        -122.3640719,
+        37.7280239
+       ],
+       [
+        -122.3652104,
+        37.7267653
+       ],
+       [
+        -122.3653136,
+        37.7266402
+       ],
+       [
+        -122.3653297,
+        37.726627
+       ],
+       [
+        -122.3653951,
+        37.726626
+       ],
+       [
+        -122.3654034,
+        37.7266323
+       ],
+       [
+        -122.3654594,
+        37.7265795
+       ],
+       [
+        -122.3655248,
+        37.7265785
+       ],
+       [
+        -122.365558,
+        37.7265974
+       ],
+       [
+        -122.3656856,
+        37.7264655
+       ],
+       [
+        -122.3657091,
+        37.7264262
+       ],
+       [
+        -122.3658604,
+        37.7262614
+       ],
+       [
+        -122.3659422,
+        37.7262601
+       ],
+       [
+        -122.3659918,
+        37.7262788
+       ],
+       [
+        -122.3660249,
+        37.7262978
+       ],
+       [
+        -122.3660264,
+        37.7263562
+       ],
+       [
+        -122.3658287,
+        37.7266322
+       ],
+       [
+        -122.365833,
+        37.7271324
+       ],
+       [
+        -122.3658007,
+        37.7271523
+       ],
+       [
+        -122.3646364,
+        37.7283594
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "5",
+    "label": "Block 5",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61",
+    "note": "The D4D draws this block partly outside the Phase 2 height district on the zoning map (the site outline here), on land zoned for Phase 1 (HP-RA). It is drawn as the D4D shows it."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3651925,
+        37.7286821
+       ],
+       [
+        -122.3651271,
+        37.7286831
+       ],
+       [
+        -122.3646459,
+        37.7284113
+       ],
+       [
+        -122.3646446,
+        37.7283593
+       ],
+       [
+        -122.365777,
+        37.7271852
+       ],
+       [
+        -122.3658424,
+        37.7271842
+       ],
+       [
+        -122.3658511,
+        37.7272035
+       ],
+       [
+        -122.3658452,
+        37.7272946
+       ],
+       [
+        -122.3658543,
+        37.7273334
+       ],
+       [
+        -122.3658645,
+        37.7277425
+       ],
+       [
+        -122.3658484,
+        37.7277558
+       ],
+       [
+        -122.3658513,
+        37.7278727
+       ],
+       [
+        -122.3656681,
+        37.7280705
+       ],
+       [
+        -122.3656702,
+        37.7281549
+       ],
+       [
+        -122.3656543,
+        37.7281746
+       ],
+       [
+        -122.3651925,
+        37.7286821
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "6",
+    "label": "Block 6",
+    "stage": "entitled",
+    "height_ft": 55,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 55-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61",
+    "note": "The D4D draws this block partly outside the Phase 2 height district on the zoning map (the site outline here), on land zoned for Phase 1 (HP-RA). It is drawn as the D4D shows it."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3660387,
+        37.7291626
+       ],
+       [
+        -122.3659733,
+        37.7291636
+       ],
+       [
+        -122.3657493,
+        37.7290372
+       ],
+       [
+        -122.365741,
+        37.7290308
+       ],
+       [
+        -122.3657397,
+        37.7289789
+       ],
+       [
+        -122.365867,
+        37.728834
+       ],
+       [
+        -122.3659077,
+        37.7288268
+       ],
+       [
+        -122.3659558,
+        37.7287871
+       ],
+       [
+        -122.365954,
+        37.7287156
+       ],
+       [
+        -122.36597,
+        37.7287024
+       ],
+       [
+        -122.3660188,
+        37.7286886
+       ],
+       [
+        -122.3660262,
+        37.7286561
+       ],
+       [
+        -122.3661933,
+        37.7284715
+       ],
+       [
+        -122.3662014,
+        37.7284649
+       ],
+       [
+        -122.366275,
+        37.7284638
+       ],
+       [
+        -122.3664991,
+        37.7285967
+       ],
+       [
+        -122.3665005,
+        37.7286551
+       ],
+       [
+        -122.3660387,
+        37.7291626
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "6",
+    "label": "Block 6",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61",
+    "note": "The D4D draws this block partly outside the Phase 2 height district on the zoning map (the site outline here), on land zoned for Phase 1 (HP-RA). It is drawn as the D4D shows it."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3657315,
+        37.728979
+       ],
+       [
+        -122.3656497,
+        37.7289803
+       ],
+       [
+        -122.3654506,
+        37.7288664
+       ],
+       [
+        -122.3654493,
+        37.7288145
+       ],
+       [
+        -122.365903,
+        37.7283072
+       ],
+       [
+        -122.365911,
+        37.7283005
+       ],
+       [
+        -122.3659846,
+        37.7282994
+       ],
+       [
+        -122.3661837,
+        37.7284132
+       ],
+       [
+        -122.3661853,
+        37.7284782
+       ],
+       [
+        -122.366018,
+        37.7286562
+       ],
+       [
+        -122.3660106,
+        37.7286888
+       ],
+       [
+        -122.3659699,
+        37.7286959
+       ],
+       [
+        -122.3659378,
+        37.7287224
+       ],
+       [
+        -122.3659316,
+        37.7288005
+       ],
+       [
+        -122.3659075,
+        37.7288203
+       ],
+       [
+        -122.3658748,
+        37.7288208
+       ],
+       [
+        -122.3658588,
+        37.7288341
+       ],
+       [
+        -122.3657315,
+        37.728979
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "7",
+    "label": "Block 7",
+    "stage": "entitled",
+    "height_ft": 55,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 55-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3667852,
+        37.7295797
+       ],
+       [
+        -122.3666951,
+        37.7295746
+       ],
+       [
+        -122.3661641,
+        37.7292711
+       ],
+       [
+        -122.3661626,
+        37.7292126
+       ],
+       [
+        -122.3666245,
+        37.7287052
+       ],
+       [
+        -122.3666981,
+        37.728704
+       ],
+       [
+        -122.3672458,
+        37.7290203
+       ],
+       [
+        -122.3672471,
+        37.7290722
+       ],
+       [
+        -122.3667852,
+        37.7295797
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "8",
+    "label": "Block 8",
+    "stage": "entitled",
+    "height_ft": 55,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 55-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3676565,
+        37.7300793
+       ],
+       [
+        -122.3675664,
+        37.7300742
+       ],
+       [
+        -122.3674915,
+        37.7300234
+       ],
+       [
+        -122.3669523,
+        37.72972
+       ],
+       [
+        -122.3669509,
+        37.7296616
+       ],
+       [
+        -122.3674125,
+        37.7291476
+       ],
+       [
+        -122.3674779,
+        37.7291466
+       ],
+       [
+        -122.3680753,
+        37.729488
+       ],
+       [
+        -122.368092,
+        37.7295008
+       ],
+       [
+        -122.3681008,
+        37.7295266
+       ],
+       [
+        -122.3681023,
+        37.7295851
+       ],
+       [
+        -122.3680864,
+        37.7296048
+       ],
+       [
+        -122.3676565,
+        37.7300793
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "9",
+    "label": "Block 9",
+    "stage": "entitled",
+    "height_ft": 55,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 55-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3684694,
+        37.7305343
+       ],
+       [
+        -122.3683876,
+        37.7305356
+       ],
+       [
+        -122.3677737,
+        37.7301879
+       ],
+       [
+        -122.3677724,
+        37.730136
+       ],
+       [
+        -122.3677883,
+        37.7301162
+       ],
+       [
+        -122.3682341,
+        37.729622
+       ],
+       [
+        -122.3683242,
+        37.7296271
+       ],
+       [
+        -122.3689299,
+        37.7299749
+       ],
+       [
+        -122.3689312,
+        37.7300269
+       ],
+       [
+        -122.3684694,
+        37.7305343
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "10",
+    "label": "Block 10",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.367921,
+        37.7311796
+       ],
+       [
+        -122.3678474,
+        37.7311807
+       ],
+       [
+        -122.3672085,
+        37.7308139
+       ],
+       [
+        -122.367215,
+        37.7307489
+       ],
+       [
+        -122.3675894,
+        37.7303402
+       ],
+       [
+        -122.3676711,
+        37.7303389
+       ],
+       [
+        -122.3683017,
+        37.7306994
+       ],
+       [
+        -122.3682952,
+        37.7307644
+       ],
+       [
+        -122.367921,
+        37.7311796
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "11",
+    "label": "Block 11",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3670913,
+        37.7307053
+       ],
+       [
+        -122.3670095,
+        37.7307066
+       ],
+       [
+        -122.3663871,
+        37.730346
+       ],
+       [
+        -122.3663856,
+        37.7302876
+       ],
+       [
+        -122.3667678,
+        37.7298658
+       ],
+       [
+        -122.3668332,
+        37.7298648
+       ],
+       [
+        -122.3668829,
+        37.72989
+       ],
+       [
+        -122.367472,
+        37.7302251
+       ],
+       [
+        -122.3674734,
+        37.7302836
+       ],
+       [
+        -122.3670913,
+        37.7307053
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "12",
+    "label": "Block 12",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.366212,
+        37.7302123
+       ],
+       [
+        -122.3661466,
+        37.7302134
+       ],
+       [
+        -122.365599,
+        37.7299036
+       ],
+       [
+        -122.3656054,
+        37.729832
+       ],
+       [
+        -122.3659796,
+        37.7294169
+       ],
+       [
+        -122.366045,
+        37.7294159
+       ],
+       [
+        -122.3666009,
+        37.729732
+       ],
+       [
+        -122.3666022,
+        37.729784
+       ],
+       [
+        -122.3665863,
+        37.7298037
+       ],
+       [
+        -122.366212,
+        37.7302123
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "13",
+    "label": "Block 13",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3654736,
+        37.7297951
+       ],
+       [
+        -122.3654082,
+        37.7297961
+       ],
+       [
+        -122.3648855,
+        37.729499
+       ],
+       [
+        -122.3648841,
+        37.7294405
+       ],
+       [
+        -122.3652663,
+        37.7290188
+       ],
+       [
+        -122.365348,
+        37.7290175
+       ],
+       [
+        -122.3658542,
+        37.7293084
+       ],
+       [
+        -122.3658478,
+        37.72938
+       ],
+       [
+        -122.3654736,
+        37.7297951
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "14",
+    "label": "Block 14",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3646272,
+        37.7293081
+       ],
+       [
+        -122.3645536,
+        37.7293092
+       ],
+       [
+        -122.3640725,
+        37.7290374
+       ],
+       [
+        -122.364071,
+        37.728979
+       ],
+       [
+        -122.3644532,
+        37.7285572
+       ],
+       [
+        -122.3645433,
+        37.7285623
+       ],
+       [
+        -122.365008,
+        37.7288279
+       ],
+       [
+        -122.3650016,
+        37.7288995
+       ],
+       [
+        -122.3646272,
+        37.7293081
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "15",
+    "label": "Block 15",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3636824,
+        37.7287969
+       ],
+       [
+        -122.3636894,
+        37.7288009
+       ],
+       [
+        -122.3638547,
+        37.7286174
+       ],
+       [
+        -122.3638845,
+        37.7285633
+       ],
+       [
+        -122.3635524,
+        37.728374
+       ],
+       [
+        -122.3634296,
+        37.7285088
+       ],
+       [
+        -122.3634288,
+        37.7284758
+       ],
+       [
+        -122.3634531,
+        37.7284689
+       ],
+       [
+        -122.3634932,
+        37.7284358
+       ],
+       [
+        -122.363541,
+        37.7283831
+       ],
+       [
+        -122.3635565,
+        37.7283503
+       ],
+       [
+        -122.363708,
+        37.728192
+       ],
+       [
+        -122.3637406,
+        37.728185
+       ],
+       [
+        -122.3637726,
+        37.7281585
+       ],
+       [
+        -122.363838,
+        37.7281575
+       ],
+       [
+        -122.364311,
+        37.7284295
+       ],
+       [
+        -122.364336,
+        37.7284486
+       ],
+       [
+        -122.3643373,
+        37.7285005
+       ],
+       [
+        -122.3639471,
+        37.7289289
+       ],
+       [
+        -122.3638817,
+        37.7289299
+       ],
+       [
+        -122.3637158,
+        37.7288351
+       ],
+       [
+        -122.3636824,
+        37.7287969
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "16",
+    "label": "Block 16",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3633979,
+        37.7295417
+       ],
+       [
+        -122.3633325,
+        37.7295427
+       ],
+       [
+        -122.3628098,
+        37.7292455
+       ],
+       [
+        -122.3628084,
+        37.7291871
+       ],
+       [
+        -122.3631745,
+        37.7287786
+       ],
+       [
+        -122.3632481,
+        37.7287774
+       ],
+       [
+        -122.3633063,
+        37.7288155
+       ],
+       [
+        -122.3633557,
+        37.7288277
+       ],
+       [
+        -122.3634059,
+        37.7288724
+       ],
+       [
+        -122.3637626,
+        37.7290747
+       ],
+       [
+        -122.363764,
+        37.7291332
+       ],
+       [
+        -122.3633979,
+        37.7295417
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "17",
+    "label": "Block 17",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.364078,
+        37.7299209
+       ],
+       [
+        -122.3639962,
+        37.7299221
+       ],
+       [
+        -122.3635233,
+        37.7296502
+       ],
+       [
+        -122.3635297,
+        37.7295786
+       ],
+       [
+        -122.363888,
+        37.7291832
+       ],
+       [
+        -122.3639699,
+        37.7291884
+       ],
+       [
+        -122.3644429,
+        37.7294604
+       ],
+       [
+        -122.3644443,
+        37.7295189
+       ],
+       [
+        -122.364078,
+        37.7299209
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "18",
+    "label": "Block 18",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3649243,
+        37.7304014
+       ],
+       [
+        -122.3648425,
+        37.7304027
+       ],
+       [
+        -122.3643363,
+        37.7301117
+       ],
+       [
+        -122.3643427,
+        37.7300402
+       ],
+       [
+        -122.364701,
+        37.7296448
+       ],
+       [
+        -122.3647829,
+        37.72965
+       ],
+       [
+        -122.3652891,
+        37.7299409
+       ],
+       [
+        -122.3652906,
+        37.7299994
+       ],
+       [
+        -122.3649243,
+        37.7304014
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "19",
+    "label": "Block 19",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3656628,
+        37.7308251
+       ],
+       [
+        -122.3655892,
+        37.7308263
+       ],
+       [
+        -122.3650415,
+        37.73051
+       ],
+       [
+        -122.3650402,
+        37.7304581
+       ],
+       [
+        -122.3654145,
+        37.7300494
+       ],
+       [
+        -122.3654964,
+        37.7300546
+       ],
+       [
+        -122.3660358,
+        37.7303645
+       ],
+       [
+        -122.3660371,
+        37.7304165
+       ],
+       [
+        -122.3656628,
+        37.7308251
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "20",
+    "label": "Block 20",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3665589,
+        37.7313373
+       ],
+       [
+        -122.3664935,
+        37.7313384
+       ],
+       [
+        -122.3664686,
+        37.7313258
+       ],
+       [
+        -122.3658297,
+        37.7309589
+       ],
+       [
+        -122.3658284,
+        37.730907
+       ],
+       [
+        -122.3662027,
+        37.7304983
+       ],
+       [
+        -122.3662763,
+        37.7304972
+       ],
+       [
+        -122.3669318,
+        37.7308702
+       ],
+       [
+        -122.366933,
+        37.7309222
+       ],
+       [
+        -122.3665589,
+        37.7313373
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "21",
+    "label": "Block 21",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3644005,
+        37.7270898
+       ],
+       [
+        -122.3643351,
+        37.7270908
+       ],
+       [
+        -122.3643266,
+        37.7270779
+       ],
+       [
+        -122.3642384,
+        37.7268195
+       ],
+       [
+        -122.3641162,
+        37.7265095
+       ],
+       [
+        -122.3641146,
+        37.7264446
+       ],
+       [
+        -122.3647571,
+        37.7262981
+       ],
+       [
+        -122.3647895,
+        37.7262846
+       ],
+       [
+        -122.3648466,
+        37.7262772
+       ],
+       [
+        -122.364879,
+        37.7262637
+       ],
+       [
+        -122.3649361,
+        37.7262563
+       ],
+       [
+        -122.3649684,
+        37.7262428
+       ],
+       [
+        -122.3650255,
+        37.7262354
+       ],
+       [
+        -122.3650579,
+        37.7262219
+       ],
+       [
+        -122.3651397,
+        37.7262207
+       ],
+       [
+        -122.3651409,
+        37.7262726
+       ],
+       [
+        -122.3644005,
+        37.7270898
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "22",
+    "label": "Block 22",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3637239,
+        37.727841
+       ],
+       [
+        -122.3636503,
+        37.7278421
+       ],
+       [
+        -122.3635419,
+        37.7277594
+       ],
+       [
+        -122.3634579,
+        37.7276697
+       ],
+       [
+        -122.3633899,
+        37.7275668
+       ],
+       [
+        -122.3632326,
+        37.72716
+       ],
+       [
+        -122.3632233,
+        37.7271147
+       ],
+       [
+        -122.3631888,
+        37.7270437
+       ],
+       [
+        -122.3631532,
+        37.7269274
+       ],
+       [
+        -122.3631362,
+        37.7269016
+       ],
+       [
+        -122.3631006,
+        37.7267853
+       ],
+       [
+        -122.3630836,
+        37.7267595
+       ],
+       [
+        -122.3630819,
+        37.7266881
+       ],
+       [
+        -122.3634804,
+        37.7265974
+       ],
+       [
+        -122.3635128,
+        37.7265839
+       ],
+       [
+        -122.3635699,
+        37.7265765
+       ],
+       [
+        -122.3636022,
+        37.726563
+       ],
+       [
+        -122.3636593,
+        37.7265556
+       ],
+       [
+        -122.3637486,
+        37.7265283
+       ],
+       [
+        -122.3638057,
+        37.7265209
+       ],
+       [
+        -122.3638381,
+        37.7265074
+       ],
+       [
+        -122.3639032,
+        37.7264934
+       ],
+       [
+        -122.3639767,
+        37.7264922
+       ],
+       [
+        -122.3639952,
+        37.7265764
+       ],
+       [
+        -122.3640122,
+        37.7266021
+       ],
+       [
+        -122.3640215,
+        37.7266474
+       ],
+       [
+        -122.3640385,
+        37.7266732
+       ],
+       [
+        -122.3640478,
+        37.7267185
+       ],
+       [
+        -122.3642314,
+        37.7271964
+       ],
+       [
+        -122.3642335,
+        37.7272808
+       ],
+       [
+        -122.3637239,
+        37.727841
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "23",
+    "label": "Block 23",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3632006,
+        37.7277409
+       ],
+       [
+        -122.3632392,
+        37.7277576
+       ],
+       [
+        -122.3632719,
+        37.7277571
+       ],
+       [
+        -122.3633226,
+        37.7278213
+       ],
+       [
+        -122.3634063,
+        37.7278979
+       ],
+       [
+        -122.3635395,
+        37.7279933
+       ],
+       [
+        -122.3635408,
+        37.7280452
+       ],
+       [
+        -122.3631668,
+        37.7284669
+       ],
+       [
+        -122.3630932,
+        37.728468
+       ],
+       [
+        -122.3630183,
+        37.7284172
+       ],
+       [
+        -122.3629178,
+        37.7283213
+       ],
+       [
+        -122.3628161,
+        37.72818
+       ],
+       [
+        -122.3628155,
+        37.728154
+       ],
+       [
+        -122.3627988,
+        37.7281413
+       ],
+       [
+        -122.3627813,
+        37.7280961
+       ],
+       [
+        -122.3627805,
+        37.7280636
+       ],
+       [
+        -122.3627639,
+        37.7280509
+       ],
+       [
+        -122.3627551,
+        37.728025
+       ],
+       [
+        -122.3627542,
+        37.7279925
+       ],
+       [
+        -122.3627376,
+        37.7279798
+       ],
+       [
+        -122.3627368,
+        37.7279473
+       ],
+       [
+        -122.3627201,
+        37.7279346
+       ],
+       [
+        -122.3627105,
+        37.7278763
+       ],
+       [
+        -122.3626938,
+        37.7278636
+       ],
+       [
+        -122.3626925,
+        37.7278116
+       ],
+       [
+        -122.3629038,
+        37.7277563
+       ],
+       [
+        -122.362961,
+        37.7277554
+       ],
+       [
+        -122.3630503,
+        37.7277281
+       ],
+       [
+        -122.3631421,
+        37.7277136
+       ],
+       [
+        -122.3629809,
+        37.7277542
+       ],
+       [
+        -122.3629436,
+        37.7277849
+       ],
+       [
+        -122.3630102,
+        37.7280048
+       ],
+       [
+        -122.3632449,
+        37.7280012
+       ],
+       [
+        -122.3632749,
+        37.7279499
+       ],
+       [
+        -122.3632006,
+        37.7277409
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "24",
+    "label": "Block 24",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3626795,
+        37.7276169
+       ],
+       [
+        -122.3626141,
+        37.7276179
+       ],
+       [
+        -122.3625524,
+        37.727437
+       ],
+       [
+        -122.3625351,
+        37.7273983
+       ],
+       [
+        -122.36251,
+        37.7273792
+       ],
+       [
+        -122.3625086,
+        37.7273207
+       ],
+       [
+        -122.3623513,
+        37.7269139
+       ],
+       [
+        -122.3623499,
+        37.7268554
+       ],
+       [
+        -122.3627728,
+        37.7267579
+       ],
+       [
+        -122.3628545,
+        37.7267566
+       ],
+       [
+        -122.3629687,
+        37.7270732
+       ],
+       [
+        -122.3629857,
+        37.7270989
+       ],
+       [
+        -122.362995,
+        37.7271442
+       ],
+       [
+        -122.363012,
+        37.7271699
+       ],
+       [
+        -122.3630213,
+        37.7272153
+       ],
+       [
+        -122.3630383,
+        37.727241
+       ],
+       [
+        -122.3630476,
+        37.7272863
+       ],
+       [
+        -122.3630646,
+        37.727312
+       ],
+       [
+        -122.3630739,
+        37.7273574
+       ],
+       [
+        -122.3630909,
+        37.7273831
+       ],
+       [
+        -122.3631002,
+        37.7274284
+       ],
+       [
+        -122.3631172,
+        37.7274542
+       ],
+       [
+        -122.3631186,
+        37.7275126
+       ],
+       [
+        -122.3627119,
+        37.7276034
+       ],
+       [
+        -122.3626795,
+        37.7276169
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "25",
+    "label": "Block 25",
+    "stage": "entitled",
+    "height_ft": 120,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 120-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3611586,
+        37.7279655
+       ],
+       [
+        -122.3610932,
+        37.7279665
+       ],
+       [
+        -122.3610848,
+        37.7279601
+       ],
+       [
+        -122.3610667,
+        37.7278889
+       ],
+       [
+        -122.3609708,
+        37.7276501
+       ],
+       [
+        -122.3608563,
+        37.7273205
+       ],
+       [
+        -122.3608393,
+        37.7272948
+       ],
+       [
+        -122.3608291,
+        37.7272105
+       ],
+       [
+        -122.3614229,
+        37.7270778
+       ],
+       [
+        -122.3619595,
+        37.726946
+       ],
+       [
+        -122.3620246,
+        37.726932
+       ],
+       [
+        -122.3621063,
+        37.7269307
+       ],
+       [
+        -122.3621233,
+        37.7269564
+       ],
+       [
+        -122.3621589,
+        37.7270728
+       ],
+       [
+        -122.36236,
+        37.7275959
+       ],
+       [
+        -122.3623703,
+        37.7276802
+       ],
+       [
+        -122.3611586,
+        37.7279655
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "26",
+    "label": "Block 26",
+    "stage": "entitled",
+    "height_ft": 120,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 120-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3581412,
+        37.7283308
+       ],
+       [
+        -122.3580758,
+        37.7283319
+       ],
+       [
+        -122.3580674,
+        37.7283255
+       ],
+       [
+        -122.3579355,
+        37.7279507
+       ],
+       [
+        -122.3579185,
+        37.727925
+       ],
+       [
+        -122.3579167,
+        37.7278536
+       ],
+       [
+        -122.3583151,
+        37.7277564
+       ],
+       [
+        -122.3584047,
+        37.727742
+       ],
+       [
+        -122.358494,
+        37.7277147
+       ],
+       [
+        -122.3585511,
+        37.7277073
+       ],
+       [
+        -122.3585835,
+        37.7276938
+       ],
+       [
+        -122.3586406,
+        37.7276864
+       ],
+       [
+        -122.358673,
+        37.7276729
+       ],
+       [
+        -122.35873,
+        37.7276655
+       ],
+       [
+        -122.3587624,
+        37.727652
+       ],
+       [
+        -122.3588195,
+        37.7276446
+       ],
+       [
+        -122.3588519,
+        37.7276311
+       ],
+       [
+        -122.3589089,
+        37.7276237
+       ],
+       [
+        -122.3589413,
+        37.7276102
+       ],
+       [
+        -122.3589984,
+        37.7276029
+       ],
+       [
+        -122.3590308,
+        37.7275894
+       ],
+       [
+        -122.3590879,
+        37.727582
+       ],
+       [
+        -122.3591202,
+        37.7275685
+       ],
+       [
+        -122.3591773,
+        37.7275611
+       ],
+       [
+        -122.3592097,
+        37.7275476
+       ],
+       [
+        -122.3592668,
+        37.7275402
+       ],
+       [
+        -122.3592992,
+        37.7275267
+       ],
+       [
+        -122.3593562,
+        37.7275193
+       ],
+       [
+        -122.3593886,
+        37.7275058
+       ],
+       [
+        -122.3594457,
+        37.7274984
+       ],
+       [
+        -122.3594781,
+        37.7274849
+       ],
+       [
+        -122.3595352,
+        37.7274776
+       ],
+       [
+        -122.3595675,
+        37.7274641
+       ],
+       [
+        -122.3596246,
+        37.7274567
+       ],
+       [
+        -122.359657,
+        37.7274432
+       ],
+       [
+        -122.3597141,
+        37.7274358
+       ],
+       [
+        -122.3597465,
+        37.7274223
+       ],
+       [
+        -122.3598035,
+        37.7274149
+       ],
+       [
+        -122.3598359,
+        37.7274014
+       ],
+       [
+        -122.359893,
+        37.727394
+       ],
+       [
+        -122.3599254,
+        37.7273805
+       ],
+       [
+        -122.3599824,
+        37.7273731
+       ],
+       [
+        -122.3600148,
+        37.7273596
+       ],
+       [
+        -122.3600719,
+        37.7273522
+       ],
+       [
+        -122.3601043,
+        37.7273387
+       ],
+       [
+        -122.3601614,
+        37.7273314
+       ],
+       [
+        -122.3604296,
+        37.7272622
+       ],
+       [
+        -122.3604947,
+        37.7272482
+       ],
+       [
+        -122.3605601,
+        37.7272472
+       ],
+       [
+        -122.3605684,
+        37.7272536
+       ],
+       [
+        -122.3607175,
+        37.7276605
+       ],
+       [
+        -122.3607191,
+        37.7277255
+       ],
+       [
+        -122.3581412,
+        37.7283308
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "27",
+    "label": "Block 27",
+    "stage": "entitled",
+    "height_ft": 120,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 120-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3583279,
+        37.7276133
+       ],
+       [
+        -122.3582298,
+        37.7276148
+       ],
+       [
+        -122.3582133,
+        37.7276086
+       ],
+       [
+        -122.3581965,
+        37.7275894
+       ],
+       [
+        -122.358195,
+        37.7275309
+       ],
+       [
+        -122.3582107,
+        37.7275047
+       ],
+       [
+        -122.3584669,
+        37.7266171
+       ],
+       [
+        -122.3584822,
+        37.7265714
+       ],
+       [
+        -122.3585059,
+        37.7265386
+       ],
+       [
+        -122.3585952,
+        37.7265112
+       ],
+       [
+        -122.3589206,
+        37.7264412
+       ],
+       [
+        -122.3590099,
+        37.7264138
+       ],
+       [
+        -122.3593354,
+        37.7263438
+       ],
+       [
+        -122.3600183,
+        37.7261772
+       ],
+       [
+        -122.3600834,
+        37.7261632
+       ],
+       [
+        -122.3601652,
+        37.7261619
+       ],
+       [
+        -122.3601735,
+        37.7261683
+       ],
+       [
+        -122.360253,
+        37.7264074
+       ],
+       [
+        -122.3604015,
+        37.7267884
+       ],
+       [
+        -122.3604722,
+        37.7270017
+       ],
+       [
+        -122.3604892,
+        37.7270274
+       ],
+       [
+        -122.360491,
+        37.7270988
+       ],
+       [
+        -122.360483,
+        37.7271055
+       ],
+       [
+        -122.3598404,
+        37.7272519
+       ],
+       [
+        -122.359808,
+        37.7272654
+       ],
+       [
+        -122.3597509,
+        37.7272728
+       ],
+       [
+        -122.3597186,
+        37.7272863
+       ],
+       [
+        -122.3596615,
+        37.7272937
+       ],
+       [
+        -122.3594827,
+        37.7273419
+       ],
+       [
+        -122.3594257,
+        37.7273493
+       ],
+       [
+        -122.3593933,
+        37.7273628
+       ],
+       [
+        -122.3593362,
+        37.7273702
+       ],
+       [
+        -122.3593038,
+        37.7273837
+       ],
+       [
+        -122.3592467,
+        37.7273911
+       ],
+       [
+        -122.3589785,
+        37.7274602
+       ],
+       [
+        -122.3589214,
+        37.7274676
+       ],
+       [
+        -122.3588891,
+        37.7274811
+       ],
+       [
+        -122.358832,
+        37.7274885
+       ],
+       [
+        -122.3585638,
+        37.7275577
+       ],
+       [
+        -122.3585067,
+        37.727565
+       ],
+       [
+        -122.3584743,
+        37.7275785
+       ],
+       [
+        -122.3584172,
+        37.7275859
+       ],
+       [
+        -122.3583279,
+        37.7276133
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "28",
+    "label": "Block 28",
+    "stage": "entitled",
+    "height_ft": 120,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 120-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3608159,
+        37.7270093
+       ],
+       [
+        -122.3607342,
+        37.7270106
+       ],
+       [
+        -122.3607258,
+        37.7270042
+       ],
+       [
+        -122.3604975,
+        37.7263711
+       ],
+       [
+        -122.3604805,
+        37.7263454
+       ],
+       [
+        -122.3604712,
+        37.7263001
+       ],
+       [
+        -122.3604542,
+        37.7262743
+       ],
+       [
+        -122.3604449,
+        37.726229
+       ],
+       [
+        -122.3604279,
+        37.7262033
+       ],
+       [
+        -122.3604173,
+        37.726106
+       ],
+       [
+        -122.3609379,
+        37.7259874
+       ],
+       [
+        -122.3609703,
+        37.7259739
+       ],
+       [
+        -122.3610273,
+        37.7259666
+       ],
+       [
+        -122.3610597,
+        37.7259531
+       ],
+       [
+        -122.3611168,
+        37.7259457
+       ],
+       [
+        -122.3611492,
+        37.7259322
+       ],
+       [
+        -122.3612063,
+        37.7259248
+       ],
+       [
+        -122.3612386,
+        37.7259113
+       ],
+       [
+        -122.3612957,
+        37.7259039
+       ],
+       [
+        -122.3613281,
+        37.7258904
+       ],
+       [
+        -122.3613852,
+        37.725883
+       ],
+       [
+        -122.3614176,
+        37.7258695
+       ],
+       [
+        -122.3614746,
+        37.7258621
+       ],
+       [
+        -122.361507,
+        37.7258486
+       ],
+       [
+        -122.3615641,
+        37.7258412
+       ],
+       [
+        -122.3615965,
+        37.7258277
+       ],
+       [
+        -122.3616535,
+        37.7258204
+       ],
+       [
+        -122.3619217,
+        37.7257512
+       ],
+       [
+        -122.3619788,
+        37.7257438
+       ],
+       [
+        -122.3620112,
+        37.7257303
+       ],
+       [
+        -122.3620683,
+        37.7257229
+       ],
+       [
+        -122.3621007,
+        37.7257094
+       ],
+       [
+        -122.3621577,
+        37.725702
+       ],
+       [
+        -122.3621901,
+        37.7256885
+       ],
+       [
+        -122.3622472,
+        37.7256812
+       ],
+       [
+        -122.3622796,
+        37.7256677
+       ],
+       [
+        -122.3623366,
+        37.7256603
+       ],
+       [
+        -122.362369,
+        37.7256468
+       ],
+       [
+        -122.3624915,
+        37.7256384
+       ],
+       [
+        -122.3625098,
+        37.725716
+       ],
+       [
+        -122.3625268,
+        37.7257418
+       ],
+       [
+        -122.3626676,
+        37.7261424
+       ],
+       [
+        -122.3627897,
+        37.7264523
+       ],
+       [
+        -122.3628002,
+        37.7265431
+       ],
+       [
+        -122.3608159,
+        37.7270093
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "29",
+    "label": "Block 29",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3630116,
+        37.7264943
+       ],
+       [
+        -122.362938,
+        37.7264954
+       ],
+       [
+        -122.3629196,
+        37.7264113
+       ],
+       [
+        -122.3629026,
+        37.7263856
+       ],
+       [
+        -122.362867,
+        37.7262692
+       ],
+       [
+        -122.3628325,
+        37.7261982
+       ],
+       [
+        -122.3628232,
+        37.7261529
+       ],
+       [
+        -122.3626485,
+        37.7257009
+       ],
+       [
+        -122.3626308,
+        37.7256492
+       ],
+       [
+        -122.3626294,
+        37.7255907
+       ],
+       [
+        -122.3634181,
+        37.725403
+       ],
+       [
+        -122.363508,
+        37.7254016
+       ],
+       [
+        -122.3636916,
+        37.7258795
+       ],
+       [
+        -122.3637009,
+        37.7259248
+       ],
+       [
+        -122.3637179,
+        37.7259505
+       ],
+       [
+        -122.3637272,
+        37.7259959
+       ],
+       [
+        -122.3637442,
+        37.7260216
+       ],
+       [
+        -122.3637535,
+        37.7260669
+       ],
+       [
+        -122.3637705,
+        37.7260926
+       ],
+       [
+        -122.3637798,
+        37.726138
+       ],
+       [
+        -122.3638143,
+        37.7262089
+       ],
+       [
+        -122.3638247,
+        37.7262997
+       ],
+       [
+        -122.3637924,
+        37.7263132
+       ],
+       [
+        -122.3637353,
+        37.7263206
+       ],
+       [
+        -122.3637029,
+        37.7263341
+       ],
+       [
+        -122.3636458,
+        37.7263415
+       ],
+       [
+        -122.3636134,
+        37.726355
+       ],
+       [
+        -122.3635564,
+        37.7263624
+       ],
+       [
+        -122.363524,
+        37.7263758
+       ],
+       [
+        -122.3634669,
+        37.7263832
+       ],
+       [
+        -122.3630116,
+        37.7264943
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "30",
+    "label": "Block 30",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3624177,
+        37.7253017
+       ],
+       [
+        -122.362336,
+        37.725303
+       ],
+       [
+        -122.3623275,
+        37.7252901
+       ],
+       [
+        -122.3621343,
+        37.7247539
+       ],
+       [
+        -122.3621173,
+        37.7247282
+       ],
+       [
+        -122.3621158,
+        37.7246697
+       ],
+       [
+        -122.3621238,
+        37.7246631
+       ],
+       [
+        -122.3623028,
+        37.7246213
+       ],
+       [
+        -122.3623927,
+        37.7246199
+       ],
+       [
+        -122.3624175,
+        37.7246325
+       ],
+       [
+        -122.3631808,
+        37.7250689
+       ],
+       [
+        -122.3631821,
+        37.7251208
+       ],
+       [
+        -122.3624177,
+        37.7253017
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "31",
+    "label": "Block 31",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3649069,
+        37.7247496
+       ],
+       [
+        -122.364817,
+        37.724751
+       ],
+       [
+        -122.3646344,
+        37.7246434
+       ],
+       [
+        -122.3645851,
+        37.7246377
+       ],
+       [
+        -122.3645848,
+        37.7246247
+       ],
+       [
+        -122.3645348,
+        37.7245865
+       ],
+       [
+        -122.3641367,
+        37.7243653
+       ],
+       [
+        -122.36412,
+        37.7243526
+       ],
+       [
+        -122.3641186,
+        37.7242941
+       ],
+       [
+        -122.3643546,
+        37.724245
+       ],
+       [
+        -122.3647448,
+        37.7241479
+       ],
+       [
+        -122.3648344,
+        37.7241335
+       ],
+       [
+        -122.3651351,
+        37.7240573
+       ],
+       [
+        -122.3652331,
+        37.7240493
+       ],
+       [
+        -122.3654257,
+        37.7245595
+       ],
+       [
+        -122.3654273,
+        37.7246245
+       ],
+       [
+        -122.3649637,
+        37.7247292
+       ],
+       [
+        -122.3649069,
+        37.7247496
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "32",
+    "label": "Block 32",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3639612,
+        37.7242121
+       ],
+       [
+        -122.3638712,
+        37.7242135
+       ],
+       [
+        -122.3636141,
+        37.7240681
+       ],
+       [
+        -122.3631246,
+        37.7237899
+       ],
+       [
+        -122.3631163,
+        37.7237835
+       ],
+       [
+        -122.363115,
+        37.7237316
+       ],
+       [
+        -122.3631474,
+        37.7237181
+       ],
+       [
+        -122.3633834,
+        37.7236689
+       ],
+       [
+        -122.3634727,
+        37.7236416
+       ],
+       [
+        -122.3640664,
+        37.7235088
+       ],
+       [
+        -122.3643672,
+        37.7234327
+       ],
+       [
+        -122.3644242,
+        37.7234253
+       ],
+       [
+        -122.3648713,
+        37.7233144
+       ],
+       [
+        -122.3649531,
+        37.7233131
+       ],
+       [
+        -122.3650673,
+        37.7236296
+       ],
+       [
+        -122.3650843,
+        37.7236553
+       ],
+       [
+        -122.3650936,
+        37.7237007
+       ],
+       [
+        -122.3651106,
+        37.7237264
+       ],
+       [
+        -122.3651199,
+        37.7237717
+       ],
+       [
+        -122.3651369,
+        37.7237975
+       ],
+       [
+        -122.3651462,
+        37.7238428
+       ],
+       [
+        -122.3651632,
+        37.7238685
+       ],
+       [
+        -122.3651648,
+        37.7239334
+       ],
+       [
+        -122.3650995,
+        37.723941
+       ],
+       [
+        -122.3648882,
+        37.7239962
+       ],
+       [
+        -122.3642945,
+        37.724129
+       ],
+       [
+        -122.3642052,
+        37.7241563
+       ],
+       [
+        -122.3641725,
+        37.7241569
+       ],
+       [
+        -122.3641157,
+        37.7241772
+       ],
+       [
+        -122.364083,
+        37.7241777
+       ],
+       [
+        -122.3640263,
+        37.7241981
+       ],
+       [
+        -122.3639935,
+        37.7241986
+       ],
+       [
+        -122.3639612,
+        37.7242121
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "33",
+    "label": "Block 33",
+    "stage": "entitled",
+    "height_ft": 75,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 75-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3631445,
+        37.7236012
+       ],
+       [
+        -122.3630791,
+        37.7236022
+       ],
+       [
+        -122.3630857,
+        37.7235372
+       ],
+       [
+        -122.3636906,
+        37.722865
+       ],
+       [
+        -122.3642111,
+        37.7227465
+       ],
+       [
+        -122.3642435,
+        37.722733
+       ],
+       [
+        -122.3643006,
+        37.7227256
+       ],
+       [
+        -122.364333,
+        37.7227121
+       ],
+       [
+        -122.36439,
+        37.7227047
+       ],
+       [
+        -122.3644224,
+        37.7226912
+       ],
+       [
+        -122.3644795,
+        37.7226838
+       ],
+       [
+        -122.3645119,
+        37.7226703
+       ],
+       [
+        -122.3645689,
+        37.7226629
+       ],
+       [
+        -122.3646013,
+        37.7226494
+       ],
+       [
+        -122.3647074,
+        37.7226413
+       ],
+       [
+        -122.3648915,
+        37.7231386
+       ],
+       [
+        -122.364893,
+        37.7231971
+       ],
+       [
+        -122.3648196,
+        37.7232047
+       ],
+       [
+        -122.3647628,
+        37.7232251
+       ],
+       [
+        -122.3647301,
+        37.7232256
+       ],
+       [
+        -122.3646734,
+        37.723246
+       ],
+       [
+        -122.3646406,
+        37.7232465
+       ],
+       [
+        -122.3645839,
+        37.7232669
+       ],
+       [
+        -122.3645512,
+        37.7232674
+       ],
+       [
+        -122.3644944,
+        37.7232878
+       ],
+       [
+        -122.3644617,
+        37.7232883
+       ],
+       [
+        -122.364405,
+        37.7233086
+       ],
+       [
+        -122.3643723,
+        37.7233092
+       ],
+       [
+        -122.3643155,
+        37.7233295
+       ],
+       [
+        -122.3642828,
+        37.72333
+       ],
+       [
+        -122.3642261,
+        37.7233504
+       ],
+       [
+        -122.3641934,
+        37.7233509
+       ],
+       [
+        -122.3641366,
+        37.7233713
+       ],
+       [
+        -122.3637787,
+        37.7234484
+       ],
+       [
+        -122.3637219,
+        37.7234687
+       ],
+       [
+        -122.3636892,
+        37.7234693
+       ],
+       [
+        -122.3636325,
+        37.7234896
+       ],
+       [
+        -122.3635998,
+        37.7234901
+       ],
+       [
+        -122.363543,
+        37.7235105
+       ],
+       [
+        -122.3635103,
+        37.723511
+       ],
+       [
+        -122.3634536,
+        37.7235314
+       ],
+       [
+        -122.3634209,
+        37.7235319
+       ],
+       [
+        -122.3633641,
+        37.7235523
+       ],
+       [
+        -122.3633314,
+        37.7235528
+       ],
+       [
+        -122.3631445,
+        37.7236012
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "34",
+    "label": "Block 34",
+    "stage": "entitled",
+    "height_ft": 75,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 75-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3649399,
+        37.7224492
+       ],
+       [
+        -122.3648663,
+        37.7224504
+       ],
+       [
+        -122.3648578,
+        37.7224375
+       ],
+       [
+        -122.3646997,
+        37.7219982
+       ],
+       [
+        -122.3646827,
+        37.7219725
+       ],
+       [
+        -122.3646812,
+        37.721914
+       ],
+       [
+        -122.3652503,
+        37.7217752
+       ],
+       [
+        -122.3653968,
+        37.7217469
+       ],
+       [
+        -122.3654292,
+        37.7217334
+       ],
+       [
+        -122.3655757,
+        37.7217052
+       ],
+       [
+        -122.3656081,
+        37.7216917
+       ],
+       [
+        -122.3656735,
+        37.7216906
+       ],
+       [
+        -122.3658571,
+        37.7221685
+       ],
+       [
+        -122.3658587,
+        37.7222335
+       ],
+       [
+        -122.3649399,
+        37.7224492
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "35",
+    "label": "Block 35",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3651935,
+        37.7231144
+       ],
+       [
+        -122.3651118,
+        37.7231157
+       ],
+       [
+        -122.3651033,
+        37.7231028
+       ],
+       [
+        -122.3649455,
+        37.7226765
+       ],
+       [
+        -122.3649442,
+        37.7226246
+       ],
+       [
+        -122.3650338,
+        37.7226102
+       ],
+       [
+        -122.365424,
+        37.7225131
+       ],
+       [
+        -122.3658389,
+        37.7224222
+       ],
+       [
+        -122.3658713,
+        37.7224087
+       ],
+       [
+        -122.3659448,
+        37.7224075
+       ],
+       [
+        -122.3660855,
+        37.7228016
+       ],
+       [
+        -122.3661025,
+        37.7228273
+       ],
+       [
+        -122.3661042,
+        37.7228988
+       ],
+       [
+        -122.3651935,
+        37.7231144
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "36A",
+    "label": "Block 36A",
+    "stage": "entitled",
+    "height_ft": 75,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 75-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.365465,
+        37.7238378
+       ],
+       [
+        -122.3653751,
+        37.7238392
+       ],
+       [
+        -122.3653746,
+        37.7238197
+       ],
+       [
+        -122.3653579,
+        37.723807
+       ],
+       [
+        -122.3653167,
+        37.7237946
+       ],
+       [
+        -122.3653134,
+        37.7236583
+       ],
+       [
+        -122.3651735,
+        37.7232966
+       ],
+       [
+        -122.3651722,
+        37.7232447
+       ],
+       [
+        -122.3654975,
+        37.7231681
+       ],
+       [
+        -122.3655629,
+        37.7231671
+       ],
+       [
+        -122.3656593,
+        37.7234255
+       ],
+       [
+        -122.3656926,
+        37.7234509
+       ],
+       [
+        -122.3657739,
+        37.7234302
+       ],
+       [
+        -122.3658719,
+        37.7234221
+       ],
+       [
+        -122.365953,
+        37.7233949
+       ],
+       [
+        -122.3659857,
+        37.7233944
+       ],
+       [
+        -122.366197,
+        37.7233391
+       ],
+       [
+        -122.3662869,
+        37.7233377
+       ],
+       [
+        -122.3662952,
+        37.7233441
+       ],
+       [
+        -122.3663826,
+        37.7235701
+       ],
+       [
+        -122.3663839,
+        37.723622
+       ],
+       [
+        -122.365465,
+        37.7238378
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "36B",
+    "label": "Block 36B",
+    "stage": "entitled",
+    "height_ft": 75,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 75-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61",
+    "note": "Block 36B is the identified fire station lot, which the D4D exempts from its height limit (Fig. 4.0a note, p. 45); drawn to the figure's limit."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3657657,
+        37.7234303
+       ],
+       [
+        -122.3656758,
+        37.7234317
+       ],
+       [
+        -122.3656675,
+        37.7234253
+       ],
+       [
+        -122.3655801,
+        37.7231993
+       ],
+       [
+        -122.3655788,
+        37.7231474
+       ],
+       [
+        -122.365603,
+        37.723134
+       ],
+       [
+        -122.3657009,
+        37.723126
+       ],
+       [
+        -122.3657902,
+        37.7230986
+       ],
+       [
+        -122.3658798,
+        37.7230842
+       ],
+       [
+        -122.3659528,
+        37.7230571
+       ],
+       [
+        -122.3659937,
+        37.7230564
+       ],
+       [
+        -122.3660911,
+        37.7230289
+       ],
+       [
+        -122.3661729,
+        37.7230276
+       ],
+       [
+        -122.366198,
+        37.7230532
+       ],
+       [
+        -122.3661993,
+        37.7231052
+       ],
+       [
+        -122.3662601,
+        37.7232472
+       ],
+       [
+        -122.3662619,
+        37.7233186
+       ],
+       [
+        -122.3659855,
+        37.7233879
+       ],
+       [
+        -122.3659528,
+        37.7233884
+       ],
+       [
+        -122.3658717,
+        37.7234157
+       ],
+       [
+        -122.3657981,
+        37.7234168
+       ],
+       [
+        -122.3657657,
+        37.7234303
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "37",
+    "label": "Block 37",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3657363,
+        37.7245547
+       ],
+       [
+        -122.3656382,
+        37.7245562
+       ],
+       [
+        -122.3656297,
+        37.7245434
+       ],
+       [
+        -122.3654545,
+        37.7240718
+       ],
+       [
+        -122.3654529,
+        37.7240069
+       ],
+       [
+        -122.3661279,
+        37.7238534
+       ],
+       [
+        -122.3661603,
+        37.7238399
+       ],
+       [
+        -122.3662174,
+        37.7238325
+       ],
+       [
+        -122.3662498,
+        37.723819
+       ],
+       [
+        -122.3663068,
+        37.7238116
+       ],
+       [
+        -122.3663392,
+        37.7237981
+       ],
+       [
+        -122.3664535,
+        37.7237899
+       ],
+       [
+        -122.3666285,
+        37.7242484
+       ],
+       [
+        -122.3666227,
+        37.7243459
+       ],
+       [
+        -122.3659476,
+        37.7244994
+       ],
+       [
+        -122.3659153,
+        37.7245129
+       ],
+       [
+        -122.3658582,
+        37.7245203
+       ],
+       [
+        -122.3658258,
+        37.7245338
+       ],
+       [
+        -122.3657687,
+        37.7245412
+       ],
+       [
+        -122.3657363,
+        37.7245547
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "38",
+    "label": "Block 38",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3661334,
+        37.7257244
+       ],
+       [
+        -122.366068,
+        37.7257254
+       ],
+       [
+        -122.3658045,
+        37.7249954
+       ],
+       [
+        -122.3657875,
+        37.7249697
+       ],
+       [
+        -122.3657782,
+        37.7249243
+       ],
+       [
+        -122.3657175,
+        37.7247824
+       ],
+       [
+        -122.3657072,
+        37.7246981
+       ],
+       [
+        -122.3657968,
+        37.7246837
+       ],
+       [
+        -122.366187,
+        37.7245866
+       ],
+       [
+        -122.3665124,
+        37.7245166
+       ],
+       [
+        -122.3665448,
+        37.7245031
+       ],
+       [
+        -122.3666424,
+        37.724482
+       ],
+       [
+        -122.366716,
+        37.7244809
+       ],
+       [
+        -122.3669269,
+        37.7250688
+       ],
+       [
+        -122.3670403,
+        37.7253529
+       ],
+       [
+        -122.367051,
+        37.7254566
+       ],
+       [
+        -122.3668151,
+        37.7255058
+       ],
+       [
+        -122.3665307,
+        37.7255817
+       ],
+       [
+        -122.3661334,
+        37.7257244
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "40",
+    "label": "Block 40",
+    "stage": "entitled",
+    "height_ft": 100,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 100-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3667971,
+        37.723791
+       ],
+       [
+        -122.3667316,
+        37.723792
+       ],
+       [
+        -122.3667233,
+        37.7237856
+       ],
+       [
+        -122.3665562,
+        37.723314
+       ],
+       [
+        -122.3665217,
+        37.7232431
+       ],
+       [
+        -122.366302,
+        37.7226293
+       ],
+       [
+        -122.3662062,
+        37.7223904
+       ],
+       [
+        -122.3662047,
+        37.722332
+       ],
+       [
+        -122.3670017,
+        37.7221506
+       ],
+       [
+        -122.3670341,
+        37.7221371
+       ],
+       [
+        -122.3670912,
+        37.7221297
+       ],
+       [
+        -122.3671236,
+        37.7221162
+       ],
+       [
+        -122.3671806,
+        37.7221088
+       ],
+       [
+        -122.367213,
+        37.7220953
+       ],
+       [
+        -122.3672701,
+        37.7220879
+       ],
+       [
+        -122.3673594,
+        37.7220606
+       ],
+       [
+        -122.3674248,
+        37.7220595
+       ],
+       [
+        -122.3674517,
+        37.7221566
+       ],
+       [
+        -122.3674687,
+        37.7221823
+       ],
+       [
+        -122.367478,
+        37.7222276
+       ],
+       [
+        -122.3675388,
+        37.7223696
+       ],
+       [
+        -122.3677848,
+        37.7230544
+       ],
+       [
+        -122.3679245,
+        37.7234095
+       ],
+       [
+        -122.3679421,
+        37.7234612
+       ],
+       [
+        -122.3679436,
+        37.7235197
+       ],
+       [
+        -122.3674231,
+        37.7236382
+       ],
+       [
+        -122.3673907,
+        37.7236517
+       ],
+       [
+        -122.3673336,
+        37.7236591
+       ],
+       [
+        -122.3673012,
+        37.7236726
+       ],
+       [
+        -122.3672442,
+        37.72368
+       ],
+       [
+        -122.3670654,
+        37.7237283
+       ],
+       [
+        -122.3670083,
+        37.7237357
+       ],
+       [
+        -122.366976,
+        37.7237492
+       ],
+       [
+        -122.3669189,
+        37.7237566
+       ],
+       [
+        -122.3668865,
+        37.7237701
+       ],
+       [
+        -122.3668294,
+        37.7237775
+       ],
+       [
+        -122.3667971,
+        37.723791
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "41",
+    "label": "Block 41",
+    "stage": "entitled",
+    "height_ft": 75,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 75-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.366192,
+        37.7221503
+       ],
+       [
+        -122.3661184,
+        37.7221514
+       ],
+       [
+        -122.3661101,
+        37.7221451
+       ],
+       [
+        -122.366092,
+        37.7220739
+       ],
+       [
+        -122.366075,
+        37.7220482
+       ],
+       [
+        -122.3660129,
+        37.7218542
+       ],
+       [
+        -122.3659432,
+        37.7216799
+       ],
+       [
+        -122.3659417,
+        37.7216215
+       ],
+       [
+        -122.3667384,
+        37.7214271
+       ],
+       [
+        -122.3670313,
+        37.721364
+       ],
+       [
+        -122.3670637,
+        37.7213505
+       ],
+       [
+        -122.3671291,
+        37.7213495
+       ],
+       [
+        -122.3672689,
+        37.7217111
+       ],
+       [
+        -122.3672782,
+        37.7217565
+       ],
+       [
+        -122.3672952,
+        37.7217822
+       ],
+       [
+        -122.3673129,
+        37.7218339
+       ],
+       [
+        -122.3673141,
+        37.7218859
+       ],
+       [
+        -122.3666391,
+        37.7220393
+       ],
+       [
+        -122.3664604,
+        37.7220876
+       ],
+       [
+        -122.3664033,
+        37.722095
+       ],
+       [
+        -122.3663709,
+        37.7221085
+       ],
+       [
+        -122.3663138,
+        37.7221159
+       ],
+       [
+        -122.3662815,
+        37.7221294
+       ],
+       [
+        -122.3662244,
+        37.7221368
+       ],
+       [
+        -122.366192,
+        37.7221503
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "42",
+    "label": "Block 42",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.367615,
+        37.7218162
+       ],
+       [
+        -122.3675333,
+        37.7218175
+       ],
+       [
+        -122.367358,
+        37.7213459
+       ],
+       [
+        -122.3673566,
+        37.7212875
+       ],
+       [
+        -122.3680151,
+        37.7211278
+       ],
+       [
+        -122.3681212,
+        37.7211196
+       ],
+       [
+        -122.3682965,
+        37.7215911
+       ],
+       [
+        -122.3682981,
+        37.7216561
+       ],
+       [
+        -122.367615,
+        37.7218162
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "43",
+    "label": "Block 43",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.367853,
+        37.7225076
+       ],
+       [
+        -122.3677631,
+        37.722509
+       ],
+       [
+        -122.3676749,
+        37.7222505
+       ],
+       [
+        -122.3676053,
+        37.7220827
+       ],
+       [
+        -122.3676034,
+        37.7220048
+       ],
+       [
+        -122.3678068,
+        37.7219626
+       ],
+       [
+        -122.3683108,
+        37.7218378
+       ],
+       [
+        -122.3683844,
+        37.7218366
+       ],
+       [
+        -122.3685507,
+        37.7222758
+       ],
+       [
+        -122.3685523,
+        37.7223407
+       ],
+       [
+        -122.367853,
+        37.7225076
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "44",
+    "label": "Block 44",
+    "stage": "entitled",
+    "height_ft": 100,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 100-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3681876,
+        37.7234639
+       ],
+       [
+        -122.3681222,
+        37.7234649
+       ],
+       [
+        -122.3681137,
+        37.723452
+       ],
+       [
+        -122.3678502,
+        37.722722
+       ],
+       [
+        -122.3678332,
+        37.7226963
+       ],
+       [
+        -122.3678314,
+        37.7226249
+       ],
+       [
+        -122.3682625,
+        37.7225272
+       ],
+       [
+        -122.3683517,
+        37.7224998
+       ],
+       [
+        -122.3684088,
+        37.7224924
+       ],
+       [
+        -122.3684412,
+        37.7224789
+       ],
+       [
+        -122.3684983,
+        37.7224715
+       ],
+       [
+        -122.3685306,
+        37.722458
+       ],
+       [
+        -122.3686206,
+        37.7224566
+       ],
+       [
+        -122.3687088,
+        37.7227151
+       ],
+       [
+        -122.3689011,
+        37.7232123
+       ],
+       [
+        -122.3689113,
+        37.7232966
+       ],
+       [
+        -122.3688461,
+        37.7233041
+       ],
+       [
+        -122.3687568,
+        37.7233315
+       ],
+       [
+        -122.3686997,
+        37.7233389
+       ],
+       [
+        -122.3681876,
+        37.7234639
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "45",
+    "label": "Block 45",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3697442,
+        37.7245569
+       ],
+       [
+        -122.3696706,
+        37.7245581
+       ],
+       [
+        -122.3696621,
+        37.7245452
+       ],
+       [
+        -122.3694689,
+        37.724009
+       ],
+       [
+        -122.3694519,
+        37.7239833
+       ],
+       [
+        -122.3694425,
+        37.7239379
+       ],
+       [
+        -122.3694256,
+        37.7239122
+       ],
+       [
+        -122.3694153,
+        37.7238279
+       ],
+       [
+        -122.369448,
+        37.7238274
+       ],
+       [
+        -122.3699276,
+        37.7237095
+       ],
+       [
+        -122.3700172,
+        37.7236951
+       ],
+       [
+        -122.370074,
+        37.7236747
+       ],
+       [
+        -122.3701067,
+        37.7236742
+       ],
+       [
+        -122.3703423,
+        37.723612
+       ],
+       [
+        -122.3704241,
+        37.7236107
+       ],
+       [
+        -122.3705649,
+        37.7240113
+       ],
+       [
+        -122.3706608,
+        37.7242502
+       ],
+       [
+        -122.3706711,
+        37.7243345
+       ],
+       [
+        -122.3697442,
+        37.7245569
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "45",
+    "label": "Block 45",
+    "stage": "entitled",
+    "height_ft": 120,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 120-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61",
+    "note": "Above 85 ft, a residential building on Block 45 may cover at most 30,000 sq ft (D4D Standard 4.3.1, p. 59)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3707733,
+        37.7248266
+       ],
+       [
+        -122.3706915,
+        37.7248279
+       ],
+       [
+        -122.3706091,
+        37.7248032
+       ],
+       [
+        -122.3705024,
+        37.7247854
+       ],
+       [
+        -122.3703547,
+        37.7247682
+       ],
+       [
+        -122.3702975,
+        37.7247691
+       ],
+       [
+        -122.3702891,
+        37.7247628
+       ],
+       [
+        -122.370191,
+        37.7247643
+       ],
+       [
+        -122.3701827,
+        37.7247579
+       ],
+       [
+        -122.3700355,
+        37.7247602
+       ],
+       [
+        -122.3700275,
+        37.7247669
+       ],
+       [
+        -122.3699049,
+        37.7247688
+       ],
+       [
+        -122.3698316,
+        37.7247829
+       ],
+       [
+        -122.3697498,
+        37.7247842
+       ],
+       [
+        -122.3696972,
+        37.7246421
+       ],
+       [
+        -122.3696955,
+        37.7245707
+       ],
+       [
+        -122.3702811,
+        37.724438
+       ],
+       [
+        -122.3704598,
+        37.7243898
+       ],
+       [
+        -122.3705169,
+        37.7243824
+       ],
+       [
+        -122.3705493,
+        37.7243689
+       ],
+       [
+        -122.3706143,
+        37.7243549
+       ],
+       [
+        -122.3706961,
+        37.7243536
+       ],
+       [
+        -122.3707572,
+        37.7245085
+       ],
+       [
+        -122.3708018,
+        37.7246573
+       ],
+       [
+        -122.3708049,
+        37.7247807
+       ],
+       [
+        -122.3707733,
+        37.7248266
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "46",
+    "label": "Block 46",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3694444,
+        37.7236845
+       ],
+       [
+        -122.3693545,
+        37.723686
+       ],
+       [
+        -122.3693377,
+        37.7236667
+       ],
+       [
+        -122.3691625,
+        37.7232017
+       ],
+       [
+        -122.3691611,
+        37.7231433
+       ],
+       [
+        -122.3691935,
+        37.7231298
+       ],
+       [
+        -122.3696978,
+        37.7230179
+       ],
+       [
+        -122.3700554,
+        37.7229279
+       ],
+       [
+        -122.3701615,
+        37.7229197
+       ],
+       [
+        -122.3703365,
+        37.7233782
+       ],
+       [
+        -122.3703389,
+        37.7234756
+       ],
+       [
+        -122.3694444,
+        37.7236845
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "47",
+    "label": "Block 47",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3691487,
+        37.7229745
+       ],
+       [
+        -122.3690833,
+        37.7229756
+       ],
+       [
+        -122.369075,
+        37.7229692
+       ],
+       [
+        -122.3690657,
+        37.7229239
+       ],
+       [
+        -122.36904,
+        37.7228788
+       ],
+       [
+        -122.3689255,
+        37.7225493
+       ],
+       [
+        -122.3688822,
+        37.7224525
+       ],
+       [
+        -122.3688721,
+        37.7223747
+       ],
+       [
+        -122.368913,
+        37.7223741
+       ],
+       [
+        -122.3689453,
+        37.7223605
+       ],
+       [
+        -122.3690024,
+        37.7223532
+       ],
+       [
+        -122.3690348,
+        37.7223397
+       ],
+       [
+        -122.3690919,
+        37.7223323
+       ],
+       [
+        -122.3691242,
+        37.7223188
+       ],
+       [
+        -122.3691813,
+        37.7223114
+       ],
+       [
+        -122.3697829,
+        37.7221655
+       ],
+       [
+        -122.3698809,
+        37.7221575
+       ],
+       [
+        -122.3700127,
+        37.7225257
+       ],
+       [
+        -122.3700472,
+        37.7225967
+       ],
+       [
+        -122.3700565,
+        37.722642
+       ],
+       [
+        -122.3700735,
+        37.7226677
+       ],
+       [
+        -122.3700838,
+        37.722752
+       ],
+       [
+        -122.3696854,
+        37.7228492
+       ],
+       [
+        -122.3696283,
+        37.7228566
+       ],
+       [
+        -122.369596,
+        37.7228701
+       ],
+       [
+        -122.3695389,
+        37.7228775
+       ],
+       [
+        -122.3695065,
+        37.722891
+       ],
+       [
+        -122.3694494,
+        37.7228984
+       ],
+       [
+        -122.3694171,
+        37.7229119
+       ],
+       [
+        -122.36936,
+        37.7229193
+       ],
+       [
+        -122.3693276,
+        37.7229328
+       ],
+       [
+        -122.3692705,
+        37.7229402
+       ],
+       [
+        -122.3692382,
+        37.7229537
+       ],
+       [
+        -122.3691811,
+        37.722961
+       ],
+       [
+        -122.3691487,
+        37.7229745
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "48",
+    "label": "Block 48",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3688857,
+        37.722264
+       ],
+       [
+        -122.3688203,
+        37.7222651
+       ],
+       [
+        -122.368812,
+        37.7222587
+       ],
+       [
+        -122.3686625,
+        37.7218387
+       ],
+       [
+        -122.3686455,
+        37.721813
+       ],
+       [
+        -122.3686442,
+        37.7217611
+       ],
+       [
+        -122.3694412,
+        37.7215797
+       ],
+       [
+        -122.3694736,
+        37.7215662
+       ],
+       [
+        -122.3695307,
+        37.7215588
+       ],
+       [
+        -122.3695631,
+        37.7215453
+       ],
+       [
+        -122.369653,
+        37.7215439
+       ],
+       [
+        -122.3698018,
+        37.7219378
+       ],
+       [
+        -122.3697964,
+        37.7220484
+       ],
+       [
+        -122.3688857,
+        37.722264
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "49",
+    "label": "Block 49",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3686315,
+        37.7215794
+       ],
+       [
+        -122.3685498,
+        37.7215806
+       ],
+       [
+        -122.3685413,
+        37.7215678
+       ],
+       [
+        -122.3683746,
+        37.7211156
+       ],
+       [
+        -122.3683729,
+        37.7210442
+       ],
+       [
+        -122.3691455,
+        37.7208697
+       ],
+       [
+        -122.3692348,
+        37.7208423
+       ],
+       [
+        -122.3692999,
+        37.7208283
+       ],
+       [
+        -122.3693816,
+        37.720827
+       ],
+       [
+        -122.369504,
+        37.7211434
+       ],
+       [
+        -122.3695133,
+        37.7211887
+       ],
+       [
+        -122.3695303,
+        37.7212145
+       ],
+       [
+        -122.3695396,
+        37.7212598
+       ],
+       [
+        -122.3695566,
+        37.7212855
+       ],
+       [
+        -122.3695584,
+        37.721357
+       ],
+       [
+        -122.369526,
+        37.7213705
+       ],
+       [
+        -122.3694689,
+        37.7213778
+       ],
+       [
+        -122.3694365,
+        37.7213913
+       ],
+       [
+        -122.3693795,
+        37.7213987
+       ],
+       [
+        -122.3692902,
+        37.7214261
+       ],
+       [
+        -122.3692331,
+        37.7214335
+       ],
+       [
+        -122.3686315,
+        37.7215794
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "50",
+    "label": "Block 50",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3698514,
+        37.7213004
+       ],
+       [
+        -122.369786,
+        37.7213014
+       ],
+       [
+        -122.3696104,
+        37.7208169
+       ],
+       [
+        -122.3696091,
+        37.720765
+       ],
+       [
+        -122.3702841,
+        37.7206114
+       ],
+       [
+        -122.3703165,
+        37.7205979
+       ],
+       [
+        -122.3703736,
+        37.7205906
+       ],
+       [
+        -122.3704059,
+        37.7205771
+       ],
+       [
+        -122.370463,
+        37.7205697
+       ],
+       [
+        -122.3704954,
+        37.7205562
+       ],
+       [
+        -122.3706179,
+        37.7205477
+       ],
+       [
+        -122.3706448,
+        37.7206448
+       ],
+       [
+        -122.3706793,
+        37.7207157
+       ],
+       [
+        -122.3707062,
+        37.7208127
+       ],
+       [
+        -122.3707848,
+        37.7210129
+       ],
+       [
+        -122.3707864,
+        37.7210778
+       ],
+       [
+        -122.3707541,
+        37.7210913
+       ],
+       [
+        -122.370697,
+        37.7210987
+       ],
+       [
+        -122.3706646,
+        37.7211122
+       ],
+       [
+        -122.3703961,
+        37.7211684
+       ],
+       [
+        -122.3703637,
+        37.7211819
+       ],
+       [
+        -122.3703067,
+        37.7211893
+       ],
+       [
+        -122.3698514,
+        37.7213004
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "51",
+    "label": "Block 51",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3701136,
+        37.7219784
+       ],
+       [
+        -122.37004,
+        37.7219796
+       ],
+       [
+        -122.3700307,
+        37.7219342
+       ],
+       [
+        -122.3698734,
+        37.7215274
+       ],
+       [
+        -122.3698721,
+        37.7214755
+       ],
+       [
+        -122.3702706,
+        37.7213848
+       ],
+       [
+        -122.370303,
+        37.7213713
+       ],
+       [
+        -122.3703601,
+        37.7213639
+       ],
+       [
+        -122.3703925,
+        37.7213504
+       ],
+       [
+        -122.3704495,
+        37.721343
+       ],
+       [
+        -122.3704819,
+        37.7213295
+       ],
+       [
+        -122.370539,
+        37.7213221
+       ],
+       [
+        -122.3705713,
+        37.7213086
+       ],
+       [
+        -122.3706284,
+        37.7213012
+       ],
+       [
+        -122.3706608,
+        37.7212877
+       ],
+       [
+        -122.3707179,
+        37.7212803
+       ],
+       [
+        -122.3707502,
+        37.7212668
+       ],
+       [
+        -122.3708153,
+        37.7212528
+       ],
+       [
+        -122.3708889,
+        37.7212516
+       ],
+       [
+        -122.3710554,
+        37.7216973
+       ],
+       [
+        -122.3710568,
+        37.7217557
+       ],
+       [
+        -122.3704143,
+        37.7219022
+       ],
+       [
+        -122.370382,
+        37.7219157
+       ],
+       [
+        -122.3703249,
+        37.7219231
+       ],
+       [
+        -122.3702925,
+        37.7219366
+       ],
+       [
+        -122.3702354,
+        37.721944
+       ],
+       [
+        -122.3702031,
+        37.7219575
+       ],
+       [
+        -122.370146,
+        37.7219649
+       ],
+       [
+        -122.3701136,
+        37.7219784
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "52",
+    "label": "Block 52",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.370401,
+        37.7226821
+       ],
+       [
+        -122.3703029,
+        37.7226836
+       ],
+       [
+        -122.3701101,
+        37.7221669
+       ],
+       [
+        -122.3701082,
+        37.722089
+       ],
+       [
+        -122.3701653,
+        37.7220816
+       ],
+       [
+        -122.3701976,
+        37.7220681
+       ],
+       [
+        -122.3706125,
+        37.7219771
+       ],
+       [
+        -122.3710027,
+        37.72188
+       ],
+       [
+        -122.371117,
+        37.7218717
+       ],
+       [
+        -122.3712312,
+        37.7221883
+       ],
+       [
+        -122.3712482,
+        37.722214
+       ],
+       [
+        -122.3712575,
+        37.7222593
+       ],
+       [
+        -122.3712919,
+        37.7223303
+       ],
+       [
+        -122.3713013,
+        37.7223756
+       ],
+       [
+        -122.3713183,
+        37.7224013
+       ],
+       [
+        -122.3713199,
+        37.7224662
+       ],
+       [
+        -122.3705228,
+        37.7226477
+       ],
+       [
+        -122.3704905,
+        37.7226612
+       ],
+       [
+        -122.3704334,
+        37.7226686
+       ],
+       [
+        -122.370401,
+        37.7226821
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "53",
+    "label": "Block 53",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3706397,
+        37.7233994
+       ],
+       [
+        -122.3705743,
+        37.7234005
+       ],
+       [
+        -122.3705659,
+        37.7233941
+       ],
+       [
+        -122.3703906,
+        37.7229226
+       ],
+       [
+        -122.3703889,
+        37.7228512
+       ],
+       [
+        -122.3711859,
+        37.7226697
+       ],
+       [
+        -122.3712183,
+        37.7226562
+       ],
+       [
+        -122.3712753,
+        37.7226489
+       ],
+       [
+        -122.3713077,
+        37.7226354
+       ],
+       [
+        -122.3713976,
+        37.7226339
+       ],
+       [
+        -122.3715726,
+        37.7230925
+       ],
+       [
+        -122.3715829,
+        37.7231768
+       ],
+       [
+        -122.3709404,
+        37.7233233
+       ],
+       [
+        -122.370908,
+        37.7233368
+       ],
+       [
+        -122.370851,
+        37.7233442
+       ],
+       [
+        -122.3708186,
+        37.7233577
+       ],
+       [
+        -122.3707615,
+        37.7233651
+       ],
+       [
+        -122.3707291,
+        37.7233786
+       ],
+       [
+        -122.3706721,
+        37.7233859
+       ],
+       [
+        -122.3706397,
+        37.7233994
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "54",
+    "label": "Block 54",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3709641,
+        37.7242779
+       ],
+       [
+        -122.3708987,
+        37.7242789
+       ],
+       [
+        -122.3708902,
+        37.7242661
+       ],
+       [
+        -122.3707407,
+        37.7238461
+       ],
+       [
+        -122.3706537,
+        37.7236331
+       ],
+       [
+        -122.3706432,
+        37.7235423
+       ],
+       [
+        -122.3712939,
+        37.7233957
+       ],
+       [
+        -122.3715621,
+        37.7233265
+       ],
+       [
+        -122.371652,
+        37.7233251
+       ],
+       [
+        -122.3716865,
+        37.723396
+       ],
+       [
+        -122.3718273,
+        37.7237966
+       ],
+       [
+        -122.3718881,
+        37.7239386
+       ],
+       [
+        -122.3719058,
+        37.7239903
+       ],
+       [
+        -122.3719074,
+        37.7240552
+       ],
+       [
+        -122.3709641,
+        37.7242779
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "55",
+    "label": "Block 55",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3721348,
+        37.7253055
+       ],
+       [
+        -122.3720694,
+        37.7253065
+       ],
+       [
+        -122.3717144,
+        37.7251757
+       ],
+       [
+        -122.371657,
+        37.7251701
+       ],
+       [
+        -122.3716237,
+        37.7251446
+       ],
+       [
+        -122.3715576,
+        37.7251197
+       ],
+       [
+        -122.3715084,
+        37.7251139
+       ],
+       [
+        -122.3714834,
+        37.7250948
+       ],
+       [
+        -122.3713513,
+        37.7250449
+       ],
+       [
+        -122.3710213,
+        37.7249332
+       ],
+       [
+        -122.371013,
+        37.7249268
+       ],
+       [
+        -122.3710109,
+        37.7248424
+       ],
+       [
+        -122.3710259,
+        37.7247902
+       ],
+       [
+        -122.3710224,
+        37.7246473
+       ],
+       [
+        -122.3709869,
+        37.7245374
+       ],
+       [
+        -122.3709857,
+        37.7244855
+       ],
+       [
+        -122.3710592,
+        37.7244843
+       ],
+       [
+        -122.3722892,
+        37.7249393
+       ],
+       [
+        -122.3722976,
+        37.7249456
+       ],
+       [
+        -122.3722992,
+        37.7250106
+       ],
+       [
+        -122.3721348,
+        37.7253055
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "56",
+    "label": "Block 56",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3732159,
+        37.7256913
+       ],
+       [
+        -122.3731341,
+        37.7256926
+       ],
+       [
+        -122.3721601,
+        37.7253376
+       ],
+       [
+        -122.3721585,
+        37.7252727
+       ],
+       [
+        -122.3722601,
+        37.7250827
+       ],
+       [
+        -122.3722761,
+        37.7250694
+       ],
+       [
+        -122.3723147,
+        37.7249779
+       ],
+       [
+        -122.3723965,
+        37.7249766
+       ],
+       [
+        -122.3733949,
+        37.7253247
+       ],
+       [
+        -122.3733963,
+        37.7253832
+       ],
+       [
+        -122.3732159,
+        37.7256913
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "15",
+    "label": "Tower A, Block 15",
+    "stage": "entitled",
+    "height_ft": 370,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 370-ft Tower A limit where Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61 shows it, over the block's 85-ft limit; tower controls, D4D Section 4.9, p. 92",
+    "note": "Tower A may stand anywhere in Block 15's flexible tower zone (D4D Fig. 4.9a), with floor plates of at most 12,500 sq ft; Towers A and B must be at least 160 ft apart. No building may exceed 370 ft (Redevelopment Plan, 2024)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3636894,
+        37.7288009
+       ],
+       [
+        -122.3638547,
+        37.7286174
+       ],
+       [
+        -122.3638845,
+        37.7285633
+       ],
+       [
+        -122.3635524,
+        37.728374
+       ],
+       [
+        -122.3633425,
+        37.7286044
+       ],
+       [
+        -122.3636894,
+        37.7288009
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "23",
+    "label": "Tower B, Block 23",
+    "stage": "entitled",
+    "height_ft": 270,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 270-ft Tower B limit where Hunters Point Shipyard Phase 2 Design for Development (Oct 15, 2018; OCII), Figure 4.4c, Maximum Building Height, p. 61 shows it, over the block's 85-ft limit; tower controls, D4D Section 4.9, p. 92",
+    "note": "Tower B may stand anywhere in Block 23's flexible tower zone (D4D Fig. 4.9a), with floor plates of at most 12,500 sq ft; Towers A and B must be at least 160 ft apart. No building may exceed 370 ft (Redevelopment Plan, 2024)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3632449,
+        37.7280012
+       ],
+       [
+        -122.3632749,
+        37.7279499
+       ],
+       [
+        -122.3631869,
+        37.7277024
+       ],
+       [
+        -122.3629809,
+        37.7277542
+       ],
+       [
+        -122.3629436,
+        37.7277849
+       ],
+       [
+        -122.3630102,
+        37.7280048
+       ],
+       [
+        -122.3632449,
+        37.7280012
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

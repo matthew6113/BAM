@@ -315,7 +315,7 @@
       ],
       "nextMilestone": "Navy conveyance of Phase 2, except Parcel F, expected 2036–2038.",
       "summary": "The former naval shipyard on San Francisco's southeastern tip. The hilltop first phase is partly built; the larger second phase waits on the Navy's cleanup and retesting, and in 2024 the city moved much of its office and R&D space to Candlestick Point so that project could proceed alone.",
-      "massingNotes": "Boundary: DataSF Height and Bulk Districts (h9wh-cg3m, Public Domain U.S. Government), height = 'HP' (about 422.8 acres, matching 421); the redevelopment project area (1,093.8 acres) also takes in water and Phase 1. Phase 2 height limits run 40–120 ft (2018); massing comes in Milestone 4.",
+      "massingNotes": "Boundary: DataSF Height and Bulk Districts (h9wh-cg3m, Public Domain U.S. Government), height = 'HP' (about 422.8 acres, matching 421); the redevelopment project area (1,093.8 acres) also takes in water and Phase 1. Phase 2 height limits run 40–120 ft, with Tower A to 370 ft and Tower B to 270 ft (2018). Massing: blocks traced from the Phase 2 Design for Development (Oct 2018), Fig. 4.4c, georeferenced to OpenStreetMap roads (trimmed RMS 3.6 m), and the two towers over 85-ft podiums at the figure's footprints (locations flexible; Tower B's block is 23 in Fig. 4.4c, 33 in Sec. 4.9.3), all illustrative and entitled (Navy-owned, no construction). Blocks 1, 5 and 6 are drawn as the plan shows them, partly outside the HP height district. Parks are not drawn.",
       "officialLinks": [
         "https://sfocii.org/projects/hunters-point-shipyard-candlestick-point-2/overview",
         "https://sfocii.org/projects/hunters-pt-ship-yard-1/affordable-housing"
@@ -339,7 +339,9 @@
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910033486",
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910083919",
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910083908",
-        "https://data.sf.gov/d/h9wh-cg3m"
+        "https://data.sf.gov/d/h9wh-cg3m",
+        "https://sfocii.org/sites/default/files/2025-10/2024%20Hunters%20Point%20Shipyard%20Redevelopment%20Plan.pdf",
+        "https://sfocii.org/sites/default/files/inline-files/1.%20HUNTERS%20POINT%20SHIPYARD%20PHASE%202%20DESIGN%20FOR%20DEVELOPMENT.pdf"
       ],
       "verify": [
         "the current status of the Navy's retesting and Parcel F",
