@@ -390,6 +390,7 @@ def main() -> None:
             "note": ("Blocks are drawn to their height limits in the 2020 Design for Development, not as building "
                      "designs; real buildings will be smaller."),
             "sourceUrl": D4D["url"],
+            "sourceLabel": "Design for Development, 2020 (PDF)",
             "georeference": {"figure_6_2_3": fig623.report()},
             "license": "Block shapes: traced from a public SF Planning document. "
                        "Stack footprint: OpenStreetMap contributors (ODbL 1.0).",

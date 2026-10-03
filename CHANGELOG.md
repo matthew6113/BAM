@@ -3,6 +3,14 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-03 (Milestone 4, batch 1: massing for five San Francisco projects)
+
+`massingNotes` updated and each massing source added to `sources` for **balboa-reservoir**,
+**mission-rock**, **pier-70**, **stonestown** and **india-basin**. All massing is traced from
+adopted design standards or the zoning map and drawn to the height limit, labelled illustrative.
+India Basin's Oct 2024 design-standards amendment (draft) changes no heights; the 2018
+Figure 5-3 limits stand.
+
 ## 2026-10-03 (Milestone 3: official records for every project)
 
 Every project record other than Potrero was rewritten from the official findings in

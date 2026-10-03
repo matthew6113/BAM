@@ -6,6 +6,7 @@
   "summary": "Illustrative massing: each block is drawn to its height limit in the Design for Development approved in 2020 (Fig. 6.2.3), not as a building design. Towers may reach the faint upper envelope on only part of a block. Proposed 2026 amendments that would raise some limits aren't drawn until the Board adopts them.",
   "note": "Blocks are drawn to their height limits in the 2020 Design for Development, not as building designs; real buildings will be smaller.",
   "sourceUrl": "https://sfplanning.org/sites/default/files/documents/citywide/potreropower_D4D_final.pdf",
+  "sourceLabel": "Design for Development, 2020 (PDF)",
   "georeference": {
    "figure_6_2_3": {
     "scale_m_per_unit": 0.43004,

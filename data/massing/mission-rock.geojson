@@ -1,0 +1,923 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "mission-rock",
+  "illustrative": true,
+  "summary": "Illustrative massing: the unbuilt blocks are drawn to their height limits in the Mission Rock height and bulk districts of the city's zoning map, not as building designs. The four Phase 1 buildings (A, B, F and G) are drawn from their real footprints, with stories from building permits; Building B's height is estimated from its stories. Parks, streets and Pier 48's historic sheds aren't drawn.",
+  "note": "Unbuilt blocks are drawn to their zoning height limits, not as building designs; real buildings will be smaller.",
+  "sourceUrl": "https://data.sf.gov/d/h9wh-cg3m",
+  "sourceLabel": "Height and bulk districts (DataSF)",
+  "georeference": {
+   "zoning": "GIS layer, used as published (no tracing)",
+   "figure_2_4": {
+    "scale_m_per_unit": 0.50334,
+    "rotation_deg": 4.347,
+    "rms_m": 3.15,
+    "controls": [
+     {
+      "label": "3rd Street / Toni Stone Crossing",
+      "residual_m": 0.87
+     },
+     {
+      "label": "Dr. Maya Angelou Way / Toni Stone Crossing",
+      "residual_m": 1.47
+     },
+     {
+      "label": "Bridgeview Way / Toni Stone Crossing",
+      "residual_m": 0.16
+     },
+     {
+      "label": "3rd Street / Long Bridge Street",
+      "residual_m": 6.08
+     },
+     {
+      "label": "3rd Street / Mission Rock Street",
+      "residual_m": 4.29
+     },
+     {
+      "label": "Bridgeview Way / Mission Rock Street",
+      "residual_m": 1.06
+     }
+    ],
+    "use": "block letters only"
+   }
+  },
+  "license": "Block shapes: DataSF zoning map (Public Domain U.S. Government). Building footprints and mapped heights: OpenStreetMap contributors (ODbL 1.0), via Overture Maps."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "K",
+    "label": "Block K",
+    "stage": "entitled",
+    "height_ft": 120,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit of zoning district \"120-Mission Rock\" in DataSF Zoning Map \u2013 Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m); block letter from Seawall Lot 337 and Pier 48 Mixed-Use Project Draft EIR, Chapter 2 (Case No. 2013.0208E, April 2017), Figure 2-4, Proposed Site Plan and Height Ranges, p. 2-21",
+    "fid": 1
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3877191,
+        37.7755401
+       ],
+       [
+        -122.3880979,
+        37.7755119
+       ],
+       [
+        -122.3881353,
+        37.7758601
+       ],
+       [
+        -122.3877447,
+        37.7758233
+       ],
+       [
+        -122.3877191,
+        37.7755401
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "K",
+    "label": "Block K",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit of zoning district \"40-Mission Rock\" in DataSF Zoning Map \u2013 Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m); block letter from Seawall Lot 337 and Pier 48 Mixed-Use Project Draft EIR, Chapter 2 (Case No. 2013.0208E, April 2017), Figure 2-4, Proposed Site Plan and Height Ranges, p. 2-21",
+    "note": "Lower 40-ft edge zone of the block (the base height shown in Draft EIR Fig. 2-4).",
+    "fid": 2
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3881404,
+        37.7759076
+       ],
+       [
+        -122.3876366,
+        37.7758624
+       ],
+       [
+        -122.3876067,
+        37.7755484
+       ],
+       [
+        -122.3877191,
+        37.7755401
+       ],
+       [
+        -122.3877447,
+        37.7758233
+       ],
+       [
+        -122.3881353,
+        37.7758601
+       ],
+       [
+        -122.3881404,
+        37.7759076
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "J",
+    "label": "Block J",
+    "stage": "entitled",
+    "height_ft": 120,
+    "podium_ft": 90,
+    "base_ft": 0,
+    "use": "Residential or commercial",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit of zoning district \"90/120-Mission Rock\" in DataSF Zoning Map \u2013 Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m); block letter from Seawall Lot 337 and Pier 48 Mixed-Use Project Draft EIR, Chapter 2 (Case No. 2013.0208E, April 2017), Figure 2-4, Proposed Site Plan and Height Ranges, p. 2-21",
+    "note": "90 ft if commercial, 120 ft if residential (Draft EIR Fig. 2-4 and Table 2-4): solid to 90 ft, with the residential allowance as a faint envelope.",
+    "fid": 3
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3876004,
+        37.774769
+       ],
+       [
+        -122.3880175,
+        37.7747378
+       ],
+       [
+        -122.3880783,
+        37.7753577
+       ],
+       [
+        -122.3876595,
+        37.775384
+       ],
+       [
+        -122.3876004,
+        37.774769
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "J",
+    "label": "Block J",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit of zoning district \"40-Mission Rock\" in DataSF Zoning Map \u2013 Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m); block letter from Seawall Lot 337 and Pier 48 Mixed-Use Project Draft EIR, Chapter 2 (Case No. 2013.0208E, April 2017), Figure 2-4, Proposed Site Plan and Height Ranges, p. 2-21",
+    "note": "Lower 40-ft edge zone of the block (the base height shown in Draft EIR Fig. 2-4).",
+    "fid": 4
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3876004,
+        37.774769
+       ],
+       [
+        -122.3876595,
+        37.775384
+       ],
+       [
+        -122.3875888,
+        37.7753885
+       ],
+       [
+        -122.38753,
+        37.7747742
+       ],
+       [
+        -122.3876004,
+        37.774769
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "I",
+    "label": "Block I",
+    "stage": "entitled",
+    "height_ft": 120,
+    "podium_ft": 90,
+    "base_ft": 0,
+    "use": "Residential or commercial",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit of zoning district \"90/120-Mission Rock\" in DataSF Zoning Map \u2013 Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m); block letter from Seawall Lot 337 and Pier 48 Mixed-Use Project Draft EIR, Chapter 2 (Case No. 2013.0208E, April 2017), Figure 2-4, Proposed Site Plan and Height Ranges, p. 2-21",
+    "note": "90 ft if commercial, 120 ft if residential (Draft EIR Fig. 2-4 and Table 2-4): solid to 90 ft, with the residential allowance as a faint envelope.",
+    "fid": 5
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.387519,
+        37.7739424
+       ],
+       [
+        -122.3879371,
+        37.7739136
+       ],
+       [
+        -122.3880001,
+        37.7745507
+       ],
+       [
+        -122.3875853,
+        37.7745804
+       ],
+       [
+        -122.387519,
+        37.7739424
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "I",
+    "label": "Block I",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit of zoning district \"40-Mission Rock\" in DataSF Zoning Map \u2013 Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m); block letter from Seawall Lot 337 and Pier 48 Mixed-Use Project Draft EIR, Chapter 2 (Case No. 2013.0208E, April 2017), Figure 2-4, Proposed Site Plan and Height Ranges, p. 2-21",
+    "note": "Lower 40-ft edge zone of the block (the base height shown in Draft EIR Fig. 2-4).",
+    "fid": 6
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.387519,
+        37.7739424
+       ],
+       [
+        -122.3875853,
+        37.7745804
+       ],
+       [
+        -122.3875126,
+        37.7745856
+       ],
+       [
+        -122.3874495,
+        37.7739471
+       ],
+       [
+        -122.387519,
+        37.7739424
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "H",
+    "label": "Block H",
+    "stage": "entitled",
+    "height_ft": 120,
+    "podium_ft": 90,
+    "base_ft": 0,
+    "use": "Residential or commercial",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit of zoning district \"90/120-Mission Rock\" in DataSF Zoning Map \u2013 Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m); block letter from Seawall Lot 337 and Pier 48 Mixed-Use Project Draft EIR, Chapter 2 (Case No. 2013.0208E, April 2017), Figure 2-4, Proposed Site Plan and Height Ranges, p. 2-21",
+    "note": "90 ft if commercial, 120 ft if residential (Draft EIR Fig. 2-4 and Table 2-4): solid to 90 ft, with the residential allowance as a faint envelope.",
+    "fid": 7
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3874567,
+        37.7731481
+       ],
+       [
+        -122.3878617,
+        37.7731275
+       ],
+       [
+        -122.3879203,
+        37.7737493
+       ],
+       [
+        -122.3875203,
+        37.7737788
+       ],
+       [
+        -122.3874567,
+        37.7731481
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "H",
+    "label": "Block H",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit of zoning district \"40-Mission Rock\" in DataSF Zoning Map \u2013 Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m); block letter from Seawall Lot 337 and Pier 48 Mixed-Use Project Draft EIR, Chapter 2 (Case No. 2013.0208E, April 2017), Figure 2-4, Proposed Site Plan and Height Ranges, p. 2-21",
+    "note": "Lower 40-ft edge zone of the block (the base height shown in Draft EIR Fig. 2-4).",
+    "fid": 8
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3874489,
+        37.7737841
+       ],
+       [
+        -122.3873896,
+        37.7731527
+       ],
+       [
+        -122.3874567,
+        37.7731481
+       ],
+       [
+        -122.3875203,
+        37.7737788
+       ],
+       [
+        -122.3874489,
+        37.7737841
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C",
+    "label": "Block C",
+    "stage": "entitled",
+    "height_ft": 190,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Commercial",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit of zoning district \"190-Mission Rock\" in DataSF Zoning Map \u2013 Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m); block letter from Seawall Lot 337 and Pier 48 Mixed-Use Project Draft EIR, Chapter 2 (Case No. 2013.0208E, April 2017), Figure 2-4, Proposed Site Plan and Height Ranges, p. 2-21",
+    "fid": 9
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3891129,
+        37.7739374
+       ],
+       [
+        -122.3895604,
+        37.773907
+       ],
+       [
+        -122.3896126,
+        37.7744346
+       ],
+       [
+        -122.3891659,
+        37.7744661
+       ],
+       [
+        -122.3891129,
+        37.7739374
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C",
+    "label": "Block C",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit of zoning district \"90-Mission Rock\" in DataSF Zoning Map \u2013 Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m); block letter from Seawall Lot 337 and Pier 48 Mixed-Use Project Draft EIR, Chapter 2 (Case No. 2013.0208E, April 2017), Figure 2-4, Proposed Site Plan and Height Ranges, p. 2-21",
+    "note": "Lower 90-ft edge zone of the block (the base height shown in Draft EIR Fig. 2-4).",
+    "fid": 10
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3891129,
+        37.7739374
+       ],
+       [
+        -122.3891019,
+        37.7738279
+       ],
+       [
+        -122.3896012,
+        37.7737939
+       ],
+       [
+        -122.3896643,
+        37.774431
+       ],
+       [
+        -122.3896126,
+        37.7744346
+       ],
+       [
+        -122.3895604,
+        37.773907
+       ],
+       [
+        -122.3891129,
+        37.7739374
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C",
+    "label": "Block C",
+    "stage": "entitled",
+    "height_ft": 60,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit of zoning district \"60-Mission Rock\" in DataSF Zoning Map \u2013 Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m); block letter from Seawall Lot 337 and Pier 48 Mixed-Use Project Draft EIR, Chapter 2 (Case No. 2013.0208E, April 2017), Figure 2-4, Proposed Site Plan and Height Ranges, p. 2-21",
+    "note": "Lower 60-ft edge zone of the block (the base height shown in Draft EIR Fig. 2-4).",
+    "fid": 11
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3891019,
+        37.7738279
+       ],
+       [
+        -122.3891659,
+        37.7744661
+       ],
+       [
+        -122.3890598,
+        37.7744736
+       ],
+       [
+        -122.3889949,
+        37.7738351
+       ],
+       [
+        -122.3891019,
+        37.7738279
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "E",
+    "label": "Block E",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Commercial",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit of zoning district \"90-Mission Rock\" in DataSF Zoning Map \u2013 Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m); block letter from Seawall Lot 337 and Pier 48 Mixed-Use Project Draft EIR, Chapter 2 (Case No. 2013.0208E, April 2017), Figure 2-4, Proposed Site Plan and Height Ranges, p. 2-21",
+    "fid": 12
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3881403,
+        37.773896
+       ],
+       [
+        -122.388797,
+        37.7738497
+       ],
+       [
+        -122.3888317,
+        37.7742226
+       ],
+       [
+        -122.3881786,
+        37.7742688
+       ],
+       [
+        -122.3881403,
+        37.773896
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "D1",
+    "label": "Block D1",
+    "stage": "entitled",
+    "height_ft": 240,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit of zoning district \"240-Mission Rock\" in DataSF Zoning Map \u2013 Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m); block letter from Seawall Lot 337 and Pier 48 Mixed-Use Project Draft EIR, Chapter 2 (Case No. 2013.0208E, April 2017), Figure 2-4, Proposed Site Plan and Height Ranges, p. 2-21",
+    "fid": 13
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3890906,
+        37.7730535
+       ],
+       [
+        -122.3894923,
+        37.7730294
+       ],
+       [
+        -122.389528,
+        37.7733945
+       ],
+       [
+        -122.3891268,
+        37.7734238
+       ],
+       [
+        -122.3890906,
+        37.7730535
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "D2",
+    "label": "Block D2",
+    "stage": "entitled",
+    "height_ft": 100,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Parking",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit of zoning district \"100-Mission Rock\" in DataSF Zoning Map \u2013 Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m); block letter from Seawall Lot 337 and Pier 48 Mixed-Use Project Draft EIR, Chapter 2 (Case No. 2013.0208E, April 2017), Figure 2-4, Proposed Site Plan and Height Ranges, p. 2-21",
+    "fid": 14
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3880654,
+        37.7731153
+       ],
+       [
+        -122.3890906,
+        37.7730535
+       ],
+       [
+        -122.3891268,
+        37.7734238
+       ],
+       [
+        -122.389528,
+        37.7733945
+       ],
+       [
+        -122.3894923,
+        37.7730294
+       ],
+       [
+        -122.3894984,
+        37.773029
+       ],
+       [
+        -122.3895045,
+        37.7730929
+       ],
+       [
+        -122.3895464,
+        37.7730904
+       ],
+       [
+        -122.3895971,
+        37.7736323
+       ],
+       [
+        -122.388129,
+        37.7737374
+       ],
+       [
+        -122.3880654,
+        37.7731153
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "landmark",
+    "block": "A",
+    "label": "Building A",
+    "stage": "complete",
+    "height_ft": 240,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": "Phase 1",
+    "illustrative": false,
+    "source": "footprint: OpenStreetMap w1204801756 via Overture 2026-09-23.1; stories: DBI permit 201910073782 (https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910073782): 24 stories; height: 73.0 m as mapped in OpenStreetMap; complete per Port of SF, June 9, 2026 (https://www.sfport.com/sites/default/files/2026-06/item_11a_mission_rock_phase_2_update_and_port_capital.pdf)",
+    "stories": 24,
+    "fid": 15
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3897912,
+       37.7754539
+      ],
+      [
+       -122.3891655,
+       37.7754878
+      ],
+      [
+       -122.3892269,
+       37.7760702
+      ],
+      [
+       -122.3898548,
+       37.7761446
+      ],
+      [
+       -122.3897912,
+       37.7754539
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "landmark",
+    "block": "F",
+    "label": "Building F",
+    "stage": "complete",
+    "height_ft": 240,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": "Phase 1",
+    "illustrative": false,
+    "source": "footprint: OpenStreetMap w1204801749 via Overture 2026-09-23.1; stories: DBI permit 201910073784 (https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910073784): 23 stories; height: 73.2 m as mapped in OpenStreetMap; complete per Port of SF, June 9, 2026 (https://www.sfport.com/sites/default/files/2026-06/item_11a_mission_rock_phase_2_update_and_port_capital.pdf)",
+    "stories": 23,
+    "fid": 16
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3882997,
+       37.7753768
+      ],
+      [
+       -122.3889418,
+       37.7753422
+      ],
+      [
+       -122.3889094,
+       37.7749657
+      ],
+      [
+       -122.3882673,
+       37.7750004
+      ],
+      [
+       -122.3882997,
+       37.7753768
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "G",
+    "label": "Building G",
+    "stage": "complete",
+    "height_ft": 210,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office",
+    "phase": "Phase 1",
+    "illustrative": false,
+    "source": "footprint: OpenStreetMap w1204801755 via Overture 2026-09-23.1; stories: DBI permit 201910073785 (https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910073785): 13 stories; height: 64.0 m as mapped in OpenStreetMap; complete per Port of SF, June 9, 2026 (https://www.sfport.com/sites/default/files/2026-06/item_11a_mission_rock_phase_2_update_and_port_capital.pdf)",
+    "stories": 13,
+    "fid": 17
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3890257,
+       37.7760288
+      ],
+      [
+       -122.3889627,
+       37.7755084
+      ],
+      [
+       -122.3883283,
+       37.7755518
+      ],
+      [
+       -122.3883806,
+       37.7759854
+      ],
+      [
+       -122.3890257,
+       37.7760288
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "B",
+    "label": "Building B",
+    "stage": "complete",
+    "height_ft": 116,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: footprint: OpenStreetMap w1204801750 via Overture 2026-09-23.1; stories: DBI permit 201910285744 (https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910285744): 8 stories; height estimated from the permitted stories with Seawall Lot 337 and Pier 48 Mixed-Use Project Draft EIR, Chapter 2 (Case No. 2013.0208E, April 2017), Table 2-4 note b (ground floor about 18 ft, commercial floors 14 ft): 18 + 14 \u00d7 7 ft; complete per Port of SF, June 9, 2026 (https://www.sfport.com/sites/default/files/2026-06/item_11a_mission_rock_phase_2_update_and_port_capital.pdf)",
+    "stories": 8,
+    "note": "No mapped height: the height is estimated from the permitted stories.",
+    "fid": 18
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3890924,
+       37.7747098
+      ],
+      [
+       -122.3891564,
+       37.7753265
+      ],
+      [
+       -122.3897761,
+       37.7752942
+      ],
+      [
+       -122.3896906,
+       37.7746639
+      ],
+      [
+       -122.3890924,
+       37.7747098
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

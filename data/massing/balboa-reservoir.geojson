@@ -1,0 +1,1205 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "balboa-reservoir",
+  "illustrative": true,
+  "summary": "Illustrative massing: each block is drawn to its height limits (25 to 78 ft) in the Design Standards and Guidelines adopted in 2020 (Fig. 7.2-1), not as a building design. Blocks A and E are under construction (DBI permits) but no real footprints exist yet, so they are drawn as envelopes too. Reservoir Park and the SFPUC open space are outlined, without height.",
+  "note": "Blocks are drawn to their height limits in the 2020 design standards, not as building designs; real buildings will be smaller.",
+  "sourceUrl": "https://sfplanning.org/sites/default/files/documents/citywide/balboareservoir_dsg.pdf",
+  "sourceLabel": "Design standards, 2020 (PDF)",
+  "georeference": {
+   "method": "Corners of each figure's dash-dot Special Use District outline matched to the official SUD polygon (DataSF 5yf5-ms5f) with a least-squares similarity fit",
+   "figure_7_2_1": {
+    "scale_m_per_unit": 0.85742,
+    "rotation_deg": 0.716,
+    "rms_m": 0.9,
+    "controls": [
+     {
+      "label": "SUD NW corner",
+      "residual_m": 0.97
+     },
+     {
+      "label": "SUD NE corner",
+      "residual_m": 1.07
+     },
+     {
+      "label": "SUD SE corner",
+      "residual_m": 0.72
+     },
+     {
+      "label": "SUD SW corner",
+      "residual_m": 0.78
+     }
+    ],
+    "outline_max_deviation_m": 1.07
+   },
+   "figure_3_1_1": {
+    "scale_m_per_unit": 0.85753,
+    "rotation_deg": 0.712,
+    "rms_m": 0.93,
+    "controls": [
+     {
+      "label": "SUD NW corner",
+      "residual_m": 1.02
+     },
+     {
+      "label": "SUD NE corner",
+      "residual_m": 1.11
+     },
+     {
+      "label": "SUD SE corner",
+      "residual_m": 0.73
+     },
+     {
+      "label": "SUD SW corner",
+      "residual_m": 0.8
+     }
+    ],
+    "outline_max_deviation_m": 1.11
+   }
+  },
+  "license": "Block shapes: traced from a public SF Planning document; registered to the DataSF Special Use Districts layer (public domain)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "A",
+    "label": "Block A",
+    "stage": "construction",
+    "height_ft": 78,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "multifamily residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 78-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182",
+    "note": "Under construction: Building A, 6 stories (5 on its south side), 159 affordable homes (DBI permit 202503313370, first construction document June 11, 2026). Drawn to the block's height limit."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4541199,
+        37.7242375
+       ],
+       [
+        -122.4539762,
+        37.72443
+       ],
+       [
+        -122.4539486,
+        37.7245108
+       ],
+       [
+        -122.453941,
+        37.7247407
+       ],
+       [
+        -122.4546943,
+        37.7248983
+       ],
+       [
+        -122.4548625,
+        37.7243974
+       ],
+       [
+        -122.4541199,
+        37.7242375
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "B",
+    "label": "Block B",
+    "stage": "entitled",
+    "height_ft": 48,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "multifamily residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 48-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182; 48-ft West Street step-down, 20 ft deep (S.7.2.2)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4553691,
+        37.725039
+       ],
+       [
+        -122.4555327,
+        37.7245406
+       ],
+       [
+        -122.4554669,
+        37.7245269
+       ],
+       [
+        -122.4553032,
+        37.7250253
+       ],
+       [
+        -122.4553691,
+        37.725039
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "B",
+    "label": "Block B",
+    "stage": "entitled",
+    "height_ft": 68,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "multifamily residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 68-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4548983,
+        37.7249415
+       ],
+       [
+        -122.4553028,
+        37.7250252
+       ],
+       [
+        -122.4554665,
+        37.7245268
+       ],
+       [
+        -122.455062,
+        37.7244431
+       ],
+       [
+        -122.4548983,
+        37.7249415
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C",
+    "label": "Block C",
+    "stage": "entitled",
+    "height_ft": 78,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "multifamily residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 78-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4546289,
+        37.7250978
+       ],
+       [
+        -122.4539435,
+        37.7249471
+       ],
+       [
+        -122.4539471,
+        37.7253832
+       ],
+       [
+        -122.4544939,
+        37.7255017
+       ],
+       [
+        -122.4546289,
+        37.7250978
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "D",
+    "label": "Block D",
+    "stage": "entitled",
+    "height_ft": 48,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "multifamily residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 48-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182; 48-ft West Street step-down, 20 ft deep (S.7.2.2)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.455218,
+        37.7252215
+       ],
+       [
+        -122.4551489,
+        37.7254114
+       ],
+       [
+        -122.4551511,
+        37.7256721
+       ],
+       [
+        -122.4552204,
+        37.7256717
+       ],
+       [
+        -122.4552182,
+        37.7254183
+       ],
+       [
+        -122.4552834,
+        37.7252358
+       ],
+       [
+        -122.455218,
+        37.7252215
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "D",
+    "label": "Block D",
+    "stage": "entitled",
+    "height_ft": 68,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "multifamily residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 68-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4547696,
+        37.7253246
+       ],
+       [
+        -122.4547694,
+        37.7256747
+       ],
+       [
+        -122.4551511,
+        37.7256721
+       ],
+       [
+        -122.4551489,
+        37.7254114
+       ],
+       [
+        -122.455218,
+        37.7252215
+       ],
+       [
+        -122.4548306,
+        37.72514
+       ],
+       [
+        -122.4547696,
+        37.7253246
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "E",
+    "label": "Block E",
+    "stage": "construction",
+    "height_ft": 78,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "multifamily residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 78-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182",
+    "note": "Under construction: Building E, 7 stories, 128 affordable homes and a community facility (DBI permit 202207289451, first construction document Nov 25, 2025). Drawn to the block's height limit."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4542752,
+        37.7266356
+       ],
+       [
+        -122.4542679,
+        37.7257707
+       ],
+       [
+        -122.4539558,
+        37.7257723
+       ],
+       [
+        -122.4539631,
+        37.7266373
+       ],
+       [
+        -122.4542752,
+        37.7266356
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F",
+    "label": "Block F",
+    "stage": "entitled",
+    "height_ft": 48,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "multifamily residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 48-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182; 48-ft West Street step-down, 20 ft deep (S.7.2.2)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4551525,
+        37.7258351
+       ],
+       [
+        -122.4551592,
+        37.7266315
+       ],
+       [
+        -122.4552243,
+        37.7266312
+       ],
+       [
+        -122.4552176,
+        37.7258347
+       ],
+       [
+        -122.4551525,
+        37.7258351
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F",
+    "label": "Block F",
+    "stage": "entitled",
+    "height_ft": 68,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "multifamily residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 68-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4547862,
+        37.725837
+       ],
+       [
+        -122.4547929,
+        37.7266338
+       ],
+       [
+        -122.4551592,
+        37.7266318
+       ],
+       [
+        -122.4551525,
+        37.7258351
+       ],
+       [
+        -122.4547862,
+        37.725837
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "G",
+    "label": "Block G",
+    "stage": "entitled",
+    "height_ft": 48,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "multifamily residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 48-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182; 48-ft West Street step-down, 20 ft deep (S.7.2.2)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.455226,
+        37.726835
+       ],
+       [
+        -122.4551609,
+        37.7268354
+       ],
+       [
+        -122.4551651,
+        37.7273285
+       ],
+       [
+        -122.4552302,
+        37.7273281
+       ],
+       [
+        -122.455226,
+        37.726835
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "G",
+    "label": "Block G",
+    "stage": "entitled",
+    "height_ft": 68,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "multifamily residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 68-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4539323,
+        37.7268419
+       ],
+       [
+        -122.4539365,
+        37.727335
+       ],
+       [
+        -122.4551651,
+        37.7273285
+       ],
+       [
+        -122.4551609,
+        37.7268354
+       ],
+       [
+        -122.4539323,
+        37.7268419
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "H",
+    "label": "Block H",
+    "stage": "entitled",
+    "height_ft": 25,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "townhouses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 25-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182; 25-ft step-down within 30 ft of the western property line (S.7.2.3)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4559854,
+        37.7246372
+       ],
+       [
+        -122.4559081,
+        37.7246203
+       ],
+       [
+        -122.4559075,
+        37.7249725
+       ],
+       [
+        -122.4559848,
+        37.7249888
+       ],
+       [
+        -122.4559854,
+        37.7246372
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "H",
+    "label": "Block H",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "townhouses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 35-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4557315,
+        37.7245838
+       ],
+       [
+        -122.4556211,
+        37.724912
+       ],
+       [
+        -122.4556246,
+        37.7249127
+       ],
+       [
+        -122.4557075,
+        37.7246575
+       ],
+       [
+        -122.4558593,
+        37.7246865
+       ],
+       [
+        -122.4557776,
+        37.724945
+       ],
+       [
+        -122.4559075,
+        37.7249725
+       ],
+       [
+        -122.4559081,
+        37.7246204
+       ],
+       [
+        -122.4557315,
+        37.7245838
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "H",
+    "label": "Block H",
+    "stage": "entitled",
+    "height_ft": 48,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "townhouses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 48-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4557776,
+        37.724945
+       ],
+       [
+        -122.4558593,
+        37.7246865
+       ],
+       [
+        -122.4557075,
+        37.7246575
+       ],
+       [
+        -122.4556246,
+        37.7249127
+       ],
+       [
+        -122.4557776,
+        37.724945
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "TH1",
+    "label": "Block TH1",
+    "stage": "entitled",
+    "height_ft": 25,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "townhouses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 25-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182; 25-ft step-down within 30 ft of the western property line (S.7.2.3)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4559835,
+        37.7256596
+       ],
+       [
+        -122.4559848,
+        37.7249888
+       ],
+       [
+        -122.4559075,
+        37.7249725
+       ],
+       [
+        -122.4559064,
+        37.72566
+       ],
+       [
+        -122.4559835,
+        37.7256596
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "TH1",
+    "label": "Block TH1",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "townhouses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 35-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4556074,
+        37.7254835
+       ],
+       [
+        -122.455605,
+        37.7256616
+       ],
+       [
+        -122.4554499,
+        37.7256632
+       ],
+       [
+        -122.4559274,
+        37.7256599
+       ],
+       [
+        -122.4559064,
+        37.72566
+       ],
+       [
+        -122.4559075,
+        37.7249725
+       ],
+       [
+        -122.4557776,
+        37.724945
+       ],
+       [
+        -122.4556074,
+        37.7254835
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.4555026,
+        37.7252642
+       ],
+       [
+        -122.4554469,
+        37.7254595
+       ],
+       [
+        -122.4556246,
+        37.7249127
+       ],
+       [
+        -122.4556211,
+        37.724912
+       ],
+       [
+        -122.4555026,
+        37.7252642
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "TH1",
+    "label": "Block TH1",
+    "stage": "entitled",
+    "height_ft": 48,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "townhouses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 48-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4556246,
+        37.7249127
+       ],
+       [
+        -122.4554463,
+        37.7254612
+       ],
+       [
+        -122.4554486,
+        37.7256632
+       ],
+       [
+        -122.455605,
+        37.7256616
+       ],
+       [
+        -122.4556074,
+        37.7254835
+       ],
+       [
+        -122.4557776,
+        37.724945
+       ],
+       [
+        -122.4556246,
+        37.7249127
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "TH2",
+    "label": "Block TH2",
+    "stage": "entitled",
+    "height_ft": 25,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "townhouses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 25-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182; 25-ft step-down within 30 ft of the western property line (S.7.2.3)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4559979,
+        37.7273611
+       ],
+       [
+        -122.4559845,
+        37.7257786
+       ],
+       [
+        -122.4559074,
+        37.725779
+       ],
+       [
+        -122.4559207,
+        37.7273615
+       ],
+       [
+        -122.4559979,
+        37.7273611
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "TH2",
+    "label": "Block TH2",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "townhouses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 35-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4554578,
+        37.7273639
+       ],
+       [
+        -122.4559207,
+        37.7273615
+       ],
+       [
+        -122.4559074,
+        37.725779
+       ],
+       [
+        -122.4554444,
+        37.7257814
+       ],
+       [
+        -122.4554578,
+        37.7273639
+       ]
+      ],
+      [
+       [
+        -122.4554469,
+        37.7257875
+       ],
+       [
+        -122.4556045,
+        37.7257866
+       ],
+       [
+        -122.4556171,
+        37.7272891
+       ],
+       [
+        -122.4554595,
+        37.7272899
+       ],
+       [
+        -122.4554469,
+        37.7257875
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "TH2",
+    "label": "Block TH2",
+    "stage": "entitled",
+    "height_ft": 48,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "townhouses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 48-ft height limit traced from Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 7.2-1, Building Height Diagram, p. 182"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4554469,
+        37.7257875
+       ],
+       [
+        -122.4554595,
+        37.7272899
+       ],
+       [
+        -122.4556171,
+        37.7272891
+       ],
+       [
+        -122.4556045,
+        37.7257866
+       ],
+       [
+        -122.4554469,
+        37.7257875
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "J",
+    "label": "Reservoir Park",
+    "stage": "entitled",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "open space",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 3.1-1, Land Use Plan, p. 34 (outline only, approximate)",
+    "note": "Publicly accessible open space (the approximately 2-acre Reservoir Park); no buildings."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4539469,
+        37.7253978
+       ],
+       [
+        -122.4545086,
+        37.7255158
+       ],
+       [
+        -122.4546479,
+        37.7250917
+       ],
+       [
+        -122.454817,
+        37.7251242
+       ],
+       [
+        -122.4547497,
+        37.7253245
+       ],
+       [
+        -122.4547527,
+        37.7256844
+       ],
+       [
+        -122.4552324,
+        37.7256819
+       ],
+       [
+        -122.4552346,
+        37.7258234
+       ],
+       [
+        -122.4547684,
+        37.7258231
+       ],
+       [
+        -122.4547752,
+        37.7266467
+       ],
+       [
+        -122.4542908,
+        37.7266493
+       ],
+       [
+        -122.4542834,
+        37.7257561
+       ],
+       [
+        -122.4539499,
+        37.7257583
+       ],
+       [
+        -122.4539469,
+        37.7253978
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "SFPUC",
+    "label": "SFPUC open space",
+    "stage": "entitled",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "open space",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: Balboa Reservoir Neighborhood Design Standards and Guidelines (adopted May 28, 2020, Planning Commission Resolution 20734; REV-1 Sept 15, 2020), Figure 3.1-1, Land Use Plan, p. 34 (outline only, approximate)",
+    "note": "SFPUC Retained Fee Open Space over the pipelines, outside the Special Use District (\"Not governed by DSG/SUD\"); no buildings."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4560284,
+        37.7243962
+       ],
+       [
+        -122.4560303,
+        37.7246254
+       ],
+       [
+        -122.4541271,
+        37.7242243
+       ],
+       [
+        -122.4541609,
+        37.7241144
+       ],
+       [
+        -122.4541663,
+        37.7240022
+       ],
+       [
+        -122.4560284,
+        37.7243962
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

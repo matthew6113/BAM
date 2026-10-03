@@ -599,7 +599,7 @@
       ],
       "nextMilestone": "Port and Board of Supervisors action on the proposed amendments, expected by the end of 2026 or early 2027.",
       "summary": "A historic shipyard south of Mission Bay being remade into a neighborhood of homes, offices, makers' space and waterfront parks, with landmark industrial buildings restored. Building 12, the old mold loft, is restored and leased.",
-      "massingNotes": "Boundary: DataSF Special Use Districts (5yf5-ms5f, Public Domain U.S. Government), feature \"Pier 70\" (about 35.6 acres, the whole district); the 28-Acre Site is roughly that minus the block 4110 and 4120 parcels (DataSF Parcels acdm-wktn, ODC-PDDL), labeled approximate. Approved heights are 65 and 90 ft (new buildings 50–90 ft); massing comes in Milestone 4.",
+      "massingNotes": "Boundary: DataSF Special Use Districts (5yf5-ms5f, Public Domain U.S. Government), feature \"Pier 70\" (about 35.6 acres, the whole district); the 28-Acre Site is roughly that minus the block 4110 and 4120 parcels (DataSF Parcels acdm-wktn, ODC-PDDL), labeled approximate. Massing: parcel height limits traced from the Port's Design for Development (Apr 26, 2022), Figure 6.4.2, p. 155: 90 ft on most parcels, 70 ft on E2 and E3, 65 ft on E1's north leg and the Illinois Street parcels, 50 ft on E4 (illustrative, drawn to the limit). Building 12 (rehabilitated, 60 ft per Table 6.15.2) is drawn as built. The Aug 2026 proposal to raise some parcels is not drawn.",
       "officialLinks": [
         "https://www.sfport.com/projects-programs/pier-70-28-acre-site",
         "https://www.sfport.com/sites/default/files/2026-08/item_11a_p70_project_update_-_term_sheet_overview_-_information.pdf"
@@ -616,12 +616,13 @@
         "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200206_cal_min.pdf",
         "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20220303_cal_min.pdf",
         "https://sfplanning.s3.amazonaws.com/archives/sfhousingelement.org/files/AppendixB1.pdf",
-        "https://data.sf.gov/d/5yf5-ms5f"
+        "https://data.sf.gov/d/5yf5-ms5f",
+        "https://www.sfport.com/media/8123/download?inline="
       ],
       "verify": [
-        "parcel heights in the adopted Design for Development, and which parcels would go from 65 to 90 ft",
         "the status of Buildings 2 and 21",
-        "Building 12's tenants (press names General Catalyst)"
+        "Building 12's tenants (press names General Catalyst)",
+        "which parcels the Aug 2026 proposal would raise from 65 to 90 ft"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
@@ -737,7 +738,8 @@
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910073782",
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910073785",
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910285744",
-        "https://data.sf.gov/d/5yf5-ms5f"
+        "https://data.sf.gov/d/5yf5-ms5f",
+        "https://data.sf.gov/d/h9wh-cg3m"
       ],
       "verify": [
         "the total retail program at full build-out",
@@ -1037,7 +1039,7 @@
       ],
       "nextMilestone": "Completion of India Basin Waterfront Park (expected 2028) and issued permits for the private 700 Innes site.",
       "summary": "A Bayview waterfront site approved in 2018 for up to 1,575 homes, a quarter of them affordable, alongside a string of new public shoreline parks. The city's parks are being built; the private site has no issued permits yet.",
-      "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"India Basin SUD\" (about 30.2 acres, the development site only; the parks need separate geometry), with the recorded development agreement's Exhibits A, B and D as a fallback. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"India Basin SUD\" (about 30.2 acres, the development site only; the parks need separate geometry), with the recorded development agreement's Exhibits A, B and D as a fallback. Massing: parcel height limits traced from the adopted Design Standards and Guidelines (July 2018, Motion 20252), Figure 5-3, p. 263: 20–80 ft across the 700 Innes parcels, with two tower zones up to 160 ft (85 ft minimum, Standard 5.2.3); open space parcels and the city parks are not drawn (illustrative, drawn to the limit). The Oct 2024 amendment does not change heights.",
       "officialLinks": [
         "https://sfplanning.s3.amazonaws.com/default/files/devagreements/indiabasin/IndiaBasin_Development_Agreement_Recorded.pdf",
         "https://sfrecpark.org/m/newsflash/home/detail/2951",
@@ -1061,7 +1063,8 @@
         "https://www.sf.gov/news-mayor-lurie-breaks-ground-on-final-phase-of-india-basin-waterfront-park-project-upgrading-open-space-in-bayview-hunters-points",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202205033459",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202204212681",
-        "https://data.sf.gov/d/5yf5-ms5f"
+        "https://data.sf.gov/d/5yf5-ms5f",
+        "https://sfplanning.s3.amazonaws.com/default/files/devagreements/indiabasin/IndiaBasin_Design_Standards_and_Guidelines.pdf"
       ],
       "verify": [
         "the developer default reported by the press in Sept 2026 (no public record found)",
@@ -1240,7 +1243,7 @@
       ],
       "nextMilestone": "First-phase permits; the financing plan projects nine phases from 2028 to 2051.",
       "summary": "A plan to build up to about 3,500 homes, shops, offices and six acres of open space on about 30 acres of the Stonestown Galleria site, while most of the existing mall stays. Approved in 2024, it is projected to build out in phases through 2051.",
-      "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"Stonestown Special Use District\" (about 38.5 acres, larger than the 30-acre project site; unchecked). Alternatives: the financing district boundary (financing plan Exhibits A and B) or the Board's map (Legistar). Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"Stonestown Special Use District\" (about 38.5 acres, larger than the 30-acre project site; unchecked). Alternatives: the financing district boundary (financing plan Exhibits A and B) or the Board's map (Legistar). Massing: parcel height limits traced from the adopted Design Standards and Guidelines (Apr 2024), Figure 5.9, p. 187: mostly 90 ft, with tower zones of 150 and 190 ft over a 90-ft base (towers are construction above 90 ft, Sec. 249.9(g)) and lower parcels of 30–50 ft (illustrative, drawn to the limit).",
       "officialLinks": [
         "https://media.api.sf.gov/documents/2024-0000037_NOD_-_Stonestown_Development_Project.pdf",
         "https://sfbos.archive.sf.gov/sites/default/files/o0205-24.pdf",
@@ -1256,7 +1259,8 @@
         "https://media.api.sf.gov/documents/Stonestown_-_EIR.pdf",
         "https://media.api.sf.gov/documents/Reso_2026-03.pdf",
         "https://media.api.sf.gov/documents/Stonestown_IFP_1-8-26.pdf",
-        "https://data.sf.gov/d/5yf5-ms5f"
+        "https://data.sf.gov/d/5yf5-ms5f",
+        "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=ad1e00d6088f207fc57af21017ef4288f33d767889f220aee642919f2961c494&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0"
       ],
       "verify": [
         "how many affordable homes will be stand-alone rather than inclusionary (financing plan: 350 inclusionary, none stand-alone)",
@@ -1385,7 +1389,8 @@
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202605201591",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202607094805",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202607084737",
-        "https://data.sf.gov/d/5yf5-ms5f"
+        "https://data.sf.gov/d/5yf5-ms5f",
+        "https://sfplanning.org/sites/default/files/documents/citywide/balboareservoir_dsg.pdf"
       ],
       "verify": [
         "whether the final development agreement kept about 150 homes with a City College employee preference",

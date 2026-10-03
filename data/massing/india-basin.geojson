@@ -1,0 +1,1821 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "india-basin",
+  "illustrative": true,
+  "summary": "Illustrative massing: each part of a development parcel at 700 Innes is drawn to its maximum height in the design standards adopted in 2018 (Fig. 5-3), not as a building design. Towers at parcels C1 and H1 may rise to 160 ft. The open space and the city's India Basin Waterfront Park aren't massed, and nothing has been built on the private site yet.",
+  "note": "Parcels are drawn to their height limits in the 2018 design standards, not as building designs; real buildings will be smaller.",
+  "sourceUrl": "https://sfplanning.s3.amazonaws.com/default/files/devagreements/indiabasin/IndiaBasin_Design_Standards_and_Guidelines.pdf",
+  "sourceLabel": "Design standards, 2018 (PDF)",
+  "georeference": {
+   "figure_5_3": {
+    "method": "building-footprint match: raster correlation, then least squares on the centroids of figure buildings matching OpenStreetMap footprints (IoU > 0.6)",
+    "scale_m_per_unit": 1.05902,
+    "rotation_deg": 0.273,
+    "rms_m": 0.53,
+    "median_m": 0.21,
+    "max_m": 4.08,
+    "controls": 133,
+    "figure_buildings": 182,
+    "correlation": 0.449
+   },
+   "check_against_sud": {
+    "zones_m2": 42814,
+    "outside_sud_m2": 634,
+    "outside_sud_share": 0.0148
+   }
+  },
+  "documents": {
+   "design_standards": {
+    "title": "India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252)",
+    "url": "https://sfplanning.s3.amazonaws.com/default/files/devagreements/indiabasin/IndiaBasin_Design_Standards_and_Guidelines.pdf",
+    "sha256": "2ca5b5d804882ce430a54ff0c3967e61b0c13acc8af5e2527f0cce82d3a0ccc4",
+    "pages": "Fig. 5-1 p. 261, Fig. 5-3 p. 263, Std. 5.2.3 p. 262, App. A.1"
+   },
+   "amendment_2024": {
+    "title": "India Basin DSG Amendment, Exhibits B and C (published by SF Planning Oct 17, 2024)",
+    "url": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=390dc9ff22ed2e574daed0847aa9081f8a3ed41e5e0a7bc812723a2a59b93c1b&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+    "sha256": "a1b03e4d25f0b4430bd5cfbe378741bfef63458a70ad493253f2a3d5955b07a1",
+    "finding": "Adds a Small Lot Home option in the Flats; no change to Section 5.2 heights."
+   }
+  },
+  "license": "Zone shapes: traced from a public SF Planning document. Georeferenced to OpenStreetMap building footprints (ODbL 1.0) via Overture Maps."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C1",
+    "label": "Parcel C1",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3740185,
+        37.7315441
+       ],
+       [
+        -122.373925,
+        37.731492
+       ],
+       [
+        -122.3736684,
+        37.7317619
+       ],
+       [
+        -122.3734964,
+        37.7315343
+       ],
+       [
+        -122.3737034,
+        37.7313048
+       ],
+       [
+        -122.3740555,
+        37.7315026
+       ],
+       [
+        -122.3740185,
+        37.7315441
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C1",
+    "label": "Parcel C1",
+    "stage": "entitled",
+    "height_ft": 50,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3739159,
+        37.7319075
+       ],
+       [
+        -122.3741701,
+        37.7316288
+       ],
+       [
+        -122.3740184,
+        37.7315441
+       ],
+       [
+        -122.3740555,
+        37.7315026
+       ],
+       [
+        -122.3742887,
+        37.7316328
+       ],
+       [
+        -122.3741818,
+        37.7317493
+       ],
+       [
+        -122.374219,
+        37.7319817
+       ],
+       [
+        -122.3739159,
+        37.7319075
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C1",
+    "label": "Parcel C1 tower",
+    "stage": "entitled",
+    "height_ft": 160,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263; tower location, 85 ft minimum to 160 ft maximum (Standard 5.2.3, p. 262)",
+    "note": "Tower location: buildings here must be 85-160 ft tall, with floor plates above 60 ft capped at 12,000 gsf (DSG 5.2.3, 5.3.3)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3739159,
+        37.7319075
+       ],
+       [
+        -122.3737202,
+        37.7318303
+       ],
+       [
+        -122.3736684,
+        37.7317619
+       ],
+       [
+        -122.373925,
+        37.731492
+       ],
+       [
+        -122.3741701,
+        37.7316288
+       ],
+       [
+        -122.3739159,
+        37.7319075
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C2",
+    "label": "Parcel C2",
+    "stage": "entitled",
+    "height_ft": 50,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.374971,
+        37.7320201
+       ],
+       [
+        -122.3745504,
+        37.7317804
+       ],
+       [
+        -122.3747527,
+        37.7315569
+       ],
+       [
+        -122.3751667,
+        37.7317942
+       ],
+       [
+        -122.3749665,
+        37.7320168
+       ],
+       [
+        -122.374971,
+        37.7320201
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C2",
+    "label": "Parcel C2",
+    "stage": "entitled",
+    "height_ft": 70,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3745505,
+        37.7317804
+       ],
+       [
+        -122.374971,
+        37.7320201
+       ],
+       [
+        -122.3748587,
+        37.7321442
+       ],
+       [
+        -122.374594,
+        37.7320753
+       ],
+       [
+        -122.3745505,
+        37.7317804
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C2",
+    "label": "Parcel C2",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3742887,
+        37.7316328
+       ],
+       [
+        -122.3745505,
+        37.7317804
+       ],
+       [
+        -122.374594,
+        37.7320753
+       ],
+       [
+        -122.374219,
+        37.7319817
+       ],
+       [
+        -122.3741818,
+        37.7317493
+       ],
+       [
+        -122.3742887,
+        37.7316328
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C3",
+    "label": "Parcel C3",
+    "stage": "entitled",
+    "height_ft": 20,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3752453,
+        37.7321782
+       ],
+       [
+        -122.3751652,
+        37.7321834
+       ],
+       [
+        -122.3748587,
+        37.7321442
+       ],
+       [
+        -122.374971,
+        37.7320201
+       ],
+       [
+        -122.3752453,
+        37.7321782
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C3",
+    "label": "Parcel C3",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3751899,
+        37.7321447
+       ],
+       [
+        -122.3753904,
+        37.7319207
+       ],
+       [
+        -122.3755966,
+        37.7320366
+       ],
+       [
+        -122.3755012,
+        37.7321418
+       ],
+       [
+        -122.3754858,
+        37.7321376
+       ],
+       [
+        -122.3752453,
+        37.7321782
+       ],
+       [
+        -122.3751899,
+        37.7321447
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C4",
+    "label": "Parcel C4",
+    "stage": "entitled",
+    "height_ft": 70,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.374253,
+        37.7322198
+       ],
+       [
+        -122.3741646,
+        37.732169
+       ],
+       [
+        -122.3740574,
+        37.7322843
+       ],
+       [
+        -122.3738842,
+        37.7323766
+       ],
+       [
+        -122.3738924,
+        37.7320873
+       ],
+       [
+        -122.3742462,
+        37.7321751
+       ],
+       [
+        -122.374253,
+        37.7322198
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C4",
+    "label": "Parcel C4",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3738842,
+        37.7323766
+       ],
+       [
+        -122.3738268,
+        37.7323827
+       ],
+       [
+        -122.3737535,
+        37.7324059
+       ],
+       [
+        -122.3736801,
+        37.7324402
+       ],
+       [
+        -122.3736199,
+        37.7324906
+       ],
+       [
+        -122.3736065,
+        37.7324896
+       ],
+       [
+        -122.3736105,
+        37.7320212
+       ],
+       [
+        -122.3738924,
+        37.7320873
+       ],
+       [
+        -122.3738842,
+        37.7323766
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C5",
+    "label": "Parcel C5",
+    "stage": "entitled",
+    "height_ft": 20,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3746919,
+        37.7323326
+       ],
+       [
+        -122.3744336,
+        37.7323223
+       ],
+       [
+        -122.374253,
+        37.7322198
+       ],
+       [
+        -122.3742462,
+        37.7321751
+       ],
+       [
+        -122.3747268,
+        37.7322936
+       ],
+       [
+        -122.3746919,
+        37.7323326
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C6",
+    "label": "Parcel C6",
+    "stage": "entitled",
+    "height_ft": 50,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3743385,
+        37.7316606
+       ],
+       [
+        -122.3740555,
+        37.7315026
+       ],
+       [
+        -122.3742602,
+        37.7312768
+       ],
+       [
+        -122.3745353,
+        37.7314332
+       ],
+       [
+        -122.3743336,
+        37.7316574
+       ],
+       [
+        -122.3743385,
+        37.7316606
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "H1",
+    "label": "Parcel H1",
+    "stage": "entitled",
+    "height_ft": 60,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3726807,
+        37.7307197
+       ],
+       [
+        -122.3728852,
+        37.7304957
+       ],
+       [
+        -122.3734096,
+        37.7307946
+       ],
+       [
+        -122.3732065,
+        37.7310196
+       ],
+       [
+        -122.3726807,
+        37.7307197
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3732092,
+        37.7314175
+       ],
+       [
+        -122.37308,
+        37.7312513
+       ],
+       [
+        -122.3731007,
+        37.7312413
+       ],
+       [
+        -122.3732141,
+        37.7311146
+       ],
+       [
+        -122.3734298,
+        37.7312398
+       ],
+       [
+        -122.3733209,
+        37.7313606
+       ],
+       [
+        -122.3732092,
+        37.7314175
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "H1",
+    "label": "Parcel H1",
+    "stage": "entitled",
+    "height_ft": 70,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3727178,
+        37.7316555
+       ],
+       [
+        -122.3725404,
+        37.7315119
+       ],
+       [
+        -122.37308,
+        37.7312513
+       ],
+       [
+        -122.3732092,
+        37.7314175
+       ],
+       [
+        -122.3727178,
+        37.7316555
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "H1",
+    "label": "Parcel H1",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3731013,
+        37.7312414
+       ],
+       [
+        -122.372541,
+        37.7315121
+       ],
+       [
+        -122.3722845,
+        37.7313006
+       ],
+       [
+        -122.3723246,
+        37.7312622
+       ],
+       [
+        -122.3727434,
+        37.7307713
+       ],
+       [
+        -122.3727485,
+        37.7307582
+       ],
+       [
+        -122.3732071,
+        37.7310197
+       ],
+       [
+        -122.3731522,
+        37.731081
+       ],
+       [
+        -122.3732132,
+        37.7311159
+       ],
+       [
+        -122.3731013,
+        37.7312414
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "H1",
+    "label": "Parcel H1 tower",
+    "stage": "entitled",
+    "height_ft": 160,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263; tower location, 85 ft minimum to 160 ft maximum (Standard 5.2.3, p. 262)",
+    "note": "Tower location: buildings here must be 85-160 ft tall, with floor plates above 60 ft capped at 12,000 gsf (DSG 5.2.3, 5.3.3)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3734298,
+        37.7312398
+       ],
+       [
+        -122.3731522,
+        37.731081
+       ],
+       [
+        -122.3734096,
+        37.7307946
+       ],
+       [
+        -122.3736891,
+        37.7309522
+       ],
+       [
+        -122.3734298,
+        37.7312398
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "H2",
+    "label": "Parcel H2",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3727484,
+        37.7307582
+       ],
+       [
+        -122.3732048,
+        37.7310184
+       ],
+       [
+        -122.3727491,
+        37.7307586
+       ],
+       [
+        -122.3723246,
+        37.7312622
+       ],
+       [
+        -122.3722842,
+        37.7313004
+       ],
+       [
+        -122.372539,
+        37.7315104
+       ],
+       [
+        -122.3716763,
+        37.7308067
+       ],
+       [
+        -122.3720874,
+        37.7303847
+       ],
+       [
+        -122.3727484,
+        37.7307582
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "H3",
+    "label": "Parcel H3",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.371437,
+        37.7306031
+       ],
+       [
+        -122.3718056,
+        37.7302249
+       ],
+       [
+        -122.3720874,
+        37.7303847
+       ],
+       [
+        -122.3716757,
+        37.7308088
+       ],
+       [
+        -122.371437,
+        37.7306031
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "H4",
+    "label": "Parcel H4",
+    "stage": "entitled",
+    "height_ft": 55,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3725408,
+        37.7306409
+       ],
+       [
+        -122.3724013,
+        37.7305602
+       ],
+       [
+        -122.3726034,
+        37.7303353
+       ],
+       [
+        -122.3727386,
+        37.7304115
+       ],
+       [
+        -122.3725363,
+        37.7306359
+       ],
+       [
+        -122.3725408,
+        37.7306409
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F1",
+    "label": "Parcel F1",
+    "stage": "entitled",
+    "height_ft": 70,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3718272,
+        37.7318688
+       ],
+       [
+        -122.3717842,
+        37.7319306
+       ],
+       [
+        -122.3709697,
+        37.7315222
+       ],
+       [
+        -122.371429,
+        37.7310749
+       ],
+       [
+        -122.3718726,
+        37.7312897
+       ],
+       [
+        -122.3720816,
+        37.731407
+       ],
+       [
+        -122.3718272,
+        37.7318688
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F2",
+    "label": "Parcel F2",
+    "stage": "entitled",
+    "height_ft": 55,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3717421,
+        37.7319914
+       ],
+       [
+        -122.3714067,
+        37.7322697
+       ],
+       [
+        -122.3712344,
+        37.732138
+       ],
+       [
+        -122.3709812,
+        37.7319992
+       ],
+       [
+        -122.3712018,
+        37.7316377
+       ],
+       [
+        -122.3717851,
+        37.7319293
+       ],
+       [
+        -122.3717421,
+        37.7319914
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F2",
+    "label": "Parcel F2",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3709337,
+        37.7315654
+       ],
+       [
+        -122.3709697,
+        37.7315222
+       ],
+       [
+        -122.3712018,
+        37.7316377
+       ],
+       [
+        -122.3709812,
+        37.7319992
+       ],
+       [
+        -122.3709378,
+        37.7319765
+       ],
+       [
+        -122.3707231,
+        37.7318927
+       ],
+       [
+        -122.3709337,
+        37.7315654
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F3",
+    "label": "Parcel F3",
+    "stage": "entitled",
+    "height_ft": 50,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3723777,
+        37.7316417
+       ],
+       [
+        -122.3722166,
+        37.7317673
+       ],
+       [
+        -122.3720968,
+        37.7316668
+       ],
+       [
+        -122.372258,
+        37.7315431
+       ],
+       [
+        -122.3723777,
+        37.7316417
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F3",
+    "label": "Parcel F3",
+    "stage": "entitled",
+    "height_ft": 60,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.372609,
+        37.7318316
+       ],
+       [
+        -122.3726613,
+        37.7318557
+       ],
+       [
+        -122.3726223,
+        37.7318875
+       ],
+       [
+        -122.3725667,
+        37.7319195
+       ],
+       [
+        -122.372425,
+        37.7319757
+       ],
+       [
+        -122.3723649,
+        37.7320066
+       ],
+       [
+        -122.3723218,
+        37.7320415
+       ],
+       [
+        -122.3722876,
+        37.7320956
+       ],
+       [
+        -122.3722085,
+        37.7320716
+       ],
+       [
+        -122.3719869,
+        37.731932
+       ],
+       [
+        -122.3720468,
+        37.7318971
+       ],
+       [
+        -122.3723777,
+        37.7316417
+       ],
+       [
+        -122.372609,
+        37.7318316
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F4",
+    "label": "Parcel F4",
+    "stage": "entitled",
+    "height_ft": 45,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3719869,
+        37.731932
+       ],
+       [
+        -122.3722085,
+        37.7320716
+       ],
+       [
+        -122.3722876,
+        37.7320956
+       ],
+       [
+        -122.3722653,
+        37.7321663
+       ],
+       [
+        -122.372233,
+        37.7322162
+       ],
+       [
+        -122.3721695,
+        37.7322752
+       ],
+       [
+        -122.3720402,
+        37.7323303
+       ],
+       [
+        -122.3719633,
+        37.7323757
+       ],
+       [
+        -122.3717162,
+        37.7322187
+       ],
+       [
+        -122.3717413,
+        37.7322114
+       ],
+       [
+        -122.371927,
+        37.7319651
+       ],
+       [
+        -122.3719869,
+        37.731932
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F5",
+    "label": "Parcel F5",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3719633,
+        37.7323757
+       ],
+       [
+        -122.371838,
+        37.7325107
+       ],
+       [
+        -122.3718037,
+        37.7325375
+       ],
+       [
+        -122.3717724,
+        37.7325545
+       ],
+       [
+        -122.3717038,
+        37.7325774
+       ],
+       [
+        -122.3714794,
+        37.7323954
+       ],
+       [
+        -122.3716856,
+        37.732228
+       ],
+       [
+        -122.3717162,
+        37.7322187
+       ],
+       [
+        -122.3719633,
+        37.7323757
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F6",
+    "label": "Parcel F6",
+    "stage": "entitled",
+    "height_ft": 70,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3707965,
+        37.7312112
+       ],
+       [
+        -122.3710103,
+        37.7309746
+       ],
+       [
+        -122.3711997,
+        37.7310986
+       ],
+       [
+        -122.3709811,
+        37.7313206
+       ],
+       [
+        -122.3707965,
+        37.7312112
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F6",
+    "label": "Parcel F6",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "mixed-use",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3714335,
+        37.730864
+       ],
+       [
+        -122.3711997,
+        37.7310986
+       ],
+       [
+        -122.3710103,
+        37.7309746
+       ],
+       [
+        -122.371242,
+        37.730718
+       ],
+       [
+        -122.3714335,
+        37.730864
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F7A",
+    "label": "Parcel F7A",
+    "stage": "entitled",
+    "height_ft": 45,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3703577,
+        37.7317278
+       ],
+       [
+        -122.3703733,
+        37.7317178
+       ],
+       [
+        -122.3704198,
+        37.7317627
+       ],
+       [
+        -122.3704279,
+        37.7317577
+       ],
+       [
+        -122.3704371,
+        37.7317664
+       ],
+       [
+        -122.3704331,
+        37.7317705
+       ],
+       [
+        -122.3705252,
+        37.7318229
+       ],
+       [
+        -122.370371,
+        37.7320089
+       ],
+       [
+        -122.3701758,
+        37.7318984
+       ],
+       [
+        -122.3703393,
+        37.7317174
+       ],
+       [
+        -122.3703577,
+        37.7317278
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F8",
+    "label": "Parcel F8",
+    "stage": "entitled",
+    "height_ft": 55,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3707677,
+        37.7315693
+       ],
+       [
+        -122.3705775,
+        37.7317912
+       ],
+       [
+        -122.3703716,
+        37.7316816
+       ],
+       [
+        -122.3705704,
+        37.7314616
+       ],
+       [
+        -122.3707677,
+        37.7315693
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F8",
+    "label": "Parcel F8",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3709811,
+        37.7313206
+       ],
+       [
+        -122.3707677,
+        37.7315693
+       ],
+       [
+        -122.3705704,
+        37.7314616
+       ],
+       [
+        -122.3707965,
+        37.7312112
+       ],
+       [
+        -122.3709811,
+        37.7313206
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F9-F10",
+    "label": "Parcels F9\u2013F10",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.371269,
+        37.7324069
+       ],
+       [
+        -122.3711391,
+        37.7324824
+       ],
+       [
+        -122.3709803,
+        37.7323157
+       ],
+       [
+        -122.3709499,
+        37.732353
+       ],
+       [
+        -122.3710653,
+        37.7321961
+       ],
+       [
+        -122.371269,
+        37.7324069
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F11-F18",
+    "label": "Parcels F11\u2013F18",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "residential",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from India Basin Design Standards and Guidelines (July 6, 2018; Planning Commission Motion 20252), Figure 5-3, Maximum Height, p. 263"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3707729,
+        37.7322705
+       ],
+       [
+        -122.3707527,
+        37.7322904
+       ],
+       [
+        -122.3704455,
+        37.7321142
+       ],
+       [
+        -122.3705742,
+        37.7319692
+       ],
+       [
+        -122.3708658,
+        37.7321354
+       ],
+       [
+        -122.3708811,
+        37.7321141
+       ],
+       [
+        -122.3710624,
+        37.732197
+       ],
+       [
+        -122.3709517,
+        37.7323527
+       ],
+       [
+        -122.3707729,
+        37.7322705
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
