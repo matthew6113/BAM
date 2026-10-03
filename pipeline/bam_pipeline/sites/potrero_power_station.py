@@ -1,28 +1,27 @@
-"""Potrero Power Station: site boundary and block massing traced from the Draft EIR.
+"""Potrero Power Station: site boundary and block height limits, traced from official documents.
 
-Source: Potrero Power Station Mixed-Use Development Project Draft EIR, Volume 1
-(SF Planning Case No. 2017-011878ENV, October 2018).
-
-- Boundary and sub-areas: Figure 2-2 (p. 2-6), vector shapes in the PDF.
-- Blocks and height limits (2018 proposal, not drawn): Figure 2-7, Proposed Height District Plan (p. 2-20), a raster.
-- Stack height (300 ft): pp. 2-7 and 4.D-8.
+Sources:
+- Boundary and sub-areas: Draft EIR, Volume 1 (SF Planning Case No. 2017-011878ENV, Oct 2018),
+  Figure 2-2 (p. 2-6), vector shapes in the PDF.
+- Block height limits: Design for Development (D4D), Feb 26, 2020, approved by Planning
+  Commission Motion 20638, Figure 6.2.3 Building Height Plan (p. 245).
+- Stack height (300 ft): Draft EIR pp. 2-7 and 4.D-8.
 
 What this is and isn't:
-- The 2018 Draft EIR describes the project as first proposed. The plan approved in 2020
-  (the "project variant" in the Responses to Comments, the Design for Development and
-  Planning Code Figure 249.87-4) modified the land use plan and limits new buildings to
-  65 to 240 ft (Planning Commission minutes, Jan 30, 2020).
-  The 2018 blocks are superseded, so they are traced but not drawn (DRAW_DEIR_BLOCKS):
-  the map shows official, current facts only. Draw the D4D's blocks once it can be read.
-- The site is the same ~29-acre site (Planning Commission minutes, Jan 30, 2020).
+- The D4D is the approved plan in force. Amendments proposed in 2026 (Addendum 2: +8 ft on
+  residential blocks, more on Blocks 1, 5, 11, 12 and 15) aren't drawn until the Board adopts them.
+- Each block is drawn to its height limit, not as a building design: real buildings will be
+  smaller, and towers rise to the upper limit only on part of a block ("180'/85'" in the figure
+  means a tower zone up to 180 ft over an 85-ft base). So the massing is labelled illustrative.
+- Block 9 depends on whether Unit 3 is kept (two configurations in the figure), so it is outlined only.
+- The "MAX" dimensions in the figure are plan-length limits (bulk), not heights.
 
 Georeferencing:
-- Figure 2-2: street-name labels in the PDF give street centrelines in figure
-  coordinates. Their intersections are matched to the same intersections in
-  OpenStreetMap (via Overture) with a least-squares similarity fit; residuals are
-  recorded in the output.
-- Figure 2-7 has no text layer, so its dash-dot site boundary is registered onto the
-  Figure 2-2 boundary (trimmed ICP).
+- Figure 2-2: street-name labels in the PDF give street centrelines in figure coordinates,
+  matched to OpenStreetMap intersections (via Overture) with a least-squares similarity fit.
+- Figure 6.2.3: rendered at 200 dpi. Street centrelines are the midpoints of the curb lines
+  measured beside seven intersections, including streets built in Phase 1 (Maryland, Humboldt)
+  that are now in OpenStreetMap. Residuals are recorded in the output.
 
     uv run --directory pipeline python -m bam_pipeline.sites.potrero_power_station
 """
@@ -54,7 +53,6 @@ DEIR = {
     "sha256": "55daaa4f9d715ef07e67294f491b4ed22c1e6776605f529daf3b8df6c9ba2871",
 }
 FIG_2_2 = {"page_index": 97, "printed_page": "2-6", "figure": "Figure 2-2, Project Site Sub-Areas and Ownership"}
-FIG_2_7 = {"page_index": 111, "printed_page": "2-20", "figure": "Figure 2-7, Proposed Height District Plan"}
 
 # Figure 2-2 sub-area fills (CMYK as stored in the PDF) and the legend's names.
 SUB_AREAS = {
@@ -77,22 +75,36 @@ CONTROL_PAIRS = [
     ("Michigan St", "24th St"), ("Michigan St", "25th St"),
 ]
 
-# Figure 2-7 legend: swatch centres in the figure image (pixels) -> height limit in feet.
-LEGEND_SWATCHES = {65: (57, 877), 85: (57, 908), 90: (57, 938), 95: (57, 968),
-                   125: (243, 877), 128: (243, 908), 180: (243, 938), 300: (243, 968)}
-# Regions of the figure image that are not the plan (legend, Block 9 inset, scale bar, title).
-FIG27_EXCLUDE = [(0, 790, 1435, 1109), (1170, 380, 1435, 705), (1150, 1000, 1435, 1109)]
-FIG27_SCALE_M_PER_PX = 400 * 0.3048 / 193  # 0-400 ft scale bar is about 193 px long
-# A point inside each block, read from the figure (pixels), for naming the traced zones.
-BLOCK_SEEDS = {
-    "13": (350, 400), "14": (505, 360), "1": (545, 445), "2": (690, 445), "3": (855, 445), "4": (980, 445),
-    "5": (465, 590), "6": (575, 565), "7": (700, 580), "8": (860, 580), "9": (1000, 630),
-    "10": (575, 690), "11": (695, 720), "12": (855, 720),
+D4D = {
+    "title": "Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638)",
+    "url": "https://sfplanning.org/sites/default/files/documents/citywide/potreropower_D4D_final.pdf",
+    "sha256": "908b5e928dca888c0d0340417d85463361eae41819db81ce65cef72c42e267da",
 }
-# Labels in the figure that pair an upper (tower) height with a podium height.
-PODIUM_FT = {("1", 180): 85, ("5", 180): 85, ("7", 180): 85, ("6", 300): 65}
-# Block 9 is drawn as an outline only; its massing depends on whether Unit 3 is kept.
-BLOCK_9_PX = (950, 522, 1047, 750)
+FIG_6_2_3 = {"page_index": 246, "printed_page": "245", "figure": "Figure 6.2.3, Building Height Plan"}
+D4D_DPI = 200
+# Street centrelines in the 200-dpi render (pixels): midpoints of the curb lines measured on
+# straight stretches next to each intersection.
+D4D_CONTROLS = {
+    ("Illinois Street", "22nd Street"): (416.75, 385.5),
+    ("Illinois Street", "23rd Street"): (416.75, 1040.0),
+    ("3rd Street", "22nd Street"): (209.5, 385.5),
+    ("3rd Street", "23rd Street"): (225.5, 1039.25),
+    ("Maryland Street", "22nd Street"): (1187.5, 373.0),
+    ("Maryland Street", "Humboldt Street"): (1187.0, 685.0),
+    ("Maryland Street", "23rd Street"): (1187.5, 1041.0),
+}
+# Legend swatch centres (pixels) -> height limit in feet.
+D4D_LEGEND = {35: (186, 1198), 65: (186, 1240), 85: (186, 1282), 90: (186, 1322), 100: (186, 1364), 125: (186, 1404),
+              130: (444, 1198), 145: (444, 1240), 160: (444, 1282), 180: (444, 1322), 220: (444, 1364), 240: (444, 1404)}
+# Each block's extent in the render (pixels), for naming the traced zones.
+D4D_BLOCKS = {
+    "13": (436, 406, 730, 660), "14": (774, 406, 870, 510), "1": (780, 524, 950, 660), "2": (976, 524, 1166, 660),
+    "3": (1206, 524, 1390, 660), "4": (1410, 524, 1534, 660), "5": (660, 708, 840, 880), "15": (860, 708, 950, 1010),
+    "7": (976, 708, 1166, 850), "8": (1206, 708, 1390, 850), "9": (1424, 708, 1540, 940), "11": (976, 924, 1166, 1010),
+    "12": (1206, 924, 1390, 1010),
+}
+# Tower zones: upper height limit over a base height ("180'/85'" in the figure).
+D4D_BASE_FT = {("1", 180): 85, ("5", 220): 85, ("7", 240): 85}
 
 # Buildings already in the base map (OpenStreetMap via Overture), matched to the EIR.
 STACK = {
@@ -102,13 +114,9 @@ STACK = {
 }
 SOPHIE_MAXWELL = {"name": "Sophie Maxwell Building"}
 
-# Per-block stage, from data/projects.json (stageNote). Everything else is entitled.
-STAGES = {"2": "construction"}
-
-# Official sources only (Matthew, 2026-10-02). The Draft EIR's height districts are the 2018
-# proposal, superseded by the Design for Development approved in 2020, so they are traced (to
-# check against the D4D later) but not drawn. True emits them again, labelled illustrative.
-DRAW_DEIR_BLOCKS = False
+# Per-block stage. Every block is entitled; the one finished building (Sophie Maxwell) is
+# cut out of its block, and UCSF's Block 2 building has no official construction record yet.
+STAGES: dict[str, str] = {}
 
 
 def _streets() -> gpd.GeoDataFrame:
@@ -151,63 +159,80 @@ def georeference_fig_2_2(page, streets) -> trace.Similarity:
     return trace.fit_similarity(src, dst, labels)
 
 
-def _fig27_image(reader: PdfReader) -> np.ndarray:
-    images = reader.pages[FIG_2_7["page_index"]].images
-    if len(images) != 1:
-        raise SystemExit(f"expected one image on the Figure 2-7 page, found {len(images)}")
-    from PIL import Image
+def _d4d_render(pdf_path) -> np.ndarray:
+    import pypdfium2 as pdfium
 
-    img = Image.open(io.BytesIO(images[0].data)).convert("RGB")
-    if img.size != (1435, 1109):
-        raise SystemExit(f"unexpected Figure 2-7 image size {img.size}")
-    return np.asarray(img)
+    page = pdfium.PdfDocument(str(pdf_path))[FIG_6_2_3["page_index"]]
+    rgb = np.asarray(page.render(scale=D4D_DPI / 72).to_pil().convert("RGB"))
+    if rgb.shape[:2] != (1700, 2200):
+        raise SystemExit(f"unexpected Figure 6.2.3 render size {rgb.shape}")
+    return rgb
 
 
-def _in_plan(x: np.ndarray, y: np.ndarray) -> np.ndarray:
-    keep = np.ones_like(x, dtype=bool)
-    for x0, y0, x1, y1 in FIG27_EXCLUDE:
-        keep &= ~((x >= x0) & (x <= x1) & (y >= y0) & (y <= y1))
-    return keep
+def georeference_fig_6_2_3(streets) -> trace.Similarity:
+    src, dst, labels = [], [], []
+    for (a, b), xy in D4D_CONTROLS.items():
+        src.append(xy)
+        dst.append(_intersection(streets, a, b))
+        labels.append(f"{a} / {b}")
+    return trace.fit_similarity(src, dst, labels)
 
 
-def register_fig_2_7(rgb: np.ndarray, boundary_utm: Polygon, fig22: trace.Similarity) -> trace.Similarity:
+def _block_of(pt: Point) -> str | None:
+    return next((b for b, (x0, y0, x1, y1) in D4D_BLOCKS.items() if x0 <= pt.x <= x1 and y0 <= pt.y <= y1), None)
+
+
+def trace_height_zones(rgb: np.ndarray, sim: trace.Similarity) -> list[dict]:
+    """Trace each block's height zones from Figure 6.2.3.
+
+    Within a block's extent, pixels take the nearest legend colour. Labels and dimension lines
+    printed on the fills leave gaps, so each block's outline is the closed, hole-filled union of
+    its coloured pixels, and every gap pixel inside it takes the colour of the nearest fill.
+    """
     import cv2
 
-    dark = rgb.max(axis=2) < 60
-    # Drop ink printed on coloured block fills (block numbers, height labels).
-    sat = (rgb.max(axis=2).astype(int) - rgb.min(axis=2).astype(int)) > 40
-    near_fill = cv2.dilate(sat.astype(np.uint8), np.ones((7, 7), np.uint8)) > 0
-    ys, xs = np.nonzero(dark & ~near_fill)
-    keep = _in_plan(xs, ys)
-    pts = np.column_stack([xs[keep], ys[keep]]).astype(float)
-    # Start from the scale bar and Figure 2-2's rotation (both plans are drawn on the
-    # street grid), with the centres of the two boundaries aligned.
-    init = trace.Similarity(FIG27_SCALE_M_PER_PX, fig22.rotation, 0.0, 0.0)
-    c_fig = init.apply(pts).mean(axis=0)
-    c_utm = np.asarray(boundary_utm.exterior.coords).mean(axis=0)
-    init.tx, init.ty = (c_utm - c_fig)
-    return trace.icp_similarity(pts, boundary_utm.exterior, init, iterations=80, keep=0.6)
-
-
-def trace_blocks(rgb: np.ndarray, sim: trace.Similarity, site_utm: Polygon) -> list[dict]:
-    palette = {h: tuple(np.median(rgb[sy - 4:sy + 5, sx - 6:sx + 7].reshape(-1, 3), axis=0)) for h, (sx, sy) in LEGEND_SWATCHES.items()}
+    heights = list(D4D_LEGEND)
+    palette = np.array([np.median(rgb[y - 5:y + 6, x - 12:x + 13].reshape(-1, 3), axis=0) for x, y in D4D_LEGEND.values()])
     zones = []
-    for height, poly in trace.raster_classify_regions(rgb, palette, max_dist=30, open_px=5, min_area_px=600):
-        c = poly.representative_point()
-        if not _in_plan(np.array([c.x]), np.array([c.y]))[0]:
+    for block, (x0, y0, x1, y1) in D4D_BLOCKS.items():
+        if block == "9":
             continue
-        block = min(BLOCK_SEEDS, key=lambda b: Point(BLOCK_SEEDS[b]).distance(c))
-        zones.append({"block": block, "height_ft": height, "px": poly})
-    x0, y0, x1, y1 = BLOCK_9_PX
-    zones.append({"block": "9", "height_ft": None, "px": box(x0, y0, x1, y1)})
-    out = []
+        sub = rgb[y0:y1, x0:x1].astype(float)
+        dist = np.linalg.norm(sub[:, :, None, :] - palette[None, None], axis=3)
+        # A tight match: anti-aliased edges of text and lines fall between colours and are filled below.
+        label = np.where(dist.min(axis=2) <= 15, dist.argmin(axis=2), -1)
+        coloured = (label >= 0).astype(np.uint8)
+        coloured = cv2.morphologyEx(coloured, cv2.MORPH_OPEN, np.ones((3, 3), np.uint8))
+        label[coloured == 0] = -1
+        # The block: close the gaps text leaves, then fill holes.
+        mask = cv2.morphologyEx(coloured * 255, cv2.MORPH_CLOSE, np.ones((25, 25), np.uint8))
+        contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        mask = np.zeros_like(mask)
+        cv2.drawContours(mask, [max(contours, key=cv2.contourArea)], -1, 255, cv2.FILLED)
+        # Gap pixels take the nearest coloured pixel's height.
+        _, nearest = cv2.distanceTransformWithLabels((label < 0).astype(np.uint8), cv2.DIST_L2, 5,
+                                                     labelType=cv2.DIST_LABEL_PIXEL)
+        seeds = np.flatnonzero(label.ravel() >= 0)  # zero pixels are numbered in scan order from 1
+        filled = label.ravel()[seeds][nearest.ravel() - 1].reshape(label.shape)
+        for i in np.unique(filled[mask > 0]):
+            part = ((filled == i) & (mask > 0)).astype(np.uint8) * 255
+            part = cv2.morphologyEx(part, cv2.MORPH_OPEN, np.ones((7, 7), np.uint8))
+            polys = [shapely.make_valid(Polygon(cv2.approxPolyDP(c, 1.5, True).reshape(-1, 2) + [x0, y0]))
+                     for c in cv2.findContours(part, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[0]
+                     if cv2.contourArea(c) >= 400]
+            if polys:
+                # Dimension lines split a zone into touching pieces; join them again.
+                merged = shapely.union_all(polys).buffer(3, join_style="mitre").buffer(-3, join_style="mitre")
+                zones.append({"block": block, "height_ft": heights[i], "px": merged})
+    # Block 9 is drawn white, as an outline: the white area inside its extent.
+    x0, y0, x1, y1 = D4D_BLOCKS["9"]
+    white = (rgb[y0:y1, x0:x1].min(axis=2) > 235).astype(np.uint8) * 255
+    contours, _ = cv2.findContours(white, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    c = max(contours, key=cv2.contourArea)
+    zones.append({"block": "9", "height_ft": None, "px": Polygon(cv2.approxPolyDP(c, 1.5, True).reshape(-1, 2) + [x0, y0])})
     for z in zones:
-        # Clip to the traced site: regions outside it are other colours that resemble the legend.
-        geom = shapely.make_valid(sim.geometry(z["px"]).simplify(0.4)).intersection(site_utm)
-        geom = trace.as_multipolygon(geom)
-        if geom.area >= 100:
-            out.append({**z, "utm": geom})
-    return out
+        z["utm"] = trace.as_multipolygon(shapely.make_valid(sim.geometry(z["px"]).simplify(0.3)))
+    return [z for z in zones if z["utm"].area >= 30]
 
 
 def _base_buildings(site_utm: Polygon) -> gpd.GeoDataFrame:
@@ -269,12 +294,14 @@ def main() -> None:
     print(f"[potrero] Figure 2-2 georeference: RMS {fig22.rms_m:.2f} m over {len(fig22.labels)} intersections, "
           f"site {site_utm.area / 4046.86:.1f} acres")
 
-    # --- blocks from Figure 2-7 ---
-    rgb = _fig27_image(PdfReader(pdf_path))
-    fig27 = register_fig_2_7(rgb, site_utm, fig22)
-    print(f"[potrero] Figure 2-7 registration: RMS {fig27.rms_m:.2f} m ({fig27.labels[0]}), "
-          f"scale {fig27.scale:.4f} m/px (scale bar {FIG27_SCALE_M_PER_PX:.4f})")
-    zones = trace_blocks(rgb, fig27, site_utm)
+    # --- height zones from the D4D's Figure 6.2.3 ---
+    d4d_path = trace.fetch_document(D4D["url"], config.ROOT / "data" / "raw" / "docs" / "potreropower_D4D_final.pdf", D4D["sha256"])
+    fig623 = georeference_fig_6_2_3(streets)
+    print(f"[potrero] Figure 6.2.3 georeference: RMS {fig623.rms_m:.2f} m over {len(fig623.labels)} intersections, "
+          f"scale {fig623.scale:.4f} m/px")
+    zones = trace_height_zones(_d4d_render(d4d_path), fig623)
+    print(f"[potrero] traced {len(zones)} height zones: "
+          + ", ".join(f"{z['block']}:{z['height_ft']}" for z in sorted(zones, key=lambda z: (int(z['block']), z['height_ft'] or 0))))
 
     to_wgs = lambda g: gpd.GeoSeries([g], crs=UTM).to_crs(4326).iloc[0]  # noqa: E731
 
@@ -309,28 +336,31 @@ def main() -> None:
         ],
     }
 
+    d4d = f"{D4D['title']}, {FIG_6_2_3['figure']}, p. {FIG_6_2_3['printed_page']}"
     features = []
-    for z in sorted(zones, key=lambda z: (int(z["block"]), z["height_ft"] or 0)) if DRAW_DEIR_BLOCKS else []:
-        geom = z["utm"].difference(sophie_utm) if z["block"] == "7" else z["utm"]
+    for z in sorted(zones, key=lambda z: (int(z["block"]), z["height_ft"] or 0)):
+        geom = z["utm"].difference(sophie_utm) if z["utm"].intersects(sophie_utm) else z["utm"]
         if geom.is_empty or geom.area < 20:
             continue
-        podium = PODIUM_FT.get((z["block"], z["height_ft"]))
+        base = D4D_BASE_FT.get((z["block"], z["height_ft"]))
         props = {
             "kind": "block",
             "block": z["block"],
             "label": f"Block {z['block']}",
             "stage": STAGES.get(z["block"], "entitled"),
             "height_ft": z["height_ft"],
-            "podium_ft": podium,
+            "podium_ft": base,
             "base_ft": 0,
             "use": None,
             "phase": None,
             "illustrative": True,
-            "source": f"illustrative: height district traced from {doc}, {FIG_2_7['figure']}, p. {FIG_2_7['printed_page']}. "
-                      "2018 proposal; may differ from the plan approved in 2020.",
+            "source": f"illustrative: drawn to the height limit traced from {d4d}"
+                      + (f"; tower zone up to {z['height_ft']} ft over an {base}-ft base" if base else ""),
         }
         if z["block"] == "9":
-            props["note"] = "Drawn as an outline: the 2018 plan gives two configurations, with or without the Unit 3 Power Block."
+            props["note"] = "Outlined only: the D4D gives two configurations, with or without the Unit 3 Power Block."
+        if z["utm"].intersects(sophie_utm):
+            props["note"] = "The built Sophie Maxwell Building (1212 Maryland St.) is cut out of this block."
         features.append({"type": "Feature", "properties": props, "geometry": mapping(to_wgs(trace.as_multipolygon(geom)))})
 
     features.append({
@@ -348,19 +378,19 @@ def main() -> None:
         "type": "FeatureCollection",
         "properties": {
             "project": PROJECT_ID,
-            "illustrative": DRAW_DEIR_BLOCKS,
+            "illustrative": True,
             "summary": (
-                "Block massing is illustrative: height districts proposed in the 2018 Draft EIR (Fig. 2-7), which "
-                "may differ from the plan approved in 2020. Blocks are drawn as podium solids with the upper height "
-                "limit as a faint envelope; tower positions are not specified in the source."
-                if DRAW_DEIR_BLOCKS else
-                "Only official, current facts are drawn: the 300-ft boiler stack. Block massing waits for the "
-                "Design for Development approved in 2020; the 2018 Draft EIR blocks are superseded and not drawn."
+                "Illustrative massing: each block is drawn to its height limit in the Design for Development "
+                "approved in 2020 (Fig. 6.2.3), not as a building design. Towers may reach the faint upper "
+                "envelope on only part of a block. Proposed 2026 amendments that would raise some limits aren't "
+                "drawn until the Board adopts them."
             ),
-            **({"georeference": {"figure_2_7": fig27.report(), "registered_to": "Figure 2-2 site boundary"}}
-               if DRAW_DEIR_BLOCKS else {}),
-            "license": ("Block shapes: traced from a public SF Planning document. " if DRAW_DEIR_BLOCKS else "")
-                       + "Stack footprint: OpenStreetMap contributors (ODbL 1.0).",
+            "note": ("Blocks are drawn to their height limits in the 2020 Design for Development, not as building "
+                     "designs; real buildings will be smaller."),
+            "sourceUrl": D4D["url"],
+            "georeference": {"figure_6_2_3": fig623.report()},
+            "license": "Block shapes: traced from a public SF Planning document. "
+                       "Stack footprint: OpenStreetMap contributors (ODbL 1.0).",
         },
         "features": features,
     }

@@ -88,6 +88,39 @@ describe('traced project geometry', () => {
   });
 });
 
+describe('Potrero block height limits', () => {
+  const blocks = massingOf('potrero-power-station')!.features.filter((f) => f.properties.kind === 'block');
+  const zones = (b: string) =>
+    blocks
+      .filter((f) => (f.properties as { block?: string }).block === b)
+      .map((f) => f.properties.height_ft)
+      .sort((x, y) => (x ?? 0) - (y ?? 0));
+
+  it('matches the Design for Development height plan (Fig. 6.2.3)', () => {
+    expect(zones('13')).toEqual([85, 125]);
+    expect(zones('14')).toEqual([90]);
+    expect(zones('1')).toEqual([85, 180]);
+    expect(zones('2')).toEqual([130]);
+    expect(zones('3')).toEqual([130]);
+    expect(zones('4')).toEqual([65, 85]);
+    expect(zones('5')).toEqual([85, 220]);
+    expect(zones('15')).toEqual([145, 160]);
+    expect(zones('7')).toEqual([85, 240]);
+    expect(zones('8')).toEqual([85, 125]);
+    expect(zones('11')).toEqual([130]);
+    expect(zones('12')).toEqual([100]);
+    expect(zones('9')).toEqual([null]);
+  });
+
+  it('draws tower zones over an 85-ft base and cites the D4D', () => {
+    for (const f of blocks) {
+      expect(f.properties.source).toMatch(/Design for Development.*6\.2\.3/);
+      const tower = [180, 220, 240].includes(f.properties.height_ft ?? 0);
+      expect(f.properties.podium_ft ?? null).toBe(tower ? 85 : null);
+    }
+  });
+});
+
 describe('official sources', () => {
   it('tells agencies from the press', () => {
     expect(isOfficialSource('https://sfplanning.s3.amazonaws.com/sfmea/x.pdf')).toBe(true);

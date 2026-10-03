@@ -103,8 +103,11 @@ export function ProjectPanel({ project, onClose, onPrev, onNext, prevName, nextN
 
       <p class="model-note">
         {mMeta.illustrative ? <strong>Illustrative massing. </strong> : null}
-        {mMeta.illustrative && (
-          <>Block heights are the height districts proposed in the 2018 Draft EIR and may differ from the plan approved in 2020. </>
+        {mMeta.illustrative && typeof mMeta.note === 'string' && <>{mMeta.note} </>}
+        {typeof mMeta.sourceUrl === 'string' && (
+          <>
+            <a href={mMeta.sourceUrl}>Design for Development, 2020 (PDF)</a>.{' '}
+          </>
         )}
         {bMeta.accuracy === 'traced' && <strong>Approximate boundary, </strong>}
         {bMeta.accuracy === 'traced' && <>traced from the Draft EIR (about ±3 m). </>}

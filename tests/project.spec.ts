@@ -3,6 +3,7 @@
 
 import { test, expect, type Page } from '@playwright/test';
 import data from '../data/projects.json' with { type: 'json' };
+import { formatDate } from '../src/ui/format';
 
 const POTRERO = data.projects.find((p) => p.id === 'potrero-power-station')!;
 const SITE: [number, number] = [-122.3838, 37.7563];
@@ -37,7 +38,7 @@ test('a deep link opens the project with its full sources list', async ({ page }
   await expect(panel.locator('.sources li')).toHaveCount(POTRERO.sources.length);
   await expect(panel).toContainText('Approximate boundary');
   await expect(panel).toContainText('held back until official records confirm them');
-  await expect(panel).toContainText(`Last verified Oct 1, 2026`);
+  await expect(panel).toContainText(`Last verified ${formatDate(POTRERO.lastVerified)}`);
   await expect.poll(() => phase(page), { timeout: 60_000 }).toBe('risen');
   const cam = await camera(page);
   expect(cam.pitch).toBeCloseTo(POTRERO.camera!.pitch, 0);

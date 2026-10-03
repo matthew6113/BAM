@@ -49,11 +49,11 @@ https://sfplanning.s3.amazonaws.com/sfmea/2017-011878ENV_DEIR_Volume_1.pdf.
 | Project | What | Source | License / notes |
 |---|---|---|---|
 | Potrero Power Station | Site boundary and five sub-areas | Draft EIR (above), Figure 2-2, p. 2-6: vector shapes, georeferenced to OpenStreetMap street centrelines (13 intersections, RMS 3.4 m) | Public record of the City and County of San Francisco. The shapes are traced facts; the PDF itself is not redistributed (it is downloaded by checksum into the git-ignored `data/raw/docs/`). |
+| Potrero Power Station | Block height limits (20 zones in 13 blocks; Block 9 outlined) | Design for Development, Feb 26, 2020 (Planning Commission Motion 20638), Figure 6.2.3, p. 245 (https://sfplanning.org/sites/default/files/documents/citywide/potreropower_D4D_final.pdf): rendered at 200 dpi, colour regions classified against the legend, georeferenced to OpenStreetMap street centrelines (7 intersections, RMS 2.0 m) | Public record of the City and County of San Francisco; traced facts, PDF not redistributed (downloaded by checksum into `data/raw/docs/`). Drawn to the limit, labelled illustrative. |
 | Potrero Power Station | Footprint of the Unit 3 boiler stack | OpenStreetMap way 678950945, via Overture; height 300 ft from the Draft EIR, pp. 2-7 and 4.D-8 | ODbL 1.0, covered by the map's OpenStreetMap credit. |
 
-The Draft EIR's 2018 height districts (Figure 2-7) are still traced by the pipeline, to
-check against the approved Design for Development, but are not drawn: they were
-superseded in 2020.
+The Draft EIR's 2018 height districts (Figure 2-7) are no longer traced: the approved
+Design for Development superseded them in 2020.
 
 Every boundary file names its source document, page, accuracy and georeferencing
 residuals; every massing feature names its source. The in-map credit line notes that

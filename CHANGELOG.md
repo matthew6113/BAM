@@ -3,6 +3,22 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-03 (official records and the Design for Development)
+
+For **potrero-power-station**, from official records read once network access opened:
+- `program.affordablePct`: null → **30**, from the recorded development agreement (Recital H).
+- `stage`: entitled → **partial**: DBI permit 202212229038 for the Sophie Maxwell Building
+  (8 stories, 105 affordable homes) was marked complete Aug 28, 2026 (permit dates count for
+  stages, Matthew 2026-10-03).
+- `developer`: **California Barrel Company LLC (Fifth Space)**, as named in Addendum 2.
+- `timeline`: Board approval corrected to Apr 21, 2020 (Ordinance 62-20, effective May 24,
+  not May 25); added Station A, office allocation and phasing actions (2020–2022), the
+  Sophie Maxwell permits, UC Regents' Block 2 approval, Addendum 2 and the 2026 amendment
+  hearings.
+- Massing: block height limits traced from the D4D's Figure 6.2.3 (see docs/DECISIONS.md).
+- `verify`: now the Sophie Maxwell opening date, UCSF construction start and the Board's
+  final action on the 2026 amendments.
+
 ## 2026-10-02 (official sources only)
 
 Matthew asked for official sources only. For **potrero-power-station**:

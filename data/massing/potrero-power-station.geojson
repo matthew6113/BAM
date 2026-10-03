@@ -2,11 +2,1213 @@
  "type": "FeatureCollection",
  "properties": {
   "project": "potrero-power-station",
-  "illustrative": false,
-  "summary": "Only official, current facts are drawn: the 300-ft boiler stack. Block massing waits for the Design for Development approved in 2020; the 2018 Draft EIR blocks are superseded and not drawn.",
-  "license": "Stack footprint: OpenStreetMap contributors (ODbL 1.0)."
+  "illustrative": true,
+  "summary": "Illustrative massing: each block is drawn to its height limit in the Design for Development approved in 2020 (Fig. 6.2.3), not as a building design. Towers may reach the faint upper envelope on only part of a block. Proposed 2026 amendments that would raise some limits aren't drawn until the Board adopts them.",
+  "note": "Blocks are drawn to their height limits in the 2020 Design for Development, not as building designs; real buildings will be smaller.",
+  "sourceUrl": "https://sfplanning.org/sites/default/files/documents/citywide/potreropower_D4D_final.pdf",
+  "georeference": {
+   "figure_6_2_3": {
+    "scale_m_per_unit": 0.43004,
+    "rotation_deg": 4.813,
+    "rms_m": 2.0,
+    "controls": [
+     {
+      "label": "Illinois Street / 22nd Street",
+      "residual_m": 2.05
+     },
+     {
+      "label": "Illinois Street / 23rd Street",
+      "residual_m": 1.71
+     },
+     {
+      "label": "3rd Street / 22nd Street",
+      "residual_m": 2.18
+     },
+     {
+      "label": "3rd Street / 23rd Street",
+      "residual_m": 1.92
+     },
+     {
+      "label": "Maryland Street / 22nd Street",
+      "residual_m": 2.88
+     },
+     {
+      "label": "Maryland Street / Humboldt Street",
+      "residual_m": 1.61
+     },
+     {
+      "label": "Maryland Street / 23rd Street",
+      "residual_m": 1.26
+     }
+    ]
+   }
+  },
+  "license": "Block shapes: traced from a public SF Planning document. Stack footprint: OpenStreetMap contributors (ODbL 1.0)."
  },
  "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "1",
+    "label": "Block 1",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3851251,
+        37.7575852
+       ],
+       [
+        -122.3850741,
+        37.7570635
+       ],
+       [
+        -122.3846458,
+        37.7570899
+       ],
+       [
+        -122.3846968,
+        37.7576116
+       ],
+       [
+        -122.3851251,
+        37.7575852
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "1",
+    "label": "Block 1",
+    "stage": "entitled",
+    "height_ft": 180,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245; tower zone up to 180 ft over an 85-ft base"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3855194,
+        37.7575609
+       ],
+       [
+        -122.3854684,
+        37.7570393
+       ],
+       [
+        -122.385079,
+        37.7570632
+       ],
+       [
+        -122.38513,
+        37.7575849
+       ],
+       [
+        -122.3855194,
+        37.7575609
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "2",
+    "label": "Block 2",
+    "stage": "entitled",
+    "height_ft": 130,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3845654,
+        37.7576197
+       ],
+       [
+        -122.3845144,
+        37.757098
+       ],
+       [
+        -122.3835945,
+        37.7571547
+       ],
+       [
+        -122.3836455,
+        37.7576764
+       ],
+       [
+        -122.3845654,
+        37.7576197
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "3",
+    "label": "Block 3",
+    "stage": "entitled",
+    "height_ft": 130,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3834459,
+        37.7576887
+       ],
+       [
+        -122.3833949,
+        37.757167
+       ],
+       [
+        -122.3825042,
+        37.7572218
+       ],
+       [
+        -122.3825552,
+        37.7577435
+       ],
+       [
+        -122.3834459,
+        37.7576887
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "4",
+    "label": "Block 4",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3821074,
+        37.7577711
+       ],
+       [
+        -122.382081,
+        37.7575006
+       ],
+       [
+        -122.3820701,
+        37.7574896
+       ],
+       [
+        -122.3820791,
+        37.7574812
+       ],
+       [
+        -122.3820564,
+        37.7572494
+       ],
+       [
+        -122.3818033,
+        37.757265
+       ],
+       [
+        -122.3818543,
+        37.7577867
+       ],
+       [
+        -122.3821074,
+        37.7577711
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "4",
+    "label": "Block 4",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.382453,
+        37.7577498
+       ],
+       [
+        -122.382402,
+        37.7572281
+       ],
+       [
+        -122.3820613,
+        37.7572491
+       ],
+       [
+        -122.3821122,
+        37.7577708
+       ],
+       [
+        -122.382453,
+        37.7577498
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "5",
+    "label": "Block 5",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3851318,
+        37.7565507
+       ],
+       [
+        -122.3855653,
+        37.7565279
+       ],
+       [
+        -122.3855934,
+        37.7565145
+       ],
+       [
+        -122.3856039,
+        37.7565216
+       ],
+       [
+        -122.386003,
+        37.756497
+       ],
+       [
+        -122.3859694,
+        37.7561531
+       ],
+       [
+        -122.3850981,
+        37.7562068
+       ],
+       [
+        -122.3851318,
+        37.7565507
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "5",
+    "label": "Block 5",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245; tower zone up to 220 ft over an 85-ft base"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.386034,
+        37.7568139
+       ],
+       [
+        -122.3860034,
+        37.7565009
+       ],
+       [
+        -122.3856237,
+        37.7565243
+       ],
+       [
+        -122.3856099,
+        37.7565329
+       ],
+       [
+        -122.3856043,
+        37.7565255
+       ],
+       [
+        -122.3855563,
+        37.7565362
+       ],
+       [
+        -122.3854249,
+        37.7565443
+       ],
+       [
+        -122.3854144,
+        37.7565372
+       ],
+       [
+        -122.3852351,
+        37.756556
+       ],
+       [
+        -122.3852246,
+        37.7565489
+       ],
+       [
+        -122.3851321,
+        37.7565546
+       ],
+       [
+        -122.3851627,
+        37.7568676
+       ],
+       [
+        -122.386034,
+        37.7568139
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "7",
+    "label": "Block 7",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245",
+    "note": "The built Sophie Maxwell Building (1212 Maryland St.) is cut out of this block."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3839264,
+        37.7569437
+       ],
+       [
+        -122.383576,
+        37.7569653
+       ],
+       [
+        -122.3835228,
+        37.7564204
+       ],
+       [
+        -122.3843794,
+        37.7563677
+       ],
+       [
+        -122.384393,
+        37.7565068
+       ],
+       [
+        -122.3840186,
+        37.7565338
+       ],
+       [
+        -122.3839156,
+        37.7565323
+       ],
+       [
+        -122.3838875,
+        37.7565457
+       ],
+       [
+        -122.3839058,
+        37.7567323
+       ],
+       [
+        -122.3837553,
+        37.7567412
+       ],
+       [
+        -122.3837416,
+        37.7565971
+       ],
+       [
+        -122.3835561,
+        37.7566081
+       ],
+       [
+        -122.3835855,
+        37.7569186
+       ],
+       [
+        -122.383922,
+        37.7568986
+       ],
+       [
+        -122.3839264,
+        37.7569437
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "7",
+    "label": "Block 7",
+    "stage": "entitled",
+    "height_ft": 240,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245; tower zone up to 240 ft over an 85-ft base",
+    "note": "The built Sophie Maxwell Building (1212 Maryland St.) is cut out of this block."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3838924,
+        37.7565454
+       ],
+       [
+        -122.3840137,
+        37.7565341
+       ],
+       [
+        -122.3840242,
+        37.7565412
+       ],
+       [
+        -122.3841021,
+        37.7565364
+       ],
+       [
+        -122.3841159,
+        37.7565278
+       ],
+       [
+        -122.3841987,
+        37.7565227
+       ],
+       [
+        -122.3842144,
+        37.7565334
+       ],
+       [
+        -122.3842814,
+        37.7565176
+       ],
+       [
+        -122.3843503,
+        37.7565211
+       ],
+       [
+        -122.3843934,
+        37.7565107
+       ],
+       [
+        -122.3844266,
+        37.7568507
+       ],
+       [
+        -122.3844902,
+        37.7568507
+       ],
+       [
+        -122.3844959,
+        37.7569087
+       ],
+       [
+        -122.3839313,
+        37.7569434
+       ],
+       [
+        -122.3839269,
+        37.7568983
+       ],
+       [
+        -122.3839465,
+        37.7568971
+       ],
+       [
+        -122.3839307,
+        37.7567308
+       ],
+       [
+        -122.3839106,
+        37.756732
+       ],
+       [
+        -122.3838924,
+        37.7565454
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "8",
+    "label": "Block 8",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3830176,
+        37.7567626
+       ],
+       [
+        -122.3830111,
+        37.7566969
+       ],
+       [
+        -122.3830003,
+        37.7566859
+       ],
+       [
+        -122.3830093,
+        37.7566775
+       ],
+       [
+        -122.3829874,
+        37.7564534
+       ],
+       [
+        -122.3824325,
+        37.7564876
+       ],
+       [
+        -122.3824627,
+        37.7567967
+       ],
+       [
+        -122.3827547,
+        37.7567787
+       ],
+       [
+        -122.3827637,
+        37.7567704
+       ],
+       [
+        -122.3827791,
+        37.7567773
+       ],
+       [
+        -122.3830176,
+        37.7567626
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "8",
+    "label": "Block 8",
+    "stage": "entitled",
+    "height_ft": 125,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3833232,
+        37.7564327
+       ],
+       [
+        -122.3829922,
+        37.7564531
+       ],
+       [
+        -122.3830186,
+        37.7566731
+       ],
+       [
+        -122.3830179,
+        37.7567664
+       ],
+       [
+        -122.3824631,
+        37.7568006
+       ],
+       [
+        -122.3824857,
+        37.7570325
+       ],
+       [
+        -122.3833764,
+        37.7569776
+       ],
+       [
+        -122.3833232,
+        37.7564327
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "9",
+    "label": "Block 9",
+    "stage": "entitled",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245",
+    "note": "Outlined only: the D4D gives two configurations, with or without the Unit 3 Power Block."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3822854,
+        37.757037
+       ],
+       [
+        -122.3822348,
+        37.7565192
+       ],
+       [
+        -122.382069,
+        37.7565255
+       ],
+       [
+        -122.3820342,
+        37.75617
+       ],
+       [
+        -122.3816692,
+        37.7561925
+       ],
+       [
+        -122.3817277,
+        37.7567914
+       ],
+       [
+        -122.3817573,
+        37.7567935
+       ],
+       [
+        -122.3817841,
+        37.7570679
+       ],
+       [
+        -122.3822854,
+        37.757037
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "11",
+    "label": "Block 11",
+    "stage": "entitled",
+    "height_ft": 130,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3843511,
+        37.7560779
+       ],
+       [
+        -122.384319,
+        37.7557494
+       ],
+       [
+        -122.3834624,
+        37.7558021
+       ],
+       [
+        -122.3834944,
+        37.7561306
+       ],
+       [
+        -122.3843511,
+        37.7560779
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "12",
+    "label": "Block 12",
+    "stage": "entitled",
+    "height_ft": 100,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3832949,
+        37.7561429
+       ],
+       [
+        -122.3832628,
+        37.7558144
+       ],
+       [
+        -122.3823721,
+        37.7558693
+       ],
+       [
+        -122.3824042,
+        37.7561978
+       ],
+       [
+        -122.3832949,
+        37.7561429
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "13",
+    "label": "Block 13",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3869675,
+        37.7569469
+       ],
+       [
+        -122.3867047,
+        37.7569631
+       ],
+       [
+        -122.3867795,
+        37.7577788
+       ],
+       [
+        -122.3864583,
+        37.7577986
+       ],
+       [
+        -122.3864444,
+        37.7578072
+       ],
+       [
+        -122.3864291,
+        37.7578004
+       ],
+       [
+        -122.3857963,
+        37.7578393
+       ],
+       [
+        -122.3858122,
+        37.7580016
+       ],
+       [
+        -122.3870631,
+        37.7579246
+       ],
+       [
+        -122.3869675,
+        37.7569469
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "13",
+    "label": "Block 13",
+    "stage": "entitled",
+    "height_ft": 125,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3867791,
+        37.7577749
+       ],
+       [
+        -122.3866998,
+        37.7569634
+       ],
+       [
+        -122.3857166,
+        37.757024
+       ],
+       [
+        -122.3857959,
+        37.7578355
+       ],
+       [
+        -122.3864092,
+        37.7577977
+       ],
+       [
+        -122.3864231,
+        37.7577891
+       ],
+       [
+        -122.3864287,
+        37.7577965
+       ],
+       [
+        -122.3867791,
+        37.7577749
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "14",
+    "label": "Block 14",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3855931,
+        37.7580151
+       ],
+       [
+        -122.3855542,
+        37.7576171
+       ],
+       [
+        -122.3851843,
+        37.7576399
+       ],
+       [
+        -122.3851885,
+        37.7576824
+       ],
+       [
+        -122.3852293,
+        37.7577499
+       ],
+       [
+        -122.3855002,
+        37.7579664
+       ],
+       [
+        -122.3855104,
+        37.7580202
+       ],
+       [
+        -122.3855931,
+        37.7580151
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "15",
+    "label": "Block 15",
+    "stage": "entitled",
+    "height_ft": 145,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3850605,
+        37.7568739
+       ],
+       [
+        -122.385008,
+        37.7563367
+       ],
+       [
+        -122.3845748,
+        37.7563634
+       ],
+       [
+        -122.3846273,
+        37.7569006
+       ],
+       [
+        -122.3850605,
+        37.7568739
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "15",
+    "label": "Block 15",
+    "stage": "entitled",
+    "height_ft": 160,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3850076,
+        37.7563329
+       ],
+       [
+        -122.3849468,
+        37.7557107
+       ],
+       [
+        -122.3845137,
+        37.7557374
+       ],
+       [
+        -122.3845745,
+        37.7563596
+       ],
+       [
+        -122.3848373,
+        37.7563434
+       ],
+       [
+        -122.3848706,
+        37.7563335
+       ],
+       [
+        -122.384886,
+        37.7563404
+       ],
+       [
+        -122.3850076,
+        37.7563329
+       ]
+      ]
+     ]
+    ]
+   }
+  },
   {
    "type": "Feature",
    "properties": {

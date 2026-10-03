@@ -78,8 +78,8 @@ Decisions (Matthew, 2026-10-03):
 Network access was broadened on 2026-10-02 and every lead below was read:
 - Design for Development, Feb 26, 2020 (Motion 20638):
   `sfplanning.org/sites/default/files/documents/citywide/potreropower_D4D_final.pdf`.
-  Figure 6.2.3 Building Height Plan (p. 245) gives each block's height (85 to 240 ft).
-  **Not traced yet**: that is the next massing step and brings buildings back on the map.
+  Figure 6.2.3 Building Height Plan (p. 245) gives each block's height (65 to 240 ft).
+  Traced 2026-10-03 into `data/massing/` (see docs/DECISIONS.md).
 - Development agreement: Board File 200040, Ordinance 62-20, finally passed Apr 21, 2020,
   effective May 24, 2020 (not May 25). The recorded agreement (Recital H) says affordable
   housing is "intended to constitute thirty percent (30%)" of all units. First amendment:
