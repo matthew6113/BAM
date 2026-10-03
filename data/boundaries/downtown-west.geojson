@@ -2,14 +2,14 @@
  "type": "FeatureCollection",
  "properties": {
   "project": "downtown-west",
-  "source": "City of San Jos\u00e9 Zoning Districts, rezoning file PDC19-039",
+  "source": "City of San Jos\u00e9 Zoning Districts, rezoning file PDC19-039 (16 DC(PD) polygons)",
   "sourceLabel": "San Jos\u00e9 zoning",
   "sourceUrl": "https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataService/MapServer/401",
-  "query": "https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataService/MapServer/401/query?where=REZONINGFILE+like+%27PDC19-039%25%27&outFields=%2A&outSR=4326&f=geojson",
+  "query": "https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataService/MapServer/401/query?where=REZONINGFILE+like+%27PDC19-039%25%27+or+REZONINGFILE+%3D+%2719039%27&outFields=%2A&outSR=4326&f=geojson",
   "accuracy": "approximate",
-  "accuracyNote": "The planned development zoning approved May 25, 2021: about 58 net acres, without the streets and creek in the 80-acre gross figure. 58.3 acres as drawn.",
+  "accuracyNote": "The planned development zoning approved May 25, 2021: about 58 net acres, without the streets and creek in the 80-acre gross figure. 62.8 acres as drawn.",
   "license": "CC-BY 4.0, City of San Jos\u00e9",
-  "features_used": 14
+  "features_used": 16
  },
  "features": [
   {
@@ -352,6 +352,30 @@
      [
       [
        [
+        -121.901073,
+        37.3309055
+       ],
+       [
+        -121.9002954,
+        37.3309179
+       ],
+       [
+        -121.9001848,
+        37.3293104
+       ],
+       [
+        -121.9009608,
+        37.3292754
+       ],
+       [
+        -121.901073,
+        37.3309055
+       ]
+      ]
+     ],
+     [
+      [
+       [
         -121.9011372,
         37.3318224
        ],
@@ -518,6 +542,30 @@
        [
         -121.9026696,
         37.3261332
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -121.9021119,
+        37.3317796
+       ],
+       [
+        -121.9013432,
+        37.3318137
+       ],
+       [
+        -121.9012944,
+        37.3310417
+       ],
+       [
+        -121.9020576,
+        37.3310062
+       ],
+       [
+        -121.9021119,
+        37.3317796
        ]
       ]
      ],
