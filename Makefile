@@ -58,6 +58,7 @@ sites:
 	$(PY) bam_pipeline.sites.massing_india_basin
 	$(PY) bam_pipeline.sites.massing_piers_30_32
 	$(PY) bam_pipeline.sites.massing_mission_bay
+	$(PY) bam_pipeline.sites.massing_treasure_island
 	$(PY) bam_pipeline.sites.traced_boundaries
 
 dev:

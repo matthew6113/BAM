@@ -920,7 +920,7 @@
       ],
       "nextMilestone": "Board of Supervisors action on the proposed unit increase, sought before the end of 2026.",
       "summary": "A former naval base in the middle of the Bay becoming a new neighborhood of up to 8,000 homes and 300 acres of open space, with a smaller set of homes on Yerba Buena Island. About 1,000 homes are finished.",
-      "massingNotes": "Boundary: DataSF Height and Bulk Districts (h9wh-cg3m, Public Domain U.S. Government), the union of height values containing \"-TI\" or \"YBI\" (about 390.4 acres, without Job Corps); it also gives the height envelope, up to 450 ft (75-TI/450 Flex Zone-TI), with the 2024 Design for Development adding 5 ft in some areas. Tallest built so far is Isle House at 22 stories (permit); massing comes in Milestone 4.",
+      "massingNotes": "Boundary: DataSF Height and Bulk Districts (h9wh-cg3m, Public Domain U.S. Government), the union of height values containing \"-TI\" or \"YBI\" (about 390.4 acres, without Job Corps); it also gives the height envelope, up to 450 ft (75-TI/450 Flex Zone-TI), with the 2024 Design for Development adding 5 ft in some areas. Tallest built so far is Isle House at 22 stories (permit). Massing: 43 Design for Development blocks (2024 update, Fig. T4.q, used for names and checked against the zoning) drawn to the zoning height districts, 45–125 ft, with flex tower zones to 240, 315 and 450 ft over their base (illustrative); built buildings from footprints with DBI stories (Isle House to its mapped 220 ft; others estimated at 10.3 ft per story, illustrative). Yerba Buena Island hillside zones, parks, the historic core and Job Corps are not drawn.",
       "officialLinks": [
         "https://sfplanning.org/project/treasure-island-yerba-buena-island",
         "https://media.api.sf.gov/documents/02.11.26_Item_9_Unit_Increase.pdf"
@@ -939,7 +939,12 @@
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201912139581",
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201912169619",
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201912169614",
-        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202011199306"
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202011199306",
+        "https://api.sf.gov/documents/36177/240404-D4D_UPDATE.pdf",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201905170929",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201905170931",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201905170934",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201905170935"
       ],
       "verify": [
         "the outcome of the proposed unit increase at TIDA and the Board",
