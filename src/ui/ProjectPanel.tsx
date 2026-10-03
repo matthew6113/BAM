@@ -106,7 +106,7 @@ export function ProjectPanel({ project, onClose, onPrev, onNext, prevName, nextN
         {mMeta.illustrative && typeof mMeta.note === 'string' && <>{mMeta.note} </>}
         {typeof mMeta.sourceUrl === 'string' && (
           <>
-            <a href={mMeta.sourceUrl}>Design for Development, 2020 (PDF)</a>.{' '}
+            <a href={mMeta.sourceUrl}>{typeof mMeta.sourceLabel === 'string' ? mMeta.sourceLabel : 'Massing source'}</a>.{' '}
           </>
         )}
         {bMeta.accuracy === 'official' ? <>Boundary from </> : <strong>Approximate boundary, </strong>}
