@@ -38,6 +38,11 @@ for (const [n, id] of [
   ['03', 'pier-70'],
   ['04', 'stonestown'],
   ['05', 'india-basin'],
+  ['06', 'candlestick-point'],
+  ['07', 'hunters-point-shipyard'],
+  ['08', 'treasure-island'],
+  ['09', 'mission-bay'],
+  ['10', 'piers-30-32'],
 ] as const) {
   test(`${n} landed: ${id}`, async ({ page }) => {
     const errors = collectErrors(page);

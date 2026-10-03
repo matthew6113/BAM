@@ -3,6 +3,16 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-03 (Milestone 4, batch 2: massing for five more San Francisco projects)
+
+`massingNotes` updated and each massing source (design documents, DBI permits for built
+buildings) added to `sources` for **candlestick-point**, **hunters-point-shipyard**,
+**treasure-island**, **mission-bay** and **piers-30-32**. Hunters Point's notes now give its
+two towers (370 and 270 ft), which the 2018 Design for Development allows beyond the 40–120 ft
+block limits. Mission Bay's only unbuilt plan blocks are 4 East and 12 West (MOHCD pipeline,
+DBI permits); its official page in `sources` (sfocii.org/mission-bay) now returns 404 and is
+due for replacement at its next re-check.
+
 ## 2026-10-03 (Milestone 4, batch 1: massing for five San Francisco projects)
 
 `massingNotes` updated and each massing source added to `sources` for **balboa-reservoir**,
