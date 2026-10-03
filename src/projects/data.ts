@@ -1,4 +1,4 @@
-import type { Feature, FeatureCollection, Geometry, LineString, MultiPolygon, Point, Polygon } from 'geojson';
+import type { Feature, FeatureCollection, Geometry, MultiLineString, MultiPolygon, Point, Polygon } from 'geojson';
 import data from '../../data/projects.json';
 import type { StageKey } from '../theme/theme';
 
@@ -130,16 +130,13 @@ export function metres(a: [number, number], b: [number, number]): number {
   return Math.hypot((a[0] - b[0]) * k, (a[1] - b[1]) * 110540);
 }
 
-/** The site's outer boundary as a line, for the drawing animation. */
-export function boundaryLine(g: Polygon | MultiPolygon): Feature<LineString> {
-  const ring = outerRings(g).sort((r1, r2) => r2.length - r1.length)[0];
-  return { type: 'Feature', properties: {}, geometry: { type: 'LineString', coordinates: ring } };
+/** The site's outer boundaries (every piece of a multi-part site) as lines, for the drawing animation. */
+export function boundaryLine(g: Polygon | MultiPolygon): Feature<MultiLineString> {
+  return { type: 'Feature', properties: {}, geometry: { type: 'MultiLineString', coordinates: outerRings(g) } };
 }
 
-/** The first `t` (0 to 1) of a line, by length. */
-export function linePrefix(line: Feature<LineString>, t: number): Feature<LineString> {
-  const c = line.geometry.coordinates as [number, number][];
-  if (t >= 1) return line;
+/** The first `t` (0 to 1) of a ring, by length. */
+function ringPrefix(c: [number, number][], t: number): [number, number][] {
   const seg = c.slice(1).map((p, i) => metres(c[i], p));
   const total = seg.reduce((s, d) => s + d, 0);
   let left = Math.max(0, t) * total;
@@ -155,7 +152,14 @@ export function linePrefix(line: Feature<LineString>, t: number): Feature<LineSt
     break;
   }
   if (out.length < 2) out.push(c[0]);
-  return { ...line, geometry: { type: 'LineString', coordinates: out } };
+  return out;
+}
+
+/** The first `t` (0 to 1) of each line, by length: every piece of a site draws at once. */
+export function linePrefix(line: Feature<MultiLineString>, t: number): Feature<MultiLineString> {
+  if (t >= 1) return line;
+  const rings = line.geometry.coordinates as [number, number][][];
+  return { ...line, geometry: { type: 'MultiLineString', coordinates: rings.map((r) => ringPrefix(r, t)) } };
 }
 
 export function pointFeature(coords: [number, number], props: Record<string, unknown>): Feature<Point> {
