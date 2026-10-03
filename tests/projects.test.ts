@@ -95,6 +95,12 @@ describe('official sources', () => {
     expect(isOfficialSource('https://www.sfmta.com/reports/x.pdf')).toBe(true);
     expect(isOfficialSource('https://www.cityofalameda.ca.gov/x')).toBe(true);
     expect(isOfficialSource('https://sfgov.legistar.com/LegislationDetail.aspx?ID=1')).toBe(true);
+    expect(isOfficialSource('https://concordreuseproject.org/DocumentCenter/View/2374')).toBe(true);
+    expect(isOfficialSource('https://legistar.granicus.com/sanjose/attachments/x.pdf')).toBe(true);
+    expect(isOfficialSource('https://legistar.granicus.com/Sunnyvale/attachments/x.pdf')).toBe(true);
+    expect(isOfficialSource('https://legistar.granicus.com/somecompany/attachments/x.pdf')).toBe(false);
+    expect(isOfficialSource('https://services7.arcgis.com/uRrQ0O3z2aaiIWYU/arcgis/rest/services/x')).toBe(true);
+    expect(isOfficialSource('https://services7.arcgis.com/someoneelse/arcgis/rest/services/x')).toBe(false);
     expect(isOfficialSource('https://sfyimby.com/2026/02/x.html')).toBe(false);
     expect(isOfficialSource('https://www.sfchronicle.com/x')).toBe(false);
     expect(isOfficialSource('https://sfplanning.org.example.com/x')).toBe(false);

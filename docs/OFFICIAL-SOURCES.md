@@ -60,13 +60,16 @@ Only Potrero has been applied to `data/projects.json`. Every other record has co
 (superseded programs, wrong dates, press-only stages) and press-only facts that belong in
 `reported`.
 
-Open policy calls for Matthew:
-- Several cities run official sites on non-government domains (`concordreuseproject.org`,
-  `suisunexpansion.com`, `acgov.org`, the Legistar and Granicus hosts, ArcGIS org paths,
-  `sfrecpark.org`). They need adding to `src/projects/official.ts`, ideally path-scoped for
-  shared vendor hosts.
-- DBI permit data is a proxy for construction and completion (it records permit dates, not
-  openings). Several stages (Balboa Reservoir "under construction") rest on it.
+Decisions (Matthew, 2026-10-03):
+- **Applying findings:** apply each project's findings file when it is mapped (Milestone 3),
+  not all at once.
+- **City-run sites on non-government domains count as official.** They're listed in
+  `src/projects/official.ts`; shared vendor hosts (Legistar/Granicus, ArcGIS Online,
+  CloudFront) only under the agency's own path.
+- **Permit dates count for stages.** A DBI (or city) building permit's first construction
+  document date marks "under construction", and its completion date marks a building
+  delivered. Word them as permit facts in the UI ("permit marked complete Aug 28, 2026"),
+  since they aren't opening dates.
 - Some city sites block scripts with Akamai (Oakland, Alameda, Santa Clara, San Jose,
   Sunnyvale, Cupertino, Suisun); their Legistar systems work instead.
 
