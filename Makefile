@@ -53,6 +53,7 @@ sites:
 	$(PY) bam_pipeline.sites.official_boundaries
 	$(PY) bam_pipeline.sites.massing_balboa_reservoir
 	$(PY) bam_pipeline.sites.massing_mission_rock
+	$(PY) bam_pipeline.sites.massing_pier_70
 	$(PY) bam_pipeline.sites.traced_boundaries
 
 dev:

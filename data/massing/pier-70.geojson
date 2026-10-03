@@ -1,0 +1,876 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "pier-70",
+  "illustrative": true,
+  "summary": "Illustrative massing: each development parcel is drawn to its height limit in the Design for Development (Fig. 6.4.2: 90, 70, 65 or 50 ft), not as a building design. Building 12, rehabilitated in 2022, is drawn as built. Historic Buildings 2 and 21 await rehabilitation and stay in the base map. The 2026 proposal to raise some parcels to 90 ft isn't approved and isn't drawn.",
+  "note": "Parcels are drawn to their height limits in the Design for Development, not as building designs; real buildings will be smaller.",
+  "sourceUrl": "https://www.sfport.com/media/8123/download?inline=",
+  "sourceLabel": "Design for Development, 2022 (PDF)",
+  "georeference": {
+   "figure_6_4_2": {
+    "scale_m_per_unit": 0.33945,
+    "rotation_deg": 4.73,
+    "rms_m": 0.9,
+    "controls": [
+     {
+      "label": "Illinois Street / 20th Street",
+      "residual_m": 1.08
+     },
+     {
+      "label": "Illinois Street / 22nd Street",
+      "residual_m": 1.26
+     },
+     {
+      "label": "Louisiana Street / 22nd Street",
+      "residual_m": 0.76
+     },
+     {
+      "label": "Maryland Street / 22nd Street",
+      "residual_m": 0.83
+     },
+     {
+      "label": "Maryland Street / 21st Street",
+      "residual_m": 0.54
+     },
+     {
+      "label": "Maryland Street / 20th Street",
+      "residual_m": 0.77
+     }
+    ]
+   },
+   "building_12_check": {
+    "iou": 0.959,
+    "centroid_offset_m": 1.17
+   }
+  },
+  "license": "Parcel shapes: traced from a public Port of San Francisco document. Building 12 footprint: OpenStreetMap contributors (ODbL 1.0), via Overture Maps."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "A",
+    "label": "Parcel A",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155; phase: Port Commission staff report, Aug 11, 2026, item 11A (Pier 70 project update), pp. 3-5"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3846515,
+        37.7605755
+       ],
+       [
+        -122.3845848,
+        37.7598671
+       ],
+       [
+        -122.3838713,
+        37.7599101
+       ],
+       [
+        -122.3839392,
+        37.7606185
+       ],
+       [
+        -122.3846515,
+        37.7605755
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "B",
+    "label": "Parcel B",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3837331,
+        37.760631
+       ],
+       [
+        -122.3836652,
+        37.7599234
+       ],
+       [
+        -122.3823149,
+        37.7600049
+       ],
+       [
+        -122.3823545,
+        37.7604178
+       ],
+       [
+        -122.3827285,
+        37.7606917
+       ],
+       [
+        -122.3837331,
+        37.760631
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C1",
+    "label": "Parcel C1",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3849903,
+        37.7594136
+       ],
+       [
+        -122.3863403,
+        37.759332
+       ],
+       [
+        -122.3863071,
+        37.7589851
+       ],
+       [
+        -122.384957,
+        37.7590667
+       ],
+       [
+        -122.3849903,
+        37.7594136
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "C2",
+    "label": "Parcel C2",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155; phase: Port Commission staff report, Aug 11, 2026, item 11A (Pier 70 project update), pp. 3-5",
+    "note": "Includes affordable housing Parcel C2A (Phase 1)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3848896,
+        37.7583633
+       ],
+       [
+        -122.3849504,
+        37.7589984
+       ],
+       [
+        -122.3853625,
+        37.7589735
+       ],
+       [
+        -122.3853016,
+        37.7583384
+       ],
+       [
+        -122.3848896,
+        37.7583633
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "D",
+    "label": "Parcel D",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155; phase: Port Commission staff report, Aug 11, 2026, item 11A (Pier 70 project update), pp. 3-5"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3838598,
+        37.7597756
+       ],
+       [
+        -122.3844125,
+        37.7597422
+       ],
+       [
+        -122.3843938,
+        37.7595468
+       ],
+       [
+        -122.3840999,
+        37.7595645
+       ],
+       [
+        -122.3840794,
+        37.7593513
+       ],
+       [
+        -122.3838206,
+        37.7593669
+       ],
+       [
+        -122.3838598,
+        37.7597756
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "E1",
+    "label": "Parcel E1",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155",
+    "note": "The D4D limits the north leg of E1 to 65 ft and the rest to 90 ft (S6.4.2)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3833626,
+        37.759305
+       ],
+       [
+        -122.3834106,
+        37.7598059
+       ],
+       [
+        -122.3836526,
+        37.7597913
+       ],
+       [
+        -122.3836046,
+        37.7592904
+       ],
+       [
+        -122.3833626,
+        37.759305
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "E1",
+    "label": "Parcel E1",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155",
+    "note": "The D4D limits the north leg of E1 to 65 ft and the rest to 90 ft (S6.4.2)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3829774,
+        37.7598321
+       ],
+       [
+        -122.3834106,
+        37.7598059
+       ],
+       [
+        -122.3833924,
+        37.7596164
+       ],
+       [
+        -122.3829579,
+        37.7596426
+       ],
+       [
+        -122.3829774,
+        37.7598321
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "E2",
+    "label": "Parcel E2",
+    "stage": "entitled",
+    "height_ft": 70,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: drawn to the 70-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155; phase: Port Commission staff report, Aug 11, 2026, item 11A (Pier 70 project update), pp. 3-5"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3827083,
+        37.7589797
+       ],
+       [
+        -122.3835691,
+        37.7589313
+       ],
+       [
+        -122.3835157,
+        37.7583744
+       ],
+       [
+        -122.3826553,
+        37.7584264
+       ],
+       [
+        -122.3827083,
+        37.7589797
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "E3",
+    "label": "Parcel E3",
+    "stage": "entitled",
+    "height_ft": 70,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 70-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3825697,
+        37.759059
+       ],
+       [
+        -122.3825098,
+        37.7584341
+       ],
+       [
+        -122.3816691,
+        37.7584849
+       ],
+       [
+        -122.381729,
+        37.7591098
+       ],
+       [
+        -122.3825697,
+        37.759059
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "E4",
+    "label": "Parcel E4",
+    "stage": "entitled",
+    "height_ft": 50,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 50-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155",
+    "note": "Arts building parcel; no more than five stories (S6.4.2)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3822382,
+        37.7598736
+       ],
+       [
+        -122.3828904,
+        37.7598342
+       ],
+       [
+        -122.3828426,
+        37.7593352
+       ],
+       [
+        -122.3825606,
+        37.7593522
+       ],
+       [
+        -122.382197,
+        37.7594444
+       ],
+       [
+        -122.3822382,
+        37.7598736
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "F/G",
+    "label": "Parcel F/G",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3851523,
+        37.7576261
+       ],
+       [
+        -122.3836639,
+        37.757716
+       ],
+       [
+        -122.3837098,
+        37.7581951
+       ],
+       [
+        -122.3849439,
+        37.7581205
+       ],
+       [
+        -122.3850976,
+        37.7581047
+       ],
+       [
+        -122.3852763,
+        37.7580747
+       ],
+       [
+        -122.385475,
+        37.7580584
+       ],
+       [
+        -122.3855252,
+        37.7580339
+       ],
+       [
+        -122.3855451,
+        37.7580327
+       ],
+       [
+        -122.3852505,
+        37.7577654
+       ],
+       [
+        -122.3851523,
+        37.7576261
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "H1/H2",
+    "label": "Parcel H1/H2",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3834877,
+        37.7582174
+       ],
+       [
+        -122.3834516,
+        37.7577217
+       ],
+       [
+        -122.3818231,
+        37.7578201
+       ],
+       [
+        -122.3816557,
+        37.7582202
+       ],
+       [
+        -122.3816546,
+        37.7583282
+       ],
+       [
+        -122.3834877,
+        37.7582174
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "PKN",
+    "label": "Parcel PKN",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3873506,
+        37.7594072
+       ],
+       [
+        -122.3866124,
+        37.7594518
+       ],
+       [
+        -122.386698,
+        37.7603445
+       ],
+       [
+        -122.3874362,
+        37.7602999
+       ],
+       [
+        -122.3873506,
+        37.7594072
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "PKS",
+    "label": "Parcel PKS",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Phase 2",
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155; phase: Port Commission staff report, Aug 11, 2026, item 11A (Pier 70 project update), pp. 3-5"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3873121,
+        37.7590056
+       ],
+       [
+        -122.3866843,
+        37.7590436
+       ],
+       [
+        -122.3867098,
+        37.7593097
+       ],
+       [
+        -122.3873376,
+        37.7592717
+       ],
+       [
+        -122.3873121,
+        37.7590056
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "HDY3",
+    "label": "Parcel HDY3",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3873121,
+        37.7590056
+       ],
+       [
+        -122.38724,
+        37.7582538
+       ],
+       [
+        -122.3871685,
+        37.7582581
+       ],
+       [
+        -122.3866582,
+        37.758772
+       ],
+       [
+        -122.3866843,
+        37.7590436
+       ],
+       [
+        -122.3873121,
+        37.7590056
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "HDY1/2",
+    "label": "Parcel HDY1/2",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Figure 6.4.2, Building Height Maximum, p. 155"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3870667,
+        37.758126
+       ],
+       [
+        -122.3854257,
+        37.7582199
+       ],
+       [
+        -122.3854528,
+        37.7585728
+       ],
+       [
+        -122.3867486,
+        37.7584945
+       ],
+       [
+        -122.3870712,
+        37.7581729
+       ],
+       [
+        -122.3870667,
+        37.758126
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "landmark",
+    "label": "Building 12",
+    "name": "Pier 70's Building 12",
+    "stage": "complete",
+    "height_ft": 60,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Market hall, maker studios and offices",
+    "phase": "Phase 1",
+    "illustrative": false,
+    "source": "height: Pier 70 SUD Design for Development (Port of San Francisco, April 26, 2022 edition), Table 6.15.2, Height Reference Locations, p. 184 (\"Building 12 / 60' height\"); rehabilitation completed Jan 2022: Port Commission staff report, Aug 11, 2026, item 11A (Pier 70 project update), p. 3; footprint: OpenStreetMap w257341252 via Overture 2026-09-23.1 (matches the figure's Building 12, IoU 0.96)",
+    "note": "Historic mold loft, rehabilitated and reopened in 2022. OpenStreetMap names this footprint \"Pier 70\" and maps it at 16 m; the height drawn is the D4D's 60 ft.",
+    "osm": "w257341252"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3843909,
+       37.7590526
+      ],
+      [
+       -122.3847383,
+       37.7590321
+      ],
+      [
+       -122.3846847,
+       37.758362
+      ],
+      [
+       -122.3838264,
+       37.7584193
+      ],
+      [
+       -122.3838773,
+       37.759083
+      ],
+      [
+       -122.3843909,
+       37.7590526
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
