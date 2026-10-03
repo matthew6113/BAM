@@ -1242,7 +1242,7 @@
       ],
       "nextMilestone": "First-phase permits; the financing plan projects nine phases from 2028 to 2051.",
       "summary": "A plan to build up to about 3,500 homes, shops, offices and six acres of open space on about 30 acres of the Stonestown Galleria site, while most of the existing mall stays. Approved in 2024, it is projected to build out in phases through 2051.",
-      "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"Stonestown Special Use District\" (about 38.5 acres, larger than the 30-acre project site; unchecked). Alternatives: the financing district boundary (financing plan Exhibits A and B) or the Board's map (Legistar). Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"Stonestown Special Use District\" (about 38.5 acres, larger than the 30-acre project site; unchecked). Alternatives: the financing district boundary (financing plan Exhibits A and B) or the Board's map (Legistar). Massing: parcel height limits traced from the adopted Design Standards and Guidelines (Apr 2024), Figure 5.9, p. 187: mostly 90 ft, with tower zones of 150 and 190 ft over a 90-ft base (towers are construction above 90 ft, Sec. 249.9(g)) and lower parcels of 30–50 ft (illustrative, drawn to the limit).",
       "officialLinks": [
         "https://media.api.sf.gov/documents/2024-0000037_NOD_-_Stonestown_Development_Project.pdf",
         "https://sfbos.archive.sf.gov/sites/default/files/o0205-24.pdf",
@@ -1258,7 +1258,8 @@
         "https://media.api.sf.gov/documents/Stonestown_-_EIR.pdf",
         "https://media.api.sf.gov/documents/Reso_2026-03.pdf",
         "https://media.api.sf.gov/documents/Stonestown_IFP_1-8-26.pdf",
-        "https://data.sf.gov/d/5yf5-ms5f"
+        "https://data.sf.gov/d/5yf5-ms5f",
+        "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=ad1e00d6088f207fc57af21017ef4288f33d767889f220aee642919f2961c494&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0"
       ],
       "verify": [
         "how many affordable homes will be stand-alone rather than inclusionary (financing plan: 350 inclusionary, none stand-alone)",

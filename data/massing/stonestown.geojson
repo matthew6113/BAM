@@ -1,0 +1,1840 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "stonestown",
+  "illustrative": true,
+  "summary": "Illustrative massing: each new-construction parcel is drawn to its height limit in the adopted Stonestown Design Standards and Guidelines (April 2024, Fig. 5.9), from 30 to 190 ft, not as a building design. Towers may rise above 90 ft on only part of each 150- and 190-ft zone. The project open spaces, the NW2 flex zone's height and the existing mall, which stays, are not drawn as massing; no new building has been built yet.",
+  "note": "Parcels are drawn to their height limits in the 2024 Design Standards and Guidelines, not as building designs; real buildings will be smaller.",
+  "sourceUrl": "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=ad1e00d6088f207fc57af21017ef4288f33d767889f220aee642919f2961c494&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+  "sourceLabel": "Design standards and guidelines, 2024 (PDF)",
+  "georeference": {
+   "figure_5_9": {
+    "scale_m_per_unit": 0.38025,
+    "rotation_deg": -2.629,
+    "rms_m": 1.04,
+    "controls": [
+     {
+      "label": "20th Avenue / Eucalyptus Drive",
+      "residual_m": 0.93
+     },
+     {
+      "label": "21st Avenue / Eucalyptus Drive",
+      "residual_m": 0.83
+     },
+     {
+      "label": "20th Avenue / Buckingham Way",
+      "residual_m": 2.04
+     },
+     {
+      "label": "20th Avenue / Winston Drive",
+      "residual_m": 0.55
+     },
+     {
+      "label": "19th Avenue / Eucalyptus Drive",
+      "residual_m": 0.62
+     },
+     {
+      "label": "19th Avenue / Winston Drive",
+      "residual_m": 0.21
+     }
+    ]
+   }
+  },
+  "license": "Parcel shapes: traced from a public SF Planning document. Georeference: OpenStreetMap contributors (ODbL 1.0), via Overture Maps."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "NW1",
+    "label": "Parcel NW1",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4801106,
+        37.7303782
+       ],
+       [
+        -122.4804356,
+        37.7300964
+       ],
+       [
+        -122.480926,
+        37.7299963
+       ],
+       [
+        -122.4809278,
+        37.729969
+       ],
+       [
+        -122.4802144,
+        37.7291093
+       ],
+       [
+        -122.4802062,
+        37.7291021
+       ],
+       [
+        -122.4801804,
+        37.7291011
+       ],
+       [
+        -122.4800993,
+        37.7291526
+       ],
+       [
+        -122.4799785,
+        37.7292163
+       ],
+       [
+        -122.4797942,
+        37.7293255
+       ],
+       [
+        -122.4797856,
+        37.7293251
+       ],
+       [
+        -122.4796372,
+        37.7294152
+       ],
+       [
+        -122.4794463,
+        37.7294279
+       ],
+       [
+        -122.4794032,
+        37.7294262
+       ],
+       [
+        -122.4793726,
+        37.7294318
+       ],
+       [
+        -122.4792558,
+        37.7294339
+       ],
+       [
+        -122.4792554,
+        37.7293721
+       ],
+       [
+        -122.4790012,
+        37.7293617
+       ],
+       [
+        -122.4789999,
+        37.7293822
+       ],
+       [
+        -122.4792318,
+        37.7294706
+       ],
+       [
+        -122.4792778,
+        37.7294931
+       ],
+       [
+        -122.4793108,
+        37.7295185
+       ],
+       [
+        -122.4800563,
+        37.7303486
+       ],
+       [
+        -122.4800847,
+        37.7303772
+       ],
+       [
+        -122.4801106,
+        37.7303782
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "NW2",
+    "label": "Parcel NW2",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.479571,
+        37.7303699
+       ],
+       [
+        -122.4797091,
+        37.7302383
+       ],
+       [
+        -122.4797107,
+        37.7302143
+       ],
+       [
+        -122.4791869,
+        37.7296301
+       ],
+       [
+        -122.4791623,
+        37.7296085
+       ],
+       [
+        -122.4790654,
+        37.7295702
+       ],
+       [
+        -122.4790525,
+        37.7295697
+       ],
+       [
+        -122.4790275,
+        37.729555
+       ],
+       [
+        -122.4789556,
+        37.7295314
+       ],
+       [
+        -122.4789095,
+        37.7295089
+       ],
+       [
+        -122.4788966,
+        37.7295084
+       ],
+       [
+        -122.4786947,
+        37.7294247
+       ],
+       [
+        -122.4786561,
+        37.7294196
+       ],
+       [
+        -122.4786528,
+        37.729471
+       ],
+       [
+        -122.4786637,
+        37.7296362
+       ],
+       [
+        -122.4789968,
+        37.729763
+       ],
+       [
+        -122.4792671,
+        37.7300589
+       ],
+       [
+        -122.4795245,
+        37.7303543
+       ],
+       [
+        -122.4795408,
+        37.7303687
+       ],
+       [
+        -122.479571,
+        37.7303699
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "NW3",
+    "label": "Parcel NW3",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4787247,
+        37.730627
+       ],
+       [
+        -122.4789967,
+        37.7306313
+       ],
+       [
+        -122.4790016,
+        37.7306212
+       ],
+       [
+        -122.4790318,
+        37.7306224
+       ],
+       [
+        -122.4790357,
+        37.7306294
+       ],
+       [
+        -122.4792901,
+        37.7306364
+       ],
+       [
+        -122.4794374,
+        37.7304983
+       ],
+       [
+        -122.4794389,
+        37.7304743
+       ],
+       [
+        -122.4792668,
+        37.73033
+       ],
+       [
+        -122.4792452,
+        37.7303291
+       ],
+       [
+        -122.479242,
+        37.7303118
+       ],
+       [
+        -122.47923,
+        37.7302976
+       ],
+       [
+        -122.4790168,
+        37.7301207
+       ],
+       [
+        -122.4787009,
+        37.7301284
+       ],
+       [
+        -122.4786939,
+        37.7301693
+       ],
+       [
+        -122.4787211,
+        37.7306166
+       ],
+       [
+        -122.4787247,
+        37.730627
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "NW2",
+    "label": "Parcel NW2 flex zone",
+    "stage": "entitled",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: outlined from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187 (90-foot flex zone)",
+    "note": "Outlined only: an alternative location for the Parcel NW2 building, up to 90 ft (DSG S5.2.2 and S5.3.1)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4794514,
+        37.7304817
+       ],
+       [
+        -122.4795434,
+        37.7303962
+       ],
+       [
+        -122.4795531,
+        37.7303795
+       ],
+       [
+        -122.4795445,
+        37.7303791
+       ],
+       [
+        -122.4795202,
+        37.7303541
+       ],
+       [
+        -122.4790047,
+        37.7297737
+       ],
+       [
+        -122.4788997,
+        37.7297282
+       ],
+       [
+        -122.4788867,
+        37.7297276
+       ],
+       [
+        -122.4787395,
+        37.7296667
+       ],
+       [
+        -122.4786675,
+        37.7296432
+       ],
+       [
+        -122.4786923,
+        37.7301281
+       ],
+       [
+        -122.4787272,
+        37.7301226
+       ],
+       [
+        -122.4787832,
+        37.7301249
+       ],
+       [
+        -122.4788181,
+        37.7301195
+       ],
+       [
+        -122.4788698,
+        37.7301216
+       ],
+       [
+        -122.4790129,
+        37.7301137
+       ],
+       [
+        -122.4794514,
+        37.7304817
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "W1",
+    "label": "Parcel W1",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4778806,
+        37.7299851
+       ],
+       [
+        -122.4779801,
+        37.7299823
+       ],
+       [
+        -122.478446,
+        37.7299945
+       ],
+       [
+        -122.4784493,
+        37.7299431
+       ],
+       [
+        -122.4784382,
+        37.7297814
+       ],
+       [
+        -122.4778913,
+        37.7294193
+       ],
+       [
+        -122.4775854,
+        37.7294067
+       ],
+       [
+        -122.4775501,
+        37.7299509
+       ],
+       [
+        -122.4776796,
+        37.7299528
+       ],
+       [
+        -122.4776823,
+        37.7299769
+       ],
+       [
+        -122.4778806,
+        37.7299851
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "W2",
+    "label": "Parcel W2",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4767561,
+        37.7299356
+       ],
+       [
+        -122.4775458,
+        37.7299508
+       ],
+       [
+        -122.4775811,
+        37.7294066
+       ],
+       [
+        -122.4775899,
+        37.7294035
+       ],
+       [
+        -122.4775916,
+        37.7293109
+       ],
+       [
+        -122.477333,
+        37.7293003
+       ],
+       [
+        -122.4773275,
+        37.7293859
+       ],
+       [
+        -122.4773184,
+        37.7293924
+       ],
+       [
+        -122.4767927,
+        37.7293709
+       ],
+       [
+        -122.4767561,
+        37.7299356
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "W3/4",
+    "label": "Parcel W3/4",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4784427,
+        37.7279799
+       ],
+       [
+        -122.4784262,
+        37.7279003
+       ],
+       [
+        -122.4780429,
+        37.7278812
+       ],
+       [
+        -122.4779996,
+        37.7278828
+       ],
+       [
+        -122.477986,
+        37.7278926
+       ],
+       [
+        -122.4779873,
+        37.727872
+       ],
+       [
+        -122.4779962,
+        37.727869
+       ],
+       [
+        -122.477998,
+        37.7278416
+       ],
+       [
+        -122.4779898,
+        37.7278344
+       ],
+       [
+        -122.4780001,
+        37.7276083
+       ],
+       [
+        -122.4780348,
+        37.7271396
+       ],
+       [
+        -122.4779314,
+        37.7271353
+       ],
+       [
+        -122.477918,
+        37.7272755
+       ],
+       [
+        -122.477625,
+        37.7272635
+       ],
+       [
+        -122.4775836,
+        37.7279688
+       ],
+       [
+        -122.4776525,
+        37.7279716
+       ],
+       [
+        -122.4776593,
+        37.7279667
+       ],
+       [
+        -122.4776654,
+        37.7279721
+       ],
+       [
+        -122.4777256,
+        37.727978
+       ],
+       [
+        -122.4777557,
+        37.7279792
+       ],
+       [
+        -122.477782,
+        37.7279734
+       ],
+       [
+        -122.4781048,
+        37.7279935
+       ],
+       [
+        -122.4781699,
+        37.7279893
+       ],
+       [
+        -122.4782082,
+        37.7279977
+       ],
+       [
+        -122.4784409,
+        37.7280073
+       ],
+       [
+        -122.4784427,
+        37.7279799
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.4781653,
+        37.728926
+       ],
+       [
+        -122.4781961,
+        37.7284502
+       ],
+       [
+        -122.4780578,
+        37.7284514
+       ],
+       [
+        -122.4779419,
+        37.7284398
+       ],
+       [
+        -122.4779031,
+        37.7284383
+       ],
+       [
+        -122.4778963,
+        37.7284431
+       ],
+       [
+        -122.4778902,
+        37.7284377
+       ],
+       [
+        -122.4777437,
+        37.7284317
+       ],
+       [
+        -122.4777235,
+        37.7284429
+       ],
+       [
+        -122.4777092,
+        37.7284303
+       ],
+       [
+        -122.4775579,
+        37.728431
+       ],
+       [
+        -122.4775361,
+        37.7289003
+       ],
+       [
+        -122.4781653,
+        37.728926
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "W3/4",
+    "label": "Parcel W3/4",
+    "stage": "entitled",
+    "height_ft": 190,
+    "podium_ft": 90,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 190-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187; tower zone over a 90-ft base (Ordinance 204-24 (Planning Code Sec. 249.9), Figure 249.9-5 and Sec. 249.9(g): towers are new construction above 90 ft, with an average floorplate of at most 12,500 sq ft)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4775584,
+        37.7284242
+       ],
+       [
+        -122.4781964,
+        37.7284468
+       ],
+       [
+        -122.4782293,
+        37.7280055
+       ],
+       [
+        -122.478178,
+        37.7279965
+       ],
+       [
+        -122.4775834,
+        37.7279722
+       ],
+       [
+        -122.4775584,
+        37.7284242
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.4784006,
+        37.7278958
+       ],
+       [
+        -122.4784183,
+        37.7278897
+       ],
+       [
+        -122.4784207,
+        37.727852
+       ],
+       [
+        -122.4784109,
+        37.7278036
+       ],
+       [
+        -122.4784089,
+        37.7277005
+       ],
+       [
+        -122.4784442,
+        37.7271563
+       ],
+       [
+        -122.4780392,
+        37.7271398
+       ],
+       [
+        -122.4780223,
+        37.7273999
+       ],
+       [
+        -122.4780284,
+        37.7274053
+       ],
+       [
+        -122.4780216,
+        37.7274101
+       ],
+       [
+        -122.4780065,
+        37.7276429
+       ],
+       [
+        -122.4780147,
+        37.7276501
+       ],
+       [
+        -122.4780054,
+        37.72766
+       ],
+       [
+        -122.4779941,
+        37.7278346
+       ],
+       [
+        -122.4780023,
+        37.7278418
+       ],
+       [
+        -122.4780005,
+        37.7278691
+       ],
+       [
+        -122.4780085,
+        37.7278798
+       ],
+       [
+        -122.4780994,
+        37.7278766
+       ],
+       [
+        -122.4781119,
+        37.727884
+       ],
+       [
+        -122.4781894,
+        37.7278872
+       ],
+       [
+        -122.4782416,
+        37.7278824
+       ],
+       [
+        -122.4782498,
+        37.7278896
+       ],
+       [
+        -122.4784006,
+        37.7278958
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "E1",
+    "label": "Parcel E1",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.475776,
+        37.7305235
+       ],
+       [
+        -122.4758708,
+        37.729062
+       ],
+       [
+        -122.4750563,
+        37.7290287
+       ],
+       [
+        -122.4749855,
+        37.7301205
+       ],
+       [
+        -122.4749923,
+        37.7302821
+       ],
+       [
+        -122.4753284,
+        37.7302959
+       ],
+       [
+        -122.4754168,
+        37.730399
+       ],
+       [
+        -122.4754704,
+        37.7304389
+       ],
+       [
+        -122.4755412,
+        37.7304796
+       ],
+       [
+        -122.4756338,
+        37.7305177
+       ],
+       [
+        -122.475776,
+        37.7305235
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "E2",
+    "label": "Parcel E2",
+    "stage": "entitled",
+    "height_ft": 50,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 50-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4764662,
+        37.7286094
+       ],
+       [
+        -122.4764704,
+        37.7285444
+       ],
+       [
+        -122.4764792,
+        37.7285413
+       ],
+       [
+        -122.476519,
+        37.7279286
+       ],
+       [
+        -122.4762477,
+        37.7279141
+       ],
+       [
+        -122.4762033,
+        37.7285986
+       ],
+       [
+        -122.4764662,
+        37.7286094
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "E3E",
+    "label": "Parcel E3E",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187",
+    "note": "Drawn with the Variant Sub-Area (Parcel E3E), as in the figure."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4759025,
+        37.7288403
+       ],
+       [
+        -122.4759597,
+        37.7279572
+       ],
+       [
+        -122.4751281,
+        37.7279232
+       ],
+       [
+        -122.475071,
+        37.7288028
+       ],
+       [
+        -122.4759025,
+        37.7288403
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "E4",
+    "label": "Parcel E4",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4759671,
+        37.7278443
+       ],
+       [
+        -122.4759693,
+        37.7278101
+       ],
+       [
+        -122.4758997,
+        37.7271517
+       ],
+       [
+        -122.4752317,
+        37.7271244
+       ],
+       [
+        -122.4752123,
+        37.7271579
+       ],
+       [
+        -122.4751796,
+        37.7276611
+       ],
+       [
+        -122.4751447,
+        37.7276665
+       ],
+       [
+        -122.4751354,
+        37.7278102
+       ],
+       [
+        -122.4759671,
+        37.7278443
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "E5",
+    "label": "Parcel E5",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4761937,
+        37.7300121
+       ],
+       [
+        -122.476367,
+        37.7300055
+       ],
+       [
+        -122.4764488,
+        37.7300088
+       ],
+       [
+        -122.4767579,
+        37.7299734
+       ],
+       [
+        -122.4767601,
+        37.7299392
+       ],
+       [
+        -122.4767517,
+        37.7299354
+       ],
+       [
+        -122.4767733,
+        37.7296034
+       ],
+       [
+        -122.4761355,
+        37.7295773
+       ],
+       [
+        -122.4761075,
+        37.7300086
+       ],
+       [
+        -122.4761937,
+        37.7300121
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "E6",
+    "label": "Parcel E6",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 30-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4765628,
+        37.7273196
+       ],
+       [
+        -122.4765783,
+        37.72708
+       ],
+       [
+        -122.4761735,
+        37.72706
+       ],
+       [
+        -122.4761715,
+        37.7270908
+       ],
+       [
+        -122.4761834,
+        37.7271736
+       ],
+       [
+        -122.4763387,
+        37.7273104
+       ],
+       [
+        -122.4765628,
+        37.7273196
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "S1",
+    "label": "Parcel S1",
+    "stage": "entitled",
+    "height_ft": 190,
+    "podium_ft": 90,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 190-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187; tower zone over a 90-ft base (Ordinance 204-24 (Planning Code Sec. 249.9), Figure 249.9-5 and Sec. 249.9(g): towers are new construction above 90 ft, with an average floorplate of at most 12,500 sq ft)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4770327,
+        37.7263367
+       ],
+       [
+        -122.4770536,
+        37.7260802
+       ],
+       [
+        -122.4769694,
+        37.7260459
+       ],
+       [
+        -122.4769565,
+        37.7260454
+       ],
+       [
+        -122.4769486,
+        37.7260347
+       ],
+       [
+        -122.4768401,
+        37.7259754
+       ],
+       [
+        -122.4767863,
+        37.7259389
+       ],
+       [
+        -122.4763814,
+        37.725586
+       ],
+       [
+        -122.4763728,
+        37.7255856
+       ],
+       [
+        -122.476344,
+        37.7255639
+       ],
+       [
+        -122.4762428,
+        37.7255254
+       ],
+       [
+        -122.4761661,
+        37.7255085
+       ],
+       [
+        -122.4761144,
+        37.7255064
+       ],
+       [
+        -122.4760949,
+        37.7255399
+       ],
+       [
+        -122.4760934,
+        37.7255639
+       ],
+       [
+        -122.4761375,
+        37.7256172
+       ],
+       [
+        -122.4761804,
+        37.7256876
+       ],
+       [
+        -122.4762177,
+        37.7257783
+       ],
+       [
+        -122.4762383,
+        37.7258615
+       ],
+       [
+        -122.4762454,
+        37.725951
+       ],
+       [
+        -122.4762228,
+        37.7263002
+       ],
+       [
+        -122.4770327,
+        37.7263367
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "S2",
+    "label": "Parcel S2",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4759114,
+        37.7267713
+       ],
+       [
+        -122.4759411,
+        37.7263127
+       ],
+       [
+        -122.4752689,
+        37.7262851
+       ],
+       [
+        -122.4752449,
+        37.7266548
+       ],
+       [
+        -122.4752588,
+        37.7267068
+       ],
+       [
+        -122.4752909,
+        37.7267459
+       ],
+       [
+        -122.4759114,
+        37.7267713
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "S2",
+    "label": "Parcel S2",
+    "stage": "entitled",
+    "height_ft": 150,
+    "podium_ft": 90,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 150-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187; tower zone over a 90-ft base (Ordinance 204-24 (Planning Code Sec. 249.9), Figure 249.9-5 and Sec. 249.9(g): towers are new construction above 90 ft, with an average floorplate of at most 12,500 sq ft)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4759155,
+        37.7263082
+       ],
+       [
+        -122.475942,
+        37.726299
+       ],
+       [
+        -122.4759502,
+        37.7261723
+       ],
+       [
+        -122.4759425,
+        37.7261583
+       ],
+       [
+        -122.4759527,
+        37.7261347
+       ],
+       [
+        -122.4759564,
+        37.7260765
+       ],
+       [
+        -122.4759483,
+        37.7260693
+       ],
+       [
+        -122.4759496,
+        37.7260488
+       ],
+       [
+        -122.4759589,
+        37.7260388
+       ],
+       [
+        -122.4759627,
+        37.7259807
+       ],
+       [
+        -122.4759545,
+        37.7259735
+       ],
+       [
+        -122.4759558,
+        37.7259529
+       ],
+       [
+        -122.4759649,
+        37.7259464
+       ],
+       [
+        -122.4759687,
+        37.7258882
+       ],
+       [
+        -122.4759605,
+        37.725881
+       ],
+       [
+        -122.4759577,
+        37.7258569
+       ],
+       [
+        -122.4759373,
+        37.7258389
+       ],
+       [
+        -122.4759057,
+        37.725793
+       ],
+       [
+        -122.4758928,
+        37.7257925
+       ],
+       [
+        -122.4758805,
+        37.7257817
+       ],
+       [
+        -122.4758816,
+        37.7257646
+       ],
+       [
+        -122.4758096,
+        37.7256758
+       ],
+       [
+        -122.4757974,
+        37.725665
+       ],
+       [
+        -122.4757629,
+        37.7256636
+       ],
+       [
+        -122.475677,
+        37.7257219
+       ],
+       [
+        -122.4755795,
+        37.7257591
+       ],
+       [
+        -122.4754839,
+        37.7257689
+       ],
+       [
+        -122.475346,
+        37.7257632
+       ],
+       [
+        -122.4753237,
+        37.7257726
+       ],
+       [
+        -122.4753054,
+        37.725789
+       ],
+       [
+        -122.4753,
+        37.725806
+       ],
+       [
+        -122.4752691,
+        37.7262817
+       ],
+       [
+        -122.4757345,
+        37.7263008
+       ],
+       [
+        -122.4757545,
+        37.726293
+       ],
+       [
+        -122.4757606,
+        37.7262984
+       ],
+       [
+        -122.4757948,
+        37.7263032
+       ],
+       [
+        -122.4759155,
+        37.7263082
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "S3",
+    "label": "Parcel S3",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 90-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4788005,
+        37.7265257
+       ],
+       [
+        -122.4788293,
+        37.7260156
+       ],
+       [
+        -122.4787991,
+        37.7260143
+       ],
+       [
+        -122.4787417,
+        37.7260326
+       ],
+       [
+        -122.4786481,
+        37.7260768
+       ],
+       [
+        -122.4785597,
+        37.7261075
+       ],
+       [
+        -122.4784235,
+        37.7261431
+       ],
+       [
+        -122.4784063,
+        37.7261424
+       ],
+       [
+        -122.4783317,
+        37.7261599
+       ],
+       [
+        -122.478258,
+        37.7261638
+       ],
+       [
+        -122.4782446,
+        37.7261701
+       ],
+       [
+        -122.4780498,
+        37.7261759
+       ],
+       [
+        -122.4780251,
+        37.7264906
+       ],
+       [
+        -122.4780981,
+        37.726497
+       ],
+       [
+        -122.4781201,
+        37.726491
+       ],
+       [
+        -122.4787277,
+        37.7265159
+       ],
+       [
+        -122.4787574,
+        37.726524
+       ],
+       [
+        -122.4788005,
+        37.7265257
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "S3",
+    "label": "Parcel S3",
+    "stage": "entitled",
+    "height_ft": 190,
+    "podium_ft": 90,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 190-ft height limit traced from Stonestown Design Standards and Guidelines (April 2024; Planning case 2021-012028), Figure 5.9, Maximum building heights, p. 187; tower zone over a 90-ft base (Ordinance 204-24 (Planning Code Sec. 249.9), Figure 249.9-5 and Sec. 249.9(g): towers are new construction above 90 ft, with an average floorplate of at most 12,500 sq ft)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.478763,
+        37.7271042
+       ],
+       [
+        -122.4788003,
+        37.7265292
+       ],
+       [
+        -122.47874,
+        37.7265267
+       ],
+       [
+        -122.4787275,
+        37.7265193
+       ],
+       [
+        -122.4785848,
+        37.7265203
+       ],
+       [
+        -122.4784474,
+        37.7265079
+       ],
+       [
+        -122.4783739,
+        37.7265083
+       ],
+       [
+        -122.4783671,
+        37.7265132
+       ],
+       [
+        -122.478361,
+        37.7265078
+       ],
+       [
+        -122.478253,
+        37.7265068
+       ],
+       [
+        -122.4782405,
+        37.7264994
+       ],
+       [
+        -122.4781199,
+        37.7264945
+       ],
+       [
+        -122.4780847,
+        37.7265033
+       ],
+       [
+        -122.4780679,
+        37.7264958
+       ],
+       [
+        -122.4780249,
+        37.726494
+       ],
+       [
+        -122.4779973,
+        37.7269184
+       ],
+       [
+        -122.4780792,
+        37.7269218
+       ],
+       [
+        -122.4781092,
+        37.7269264
+       ],
+       [
+        -122.4781171,
+        37.726937
+       ],
+       [
+        -122.4785136,
+        37.7269533
+       ],
+       [
+        -122.4785562,
+        37.7269619
+       ],
+       [
+        -122.4786195,
+        37.726985
+       ],
+       [
+        -122.478657,
+        37.7270072
+       ],
+       [
+        -122.478714,
+        37.727061
+       ],
+       [
+        -122.4787372,
+        37.7271031
+       ],
+       [
+        -122.478763,
+        37.7271042
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
