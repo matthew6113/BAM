@@ -1707,7 +1707,7 @@
       ],
       "nextMilestone": "City review of the Phase 2 application.",
       "summary": "The redevelopment of SRI International's research campus in Menlo Park into 800 homes, offices and 12 acres of open space, approved in 2025. A Phase 2 proposal now under review would add 282 homes and some retail.",
-      "massingNotes": "Boundary: Menlo Park parcels (CC0, services7.arcgis.com org uRrQ0O3z2aaiIWYU, layer 7), the union of APNs 062390050, 062390660, 062390670, 062390730, 062390760 and 062390780 (about 64.2 acres, matching the 64.3-acre site). Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: Menlo Park parcels (CC0, services7.arcgis.com org uRrQ0O3z2aaiIWYU, layer 7), the union of APNs 062390050, 062390660, 062390670, 062390730, 062390760 and 062390780 (about 64.2 acres, matching the 64.3-acre site). Massing: 14 buildings traced from the approved Master Plan Project Plans (June 24, 2025), Sheet G3.03 \"Conceptual Building Height Plan\", which the conditional development permit makes binding (§2.3.4), georeferenced on 7 street intersections (RMS 1.4 m): homes 35–75 ft, offices 75–91 ft, garages 44.5–65.5 ft, all illustrative. Retained SRI buildings stay in the base map; the affordable-housing parcel and the park are not drawn.",
       "officialLinks": [
         "https://www.menlopark.gov/Government/Departments/Community-Development/Projects/Approved-projects/Parkline",
         "https://www.menlopark.gov/Government/Departments/Community-Development/Projects/Under-review/Parkline-Phase-2"
@@ -1718,7 +1718,8 @@
         "https://www.menlopark.gov/News-articles/City-news/20260622Parkline-Phase-2-proposal-submitted",
         "https://www.menlopark.gov/files/sharedassets/public/v/2/agendas-and-minutes/city-council/2025-meetings/20250930/j1-20250930-cc-parkline.pdf",
         "https://www.menlopark.gov/files/sharedassets/public/v/1/agendas-and-minutes/city-council/2025-meetings/minutes/20251007-city-council-special-and-regular-minutes-approved.pdf",
-        "https://services7.arcgis.com/uRrQ0O3z2aaiIWYU/arcgis/rest/services/City_of_Menlo_Park_Parcels/FeatureServer/7"
+        "https://services7.arcgis.com/uRrQ0O3z2aaiIWYU/arcgis/rest/services/City_of_Menlo_Park_Parcels/FeatureServer/7",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/parkline/map20250703/project-variant-master-plan-set_0703.pdf"
       ],
       "verify": [
         "the Council resolution and ordinance numbers for the 2025 approvals",
