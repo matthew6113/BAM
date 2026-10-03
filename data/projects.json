@@ -178,7 +178,7 @@
       ],
       "nextMilestone": null,
       "summary": "The former Candlestick Park stadium site and its parking lots, planned as a bayfront neighborhood of about 7,200 homes, an office and R&D district and about 100 acres of parks. It was planned together with Hunters Point Shipyard until 2024, when the city found the two could no longer be built in concert and let Candlestick go ahead on its own.",
-      "massingNotes": "Boundary: DataSF Former Redevelopment Agency Project Areas (m288-24sn, ODC-PDDL), feature \"Bayview Hunters Point Area B Zone 1\" (about 271.1 acres, matching the 2024 notice); don't use the \"CP\" height district, which leaves out the State Recreation Area. Height limits run 40–420 ft with up to 12 towers (2010/2019 Design for Development) and up to 180 ft in Candlestick Center (2024); massing comes in Milestone 4.",
+      "massingNotes": "Boundary: DataSF Former Redevelopment Agency Project Areas (m288-24sn, ODC-PDDL), feature \"Bayview Hunters Point Area B Zone 1\" (about 271.1 acres, matching the 2024 notice); don't use the \"CP\" height district, which leaves out the State Recreation Area. Height limits run 40–420 ft with up to 12 towers (2010/2019 Design for Development) and up to 180 ft in Candlestick Center (2024). Massing: the 2024 height plan traced from Addendum 7 to the FEIR (Aug 2024), Figure 5 (40–85 ft blocks; Candlestick Center parcels to 180 ft under the 2024 Innovation District alternative), with 11 towers from the Design for Development Table 4.2 (170–420 ft over 65- or 85-ft podiums; locations flexible), all illustrative; the completed Alice Griffith buildings are outlined with DBI stories (no official height). The State Recreation Area and parks are not drawn.",
       "officialLinks": [
         "https://sfocii.org/projects/hunters-point-shipyard-candlestick-point-2/overview",
         "https://www.sf.gov/news-mayor-lurie-breaks-ground-on-7200-long-awaited-new-homes-at-former-candlestick-park-site"
@@ -201,7 +201,14 @@
         "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20180322_cal_min.pdf",
         "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20180426_cal_min.pdf",
         "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20191024_cal_min.pdf",
-        "https://data.sf.gov/d/m288-24sn"
+        "https://data.sf.gov/d/m288-24sn",
+        "https://citypln-m-extnl.sfgov.org/Commissions/CPC/9_12_2024/Commission%20Packet/2007.0946GPRCWP-04.pdf",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201401166470",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201401166475",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201501236565",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201608296272",
+        "https://sfocii.org/sites/default/files/2024-09/Addendum%207%20to%20the%20CP-HPS2%202010%20FEIR.pdf",
+        "https://sfocii.org/sites/default/files/2025-10/Candlestick%20Point%20Design%20for%20Development%202024%20Amendment.pdf"
       ],
       "verify": [
         "whether the 2024 changes alter tower heights outside Candlestick Center",
