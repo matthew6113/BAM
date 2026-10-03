@@ -1,0 +1,6445 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "candlestick-point",
+  "illustrative": true,
+  "summary": "Illustrative massing: each block is drawn to its height limit in the 2024 height map (40-180 ft), not as a building design. The 11 towers (170-420 ft) are drawn over a 65- or 85-ft podium: six at fixed spots and five as zones they may rise anywhere in. Candlestick Center shows the 2024 Innovation District alternative. The Alice Griffith homes already built are footprints with their permitted stories but no height; the State Recreation Area, parks and streets aren't massed.",
+  "note": "Blocks and tower zones are drawn to their height limits, not as building designs; real buildings will be smaller, and tower locations are flexible.",
+  "sourceUrl": "https://sfocii.org/sites/default/files/2025-10/Candlestick%20Point%20Design%20for%20Development%202024%20Amendment.pdf",
+  "sourceLabel": "Design for Development, 2024 (PDF)",
+  "georeference": {
+   "figure_5": {
+    "method": "city-block match: raster correlation, then least squares on the centroids of whole Figure 5 city blocks matching SF's parcel map merged into blocks (DataSF acdm-wktn, IoU > 0.7)",
+    "scale_m_per_unit": 3.80356,
+    "scale_bar_m_per_unit": 3.80493,
+    "rotation_deg": 1.524,
+    "rms_m": 0.17,
+    "median_m": 0.06,
+    "max_m": 0.5,
+    "controls": 10,
+    "dropped_as_outliers": 1,
+    "correlation": 0.395
+   },
+   "check_against_site": {
+    "zones_m2": 409930,
+    "outside_site_m2": 83,
+    "outside_site_share": 0.0002
+   }
+  },
+  "documents": {
+   "height_map": {
+    "title": "Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024)",
+    "url": "https://sfocii.org/sites/default/files/2024-09/Addendum%207%20to%20the%20CP-HPS2%202010%20FEIR.pdf",
+    "sha256": "c75cb08b1bb08516997b9164f86d8b6ed93f07195d1b19f68d57deb8ba2763e6",
+    "pages": "Fig. 5 p. 17 (PDF p. 23); no change outside Candlestick Center, PDF p. 46"
+   },
+   "design_for_development": {
+    "title": "Candlestick Point Design for Development, 2024 Amendment edition (OCII; CCII Resolution 28-2024)",
+    "url": "https://sfocii.org/sites/default/files/2025-10/Candlestick%20Point%20Design%20for%20Development%202024%20Amendment.pdf",
+    "sha256": "2336041638fcf03cb1cac5b2be114414b552756093354da8f1df6a37088e2ef2",
+    "pages": "Table 4.2 p. 84, Fig. 4.1 p. 77, Fig. A5.3N (Section A5.3 p. 36)"
+   },
+   "center_counts": {
+    "title": "Planning Commission packet, Sept 12, 2024 (case 2007.0946GPRCWP-04)",
+    "url": "https://citypln-m-extnl.sfgov.org/Commissions/CPC/9_12_2024/Commission%20Packet/2007.0946GPRCWP-04.pdf",
+    "pages": "PDF p. 6",
+    "finding": "Candlestick Center: four parcels to 180 ft, five to 160, three to 120, two to 85."
+   },
+   "alice_griffith_permits": [
+    "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201501236565",
+    "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201401166470",
+    "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201401166475",
+    "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201608296272"
+   ]
+  },
+  "license": "Block shapes: traced from public OCII documents. Georeferenced to SF's parcel map (DataSF, ODC PDDL). Building footprints: OpenStreetMap contributors (ODbL 1.0), via Overture Maps."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-6",
+    "label": "Alice Griffith block 6",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.386894,
+        37.7173864
+       ],
+       [
+        -122.3864452,
+        37.7171315
+       ],
+       [
+        -122.3868839,
+        37.7166438
+       ],
+       [
+        -122.3873326,
+        37.7168976
+       ],
+       [
+        -122.386894,
+        37.7173864
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-7",
+    "label": "Alice Griffith block 7",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3869647,
+        37.7165539
+       ],
+       [
+        -122.3874136,
+        37.716055
+       ],
+       [
+        -122.387853,
+        37.7163054
+       ],
+       [
+        -122.3878093,
+        37.7163567
+       ],
+       [
+        -122.3878153,
+        37.7163608
+       ],
+       [
+        -122.3874132,
+        37.7168085
+       ],
+       [
+        -122.3869647,
+        37.7165539
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-8",
+    "label": "Alice Griffith block 8",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.387597,
+        37.7187615
+       ],
+       [
+        -122.3867755,
+        37.7182952
+       ],
+       [
+        -122.3869933,
+        37.7180521
+       ],
+       [
+        -122.3878159,
+        37.7185174
+       ],
+       [
+        -122.387597,
+        37.7187615
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-9",
+    "label": "Alice Griffith block 9",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3874426,
+        37.7188564
+       ],
+       [
+        -122.3870839,
+        37.719257
+       ],
+       [
+        -122.3863837,
+        37.7188596
+       ],
+       [
+        -122.3867439,
+        37.718459
+       ],
+       [
+        -122.3874426,
+        37.7188564
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-11",
+    "label": "Alice Griffith block 11",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3867699,
+        37.7196054
+       ],
+       [
+        -122.3864083,
+        37.7200072
+       ],
+       [
+        -122.3857095,
+        37.7196097
+       ],
+       [
+        -122.3860712,
+        37.7192079
+       ],
+       [
+        -122.3867699,
+        37.7196054
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-12",
+    "label": "Alice Griffith block 12",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3877172,
+        37.7201431
+       ],
+       [
+        -122.3873556,
+        37.7205449
+       ],
+       [
+        -122.3865823,
+        37.7201063
+       ],
+       [
+        -122.3869439,
+        37.7197045
+       ],
+       [
+        -122.3877172,
+        37.7201431
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-13",
+    "label": "Alice Griffith block 13",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3883943,
+        37.7193964
+       ],
+       [
+        -122.388034,
+        37.7197959
+       ],
+       [
+        -122.3872578,
+        37.719355
+       ],
+       [
+        -122.387618,
+        37.7189555
+       ],
+       [
+        -122.3883943,
+        37.7193964
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-14",
+    "label": "Alice Griffith block 14",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3876808,
+        37.718809
+       ],
+       [
+        -122.3879006,
+        37.7185653
+       ],
+       [
+        -122.3887959,
+        37.7190766
+       ],
+       [
+        -122.3885786,
+        37.7193185
+       ],
+       [
+        -122.3876808,
+        37.718809
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-15",
+    "label": "Alice Griffith block 15",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3885786,
+        37.7193185
+       ],
+       [
+        -122.3887959,
+        37.7190766
+       ],
+       [
+        -122.3896341,
+        37.7195524
+       ],
+       [
+        -122.3894172,
+        37.7197944
+       ],
+       [
+        -122.3885786,
+        37.7193185
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-16",
+    "label": "Alice Griffith block 16",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3893092,
+        37.7199149
+       ],
+       [
+        -122.3889473,
+        37.7203147
+       ],
+       [
+        -122.3886621,
+        37.7201534
+       ],
+       [
+        -122.3890257,
+        37.7197546
+       ],
+       [
+        -122.3893092,
+        37.7199149
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-16",
+    "label": "Alice Griffith block 16",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3893079,
+        37.7199152
+       ],
+       [
+        -122.3889477,
+        37.7203147
+       ],
+       [
+        -122.3881861,
+        37.7198827
+       ],
+       [
+        -122.3885463,
+        37.7194821
+       ],
+       [
+        -122.3893079,
+        37.7199152
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-17",
+    "label": "Alice Griffith block 17",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3886352,
+        37.7206641
+       ],
+       [
+        -122.3882736,
+        37.7210659
+       ],
+       [
+        -122.3879884,
+        37.7209047
+       ],
+       [
+        -122.3883531,
+        37.7205038
+       ],
+       [
+        -122.3886352,
+        37.7206641
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-17",
+    "label": "Alice Griffith block 17",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3886352,
+        37.7206641
+       ],
+       [
+        -122.3882736,
+        37.7210659
+       ],
+       [
+        -122.3875134,
+        37.7206351
+       ],
+       [
+        -122.3878751,
+        37.7202322
+       ],
+       [
+        -122.3886352,
+        37.7206641
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-18",
+    "label": "Alice Griffith block 18",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.38816,
+        37.7211913
+       ],
+       [
+        -122.387748,
+        37.7216489
+       ],
+       [
+        -122.3874704,
+        37.7214912
+       ],
+       [
+        -122.3878872,
+        37.7210365
+       ],
+       [
+        -122.38816,
+        37.7211913
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-18",
+    "label": "Alice Griffith block 18",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3873777,
+        37.7207473
+       ],
+       [
+        -122.38816,
+        37.7211913
+       ],
+       [
+        -122.387748,
+        37.7216489
+       ],
+       [
+        -122.3869666,
+        37.721205
+       ],
+       [
+        -122.3873777,
+        37.7207473
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-19",
+    "label": "Alice Griffith block 19",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3868536,
+        37.721141
+       ],
+       [
+        -122.3860581,
+        37.7206892
+       ],
+       [
+        -122.3864744,
+        37.720227
+       ],
+       [
+        -122.3872696,
+        37.720679
+       ],
+       [
+        -122.3868536,
+        37.721141
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "AG-20",
+    "label": "Alice Griffith block 20",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3855797,
+        37.7197193
+       ],
+       [
+        -122.386299,
+        37.7201279
+       ],
+       [
+        -122.3858827,
+        37.7205901
+       ],
+       [
+        -122.385162,
+        37.7201815
+       ],
+       [
+        -122.3855797,
+        37.7197193
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CC-A",
+    "label": "Candlestick Center parcel A",
+    "stage": "entitled",
+    "height_ft": 180,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "R&D, office and mixed use (Innovation District)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 180-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; parcel letter from D4D Figure A5.3N (Section A5.3 p. 36)",
+    "note": "Under the 2024 Innovation District alternative (D4D Section A5.3), which applies if it is chosen for the whole Center; otherwise the 2019 limits of 85-120 ft apply."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3864199,
+        37.7113638
+       ],
+       [
+        -122.3868858,
+        37.7120332
+       ],
+       [
+        -122.386092,
+        37.7124129
+       ],
+       [
+        -122.3855119,
+        37.7119208
+       ],
+       [
+        -122.3861282,
+        37.7114694
+       ],
+       [
+        -122.3862358,
+        37.7114061
+       ],
+       [
+        -122.3863504,
+        37.7113489
+       ],
+       [
+        -122.3863877,
+        37.7113437
+       ],
+       [
+        -122.3864199,
+        37.7113638
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CC-B",
+    "label": "Candlestick Center parcel B",
+    "stage": "entitled",
+    "height_ft": 180,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "R&D, office and mixed use (Innovation District)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 180-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; parcel letter from D4D Figure A5.3N (Section A5.3 p. 36)",
+    "note": "Under the 2024 Innovation District alternative (D4D Section A5.3), which applies if it is chosen for the whole Center; otherwise the 2019 limits of 85-120 ft apply."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3861156,
+        37.7124332
+       ],
+       [
+        -122.3860957,
+        37.7124157
+       ],
+       [
+        -122.3868864,
+        37.7120363
+       ],
+       [
+        -122.3871407,
+        37.7124077
+       ],
+       [
+        -122.387232,
+        37.7125985
+       ],
+       [
+        -122.3872628,
+        37.7126972
+       ],
+       [
+        -122.3861841,
+        37.7129807
+       ],
+       [
+        -122.3861156,
+        37.7124332
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CC-C",
+    "label": "Candlestick Center parcel C",
+    "stage": "entitled",
+    "height_ft": 120,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "R&D, office and mixed use (Innovation District)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 120-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; parcel letter from D4D Figure A5.3N (Section A5.3 p. 36)",
+    "note": "Under the 2024 Innovation District alternative (D4D Section A5.3), which applies if it is chosen for the whole Center; otherwise the 2019 limits of 85-120 ft apply."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3862491,
+        37.7134998
+       ],
+       [
+        -122.3861844,
+        37.7129837
+       ],
+       [
+        -122.3872636,
+        37.7126994
+       ],
+       [
+        -122.3872856,
+        37.712783
+       ],
+       [
+        -122.3873028,
+        37.7128926
+       ],
+       [
+        -122.3873678,
+        37.7134112
+       ],
+       [
+        -122.3862491,
+        37.7134998
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CC-D",
+    "label": "Candlestick Center parcel D",
+    "stage": "entitled",
+    "height_ft": 180,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "R&D, office and mixed use (Innovation District)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 180-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; parcel letter from D4D Figure A5.3N (Section A5.3 p. 36)",
+    "note": "Under the 2024 Innovation District alternative (D4D Section A5.3), which applies if it is chosen for the whole Center; otherwise the 2019 limits of 85-120 ft apply."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3874687,
+        37.7142129
+       ],
+       [
+        -122.3863316,
+        37.7141419
+       ],
+       [
+        -122.3862493,
+        37.7135023
+       ],
+       [
+        -122.3873678,
+        37.7134137
+       ],
+       [
+        -122.3874687,
+        37.7142129
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CC-E",
+    "label": "Candlestick Center parcel E",
+    "stage": "entitled",
+    "height_ft": 180,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "R&D, office and mixed use (Innovation District)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 180-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; parcel letter from D4D Figure A5.3N (Section A5.3 p. 36)",
+    "note": "Under the 2024 Innovation District alternative (D4D Section A5.3), which applies if it is chosen for the whole Center; otherwise the 2019 limits of 85-120 ft apply."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3863316,
+        37.7141444
+       ],
+       [
+        -122.3874687,
+        37.7142154
+       ],
+       [
+        -122.3875624,
+        37.7149653
+       ],
+       [
+        -122.386393,
+        37.7146331
+       ],
+       [
+        -122.3863316,
+        37.7141444
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CC-F",
+    "label": "Candlestick Center parcel F",
+    "stage": "entitled",
+    "height_ft": 160,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "R&D, office and mixed use (Innovation District)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 160-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; parcel letter from D4D Figure A5.3N (Section A5.3 p. 36)",
+    "note": "Under the 2024 Innovation District alternative (D4D Section A5.3), which applies if it is chosen for the whole Center; otherwise the 2019 limits of 85-120 ft apply."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3873648,
+        37.7156935
+       ],
+       [
+        -122.387348,
+        37.7157098
+       ],
+       [
+        -122.3873223,
+        37.7157217
+       ],
+       [
+        -122.3872935,
+        37.7157221
+       ],
+       [
+        -122.3864576,
+        37.7152524
+       ],
+       [
+        -122.3868864,
+        37.7147771
+       ],
+       [
+        -122.3875626,
+        37.714967
+       ],
+       [
+        -122.3875625,
+        37.7150746
+       ],
+       [
+        -122.3875362,
+        37.7152879
+       ],
+       [
+        -122.3874693,
+        37.715495
+       ],
+       [
+        -122.3874229,
+        37.7155964
+       ],
+       [
+        -122.3873648,
+        37.7156935
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CC-G",
+    "label": "Candlestick Center parcel G",
+    "stage": "entitled",
+    "height_ft": 160,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "R&D, office and mixed use (Innovation District)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 160-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; parcel letter from D4D Figure A5.3N (Section A5.3 p. 36)",
+    "note": "Under the 2024 Innovation District alternative (D4D Section A5.3), which applies if it is chosen for the whole Center; otherwise the 2019 limits of 85-120 ft apply."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3847759,
+        37.7125105
+       ],
+       [
+        -122.3848845,
+        37.712407
+       ],
+       [
+        -122.385003,
+        37.7123067
+       ],
+       [
+        -122.3855088,
+        37.7119234
+       ],
+       [
+        -122.3859579,
+        37.7123061
+       ],
+       [
+        -122.3852018,
+        37.7128689
+       ],
+       [
+        -122.3847759,
+        37.7125105
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CC-H",
+    "label": "Candlestick Center parcel H",
+    "stage": "entitled",
+    "height_ft": 120,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "R&D, office and mixed use (Innovation District)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 120-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; parcel letter from D4D Figure A5.3N (Section A5.3 p. 36)",
+    "note": "Under the 2024 Innovation District alternative (D4D Section A5.3), which applies if it is chosen for the whole Center; otherwise the 2019 limits of 85-120 ft apply."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.386246,
+        37.7135
+       ],
+       [
+        -122.3855072,
+        37.7135597
+       ],
+       [
+        -122.385446,
+        37.7130779
+       ],
+       [
+        -122.3852048,
+        37.7128713
+       ],
+       [
+        -122.3859609,
+        37.7123085
+       ],
+       [
+        -122.3861127,
+        37.7124355
+       ],
+       [
+        -122.386246,
+        37.7135
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CC-I",
+    "label": "Candlestick Center parcel I",
+    "stage": "entitled",
+    "height_ft": 160,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "R&D, office and mixed use (Innovation District)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 160-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; parcel letter from D4D Figure A5.3N (Section A5.3 p. 36)",
+    "note": "Under the 2024 Innovation District alternative (D4D Section A5.3), which applies if it is chosen for the whole Center; otherwise the 2019 limits of 85-120 ft apply."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3857012,
+        37.7146259
+       ],
+       [
+        -122.3856369,
+        37.7145897
+       ],
+       [
+        -122.3855075,
+        37.7135622
+       ],
+       [
+        -122.3862463,
+        37.7135025
+       ],
+       [
+        -122.3863825,
+        37.7145715
+       ],
+       [
+        -122.3857012,
+        37.7146259
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CC-J",
+    "label": "Candlestick Center parcel J",
+    "stage": "entitled",
+    "height_ft": 160,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "R&D, office and mixed use (Innovation District)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 160-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; parcel letter from D4D Figure A5.3N (Section A5.3 p. 36)",
+    "note": "Under the 2024 Innovation District alternative (D4D Section A5.3), which applies if it is chosen for the whole Center; otherwise the 2019 limits of 85-120 ft apply."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3868802,
+        37.7147755
+       ],
+       [
+        -122.3864541,
+        37.7152498
+       ],
+       [
+        -122.3855206,
+        37.714721
+       ],
+       [
+        -122.385637,
+        37.7145925
+       ],
+       [
+        -122.3857013,
+        37.7146304
+       ],
+       [
+        -122.3863828,
+        37.7145761
+       ],
+       [
+        -122.3863901,
+        37.7146353
+       ],
+       [
+        -122.3868802,
+        37.7147755
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CC-K",
+    "label": "Candlestick Center parcel K",
+    "stage": "entitled",
+    "height_ft": 120,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "R&D, office and mixed use (Innovation District)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 120-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; parcel letter from D4D Figure A5.3N (Section A5.3 p. 36)",
+    "note": "Under the 2024 Innovation District alternative (D4D Section A5.3), which applies if it is chosen for the whole Center; otherwise the 2019 limits of 85-120 ft apply."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3848428,
+        37.7136115
+       ],
+       [
+        -122.3848034,
+        37.7133033
+       ],
+       [
+        -122.3843794,
+        37.7129461
+       ],
+       [
+        -122.3847733,
+        37.7125131
+       ],
+       [
+        -122.3854431,
+        37.7130779
+       ],
+       [
+        -122.385504,
+        37.7135599
+       ],
+       [
+        -122.3848428,
+        37.7136115
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CC-L",
+    "label": "Candlestick Center parcel L",
+    "stage": "entitled",
+    "height_ft": 160,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "R&D, office and mixed use (Innovation District)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 160-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; parcel letter from D4D Figure A5.3N (Section A5.3 p. 36)",
+    "note": "Under the 2024 Innovation District alternative (D4D Section A5.3), which applies if it is chosen for the whole Center; otherwise the 2019 limits of 85-120 ft apply."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3855163,
+        37.7147203
+       ],
+       [
+        -122.3849433,
+        37.7143947
+       ],
+       [
+        -122.3848434,
+        37.7136163
+       ],
+       [
+        -122.3855044,
+        37.7135624
+       ],
+       [
+        -122.3856337,
+        37.7145882
+       ],
+       [
+        -122.3855163,
+        37.7147203
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CC-M",
+    "label": "Candlestick Center parcel M",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "R&D, office and mixed use (Innovation District)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; parcel letter from D4D Figure A5.3N (Section A5.3 p. 36)",
+    "note": "Under the 2024 Innovation District alternative (D4D Section A5.3), which applies if it is chosen for the whole Center; otherwise the 2019 limits of 85-120 ft apply."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3848395,
+        37.7136118
+       ],
+       [
+        -122.3837412,
+        37.7137015
+       ],
+       [
+        -122.3837377,
+        37.7136659
+       ],
+       [
+        -122.3837488,
+        37.7136497
+       ],
+       [
+        -122.3843766,
+        37.7129484
+       ],
+       [
+        -122.3848005,
+        37.7133056
+       ],
+       [
+        -122.3848395,
+        37.7136118
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CC-N",
+    "label": "Candlestick Center parcel N",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "R&D, office and mixed use (Innovation District)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; parcel letter from D4D Figure A5.3N (Section A5.3 p. 36)",
+    "note": "Under the 2024 Innovation District alternative (D4D Section A5.3), which applies if it is chosen for the whole Center; otherwise the 2019 limits of 85-120 ft apply."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3848401,
+        37.7136165
+       ],
+       [
+        -122.3849369,
+        37.7143906
+       ],
+       [
+        -122.3837621,
+        37.7137227
+       ],
+       [
+        -122.3837472,
+        37.7137037
+       ],
+       [
+        -122.3848401,
+        37.7136165
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-1a",
+    "label": "Candlestick North block 1a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3871769,
+        37.7159214
+       ],
+       [
+        -122.3867283,
+        37.7164196
+       ],
+       [
+        -122.3859344,
+        37.7159696
+       ],
+       [
+        -122.3863831,
+        37.7154705
+       ],
+       [
+        -122.3871769,
+        37.7159214
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-1a",
+    "label": "Candlestick North block 1a",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 80-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3862002,
+        37.715674
+       ],
+       [
+        -122.3863831,
+        37.7154705
+       ],
+       [
+        -122.3871768,
+        37.7159214
+       ],
+       [
+        -122.38699,
+        37.716129
+       ],
+       [
+        -122.3862002,
+        37.715674
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-1b",
+    "label": "Candlestick North block 1b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3866482,
+        37.7165088
+       ],
+       [
+        -122.3861986,
+        37.7170083
+       ],
+       [
+        -122.3854049,
+        37.7165586
+       ],
+       [
+        -122.385854,
+        37.7160589
+       ],
+       [
+        -122.3866482,
+        37.7165088
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-2a",
+    "label": "Candlestick North block 2a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.385051,
+        37.7154685
+       ],
+       [
+        -122.3855005,
+        37.7149693
+       ],
+       [
+        -122.3862209,
+        37.7153781
+       ],
+       [
+        -122.3857712,
+        37.7158776
+       ],
+       [
+        -122.385051,
+        37.7154685
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-2a",
+    "label": "Candlestick North block 2a",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 80-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3853172,
+        37.715173
+       ],
+       [
+        -122.3855005,
+        37.7149693
+       ],
+       [
+        -122.3862206,
+        37.7153781
+       ],
+       [
+        -122.3860337,
+        37.7155857
+       ],
+       [
+        -122.3853172,
+        37.715173
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-2b",
+    "label": "Candlestick North block 2b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3852426,
+        37.716465
+       ],
+       [
+        -122.3845222,
+        37.7160563
+       ],
+       [
+        -122.3849712,
+        37.7155575
+       ],
+       [
+        -122.3856911,
+        37.7159668
+       ],
+       [
+        -122.3852426,
+        37.716465
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-3a",
+    "label": "Candlestick North block 3a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3856144,
+        37.7176588
+       ],
+       [
+        -122.3848204,
+        37.7172088
+       ],
+       [
+        -122.3852549,
+        37.7167258
+       ],
+       [
+        -122.3860487,
+        37.7171767
+       ],
+       [
+        -122.3856144,
+        37.7176588
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-3b",
+    "label": "Candlestick North block 3b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3850661,
+        37.7182671
+       ],
+       [
+        -122.3842738,
+        37.7178161
+       ],
+       [
+        -122.3847396,
+        37.7172984
+       ],
+       [
+        -122.3855336,
+        37.7177484
+       ],
+       [
+        -122.3850661,
+        37.7182671
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-4a",
+    "label": "Candlestick North block 4a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.384707,
+        37.7185395
+       ],
+       [
+        -122.38441,
+        37.7188738
+       ],
+       [
+        -122.383665,
+        37.7184506
+       ],
+       [
+        -122.3840476,
+        37.7180254
+       ],
+       [
+        -122.3846743,
+        37.7183843
+       ],
+       [
+        -122.384707,
+        37.7185395
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-4b",
+    "label": "Candlestick North block 4b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3835526,
+        37.7183869
+       ],
+       [
+        -122.3828074,
+        37.7179635
+       ],
+       [
+        -122.382952,
+        37.7178029
+       ],
+       [
+        -122.3836327,
+        37.7181649
+       ],
+       [
+        -122.3838571,
+        37.7179172
+       ],
+       [
+        -122.3839346,
+        37.7179623
+       ],
+       [
+        -122.3835526,
+        37.7183869
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-5a",
+    "label": "Candlestick North block 5a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3842979,
+        37.7189981
+       ],
+       [
+        -122.3839685,
+        37.7193651
+       ],
+       [
+        -122.3832237,
+        37.7189423
+       ],
+       [
+        -122.3835524,
+        37.718575
+       ],
+       [
+        -122.3842979,
+        37.7189981
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-5b",
+    "label": "Candlestick North block 5b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3831102,
+        37.7188779
+       ],
+       [
+        -122.3823647,
+        37.7184548
+       ],
+       [
+        -122.3826946,
+        37.7180883
+       ],
+       [
+        -122.3834401,
+        37.7185113
+       ],
+       [
+        -122.3831102,
+        37.7188779
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-6a",
+    "label": "Candlestick North block 6a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3824253,
+        37.7179348
+       ],
+       [
+        -122.382095,
+        37.7183017
+       ],
+       [
+        -122.3813495,
+        37.7178787
+       ],
+       [
+        -122.3816798,
+        37.7175117
+       ],
+       [
+        -122.3824253,
+        37.7179348
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-6b",
+    "label": "Candlestick North block 6b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3808199,
+        37.717578
+       ],
+       [
+        -122.3805872,
+        37.7171468
+       ],
+       [
+        -122.3807401,
+        37.7169784
+       ],
+       [
+        -122.3815676,
+        37.717448
+       ],
+       [
+        -122.3812379,
+        37.717813
+       ],
+       [
+        -122.3808199,
+        37.717578
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-7a",
+    "label": "Candlestick North block 7a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3821734,
+        37.7169621
+       ],
+       [
+        -122.3829187,
+        37.7173856
+       ],
+       [
+        -122.3825053,
+        37.7171508
+       ],
+       [
+        -122.3822644,
+        37.7174183
+       ],
+       [
+        -122.3826763,
+        37.717655
+       ],
+       [
+        -122.3825374,
+        37.7178094
+       ],
+       [
+        -122.381792,
+        37.7173863
+       ],
+       [
+        -122.3821734,
+        37.7169621
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-7b",
+    "label": "Candlestick North block 7b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3816797,
+        37.7173226
+       ],
+       [
+        -122.3808521,
+        37.716853
+       ],
+       [
+        -122.3812333,
+        37.716428
+       ],
+       [
+        -122.3820606,
+        37.7168981
+       ],
+       [
+        -122.3816797,
+        37.7173226
+       ]
+      ],
+      [
+       [
+        -122.3815027,
+        37.7165924
+       ],
+       [
+        -122.3812288,
+        37.716442
+       ],
+       [
+        -122.3810393,
+        37.7166596
+       ],
+       [
+        -122.3813134,
+        37.7168101
+       ],
+       [
+        -122.3815027,
+        37.7165924
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-8a",
+    "label": "Candlestick North block 8a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)",
+    "note": "Part of this block is hatched as an allowable tower zone, but Figure 5 doesn't say whether it belongs to tower C, D or E2, whose limits differ, so it is drawn at the block's base height."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3841016,
+        37.7160711
+       ],
+       [
+        -122.3836671,
+        37.7165542
+       ],
+       [
+        -122.3829465,
+        37.7161456
+       ],
+       [
+        -122.383381,
+        37.7156625
+       ],
+       [
+        -122.3841016,
+        37.7160711
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-8b",
+    "label": "Candlestick North block 8b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3830984,
+        37.7164773
+       ],
+       [
+        -122.3826991,
+        37.7169225
+       ],
+       [
+        -122.3831205,
+        37.7171615
+       ],
+       [
+        -122.3823999,
+        37.7167529
+       ],
+       [
+        -122.3828661,
+        37.7162348
+       ],
+       [
+        -122.3835863,
+        37.7166437
+       ],
+       [
+        -122.3835191,
+        37.7167184
+       ],
+       [
+        -122.3830984,
+        37.7164773
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-9a",
+    "label": "Candlestick North block 9a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3832187,
+        37.7155701
+       ],
+       [
+        -122.3827838,
+        37.7160528
+       ],
+       [
+        -122.3819818,
+        37.7155978
+       ],
+       [
+        -122.3820526,
+        37.7155191
+       ],
+       [
+        -122.3827985,
+        37.7159477
+       ],
+       [
+        -122.3831639,
+        37.715539
+       ],
+       [
+        -122.3824163,
+        37.7151147
+       ],
+       [
+        -122.3832187,
+        37.7155701
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-9a",
+    "label": "Candlestick North block 9a",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3824162,
+        37.7151147
+       ],
+       [
+        -122.3820526,
+        37.7155191
+       ],
+       [
+        -122.3823256,
+        37.715676
+       ],
+       [
+        -122.382257,
+        37.7157539
+       ],
+       [
+        -122.3819818,
+        37.7155978
+       ],
+       [
+        -122.3824162,
+        37.7151147
+       ],
+       [
+        -122.3826729,
+        37.7152604
+       ],
+       [
+        -122.3824162,
+        37.7151147
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-9b",
+    "label": "Candlestick North block 9b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3814352,
+        37.7162051
+       ],
+       [
+        -122.3819017,
+        37.7156868
+       ],
+       [
+        -122.3827029,
+        37.7161426
+       ],
+       [
+        -122.3822362,
+        37.7166605
+       ],
+       [
+        -122.3814352,
+        37.7162051
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-9b",
+    "label": "Candlestick North block 9b",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3814323,
+        37.7162052
+       ],
+       [
+        -122.3819016,
+        37.7156868
+       ],
+       [
+        -122.382168,
+        37.7158383
+       ],
+       [
+        -122.3817075,
+        37.7163614
+       ],
+       [
+        -122.3814323,
+        37.7162052
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-10a",
+    "label": "Candlestick North block 10a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.384781,
+        37.715315
+       ],
+       [
+        -122.3840619,
+        37.7149064
+       ],
+       [
+        -122.3845106,
+        37.7144073
+       ],
+       [
+        -122.3852298,
+        37.7148159
+       ],
+       [
+        -122.384781,
+        37.715315
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-10a",
+    "label": "Candlestick North block 10a",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 80-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3843261,
+        37.7146125
+       ],
+       [
+        -122.3845107,
+        37.7144073
+       ],
+       [
+        -122.3852298,
+        37.7148178
+       ],
+       [
+        -122.385043,
+        37.7150254
+       ],
+       [
+        -122.3843261,
+        37.7146125
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-10b",
+    "label": "Candlestick North block 10b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3846238,
+        37.7154897
+       ],
+       [
+        -122.3842036,
+        37.7152446
+       ],
+       [
+        -122.3838265,
+        37.7156624
+       ],
+       [
+        -122.3835324,
+        37.7154953
+       ],
+       [
+        -122.3839811,
+        37.7149962
+       ],
+       [
+        -122.3847007,
+        37.7154042
+       ],
+       [
+        -122.3843623,
+        37.7157807
+       ],
+       [
+        -122.3846238,
+        37.7154897
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-11a",
+    "label": "Candlestick North block 11a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3838977,
+        37.7148138
+       ],
+       [
+        -122.3830959,
+        37.7143577
+       ],
+       [
+        -122.3835183,
+        37.7138886
+       ],
+       [
+        -122.3833512,
+        37.7140807
+       ],
+       [
+        -122.3836252,
+        37.7142311
+       ],
+       [
+        -122.3838145,
+        37.7140135
+       ],
+       [
+        -122.3835411,
+        37.7138633
+       ],
+       [
+        -122.3835445,
+        37.7138595
+       ],
+       [
+        -122.3843469,
+        37.7143149
+       ],
+       [
+        -122.3838977,
+        37.7148138
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-11a",
+    "label": "Candlestick North block 11a",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 80-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3835411,
+        37.7138633
+       ],
+       [
+        -122.3835444,
+        37.7138595
+       ],
+       [
+        -122.3843469,
+        37.714316
+       ],
+       [
+        -122.3841601,
+        37.7145236
+       ],
+       [
+        -122.3836342,
+        37.7142207
+       ],
+       [
+        -122.3838145,
+        37.7140135
+       ],
+       [
+        -122.3835411,
+        37.7138633
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-11a",
+    "label": "Candlestick North block 11a",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3833512,
+        37.7140807
+       ],
+       [
+        -122.3836237,
+        37.7142303
+       ],
+       [
+        -122.3833727,
+        37.7145155
+       ],
+       [
+        -122.383096,
+        37.7143577
+       ],
+       [
+        -122.3835204,
+        37.7138862
+       ],
+       [
+        -122.3833512,
+        37.7140807
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-11b",
+    "label": "Candlestick North block 11b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3838177,
+        37.714903
+       ],
+       [
+        -122.3833686,
+        37.7154018
+       ],
+       [
+        -122.3825662,
+        37.7149464
+       ],
+       [
+        -122.3830161,
+        37.7144471
+       ],
+       [
+        -122.3838177,
+        37.714903
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-11b",
+    "label": "Candlestick North block 11b",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 85-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3825662,
+        37.7149451
+       ],
+       [
+        -122.3830147,
+        37.7144469
+       ],
+       [
+        -122.3832848,
+        37.7146008
+       ],
+       [
+        -122.3828427,
+        37.7151031
+       ],
+       [
+        -122.3825662,
+        37.7149451
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-1",
+    "label": "Candlestick South block 1",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3802216,
+        37.7143662
+       ],
+       [
+        -122.3801383,
+        37.7142998
+       ],
+       [
+        -122.3800008,
+        37.714072
+       ],
+       [
+        -122.3799895,
+        37.7140076
+       ],
+       [
+        -122.3801911,
+        37.7137837
+       ],
+       [
+        -122.3801358,
+        37.7137523
+       ],
+       [
+        -122.3803611,
+        37.7138802
+       ],
+       [
+        -122.3815302,
+        37.714544
+       ],
+       [
+        -122.3810998,
+        37.7148642
+       ],
+       [
+        -122.3802216,
+        37.7143662
+       ]
+      ],
+      [
+       [
+        -122.3812609,
+        37.7147253
+       ],
+       [
+        -122.3814502,
+        37.7145077
+       ],
+       [
+        -122.3811763,
+        37.7143573
+       ],
+       [
+        -122.3809869,
+        37.7145749
+       ],
+       [
+        -122.3812609,
+        37.7147253
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-2a",
+    "label": "Candlestick South block 2a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3816684,
+        37.7136706
+       ],
+       [
+        -122.3822557,
+        37.7140037
+       ],
+       [
+        -122.3816815,
+        37.7144306
+       ],
+       [
+        -122.3812199,
+        37.7141687
+       ],
+       [
+        -122.3816684,
+        37.7136706
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-2b",
+    "label": "Candlestick South block 2b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3811069,
+        37.7141045
+       ],
+       [
+        -122.3806452,
+        37.7138427
+       ],
+       [
+        -122.3810937,
+        37.7133445
+       ],
+       [
+        -122.3815554,
+        37.7136064
+       ],
+       [
+        -122.3811069,
+        37.7141045
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-3",
+    "label": "Candlestick South block 3",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3804796,
+        37.7137486
+       ],
+       [
+        -122.3803097,
+        37.713652
+       ],
+       [
+        -122.3807583,
+        37.7131539
+       ],
+       [
+        -122.3809276,
+        37.7132503
+       ],
+       [
+        -122.3804796,
+        37.7137486
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-4a",
+    "label": "Candlestick South block 4a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3829678,
+        37.7134734
+       ],
+       [
+        -122.3823943,
+        37.7139007
+       ],
+       [
+        -122.3817763,
+        37.7135498
+       ],
+       [
+        -122.3822245,
+        37.7130519
+       ],
+       [
+        -122.3829678,
+        37.7134734
+       ]
+      ],
+      [
+       [
+        -122.3828872,
+        37.7134364
+       ],
+       [
+        -122.3826133,
+        37.713286
+       ],
+       [
+        -122.3824239,
+        37.7135036
+       ],
+       [
+        -122.3826979,
+        37.7136541
+       ],
+       [
+        -122.3828872,
+        37.7134364
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-4b",
+    "label": "Candlestick South block 4b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3816633,
+        37.7134858
+       ],
+       [
+        -122.3812016,
+        37.7132238
+       ],
+       [
+        -122.3816506,
+        37.7127249
+       ],
+       [
+        -122.382112,
+        37.7129873
+       ],
+       [
+        -122.3816633,
+        37.7134858
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-5",
+    "label": "Candlestick South block 5",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.381036,
+        37.7131297
+       ],
+       [
+        -122.3808671,
+        37.713033
+       ],
+       [
+        -122.3813151,
+        37.7125352
+       ],
+       [
+        -122.381484,
+        37.7126314
+       ],
+       [
+        -122.381036,
+        37.7131297
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-6a",
+    "label": "Candlestick South block 6a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3830181,
+        37.7132109
+       ],
+       [
+        -122.3831594,
+        37.7133311
+       ],
+       [
+        -122.3826309,
+        37.7128829
+       ],
+       [
+        -122.3831973,
+        37.7124612
+       ],
+       [
+        -122.3835835,
+        37.712789
+       ],
+       [
+        -122.3830181,
+        37.7132109
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-6a",
+    "label": "Candlestick South block 6a",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 80-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3835835,
+        37.712789
+       ],
+       [
+        -122.3837251,
+        37.712909
+       ],
+       [
+        -122.3831594,
+        37.7133312
+       ],
+       [
+        -122.3830181,
+        37.7132109
+       ],
+       [
+        -122.3835835,
+        37.712789
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-6b",
+    "label": "Candlestick South block 6b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3825738,
+        37.7119327
+       ],
+       [
+        -122.3831023,
+        37.7123809
+       ],
+       [
+        -122.3825367,
+        37.7128031
+       ],
+       [
+        -122.3820081,
+        37.7123548
+       ],
+       [
+        -122.3825738,
+        37.7119327
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-7a",
+    "label": "Candlestick South block 7a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3824328,
+        37.7117857
+       ],
+       [
+        -122.3823473,
+        37.7118494
+       ],
+       [
+        -122.3821091,
+        37.7116397
+       ],
+       [
+        -122.3816552,
+        37.7119612
+       ],
+       [
+        -122.3815145,
+        37.7116885
+       ],
+       [
+        -122.3815101,
+        37.711628
+       ],
+       [
+        -122.3819033,
+        37.7113367
+       ],
+       [
+        -122.3824328,
+        37.7117857
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-7b",
+    "label": "Candlestick South block 7b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3825334,
+        37.7117109
+       ],
+       [
+        -122.3820034,
+        37.7112605
+       ],
+       [
+        -122.382616,
+        37.7108046
+       ],
+       [
+        -122.3831474,
+        37.711254
+       ],
+       [
+        -122.3825334,
+        37.7117109
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-8a",
+    "label": "Candlestick South block 8a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3843135,
+        37.7122449
+       ],
+       [
+        -122.38372,
+        37.7126878
+       ],
+       [
+        -122.3833333,
+        37.7123605
+       ],
+       [
+        -122.3839284,
+        37.7119174
+       ],
+       [
+        -122.3844562,
+        37.7123651
+       ],
+       [
+        -122.3843135,
+        37.7122449
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-8a",
+    "label": "Candlestick South block 8a",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 80-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3838623,
+        37.7128084
+       ],
+       [
+        -122.38372,
+        37.7126878
+       ],
+       [
+        -122.3843134,
+        37.7122449
+       ],
+       [
+        -122.3844562,
+        37.7123651
+       ],
+       [
+        -122.3838623,
+        37.7128084
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-8b",
+    "label": "Candlestick South block 8b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3838335,
+        37.7118371
+       ],
+       [
+        -122.3832391,
+        37.7122805
+       ],
+       [
+        -122.3827096,
+        37.7118321
+       ],
+       [
+        -122.3833049,
+        37.7113888
+       ],
+       [
+        -122.3838335,
+        37.7118371
+       ]
+      ],
+      [
+       [
+        -122.3834813,
+        37.712088
+       ],
+       [
+        -122.3832497,
+        37.7118979
+       ],
+       [
+        -122.3830103,
+        37.7120819
+       ],
+       [
+        -122.383242,
+        37.712272
+       ],
+       [
+        -122.3834813,
+        37.712088
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-9a",
+    "label": "Candlestick South block 9a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3846952,
+        37.7113465
+       ],
+       [
+        -122.3850809,
+        37.7116734
+       ],
+       [
+        -122.3844636,
+        37.7121336
+       ],
+       [
+        -122.3840776,
+        37.7118057
+       ],
+       [
+        -122.3846952,
+        37.7113465
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-9a",
+    "label": "Candlestick South block 9a",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 80-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3844636,
+        37.7121336
+       ],
+       [
+        -122.3850809,
+        37.7116734
+       ],
+       [
+        -122.3852183,
+        37.7117899
+       ],
+       [
+        -122.3846003,
+        37.7122495
+       ],
+       [
+        -122.3844636,
+        37.7121336
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-9b",
+    "label": "Candlestick South block 9b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3846009,
+        37.7112667
+       ],
+       [
+        -122.3839829,
+        37.7117264
+       ],
+       [
+        -122.3834535,
+        37.7112777
+       ],
+       [
+        -122.3840715,
+        37.7108181
+       ],
+       [
+        -122.3846009,
+        37.7112667
+       ]
+      ],
+      [
+       [
+        -122.3845921,
+        37.7112626
+       ],
+       [
+        -122.3843605,
+        37.7110725
+       ],
+       [
+        -122.3841211,
+        37.7112565
+       ],
+       [
+        -122.3843528,
+        37.7114466
+       ],
+       [
+        -122.3845921,
+        37.7112626
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-10a",
+    "label": "Candlestick South block 10a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3839314,
+        37.7106708
+       ],
+       [
+        -122.3832959,
+        37.711144
+       ],
+       [
+        -122.3827645,
+        37.7106935
+       ],
+       [
+        -122.3834009,
+        37.710221
+       ],
+       [
+        -122.3839314,
+        37.7106708
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-10b",
+    "label": "Candlestick South block 10b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3845379,
+        37.7101182
+       ],
+       [
+        -122.384621,
+        37.710157
+       ],
+       [
+        -122.3840325,
+        37.7105953
+       ],
+       [
+        -122.3835015,
+        37.7101452
+       ],
+       [
+        -122.3837643,
+        37.7099497
+       ],
+       [
+        -122.3839996,
+        37.70997
+       ],
+       [
+        -122.3845379,
+        37.7101182
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-11a",
+    "label": "Candlestick South block 11a",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3859966,
+        37.710992
+       ],
+       [
+        -122.3852188,
+        37.7115722
+       ],
+       [
+        -122.3848316,
+        37.7112442
+       ],
+       [
+        -122.3855453,
+        37.7107124
+       ],
+       [
+        -122.3859966,
+        37.710992
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-11a",
+    "label": "Candlestick South block 11a",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 80-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3861417,
+        37.7111022
+       ],
+       [
+        -122.3853555,
+        37.7116881
+       ],
+       [
+        -122.3852188,
+        37.7115722
+       ],
+       [
+        -122.3859965,
+        37.7109919
+       ],
+       [
+        -122.3861417,
+        37.7111022
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-11b",
+    "label": "Candlestick South block 11b",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 65-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3847374,
+        37.7111644
+       ],
+       [
+        -122.3842087,
+        37.7107163
+       ],
+       [
+        -122.3848111,
+        37.7102672
+       ],
+       [
+        -122.3854343,
+        37.7106453
+       ],
+       [
+        -122.3847374,
+        37.7111644
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-12a",
+    "label": "Candlestick South block 12a",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3818005,
+        37.7101137
+       ],
+       [
+        -122.3824835,
+        37.7106923
+       ],
+       [
+        -122.3815077,
+        37.7114185
+       ],
+       [
+        -122.3815019,
+        37.7107285
+       ],
+       [
+        -122.3817511,
+        37.710158
+       ],
+       [
+        -122.3818005,
+        37.7101137
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-12b",
+    "label": "Candlestick South block 12b",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 40-ft height limit traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; block number from D4D Figure 4.1 (p. 77)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.382677,
+        37.7098537
+       ],
+       [
+        -122.3835243,
+        37.709918
+       ],
+       [
+        -122.3826334,
+        37.7105811
+       ],
+       [
+        -122.3819548,
+        37.7100071
+       ],
+       [
+        -122.3820188,
+        37.709974
+       ],
+       [
+        -122.3826006,
+        37.7098503
+       ],
+       [
+        -122.382677,
+        37.7098537
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": null,
+    "label": "Park or development block",
+    "stage": "entitled",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: outline traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17 (\"40 Feet if Park, 65 Feet, if Development Parcel\")",
+    "note": "Outlined only: 40 ft if it becomes a park, otherwise a development parcel (65 ft in the 2024 map; 85 ft in the D4D's Figure 4.3)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3841101,
+        37.7177237
+       ],
+       [
+        -122.3833281,
+        37.7172806
+       ],
+       [
+        -122.3843091,
+        37.7161891
+       ],
+       [
+        -122.3850912,
+        37.7166334
+       ],
+       [
+        -122.3841101,
+        37.7177237
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-4b",
+    "label": "Tower A zone",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: zone traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; tower A: 220 ft overall, 65-ft podium in Candlestick Point Design for Development, 2024 Amendment edition (OCII; CCII Resolution 28-2024), Table 4.2, p. 84; in Candlestick North block 4b",
+    "note": "Allowable tower zone (D4D Table 4.2): one tower up to 220 ft over a 65-ft podium may rise anywhere in this zone, so its location is flexible."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3838571,
+        37.7179172
+       ],
+       [
+        -122.3836327,
+        37.7181649
+       ],
+       [
+        -122.382952,
+        37.7178029
+       ],
+       [
+        -122.3831898,
+        37.7175383
+       ],
+       [
+        -122.3838571,
+        37.7179172
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-7b",
+    "label": "Tower B",
+    "stage": "entitled",
+    "height_ft": 240,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: symbol traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; tower B: 240 ft overall, 65-ft podium in Candlestick Point Design for Development, 2024 Amendment edition (OCII; CCII Resolution 28-2024), Table 4.2, p. 84; in Candlestick North block 7b",
+    "note": "Fixed tower location (D4D Table 4.2): up to 240 ft over a 65-ft podium. The footprint is Figure 5's tower symbol, not a building design."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3815027,
+        37.7165924
+       ],
+       [
+        -122.3813134,
+        37.7168101
+       ],
+       [
+        -122.3810393,
+        37.7166596
+       ],
+       [
+        -122.3812288,
+        37.716442
+       ],
+       [
+        -122.3815027,
+        37.7165924
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-8b",
+    "label": "Tower C zone",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: zone traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; tower C: 220 ft overall, 65-ft podium in Candlestick Point Design for Development, 2024 Amendment edition (OCII; CCII Resolution 28-2024), Table 4.2, p. 84; in Candlestick North block 8b",
+    "note": "Allowable tower zone (D4D Table 4.2): one tower up to 220 ft over a 65-ft podium may rise anywhere in this zone, so its location is flexible."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3831211,
+        37.7171608
+       ],
+       [
+        -122.3826991,
+        37.7169225
+       ],
+       [
+        -122.3830984,
+        37.7164773
+       ],
+       [
+        -122.3835207,
+        37.7167166
+       ],
+       [
+        -122.3831211,
+        37.7171608
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-7a",
+    "label": "Tower A or C zone",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: zone traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; tower C: 220 ft overall, 65-ft podium in Candlestick Point Design for Development, 2024 Amendment edition (OCII; CCII Resolution 28-2024), Table 4.2, p. 84; in Candlestick North block 7a",
+    "note": "Part of the allowable zone of tower A or C (Figure 5 doesn't say which; both allow 220 ft over a 65-ft podium). One tower may rise anywhere in its zone, so its location is flexible."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3826763,
+        37.717655
+       ],
+       [
+        -122.3822644,
+        37.7174183
+       ],
+       [
+        -122.3825053,
+        37.7171508
+       ],
+       [
+        -122.3829187,
+        37.7173856
+       ],
+       [
+        -122.3826763,
+        37.717655
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-9a",
+    "label": "Tower D zone",
+    "stage": "entitled",
+    "height_ft": 320,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: zone traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; tower D: 320 ft overall, 65-ft podium (85 ft fronting Harney Way) in Candlestick Point Design for Development, 2024 Amendment edition (OCII; CCII Resolution 28-2024), Table 4.2, p. 84; in Candlestick North block 9a",
+    "note": "Allowable tower zone (D4D Table 4.2): one tower up to 320 ft over a 65-ft podium may rise anywhere in this zone, so its location is flexible."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3824163,
+        37.7151147
+       ],
+       [
+        -122.3831639,
+        37.715539
+       ],
+       [
+        -122.3827985,
+        37.7159477
+       ],
+       [
+        -122.3820526,
+        37.7155191
+       ],
+       [
+        -122.3824163,
+        37.7151147
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-9a",
+    "label": "Tower D zone",
+    "stage": "entitled",
+    "height_ft": 320,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: zone traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; tower D: 320 ft overall, 65-ft podium (85 ft fronting Harney Way) in Candlestick Point Design for Development, 2024 Amendment edition (OCII; CCII Resolution 28-2024), Table 4.2, p. 84; in Candlestick North block 9a",
+    "note": "Allowable tower zone (D4D Table 4.2): one tower up to 320 ft over a 85-ft podium may rise anywhere in this zone, so its location is flexible."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3823256,
+        37.715676
+       ],
+       [
+        -122.3820526,
+        37.7155191
+       ],
+       [
+        -122.3824162,
+        37.7151147
+       ],
+       [
+        -122.3826853,
+        37.7152674
+       ],
+       [
+        -122.3823256,
+        37.715676
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-10b",
+    "label": "Tower E2 zone",
+    "stage": "entitled",
+    "height_ft": 170,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: zone traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; tower E2: 170 ft overall, 65-ft podium in Candlestick Point Design for Development, 2024 Amendment edition (OCII; CCII Resolution 28-2024), Table 4.2, p. 84; in Candlestick North block 10b",
+    "note": "Allowable tower zone (D4D Table 4.2): one tower up to 170 ft over a 65-ft podium may rise anywhere in this zone, so its location is flexible."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3842516,
+        37.7159039
+       ],
+       [
+        -122.3838265,
+        37.7156624
+       ],
+       [
+        -122.3842036,
+        37.7152446
+       ],
+       [
+        -122.3846238,
+        37.7154897
+       ],
+       [
+        -122.3842516,
+        37.7159039
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CN-11a",
+    "label": "Tower F2",
+    "stage": "entitled",
+    "height_ft": 320,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: symbol traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; tower F2: 320 ft overall, 85-ft podium in Candlestick Point Design for Development, 2024 Amendment edition (OCII; CCII Resolution 28-2024), Table 4.2, p. 84; in Candlestick North block 11a",
+    "note": "Fixed tower location (D4D Table 4.2): up to 320 ft over a 85-ft podium. The footprint is Figure 5's tower symbol, not a building design."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3838145,
+        37.7140135
+       ],
+       [
+        -122.3836252,
+        37.7142311
+       ],
+       [
+        -122.3833512,
+        37.7140807
+       ],
+       [
+        -122.3835406,
+        37.713863
+       ],
+       [
+        -122.3838145,
+        37.7140135
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-1",
+    "label": "Tower G",
+    "stage": "entitled",
+    "height_ft": 240,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: symbol traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; tower G: 240 ft overall, 65-ft podium in Candlestick Point Design for Development, 2024 Amendment edition (OCII; CCII Resolution 28-2024), Table 4.2, p. 84; in Candlestick South block 1",
+    "note": "Fixed tower location (D4D Table 4.2): up to 240 ft over a 65-ft podium. The footprint is Figure 5's tower symbol, not a building design."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3814502,
+        37.7145077
+       ],
+       [
+        -122.3812609,
+        37.7147253
+       ],
+       [
+        -122.3809869,
+        37.7145749
+       ],
+       [
+        -122.3811763,
+        37.7143573
+       ],
+       [
+        -122.3814502,
+        37.7145077
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-4a",
+    "label": "Tower H",
+    "stage": "entitled",
+    "height_ft": 320,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: symbol traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; tower H: 320 ft overall, 65-ft podium in Candlestick Point Design for Development, 2024 Amendment edition (OCII; CCII Resolution 28-2024), Table 4.2, p. 84; in Candlestick South block 4a",
+    "note": "Fixed tower location (D4D Table 4.2): up to 320 ft over a 65-ft podium. The footprint is Figure 5's tower symbol, not a building design."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3828872,
+        37.7134364
+       ],
+       [
+        -122.3826979,
+        37.7136541
+       ],
+       [
+        -122.3824239,
+        37.7135036
+       ],
+       [
+        -122.3826133,
+        37.713286
+       ],
+       [
+        -122.3828872,
+        37.7134364
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-8b",
+    "label": "Tower I",
+    "stage": "entitled",
+    "height_ft": 420,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: symbol traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; tower I: 420 ft overall, 65-ft podium in Candlestick Point Design for Development, 2024 Amendment edition (OCII; CCII Resolution 28-2024), Table 4.2, p. 84; in Candlestick South block 8b",
+    "note": "Fixed tower location (D4D Table 4.2): up to 420 ft over a 65-ft podium. The footprint is Figure 5's tower symbol, not a building design."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3834813,
+        37.712088
+       ],
+       [
+        -122.383242,
+        37.712272
+       ],
+       [
+        -122.3830103,
+        37.7120819
+       ],
+       [
+        -122.3832497,
+        37.7118979
+       ],
+       [
+        -122.3834813,
+        37.712088
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-9b",
+    "label": "Tower J",
+    "stage": "entitled",
+    "height_ft": 370,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: symbol traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; tower J: 370 ft overall, 65-ft podium in Candlestick Point Design for Development, 2024 Amendment edition (OCII; CCII Resolution 28-2024), Table 4.2, p. 84; in Candlestick South block 9b",
+    "note": "Fixed tower location (D4D Table 4.2): up to 370 ft over a 65-ft podium. The footprint is Figure 5's tower symbol, not a building design."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3845921,
+        37.7112626
+       ],
+       [
+        -122.3843528,
+        37.7114466
+       ],
+       [
+        -122.3841211,
+        37.7112565
+       ],
+       [
+        -122.3843605,
+        37.7110725
+       ],
+       [
+        -122.3845921,
+        37.7112626
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "CS-7a",
+    "label": "Tower K zone",
+    "stage": "entitled",
+    "height_ft": 320,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: zone traced from Addendum 7 to the CP-HPS2 2010 FEIR (OCII, Aug 2024), Figure 5, Proposed 2024 CP Maximum Building Heights, p. 17; tower K: 320 ft overall, 65-ft podium in Candlestick Point Design for Development, 2024 Amendment edition (OCII; CCII Resolution 28-2024), Table 4.2, p. 84; in Candlestick South block 7a",
+    "note": "Allowable tower zone (D4D Table 4.2): one tower up to 320 ft over a 65-ft podium may rise anywhere in this zone, so its location is flexible."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3818492,
+        37.71222
+       ],
+       [
+        -122.3817401,
+        37.7121256
+       ],
+       [
+        -122.3816552,
+        37.7119612
+       ],
+       [
+        -122.3821091,
+        37.7116397
+       ],
+       [
+        -122.3823473,
+        37.7118494
+       ],
+       [
+        -122.3818492,
+        37.71222
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": null,
+    "label": "Alice Griffith, 2500 Arelious Walker Dr.",
+    "stage": "complete",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential (Alice Griffith replacement housing)",
+    "phase": "Alice Griffith",
+    "illustrative": false,
+    "source": "footprint: OpenStreetMap w679294800@1 via Overture 2026-09-23.1, matched to the nearest permit address point (2 m away); stories: DBI permit 201501236565 (https://data.sf.gov/resource/i98e-djp9.json?permit_number=201501236565): 5 stories, 122 homes, complete 2026-09-21",
+    "stories": 5,
+    "note": "Built: 5 stories (DBI). No height is drawn: its mapped height (10.2 m, a Microsoft ML Buildings estimate) doesn't fit the permitted stories."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3850992,
+       37.719729
+      ],
+      [
+       -122.3851674,
+       37.7197681
+      ],
+      [
+       -122.3853268,
+       37.7195946
+      ],
+      [
+       -122.3848539,
+       37.7193228
+      ],
+      [
+       -122.3848292,
+       37.7193497
+      ],
+      [
+       -122.3846241,
+       37.7192318
+      ],
+      [
+       -122.3842929,
+       37.7195924
+      ],
+      [
+       -122.3843366,
+       37.7196175
+      ],
+      [
+       -122.3843014,
+       37.7196558
+      ],
+      [
+       -122.3849165,
+       37.7200094
+      ],
+      [
+       -122.3850082,
+       37.7199096
+      ],
+      [
+       -122.3847847,
+       37.7197812
+      ],
+      [
+       -122.3848558,
+       37.7197038
+      ],
+      [
+       -122.384753,
+       37.7196447
+      ],
+      [
+       -122.3847217,
+       37.7196788
+      ],
+      [
+       -122.3845518,
+       37.7195812
+      ],
+      [
+       -122.3846903,
+       37.7194304
+      ],
+      [
+       -122.3851374,
+       37.7196874
+      ],
+      [
+       -122.3850992,
+       37.719729
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": null,
+    "label": "Alice Griffith, 2500 Arelious Walker Dr.",
+    "stage": "complete",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential (Alice Griffith replacement housing)",
+    "phase": "Alice Griffith",
+    "illustrative": false,
+    "source": "footprint: OpenStreetMap w679294786@1 via Overture 2026-09-23.1, matched to the nearest permit address point (75 m away); stories: DBI permit 201501236565 (https://data.sf.gov/resource/i98e-djp9.json?permit_number=201501236565): 5 stories, 122 homes, complete 2026-09-21",
+    "stories": 5,
+    "note": "Built: 5 stories (DBI). No height is drawn: its mapped height (5.2 m, a Microsoft ML Buildings estimate) doesn't fit the permitted stories. Matched to this permit by distance: it may be a separate wing of the same development."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3850904,
+       37.7201086
+      ],
+      [
+       -122.3854624,
+       37.719687
+      ],
+      [
+       -122.3853446,
+       37.719622
+      ],
+      [
+       -122.3849727,
+       37.7200436
+      ],
+      [
+       -122.3850904,
+       37.7201086
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": null,
+    "label": "Alice Griffith, 2600 Arelious Walker Dr.",
+    "stage": "complete",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential (Alice Griffith replacement housing)",
+    "phase": "Alice Griffith",
+    "illustrative": false,
+    "source": "footprint: OpenStreetMap w679294801@1 via Overture 2026-09-23.1, matched to the nearest permit address point (0 m away); stories: DBI permit 201401166470 (https://data.sf.gov/resource/i98e-djp9.json?permit_number=201401166470): 5 stories, 93 homes, complete 2017-10-27",
+    "stories": 5,
+    "note": "Built: 5 stories (DBI). No height is drawn: its mapped height (10.2 m, a Microsoft ML Buildings estimate) doesn't fit the permitted stories."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3847895,
+       37.719043
+      ],
+      [
+       -122.3853517,
+       37.7193519
+      ],
+      [
+       -122.3854173,
+       37.7192772
+      ],
+      [
+       -122.3851971,
+       37.7191562
+      ],
+      [
+       -122.3852538,
+       37.7190917
+      ],
+      [
+       -122.3850274,
+       37.7189673
+      ],
+      [
+       -122.3851018,
+       37.7188826
+      ],
+      [
+       -122.385578,
+       37.7191442
+      ],
+      [
+       -122.3856919,
+       37.7190146
+      ],
+      [
+       -122.3851,
+       37.7186894
+      ],
+      [
+       -122.3847895,
+       37.719043
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": null,
+    "label": "Alice Griffith, 2600 Arelious Walker Dr.",
+    "stage": "complete",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential (Alice Griffith replacement housing)",
+    "phase": "Alice Griffith",
+    "illustrative": false,
+    "source": "footprint: OpenStreetMap w679294790@1 via Overture 2026-09-23.1, matched to the nearest permit address point (72 m away); stories: DBI permit 201401166470 (https://data.sf.gov/resource/i98e-djp9.json?permit_number=201401166470): 5 stories, 93 homes, complete 2017-10-27",
+    "stories": 5,
+    "note": "Built: 5 stories (DBI). No height is drawn: its mapped height (8.2 m, a Microsoft ML Buildings estimate) doesn't fit the permitted stories. Matched to this permit by distance: it may be a separate wing of the same development."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3855866,
+       37.7194819
+      ],
+      [
+       -122.3858857,
+       37.719144
+      ],
+      [
+       -122.3857721,
+       37.7190811
+      ],
+      [
+       -122.385473,
+       37.719419
+      ],
+      [
+       -122.3855866,
+       37.7194819
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": null,
+    "label": "Alice Griffith, 2700 Arelious Walker Dr.",
+    "stage": "complete",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential (Alice Griffith replacement housing)",
+    "phase": "Alice Griffith",
+    "illustrative": false,
+    "source": "footprint: OpenStreetMap w679294810@2 via Overture 2026-09-23.1, matched to the nearest permit address point (0 m away); stories: DBI permit 201401166475 (https://data.sf.gov/resource/i98e-djp9.json?permit_number=201401166475): 5 stories, 91 homes, complete 2017-10-27",
+    "stories": 5,
+    "note": "Built: 5 stories (DBI). No height is drawn: the footprint has no mapped height."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3862681,
+       37.7183529
+      ],
+      [
+       -122.3863439,
+       37.7182701
+      ],
+      [
+       -122.3863088,
+       37.71825
+      ],
+      [
+       -122.3863155,
+       37.7182426
+      ],
+      [
+       -122.3862831,
+       37.718224
+      ],
+      [
+       -122.3862764,
+       37.7182313
+      ],
+      [
+       -122.3862043,
+       37.7181901
+      ],
+      [
+       -122.3862107,
+       37.7181831
+      ],
+      [
+       -122.3861733,
+       37.7181616
+      ],
+      [
+       -122.3861711,
+       37.7181641
+      ],
+      [
+       -122.3861376,
+       37.7181449
+      ],
+      [
+       -122.3861297,
+       37.7181536
+      ],
+      [
+       -122.3861022,
+       37.7181379
+      ],
+      [
+       -122.3861069,
+       37.7181327
+      ],
+      [
+       -122.3860876,
+       37.7181216
+      ],
+      [
+       -122.3860926,
+       37.7181162
+      ],
+      [
+       -122.38608,
+       37.718109
+      ],
+      [
+       -122.3860745,
+       37.7181151
+      ],
+      [
+       -122.3860678,
+       37.7181112
+      ],
+      [
+       -122.3860731,
+       37.7181054
+      ],
+      [
+       -122.3860669,
+       37.7181019
+      ],
+      [
+       -122.3860766,
+       37.7180912
+      ],
+      [
+       -122.3860458,
+       37.7180736
+      ],
+      [
+       -122.386036,
+       37.7180842
+      ],
+      [
+       -122.3859397,
+       37.7180291
+      ],
+      [
+       -122.3859346,
+       37.7180346
+      ],
+      [
+       -122.3859194,
+       37.7180259
+      ],
+      [
+       -122.3859225,
+       37.7180225
+      ],
+      [
+       -122.3858923,
+       37.7180053
+      ],
+      [
+       -122.3858836,
+       37.7180148
+      ],
+      [
+       -122.3858557,
+       37.7179988
+      ],
+      [
+       -122.385863,
+       37.7179908
+      ],
+      [
+       -122.3857736,
+       37.7179396
+      ],
+      [
+       -122.3856952,
+       37.7180253
+      ],
+      [
+       -122.3857043,
+       37.7180305
+      ],
+      [
+       -122.3856547,
+       37.7180848
+      ],
+      [
+       -122.3856636,
+       37.7180898
+      ],
+      [
+       -122.3856409,
+       37.7181146
+      ],
+      [
+       -122.3856336,
+       37.7181104
+      ],
+      [
+       -122.3855802,
+       37.7181687
+      ],
+      [
+       -122.385595,
+       37.7181772
+      ],
+      [
+       -122.3855738,
+       37.7182004
+      ],
+      [
+       -122.3855666,
+       37.7181963
+      ],
+      [
+       -122.3855135,
+       37.7182543
+      ],
+      [
+       -122.3855077,
+       37.718251
+      ],
+      [
+       -122.3854535,
+       37.7183103
+      ],
+      [
+       -122.3855286,
+       37.7183533
+      ],
+      [
+       -122.3855368,
+       37.7183443
+      ],
+      [
+       -122.3855519,
+       37.718353
+      ],
+      [
+       -122.3855481,
+       37.7183571
+      ],
+      [
+       -122.3855542,
+       37.7183606
+      ],
+      [
+       -122.3855475,
+       37.7183679
+      ],
+      [
+       -122.3855681,
+       37.7183797
+      ],
+      [
+       -122.3855751,
+       37.7183721
+      ],
+      [
+       -122.3856129,
+       37.7183938
+      ],
+      [
+       -122.3856082,
+       37.7183989
+      ],
+      [
+       -122.3856189,
+       37.718405
+      ],
+      [
+       -122.3856125,
+       37.718412
+      ],
+      [
+       -122.3856337,
+       37.7184241
+      ],
+      [
+       -122.3856401,
+       37.7184172
+      ],
+      [
+       -122.3856466,
+       37.7184209
+      ],
+      [
+       -122.3856405,
+       37.7184275
+      ],
+      [
+       -122.3856618,
+       37.7184397
+      ],
+      [
+       -122.3856679,
+       37.718433
+      ],
+      [
+       -122.385679,
+       37.7184394
+      ],
+      [
+       -122.3856843,
+       37.7184337
+      ],
+      [
+       -122.3857151,
+       37.7184512
+      ],
+      [
+       -122.3857103,
+       37.7184565
+      ],
+      [
+       -122.3857209,
+       37.7184626
+      ],
+      [
+       -122.3857145,
+       37.7184695
+      ],
+      [
+       -122.3857357,
+       37.7184817
+      ],
+      [
+       -122.3857421,
+       37.7184747
+      ],
+      [
+       -122.3857486,
+       37.7184784
+      ],
+      [
+       -122.3857426,
+       37.7184851
+      ],
+      [
+       -122.3857638,
+       37.7184972
+      ],
+      [
+       -122.3857699,
+       37.7184906
+      ],
+      [
+       -122.3857811,
+       37.718497
+      ],
+      [
+       -122.3857859,
+       37.7184917
+      ],
+      [
+       -122.3858159,
+       37.7185089
+      ],
+      [
+       -122.3858114,
+       37.7185139
+      ],
+      [
+       -122.385822,
+       37.71852
+      ],
+      [
+       -122.3858156,
+       37.718527
+      ],
+      [
+       -122.3858368,
+       37.7185391
+      ],
+      [
+       -122.3858432,
+       37.7185321
+      ],
+      [
+       -122.3858497,
+       37.7185359
+      ],
+      [
+       -122.3858436,
+       37.7185425
+      ],
+      [
+       -122.3858649,
+       37.7185547
+      ],
+      [
+       -122.385871,
+       37.718548
+      ],
+      [
+       -122.3858821,
+       37.7185544
+      ],
+      [
+       -122.3858867,
+       37.7185494
+      ],
+      [
+       -122.385927,
+       37.7185724
+      ],
+      [
+       -122.3859207,
+       37.7185793
+      ],
+      [
+       -122.3859436,
+       37.7185924
+      ],
+      [
+       -122.3859499,
+       37.7185855
+      ],
+      [
+       -122.38598,
+       37.718599
+      ],
+      [
+       -122.3859743,
+       37.7186052
+      ],
+      [
+       -122.3860191,
+       37.7186308
+      ],
+      [
+       -122.3860127,
+       37.7186378
+      ],
+      [
+       -122.3860516,
+       37.7186601
+      ],
+      [
+       -122.3860738,
+       37.7186358
+      ],
+      [
+       -122.3860649,
+       37.7186307
+      ],
+      [
+       -122.3861053,
+       37.7185865
+      ],
+      [
+       -122.386097,
+       37.7185818
+      ],
+      [
+       -122.3861211,
+       37.7185554
+      ],
+      [
+       -122.3861107,
+       37.7185494
+      ],
+      [
+       -122.3861447,
+       37.7185084
+      ],
+      [
+       -122.3860452,
+       37.7184515
+      ],
+      [
+       -122.3860494,
+       37.7184469
+      ],
+      [
+       -122.3859389,
+       37.7183837
+      ],
+      [
+       -122.3859346,
+       37.7183884
+      ],
+      [
+       -122.3857388,
+       37.7182709
+      ],
+      [
+       -122.3857366,
+       37.7182733
+      ],
+      [
+       -122.3856991,
+       37.7182541
+      ],
+      [
+       -122.3857018,
+       37.7182512
+      ],
+      [
+       -122.3856809,
+       37.7182392
+      ],
+      [
+       -122.3857284,
+       37.7181873
+      ],
+      [
+       -122.3857222,
+       37.7181838
+      ],
+      [
+       -122.3857694,
+       37.7181321
+      ],
+      [
+       -122.3859625,
+       37.7182458
+      ],
+      [
+       -122.3860098,
+       37.7181941
+      ],
+      [
+       -122.3860615,
+       37.7182237
+      ],
+      [
+       -122.3860537,
+       37.7182321
+      ],
+      [
+       -122.3862681,
+       37.7183529
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": null,
+    "label": "Alice Griffith, 2700 Arelious Walker Dr.",
+    "stage": "complete",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential (Alice Griffith replacement housing)",
+    "phase": "Alice Griffith",
+    "illustrative": false,
+    "source": "footprint: OpenStreetMap w679294785@2 via Overture 2026-09-23.1, matched to the nearest permit address point (73 m away); stories: DBI permit 201401166475 (https://data.sf.gov/resource/i98e-djp9.json?permit_number=201401166475): 5 stories, 91 homes, complete 2017-10-27",
+    "stories": 5,
+    "note": "Built: 5 stories (DBI). No height is drawn: its mapped height (6.8 m, a Microsoft ML Buildings estimate) doesn't fit the permitted stories. Matched to this permit by distance: it may be a separate wing of the same development."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3862395,
+       37.7187498
+      ],
+      [
+       -122.3862852,
+       37.7186999
+      ],
+      [
+       -122.3862895,
+       37.7187024
+      ],
+      [
+       -122.3863511,
+       37.7186281
+      ],
+      [
+       -122.3863564,
+       37.7186311
+      ],
+      [
+       -122.3863849,
+       37.7186
+      ],
+      [
+       -122.3863797,
+       37.718597
+      ],
+      [
+       -122.3863832,
+       37.7185932
+      ],
+      [
+       -122.3863877,
+       37.7185958
+      ],
+      [
+       -122.3864169,
+       37.7185639
+      ],
+      [
+       -122.3864124,
+       37.7185614
+      ],
+      [
+       -122.38642,
+       37.7185531
+      ],
+      [
+       -122.3864245,
+       37.7185557
+      ],
+      [
+       -122.3864529,
+       37.7185247
+      ],
+      [
+       -122.3864485,
+       37.7185221
+      ],
+      [
+       -122.3864522,
+       37.718518
+      ],
+      [
+       -122.3864561,
+       37.7185202
+      ],
+      [
+       -122.3865255,
+       37.7184382
+      ],
+      [
+       -122.3865331,
+       37.7184425
+      ],
+      [
+       -122.3865672,
+       37.7184052
+      ],
+      [
+       -122.3865197,
+       37.718378
+      ],
+      [
+       -122.3865151,
+       37.718383
+      ],
+      [
+       -122.386453,
+       37.7183474
+      ],
+      [
+       -122.3864156,
+       37.7183883
+      ],
+      [
+       -122.3864127,
+       37.7183866
+      ],
+      [
+       -122.3863722,
+       37.7184355
+      ],
+      [
+       -122.3863672,
+       37.7184326
+      ],
+      [
+       -122.3863206,
+       37.7184836
+      ],
+      [
+       -122.3863255,
+       37.7184864
+      ],
+      [
+       -122.3863018,
+       37.7185123
+      ],
+      [
+       -122.3862965,
+       37.7185093
+      ],
+      [
+       -122.3862521,
+       37.7185578
+      ],
+      [
+       -122.3862572,
+       37.7185606
+      ],
+      [
+       -122.3861411,
+       37.7186874
+      ],
+      [
+       -122.3861798,
+       37.7187095
+      ],
+      [
+       -122.3861761,
+       37.7187136
+      ],
+      [
+       -122.3862395,
+       37.7187498
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": null,
+    "label": "Alice Griffith, 2800 Arelious Walker Dr.",
+    "stage": "complete",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential (Alice Griffith replacement housing)",
+    "phase": "Alice Griffith",
+    "illustrative": false,
+    "source": "footprint: OpenStreetMap w1202938450@1 via Overture 2026-09-23.1, matched to the nearest permit address point (4 m away); stories: DBI permit 201608296272 (https://data.sf.gov/resource/i98e-djp9.json?permit_number=201608296272): 3 stories, 31 homes, complete 2019-05-02",
+    "stories": 3,
+    "note": "Built: 3 stories (DBI). No height is drawn: its mapped height (5.3 m, a Microsoft ML Buildings estimate) doesn't fit the permitted stories."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3859963,
+       37.717703
+      ],
+      [
+       -122.3859729,
+       37.7177287
+      ],
+      [
+       -122.3859678,
+       37.7177257
+      ],
+      [
+       -122.3859544,
+       37.7177404
+      ],
+      [
+       -122.3859595,
+       37.7177433
+      ],
+      [
+       -122.3859175,
+       37.7177838
+      ],
+      [
+       -122.3859698,
+       37.7178137
+      ],
+      [
+       -122.3859807,
+       37.7178018
+      ],
+      [
+       -122.3859868,
+       37.7178053
+      ],
+      [
+       -122.3859826,
+       37.7178099
+      ],
+      [
+       -122.38603,
+       37.7178371
+      ],
+      [
+       -122.3860341,
+       37.7178326
+      ],
+      [
+       -122.3860505,
+       37.717842
+      ],
+      [
+       -122.3860469,
+       37.717846
+      ],
+      [
+       -122.3860786,
+       37.7178642
+      ],
+      [
+       -122.386071,
+       37.7178725
+      ],
+      [
+       -122.386096,
+       37.7178868
+      ],
+      [
+       -122.3861037,
+       37.7178785
+      ],
+      [
+       -122.3861108,
+       37.7178826
+      ],
+      [
+       -122.3861171,
+       37.7178757
+      ],
+      [
+       -122.3861538,
+       37.7178967
+      ],
+      [
+       -122.3861476,
+       37.7179035
+      ],
+      [
+       -122.3861546,
+       37.7179074
+      ],
+      [
+       -122.3861478,
+       37.7179148
+      ],
+      [
+       -122.3861939,
+       37.7179412
+      ],
+      [
+       -122.3862007,
+       37.7179338
+      ],
+      [
+       -122.3862067,
+       37.7179372
+      ],
+      [
+       -122.3862128,
+       37.7179305
+      ],
+      [
+       -122.3862284,
+       37.7179394
+      ],
+      [
+       -122.3862143,
+       37.7179549
+      ],
+      [
+       -122.3862409,
+       37.7179701
+      ],
+      [
+       -122.3862489,
+       37.7179613
+      ],
+      [
+       -122.3862973,
+       37.717989
+      ],
+      [
+       -122.38629,
+       37.717997
+      ],
+      [
+       -122.3863353,
+       37.7180229
+      ],
+      [
+       -122.3863426,
+       37.7180149
+      ],
+      [
+       -122.3863501,
+       37.7180192
+      ],
+      [
+       -122.3863562,
+       37.7180125
+      ],
+      [
+       -122.3863725,
+       37.7180219
+      ],
+      [
+       -122.3863587,
+       37.718037
+      ],
+      [
+       -122.386382,
+       37.7180504
+      ],
+      [
+       -122.3863903,
+       37.7180413
+      ],
+      [
+       -122.3863981,
+       37.7180458
+      ],
+      [
+       -122.3864037,
+       37.7180397
+      ],
+      [
+       -122.3864206,
+       37.7180494
+      ],
+      [
+       -122.3864067,
+       37.7180647
+      ],
+      [
+       -122.386432,
+       37.7180791
+      ],
+      [
+       -122.3864402,
+       37.7180702
+      ],
+      [
+       -122.3864888,
+       37.718098
+      ],
+      [
+       -122.3864811,
+       37.7181065
+      ],
+      [
+       -122.3865252,
+       37.7181317
+      ],
+      [
+       -122.386533,
+       37.7181232
+      ],
+      [
+       -122.3865412,
+       37.7181279
+      ],
+      [
+       -122.3865469,
+       37.7181217
+      ],
+      [
+       -122.3865845,
+       37.7181432
+      ],
+      [
+       -122.3865792,
+       37.7181491
+      ],
+      [
+       -122.3865864,
+       37.7181532
+      ],
+      [
+       -122.3865784,
+       37.718162
+      ],
+      [
+       -122.3866025,
+       37.7181758
+      ],
+      [
+       -122.3866105,
+       37.718167
+      ],
+      [
+       -122.3866426,
+       37.7181853
+      ],
+      [
+       -122.386648,
+       37.7181795
+      ],
+      [
+       -122.3866647,
+       37.718189
+      ],
+      [
+       -122.3866593,
+       37.7181949
+      ],
+      [
+       -122.3867069,
+       37.7182221
+      ],
+      [
+       -122.3867122,
+       37.7182163
+      ],
+      [
+       -122.3867177,
+       37.7182194
+      ],
+      [
+       -122.3867066,
+       37.7182315
+      ],
+      [
+       -122.3867592,
+       37.7182616
+      ],
+      [
+       -122.3867862,
+       37.7182321
+      ],
+      [
+       -122.3867795,
+       37.7182283
+      ],
+      [
+       -122.3867922,
+       37.7182144
+      ],
+      [
+       -122.3867881,
+       37.718212
+      ],
+      [
+       -122.3867986,
+       37.7182004
+      ],
+      [
+       -122.3868029,
+       37.7182029
+      ],
+      [
+       -122.3868283,
+       37.7181751
+      ],
+      [
+       -122.3867668,
+       37.7181399
+      ],
+      [
+       -122.3867889,
+       37.7181157
+      ],
+      [
+       -122.3867442,
+       37.7180902
+      ],
+      [
+       -122.3867221,
+       37.7181145
+      ],
+      [
+       -122.3867142,
+       37.71811
+      ],
+      [
+       -122.3867047,
+       37.7181204
+      ],
+      [
+       -122.3866686,
+       37.7180997
+      ],
+      [
+       -122.3866772,
+       37.7180904
+      ],
+      [
+       -122.3866379,
+       37.7180679
+      ],
+      [
+       -122.3866344,
+       37.7180718
+      ],
+      [
+       -122.3865808,
+       37.7180356
+      ],
+      [
+       -122.3866065,
+       37.7180075
+      ],
+      [
+       -122.3865665,
+       37.7179846
+      ],
+      [
+       -122.3865582,
+       37.7179938
+      ],
+      [
+       -122.3865409,
+       37.7179839
+      ],
+      [
+       -122.3865488,
+       37.7179752
+      ],
+      [
+       -122.3865111,
+       37.7179536
+      ],
+      [
+       -122.3864827,
+       37.7179847
+      ],
+      [
+       -122.3864716,
+       37.7179783
+      ],
+      [
+       -122.3864771,
+       37.7179723
+      ],
+      [
+       -122.3864377,
+       37.7179497
+      ],
+      [
+       -122.3864323,
+       37.7179556
+      ],
+      [
+       -122.3864243,
+       37.717951
+      ],
+      [
+       -122.3864284,
+       37.7179465
+      ],
+      [
+       -122.3863935,
+       37.7179266
+      ],
+      [
+       -122.3864172,
+       37.7179006
+      ],
+      [
+       -122.3863745,
+       37.7178762
+      ],
+      [
+       -122.3863665,
+       37.7178849
+      ],
+      [
+       -122.38635,
+       37.7178754
+      ],
+      [
+       -122.3863556,
+       37.7178692
+      ],
+      [
+       -122.3863227,
+       37.7178504
+      ],
+      [
+       -122.3862974,
+       37.7178781
+      ],
+      [
+       -122.3862785,
+       37.7178673
+      ],
+      [
+       -122.3862823,
+       37.717863
+      ],
+      [
+       -122.3862109,
+       37.7178221
+      ],
+      [
+       -122.3862059,
+       37.7178276
+      ],
+      [
+       -122.3861835,
+       37.7178148
+      ],
+      [
+       -122.3861879,
+       37.71781
+      ],
+      [
+       -122.3861512,
+       37.717789
+      ],
+      [
+       -122.3861402,
+       37.7178011
+      ],
+      [
+       -122.3861035,
+       37.7177801
+      ],
+      [
+       -122.386113,
+       37.7177698
+      ],
+      [
+       -122.3859963,
+       37.717703
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
