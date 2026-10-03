@@ -149,10 +149,9 @@ export function App() {
     const opener = f.opener;
     f.returnCamera = null;
     f.opener = null;
-    requestAnimationFrame(() => {
-      const target = opener?.isConnected ? opener : map.getCanvas();
-      target.focus({ preventScroll: true });
-    });
+    // Focus now, not on the next frame: frames can be slow mid-flight, and the opener sits
+    // outside the panel that is about to unmount.
+    (opener?.isConnected ? opener : map.getCanvas()).focus({ preventScroll: true });
     if (back) await flyOut(map, back);
     if (flight.current.token !== token) return;
     setSelection(null);

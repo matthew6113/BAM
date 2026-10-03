@@ -56,9 +56,9 @@ are in `docs/official-research/`:
 - `brisbane-willow-parkline-north-bayshore.md`, `related-downtown-west-moffett-the-rise.md`,
   `concord-coliseum-alameda-brooklyn-suisun.md`.
 
-Only Potrero has been applied to `data/projects.json`. Every other record has conflicts
-(superseded programs, wrong dates, press-only stages) and press-only facts that belong in
-`reported`.
+All 25 records have been applied to `data/projects.json` (2026-10-03, Milestone 3), and every
+project is mapped, so the official-sources test covers them all. Open items per project are in
+each record's `verify` list.
 
 Decisions (Matthew, 2026-10-03):
 - **Applying findings:** apply each project's findings file when it is mapped (Milestone 3),
@@ -118,9 +118,7 @@ Summary of `docs/official-research/`:
   sfbos, CEQAnet); each findings file lists the exact documents to fetch.
 
 ### Next
-1. When a project is mapped (Milestone 3), apply its findings file: official values in,
-   conflicts settled by the newest official document, press-only facts and their sources
-   into `reported`, official URLs into `sources`. The test enforces it from then on.
+1. Done (Milestone 3): findings applied and all projects mapped.
 2. With broader network access: the Potrero D4D, DA and Addendum 2; Stonestown; and the
    2024–2026 records above.
 3. The 13 projects outside San Francisco have no reachable official host at all.

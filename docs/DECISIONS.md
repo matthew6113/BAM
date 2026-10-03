@@ -122,3 +122,11 @@ not on the map.
 **Records applied when mapped.** As each project went on the map its record was rewritten from
 its findings file (official values only; press facts in `reported`), and the official-sources
 test now covers it.
+
+**Traced boundaries (four projects without a usable layer).** Willow Village is plotted from its
+development agreement's legal description (13 courses, closes to 0.006 ft, 59.17 acres) and placed
+on Menlo Park's parcel lines; the Hamilton Avenue parcels in a separate exhibit aren't included.
+Concord is the Navy's EDC property map, read from its vector fills and fitted to OpenStreetMap
+roads (scale within 0.1% of the map's bar). Alameda Point is the 2022 Site A plan's parcel diagram
+on 8 street intersections. The Suisun annexation area is traced from a small raster figure and
+labelled approximate (about 30 m). See `pipeline/bam_pipeline/sites/traced_boundaries.py`.

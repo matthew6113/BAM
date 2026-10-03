@@ -51,6 +51,7 @@ manifest:
 sites:
 	$(PY) bam_pipeline.sites.potrero_power_station
 	$(PY) bam_pipeline.sites.official_boundaries
+	$(PY) bam_pipeline.sites.traced_boundaries
 
 dev:
 	npx vite --host 127.0.0.1
