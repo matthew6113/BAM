@@ -1,0 +1,183 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "piers-30-32",
+  "illustrative": true,
+  "summary": "Illustrative massing: Seawall Lot 330 is drawn to its zoning height limits (a 65-ft podium with towers allowed to 105 ft), not as the building proposed there. Piers 30–32 are outlined only: the 40-ft limit applies, but the pier is to be rebuilt smaller and no official plan places a building on it. The SB 423 proposal for the lot (23 and 10 stories) isn't drawn.",
+  "note": "The seawall lot shows the zoning limits, not the proposed towers; the pier is outlined only.",
+  "sourceUrl": "https://data.sf.gov/d/h9wh-cg3m",
+  "sourceLabel": "Height and bulk districts (DataSF)",
+  "georeference": {
+   "zoning": "GIS layers, used as published (no tracing)"
+  },
+  "license": "Zoning: DataSF (Public Domain U.S. Government). Parcels: DataSF (ODC Public Domain Dedication and License)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3890859,
+        37.7859447
+       ],
+       [
+        -122.3886979,
+        37.7862503
+       ],
+       [
+        -122.3890465,
+        37.7865289
+       ],
+       [
+        -122.3885016,
+        37.7869579
+       ],
+       [
+        -122.3884707,
+        37.7869771
+       ],
+       [
+        -122.3884295,
+        37.7869919
+       ],
+       [
+        -122.388385,
+        37.7869976
+       ],
+       [
+        -122.3881291,
+        37.7869866
+       ],
+       [
+        -122.3882678,
+        37.7852923
+       ],
+       [
+        -122.3890859,
+        37.7859447
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "block",
+    "block": "SWL 330",
+    "label": "Seawall Lot 330",
+    "stage": "proposed",
+    "height_ft": 105,
+    "podium_ft": 65,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to zoning district \"65/105-R\" in DataSF Zoning Map – Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m), clipped to parcels 3770/002 and 3771/002 in DataSF Parcels (https://data.sf.gov/d/acdm-wktn); 65 ft podium and 105 ft tower limits per Planning Code Sec. 263.19",
+    "note": "Zoning envelope, not the proposal: a 65-ft podium limit with towers allowed to 105 ft. The SB 423 application under review proposes 23 stories (230 ft) and 10 stories (105 ft), which isn't drawn because no official plan locates them (https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2025-011323PRJ).",
+    "fid": 1
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.387758,
+        37.785346
+       ],
+       [
+        -122.387707,
+        37.785808
+       ],
+       [
+        -122.3876083,
+        37.7858123
+       ],
+       [
+        -122.3875112,
+        37.7872394
+       ],
+       [
+        -122.3870202,
+        37.7872473
+       ],
+       [
+        -122.3845615,
+        37.7874008
+       ],
+       [
+        -122.3845332,
+        37.7873966
+       ],
+       [
+        -122.3845114,
+        37.787383
+       ],
+       [
+        -122.3844986,
+        37.7873573
+       ],
+       [
+        -122.3843414,
+        37.7857484
+       ],
+       [
+        -122.3843462,
+        37.7857258
+       ],
+       [
+        -122.3843639,
+        37.7857076
+       ],
+       [
+        -122.3843953,
+        37.7856977
+       ],
+       [
+        -122.3873118,
+        37.7855204
+       ],
+       [
+        -122.3874409,
+        37.7854981
+       ],
+       [
+        -122.387555,
+        37.7854618
+       ],
+       [
+        -122.3876679,
+        37.7854074
+       ],
+       [
+        -122.387758,
+        37.785346
+       ]
+      ]
+     ]
+    ]
+   },
+   "properties": {
+    "kind": "block",
+    "block": "Piers 30–32",
+    "label": "Piers 30–32",
+    "stage": "paused",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": false,
+    "source": "outline: parcels 9900/030 and 9900/032 in DataSF Parcels (https://data.sf.gov/d/acdm-wktn); zoning district \"40-X\" in DataSF Zoning Map – Height and Bulk Districts (https://data.sf.gov/d/h9wh-cg3m); 40-ft limit confirmed by Port Commission Item 11B, Piers 30-32 feasibility improvement ideas (March 6, 2026) (https://www.sfport.com/sites/default/files/2026-03/item_11b_piers_30-32_feasibility_improvement_ideas_-_info.docx.pdf), p. 4",
+    "note": "Outline only. The 40-ft height limit applies, but the pier is to be rebuilt smaller and no official plan places a building on it, so no volume is drawn.",
+    "fid": 2
+   }
+  }
+ ]
+}

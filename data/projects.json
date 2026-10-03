@@ -1158,7 +1158,7 @@
       ],
       "nextMilestone": "Planning's decision on the Seawall Lot 330 SB 423 application; the end of the 18-month pause on the piers.",
       "summary": "Decaying piers at the foot of Bryant Street and a seawall lot across the Embarcadero. The housing on the seawall lot is moving through Planning; the pier rebuild is on hold.",
-      "massingNotes": "Boundary: DataSF Parcels (acdm-wktn, PDDL): Piers 30–32 are 9900/030 and 9900/032 (about 13.1 acres) and Seawall Lot 330 is 3771/002 and 3770/002 (about 2.33 acres); the 2024 term sheet's Exhibit A shows the plan. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: DataSF Parcels (acdm-wktn, PDDL): Piers 30–32 are 9900/030 and 9900/032 (about 13.1 acres) and Seawall Lot 330 is 3771/002 and 3770/002 (about 2.33 acres); the 2024 term sheet's Exhibit A shows the plan. Massing: Seawall Lot 330 drawn to its zoning envelope, 65/105-R (DataSF Height and Bulk Districts h9wh-cg3m; 65-ft podium, 105-ft towers), illustrative and not the proposal; the 568-home SB 423 application (towers of 23 stories/230 ft and 10 stories/105 ft) can't be placed from official plans yet. Piers 30–32 are an outline only: 40-X zoning, but the deck is to be rebuilt smaller and no plan places a building.",
       "officialLinks": [
         "https://www.sfport.com/projects-programs/piers-30-32-and-seawall-lot-330",
         "https://www.sfport.com/sites/default/files/2026-03/item_11b_piers_30-32_feasibility_improvement_ideas_-_info.docx.pdf"
@@ -1173,7 +1173,8 @@
         "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2025-011323PRJ",
         "https://www.sfport.com/projects-programs/piers-30-32-and-seawall-lot-330",
         "https://sfplanning.s3.amazonaws.com/sfmea/2012.0718E_NOP.pdf",
-        "https://data.sf.gov/d/acdm-wktn"
+        "https://data.sf.gov/d/acdm-wktn",
+        "https://data.sf.gov/d/h9wh-cg3m"
       ],
       "verify": [
         "the exact date of Port Resolution 25-40 in July 2025",
