@@ -72,7 +72,9 @@ export function landingCamera(map: MapLibreMap, project: Project, site: Polygon 
   const [x0, y0, x1, y1] = bboxOf(site);
   const fitted = map.cameraForBounds([x0, y0, x1, y1], { padding: { top: 60, bottom: 60, left: 60, right: 60 } });
   return {
-    center: centroidOf(site),
+    // The middle of the bounds the zoom was fitted to: a site in pieces (a pier and a lot
+    // across the street) stays in frame, where the area-weighted centroid would not.
+    center: [(x0 + x1) / 2, (y0 + y1) / 2],
     zoom: (fitted?.zoom ?? 15) - 0.3,
     pitch: DEFAULT_PITCH,
     bearing: 0,
