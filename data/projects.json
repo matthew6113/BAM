@@ -1394,7 +1394,7 @@
       ],
       "nextMilestone": null,
       "summary": "An apartment complex on the southwest edge of the city, approved in 2011 to grow from about 3,200 to 8,900 homes. Fifteen years later, city records show no new building constructed.",
-      "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"Parkmerced\" (about 161 acres, likely including streets); check against the recorded development agreement's Exhibits A and B. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"Parkmerced\" (about 161 acres, likely including streets); check against the recorded development agreement's Exhibits A and B. Massing: the \"-PM\" zoning height districts (DataSF h9wh-cg3m, Ordinance 91-11) drawn block by block and checked against the Design Standards and Guidelines (rev. 2014), Fig. 03.03.C: 45- and 65-ft fabric with mid-rise and tower envelopes of 85–145 ft over it (only part of each envelope may reach the limit), all illustrative. The 11 existing towers (130-ft districts), open space and streets are not drawn; no new building has started construction (DBI).",
       "officialLinks": [
         "https://sfplanning.org/project/parkmerced",
         "https://default.sfplanning.org/publications_reports/parkmerced/Parkmerced_Development_Agreement_As_Recorded.pdf"
@@ -1410,7 +1410,9 @@
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202212138195",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202212208799",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202212198663",
-        "https://data.sf.gov/d/5yf5-ms5f"
+        "https://data.sf.gov/d/5yf5-ms5f",
+        "https://data.sf.gov/d/h9wh-cg3m",
+        "https://default.sfplanning.org/publications_reports/parkmerced/Parkmerced_Final_Design_Standards_and_Guidelines_Revised-09-16-14.pdf"
       ],
       "verify": [
         "the current owner of the development parcels (the press reports a 2026 takeover)",
