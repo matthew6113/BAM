@@ -6,6 +6,7 @@ import {
   LAND_USE_CATEGORIES,
   landUseOf,
   linePrefix,
+  loadAllGeometry,
   MAPPED_PROJECTS,
   massingOf,
   metres,
@@ -17,6 +18,9 @@ import { isOfficialSource } from '../src/projects/official';
 import { STAGE_KEYS } from '../src/theme/theme';
 import { formatDate, formatSqft, sourceText } from '../src/ui/format';
 import { pathForProject, projectIdFromPath } from '../src/router';
+
+// Massing and land use load on demand in the app; the checks below need all of it.
+await loadAllGeometry();
 
 const inside = ([x, y]: [number, number], [x0, y0, x1, y1]: number[]) => x >= x0 && x <= x1 && y >= y0 && y <= y1;
 
