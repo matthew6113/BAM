@@ -2094,7 +2094,7 @@
       ],
       "nextMilestone": null,
       "summary": "A rezoning of Sunnyvale's bayside office parks to allow up to 20,000 homes alongside 10 million sq ft of new office and R&D space. It's a zoning plan rather than a single development: each property owner builds under it with its own approvals.",
-      "massingNotes": "Plan-scale: draw the boundary only, from Sunnyvale GIS GeneralPlan MapServer layer 8 \"Specific Plan Boundary\" (SP_Code='MP'; one polygon of about 1,271.6 acres; no license stated, so confirm terms). No invented buildings; any project massing comes in Milestone 4.",
+      "massingNotes": "Plan-scale: draw the boundary only, from Sunnyvale GIS GeneralPlan MapServer layer 8 \"Specific Plan Boundary\" (SP_Code='MP'; one polygon of about 1,271.6 acres; no license stated, so confirm terms). No invented buildings. Land use: the city's MP- zoning districts (Sunnyvale GIS ZoningLegend layer 2, as published) from Ordinance 3218-23 (July 2023), with the ecological combining district drawn as open space; 1,158 of 1,278 acres (streets aren't zoned).",
       "officialLinks": [
         "https://sunnyvaleca.legistar.com/LegislationDetail.aspx?ID=13792&GUID=26BD054A-EB50-4DB3-A67B-4DC62C5B6E01"
       ],
@@ -2108,7 +2108,9 @@
         "https://sunnyvaleca.legistar.com/LegislationDetail.aspx?ID=16515&GUID=A0E0F499-27CA-4CC3-989C-176E8A27F1FB",
         "https://sunnyvaleca.legistar.com/LegislationDetail.aspx?ID=16567&GUID=502BC91B-5390-4A9D-9E29-D467232F4A1E",
         "https://sunnyvaleca.legistar.com/LegislationDetail.aspx?ID=16913&GUID=6E9B7856-EBBC-4C89-87B0-E0D76ED6C74B",
-        "https://gis.sunnyvale.ca.gov/arcgis/rest/services/GeneralPlan/MapServer/8"
+        "https://gis.sunnyvale.ca.gov/arcgis/rest/services/GeneralPlan/MapServer/8",
+        "https://gis.sunnyvale.ca.gov/arcgis/rest/services/ZoningLegend/MapServer/1",
+        "https://gis.sunnyvale.ca.gov/arcgis/rest/services/ZoningLegend/MapServer/2"
       ],
       "verify": [
         "the resolution number certifying the EIR (findings: Resolution 1199-23; not printed in the July 11, 2023 minutes)",
