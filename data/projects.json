@@ -2427,7 +2427,7 @@
       ],
       "nextMilestone": "Closing of the sale of both parcels (target Sept 1, 2026; no later than Jan 30, 2027).",
       "summary": "The Oakland–Alameda County Coliseum complex next to the Coliseum BART station, being sold to Oakland Acquisition Company, a partnership of Loop Capital and the African American Sports and Entertainment Group. The City will receive $125M in total for its interest; any development needs city approval.",
-      "massingNotes": "Boundary: Alameda County Assessor parcels (Alameda County ArcGIS Parcels FeatureServer, county disclaimer only): APN 41-3901-8 (Stadium, 103.2 ac) plus 41-3901-9 (Arena, 8.7 ac), 111.8 acres. No program to draw; massing would wait for an approved plan (Milestone 4 at the earliest).",
+      "massingNotes": "Boundary: Alameda County Assessor parcels (Alameda County ArcGIS Parcels FeatureServer, county disclaimer only): APN 41-3901-8 (Stadium, 103.2 ac) plus 41-3901-9 (Arena, 8.7 ac), 111.8 acres. No massing (checked Oct 2026): no plan is filed or approved. The site is zoned D-CO-2, with a 159-ft limit measured above mean sea level (Planning Code Table 17.101H.03, Ord. 13302, 2015; unchanged in Ord. 13894, 2026), but that limit covers the whole site with no blocks, so drawing it would look like a project that doesn't exist.",
       "officialLinks": [
         "https://www.oaklandca.gov/Government/Departments/City-Administrator/Oakland-Coliseum-Redevelopment-Project",
         "https://oakland.legistar.com/LegislationDetail.aspx?ID=37487&GUID=EF331A48-7E25-48AC-95A5-45493565745E"
@@ -2437,7 +2437,9 @@
         "https://oakland.legistar.com/LegislationDetail.aspx?ID=37487&GUID=EF331A48-7E25-48AC-95A5-45493565745E",
         "https://oakland.legistar.com/LegislationDetail.aspx?ID=37494&GUID=AEE72361-154A-404D-AA7B-001042936538",
         "https://acgov.org/board/bos_calendar/documents/DocsAgendaReg_05_28_26%20Spmtg/GENERAL%20ADMINISTRATION/Regular%20Calendar/County_Term_Sheet_Final.pdf",
-        "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0"
+        "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0",
+        "https://oakland.legistar1.com/oakland/attachments/a60c2e98-0339-4f02-a7cd-1f2205ceb9be.pdf",
+        "https://oakland.legistar1.com/oakland/attachments/96560420-1fc5-4f3b-8a34-0d0e9e246ce7.pdf"
       ],
       "verify": [
         "whether the sale closed",
