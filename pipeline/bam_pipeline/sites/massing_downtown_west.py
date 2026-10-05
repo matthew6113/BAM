@@ -486,9 +486,14 @@ def main() -> None:
                              f"the roof (S5.6.3), below the {t['fig_ft']}-ft limit around it. Needs checking "
                              "against the approved version.")
         elif name == "E1":
-            props["note"] = ("Height from the October 2020 draft design standards (280 ft). The approved "
-                             "Development Agreement lists 260 ft for E1, and the FAA contours (Fig. 5.13) run "
-                             "about 260-280 ft across the block. Needs checking against the approved version.")
+            # Where the two disagree, the newer approved document wins (Matthew, 2026-10-05).
+            props["height_ft"] = da[name]
+            props["source"] = (f"illustrative: block outline traced from {fig59}; height {da[name]} ft from the "
+                               f"approved Development Agreement (Ord. 30610, June 2021, Sec. 4.2.3(a), {DA['url']}), "
+                               f"which is newer than the {t['fig_ft']} ft in {fig512} ({draft})")
+            props["note"] = (f"Height from the approved Development Agreement (June 2021), {da[name]} ft; the "
+                             f"October 2020 draft design standards show {t['fig_ft']} ft, and the FAA contours "
+                             "(Fig. 5.13) run about 260-280 ft across the block.")
         elif name in da:
             props["note"] = (f"Height from the October 2020 draft design standards; the approved Development "
                              f"Agreement gives the same {da[name]} ft.")
@@ -515,8 +520,8 @@ def main() -> None:
                 "October 2020 draft of the Downtown West design standards (Fig. 5.12), from 180 ft at the north "
                 "end to 290 ft at the south, not as a building design; four smaller blocks are held to "
                 "40-150 ft. The version the City Council approved in May 2021 couldn't be retrieved. Where the "
-                "approved Development Agreement gives heights (nine blocks), they match, except E1 (260 ft in "
-                "the agreement, 280 ft in the draft). Blocks H5 and H6, added in the approved plan with lower "
+                "approved Development Agreement gives heights (nine blocks), they match, except E1, drawn at the "
+                "agreement's 260 ft rather than the draft's 280 ft because the agreement is newer. Blocks H5 and H6, added in the approved plan with lower "
                 "limits that aren't available, are drawn as an outline only. The FAA's airspace limits govern "
                 "the real heights. Streets, parks, the historic buildings being kept and the Creekside Walk "
                 "buildings aren't drawn, and nothing has been built."

@@ -3,7 +3,7 @@
  "properties": {
   "project": "downtown-west",
   "illustrative": true,
-  "summary": "Illustrative massing: each new development block is drawn to its maximum height in the October 2020 draft of the Downtown West design standards (Fig. 5.12), from 180 ft at the north end to 290 ft at the south, not as a building design; four smaller blocks are held to 40-150 ft. The version the City Council approved in May 2021 couldn't be retrieved. Where the approved Development Agreement gives heights (nine blocks), they match, except E1 (260 ft in the agreement, 280 ft in the draft). Blocks H5 and H6, added in the approved plan with lower limits that aren't available, are drawn as an outline only. The FAA's airspace limits govern the real heights. Streets, parks, the historic buildings being kept and the Creekside Walk buildings aren't drawn, and nothing has been built.",
+  "summary": "Illustrative massing: each new development block is drawn to its maximum height in the October 2020 draft of the Downtown West design standards (Fig. 5.12), from 180 ft at the north end to 290 ft at the south, not as a building design; four smaller blocks are held to 40-150 ft. The version the City Council approved in May 2021 couldn't be retrieved. Where the approved Development Agreement gives heights (nine blocks), they match, except E1, drawn at the agreement's 260 ft rather than the draft's 280 ft because the agreement is newer. Blocks H5 and H6, added in the approved plan with lower limits that aren't available, are drawn as an outline only. The FAA's airspace limits govern the real heights. Streets, parks, the historic buildings being kept and the Creekside Walk buildings aren't drawn, and nothing has been built.",
   "note": "Heights are from the October 2020 draft design standards, drawn as limits, not building designs; real buildings will be smaller.",
   "sourceUrl": "https://ceqanet.lci.ca.gov/2019080493/4/Attachment/WFPURX",
   "sourceLabel": "Draft design standards, 2020 (PDF)",
@@ -3258,14 +3258,14 @@
     "block": "E1",
     "label": "Block E1",
     "stage": "entitled",
-    "height_ft": 280,
+    "height_ft": 260,
     "podium_ft": null,
     "base_ft": 0,
     "use": "Office",
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: block outline traced from Figure 5.9, Block plan, p. 175; drawn to the maximum height in Downtown West Design Standards and Guidelines (October 2020), Draft EIR Appendix M (SCH 2019080493), Figure 5.12, Illustrative maximum height per block above current ground level, p. 181 (heights are from the October 2020 draft DWDSG; the approved DWDSG (March 2021, with errata) couldn't be retrieved); the approved Development Agreement (Ord. 30610, Sec. 4.2.3(a)) gives 260 ft",
-    "note": "Height from the October 2020 draft design standards (280 ft). The approved Development Agreement lists 260 ft for E1, and the FAA contours (Fig. 5.13) run about 260-280 ft across the block. Needs checking against the approved version.",
+    "source": "illustrative: block outline traced from Figure 5.9, Block plan, p. 175; height 260 ft from the approved Development Agreement (Ord. 30610, June 2021, Sec. 4.2.3(a), https://legistar.granicus.com/sanjose/attachments/d9985f7d-1a96-43f8-a1e5-96ad5a17618b.pdf), which is newer than the 280 ft in Downtown West Design Standards and Guidelines (October 2020), Draft EIR Appendix M (SCH 2019080493), Figure 5.12, Illustrative maximum height per block above current ground level, p. 181 (heights are from the October 2020 draft DWDSG; the approved DWDSG (March 2021, with errata) couldn't be retrieved)",
+    "note": "Height from the approved Development Agreement (June 2021), 260 ft; the October 2020 draft design standards show 280 ft, and the FAA contours (Fig. 5.13) run about 260-280 ft across the block.",
     "fid": 10
    },
    "geometry": {
