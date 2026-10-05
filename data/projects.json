@@ -1997,7 +1997,7 @@
       ],
       "nextMilestone": null,
       "summary": "Google's master plan for about 153 acres of North Bayshore in Mountain View: up to 7,000 homes, about 3.1 million sq ft of office, hotels and 26 acres of parks and public open space. Approved in 2023.",
-      "massingNotes": "Boundary: Mountain View parcels (maps.mountainview.gov Public/Parcel MapServer layer 0) filtered to the 39 APNs in Legistar matter 7641 (37 match); approximate, since the plan covers only parts of the Gateway parcels and Lot C, and the city's terms allow use at your own risk. Or trace the master plan figure. Don't use the zoning layer's P(39) district, which is the whole precise plan. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: Mountain View parcels (maps.mountainview.gov Public/Parcel MapServer layer 0) filtered to the 39 APNs in Legistar matter 7641 (37 match); approximate, since the plan covers only parts of the Gateway parcels and Lot C, and the city's terms allow use at your own risk. Or trace the master plan figure. Don't use the zoning layer's P(39) district, which is the whole precise plan. Land use: the approved Master Plan's land-use plans (April 2023, Res. 18810), Plan 4.1.2 p. 33 and Plan 4.1.1 p. 32, georeferenced on street intersections (RMS 2.8 m and 4.9 m), approximate as the plan says; it supersedes the 2021 precise plan's character areas. The boundary misses about 7 acres of plan residential; redraw it from Plan 4.1.2's project-area line.",
       "officialLinks": [
         "https://www.mountainview.gov/our-city/departments/community-development/planning/active-projects/google-projects/north-bayshore-master-plan"
       ],
@@ -2009,7 +2009,9 @@
         "https://webapi.legistar.com/v1/mountainview/events/2504/eventitems",
         "https://webapi.legistar.com/v1/mountainview/events/2505/eventitems",
         "https://webapi.legistar.com/v1/mountainview/matters/7495",
-        "https://maps.mountainview.gov/arcgis/rest/services/Public/Parcel/MapServer/0"
+        "https://maps.mountainview.gov/arcgis/rest/services/Public/Parcel/MapServer/0",
+        "https://mountainview.legistar.com/gateway.aspx?M=F&ID=c8cc29fa-61b5-4936-bb9a-6705a30d063c.pdf",
+        "https://www.mountainview.gov/home/showpublisheddocument/7175/638254594938830000"
       ],
       "verify": [
         "construction or permit status under the master plan in 2025–26",
