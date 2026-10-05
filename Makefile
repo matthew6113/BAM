@@ -71,6 +71,7 @@ sites:
 	$(PY) bam_pipeline.sites.landuse_moffett_park
 	$(PY) bam_pipeline.sites.landuse_suisun_expansion
 	$(PY) bam_pipeline.sites.landuse_north_bayshore
+	$(PY) bam_pipeline.sites.landuse_concord_naval_weapons_station
 	$(PY) bam_pipeline.sites.traced_boundaries
 
 dev:

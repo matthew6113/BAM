@@ -2324,7 +2324,7 @@
       ],
       "nextMilestone": "Specific Plan work starts winter 2026–27, with community engagement in early 2027.",
       "summary": "A former Navy weapons station by North Concord BART, planned as a new community of about 12,000 homes over a 30-year build-out. The price and payment terms with the Navy are now agreed; the detailed Specific Plan comes next.",
-      "massingNotes": "Boundary: trace Exhibit A of the executed Navy term sheet, \"Economic Development Conveyance (EDC) Property\" (Navy map dated 2026-03-30, View/2384 p. 15), and label it approximate; Exhibit B is the developer's unadopted concept plan and should not be drawn. City GIS does not capture the site. Plan-scale only; massing waits for the Specific Plan (Milestone 4 at the earliest).",
+      "massingNotes": "Boundary: trace Exhibit A of the executed Navy term sheet, \"Economic Development Conveyance (EDC) Property\" (Navy map dated 2026-03-30, View/2384 p. 15), and label it approximate; Exhibit B is the developer's unadopted concept plan and should not be drawn. City GIS does not capture the site. Plan-scale only; building massing waits for the Specific Plan. Land use: the adopted Area Plan's districts (Book One, Jan 24, 2012, Fig. 3-3 p. 41, made part of the General Plan by Res. 12-4823.2), traced from a 400-dpi render and fitted to OpenStreetMap roads (trimmed RMS 4.1 m), clipped to the EDC property and labelled approximate; no later plan is adopted.",
       "officialLinks": [
         "https://www.concordreuseproject.org/",
         "https://www.concordreuseproject.org/148/Overview-of-the-Reuse-Project"
@@ -2338,7 +2338,12 @@
         "https://stream.ci.concord.ca.us/OnBaseAgendaOnline/Documents/ViewAgenda?meetingId=1425&type=minutes&doctype=2",
         "https://www.cityofconcord.org/CivicAlerts.aspx?AID=901",
         "https://www.cityofconcord.org/CivicAlerts.aspx?AID=926",
-        "https://www.cityofconcord.org/CivicAlerts.aspx?AID=927"
+        "https://www.cityofconcord.org/CivicAlerts.aspx?AID=927",
+        "https://concordreuseproject.org/DocumentCenter/View/1786/1-December-15-2020-Memo-to-City-Council",
+        "https://www.concordreuseproject.org/152/The-Area-Plan",
+        "https://www.concordreuseproject.org/157/Specific-Plan",
+        "https://www.concordreuseproject.org/DocumentCenter/View/1093/2012-01-24-Res-No-12-48232-Amend-Concord-2030-Urb-Area",
+        "https://www.concordreuseproject.org/DocumentCenter/View/1105"
       ],
       "verify": [
         "the date the Area Plan was adopted in 2012",
