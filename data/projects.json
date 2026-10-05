@@ -2743,7 +2743,7 @@
       ],
       "nextMilestone": "Draft environmental impact report (no official date).",
       "summary": "The plan backed by California Forever for a new community on Solano County farmland, now pursued as an annexation to Suisun City after a county ballot measure was withdrawn.",
-      "massingNotes": "Boundary: no official GIS. Trace the Notice of Preparation Figure 2 (p. 15), with Figures 5 and 6, and label it approximate. Plan-scale only; land-use zones, if any, come in Milestone 4.",
+      "massingNotes": "Boundary: no official GIS. Trace the Notice of Preparation Figure 2 (p. 15), with Figures 5 and 6, and label it approximate. Plan-scale only. Land use: the seven proposed specific plan zones (NOP Figure 5, Table 1) and the two area plan sub-areas (Figure 2), georeferenced to OpenStreetMap roads (RMS 19 m and 32 m), every zone labelled proposed and approximate; nothing is adopted.",
       "officialLinks": [
         "https://suisunexpansion.com/",
         "https://ceqanet.lci.ca.gov/2025110452"
