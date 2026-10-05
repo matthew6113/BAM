@@ -490,7 +490,7 @@ def main() -> None:
             ),
             "note": "The 1910 Southern Pacific roundhouse, listed in the National Register, which the plan keeps and restores.",
             "sourceUrl": CC_0929["url"],
-            "sourceLabel": "City Council staff report, Sept 29, 2026 (PDF)",
+            "sourceLabel": "Roundhouse height: Council staff report, 2026 (PDF)",
             "georeference": "Footprint from OpenStreetMap as mapped (no tracing).",
             "license": "Footprint: OpenStreetMap contributors (ODbL 1.0), via Overture Maps.",
             "documents": [CC_0929["url"], SP_CH2["url"]],

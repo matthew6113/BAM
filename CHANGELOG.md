@@ -3,6 +3,14 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-05 (Milestone 4: land-use zones for the plan-scale projects)
+
+**moffett-park**, **north-bayshore**, **concord-naval-weapons-station**, **suisun-expansion** and
+**brisbane-baylands** get land-use zones (`data/landuse/`), not buildings, per the SPEC; each
+plan document is added to `sources` and `massingNotes` says what was drawn. Suisun's zones are
+proposed (NOP) and Brisbane's are from the draft 2026 specific plan, both labelled so. Brisbane
+also gets the Bayshore Roundhouse landmark (about 25 ft, Council staff report).
+
 ## 2026-10-05 (Milestone 4, batch 4: The Rise, Alameda Point, Brooklyn Basin, Oakland Coliseum)
 
 `massingNotes` updated and each massing source added to `sources` for **the-rise**,

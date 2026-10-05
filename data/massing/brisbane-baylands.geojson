@@ -6,7 +6,7 @@
   "summary": "Only the historic Bayshore Roundhouse is drawn: its real footprint from OpenStreetMap, at the existing height of about 25 ft given in the city's Sept 29, 2026 staff report. The plan's proposed buildings aren't drawn while the specific plan awaits approval; see the land-use zones.",
   "note": "The 1910 Southern Pacific roundhouse, listed in the National Register, which the plan keeps and restores.",
   "sourceUrl": "https://brisbaneca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=12608,plainText=false)",
-  "sourceLabel": "City Council staff report, Sept 29, 2026 (PDF)",
+  "sourceLabel": "Roundhouse height: Council staff report, 2026 (PDF)",
   "georeference": "Footprint from OpenStreetMap as mapped (no tracing).",
   "license": "Footprint: OpenStreetMap contributors (ODbL 1.0), via Overture Maps.",
   "documents": [
