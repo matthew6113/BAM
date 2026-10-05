@@ -2533,7 +2533,7 @@
       ],
       "nextMilestone": null,
       "summary": "The front door of the former Naval Air Station Alameda, being built out as a ferry-served waterfront neighborhood of up to 1,300 homes with parks and commercial space.",
-      "massingNotes": "Boundary: no Site A GIS layer exists (the City of Alameda AP-WTC zoning polygon, 150.1 ac, is too big). Trace the 2022 Development Plan \"Open Space & Parcel Diagrams\" (p. 12; 16.33 ac right-of-way + 41.36 private + 10.14 park, about 68 ac) and label it approximate, or assemble county parcels. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: no Site A GIS layer exists (the City of Alameda AP-WTC zoning polygon, 150.1 ac, is too big). Trace the 2022 Development Plan \"Open Space & Parcel Diagrams\" (p. 12; 16.33 ac right-of-way + 41.36 private + 10.14 park, about 68 ac) and label it approximate, or assemble county parcels. Massing: Site A blocks traced from the 2022 Development Plan's Land Use Diagram (p. 11), georeferenced on 11 controls (RMS 2.6 m), drawn to their limits of 40–65 ft (Block 11 at its approved 78-ft design), all illustrative; the Radium Performing Arts Center from its 2026 revised plan (43 ft, fly tower 72 ft); completed Blocks 6–9 from OpenStreetMap footprints with heights from their approved plans and staff reports (32–59 ft). Parks, streets, Blocks 5a/5b (no height) and the Navy-era buildings that stay are not drawn.",
       "officialLinks": [
         "https://alameda.legistar.com/LegislationDetail.aspx?ID=15589&GUID=8DDD3122-D78D-46AF-93E6-0166358C1496"
       ],
@@ -2543,7 +2543,13 @@
         "https://legistar1.granicus.com/alameda/attachments/73ff7e59-888e-443a-afc5-9a808b1d2091.pdf",
         "https://legistar1.granicus.com/alameda/attachments/4ed2a440-9155-4809-8443-5c523301c557.pdf",
         "https://alameda.legistar.com/LegislationDetail.aspx?ID=12022&GUID=20068886-A972-46BC-A300-2C70A91CBB55",
-        "https://alameda.legistar.com/LegislationDetail.aspx?ID=12070&GUID=AE5E8866-A135-4ACD-99BE-C7E9B545C3E1"
+        "https://alameda.legistar.com/LegislationDetail.aspx?ID=12070&GUID=AE5E8866-A135-4ACD-99BE-C7E9B545C3E1",
+        "https://alameda.legistar.com/LegislationDetail.aspx?ID=15669&GUID=3F0A0DF1-528E-4FB6-A635-3D46C9DA144E",
+        "https://alameda.legistar.com/LegislationDetail.aspx?ID=4388&GUID=86CB9634-CF02-45CE-B727-207C9DAC8CA3",
+        "https://alameda.legistar.com/LegislationDetail.aspx?ID=6711&GUID=6634ADEE-5B8D-42B2-A475-3097540463FB",
+        "https://legistar1.granicus.com/alameda/attachments/0a9551c2-cd42-4dcf-82bd-4e84b38110c0.pdf",
+        "https://legistar1.granicus.com/alameda/attachments/cc7a429d-3973-4f6f-83a1-6cef51878c67.pdf",
+        "https://legistar1.granicus.com/alameda/attachments/dfc15a4c-b254-4699-b53d-2b4f7118c903.pdf"
       ],
       "verify": [
         "the final action on the Radium performing arts center on Blocks 12/13 (heard Mar 2026)",
