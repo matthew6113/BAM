@@ -47,6 +47,20 @@
       "distressed": 0.75
     }
   },
+  "landUse": {
+    "note": "Plan-scale projects' land-use zones, in the usual planning-map convention. Placeholder colors.",
+    "opacity": 0.45,
+    "colors": {
+      "residential": "#F2D16B",
+      "mixed-use": "#E8A25A",
+      "office": "#C98BB9",
+      "industrial": "#A99BD1",
+      "commercial": "#E07A6F",
+      "civic": "#7FB3D5",
+      "open-space": "#8CC084",
+      "other": "#C8C8C8"
+    }
+  },
   "type": {
     "ui": "Libre Franklin",
     "text": "Source Serif 4",

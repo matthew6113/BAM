@@ -30,13 +30,30 @@ export interface BoundaryProps {
   name: string;
 }
 
+/** Land-use categories for plan-scale projects' zones (colors in the theme's landUse). */
+export const LAND_USE_CATEGORIES = [
+  'residential', 'mixed-use', 'office', 'industrial', 'commercial', 'civic', 'open-space', 'other',
+] as const;
+export type LandUseCategory = (typeof LAND_USE_CATEGORIES)[number];
+
+export interface LandUseProps {
+  kind: 'zone';
+  category: LandUseCategory;
+  label: string;
+  stage: StageKey;
+  source: string;
+  note?: string;
+}
+
 type Collection<G extends Geometry, P> = FeatureCollection<G, P> & { properties?: Record<string, unknown> };
 export type Boundary = Collection<Polygon | MultiPolygon, BoundaryProps>;
 export type Massing = Collection<Polygon | MultiPolygon, MassingProps>;
+export type LandUse = Collection<Polygon | MultiPolygon, LandUseProps>;
 
 // Traced project geometry lives in data/ (committed, with its sources) and is bundled.
 const boundaryFiles = import.meta.glob('../../data/boundaries/*.geojson', { query: '?raw', import: 'default', eager: true });
 const massingFiles = import.meta.glob('../../data/massing/*.geojson', { query: '?raw', import: 'default', eager: true });
+const landUseFiles = import.meta.glob('../../data/landuse/*.geojson', { query: '?raw', import: 'default', eager: true });
 
 function byId<T>(files: Record<string, unknown>): Map<string, T> {
   const out = new Map<string, T>();
@@ -49,6 +66,7 @@ function byId<T>(files: Record<string, unknown>): Map<string, T> {
 
 const BOUNDARIES = byId<Boundary>(boundaryFiles);
 const MASSING = byId<Massing>(massingFiles);
+const LAND_USE = byId<LandUse>(landUseFiles);
 
 /** Projects drawn on the map: those with a traced boundary (Potrero only, in Milestone 2). */
 export const MAPPED_PROJECTS: Project[] = PROJECTS.filter((p) => BOUNDARIES.has(p.id));
@@ -70,6 +88,16 @@ export function massingOf(id: string): Massing | undefined {
   const m = MASSING.get(id);
   if (!m) return undefined;
   return { ...m, features: m.features.map((f, i) => ({ ...f, properties: { ...f.properties, fid: i + 1 } })) };
+}
+
+/** Land-use zones for a plan-scale project: zones from its adopted plan, not buildings. */
+export function landUseOf(id: string): LandUse | undefined {
+  return LAND_USE.get(id);
+}
+
+export function landUseLabel(category: string): string {
+  const s = category.replace('-', ' ');
+  return s.charAt(0).toUpperCase() + s.slice(1);
 }
 
 export function stageLabel(key: string): string {

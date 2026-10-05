@@ -29,6 +29,10 @@ export function normalizeTheme(input: unknown): Theme {
   Object.assign(merged.stages, pickStrings(t.stages));
   Object.assign(merged.opacity, pickNumbers(t.opacity));
   if (t.massing) Object.assign(merged.massing.opacity, pickNumbers(t.massing.opacity));
+  if (t.landUse) {
+    Object.assign(merged.landUse.colors, pickStrings(t.landUse.colors));
+    if (typeof t.landUse.opacity === 'number') merged.landUse.opacity = t.landUse.opacity;
+  }
   Object.assign(merged.type, pickStrings(t.type));
   if (t.map) {
     if (typeof t.map.shorelineWidth === 'number') merged.map.shorelineWidth = t.map.shorelineWidth;
@@ -66,6 +70,7 @@ function pickNumbers(o: unknown): Record<string, number> {
 export function applyCssVariables(theme: Theme, root: HTMLElement = document.documentElement): void {
   for (const role of COLOR_ROLES) root.style.setProperty(`--color-${kebab(role)}`, theme.colors[role]);
   for (const stage of STAGE_KEYS) root.style.setProperty(`--stage-${stage}`, stageColor(theme, stage));
+  for (const [cat, color] of Object.entries(theme.landUse.colors)) root.style.setProperty(`--landuse-${cat}`, color);
   root.style.setProperty('--font-ui', `'${theme.type.ui}', system-ui, sans-serif`);
   root.style.setProperty('--font-text', `'${theme.type.text}', Georgia, serif`);
 }

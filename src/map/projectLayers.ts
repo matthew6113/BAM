@@ -8,6 +8,7 @@ import { stageColor, STAGE_KEYS, type StageKey, type Theme } from '../theme/them
 import {
   boundaryLine,
   centroidOf,
+  landUseOf,
   MAPPED_PROJECTS,
   massingOf,
   pointFeature,
@@ -57,7 +58,11 @@ function massingLabels(m: Massing | undefined): FeatureCollection<Point> {
     type: 'FeatureCollection',
     features: m.features
       .filter((f) => f.properties.kind === 'landmark')
-      .map((f) => pointFeature(centroidOf(f.geometry), { label: f.properties.label, height_ft: f.properties.height_ft })),
+      .map((f) => pointFeature(centroidOf(f.geometry), {
+        label: f.properties.label,
+        // Left out when unknown, so the label shows the name alone.
+        ...(f.properties.height_ft != null ? { height_ft: f.properties.height_ft } : {}),
+      })),
   };
 }
 
@@ -66,8 +71,14 @@ export function stageColorExpression(theme: Theme): ExpressionSpecification {
   return ['match', ['get', 'stage'], ...pairs, theme.colors.buildings] as unknown as ExpressionSpecification;
 }
 
+export function landUseColorExpression(theme: Theme): ExpressionSpecification {
+  const pairs = Object.entries(theme.landUse.colors).flat();
+  return ['match', ['get', 'category'], ...pairs, theme.landUse.colors.other] as unknown as ExpressionSpecification;
+}
+
 export function projectSources(selection: Selection | null): Record<string, SourceSpecification> {
   const massing = selection ? massingOf(selection.id) : undefined;
+  const landUse = selection ? landUseOf(selection.id) : undefined;
   const site = selection ? siteOf(selection.id) : undefined;
   const drawn = selection?.phase === 'landed' && site ? boundaryLine(site.geometry) : undefined;
   return {
@@ -75,6 +86,8 @@ export function projectSources(selection: Selection | null): Record<string, Sour
     'project-sites': { type: 'geojson', data: projectSites() },
     // Filled by the fly-in as the camera approaches; complete once landed.
     'project-boundary-draw': { type: 'geojson', data: drawn ? { type: 'FeatureCollection', features: [drawn] } : EMPTY },
+    // Plan-scale projects: the adopted plan's land-use zones, flat on the ground.
+    'project-landuse': { type: 'geojson', data: (landUse ?? EMPTY) as FeatureCollection },
     'project-massing': { type: 'geojson', data: (massing ?? EMPTY) as FeatureCollection, promoteId: 'fid' },
     'project-massing-labels': { type: 'geojson', data: massingLabels(massing) },
   };
@@ -142,6 +155,27 @@ export function projectLayers(
         'line-color': stageCol,
         'line-width': ['interpolate', ['linear'], ['zoom'], 12, 1, 16, 2],
         'line-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, 1],
+      },
+    },
+    {
+      // Land-use zones fade in once the camera has landed: zones, not buildings.
+      id: 'project-landuse-fill',
+      type: 'fill',
+      source: 'project-landuse',
+      paint: {
+        'fill-color': landUseColorExpression(theme),
+        'fill-opacity': landed ? theme.landUse.opacity : 0,
+        'fill-opacity-transition': { duration: 600, delay: 0 },
+      },
+    },
+    {
+      id: 'project-landuse-outline',
+      type: 'line',
+      source: 'project-landuse',
+      paint: {
+        'line-color': c.land,
+        'line-width': ['interpolate', ['linear'], ['zoom'], 12, 0.5, 16, 1.5],
+        'line-opacity': landed ? 1 : 0,
       },
     },
     {
@@ -224,7 +258,8 @@ export function projectLayers(
       type: 'symbol',
       source: 'project-massing-labels',
       layout: {
-        'text-field': ['concat', ['get', 'label'], ', ', ['to-string', ['get', 'height_ft']], ' ft'],
+        'text-field': ['case', ['has', 'height_ft'],
+          ['concat', ['get', 'label'], ', ', ['to-string', ['get', 'height_ft']], ' ft'], ['get', 'label']],
         'text-font': fonts.regular,
         'text-size': 11.5,
         // Beside the base, not on it: a tall landmark covers anything placed above its foot.
