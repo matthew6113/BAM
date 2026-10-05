@@ -185,8 +185,9 @@ SPECS: dict[str, dict] = {
     },
     "downtown-west": {
         "label": "San José zoning",
-        **arcgis(SJ_ZONING, "REZONINGFILE like 'PDC19-039%'"),
-        "layer": "City of San José Zoning Districts, rezoning file PDC19-039",
+        # Two of the 16 DC(PD) polygons (under blocks D5-D7) store the file number as "19039".
+        **arcgis(SJ_ZONING, "REZONINGFILE like 'PDC19-039%' or REZONINGFILE = '19039'"),
+        "layer": "City of San José Zoning Districts, rezoning file PDC19-039 (16 DC(PD) polygons)",
         "accuracy": "approximate",
         "note": "The planned development zoning approved May 25, 2021: about 58 net acres, without the streets and creek in the 80-acre gross figure.",
         "license": "CC-BY 4.0, City of San José",

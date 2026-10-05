@@ -130,3 +130,15 @@ Concord is the Navy's EDC property map, read from its vector fills and fitted to
 roads (scale within 0.1% of the map's bar). Alameda Point is the 2022 Site A plan's parcel diagram
 on 8 street intersections. The Suisun annexation area is traced from a small raster figure and
 labelled approximate (about 30 m). See `pipeline/bam_pipeline/sites/traced_boundaries.py`.
+
+## 2026-10-03 to 10-05: Milestone 4 massing calls (Matthew)
+
+**Piers 30–32 removed** from the map (2026-10-03); listed under `_meta.dropped`.
+
+**Mission Rock H/I/J** stay drawn as a 90-ft podium with a 120-ft envelope (2026-10-05).
+
+**When two official documents disagree, the more recent one wins** (2026-10-05). Downtown West's
+block E1 is drawn at the approved Development Agreement's 260 ft (June 2021), not the October 2020
+draft design standards' 280 ft. The other Downtown West heights still come from that draft, since
+the approved 2021 standards couldn't be retrieved; they are labelled as such and flagged in the
+record's `verify` list.

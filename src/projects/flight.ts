@@ -1,5 +1,5 @@
 import type { GeoJSONSource, Map as MapLibreMap, PaddingOptions } from 'maplibre-gl';
-import type { Feature, LineString, MultiPolygon, Polygon } from 'geojson';
+import type { Feature, MultiLineString, MultiPolygon, Polygon } from 'geojson';
 import { bboxOf, centroidOf, linePrefix, metres, type Massing, type Project } from './data';
 
 export interface Camera {
@@ -87,7 +87,7 @@ export function landingCamera(map: MapLibreMap, project: Project, site: Polygon 
   };
 }
 
-function setBoundary(map: MapLibreMap, line: Feature<LineString> | null) {
+function setBoundary(map: MapLibreMap, line: Feature<MultiLineString> | null) {
   const src = map.getSource('project-boundary-draw') as GeoJSONSource | undefined;
   src?.setData({ type: 'FeatureCollection', features: line ? [line] : [] });
 }
@@ -113,7 +113,7 @@ async function dip(map: MapLibreMap, jump: () => void): Promise<void> {
  * flight has started since, and this one must leave the map alone.
  */
 export async function flyIn(
-  map: MapLibreMap, camera: Camera, padding: PaddingOptions, boundary: Feature<LineString>, current: () => boolean,
+  map: MapLibreMap, camera: Camera, padding: PaddingOptions, boundary: Feature<MultiLineString>, current: () => boolean,
 ): Promise<void> {
   // Stop any flight in progress first: stopping fires its moveend, which must not end this one.
   map.stop();

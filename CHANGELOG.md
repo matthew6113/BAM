@@ -3,6 +3,15 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-03 (Milestone 4, batch 3: Parkmerced, Parkline, Willow Village, Related Santa Clara, Downtown West)
+
+`massingNotes` updated and each massing source added to `sources` for **parkmerced**,
+**parkline**, **willow-village**, **related-santa-clara** and **downtown-west**. Related Santa
+Clara now cites CEQA Addendum 4 (Res. 25-9465) for its 190-ft cap. **downtown-west**: the
+boundary now includes the two DC(PD) zoning polygons filed as "19039" (62.8 acres as drawn,
+was 58.3); its heights come from the October 2020 draft design standards because the approved
+2021 version could not be retrieved, so a `verify` item was added.
+
 ## 2026-10-03 (Piers 30–32 removed)
 
 **piers-30-32** removed from the map at Matthew's request: the record, its boundary and its

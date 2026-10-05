@@ -1394,7 +1394,7 @@
       ],
       "nextMilestone": null,
       "summary": "An apartment complex on the southwest edge of the city, approved in 2011 to grow from about 3,200 to 8,900 homes. Fifteen years later, city records show no new building constructed.",
-      "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"Parkmerced\" (about 161 acres, likely including streets); check against the recorded development agreement's Exhibits A and B. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"Parkmerced\" (about 161 acres, likely including streets); check against the recorded development agreement's Exhibits A and B. Massing: the \"-PM\" zoning height districts (DataSF h9wh-cg3m, Ordinance 91-11) drawn block by block and checked against the Design Standards and Guidelines (rev. 2014), Fig. 03.03.C: 45- and 65-ft fabric with mid-rise and tower envelopes of 85–145 ft over it (only part of each envelope may reach the limit), all illustrative. The 11 existing towers (130-ft districts), open space and streets are not drawn; no new building has started construction (DBI).",
       "officialLinks": [
         "https://sfplanning.org/project/parkmerced",
         "https://default.sfplanning.org/publications_reports/parkmerced/Parkmerced_Development_Agreement_As_Recorded.pdf"
@@ -1410,7 +1410,9 @@
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202212138195",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202212208799",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202212198663",
-        "https://data.sf.gov/d/5yf5-ms5f"
+        "https://data.sf.gov/d/5yf5-ms5f",
+        "https://data.sf.gov/d/h9wh-cg3m",
+        "https://default.sfplanning.org/publications_reports/parkmerced/Parkmerced_Final_Design_Standards_and_Guidelines_Revised-09-16-14.pdf"
       ],
       "verify": [
         "the current owner of the development parcels (the press reports a 2026 takeover)",
@@ -1607,7 +1609,7 @@
       ],
       "nextMilestone": null,
       "summary": "A mixed-use neighborhood planned by Meta's Peninsula Innovation Partners in Menlo Park, with up to 1,730 homes, offices, shops, a hotel and 20 acres of open space including an elevated park. Approved in 2022, it was paused in May 2026.",
-      "massingNotes": "Boundary: trace the development agreement's Exhibit A-2-1 legal description of the 59.17-acre main site (pp. 75–76) with the Exhibit A-1-1 map; alternatively, Menlo Park parcels (CC0, services7.arcgis.com org uRrQ0O3z2aaiIWYU, layer 7) for 1350–1390 Willow Rd, 925–1098 Hamilton Ave and 1005–1275 Hamilton Ct. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: trace the development agreement's Exhibit A-2-1 legal description of the 59.17-acre main site (pp. 75–76) with the Exhibit A-1-1 map; alternatively, Menlo Park parcels (CC0, services7.arcgis.com org uRrQ0O3z2aaiIWYU, layer 7) for 1350–1390 Willow Rd, 925–1098 Hamilton Ave and 1005–1275 Hamilton Ct. Massing: 20 buildings traced from the approved master plan set (Oct 2022), Sheet G3.04, each drawn to its own maximum height, which CDP §2.3.5 makes binding (15–118 ft; zone caps 85 ft R-MU and 120 ft O), georeferenced to the traced site boundary (RMS 0.5 m) and checked against the 2023 architectural control plans; all illustrative and entitled (the project is paused). Parks, the town square and the elevated park are not drawn.",
       "officialLinks": [
         "https://www.menlopark.gov/Government/Departments/Community-Development/Projects/Approved-projects/Willow-Village",
         "https://www.menlopark.gov/News-articles/City-news/20260504-Willow-Village-project-paused"
@@ -1617,7 +1619,17 @@
         "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/1095-willow-village-development-agreement.pdf",
         "https://www.menlopark.gov/News-articles/City-news/20260504-Willow-Village-project-paused",
         "https://www.menlopark.gov/files/sharedassets/public/v/3/agendas-and-minutes/planning-commission/2026-meetings/agenda/20260518-planning-commission-agenda-packet-amended.pdf",
-        "https://www.menlopark.gov/files/sharedassets/public/v/1/agendas-and-minutes/planning-commission/2026-meetings/agenda/20260608-planning-commisison-agenda-packet.pdf"
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/agendas-and-minutes/planning-commission/2026-meetings/agenda/20260608-planning-commisison-agenda-packet.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/meeting-and-collaboration-space-and-elevated-park.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/mixed-use-parcel-2.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/mixed-use-parcel-3-plan-set.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/office-campus.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/town-square.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/willow-village-hotel.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/willow-village-parcel-6.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/willow-village-parcel-7.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/notice-of-terms-and-conditions-of-conditional-development-permit.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/2/community-development/documents/projects/under-review/willow-village/october-2022/masterplan-plan-set.pdf"
       ],
       "verify": [
         "the Council resolution numbers for the Dec 6, 2022 approvals",
@@ -1705,7 +1717,7 @@
       ],
       "nextMilestone": "City review of the Phase 2 application.",
       "summary": "The redevelopment of SRI International's research campus in Menlo Park into 800 homes, offices and 12 acres of open space, approved in 2025. A Phase 2 proposal now under review would add 282 homes and some retail.",
-      "massingNotes": "Boundary: Menlo Park parcels (CC0, services7.arcgis.com org uRrQ0O3z2aaiIWYU, layer 7), the union of APNs 062390050, 062390660, 062390670, 062390730, 062390760 and 062390780 (about 64.2 acres, matching the 64.3-acre site). Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: Menlo Park parcels (CC0, services7.arcgis.com org uRrQ0O3z2aaiIWYU, layer 7), the union of APNs 062390050, 062390660, 062390670, 062390730, 062390760 and 062390780 (about 64.2 acres, matching the 64.3-acre site). Massing: 14 buildings traced from the approved Master Plan Project Plans (June 24, 2025), Sheet G3.03 \"Conceptual Building Height Plan\", which the conditional development permit makes binding (§2.3.4), georeferenced on 7 street intersections (RMS 1.4 m): homes 35–75 ft, offices 75–91 ft, garages 44.5–65.5 ft, all illustrative. Retained SRI buildings stay in the base map; the affordable-housing parcel and the park are not drawn.",
       "officialLinks": [
         "https://www.menlopark.gov/Government/Departments/Community-Development/Projects/Approved-projects/Parkline",
         "https://www.menlopark.gov/Government/Departments/Community-Development/Projects/Under-review/Parkline-Phase-2"
@@ -1716,7 +1728,8 @@
         "https://www.menlopark.gov/News-articles/City-news/20260622Parkline-Phase-2-proposal-submitted",
         "https://www.menlopark.gov/files/sharedassets/public/v/2/agendas-and-minutes/city-council/2025-meetings/20250930/j1-20250930-cc-parkline.pdf",
         "https://www.menlopark.gov/files/sharedassets/public/v/1/agendas-and-minutes/city-council/2025-meetings/minutes/20251007-city-council-special-and-regular-minutes-approved.pdf",
-        "https://services7.arcgis.com/uRrQ0O3z2aaiIWYU/arcgis/rest/services/City_of_Menlo_Park_Parcels/FeatureServer/7"
+        "https://services7.arcgis.com/uRrQ0O3z2aaiIWYU/arcgis/rest/services/City_of_Menlo_Park_Parcels/FeatureServer/7",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/parkline/map20250703/project-variant-master-plan-set_0703.pdf"
       ],
       "verify": [
         "the Council resolution and ordinance numbers for the 2025 approvals",
@@ -1795,7 +1808,7 @@
       ],
       "nextMilestone": "A ground lease for the next phase; Scheme C lets industrial development on Parcels 1 and 2 go ahead of Phase 2 on Parcel 4.",
       "summary": "A 240-acre city-owned site in Santa Clara approved in 2016 for up to 1,680 homes, offices, retail, 700 hotel rooms and a city park. Still vacant nearly a decade later, it was rezoned in 2025 to allow 1.6 million sq ft of light industrial space, where data centers would pay double rent.",
-      "massingNotes": "Boundary: Santa Clara County parcels (data.sccgov.org dataset ubcd-cewv), APNs 104-03-043, 104-03-042, 104-03-041, 104-03-036, 104-01-102, 097-01-039 and 097-01-073 (about 238.8 acres); the license isn't stated in the metadata, so check the county's terms. Fallback: the Scheme C site plan. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: Santa Clara County parcels (data.sccgov.org dataset ubcd-cewv), APNs 104-03-043, 104-03-042, 104-03-041, 104-03-036, 104-01-102, 097-01-039 and 097-01-073 (about 238.8 acres); the license isn't stated in the metadata, so check the county's terms. Massing: parcels and blocks traced from the Master Community Plan Scheme C Supplement (Res. 25-9467, July 2025), Exhibit 4C-1, georeferenced on 8 street intersections (RMS 3.0 m): Parcels 1–2 light industrial at 60 ft with up to half of buildings to 90 ft; Parcel 4 and 5 blocks drawn to the 190-ft (17-story) project maximum in CEQA Addendum 4 (Res. 25-9465), though the plan expects towers of about 10–12 stories on low podiums. All illustrative; Parcel 3 (park) and the retention pond are not drawn.",
       "officialLinks": [
         "https://santaclara.legistar.com/LegislationDetail.aspx?ID=24933&GUID=38CEF124-14D5-41B3-9083-8DE1E25581AC",
         "https://santaclara.legistar.com/LegislationDetail.aspx?ID=11541&GUID=B390333B-FB40-4778-A7F3-02C7B44B3D2D"
@@ -1810,7 +1823,8 @@
         "https://webapi.legistar.com/v1/santaclara/eventitems/228984/votes",
         "https://webapi.legistar.com/v1/santaclara/eventitems/232352/votes",
         "https://santaclara.legistar.com/LegislationDetail.aspx?ID=25312&GUID=AF23DEE1-7B57-4309-8889-60BC46051875",
-        "https://data.sccgov.org/d/ubcd-cewv"
+        "https://data.sccgov.org/d/ubcd-cewv",
+        "https://santaclara.legistar1.com/santaclara/attachments/595ea4c8-fb0f-4da1-bb99-eace63cf42ed.pdf"
       ],
       "verify": [
         "whether any building permits have been filed for Parcels 1 and 2",
@@ -1883,7 +1897,7 @@
       ],
       "nextMilestone": null,
       "summary": "Google's approved plan for about 80 acres around Diridon Station in downtown San José: up to 7.3 million sq ft of office, about 4,000 homes, a hotel and 15 acres of open space. The city reports no new construction has begun and no timeline for a restart.",
-      "massingNotes": "Boundary: City of San José Zoning Districts open data (CC-BY, credit \"City of San José\"), OPN_OpenDataService MapServer layer 401, REZONINGFILE like 'PDC19-039%': 14 DC(PD) polygons approved May 25, 2021, about 58 net acres. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: City of San José Zoning Districts open data (CC-BY, credit \"City of San José\"), OPN_OpenDataService MapServer layer 401, REZONINGFILE like 'PDC19-039%' or '19039' (two polygons under blocks D5–D7 store the file number that way): 16 DC(PD) polygons approved May 25, 2021, 62.8 acres as drawn against the plan's about 58 net acres. Massing: 23 blocks traced from the October 2020 draft Design Standards and Guidelines (Draft EIR Appendix M), Figs. 5.9 and 5.12, georeferenced to 613 existing buildings (RMS 1.4 m): 40–290 ft, all illustrative. The approved 2021 version (with errata) could not be retrieved (sanjoseca.gov blocks scripted access); the approved Development Agreement (Ord. 30610) matches 8 of its 9 listed heights, and E1 is drawn at the agreement's 260 ft rather than the draft's 280 ft because the agreement is newer (Matthew, 2026-10-05), and blocks H5 and H6, which the General Plan resolution says have lower limits, are outlined without a height. Needs verification against the approved DWDSG.",
       "officialLinks": [
         "https://sanjose.legistar.com/LegislationDetail.aspx?ID=9022&GUID=A707E4E6-4619-43CD-A312-DDC466FF9F25",
         "https://sanjose.legistar.com/LegislationDetail.aspx?ID=9066&GUID=153A21E6-3F49-4E8C-9E35-EA0B9127E6D2"
@@ -1897,12 +1911,17 @@
         "https://legistar.granicus.com/sanjose/attachments/1c8ecd38-02ca-489d-9ca2-c708a1102813.pdf",
         "https://legistar.granicus.com/sanjose/attachments/0b810cf1-d5af-4c58-9bf1-2f86f9063689.pdf",
         "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202120220SB7",
-        "https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataService/MapServer/401"
+        "https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataService/MapServer/401",
+        "https://ceqanet.lci.ca.gov/2019080493/4",
+        "https://ceqanet.lci.ca.gov/2019080493/4/Attachment/WFPURX",
+        "https://legistar.granicus.com/sanjose/attachments/4fa89312-fd9b-4f85-932d-8d5c463c0e8f.pdf",
+        "https://legistar.granicus.com/sanjose/attachments/d9985f7d-1a96-43f8-a1e5-96ad5a17618b.pdf"
       ],
       "verify": [
         "the final adoption date and numbers of the 2021 ordinances (set for June 8, 2021)",
         "when Google paused the project (press: 2023)",
-        "the current condition of the site (press: cleared and fenced)"
+        "the current condition of the site (press: cleared and fenced)",
+        "Downtown West block heights against the approved Design Standards and Guidelines (2021, with errata dated May 7, 2021) on sanjoseca.gov"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",

@@ -152,11 +152,19 @@ describe('geometry helpers', () => {
   it('cuts a line by length', () => {
     const line = boundaryLine(siteOf('potrero-power-station')!.geometry);
     const len = (l: typeof line) =>
-      (l.geometry.coordinates as [number, number][]).slice(1).reduce((s, p, i) => s + metres(l.geometry.coordinates[i] as [number, number], p), 0);
+      (l.geometry.coordinates as [number, number][][]).reduce(
+        (sum, r) => sum + r.slice(1).reduce((s, p, i) => s + metres(r[i], p), 0), 0);
     const whole = len(line);
     expect(len(linePrefix(line, 0.5)) / whole).toBeCloseTo(0.5, 3);
     expect(linePrefix(line, 1)).toBe(line);
-    expect(linePrefix(line, 0).geometry.coordinates.length).toBeGreaterThanOrEqual(2);
+    expect(linePrefix(line, 0).geometry.coordinates[0].length).toBeGreaterThanOrEqual(2);
+  });
+
+  it('draws every piece of a multi-part site', () => {
+    const site = siteOf('downtown-west')!.geometry;
+    const pieces = site.type === 'MultiPolygon' ? site.coordinates.length : 1;
+    expect(pieces).toBeGreaterThan(1);
+    expect(boundaryLine(site).geometry.coordinates).toHaveLength(pieces);
   });
 });
 
