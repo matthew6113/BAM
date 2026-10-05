@@ -3,6 +3,15 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-05 (Milestone 4, batch 4: The Rise, Alameda Point, Brooklyn Basin, Oakland Coliseum)
+
+`massingNotes` updated and each massing source added to `sources` for **the-rise**,
+**alameda-point** and **brooklyn-basin**. **oakland-coliseum** gets no massing: no plan is filed
+or approved, and its D-CO-2 zoning (159 ft above mean sea level, Ord. 13302 and 13894) covers the
+whole site; both ordinances are now cited. **downtown-west** block E1 is drawn at the approved
+Development Agreement's 260 ft (Matthew: the more recent document wins). `apps.cupertino.org`
+(the City of Cupertino's document server) added to the official hosts.
+
 ## 2026-10-03 (Milestone 4, batch 3: Parkmerced, Parkline, Willow Village, Related Santa Clara, Downtown West)
 
 `massingNotes` updated and each massing source added to `sources` for **parkmerced**,
