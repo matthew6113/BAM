@@ -66,6 +66,7 @@ sites:
 	$(PY) bam_pipeline.sites.massing_willow_village
 	$(PY) bam_pipeline.sites.massing_downtown_west
 	$(PY) bam_pipeline.sites.massing_alameda_point
+	$(PY) bam_pipeline.sites.massing_the_rise
 	$(PY) bam_pipeline.sites.traced_boundaries
 
 dev:

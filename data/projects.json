@@ -2194,7 +2194,7 @@
       ],
       "nextMilestone": "City Council hearing on Oct 6, 2026 on up to $135M of conduit bond financing for the Block 5 apartments (234 units with Eden Housing).",
       "summary": "The redevelopment of the former Vallco Mall on Wolfe Road, near Apple's campus, approved under the state's SB 35 streamlining law: 2,669 homes, offices, shops and 7.5 acres of public parks.",
-      "massingNotes": "Boundary: Santa Clara County parcels (data.sccgov.org ubcd-cewv), APNs 316-20-121 (16.85 ac) and 316-20-122 (32.93 ac), about 49.8 acres; license not stated, so check the county's terms. Fallbacks: the Phase 1 final map or the 2026 open-space layout. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: Santa Clara County parcels (data.sccgov.org ubcd-cewv), APNs 316-20-121 (16.85 ac) and 316-20-122 (32.93 ac), about 49.8 acres; license not stated, so check the county's terms. Fallbacks: the Phase 1 final map or the 2026 open-space layout. Massing: blocks traced from the approved SB 35 plan set (second modification, approved Feb 16, 2024), sheets P-0800.xx, fitted to the county parcels (RMS 0.3 m), with heights from the building sections P-0831/P-0832: podiums 27–43 ft, residential blocks 80–86 ft, towers 133–228 ft, all illustrative and entitled. Block 13 is outlined only: the Feb 2026 third modification cut office by exactly its 479,667 sq ft and its plans are not published.",
       "officialLinks": [
         "https://cupertino.legistar.com/LegislationDetail.aspx?ID=16200&GUID=EE4A59A8-D22F-49F8-93DE-8033F1DE8237"
       ],
@@ -2209,7 +2209,8 @@
         "https://legistar.granicus.com/cupertino/attachments/a48ffc4f-a6db-4f2c-a12c-c966dfb6dfbf.pdf",
         "https://cupertino.legistar.com/LegislationDetail.aspx?ID=16451&GUID=7F4B3B60-3A19-4A8A-8BD1-E72AE1F3D55F",
         "https://legistar.granicus.com/cupertino/attachments/7e0e84b1-2eae-4b09-91ab-f0a3d43beafe.docx",
-        "https://data.sccgov.org/d/ubcd-cewv"
+        "https://data.sccgov.org/d/ubcd-cewv",
+        "https://apps.cupertino.org/pdf/Attachment%20A%20-%20Approved%20Plans.pdf"
       ],
       "verify": [
         "the outcome of the July 21, 2026 final map item (Resolution 26-080) and when the map records",

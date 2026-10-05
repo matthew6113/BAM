@@ -132,6 +132,8 @@ describe('official sources', () => {
     expect(isOfficialSource('https://legistar.granicus.com/sanjose/attachments/x.pdf')).toBe(true);
     expect(isOfficialSource('https://legistar.granicus.com/Sunnyvale/attachments/x.pdf')).toBe(true);
     expect(isOfficialSource('https://legistar.granicus.com/somecompany/attachments/x.pdf')).toBe(false);
+    expect(isOfficialSource('https://apps.cupertino.org/pdf/x.pdf')).toBe(true);
+    expect(isOfficialSource('https://www.cupertino.org/x')).toBe(false);
     expect(isOfficialSource('https://services7.arcgis.com/uRrQ0O3z2aaiIWYU/arcgis/rest/services/x')).toBe(true);
     expect(isOfficialSource('https://services7.arcgis.com/someoneelse/arcgis/rest/services/x')).toBe(false);
     expect(isOfficialSource('https://sfyimby.com/2026/02/x.html')).toBe(false);
