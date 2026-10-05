@@ -1,0 +1,1266 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "brooklyn-basin",
+  "illustrative": true,
+  "summary": "Illustrative massing: the unbuilt parcels (D, E, H, K, L and M) are drawn to the 86-ft mid-rise limit of the Oak to Ninth zoning and design guidelines, with the tower zones still entitled on Parcels H and K drawn to 240 ft. These are limits, not building designs. The eight completed buildings on Parcels A, B, C, F, G and J are drawn from their real footprints, with heights estimated from their stories. Parks, streets and the marinas aren't drawn, and Parcel M's two allowed towers aren't placed.",
+  "note": "Unbuilt parcels are drawn to their height limits, not as building designs; real buildings will be smaller.",
+  "sourceUrl": "https://oakland.legistar1.com/oakland/attachments/1b34cc1f-3524-4e14-a367-8525418da155.pdf",
+  "sourceLabel": "Design guidelines, 2014 (PDF)",
+  "georeference": {
+   "sheet_1_4": {
+    "scale_m_per_unit": 0.45629,
+    "rotation_deg": -25.701,
+    "rms_m": 1.8,
+    "controls": [
+     {
+      "label": "Parcel A centroid",
+      "residual_m": 2.68
+     },
+     {
+      "label": "Parcel B centroid",
+      "residual_m": 0.26
+     },
+     {
+      "label": "Parcel C centroid",
+      "residual_m": 0.39
+     },
+     {
+      "label": "Parcel D centroid",
+      "residual_m": 0.53
+     },
+     {
+      "label": "Parcel E centroid",
+      "residual_m": 0.28
+     },
+     {
+      "label": "Parcel F centroid",
+      "residual_m": 0.82
+     },
+     {
+      "label": "Parcel H centroid",
+      "residual_m": 2.26
+     },
+     {
+      "label": "Parcel J centroid",
+      "residual_m": 3.22
+     },
+     {
+      "label": "Parcel M centroid",
+      "residual_m": 2.3
+     }
+    ],
+    "method": "least-squares similarity on the centroids of parcel fills matched to the same parcels in the city's parcel layer",
+    "use": "K / L split only"
+   },
+   "design_guidelines_tower_zones": {
+    "scale_m_per_unit": 0.99929,
+    "rotation_deg": -25.559,
+    "rms_m": 3.6,
+    "controls": [
+     {
+      "label": "8th Avenue / Brooklyn Basin Way",
+      "residual_m": 2.19
+     },
+     {
+      "label": "8th Avenue / Clinton Lane",
+      "residual_m": 1.19
+     },
+     {
+      "label": "9th Avenue / Clinton Lane",
+      "residual_m": 2.35
+     },
+     {
+      "label": "9th Avenue / Brooklyn Basin Way",
+      "residual_m": 0.4
+     },
+     {
+      "label": "8th Avenue / 9th Avenue",
+      "residual_m": 6.98
+     },
+     {
+      "label": "Embarcadero / 5th Avenue",
+      "residual_m": 4.16
+     }
+    ],
+    "method": "least-squares similarity on street intersections matched to OpenStreetMap (via Overture)"
+   },
+   "parcels": "City GIS layer, used as published (no tracing)"
+  },
+  "license": "Parcel shapes: City of Oakland GIS (from the Alameda County Assessor), published for reference only. Plan figures: City of Oakland public records. Building footprints and story counts: OpenStreetMap contributors (ODbL 1.0), via Overture Maps."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "D",
+    "label": "Parcel D",
+    "stage": "entitled",
+    "height_ft": 86,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": "Phase 2",
+    "illustrative": true,
+    "source": "illustrative: drawn to the 86-ft mid-rise limit of Oakland Planning Code Chapter 17.101B (D-OTN), clerical update adopted by Ordinance 13826 (2024), Exhibit A, Sec. 17.101B.130 (https://oakland.legistar1.com/oakland/attachments/9a0331be-abd6-4cf1-b700-09bf1cba330c.pdf) and Oak to 9th Brooklyn Basin Design Guidelines (November 2006, revised September 2014; Attachment D2b to Legistar file 23-0206), printed p. 15; parcel: City of Oakland parcels, APN 018046501500 (https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Oakland_Parcels_Public/FeatureServer/0)",
+    "note": "Final Development Permit approved March 2021 (PC staff report, March 5, 2025, Table 1); its design isn't drawn. Planned for 243 homes (2025 Official Statement).",
+    "fid": 1
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2585362,
+        37.7874878
+       ],
+       [
+        -122.2578534,
+        37.7877467
+       ],
+       [
+        -122.2574268,
+        37.787038
+       ],
+       [
+        -122.2581095,
+        37.7867791
+       ],
+       [
+        -122.2585362,
+        37.7874878
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "E",
+    "label": "Parcel E",
+    "stage": "entitled",
+    "height_ft": 86,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": "Phase 2",
+    "illustrative": true,
+    "source": "illustrative: drawn to the 86-ft mid-rise limit of Oakland Planning Code Chapter 17.101B (D-OTN), clerical update adopted by Ordinance 13826 (2024), Exhibit A, Sec. 17.101B.130 (https://oakland.legistar1.com/oakland/attachments/9a0331be-abd6-4cf1-b700-09bf1cba330c.pdf) and Oak to 9th Brooklyn Basin Design Guidelines (November 2006, revised September 2014; Attachment D2b to Legistar file 23-0206), printed p. 15; parcel: City of Oakland parcels, APN 018046501600 (https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Oakland_Parcels_Public/FeatureServer/0)",
+    "note": "Final Development Permit approved October 2022 (PC staff report, March 5, 2025, Table 1); its design isn't drawn. Planned for 191 senior homes, \"Saltaire\" (2025 Official Statement).",
+    "fid": 2
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2593042,
+        37.7870737
+       ],
+       [
+        -122.2593029,
+        37.7871972
+       ],
+       [
+        -122.2585362,
+        37.7874878
+       ],
+       [
+        -122.2581095,
+        37.7867791
+       ],
+       [
+        -122.2582716,
+        37.7867209
+       ],
+       [
+        -122.2583398,
+        37.7867139
+       ],
+       [
+        -122.2584195,
+        37.7867256
+       ],
+       [
+        -122.2593042,
+        37.7870737
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "H",
+    "label": "Parcel H",
+    "stage": "entitled",
+    "height_ft": 86,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": "Phase 2",
+    "illustrative": true,
+    "source": "illustrative: drawn to the 86-ft mid-rise limit of Oakland Planning Code Chapter 17.101B (D-OTN), clerical update adopted by Ordinance 13826 (2024), Exhibit A, Sec. 17.101B.130 (https://oakland.legistar1.com/oakland/attachments/9a0331be-abd6-4cf1-b700-09bf1cba330c.pdf) and Oak to 9th Brooklyn Basin Design Guidelines (November 2006, revised September 2014; Attachment D2b to Legistar file 23-0206), printed p. 15; parcel: City of Oakland parcels, APN 018046501700 (https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Oakland_Parcels_Public/FeatureServer/0)",
+    "note": "The Planning Commission approved two Final Development Permit options on March 5, 2025: a 5-story and a 7-story building, or a 5-story building (58 ft) and a 23-story tower (235 ft) (staff report https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/item-2-staff-report-2-19-25-bb-parcel-h-option-2-case-file-pud06010-r02-pudf05-planning-commission-3.5.2025.pdf; minutes https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/3.5.2025-pc-meeting-minutes-appr-via-catherine-3.12.2025.pdf, adopted March 19, 2025, https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/3.19.2025-pc-meeting-minutes-appr-via-catherine-3.28.2025.pdf). The January 2023 staff report had H \"entitled without tower components\"; the newer approval is drawn, using the Design Guidelines' tower zone on H.",
+    "fid": 3
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2585142,
+        37.7888445
+       ],
+       [
+        -122.2579429,
+        37.7878954
+       ],
+       [
+        -122.2586688,
+        37.7876202
+       ],
+       [
+        -122.2593542,
+        37.7882263
+       ],
+       [
+        -122.2592749,
+        37.7882826
+       ],
+       [
+        -122.2592747,
+        37.7882646
+       ],
+       [
+        -122.2591934,
+        37.7882231
+       ],
+       [
+        -122.2591926,
+        37.7881927
+       ],
+       [
+        -122.2591192,
+        37.7881526
+       ],
+       [
+        -122.2591207,
+        37.7881248
+       ],
+       [
+        -122.2590363,
+        37.7880815
+       ],
+       [
+        -122.2590232,
+        37.7880369
+       ],
+       [
+        -122.2589877,
+        37.7880331
+       ],
+       [
+        -122.2588508,
+        37.7881541
+       ],
+       [
+        -122.2588115,
+        37.7881553
+       ],
+       [
+        -122.2584645,
+        37.7884117
+       ],
+       [
+        -122.2585392,
+        37.7884418
+       ],
+       [
+        -122.2585363,
+        37.7884796
+       ],
+       [
+        -122.2586213,
+        37.7885136
+       ],
+       [
+        -122.2586184,
+        37.7885515
+       ],
+       [
+        -122.2587034,
+        37.7885855
+       ],
+       [
+        -122.2587005,
+        37.7886234
+       ],
+       [
+        -122.2587687,
+        37.7886419
+       ],
+       [
+        -122.2585553,
+        37.7887934
+       ],
+       [
+        -122.2585674,
+        37.7888066
+       ],
+       [
+        -122.2585142,
+        37.7888445
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "H",
+    "label": "Parcel H tower zone",
+    "stage": "entitled",
+    "height_ft": 240,
+    "podium_ft": 86,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": "Phase 2",
+    "illustrative": true,
+    "source": "illustrative: tower zone traced from Oak to 9th Brooklyn Basin Design Guidelines (November 2006, revised September 2014; Attachment D2b to Legistar file 23-0206), \"Tower zone\" diagram, printed p. 14 (PDF p. 18), drawn to the 240-ft tower limit of Oakland Planning Code Chapter 17.101B (D-OTN), clerical update adopted by Ordinance 13826 (2024), Exhibit A, Sec. 17.101B.130 (https://oakland.legistar1.com/oakland/attachments/9a0331be-abd6-4cf1-b700-09bf1cba330c.pdf) over the 86-ft mid-rise limit; one tower is allowed in the zone",
+    "note": "A tower of up to 240 ft is allowed somewhere in this zone, with a floor plate of at most 15,000 sq ft (Design Guidelines p. 15); the zone is drawn whole, solid to 86 ft. The Planning Commission approved two Final Development Permit options on March 5, 2025: a 5-story and a 7-story building, or a 5-story building (58 ft) and a 23-story tower (235 ft) (staff report https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/item-2-staff-report-2-19-25-bb-parcel-h-option-2-case-file-pud06010-r02-pudf05-planning-commission-3.5.2025.pdf; minutes https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/3.5.2025-pc-meeting-minutes-appr-via-catherine-3.12.2025.pdf, adopted March 19, 2025, https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/3.19.2025-pc-meeting-minutes-appr-via-catherine-3.28.2025.pdf). The January 2023 staff report had H \"entitled without tower components\"; the newer approval is drawn, using the Design Guidelines' tower zone on H.",
+    "fid": 4
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.258787,
+        37.7886469
+       ],
+       [
+        -122.2587005,
+        37.7886234
+       ],
+       [
+        -122.2587034,
+        37.7885855
+       ],
+       [
+        -122.2586184,
+        37.7885515
+       ],
+       [
+        -122.2586213,
+        37.7885136
+       ],
+       [
+        -122.2585363,
+        37.7884796
+       ],
+       [
+        -122.2585392,
+        37.7884418
+       ],
+       [
+        -122.2584645,
+        37.7884117
+       ],
+       [
+        -122.2588115,
+        37.7881553
+       ],
+       [
+        -122.2588508,
+        37.7881541
+       ],
+       [
+        -122.2589877,
+        37.7880331
+       ],
+       [
+        -122.2590232,
+        37.7880369
+       ],
+       [
+        -122.2590363,
+        37.7880815
+       ],
+       [
+        -122.2591207,
+        37.7881248
+       ],
+       [
+        -122.2591192,
+        37.7881526
+       ],
+       [
+        -122.2591926,
+        37.7881927
+       ],
+       [
+        -122.2591934,
+        37.7882231
+       ],
+       [
+        -122.2592747,
+        37.7882646
+       ],
+       [
+        -122.2592752,
+        37.7883026
+       ],
+       [
+        -122.258787,
+        37.7886469
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "K",
+    "label": "Parcel K",
+    "stage": "entitled",
+    "height_ft": 86,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": "Phase 3",
+    "illustrative": true,
+    "source": "illustrative: drawn to the 86-ft mid-rise limit of Oakland Planning Code Chapter 17.101B (D-OTN), clerical update adopted by Ordinance 13826 (2024), Exhibit A, Sec. 17.101B.130 (https://oakland.legistar1.com/oakland/attachments/9a0331be-abd6-4cf1-b700-09bf1cba330c.pdf) and Oak to 9th Brooklyn Basin Design Guidelines (November 2006, revised September 2014; Attachment D2b to Legistar file 23-0206), printed p. 15; parcel: City of Oakland parcels, APN 018046000411 (https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Oakland_Parcels_Public/FeatureServer/0), split between K and L along Harbor Lane West as drawn on Brooklyn Basin - Oak to 9th Development Plan, Preliminary Development Plan (revised December 2022; Attachment A1 to Legistar file 23-0206), sheet 1.4 \"Development Program and Parcelization Plan\" (April 2022 revision), PDF p. 6",
+    "note": "One of the Design Guidelines' tower zones (240 ft) faces Clinton Basin. K and L are planned for 620 homes together (2025 Official Statement).",
+    "fid": 5
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2605647,
+        37.7890552
+       ],
+       [
+        -122.2606249,
+        37.789081
+       ],
+       [
+        -122.2605994,
+        37.7890997
+       ],
+       [
+        -122.2608678,
+        37.7893381
+       ],
+       [
+        -122.2601028,
+        37.7898829
+       ],
+       [
+        -122.2595739,
+        37.7894151
+       ],
+       [
+        -122.259601,
+        37.7893961
+       ],
+       [
+        -122.2596442,
+        37.7894198
+       ],
+       [
+        -122.2596444,
+        37.78945
+       ],
+       [
+        -122.2597294,
+        37.789484
+       ],
+       [
+        -122.2597265,
+        37.7895218
+       ],
+       [
+        -122.2597926,
+        37.7895374
+       ],
+       [
+        -122.2604468,
+        37.7890692
+       ],
+       [
+        -122.2604463,
+        37.789029
+       ],
+       [
+        -122.2603719,
+        37.7889897
+       ],
+       [
+        -122.260359,
+        37.7889451
+       ],
+       [
+        -122.260278,
+        37.7889213
+       ],
+       [
+        -122.2603574,
+        37.7888656
+       ],
+       [
+        -122.2604524,
+        37.7889193
+       ],
+       [
+        -122.2605647,
+        37.7890552
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "K",
+    "label": "Parcel K tower zone",
+    "stage": "entitled",
+    "height_ft": 240,
+    "podium_ft": 86,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": "Phase 3",
+    "illustrative": true,
+    "source": "illustrative: tower zone traced from Oak to 9th Brooklyn Basin Design Guidelines (November 2006, revised September 2014; Attachment D2b to Legistar file 23-0206), \"Tower zone\" diagram, printed p. 14 (PDF p. 18), drawn to the 240-ft tower limit of Oakland Planning Code Chapter 17.101B (D-OTN), clerical update adopted by Ordinance 13826 (2024), Exhibit A, Sec. 17.101B.130 (https://oakland.legistar1.com/oakland/attachments/9a0331be-abd6-4cf1-b700-09bf1cba330c.pdf) over the 86-ft mid-rise limit; one tower is allowed in the zone",
+    "note": "A tower of up to 240 ft is allowed somewhere in this zone, with a floor plate of at most 15,000 sq ft (Design Guidelines p. 15); the zone is drawn whole, solid to 86 ft.",
+    "fid": 6
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2597926,
+        37.7895374
+       ],
+       [
+        -122.2597265,
+        37.7895218
+       ],
+       [
+        -122.2597294,
+        37.789484
+       ],
+       [
+        -122.2596444,
+        37.78945
+       ],
+       [
+        -122.2596442,
+        37.7894198
+       ],
+       [
+        -122.2595828,
+        37.789386
+       ],
+       [
+        -122.260252,
+        37.7889137
+       ],
+       [
+        -122.260359,
+        37.7889451
+       ],
+       [
+        -122.2603719,
+        37.7889897
+       ],
+       [
+        -122.2604463,
+        37.789029
+       ],
+       [
+        -122.2604468,
+        37.7890692
+       ],
+       [
+        -122.2597926,
+        37.7895374
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "L",
+    "label": "Parcel L",
+    "stage": "entitled",
+    "height_ft": 86,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": "Phase 3",
+    "illustrative": true,
+    "source": "illustrative: drawn to the 86-ft mid-rise limit of Oakland Planning Code Chapter 17.101B (D-OTN), clerical update adopted by Ordinance 13826 (2024), Exhibit A, Sec. 17.101B.130 (https://oakland.legistar1.com/oakland/attachments/9a0331be-abd6-4cf1-b700-09bf1cba330c.pdf) and Oak to 9th Brooklyn Basin Design Guidelines (November 2006, revised September 2014; Attachment D2b to Legistar file 23-0206), printed p. 15; parcel: City of Oakland parcels, APN 018046000411 (https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Oakland_Parcels_Public/FeatureServer/0), split between K and L along Harbor Lane West as drawn on Brooklyn Basin - Oak to 9th Development Plan, Preliminary Development Plan (revised December 2022; Attachment A1 to Legistar file 23-0206), sheet 1.4 \"Development Program and Parcelization Plan\" (April 2022 revision), PDF p. 6",
+    "note": "K and L are planned for 620 homes together (2025 Official Statement).",
+    "fid": 7
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2612806,
+        37.7890441
+       ],
+       [
+        -122.2610113,
+        37.7888061
+       ],
+       [
+        -122.2606249,
+        37.789081
+       ],
+       [
+        -122.2605647,
+        37.7890552
+       ],
+       [
+        -122.2604524,
+        37.7889193
+       ],
+       [
+        -122.2603574,
+        37.7888656
+       ],
+       [
+        -122.2611945,
+        37.7882784
+       ],
+       [
+        -122.2612549,
+        37.7883316
+       ],
+       [
+        -122.2613211,
+        37.7882846
+       ],
+       [
+        -122.2617792,
+        37.788689
+       ],
+       [
+        -122.2612806,
+        37.7890441
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "M",
+    "label": "Parcel M",
+    "stage": "entitled",
+    "height_ft": 86,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": "Phase 4",
+    "illustrative": true,
+    "source": "illustrative: drawn to the 86-ft mid-rise limit of Oakland Planning Code Chapter 17.101B (D-OTN), clerical update adopted by Ordinance 13826 (2024), Exhibit A, Sec. 17.101B.130 (https://oakland.legistar1.com/oakland/attachments/9a0331be-abd6-4cf1-b700-09bf1cba330c.pdf) and Oak to 9th Brooklyn Basin Design Guidelines (November 2006, revised September 2014; Attachment D2b to Legistar file 23-0206), printed p. 15; parcel: City of Oakland parcels, APN 018043000114 (https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Oakland_Parcels_Public/FeatureServer/0)",
+    "note": "Up to two towers of up to 240 ft are allowed on Parcel M since May 2023 (Resolution 89709), but no adopted document places them, so they aren't drawn.",
+    "fid": 8
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2629378,
+        37.7897305
+       ],
+       [
+        -122.2621745,
+        37.790276
+       ],
+       [
+        -122.2620404,
+        37.7905
+       ],
+       [
+        -122.2620171,
+        37.7905192
+       ],
+       [
+        -122.2619839,
+        37.790523
+       ],
+       [
+        -122.2612672,
+        37.7904179
+       ],
+       [
+        -122.2611343,
+        37.7903941
+       ],
+       [
+        -122.2610424,
+        37.7903129
+       ],
+       [
+        -122.2624513,
+        37.7893095
+       ],
+       [
+        -122.2629378,
+        37.7897305
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "A",
+    "label": "Foon Lok West",
+    "stage": "complete",
+    "height_ft": 66,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable housing",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: footprint: OpenStreetMap w944972671 via Overture 2026-09-23.1; stories: 6, as mapped in OpenStreetMap (building:levels); no official story count was found; height estimated at 11 ft a story (the floor-to-floor height of Brooklyn Basin - Oak to 9th Development Plan, Preliminary Development Plan (revised December 2022; Attachment A1 to Legistar file 23-0206), sheet 5.3 sections, PDF p. 34), capped at the 86-ft limit; complete per City of Oakland CFD No. 2023-1 Official Statement (Attachment A to Legistar file 25-0862, July 2025), Table 2, p. 28",
+    "stories": 6,
+    "note": "Parcel A. The height is estimated from the stories; no official height was found.",
+    "fid": 9
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2552368,
+        37.7884757
+       ],
+       [
+        -122.2555736,
+        37.7886846
+       ],
+       [
+        -122.2556927,
+        37.7885647
+       ],
+       [
+        -122.2559507,
+        37.7884705
+       ],
+       [
+        -122.2555484,
+        37.7877821
+       ],
+       [
+        -122.2549576,
+        37.7879977
+       ],
+       [
+        -122.2552368,
+        37.7884757
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "A",
+    "label": "Foon Lok East",
+    "stage": "complete",
+    "height_ft": 66,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable housing",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: footprint: OpenStreetMap w1184511636 via Overture 2026-09-23.1; stories: 6, as mapped in OpenStreetMap (building:levels); no official story count was found; height estimated at 11 ft a story (the floor-to-floor height of Brooklyn Basin - Oak to 9th Development Plan, Preliminary Development Plan (revised December 2022; Attachment A1 to Legistar file 23-0206), sheet 5.3 sections, PDF p. 34), capped at the 86-ft limit; complete per City of Oakland CFD No. 2023-1 Official Statement (Attachment A to Legistar file 25-0862, July 2025), Table 2, p. 28",
+    "stories": 6,
+    "note": "Parcel A. The height is estimated from the stories; no official height was found.",
+    "fid": 10
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2554522,
+        37.7887988
+       ],
+       [
+        -122.2555736,
+        37.7886846
+       ],
+       [
+        -122.2552368,
+        37.7884757
+       ],
+       [
+        -122.2549576,
+        37.7879977
+       ],
+       [
+        -122.2544472,
+        37.7881705
+       ],
+       [
+        -122.25432,
+        37.788392
+       ],
+       [
+        -122.2544947,
+        37.788455
+       ],
+       [
+        -122.2545054,
+        37.788432
+       ],
+       [
+        -122.2550983,
+        37.7886596
+       ],
+       [
+        -122.2551044,
+        37.7886511
+       ],
+       [
+        -122.2554522,
+        37.7887988
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "B",
+    "label": "Orion",
+    "stage": "complete",
+    "height_ft": 86,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: footprint: OpenStreetMap w782291037 via Overture 2026-09-23.1; stories: 8, as mapped in OpenStreetMap (building:levels); no official story count was found; height estimated at 11 ft a story (the floor-to-floor height of Brooklyn Basin - Oak to 9th Development Plan, Preliminary Development Plan (revised December 2022; Attachment A1 to Legistar file 23-0206), sheet 5.3 sections, PDF p. 34), capped at the 86-ft limit; complete per City of Oakland CFD No. 2023-1 Official Statement (Attachment A to Legistar file 25-0862, July 2025), Table 2, p. 28",
+    "stories": 8,
+    "note": "Parcel B. The height is estimated from the stories; no official height was found.",
+    "fid": 11
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2563839,
+        37.7874675
+       ],
+       [
+        -122.2557376,
+        37.7877135
+       ],
+       [
+        -122.2560711,
+        37.7882608
+       ],
+       [
+        -122.2560584,
+        37.7882657
+       ],
+       [
+        -122.2561478,
+        37.7884123
+       ],
+       [
+        -122.2563128,
+        37.7883494
+       ],
+       [
+        -122.2563054,
+        37.7883373
+       ],
+       [
+        -122.2567994,
+        37.7881494
+       ],
+       [
+        -122.2563839,
+        37.7874675
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "C",
+    "label": "Artizan",
+    "stage": "complete",
+    "height_ft": 86,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: footprint: OpenStreetMap w782291050 via Overture 2026-09-23.1; stories: 8, as mapped in OpenStreetMap (building:levels); no official story count was found; height estimated at 11 ft a story (the floor-to-floor height of Brooklyn Basin - Oak to 9th Development Plan, Preliminary Development Plan (revised December 2022; Attachment A1 to Legistar file 23-0206), sheet 5.3 sections, PDF p. 34), capped at the 86-ft limit; complete per City of Oakland CFD No. 2023-1 Official Statement (Attachment A to Legistar file 25-0862, July 2025), Table 2, p. 28",
+    "stories": 8,
+    "note": "Parcel C. The height is estimated from the stories; no official height was found.",
+    "fid": 12
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2571368,
+        37.7871811
+       ],
+       [
+        -122.256536,
+        37.787405
+       ],
+       [
+        -122.2568432,
+        37.7879199
+       ],
+       [
+        -122.2568271,
+        37.7879413
+       ],
+       [
+        -122.25693,
+        37.788114
+       ],
+       [
+        -122.2575545,
+        37.7878814
+       ],
+       [
+        -122.2571368,
+        37.7871811
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "F",
+    "label": "Paseo Estero",
+    "stage": "complete",
+    "height_ft": 66,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable housing",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: footprint: OpenStreetMap w782294676 via Overture 2026-09-23.1; stories: 6, as mapped in OpenStreetMap (building:levels); no official story count was found; height estimated at 11 ft a story (the floor-to-floor height of Brooklyn Basin - Oak to 9th Development Plan, Preliminary Development Plan (revised December 2022; Attachment A1 to Legistar file 23-0206), sheet 5.3 sections, PDF p. 34), capped at the 86-ft limit; complete per City of Oakland CFD No. 2023-1 Official Statement (Attachment A to Legistar file 25-0862, July 2025), Table 2, p. 28",
+    "stories": 6,
+    "note": "Parcel F. The height is estimated from the stories; no official height was found.",
+    "fid": 13
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2569084,
+        37.7891405
+       ],
+       [
+        -122.2570376,
+        37.788671
+       ],
+       [
+        -122.2568303,
+        37.7883506
+       ],
+       [
+        -122.2563265,
+        37.7885386
+       ],
+       [
+        -122.2564958,
+        37.788795
+       ],
+       [
+        -122.2564621,
+        37.7889012
+       ],
+       [
+        -122.2564962,
+        37.7889071
+       ],
+       [
+        -122.2564546,
+        37.789062
+       ],
+       [
+        -122.2569084,
+        37.7891405
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "F",
+    "label": "Vista Estero",
+    "stage": "complete",
+    "height_ft": 66,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable housing",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: footprint: OpenStreetMap w782294675 via Overture 2026-09-23.1; stories: 6, as mapped in OpenStreetMap (building:levels); no official story count was found; height estimated at 11 ft a story (the floor-to-floor height of Brooklyn Basin - Oak to 9th Development Plan, Preliminary Development Plan (revised December 2022; Attachment A1 to Legistar file 23-0206), sheet 5.3 sections, PDF p. 34), capped at the 86-ft limit; complete per City of Oakland CFD No. 2023-1 Official Statement (Attachment A to Legistar file 25-0862, July 2025), Table 2, p. 28",
+    "stories": 6,
+    "note": "Parcel F. The height is estimated from the stories; no official height was found.",
+    "fid": 14
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2557967,
+        37.7889481
+       ],
+       [
+        -122.2564546,
+        37.789062
+       ],
+       [
+        -122.2564962,
+        37.7889071
+       ],
+       [
+        -122.2564621,
+        37.7889012
+       ],
+       [
+        -122.2564958,
+        37.788795
+       ],
+       [
+        -122.2563265,
+        37.7885386
+       ],
+       [
+        -122.2558289,
+        37.7887243
+       ],
+       [
+        -122.255734,
+        37.7888437
+       ],
+       [
+        -122.2556912,
+        37.7889114
+       ],
+       [
+        -122.2557967,
+        37.7889481
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "G",
+    "label": "Caspian",
+    "stage": "complete",
+    "height_ft": 77,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential, retail",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: footprint: OpenStreetMap w1096126290 via Overture 2026-09-23.1; stories: City of Oakland CFD No. 2023-1 Official Statement (Attachment A to Legistar file 25-0862, July 2025) (https://oakland.legistar1.com/oakland/attachments/19a992d0-69e8-4aa1-ac01-8bacb3620c18.pdf), \"The seven-story building\" (p. 41); height estimated at 11 ft a story (the floor-to-floor height of Brooklyn Basin - Oak to 9th Development Plan, Preliminary Development Plan (revised December 2022; Attachment A1 to Legistar file 23-0206), sheet 5.3 sections, PDF p. 34), capped at the 86-ft limit; complete per City of Oakland CFD No. 2023-1 Official Statement (Attachment A to Legistar file 25-0862, July 2025), Table 2, p. 28",
+    "stories": 7,
+    "note": "Parcel G. The height is estimated from the stories; no official height was found.",
+    "fid": 15
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2571321,
+        37.789191
+       ],
+       [
+        -122.2583248,
+        37.7893896
+       ],
+       [
+        -122.2583527,
+        37.7892552
+       ],
+       [
+        -122.2578635,
+        37.7884435
+       ],
+       [
+        -122.2576518,
+        37.7880635
+       ],
+       [
+        -122.2570534,
+        37.7882716
+       ],
+       [
+        -122.257265,
+        37.7886516
+       ],
+       [
+        -122.2572742,
+        37.7887238
+       ],
+       [
+        -122.2571321,
+        37.789191
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "J",
+    "label": "Portico",
+    "stage": "complete",
+    "height_ft": 86,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential, retail",
+    "phase": "Phase 2",
+    "illustrative": true,
+    "source": "illustrative: footprint: OpenStreetMap w1096126291 via Overture 2026-09-23.1; stories: City of Oakland CFD No. 2023-1 Official Statement (Attachment A to Legistar file 25-0862, July 2025) (https://oakland.legistar1.com/oakland/attachments/19a992d0-69e8-4aa1-ac01-8bacb3620c18.pdf), \"The eight-story building\" (p. 41); height estimated at 11 ft a story (the floor-to-floor height of Brooklyn Basin - Oak to 9th Development Plan, Preliminary Development Plan (revised December 2022; Attachment A1 to Legistar file 23-0206), sheet 5.3 sections, PDF p. 34), capped at the 86-ft limit; complete per City of Oakland CFD No. 2023-1 Official Statement (Attachment A to Legistar file 25-0862, July 2025), Table 2, p. 28",
+    "stories": 8,
+    "note": "Parcel J. The height is estimated from the stories; no official height was found.",
+    "fid": 16
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2594886,
+        37.7882278
+       ],
+       [
+        -122.2603263,
+        37.7875886
+       ],
+       [
+        -122.2598334,
+        37.7872128
+       ],
+       [
+        -122.2588027,
+        37.7876089
+       ],
+       [
+        -122.2590591,
+        37.787818
+       ],
+       [
+        -122.2591035,
+        37.7877826
+       ],
+       [
+        -122.2592011,
+        37.7878643
+       ],
+       [
+        -122.2591501,
+        37.7879036
+       ],
+       [
+        -122.2594886,
+        37.7882278
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

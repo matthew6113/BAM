@@ -2641,7 +2641,7 @@
       ],
       "nextMilestone": "Construction of Parcel K (about 2029).",
       "summary": "A stretch of the Oakland Estuary waterfront being built out as a neighborhood of up to 3,700 homes with about 31 acres of parks and two marinas. More than 1,600 homes are already built.",
-      "massingNotes": "Boundary: Oakland zoning (City of Oakland ArcGIS Zoning_Group_Layers_ FeatureServer layer 0), BASEZONE='D-OTN', covers 31.1 acres of development parcels; the parks need county parcels or a trace of the 2023 report's status figure (p. 3). \"For reference only\" terms; label approximate. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: Oakland zoning (City of Oakland ArcGIS Zoning_Group_Layers_ FeatureServer layer 0), BASEZONE='D-OTN', covers 31.1 acres of development parcels; the parks need county parcels or a trace of the 2023 report's status figure (p. 3). \"For reference only\" terms; label approximate. Massing: unbuilt parcels (city parcels; K/L split from the revised PDP sheet 1.4, RMS 1.8 m) drawn to the D-OTN 86-ft limit (Planning Code 17.101B.130), with 240-ft tower zones from the Design Guidelines (2014) on Parcel K and on Parcel H (Option 2 approved Mar 5, 2025); completed Parcels A, B, C, F, G and J from OpenStreetMap footprints at about 11 ft per story (illustrative; no official heights found). Parks, streets, marinas and the 9th Avenue Terminal are not drawn.",
       "officialLinks": [
         "https://oakland.legistar.com/LegislationDetail.aspx?ID=34148&GUID=3B71552F-D01C-4286-85A4-14EEBDDF8AFA"
       ],
@@ -2655,7 +2655,14 @@
         "https://oakland.legistar.com/LegislationDetail.aspx?ID=22206&GUID=EF0213B9-782E-40E3-8DDA-BDE4762D30B9",
         "https://oakland.legistar.com/LegislationDetail.aspx?ID=26980&GUID=FDF8C0B0-1E34-4371-BD3C-FA6B720A0574",
         "https://oakland.legistar.com/LegislationDetail.aspx?ID=28098&GUID=7B95936B-ED06-4103-9CD7-2FBD65D96CB0",
-        "https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Zoning_Group_Layers_/FeatureServer/0"
+        "https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Zoning_Group_Layers_/FeatureServer/0",
+        "https://oakland.legistar1.com/oakland/attachments/19a992d0-69e8-4aa1-ac01-8bacb3620c18.pdf",
+        "https://oakland.legistar1.com/oakland/attachments/1b34cc1f-3524-4e14-a367-8525418da155.pdf",
+        "https://oakland.legistar1.com/oakland/attachments/9a0331be-abd6-4cf1-b700-09bf1cba330c.pdf",
+        "https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Oakland_Parcels_Public/FeatureServer/0",
+        "https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/3.19.2025-pc-meeting-minutes-appr-via-catherine-3.28.2025.pdf",
+        "https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/3.5.2025-pc-meeting-minutes-appr-via-catherine-3.12.2025.pdf",
+        "https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/item-2-staff-report-2-19-25-bb-parcel-h-option-2-case-file-pud06010-r02-pudf05-planning-commission-3.5.2025.pdf"
       ],
       "verify": [
         "whether BCDC has amended its permit (2006.007.00) for the 600 added homes",
