@@ -3,6 +3,26 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-05 (Milestone 4: land-use zones for the plan-scale projects)
+
+**moffett-park**, **north-bayshore**, **concord-naval-weapons-station**, **suisun-expansion** and
+**brisbane-baylands** get land-use zones (`data/landuse/`), not buildings, per the SPEC; each
+plan document is added to `sources` and `massingNotes` says what was drawn. Suisun's zones are
+proposed (NOP) and Brisbane's are from the draft 2026 specific plan, both labelled so. Brisbane
+also gets the Bayshore Roundhouse landmark (about 25 ft, Council staff report). **north-bayshore**'s
+boundary is now traced from the master plan's project-area line (189.3 acres as drawn, with
+internal streets and the Shoreline Amphitheatre), replacing the parcel assembly that cut off
+about 7 acres of plan residential (Matthew, 2026-10-05).
+
+## 2026-10-05 (Milestone 4, batch 4: The Rise, Alameda Point, Brooklyn Basin, Oakland Coliseum)
+
+`massingNotes` updated and each massing source added to `sources` for **the-rise**,
+**alameda-point** and **brooklyn-basin**. **oakland-coliseum** gets no massing: no plan is filed
+or approved, and its D-CO-2 zoning (159 ft above mean sea level, Ord. 13302 and 13894) covers the
+whole site; both ordinances are now cited. **downtown-west** block E1 is drawn at the approved
+Development Agreement's 260 ft (Matthew: the more recent document wins). `apps.cupertino.org`
+(the City of Cupertino's document server) added to the official hosts.
+
 ## 2026-10-03 (Milestone 4, batch 3: Parkmerced, Parkline, Willow Village, Related Santa Clara, Downtown West)
 
 `massingNotes` updated and each massing source added to `sources` for **parkmerced**,

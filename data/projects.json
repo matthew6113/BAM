@@ -1511,7 +1511,7 @@
       ],
       "nextMilestone": "City Council action on the Specific Plan, Final EIR and related approvals.",
       "summary": "A plan for 2,200 homes, 7 million sq ft of commercial space and nearly 150 acres of open space on about 680 acres of the Baylands in Brisbane, keeping the historic Roundhouse. The Planning Commission recommended it in August 2026, and it is now before the City Council.",
-      "massingNotes": "Boundary: trace the 2026 plan figures (Specific Plan Fig. 2.3.1, General Plan land use map and zoning map). The city's ArcGIS layer 'Baylands Specific Plan Boundary' (org UGpGSV1ugL0pHSgX) is marked DRAFT, last edited June 2022, covers about 702 acres and has no posted license, so it is approximate only. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: trace the 2026 plan figures (Specific Plan Fig. 2.3.1, General Plan land use map and zoning map). The city's ArcGIS layer 'Baylands Specific Plan Boundary' (org UGpGSV1ugL0pHSgX) is marked DRAFT, last edited June 2022, covers about 702 acres and has no posted license, so it is approximate only. Land use: the 2026 staff-recommended Baylands Specific Plan (not yet adopted; recommended by the Planning Commission Aug 13, 2026), Fig. 2.3.1, fitted to the draft boundary (RMS 1.9 m) and labelled draft; it is newer than the adopted General Plan's two Planned Development designations. Landmark: the Bayshore Roundhouse from its OpenStreetMap footprint at about 25 ft (Council staff report, Sept 29, 2026).",
       "officialLinks": [
         "https://www.brisbaneca.gov/775/2026-Baylands-Specific-Plan",
         "https://www.brisbaneca.gov/774/2026-Final-EIR"
@@ -1527,7 +1527,9 @@
         "https://www.brisbaneca.gov/DocumentCenter/View/3039",
         "https://brisbaneca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=12583,plainText=false)",
         "https://brisbaneca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=12627,plainText=false)",
-        "https://services9.arcgis.com/UGpGSV1ugL0pHSgX/arcgis/rest/services/Baylands_Specific_Plan_Boundary_DRAFT_Map_WFL1/FeatureServer/1"
+        "https://services9.arcgis.com/UGpGSV1ugL0pHSgX/arcgis/rest/services/Baylands_Specific_Plan_Boundary_DRAFT_Map_WFL1/FeatureServer/1",
+        "https://brisbaneca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=12608,plainText=false)",
+        "https://services9.arcgis.com/UGpGSV1ugL0pHSgX/arcgis/rest/services/GP_Land_Use_Designations_NAD83_20251110/FeatureServer/7"
       ],
       "verify": [
         "the City Council's vote and its resolution and ordinance numbers",
@@ -1997,7 +1999,7 @@
       ],
       "nextMilestone": null,
       "summary": "Google's master plan for about 153 acres of North Bayshore in Mountain View: up to 7,000 homes, about 3.1 million sq ft of office, hotels and 26 acres of parks and public open space. Approved in 2023.",
-      "massingNotes": "Boundary: Mountain View parcels (maps.mountainview.gov Public/Parcel MapServer layer 0) filtered to the 39 APNs in Legistar matter 7641 (37 match); approximate, since the plan covers only parts of the Gateway parcels and Lot C, and the city's terms allow use at your own risk. Or trace the master plan figure. Don't use the zoning layer's P(39) district, which is the whole precise plan. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: Mountain View parcels (maps.mountainview.gov Public/Parcel MapServer layer 0) filtered to the 39 APNs in Legistar matter 7641 (37 match); approximate, since the plan covers only parts of the Gateway parcels and Lot C, and the city's terms allow use at your own risk. Or trace the master plan figure. Don't use the zoning layer's P(39) district, which is the whole precise plan. Land use: the approved Master Plan's land-use plans (April 2023, Res. 18810), Plan 4.1.2 p. 33 and Plan 4.1.1 p. 32, georeferenced on street intersections (RMS 2.8 m and 4.9 m), approximate as the plan says; it supersedes the 2021 precise plan's character areas. The site boundary is now traced from the plan's own project-area line (Plans 4.1.2 and 4.1.1; 189.3 acres as drawn, against about 153 in the council report, because the line takes in internal streets and the whole Shoreline Amphitheatre at Lot C, which the plan marks not subject to redevelopment).",
       "officialLinks": [
         "https://www.mountainview.gov/our-city/departments/community-development/planning/active-projects/google-projects/north-bayshore-master-plan"
       ],
@@ -2009,7 +2011,9 @@
         "https://webapi.legistar.com/v1/mountainview/events/2504/eventitems",
         "https://webapi.legistar.com/v1/mountainview/events/2505/eventitems",
         "https://webapi.legistar.com/v1/mountainview/matters/7495",
-        "https://maps.mountainview.gov/arcgis/rest/services/Public/Parcel/MapServer/0"
+        "https://maps.mountainview.gov/arcgis/rest/services/Public/Parcel/MapServer/0",
+        "https://mountainview.legistar.com/gateway.aspx?M=F&ID=c8cc29fa-61b5-4936-bb9a-6705a30d063c.pdf",
+        "https://www.mountainview.gov/home/showpublisheddocument/7175/638254594938830000"
       ],
       "verify": [
         "construction or permit status under the master plan in 2025–26",
@@ -2094,7 +2098,7 @@
       ],
       "nextMilestone": null,
       "summary": "A rezoning of Sunnyvale's bayside office parks to allow up to 20,000 homes alongside 10 million sq ft of new office and R&D space. It's a zoning plan rather than a single development: each property owner builds under it with its own approvals.",
-      "massingNotes": "Plan-scale: draw the boundary only, from Sunnyvale GIS GeneralPlan MapServer layer 8 \"Specific Plan Boundary\" (SP_Code='MP'; one polygon of about 1,271.6 acres; no license stated, so confirm terms). No invented buildings; any project massing comes in Milestone 4.",
+      "massingNotes": "Plan-scale: draw the boundary only, from Sunnyvale GIS GeneralPlan MapServer layer 8 \"Specific Plan Boundary\" (SP_Code='MP'; one polygon of about 1,271.6 acres; no license stated, so confirm terms). No invented buildings. Land use: the city's MP- zoning districts (Sunnyvale GIS ZoningLegend layer 2, as published) from Ordinance 3218-23 (July 2023), with the ecological combining district drawn as open space; 1,158 of 1,278 acres (streets aren't zoned).",
       "officialLinks": [
         "https://sunnyvaleca.legistar.com/LegislationDetail.aspx?ID=13792&GUID=26BD054A-EB50-4DB3-A67B-4DC62C5B6E01"
       ],
@@ -2108,7 +2112,9 @@
         "https://sunnyvaleca.legistar.com/LegislationDetail.aspx?ID=16515&GUID=A0E0F499-27CA-4CC3-989C-176E8A27F1FB",
         "https://sunnyvaleca.legistar.com/LegislationDetail.aspx?ID=16567&GUID=502BC91B-5390-4A9D-9E29-D467232F4A1E",
         "https://sunnyvaleca.legistar.com/LegislationDetail.aspx?ID=16913&GUID=6E9B7856-EBBC-4C89-87B0-E0D76ED6C74B",
-        "https://gis.sunnyvale.ca.gov/arcgis/rest/services/GeneralPlan/MapServer/8"
+        "https://gis.sunnyvale.ca.gov/arcgis/rest/services/GeneralPlan/MapServer/8",
+        "https://gis.sunnyvale.ca.gov/arcgis/rest/services/ZoningLegend/MapServer/1",
+        "https://gis.sunnyvale.ca.gov/arcgis/rest/services/ZoningLegend/MapServer/2"
       ],
       "verify": [
         "the resolution number certifying the EIR (findings: Resolution 1199-23; not printed in the July 11, 2023 minutes)",
@@ -2194,7 +2200,7 @@
       ],
       "nextMilestone": "City Council hearing on Oct 6, 2026 on up to $135M of conduit bond financing for the Block 5 apartments (234 units with Eden Housing).",
       "summary": "The redevelopment of the former Vallco Mall on Wolfe Road, near Apple's campus, approved under the state's SB 35 streamlining law: 2,669 homes, offices, shops and 7.5 acres of public parks.",
-      "massingNotes": "Boundary: Santa Clara County parcels (data.sccgov.org ubcd-cewv), APNs 316-20-121 (16.85 ac) and 316-20-122 (32.93 ac), about 49.8 acres; license not stated, so check the county's terms. Fallbacks: the Phase 1 final map or the 2026 open-space layout. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: Santa Clara County parcels (data.sccgov.org ubcd-cewv), APNs 316-20-121 (16.85 ac) and 316-20-122 (32.93 ac), about 49.8 acres; license not stated, so check the county's terms. Fallbacks: the Phase 1 final map or the 2026 open-space layout. Massing: blocks traced from the approved SB 35 plan set (second modification, approved Feb 16, 2024), sheets P-0800.xx, fitted to the county parcels (RMS 0.3 m), with heights from the building sections P-0831/P-0832: podiums 27–43 ft, residential blocks 80–86 ft, towers 133–228 ft, all illustrative and entitled. Block 13 is outlined only: the Feb 2026 third modification cut office by exactly its 479,667 sq ft and its plans are not published.",
       "officialLinks": [
         "https://cupertino.legistar.com/LegislationDetail.aspx?ID=16200&GUID=EE4A59A8-D22F-49F8-93DE-8033F1DE8237"
       ],
@@ -2209,7 +2215,8 @@
         "https://legistar.granicus.com/cupertino/attachments/a48ffc4f-a6db-4f2c-a12c-c966dfb6dfbf.pdf",
         "https://cupertino.legistar.com/LegislationDetail.aspx?ID=16451&GUID=7F4B3B60-3A19-4A8A-8BD1-E72AE1F3D55F",
         "https://legistar.granicus.com/cupertino/attachments/7e0e84b1-2eae-4b09-91ab-f0a3d43beafe.docx",
-        "https://data.sccgov.org/d/ubcd-cewv"
+        "https://data.sccgov.org/d/ubcd-cewv",
+        "https://apps.cupertino.org/pdf/Attachment%20A%20-%20Approved%20Plans.pdf"
       ],
       "verify": [
         "the outcome of the July 21, 2026 final map item (Resolution 26-080) and when the map records",
@@ -2319,7 +2326,7 @@
       ],
       "nextMilestone": "Specific Plan work starts winter 2026–27, with community engagement in early 2027.",
       "summary": "A former Navy weapons station by North Concord BART, planned as a new community of about 12,000 homes over a 30-year build-out. The price and payment terms with the Navy are now agreed; the detailed Specific Plan comes next.",
-      "massingNotes": "Boundary: trace Exhibit A of the executed Navy term sheet, \"Economic Development Conveyance (EDC) Property\" (Navy map dated 2026-03-30, View/2384 p. 15), and label it approximate; Exhibit B is the developer's unadopted concept plan and should not be drawn. City GIS does not capture the site. Plan-scale only; massing waits for the Specific Plan (Milestone 4 at the earliest).",
+      "massingNotes": "Boundary: trace Exhibit A of the executed Navy term sheet, \"Economic Development Conveyance (EDC) Property\" (Navy map dated 2026-03-30, View/2384 p. 15), and label it approximate; Exhibit B is the developer's unadopted concept plan and should not be drawn. City GIS does not capture the site. Plan-scale only; building massing waits for the Specific Plan. Land use: the adopted Area Plan's districts (Book One, Jan 24, 2012, Fig. 3-3 p. 41, made part of the General Plan by Res. 12-4823.2), traced from a 400-dpi render and fitted to OpenStreetMap roads (trimmed RMS 4.1 m), clipped to the EDC property and labelled approximate; no later plan is adopted.",
       "officialLinks": [
         "https://www.concordreuseproject.org/",
         "https://www.concordreuseproject.org/148/Overview-of-the-Reuse-Project"
@@ -2333,7 +2340,12 @@
         "https://stream.ci.concord.ca.us/OnBaseAgendaOnline/Documents/ViewAgenda?meetingId=1425&type=minutes&doctype=2",
         "https://www.cityofconcord.org/CivicAlerts.aspx?AID=901",
         "https://www.cityofconcord.org/CivicAlerts.aspx?AID=926",
-        "https://www.cityofconcord.org/CivicAlerts.aspx?AID=927"
+        "https://www.cityofconcord.org/CivicAlerts.aspx?AID=927",
+        "https://concordreuseproject.org/DocumentCenter/View/1786/1-December-15-2020-Memo-to-City-Council",
+        "https://www.concordreuseproject.org/152/The-Area-Plan",
+        "https://www.concordreuseproject.org/157/Specific-Plan",
+        "https://www.concordreuseproject.org/DocumentCenter/View/1093/2012-01-24-Res-No-12-48232-Amend-Concord-2030-Urb-Area",
+        "https://www.concordreuseproject.org/DocumentCenter/View/1105"
       ],
       "verify": [
         "the date the Area Plan was adopted in 2012",
@@ -2427,7 +2439,7 @@
       ],
       "nextMilestone": "Closing of the sale of both parcels (target Sept 1, 2026; no later than Jan 30, 2027).",
       "summary": "The Oakland–Alameda County Coliseum complex next to the Coliseum BART station, being sold to Oakland Acquisition Company, a partnership of Loop Capital and the African American Sports and Entertainment Group. The City will receive $125M in total for its interest; any development needs city approval.",
-      "massingNotes": "Boundary: Alameda County Assessor parcels (Alameda County ArcGIS Parcels FeatureServer, county disclaimer only): APN 41-3901-8 (Stadium, 103.2 ac) plus 41-3901-9 (Arena, 8.7 ac), 111.8 acres. No program to draw; massing would wait for an approved plan (Milestone 4 at the earliest).",
+      "massingNotes": "Boundary: Alameda County Assessor parcels (Alameda County ArcGIS Parcels FeatureServer, county disclaimer only): APN 41-3901-8 (Stadium, 103.2 ac) plus 41-3901-9 (Arena, 8.7 ac), 111.8 acres. No massing (checked Oct 2026): no plan is filed or approved. The site is zoned D-CO-2, with a 159-ft limit measured above mean sea level (Planning Code Table 17.101H.03, Ord. 13302, 2015; unchanged in Ord. 13894, 2026), but that limit covers the whole site with no blocks, so drawing it would look like a project that doesn't exist.",
       "officialLinks": [
         "https://www.oaklandca.gov/Government/Departments/City-Administrator/Oakland-Coliseum-Redevelopment-Project",
         "https://oakland.legistar.com/LegislationDetail.aspx?ID=37487&GUID=EF331A48-7E25-48AC-95A5-45493565745E"
@@ -2437,7 +2449,9 @@
         "https://oakland.legistar.com/LegislationDetail.aspx?ID=37487&GUID=EF331A48-7E25-48AC-95A5-45493565745E",
         "https://oakland.legistar.com/LegislationDetail.aspx?ID=37494&GUID=AEE72361-154A-404D-AA7B-001042936538",
         "https://acgov.org/board/bos_calendar/documents/DocsAgendaReg_05_28_26%20Spmtg/GENERAL%20ADMINISTRATION/Regular%20Calendar/County_Term_Sheet_Final.pdf",
-        "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0"
+        "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0",
+        "https://oakland.legistar1.com/oakland/attachments/a60c2e98-0339-4f02-a7cd-1f2205ceb9be.pdf",
+        "https://oakland.legistar1.com/oakland/attachments/96560420-1fc5-4f3b-8a34-0d0e9e246ce7.pdf"
       ],
       "verify": [
         "whether the sale closed",
@@ -2531,7 +2545,7 @@
       ],
       "nextMilestone": null,
       "summary": "The front door of the former Naval Air Station Alameda, being built out as a ferry-served waterfront neighborhood of up to 1,300 homes with parks and commercial space.",
-      "massingNotes": "Boundary: no Site A GIS layer exists (the City of Alameda AP-WTC zoning polygon, 150.1 ac, is too big). Trace the 2022 Development Plan \"Open Space & Parcel Diagrams\" (p. 12; 16.33 ac right-of-way + 41.36 private + 10.14 park, about 68 ac) and label it approximate, or assemble county parcels. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: no Site A GIS layer exists (the City of Alameda AP-WTC zoning polygon, 150.1 ac, is too big). Trace the 2022 Development Plan \"Open Space & Parcel Diagrams\" (p. 12; 16.33 ac right-of-way + 41.36 private + 10.14 park, about 68 ac) and label it approximate, or assemble county parcels. Massing: Site A blocks traced from the 2022 Development Plan's Land Use Diagram (p. 11), georeferenced on 11 controls (RMS 2.6 m), drawn to their limits of 40–65 ft (Block 11 at its approved 78-ft design), all illustrative; the Radium Performing Arts Center from its 2026 revised plan (43 ft, fly tower 72 ft); completed Blocks 6–9 from OpenStreetMap footprints with heights from their approved plans and staff reports (32–59 ft). Parks, streets, Blocks 5a/5b (no height) and the Navy-era buildings that stay are not drawn.",
       "officialLinks": [
         "https://alameda.legistar.com/LegislationDetail.aspx?ID=15589&GUID=8DDD3122-D78D-46AF-93E6-0166358C1496"
       ],
@@ -2541,7 +2555,13 @@
         "https://legistar1.granicus.com/alameda/attachments/73ff7e59-888e-443a-afc5-9a808b1d2091.pdf",
         "https://legistar1.granicus.com/alameda/attachments/4ed2a440-9155-4809-8443-5c523301c557.pdf",
         "https://alameda.legistar.com/LegislationDetail.aspx?ID=12022&GUID=20068886-A972-46BC-A300-2C70A91CBB55",
-        "https://alameda.legistar.com/LegislationDetail.aspx?ID=12070&GUID=AE5E8866-A135-4ACD-99BE-C7E9B545C3E1"
+        "https://alameda.legistar.com/LegislationDetail.aspx?ID=12070&GUID=AE5E8866-A135-4ACD-99BE-C7E9B545C3E1",
+        "https://alameda.legistar.com/LegislationDetail.aspx?ID=15669&GUID=3F0A0DF1-528E-4FB6-A635-3D46C9DA144E",
+        "https://alameda.legistar.com/LegislationDetail.aspx?ID=4388&GUID=86CB9634-CF02-45CE-B727-207C9DAC8CA3",
+        "https://alameda.legistar.com/LegislationDetail.aspx?ID=6711&GUID=6634ADEE-5B8D-42B2-A475-3097540463FB",
+        "https://legistar1.granicus.com/alameda/attachments/0a9551c2-cd42-4dcf-82bd-4e84b38110c0.pdf",
+        "https://legistar1.granicus.com/alameda/attachments/cc7a429d-3973-4f6f-83a1-6cef51878c67.pdf",
+        "https://legistar1.granicus.com/alameda/attachments/dfc15a4c-b254-4699-b53d-2b4f7118c903.pdf"
       ],
       "verify": [
         "the final action on the Radium performing arts center on Blocks 12/13 (heard Mar 2026)",
@@ -2632,7 +2652,7 @@
       ],
       "nextMilestone": "Construction of Parcel K (about 2029).",
       "summary": "A stretch of the Oakland Estuary waterfront being built out as a neighborhood of up to 3,700 homes with about 31 acres of parks and two marinas. More than 1,600 homes are already built.",
-      "massingNotes": "Boundary: Oakland zoning (City of Oakland ArcGIS Zoning_Group_Layers_ FeatureServer layer 0), BASEZONE='D-OTN', covers 31.1 acres of development parcels; the parks need county parcels or a trace of the 2023 report's status figure (p. 3). \"For reference only\" terms; label approximate. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: Oakland zoning (City of Oakland ArcGIS Zoning_Group_Layers_ FeatureServer layer 0), BASEZONE='D-OTN', covers 31.1 acres of development parcels; the parks need county parcels or a trace of the 2023 report's status figure (p. 3). \"For reference only\" terms; label approximate. Massing: unbuilt parcels (city parcels; K/L split from the revised PDP sheet 1.4, RMS 1.8 m) drawn to the D-OTN 86-ft limit (Planning Code 17.101B.130), with 240-ft tower zones from the Design Guidelines (2014) on Parcel K and on Parcel H (Option 2 approved Mar 5, 2025); completed Parcels A, B, C, F, G and J from OpenStreetMap footprints at about 11 ft per story (illustrative; no official heights found). Parks, streets, marinas and the 9th Avenue Terminal are not drawn.",
       "officialLinks": [
         "https://oakland.legistar.com/LegislationDetail.aspx?ID=34148&GUID=3B71552F-D01C-4286-85A4-14EEBDDF8AFA"
       ],
@@ -2646,7 +2666,14 @@
         "https://oakland.legistar.com/LegislationDetail.aspx?ID=22206&GUID=EF0213B9-782E-40E3-8DDA-BDE4762D30B9",
         "https://oakland.legistar.com/LegislationDetail.aspx?ID=26980&GUID=FDF8C0B0-1E34-4371-BD3C-FA6B720A0574",
         "https://oakland.legistar.com/LegislationDetail.aspx?ID=28098&GUID=7B95936B-ED06-4103-9CD7-2FBD65D96CB0",
-        "https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Zoning_Group_Layers_/FeatureServer/0"
+        "https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Zoning_Group_Layers_/FeatureServer/0",
+        "https://oakland.legistar1.com/oakland/attachments/19a992d0-69e8-4aa1-ac01-8bacb3620c18.pdf",
+        "https://oakland.legistar1.com/oakland/attachments/1b34cc1f-3524-4e14-a367-8525418da155.pdf",
+        "https://oakland.legistar1.com/oakland/attachments/9a0331be-abd6-4cf1-b700-09bf1cba330c.pdf",
+        "https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Oakland_Parcels_Public/FeatureServer/0",
+        "https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/3.19.2025-pc-meeting-minutes-appr-via-catherine-3.28.2025.pdf",
+        "https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/3.5.2025-pc-meeting-minutes-appr-via-catherine-3.12.2025.pdf",
+        "https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/item-2-staff-report-2-19-25-bb-parcel-h-option-2-case-file-pud06010-r02-pudf05-planning-commission-3.5.2025.pdf"
       ],
       "verify": [
         "whether BCDC has amended its permit (2006.007.00) for the 600 added homes",
@@ -2725,7 +2752,7 @@
       ],
       "nextMilestone": "Draft environmental impact report (no official date).",
       "summary": "The plan backed by California Forever for a new community on Solano County farmland, now pursued as an annexation to Suisun City after a county ballot measure was withdrawn.",
-      "massingNotes": "Boundary: no official GIS. Trace the Notice of Preparation Figure 2 (p. 15), with Figures 5 and 6, and label it approximate. Plan-scale only; land-use zones, if any, come in Milestone 4.",
+      "massingNotes": "Boundary: no official GIS. Trace the Notice of Preparation Figure 2 (p. 15), with Figures 5 and 6, and label it approximate. Plan-scale only. Land use: the seven proposed specific plan zones (NOP Figure 5, Table 1) and the two area plan sub-areas (Figure 2), georeferenced to OpenStreetMap roads (RMS 19 m and 32 m), every zone labelled proposed and approximate; nothing is adopted.",
       "officialLinks": [
         "https://suisunexpansion.com/",
         "https://ceqanet.lci.ca.gov/2025110452"

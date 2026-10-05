@@ -630,6 +630,31 @@ body {
   font-weight: 600;
 }
 
+/* Plan-scale projects: the categories of land use drawn on the site. */
+.landuse-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  margin: -6px 0 16px;
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  color: color-mix(in srgb, var(--color-panel-text) 72%, transparent);
+}
+
+.landuse-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.landuse-legend i {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  flex: none;
+}
+
 .numbers {
   display: grid;
   grid-template-columns: 1fr 1fr;

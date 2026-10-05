@@ -65,6 +65,14 @@ sites:
 	$(PY) bam_pipeline.sites.massing_parkline
 	$(PY) bam_pipeline.sites.massing_willow_village
 	$(PY) bam_pipeline.sites.massing_downtown_west
+	$(PY) bam_pipeline.sites.massing_alameda_point
+	$(PY) bam_pipeline.sites.massing_the_rise
+	$(PY) bam_pipeline.sites.massing_brooklyn_basin
+	$(PY) bam_pipeline.sites.landuse_moffett_park
+	$(PY) bam_pipeline.sites.landuse_suisun_expansion
+	$(PY) bam_pipeline.sites.landuse_north_bayshore
+	$(PY) bam_pipeline.sites.landuse_concord_naval_weapons_station
+	$(PY) bam_pipeline.sites.landuse_brisbane_baylands
 	$(PY) bam_pipeline.sites.traced_boundaries
 
 dev:

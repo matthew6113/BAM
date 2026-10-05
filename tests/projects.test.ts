@@ -3,6 +3,8 @@ import {
   boundaryOf,
   centroidOf,
   getProject,
+  LAND_USE_CATEGORIES,
+  landUseOf,
   linePrefix,
   MAPPED_PROJECTS,
   massingOf,
@@ -44,8 +46,30 @@ describe('traced project geometry', () => {
         expect(project.sources).toContain(meta.sourceUrl);
       });
 
+      const landUse = landUseOf(project.id);
+      if (landUse) {
+        it('draws land-use zones from a cited source, on the site', () => {
+          expect(project.sources).toContain(landUse.properties?.sourceUrl);
+          expect(String(landUse.properties?.note)).toMatch(/\S/);
+          const [x0, y0, x1, y1] = bboxOf(siteOf(project.id)!.geometry);
+          const pad = 0.0005;
+          for (const f of landUse.features) {
+            const p = f.properties;
+            expect(p.kind, p.label).toBe('zone');
+            expect(LAND_USE_CATEGORIES, p.label).toContain(p.category);
+            expect(STAGE_KEYS, p.label).toContain(p.stage);
+            expect(p.source, p.label).toMatch(/^(traced|GIS)/);
+            expect(inside(centroidOf(f.geometry), [x0 - pad, y0 - pad, x1 + pad, y1 + pad]), p.label).toBe(true);
+          }
+        });
+      }
+
       const massing = massingOf(project.id);
       if (!massing) return;
+
+      it('cites its massing source', () => {
+        expect(project.sources).toContain(massing.properties?.sourceUrl);
+      });
 
       it('gives every massing feature a stage, a source and an honest height', () => {
         for (const f of massing.features) {
@@ -132,6 +156,8 @@ describe('official sources', () => {
     expect(isOfficialSource('https://legistar.granicus.com/sanjose/attachments/x.pdf')).toBe(true);
     expect(isOfficialSource('https://legistar.granicus.com/Sunnyvale/attachments/x.pdf')).toBe(true);
     expect(isOfficialSource('https://legistar.granicus.com/somecompany/attachments/x.pdf')).toBe(false);
+    expect(isOfficialSource('https://apps.cupertino.org/pdf/x.pdf')).toBe(true);
+    expect(isOfficialSource('https://www.cupertino.org/x')).toBe(false);
     expect(isOfficialSource('https://services7.arcgis.com/uRrQ0O3z2aaiIWYU/arcgis/rest/services/x')).toBe(true);
     expect(isOfficialSource('https://services7.arcgis.com/someoneelse/arcgis/rest/services/x')).toBe(false);
     expect(isOfficialSource('https://sfyimby.com/2026/02/x.html')).toBe(false);

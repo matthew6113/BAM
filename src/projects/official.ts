@@ -37,6 +37,8 @@ const OFFICIAL_HOSTS = [
   'oakland.legistar.com',
   'oakland.legistar1.com',
   'alameda.legistar.com',
+  // City of Cupertino's document server (its Legistar item for The Rise links its approved plans here)
+  'apps.cupertino.org',
 ];
 
 /** Shared vendor hosts, accepted only under an agency's own path. */

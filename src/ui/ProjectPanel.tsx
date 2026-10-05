@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'preact/hooks';
-import { boundaryOf, massingOf, STAGES, stageLabel, type Project } from '../projects/data';
+import { boundaryOf, LAND_USE_CATEGORIES, landUseLabel, landUseOf, massingOf, STAGES, stageLabel, type Project } from '../projects/data';
 import { formatDate, formatInt, formatNumber, formatSqft, sourceText } from './format';
 
 interface Props {
@@ -79,6 +79,9 @@ export function ProjectPanel({ project, onClose, onPrev, onNext, prevName, nextN
   const massing = massingOf(project.id);
   const bMeta = (boundary as { properties?: Record<string, unknown> } | undefined)?.properties ?? {};
   const mMeta = (massing as { properties?: Record<string, unknown> } | undefined)?.properties ?? {};
+  const landUse = landUseOf(project.id);
+  const lMeta = (landUse as { properties?: Record<string, unknown> } | undefined)?.properties ?? {};
+  const zoneCategories = LAND_USE_CATEGORIES.filter((c) => landUse?.features.some((f) => f.properties.category === c));
   const sources = project.sources;
 
   return (
@@ -109,6 +112,12 @@ export function ProjectPanel({ project, onClose, onPrev, onNext, prevName, nextN
             <a href={mMeta.sourceUrl}>{typeof mMeta.sourceLabel === 'string' ? mMeta.sourceLabel : 'Massing source'}</a>.{' '}
           </>
         )}
+        {landUse && typeof lMeta.note === 'string' && <>{lMeta.note} </>}
+        {landUse && typeof lMeta.sourceUrl === 'string' && (
+          <>
+            <a href={lMeta.sourceUrl}>{typeof lMeta.sourceLabel === 'string' ? lMeta.sourceLabel : 'Land-use source'}</a>.{' '}
+          </>
+        )}
         {bMeta.accuracy === 'official' ? <>Boundary from </> : <strong>Approximate boundary, </strong>}
         {bMeta.accuracy === 'traced' && <>traced{typeof bMeta.accuracyShort === 'string' && ` (${bMeta.accuracyShort})`} from </>}
         {bMeta.accuracy === 'approximate' && <>from </>}
@@ -117,6 +126,14 @@ export function ProjectPanel({ project, onClose, onPrev, onNext, prevName, nextN
         )}
         .
       </p>
+
+      {zoneCategories.length > 0 && (
+        <ul class="landuse-legend" aria-label="Land use">
+          {zoneCategories.map((c) => (
+            <li><i style={{ background: `var(--landuse-${c})` }} />{landUseLabel(c)}</li>
+          ))}
+        </ul>
+      )}
 
       <KeyNumbers project={project} />
 
@@ -177,6 +194,7 @@ export function ProjectPanel({ project, onClose, onPrev, onNext, prevName, nextN
           <p class="small">Still being checked: {project.verify.map((v) => v.charAt(0).toLowerCase() + v.slice(1)).join('; ')}.</p>
         )}
         {typeof mMeta.summary === 'string' && <p class="small">{mMeta.summary}</p>}
+        {typeof lMeta.summary === 'string' && <p class="small">{lMeta.summary}</p>}
         {'reported' in project && (
           <p class="small">Details reported in the press are held back until official records confirm them.</p>
         )}
