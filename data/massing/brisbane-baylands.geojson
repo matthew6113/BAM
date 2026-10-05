@@ -1,0 +1,146 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "brisbane-baylands",
+  "illustrative": false,
+  "summary": "Only the historic Bayshore Roundhouse is drawn: its real footprint from OpenStreetMap, at the existing height of about 25 ft given in the city's Sept 29, 2026 staff report. The plan's proposed buildings aren't drawn while the specific plan awaits approval; see the land-use zones.",
+  "note": "The 1910 Southern Pacific roundhouse, listed in the National Register, which the plan keeps and restores.",
+  "sourceUrl": "https://brisbaneca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=12608,plainText=false)",
+  "sourceLabel": "City Council staff report, Sept 29, 2026 (PDF)",
+  "georeference": "Footprint from OpenStreetMap as mapped (no tracing).",
+  "license": "Footprint: OpenStreetMap contributors (ODbL 1.0), via Overture Maps.",
+  "documents": [
+   "https://brisbaneca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=12608,plainText=false)",
+   "https://www.brisbaneca.gov/DocumentCenter/View/2988"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "landmark",
+    "label": "Bayshore Roundhouse",
+    "stage": "complete",
+    "height_ft": 25,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": false,
+    "source": "footprint: OpenStreetMap way 123684307 \"Bayshore Roundhouse\" via Overture Maps (f86e7818-44e1-4f50-a161-1bfa0828597d); height: \"the Roundhouse's existing height (~25 feet...)\", City of Brisbane City Council special meeting, Sept 29, 2026, agenda packet (Baylands Specific Plan and EIR, meeting 2 staff report), PDF p. 7",
+    "note": "Height is approximate (about 25 ft, one story). Built in 1910, listed in the National Register in 2010. The plan restores it as the centrepiece of 3.9-acre Roundhouse Park and its restoration plan recommends lifting it 6 to 8 ft for sea level rise."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4063206,
+       37.7017517
+      ],
+      [
+       -122.4062267,
+       37.7019936
+      ],
+      [
+       -122.4063124,
+       37.7020119
+      ],
+      [
+       -122.4064044,
+       37.7020233
+      ],
+      [
+       -122.4064909,
+       37.7020241
+      ],
+      [
+       -122.4065776,
+       37.7020206
+      ],
+      [
+       -122.4066567,
+       37.7020069
+      ],
+      [
+       -122.4067312,
+       37.7019874
+      ],
+      [
+       -122.406809,
+       37.7019597
+      ],
+      [
+       -122.4068812,
+       37.7019257
+      ],
+      [
+       -122.4069471,
+       37.701885
+      ],
+      [
+       -122.4070586,
+       37.7017874
+      ],
+      [
+       -122.4071066,
+       37.7017342
+      ],
+      [
+       -122.407148,
+       37.7016668
+      ],
+      [
+       -122.4071748,
+       37.7015997
+      ],
+      [
+       -122.4071959,
+       37.7015239
+      ],
+      [
+       -122.4072034,
+       37.7014507
+      ],
+      [
+       -122.4069051,
+       37.7014531
+      ],
+      [
+       -122.4068899,
+       37.7015351
+      ],
+      [
+       -122.4068462,
+       37.7016109
+      ],
+      [
+       -122.4067829,
+       37.701672
+      ],
+      [
+       -122.4067081,
+       37.7017191
+      ],
+      [
+       -122.4066209,
+       37.7017527
+      ],
+      [
+       -122.4065192,
+       37.7017708
+      ],
+      [
+       -122.4064131,
+       37.7017681
+      ],
+      [
+       -122.4063206,
+       37.7017517
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

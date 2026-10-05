@@ -1511,7 +1511,7 @@
       ],
       "nextMilestone": "City Council action on the Specific Plan, Final EIR and related approvals.",
       "summary": "A plan for 2,200 homes, 7 million sq ft of commercial space and nearly 150 acres of open space on about 680 acres of the Baylands in Brisbane, keeping the historic Roundhouse. The Planning Commission recommended it in August 2026, and it is now before the City Council.",
-      "massingNotes": "Boundary: trace the 2026 plan figures (Specific Plan Fig. 2.3.1, General Plan land use map and zoning map). The city's ArcGIS layer 'Baylands Specific Plan Boundary' (org UGpGSV1ugL0pHSgX) is marked DRAFT, last edited June 2022, covers about 702 acres and has no posted license, so it is approximate only. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: trace the 2026 plan figures (Specific Plan Fig. 2.3.1, General Plan land use map and zoning map). The city's ArcGIS layer 'Baylands Specific Plan Boundary' (org UGpGSV1ugL0pHSgX) is marked DRAFT, last edited June 2022, covers about 702 acres and has no posted license, so it is approximate only. Land use: the 2026 staff-recommended Baylands Specific Plan (not yet adopted; recommended by the Planning Commission Aug 13, 2026), Fig. 2.3.1, fitted to the draft boundary (RMS 1.9 m) and labelled draft; it is newer than the adopted General Plan's two Planned Development designations. Landmark: the Bayshore Roundhouse from its OpenStreetMap footprint at about 25 ft (Council staff report, Sept 29, 2026).",
       "officialLinks": [
         "https://www.brisbaneca.gov/775/2026-Baylands-Specific-Plan",
         "https://www.brisbaneca.gov/774/2026-Final-EIR"
@@ -1527,7 +1527,9 @@
         "https://www.brisbaneca.gov/DocumentCenter/View/3039",
         "https://brisbaneca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=12583,plainText=false)",
         "https://brisbaneca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=12627,plainText=false)",
-        "https://services9.arcgis.com/UGpGSV1ugL0pHSgX/arcgis/rest/services/Baylands_Specific_Plan_Boundary_DRAFT_Map_WFL1/FeatureServer/1"
+        "https://services9.arcgis.com/UGpGSV1ugL0pHSgX/arcgis/rest/services/Baylands_Specific_Plan_Boundary_DRAFT_Map_WFL1/FeatureServer/1",
+        "https://brisbaneca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=12608,plainText=false)",
+        "https://services9.arcgis.com/UGpGSV1ugL0pHSgX/arcgis/rest/services/GP_Land_Use_Designations_NAD83_20251110/FeatureServer/7"
       ],
       "verify": [
         "the City Council's vote and its resolution and ordinance numbers",
