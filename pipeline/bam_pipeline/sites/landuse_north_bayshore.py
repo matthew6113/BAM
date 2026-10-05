@@ -29,6 +29,9 @@ What this is and isn't:
   Gateway Master Plan" blocks are left out (the last is the city's separate Gateway plan).
 - The Shoreline Amphitheatre itself ("area not subject to redevelopment") is left out.
 
+Site boundary: this module also writes data/boundaries/north-bayshore.geojson, the plan's own
+"Project area" line (the dash-dot line in both figures), and clips the zones to it.
+
 Georeferencing: both figures are embedded rasters. Street centrelines at intersections
 (midway between the curb lines in the base map) are matched to OpenStreetMap (via Overture)
 with a least-squares similarity fit per figure; residuals are recorded.
@@ -44,7 +47,7 @@ import cv2
 import geopandas as gpd
 import numpy as np
 import shapely
-from shapely.geometry import Polygon, box, mapping, shape
+from shapely.geometry import Polygon, box, mapping
 
 from .. import config, trace
 from . import traced_boundaries as tb
@@ -215,15 +218,83 @@ def _polys(mask: np.ndarray, min_px: float):
     return shapely.union_all(polys) if polys else Polygon()
 
 
+# The plan's "Project area" is a thick dash-dot line. Per figure: the opening (px) that keeps
+# it and drops thinner block outlines and the NBPP boundary's dashes, the closing disk (px)
+# that joins its dashes, and half its stroke width (px).
+PROJECT_LINE = {"4.1.2": {"open": 5, "join": 25, "half_width": 4},
+                "4.1.1": {"open": 3, "join": 17, "half_width": 2}}
+PLAN_ACRES = 153  # council report, June 13, 2023, p. 3: "Project Area: Approximately 153 acres."
+
+
+def project_area(rgb: np.ndarray, masks: dict[str, np.ndarray], fig: str):
+    """Areas enclosed by the plan's project-area line, in raster pixels.
+
+    The line's dashes are joined by a dilation; each enclosed region that is mostly plan
+    land-use colour (not base map) is a piece of the project area, grown back out to the
+    middle of the line.
+    """
+    spec = PROJECT_LINE[fig]
+    dark = (rgb.max(axis=2) < 90).astype(np.uint8)
+    thick = cv2.morphologyEx(dark, cv2.MORPH_OPEN, np.ones((spec["open"],) * 2, np.uint8))
+    disk = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (spec["join"],) * 2)
+    line = cv2.dilate(thick, disk)
+    n, lab, stats, _ = cv2.connectedComponentsWithStats(1 - line, connectivity=4)
+    plan = np.zeros(dark.shape, bool)
+    for m in masks.values():
+        plan |= m
+    h, w = dark.shape
+    keep = np.zeros(dark.shape, np.uint8)
+    for i in range(1, n):
+        x, y, bw, bh, area = stats[i]
+        if x == 0 or y == 0 or x + bw >= w or y + bh >= h or area < 2000:
+            continue
+        region = lab == i
+        if plan[region].mean() > 0.3:
+            keep[region] = 1
+    grow = spec["join"] // 2 + spec["half_width"]
+    keep = cv2.dilate(keep, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2 * grow + 1,) * 2))
+    contours, _ = cv2.findContours(keep * 255, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+    return shapely.union_all([shapely.make_valid(Polygon(c.reshape(-1, 2) + 0.5)) for c in contours])
+
+
+def write_boundary(site_utm, sims: dict) -> None:
+    acres = site_utm.area / tb.ACRE_M2
+    lo, hi = sorted(s.rms_m for s in sims.values())
+    fc = {
+        "type": "FeatureCollection",
+        "properties": {
+            "project": PROJECT_ID,
+            "source": ("traced: North Bayshore Master Plan (April 2023), project area line in Plan 4.1.2, Land use "
+                       "(core master plan area), p. 33, and Plan 4.1.1, Land use, p. 32 (Lot C and Marine Way sites)"),
+            "sourceLabel": "master plan land use (PDF)",
+            "sourceUrl": PLAN["url"],
+            "accuracy": "traced",
+            "accuracyShort": f"RMS {lo:.1f}-{hi:.1f} m",
+            "accuracyNote": (
+                f"The plan's own project area line, traced from its land use figures and placed on OpenStreetMap "
+                f"street crossings (RMS {sims['4.1.2'].rms_m:.1f} m for Plan 4.1.2, {sims['4.1.1'].rms_m:.1f} m for "
+                f"Plan 4.1.1). {acres:.1f} acres as drawn; the council report (June 13, 2023, p. 3) gives "
+                f"approximately {PLAN_ACRES} acres. The line takes in the internal streets and, at Lot C, the "
+                f"Shoreline Amphitheatre, which the plan marks as not subject to redevelopment."),
+            "license": "Shape traced from a public City of Mountain View record (council attachment); "
+                       "placement: " + tb.OSM_LICENSE + ".",
+            "georeference": {f"plan_{fig.replace('.', '_')}": s.report() for fig, s in sims.items()},
+        },
+        "features": [{"type": "Feature", "properties": {"kind": "site", "name": "Project site"},
+                      "geometry": mapping(tb.to_wgs(site_utm))}],
+    }
+    path = tb.OUT / f"{PROJECT_ID}.geojson"
+    path.write_text(json.dumps(tb._round(fc), indent=1) + "\n")
+    print(f"[north-bayshore] wrote {path.relative_to(config.ROOT)}: {acres:.1f} acres as drawn "
+          f"(plan: about {PLAN_ACRES})")
+
+
 def main() -> None:
     pdf_path = trace.fetch_document(PLAN["url"], tb.DOCS / PLAN["file"], PLAN["sha256"])
     streets = tb.streets("nb-north_bayshore", STREETS_BBOX)
     streets = streets[streets["subtype"] == "road"]
-    site = shape(json.loads((config.ROOT / "data" / "boundaries" / f"{PROJECT_ID}.geojson").read_text())
-                 ["features"][0]["geometry"])
-    site_utm = shapely.make_valid(gpd.GeoSeries([site], crs=4326).to_crs(UTM).iloc[0])
-
     zones: dict[str, list] = {k: [] for k in CLASSES}
+    areas = []
     sims, core_frame = {}, None
     for fig in ("4.1.2", "4.1.1"):
         rgb = _image(pdf_path, fig)
@@ -237,6 +308,13 @@ def main() -> None:
         # Drop specks under ~400 sq m. On Plan 4.1.1 only whole garage sites are wanted (each
         # over 3 acres); smaller grey shapes there are amphitheatre structures in the base map.
         min_px = (400 if fig == "4.1.2" else 4000) / sim.scale**2
+        pa = sim.geometry(project_area(rgb, masks, fig))
+        if fig == "4.1.1":  # only the sites outside Plan 4.1.2's frame
+            pa = shapely.union_all([p for p in getattr(pa, "geoms", [pa])
+                                    if p.intersection(core_frame).area < 0.05 * p.area])
+        print(f"[north-bayshore]   project area from Plan {fig}: {len(getattr(pa, 'geoms', [pa]))} pieces, "
+              f"{pa.area / tb.ACRE_M2:.1f} ac")
+        areas.append(pa)
         for k, m in masks.items():
             if fig == "4.1.1" and k != "parking":
                 continue  # Plan 4.1.1 is used only for the parking sites outside Plan 4.1.2
@@ -248,6 +326,13 @@ def main() -> None:
                 zones[k].append(g)
         if fig == "4.1.2":
             core_frame = frame.buffer(-20)
+
+    # Joining the dashes leaves shallow scallops along the line; a 4 m closing and a 2 m
+    # opening smooth them.
+    site = shapely.union_all(areas).buffer(4, join_style="mitre").buffer(-6, join_style="mitre")
+    site = site.buffer(2, join_style="mitre")
+    site_utm = trace.as_multipolygon(shapely.make_valid(site.simplify(0.75)))
+    write_boundary(site_utm, sims)
 
     features = []
     for k, parts in zones.items():
@@ -264,7 +349,7 @@ def main() -> None:
         fig = "Plan 4.1.1, p. 32 (garages outside Plan 4.1.2) and Plan 4.1.2, p. 33" if k == "parking" \
             else f"{FIGURES['4.1.2']['name']}, p. 33"
         print(f"[north-bayshore]   {c['label']:>38}: {g.area / tb.ACRE_M2:6.2f} ac in {len(g.geoms)} parts "
-              f"({share:.0%} of the traced zone inside the site boundary)")
+              f"({share:.0%} of the traced zone inside the project area)")
         features.append({"type": "Feature", "properties": {
             "kind": "zone",
             "category": c["category"],
@@ -281,8 +366,8 @@ def main() -> None:
             "summary": (
                 "Land-use zones traced from the land use plans in Google's North Bayshore Master Plan (April 2023), "
                 "approved by the Mountain View City Council in June 2023: office, residential, hotel, public use, open "
-                "space, parking, the district central plant and two flex classes, clipped to the project's parcel "
-                "boundary, which leaves out a few plan blocks on parcels the boundary doesn't include. "
+                "space, parking, the district central plant and two flex classes, clipped to the project "
+                "area line as the plan draws it. "
                 "The plan calls these general depictions, so every edge is approximate. Ground-floor active uses, "
                 "streets, the green loop trail, the Shoreline Amphitheatre and the city's separate Gateway plan are "
                 "left out. Zones, not buildings."
@@ -292,8 +377,7 @@ def main() -> None:
             "sourceLabel": "Master plan land use, 2023 (PDF)",
             "georeference": {f"plan_{fig.replace('.', '_')}": s.report() for fig, s in sims.items()},
             "license": "Zones: traced from a public City of Mountain View record (council attachment). "
-                       "Georeference: " + tb.OSM_LICENSE + ". Clipped to City of Mountain View parcels "
-                       "(open data, use at your own risk).",
+                       "Georeference: " + tb.OSM_LICENSE + ".",
             "documents": [PLAN["url"], PLAN["page_url"], PLAN["city_copy"], PLAN["agenda"], PLAN["council_report"],
                           PRECISE_PLAN],
         },

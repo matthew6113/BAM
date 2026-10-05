@@ -9,7 +9,10 @@ says what changed, why and against which source. Code changes live in git histor
 **brisbane-baylands** get land-use zones (`data/landuse/`), not buildings, per the SPEC; each
 plan document is added to `sources` and `massingNotes` says what was drawn. Suisun's zones are
 proposed (NOP) and Brisbane's are from the draft 2026 specific plan, both labelled so. Brisbane
-also gets the Bayshore Roundhouse landmark (about 25 ft, Council staff report).
+also gets the Bayshore Roundhouse landmark (about 25 ft, Council staff report). **north-bayshore**'s
+boundary is now traced from the master plan's project-area line (189.3 acres as drawn, with
+internal streets and the Shoreline Amphitheatre), replacing the parcel assembly that cut off
+about 7 acres of plan residential (Matthew, 2026-10-05).
 
 ## 2026-10-05 (Milestone 4, batch 4: The Rise, Alameda Point, Brooklyn Basin, Oakland Coliseum)
 

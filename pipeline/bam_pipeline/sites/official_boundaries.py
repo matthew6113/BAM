@@ -159,14 +159,7 @@ SPECS: dict[str, dict] = {
         "note": "The six parcels approved for the Parkline master plan (about 64 acres).",
         "license": "CC0 (City of Menlo Park)",
     },
-    "north-bayshore": {
-        "label": "Mountain View parcels",
-        **arcgis(MV_PARCELS, f"APN in ({_sql_list(a.replace('-', '') for a in NORTH_BAYSHORE_APNS)})"),
-        "layer": "City of Mountain View parcels, the APNs in Legistar matter 7641",
-        "accuracy": "approximate",
-        "note": "Parcels named in the master plan approval. The plan covers only parts of the Gateway parcels and Shoreline Amphitheatre Lot C, so this is approximate.",
-        "license": "City of Mountain View open data (use at your own risk)",
-    },
+    # north-bayshore: traced from the master plan's project area line in landuse_north_bayshore.py.
     "brisbane-baylands": {
         "label": "Brisbane’s draft plan boundary",
         **arcgis(BRISBANE_BSP, "1=1"),
