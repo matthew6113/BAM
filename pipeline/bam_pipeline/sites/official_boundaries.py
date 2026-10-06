@@ -45,6 +45,7 @@ SUNNYVALE_SP = "https://gis.sunnyvale.ca.gov/arcgis/rest/services/GeneralPlan/Ma
 ALCO_PARCELS = "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0"
 OAK_ZONING = "https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Zoning_Group_Layers_/FeatureServer/0"
 SC_ZONING = "https://map.santaclaraca.gov/maps/rest/services/OPENDATA/RegionalZoningOpenData/MapServer/0"
+SONOMA_PARCELS = "https://socogis.sonomacounty.ca.gov/map/rest/services/CRAPublic/ParcelsPublicShapeFile/FeatureServer/0"
 # Layer 67 is the adopted plan's own area; layer 3 (zoning "SP-4") runs out over the bay.
 VALLEJO_SP = ("https://portal.cityofvallejo.net/arcgis/rest/services/CityGIS_Viewer/"
               "Planning_Development_Services/MapServer/67")
@@ -61,6 +62,11 @@ NORTH_BAYSHORE_APNS = [  # Mountain View Legistar matter 7641 (North Bayshore Ma
     "116-10-107", "116-10-108", "116-11-012", "116-11-022", "116-11-024", "116-11-025", "116-11-028",
     "116-11-030", "116-11-038", "116-11-039", "116-13-027", "116-13-034", "116-13-038", "116-14-058",
     "116-14-066", "116-14-072", "116-20-043",
+]
+
+ESMERALDA_APNS = [  # Cloverdale Planning Commission staff report, Oct 1, 2026, p. 1 (Esmeralda Specific Plan)
+    "117-050-010", "117-050-011", "117-050-012", "117-050-017", "117-050-024", "117-050-026", "117-050-027",
+    "117-050-028", "117-050-029", "116-310-013", "116-310-014",
 ]
 
 
@@ -279,6 +285,20 @@ SPECS: dict[str, dict] = {
         "note": ("The adopted 2005 Mare Island Specific Plan area, about 3,100 acres; the whole island is 5,250 acres "
                  "in the 2005 EIR. The new specific plan's boundary isn't published, and may differ."),
         "license": "City of Vallejo GIS (no license stated)",
+    },
+    "esmeralda": {
+        "label": "County of Sonoma parcels",
+        **arcgis(SONOMA_PARCELS, f"APN IN ({_sql_list(ESMERALDA_APNS)})"),
+        "layer": "County of Sonoma Parcels Public Shapefile, the 11 APNs in the Cloverdale Planning Commission staff report of Oct 1, 2026",
+        "accuracy": "approximate",
+        "note": ("The 11 parcels the Planning Commission staff report lists for the Esmeralda Specific Plan, in two "
+                 "pieces either side of the 80-foot SMART rail corridor, which isn't one of the parcels (the plan "
+                 "leaves it out of its land-use districts). The County's parcel shapes run a little over the Plan "
+                 "Area's 261.44 acres (Addendum Exhibit 3): about 3.8 acres of parcel 116-310-014, a narrow strip "
+                 "running northwest from the site's north corner outside Cloverdale's city limits (Permit Sonoma City "
+                 "Limits layer), is the roughly 4-acre unincorporated \u201cPanhandle\u201d the plan now excludes, and "
+                 "it is still drawn here."),
+        "license": "CC BY-SA 3.0, County of Sonoma",
     },
 }
 
