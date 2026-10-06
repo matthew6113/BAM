@@ -72,6 +72,8 @@ sites:
 	$(PY) bam_pipeline.sites.massing_middlefield_park
 	$(PY) bam_pipeline.sites.massing_tasman_east
 	$(PY) bam_pipeline.sites.massing_schlage_lock
+	$(PY) bam_pipeline.sites.massing_sunnydale_hope_sf
+	$(PY) bam_pipeline.sites.massing_potrero_hope_sf
 	$(PY) bam_pipeline.sites.landuse_moffett_park
 	$(PY) bam_pipeline.sites.landuse_suisun_expansion
 	$(PY) bam_pipeline.sites.landuse_north_bayshore
