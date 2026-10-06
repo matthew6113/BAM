@@ -69,6 +69,7 @@ sites:
 	$(PY) bam_pipeline.sites.massing_the_rise
 	$(PY) bam_pipeline.sites.massing_brooklyn_basin
 	$(PY) bam_pipeline.sites.massing_berryessa_flea_market
+	$(PY) bam_pipeline.sites.massing_middlefield_park
 	$(PY) bam_pipeline.sites.landuse_moffett_park
 	$(PY) bam_pipeline.sites.landuse_suisun_expansion
 	$(PY) bam_pipeline.sites.landuse_north_bayshore
