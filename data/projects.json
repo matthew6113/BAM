@@ -2952,7 +2952,7 @@
       ],
       "nextMilestone": "Second draft of the specific plan, with infrastructure and financing plans, and the CEQA notice of preparation.",
       "summary": "The former Mare Island Naval Shipyard across the strait from downtown Vallejo, where a new specific plan from the Mare Island Company proposes up to about 14,000 homes in nine neighborhoods around the historic shipyard core. It's in early City review, with no approvals yet.",
-      "massingNotes": "Boundary: City of Vallejo GIS, Planning_Development_Services MapServer layer 67 (Existing Specific Plan Area), feature Mare Island (2005), about 3,093 acres, drawn as approximate (layer 3's SP-4 zoning area, about 4,220 acres, runs out over the bay); no license is stated, so ask the City before redistributing. The new plan's boundary (Figure in the Oct 2024 draft) may differ. Approximate center is the layer's bounding-box centre, shifted toward the developed east shore. Massing comes in Milestone 4, and only once the City adopts a plan: the draft's development standards (85-ft limit in the CRMX and CR zones) are applicant proposals under review.",
+      "massingNotes": "Boundary: City of Vallejo GIS, Planning_Development_Services MapServer layer 67 (Existing Specific Plan Area), feature Mare Island (2005), about 3,093 acres, drawn as approximate (layer 3's SP-4 zoning area, about 4,220 acres, runs out over the bay); no license is stated, so ask the City before redistributing. The new plan's boundary (Figure in the Oct 2024 draft) may differ. Approximate center is the layer's bounding-box centre, shifted toward the developed east shore. Massing comes in Milestone 4, and only once the City adopts a plan: the draft's development standards (85-ft limit in the CRMX and CR zones) are applicant proposals under review. Land use: the adopted Mare Island Specific Plan's land-use map (Figure 3.1, revised Jan 2008, the newest the City posts), fitted to existing buildings (trimmed RMS 11 m) and labelled approximate; the developer's draft for the new plan is not drawn.",
       "officialLinks": [
         "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=5As%2FAST1",
         "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=9yhFAU3W"
@@ -2964,7 +2964,9 @@
         "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=piRGAR%2Fa",
         "https://ceqanet.lci.ca.gov/2003092057",
         "https://ceqanet.lci.ca.gov/2003092057/2",
-        "https://portal.cityofvallejo.net/arcgis/rest/services/CityGIS_Viewer/Planning_Development_Services/MapServer/67"
+        "https://portal.cityofvallejo.net/arcgis/rest/services/CityGIS_Viewer/Planning_Development_Services/MapServer/67",
+        "https://www.cityofvallejo.net/common/pages/DisplayFile.aspx?itemId=19272505",
+        "https://www.cityofvallejo.net/common/pages/DisplayFile.aspx?itemId=19272509"
       ],
       "verify": [
         "the new plan's area and boundary, and its commercial program",
