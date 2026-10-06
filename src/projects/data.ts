@@ -52,8 +52,11 @@ export type LandUse = Collection<Polygon | MultiPolygon, LandUseProps>;
 
 // Traced project geometry lives in data/ (committed, with its sources) and is bundled.
 const boundaryFiles = import.meta.glob('../../data/boundaries/*.geojson', { query: '?raw', import: 'default', eager: true });
-const massingFiles = import.meta.glob('../../data/massing/*.geojson', { query: '?raw', import: 'default', eager: true });
-const landUseFiles = import.meta.glob('../../data/landuse/*.geojson', { query: '?raw', import: 'default', eager: true });
+// Massing and land use are only needed once a project is opened, so each file is its own
+// chunk, fetched by loadProjectGeometry() before the fly-in. Boundaries stay in the bundle:
+// the regional view draws every site.
+const massingFiles = import.meta.glob<string>('../../data/massing/*.geojson', { query: '?raw', import: 'default' });
+const landUseFiles = import.meta.glob<string>('../../data/landuse/*.geojson', { query: '?raw', import: 'default' });
 
 function byId<T>(files: Record<string, unknown>): Map<string, T> {
   const out = new Map<string, T>();
@@ -65,8 +68,27 @@ function byId<T>(files: Record<string, unknown>): Map<string, T> {
 }
 
 const BOUNDARIES = byId<Boundary>(boundaryFiles);
-const MASSING = byId<Massing>(massingFiles);
-const LAND_USE = byId<LandUse>(landUseFiles);
+const MASSING = new Map<string, Massing>();
+const LAND_USE = new Map<string, LandUse>();
+
+function loaderFor(files: Record<string, () => Promise<string>>, id: string): (() => Promise<string>) | undefined {
+  return Object.entries(files).find(([path]) => path.endsWith(`/${id}.geojson`))?.[1];
+}
+
+/** Fetch a project's massing and land use (once); massingOf and landUseOf read them afterwards. */
+export async function loadProjectGeometry(id: string): Promise<void> {
+  const tasks: Promise<void>[] = [];
+  const m = MASSING.has(id) ? undefined : loaderFor(massingFiles, id);
+  if (m) tasks.push(m().then((raw) => void MASSING.set(id, JSON.parse(raw) as Massing)));
+  const l = LAND_USE.has(id) ? undefined : loaderFor(landUseFiles, id);
+  if (l) tasks.push(l().then((raw) => void LAND_USE.set(id, JSON.parse(raw) as LandUse)));
+  await Promise.all(tasks);
+}
+
+/** Every project's geometry, for tests and tools that check all of it. */
+export async function loadAllGeometry(): Promise<void> {
+  await Promise.all(PROJECTS.map((p) => loadProjectGeometry(p.id)));
+}
 
 /** Projects drawn on the map: those with a traced boundary (Potrero only, in Milestone 2). */
 export const MAPPED_PROJECTS: Project[] = PROJECTS.filter((p) => BOUNDARIES.has(p.id));
@@ -83,7 +105,7 @@ export function siteOf(id: string): Feature<Polygon | MultiPolygon, BoundaryProp
   return BOUNDARIES.get(id)?.features.find((f) => f.properties.kind === 'site');
 }
 
-/** Massing with a numeric feature id per building, for feature-state animation. */
+/** Massing with a numeric feature id per building, for feature-state animation (after loadProjectGeometry). */
 export function massingOf(id: string): Massing | undefined {
   const m = MASSING.get(id);
   if (!m) return undefined;
