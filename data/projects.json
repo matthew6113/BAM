@@ -3263,7 +3263,7 @@
       ],
       "nextMilestone": null,
       "summary": "The former Schlage Lock factory site next to the Bayshore Caltrain station in Visitacion Valley, approved for up to 1,679 homes, shops including a grocery store, and two parks. The site's historic office building has been restored; the housing hasn't started.",
-      "massingNotes": "Boundary: the DataSF Special Use District 'Visitacion Valley/Schlage SUD' (5yf5-ms5f, Public Domain) covers both zones (about 45 acres), so trace Zone 1 from the Design for Development (June 2014) site plan or the development agreement exhibits, registered to DataSF parcels (acdm-wktn, ODC PDDL; block 5087 holds about 8.4 acres of it). Heights by parcel (55 to 72 ft for Phase 1 Parcels 1–3, per the Phase 1 application) need confirming against the Design for Development. Massing comes in Milestone 4. approxCenter is rough.",
+      "massingNotes": "Boundary: the DataSF Special Use District 'Visitacion Valley/Schlage SUD' (5yf5-ms5f, Public Domain) covers both zones (about 45 acres), so trace Zone 1 from the Design for Development (June 2014) site plan or the development agreement exhibits, registered to DataSF parcels (acdm-wktn, ODC PDDL; block 5087 holds about 8.4 acres of it). Heights by parcel (55 to 72 ft for Phase 1 Parcels 1–3, per the Phase 1 application) need confirming against the Design for Development. approxCenter is rough. Massing: the twelve development parcels traced from the DA's Conceptual Parcelization Plan (Exhibit L, Fig. 1.1; every parcel within 0.01 acre of its printed area), fitted to the assessor-parcel boundary (trimmed RMS 0.5 m), at the 2014 zoning heights (57-X to 86-X, DataSF h9wh-cg3m; checked against the D4D height map), illustrative; the rehabilitated 1926 office building is outlined (4 stories, no official height). Parks, streets and rail lots are not drawn.",
       "officialLinks": [
         "https://sfplanning.org/visitacion-valleyschlage-lock-plan"
       ],
@@ -3279,7 +3279,8 @@
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201912189909",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201912189911",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201608155048",
-        "https://default.sfplanning.org/Citywide/Visitacion_Valley/Visitacion_Valley_Schlage-Final_DA_Exhibits-082214.pdf"
+        "https://default.sfplanning.org/Citywide/Visitacion_Valley/Visitacion_Valley_Schlage-Final_DA_Exhibits-082214.pdf",
+        "https://default.sfplanning.org/Citywide/Visitacion_Valley/Visitacion_Valley_Schlage-Design_for_Development_20140616_BoS.pdf"
       ],
       "verify": [
         "the development agreement's end date (15-year term from 2014)",
