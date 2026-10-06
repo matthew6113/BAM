@@ -3,6 +3,17 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-06 (eight new projects)
+
+Added at Matthew's request after official-source research (`docs/official-research/candidates-*.md`,
+checked 2026-10-05): **tasman-east**, **sunnydale-hope-sf**, **potrero-hope-sf**,
+**middlefield-park**, **schlage-lock**, **berryessa-flea-market**, **mare-island** and
+**sonoma-developmental-center** (990 homes, just under the 1,000-home bar). BART station-area
+housing (no single site reaches 1,000 homes) and the East Whisman Precise Plan (a zoning plan,
+covered by Middlefield Park) were not added. `cityofvallejo.net` and `permitsonoma.org` (Permit
+Sonoma) join the official hosts. The records are on file; they go on the map once their boundaries
+are drawn.
+
 ## 2026-10-05 (Milestone 4: land-use zones for the plan-scale projects)
 
 **moffett-park**, **north-bayshore**, **concord-naval-weapons-station**, **suisun-expansion** and

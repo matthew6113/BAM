@@ -26,6 +26,8 @@ const OFFICIAL_HOSTS = [
   'suisunexpansion.com', // City of Suisun City's annexation site
   'acgov.org', // Alameda County
   'sccgov.org', // Santa Clara County (data.sccgov.org)
+  'cityofvallejo.net', // City of Vallejo's document and ArcGIS servers (portal.cityofvallejo.net)
+  'permitsonoma.org', // Permit Sonoma, Sonoma County's planning department
   // Agenda systems: one subdomain per agency
   'brisbaneca.api.civicclerk.com',
   'mountainview.legistar.com',
