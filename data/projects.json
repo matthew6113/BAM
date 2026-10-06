@@ -2849,7 +2849,7 @@
       ],
       "nextMilestone": null,
       "summary": "The 61.5-acre San José Flea Market site next to the Berryessa/North San José BART station, rezoned in 2021 for up to 3,450 homes and 3.4 million sq ft of offices and shops around a 5-acre urban market for the flea market's vendors, with creekside open space along Coyote and Penitencia creeks. The owner withdrew its follow-up permit applications in 2023, and the flea market still runs on the site.",
-      "massingNotes": "Boundary: San José Zoning Districts (geo.sanjoseca.gov OPN_OpenDataService MapServer layer 401), feature OBJECTID 12061 (REZONINGFILE '17051', CP(PD), approved 2021-06-29), about 62.9 acres against the ordinance's 61.5; CC BY. Fallback: Ordinance 30646 Exhibit A legal description. approxCenter is the rough centroid of that feature. Heights follow the Berryessa BART Urban Village Plan's building height diagram (Figure 5-4); massing comes in Milestone 4.",
+      "massingNotes": "Boundary: San José Zoning Districts (geo.sanjoseca.gov OPN_OpenDataService MapServer layer 401), feature OBJECTID 12061 (REZONINGFILE '17051', CP(PD), approved 2021-06-29), about 62.9 acres against the ordinance's 61.5; CC BY. Fallback: Ordinance 30646 Exhibit A legal description. approxCenter is the rough centroid of that feature. Massing: the PD zoning defers heights to the Berryessa BART Urban Village Plan; its height diagram, as reproduced in the Planning Commission's May 5, 2021 supplemental report (Fig. 1, p. 12), is traced and fitted to OSM streets and the BART line (trimmed RMS 1.1 m): development areas at 90, 160 and 270 ft, illustrative and conceptual; open space, creeks and the urban market are not drawn.",
       "officialLinks": [
         "https://sanjose.legistar.com/LegislationDetail.aspx?ID=9321&GUID=FC76376F-92F9-46EF-B435-F9B192D06862",
         "https://sanjose.legistar.com/LegislationDetail.aspx?ID=14563&GUID=4CF7F8A5-2E6C-4CFE-9A7B-EACDD409BEF2"
@@ -2868,12 +2868,13 @@
         "https://legistar.granicus.com/sanjose/attachments/df06cb67-b26c-40e8-9242-0e1939c01680.pdf",
         "https://sanjose.legistar.com/LegislationDetail.aspx?ID=14563&GUID=4CF7F8A5-2E6C-4CFE-9A7B-EACDD409BEF2",
         "https://legistar.granicus.com/sanjose/attachments/78a6d04f-bc8f-4766-88eb-08854d2b0a74.pdf",
-        "https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataService/MapServer/401"
+        "https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataService/MapServer/401",
+        "https://legistar.granicus.com/sanjose/attachments/afe4bc58-e013-42b2-870b-ccdbfd873751.pdf"
       ],
       "verify": [
         "the date Ordinance 30646 was finally adopted (scheduled for Aug 3, 2021; the city's 2025 memo cites the ordinance number)",
         "whether any new development application has been filed since the March 2025 status report",
-        "the Berryessa BART Urban Village Plan's height limits for the site (plan document on sanjoseca.gov, not reachable here)"
+        "the height diagram against the adopted Urban Village Plan document itself (traced from the Planning Commission's May 2021 reproduction; the plan is on sanjoseca.gov, not reachable here)"
       ],
       "lastVerified": "2026-10-05"
     },
