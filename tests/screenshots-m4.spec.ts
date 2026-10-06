@@ -55,6 +55,15 @@ for (const [n, id] of [
   ['21', 'concord-naval-weapons-station'],
   ['22', 'suisun-expansion'],
   ['23', 'brisbane-baylands'],
+  ['24', 'tasman-east'],
+  ['25', 'sunnydale-hope-sf'],
+  ['26', 'potrero-hope-sf'],
+  ['27', 'middlefield-park'],
+  ['28', 'schlage-lock'],
+  ['29', 'berryessa-flea-market'],
+  ['30', 'mare-island'],
+  ['31', 'sonoma-developmental-center'],
+  ['32', 'esmeralda'],
 ] as const) {
   test(`${n} landed: ${id}`, async ({ page }) => {
     const errors = collectErrors(page);

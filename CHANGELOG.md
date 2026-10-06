@@ -3,6 +3,14 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-06 (the nine new projects on the map)
+
+All nine new projects now have site boundaries and massing or land-use zones, each source added
+to `sources` and described in `massingNotes`. Notable calls: Mare Island's boundary uses Vallejo's
+2005 specific plan area (the SP-4 zoning area runs over the bay); Schlage Lock's historic office
+building is outlined without a height (no official figure); Middlefield Park's O1 height conflict
+(125 vs 115 ft) and Berryessa's height diagram source are in `verify`.
+
 ## 2026-10-06 (Esmeralda, Cloverdale)
 
 **esmeralda** added at Matthew's request: the Esmeralda Specific Plan in Cloverdale (up to 605
