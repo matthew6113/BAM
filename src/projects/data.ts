@@ -1,5 +1,6 @@
 import type { Feature, FeatureCollection, Geometry, MultiLineString, MultiPolygon, Point, Polygon } from 'geojson';
 import data from '../../data/projects.json';
+import photoData from '../../data/photos.json';
 import type { StageKey } from '../theme/theme';
 
 export type Project = (typeof data.projects)[number] & {
@@ -10,6 +11,33 @@ export type Stage = (typeof data.stages)[number];
 export const STAGES: Stage[] = data.stages;
 export const PROJECTS: Project[] = data.projects as Project[];
 export const DATA_LAST_VERIFIED: string = data._meta.lastVerified;
+
+/** One openly licensed or public-domain photo per project (data/photos.json, filled by `make photos`). */
+export interface Photo {
+  id: string;
+  file: string;
+  caption: string;
+  note?: string;
+  page: string;
+  author: string;
+  license: string;
+  licenseUrl: string | null;
+  taken: string | null;
+  src: string;
+  width: number;
+  height: number;
+  sha256: string;
+  modified?: string;
+}
+
+// Entries without a src are approved but not downloaded yet (`make photos` fills them in).
+export const PHOTOS: Photo[] = (photoData.photos as Partial<Photo>[]).filter((p): p is Photo => typeof p.src === 'string');
+export const PENDING_PHOTOS: string[] = photoData.photos.filter((p) => !('src' in p)).map((p) => p.id);
+export const ALLOWED_PHOTO_LICENSES: string[] = photoData._meta.allowedLicenses;
+const PHOTO_BY_ID = new Map(PHOTOS.map((p) => [p.id, p]));
+export function photoOf(id: string): Photo | undefined {
+  return PHOTO_BY_ID.get(id);
+}
 
 export interface MassingProps {
   fid?: number;

@@ -3,6 +3,22 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-06 (project photos and official links)
+
+Project photos, approved by Matthew: one openly licensed or public-domain photo for each of 23
+projects (18 downloaded so far; Wikimedia rate-limited the other five, which `make photos` fetches), from Wikimedia Commons (`data/photos.json`, research in `docs/images/`). `make photos`
+reads each file's license and author from its own Commons page, refuses anything outside CC0,
+public domain, CC BY and CC BY-SA, and copies a resized version into `public/photos/`, so the site
+never hotlinks. Parkline's approved photo (an abstract atrium detail) was dropped at Matthew's
+request. The panel shows each photo after the summary with its caption and credit. Ten
+projects have no usable open photo yet. Renderings still need written permission; the outreach
+list is `docs/images/PERMISSIONS.md`.
+
+Official links: mission-bay's `sfocii.org/mission-bay` returned 404 and is replaced by the OCII
+Mission Bay North and South overview pages. Added the project pages for mission-rock (Port),
+india-basin, stonestown and balboa-reservoir (SF Planning) and sonoma-developmental-center
+(Permit Sonoma). Each was opened on 2026-10-06.
+
 ## 2026-10-06 (the nine new projects on the map)
 
 All nine new projects now have site boundaries and massing or land-use zones, each source added
