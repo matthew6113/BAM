@@ -44,6 +44,15 @@ SJ_ZONING = "https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataServ
 SUNNYVALE_SP = "https://gis.sunnyvale.ca.gov/arcgis/rest/services/GeneralPlan/MapServer/8"
 ALCO_PARCELS = "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0"
 OAK_ZONING = "https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Zoning_Group_Layers_/FeatureServer/0"
+SC_ZONING = "https://map.santaclaraca.gov/maps/rest/services/OPENDATA/RegionalZoningOpenData/MapServer/0"
+# Layer 67 is the adopted plan's own area; layer 3 (zoning "SP-4") runs out over the bay.
+VALLEJO_SP = ("https://portal.cityofvallejo.net/arcgis/rest/services/CityGIS_Viewer/"
+              "Planning_Development_Services/MapServer/67")
+
+MIDDLEFIELD_PARK_APNS = [  # Mountain View Resolution 18734 (Middlefield Park Master Plan), Legistar matter 6895
+    "160-58-001", "160-58-016", "160-58-017", "160-57-004", "160-57-006", "160-57-007", "160-57-008",
+    "160-57-009", "160-57-010", "160-57-011", "160-57-012", "160-57-013", "160-59-005", "160-59-006",
+]
 
 NORTH_BAYSHORE_APNS = [  # Mountain View Legistar matter 7641 (North Bayshore Master Plan, PL-2021-248)
     "116-02-037", "116-02-081", "116-02-083", "116-02-084", "116-02-088", "116-10-070", "116-10-077",
@@ -216,6 +225,60 @@ SPECS: dict[str, dict] = {
         "accuracy": "approximate",
         "note": "The development parcels zoned D-OTN (about 31 acres). The parks and open space, about half the 64-acre site, sit in a larger open-space zone and aren't drawn yet.",
         "license": "City of Oakland Planning & Building (for reference only)",
+    },
+    "berryessa-flea-market": {
+        "label": "San José zoning",
+        # The layer stores the file number without its prefix; the "PDC17-051" form is matched too in case it changes.
+        **arcgis(SJ_ZONING, "REZONINGFILE = '17051' or REZONINGFILE like 'PDC17-051%'"),
+        "layer": "City of San José Zoning Districts, rezoning file PDC17-051 (CP(PD), approved June 29, 2021)",
+        "accuracy": "official",
+        "note": "The planned development zoning of Ordinance 30646, which describes an approximately 61.5-gross-acre site.",
+        "license": "CC-BY 4.0, City of San José",
+    },
+    "tasman-east": {
+        "label": "Santa Clara zoning",
+        **arcgis(SC_ZONING, "ZONGDSGN = 'TN' and SPPLAN = 'TE'"),
+        "layer": "City of Santa Clara zoning, the 37 TN parcels tagged with the Tasman East plan (SPPLAN “TE”)",
+        "accuracy": "approximate",
+        "note": ("The parcels of the Tasman East Specific Plan area, which the City describes as about 45 acres between "
+                 "Tasman Drive, the Guadalupe River, the golf course and Lafayette Street. The plan's own streets are "
+                 "outside the parcels, so the shape is net of them. The layer's 10 other TN parcels are retired records "
+                 "that lie wholly inside these and add no area."),
+        "license": "City of Santa Clara Open Data Portal terms of use (2018)",
+    },
+    "sunnydale-hope-sf": {
+        "label": "DataSF special use districts",
+        **socrata(DATASF, SF_SUD, "name = 'Sunnydale Hope SF'"),
+        "layer": "DataSF Zoning Map – Special Use Districts, “Sunnydale Hope SF”",
+        "accuracy": "official",
+        "note": "The Sunnydale HOPE SF Special Use District (Planning Code 249.75), the approximately 50-acre site of Ordinance 18-17.",
+        "license": "Public Domain U.S. Government (DataSF)",
+    },
+    "potrero-hope-sf": {
+        "label": "DataSF special use districts",
+        **socrata(DATASF, SF_SUD, "name = 'Potrero Hope SF'"),
+        "layer": "DataSF Zoning Map – Special Use Districts, “Potrero Hope SF”",
+        "accuracy": "official",
+        "note": "The Potrero HOPE SF Special Use District (Planning Code 249.74); Ordinance 15-17 describes an approximately 38-acre site.",
+        "license": "Public Domain U.S. Government (DataSF)",
+    },
+    "middlefield-park": {
+        "label": "Mountain View parcels",
+        **arcgis(MV_PARCELS, f"APN in ({_sql_list(a.replace('-', '') for a in MIDDLEFIELD_PARK_APNS)})"),
+        "layer": "City of Mountain View parcels, the 14 APNs in Resolution 18734 (Middlefield Park Master Plan)",
+        "accuracy": "approximate",
+        "note": ("The 14 parcels the master plan approves, against the Council report's “approximately 40 acres”. "
+                 "Streets between them are left out, and the approved street vacations will change the edges."),
+        "license": "City of Mountain View open data (use at your own risk)",
+    },
+    "mare-island": {
+        "label": "Vallejo specific plan areas",
+        **arcgis(VALLEJO_SP, "Name = 'Mare Island' and Year = 2005"),
+        "layer": "City of Vallejo GIS, Existing Specific Plan Area “Mare Island” (2005)",
+        "accuracy": "approximate",
+        "note": ("The adopted 2005 Mare Island Specific Plan area, about 3,100 acres; the whole island is 5,250 acres "
+                 "in the 2005 EIR. The new specific plan's boundary isn't published, and may differ."),
+        "license": "City of Vallejo GIS (no license stated)",
     },
 }
 

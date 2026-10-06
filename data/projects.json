@@ -2951,7 +2951,7 @@
       ],
       "nextMilestone": "Second draft of the specific plan, with infrastructure and financing plans, and the CEQA notice of preparation.",
       "summary": "The former Mare Island Naval Shipyard across the strait from downtown Vallejo, where a new specific plan from the Mare Island Company proposes up to about 14,000 homes in nine neighborhoods around the historic shipyard core. It's in early City review, with no approvals yet.",
-      "massingNotes": "Boundary: City of Vallejo GIS, Planning_Development_Services MapServer layer 3 (Specific Plans), feature SpPlan = 'SP-4' (Mare Island Specific Plan), the adopted plan area; no license is stated, so ask the City before redistributing. The new plan's boundary (Figure in the Oct 2024 draft) may differ. Approximate center is the layer's bounding-box centre, shifted toward the developed east shore. Massing comes in Milestone 4, and only once the City adopts a plan: the draft's development standards (85-ft limit in the CRMX and CR zones) are applicant proposals under review.",
+      "massingNotes": "Boundary: City of Vallejo GIS, Planning_Development_Services MapServer layer 67 (Existing Specific Plan Area), feature Mare Island (2005), about 3,093 acres, drawn as approximate (layer 3's SP-4 zoning area, about 4,220 acres, runs out over the bay); no license is stated, so ask the City before redistributing. The new plan's boundary (Figure in the Oct 2024 draft) may differ. Approximate center is the layer's bounding-box centre, shifted toward the developed east shore. Massing comes in Milestone 4, and only once the City adopts a plan: the draft's development standards (85-ft limit in the CRMX and CR zones) are applicant proposals under review.",
       "officialLinks": [
         "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=5As%2FAST1",
         "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=9yhFAU3W"
@@ -2963,7 +2963,7 @@
         "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=piRGAR%2Fa",
         "https://ceqanet.lci.ca.gov/2003092057",
         "https://ceqanet.lci.ca.gov/2003092057/2",
-        "https://portal.cityofvallejo.net/arcgis/rest/services/CityGIS_Viewer/Planning_Development_Services/MapServer/3"
+        "https://portal.cityofvallejo.net/arcgis/rest/services/CityGIS_Viewer/Planning_Development_Services/MapServer/67"
       ],
       "verify": [
         "the new plan's area and boundary, and its commercial program",
@@ -3177,7 +3177,8 @@
         "https://www.sf.gov/news--city-announces-groundbreaking-critical-infrastructure-potrero-hope-sf-affordable-housing",
         "https://media.api.sf.gov/documents/Approved-Potrero_HOPE_SF_Phase_III_Predevelopment_Loan_Evaluation_LC_4-04-2025.pdf",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201603172392",
-        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202006108345"
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202006108345",
+        "https://data.sf.gov/d/5yf5-ms5f"
       ],
       "verify": [
         "the affordable count (Ord. 15-17: about 800 replacement and additional affordable; Planning's page: 619 plus about 200; the 2021 City announcement: 619 plus 155)",
@@ -3511,7 +3512,8 @@
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202106031523",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202106031549",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202211146447",
-        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202211297323"
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202211297323",
+        "https://data.sf.gov/d/5yf5-ms5f"
       ],
       "verify": [
         "the EIR/EIS certification date (Planning's page: July 9, 2015; the development agreement text: Nov 17, 2016)",
@@ -3590,7 +3592,7 @@
       ],
       "nextMilestone": "A supplemental environmental impact report and hearings on the amendment adding 1,500 homes.",
       "summary": "A city plan to turn 45 acres of warehouses next to the Lick Mill light rail station in north Santa Clara into a high-density neighborhood of 4,500 homes, with shops, parks and a walking and biking network to the Guadalupe River trail. Adopted in 2018; seven apartment buildings with about 1,750 homes had occupancy by late 2025, and the city is preparing an amendment to add 1,500 more.",
-      "massingNotes": "Boundary: City of Santa Clara zoning (map.santaclaraca.gov OPENDATA/RegionalZoningOpenData MapServer layer 0), parcels with ZONGDSGN 'TN' and SPPLAN 'TE' (37 parcels, about 42 acres), dissolved; check the 10 TN parcels without a plan tag against the plan's land-use figure; confirm the city's open-data terms before shipping. approxCenter is the rough centroid of those parcels. Massing from the plan's height tiers (65, 85 and 220 ft) and each project's approvals comes in Milestone 4.",
+      "massingNotes": "Boundary: City of Santa Clara zoning (map.santaclaraca.gov OPENDATA/RegionalZoningOpenData MapServer layer 0), the 37 parcels with ZONGDSGN 'TN' and SPPLAN 'TE', dissolved (about 41 acres net of the plan's streets, against the plan's 45; approximate); the layer's 10 other TN parcels are retired records lying wholly inside these, so they add nothing; City open-data terms of use (2018). approxCenter is the rough centroid of those parcels. Massing from the plan's height tiers (65, 85 and 220 ft) and each project's approvals comes in Milestone 4.",
       "officialLinks": [
         "https://santaclara.legistar.com/LegislationDetail.aspx?ID=2564&GUID=D9199C07-2D4D-40E5-ADCB-5DBD76072087",
         "https://santaclara.legistar.com/LegislationDetail.aspx?ID=21103&GUID=8DB4A0CB-9F3D-4D0B-A43B-53AAAFF3C7EC"

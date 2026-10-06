@@ -1,0 +1,130 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "sunnydale-hope-sf",
+  "source": "DataSF Zoning Map \u2013 Special Use Districts, \u201cSunnydale Hope SF\u201d",
+  "sourceLabel": "DataSF special use districts",
+  "sourceUrl": "https://data.sf.gov/d/5yf5-ms5f",
+  "query": "https://data.sf.gov/resource/5yf5-ms5f.geojson?%24where=name+%3D+%27Sunnydale+Hope+SF%27&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The Sunnydale HOPE SF Special Use District (Planning Code 249.75), the approximately 50-acre site of Ordinance 18-17. 50.5 acres as drawn.",
+  "license": "Public Domain U.S. Government (DataSF)",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4231938,
+       37.7111224
+      ],
+      [
+       -122.4226419,
+       37.7122663
+      ],
+      [
+       -122.4220546,
+       37.7136066
+      ],
+      [
+       -122.4217714,
+       37.7142038
+      ],
+      [
+       -122.415741,
+       37.7124955
+      ],
+      [
+       -122.4159985,
+       37.7119162
+      ],
+      [
+       -122.4154899,
+       37.7117705
+      ],
+      [
+       -122.4156055,
+       37.7115094
+      ],
+      [
+       -122.415585,
+       37.7114993
+      ],
+      [
+       -122.4157013,
+       37.7112408
+      ],
+      [
+       -122.4162329,
+       37.711389
+      ],
+      [
+       -122.4163841,
+       37.7110612
+      ],
+      [
+       -122.4168529,
+       37.7111854
+      ],
+      [
+       -122.417056,
+       37.7107327
+      ],
+      [
+       -122.4165899,
+       37.7106033
+      ],
+      [
+       -122.416708,
+       37.7103407
+      ],
+      [
+       -122.4171744,
+       37.71047
+      ],
+      [
+       -122.417326,
+       37.7101419
+      ],
+      [
+       -122.4173666,
+       37.7100961
+      ],
+      [
+       -122.4176448,
+       37.709468
+      ],
+      [
+       -122.4202017,
+       37.710187
+      ],
+      [
+       -122.4201794,
+       37.7102522
+      ],
+      [
+       -122.4224707,
+       37.7108965
+      ],
+      [
+       -122.4224914,
+       37.7108787
+      ],
+      [
+       -122.4231938,
+       37.7111224
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
