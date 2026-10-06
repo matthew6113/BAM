@@ -258,22 +258,6 @@
       "modified": "Resized and re-encoded"
     },
     {
-      "id": "parkline",
-      "file": "File:SRI_International_Building.jpg",
-      "caption": "Looking up through the glass of a building on the SRI International campus.",
-      "note": "Older photo; which building it shows isn't recorded.",
-      "page": "https://commons.wikimedia.org/wiki/File:SRI_International_Building.jpg",
-      "author": "SRI International",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "taken": "2011",
-      "src": "photos/parkline.jpg",
-      "width": 1200,
-      "height": 815,
-      "sha256": "fe496220b1ebe0a5bfb4b4757432b3737614106e97cfbd7dd10da1eba7294429",
-      "modified": "Resized and re-encoded"
-    },
-    {
       "id": "downtown-west",
       "file": "File:Montgomery_Street,_Near_the_San_Jose_Diridon_Station,_Jun_17,_2023_-_52.jpg",
       "caption": "Cleared, fenced lots at Montgomery and West San Fernando streets.",

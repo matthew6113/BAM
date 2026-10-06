@@ -5,11 +5,12 @@ says what changed, why and against which source. Code changes live in git histor
 
 ## 2026-10-06 (project photos and official links)
 
-Project photos, approved by Matthew: one openly licensed or public-domain photo for each of 24
-projects (19 downloaded so far; Wikimedia rate-limited the other five, which `make photos` fetches), from Wikimedia Commons (`data/photos.json`, research in `docs/images/`). `make photos`
+Project photos, approved by Matthew: one openly licensed or public-domain photo for each of 23
+projects (18 downloaded so far; Wikimedia rate-limited the other five, which `make photos` fetches), from Wikimedia Commons (`data/photos.json`, research in `docs/images/`). `make photos`
 reads each file's license and author from its own Commons page, refuses anything outside CC0,
 public domain, CC BY and CC BY-SA, and copies a resized version into `public/photos/`, so the site
-never hotlinks. The panel shows each photo after the summary with its caption and credit. Nine
+never hotlinks. Parkline's approved photo (an abstract atrium detail) was dropped at Matthew's
+request. The panel shows each photo after the summary with its caption and credit. Ten
 projects have no usable open photo yet. Renderings still need written permission; the outreach
 list is `docs/images/PERMISSIONS.md`.
 

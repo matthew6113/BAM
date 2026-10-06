@@ -145,7 +145,6 @@ CC BY-SA photos are shared under the same license as the original.
 | india-basin | Pi.1415926535 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2021-04-17 | [Commons](https://commons.wikimedia.org/wiki/File:India_Basin_Shoreline_Park,_April_2021.jpg) |
 | schlage-lock | Pedro Xing | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | 2012-11-10 | [Commons](https://commons.wikimedia.org/wiki/File:Bayshore_Station_3238_26.JPG) |
 | willow-village | EspartacoPalma | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2015-04-03 | [Commons](https://commons.wikimedia.org/wiki/File:Menlo_Science_%26_Technology_Park_entrance.jpg) |
-| parkline | SRI International | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | 2011 | [Commons](https://commons.wikimedia.org/wiki/File:SRI_International_Building.jpg) |
 | downtown-west | 94rain | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2023-06-17 | [Commons](https://commons.wikimedia.org/wiki/File:Montgomery_Street,_Near_the_San_Jose_Diridon_Station,_Jun_17,_2023_-_52.jpg) |
 | moffett-park | Grendelkhan | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2018-06-27 | [Commons](https://commons.wikimedia.org/wiki/File:Google_Moffett_Place_offices_from_the_air.jpg) |
 
