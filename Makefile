@@ -79,6 +79,7 @@ sites:
 	$(PY) bam_pipeline.sites.landuse_esmeralda
 	$(PY) bam_pipeline.sites.landuse_mare_island
 	$(PY) bam_pipeline.sites.traced_boundaries
+	$(PY) bam_pipeline.sites.landuse_sonoma_developmental_center
 
 dev:
 	npx vite --host 127.0.0.1
