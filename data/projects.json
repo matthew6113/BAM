@@ -732,6 +732,7 @@
       "summary": "The Giants' former parking lot across McCovey Cove from Oracle Park, being built out as a waterfront neighborhood. The first four buildings and the 5-acre China Basin Park are done, and the Port is funding pre-development of the second phase.",
       "massingNotes": "Boundary: DataSF Special Use Districts (5yf5-ms5f, Public Domain U.S. Government), feature \"Mission Rock\" (about 27.7 acres vs the official 28). Draft EIR Table 2-4 heights: Blocks A, D1 and F up to 240 ft, C and G 190 ft, the rest 90–120 ft (verify against the adopted Design Controls); built Phase 1 per permits: A 24 stories, F 23, G 13, B 8. Massing comes in Milestone 4.",
       "officialLinks": [
+        "https://www.sfport.com/projects-programs/mission-rock",
         "https://www.sfport.com/sites/default/files/2026-06/item_11a_mission_rock_phase_2_update_and_port_capital.pdf",
         "https://www.sfport.com/files/2023-10/101023_8b_mission_rock_budget_port_capital_parcel_lease_amendment_final.pdf"
       ],
@@ -816,7 +817,6 @@
       "summary": "A 303-acre redevelopment area between the Bay and Interstate 280, planned in 1998 and now largely built: about 6,500 homes, UCSF's research campus, the Warriors' event center and about 40 acres of parks. Included as the map's reference for what a completed master plan looks like.",
       "massingNotes": "Boundary: DataSF Former Redevelopment Agency Project Areas (m288-24sn, ODC-PDDL), features \"Mission Bay - North\" and \"Mission Bay - South\" (about 316 acres with water and street edges; cite 303). Existing buildings come from the base footprint data. Massing: only the two plan blocks still to build, Block 4 East and Block 12 West (affordable housing; MOHCD pipeline, DBI permits), drawn to the Mission Bay South Design for Development height zones (Nov 2025, Map 4 and Height Zone Chart: 65-ft base, towers to 160 ft on part of each zone) and 250 ft on the north half of Block 4 East (Redevelopment Plan Sec. 304.5, Ord. 022-26; split line approximate); illustrative. Blocks 29–30 (no start date) and UCSF land are not drawn.",
       "officialLinks": [
-        "https://sfocii.org/mission-bay",
         "https://sfocii.org/projects/mission-bay-north/overview",
         "https://sfocii.org/projects/mission-bay-south/overview"
       ],
@@ -1061,6 +1061,7 @@
       "summary": "A Bayview waterfront site approved in 2018 for up to 1,575 homes, a quarter of them affordable, alongside a string of new public shoreline parks. The city's parks are being built; the private site has no issued permits yet.",
       "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"India Basin SUD\" (about 30.2 acres, the development site only; the parks need separate geometry), with the recorded development agreement's Exhibits A, B and D as a fallback. Massing: parcel height limits traced from the adopted Design Standards and Guidelines (July 2018, Motion 20252), Figure 5-3, p. 263: 20–80 ft across the 700 Innes parcels, with two tower zones up to 160 ft (85 ft minimum, Standard 5.2.3); open space parcels and the city parks are not drawn (illustrative, drawn to the limit). The Oct 2024 amendment does not change heights.",
       "officialLinks": [
+        "https://sfplanning.org/india-basin-mixed-use-project",
         "https://sfplanning.s3.amazonaws.com/default/files/devagreements/indiabasin/IndiaBasin_Development_Agreement_Recorded.pdf",
         "https://sfrecpark.org/m/newsflash/home/detail/2951",
         "https://sfbos.org/sites/default/files/o0252-18.pdf"
@@ -1168,6 +1169,7 @@
       "summary": "A plan to build up to about 3,500 homes, shops, offices and six acres of open space on about 30 acres of the Stonestown Galleria site, while most of the existing mall stays. Approved in 2024, it is projected to build out in phases through 2051.",
       "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"Stonestown Special Use District\" (about 38.5 acres, larger than the 30-acre project site; unchecked). Alternatives: the financing district boundary (financing plan Exhibits A and B) or the Board's map (Legistar). Massing: parcel height limits traced from the adopted Design Standards and Guidelines (Apr 2024), Figure 5.9, p. 187: mostly 90 ft, with tower zones of 150 and 190 ft over a 90-ft base (towers are construction above 90 ft, Sec. 249.9(g)) and lower parcels of 30–50 ft (illustrative, drawn to the limit).",
       "officialLinks": [
+        "https://sfplanning.org/project/stonestown",
         "https://media.api.sf.gov/documents/2024-0000037_NOD_-_Stonestown_Development_Project.pdf",
         "https://sfbos.archive.sf.gov/sites/default/files/o0205-24.pdf",
         "https://media.api.sf.gov/documents/Stonestown_IFP_1-8-26.pdf"
@@ -1291,6 +1293,7 @@
       "summary": "A 17.6-acre former SFPUC reservoir site in the Balboa Park Station area, approved in 2020 for about 1,100 homes, half of them affordable, around a 2-acre park. The first two affordable buildings are under way.",
       "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"Balboa Reservoir\" (about 16.6 acres, the SUD project site, excluding the SFPUC pipeline strip); cross-check against DataSF Parcels (acdm-wktn, PDDL) block 3180, lots 190, 201, 202, 204 and 205. Massing comes in Milestone 4.",
       "officialLinks": [
+        "https://sfplanning.org/project/balboa-reservoir-and-community-advisory-committee-cac",
         "https://www.sf.gov/meeting--november-07--2025--citywide-affordable-housing-loan-committee-meeting",
         "https://sfbos.org/sites/default/files/o0142-20.pdf"
       ],
@@ -3392,6 +3395,7 @@
       "summary": "The campus of a state institution in the Sonoma Valley that closed in 2018, proposed for about 990 homes, offices and a hotel around its historic Central Green. Most of the surrounding land has gone to state parks; the county is redoing its plan and environmental review after a court ruled that the first EIR fell short.",
       "massingNotes": "Boundary: trace the project area (160-acre core campus plus 49-acre wildfire buffer) from the 2025 notice of preparation, Figure 3 (PDF p. 21); the County of Sonoma parcel layer (APNs 054-090-001, 054-150-005, 054-150-010; CC BY-SA 3.0, attribution \"County of Sonoma\") still covers about 990 acres, so it is context only. Approximate center from CEQAnet's coordinates. Massing comes in Milestone 4: the proposed site plan is Figure 4 (PDF p. 22) and the notice gives typical heights of two to three stories (detached homes one to three); the repealed 2022 plan is not drawn. Land use: the proposed specific plan update's land-use diagram (NOP Figure 4, Aug 2025), in the same frame as the boundary's Figure 3 (RMS 0.8 m), every zone labelled proposed; the rescinded 2022 plan is not drawn.",
       "officialLinks": [
+        "https://permitsonoma.org/sdchousingproject",
         "https://ceqanet.lci.ca.gov/2025081410",
         "https://ceqanet.lci.ca.gov/2025081410/Attachment/7biXwK"
       ],
