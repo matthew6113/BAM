@@ -117,8 +117,43 @@ The license texts ship with the fonts in `public/generated/fonts/`.
 | GeoPandas, Shapely, pyarrow, fontTools | BSD-3-Clause / Apache-2.0 / MIT |
 | Vite, Vitest, Playwright | MIT / MIT / Apache-2.0 |
 
+## Project photos (`data/photos.json`, `public/photos/`)
+
+One openly licensed or public-domain photo per project, approved by Matthew on 2026-10-06, all
+from Wikimedia Commons. `make photos` reads each file's author and license from its own Commons
+page, refuses any license outside CC0, public domain, CC BY and CC BY-SA, and copies a 1200 px
+version into `public/photos/` (no hotlinking; metadata stripped). The panel shows each photo with
+its credit: author, date taken, license with a link, and "via Wikimedia Commons" with a link to
+the file page. CC BY and CC BY-SA photos are marked "Resized and re-encoded". The resized copies of
+CC BY-SA photos are shared under the same license as the original.
+
+| Project | Author | License | Taken | Source |
+|---|---|---|---|---|
+| treasure-island | 9yz | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | 2025-05-27 | [Commons](https://commons.wikimedia.org/wiki/File:Treasure_Island_-_whole_island_panorama_2025.jpg) |
+| stonestown | Mx. Granger | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | 2025-12-20 | [Commons](https://commons.wikimedia.org/wiki/File:Stonestown_Galleria_1.jpg) |
+| parkmerced | Bill Abbott | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | 2018-10-10 | [Commons](https://commons.wikimedia.org/wiki/File:San_Fancisco,_Lake_Merced,_Parkmerced,_I_lived_in_the_bungalos_0_to_1_year..._DSC_0680_(48646781841).jpg) |
+| brisbane-baylands | Moonstone2 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2020-10-31 | [Commons](https://commons.wikimedia.org/wiki/File:Ruins_of_the_Railroad_Roundhouse_in_Brisbane_40.jpg) |
+| alameda-point | Pi.1415926535 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2022-12-15 | [Commons](https://commons.wikimedia.org/wiki/File:Aerial_view_of_Alameda_Seaplane_Lagoon,_December_2022.JPG) |
+| mare-island | Pi.1415926535 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2022-03-20 | [Commons](https://commons.wikimedia.org/wiki/File:Aerial_view_of_Mare_Island_and_Vallejo,_March_2022.JPG) |
+| oakland-coliseum | Quintin Soloviev | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | 2024-03-28 | [Commons](https://commons.wikimedia.org/wiki/File:Oakland_Coliseum_aerial_view_2024.jpg) |
+| candlestick-point | Pi.1415926535 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | 2018-08-27 | [Commons](https://commons.wikimedia.org/wiki/File:Candlestick_Hill_aerial_view,_August_2018.JPG) |
+| hunters-point-shipyard | Pi.1415926535 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2024-04-06 | [Commons](https://commons.wikimedia.org/wiki/File:Aerial_view_of_Hunters_Point_Naval_Shipyard,_April_2024.JPG) |
+| potrero-power-station | Pi.1415926535 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | 2020-02-17 | [Commons](https://commons.wikimedia.org/wiki/File:Old_siding_and_Unit_3_at_Potrero_Generating_Station,_February_2020.JPG) |
+| pier-70 | Clyde Charles Brown | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2025-02-20 | [Commons](https://commons.wikimedia.org/wiki/File:Old_shipyard_building_at_Pier_70,_San_Francisco,_California,_US.jpg) |
+| mission-rock | Lexi Mattick | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | 2026-07-31 | [Commons](https://commons.wikimedia.org/wiki/File:Mission_Rock_Aerial_-_July_2026.jpg) |
+| mission-bay | Firstcultural | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | 2024-02-10 | [Commons](https://commons.wikimedia.org/wiki/File:Aerial_photo_of_Mission_Bay_and_northern_end_of_I-280.jpg) |
+| india-basin | Pi.1415926535 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2021-04-17 | [Commons](https://commons.wikimedia.org/wiki/File:India_Basin_Shoreline_Park,_April_2021.jpg) |
+| schlage-lock | Pedro Xing | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | 2012-11-10 | [Commons](https://commons.wikimedia.org/wiki/File:Bayshore_Station_3238_26.JPG) |
+| willow-village | EspartacoPalma | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2015-04-03 | [Commons](https://commons.wikimedia.org/wiki/File:Menlo_Science_%26_Technology_Park_entrance.jpg) |
+| parkline | SRI International | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | 2011 | [Commons](https://commons.wikimedia.org/wiki/File:SRI_International_Building.jpg) |
+| downtown-west | 94rain | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2023-06-17 | [Commons](https://commons.wikimedia.org/wiki/File:Montgomery_Street,_Near_the_San_Jose_Diridon_Station,_Jun_17,_2023_-_52.jpg) |
+| moffett-park | Grendelkhan | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2018-06-27 | [Commons](https://commons.wikimedia.org/wiki/File:Google_Moffett_Place_offices_from_the_air.jpg) |
+
+Approved but not yet downloaded (Wikimedia rate-limited this run; `make photos` fetches them):
+the-rise, berryessa-flea-market, concord-naval-weapons-station, suisun-expansion, sonoma-developmental-center.
+
 ## Renderings
 
 None yet. Only images with explicit permission (press kits) or Matthew's own work
-will be used. Each one will be listed in `public/renders/{id}/renders.json` with its credit
+will be used; the outreach list is `docs/images/PERMISSIONS.md`. Each one will be listed in `public/renders/{id}/renders.json` with its credit
 and permission note.

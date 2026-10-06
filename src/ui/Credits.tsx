@@ -26,7 +26,8 @@ export function Credits({ collapse }: Props) {
         Building footprints from OpenStreetMap, Microsoft and Esri Community Maps contributors; heights
         from OpenStreetMap and USGS lidar. Project boundaries come from city and county GIS (DataSF;
         Menlo Park; Mountain View; San José, CC-BY; Sunnyvale; Brisbane; Oakland; Santa Clara and Alameda
-        counties) or are traced from public planning documents, cited in each project's panel.
+        counties) or are traced from public planning documents, cited in each project's panel. Project
+        photos from Wikimedia Commons contributors, credited with their licenses in each panel.
       </p>
       <button type="button" class="credits-toggle" aria-expanded={open} aria-controls="credits-body"
         onClick={() => setOpen(!open)}>

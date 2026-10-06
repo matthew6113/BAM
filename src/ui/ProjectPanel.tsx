@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'preact/hooks';
-import { boundaryOf, LAND_USE_CATEGORIES, landUseLabel, landUseOf, massingOf, STAGES, stageLabel, type Project } from '../projects/data';
+import { boundaryOf, LAND_USE_CATEGORIES, landUseLabel, landUseOf, massingOf, photoOf, STAGES, type Photo, stageLabel, type Project } from '../projects/data';
 import { formatDate, formatInt, formatNumber, formatSqft, sourceText } from './format';
 
 interface Props {
@@ -9,6 +9,30 @@ interface Props {
   onNext?: () => void;
   prevName?: string;
   nextName?: string;
+}
+
+/** An inline photo with its credit: caption, then who took it, when, and the license. */
+function PhotoFigure({ photo }: { photo: Photo }) {
+  const when = photo.taken ? formatDate(photo.taken.length === 10 ? photo.taken.slice(0, 7) : photo.taken) : null;
+  return (
+    <figure class="photo">
+      <img src={`${import.meta.env.BASE_URL}${photo.src}`} width={photo.width} height={photo.height}
+        alt={photo.caption} loading="lazy" decoding="async" />
+      <figcaption>
+        {photo.caption}
+        {photo.note && <> {photo.note}</>}
+        <span class="credit">
+          Photo: {photo.author}
+          {when && `, ${when}`}
+          {', '}
+          {photo.licenseUrl ? <a href={photo.licenseUrl}>{photo.license}</a> : photo.license}
+          {', via '}
+          <a href={photo.page}>Wikimedia Commons</a>
+          {photo.modified && `. ${photo.modified.charAt(0).toUpperCase()}${photo.modified.slice(1).toLowerCase()}`}.
+        </span>
+      </figcaption>
+    </figure>
+  );
 }
 
 const MAIN_STAGES = STAGES.filter((s) => s.order <= 7).sort((a, b) => a.order - b.order);
@@ -83,6 +107,7 @@ export function ProjectPanel({ project, onClose, onPrev, onNext, prevName, nextN
   const lMeta = (landUse as { properties?: Record<string, unknown> } | undefined)?.properties ?? {};
   const zoneCategories = LAND_USE_CATEGORIES.filter((c) => landUse?.features.some((f) => f.properties.category === c));
   const sources = project.sources;
+  const photo = photoOf(project.id);
 
   return (
     <aside class="project-panel" aria-labelledby="pp-title">
@@ -140,6 +165,7 @@ export function ProjectPanel({ project, onClose, onPrev, onNext, prevName, nextN
       <section aria-labelledby="pp-summary">
         <h3 id="pp-summary" class="visually-hidden">Summary</h3>
         <p class="summary">{project.summary}</p>
+        {photo && <PhotoFigure photo={photo} />}
         <h3>Where it stands</h3>
         <p class="summary">{project.stageNote}</p>
         <p class="small">As of {formatDate(project.lastVerified)}.</p>

@@ -3,7 +3,7 @@
 
 PY = uv run --directory pipeline python -m
 
-.PHONY: help data tools fetch process buildings tiles fonts glyphs manifest sites dev build test e2e screenshots clean-build
+.PHONY: help data tools fetch process buildings tiles fonts glyphs manifest sites photos dev build test e2e screenshots clean-build
 
 help:
 	@echo "make data         Full data pipeline: fetch, process, tile, fonts, glyphs, manifest"
@@ -11,6 +11,7 @@ help:
 	@echo "make fetch        Download the Overture extracts into data/raw/ (cached)"
 	@echo "make tiles        Rebuild PMTiles from data/build/"
 	@echo "make sites        Re-trace project boundaries and massing from their source documents"
+	@echo "make photos       Download the approved project photos from Wikimedia Commons into public/photos/"
 	@echo "make dev          Start the dev server (http://127.0.0.1:5173)"
 	@echo "make test         Data, geometry, theme and helper tests"
 	@echo "make e2e          Playwright interaction tests (map controls, fly-in, panel, deep links)"
@@ -83,6 +84,9 @@ sites:
 	$(PY) bam_pipeline.sites.landuse_mare_island
 	$(PY) bam_pipeline.sites.traced_boundaries
 	$(PY) bam_pipeline.sites.landuse_sonoma_developmental_center
+
+photos:
+	$(PY) bam_pipeline.photos
 
 dev:
 	npx vite --host 127.0.0.1
