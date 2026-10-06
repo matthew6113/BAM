@@ -3597,7 +3597,7 @@
       ],
       "nextMilestone": "A supplemental environmental impact report and hearings on the amendment adding 1,500 homes.",
       "summary": "A city plan to turn 45 acres of warehouses next to the Lick Mill light rail station in north Santa Clara into a high-density neighborhood of 4,500 homes, with shops, parks and a walking and biking network to the Guadalupe River trail. Adopted in 2018; seven apartment buildings with about 1,750 homes had occupancy by late 2025, and the city is preparing an amendment to add 1,500 more.",
-      "massingNotes": "Boundary: City of Santa Clara zoning (map.santaclaraca.gov OPENDATA/RegionalZoningOpenData MapServer layer 0), the 37 parcels with ZONGDSGN 'TN' and SPPLAN 'TE', dissolved (about 41 acres net of the plan's streets, against the plan's 45; approximate); the layer's 10 other TN parcels are retired records lying wholly inside these, so they add nothing; City open-data terms of use (2018). approxCenter is the rough centroid of those parcels. Massing from the plan's height tiers (65, 85 and 220 ft) and each project's approvals comes in Milestone 4.",
+      "massingNotes": "Boundary: City of Santa Clara zoning (map.santaclaraca.gov OPENDATA/RegionalZoningOpenData MapServer layer 0), the 37 parcels with ZONGDSGN 'TN' and SPPLAN 'TE', dissolved (about 41 acres net of the plan's streets, against the plan's 45; approximate); the layer's 10 other TN parcels are retired records lying wholly inside these, so they add nothing; City open-data terms of use (2018). approxCenter is the rough centroid of those parcels. Massing from the plan's height tiers (65, 85 and 220 ft) and each project's approvals comes in Milestone 4. Massing: 13 completed buildings from OpenStreetMap footprints matched to APR parcels, with official heights where given (Related 214 and 217 ft, Greystar 85 ft) or estimated from official story counts (illustrative); the other 24 plan parcels drawn to the plan's 220-ft tower limit over an 85-ft podium (Final EIR, Draft EIR §2.3.4), illustrative. The FAA threshold is about 175 ft.",
       "officialLinks": [
         "https://santaclara.legistar.com/LegislationDetail.aspx?ID=2564&GUID=D9199C07-2D4D-40E5-ADCB-5DBD76072087",
         "https://santaclara.legistar.com/LegislationDetail.aspx?ID=21103&GUID=8DB4A0CB-9F3D-4D0B-A43B-53AAAFF3C7EC"
@@ -3615,13 +3615,16 @@
         "https://santaclara.legistar.com/LegislationDetail.aspx?ID=22513&GUID=A5A718A0-2FCB-4EF3-A706-29319066A10C",
         "https://santaclara.legistar.com/LegislationDetail.aspx?ID=26106&GUID=25545734-0DA3-4CF9-94E7-6CB6C661AAE0",
         "https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year",
-        "https://map.santaclaraca.gov/maps/rest/services/OPENDATA/RegionalZoningOpenData/MapServer/0"
+        "https://map.santaclaraca.gov/maps/rest/services/OPENDATA/RegionalZoningOpenData/MapServer/0",
+        "https://santaclara.legistar1.com/santaclara/attachments/6329e9a6-e29a-4f31-a2cf-ab8a09b2f902.pdf",
+        "https://santaclara.legistar1.com/santaclara/attachments/e6c34bac-7ee7-4ada-a313-704e06eb3ee0.pdf"
       ],
       "verify": [
         "certificates of occupancy issued in 2026 (the state's annual report for 2026 isn't out yet)",
         "the status of 2240 Calle de Luna (311 homes, building permit April 2022, no occupancy reported)",
         "the amendment adding 1,500 homes: its environmental report and hearing dates",
-        "the City of Santa Clara's open-data license for the zoning layer"
+        "the City of Santa Clara's open-data license for the zoning layer",
+        "the August 2026 Draft SEIR's status figures (about 2,664 homes active or complete; about 12 acres still redevelopable) against this record"
       ],
       "lastVerified": "2026-10-05"
     },
