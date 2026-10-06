@@ -2,7 +2,7 @@
   "_meta": {
     "title": "Bay Area megaprojects: researched project list",
     "preparedBy": "Claude (claude.ai chat) for Matthew Huguet",
-    "lastVerified": "2026-10-05",
+    "lastVerified": "2026-10-06",
     "notes": [
       "Every figure here came from the listed sources as of the lastVerified date. Items in each project's 'verify' list are known gaps; do not fill them by guessing.",
       "approxCenter values are rough [lon, lat] points for placing a marker only. Real site boundaries must come from official plan documents or parcel data, saved per project with their source.",
@@ -3619,6 +3619,127 @@
         "the City of Santa Clara's open-data license for the zoning layer"
       ],
       "lastVerified": "2026-10-05"
+    },
+    {
+      "id": "esmeralda",
+      "name": "Esmeralda",
+      "aliases": [
+        "Esmeralda Specific Plan",
+        "Alexander Valley Resort (AVR) site",
+        "Esmeralda Alexander Valley Resort Plan"
+      ],
+      "city": "Cloverdale",
+      "county": "Sonoma",
+      "subregion": "North Bay",
+      "approxCenter": [
+        -123.002,
+        38.784
+      ],
+      "acres": 261.44,
+      "acresNote": "The Planning Commission staff report (Oct 1, 2026, p. 1) puts the Plan Area at about 261.44 acres east of Asti Road and U.S. 101; it excludes a roughly 4-acre unincorporated strip (the Panhandle), so it is smaller than the 266 to 267 acres in earlier materials and in the 2003 CEQA filing. The draft master tentative map covers 266.84 acres. The 80-foot SMART rail corridor through the site is excluded from the land-use districts.",
+      "program": {
+        "homes": 605,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 18400,
+        "commercialSqftTotal": null,
+        "retailSqft": 17300,
+        "hotelKeys": 160,
+        "openSpaceAcres": 162,
+        "notes": "Proposed maximums from the draft Esmeralda Specific Plan development budget (Table 2-3): 605 homes (236 detached single-family, 169 attached condominium or rental, 200 senior living), 160 hotel rooms (up to 30 may be hotel-run residences), 14,000 sq ft spa, 17,300 sq ft retail outside the hotel, 18,400 sq ft office and co-working, 8,000 sq ft light industrial or maker space and 8,000 sq ft preschool or daycare; a K–6 school (up to 200 students) and a 500-seat amphitheater would each need a later use permit. Hotel floor area is not capped. About 162 acres of publicly accessible open space, including a 4.75-acre public sports park to be dedicated to the City. The draft development agreement has the developer pay an inclusionary housing in-lieu fee (about $2.9 million at full build-out) instead of building affordable units on site. The approved but unbuilt Alexander Valley Resort plan it would replace allowed a hotel, spa and golf course, over 100,000 sq ft of commercial uses and up to 235 low-density homes."
+      },
+      "developer": "Esmeralda Land Company, LP (applicant); Spight Properties II, LLC (property owner)",
+      "publicPartners": [
+        "City of Cloverdale (lead agency)",
+        "Sonoma County Airport Land Use Commission"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In public hearings. The Planning Commission held its hearing on Oct 1, 2026, and the City Council is set to introduce the zoning and development agreement ordinances on Oct 7 and take final action on Oct 14. Environmental review is an addendum to the 2009 Alexander Valley Resort EIR rather than a new EIR.",
+      "timeline": [
+        {
+          "date": "2003-07-28",
+          "event": "The City issues the notice of preparation for an EIR on the Alexander Valley Resort, a hotel, golf course and housing plan for the 267-acre site (SCH 2003072142)."
+        },
+        {
+          "date": "2009-06-10",
+          "event": "City Council certifies the Alexander Valley Resort Final EIR (Resolution 028-2009) and adopts its specific plan (Resolution 029-2009)."
+        },
+        {
+          "date": "2010-04-07",
+          "event": "Sonoma LAFCO approves annexing the property into the City."
+        },
+        {
+          "date": "2016-02-09",
+          "event": "City Council amends the plan with an EIR addendum, making the golf course optional, and approves a development agreement with Spight Properties II (Ordinance 704-2016)."
+        },
+        {
+          "date": "2018-11-13",
+          "event": "City Council adopts a second addendum and an amended and restated development agreement (Ordinance 726-2018), which runs to 2033; the resort is never built."
+        },
+        {
+          "date": "2025-11-12",
+          "event": "Esmeralda Land Company presents its revised plan to a joint City Council and Planning Commission meeting."
+        },
+        {
+          "date": "2025-12-10",
+          "event": "City Council adopts the project's water supply assessment and verification (Resolution 074-2025)."
+        },
+        {
+          "date": "2026-02-05",
+          "event": "The City holds a town hall on the project."
+        },
+        {
+          "date": "2026-03-09",
+          "event": "The Sonoma County Airport Land Use Commission finds the draft plan and zoning consistent with the Cloverdale airport plan."
+        },
+        {
+          "date": "2026-09-08",
+          "event": "The City releases the draft specific plan and the addendum to the 2009 EIR; the hearing notice is published Sept 11."
+        },
+        {
+          "date": "2026-10-01",
+          "event": "Planning Commission holds its public hearing to make a recommendation to the City Council."
+        }
+      ],
+      "nextMilestone": "City Council hearings on Oct 7 and Oct 14, 2026 (first and second readings of the zoning and development agreement ordinances); the City's schedule also allows the Council to send the approvals to voters.",
+      "summary": "A former sawmill site on the Russian River at Cloverdale's southern edge, long approved for a golf resort that was never built, now proposed as a walkable village with up to 605 homes, a 160-room hotel, shops and about 162 acres of publicly accessible open space. Building would be concentrated west of the SMART rail line, with the land toward the river kept mostly as parks and habitat.",
+      "massingNotes": "Boundary: the County of Sonoma parcel layer (socogis CRAPublic/ParcelsPublicShapeFile, layer 0), filter APN IN ('117-050-010','117-050-011','117-050-012','117-050-017','117-050-024','117-050-026','117-050-027','117-050-028','117-050-029','116-310-013','116-310-014') (the staff report's parcel list; 256.8 assessor acres; CC BY-SA 3.0, attribution \"County of Sonoma\"); check it against Specific Plan Figure 1-5 (PDF p. 11) and Addendum Exhibit 3 (PDF p. 23), since the Plan Area excludes the SMART corridor and the unincorporated Panhandle, and label it approximate. Approximate center from those parcels' centroids. Massing comes in Milestone 4: land-use districts are Specific Plan Figure 2-1 (PDF p. 22) with heights in Table 2-2 (PDF p. 26: 35 ft in VMU and VR-1/VR-2, 25 ft in VR-3 to VR-5, hotel up to 50 ft, open space 15 ft, all subject to airport limits); the illustrative site plan is Figure 1-2 (PDF p. 8), so draw it as illustrative massing.",
+      "officialLinks": [
+        "https://www.cloverdale.net/esmeralda",
+        "https://www.cloverdale.net/DocumentCenter/View/7035/Draft-Specific-Plan---Revised-92926"
+      ],
+      "sources": [
+        "https://www.cloverdale.net/esmeralda",
+        "https://www.cloverdale.net/DocumentCenter/View/6998/Agenda-Report",
+        "https://www.cloverdale.net/DocumentCenter/View/6999/Attachment-1---Resolution",
+        "https://www.cloverdale.net/DocumentCenter/View/7035/Draft-Specific-Plan---Revised-92926",
+        "https://www.cloverdale.net/DocumentCenter/View/7006/EIR-Addendum---Revised-92926",
+        "https://www.cloverdale.net/DocumentCenter/View/7004/Draft-DA---Revised-92826",
+        "https://www.cloverdale.net/DocumentCenter/View/6948/Esmeralda-Schedule",
+        "https://www.cloverdale.net/DocumentCenter/View/6704/E2---Processing-Proposed-Esmeralda-Project",
+        "https://www.cloverdale.net/DocumentCenter/View/6605/Item-E1---Agenda-Reportpdf",
+        "https://www.cloverdale.net/DocumentCenter/View/6624/Adopted-Resolution-No-074-2025---Esmerelda-WSA-WSF",
+        "https://www.cloverdale.net/AgendaCenter/ViewFile/Agenda/_10072026-1438",
+        "https://cloverdale.granicus.com/services/legistar/download/pdf/4407704/Agenda_Report.pdf",
+        "https://ceqanet.lci.ca.gov/2003072142",
+        "https://socogis.sonomacounty.ca.gov/map/rest/services/CRAPublic/ParcelsPublicShapeFile/FeatureServer/0"
+      ],
+      "verify": [
+        "the Planning Commission's Oct 1, 2026 recommendation and vote (the Council staff report says a summary will be added; minutes not yet posted)",
+        "the City Council's actions on Oct 7 and Oct 14, 2026, and whether it sends the approvals to voters (the City's schedule names March 9, 2027 as the earliest election)",
+        "who owns the land: the Nov 2025 staff summary says Esmeralda Land Company has acquired it, while the Oct 2026 staff report lists Spight Properties II, LLC as owner",
+        "the build-out schedule: the Addendum assumes eight phases from 2027 to 2036, the Specific Plan estimates about 12 years after vesting, and the development agreement would run 20 years"
+      ],
+      "reported": {
+        "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
+        "developer": "Esmeralda Land Company, founded by Devon Zuegel (organizer of the Edge Esmeralda gatherings), with Michael Yarne as director of development; backed by 19 Bay Area families. The company holds an option and plans to close on the land once it has approvals.",
+        "program.notes": "Homes priced from about $600,000 to $4 million, according to project documents described by the Press Democrat; about 1,500 residents at full build-out.",
+        "sources": [
+          "https://www.pressdemocrat.com/2026/02/09/cloverdale-esmeralda-development-housing-resort/",
+          "https://www.cp-dr.com/post/sonoma-development-hopes-to-break-california-s-new-urbanist-drought"
+        ]
+      },
+      "lastVerified": "2026-10-06"
     }
   ]
 }

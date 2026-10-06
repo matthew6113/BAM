@@ -3,6 +3,13 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-06 (Esmeralda, Cloverdale)
+
+**esmeralda** added at Matthew's request: the Esmeralda Specific Plan in Cloverdale (up to 605
+homes and a 160-room hotel on about 261 acres; below the usual 1,000-home bar), from City of
+Cloverdale records (`docs/official-research/candidates-esmeralda.md`). `cloverdale.net` and
+`cloverdale.granicus.com` join the official hosts. The City Council hearings are Oct 7 and 14, 2026.
+
 ## 2026-10-06 (eight new projects)
 
 Added at Matthew's request after official-source research (`docs/official-research/candidates-*.md`,

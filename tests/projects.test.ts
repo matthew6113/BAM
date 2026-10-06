@@ -163,6 +163,7 @@ describe('official sources', () => {
     expect(isOfficialSource('https://apps.cupertino.org/pdf/x.pdf')).toBe(true);
     expect(isOfficialSource('https://portal.cityofvallejo.net/arcgis/rest/services/x')).toBe(true);
     expect(isOfficialSource('https://permitsonoma.org/x')).toBe(true);
+    expect(isOfficialSource('https://www.cloverdale.net/AgendaCenter/x')).toBe(true);
     expect(isOfficialSource('https://www.cupertino.org/x')).toBe(false);
     expect(isOfficialSource('https://services7.arcgis.com/uRrQ0O3z2aaiIWYU/arcgis/rest/services/x')).toBe(true);
     expect(isOfficialSource('https://services7.arcgis.com/someoneelse/arcgis/rest/services/x')).toBe(false);

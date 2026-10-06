@@ -28,6 +28,8 @@ const OFFICIAL_HOSTS = [
   'sccgov.org', // Santa Clara County (data.sccgov.org)
   'cityofvallejo.net', // City of Vallejo's document and ArcGIS servers (portal.cityofvallejo.net)
   'permitsonoma.org', // Permit Sonoma, Sonoma County's planning department
+  'cloverdale.net', // City of Cloverdale (agendas, staff reports)
+  'cloverdale.granicus.com', // City of Cloverdale's agenda file server
   // Agenda systems: one subdomain per agency
   'brisbaneca.api.civicclerk.com',
   'mountainview.legistar.com',
