@@ -1,4 +1,5 @@
-"""Site boundaries traced from official documents: Willow Village, Concord, Alameda Point, Suisun.
+"""Site boundaries rebuilt from official documents: Willow Village, Concord, Alameda Point, Suisun,
+Schlage Lock and the Sonoma Developmental Center.
 
 None of these projects has an official GIS layer for its site, so each boundary is rebuilt
 from an official document and georeferenced:
@@ -20,6 +21,13 @@ from an official document and georeferenced:
   raster map. The annexation area is the union of its Specific Plan, Travis Protection Zone
   and Lambie Industrial Park fills (15,737 + 5,726 + 1,410 = 22,873 acres) including the
   dash-dot boundary line; the figure is fitted to SR-12 and SR-113 in OpenStreetMap.
+- schlage-lock: the development agreement's Exhibit B legal description ends with the ten
+  assessor parcels it covers (block 5087 lots 003 and 003A, 5099/014, 5100/002, 003, 010,
+  5101/006, 007, 5102/009, 5107/001). Their union in SF's parcel map (DataSF acdm-wktn) is the
+  site, so the boundary is official-grade; Exhibit A's site diagram is fitted to it as a check.
+- sonoma-developmental-center: Notice of Preparation Figure 3 (CEQAnet SCH 2025081410, PDF p. 21),
+  a 600-dpi raster. The project area is the core campus (black dashes) plus the wildfire buffer
+  (teal dash-dot); the figure is fitted to OpenStreetMap building footprints (trimmed ICP).
 
 Each output records the source page, the control points or fit statistics, and the acreage
 drawn against the official figure.
@@ -76,6 +84,26 @@ def streets(name: str, bbox: tuple[float, float, float, float]) -> gpd.GeoDataFr
         g["name"] = g["names"].apply(lambda n: (n or {}).get("primary"))
         out.parent.mkdir(parents=True, exist_ok=True)
         g[["id", "name", "subtype", "class", "geometry"]].to_parquet(out)
+    return gpd.read_parquet(out).to_crs(UTM)
+
+
+def buildings(name: str, bbox: tuple[float, float, float, float]) -> gpd.GeoDataFrame:
+    """Overture building footprints (mostly OpenStreetMap) in a lon/lat bbox, cached, in UTM."""
+    out = config.RAW / f"buildings_{name}.parquet"
+    if not out.exists():
+        for k in ("AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "AWS_SESSION_TOKEN"):
+            os.environ.pop(k, None)
+        fs = pafs.S3FileSystem(anonymous=True, region=config.OVERTURE_REGION)
+        path = f"{config.OVERTURE_BUCKET}/release/{config.OVERTURE_RELEASE}/theme=buildings/type=building/"
+        d = ds.dataset(path, filesystem=fs, format="parquet")
+        xmin, ymin, xmax, ymax = bbox
+        f = ((pc.field("bbox", "xmin") < xmax) & (pc.field("bbox", "xmax") > xmin)
+             & (pc.field("bbox", "ymin") < ymax) & (pc.field("bbox", "ymax") > ymin))
+        t = d.to_table(columns=["id", "geometry"], filter=f)
+        g = gpd.GeoDataFrame({"id": t.column("id").to_pylist()},
+                             geometry=shapely.from_wkb(t.column("geometry").to_numpy(zero_copy_only=False)), crs=4326)
+        out.parent.mkdir(parents=True, exist_ok=True)
+        g.to_parquet(out)
     return gpd.read_parquet(out).to_crs(UTM)
 
 
@@ -567,11 +595,233 @@ def build_suisun() -> None:
     })
 
 
+# ---------------------------------------------------------------- Schlage Lock (Visitacion Valley Zone 1)
+
+SCHLAGE_DA = {
+    "title": "Visitacion Valley/Schlage Lock Development Agreement, final exhibits (SF Planning file dated 08-22-14; Ord. 149-14)",
+    "url": "https://default.sfplanning.org/Citywide/Visitacion_Valley/Visitacion_Valley_Schlage-Final_DA_Exhibits-082214.pdf",
+    "sha256": "4eee8d4f27221631a036afa70651e581fa7b042341b7c09f284b42ed75aa31da",
+    "file": "schlage-lock-da-exhibits-2014-08-22.pdf",
+}
+SCHLAGE_EXHIBIT_A = 0  # p. 1, Exhibit A Project Site Diagram (an aerial photo with the site in red)
+SCHLAGE_EXHIBIT_B_APNS = 4  # p. 5, the APN list closing Exhibit B (Legal Description)
+SF_PARCELS = "https://data.sf.gov/resource/acdm-wktn.geojson"  # Parcels - Active and Retired (ODC-PDDL)
+SCHLAGE_ACRES = 20  # "the 20-acre Schlage Lock site" (OEWD DA summary, May 2014)
+
+
+def _schlage_apns(pdf_path) -> list[str]:
+    """The block/lot list printed at the end of Exhibit B, e.g. 'Lot003;Block5087' -> '5087003'."""
+    import re
+
+    with pdfplumber.open(pdf_path) as pdf:
+        page = pdf.pages[SCHLAGE_EXHIBIT_B_APNS]
+        text = (page.extract_text() or "").replace(" ", "")
+        if not pdf.pages[1].extract_text().replace(" ", "").startswith("ExhibitB"):
+            raise SystemExit("schlage-lock: Exhibit B is not on p. 2")
+    apns = [f"{b}{lot}" for lot, b in re.findall(r"Lot([0-9]{3}[A-Z]?);Block([0-9]{4})", text)]
+    if len(apns) != 10:
+        raise SystemExit(f"schlage-lock: expected 10 APNs in Exhibit B, found {apns}")
+    return apns
+
+
+def _schlage_exhibit_a_check(pdf_path, site_utm) -> dict:
+    """Fit Exhibit A's red outline to the assembled parcels: how well do the two agree?"""
+    import pypdfium2 as pdfium
+
+    rgb = np.asarray(pdfium.PdfDocument(str(pdf_path))[SCHLAGE_EXHIBIT_A].render(scale=300 / 72).to_pil().convert("RGB")).astype(int)
+    red = (rgb[:, :, 0] > 180) & (rgb[:, :, 1] < 70) & (rgb[:, :, 2] < 70)
+    # The outline is a thick red ring (about 8 px); an opening drops the thin hatching and the red
+    # "SAN FRANCISCO" lettering, and the ring is the largest piece left.
+    red = cv2.morphologyEx(red.astype(np.uint8), cv2.MORPH_OPEN, np.ones((5, 5), np.uint8))
+    n, lab, stats, _ = cv2.connectedComponentsWithStats(red)
+    ring = lab == 1 + int(np.argmax(stats[1:, cv2.CC_STAT_WIDTH] * stats[1:, cv2.CC_STAT_HEIGHT]))
+    ys, xs = np.nonzero(ring)
+    pts = np.c_[xs, ys].astype(float)
+    outline = site_utm.exterior
+    # Start from the bounding boxes (the diagram is drawn north up), then trimmed ICP.
+    x0, y0, x1, y1 = site_utm.bounds
+    scale = (y1 - y0) / (ys.max() - ys.min())
+    init = trace.Similarity(scale, 0.0, 0, 0)
+    o = init.apply([(xs.min(), ys.max())])[0]
+    init.tx, init.ty = x0 - o[0], y0 - o[1]
+    keep = 0.8
+    sim, d = icp(pts, [outline], np.zeros(len(pts), int), init, keep, iterations=100)
+    rep = icp_report(sim, d, keep, "Exhibit A red outline vs the assembled parcels")
+    print(f"[schlage-lock] Exhibit A vs parcels: scale {sim.scale:.3f} m/px, rotation {np.degrees(sim.rotation):.2f} deg, "
+          f"trimmed RMS {sim.rms_m:.1f} m, median {np.median(d):.1f} m, p90 {np.quantile(d, 0.9):.1f} m")
+    return rep
+
+
+def build_schlage_lock() -> None:
+    pdf_path = trace.fetch_document(SCHLAGE_DA["url"], DOCS / SCHLAGE_DA["file"], SCHLAGE_DA["sha256"])
+    apns = _schlage_apns(pdf_path)
+    cache = RAW_BOUNDARIES / "sf-parcels-schlage-lock.geojson"
+    where = "blklot in (" + ",".join(f"'{a}'" for a in apns) + ")"
+    query = f"{SF_PARCELS}?" + urllib.parse.urlencode({"$where": where, "$limit": 100})
+    if not cache.exists():
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        with urllib.request.urlopen(query, timeout=120) as r:
+            cache.write_bytes(r.read())
+    parcels = gpd.GeoDataFrame.from_features(json.loads(cache.read_text())["features"], crs=4326)
+    missing = sorted(set(apns) - set(parcels["blklot"]))
+    if missing or len(parcels) != len(apns):
+        raise SystemExit(f"schlage-lock: parcels missing from DataSF: {missing} ({len(parcels)} rows)")
+    utm = parcels.to_crs(UTM)
+    # Neighbouring lots share edges up to float noise; a 5 cm close removes the slivers between them.
+    site = shapely.union_all(utm.geometry.to_numpy()).buffer(0.05, join_style="mitre").buffer(-0.05, join_style="mitre")
+    site = trace.largest_polygon(site)
+    acres = site.area / ACRE_M2
+    check = _schlage_exhibit_a_check(pdf_path, site)
+    write("schlage-lock", site, {
+        "source": f"{SCHLAGE_DA['title']}: the ten assessor parcels listed in Exhibit B (Legal Description, p. 5), "
+                  f"drawn from the City's parcel map (DataSF acdm-wktn)",
+        "sourceUrl": SCHLAGE_DA["url"],
+        "sourceLabel": "development agreement legal description (PDF)",
+        "accuracy": "official",
+        "accuracyShort": "assessor parcels",
+        "accuracyNote": (
+            f"The Project Site (Zone 1) as the ten assessor parcels its development agreement lists in Exhibit B "
+            f"(block/lot {', '.join(a[:4] + '/' + a[4:] for a in apns)}), drawn from San Francisco's parcel map. "
+            f"{acres:.1f} acres as drawn; the City's development agreement summary describes a 20-acre site. The rail lots "
+            f"along the north-east side (5087/004 and 5087/005) are not in the list and are left out, as on the agreement's "
+            f"Exhibit H map (p. 23); further south the site takes in the strip along the Caltrain tracks. Exhibit A's small "
+            f"site diagram matches the parcels to a median {check['median_m']:.0f} m once fitted. Parcel lines are the "
+            f"Assessor's map, not a survey."),
+        "license": "Parcel list from a public City and County of San Francisco ordinance exhibit; parcel shapes from "
+                   "DataSF Parcels – Active and Retired (ODC Public Domain Dedication and License).",
+        "query": query,
+        "apns": apns,
+        "exhibitACheck": check,
+    })
+
+
+# ---------------------------------------------------------------- Sonoma Developmental Center
+
+SDC_NOP = {
+    "title": "SDC Campus Specific Plan Update and Eldridge Renewal Project Notice of Preparation "
+             "(County of Sonoma, SCH 2025081410, Aug 2025)",
+    "url": "https://ceqanet.lci.ca.gov/2025081410/Attachment/7biXwK",
+    "sha256": "807deb9d8f1d19cc5dcdddcb71c70d04fa3eb2a86833748e09a9020de00f25c4",
+    "file": "sdc-nop-2025081410.pdf",
+}
+SDC_PAGE = 20  # p. 21, Figure 3, Specific Plan Update and Eldridge Renewal Project Area
+SDC_IMAGE_SIZE = (5100, 6600)  # the whole page as one 600-dpi raster
+SDC_MAP_BOTTOM = 5500  # map content above this row; title block below
+SDC_BLACK_MAX, SDC_BLACK_SAT = 90, 40  # "SDC Core Campus": black dashes, 30 px wide
+SDC_TEAL, SDC_TEAL_TOL = (62, 143, 111), 50  # "Wildfire Buffer": teal dash-dot, about 22 px wide
+SDC_CORE_HALF_PX, SDC_BUFFER_HALF_PX = 15, 11
+SDC_BUILDING_GREY, SDC_BUILDING_TOL = 160, 14  # "Existing Buildings"
+SDC_INSIDE_PX = (2656, 2539)  # Arnold Drive at Harney, inside the core campus
+# Starting transform: street crossings picked by eye in the image (pixels), matched to
+# OpenStreetMap. The fit below refines it on the building footprints, and these crossings
+# are then reported as an independent check.
+SDC_CONTROLS = {
+    ("Arnold Drive", "Harney"): (2656, 2539),
+    ("Arnold Drive", "Holt Road"): (2622, 2039),
+    ("Railroad", "Harney"): (4478, 2550),
+    ("Arnold Drive", "Wilson"): (2600, 2889),
+    ("Railroad", "Toyon"): (4500, 3767),
+    ("Walnut", "Laurel"): (1350, 1289),
+}
+SDC_BBOX = (-122.535, 38.335, -122.495, 38.365)
+SDC_CORE_ACRES, SDC_BUFFER_ACRES = 160, 49  # NOP p. 3
+
+
+def _sdc_image(pdf_path) -> np.ndarray:
+    import pypdfium2 as pdfium
+
+    page = pdfium.PdfDocument(str(pdf_path))[SDC_PAGE]
+    if "Figure 3" not in page.get_textpage().get_text_range():
+        raise SystemExit("sonoma-developmental-center: Figure 3 is not on p. 21")
+    for obj in page.get_objects():
+        if obj.type == 3:  # image
+            bmp = obj.get_bitmap(render=False)
+            if (bmp.width, bmp.height) == SDC_IMAGE_SIZE:
+                return np.asarray(bmp.to_pil().convert("RGB"))[:SDC_MAP_BOTTOM].astype(int)
+    raise SystemExit("Figure 3 image not found")
+
+
+def _enclosed(walls: np.ndarray, k: int, inside: tuple[int, int]) -> Polygon:
+    """The area a dashed outline encloses: bridge the dashes, flood from outside, keep the
+    piece holding `inside`. The result reaches k/2 px beyond the line's outer edge."""
+    w = np.pad(cv2.dilate(walls, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (k, k))), 60)
+    flood = (w * 255).astype(np.uint8)
+    mask = np.zeros((flood.shape[0] + 2, flood.shape[1] + 2), np.uint8)
+    cv2.floodFill(flood, mask, (0, 0), 128)
+    _, lab = cv2.connectedComponents((flood != 128).astype(np.uint8))
+    region = (lab == lab[inside[1] + 60, inside[0] + 60]).astype(np.uint8)
+    contours, _ = cv2.findContours(region, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+    c = max(contours, key=cv2.contourArea)
+    return Polygon(c.reshape(-1, 2) - 60 + 0.5).buffer(0)
+
+
+def build_sdc() -> None:
+    pdf_path = trace.fetch_document(SDC_NOP["url"], DOCS / SDC_NOP["file"], SDC_NOP["sha256"])
+    rgb = _sdc_image(pdf_path)
+    mx, mn = rgb.max(axis=2), rgb.min(axis=2)
+
+    # Georeference: building footprints in the figure fitted to Overture/OpenStreetMap buildings.
+    g = streets("sdc", SDC_BBOX)
+    src, dst, labels = [], [], []
+    for (a, b), xy in SDC_CONTROLS.items():
+        src.append(xy)
+        dst.append(intersection(g, a, b))
+        labels.append(f"{a} / {b}")
+    init = trace.fit_similarity(src, dst, labels)
+    grey = ((np.abs(rgb - SDC_BUILDING_GREY).max(axis=2) <= SDC_BUILDING_TOL) & (mx - mn < 10)).astype(np.uint8)
+    grey = cv2.morphologyEx(grey, cv2.MORPH_OPEN, np.ones((5, 5), np.uint8))
+    contours, _ = cv2.findContours(grey, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+    edge = np.vstack([c.reshape(-1, 2)[::4] for c in contours if cv2.contourArea(c) >= 400]).astype(float) + 0.5
+    b = buildings("sdc", SDC_BBOX)
+    near = shapely.box(*init.geometry(shapely.MultiPoint(edge)).bounds).buffer(100)
+    target = shapely.union_all(b[b.intersects(near)].boundary.to_numpy())
+    keep = 0.7
+    sim, d = icp(edge, [target], np.zeros(len(edge), int), init, keep, iterations=100)
+    rep = icp_report(sim, d, keep, "figure building outlines vs Overture (OpenStreetMap) buildings")
+    check = np.linalg.norm(sim.apply(src) - np.asarray(dst), axis=1)
+    rep["street_crossings_m"] = {lab: round(float(r), 1) for lab, r in zip(labels, check)}
+    print(f"[sdc] start: {init.rms_m:.1f} m over {len(labels)} crossings; fit scale {sim.scale:.4f} m/px, rotation "
+          f"{np.degrees(sim.rotation):.2f} deg, trimmed RMS {sim.rms_m:.2f} m, median {np.median(d):.2f} m over "
+          f"{len(d):,} points; crossings after fit: median {np.median(check):.1f} m, max {check.max():.1f} m")
+
+    # The outline: core campus (black dashes) plus wildfire buffer (teal dash-dot), back to line centres.
+    black = ((mx < SDC_BLACK_MAX) & (mx - mn < SDC_BLACK_SAT)).astype(np.uint8)
+    teal = (np.linalg.norm(rgb - np.array(SDC_TEAL), axis=2) < SDC_TEAL_TOL).astype(np.uint8)
+    k = 51
+    area_px = _enclosed(black | teal, k, SDC_INSIDE_PX)
+    # Back to the line centre, then an opening that drops street labels touching the outside of the line.
+    area_px = area_px.buffer(-(k // 2 + (SDC_CORE_HALF_PX + SDC_BUFFER_HALF_PX) / 2)).buffer(-40).buffer(40).simplify(6)
+    core_px = _enclosed(black, 31, SDC_INSIDE_PX).buffer(-(31 // 2 + SDC_CORE_HALF_PX)).buffer(-40).buffer(40).simplify(6)
+    site = trace.largest_polygon(sim.geometry(area_px))
+    core = trace.largest_polygon(sim.geometry(core_px))
+    acres, core_acres = site.area / ACRE_M2, core.area / ACRE_M2
+    print(f"[sdc] project area {acres:.1f} acres (core {core_acres:.1f}, buffer {acres - core_acres:.1f})")
+    write("sonoma-developmental-center", site, {
+        "source": f"traced: {SDC_NOP['title']}, Figure 3, Specific Plan Update and Eldridge Renewal Project Area, p. 21",
+        "sourceUrl": SDC_NOP["url"],
+        "sourceLabel": "notice of preparation figure (PDF)",
+        "accuracy": "traced",
+        "accuracyShort": f"RMS {sim.rms_m:.1f} m",
+        "accuracyNote": (
+            f"The whole project area: the SDC core campus and the wildfire buffer around its north, west and east sides, "
+            f"traced from the county's figure and fitted to OpenStreetMap building footprints (RMS {sim.rms_m:.1f} m over "
+            f"the closest {int(keep * 100)}% of {len(d):,} building-edge points; street crossings within "
+            f"{check.max():.0f} m). {acres:.0f} acres as drawn ({core_acres:.0f} core, {acres - core_acres:.0f} buffer); "
+            f"the notice gives a {SDC_CORE_ACRES}-acre core campus and a {SDC_BUFFER_ACRES}-acre buffer. The figure's "
+            f"lines are planning boundaries, not surveyed parcel lines."),
+        "license": "Shape traced from a public County of Sonoma CEQA notice. Georeference: " + OSM_LICENSE + ".",
+        "georeference": rep,
+        "coreAcresDrawn": round(core_acres, 1),
+    })
+
+
 BUILDERS = {
     "willow-village": build_willow_village,
     "concord-naval-weapons-station": build_concord,
     "alameda-point": build_alameda_point,
     "suisun-expansion": build_suisun,
+    "schlage-lock": build_schlage_lock,
+    "sonoma-developmental-center": build_sdc,
 }
 
 

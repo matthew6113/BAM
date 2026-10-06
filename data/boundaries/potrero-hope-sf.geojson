@@ -1,0 +1,110 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "potrero-hope-sf",
+  "source": "DataSF Zoning Map \u2013 Special Use Districts, \u201cPotrero Hope SF\u201d",
+  "sourceLabel": "DataSF special use districts",
+  "sourceUrl": "https://data.sf.gov/d/5yf5-ms5f",
+  "query": "https://data.sf.gov/resource/5yf5-ms5f.geojson?%24where=name+%3D+%27Potrero+Hope+SF%27&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The Potrero HOPE SF Special Use District (Planning Code 249.74); Ordinance 15-17 describes an approximately 38-acre site. 36.2 acres as drawn.",
+  "license": "Public Domain U.S. Government (DataSF)",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3986933,
+       37.7547453
+      ],
+      [
+       -122.3985543,
+       37.7547736
+      ],
+      [
+       -122.3977287,
+       37.7548266
+      ],
+      [
+       -122.3964699,
+       37.7548836
+      ],
+      [
+       -122.395937,
+       37.7549355
+      ],
+      [
+       -122.396175,
+       37.7574672
+      ],
+      [
+       -122.3955793,
+       37.7575031
+      ],
+      [
+       -122.3945066,
+       37.7562895
+      ],
+      [
+       -122.3944784,
+       37.7562891
+      ],
+      [
+       -122.3943501,
+       37.7550073
+      ],
+      [
+       -122.3948135,
+       37.7549753
+      ],
+      [
+       -122.394587,
+       37.7524268
+      ],
+      [
+       -122.3965109,
+       37.7523102
+      ],
+      [
+       -122.3964076,
+       37.7511788
+      ],
+      [
+       -122.3983408,
+       37.7510546
+      ],
+      [
+       -122.3984524,
+       37.7521941
+      ],
+      [
+       -122.39797,
+       37.7522267
+      ],
+      [
+       -122.3980895,
+       37.7534941
+      ],
+      [
+       -122.3985729,
+       37.7534707
+      ],
+      [
+       -122.3986933,
+       37.7547453
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

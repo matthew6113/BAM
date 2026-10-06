@@ -1,0 +1,2498 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "tasman-east",
+  "illustrative": true,
+  "summary": "Buildings finished since 2022 are drawn on their OpenStreetMap footprints, at official heights where the City's records give them (the Related towers at about 214 and 217 ft, the Greystar buildings at about 85 ft) and otherwise estimated from official story counts at 10.2 ft a story (illustrative); SummerHill's 2333 Calle del Mundo has no official height and is outlined only. Every other parcel in the plan (26 acres) is an illustrative height envelope: the plan allows towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. These are limits, not designs. Streets are outside the parcels; the plan's undecided park sites are not cut out.",
+  "note": "Built buildings are drawn on their real footprints; every other parcel shows the plan's height limits, not a design.",
+  "sourceUrl": "https://santaclara.legistar1.com/santaclara/attachments/f322e818-7feb-4e99-b91d-3ae13089ec4e.pdf",
+  "sourceLabel": "Final EIR, 2018 (PDF)",
+  "georeference": {
+   "method": "none: City of Santa Clara GIS parcels and OpenStreetMap footprints, no traced figure"
+  },
+  "license": "Parcels: City of Santa Clara open data (map.santaclaraca.gov). Footprints: OpenStreetMap contributors (ODbL 1.0), via Overture Maps."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "stage": "complete",
+    "podium_ft": null,
+    "base_ft": 0,
+    "phase": null,
+    "label": "St. Anton, 2231 Calle del Mundo",
+    "height_ft": 61,
+    "use": "Residential (196 affordable homes)",
+    "illustrative": true,
+    "source": "illustrative: footprint OpenStreetMap building w1313997468 (via Overture 2026-09-23.1); 196-unit, six-story affordable project (City of Santa Clara Notice of Exemption, CEQAnet 2020030015/2); height estimated at 10.2 ft a story, the average of the plan area's buildings with both stories and feet in official records (Related addendum, Jan 2021; Greystar data table, 2023)",
+    "note": "196 affordable homes. Certificate of occupancy Dec 21, 2022 (state housing report)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9649332,
+        37.4107495
+       ],
+       [
+        -121.9646833,
+        37.4102849
+       ],
+       [
+        -121.9641799,
+        37.4104475
+       ],
+       [
+        -121.9641942,
+        37.410473
+       ],
+       [
+        -121.9641298,
+        37.4104907
+       ],
+       [
+        -121.964155,
+        37.4105318
+       ],
+       [
+        -121.9641171,
+        37.4105467
+       ],
+       [
+        -121.9641222,
+        37.4105714
+       ],
+       [
+        -121.9640922,
+        37.4105867
+       ],
+       [
+        -121.964283,
+        37.4109531
+       ],
+       [
+        -121.9649332,
+        37.4107495
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "stage": "complete",
+    "podium_ft": null,
+    "base_ft": 0,
+    "phase": null,
+    "label": "2333 Calle del Mundo",
+    "height_ft": null,
+    "use": "Residential (347 homes)",
+    "illustrative": false,
+    "source": "OpenStreetMap building w1351049824 (via Overture 2026-09-23.1); height: no official height or story count found; outline only",
+    "note": "347 homes (SummerHill). Certificate of occupancy Jan 16, 2025 (state housing report). Height needs verification."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.967752,
+        37.4092465
+       ],
+       [
+        -121.9677583,
+        37.4092558
+       ],
+       [
+        -121.9674188,
+        37.4093647
+       ],
+       [
+        -121.9674232,
+        37.4093733
+       ],
+       [
+        -121.9673212,
+        37.4094062
+       ],
+       [
+        -121.9673286,
+        37.4094207
+       ],
+       [
+        -121.9672676,
+        37.4094405
+       ],
+       [
+        -121.9672816,
+        37.4094678
+       ],
+       [
+        -121.9671394,
+        37.409514
+       ],
+       [
+        -121.9671259,
+        37.4094877
+       ],
+       [
+        -121.9668143,
+        37.4095892
+       ],
+       [
+        -121.9668558,
+        37.4096695
+       ],
+       [
+        -121.9666503,
+        37.4097365
+       ],
+       [
+        -121.9666162,
+        37.4096705
+       ],
+       [
+        -121.9664918,
+        37.409711
+       ],
+       [
+        -121.9664833,
+        37.4096946
+       ],
+       [
+        -121.9663708,
+        37.4097313
+       ],
+       [
+        -121.9666106,
+        37.4101937
+       ],
+       [
+        -121.9682995,
+        37.4096411
+       ],
+       [
+        -121.9682121,
+        37.4095105
+       ],
+       [
+        -121.968259,
+        37.4094907
+       ],
+       [
+        -121.9682408,
+        37.4094636
+       ],
+       [
+        -121.9682512,
+        37.4094592
+       ],
+       [
+        -121.9681191,
+        37.4092618
+       ],
+       [
+        -121.9680907,
+        37.4092738
+       ],
+       [
+        -121.9680312,
+        37.4091849
+       ],
+       [
+        -121.9679976,
+        37.4091991
+       ],
+       [
+        -121.9679683,
+        37.4091552
+       ],
+       [
+        -121.967752,
+        37.4092465
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "stage": "complete",
+    "podium_ft": null,
+    "base_ft": 0,
+    "phase": null,
+    "label": "2350 Calle de Luna",
+    "height_ft": 214,
+    "use": "Home for the ambulatory aged",
+    "illustrative": false,
+    "source": "OpenStreetMap building w1351049825 and w1351049827 (via Overture 2026-09-23.1); height: 20 stories, approximately 214 ft to the roof line (Related Tasman East addendum to the Final EIR (Jan 2021), PDF p. 3 (https://santaclara.legistar1.com/santaclara/attachments/e6c34bac-7ee7-4ada-a313-704e06eb3ee0.pdf))",
+    "note": "Related's home for the ambulatory aged: 176 homes with occupancy Mar 10, 2025 (state housing report). OpenStreetMap doesn't separate the four-story base from the 16-story tower above it, so the whole footprint is drawn to 214 ft."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9666502,
+        37.4078113
+       ],
+       [
+        -121.9666776,
+        37.4078616
+       ],
+       [
+        -121.9662591,
+        37.4079995
+       ],
+       [
+        -121.9661041,
+        37.4077029
+       ],
+       [
+        -121.9662485,
+        37.4076553
+       ],
+       [
+        -121.9662579,
+        37.4076732
+       ],
+       [
+        -121.9662821,
+        37.4076652
+       ],
+       [
+        -121.9662742,
+        37.4076503
+       ],
+       [
+        -121.9668482,
+        37.4074621
+       ],
+       [
+        -121.9669078,
+        37.4075503
+       ],
+       [
+        -121.966937,
+        37.4075378
+       ],
+       [
+        -121.9669574,
+        37.4075681
+       ],
+       [
+        -121.9669398,
+        37.4075755
+       ],
+       [
+        -121.9670825,
+        37.4077877
+       ],
+       [
+        -121.9670942,
+        37.4077827
+       ],
+       [
+        -121.9671194,
+        37.4078203
+       ],
+       [
+        -121.9668517,
+        37.4079339
+       ],
+       [
+        -121.9668605,
+        37.407947
+       ],
+       [
+        -121.966812,
+        37.4079676
+       ],
+       [
+        -121.9667687,
+        37.4079031
+       ],
+       [
+        -121.9667808,
+        37.407898
+       ],
+       [
+        -121.966709,
+        37.4077912
+       ],
+       [
+        -121.9666502,
+        37.4078113
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "stage": "complete",
+    "podium_ft": null,
+    "base_ft": 0,
+    "phase": null,
+    "label": "5150 Calle del Sol, tower",
+    "height_ft": 217,
+    "use": "Residential",
+    "illustrative": false,
+    "source": "OpenStreetMap building part w1523954747 (via Overture 2026-09-23.1); height: 22 stories, approximately 217 ft to the roof line (Related Tasman East addendum to the Final EIR (Jan 2021), PDF p. 3 (https://santaclara.legistar1.com/santaclara/attachments/e6c34bac-7ee7-4ada-a313-704e06eb3ee0.pdf))",
+    "note": "Related's 22-story apartment tower (OpenStreetMap maps 21 levels). 5150 Calle del Sol has 508 homes with occupancy Apr 7, 2025 (state housing report)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9654909,
+        37.4079385
+       ],
+       [
+        -121.965352,
+        37.4081785
+       ],
+       [
+        -121.9653283,
+        37.4081985
+       ],
+       [
+        -121.965059,
+        37.4083731
+       ],
+       [
+        -121.9650787,
+        37.4085452
+       ],
+       [
+        -121.9651024,
+        37.4085348
+       ],
+       [
+        -121.9651101,
+        37.4085531
+       ],
+       [
+        -121.9655198,
+        37.4083185
+       ],
+       [
+        -121.9657181,
+        37.4079704
+       ],
+       [
+        -121.9656662,
+        37.4079613
+       ],
+       [
+        -121.9656402,
+        37.407975
+       ],
+       [
+        -121.9655529,
+        37.4079615
+       ],
+       [
+        -121.9654909,
+        37.4079385
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "stage": "complete",
+    "podium_ft": null,
+    "base_ft": 0,
+    "phase": null,
+    "label": "5150 Calle del Sol, mid-rise",
+    "height_ft": 70,
+    "use": "Residential",
+    "illustrative": false,
+    "source": "OpenStreetMap building part w1523954744 (via Overture 2026-09-23.1); height: 8 stories, approximately 70 ft to the roof line (Related Tasman East addendum to the Final EIR (Jan 2021), PDF p. 3 (https://santaclara.legistar1.com/santaclara/attachments/e6c34bac-7ee7-4ada-a313-704e06eb3ee0.pdf))",
+    "note": "Related's eight-story apartment building, part of 5150 Calle del Sol."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9653805,
+        37.407246
+       ],
+       [
+        -121.9642797,
+        37.4075903
+       ],
+       [
+        -121.9644534,
+        37.4079376
+       ],
+       [
+        -121.964551,
+        37.4080872
+       ],
+       [
+        -121.9647599,
+        37.4080161
+       ],
+       [
+        -121.9646037,
+        37.4077269
+       ],
+       [
+        -121.964586,
+        37.4077329
+       ],
+       [
+        -121.9645712,
+        37.407702
+       ],
+       [
+        -121.9648664,
+        37.4076051
+       ],
+       [
+        -121.9648838,
+        37.4076387
+       ],
+       [
+        -121.9648612,
+        37.4076467
+       ],
+       [
+        -121.96498,
+        37.4078781
+       ],
+       [
+        -121.9651896,
+        37.4079049
+       ],
+       [
+        -121.9651815,
+        37.4078918
+       ],
+       [
+        -121.9652297,
+        37.407895
+       ],
+       [
+        -121.9652726,
+        37.4079098
+       ],
+       [
+        -121.9653004,
+        37.4079281
+       ],
+       [
+        -121.9653249,
+        37.4079666
+       ],
+       [
+        -121.9653708,
+        37.4080649
+       ],
+       [
+        -121.9653661,
+        37.4081174
+       ],
+       [
+        -121.9654814,
+        37.4078915
+       ],
+       [
+        -121.9656972,
+        37.407856
+       ],
+       [
+        -121.9653805,
+        37.407246
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "stage": "complete",
+    "podium_ft": null,
+    "base_ft": 0,
+    "phase": null,
+    "label": "5150 Calle del Sol, garage",
+    "height_ft": 10,
+    "use": "Parking and amenities",
+    "illustrative": true,
+    "source": "illustrative: footprint OpenStreetMap building parts w1523954749 (via Overture 2026-09-23.1); 1 levels (OpenStreetMap building:levels), height estimated at 10.2 ft a story, the average of the plan area's buildings with both stories and feet in official records (Related addendum, Jan 2021; Greystar data table, 2023)",
+    "note": "The seven-story garage with shared amenity space on its eighth level (Related addendum, Jan 2021). Levels per part from OpenStreetMap."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9653754,
+        37.4084036
+       ],
+       [
+        -121.9654707,
+        37.4083916
+       ],
+       [
+        -121.9655934,
+        37.4083413
+       ],
+       [
+        -121.9655397,
+        37.408288
+       ],
+       [
+        -121.9655198,
+        37.4083185
+       ],
+       [
+        -121.9653754,
+        37.4084036
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "stage": "complete",
+    "podium_ft": null,
+    "base_ft": 0,
+    "phase": null,
+    "label": "5150 Calle del Sol, garage",
+    "height_ft": 61,
+    "use": "Parking and amenities",
+    "illustrative": true,
+    "source": "illustrative: footprint OpenStreetMap building parts w1523954745, w1523954750 (via Overture 2026-09-23.1); 6 levels (OpenStreetMap building:levels), height estimated at 10.2 ft a story, the average of the plan area's buildings with both stories and feet in official records (Related addendum, Jan 2021; Greystar data table, 2023)",
+    "note": "The seven-story garage with shared amenity space on its eighth level (Related addendum, Jan 2021). Levels per part from OpenStreetMap."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.965672,
+        37.4080549
+       ],
+       [
+        -121.9656867,
+        37.4080436
+       ],
+       [
+        -121.9658529,
+        37.4079876
+       ],
+       [
+        -121.9658204,
+        37.4078606
+       ],
+       [
+        -121.9654683,
+        37.4079168
+       ],
+       [
+        -121.9654814,
+        37.4078915
+       ],
+       [
+        -121.9659942,
+        37.4078112
+       ],
+       [
+        -121.966069,
+        37.4077853
+       ],
+       [
+        -121.9661649,
+        37.4079757
+       ],
+       [
+        -121.965672,
+        37.4080549
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -121.965059,
+        37.4083731
+       ],
+       [
+        -121.9649514,
+        37.4084298
+       ],
+       [
+        -121.9649644,
+        37.4085287
+       ],
+       [
+        -121.9649356,
+        37.4085363
+       ],
+       [
+        -121.9649033,
+        37.4084417
+       ],
+       [
+        -121.9647822,
+        37.4082819
+       ],
+       [
+        -121.9649045,
+        37.4082436
+       ],
+       [
+        -121.9648974,
+        37.4082307
+       ],
+       [
+        -121.9649217,
+        37.4082192
+       ],
+       [
+        -121.9649204,
+        37.4081972
+       ],
+       [
+        -121.9653283,
+        37.4081985
+       ],
+       [
+        -121.965059,
+        37.4083731
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "stage": "complete",
+    "podium_ft": null,
+    "base_ft": 0,
+    "phase": null,
+    "label": "5150 Calle del Sol, garage",
+    "height_ft": 71,
+    "use": "Parking and amenities",
+    "illustrative": true,
+    "source": "illustrative: footprint OpenStreetMap building parts w1523954751 (via Overture 2026-09-23.1); 7 levels (OpenStreetMap building:levels), height estimated at 10.2 ft a story, the average of the plan area's buildings with both stories and feet in official records (Related addendum, Jan 2021; Greystar data table, 2023)",
+    "note": "The seven-story garage with shared amenity space on its eighth level (Related addendum, Jan 2021). Levels per part from OpenStreetMap."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9650787,
+        37.4085452
+       ],
+       [
+        -121.965059,
+        37.4083731
+       ],
+       [
+        -121.9649514,
+        37.4084298
+       ],
+       [
+        -121.9649701,
+        37.4085927
+       ],
+       [
+        -121.9650787,
+        37.4085452
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "stage": "complete",
+    "podium_ft": null,
+    "base_ft": 0,
+    "phase": null,
+    "label": "5150 Calle del Sol, garage",
+    "height_ft": 82,
+    "use": "Parking and amenities",
+    "illustrative": true,
+    "source": "illustrative: footprint OpenStreetMap building parts w1523954746, w1523954748 (via Overture 2026-09-23.1); 8 levels (the addendum's seven-story garage with amenity space on the eighth level), height estimated at 10.2 ft a story, the average of the plan area's buildings with both stories and feet in official records (Related addendum, Jan 2021; Greystar data table, 2023)",
+    "note": "The seven-story garage with shared amenity space on its eighth level (Related addendum, Jan 2021). Levels per part from OpenStreetMap."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9654683,
+        37.4079168
+       ],
+       [
+        -121.9658204,
+        37.4078606
+       ],
+       [
+        -121.9658529,
+        37.4079876
+       ],
+       [
+        -121.9656867,
+        37.4080436
+       ],
+       [
+        -121.965672,
+        37.4080549
+       ],
+       [
+        -121.9657181,
+        37.4079704
+       ],
+       [
+        -121.9656662,
+        37.4079613
+       ],
+       [
+        -121.9656402,
+        37.407975
+       ],
+       [
+        -121.9655529,
+        37.4079615
+       ],
+       [
+        -121.9654909,
+        37.4079385
+       ],
+       [
+        -121.9653754,
+        37.4081366
+       ],
+       [
+        -121.9653594,
+        37.4081312
+       ],
+       [
+        -121.9654683,
+        37.4079168
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -121.9652623,
+        37.4080771
+       ],
+       [
+        -121.9653249,
+        37.4079666
+       ],
+       [
+        -121.9653708,
+        37.4080649
+       ],
+       [
+        -121.9653661,
+        37.4081174
+       ],
+       [
+        -121.9652623,
+        37.4080771
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "stage": "complete",
+    "podium_ft": null,
+    "base_ft": 0,
+    "phase": null,
+    "label": "2223 Calle de Luna",
+    "height_ft": 85,
+    "use": "Residential (184 homes)",
+    "illustrative": false,
+    "source": "OpenStreetMap building w1359187881 (via Overture 2026-09-23.1); height: 8 stories, approximately 85 ft, about 90 ft to the parapet (project data table, PLN22-00634 extension of PLN2020-14513, Development Review Hearing Jan 11, 2023 (https://santaclara.legistar1.com/santaclara/attachments/6329e9a6-e29a-4f31-a2cf-ab8a09b2f902.pdf))",
+    "note": "184 homes (Greystar). Certificate of occupancy Nov 17, 2025 (state housing report)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9636717,
+        37.4097517
+       ],
+       [
+        -121.9643473,
+        37.4095351
+       ],
+       [
+        -121.9641551,
+        37.409157
+       ],
+       [
+        -121.9641061,
+        37.4091727
+       ],
+       [
+        -121.9640904,
+        37.4091417
+       ],
+       [
+        -121.9640277,
+        37.4091618
+       ],
+       [
+        -121.9640216,
+        37.4091499
+       ],
+       [
+        -121.9635593,
+        37.4092983
+       ],
+       [
+        -121.9635283,
+        37.4093266
+       ],
+       [
+        -121.9635041,
+        37.4093626
+       ],
+       [
+        -121.9635003,
+        37.4094143
+       ],
+       [
+        -121.9636717,
+        37.4097517
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "stage": "complete",
+    "podium_ft": null,
+    "base_ft": 0,
+    "phase": null,
+    "label": "2230 Calle del Mundo",
+    "height_ft": 85,
+    "use": "Residential (186 homes)",
+    "illustrative": false,
+    "source": "OpenStreetMap building w1359187880 (via Overture 2026-09-23.1); height: 8 stories, approximately 85 ft, about 90 ft to the parapet (project data table, PLN22-00634 extension of PLN2020-14513, Development Review Hearing Jan 11, 2023 (https://santaclara.legistar1.com/santaclara/attachments/6329e9a6-e29a-4f31-a2cf-ab8a09b2f902.pdf))",
+    "note": "186 homes (Greystar). Certificate of occupancy Aug 21, 2025 (state housing report)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9644236,
+        37.4097298
+       ],
+       [
+        -121.9643872,
+        37.4096562
+       ],
+       [
+        -121.9641417,
+        37.4097327
+       ],
+       [
+        -121.9642746,
+        37.4100017
+       ],
+       [
+        -121.9640619,
+        37.410068
+       ],
+       [
+        -121.9639383,
+        37.4098176
+       ],
+       [
+        -121.9637188,
+        37.409886
+       ],
+       [
+        -121.9638974,
+        37.4102477
+       ],
+       [
+        -121.9639269,
+        37.4102693
+       ],
+       [
+        -121.9639579,
+        37.410282
+       ],
+       [
+        -121.9640139,
+        37.4102789
+       ],
+       [
+        -121.9644116,
+        37.410153
+       ],
+       [
+        -121.9644206,
+        37.4101708
+       ],
+       [
+        -121.9645158,
+        37.4101408
+       ],
+       [
+        -121.9645076,
+        37.4101244
+       ],
+       [
+        -121.964557,
+        37.4101088
+       ],
+       [
+        -121.9645426,
+        37.4100799
+       ],
+       [
+        -121.9646077,
+        37.4100595
+       ],
+       [
+        -121.9645625,
+        37.4099685
+       ],
+       [
+        -121.9645189,
+        37.4099821
+       ],
+       [
+        -121.9643977,
+        37.4097378
+       ],
+       [
+        -121.9644236,
+        37.4097298
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "stage": "complete",
+    "podium_ft": null,
+    "base_ft": 0,
+    "phase": null,
+    "label": "2310 Calle del Mundo",
+    "height_ft": 82,
+    "use": "Residential (151 affordable homes)",
+    "illustrative": true,
+    "source": "illustrative: footprint OpenStreetMap building w1359187882 (via Overture 2026-09-23.1); an eight-story building with 151 homes (Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), Table 2.2-1, PDF p. 36); height estimated at 10.2 ft a story, the average of the plan area's buildings with both stories and feet in official records (Related addendum, Jan 2021; Greystar data table, 2023)",
+    "note": "151 homes (Ensemble, approved as 2302 Calle del Mundo). Certificate of occupancy Aug 31, 2025 (state housing report)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9658802,
+        37.4096441
+       ],
+       [
+        -121.9659763,
+        37.4096129
+       ],
+       [
+        -121.9657645,
+        37.4092009
+       ],
+       [
+        -121.9652358,
+        37.4093725
+       ],
+       [
+        -121.9654329,
+        37.409756
+       ],
+       [
+        -121.9654517,
+        37.4097499
+       ],
+       [
+        -121.9654677,
+        37.409781
+       ],
+       [
+        -121.965491,
+        37.4097735
+       ],
+       [
+        -121.9655059,
+        37.4098027
+       ],
+       [
+        -121.9655825,
+        37.4097778
+       ],
+       [
+        -121.9655913,
+        37.409795
+       ],
+       [
+        -121.9659054,
+        37.4096932
+       ],
+       [
+        -121.9658802,
+        37.4096441
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "stage": "complete",
+    "podium_ft": null,
+    "base_ft": 0,
+    "phase": null,
+    "label": "5123 Calle del Sol, Parcel 19",
+    "height_ft": 82,
+    "use": "Residential (311 homes)",
+    "illustrative": true,
+    "source": "illustrative: footprint OpenStreetMap building w1351049828 (via Overture 2026-09-23.1); eight-story mid-rise with 311 homes (Notice of Determination for 5123 Calle del Sol, July 2019 (CEQAnet 2016122027/5), PDF p. 2); height estimated at 10.2 ft a story, the average of the plan area's buildings with both stories and feet in official records (Related addendum, Jan 2021; Greystar data table, 2023)",
+    "note": "Building permit Apr 18, 2022 for 311 homes, filed as 2240 Calle de Luna; no certificate of occupancy in the state housing reports through 2025. The Draft SEIR (Aug 2026) lists 5123 Calle del Sol as constructed, and the newer document is followed."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9646023,
+        37.4086879
+       ],
+       [
+        -121.9643536,
+        37.4081942
+       ],
+       [
+        -121.963261,
+        37.4086502
+       ],
+       [
+        -121.9634213,
+        37.4089684
+       ],
+       [
+        -121.9634469,
+        37.4089603
+       ],
+       [
+        -121.9635023,
+        37.4090702
+       ],
+       [
+        -121.9635198,
+        37.4090646
+       ],
+       [
+        -121.963533,
+        37.4090907
+       ],
+       [
+        -121.9637152,
+        37.4090327
+       ],
+       [
+        -121.9637027,
+        37.409008
+       ],
+       [
+        -121.9639303,
+        37.4089355
+       ],
+       [
+        -121.9639403,
+        37.4089553
+       ],
+       [
+        -121.9641734,
+        37.4088811
+       ],
+       [
+        -121.9641634,
+        37.4088613
+       ],
+       [
+        -121.9643839,
+        37.4087911
+       ],
+       [
+        -121.9643903,
+        37.4088037
+       ],
+       [
+        -121.964495,
+        37.4087704
+       ],
+       [
+        -121.964474,
+        37.4087287
+       ],
+       [
+        -121.9646023,
+        37.4086879
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-05-056",
+    "label": "2111 Tasman Drive",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-05-056 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "2111 Tasman Drive: approved July 2023 for 900 homes in eight-story buildings (file 23-817); the Draft SEIR (Aug 2026) says the project was abandoned. Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9617157,
+        37.4087161
+       ],
+       [
+        -121.9618407,
+        37.4085962
+       ],
+       [
+        -121.9620873,
+        37.4084371
+       ],
+       [
+        -121.9623468,
+        37.4083002
+       ],
+       [
+        -121.9628383,
+        37.4080892
+       ],
+       [
+        -121.9631925,
+        37.4086223
+       ],
+       [
+        -121.9634514,
+        37.4091254
+       ],
+       [
+        -121.9633715,
+        37.4091537
+       ],
+       [
+        -121.9633355,
+        37.4091765
+       ],
+       [
+        -121.9633034,
+        37.4092044
+       ],
+       [
+        -121.9632533,
+        37.4092728
+       ],
+       [
+        -121.9632364,
+        37.4093118
+       ],
+       [
+        -121.9632209,
+        37.4093952
+       ],
+       [
+        -121.9632227,
+        37.4094377
+       ],
+       [
+        -121.9632448,
+        37.4095196
+       ],
+       [
+        -121.9615742,
+        37.4100666
+       ],
+       [
+        -121.9613322,
+        37.409859
+       ],
+       [
+        -121.9610828,
+        37.4096737
+       ],
+       [
+        -121.9609534,
+        37.4095876
+       ],
+       [
+        -121.9617157,
+        37.4087161
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-05-057",
+    "label": "2222 Calle de Luna",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-05-057 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9615742,
+        37.4100666
+       ],
+       [
+        -121.9632448,
+        37.4095196
+       ],
+       [
+        -121.9635194,
+        37.4100531
+       ],
+       [
+        -121.9620256,
+        37.4105422
+       ],
+       [
+        -121.9617627,
+        37.4102522
+       ],
+       [
+        -121.9615742,
+        37.4100666
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-05-058",
+    "label": "2200 Calle de Luna",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-05-058 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "2200 Calle de Luna: re-approved Feb 2023 for 583 homes in two 12-story and one 11-story buildings (state housing report; file 23-1329); the Draft SEIR (Aug 2026) says the project was abandoned. Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9620256,
+        37.4105422
+       ],
+       [
+        -121.9635194,
+        37.4100531
+       ],
+       [
+        -121.9640539,
+        37.4110582
+       ],
+       [
+        -121.9633351,
+        37.4112935
+       ],
+       [
+        -121.9629419,
+        37.4112603
+       ],
+       [
+        -121.9629392,
+        37.4112805
+       ],
+       [
+        -121.9627196,
+        37.411262
+       ],
+       [
+        -121.9620256,
+        37.4105422
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-05-060",
+    "label": "2263 Calle del Mundo",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-05-060 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "2263 Calle del Mundo: approved Nov 2020 for an eight-story building with 301 homes (file 20-1095), extended 2022; not built. Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9653734,
+        37.4100398
+       ],
+       [
+        -121.9656349,
+        37.4105479
+       ],
+       [
+        -121.9649724,
+        37.4107649
+       ],
+       [
+        -121.9647109,
+        37.4102567
+       ],
+       [
+        -121.9653734,
+        37.4100398
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-05-061",
+    "label": "2263 Calle del Mundo, east part",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-05-061 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Part of the 2263 Calle del Mundo site (1.94 acres), approved Nov 2020 for an eight-story building with 301 homes; not built. Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9660582,
+        37.4098155
+       ],
+       [
+        -121.9663197,
+        37.4103237
+       ],
+       [
+        -121.9656349,
+        37.4105479
+       ],
+       [
+        -121.9653734,
+        37.4100398
+       ],
+       [
+        -121.9660582,
+        37.4098155
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-001",
+    "label": "5191 Lafayette Street",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-001 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9678842,
+        37.4088249
+       ],
+       [
+        -121.9679003,
+        37.4088637
+       ],
+       [
+        -121.9679026,
+        37.4089056
+       ],
+       [
+        -121.967891,
+        37.4089459
+       ],
+       [
+        -121.9678666,
+        37.4089801
+       ],
+       [
+        -121.9678323,
+        37.4090042
+       ],
+       [
+        -121.9675841,
+        37.4091052
+       ],
+       [
+        -121.967324,
+        37.4085998
+       ],
+       [
+        -121.9676392,
+        37.4084623
+       ],
+       [
+        -121.9678842,
+        37.4088249
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-002",
+    "label": "2354 Calle del Mundo",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-002 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "2354 Calle del Mundo: approved 2021 for an 89-home mid-rise building; not built. Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.967324,
+        37.4085998
+       ],
+       [
+        -121.9675841,
+        37.4091052
+       ],
+       [
+        -121.9672684,
+        37.4092272
+       ],
+       [
+        -121.967013,
+        37.4087309
+       ],
+       [
+        -121.967324,
+        37.4085998
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-003",
+    "label": "2346 Calle del Mundo",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-003 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9672684,
+        37.4092272
+       ],
+       [
+        -121.9669504,
+        37.4093421
+       ],
+       [
+        -121.9666902,
+        37.4088366
+       ],
+       [
+        -121.967013,
+        37.4087309
+       ],
+       [
+        -121.9672684,
+        37.4092272
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-004",
+    "label": "2338 Calle del Mundo",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-004 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9669504,
+        37.4093421
+       ],
+       [
+        -121.9666328,
+        37.4094492
+       ],
+       [
+        -121.9663712,
+        37.4089411
+       ],
+       [
+        -121.9666902,
+        37.4088366
+       ],
+       [
+        -121.9669504,
+        37.4093421
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-005",
+    "label": "2330 Calle del Mundo",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-005 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9666328,
+        37.4094492
+       ],
+       [
+        -121.9663142,
+        37.4095535
+       ],
+       [
+        -121.9660527,
+        37.4090454
+       ],
+       [
+        -121.9663712,
+        37.4089411
+       ],
+       [
+        -121.9666328,
+        37.4094492
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-006",
+    "label": "2322 Calle del Mundo",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-006 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9660527,
+        37.4090454
+       ],
+       [
+        -121.9663142,
+        37.4095535
+       ],
+       [
+        -121.9659957,
+        37.4096578
+       ],
+       [
+        -121.9657342,
+        37.4091497
+       ],
+       [
+        -121.9660527,
+        37.4090454
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-007",
+    "label": "2301 Calle de Luna",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-007 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9660527,
+        37.4090454
+       ],
+       [
+        -121.9657342,
+        37.4091497
+       ],
+       [
+        -121.9654727,
+        37.4086416
+       ],
+       [
+        -121.9657912,
+        37.4085373
+       ],
+       [
+        -121.9660527,
+        37.4090454
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-008",
+    "label": "2309 Calle de Luna",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-008 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9663712,
+        37.4089411
+       ],
+       [
+        -121.9660527,
+        37.4090454
+       ],
+       [
+        -121.9657912,
+        37.4085373
+       ],
+       [
+        -121.9661097,
+        37.408433
+       ],
+       [
+        -121.9663712,
+        37.4089411
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-009",
+    "label": "2317 Calle de Luna",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-009 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9664272,
+        37.4083256
+       ],
+       [
+        -121.9666902,
+        37.4088366
+       ],
+       [
+        -121.9663712,
+        37.4089411
+       ],
+       [
+        -121.9661097,
+        37.408433
+       ],
+       [
+        -121.9664272,
+        37.4083256
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-010",
+    "label": "2325 Calle de Luna",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-010 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.967013,
+        37.4087309
+       ],
+       [
+        -121.9666902,
+        37.4088366
+       ],
+       [
+        -121.9664272,
+        37.4083256
+       ],
+       [
+        -121.9667446,
+        37.4082096
+       ],
+       [
+        -121.967013,
+        37.4087309
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-011",
+    "label": "5185 Lafayette Street",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-011 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "5185 Lafayette Street: approved 2023 for a 21-story building with 198 homes (file 23-842); the Draft SEIR (Aug 2026) describes it as 18 stories. Not built. Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9671929,
+        37.4080327
+       ],
+       [
+        -121.9672244,
+        37.4080273
+       ],
+       [
+        -121.9672879,
+        37.4080322
+       ],
+       [
+        -121.9673465,
+        37.4080571
+       ],
+       [
+        -121.967372,
+        37.4080764
+       ],
+       [
+        -121.9673941,
+        37.4080996
+       ],
+       [
+        -121.9676392,
+        37.4084623
+       ],
+       [
+        -121.967056,
+        37.4087168
+       ],
+       [
+        -121.967013,
+        37.4087309
+       ],
+       [
+        -121.9667446,
+        37.4082096
+       ],
+       [
+        -121.9671929,
+        37.4080327
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-015",
+    "label": "5101 Lafayette Street",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-015 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Holds an existing data center (5101 Lafayette Street); the plan allows housing here. Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9654728,
+        37.4071986
+       ],
+       [
+        -121.9657121,
+        37.4072031
+       ],
+       [
+        -121.9666209,
+        37.4069516
+       ],
+       [
+        -121.9668602,
+        37.4073064
+       ],
+       [
+        -121.9656218,
+        37.4077107
+       ],
+       [
+        -121.9653664,
+        37.4072268
+       ],
+       [
+        -121.9654728,
+        37.4071986
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-021",
+    "label": "2273 Calle de Luna",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-021 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9647635,
+        37.4088738
+       ],
+       [
+        -121.965025,
+        37.4093819
+       ],
+       [
+        -121.9643806,
+        37.409593
+       ],
+       [
+        -121.9641191,
+        37.4090848
+       ],
+       [
+        -121.9647635,
+        37.4088738
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-022",
+    "label": "2279 Calle de Luna",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-022 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9649546,
+        37.4088112
+       ],
+       [
+        -121.9650331,
+        37.4089637
+       ],
+       [
+        -121.964842,
+        37.4090262
+       ],
+       [
+        -121.9647635,
+        37.4088738
+       ],
+       [
+        -121.9649546,
+        37.4088112
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-023",
+    "label": "2281 Calle de Luna",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-023 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9649546,
+        37.4088112
+       ],
+       [
+        -121.9654727,
+        37.4086416
+       ],
+       [
+        -121.9657342,
+        37.4091497
+       ],
+       [
+        -121.965025,
+        37.4093819
+       ],
+       [
+        -121.964842,
+        37.4090262
+       ],
+       [
+        -121.9650331,
+        37.4089637
+       ],
+       [
+        -121.9649546,
+        37.4088112
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-025",
+    "label": "2272 Calle del Mundo",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-025 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9647155,
+        37.4094833
+       ],
+       [
+        -121.9650494,
+        37.4093739
+       ],
+       [
+        -121.965311,
+        37.4098821
+       ],
+       [
+        -121.9649768,
+        37.4099915
+       ],
+       [
+        -121.9647155,
+        37.4094833
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-026",
+    "label": "2262 Calle del Mundo",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-026 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9647153,
+        37.4094834
+       ],
+       [
+        -121.9649768,
+        37.4099915
+       ],
+       [
+        -121.9646421,
+        37.4101011
+       ],
+       [
+        -121.9643806,
+        37.409593
+       ],
+       [
+        -121.9647153,
+        37.4094834
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-029",
+    "label": "5123 Calle del Sol, Parcel 29",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-029 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "5123 Calle del Sol Parcel 29: approved July 2019 for a 20-story building with 192 homes (Notice of Determination); not built. Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9638787,
+        37.4076987
+       ],
+       [
+        -121.9639523,
+        37.4076925
+       ],
+       [
+        -121.9639997,
+        37.407704
+       ],
+       [
+        -121.9640417,
+        37.4077294
+       ],
+       [
+        -121.964054,
+        37.4077243
+       ],
+       [
+        -121.9643281,
+        37.4081421
+       ],
+       [
+        -121.9638297,
+        37.4083529
+       ],
+       [
+        -121.9634769,
+        37.4078433
+       ],
+       [
+        -121.9638742,
+        37.4076913
+       ],
+       [
+        -121.9638787,
+        37.4076987
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "097-46-030",
+    "label": "2209 Tasman Drive",
+    "stage": "entitled",
+    "height_ft": 220,
+    "podium_ft": 85,
+    "base_ft": 0,
+    "use": "Transit Neighborhood: housing with ground-floor retail or other active uses",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: City of Santa Clara land parcel 097-46-030 (Tasman East plan area); height envelope from the plan's standards: towers \"would not exceed 220 feet or the FAA Part 77 height limit, whichever is lower\" (Tasman East Specific Plan Final EIR (Oct 2018), text revisions to section 2.3.4.1, PDF p. 61), podiums \"shall not exceed 85 feet above existing grade\" (Draft EIR (July 2018), section 2.3.4, PDF p. 61); unchanged in the Tasman East Specific Plan Amendment +1,500 units, Draft SEIR (Aug 2026, CEQAnet 2016122027/7), PDF p. 39",
+    "note": "Drawn to the plan's limits: towers up to 220 ft (or the FAA limit, if lower) over podiums up to 85 ft. Buildings over about 175 ft need an FAA no-hazard determination."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9631355,
+        37.4080052
+       ],
+       [
+        -121.9631398,
+        37.4080124
+       ],
+       [
+        -121.9633135,
+        37.407952
+       ],
+       [
+        -121.9633076,
+        37.4079421
+       ],
+       [
+        -121.9634088,
+        37.4078784
+       ],
+       [
+        -121.9634819,
+        37.4078505
+       ],
+       [
+        -121.9638297,
+        37.4083529
+       ],
+       [
+        -121.9631925,
+        37.4086223
+       ],
+       [
+        -121.9628383,
+        37.4080892
+       ],
+       [
+        -121.9629868,
+        37.4080307
+       ],
+       [
+        -121.9631355,
+        37.4080052
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

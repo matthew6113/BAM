@@ -1,0 +1,1004 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "middlefield-park",
+  "illustrative": true,
+  "summary": "Illustrative massing: the 14 building locations of the approved Middlefield Park Master Plan (October 2022) are drawn as their whole buildable areas inside the required setbacks (Figure 8.3.5), each raised to its maximum height in the plan's Table 8.3.2: 123 ft for the residential towers R1 and R2 by the light rail station, 125 ft for office O1, 95 ft for the other offices and residential sites (including the two affordable housing sites dedicated to the City, R4A and R6) and 60 ft for office O5 and the two garages. These are height limits, not building designs: real buildings will be smaller, seven to 11 stories residential and four to nine office. Parks and streets aren't drawn, nothing new has been built, and the existing office buildings stay in the base map.",
+  "note": "Each block is a buildable area at its maximum approved height; building designs come with later permits.",
+  "sourceUrl": "https://mountainview.legistar.com/gateway.aspx?M=F&ID=e1878a1f-8e37-45c4-84e4-04e0da99f46d.pdf",
+  "sourceLabel": "Master plan, 2022 (PDF)",
+  "georeference": {
+   "figure_8_3_5": {
+    "scale_m_per_unit": 0.3888,
+    "rotation_deg": -15.896,
+    "rms_m": 0.54,
+    "controls": [
+     {
+      "label": "base-map building outlines: trimmed RMS over the closest 70% of 2832 points",
+      "residual_m": 0.54
+     }
+    ],
+    "method": "trimmed ICP of the figure's base-map building outlines onto OpenStreetMap building footprints (via Overture), started from a fit on four street intersections",
+    "points": 2832,
+    "inlier_share": 0.7,
+    "median_m": 0.63,
+    "p90_m": 5.01,
+    "image_px": [
+     1764,
+     1720
+    ]
+   },
+   "check_intersections": {
+    "what": "street-centreline intersections in the figure against OpenStreetMap, after the fit",
+    "controls": [
+     {
+      "label": "Ellis Street / East Middlefield Road",
+      "residual_m": 7.78
+     },
+     {
+      "label": "Logue Avenue / Maude Avenue",
+      "residual_m": 4.24
+     },
+     {
+      "label": "Clyde Avenue / Maude Avenue",
+      "residual_m": 0.06
+     },
+     {
+      "label": "Tasman - Mountain View / East Middlefield Road",
+      "residual_m": 4.92
+     }
+    ]
+   },
+   "check_boundary": {
+    "what": "Fig. 8.3.5 dash-dot master plan boundary pixels within 30 m of the City parcels' outline",
+    "pixels": 34856,
+    "median_m": 3.62,
+    "p90_m": 18.26
+   },
+   "check_against_parcels": {
+    "envelopes_m2": 83903,
+    "off_site_m2": 73,
+    "off_site_share": 0.0009
+   }
+  },
+  "documents": {
+   "master_plan": {
+    "title": "Middlefield Park Master Plan (October 2022), approved by Resolution 18734 on Nov 15, 2022",
+    "url": "https://mountainview.legistar.com/gateway.aspx?M=F&ID=e1878a1f-8e37-45c4-84e4-04e0da99f46d.pdf",
+    "sha256": "3ca2d0df1a8e7eed59f240b07659ba0a40325cc452d070b2dd9e6ed411e29560",
+    "pages": "Figure 8.3.1 (PDF p. 129), Table 8.3.2 (p. 130), Figure 8.3.5 (p. 132)"
+   },
+   "resolution": {
+    "title": "Resolution 18734 approving the master plan, Exhibit A condition 1.a (plans dated October 2022)",
+    "url": "https://mountainview.legistar.com/gateway.aspx?M=F&ID=a324c82e-f151-47f1-8a60-15ecb6cd21ee.pdf"
+   },
+   "phasing": {
+    "title": "Development Agreement, Exhibit D, Table D1 phasing plan (ordinance attached to the Dec 13, 2022 report)",
+    "url": "https://mountainview.legistar.com/gateway.aspx?M=F&ID=f7269f0d-5ad4-4b0b-b069-0910174adc7c.pdf"
+   }
+  },
+  "license": "Envelopes: traced from a public City of Mountain View document. Georeference: OpenStreetMap contributors (ODbL 1.0), via Overture Maps."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "R1",
+    "label": "Residential R1",
+    "stage": "entitled",
+    "height_ft": 123.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "residential with ground-floor active uses",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: buildable area traced from Middlefield Park Master Plan (Oct 2022), Figure 8.3.5 (PDF p. 132); maximum height 123 ft from Table 8.3.2 (PDF p. 130); phase from Development Agreement Exhibit D",
+    "note": "Whole buildable area at its maximum height (about 400 homes); actual buildings will be smaller and step down. Within the high-rise core near the VTA Middlefield station; the CLUP airfield limit sets 123 ft."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.0533022,
+        37.3965453
+       ],
+       [
+        -122.0535309,
+        37.3959158
+       ],
+       [
+        -122.0529581,
+        37.3957807
+       ],
+       [
+        -122.0526797,
+        37.3959014
+       ],
+       [
+        -122.0525104,
+        37.3963585
+       ],
+       [
+        -122.0533022,
+        37.3965453
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "R2",
+    "label": "Residential R2",
+    "stage": "entitled",
+    "height_ft": 123.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "residential with ground-floor active uses",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: buildable area traced from Middlefield Park Master Plan (Oct 2022), Figure 8.3.5 (PDF p. 132); maximum height 123 ft from Table 8.3.2 (PDF p. 130); phase from Development Agreement Exhibit D",
+    "note": "Whole buildable area at its maximum height (about 450 homes); actual buildings will be smaller and step down. Within the high-rise core near the VTA Middlefield station; the CLUP airfield limit sets 123 ft."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.0529816,
+        37.3974599
+       ],
+       [
+        -122.0532503,
+        37.3967596
+       ],
+       [
+        -122.0523135,
+        37.3965313
+       ],
+       [
+        -122.052049,
+        37.3972326
+       ],
+       [
+        -122.0529816,
+        37.3974599
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "R4A",
+    "label": "Affordable housing site R4A",
+    "stage": "entitled",
+    "height_ft": 95.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "affordable housing (land dedicated to the City)",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: buildable area traced from Middlefield Park Master Plan (Oct 2022), Figure 8.3.5 (PDF p. 132); maximum height 95 ft from Table 8.3.2 (PDF p. 130); phase from Development Agreement Exhibit D",
+    "note": "Whole buildable area at its maximum height (about 210 homes); actual buildings will be smaller and step down. One of two sites (2.4 acres) Google dedicates to the City for affordable housing; the City will choose its developer and design."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.0490876,
+        37.3972393
+       ],
+       [
+        -122.0493615,
+        37.3969823
+       ],
+       [
+        -122.049369,
+        37.3969622
+       ],
+       [
+        -122.0487907,
+        37.3965699
+       ],
+       [
+        -122.0486535,
+        37.3964827
+       ],
+       [
+        -122.0486404,
+        37.3964687
+       ],
+       [
+        -122.0485936,
+        37.3964467
+       ],
+       [
+        -122.0483319,
+        37.3966956
+       ],
+       [
+        -122.0483143,
+        37.396706
+       ],
+       [
+        -122.048308,
+        37.3967228
+       ],
+       [
+        -122.0490007,
+        37.3971895
+       ],
+       [
+        -122.0490708,
+        37.3972353
+       ],
+       [
+        -122.0490876,
+        37.3972393
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "R6",
+    "label": "Affordable housing site R6",
+    "stage": "entitled",
+    "height_ft": 95.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "affordable housing (land dedicated to the City)",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: buildable area traced from Middlefield Park Master Plan (Oct 2022), Figure 8.3.5 (PDF p. 132); maximum height 95 ft from Table 8.3.2 (PDF p. 130); phase from Development Agreement Exhibit D",
+    "note": "Whole buildable area at its maximum height (about 170 homes); actual buildings will be smaller and step down. One of two sites (2.4 acres) Google dedicates to the City for affordable housing; the City will choose its developer and design."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.0481459,
+        37.395665
+       ],
+       [
+        -122.0485703,
+        37.3953851
+       ],
+       [
+        -122.0485765,
+        37.3953683
+       ],
+       [
+        -122.0480598,
+        37.3950198
+       ],
+       [
+        -122.0480232,
+        37.3950075
+       ],
+       [
+        -122.047707,
+        37.395218
+       ],
+       [
+        -122.0476941,
+        37.3952405
+       ],
+       [
+        -122.0481291,
+        37.395661
+       ],
+       [
+        -122.0481459,
+        37.395665
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "O1",
+    "label": "Office O1",
+    "stage": "entitled",
+    "height_ft": 125.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "office",
+    "phase": "Phase 2",
+    "illustrative": true,
+    "source": "illustrative: buildable area traced from Middlefield Park Master Plan (Oct 2022), Figure 8.3.5 (PDF p. 132); maximum height 125 ft from Table 8.3.2 (PDF p. 130); phase from Development Agreement Exhibit D",
+    "note": "Whole buildable area at its maximum height (441,939 sq ft of office); actual buildings will be smaller and step down. Figure 8.3.1 of the same master plan shows 115 ft; its Table 8.3.2 and the April 2022 Draft SEIR (Table 3.2-1) give 125 ft, which is drawn."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.0525996,
+        37.3985648
+       ],
+       [
+        -122.0526387,
+        37.3984717
+       ],
+       [
+        -122.0526243,
+        37.398461
+       ],
+       [
+        -122.052719,
+        37.3982056
+       ],
+       [
+        -122.0527076,
+        37.3981992
+       ],
+       [
+        -122.0529235,
+        37.3976289
+       ],
+       [
+        -122.0519615,
+        37.3973947
+       ],
+       [
+        -122.0516068,
+        37.3983269
+       ],
+       [
+        -122.0525996,
+        37.3985648
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "O2",
+    "label": "Office O2",
+    "stage": "entitled",
+    "height_ft": 95.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "office",
+    "phase": "Phase 2",
+    "illustrative": true,
+    "source": "illustrative: buildable area traced from Middlefield Park Master Plan (Oct 2022), Figure 8.3.5 (PDF p. 132); maximum height 95 ft from Table 8.3.2 (PDF p. 130); phase from Development Agreement Exhibit D",
+    "note": "Whole buildable area at its maximum height (190,000 sq ft of office); actual buildings will be smaller and step down."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.0496495,
+        37.3993196
+       ],
+       [
+        -122.0497489,
+        37.3993357
+       ],
+       [
+        -122.050154,
+        37.3994167
+       ],
+       [
+        -122.0504509,
+        37.3994684
+       ],
+       [
+        -122.050737,
+        37.398721
+       ],
+       [
+        -122.0507652,
+        37.3986327
+       ],
+       [
+        -122.0499842,
+        37.3984411
+       ],
+       [
+        -122.0496495,
+        37.3993196
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "R3",
+    "label": "Residential R3",
+    "stage": "entitled",
+    "height_ft": 95.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "residential with ground-floor active uses",
+    "phase": "Phase 3",
+    "illustrative": true,
+    "source": "illustrative: buildable area traced from Middlefield Park Master Plan (Oct 2022), Figure 8.3.5 (PDF p. 132); maximum height 95 ft from Table 8.3.2 (PDF p. 130); phase from Development Agreement Exhibit D",
+    "note": "Whole buildable area at its maximum height (about 270 homes); actual buildings will be smaller and step down."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.0498304,
+        37.3979663
+       ],
+       [
+        -122.0500402,
+        37.3974128
+       ],
+       [
+        -122.0500367,
+        37.3973974
+       ],
+       [
+        -122.0500021,
+        37.3973673
+       ],
+       [
+        -122.0495956,
+        37.3970924
+       ],
+       [
+        -122.0495441,
+        37.3970583
+       ],
+       [
+        -122.0495188,
+        37.3970523
+       ],
+       [
+        -122.0490393,
+        37.3975056
+       ],
+       [
+        -122.048982,
+        37.3975615
+       ],
+       [
+        -122.0489757,
+        37.3975783
+       ],
+       [
+        -122.0493894,
+        37.3978586
+       ],
+       [
+        -122.0498304,
+        37.3979663
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "R4B",
+    "label": "Residential R4B",
+    "stage": "entitled",
+    "height_ft": 95.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "residential with ground-floor active uses",
+    "phase": "Phase 3",
+    "illustrative": true,
+    "source": "illustrative: buildable area traced from Middlefield Park Master Plan (Oct 2022), Figure 8.3.5 (PDF p. 132); maximum height 95 ft from Table 8.3.2 (PDF p. 130); phase from Development Agreement Exhibit D",
+    "note": "Whole buildable area at its maximum height (about 90 homes); actual buildings will be smaller and step down."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.0488259,
+        37.3974882
+       ],
+       [
+        -122.0489449,
+        37.3973774
+       ],
+       [
+        -122.048959,
+        37.3973515
+       ],
+       [
+        -122.0486956,
+        37.3971724
+       ],
+       [
+        -122.0486661,
+        37.3971654
+       ],
+       [
+        -122.0486657,
+        37.3971544
+       ],
+       [
+        -122.048637,
+        37.397133
+       ],
+       [
+        -122.0482191,
+        37.3968517
+       ],
+       [
+        -122.0482005,
+        37.39684
+       ],
+       [
+        -122.0481782,
+        37.3968384
+       ],
+       [
+        -122.0480513,
+        37.3969582
+       ],
+       [
+        -122.0480493,
+        37.396976
+       ],
+       [
+        -122.048284,
+        37.3971337
+       ],
+       [
+        -122.048305,
+        37.3971387
+       ],
+       [
+        -122.0483091,
+        37.3971031
+       ],
+       [
+        -122.0483141,
+        37.3970897
+       ],
+       [
+        -122.048325,
+        37.3970849
+       ],
+       [
+        -122.048402,
+        37.3970995
+       ],
+       [
+        -122.0483726,
+        37.3971912
+       ],
+       [
+        -122.0484013,
+        37.3972126
+       ],
+       [
+        -122.0484392,
+        37.3972215
+       ],
+       [
+        -122.0484385,
+        37.397236
+       ],
+       [
+        -122.04846,
+        37.397252
+       ],
+       [
+        -122.0487863,
+        37.3974715
+       ],
+       [
+        -122.0488259,
+        37.3974882
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "R5",
+    "label": "Residential R5",
+    "stage": "entitled",
+    "height_ft": 95.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "residential with ground-floor active uses",
+    "phase": "Phase 3",
+    "illustrative": true,
+    "source": "illustrative: buildable area traced from Middlefield Park Master Plan (Oct 2022), Figure 8.3.5 (PDF p. 132); maximum height 95 ft from Table 8.3.2 (PDF p. 130); phase from Development Agreement Exhibit D",
+    "note": "Whole buildable area at its maximum height (about 310 homes); actual buildings will be smaller and step down."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.0472892,
+        37.3967529
+       ],
+       [
+        -122.0478772,
+        37.3968843
+       ],
+       [
+        -122.0484488,
+        37.3963431
+       ],
+       [
+        -122.0484508,
+        37.3963253
+       ],
+       [
+        -122.0482578,
+        37.3961665
+       ],
+       [
+        -122.0478765,
+        37.3957988
+       ],
+       [
+        -122.0478537,
+        37.3957861
+       ],
+       [
+        -122.0478145,
+        37.3957805
+       ],
+       [
+        -122.047794,
+        37.3957866
+       ],
+       [
+        -122.0477009,
+        37.3958524
+       ],
+       [
+        -122.0476515,
+        37.3958992
+       ],
+       [
+        -122.0475866,
+        37.3959752
+       ],
+       [
+        -122.0475207,
+        37.3960912
+       ],
+       [
+        -122.047295,
+        37.396725
+       ],
+       [
+        -122.0472892,
+        37.3967529
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "O3",
+    "label": "Office O3",
+    "stage": "entitled",
+    "height_ft": 95.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "office",
+    "phase": "Phase 4",
+    "illustrative": true,
+    "source": "illustrative: buildable area traced from Middlefield Park Master Plan (Oct 2022), Figure 8.3.5 (PDF p. 132); maximum height 95 ft from Table 8.3.2 (PDF p. 130); phase from Development Agreement Exhibit D",
+    "note": "Whole buildable area at its maximum height (310,000 sq ft of office); actual buildings will be smaller and step down."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.0482202,
+        37.3990482
+       ],
+       [
+        -122.0492136,
+        37.399235
+       ],
+       [
+        -122.0494247,
+        37.3990363
+       ],
+       [
+        -122.0496701,
+        37.3983743
+       ],
+       [
+        -122.0485774,
+        37.3981092
+       ],
+       [
+        -122.0482202,
+        37.3990482
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "O4",
+    "label": "Office O4",
+    "stage": "entitled",
+    "height_ft": 95.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "office",
+    "phase": "Phase 4",
+    "illustrative": true,
+    "source": "illustrative: buildable area traced from Middlefield Park Master Plan (Oct 2022), Figure 8.3.5 (PDF p. 132); maximum height 95 ft from Table 8.3.2 (PDF p. 130); phase from Development Agreement Exhibit D",
+    "note": "Whole buildable area at its maximum height (292,212 sq ft of office); actual buildings will be smaller and step down."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.0470769,
+        37.3988332
+       ],
+       [
+        -122.0480745,
+        37.3990211
+       ],
+       [
+        -122.0483918,
+        37.3981897
+       ],
+       [
+        -122.04843,
+        37.3980744
+       ],
+       [
+        -122.0478247,
+        37.397928
+       ],
+       [
+        -122.0473251,
+        37.398139
+       ],
+       [
+        -122.0471026,
+        37.3987516
+       ],
+       [
+        -122.0470769,
+        37.3988332
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "O5",
+    "label": "Office O5",
+    "stage": "entitled",
+    "height_ft": 60.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "office",
+    "phase": "Phase 4",
+    "illustrative": true,
+    "source": "illustrative: buildable area traced from Middlefield Park Master Plan (Oct 2022), Figure 8.3.5 (PDF p. 132); maximum height 60 ft from Table 8.3.2 (PDF p. 130); phase from Development Agreement Exhibit D",
+    "note": "Whole buildable area at its maximum height (82,849 sq ft of office); actual buildings will be smaller and step down. The April 2022 Draft SEIR (Table 3.2-1) gave 65 ft; the approved master plan's 60 ft is drawn."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.0463395,
+        37.3986848
+       ],
+       [
+        -122.0464726,
+        37.3987089
+       ],
+       [
+        -122.0467669,
+        37.3987674
+       ],
+       [
+        -122.0468997,
+        37.3983968
+       ],
+       [
+        -122.0469317,
+        37.3982983
+       ],
+       [
+        -122.0469464,
+        37.3982214
+       ],
+       [
+        -122.0469498,
+        37.3981382
+       ],
+       [
+        -122.0469445,
+        37.3980784
+       ],
+       [
+        -122.0469272,
+        37.3980013
+       ],
+       [
+        -122.0468962,
+        37.3979245
+       ],
+       [
+        -122.0466308,
+        37.3978619
+       ],
+       [
+        -122.0463395,
+        37.3986848
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "P1",
+    "label": "Parking garage P1",
+    "stage": "entitled",
+    "height_ft": 60.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "parking",
+    "phase": "Phase 4",
+    "illustrative": true,
+    "source": "illustrative: buildable area traced from Middlefield Park Master Plan (Oct 2022), Figure 8.3.5 (PDF p. 132); maximum height 60 ft from Table 8.3.2 (PDF p. 130); phase from Development Agreement Exhibit D",
+    "note": "Whole buildable area at its maximum height; actual buildings will be smaller and step down. The April 2022 Draft SEIR (Table 3.2-1) gave 65 ft; the approved master plan's 60 ft is drawn."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.0455352,
+        37.3985316
+       ],
+       [
+        -122.0463395,
+        37.3986848
+       ],
+       [
+        -122.0466308,
+        37.3978619
+       ],
+       [
+        -122.0458407,
+        37.3976828
+       ],
+       [
+        -122.0455352,
+        37.3985316
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "P2",
+    "label": "Parking garage P2",
+    "stage": "entitled",
+    "height_ft": 60.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "parking with ground-floor active uses",
+    "phase": "Phase 4",
+    "illustrative": true,
+    "source": "illustrative: buildable area traced from Middlefield Park Master Plan (Oct 2022), Figure 8.3.5 (PDF p. 132); maximum height 60 ft from Table 8.3.2 (PDF p. 130); phase from Development Agreement Exhibit D",
+    "note": "Whole buildable area at its maximum height; actual buildings will be smaller and step down. The April 2022 Draft SEIR (Table 3.2-1) gave 65 ft; the approved master plan's 60 ft is drawn."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.0460021,
+        37.3972349
+       ],
+       [
+        -122.0467417,
+        37.397402
+       ],
+       [
+        -122.0467737,
+        37.3972415
+       ],
+       [
+        -122.0468617,
+        37.3969918
+       ],
+       [
+        -122.0461474,
+        37.3968306
+       ],
+       [
+        -122.0460021,
+        37.3972349
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

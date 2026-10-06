@@ -3,6 +3,32 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-06 (the nine new projects on the map)
+
+All nine new projects now have site boundaries and massing or land-use zones, each source added
+to `sources` and described in `massingNotes`. Notable calls: Mare Island's boundary uses Vallejo's
+2005 specific plan area (the SP-4 zoning area runs over the bay); Schlage Lock's historic office
+building is outlined without a height (no official figure); Middlefield Park's O1 height conflict
+(125 vs 115 ft) and Berryessa's height diagram source are in `verify`.
+
+## 2026-10-06 (Esmeralda, Cloverdale)
+
+**esmeralda** added at Matthew's request: the Esmeralda Specific Plan in Cloverdale (up to 605
+homes and a 160-room hotel on about 261 acres; below the usual 1,000-home bar), from City of
+Cloverdale records (`docs/official-research/candidates-esmeralda.md`). `cloverdale.net` and
+`cloverdale.granicus.com` join the official hosts. The City Council hearings are Oct 7 and 14, 2026.
+
+## 2026-10-06 (eight new projects)
+
+Added at Matthew's request after official-source research (`docs/official-research/candidates-*.md`,
+checked 2026-10-05): **tasman-east**, **sunnydale-hope-sf**, **potrero-hope-sf**,
+**middlefield-park**, **schlage-lock**, **berryessa-flea-market**, **mare-island** and
+**sonoma-developmental-center** (990 homes, just under the 1,000-home bar). BART station-area
+housing (no single site reaches 1,000 homes) and the East Whisman Precise Plan (a zoning plan,
+covered by Middlefield Park) were not added. `cityofvallejo.net` and `permitsonoma.org` (Permit
+Sonoma) join the official hosts. The records are on file; they go on the map once their boundaries
+are drawn.
+
 ## 2026-10-05 (Milestone 4: land-use zones for the plan-scale projects)
 
 **moffett-park**, **north-bayshore**, **concord-naval-weapons-station**, **suisun-expansion** and

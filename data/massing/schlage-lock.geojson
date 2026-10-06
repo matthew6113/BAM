@@ -1,0 +1,908 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "schlage-lock",
+  "illustrative": true,
+  "summary": "Illustrative massing: each of the twelve development parcels is drawn whole to its height limit (57 to 86 ft) under the 2014 rezoning and Design for Development, not as a building design. Parcel shapes are traced from the development agreement's parcelization plan. The restored Old Office Building is drawn from the base map. Parks, streets, the rail lots and Parcel 14 aren't drawn.",
+  "note": "Parcels are drawn to their 2014 height limits, not as building designs; nothing new has been built yet.",
+  "sourceUrl": "https://default.sfplanning.org/Citywide/Visitacion_Valley/Visitacion_Valley_Schlage-Design_for_Development_20140616_BoS.pdf",
+  "sourceLabel": "Design for Development, 2014 (PDF)",
+  "georeference": {
+   "figure_1_1": {
+    "scale_m_per_unit": 0.84468,
+    "rotation_deg": -19.027,
+    "rms_m": 0.54,
+    "controls": [
+     {
+      "label": "Figure 1.1 property line vs the Project Site's assessor parcels: trimmed RMS over the closest 80% of 1359 points",
+      "residual_m": 0.54
+     }
+    ],
+    "method": "trimmed ICP",
+    "points": 1359,
+    "inlier_share": 0.8,
+    "median_m": 0.5,
+    "p90_m": 2.54,
+    "acreage_check": {
+     "1": {
+      "traced": 0.962,
+      "printed": 0.96
+     },
+     "2": {
+      "traced": 1.111,
+      "printed": 1.12
+     },
+     "3": {
+      "traced": 0.587,
+      "printed": 0.59
+     },
+     "4": {
+      "traced": 0.636,
+      "printed": 0.64
+     },
+     "5": {
+      "traced": 0.514,
+      "printed": 0.52
+     },
+     "6": {
+      "traced": 0.531,
+      "printed": 0.54
+     },
+     "7": {
+      "traced": 0.934,
+      "printed": 0.94
+     },
+     "8": {
+      "traced": 1.675,
+      "printed": 1.69
+     },
+     "9": {
+      "traced": 1.677,
+      "printed": 1.68
+     },
+     "10": {
+      "traced": 0.577,
+      "printed": 0.58
+     },
+     "11": {
+      "traced": 0.908,
+      "printed": 0.91
+     },
+     "12": {
+      "traced": 1.46,
+      "printed": 1.47
+     }
+    }
+   }
+  },
+  "license": "Parcel shapes: traced from a public City and County of San Francisco development agreement exhibit. Height limits: DataSF Zoning Map \u2013 Height and Bulk Districts (Public Domain). Office footprint: OpenStreetMap contributors (ODbL 1.0), via Overture Maps."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "1",
+    "label": "Parcel 1",
+    "stage": "entitled",
+    "height_ft": 76,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: drawn to the 76-ft height limit of the 76-X district in the DataSF Zoning Map \u2013 Height and Bulk Districts (h9wh-cg3m; Ord. 150-14), clipped to Parcel 1 as traced from Visitacion Valley/Schlage Lock Development Agreement, final exhibits (SF Planning file dated 08-22-14; Ord. 149-14), Exhibit L Infrastructure Plan (May 28, 2014), Figure 1.1, Conceptual Parcelization Plan (PDF p. 86); height matches Visitacion Valley/Schlage Lock Design for Development (June 16, 2014, as adopted), Figure 2-3, Height Map, p. 39",
+    "note": "The development agreement requires a full-service grocery store of at least 15,000 sq ft on Parcel 1. Planning approved Parcels 1, 2 and 3 as Phase 1 on Sept 17, 2018; building permits for two apartment buildings (5 and 7 stories) were filed in Dec 2019 and not issued."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4029877,
+        37.7107447
+       ],
+       [
+        -122.4032966,
+        37.7102397
+       ],
+       [
+        -122.403721,
+        37.7103609
+       ],
+       [
+        -122.403718,
+        37.7103678
+       ],
+       [
+        -122.403959,
+        37.7104352
+       ],
+       [
+        -122.4035607,
+        37.7109783
+       ],
+       [
+        -122.4033521,
+        37.7108853
+       ],
+       [
+        -122.4029877,
+        37.7107447
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "2",
+    "label": "Parcel 2",
+    "stage": "entitled",
+    "height_ft": 68,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: drawn to the 68-ft height limit of the 68-X district in the DataSF Zoning Map \u2013 Height and Bulk Districts (h9wh-cg3m; Ord. 150-14), clipped to Parcel 2 as traced from Visitacion Valley/Schlage Lock Development Agreement, final exhibits (SF Planning file dated 08-22-14; Ord. 149-14), Exhibit L Infrastructure Plan (May 28, 2014), Figure 1.1, Conceptual Parcelization Plan (PDF p. 86); height matches Visitacion Valley/Schlage Lock Design for Development (June 16, 2014, as adopted), Figure 2-3, Height Map, p. 39",
+    "note": "Planning approved Parcels 1, 2 and 3 as Phase 1 on Sept 17, 2018; building permits for two apartment buildings (5 and 7 stories) were filed in Dec 2019 and not issued."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4029877,
+        37.7107447
+       ],
+       [
+        -122.4022948,
+        37.7104832
+       ],
+       [
+        -122.4024128,
+        37.7101713
+       ],
+       [
+        -122.4024877,
+        37.7099966
+       ],
+       [
+        -122.4025005,
+        37.7099789
+       ],
+       [
+        -122.4025359,
+        37.7099539
+       ],
+       [
+        -122.4032966,
+        37.7102397
+       ],
+       [
+        -122.4029877,
+        37.7107447
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "3",
+    "label": "Parcel 3",
+    "stage": "entitled",
+    "height_ft": 68,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: drawn to the 68-ft height limit of the 68-X district in the DataSF Zoning Map \u2013 Height and Bulk Districts (h9wh-cg3m; Ord. 150-14), clipped to Parcel 3 as traced from Visitacion Valley/Schlage Lock Development Agreement, final exhibits (SF Planning file dated 08-22-14; Ord. 149-14), Exhibit L Infrastructure Plan (May 28, 2014), Figure 1.1, Conceptual Parcelization Plan (PDF p. 86); height matches Visitacion Valley/Schlage Lock Design for Development (June 16, 2014, as adopted), Figure 2-3, Height Map, p. 39",
+    "note": "Planning approved Parcels 1, 2 and 3 as Phase 1 on Sept 17, 2018; building permits for two apartment buildings (5 and 7 stories) were filed in Dec 2019 and not issued."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.402776,
+        37.7110903
+       ],
+       [
+        -122.4033251,
+        37.7112959
+       ],
+       [
+        -122.4031543,
+        37.7115323
+       ],
+       [
+        -122.4031206,
+        37.7115745
+       ],
+       [
+        -122.4030483,
+        37.7116506
+       ],
+       [
+        -122.4025501,
+        37.7114571
+       ],
+       [
+        -122.402776,
+        37.7110903
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "4",
+    "label": "Parcel 4",
+    "stage": "entitled",
+    "height_ft": 68,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 68-ft height limit of the 68-X district in the DataSF Zoning Map \u2013 Height and Bulk Districts (h9wh-cg3m; Ord. 150-14), clipped to Parcel 4 as traced from Visitacion Valley/Schlage Lock Development Agreement, final exhibits (SF Planning file dated 08-22-14; Ord. 149-14), Exhibit L Infrastructure Plan (May 28, 2014), Figure 1.1, Conceptual Parcelization Plan (PDF p. 86); height matches Visitacion Valley/Schlage Lock Design for Development (June 16, 2014, as adopted), Figure 2-3, Height Map, p. 39"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4025501,
+        37.7114571
+       ],
+       [
+        -122.4020212,
+        37.7112531
+       ],
+       [
+        -122.4020145,
+        37.7112241
+       ],
+       [
+        -122.4021543,
+        37.7108545
+       ],
+       [
+        -122.4027767,
+        37.7110891
+       ],
+       [
+        -122.4025501,
+        37.7114571
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "5",
+    "label": "Parcel 5",
+    "stage": "entitled",
+    "height_ft": 57,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 57-ft height limit of the 57-X district in the DataSF Zoning Map \u2013 Height and Bulk Districts (h9wh-cg3m; Ord. 150-14), clipped to Parcel 5 as traced from Visitacion Valley/Schlage Lock Development Agreement, final exhibits (SF Planning file dated 08-22-14; Ord. 149-14), Exhibit L Infrastructure Plan (May 28, 2014), Figure 1.1, Conceptual Parcelization Plan (PDF p. 86); height matches Visitacion Valley/Schlage Lock Design for Development (June 16, 2014, as adopted), Figure 2-3, Height Map, p. 39"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4023727,
+        37.7115548
+       ],
+       [
+        -122.4029154,
+        37.7117643
+       ],
+       [
+        -122.4027865,
+        37.7118517
+       ],
+       [
+        -122.4026383,
+        37.7119313
+       ],
+       [
+        -122.4024514,
+        37.7120068
+       ],
+       [
+        -122.4023261,
+        37.7120453
+       ],
+       [
+        -122.4020894,
+        37.7119521
+       ],
+       [
+        -122.4023727,
+        37.7115548
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "6",
+    "label": "Parcel 6",
+    "stage": "entitled",
+    "height_ft": 57,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 57-ft height limit of the 57-X district in the DataSF Zoning Map \u2013 Height and Bulk Districts (h9wh-cg3m; Ord. 150-14), clipped to Parcel 6 as traced from Visitacion Valley/Schlage Lock Development Agreement, final exhibits (SF Planning file dated 08-22-14; Ord. 149-14), Exhibit L Infrastructure Plan (May 28, 2014), Figure 1.1, Conceptual Parcelization Plan (PDF p. 86); height matches Visitacion Valley/Schlage Lock Design for Development (June 16, 2014, as adopted), Figure 2-3, Height Map, p. 39"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4019045,
+        37.7113734
+       ],
+       [
+        -122.4023727,
+        37.7115548
+       ],
+       [
+        -122.4020894,
+        37.7119521
+       ],
+       [
+        -122.4016835,
+        37.7117951
+       ],
+       [
+        -122.401757,
+        37.7116295
+       ],
+       [
+        -122.4017861,
+        37.7116406
+       ],
+       [
+        -122.4019045,
+        37.7113734
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "7",
+    "label": "Parcel 7",
+    "stage": "entitled",
+    "height_ft": 68,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 68-ft height limit of the 68-X district in the DataSF Zoning Map \u2013 Height and Bulk Districts (h9wh-cg3m; Ord. 150-14), clipped to Parcel 7 as traced from Visitacion Valley/Schlage Lock Development Agreement, final exhibits (SF Planning file dated 08-22-14; Ord. 149-14), Exhibit L Infrastructure Plan (May 28, 2014), Figure 1.1, Conceptual Parcelization Plan (PDF p. 86); height matches Visitacion Valley/Schlage Lock Design for Development (June 16, 2014, as adopted), Figure 2-3, Height Map, p. 39"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4038806,
+        37.7100006
+       ],
+       [
+        -122.4037897,
+        37.7102057
+       ],
+       [
+        -122.4034752,
+        37.7101178
+       ],
+       [
+        -122.4037463,
+        37.7095059
+       ],
+       [
+        -122.4044652,
+        37.709707
+       ],
+       [
+        -122.4043453,
+        37.7098979
+       ],
+       [
+        -122.4042162,
+        37.7100866
+       ],
+       [
+        -122.4039054,
+        37.710002
+       ],
+       [
+        -122.4039033,
+        37.710007
+       ],
+       [
+        -122.4038806,
+        37.7100006
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "8",
+    "label": "Parcel 8",
+    "stage": "entitled",
+    "height_ft": 86,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 86-ft height limit of the 86-X district in the DataSF Zoning Map \u2013 Height and Bulk Districts (h9wh-cg3m; Ord. 150-14), clipped to Parcel 8 as traced from Visitacion Valley/Schlage Lock Development Agreement, final exhibits (SF Planning file dated 08-22-14; Ord. 149-14), Exhibit L Infrastructure Plan (May 28, 2014), Figure 1.1, Conceptual Parcelization Plan (PDF p. 86); height matches Visitacion Valley/Schlage Lock Design for Development (June 16, 2014, as adopted), Figure 2-3, Height Map, p. 39"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4041113,
+        37.7086821
+       ],
+       [
+        -122.4048675,
+        37.7088936
+       ],
+       [
+        -122.4046617,
+        37.7093493
+       ],
+       [
+        -122.404585,
+        37.7094976
+       ],
+       [
+        -122.4044652,
+        37.709707
+       ],
+       [
+        -122.4037463,
+        37.7095059
+       ],
+       [
+        -122.4041113,
+        37.7086821
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "9",
+    "label": "Parcel 9",
+    "stage": "entitled",
+    "height_ft": 68,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 68-ft height limit of the 68-X district in the DataSF Zoning Map \u2013 Height and Bulk Districts (h9wh-cg3m; Ord. 150-14), clipped to Parcel 9 as traced from Visitacion Valley/Schlage Lock Development Agreement, final exhibits (SF Planning file dated 08-22-14; Ord. 149-14), Exhibit L Infrastructure Plan (May 28, 2014), Figure 1.1, Conceptual Parcelization Plan (PDF p. 86); height matches Visitacion Valley/Schlage Lock Design for Development (June 16, 2014, as adopted), Figure 2-3, Height Map, p. 39",
+    "note": "Part of Parcel 9: the zoning map and the D4D's height map split it between 68 ft and 86 ft."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4029132,
+        37.7091024
+       ],
+       [
+        -122.4036237,
+        37.7092872
+       ],
+       [
+        -122.4035281,
+        37.709503
+       ],
+       [
+        -122.402823,
+        37.7093059
+       ],
+       [
+        -122.4029132,
+        37.7091024
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "9",
+    "label": "Parcel 9",
+    "stage": "entitled",
+    "height_ft": 86,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 86-ft height limit of the 86-X district in the DataSF Zoning Map \u2013 Height and Bulk Districts (h9wh-cg3m; Ord. 150-14), clipped to Parcel 9 as traced from Visitacion Valley/Schlage Lock Development Agreement, final exhibits (SF Planning file dated 08-22-14; Ord. 149-14), Exhibit L Infrastructure Plan (May 28, 2014), Figure 1.1, Conceptual Parcelization Plan (PDF p. 86); height matches Visitacion Valley/Schlage Lock Design for Development (June 16, 2014, as adopted), Figure 2-3, Height Map, p. 39",
+    "note": "Part of Parcel 9: the zoning map and the D4D's height map split it between 68 ft and 86 ft."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.403916,
+        37.7086275
+       ],
+       [
+        -122.4036237,
+        37.7092872
+       ],
+       [
+        -122.4029132,
+        37.7091024
+       ],
+       [
+        -122.403211,
+        37.7084303
+       ],
+       [
+        -122.403916,
+        37.7086275
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "10",
+    "label": "Parcel 10",
+    "stage": "entitled",
+    "height_ft": 68,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 68-ft height limit of the 68-X district in the DataSF Zoning Map \u2013 Height and Bulk Districts (h9wh-cg3m; Ord. 150-14), clipped to Parcel 10 as traced from Visitacion Valley/Schlage Lock Development Agreement, final exhibits (SF Planning file dated 08-22-14; Ord. 149-14), Exhibit L Infrastructure Plan (May 28, 2014), Figure 1.1, Conceptual Parcelization Plan (PDF p. 86); height matches Visitacion Valley/Schlage Lock Design for Development (June 16, 2014, as adopted), Figure 2-3, Height Map, p. 39"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4018073,
+        37.7102557
+       ],
+       [
+        -122.4018873,
+        37.7096777
+       ],
+       [
+        -122.4023651,
+        37.7098112
+       ],
+       [
+        -122.4022581,
+        37.7100525
+       ],
+       [
+        -122.4021496,
+        37.710336
+       ],
+       [
+        -122.4018073,
+        37.7102557
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "11",
+    "label": "Parcel 11",
+    "stage": "entitled",
+    "height_ft": 68,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 68-ft height limit of the 68-X district in the DataSF Zoning Map \u2013 Height and Bulk Districts (h9wh-cg3m; Ord. 150-14), clipped to Parcel 11 as traced from Visitacion Valley/Schlage Lock Development Agreement, final exhibits (SF Planning file dated 08-22-14; Ord. 149-14), Exhibit L Infrastructure Plan (May 28, 2014), Figure 1.1, Conceptual Parcelization Plan (PDF p. 86); height matches Visitacion Valley/Schlage Lock Design for Development (June 16, 2014, as adopted), Figure 2-3, Height Map, p. 39",
+    "note": "Part of Parcel 11: the zoning map and the D4D's height map split it between 68 ft and 86 ft."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4023651,
+        37.7098112
+       ],
+       [
+        -122.4019279,
+        37.7096889
+       ],
+       [
+        -122.4019465,
+        37.7094175
+       ],
+       [
+        -122.4021482,
+        37.7094848
+       ],
+       [
+        -122.4021267,
+        37.7096697
+       ],
+       [
+        -122.4023873,
+        37.7097611
+       ],
+       [
+        -122.4023651,
+        37.7098112
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "11",
+    "label": "Parcel 11",
+    "stage": "entitled",
+    "height_ft": 86,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 86-ft height limit of the 86-X district in the DataSF Zoning Map \u2013 Height and Bulk Districts (h9wh-cg3m; Ord. 150-14), clipped to Parcel 11 as traced from Visitacion Valley/Schlage Lock Development Agreement, final exhibits (SF Planning file dated 08-22-14; Ord. 149-14), Exhibit L Infrastructure Plan (May 28, 2014), Figure 1.1, Conceptual Parcelization Plan (PDF p. 86); height matches Visitacion Valley/Schlage Lock Design for Development (June 16, 2014, as adopted), Figure 2-3, Height Map, p. 39",
+    "note": "Part of Parcel 11: the zoning map and the D4D's height map split it between 68 ft and 86 ft."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4019072,
+        37.7095185
+       ],
+       [
+        -122.4019466,
+        37.7090608
+       ],
+       [
+        -122.4026408,
+        37.7092549
+       ],
+       [
+        -122.402427,
+        37.7097375
+       ],
+       [
+        -122.4024009,
+        37.7097302
+       ],
+       [
+        -122.4023873,
+        37.7097611
+       ],
+       [
+        -122.4021267,
+        37.7096697
+       ],
+       [
+        -122.4021482,
+        37.7094848
+       ],
+       [
+        -122.4019465,
+        37.7094175
+       ],
+       [
+        -122.4019279,
+        37.7096889
+       ],
+       [
+        -122.4018873,
+        37.7096777
+       ],
+       [
+        -122.4019072,
+        37.7095185
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "12",
+    "label": "Parcel 12",
+    "stage": "entitled",
+    "height_ft": 86,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: drawn to the 86-ft height limit of the 86-X district in the DataSF Zoning Map \u2013 Height and Bulk Districts (h9wh-cg3m; Ord. 150-14), clipped to Parcel 12 as traced from Visitacion Valley/Schlage Lock Development Agreement, final exhibits (SF Planning file dated 08-22-14; Ord. 149-14), Exhibit L Infrastructure Plan (May 28, 2014), Figure 1.1, Conceptual Parcelization Plan (PDF p. 86); height matches Visitacion Valley/Schlage Lock Design for Development (June 16, 2014, as adopted), Figure 2-3, Height Map, p. 39"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4019534,
+        37.7089464
+       ],
+       [
+        -122.4019742,
+        37.7083919
+       ],
+       [
+        -122.4029951,
+        37.7083893
+       ],
+       [
+        -122.4026606,
+        37.7091442
+       ],
+       [
+        -122.4019534,
+        37.7089464
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "landmark",
+    "label": "Old Office Building",
+    "stage": "complete",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office",
+    "phase": null,
+    "illustrative": false,
+    "source": "footprint: OpenStreetMap w868885320 via Overture 2026-09-23.1; height: none official (the base map's Microsoft ML Buildings estimate is not used); stories: DBI permit 201507010504 (https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201507010504): 4 stories, rehabilitation complete 2022-09-16",
+    "stories": 4,
+    "note": "The historic Schlage Lock office building (about 1926) at 2201 Bayshore Blvd, kept and rehabilitated for offices. DBI counts 4 stories; no official height in feet was found, so it is outlined, not raised. The zoning map gives its lot a 45-ft limit.",
+    "osm": "w868885320"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4019775,
+       37.7121388
+      ],
+      [
+       -122.4020211,
+       37.7120052
+      ],
+      [
+       -122.4016415,
+       37.7119277
+      ],
+      [
+       -122.4015974,
+       37.7120632
+      ],
+      [
+       -122.4017558,
+       37.7120955
+      ],
+      [
+       -122.4017509,
+       37.7121103
+      ],
+      [
+       -122.4018047,
+       37.712121
+      ],
+      [
+       -122.4018582,
+       37.7121322
+      ],
+      [
+       -122.4018636,
+       37.7121155
+      ],
+      [
+       -122.4019775,
+       37.7121388
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

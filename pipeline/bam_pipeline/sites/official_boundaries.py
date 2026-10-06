@@ -44,6 +44,16 @@ SJ_ZONING = "https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataServ
 SUNNYVALE_SP = "https://gis.sunnyvale.ca.gov/arcgis/rest/services/GeneralPlan/MapServer/8"
 ALCO_PARCELS = "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0"
 OAK_ZONING = "https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Zoning_Group_Layers_/FeatureServer/0"
+SC_ZONING = "https://map.santaclaraca.gov/maps/rest/services/OPENDATA/RegionalZoningOpenData/MapServer/0"
+SONOMA_PARCELS = "https://socogis.sonomacounty.ca.gov/map/rest/services/CRAPublic/ParcelsPublicShapeFile/FeatureServer/0"
+# Layer 67 is the adopted plan's own area; layer 3 (zoning "SP-4") runs out over the bay.
+VALLEJO_SP = ("https://portal.cityofvallejo.net/arcgis/rest/services/CityGIS_Viewer/"
+              "Planning_Development_Services/MapServer/67")
+
+MIDDLEFIELD_PARK_APNS = [  # Mountain View Resolution 18734 (Middlefield Park Master Plan), Legistar matter 6895
+    "160-58-001", "160-58-016", "160-58-017", "160-57-004", "160-57-006", "160-57-007", "160-57-008",
+    "160-57-009", "160-57-010", "160-57-011", "160-57-012", "160-57-013", "160-59-005", "160-59-006",
+]
 
 NORTH_BAYSHORE_APNS = [  # Mountain View Legistar matter 7641 (North Bayshore Master Plan, PL-2021-248)
     "116-02-037", "116-02-081", "116-02-083", "116-02-084", "116-02-088", "116-10-070", "116-10-077",
@@ -52,6 +62,11 @@ NORTH_BAYSHORE_APNS = [  # Mountain View Legistar matter 7641 (North Bayshore Ma
     "116-10-107", "116-10-108", "116-11-012", "116-11-022", "116-11-024", "116-11-025", "116-11-028",
     "116-11-030", "116-11-038", "116-11-039", "116-13-027", "116-13-034", "116-13-038", "116-14-058",
     "116-14-066", "116-14-072", "116-20-043",
+]
+
+ESMERALDA_APNS = [  # Cloverdale Planning Commission staff report, Oct 1, 2026, p. 1 (Esmeralda Specific Plan)
+    "117-050-010", "117-050-011", "117-050-012", "117-050-017", "117-050-024", "117-050-026", "117-050-027",
+    "117-050-028", "117-050-029", "116-310-013", "116-310-014",
 ]
 
 
@@ -216,6 +231,74 @@ SPECS: dict[str, dict] = {
         "accuracy": "approximate",
         "note": "The development parcels zoned D-OTN (about 31 acres). The parks and open space, about half the 64-acre site, sit in a larger open-space zone and aren't drawn yet.",
         "license": "City of Oakland Planning & Building (for reference only)",
+    },
+    "berryessa-flea-market": {
+        "label": "San José zoning",
+        # The layer stores the file number without its prefix; the "PDC17-051" form is matched too in case it changes.
+        **arcgis(SJ_ZONING, "REZONINGFILE = '17051' or REZONINGFILE like 'PDC17-051%'"),
+        "layer": "City of San José Zoning Districts, rezoning file PDC17-051 (CP(PD), approved June 29, 2021)",
+        "accuracy": "official",
+        "note": "The planned development zoning of Ordinance 30646, which describes an approximately 61.5-gross-acre site.",
+        "license": "CC-BY 4.0, City of San José",
+    },
+    "tasman-east": {
+        "label": "Santa Clara zoning",
+        **arcgis(SC_ZONING, "ZONGDSGN = 'TN' and SPPLAN = 'TE'"),
+        "layer": "City of Santa Clara zoning, the 37 TN parcels tagged with the Tasman East plan (SPPLAN “TE”)",
+        "accuracy": "approximate",
+        "note": ("The parcels of the Tasman East Specific Plan area, which the City describes as about 45 acres between "
+                 "Tasman Drive, the Guadalupe River, the golf course and Lafayette Street. The plan's own streets are "
+                 "outside the parcels, so the shape is net of them. The layer's 10 other TN parcels are retired records "
+                 "that lie wholly inside these and add no area."),
+        "license": "City of Santa Clara Open Data Portal terms of use (2018)",
+    },
+    "sunnydale-hope-sf": {
+        "label": "DataSF special use districts",
+        **socrata(DATASF, SF_SUD, "name = 'Sunnydale Hope SF'"),
+        "layer": "DataSF Zoning Map – Special Use Districts, “Sunnydale Hope SF”",
+        "accuracy": "official",
+        "note": "The Sunnydale HOPE SF Special Use District (Planning Code 249.75), the approximately 50-acre site of Ordinance 18-17.",
+        "license": "Public Domain U.S. Government (DataSF)",
+    },
+    "potrero-hope-sf": {
+        "label": "DataSF special use districts",
+        **socrata(DATASF, SF_SUD, "name = 'Potrero Hope SF'"),
+        "layer": "DataSF Zoning Map – Special Use Districts, “Potrero Hope SF”",
+        "accuracy": "official",
+        "note": "The Potrero HOPE SF Special Use District (Planning Code 249.74); Ordinance 15-17 describes an approximately 38-acre site.",
+        "license": "Public Domain U.S. Government (DataSF)",
+    },
+    "middlefield-park": {
+        "label": "Mountain View parcels",
+        **arcgis(MV_PARCELS, f"APN in ({_sql_list(a.replace('-', '') for a in MIDDLEFIELD_PARK_APNS)})"),
+        "layer": "City of Mountain View parcels, the 14 APNs in Resolution 18734 (Middlefield Park Master Plan)",
+        "accuracy": "approximate",
+        "note": ("The 14 parcels the master plan approves, against the Council report's “approximately 40 acres”. "
+                 "Streets between them are left out, and the approved street vacations will change the edges."),
+        "license": "City of Mountain View open data (use at your own risk)",
+    },
+    "mare-island": {
+        "label": "Vallejo specific plan areas",
+        **arcgis(VALLEJO_SP, "Name = 'Mare Island' and Year = 2005"),
+        "layer": "City of Vallejo GIS, Existing Specific Plan Area “Mare Island” (2005)",
+        "accuracy": "approximate",
+        "note": ("The adopted 2005 Mare Island Specific Plan area, about 3,100 acres; the whole island is 5,250 acres "
+                 "in the 2005 EIR. The new specific plan's boundary isn't published, and may differ."),
+        "license": "City of Vallejo GIS (no license stated)",
+    },
+    "esmeralda": {
+        "label": "County of Sonoma parcels",
+        **arcgis(SONOMA_PARCELS, f"APN IN ({_sql_list(ESMERALDA_APNS)})"),
+        "layer": "County of Sonoma Parcels Public Shapefile, the 11 APNs in the Cloverdale Planning Commission staff report of Oct 1, 2026",
+        "accuracy": "approximate",
+        "note": ("The 11 parcels the Planning Commission staff report lists for the Esmeralda Specific Plan, in two "
+                 "pieces either side of the 80-foot SMART rail corridor, which isn't one of the parcels (the plan "
+                 "leaves it out of its land-use districts). The County's parcel shapes run a little over the Plan "
+                 "Area's 261.44 acres (Addendum Exhibit 3): about 3.8 acres of parcel 116-310-014, a narrow strip "
+                 "running northwest from the site's north corner outside Cloverdale's city limits (Permit Sonoma City "
+                 "Limits layer), is the roughly 4-acre unincorporated \u201cPanhandle\u201d the plan now excludes, and "
+                 "it is still drawn here."),
+        "license": "CC BY-SA 3.0, County of Sonoma",
     },
 }
 

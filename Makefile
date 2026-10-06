@@ -68,12 +68,21 @@ sites:
 	$(PY) bam_pipeline.sites.massing_alameda_point
 	$(PY) bam_pipeline.sites.massing_the_rise
 	$(PY) bam_pipeline.sites.massing_brooklyn_basin
+	$(PY) bam_pipeline.sites.massing_berryessa_flea_market
+	$(PY) bam_pipeline.sites.massing_middlefield_park
+	$(PY) bam_pipeline.sites.massing_tasman_east
+	$(PY) bam_pipeline.sites.massing_schlage_lock
+	$(PY) bam_pipeline.sites.massing_sunnydale_hope_sf
+	$(PY) bam_pipeline.sites.massing_potrero_hope_sf
 	$(PY) bam_pipeline.sites.landuse_moffett_park
 	$(PY) bam_pipeline.sites.landuse_suisun_expansion
 	$(PY) bam_pipeline.sites.landuse_north_bayshore
 	$(PY) bam_pipeline.sites.landuse_concord_naval_weapons_station
 	$(PY) bam_pipeline.sites.landuse_brisbane_baylands
+	$(PY) bam_pipeline.sites.landuse_esmeralda
+	$(PY) bam_pipeline.sites.landuse_mare_island
 	$(PY) bam_pipeline.sites.traced_boundaries
+	$(PY) bam_pipeline.sites.landuse_sonoma_developmental_center
 
 dev:
 	npx vite --host 127.0.0.1

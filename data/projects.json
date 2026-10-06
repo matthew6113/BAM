@@ -2,7 +2,7 @@
   "_meta": {
     "title": "Bay Area megaprojects: researched project list",
     "preparedBy": "Claude (claude.ai chat) for Matthew Huguet",
-    "lastVerified": "2026-10-02",
+    "lastVerified": "2026-10-06",
     "notes": [
       "Every figure here came from the listed sources as of the lastVerified date. Items in each project's 'verify' list are known gaps; do not fill them by guessing.",
       "approxCenter values are rough [lon, lat] points for placing a marker only. Real site boundaries must come from official plan documents or parcel data, saved per project with their source.",
@@ -24,11 +24,7 @@
         "reason": "Removed from the map at Matthew's request (2026-10-03): the pier deal is paused and the seawall lot housing is only an application under review."
       }
     ],
-    "candidatesNotYetResearched": [
-      "Mare Island (Vallejo)",
-      "Sonoma Developmental Center (Glen Ellen)",
-      "BART station-area housing (North Berkeley, Ashby, etc.)"
-    ]
+    "candidatesNotYetResearched": []
   },
   "stages": [
     {
@@ -2792,6 +2788,969 @@
         ]
       },
       "lastVerified": "2026-10-02"
+    },
+    {
+      "id": "berryessa-flea-market",
+      "name": "Berryessa Flea Market South",
+      "aliases": [
+        "Berryessa BART Urban Village",
+        "San José Flea Market",
+        "Market Park",
+        "La Pulga",
+        "Flea Market Southside rezoning"
+      ],
+      "city": "San José",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "approxCenter": [
+        -121.878,
+        37.368
+      ],
+      "acres": 61.5,
+      "acresNote": "Ordinance 30646 and the Planning Commission memo (May 28, 2021, p. 1) describe an approximately 61.5-gross-acre site at 1590 Berryessa Road (APNs 254-17-052, -053, -007, -084, -095), south of Berryessa Road next to the Berryessa/North San José BART station. It's the southern part of the original 120-acre flea market site.",
+      "program": {
+        "homes": 3450,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": 3400000,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Zoning maximums: up to 3,450 homes (the planned densities support 1,700 to 3,450) and 1.5 to 3.4 million sq ft of commercial space. The land-use plan sets about 16.3 acres for commercial, 13.1 for residential, 17.1 for riparian corridor and open space along Coyote and Penitencia creeks, 5.0 for public and privately owned public open space, and about 10 for streets. The rezoning requires a 5-acre urban market for flea market vendors and a $5 million owner contribution to a vendor transition fund (the City added $2.5 million)."
+      },
+      "developer": "Berryessa FM Development LLC (property owner)",
+      "publicPartners": [
+        "City of San José"
+      ],
+      "stage": "entitled",
+      "stageNote": "The City Council approved the Planned Development rezoning and certified its environmental impact report on June 29, 2021 (Ordinance 30646). The owner withdrew its Planned Development Permit and Tentative Map applications on Oct 24, 2023, and as of the city's March 2025 status report there was no development proposal for the site. The flea market still operates there.",
+      "timeline": [
+        {
+          "date": "2007-08-14",
+          "event": "City Council certifies the Flea Market environmental review and rezones the 120-acre flea market site north and south of Berryessa Road for up to 2,818 homes (File PDC03-108)."
+        },
+        {
+          "date": "2021-05-12",
+          "event": "Planning Commission recommends the Berryessa BART Urban Village Plan and the Flea Market Southside rezoning, 5-1-1."
+        },
+        {
+          "date": "2021-06-29",
+          "event": "City Council adopts the Berryessa BART Urban Village Plan, certifies the Flea Market Southside environmental impact report and approves the rezoning for up to 3,450 homes and 3.4 million sq ft of commercial space, 11-0."
+        },
+        {
+          "date": "2021-08-03",
+          "event": "Ordinance 30646, the Flea Market Southside rezoning, comes back to the City Council for final adoption."
+        },
+        {
+          "date": "2023-10-24",
+          "event": "The owner withdraws its Planned Development Permit and Tentative Map applications for the site."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "The 61.5-acre San José Flea Market site next to the Berryessa/North San José BART station, rezoned in 2021 for up to 3,450 homes and 3.4 million sq ft of offices and shops around a 5-acre urban market for the flea market's vendors, with creekside open space along Coyote and Penitencia creeks. The owner withdrew its follow-up permit applications in 2023, and the flea market still runs on the site.",
+      "massingNotes": "Boundary: San José Zoning Districts (geo.sanjoseca.gov OPN_OpenDataService MapServer layer 401), feature OBJECTID 12061 (REZONINGFILE '17051', CP(PD), approved 2021-06-29), about 62.9 acres against the ordinance's 61.5; CC BY. Fallback: Ordinance 30646 Exhibit A legal description. approxCenter is the rough centroid of that feature. Massing: the PD zoning defers heights to the Berryessa BART Urban Village Plan; its height diagram, as reproduced in the Planning Commission's May 5, 2021 supplemental report (Fig. 1, p. 12), is traced and fitted to OSM streets and the BART line (trimmed RMS 1.1 m): development areas at 90, 160 and 270 ft, illustrative and conceptual; open space, creeks and the urban market are not drawn.",
+      "officialLinks": [
+        "https://sanjose.legistar.com/LegislationDetail.aspx?ID=9321&GUID=FC76376F-92F9-46EF-B435-F9B192D06862",
+        "https://sanjose.legistar.com/LegislationDetail.aspx?ID=14563&GUID=4CF7F8A5-2E6C-4CFE-9A7B-EACDD409BEF2"
+      ],
+      "sources": [
+        "https://sanjose.legistar.com/LegislationDetail.aspx?ID=9321&GUID=FC76376F-92F9-46EF-B435-F9B192D06862",
+        "https://legistar.granicus.com/sanjose/attachments/0d77d0a5-c602-4d3a-b72a-9fef37220b5e.pdf",
+        "https://legistar.granicus.com/sanjose/attachments/753c51c2-72aa-4fb0-b132-5221ece38a0d.pdf",
+        "https://legistar.granicus.com/sanjose/attachments/d5de8bfb-f93d-481d-af19-a18a9b2fc422.pdf",
+        "https://legistar.granicus.com/sanjose/attachments/3a9bad7c-c607-4f36-9bb0-6215cb929306.pdf",
+        "https://legistar.granicus.com/sanjose/attachments/07587a05-fe33-4070-ad08-13a28242582c.pdf",
+        "https://sanjose.legistar.com/LegislationDetail.aspx?ID=9320&GUID=52462B47-4D5A-4FEE-9F38-A2588DDC1C50",
+        "https://legistar.granicus.com/sanjose/attachments/6a470a5f-c429-4338-a04a-8e4af2e07c00.pdf",
+        "https://sanjose.legistar.com/LegislationDetail.aspx?ID=9356&GUID=DD9ABCD2-ABAE-458F-9C21-4CB6528F7B4D",
+        "https://legistar.granicus.com/sanjose/attachments/9ce708c6-a7c4-434d-9525-2a76c1d61e5c.pdf",
+        "https://legistar.granicus.com/sanjose/attachments/df06cb67-b26c-40e8-9242-0e1939c01680.pdf",
+        "https://sanjose.legistar.com/LegislationDetail.aspx?ID=14563&GUID=4CF7F8A5-2E6C-4CFE-9A7B-EACDD409BEF2",
+        "https://legistar.granicus.com/sanjose/attachments/78a6d04f-bc8f-4766-88eb-08854d2b0a74.pdf",
+        "https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataService/MapServer/401",
+        "https://legistar.granicus.com/sanjose/attachments/afe4bc58-e013-42b2-870b-ccdbfd873751.pdf"
+      ],
+      "verify": [
+        "the date Ordinance 30646 was finally adopted (scheduled for Aug 3, 2021; the city's 2025 memo cites the ordinance number)",
+        "whether any new development application has been filed since the March 2025 status report",
+        "the height diagram against the adopted Urban Village Plan document itself (traced from the Planning Commission's May 2021 reproduction; the plan is on sanjoseca.gov, not reachable here)"
+      ],
+      "lastVerified": "2026-10-05"
+    },
+    {
+      "id": "mare-island",
+      "name": "Mare Island",
+      "aliases": [
+        "Mare Island Specific Plan",
+        "MISP",
+        "Mare Island Naval Shipyard"
+      ],
+      "city": "Vallejo",
+      "county": "Solano",
+      "subregion": "North Bay",
+      "approxCenter": [
+        -122.275,
+        38.092
+      ],
+      "acres": 5250,
+      "acresNote": "Total acres CEQAnet lists for the 2003–2005 Amended and Restated Mare Island Specific Plan EIR (SCH 2003092057), covering the whole former shipyard including wetlands and dredge ponds. The new plan's area isn't stated yet; the infrastructure assessment's build-out scenario excludes Navy and State lands.",
+      "program": {
+        "homes": 14000,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Up to 14,000 homes and 14,900–17,000 jobs, as the City estimates for the Mare Island Company's first draft specific plan (Oct 2024); not approved. The City's October 2025 infrastructure assessment used an earlier preliminary plan (Feb 2023): 9,271 homes and about 8.13 million sq ft of commercial uses, built out by about 2063. The draft's mixed-use zones allow up to 85 ft."
+      },
+      "developer": "Mare Island Company (Nimitz Group)",
+      "publicPartners": [
+        "City of Vallejo (specific plan, lead agency)"
+      ],
+      "stage": "entitlement",
+      "stageNote": "A new specific plan is under City review. The Mare Island Company submitted a first draft in October 2024, and the City sent back comments on Feb 7, 2026. A second draft with infrastructure and financing plans, a CEQA notice of preparation and an EIR come next.",
+      "timeline": [
+        {
+          "date": "1999",
+          "event": "City Council adopts the Mare Island Specific Plan for the former naval shipyard."
+        },
+        {
+          "date": "2003-09-18",
+          "event": "City issues the notice of preparation for an EIR on an amended and restated specific plan with about 2.7 million more sq ft of development potential."
+        },
+        {
+          "date": "2005-08-11",
+          "event": "City circulates the supplemental EIR for the 2005 Amended and Restated Mare Island Specific Plan."
+        },
+        {
+          "date": "2014-08",
+          "event": "The Mare Island Specific Plan is amended."
+        },
+        {
+          "date": "2022-02",
+          "event": "A CEQA addendum to the specific plan EIRs is prepared for the North Mare Island disposition and development agreement."
+        },
+        {
+          "date": "2024-10-10",
+          "event": "Mare Island Company submits the first draft of a new Mare Island Specific Plan (file SPA24-0001), with nine neighborhoods."
+        },
+        {
+          "date": "2025-10",
+          "event": "City and the Vallejo Flood and Wastewater District publish the final Mare Island Infrastructure Assessment."
+        },
+        {
+          "date": "2026-02-07",
+          "event": "City sends the Mare Island Company its consolidated comments on the first draft."
+        },
+        {
+          "date": "2026-04-27",
+          "event": "City Council receives an informational update on the specific plan, environmental review, infrastructure planning and development agreements."
+        }
+      ],
+      "nextMilestone": "Second draft of the specific plan, with infrastructure and financing plans, and the CEQA notice of preparation.",
+      "summary": "The former Mare Island Naval Shipyard across the strait from downtown Vallejo, where a new specific plan from the Mare Island Company proposes up to about 14,000 homes in nine neighborhoods around the historic shipyard core. It's in early City review, with no approvals yet.",
+      "massingNotes": "Boundary: City of Vallejo GIS, Planning_Development_Services MapServer layer 67 (Existing Specific Plan Area), feature Mare Island (2005), about 3,093 acres, drawn as approximate (layer 3's SP-4 zoning area, about 4,220 acres, runs out over the bay); no license is stated, so ask the City before redistributing. The new plan's boundary (Figure in the Oct 2024 draft) may differ. Approximate center is the layer's bounding-box centre, shifted toward the developed east shore. Massing comes in Milestone 4, and only once the City adopts a plan: the draft's development standards (85-ft limit in the CRMX and CR zones) are applicant proposals under review. Land use: the adopted Mare Island Specific Plan's land-use map (Figure 3.1, revised Jan 2008, the newest the City posts), fitted to existing buildings (trimmed RMS 11 m) and labelled approximate; the developer's draft for the new plan is not drawn.",
+      "officialLinks": [
+        "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=5As%2FAST1",
+        "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=9yhFAU3W"
+      ],
+      "sources": [
+        "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=5As%2FAST1",
+        "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=9yhFAU3W",
+        "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=A8pCAb40",
+        "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=piRGAR%2Fa",
+        "https://ceqanet.lci.ca.gov/2003092057",
+        "https://ceqanet.lci.ca.gov/2003092057/2",
+        "https://portal.cityofvallejo.net/arcgis/rest/services/CityGIS_Viewer/Planning_Development_Services/MapServer/67",
+        "https://www.cityofvallejo.net/common/pages/DisplayFile.aspx?itemId=19272505",
+        "https://www.cityofvallejo.net/common/pages/DisplayFile.aspx?itemId=19272509"
+      ],
+      "verify": [
+        "the new plan's area and boundary, and its commercial program",
+        "the existing agreements with the Mare Island Company/Nimitz Group (the 2018 exclusive negotiating agreement for 157 acres of North Mare Island and the later disposition and development agreement), from council records",
+        "the April 27, 2026 council staff report",
+        "how much was built under the 1999–2014 plan (homes, reuse of shipyard buildings)"
+      ],
+      "reported": {
+        "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
+        "timeline": [
+          {
+            "date": "2019-11",
+            "event": "Nimitz Group completes its purchase of about 500 acres of South Mare Island from Lennar Mare Island, bringing its holdings to over 800 acres."
+          },
+          {
+            "date": "2026-04",
+            "event": "The Connolly Street corridor project is paused during mediation between the City and the Vallejo Flood and Wastewater District."
+          }
+        ],
+        "sources": [
+          "https://stories.opengov.com/cityofvallejo/published/arHGvVTeZ",
+          "https://www.vallejosun.com/central-corridor-project-on-mare-island-halted-while-vallejo-negotiates-with-developer-on-infrastructure/"
+        ]
+      },
+      "lastVerified": "2026-10-05"
+    },
+    {
+      "id": "middlefield-park",
+      "name": "Middlefield Park",
+      "aliases": [
+        "Google Middlefield Park",
+        "Middlefield Park Master Plan"
+      ],
+      "city": "Mountain View",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "approxCenter": [
+        -122.049,
+        37.397
+      ],
+      "acres": 40,
+      "acresNote": "The City Council report of Nov 15, 2022 (p. 2) gives an approximately 40-acre site of 14 parcels. The 14 parcels in the city's parcel layer add up to about 39.8 acres.",
+      "program": {
+        "homes": 1900,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 1317000,
+        "commercialSqftTotal": null,
+        "retailSqft": 50000,
+        "hotelKeys": null,
+        "openSpaceAcres": 9.84,
+        "notes": "Maximums under the master plan (Res. 18734): up to 1,900 homes, 1,317,000 sq ft of office/R&D and 50,000 sq ft of ground-floor commercial space. Instead of on-site below-market-rate units, Google dedicates 2.4 acres (parcels R4A and R6) to the City for affordable housing, which the applicant estimates at 380 units (20%); a City staff example came to 338 (17%). Open space: 6.97 acres of public parks dedicated to the City plus 2.87 acres of privately owned, publicly accessible open space (Ellis Park)."
+      },
+      "developer": "Google LLC (with Lendlease)",
+      "publicPartners": [
+        "City of Mountain View (development agreement)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved by the Mountain View City Council on Nov 15, 2022; the 20-year development agreement took effect Jan 12, 2023. No city record of construction was found. A June 23, 2026 Council report recommends leasing two of the site's parcels (485 and 495 Clyde Ave, about 3.72 acres) from Google for a public park with pickleball courts; the Council's action isn't posted yet.",
+      "timeline": [
+        {
+          "date": "2019-11-05",
+          "event": "City Council adopts the East Whisman Precise Plan (Res. 18397), the zoning the site sits in."
+        },
+        {
+          "date": "2022-10-19",
+          "event": "Environmental Planning Commission recommends approval of the master plan."
+        },
+        {
+          "date": "2022-11-15",
+          "event": "City Council certifies the supplemental EIR (Res. 18733), approves the master plan (Res. 18734) and vesting tentative map (Res. 18735), and introduces the development agreement ordinance."
+        },
+        {
+          "date": "2022-12-13",
+          "event": "City Council adopts the development agreement ordinance on second reading."
+        },
+        {
+          "date": "2023-01-12",
+          "event": "The development agreement takes effect."
+        },
+        {
+          "date": "2026-06-23",
+          "event": "Council report recommends a seven-year City lease of 485 and 495 Clyde Ave from Google for a park and pickleball facility, with an option for Google to sell the land to the City."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "Google's approved plan to replace 23 low-rise office and R&D buildings near the Middlefield light rail station with a neighborhood of up to 1,900 homes, about 1.3 million sq ft of offices, shops and nearly 10 acres of parks, within Mountain View's East Whisman Precise Plan area.",
+      "massingNotes": "Boundary: City of Mountain View parcels (maps.mountainview.gov Public/Parcel MapServer layer 0) filtered to the 14 APNs in Legistar matter 6895 (all 14 match, about 39.8 acres; city terms allow use at your own risk); approximate, since street vacations change the edges. Heights: residential seven to 11 stories, office four to nine stories (Council report p. 3–4, Figure 3 land-use plan). Massing: the 14 building locations traced from the Master Plan (Oct 2022, Fig. 8.3.5) and fitted to existing buildings (trimmed RMS 0.5 m), each at its maximum height from Table 8.3.2 (60–125 ft), illustrative; parks and streets are not drawn. approxCenter is the parcel centroid.",
+      "officialLinks": [
+        "https://mountainview.legistar.com/LegislationDetail.aspx?ID=5935594&GUID=A3057277-2B86-45DB-B6BB-BD347FF1A1D0",
+        "https://mountainview.legistar.com/gateway.aspx?M=F&ID=e1878a1f-8e37-45c4-84e4-04e0da99f46d.pdf"
+      ],
+      "sources": [
+        "https://mountainview.legistar.com/gateway.aspx?M=F&ID=139b5db2-d2ff-4b5c-8289-1757db0928d7.pdf",
+        "https://mountainview.legistar.com/gateway.aspx?M=F&ID=a324c82e-f151-47f1-8a60-15ecb6cd21ee.pdf",
+        "https://mountainview.legistar.com/gateway.aspx?M=F&ID=c0795dd4-ca8c-4797-b091-39cbbe8c9907.pdf",
+        "https://mountainview.legistar.com/gateway.aspx?M=F&ID=f7269f0d-5ad4-4b0b-b069-0910174adc7c.pdf",
+        "https://mountainview.legistar.com/gateway.aspx?M=F&ID=e1878a1f-8e37-45c4-84e4-04e0da99f46d.pdf",
+        "https://mountainview.legistar.com/gateway.aspx?M=F&ID=96fd7425-1e3a-493c-ad8c-35e070c634f6.pdf",
+        "https://mountainview.legistar.com/gateway.aspx?M=F&ID=33f99e61-4af9-4a25-b395-5284a81b4cac.pdf",
+        "https://mountainview.legistar.com/LegislationDetail.aspx?ID=5935594&GUID=A3057277-2B86-45DB-B6BB-BD347FF1A1D0",
+        "https://webapi.legistar.com/v1/mountainview/events/2103/eventitems",
+        "https://webapi.legistar.com/v1/mountainview/matters/6876/histories",
+        "https://webapi.legistar.com/v1/mountainview/events/1562/eventitems",
+        "https://maps.mountainview.gov/arcgis/rest/services/Public/Parcel/MapServer/0"
+      ],
+      "verify": [
+        "the development agreement's ordinance number (blank in the ordinance attached to the Dec 13, 2022 report)",
+        "whether any building or demolition permits have been issued",
+        "the Council's action on the 485 and 495 Clyde Ave lease (June 23, 2026 agenda)",
+        "whether Google has sold the site (press, 2025)",
+        "office building O1's height limit: the master plan's Table 8.3.2 gives 125 ft and its Figure 8.3.1 gives 115 ft (drawn at 125)"
+      ],
+      "reported": {
+        "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
+        "stageNote": "Google said in 2025 that it was looking for residential developers to buy the site, while keeping the approved housing plan.",
+        "timeline": [
+          {
+            "date": "2025-05",
+            "event": "Google puts the Middlefield Park site up for sale."
+          }
+        ],
+        "sources": [
+          "https://www.mv-voice.com/housing/2025/06/02/mountain-view-faces-housing-uncertainty-as-google-looks-to-sell-off-middlefield-park-property/",
+          "https://therealdeal.com/san-francisco/2025/05/30/google-abandons-middlefield-park-housing-plan/",
+          "https://sanjosespotlight.com/google-looks-to-sell-middlefield-park-property-in-mountain-view/"
+        ]
+      },
+      "lastVerified": "2026-10-05"
+    },
+    {
+      "id": "potrero-hope-sf",
+      "name": "Potrero HOPE SF",
+      "aliases": [
+        "Potrero Terrace and Annex",
+        "Potrero Annex-Terrace"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.397,
+        37.754
+      ],
+      "acres": 38,
+      "acresNote": "Ordinance 15-17 (development agreement) describes an approximately 38-acre irregularly shaped site bounded by 23rd Street and Missouri Street (it also says the project comprises nearly 40 acres). The Potrero HOPE SF Special Use District in DataSF measures about 36 acres.",
+      "program": {
+        "homes": 1700,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": 50000,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 3.5,
+        "notes": "Up to 1,700 homes. Ordinance 15-17: approximately 800 replacement and additional affordable units and up to 800 market-rate units; Planning's page: 619 replacement units, about 200 more affordable and about 800 market-rate. About 50,000 sq ft of neighborhood-serving space in the ordinance (Planning's page says about 45,000 sq ft of retail and community space)."
+      },
+      "developer": "BRIDGE Potrero Community Associates, LLC (BRIDGE Housing)",
+      "publicPartners": [
+        "San Francisco Housing Authority (site owner)",
+        "Mayor's Office of Housing and Community Development",
+        "SF Planning (development agreement)"
+      ],
+      "stage": "partial",
+      "stageNote": "Partly built. DBI marks permits complete for two affordable buildings: 72 homes at 1101 Connecticut St (Oct 2019) and 157 homes on Block B at 1801 25th St (Dec 2025). In April 2025 the City's HOPE SF loan committee took up funding to demolish 23 vacant buildings in the Phase 3 area.",
+      "timeline": [
+        {
+          "date": "2015-12-10",
+          "event": "Planning Commission certifies the joint EIR/EIS (Motion 19529)."
+        },
+        {
+          "date": "2017-01-31",
+          "event": "Board of Supervisors finally passes the development agreement (Ordinance 15-17) and the Special Use District and zoning changes (Ordinances 13-17 and 14-17)."
+        },
+        {
+          "date": "2017-10-13",
+          "event": "Planning approves Phase 2 (Blocks A and B) between 25th, 26th, Wisconsin and Connecticut streets."
+        },
+        {
+          "date": "2019-10-28",
+          "event": "Permit marked complete for 72 affordable homes at 1101 Connecticut St."
+        },
+        {
+          "date": "2021-03-11",
+          "event": "City announces the start of Phase 2 street and utility work on 3.96 acres at the south end of the site."
+        },
+        {
+          "date": "2022-08-22",
+          "event": "Construction starts on Block B, 157 affordable homes at 1801 25th St (first construction document)."
+        },
+        {
+          "date": "2025-04-04",
+          "event": "HOPE SF loan committee considers predevelopment funding to demolish 23 buildings in the Phase 3 area."
+        },
+        {
+          "date": "2025-12-04",
+          "event": "Permit marked complete for Block B, 157 homes at 1801 25th St."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "The rebuilding of the 619-unit Potrero Terrace and Annex public housing on Potrero Hill into a mixed-income neighborhood of about 1,700 homes, with new streets, utilities and 3.5 acres of open space, built in phases.",
+      "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f), feature 'Potrero Hope SF' (about 36 acres; Public Domain), official. Heights from the Special Use District (Planning Code 249.74) and the Design Standards and Guidelines; permits give stories for the built blocks (five and seven stories). approxCenter is the SUD centroid. Massing: block height zones traced from the Design Standards and Guidelines height diagram, fitted to the SUD boundary and DataSF parcels, illustrative; completed and under-construction buildings from DBI permits, with heights estimated from stories (illustrative). The old public housing stays in the base map; streets and parks are not drawn.",
+      "officialLinks": [
+        "https://sfplanning.org/potrero-hope-sf"
+      ],
+      "sources": [
+        "https://sfplanning.org/potrero-hope-sf",
+        "https://sfbos.archive.sf.gov/sites/default/files/o0015-17.pdf",
+        "https://sfbos.archive.sf.gov/sites/default/files/o0013-17.pdf",
+        "https://sfplanning.s3.amazonaws.com/default/files/devagreements/HOPE-SF/Potrero/HOPE-SF_Potrero_Development_Agreement.pdf",
+        "https://sfplanning.s3.amazonaws.com/default/files/devagreements/HOPE-SF/Potrero/HOPE-SF_Potrero_Phase2_Approval_20171013.pdf",
+        "https://www.sf.gov/news--city-announces-groundbreaking-critical-infrastructure-potrero-hope-sf-affordable-housing",
+        "https://media.api.sf.gov/documents/Approved-Potrero_HOPE_SF_Phase_III_Predevelopment_Loan_Evaluation_LC_4-04-2025.pdf",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201603172392",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202006108345",
+        "https://data.sf.gov/d/5yf5-ms5f",
+        "https://default.sfplanning.org/devagreements/HOPE-SF/Potrero/HOPE-SF_Potrero_Design_Controls_Guidelines.pdf"
+      ],
+      "verify": [
+        "the affordable count (Ord. 15-17: about 800 replacement and additional affordable; Planning's page: 619 plus about 200; the 2021 City announcement: 619 plus 155)",
+        "whether the Phase 3 demolition has started",
+        "the phase schedule (the 2021 City announcement gives 2035 for the last of five phases)"
+      ],
+      "lastVerified": "2026-10-05"
+    },
+    {
+      "id": "schlage-lock",
+      "name": "Schlage Lock",
+      "aliases": [
+        "Visitacion Valley/Schlage Lock",
+        "Schlage Lock site",
+        "Leland Square",
+        "Baylands North"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.403,
+        37.711
+      ],
+      "acres": 20,
+      "acresNote": "The City's development agreement summary (OEWD, May 2, 2014) describes the 20-acre Schlage Lock site. The Visitacion Valley/Schlage Lock Special Use District in DataSF is larger (about 45 acres) because it also covers Zone 2 along Bayshore Boulevard and Leland Avenue.",
+      "program": {
+        "homes": 1679,
+        "affordableHomes": null,
+        "affordablePct": 15,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": 46700,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Vested program under the development agreement (Ord. 149-14): up to 1,679 homes, 46,700 sq ft of retail and commercial space, and rehabilitation of the historic Schlage office building. 15% inclusionary requirement, at least two-thirds of it on site. Parcel 1 must include a full-service grocery store of at least 15,000 sq ft. Two new neighborhood parks."
+      },
+      "developer": "Visitacion Development, LLC (Universal Paragon Corporation)",
+      "publicPartners": [
+        "SF Planning (development agreement)",
+        "Office of Economic and Workforce Development"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved in 2014 with a 15-year development agreement; Planning approved a revised Phase 1 (Parcels 1–3 and Leland Park) in Sept 2018. DBI marks the historic office building's rehabilitation permit complete (Sept 2022). Building permits for two apartment buildings (146 and 152 homes) were filed in Dec 2019 and haven't been issued.",
+      "timeline": [
+        {
+          "date": "2008-12-18",
+          "event": "Planning Commission and the former Redevelopment Agency certify the Visitacion Valley Redevelopment Program EIR."
+        },
+        {
+          "date": "2009",
+          "event": "Board of Supervisors adopts the Visitacion Valley Redevelopment Plan and the Schlage Lock/Visitacion Valley Special Use District (Ordinances 70-09 to 73-09)."
+        },
+        {
+          "date": "2014-07-22",
+          "event": "Board of Supervisors finally passes the development agreement (Ordinance 149-14) and the revised Special Use District and zoning (Ordinance 150-14)."
+        },
+        {
+          "date": "2016-05-18",
+          "event": "Permit issued to rehabilitate the historic Schlage office building at 2201 Bayshore Blvd."
+        },
+        {
+          "date": "2017-07-05",
+          "event": "Planning approves the Phase 1 application."
+        },
+        {
+          "date": "2018-09-17",
+          "event": "Planning approves a revised Phase 1 application with conditions."
+        },
+        {
+          "date": "2019-12-18",
+          "event": "Building permits filed for a five-story, 146-home building and a seven-story, 152-home building."
+        },
+        {
+          "date": "2022-09-16",
+          "event": "Permit marked complete for the historic office building's rehabilitation."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "The former Schlage Lock factory site next to the Bayshore Caltrain station in Visitacion Valley, approved for up to 1,679 homes, shops including a grocery store, and two parks. The site's historic office building has been restored; the housing hasn't started.",
+      "massingNotes": "Boundary: the DataSF Special Use District 'Visitacion Valley/Schlage SUD' (5yf5-ms5f, Public Domain) covers both zones (about 45 acres), so trace Zone 1 from the Design for Development (June 2014) site plan or the development agreement exhibits, registered to DataSF parcels (acdm-wktn, ODC PDDL; block 5087 holds about 8.4 acres of it). Heights by parcel (55 to 72 ft for Phase 1 Parcels 1–3, per the Phase 1 application) need confirming against the Design for Development. approxCenter is rough. Massing: the twelve development parcels traced from the DA's Conceptual Parcelization Plan (Exhibit L, Fig. 1.1; every parcel within 0.01 acre of its printed area), fitted to the assessor-parcel boundary (trimmed RMS 0.5 m), at the 2014 zoning heights (57-X to 86-X, DataSF h9wh-cg3m; checked against the D4D height map), illustrative; the rehabilitated 1926 office building is outlined (4 stories, no official height). Parks, streets and rail lots are not drawn.",
+      "officialLinks": [
+        "https://sfplanning.org/visitacion-valleyschlage-lock-plan"
+      ],
+      "sources": [
+        "https://sfplanning.org/visitacion-valleyschlage-lock-plan",
+        "https://sfplanning.s3.amazonaws.com/default/files/Citywide/Visitacion_Valley/visvalley_SchlageLockDASummary-May2014.pdf",
+        "https://sfbos.archive.sf.gov/ftp/uploadedfiles/bdsupvrs/ordinances14/o0149-14.pdf",
+        "https://sfbos.archive.sf.gov/ftp/uploadedfiles/bdsupvrs/ordinances14/o0150-14.pdf",
+        "http://default.sfplanning.org/Citywide/Visitacion_Valley/Schlage_Revised_Phase01_Conditions_FINAL-091718.pdf",
+        "https://sfplanning.org/sites/default/files/documents/citywide/VisValley/visvalley_planning_presentation-103125.pdf",
+        "https://codelibrary.amlegal.com/codes/san_francisco/latest/sf_planning/0-0-0-21314",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201507010504",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201912189909",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201912189911",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201608155048",
+        "https://default.sfplanning.org/Citywide/Visitacion_Valley/Visitacion_Valley_Schlage-Final_DA_Exhibits-082214.pdf",
+        "https://default.sfplanning.org/Citywide/Visitacion_Valley/Visitacion_Valley_Schlage-Design_for_Development_20140616_BoS.pdf"
+      ],
+      "verify": [
+        "the development agreement's end date (15-year term from 2014)",
+        "the exact 2009 Board dates for Ordinances 70-09 to 73-09",
+        "whether any site work under the 2016 grading permits was finished",
+        "the acreage and parcels of Zone 1"
+      ],
+      "reported": {
+        "note": "Reported by the developer but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city records confirm each one.",
+        "stageNote": "The developer's October 2025 annual update says Phase 1 is delayed until market conditions make it financially feasible, and calls the project Leland Square.",
+        "program.affordableHomes": 252,
+        "sources": [
+          "https://sfplanning.org/sites/default/files/documents/citywide/VisValley/visvalley_presentation_baylands-103125.pdf"
+        ]
+      },
+      "lastVerified": "2026-10-05"
+    },
+    {
+      "id": "sonoma-developmental-center",
+      "name": "Sonoma Developmental Center",
+      "aliases": [
+        "SDC",
+        "Eldridge Renewal",
+        "SDC Campus Specific Plan"
+      ],
+      "city": "Eldridge (unincorporated, near Glen Ellen)",
+      "county": "Sonoma",
+      "subregion": "North Bay",
+      "approxCenter": [
+        -122.515,
+        38.349
+      ],
+      "acres": 160,
+      "acresNote": "The 2025 notice of preparation (p. 3) puts the project area at a 160-acre core campus plus a 49-acre wildfire buffer around it; CEQAnet lists 160 total acres. The historic state property was about 945 acres; in 2024 the state moved about 650 acres of open space to State Parks and about 58 acres to CAL FIRE, and the core campus shrank from about 180 acres.",
+      "program": {
+        "homes": 990,
+        "affordableHomes": 200,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": 130000,
+        "retailSqft": null,
+        "hotelKeys": 150,
+        "openSpaceAcres": 67,
+        "notes": "Eldridge Renewal's application as described in the county's 2025 notice of preparation: 990 homes (785 market rate, 200 affordable to lower-income households, 5 independent-living homes), about 130,000 sq ft of office, retail, R&D and micro-manufacturing, and a 150-room hotel with conference space and a parking structure (about 120,000 sq ft; the notice's background gives 250,000 sq ft for commercial and hotel together). About 67 acres of parks and open space (the county's project page says about 70). The repealed 2022 specific plan allowed 620 base homes plus density-bonus units, 230,000 sq ft of commercial and office space and a 120-room hotel."
+      },
+      "developer": "Eldridge Renewal, LLC",
+      "publicPartners": [
+        "County of Sonoma (Permit Sonoma, lead agency)",
+        "California Department of General Services (state seller)"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In environmental review. The county repealed the 2022 specific plan after a court ruling and is preparing a new campus specific plan and one EIR covering it and Eldridge Renewal's 990-home application, which was filed under the state's Builder's Remedy and deemed complete on March 6, 2025. The notice of preparation went out Aug 29, 2025.",
+      "timeline": [
+        {
+          "date": "2018",
+          "event": "The state closes the Sonoma Developmental Center and moves its clients to community-based care."
+        },
+        {
+          "date": "2019-12",
+          "event": "The Department of General Services and Sonoma County sign an agreement for the county to prepare a specific plan and EIR for the site."
+        },
+        {
+          "date": "2022-12-16",
+          "event": "Board of Supervisors adopts the SDC Specific Plan, certifies its EIR, amends the General Plan and rezones the property."
+        },
+        {
+          "date": "2023-01-18",
+          "event": "Sonoma Community Advocates for a Livable Environment (SCALE) sues over the EIR."
+        },
+        {
+          "date": "2023-04",
+          "event": "The state selects a buyer for exclusive negotiations on the core campus."
+        },
+        {
+          "date": "2023-08",
+          "event": "Eldridge Renewal files an SB 330 preliminary application for a mixed-use housing project on the campus."
+        },
+        {
+          "date": "2024-01",
+          "event": "The state transfers about 650 acres of open space to the Department of Parks and Recreation."
+        },
+        {
+          "date": "2024-02-16",
+          "event": "Eldridge Renewal files its full application (file PLP24-0005)."
+        },
+        {
+          "date": "2024-10-22",
+          "event": "Superior Court issues its final judgment and writ of mandate finding the specific plan's EIR did not comply with CEQA."
+        },
+        {
+          "date": "2024-12-03",
+          "event": "Board of Supervisors decertifies the EIR and rescinds the 2022 specific plan, and directs staff to return with a revised plan and EIR that also cover the Eldridge Renewal application."
+        },
+        {
+          "date": "2025-03-06",
+          "event": "Permit Sonoma deems the 990-home application complete and starts environmental review."
+        },
+        {
+          "date": "2025-08-29",
+          "event": "County issues the notice of preparation for the EIR on the SDC Campus Specific Plan and Eldridge Renewal project (SCH 2025081410)."
+        },
+        {
+          "date": "2025-09-25",
+          "event": "County holds the EIR scoping meeting."
+        }
+      ],
+      "nextMilestone": "Draft EIR for the campus specific plan and the Eldridge Renewal project.",
+      "summary": "The campus of a state institution in the Sonoma Valley that closed in 2018, proposed for about 990 homes, offices and a hotel around its historic Central Green. Most of the surrounding land has gone to state parks; the county is redoing its plan and environmental review after a court ruled that the first EIR fell short.",
+      "massingNotes": "Boundary: trace the project area (160-acre core campus plus 49-acre wildfire buffer) from the 2025 notice of preparation, Figure 3 (PDF p. 21); the County of Sonoma parcel layer (APNs 054-090-001, 054-150-005, 054-150-010; CC BY-SA 3.0, attribution \"County of Sonoma\") still covers about 990 acres, so it is context only. Approximate center from CEQAnet's coordinates. Massing comes in Milestone 4: the proposed site plan is Figure 4 (PDF p. 22) and the notice gives typical heights of two to three stories (detached homes one to three); the repealed 2022 plan is not drawn. Land use: the proposed specific plan update's land-use diagram (NOP Figure 4, Aug 2025), in the same frame as the boundary's Figure 3 (RMS 0.8 m), every zone labelled proposed; the rescinded 2022 plan is not drawn.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/2025081410",
+        "https://ceqanet.lci.ca.gov/2025081410/Attachment/7biXwK"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/2025081410",
+        "https://ceqanet.lci.ca.gov/2025081410/Attachment/7biXwK",
+        "https://ceqanet.lci.ca.gov/2025081410/Attachment/Ttc3pF",
+        "https://ceqanet.lci.ca.gov/2022020222",
+        "https://ceqanet.lci.ca.gov/2022020222/5",
+        "https://sonomacounty.gov/board-of-supervisors-decertifies-eir-and-repeals-the-approval-of-the-sonoma-developmental-center-specific-plan-in-response-to-court-ruling",
+        "https://www.dgs.ca.gov/-/media/Divisions/DGS/LegReports/Accessible-Reports/2023/2023-SDC-Annual-Report-ADA-Final.pdf",
+        "https://www.dgs.ca.gov/-/media/Divisions/RESD/Publications/AMB/Surplus-Property-for-Sale-PDFs/2024-Surplus-and-Excess-Property-Report-Final-v26.pdf",
+        "https://socogis.sonomacounty.ca.gov/map/rest/services/CRAPublic/ParcelsPublicShapeFile/FeatureServer/0"
+      ],
+      "verify": [
+        "the buyer the state selected in April 2023 and whether a purchase and sale agreement has been signed (DGS reports don't name it; press names Eldridge Renewal's Grupe and Rogal team)",
+        "the date the Draft EIR will be released (Permit Sonoma's project page says not in 2026)",
+        "the CAL FIRE transfer date (notice of preparation: Feb 2024; DGS 2024 report: March 2024, 58.15 acres)",
+        "the proposed phasing (county scoping boards: three phases, March 2027 to August 2036), published on permitsonoma.org"
+      ],
+      "reported": {
+        "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
+        "developer": "Eldridge Renewal, a partnership of The Grupe Company and Rogal & Partners, picked by the state in April 2023 to buy the core campus.",
+        "sources": [
+          "https://www.pressdemocrat.com/2023/04/04/state-picks-developers-for-the-sonoma-developmental-center-2/",
+          "https://www.pressdemocrat.com/article/news/sonoma-developmental-center-lawsuit-eldridge-renewal/"
+        ]
+      },
+      "lastVerified": "2026-10-05"
+    },
+    {
+      "id": "sunnydale-hope-sf",
+      "name": "Sunnydale HOPE SF",
+      "aliases": [
+        "Sunnydale",
+        "Sunnydale-Velasco",
+        "Sunnydale HOPE SF Master Plan"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.418,
+        37.711
+      ],
+      "acres": 50,
+      "acresNote": "Ordinance 18-17 (development agreement) describes an approximately 50-acre site owned by the San Francisco Housing Authority. The Sunnydale HOPE SF Special Use District in DataSF measures about 50.3 acres.",
+      "program": {
+        "homes": 1770,
+        "affordableHomes": 969,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": 60000,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 3.6,
+        "notes": "Up to 1,770 homes: 775 replacement units for existing Sunnydale-Velasco households, about 200 more affordable units and up to 730 market-rate units (Ord. 18-17; Planning's project page says about 694 market-rate). The development agreement commits at least 969 rent-restricted affordable apartments. About 60,000 sq ft of neighborhood-serving retail and community space. Open space: 3.6 acres in the ordinance, 3.5 acres on Planning's page."
+      },
+      "developer": "Sunnydale Development Co., LLC (Mercy Housing and Related California)",
+      "publicPartners": [
+        "San Francisco Housing Authority (site owner)",
+        "Mayor's Office of Housing and Community Development",
+        "SF Planning (development agreement)"
+      ],
+      "stage": "partial",
+      "stageNote": "Partly built. DBI marks permits complete for four affordable buildings with 392 homes: 1491 Sunnydale Ave (55, Feb 2020), 242 Hahn St (167, June 2022) and Blocks 3A and 3B at 1501 Sunnydale Ave (80 and 90, Apr 2025), plus a community center and childcare building at 1500 Sunnydale Ave (Oct 2024). Two more affordable buildings, Block 9 (95 homes) and an 89-home building, have been under construction since mid-2025.",
+      "timeline": [
+        {
+          "date": "2015-07-09",
+          "event": "Environmental review (joint EIR/EIS) certified, per Planning's project page."
+        },
+        {
+          "date": "2017-01-31",
+          "event": "Board of Supervisors finally passes the development agreement (Ordinance 18-17) and the Special Use District and zoning changes (Ordinances 16-17 and 17-17)."
+        },
+        {
+          "date": "2017-03-03",
+          "event": "The ordinance approving the development agreement takes effect."
+        },
+        {
+          "date": "2020-02-20",
+          "event": "Permit marked complete for 55 affordable homes at 1491 Sunnydale Ave (Parcel Q)."
+        },
+        {
+          "date": "2022-06-24",
+          "event": "Permit marked complete for 167 homes at 242 Hahn St."
+        },
+        {
+          "date": "2022-07-15",
+          "event": "Planning approves Phase 4 (Blocks 2, 4, 7, 8a, 8b and 9; about 177 affordable and 78 market-rate homes)."
+        },
+        {
+          "date": "2024-10-15",
+          "event": "Permit marked complete for the community center and childcare building at 1500 Sunnydale Ave."
+        },
+        {
+          "date": "2025-04-28",
+          "event": "Permits marked complete for Blocks 3A and 3B at 1501 Sunnydale Ave, 80 and 90 homes."
+        },
+        {
+          "date": "2025-06-18",
+          "event": "Construction starts on Block 9, 95 affordable homes at 1652 Sunnydale Ave (first construction document)."
+        },
+        {
+          "date": "2025-07-16",
+          "event": "Construction starts on an 89-home building at 1501 Sunnydale Ave (first construction document)."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "The rebuilding of the 775-unit Sunnydale-Velasco public housing site in Visitacion Valley into a mixed-income neighborhood of up to 1,770 homes on a new street grid, with parks and a community hub. Existing households in good standing have the right to a replacement home.",
+      "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f), feature 'Sunnydale Hope SF' (about 50.3 acres; Public Domain), official. Heights from the Special Use District (Planning Code 249.75) and the Design Standards and Guidelines; building permits give stories for the built blocks (four and five stories). approxCenter is the SUD centroid. Massing: block height zones traced from the Design Standards and Guidelines height diagram, fitted to the SUD boundary and DataSF parcels, illustrative; completed and under-construction buildings from DBI permits, with heights estimated from stories (illustrative). The old public housing stays in the base map; streets and parks are not drawn.",
+      "officialLinks": [
+        "https://sfplanning.org/sunnydale-hope-sf"
+      ],
+      "sources": [
+        "https://sfplanning.org/sunnydale-hope-sf",
+        "https://sfbos.archive.sf.gov/sites/default/files/o0018-17.pdf",
+        "https://sfbos.archive.sf.gov/sites/default/files/o0016-17.pdf",
+        "https://sfplanning.s3.amazonaws.com/default/files/devagreements/HOPE-SF/Sunnydale/HOPE-SF_Sunnydale_Development_Agreement.pdf",
+        "https://sfplanning.org/sites/default/files/documents/devagreements/Sunnydale_HopeSF_Phase4_Application_Approval.pdf",
+        "https://media.api.sf.gov/documents/Approved_Sunnydale_Block_9_Loan_Evaluation_-_LC_1-24-25.pdf",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201612225710",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201806202372",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202107124132",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202106031523",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202106031549",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202211146447",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202211297323",
+        "https://data.sf.gov/d/5yf5-ms5f",
+        "https://sfplanning.s3.amazonaws.com/default/files/devagreements/HOPE-SF/Sunnydale/HOPE-SF_Sunnydale_Design_Controls_Guidelines.pdf"
+      ],
+      "verify": [
+        "the EIR/EIS certification date (Planning's page: July 9, 2015; the development agreement text: Nov 17, 2016)",
+        "the block names of 242 Hahn St and the 89-home building at 1501 Sunnydale Ave (likely Block 6 and Block 7)",
+        "the market-rate count (730 in the ordinance, about 694 on Planning's page)"
+      ],
+      "lastVerified": "2026-10-05"
+    },
+    {
+      "id": "tasman-east",
+      "name": "Tasman East",
+      "aliases": [
+        "Tasman East Specific Plan",
+        "TESP",
+        "Tasman East Focus Area"
+      ],
+      "city": "Santa Clara",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "approxCenter": [
+        -121.965,
+        37.409
+      ],
+      "acres": 45,
+      "acresNote": "The Planning Commission report for the 2018 adoption (p. 1) describes an approximately 45-acre industrial area bounded by Tasman Drive, the Guadalupe River, the Santa Clara golf course (now the Related Santa Clara site) and Lafayette Street. About 7 acres are streets and 10 acres planned open space.",
+      "program": {
+        "homes": 4500,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": 106000,
+        "hotelKeys": null,
+        "openSpaceAcres": 10,
+        "notes": "Adopted plan capacity: 4,500 homes and up to 106,000 sq ft of retail. Open space: 5 acres of public parkland plus 5 acres of privately owned open space. Heights from low-rise (up to 65 ft) to towers up to 220 ft or the FAA limit, whichever is lower. A plan amendment in preparation would add 1,500 homes and about 20,000 sq ft of retail, 20,000 sq ft of co-working space and a 10,000 sq ft daycare."
+      },
+      "developer": "Multiple developers under a city-led specific plan",
+      "publicPartners": [
+        "City of Santa Clara"
+      ],
+      "stage": "partial",
+      "stageNote": "Partly built. The City of Santa Clara's state housing reports list certificates of occupancy for about 1,748 homes in seven buildings between Dec 2022 and Nov 2025, including 196 affordable homes at 2231 Calle del Mundo. More buildings are permitted or entitled, and an amendment to add 1,500 homes is going through environmental review.",
+      "timeline": [
+        {
+          "date": "2018-11-13",
+          "event": "City Council certifies the environmental impact report and adopts the Tasman East Specific Plan (Resolutions 18-8622, 18-8623 and 18-8624)."
+        },
+        {
+          "date": "2018-11-27",
+          "event": "City Council adopts Ordinance 1992, creating the Transit Neighborhood zoning district for the plan area."
+        },
+        {
+          "date": "2020-08-25",
+          "event": "City reports 4,484 homes approved or pending of the plan's 4,500, with the first projects under construction."
+        },
+        {
+          "date": "2020-11-17",
+          "event": "City Council adopts an addendum to the environmental report and amends the plan, replacing a Calle del Sol street extension with a walking and biking paseo."
+        },
+        {
+          "date": "2021-01-12",
+          "event": "City Council adopts Ordinance 2025, allowing some non-residential uses on the first three floors of mixed-use buildings."
+        },
+        {
+          "date": "2022-12-21",
+          "event": "Certificate of occupancy for St. Anton's 196 affordable homes at 2231 Calle del Mundo, the first building in the plan area."
+        },
+        {
+          "date": "2025-11-17",
+          "event": "Certificate of occupancy for 184 homes at 2223 Calle de Luna, the seventh building with occupancy reported."
+        },
+        {
+          "date": "2026-04-21",
+          "event": "City Council extends the consultant contract for the amendment adding 1,500 homes through Dec 31, 2026, while its supplemental environmental report is prepared."
+        }
+      ],
+      "nextMilestone": "A supplemental environmental impact report and hearings on the amendment adding 1,500 homes.",
+      "summary": "A city plan to turn 45 acres of warehouses next to the Lick Mill light rail station in north Santa Clara into a high-density neighborhood of 4,500 homes, with shops, parks and a walking and biking network to the Guadalupe River trail. Adopted in 2018; seven apartment buildings with about 1,750 homes had occupancy by late 2025, and the city is preparing an amendment to add 1,500 more.",
+      "massingNotes": "Boundary: City of Santa Clara zoning (map.santaclaraca.gov OPENDATA/RegionalZoningOpenData MapServer layer 0), the 37 parcels with ZONGDSGN 'TN' and SPPLAN 'TE', dissolved (about 41 acres net of the plan's streets, against the plan's 45; approximate); the layer's 10 other TN parcels are retired records lying wholly inside these, so they add nothing; City open-data terms of use (2018). approxCenter is the rough centroid of those parcels. Massing from the plan's height tiers (65, 85 and 220 ft) and each project's approvals comes in Milestone 4. Massing: 13 completed buildings from OpenStreetMap footprints matched to APR parcels, with official heights where given (Related 214 and 217 ft, Greystar 85 ft) or estimated from official story counts (illustrative); the other 24 plan parcels drawn to the plan's 220-ft tower limit over an 85-ft podium (Final EIR, Draft EIR §2.3.4), illustrative. The FAA threshold is about 175 ft.",
+      "officialLinks": [
+        "https://santaclara.legistar.com/LegislationDetail.aspx?ID=2564&GUID=D9199C07-2D4D-40E5-ADCB-5DBD76072087",
+        "https://santaclara.legistar.com/LegislationDetail.aspx?ID=21103&GUID=8DB4A0CB-9F3D-4D0B-A43B-53AAAFF3C7EC"
+      ],
+      "sources": [
+        "https://santaclara.legistar.com/LegislationDetail.aspx?ID=2564&GUID=D9199C07-2D4D-40E5-ADCB-5DBD76072087",
+        "https://santaclara.legistar1.com/santaclara/attachments/0ee77387-fbe2-47c6-909b-80ff8f322ace.pdf",
+        "https://santaclara.legistar1.com/santaclara/attachments/f322e818-7feb-4e99-b91d-3ae13089ec4e.pdf",
+        "https://santaclara.legistar.com/LegislationDetail.aspx?ID=2932&GUID=37402538-50C9-424D-B75B-9DAD56754795",
+        "https://santaclara.legistar.com/LegislationDetail.aspx?ID=16641&GUID=4DEC47C5-0FD8-4DB8-8089-0D4A084678E7",
+        "https://santaclara.legistar1.com/santaclara/attachments/7d1fedcc-a476-418a-8f9e-3c70b00bd1fc.pdf",
+        "https://santaclara.legistar.com/LegislationDetail.aspx?ID=16640&GUID=93BB39E7-8069-40D8-8A57-C03A6A8EA4B4",
+        "https://santaclara.legistar.com/LegislationDetail.aspx?ID=17293&GUID=14DF03A8-064A-4EFA-9A6E-CEAEFA6BB3B4",
+        "https://santaclara.legistar.com/LegislationDetail.aspx?ID=21103&GUID=8DB4A0CB-9F3D-4D0B-A43B-53AAAFF3C7EC",
+        "https://santaclara.legistar.com/LegislationDetail.aspx?ID=22513&GUID=A5A718A0-2FCB-4EF3-A706-29319066A10C",
+        "https://santaclara.legistar.com/LegislationDetail.aspx?ID=26106&GUID=25545734-0DA3-4CF9-94E7-6CB6C661AAE0",
+        "https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year",
+        "https://map.santaclaraca.gov/maps/rest/services/OPENDATA/RegionalZoningOpenData/MapServer/0",
+        "https://santaclara.legistar1.com/santaclara/attachments/6329e9a6-e29a-4f31-a2cf-ab8a09b2f902.pdf",
+        "https://santaclara.legistar1.com/santaclara/attachments/e6c34bac-7ee7-4ada-a313-704e06eb3ee0.pdf"
+      ],
+      "verify": [
+        "certificates of occupancy issued in 2026 (the state's annual report for 2026 isn't out yet)",
+        "the status of 2240 Calle de Luna (311 homes, building permit April 2022, no occupancy reported)",
+        "the amendment adding 1,500 homes: its environmental report and hearing dates",
+        "the City of Santa Clara's open-data license for the zoning layer",
+        "the August 2026 Draft SEIR's status figures (about 2,664 homes active or complete; about 12 acres still redevelopable) against this record"
+      ],
+      "lastVerified": "2026-10-05"
+    },
+    {
+      "id": "esmeralda",
+      "name": "Esmeralda",
+      "aliases": [
+        "Esmeralda Specific Plan",
+        "Alexander Valley Resort (AVR) site",
+        "Esmeralda Alexander Valley Resort Plan"
+      ],
+      "city": "Cloverdale",
+      "county": "Sonoma",
+      "subregion": "North Bay",
+      "approxCenter": [
+        -123.002,
+        38.784
+      ],
+      "acres": 261.44,
+      "acresNote": "The Planning Commission staff report (Oct 1, 2026, p. 1) puts the Plan Area at about 261.44 acres east of Asti Road and U.S. 101; it excludes a roughly 4-acre unincorporated strip (the Panhandle), so it is smaller than the 266 to 267 acres in earlier materials and in the 2003 CEQA filing. The draft master tentative map covers 266.84 acres. The 80-foot SMART rail corridor through the site is excluded from the land-use districts.",
+      "program": {
+        "homes": 605,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 18400,
+        "commercialSqftTotal": null,
+        "retailSqft": 17300,
+        "hotelKeys": 160,
+        "openSpaceAcres": 162,
+        "notes": "Proposed maximums from the draft Esmeralda Specific Plan development budget (Table 2-3): 605 homes (236 detached single-family, 169 attached condominium or rental, 200 senior living), 160 hotel rooms (up to 30 may be hotel-run residences), 14,000 sq ft spa, 17,300 sq ft retail outside the hotel, 18,400 sq ft office and co-working, 8,000 sq ft light industrial or maker space and 8,000 sq ft preschool or daycare; a K–6 school (up to 200 students) and a 500-seat amphitheater would each need a later use permit. Hotel floor area is not capped. About 162 acres of publicly accessible open space, including a 4.75-acre public sports park to be dedicated to the City. The draft development agreement has the developer pay an inclusionary housing in-lieu fee (about $2.9 million at full build-out) instead of building affordable units on site. The approved but unbuilt Alexander Valley Resort plan it would replace allowed a hotel, spa and golf course, over 100,000 sq ft of commercial uses and up to 235 low-density homes."
+      },
+      "developer": "Esmeralda Land Company, LP (applicant); Spight Properties II, LLC (property owner)",
+      "publicPartners": [
+        "City of Cloverdale (lead agency)",
+        "Sonoma County Airport Land Use Commission"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In public hearings. The Planning Commission held its hearing on Oct 1, 2026, and the City Council is set to introduce the zoning and development agreement ordinances on Oct 7 and take final action on Oct 14. Environmental review is an addendum to the 2009 Alexander Valley Resort EIR rather than a new EIR.",
+      "timeline": [
+        {
+          "date": "2003-07-28",
+          "event": "The City issues the notice of preparation for an EIR on the Alexander Valley Resort, a hotel, golf course and housing plan for the 267-acre site (SCH 2003072142)."
+        },
+        {
+          "date": "2009-06-10",
+          "event": "City Council certifies the Alexander Valley Resort Final EIR (Resolution 028-2009) and adopts its specific plan (Resolution 029-2009)."
+        },
+        {
+          "date": "2010-04-07",
+          "event": "Sonoma LAFCO approves annexing the property into the City."
+        },
+        {
+          "date": "2016-02-09",
+          "event": "City Council amends the plan with an EIR addendum, making the golf course optional, and approves a development agreement with Spight Properties II (Ordinance 704-2016)."
+        },
+        {
+          "date": "2018-11-13",
+          "event": "City Council adopts a second addendum and an amended and restated development agreement (Ordinance 726-2018), which runs to 2033; the resort is never built."
+        },
+        {
+          "date": "2025-11-12",
+          "event": "Esmeralda Land Company presents its revised plan to a joint City Council and Planning Commission meeting."
+        },
+        {
+          "date": "2025-12-10",
+          "event": "City Council adopts the project's water supply assessment and verification (Resolution 074-2025)."
+        },
+        {
+          "date": "2026-02-05",
+          "event": "The City holds a town hall on the project."
+        },
+        {
+          "date": "2026-03-09",
+          "event": "The Sonoma County Airport Land Use Commission finds the draft plan and zoning consistent with the Cloverdale airport plan."
+        },
+        {
+          "date": "2026-09-08",
+          "event": "The City releases the draft specific plan and the addendum to the 2009 EIR; the hearing notice is published Sept 11."
+        },
+        {
+          "date": "2026-10-01",
+          "event": "Planning Commission holds its public hearing to make a recommendation to the City Council."
+        }
+      ],
+      "nextMilestone": "City Council hearings on Oct 7 and Oct 14, 2026 (first and second readings of the zoning and development agreement ordinances); the City's schedule also allows the Council to send the approvals to voters.",
+      "summary": "A former sawmill site on the Russian River at Cloverdale's southern edge, long approved for a golf resort that was never built, now proposed as a walkable village with up to 605 homes, a 160-room hotel, shops and about 162 acres of publicly accessible open space. Building would be concentrated west of the SMART rail line, with the land toward the river kept mostly as parks and habitat.",
+      "massingNotes": "Boundary: County of Sonoma parcels (socogis CRAPublic/ParcelsPublicShapeFile, layer 0), the 11 APNs in the Planning Commission staff report (Oct 1, 2026, p. 1); CC BY-SA 3.0, attribution \"County of Sonoma\". Drawn as approximate: the parcel shapes come to 265.4 acres against the Plan Area's 261.44 (256.8 assessor acres). They leave out the 80-foot SMART rail corridor, as the plan's land-use districts do, but include about 3.8 acres of parcel 116-310-014 outside Cloverdale's city limits, a narrow strip running northwest from the site's north corner that is the unincorporated Panhandle the plan excludes (checked against Specific Plan Figure 1-5, PDF p. 11, Addendum Exhibit 3, PDF p. 23, and the County's city limits layer). Approximate center from those parcels' centroids. Land use: the draft Specific Plan's districts (Figure 2-1, PDF p. 22; revised Sept 29, 2026), fitted to the parcel outline (RMS 1.9 m) and labelled draft, not yet adopted, with each district's height limit from Table 2-2 in its note (35 ft VMU and VR-1/VR-2, 25 ft VR-3 to VR-5, hotel up to 50 ft, open space 15 ft; airport limits may lower them). The illustrative site plan (Figure 1-2) is not drawn: plan-scale projects get zones, not buildings.",
+      "officialLinks": [
+        "https://www.cloverdale.net/esmeralda",
+        "https://www.cloverdale.net/DocumentCenter/View/7035/Draft-Specific-Plan---Revised-92926"
+      ],
+      "sources": [
+        "https://www.cloverdale.net/esmeralda",
+        "https://www.cloverdale.net/DocumentCenter/View/6998/Agenda-Report",
+        "https://www.cloverdale.net/DocumentCenter/View/6999/Attachment-1---Resolution",
+        "https://www.cloverdale.net/DocumentCenter/View/7035/Draft-Specific-Plan---Revised-92926",
+        "https://www.cloverdale.net/DocumentCenter/View/7006/EIR-Addendum---Revised-92926",
+        "https://www.cloverdale.net/DocumentCenter/View/7004/Draft-DA---Revised-92826",
+        "https://www.cloverdale.net/DocumentCenter/View/6948/Esmeralda-Schedule",
+        "https://www.cloverdale.net/DocumentCenter/View/6704/E2---Processing-Proposed-Esmeralda-Project",
+        "https://www.cloverdale.net/DocumentCenter/View/6605/Item-E1---Agenda-Reportpdf",
+        "https://www.cloverdale.net/DocumentCenter/View/6624/Adopted-Resolution-No-074-2025---Esmerelda-WSA-WSF",
+        "https://www.cloverdale.net/AgendaCenter/ViewFile/Agenda/_10072026-1438",
+        "https://cloverdale.granicus.com/services/legistar/download/pdf/4407704/Agenda_Report.pdf",
+        "https://ceqanet.lci.ca.gov/2003072142",
+        "https://socogis.sonomacounty.ca.gov/map/rest/services/CRAPublic/ParcelsPublicShapeFile/FeatureServer/0"
+      ],
+      "verify": [
+        "the Planning Commission's Oct 1, 2026 recommendation and vote (the Council staff report says a summary will be added; minutes not yet posted)",
+        "the City Council's actions on Oct 7 and Oct 14, 2026, and whether it sends the approvals to voters (the City's schedule names March 9, 2027 as the earliest election)",
+        "who owns the land: the Nov 2025 staff summary says Esmeralda Land Company has acquired it, while the Oct 2026 staff report lists Spight Properties II, LLC as owner",
+        "the build-out schedule: the Addendum assumes eight phases from 2027 to 2036, the Specific Plan estimates about 12 years after vesting, and the development agreement would run 20 years"
+      ],
+      "reported": {
+        "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
+        "developer": "Esmeralda Land Company, founded by Devon Zuegel (organizer of the Edge Esmeralda gatherings), with Michael Yarne as director of development; backed by 19 Bay Area families. The company holds an option and plans to close on the land once it has approvals.",
+        "program.notes": "Homes priced from about $600,000 to $4 million, according to project documents described by the Press Democrat; about 1,500 residents at full build-out.",
+        "sources": [
+          "https://www.pressdemocrat.com/2026/02/09/cloverdale-esmeralda-development-housing-resort/",
+          "https://www.cp-dr.com/post/sonoma-development-hopes-to-break-california-s-new-urbanist-drought"
+        ]
+      },
+      "lastVerified": "2026-10-06"
     }
   ]
 }

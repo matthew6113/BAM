@@ -1,0 +1,106 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "berryessa-flea-market",
+  "source": "City of San Jos\u00e9 Zoning Districts, rezoning file PDC17-051 (CP(PD), approved June 29, 2021)",
+  "sourceLabel": "San Jos\u00e9 zoning",
+  "sourceUrl": "https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataService/MapServer/401",
+  "query": "https://geo.sanjoseca.gov/server/rest/services/OPN/OPN_OpenDataService/MapServer/401/query?where=REZONINGFILE+%3D+%2717051%27+or+REZONINGFILE+like+%27PDC17-051%25%27&outFields=%2A&outSR=4326&f=geojson",
+  "accuracy": "official",
+  "accuracyNote": "The planned development zoning of Ordinance 30646, which describes an approximately 61.5-gross-acre site. 62.8 acres as drawn.",
+  "license": "CC-BY 4.0, City of San Jos\u00e9",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.8805992,
+       37.367857
+      ],
+      [
+       -121.8799009,
+       37.3686317
+      ],
+      [
+       -121.8795982,
+       37.3690232
+      ],
+      [
+       -121.8794621,
+       37.3691625
+      ],
+      [
+       -121.8791677,
+       37.3694123
+      ],
+      [
+       -121.8786947,
+       37.369738
+      ],
+      [
+       -121.8769514,
+       37.3706558
+      ],
+      [
+       -121.8769095,
+       37.3706259
+      ],
+      [
+       -121.8758219,
+       37.3714821
+      ],
+      [
+       -121.8734522,
+       37.3643907
+      ],
+      [
+       -121.8740865,
+       37.3639404
+      ],
+      [
+       -121.8740809,
+       37.3639269
+      ],
+      [
+       -121.8747882,
+       37.3634534
+      ],
+      [
+       -121.8764818,
+       37.3651619
+      ],
+      [
+       -121.87781,
+       37.3664072
+      ],
+      [
+       -121.8802218,
+       37.3676663
+      ],
+      [
+       -121.8803542,
+       37.3677796
+      ],
+      [
+       -121.8804528,
+       37.3677082
+      ],
+      [
+       -121.8805992,
+       37.367857
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
