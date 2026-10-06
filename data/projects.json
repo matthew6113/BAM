@@ -3274,7 +3274,8 @@
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201507010504",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201912189909",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201912189911",
-        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201608155048"
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201608155048",
+        "https://default.sfplanning.org/Citywide/Visitacion_Valley/Visitacion_Valley_Schlage-Final_DA_Exhibits-082214.pdf"
       ],
       "verify": [
         "the development agreement's end date (15-year term from 2014)",
