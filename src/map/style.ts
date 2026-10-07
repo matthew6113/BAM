@@ -1,6 +1,7 @@
 import type { StyleSpecification, LayerSpecification, ExpressionSpecification } from 'maplibre-gl';
 import type { Theme } from '../theme/theme';
 import { contextFilter, projectLayers, projectSources, type Selection } from './projectLayers';
+import { lineMockLayers, lineMockOption, lineMockSources } from './lineMock';
 import {
   CONTEXT_EXTRUSION_MIN_ZOOM,
   DETAIL_MAX_ZOOM,
@@ -38,6 +39,7 @@ const visible = (on: boolean) => (on ? 'visible' : 'none') as 'visible' | 'none'
 
 /** Builds the whole MapLibre style from the theme. Every color comes from the theme. */
 export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification {
+  const lineMock = lineMockOption();
   const c = theme.colors;
   const L = theme.layers;
   const fonts = fontStacks(theme.type.mapLabels);
@@ -247,6 +249,7 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
       },
     })),
     ...projectLayers(theme, selection, fonts, opts.hidden ?? []),
+    ...(lineMock ? lineMockLayers(theme, lineMock.option, lineMock.draw) : []),
     waterLabel(1, 6),
     waterLabel(2, 7.8),
     waterLabel(3, 10),
@@ -282,6 +285,7 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
       ),
       labels: { type: 'geojson', data: LABELS_URL },
       ...projectSources(selection),
+      ...(lineMock ? lineMockSources() : {}),
     },
     layers,
   };
