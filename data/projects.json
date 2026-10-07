@@ -1577,8 +1577,12 @@
         "City of Brisbane"
       ],
       "stage": "entitlement",
-      "stageNote": "The Final EIR and staff-recommended 2026 Specific Plan were published May 14, 2026. The Planning Commission recommended approval 5–0 on Aug 13, 2026. City Council hearings began Sept 14, 2026 and were continued to Sept 29 and Oct 6; the Council has not yet acted.",
+      "stageNote": "The Final EIR and staff-recommended 2026 Specific Plan were published May 14, 2026. The Planning Commission recommended approval 5–0 on Aug 13, 2026. City Council hearings began Sept 14, 2026 and were continued to Sept 29 and Oct 6; the Council has not yet acted. The Council's revised schedule sets further hearings on Oct 15 (phasing and remediation), Oct 20 (water and financing), Oct 26 (the development agreement) and Nov 9, 2026 (deliberations).",
       "timeline": [
+        {
+          "date": "2006-02-27",
+          "event": "City issues the first notice of preparation for the Baylands Specific Plan EIR (Case SP-1-06)."
+        },
         {
           "date": "2018-11",
           "event": "Brisbane voters approve General Plan amendment GP-1-18 as Measure JJ."
@@ -1608,8 +1612,8 @@
           "event": "City Council opens its hearings on the plan, continued to Sept 29 and Oct 6."
         }
       ],
-      "nextMilestone": "City Council action on the Specific Plan, Final EIR and related approvals.",
-      "summary": "A plan for 2,200 homes, 7 million sq ft of commercial space and nearly 150 acres of open space on about 680 acres of the Baylands in Brisbane, keeping the historic Roundhouse. The Planning Commission recommended it in August 2026, and it is now before the City Council.",
+      "nextMilestone": "City Council hearings on phasing and remediation (Oct 15), water and financing (Oct 20) and the development agreement (Oct 26), then deliberations (Nov 9, 2026).",
+      "summary": "A plan for 2,200 homes, 7 million sq ft of commercial space and nearly 150 acres of open space on about 680 acres of the Baylands in Brisbane, a former rail yard and San Francisco landfill on the city line, keeping the historic Roundhouse. Two decades in planning, it was recommended by the Planning Commission in August 2026 and is now before the City Council.",
       "massingNotes": "Boundary: trace the 2026 plan figures (Specific Plan Fig. 2.3.1, General Plan land use map and zoning map). The city's ArcGIS layer 'Baylands Specific Plan Boundary' (org UGpGSV1ugL0pHSgX) is marked DRAFT, last edited June 2022, covers about 702 acres and has no posted license, so it is approximate only. Land use: the 2026 staff-recommended Baylands Specific Plan (not yet adopted; recommended by the Planning Commission Aug 13, 2026), Fig. 2.3.1, fitted to the draft boundary (RMS 1.9 m) and labelled draft; it is newer than the adopted General Plan's two Planned Development designations. Landmark: the Bayshore Roundhouse from its OpenStreetMap footprint at about 25 ft (Council staff report, Sept 29, 2026).",
       "officialLinks": [
         "https://www.brisbaneca.gov/775/2026-Baylands-Specific-Plan",
@@ -1628,20 +1632,24 @@
         "https://brisbaneca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=12627,plainText=false)",
         "https://services9.arcgis.com/UGpGSV1ugL0pHSgX/arcgis/rest/services/Baylands_Specific_Plan_Boundary_DRAFT_Map_WFL1/FeatureServer/1",
         "https://brisbaneca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=12608,plainText=false)",
-        "https://services9.arcgis.com/UGpGSV1ugL0pHSgX/arcgis/rest/services/GP_Land_Use_Designations_NAD83_20251110/FeatureServer/7"
+        "https://services9.arcgis.com/UGpGSV1ugL0pHSgX/arcgis/rest/services/GP_Land_Use_Designations_NAD83_20251110/FeatureServer/7",
+        "https://brisbaneca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=12570,plainText=false)",
+        "https://brisbaneca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=12679,plainText=false)",
+        "https://www.brisbaneca.gov/DocumentCenter/View/2987/01-IntroductionPDF",
+        "https://www.brisbaneca.gov/DocumentCenter/View/2994/09-Implementation-PDF",
+        "https://ceqanet.lci.ca.gov/Project/2006022136"
       ],
       "verify": [
         "the City Council's vote and its resolution and ordinance numbers",
-        "whether a development agreement is part of the approvals",
+        "the development agreement's terms (Council hearing Oct 26, 2026; the Planning Commission reviews it first)",
         "the Notice of Determination",
         "a non-draft GIS boundary for the plan area",
-        "when remediation, grading and construction would start (press: 2027; the plan quotes only the developer's housing schedule)"
+        "updated remediation schedules (the plan projects remediation west of Caltrain complete in mid-2027) and the phase timing the development agreement will set"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "stageNote": "If approved, remediation and grading could start in 2027, with buildings one to two years later.",
-        "summary": "A former rail yard and landfill on the San Francisco border that could roughly double the size of Brisbane, a city of fewer than 5,000 people. Two decades in planning.",
-        "acresNote": "A small portion lies in San Francisco (the 2026 Specific Plan places the whole area in Brisbane).",
+        "stageNote": "Buildings could follow one to two years after remediation.",
+        "summary": "It could roughly double the size of Brisbane, a city of fewer than 5,000 people.",
         "sources": [
           "https://localnewsmatters.org/2026/04/27/decades-in-the-works-brisbane-development-to-add-2000-housing-units-nears-final-review/",
           "https://hoodline.com/2026/04/tiny-brisbane-braces-for-baylands-mega-buildout-of-2-000-homes/",
@@ -1681,15 +1689,19 @@
         "City of Menlo Park"
       ],
       "stage": "paused",
-      "stageNote": "Approved by the City Council in December 2022. The city reports the project has been paused per Meta as of May 1, 2026, and staff have suspended review of its improvement plans and maps. On May 18, 2026 the Planning Commission found Peninsula Innovation Partners in good-faith compliance with the development agreement, 5–0.",
+      "stageNote": "Approved by the City Council in December 2022. The city reports the project has been paused per Meta as of May 1, 2026, and staff have suspended review of its improvement plans and maps. On May 18, 2026 the Planning Commission found Peninsula Innovation Partners in good-faith compliance with the development agreement, 5–0. The development agreement remains in effect; its 10-year initial term, which began in January 2023, runs to January 2033.",
       "timeline": [
         {
           "date": "2022-12-06",
-          "event": "City Council approves Willow Village."
+          "event": "City Council certifies the EIR (Resolution 6790) and approves the circulation map amendment, vesting tentative maps and below-market-rate housing agreements (Resolutions 6791–6794)."
         },
         {
           "date": "2022-12-13",
-          "event": "City Council adopts the development agreement (Ordinance 1095), with a 10-year initial term from its effective date and one possible 7-year extension."
+          "event": "City Council adopts the zoning and conditional development permit ordinance (Ordinance 1094) and the development agreement (Ordinance 1095), 4–0 with one recusal; the agreement has a 10-year initial term and one possible 7-year extension."
+        },
+        {
+          "date": "2023-03-31",
+          "event": "Development agreement recorded in San Mateo County."
         },
         {
           "date": "2023-06",
@@ -1730,16 +1742,15 @@
         "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/willow-village-parcel-6.pdf",
         "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/architectural-control-plans/willow-village-parcel-7.pdf",
         "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/notice-of-terms-and-conditions-of-conditional-development-permit.pdf",
-        "https://www.menlopark.gov/files/sharedassets/public/v/2/community-development/documents/projects/under-review/willow-village/october-2022/masterplan-plan-set.pdf"
+        "https://www.menlopark.gov/files/sharedassets/public/v/2/community-development/documents/projects/under-review/willow-village/october-2022/masterplan-plan-set.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/willow-village/project-wide-affordable-housing-agreement.pdf"
       ],
       "verify": [
-        "the Council resolution numbers for the Dec 6, 2022 approvals",
-        "the development agreement's effective and recording dates",
         "the reason for the pause (press: economic uncertainty and AI spending)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "stageNote": "Meta paused it citing economic uncertainty and AI spending. Nothing has been built; the development agreement remains in force through 2032.",
+        "stageNote": "Meta paused it citing economic uncertainty and AI spending.",
         "summary": "Next to Meta's Menlo Park campus in Belle Haven; the largest project in the city's history.",
         "sources": [
           "https://www.almanacnews.com/menlo-park/2026/05/01/meta-halts-massive-mixed-use-development-in-menlo-park/",
@@ -1774,14 +1785,14 @@
         "retailSqft": null,
         "hotelKeys": null,
         "openSpaceAcres": 12,
-        "notes": "Approved 2025 figures: 800 homes including 251 below market rate (646 market-rate homes plus a parcel for a 100% affordable project of up to 154 homes); 925,000 sq ft of office/R&D and 75,000 sq ft of commercial amenity or retail, within 1 million sq ft of non-residential space; 12 acres of publicly accessible open space with about 2.6 acres of dedicated parkland. Phase 2 proposal (2026): 1,082 homes (293 below market rate), about 901,493 sq ft of office/R&D, about 40,629 sq ft of retail and 14 acres of open space."
+        "notes": "Approved 2025 figures: 800 homes including 251 below market rate (646 market-rate homes plus a parcel for a 100% affordable project of up to 154 homes); 925,000 sq ft of office/R&D and 75,000 sq ft of commercial amenity or retail, within 1 million sq ft of non-residential space; 12 acres of publicly accessible open space with about 2.6 acres of dedicated parkland. Phase 2 proposal (2026): 1,082 homes (293 below market rate on the city's page, 294 in the staff report), including two 300-unit apartment buildings, 122 single-family and 98 small-lot single-family homes and 108 townhomes; about 901,493 sq ft of office/R&D, about 40,629 sq ft of retail and about 14 acres of open space."
       },
       "developer": "LPGS Menlo, LLC (Lane Partners)",
       "publicPartners": [
         "City of Menlo Park"
       ],
       "stage": "entitled",
-      "stageNote": "The City Council approved the master plan Sept 30, 2025 and adopted its ordinances Oct 7, 2025. A Phase 2 application, resubmitted Aug 13, 2026, would raise the total to 1,082 homes and demolish all existing buildings, including three the 2025 approval kept. The Planning Commission and City Council held study sessions on it in September 2026.",
+      "stageNote": "The City Council approved the master plan Sept 30, 2025 and adopted its ordinances Oct 7, 2025. A Phase 2 application, resubmitted Aug 13, 2026, would raise the total to 1,082 homes and demolish every campus building; city staff report that SRI has decided to vacate Buildings P, S and T, which the 2025 approval kept, and may occupy one of the new office buildings. The Planning Commission and City Council held study sessions on it in September 2026, and it is in completeness review.",
       "timeline": [
         {
           "date": "2025-08-25",
@@ -1789,11 +1800,11 @@
         },
         {
           "date": "2025-09-30",
-          "event": "City Council certifies the environmental review and approves the master plan, 5–0."
+          "event": "City Council certifies the environmental review and approves the master plan, 5–0 (Resolutions 6996–6999)."
         },
         {
           "date": "2025-10-07",
-          "event": "City Council adopts the ordinances approving the master plan, 4–0."
+          "event": "City Council adopts the ordinances approving the master plan, 4–0 (Ordinances 1125 and 1126)."
         },
         {
           "date": "2026-06-04",
@@ -1816,7 +1827,7 @@
           "event": "City Council holds a study session on Phase 2."
         }
       ],
-      "nextMilestone": "City review of the Phase 2 application.",
+      "nextMilestone": "Completeness review, then environmental review (a planned addendum to the certified EIR) of the Phase 2 application.",
       "summary": "The redevelopment of SRI International's research campus in Menlo Park into 800 homes, offices and 12 acres of open space, approved in 2025. A Phase 2 proposal now under review would add 282 homes and some retail.",
       "massingNotes": "Boundary: Menlo Park parcels (CC0, services7.arcgis.com org uRrQ0O3z2aaiIWYU, layer 7), the union of APNs 062390050, 062390660, 062390670, 062390730, 062390760 and 062390780 (about 64.2 acres, matching the 64.3-acre site). Massing: 14 buildings traced from the approved Master Plan Project Plans (June 24, 2025), Sheet G3.03 \"Conceptual Building Height Plan\", which the conditional development permit makes binding (§2.3.4), georeferenced on 7 street intersections (RMS 1.4 m): homes 35–75 ft, offices 75–91 ft, garages 44.5–65.5 ft, all illustrative. Retained SRI buildings stay in the base map; the affordable-housing parcel and the park are not drawn.",
       "officialLinks": [
@@ -1830,18 +1841,19 @@
         "https://www.menlopark.gov/files/sharedassets/public/v/2/agendas-and-minutes/city-council/2025-meetings/20250930/j1-20250930-cc-parkline.pdf",
         "https://www.menlopark.gov/files/sharedassets/public/v/1/agendas-and-minutes/city-council/2025-meetings/minutes/20251007-city-council-special-and-regular-minutes-approved.pdf",
         "https://services7.arcgis.com/uRrQ0O3z2aaiIWYU/arcgis/rest/services/City_of_Menlo_Park_Parcels/FeatureServer/7",
-        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/parkline/map20250703/project-variant-master-plan-set_0703.pdf"
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/community-development/documents/projects/under-review/parkline/map20250703/project-variant-master-plan-set_0703.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/1/agendas-and-minutes/city-council/2026-meetings/20260922/j1-20260922-cc-parkline-phase-2.pdf",
+        "https://www.menlopark.gov/files/sharedassets/public/v/2/agendas-and-minutes/city-council/2025-meetings/20251007/i2-parkline-second-readings_reduced.pdf"
       ],
       "verify": [
-        "the Council resolution and ordinance numbers for the 2025 approvals",
-        "the outcome of the Sept 22, 2026 Council study session",
-        "whether SRI will leave the campus (the applicant says so; press: demolition targeted before the end of 2027)"
+        "the Sept 22, 2026 Council study session minutes (not posted)",
+        "the Phase 2 below-market-rate count (293 on the city's page, 294 in the staff report)",
+        "when demolition starts (press: before the end of 2027)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "stageNote": "The revised Phase 2 plan assumes SRI leaves the campus; demolition is targeted before the end of 2027.",
+        "stageNote": "Demolition is targeted before the end of 2027.",
         "nextMilestone": "City review of Phase 2 (applicant hopes for about 12 months).",
-        "program.notes": "Phase 2 homes include 220 single-family homes and 108 townhomes.",
         "sources": [
           "https://hoodline.com/2026/06/menlo-park-research-icon-gets-bulldozed-for-1-082-new-homes/",
           "https://www.almanacnews.com/menlo-park/2026/06/12/change-of-plans-research-campus-to-leave-menlo-park-make-way-for-more-housing/"
@@ -1880,7 +1892,7 @@
         "City of Santa Clara (landowner, ground lease)"
       ],
       "stage": "entitled",
-      "stageNote": "Approved in June 2016; the city's June 2025 staff report describes the site as vacant. On July 8, 2025 the City Council voted 4–3 to allow 1.6 million sq ft of light industrial use on Parcels 1 and 2, and it adopted the development agreement amendment (Ordinance 2078) on Sept 16, 2025, 4–3. Any data center on those parcels pays twice the ground rent.",
+      "stageNote": "Approved in June 2016; the city's June 2025 staff report describes the site as vacant. On July 8, 2025 the City Council voted 4–3 to allow 1.6 million sq ft of light industrial use on Parcels 1 and 2, and it adopted the development agreement amendment (Ordinance 2078) on Sept 16, 2025, 4–3. Any data center on those parcels pays twice the ground rent. The city's October 2026 data-center report says data centers on Parcels 1 and 2 need a conditional use permit and that Silicon Valley Power has accepted no new data-center applications since 2023.",
       "timeline": [
         {
           "date": "2016-06-28",
@@ -1908,7 +1920,7 @@
         }
       ],
       "nextMilestone": "A ground lease for the next phase; Scheme C lets industrial development on Parcels 1 and 2 go ahead of Phase 2 on Parcel 4.",
-      "summary": "A 240-acre city-owned site in Santa Clara approved in 2016 for up to 1,680 homes, offices, retail, 700 hotel rooms and a city park. Still vacant nearly a decade later, it was rezoned in 2025 to allow 1.6 million sq ft of light industrial space, where data centers would pay double rent.",
+      "summary": "A 240-acre city-owned site in Santa Clara, the former Santa Clara Golf and Tennis Club (a closed landfill) across from Levi's Stadium, approved in 2016 as CityPlace for up to 1,680 homes, offices, retail, 700 hotel rooms and a city park. Still vacant nearly a decade later, it was rezoned in 2025 to allow 1.6 million sq ft of light industrial space, where data centers would pay double rent.",
       "massingNotes": "Boundary: Santa Clara County parcels (data.sccgov.org dataset ubcd-cewv), APNs 104-03-043, 104-03-042, 104-03-041, 104-03-036, 104-01-102, 097-01-039 and 097-01-073 (about 238.8 acres); the license isn't stated in the metadata, so check the county's terms. Massing: parcels and blocks traced from the Master Community Plan Scheme C Supplement (Res. 25-9467, July 2025), Exhibit 4C-1, georeferenced on 8 street intersections (RMS 3.0 m): Parcels 1–2 light industrial at 60 ft with up to half of buildings to 90 ft; Parcel 4 and 5 blocks drawn to the 190-ft (17-story) project maximum in CEQA Addendum 4 (Res. 25-9465), though the plan expects towers of about 10–12 stories on low podiums. All illustrative; Parcel 3 (park) and the retention pond are not drawn.",
       "officialLinks": [
         "https://santaclara.legistar.com/LegislationDetail.aspx?ID=24933&GUID=38CEF124-14D5-41B3-9083-8DE1E25581AC",
@@ -1925,17 +1937,20 @@
         "https://webapi.legistar.com/v1/santaclara/eventitems/232352/votes",
         "https://santaclara.legistar.com/LegislationDetail.aspx?ID=25312&GUID=AF23DEE1-7B57-4309-8889-60BC46051875",
         "https://data.sccgov.org/d/ubcd-cewv",
-        "https://santaclara.legistar1.com/santaclara/attachments/595ea4c8-fb0f-4da1-bb99-eace63cf42ed.pdf"
+        "https://santaclara.legistar1.com/santaclara/attachments/595ea4c8-fb0f-4da1-bb99-eace63cf42ed.pdf",
+        "https://santaclara.legistar.com/LegislationDetail.aspx?ID=26904&GUID=00091789-34A7-4A75-8D97-2EC0CA9B1A9C",
+        "https://santaclara.legistar1.com/santaclara/attachments/f7bb976a-2acf-4498-a4c1-8a395872cacf.pdf",
+        "https://santaclara.legistar.com/LegislationDetail.aspx?ID=26733&GUID=EB0B81E1-4F16-476F-9BBE-4972282E876C"
       ],
       "verify": [
         "whether any building permits have been filed for Parcels 1 and 2",
-        "the subject of Related Santa Clara, LLC v. Jennifer Osborn et al. (case 26CV489245, discussed in Council closed session Aug 2026)",
+        "the subject of Related Santa Clara, LLC v. Jennifer Osborn et al. (case 26CV489245; Council closed session, Aug 18, 2026; the court portal is not reachable)",
         "Related Companies' role as the developer's parent (press)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
         "developer": "Related Companies",
-        "summary": "Silicon Valley's largest-ever approved private development, on a former landfill and golf course across from Levi's Stadium; a $6.5B plan (then CityPlace).",
+        "summary": "Silicon Valley's largest-ever approved private development; a $6.5B plan.",
         "timeline": [
           {
             "date": "2019",
@@ -1974,14 +1989,14 @@
         "retailSqft": null,
         "hotelKeys": 300,
         "openSpaceAcres": 15,
-        "notes": "The development agreement assumes 4,000 homes; the zoning allows up to 5,900. About 1,000 affordable homes, toward a shared goal of 25% affordable across the Diridon Station Area Plan. Up to 7.3 million gross sq ft of office, up to 500,000 gross sq ft of active uses, up to 300 hotel rooms and 800 limited-term corporate accommodations. About 15 acres of new open space (10.2 acres privately owned and publicly accessible, 4.8 acres dedicated)."
+        "notes": "The development agreement assumes 4,000 homes; the zoning allows up to 5,900. About 1,000 affordable homes, toward a shared goal of 25% affordable across the Diridon Station Area Plan. Up to 7.3 million gross sq ft of office, up to 500,000 gross sq ft of active uses, up to 300 hotel rooms and 800 limited-term corporate accommodations. About 15 acres of new open space (10.2 acres privately owned and publicly accessible, 4.8 acres dedicated). Allowed heights 160 to 290 ft above ground, subject to FAA review (Ordinance 30609)."
       },
       "developer": "Google",
       "publicPartners": [
         "City of San José"
       ],
       "stage": "paused",
-      "stageNote": "Approved by the City Council on May 25, 2021. A November 2024 city memo says no new construction has begun and there is no estimated timeline for restarting major development. In December 2024 the city approved a $5 million advance community benefits payment.",
+      "stageNote": "Approved by the City Council on May 25, 2021, with the ordinances adopted June 8, 2021. A November 2024 city memo says the project has focused on interim use of some existing buildings, no new construction has begun and there is no estimated timeline for restarting major development. In December 2024 the city approved a $5 million advance community benefits payment.",
       "timeline": [
         {
           "date": "2021-05-20",
@@ -1990,6 +2005,10 @@
         {
           "date": "2021-05-25",
           "event": "City Council approves the Downtown West Mixed-Use Plan and passes Ordinances 30608, 30609 and 30610 for publication."
+        },
+        {
+          "date": "2021-06-08",
+          "event": "City Council adopts the zoning amendment, rezoning and development agreement ordinances (30608, 30609 and 30610)."
         },
         {
           "date": "2024-12",
@@ -2016,18 +2035,20 @@
         "https://ceqanet.lci.ca.gov/2019080493/4",
         "https://ceqanet.lci.ca.gov/2019080493/4/Attachment/WFPURX",
         "https://legistar.granicus.com/sanjose/attachments/4fa89312-fd9b-4f85-932d-8d5c463c0e8f.pdf",
-        "https://legistar.granicus.com/sanjose/attachments/d9985f7d-1a96-43f8-a1e5-96ad5a17618b.pdf"
+        "https://legistar.granicus.com/sanjose/attachments/d9985f7d-1a96-43f8-a1e5-96ad5a17618b.pdf",
+        "https://ceqanet.lci.ca.gov/2019080493/6",
+        "https://legistar.granicus.com/sanjose/attachments/f58ac6d8-c967-4adf-b435-2216e8ee13b2.pdf",
+        "https://data.sanjoseca.gov/dataset/last-60-180-days-planning-permits"
       ],
       "verify": [
-        "the final adoption date and numbers of the 2021 ordinances (set for June 8, 2021)",
         "when Google paused the project (press: 2023)",
-        "the current condition of the site (press: cleared and fenced)",
+        "what Google's 2026 ministerial permit filings cover (MP26-002 at 105 S. Montgomery St., residential; MPA24-003-01 at 140 S. Montgomery St.; MP26-005 at 35 Barack Obama Blvd., mixed use) and whether blocks have been cleared (press)",
         "Downtown West block heights against the approved Design Standards and Guidelines (2021, with errata dated May 7, 2021) on sanjoseca.gov"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
         "stageNote": "Paused by Google in 2023. Blocks around Diridon Station sit cleared and fenced; the city has little power to compel construction, and some council members are floating a sports-and-entertainment district for the area.",
-        "summary": "Once the centerpiece of the city's downtown plans. The land has been cleared, but nothing has been built.",
+        "summary": "Once the centerpiece of the city's downtown plans; the land has been cleared.",
         "timeline": [
           {
             "date": "2023",
@@ -2077,7 +2098,7 @@
         "City of Mountain View"
       ],
       "stage": "entitled",
-      "stageNote": "The City Council approved the master plan on June 13, 2023 and adopted a 30-year development agreement with Google LLC (Ordinance 9.2023) on June 27, 2023. Construction under the master plan has not been confirmed in city records.",
+      "stageNote": "The City Council approved the master plan on June 13, 2023 and adopted a 30-year development agreement with Google LLC (Ordinance 9.2023) on June 27, 2023. No permit for a phase of the master plan has come before the city since approval. Nearby, Google stopped building its separately approved Landings office project in February 2024 and restored the site.",
       "timeline": [
         {
           "date": "2014-11-25",
@@ -2094,10 +2115,14 @@
         {
           "date": "2023-06-27",
           "event": "City Council adopts the 30-year development agreement with Google LLC on second reading (Ordinance 9.2023)."
+        },
+        {
+          "date": "2024-02",
+          "event": "Google tells the city it will not proceed with its separately approved Landings office building nearby, and later demolishes the partly built garage."
         }
       ],
       "nextMilestone": null,
-      "summary": "Google's master plan for about 153 acres of North Bayshore in Mountain View: up to 7,000 homes, about 3.1 million sq ft of office, hotels and 26 acres of parks and public open space. Approved in 2023.",
+      "summary": "Google's master plan for about 153 acres of North Bayshore in Mountain View, across three of the area's planned neighborhoods (Joaquin, Shorebird and Pear): up to 7,000 homes, about 3.1 million sq ft of office, hotels and 26 acres of parks and public open space. Approved in 2023.",
       "massingNotes": "Boundary: Mountain View parcels (maps.mountainview.gov Public/Parcel MapServer layer 0) filtered to the 39 APNs in Legistar matter 7641 (37 match); approximate, since the plan covers only parts of the Gateway parcels and Lot C, and the city's terms allow use at your own risk. Or trace the master plan figure. Don't use the zoning layer's P(39) district, which is the whole precise plan. Land use: the approved Master Plan's land-use plans (April 2023, Res. 18810), Plan 4.1.2 p. 33 and Plan 4.1.1 p. 32, georeferenced on street intersections (RMS 2.8 m and 4.9 m), approximate as the plan says; it supersedes the 2021 precise plan's character areas. The site boundary is now traced from the plan's own project-area line (Plans 4.1.2 and 4.1.1; 189.3 acres as drawn, against about 153 in the council report, because the line takes in internal streets and the whole Shoreline Amphitheatre at Lot C, which the plan marks not subject to redevelopment).",
       "officialLinks": [
         "https://www.mountainview.gov/our-city/departments/community-development/planning/active-projects/google-projects/north-bayshore-master-plan"
@@ -2112,22 +2137,20 @@
         "https://webapi.legistar.com/v1/mountainview/matters/7495",
         "https://maps.mountainview.gov/arcgis/rest/services/Public/Parcel/MapServer/0",
         "https://mountainview.legistar.com/gateway.aspx?M=F&ID=c8cc29fa-61b5-4936-bb9a-6705a30d063c.pdf",
-        "https://www.mountainview.gov/home/showpublisheddocument/7175/638254594938830000"
+        "https://www.mountainview.gov/home/showpublisheddocument/7175/638254594938830000",
+        "https://mountainview.legistar.com/gateway.aspx?M=F&ID=ac366809-4f75-496d-a4ad-c6404fdf9dce.pdf",
+        "https://mountainview.legistar.com/gateway.aspx?M=F&ID=2523973b-8c57-4cff-8fb2-d3e1868c3a34.pdf"
       ],
       "verify": [
-        "construction or permit status under the master plan in 2025–26",
-        "any amendments to the master plan or development agreement since 2023",
-        "the status of Google's Landings office project and Middlefield Park site (press only)"
+        "construction or permit status under the master plan in 2025–26 (none found through Oct 2026)",
+        "any amendments to the master plan or development agreement since 2023 (none found through Oct 2026)",
+        "whether Google has sold or is marketing any master-plan land (press, 2025)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "stageNote": "Since approval Google terminated its Landings office project in North Bayshore and put its nearby Middlefield Park site up for sale; reporting through mid-2025 shows no homes under the master plan have broken ground.",
-        "summary": "Turns the office parks around Google's headquarters into three walkable neighborhoods; Google has been pulling back from Bay Area development.",
+        "stageNote": "Google put its nearby Middlefield Park site up for sale; reporting through mid-2025 shows no homes under the master plan have broken ground.",
+        "summary": "Google has been pulling back from Bay Area development.",
         "timeline": [
-          {
-            "date": "2024",
-            "event": "Google terminates the Landings office project."
-          },
           {
             "date": "2025",
             "event": "Google explores selling Middlefield Park."
@@ -2172,11 +2195,11 @@
         "City of Sunnyvale"
       ],
       "stage": "entitled",
-      "stageNote": "The City Council adopted the plan and certified its environmental review on July 11, 2023, and adopted the implementing zoning (Ordinance 3218-23) on July 25, 2023. Each project still needs its own approval: the first, an office/R&D building at 333–385 Moffett Park Dr., was approved in Dec 2025, and an 8-story, 265-unit apartment building at 1215 Bordeaux Dr. was approved by the Planning Commission in June 2026.",
+      "stageNote": "The City Council adopted the plan and certified its environmental review on July 11, 2023, and adopted the implementing zoning (Ordinance 3218-23) on July 25, 2023. Each project still needs its own approval: the first, an office/R&D building at 333–385 Moffett Park Dr., was approved in Dec 2025, and an 8-story, 265-unit apartment building with 40 affordable homes at 1215 Bordeaux Dr. was approved by the Planning Commission in June 2026.",
       "timeline": [
         {
           "date": "2023-07-11",
-          "event": "City Council adopts the Moffett Park Specific Plan and certifies its environmental impact report, 7–0 as amended."
+          "event": "City Council adopts the Moffett Park Specific Plan and certifies its environmental impact report (Resolution 1199-23), 7–0 as amended."
         },
         {
           "date": "2023-07-25",
@@ -2213,12 +2236,12 @@
         "https://sunnyvaleca.legistar.com/LegislationDetail.aspx?ID=16913&GUID=6E9B7856-EBBC-4C89-87B0-E0D76ED6C74B",
         "https://gis.sunnyvale.ca.gov/arcgis/rest/services/GeneralPlan/MapServer/8",
         "https://gis.sunnyvale.ca.gov/arcgis/rest/services/ZoningLegend/MapServer/1",
-        "https://gis.sunnyvale.ca.gov/arcgis/rest/services/ZoningLegend/MapServer/2"
+        "https://gis.sunnyvale.ca.gov/arcgis/rest/services/ZoningLegend/MapServer/2",
+        "https://legistar.granicus.com/Sunnyvale/attachments/9e4fb7da-780f-4864-a6b3-1d608964884b.pdf"
       ],
       "verify": [
-        "the resolution number certifying the EIR (findings: Resolution 1199-23; not printed in the July 11, 2023 minutes)",
-        "the affordable count at 1215 Bordeaux Dr. (findings: 40 of 265) and whether the project was appealed",
-        "other projects approved under the plan since 2023",
+        "whether the 1215 Bordeaux Dr. approval was appealed (none on Legistar as of Oct 2026)",
+        "other approvals under the plan, including staff-level ones and a padel facility at 1365 Geneva Dr. (Planning Commission, Mar 2025)",
         "the license terms of the Sunnyvale GIS plan boundary"
       ],
       "reported": {
@@ -2255,21 +2278,25 @@
         "retailSqft": 226644,
         "hotelKeys": null,
         "openSpaceAcres": 7.48,
-        "notes": "As modified Feb 27, 2026: 2,669 homes (2,402 base units plus a density bonus), 356 of them affordable to lower-income households; up to 1,474,946 sq ft of office; at least 226,644 sq ft of retail. The Feb 2024 approval had 890 affordable homes and about 1,954,613 sq ft of office. Open space is 7.48 acres of public parkland plus up to 4.805 acres of private open space. Approved ministerially under SB 35; the city says no height limits apply."
+        "notes": "As modified Feb 27, 2026: 2,669 homes (2,402 base units plus a density bonus), 356 of them affordable to lower-income households; up to 1,474,946 sq ft of office; at least 226,644 sq ft of retail. The Feb 2024 approval had 890 affordable homes and about 1,954,613 sq ft of office. Open space is 7.48 acres of public parkland plus up to 4.805 acres of private open space. Approved ministerially under SB 35; the city says no height limits apply. In the February 2024 approved plans the tallest building is an office tower at about 228 ft and the tallest residential tower about 200 ft (total height from average grade); the 2026 plans are not published."
       },
       "developer": "Vallco Property Owner LLC (Sand Hill Property Company)",
       "publicPartners": [
         "City of Cupertino"
       ],
       "stage": "infrastructure",
-      "stageNote": "Site work only so far. The developer finished remedial soil excavation on the west side of Wolfe Road in Feb 2024. The Phase 1 final map went to the City Council on July 21, 2026, and the city will issue no permits for vertical construction on the west side until that map is recorded.",
+      "stageNote": "Site work only so far. The developer finished remedial soil excavation on the west side of Wolfe Road in Feb 2024. The City Council approved the Phase 1 final map on July 21, 2026 (Resolution 26-080), and the city will issue no permits for vertical construction on the west side until that map is recorded.",
       "timeline": [
         {
           "date": "2018-09-21",
           "event": "Cupertino approves the Vallco project under SB 35, the state streamlining law."
         },
         {
-          "date": "2022",
+          "date": "2021-09",
+          "event": "City reports demolition permits issued for the above-ground parts of the former Macy's and the mall parking structures."
+        },
+        {
+          "date": "2022-06-03",
           "event": "City approves the first modification of the project."
         },
         {
@@ -2286,7 +2313,7 @@
         },
         {
           "date": "2024-07-16",
-          "event": "City Council considers waiving affordable housing and planning fees on the project under the settlement."
+          "event": "City Council waives below-market-rate housing and planning fees under the settlement (Resolution 24-077), 4–1."
         },
         {
           "date": "2026-02-27",
@@ -2294,10 +2321,14 @@
         },
         {
           "date": "2026-07-21",
-          "event": "City Council takes up the Phase 1 final map (Tract 10706) and subdivision improvement agreement."
+          "event": "City Council approves the Phase 1 final map (Tract 10706) and authorizes its recording (Resolution 26-080), 4–0 with one abstention."
+        },
+        {
+          "date": "2026-10-06",
+          "event": "City Council holds a public information session on the county-approved soil remediation plan for the site."
         }
       ],
-      "nextMilestone": "City Council hearing on Oct 6, 2026 on up to $135M of conduit bond financing for the Block 5 apartments (234 units with Eden Housing).",
+      "nextMilestone": "Recording of the Phase 1 final map; the city will issue no permits for vertical construction on the west side until it records.",
       "summary": "The redevelopment of the former Vallco Mall on Wolfe Road, near Apple's campus, approved under the state's SB 35 streamlining law: 2,669 homes, offices, shops and 7.5 acres of public parks.",
       "massingNotes": "Boundary: Santa Clara County parcels (data.sccgov.org ubcd-cewv), APNs 316-20-121 (16.85 ac) and 316-20-122 (32.93 ac), about 49.8 acres; license not stated, so check the county's terms. Fallbacks: the Phase 1 final map or the 2026 open-space layout. Massing: blocks traced from the approved SB 35 plan set (second modification, approved Feb 16, 2024), sheets P-0800.xx, fitted to the county parcels (RMS 0.3 m), with heights from the building sections P-0831/P-0832: podiums 27–43 ft, residential blocks 80–86 ft, towers 133–228 ft, all illustrative and entitled. Block 13 is outlined only: the Feb 2026 third modification cut office by exactly its 479,667 sq ft and its plans are not published.",
       "officialLinks": [
@@ -2315,27 +2346,22 @@
         "https://cupertino.legistar.com/LegislationDetail.aspx?ID=16451&GUID=7F4B3B60-3A19-4A8A-8BD1-E72AE1F3D55F",
         "https://legistar.granicus.com/cupertino/attachments/7e0e84b1-2eae-4b09-91ab-f0a3d43beafe.docx",
         "https://data.sccgov.org/d/ubcd-cewv",
-        "https://apps.cupertino.org/pdf/Attachment%20A%20-%20Approved%20Plans.pdf"
+        "https://apps.cupertino.org/pdf/Attachment%20A%20-%20Approved%20Plans.pdf",
+        "https://legistar.granicus.com/cupertino/attachments/dcf6feac-214c-4f56-abb7-f17893ce6df0.pdf",
+        "https://cupertino.legistar.com/LegislationDetail.aspx?ID=15774&GUID=95B3D959-8631-4DD6-872F-A15B007FAAD1",
+        "https://cupertino.legistar.com/LegislationDetail.aspx?ID=13758&GUID=E5971CF8-F0AE-444C-82A0-54A93B60D955",
+        "https://legistar.granicus.com/cupertino/attachments/bf1ecb1d-7707-4f6a-9c15-e3382cc6e1e8.pdf",
+        "https://cupertino.legistar.com/LegislationDetail.aspx?ID=16569&GUID=CED1746F-1BC8-438A-9E49-00C0D62F9473"
       ],
       "verify": [
-        "the outcome of the July 21, 2026 final map item (Resolution 26-080) and when the map records",
-        "the outcome of the July 16, 2024 fee waiver (Resolution 24-077)",
-        "the date of the 2022 modification",
-        "when the above-ground mall demolition finished (2021: west-side demolition permits issued; the JCPenney garage pending)",
-        "a building permit application for the Block 5 affordable building"
+        "when the Phase 1 final map (Tract 10706) records",
+        "the outcome of the Oct 6, 2026 conduit bond hearing for the Block 5 apartments",
+        "when the above-ground mall demolition finished (Sept 2021: demolition permits issued for Macy's and the mall parking structures; the JCPenney garage pending)",
+        "a building permit application for the Block 5 affordable building (234 homes with Eden Housing)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "program.notes": "Tallest building about 200 ft.",
         "timeline": [
-          {
-            "date": "2019",
-            "event": "Vallco mall demolished."
-          },
-          {
-            "date": "2025-11",
-            "event": "Revision cuts affordable homes from 890 to 356."
-          },
           {
             "date": "2026-02",
             "event": "Permit application for the first building (232 affordable homes)."
@@ -2976,7 +3002,7 @@
       ],
       "verify": [
         "the date Ordinance 30646 was finally adopted (scheduled for Aug 3, 2021; the city's 2025 memo cites the ordinance number)",
-        "whether any new development application has been filed since the March 2025 status report",
+        "whether any new development application has been filed since the March 2025 status report (the city's planning data show none for the site's parcels in filings Apr 10–Aug 7 and Sept 8–Oct 5, 2026)",
         "the height diagram against the adopted Urban Village Plan document itself (traced from the Planning Commission's May 2021 reproduction; the plan is on sanjoseca.gov, not reachable here)"
       ],
       "lastVerified": "2026-10-05"
@@ -3128,7 +3154,7 @@
         "City of Mountain View (development agreement)"
       ],
       "stage": "entitled",
-      "stageNote": "Approved by the Mountain View City Council on Nov 15, 2022; the 20-year development agreement took effect Jan 12, 2023. No city record of construction was found. A June 23, 2026 Council report recommends leasing two of the site's parcels (485 and 495 Clyde Ave, about 3.72 acres) from Google for a public park with pickleball courts; the Council's action isn't posted yet.",
+      "stageNote": "Approved by the Mountain View City Council on Nov 15, 2022; the 20-year development agreement took effect Jan 12, 2023. No city record of construction was found. On June 23, 2026 the Council approved terms to lease two of the site's parcels (485 and 495 Clyde Ave, about 3.72 acres) from Google for a public park with pickleball courts; Google is to demolish the two vacant buildings there first, which the city expects before the end of 2026.",
       "timeline": [
         {
           "date": "2019-11-05",
@@ -3144,7 +3170,7 @@
         },
         {
           "date": "2022-12-13",
-          "event": "City Council adopts the development agreement ordinance on second reading."
+          "event": "City Council adopts the development agreement (Ordinance 19.22) on second reading, 6–0 with one recusal."
         },
         {
           "date": "2023-01-12",
@@ -3152,7 +3178,7 @@
         },
         {
           "date": "2026-06-23",
-          "event": "Council report recommends a seven-year City lease of 485 and 495 Clyde Ave from Google for a park and pickleball facility, with an option for Google to sell the land to the City."
+          "event": "City Council approves business terms for a seven-year City lease of 485 and 495 Clyde Ave from Google for a park and pickleball courts, with an option for Google to sell the land to the City."
         }
       ],
       "nextMilestone": null,
@@ -3174,13 +3200,13 @@
         "https://webapi.legistar.com/v1/mountainview/events/2103/eventitems",
         "https://webapi.legistar.com/v1/mountainview/matters/6876/histories",
         "https://webapi.legistar.com/v1/mountainview/events/1562/eventitems",
-        "https://maps.mountainview.gov/arcgis/rest/services/Public/Parcel/MapServer/0"
+        "https://maps.mountainview.gov/arcgis/rest/services/Public/Parcel/MapServer/0",
+        "https://mountainview.legistar.com/LegislationDetail.aspx?ID=6117&GUID=9B048072-F48C-47AE-BF71-838CCB9AB708",
+        "https://mountainview.legistar.com/gateway.aspx?M=F&ID=ff19b980-985d-4bc2-992e-6f51cd948659.pdf"
       ],
       "verify": [
-        "the development agreement's ordinance number (blank in the ordinance attached to the Dec 13, 2022 report)",
-        "whether any building or demolition permits have been issued",
-        "the Council's action on the 485 and 495 Clyde Ave lease (June 23, 2026 agenda)",
-        "whether Google has sold the site (press, 2025)",
+        "demolition permits for 485 and 495 Clyde Ave (Google applies after the lease is signed) and any permits under the master plan",
+        "whether Google has sold the site (press, 2025; Google still owned the Clyde Ave parcels in June 2026)",
         "office building O1's height limit: the master plan's Table 8.3.2 gives 125 ft and its Figure 8.3.1 gives 115 ft (drawn at 125)"
       ],
       "reported": {
@@ -3692,14 +3718,14 @@
         "retailSqft": 106000,
         "hotelKeys": null,
         "openSpaceAcres": 10,
-        "notes": "Adopted plan capacity: 4,500 homes and up to 106,000 sq ft of retail. Open space: 5 acres of public parkland plus 5 acres of privately owned open space. Heights from low-rise (up to 65 ft) to towers up to 220 ft or the FAA limit, whichever is lower. A plan amendment in preparation would add 1,500 homes and about 20,000 sq ft of retail, 20,000 sq ft of co-working space and a 10,000 sq ft daycare."
+        "notes": "Adopted plan capacity: 4,500 homes and up to 106,000 sq ft of retail. Open space: 5 acres of public parkland plus 5 acres of privately owned open space. Heights from low-rise (up to 65 ft) to towers up to 220 ft or the FAA limit, whichever is lower. A plan amendment in preparation would add 1,500 homes and about 20,000 sq ft of retail, 20,000 sq ft of co-working space and a 10,000 sq ft daycare. The amendment would allow up to 6,000 homes in all, keep the 220-ft height limit and raise the minimum public parkland on the interior 'island' parcels from 1 to 1.5 acres."
       },
       "developer": "Multiple developers under a city-led specific plan",
       "publicPartners": [
         "City of Santa Clara"
       ],
       "stage": "partial",
-      "stageNote": "Partly built. The City of Santa Clara's state housing reports list certificates of occupancy for about 1,748 homes in seven buildings between Dec 2022 and Nov 2025, including 196 affordable homes at 2231 Calle del Mundo. More buildings are permitted or entitled, and an amendment to add 1,500 homes is going through environmental review.",
+      "stageNote": "Partly built. The City of Santa Clara's state housing reports list certificates of occupancy for about 1,748 homes in seven buildings between Dec 2022 and Nov 2025, including 196 affordable homes at 2231 Calle del Mundo. The city's August 2026 Draft SEIR counts 2,664 homes in built and approved projects, notes that two approved projects (2200 Calle de Luna and 2101 Tasman Dr.) have been abandoned, and leaves about 12 acres to redevelop under an amendment that would add 1,500 homes.",
       "timeline": [
         {
           "date": "2018-11-13",
@@ -3722,6 +3748,10 @@
           "event": "City Council adopts Ordinance 2025, allowing some non-residential uses on the first three floors of mixed-use buildings."
         },
         {
+          "date": "2022-07-06",
+          "event": "City issues the notice of preparation for the supplemental EIR on the amendment adding 1,500 homes."
+        },
+        {
           "date": "2022-12-21",
           "event": "Certificate of occupancy for St. Anton's 196 affordable homes at 2231 Calle del Mundo, the first building in the plan area."
         },
@@ -3732,9 +3762,13 @@
         {
           "date": "2026-04-21",
           "event": "City Council extends the consultant contract for the amendment adding 1,500 homes through Dec 31, 2026, while its supplemental environmental report is prepared."
+        },
+        {
+          "date": "2026-08-28",
+          "event": "City releases the Draft Supplemental EIR for the amendment; comments close Oct 13, 2026."
         }
       ],
-      "nextMilestone": "A supplemental environmental impact report and hearings on the amendment adding 1,500 homes.",
+      "nextMilestone": "A final supplemental EIR and hearings on the amendment adding 1,500 homes.",
       "summary": "A city plan to turn 45 acres of warehouses next to the Lick Mill light rail station in north Santa Clara into a high-density neighborhood of 4,500 homes, with shops, parks and a walking and biking network to the Guadalupe River trail. Adopted in 2018; seven apartment buildings with about 1,750 homes had occupancy by late 2025, and the city is preparing an amendment to add 1,500 more.",
       "massingNotes": "Boundary: City of Santa Clara zoning (map.santaclaraca.gov OPENDATA/RegionalZoningOpenData MapServer layer 0), the 37 parcels with ZONGDSGN 'TN' and SPPLAN 'TE', dissolved (about 41 acres net of the plan's streets, against the plan's 45; approximate); the layer's 10 other TN parcels are retired records lying wholly inside these, so they add nothing; City open-data terms of use (2018). approxCenter is the rough centroid of those parcels. Massing from the plan's height tiers (65, 85 and 220 ft) and each project's approvals comes in Milestone 4. Massing: 13 completed buildings from OpenStreetMap footprints matched to APR parcels, with official heights where given (Related 214 and 217 ft, Greystar 85 ft) or estimated from official story counts (illustrative); the other 24 plan parcels drawn to the plan's 220-ft tower limit over an 85-ft podium (Final EIR, Draft EIR §2.3.4), illustrative. The FAA threshold is about 175 ft.",
       "officialLinks": [
@@ -3756,14 +3790,15 @@
         "https://data.ca.gov/dataset/housing-element-annual-progress-report-apr-data-by-jurisdiction-and-year",
         "https://map.santaclaraca.gov/maps/rest/services/OPENDATA/RegionalZoningOpenData/MapServer/0",
         "https://santaclara.legistar1.com/santaclara/attachments/6329e9a6-e29a-4f31-a2cf-ab8a09b2f902.pdf",
-        "https://santaclara.legistar1.com/santaclara/attachments/e6c34bac-7ee7-4ada-a313-704e06eb3ee0.pdf"
+        "https://santaclara.legistar1.com/santaclara/attachments/e6c34bac-7ee7-4ada-a313-704e06eb3ee0.pdf",
+        "https://ceqanet.lci.ca.gov/2016122027/7"
       ],
       "verify": [
         "certificates of occupancy issued in 2026 (the state's annual report for 2026 isn't out yet)",
-        "the status of 2240 Calle de Luna (311 homes, building permit April 2022, no occupancy reported)",
-        "the amendment adding 1,500 homes: its environmental report and hearing dates",
-        "the City of Santa Clara's open-data license for the zoning layer",
-        "the August 2026 Draft SEIR's status figures (about 2,664 homes active or complete; about 12 acres still redevelopable) against this record"
+        "a certificate of occupancy for the 311-home building at 5123 Calle del Sol (also 2240 Calle de Luna, APN 097-46-019), which the Draft SEIR lists as constructed",
+        "hearing dates for the amendment adding 1,500 homes",
+        "the City of Santa Clara's open-data license for the zoning layer (its ArcGIS Hub terms give PDDL 1.0; that host needs Matthew's approval)",
+        "the date of the plan's first amendment (Sept or Nov 17, 2020) and the plan area (46 or 45 acres)"
       ],
       "lastVerified": "2026-10-05"
     },

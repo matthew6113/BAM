@@ -3,6 +3,49 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-07 (official-source pass: Peninsula and South Bay)
+
+Findings: `docs/official-research/update-2026-10-07-peninsula-south.md`. `lastVerified` unchanged. No stage changes.
+
+- **brisbane-baylands:**
+  - The press's "small portion in San Francisco" is contradicted: the plan area is entirely within Brisbane.
+  - The press's "2027 start" is the plan's projected completion of remediation west of Caltrain (mid-2027),
+    not a construction start.
+  - A development agreement is required; the Council hears it Oct 26, after more hearings Oct 15 and
+    Oct 20, with deliberations Nov 9, 2026.
+  - Confirmed for the summary: a former rail yard and San Francisco landfill on the city line, two decades
+    in planning (first EIR notice Feb 27, 2006).
+- **willow-village:** the approval numbers are Resolutions 6790–6794 (Dec 6, 2022) and Ordinances 1094 and
+  1095 (Dec 13, 2022, 4–0 with one recusal). The development agreement was recorded Mar 31, 2023, and its
+  initial term runs to January 2033, not 2032. The reason for the pause stays press-only.
+- **parkline:** the approval numbers are Resolutions 6996–6999 and Ordinances 1125–1126. City staff report
+  that SRI has decided to vacate Buildings P, S and T and may occupy a new office building. The Phase 2
+  home mix (220 single-family, 108 townhomes) is confirmed. The city's page and staff report differ on
+  the below-market-rate count (293 vs 294).
+- **related-santa-clara:** confirmed: the former golf course and closed landfill across from Levi's Stadium,
+  and the CityPlace name. Added: the city's Oct 2026 note that data centers on Parcels 1–2 need a
+  conditional use permit and that Silicon Valley Power has accepted no new data-center applications since 2023.
+- **downtown-west:** the ordinances were finally adopted June 8, 2021 (30608–30610). Heights are 160–290 ft
+  above ground, subject to FAA review. The Nov 2024 memo's interim-use note is added. Google's 2026
+  ministerial permit filings are noted as an open question.
+- **north-bayshore:** Google's termination of the Landings office project (Feb 2024) is confirmed by city
+  reports and moves out of `reported`. No permit for a master-plan phase has come before the city since 2023.
+- **moffett-park:** confirmed Resolution 1199-23 (EIR) and 40 affordable homes at 1215 Bordeaux Dr.
+- **the-rise:**
+  - The press's "2019 mall demolished" is contradicted (demolition permits were issued in Sept 2021), so it
+    is dropped.
+  - Votes: Resolution 24-077 (fee waiver, 4–1) and Resolution 26-080 (Phase 1 final map, 4–0 with one
+    abstention). The 2022 modification is dated June 3, 2022.
+  - Tallest building: about 228 ft (an office tower) in the 2024 approved plans. The press's "about 200 ft"
+    is the tallest residential tower.
+- **middlefield-park:** the development agreement is Ordinance 19.22. The Council approved the Clyde Ave park
+  lease terms June 23, 2026 (7–0).
+- **tasman-east:** the Draft Supplemental EIR for the 1,500-home amendment was released Aug 28, 2026
+  (comments to Oct 13). Its status figures are added: 2,664 homes in built and approved projects, two
+  approvals abandoned, about 12 acres left. The zoning layer's PDDL license is on a city ArcGIS Hub host
+  that needs Matthew's approval, so it stays open.
+- **berryessa-flea-market:** no new application found in the city's planning data (verify item narrowed).
+
 ## 2026-10-07 (official-source pass: east San Francisco)
 
 Findings: `docs/official-research/update-2026-10-07-sf-east.md`. `lastVerified` unchanged (only these items re-checked).
