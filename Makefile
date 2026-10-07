@@ -84,6 +84,9 @@ sites:
 	$(PY) bam_pipeline.sites.landuse_mare_island
 	$(PY) bam_pipeline.sites.traced_boundaries
 	$(PY) bam_pipeline.sites.landuse_sonoma_developmental_center
+	$(PY) bam_pipeline.sites.lines_bart_silicon_valley_phase_2
+	$(PY) bam_pipeline.sites.lines_the_portal
+	$(PY) bam_pipeline.sites.lines_cahsr_sf_sj
 
 photos:
 	$(PY) bam_pipeline.photos

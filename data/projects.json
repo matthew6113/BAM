@@ -3774,11 +3774,11 @@
       "county": "San Francisco",
       "subregion": "San Francisco",
       "approxCenter": [
-        -122.3947,
-        37.784
+        -122.3916,
+        37.7806
       ],
       "acres": null,
-      "acresNote": "A rail line, not a site: a 1.3-mile tunnel from Fourth and King to the Salesforce Transit Center, 2.2 miles of total construction including trackwork in Caltrain's Fourth and King railyard (TJPA, 2026). No official footprint acreage was found. The 2018 Final SEIS/EIR gave longer lengths (2.7 miles with a turnback track at Mariposa Street, 2 miles without it), which have since been superseded. Approximate center is the midpoint of the tunnel line in the California High-Speed Rail Authority's statewide alignment layer (section 'DTX').",
+      "acresNote": "A rail line, not a site: a 1.3-mile tunnel from Fourth and King to the Salesforce Transit Center, 2.2 miles of total construction including trackwork in Caltrain's Fourth and King railyard (TJPA, 2026). No official footprint acreage was found. The 2018 Final SEIS/EIR gave longer lengths (2.7 miles with a turnback track at Mariposa Street, 2 miles without it), which have since been superseded. Approximate center is the midpoint of the traced alignment (tunnel and train box) in data/lines/the-portal.geojson.",
       "program": {
         "homes": null,
         "affordableHomes": null,
@@ -3892,7 +3892,9 @@
         "https://www.sfcta.org/sites/default/files/2026-01/SFCTA_CAC_Item9_TJPAPortalProjectFiscalYear2026MEMO_2026-01-28.pdf",
         "https://ceqanet.lci.ca.gov/1995063004",
         "https://ceqanet.lci.ca.gov/1995063004/16",
-        "https://ceqanet.lci.ca.gov/1995063004/17"
+        "https://ceqanet.lci.ca.gov/1995063004/17",
+        "https://data.sf.gov/d/3psu-pn9h",
+        "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer/0"
       ],
       "verify": [
         "the opening date: TJPA's July 2025 fact sheet and project page say 2035 'funding dependent'; the Sept 2026 status report forecasts ready-for-service on Nov 17, 2036; FTA's oversight consultant's July 2026 report lists a target of July 16, 2036 and a risk-based FFGA date of June 27, 2035",
@@ -3902,7 +3904,7 @@
         "CHSRA's $550 million commitment: the September 2026 report says TJPA must 'recommence conversations' with CHSRA because of its new business plan, while the 2026 Business Plan says the Authority 'remains committed to securing at least $550 million'",
         "the Oct 8, 2026 TJPA Board item 'The Portal Update and Monthly Status Report for September 2026', and whether the Board took any new actions",
         "the date of the second NEPA re-evaluation request: TJPA's report says Aug 5, 2026 and FTA's letter says the package is dated Aug 4, 2026",
-        "a drawable alignment: trace from the SEIS/EIR figures, or get CHSRA's permission to use its DTX polyline"
+        "the drawn alignment is traced from TJPA's September 2026 status report Figure 1, a map at about 1 inch to 1,000 ft (RMS 1.2 m georeference, but the line is drawn about 37 m wide): check it, where the tunnel proper begins at the west end, and the station limits against TJPA's design drawings or GIS if they are published; the California High-Speed Rail Authority's 'DTX' polyline would need its permission"
       ],
       "lastVerified": "2026-10-07"
     },
@@ -3918,11 +3920,11 @@
       "county": "San Francisco, San Mateo and Santa Clara",
       "subregion": "Peninsula",
       "approxCenter": [
-        -122.2818,
-        37.5259
+        -122.2564,
+        37.5047
       ],
       "acres": null,
-      "acresNote": "A rail line, not a site: about 49 miles of existing Caltrain corridor (48.9 miles of existing track in the Final EIR/EIS) from the Fourth and King station in San Francisco to San Jose Diridon, shared with Caltrain ('blended'). The Board's 2022 approval covers Fourth and King to Scott Boulevard in Santa Clara. The stretch from Scott Boulevard to Diridon and West Alma Avenue was approved with the San Jose to Merced section. No official acreage was found. Approximate center is the midpoint of the 'San Francisco to San Jose' line in the Authority's statewide alignment layer.",
+      "acresNote": "A rail line, not a site: about 49 miles of existing Caltrain corridor (48.9 miles of existing track in the Final EIR/EIS) from the Fourth and King station in San Francisco to San Jose Diridon, shared with Caltrain ('blended'). The Board's 2022 approval covers Fourth and King to Scott Boulevard in Santa Clara. The stretch from Scott Boulevard to Diridon and West Alma Avenue was approved with the San Jose to Merced section. No official acreage was found. Approximate center is the midpoint of the drawn line (Fourth and King to San José Diridon) in data/lines/cahsr-sf-sj.geojson.",
       "program": {
         "homes": null,
         "affordableHomes": null,
@@ -4006,14 +4008,16 @@
         "https://hsr.ca.gov/wp-content/uploads/2022/10/FJ-Final-ROD-Combined-A11Y.pdf",
         "https://hsr.ca.gov/wp-content/uploads/2026/06/2026-Final-Business-Plan-060126-A11Y.pdf",
         "https://hsr.ca.gov/wp-content/uploads/2026/09/Northern-California-At-a-Glance-Factsheet-A11Y.pdf",
-        "https://hsr.ca.gov/wp-content/uploads/2022/05/Final_EIRS_FJ_V3-04_Alternative-A_Book_A1.pdf"
+        "https://hsr.ca.gov/wp-content/uploads/2022/05/Final_EIRS_FJ_V3-04_Alternative-A_Book_A1.pdf",
+        "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer/0",
+        "https://www.caltrain.com/developer-resources"
       ],
       "verify": [
         "the certification date: Resolution HSRA 22-20 is dated 8/17/2022, while the Authority's Northern California page says the Board certified the Final EIR/EIS on August 18, 2022 (the Board met Aug 17–18)",
         "whether the 2026 Business Plan was formally adopted by the Board, and on what date (the plan says the final was 'released June 1, 2026')",
         "the cost basis: the Final EIR/EIS's $5,317 million (2021 dollars) covers the full Alternative A, while the 2026 Business Plan's $1,273 million 'San Francisco to Gilroy Blended Approach' is a reduced early scope; the 2024 Business Plan carried $15,140 million for the same line item",
         "Caltrain electrification's completion date: the 2026 Business Plan says '2024'; confirm the exact date of electrified service from Caltrain",
-        "permission from the Authority to redistribute its alignment and footprint GIS, or a trace from Volume 3",
+        "the drawn line is the federal rail network's centreline for Caltrain's existing tracks (U.S. DOT/BTS NTAD), not the Authority's engineered alignment, and it stops at San José Diridon (the Final EIR/EIS section runs on to West Alma Avenue). The Authority's permission to redistribute its alignment and footprint GIS, or a trace of Final EIR/EIS Volume 3, would give the engineered alignment and the East Brisbane light maintenance facility, which isn't drawn",
         "how the Portal's $550 million is handled: the Business Plan says the Authority 'remains committed to securing at least $550 million' but that Portal funding is not in its Phase 1 capital costs"
       ],
       "lastVerified": "2026-10-07"
@@ -4030,11 +4034,11 @@
       "county": "Santa Clara",
       "subregion": "South Bay",
       "approxCenter": [
-        -121.8998,
-        37.3587
+        -121.8958,
+        37.3337
       ],
       "acres": null,
-      "acresNote": "A rail line, not a site: about 6 miles of extension, about 5 miles of it in a single bored tunnel, from Berryessa/North San José to Santa Clara. No official acreage for the whole footprint was found; the 2002 CEQA notice for the original 16-mile corridor (SCH 2002022004) gives about 250 acres, which is not this phase. Approximate center is the middle of the bounding box of Berryessa/North San José, Diridon and Santa Clara Transit Center stops in VTA's GTFS feed.",
+      "acresNote": "A rail line, not a site: about 6 miles of extension, about 5 miles of it in a single bored tunnel, from Berryessa/North San José to Santa Clara. No official acreage for the whole footprint was found; the 2002 CEQA notice for the original 16-mile corridor (SCH 2002022004) gives about 250 acres, which is not this phase. Approximate center is the midpoint along the alignment drawn from VTA's GIS layer.",
       "program": {
         "homes": null,
         "affordableHomes": null,
@@ -4122,7 +4126,7 @@
       ],
       "nextMilestone": "VTA's roadmap (as reported to FTA in August 2026): an FFGA risk workshop in December 2026, updated grant documents to FTA in April 2027 and execution of the Full Funding Grant Agreement in November 2027; delivery of the tunnel boring machine is expected in the second half of 2027. VTA is re-baselining cost and schedule in the third quarter of 2026.",
       "summary": "VTA's six-mile extension of BART from Berryessa through downtown San José to Santa Clara, with three underground stations, one at-grade station and a rail yard, built around a single tunnel about 53 feet across. Its adopted budget is $12.7 billion. Early works are under way at the tunnel launch site, but the federal grant that would pay for about 40% of it is not yet signed, and service is scheduled for 2039 (VTA aims for 2037).",
-      "massingNotes": "Draw as a line with four station points and a yard, not as buildings. Best official geometry: (1) Final SEIS/SEIR Volume III Appendix B, Project Plans and Profiles (Feb 2018, 56 sheets) and the BART station site plan concepts appendix, on vta.org; superseded in detail by the 2022 and 2024 CEQA addenda (larger tunnel, horizontal shifts up to 125 ft west of Diridon), whose figures should be preferred where they differ. (2) VTA's ArcGIS server, gis.vta.org/gis/rest/services/BART/BART/MapServer, has layers 'Stations' (34), 'Alignment' (35), 'Project boundary' (31), 'Newhall Yard ROW' (44) and station concept footprints (48–58), but on 2026-10-07 the query endpoints returned 'Layer not found' (only map export works), so the vectors could not be downloaded; ask VTA or retry. (3) The alignment map in the Feb 2026 CEQA addendum (Figure 2-1) and FTA's oversight report (Attachment F). Station locations: 28th Street/Little Portugal near Santa Clara Street and US 101; Downtown San José on Santa Clara Street near Market Street; Diridon between Montgomery and Cahill streets northeast of the Caltrain station; Santa Clara at grade next to the Santa Clara Caltrain station. Label everything 'Approximate alignment'.",
+      "massingNotes": "Draw as a line with four station points and a yard, not as buildings. Best official geometry: (1) Final SEIS/SEIR Volume III Appendix B, Project Plans and Profiles (Feb 2018, 56 sheets) and the BART station site plan concepts appendix, on vta.org; superseded in detail by the 2022 and 2024 CEQA addenda (larger tunnel, horizontal shifts up to 125 ft west of Diridon), whose figures should be preferred where they differ. (2) VTA's ArcGIS server publishes the track alignment (Hosted/BSVII_Alignment_2022, layer 22, 'Above Ground' and 'Tunnel' tracks) and the station, portal and Newhall Yard sites (Hosted/BSV_Phase_II_Stations) as public feature services; the map's line is drawn from these (accuracy 'official'). The older BART/BART MapServer ('Project boundary' 31, 'Stations' 34, 'Alignment' 35, 'Newhall Yard ROW' 44, station concepts 48–58) lists layers whose data sources are broken ('Layer not found'), so the yard and project boundary polygons are still unavailable. (3) The alignment map in the Feb 2026 CEQA addendum (Figure 2-1) and FTA's oversight report (Attachment F). Station locations: 28th Street/Little Portugal near Santa Clara Street and US 101; Downtown San José on Santa Clara Street near Market Street; Diridon between Montgomery and Cahill streets northeast of the Caltrain station; Santa Clara at grade next to the Santa Clara Caltrain station. Label everything 'Approximate alignment'.",
       "officialLinks": [
         "https://www.vta.org/projects/bart-sv/phase-ii",
         "https://vtabart.org/",
@@ -4144,7 +4148,10 @@
         "https://santaclaravta.iqm2.com/Citizens/FileOpen.aspx?Type=15&ID=3133&Inline=True",
         "https://ceqanet.lci.ca.gov/2002022004",
         "https://santaclara.courts.ca.gov/system/files/civil/vtas-management-and-oversight-bart-silicon-valley-phase-ii.pdf",
-        "https://gtfs.vta.org/gtfs_vta.zip"
+        "https://gtfs.vta.org/gtfs_vta.zip",
+        "https://gis.vta.org/gis/rest/services/Hosted/BSVII_Alignment_2022/FeatureServer/22",
+        "https://gis.vta.org/gis/rest/services/Hosted/BSV_Phase_II_Stations/FeatureServer/0",
+        "https://gis.vta.org/gis/rest/services/Hosted/BSV_Phase_II_Construction/FeatureServer/11"
       ],
       "verify": [
         "the Record of Decision date: VTA's pages, the 2024 and 2026 addenda and VTA's monthly report say June 4, 2018, while FTA's oversight reports say June 18, 2018",
@@ -4153,7 +4160,8 @@
         "the revised cost and schedule from VTA's re-baseline (due Q3 2026); FTA's oversight consultant expects costs above the $12.746 billion budget",
         "how the $564 million funding gap is closed before the FFGA (the Civil Grand Jury report of June 17, 2026 describes a larger gap)",
         "tunnel size: FTA's reports say about 53 feet in diameter; the 2024 addendum gives an outer diameter of about 52 feet and a boring machine of about 54 feet",
-        "the alignment and station geometry from gis.vta.org (query endpoints failed on 2026-10-07)"
+        "whether VTA's published alignment layer (BSVII_Alignment_2022, on gis.vta.org) still matches the Scenario 1 design approved in October 2025 and the coming re-baseline",
+        "the terms of use for VTA's GIS layers (the alignment and station services state no license)"
       ],
       "lastVerified": "2026-10-07"
     },
@@ -4174,7 +4182,7 @@
         37.3307
       ],
       "acres": null,
-      "acresNote": "No official acreage for the station project was found. Its planning boundary is the DISC boundary (Alternatives Development Report, Figure 2-1), and the August 2026 Steering Committee materials map a 'Future Station Project Footprint'; neither gives an area. The Caltrain maintenance facility just north of the station (nearly 13 acres) is kept, not rebuilt. Approximate center is the San Jose Diridon Station parent stop in VTA's GTFS feed.",
+      "acresNote": "No official acreage for the station project was found. Its planning boundary is the DISC boundary (Alternatives Development Report, Figure 2-1), and the August 2026 Steering Committee materials map a 'Future Station Project Footprint'; neither gives an area. The map draws the August 2026 footprint as far as the slide shows it (about 12 acres as traced, cut at the slide's edges), which is not an official acreage. The Caltrain maintenance facility just north of the station (nearly 13 acres) is kept, not rebuilt. Approximate center is the San Jose Diridon Station parent stop in VTA's GTFS feed.",
       "program": {
         "homes": null,
         "affordableHomes": null,
@@ -4261,7 +4269,8 @@
         "the cost basis: the Alternatives Development Report's executive summary says $3 to $6 billion in 2025 dollars, while its main report table and the City's June 2025 memo say 2023 dollars",
         "whether SB 1375 (2025–26 session) passed and exempts the station from CEQA (leginfo.legislature.ca.gov blocked scripted access)",
         "when the notice of preparation or notice of intent is filed, and which agency is CEQA lead (none found on CEQAnet as of 2026-10-07)",
-        "an official footprint or acreage for the station project"
+        "an official acreage for the station project",
+        "the full extent of the station project footprint: the map traces the August 2026 Steering Committee slide, which shows only the station area and is cut at the edges of its aerial photo; the footprint's north and south ends along the rail corridor need a fuller official figure (for example from the environmental documents)"
       ],
       "lastVerified": "2026-10-07"
     },

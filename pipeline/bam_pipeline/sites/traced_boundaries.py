@@ -1,5 +1,5 @@
 """Site boundaries rebuilt from official documents: Willow Village, Concord, Alameda Point, Suisun,
-Schlage Lock and the Sonoma Developmental Center.
+Schlage Lock, the Sonoma Developmental Center and the Diridon Station footprint.
 
 None of these projects has an official GIS layer for its site, so each boundary is rebuilt
 from an official document and georeferenced:
@@ -28,6 +28,10 @@ from an official document and georeferenced:
 - sonoma-developmental-center: Notice of Preparation Figure 3 (CEQAnet SCH 2025081410, PDF p. 21),
   a 600-dpi raster. The project area is the core campus (black dashes) plus the wildfire buffer
   (teal dash-dot); the figure is fitted to OpenStreetMap building footprints (trimmed ICP).
+- diridon-station: the "Future Station Project Footprint" on the Diridon Station Steering
+  Committee's Aug 19, 2026 slide (packet p. 92), a vector outline over an aerial photo. The photo is
+  placed from two street crossings, then fitted to OpenStreetMap building outlines (trimmed ICP).
+  The footprint is cut where the photo ends (it continues along the rail corridor).
 
 Each output records the source page, the control points or fit statistics, and the acreage
 drawn against the official figure.
@@ -815,6 +819,100 @@ def build_sdc() -> None:
     })
 
 
+# ---------------------------------------------------------------- Diridon Station
+
+DIRIDON_PACKET = {
+    "title": "Diridon Station Steering Committee, Aug 19, 2026 meeting packet, environmental review update",
+    "url": "https://santaclaravta.iqm2.com/Citizens/FileOpen.aspx?Type=1&ID=4481&Inline=True",
+    "sha256": "e77020e9a916497d2259c841b9f85b46b789bcada9ca053bf2125cc0999b63d5",
+    "file": "diridon-steering-committee-2026-08-19-packet.pdf",
+}
+DIRIDON_PAGE = 91  # p. 92, slide 11 "TOD Sites for Environmental"
+DIRIDON_FOOTPRINT_RGB = (0.753, 0.0, 0.0)  # "Future Station Project Footprint" fill and outline
+DIRIDON_BBOX = (-121.915, 37.320, -121.890, 37.342)
+# Street crossings in the slide's aerial photo (pixels of the embedded 4101 x 2550 image; north is
+# to the right): the centre of each crossing, between the kerbs, matched to OpenStreetMap.
+DIRIDON_CONTROLS = {
+    ("West Santa Clara Street", "Cahill Street"): (2355, 1915),
+    ("West San Fernando Street", "Cahill Street"): (737, 1930),
+}
+
+
+def build_diridon() -> None:
+    pdf_path = trace.fetch_document(DIRIDON_PACKET["url"], DOCS / DIRIDON_PACKET["file"], DIRIDON_PACKET["sha256"])
+    with pdfplumber.open(pdf_path) as pdf:
+        page = pdf.pages[DIRIDON_PAGE]
+        photo = max(page.images, key=lambda i: i["srcsize"][0] * i["srcsize"][1])
+        rgb = cv2.imdecode(np.frombuffer(photo["stream"].get_data(), np.uint8), cv2.IMREAD_COLOR)
+        fills = [c for c in page.curves if c.get("fill") and c.get("non_stroking_color") == DIRIDON_FOOTPRINT_RGB]
+    if len(fills) != 1 or rgb is None:
+        raise SystemExit(f"diridon-station: expected one footprint shape and the aerial photo on p. {DIRIDON_PAGE + 1}")
+    w, h = photo["srcsize"]
+    sx, sy = w / (photo["x1"] - photo["x0"]), h / (photo["bottom"] - photo["top"])
+    # The footprint (page points, y down) in photo pixels, cut at the photo's frame like the slide.
+    fig = Polygon([((x - photo["x0"]) * sx, (y - photo["top"]) * sy) for x, y in fills[0]["pts"]])
+    frame = shapely.box(0, 0, w, h)
+    cut_at_frame = not frame.contains(fig)
+    fig = shapely.make_valid(fig).intersection(frame)
+
+    # Georeference: two street crossings to start, then the photo's edges fitted to building outlines.
+    g = streets("diridon", DIRIDON_BBOX)
+    roads = g[g["subtype"] == "road"]
+    src, dst, labels = [], [], []
+    for (a, b), xy in DIRIDON_CONTROLS.items():
+        src.append(xy)
+        dst.append(intersection(roads, a, b))
+        labels.append(f"{a} / {b}")
+    init = trace.fit_similarity(src, dst, labels)
+    grey = cv2.GaussianBlur(cv2.cvtColor(rgb, cv2.COLOR_BGR2GRAY), (5, 5), 0)
+    ys, xs = np.nonzero(cv2.Canny(grey, 60, 150))
+    edge = np.c_[xs, ys].astype(float)
+    edge = edge[np.random.default_rng(0).choice(len(edge), min(60000, len(edge)), replace=False)]
+    bl = buildings("diridon", DIRIDON_BBOX)
+    near = init.geometry(frame).buffer(50)
+    target = shapely.union_all(bl[bl.intersects(near)].boundary.to_numpy())
+    # Only edges already within 4 m of a building outline take part (roofs, not cars, trees or paint).
+    edge = edge[shapely.distance(shapely.points(init.apply(edge)), target) < 4]
+    keep = 0.6
+    sim, d = icp(edge, [target], np.zeros(len(edge), int), init, keep, iterations=100)
+    rep = icp_report(sim, d, keep, "aerial photo edges vs Overture (OpenStreetMap) building outlines")
+    check = np.linalg.norm(sim.apply(src) - np.asarray(dst), axis=1)
+    rep["street_crossings_m"] = {lab: round(float(r), 1) for lab, r in zip(labels, check)}
+    print(f"[diridon] fit scale {sim.scale:.4f} m/px, rotation {np.degrees(sim.rotation):.2f} deg, trimmed RMS "
+          f"{sim.rms_m:.2f} m over {len(d):,} points; crossings after fit: {', '.join(f'{c:.1f}' for c in check)} m")
+
+    site = trace.largest_polygon(sim.geometry(fig)).simplify(0.5)
+    acres = site.area / ACRE_M2
+    dtw = OUT / "downtown-west.geojson"
+    overlap = ""
+    if dtw.exists():
+        other = gpd.GeoDataFrame.from_features(json.loads(dtw.read_text())["features"], crs=4326).to_crs(UTM)
+        shared = site.intersection(shapely.union_all(other[other["kind"] == "site"].geometry.to_numpy())).area / ACRE_M2
+        print(f"[diridon] overlaps the Downtown West site by {shared:.1f} acres")
+        overlap = f" It overlaps the mapped Downtown West site by about {shared:.0f} acre(s)." if shared >= 0.5 else ""
+    print(f"[diridon] footprint {acres:.1f} acres as drawn (cut at the slide frame: {cut_at_frame})")
+    write("diridon-station", site, {
+        "source": f"traced: {DIRIDON_PACKET['title']}, slide 11 \"TOD Sites for Environmental\", "
+                  f"\"Future Station Project Footprint\" (packet p. {DIRIDON_PAGE + 1})",
+        "sourceUrl": DIRIDON_PACKET["url"],
+        "sourceLabel": "Steering Committee slide (PDF)",
+        "accuracy": "traced",
+        "accuracyShort": f"RMS {sim.rms_m:.1f} m",
+        "accuracyNote": (
+            f"The Future Station Project Footprint for the At-Grade Alternative as the partner agencies drew it in "
+            f"August 2026, read from the slide's vector outline and placed by fitting the slide's aerial photo to "
+            f"OpenStreetMap building outlines (RMS {sim.rms_m:.1f} m over the closest {int(keep * 100)}% of "
+            f"{len(d):,} edge points; two street crossings within {check.max():.1f} m). It is a planning footprint for "
+            f"environmental review, not a property line. The slide shows only the station area: the footprint runs on "
+            f"along the rail corridor north and south past the edges of the photo, and is cut there. "
+            f"{acres:.0f} acres as drawn; no official acreage is published.{overlap}"),
+        "license": "Shape traced from a public Diridon Station Steering Committee (VTA agenda) packet. "
+                   "Georeference: " + OSM_LICENSE + ".",
+        "georeference": rep,
+        "cutAtFigureFrame": cut_at_frame,
+    })
+
+
 BUILDERS = {
     "willow-village": build_willow_village,
     "concord-naval-weapons-station": build_concord,
@@ -822,6 +920,7 @@ BUILDERS = {
     "suisun-expansion": build_suisun,
     "schlage-lock": build_schlage_lock,
     "sonoma-developmental-center": build_sdc,
+    "diridon-station": build_diridon,
 }
 
 

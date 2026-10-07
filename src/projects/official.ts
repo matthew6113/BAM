@@ -60,6 +60,7 @@ const OFFICIAL_HOSTS = [
   'getvalleylinked.com',
   'tjpa.org', // Transbay Joint Powers Authority (The Portal / Downtown Rail Extension, Salesforce Transit Center)
   'sfcta.org', // San Francisco County Transportation Authority (Prop L sales tax, board memos)
+  'caltrain.com', // Peninsula Corridor Joint Powers Board (Caltrain): developer resources and GTFS licence
 ];
 
 /** Shared vendor hosts, accepted only under an agency's own path. */
@@ -84,6 +85,7 @@ const OFFICIAL_PREFIXES = [
   'services5.arcgis.com/robnthsnjoz2wm1p/', // Alameda County
   'services9.arcgis.com/ucdlsg1ewpnogy4c/', // City of Alameda
   'services.arcgis.com/9tc74adhuml0x5yz/', // City of Oakland
+  'services.arcgis.com/xoi1kzai0ewdrezv/', // US DOT Bureau of Transportation Statistics (NTAD)
 ];
 
 export function isOfficialSource(url: string): boolean {
