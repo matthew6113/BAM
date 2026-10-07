@@ -3,6 +3,12 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-07 (San Francisco waterfront flood defenses removed)
+
+Removed `sf-waterfront-flood-defense` from the map at Matthew's request. The record moves to `_meta.dropped`; its
+line and corridor files (`data/lines/`, `data/boundaries/`), its pipeline step and its credits row are deleted. The
+research notes and draft record stay in `docs/official-research/` as history.
+
 ## 2026-10-07 (hosts approved; held facts applied)
 
 Matthew approved the eight agency hosts listed in `docs/OFFICIAL-SOURCES.md` ("Hosts approved 2026-10-07"), and

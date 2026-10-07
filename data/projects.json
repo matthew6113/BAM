@@ -27,6 +27,10 @@
         "name": "Link21 (second transbay rail crossing)",
         "reason": "Researched 2026-10-07 and held as a watch item: still program-level planning with no adopted alignment or station list, federal Corridor ID work not expected to start until 2027, and MTC removed the second-crossing reference from the $50M RM3 project on June 24, 2026. See docs/official-research/candidates-link21-valleylink-waterfront.md.",
         "source": "https://www.capitolcorridor.org/wp-content/uploads/2026/09/Sept-16-2026-CCJPA-Board-Meeting_Agenda-Packet_FINAL.pdf"
+      },
+      {
+        "name": "San Francisco waterfront flood defenses",
+        "reason": "Removed from the map at Matthew's request (2026-10-07). It was researched and drawn on 2026-10-07; the research and draft record stay in docs/official-research/ (candidates-link21-valleylink-waterfront.md, draft-records/sf-waterfront-flood-defense.json)."
       }
     ],
     "candidatesNotYetResearched": []
@@ -4605,117 +4609,6 @@
         "sources": [
           "https://en.wikipedia.org/wiki/Valley_Link",
           "https://www.hacienda.org/news-events/hacienda-online/pulse/2026/feature-stories/commuters-benefit-valley-link-plan"
-        ]
-      },
-      "lastVerified": "2026-10-07"
-    },
-    {
-      "id": "sf-waterfront-flood-defense",
-      "name": "San Francisco waterfront flood defenses",
-      "aliases": [
-        "San Francisco Waterfront Coastal Flood Study",
-        "SF Waterfront Flood Study Recommended Plan",
-        "Waterfront Resilience Program",
-        "Embarcadero Seawall Program"
-      ],
-      "city": "San Francisco",
-      "county": "San Francisco",
-      "subregion": "San Francisco",
-      "approxCenter": [
-        -122.393,
-        37.7752
-      ],
-      "acres": null,
-      "acresNote": "Not applicable: a 7.5-mile line of shoreline defenses along the Port of San Francisco's jurisdiction, from Aquatic Park to Heron's Head Park (Recommended Plan Highlights, Aug 2026, PDF pp. 9–10).",
-      "program": {
-        "homes": null,
-        "affordableHomes": null,
-        "affordablePct": null,
-        "officeLabSqft": null,
-        "commercialSqftTotal": null,
-        "retailSqft": null,
-        "hotelKeys": null,
-        "openSpaceAcres": null,
-        "notes": "Flood and seismic infrastructure; the housing and commercial fields don't apply. The USACE/City Recommended Plan combines floodproofing of piers and select buildings, raising and rebuilding wharves and historic buildings (including the Ferry Building and Ferry Plaza), raising the shoreline with seismically resilient structures, 2.8 miles of natural and nature-based features, two deployable closure structures and stormwater adaptations (Port staff report, Aug 7, 2026, PDF p. 5–6). First actions defend against 3.5 ft of sea level rise along the Embarcadero and 1.5 ft in South Beach/Mission Bay, adaptable later to as much as 7 ft (Highlights, PDF pp. 12, 24, 27). Estimated cost $17.8 billion in 2026 dollars ($14.1 billion design and construction, $3.7 billion real estate), at 20% design with a conditionally certified USACE estimate; if Congress approves, the federal government may pay up to 65% (staff report PDF p. 2; Aug 11, 2026 presentation PDF pp. 7, 14). The 2024 Draft Plan was estimated at $13.5 billion (2024 dollars). Separately, voters approved the $425 million Embarcadero Seawall Earthquake Safety Bond in 2018, and the City's capital plan schedules a $350 million Waterfront Safety & Climate bond for March 2028."
-      },
-      "developer": "Port of San Francisco (non-federal sponsor) with the U.S. Army Corps of Engineers",
-      "publicPartners": [
-        "U.S. Army Corps of Engineers, San Francisco District",
-        "Port of San Francisco",
-        "City and County of San Francisco (ClimateSF)",
-        "California Coastal Conservancy"
-      ],
-      "stage": "entitlement",
-      "stageNote": "Study complete, not authorized. USACE published the Final Integrated Feasibility Report and EIS on July 31, 2026, but there is no Record of Decision and no Chief's Report: the Chief of Engineers now requires 35% design before signing one, and the Port has been told it will not receive one on the 20%-design plan. Congress has not authorized or funded construction. The Port is designing early pieces with local money under a Section 221 agreement (Downtown Coastal Resilience Project, Broadway to Harrison; South Beach Coastal Resilience Project, Harrison to Townsend) and advocating for WRDA 2026 changes.",
-      "timeline": [
-        {
-          "date": "2018",
-          "event": "Congress approves a new start for the San Francisco Waterfront Coastal Flood Study with an initial $500,000 appropriation; voters approve the $425 million Embarcadero Seawall Earthquake Safety Bond."
-        },
-        {
-          "date": "2023-07-27",
-          "event": "USACE publishes its notice of intent to prepare an integrated feasibility report and EIS."
-        },
-        {
-          "date": "2024-01-26",
-          "event": "USACE and the City release the Draft Report and Draft Plan ($13.5 billion, 2024 dollars) for a 60-day comment period ending March 29."
-        },
-        {
-          "date": "2024-12-10",
-          "event": "Port Commission Resolution 24-62 authorizes a design and construction memorandum of understanding with USACE so the Port can advance design with local funds."
-        },
-        {
-          "date": "2026-03-06",
-          "event": "USACE's deputy commanding general confirms the Port will not receive a Chief's Report under the new 35% design rule."
-        },
-        {
-          "date": "2026-06-16",
-          "event": "The Port holds the first public workshop for the Downtown Coastal Resilience Project."
-        },
-        {
-          "date": "2026-07-31",
-          "event": "USACE publishes the Final Report and EIS with the Recommended Plan ($17.8 billion, 2026 dollars); the NEPA cooling period runs to Aug 31."
-        },
-        {
-          "date": "2026-08-11",
-          "event": "Port Commission hears an update on the Final Report, next steps and WRDA 2026 advocacy."
-        }
-      ],
-      "nextMilestone": "Congressional action: Senate and House WRDA 2026 bills include provisions to expedite the study and (Senate) bar a blanket 35% design requirement; the Port has requested $10 million in FY 2027 Energy & Water appropriations to design the Downtown Coastal Resilience Project and planned to advertise northern and southern waterfront design contracts from August 2026.",
-      "summary": "A plan to defend San Francisco's 7.5-mile Port waterfront, from Aquatic Park to Heron's Head Park, against sea level rise and earthquakes: raising the Embarcadero shoreline and seawall, rebuilding wharves and the Ferry Building's edge, levees and berms along Mission Bay and Islais Creek, and floodproofing elsewhere. The Army Corps' final study recommends it at $17.8 billion, but Congress has not authorized it; the first pieces near the Ferry Building and South Beach are in early design.",
-      "massingNotes": "Drawn as a line in four reaches (data/lines/sf-waterfront-flood-defense.geojson, pipeline/bam_pipeline/sites/lines_sf_waterfront_flood_defense.py), labelled approximate. No official GIS of the Recommended Plan's defense line was found (USACE's Final Report returns 403 to scripts; the Port's open data has only the jurisdiction polygon). Traced from the flood-impact segment line on slide 13 ('Draft Phasing and Implementation Strategy') of the Port's Aug 11, 2026 presentation, a plan-view map, fitted to DataSF street centrelines; reaches split at the map's dashed reach boundaries. About 11.3 miles as drawn, because it follows the water's edge into Mission Creek and Islais Creek and around the Pier 80-96 terminals (the Port: '7.5-mile' jurisdiction). The Highlights document's reach maps (pp. 10, 20-31) are oblique renderings and are not traceable. Subreaches (1.a to 4.c, Highlights Figure 2.7) and the Early Resilience Action areas are not drawn separately.",
-      "officialLinks": [
-        "https://www.sfport.com/wrp",
-        "https://www.sfport.com/sites/default/files/2026-08/260817_Highlights%20Document_Rec%20Plan.pdf"
-      ],
-      "sources": [
-        "https://www.sfport.com/wrp",
-        "https://www.sfport.com/wrp/embarcadero-seawall-resilience",
-        "https://www.sfport.com/sites/default/files/2026-08/260817_Highlights%20Document_Rec%20Plan.pdf",
-        "https://www.sfport.com/media/11433/download",
-        "https://www.sfport.com/media/11441/download",
-        "https://sfport.com/media/9510/download",
-        "https://www.onesanfrancisco.org/sites/default/files/2024-03/Agenda%20item%207%20-%20SF%20Waterfront%20Flood%20Study.pdf",
-        "https://onesanfrancisco.org/sites/default/files/inline-files/Full%20Capital%20Plan%20FY2026-FY2035_0.pdf",
-        "https://www.federalregister.gov/documents/2026/07/31/2026-15536/environmental-impact-statements-notice-of-availability",
-        "https://www.federalregister.gov/documents/2023/07/27/2023-15898/notice-of-intent-to-prepare-an-integrated-feasibility-report-and-environmental-impact-statement-for",
-        "https://data.sfgov.org/d/jmv6-xier",
-        "https://data.sf.gov/d/3psu-pn9h",
-        "https://data.sf.gov/d/txuc-3kzm"
-      ],
-      "verify": [
-        "the Final Integrated Feasibility Report and EIS itself (USACE, https://www.swt.usace.army.mil/Library/Docs-and-Comms/, 403 to scripts): length of each defense type, reach-by-reach heights and the benefit-cost ratio",
-        "whether WRDA 2026 is enacted with the Senate's design-maturity and expedite provisions, and any FY 2027 Energy & Water design funding",
-        "the Port's design contract awards for the northern and southern waterfront (RFPs planned from August 2026)",
-        "how much of the $425 million 2018 seawall bond has been spent and on which Embarcadero Early Projects (no current bond report was read)",
-        "the DataSF Port Jurisdiction layer's license and whether it matches the study area (jmv6-xier states no license; a copy, gtk5-z9iw, is marked ODC PDDL); it is not used for the drawn geometry",
-        "geometry: the line is the Port's Aug 2026 phasing-map shoreline, not an engineered alignment; replace it with the Final Report's plan sheets or design-phase GIS when available, and confirm whether the 7.5-mile figure is measured along the same line (11.3 miles as drawn)"
-      ],
-      "reported": {
-        "note": "Reported by the press but not confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map.",
-        "nextMilestone": "The SF Examiner (January 2025) reported the plan would go before Congress in 2026; under the 35% design rule USACE did not send a Chief's Report, so this is superseded.",
-        "sources": [
-          "https://www.sfexaminer.com/news/climate/sf-flood-resilience-plan-to-appear-before-congress-in-2026/article_890dd3ba-d528-11ef-a0fb-c7de1be686a1.html"
         ]
       },
       "lastVerified": "2026-10-07"

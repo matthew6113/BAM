@@ -107,6 +107,8 @@ Draft record: `scratchpad/records/new/valley-link.json` (passes `tests/record-ch
 
 ## sf-waterfront-flood-defense (San Francisco Waterfront Coastal Flood Study, Recommended Plan)
 
+> Removed from the map at Matthew's request (2026-10-07); listed under `_meta.dropped`. Kept here as research history.
+
 Documents read:
 - PSR (Port staff report, Aug 7, 2026, 22 pp.), PPT (Aug 11, 2026 presentation, 23 pp.), HL (Recommended Plan Highlights, Aug 2026, 35 pp.)
 - sfport.com `/wrp`, `/wrp/embarcadero-seawall-resilience`, `/wrp/library`
