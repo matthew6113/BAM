@@ -2,7 +2,8 @@
 //   node scripts/options.mjs <outdir> <options.json>
 // options.json: [{ name, theme?: partial theme, paint?: { layerId: { prop: value } },
 //                  add?: [[layerSpec, beforeId]],
-//                  views: [{ name, path?, camera?: {center, zoom, pitch, bearing}, size? }] }]
+//                  views: [{ name, path?, camera?: {center, zoom, pitch, bearing}, size?, flight? }] }]
+// flight: true waits for a project deep link to land and raise its blocks (with reduced motion).
 // The theme is merged over theme.json and injected through localStorage (as the style panel does);
 // paint overrides are applied to the live map, for things the theme doesn't cover yet.
 import { chromium } from '@playwright/test';
@@ -26,10 +27,13 @@ for (const opt of options) {
   const theme = merge(base, opt.theme ?? {});
   for (const view of opt.views) {
     const [width, height] = (view.size ?? '1440x900').split('x').map(Number);
-    const page = await browser.newPage({ viewport: { width, height }, deviceScaleFactor: view.dpr ?? 1 });
+    const page = await browser.newPage({
+      viewport: { width, height }, deviceScaleFactor: view.dpr ?? 1, reducedMotion: view.flight ? 'reduce' : 'no-preference',
+    });
     await page.addInitScript((t) => localStorage.setItem('bam.theme.v1', JSON.stringify(t)), theme);
     await page.goto(`http://127.0.0.1:5173${view.path ?? '/'}`);
     await page.waitForFunction(() => document.body.dataset.mapReady === 'true', null, { timeout: 180000 });
+    if (view.flight) await page.waitForFunction(() => document.body.dataset.flight === 'risen', null, { timeout: 180000 });
     await page.evaluate(({ paint, add, camera }) => {
       const map = window.__map;
       for (const [layer, before] of add ?? []) map.addLayer(layer, before);
