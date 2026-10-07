@@ -86,6 +86,9 @@ const OFFICIAL_PREFIXES = [
   'services9.arcgis.com/ucdlsg1ewpnogy4c/', // City of Alameda
   'services.arcgis.com/9tc74adhuml0x5yz/', // City of Oakland
   'services.arcgis.com/xoi1kzai0ewdrezv/', // US DOT Bureau of Transportation Statistics (NTAD)
+  // BART (SF Bay Area Rapid Transit District): its AB 2923 parcel and TOD Work Plan service, linked from
+  // bart.gov/about/business/tod/ab2923; the organisation's items are owned by a bart.gov account.
+  'services.arcgis.com/sqs7rnuf1bqinj5n/',
 ];
 
 export function isOfficialSource(url: string): boolean {

@@ -18,6 +18,8 @@ import {
   boundaryLine,
   siteOf,
   bboxOf,
+  markerPointsOf,
+  containsPoint,
 } from '../src/projects/data';
 import { isOfficialSource } from '../src/projects/official';
 import { STAGE_KEYS } from '../src/theme/theme';
@@ -245,6 +247,27 @@ describe('geometry helpers', () => {
     expect(len(linePrefix(line, 0.5)) / whole).toBeCloseTo(0.5, 3);
     expect(linePrefix(line, 1)).toBe(line);
     expect(linePrefix(line, 0).geometry.coordinates[0].length).toBeGreaterThanOrEqual(2);
+  });
+
+  it('puts a regional marker on each station of a scattered program, and one on every other site', () => {
+    // Line projects put their one marker on the alignment instead (tested under 'line projects').
+    for (const project of MAPPED_PROJECTS.filter((p) => !isLineProject(p.id))) {
+      const boundary = boundaryOf(project.id)!;
+      const site = siteOf(project.id)!.geometry;
+      const parts = boundary.features.filter((f) => f.properties.kind === 'sub-area').map((f) => f.geometry);
+      const markers = markerPointsOf(site, parts);
+      if (project.id === 'bart-station-housing') {
+        expect(markers).toHaveLength(parts.length);
+        // On the station site (Lake Merritt's two blocks face each other across an intersection).
+        markers.forEach((m, i) => {
+          const [x0, y0, x1, y1] = bboxOf(parts[i]);
+          expect(inside(m, [x0, y0, x1, y1]), boundary.features[i + 1].properties.name).toBe(true);
+        });
+        expect(containsPoint(site, centroidOf(site))).toBe(false);
+      } else {
+        expect(markers, project.id).toHaveLength(1);
+      }
+    }
   });
 
   it('draws every piece of a multi-part site', () => {
