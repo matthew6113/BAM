@@ -4286,8 +4286,8 @@
       "county": "Alameda",
       "subregion": "East Bay",
       "approxCenter": [
-        -121.808,
-        37.699
+        -121.7986,
+        37.7009
       ],
       "acres": null,
       "acresNote": "Not applicable: a rail line, not a site. Phase 1A is about 11 miles of new passenger rail along I-580 from the Dublin/Pleasanton BART Station to the Vasco Road ACE Station in Livermore (AB 1171 Initial Project Report, June 10, 2026 board packet, PDF p. 30). Station and facility sites: Isabel Station parking on a 24-acre site, Vasco Road Station on about 13 acres, and the Livermore OMF on the southeastern part of a 13.75-acre site (PDF pp. 32–33).",
@@ -4363,7 +4363,7 @@
       ],
       "nextMilestone": "Joint CEQA addendum and NEPA re-evaluation for Phase 1A (targeted fall 2026), 30% design complete (December 2026), a request to FTA to enter the Capital Investment Grants Engineering phase, and an MTC final-design allocation request (board action targeted October 2026). The schedule in the June 2026 MTC request shows construction from summer 2029 to opening in summer 2033.",
       "summary": "A new passenger rail line along the I-580 corridor linking BART at Dublin/Pleasanton with ACE commuter trains at Vasco Road in Livermore, so riders from the San Joaquin Valley can change trains across a platform instead of driving over the Altamont Pass. The first 11 miles, with three stations and battery-electric trains, are environmentally cleared and in design; an extension to Mountain House is cleared but unfunded.",
-      "massingNotes": "No official GIS for the alignment was found. Trace the Phase 1A line from the June 10, 2026 MTC request (AB 1171 Initial Project Report): Figure 3, Phase 1A and Phase 1B alignments (PDF p. 30), and Figure 4, the connection from I-580 to Vasco Road (PDF p. 31); the 2024 SEIR and 2024 EA on CEQAnet (SCH 2018092027, documents 6 and 8) have larger-scale alignment figures. Draw as approximate. Approximate center is the midpoint between the two end stations: Dublin/Pleasanton BART (BART GTFS stops.txt, -121.899245, 37.701610) and Vasco Rd ACE (Caltrans California Transit Stops, stop VAS, -121.717655, 37.697062). Draw Phase 1B (Southfront Road to Mountain House) only as a lighter, unfunded segment if at all, and do not draw the superseded 2021 42-mile route.",
+      "massingNotes": "Drawn as a line (data/lines/valley-link.geojson, pipeline/bam_pipeline/sites/lines_valley_link.py), traced and approximate. No official GIS of the alignment exists. First Street to the tail tracks east of Vasco Road: Figure 4 of the June 10, 2026 board packet (AB 1171 Initial Project Report, PDF p. 31), fitted to OpenStreetMap building footprints. I-580 median, Dublin/Pleasanton to First Street: the 'Median Widening' line in the 2024 Draft SEIR Figures 2-4 to 2-6 (CEQAnet SCH 2018092027, document 6, Chapter 2), which the 2026 report keeps ('constructed within the I-580 median from the Dublin/Pleasanton BART Station to just east of the First Street overcrossing'). Stations: platform centres in SEIR Figures 2-13 (Dublin/Pleasanton) and 2-14 (Isabel) and the June 2026 Figure 4 (Vasco Road). About 11.4 miles as drawn, including the tail tracks at both ends. The short viaduct from the Dublin/Pleasanton platform into the median is not drawn in the figures and is a straight join. Phase 1B and the superseded 2021 route are not drawn.",
       "officialLinks": [
         "https://www.valleylinkrail.com/valleylink-project",
         "https://www.getvalleylinked.com/"
@@ -4379,6 +4379,8 @@
         "https://www.valleylinkrail.com/_files/ugd/95df9a_0f161a7a5be14083a255266808a38859.pdf",
         "https://ceqanet.lci.ca.gov/Project/2018092027",
         "https://ceqanet.lci.ca.gov/2018092027/9",
+        "https://ceqanet.lci.ca.gov/2018092027/6",
+        "https://ceqanet.lci.ca.gov/2018092027/6/Attachment/ZPbOAG",
         "https://www.bart.gov/dev/schedules/google_transit.zip",
         "https://caltrans-gis.dot.ca.gov/arcgis/rest/services/CHrailroad/CA_Transit_Stops/FeatureServer/0"
       ],
@@ -4388,7 +4390,9 @@
         "the opening date: the June 2026 schedule shows construction summer 2029 to summer 2033, while the May 2026 environmental update says construction is anticipated in FY 2028–29",
         "the FONSI date: most Authority documents and the FONSI itself say May 2025 (CEQAnet received June 4, 2025), but one milestone list in the June 10, 2026 packet (PDF p. 45) says May 2024",
         "the Alameda County Taxpayers Association lawsuit (Alameda Superior Court RG21110126), which the Authority lists as pending (Sept 9, 2026 packet, PDF p. 36)",
-        "the City of Dublin's project page (dublin.ca.gov/2107) still describes the 2019 plan to North Lathrop and is superseded"
+        "the City of Dublin's project page (dublin.ca.gov/2107) still describes the 2019 plan to North Lathrop and is superseded",
+        "geometry: the I-580 median and station positions come from the 2024 Draft SEIR figures; check them against the Phase 1A CEQA addendum / NEPA re-evaluation figures when published, and the First Street to Vasco Road connection against final 30% design drawings",
+        "geometry: where the Dublin/Pleasanton viaduct crosses the eastbound I-580 lanes into the median is not drawn in any figure found (drawn as a straight join of about 80 m)"
       ],
       "reported": {
         "note": "Reported by the press but not confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map.",
@@ -4413,8 +4417,8 @@
       "county": "San Francisco",
       "subregion": "San Francisco",
       "approxCenter": [
-        -122.3964,
-        37.7632
+        -122.393,
+        37.7752
       ],
       "acres": null,
       "acresNote": "Not applicable: a 7.5-mile line of shoreline defenses along the Port of San Francisco's jurisdiction, from Aquatic Park to Heron's Head Park (Recommended Plan Highlights, Aug 2026, PDF pp. 9–10).",
@@ -4474,7 +4478,7 @@
       ],
       "nextMilestone": "Congressional action: Senate and House WRDA 2026 bills include provisions to expedite the study and (Senate) bar a blanket 35% design requirement; the Port has requested $10 million in FY 2027 Energy & Water appropriations to design the Downtown Coastal Resilience Project and planned to advertise northern and southern waterfront design contracts from August 2026.",
       "summary": "A plan to defend San Francisco's 7.5-mile Port waterfront, from Aquatic Park to Heron's Head Park, against sea level rise and earthquakes: raising the Embarcadero shoreline and seawall, rebuilding wharves and the Ferry Building's edge, levees and berms along Mission Bay and Islais Creek, and floodproofing elsewhere. The Army Corps' final study recommends it at $17.8 billion, but Congress has not authorized it; the first pieces near the Ferry Building and South Beach are in early design.",
-      "massingNotes": "Draw as a line, labelled approximate. No official GIS of the Recommended Plan alignment was found; the Final Report (on USACE's site, which returns 403 to scripts) and the Highlights document carry the maps: Figure 2.2 (Port jurisdiction), Figure 2.7 (subreaches) and the reach maps in section 3 (Highlights PDF pp. 10, 12, 21–30), and the Aug 11, 2026 presentation's phasing map (PDF p. 13). Context polygon: DataSF \"Port Jurisdiction\" (jmv6-xier, updated 2023-10-19; license to confirm, DataSF default is ODC PDDL); approximate center is the midpoint of that layer's bounding box. Early Resilience Action areas (Rincon Park/Embarcadero Pier 14 to 22.5, Mission Creek, Islais Creek) could be highlighted from Highlights Figure 2.8 (PDF p. 13).",
+      "massingNotes": "Drawn as a line in four reaches (data/lines/sf-waterfront-flood-defense.geojson, pipeline/bam_pipeline/sites/lines_sf_waterfront_flood_defense.py), labelled approximate. No official GIS of the Recommended Plan's defense line was found (USACE's Final Report returns 403 to scripts; the Port's open data has only the jurisdiction polygon). Traced from the flood-impact segment line on slide 13 ('Draft Phasing and Implementation Strategy') of the Port's Aug 11, 2026 presentation, a plan-view map, fitted to DataSF street centrelines; reaches split at the map's dashed reach boundaries. About 11.3 miles as drawn, because it follows the water's edge into Mission Creek and Islais Creek and around the Pier 80-96 terminals (the Port: '7.5-mile' jurisdiction). The Highlights document's reach maps (pp. 10, 20-31) are oblique renderings and are not traceable. Subreaches (1.a to 4.c, Highlights Figure 2.7) and the Early Resilience Action areas are not drawn separately.",
       "officialLinks": [
         "https://www.sfport.com/wrp",
         "https://www.sfport.com/sites/default/files/2026-08/260817_Highlights%20Document_Rec%20Plan.pdf"
@@ -4490,14 +4494,17 @@
         "https://onesanfrancisco.org/sites/default/files/inline-files/Full%20Capital%20Plan%20FY2026-FY2035_0.pdf",
         "https://www.federalregister.gov/documents/2026/07/31/2026-15536/environmental-impact-statements-notice-of-availability",
         "https://www.federalregister.gov/documents/2023/07/27/2023-15898/notice-of-intent-to-prepare-an-integrated-feasibility-report-and-environmental-impact-statement-for",
-        "https://data.sfgov.org/d/jmv6-xier"
+        "https://data.sfgov.org/d/jmv6-xier",
+        "https://data.sf.gov/d/3psu-pn9h",
+        "https://data.sf.gov/d/txuc-3kzm"
       ],
       "verify": [
         "the Final Integrated Feasibility Report and EIS itself (USACE, https://www.swt.usace.army.mil/Library/Docs-and-Comms/, 403 to scripts): length of each defense type, reach-by-reach heights and the benefit-cost ratio",
         "whether WRDA 2026 is enacted with the Senate's design-maturity and expedite provisions, and any FY 2027 Energy & Water design funding",
         "the Port's design contract awards for the northern and southern waterfront (RFPs planned from August 2026)",
         "how much of the $425 million 2018 seawall bond has been spent and on which Embarcadero Early Projects (no current bond report was read)",
-        "the DataSF Port Jurisdiction layer's license and whether it matches the study area"
+        "the DataSF Port Jurisdiction layer's license and whether it matches the study area (jmv6-xier states no license; a copy, gtk5-z9iw, is marked ODC PDDL); it is not used for the drawn geometry",
+        "geometry: the line is the Port's Aug 2026 phasing-map shoreline, not an engineered alignment; replace it with the Final Report's plan sheets or design-phase GIS when available, and confirm whether the 7.5-mile figure is measured along the same line (11.3 miles as drawn)"
       ],
       "reported": {
         "note": "Reported by the press but not confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map.",
