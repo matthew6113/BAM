@@ -114,9 +114,15 @@ STACK = {
 }
 SOPHIE_MAXWELL = {"name": "Sophie Maxwell Building"}
 
-# Per-block stage. Every block is entitled; the one finished building (Sophie Maxwell) is
-# cut out of its block, and UCSF's Block 2 building has no official construction record yet.
-STAGES: dict[str, str] = {}
+# Per-block stage. Blocks are entitled unless an official record says otherwise; the one
+# finished building (Sophie Maxwell) is cut out of its block. UCSF's Block 2 building is under
+# construction per the Planning Commission's finding in Resolution 21945 (July 30, 2026); UC
+# buildings have no city building permit, so there is no permit date.
+STAGES: dict[str, str] = {"2": "construction"}
+STAGE_NOTES: dict[str, str] = {
+    "2": "Under construction: UCSF's building (Planning Commission Resolution 21945, July 30, 2026, finding 4: "
+         "'construction has commenced')."
+}
 
 
 def _streets() -> gpd.GeoDataFrame:
@@ -359,6 +365,8 @@ def main() -> None:
             "source": f"illustrative: drawn to the height limit traced from {d4d}"
                       + (f"; tower zone up to {z['height_ft']} ft over an {base}-ft base" if base else ""),
         }
+        if z["block"] in STAGE_NOTES:
+            props["note"] = STAGE_NOTES[z["block"]]
         if z["block"] == "9":
             props["note"] = "Outlined only: the D4D gives two configurations, with or without the Unit 3 Power Block."
         if z["utm"].intersects(sophie_utm):

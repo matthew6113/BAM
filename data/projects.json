@@ -111,21 +111,21 @@
       "program": {
         "homes": 7218,
         "affordableHomes": null,
-        "affordablePct": null,
+        "affordablePct": 34,
         "officeLabSqft": 2800000,
         "commercialSqftTotal": 3353500,
         "retailSqft": 304500,
         "hotelKeys": 220,
         "openSpaceAcres": 100,
-        "notes": "2024 Modified Project Variant (OCII, Sept 2024). R&D/office rose from 750,000 to 2,800,000 sq ft after about 2,050,000 sq ft moved from Hunters Point Shipyard Phase 2. Retail is 170,000 sq ft regional plus 134,500 sq ft neighborhood. About 32% of homes are below market rate (3,363 of 10,672) across Candlestick Point and Shipyard Phase 2 together; there is no Candlestick-only share. The first phase covers seven city blocks with about 700 homes, 314 of them affordable. The Mayor's office cites 100 acres of parks and open space; OCII's open-space count (105.7 acres) includes the existing State Recreation Area."
+        "notes": "2024 Modified Project Variant (OCII, Sept 2024). R&D/office rose from 750,000 to 2,800,000 sq ft after about 2,050,000 sq ft moved from Hunters Point Shipyard Phase 2. Retail is 170,000 sq ft regional plus 134,500 sq ft neighborhood. About 34% of Candlestick's 7,218 homes will be below market rate (OCII), counting workforce homes for households earning 120–160% of AMI; across Candlestick Point and Shipyard Phase 2 together the share is about 32% (3,363 of 10,672). The first phase covers seven city blocks with about 700 homes, 314 of them affordable. The Mayor's office cites 100 acres of parks and open space; OCII's open-space count (105.7 acres) includes the existing State Recreation Area."
       },
-      "developer": "FivePoint (previously Lennar Urban)",
+      "developer": "FivePoint Holdings, LLC (previously Lennar Urban)",
       "publicPartners": [
         "SF Office of Community Investment and Infrastructure (OCII)",
         "SF Planning"
       ],
       "stage": "infrastructure",
-      "stageNote": "The Mayor broke ground on the first phase on Sept 9, 2026: seven city blocks with about 700 homes, 314 of them affordable. The 2024 amendments split the Candlestick build-out into seven major phases instead of three.",
+      "stageNote": "The Mayor broke ground on Sept 9, 2026 on the first new phase: seven city blocks (four mixed-use residential blocks on Harney Way, two residential blocks on Arelious Walker Drive and a commercial parcel in Candlestick Center) with about 700 homes, 314 of them affordable. Roads and utilities come first (OCII: 2026–2028, then housing and commercial buildings); no building permits have been issued for the blocks yet. The 2024 amendments split the Candlestick build-out into seven major phases instead of three.",
       "timeline": [
         {
           "date": "2007-05",
@@ -172,13 +172,21 @@
           "event": "Board of Supervisors finally passes Ordinances 253-24 and 254-24."
         },
         {
+          "date": "2026-06-22",
+          "event": "Final map for the first new phase (Major Phase 2) recorded."
+        },
+        {
+          "date": "2026-07-21",
+          "event": "OCII seeks proposals for about 100 affordable homes on Candlestick Point North Block 7."
+        },
+        {
           "date": "2026-09-09",
           "event": "Mayor breaks ground on the first phase."
         }
       ],
       "nextMilestone": null,
       "summary": "The former Candlestick Park stadium site and its parking lots, planned as a bayfront neighborhood of about 7,200 homes, an office and R&D district and about 100 acres of parks. It was planned together with Hunters Point Shipyard until 2024, when the city found the two could no longer be built in concert and let Candlestick go ahead on its own.",
-      "massingNotes": "Boundary: DataSF Former Redevelopment Agency Project Areas (m288-24sn, ODC-PDDL), feature \"Bayview Hunters Point Area B Zone 1\" (about 271.1 acres, matching the 2024 notice); don't use the \"CP\" height district, which leaves out the State Recreation Area. Height limits run 40–420 ft with up to 12 towers (2010/2019 Design for Development) and up to 180 ft in Candlestick Center (2024). Massing: the 2024 height plan traced from Addendum 7 to the FEIR (Aug 2024), Figure 5 (40–85 ft blocks; Candlestick Center parcels to 180 ft under the 2024 Innovation District alternative), with 11 towers from the Design for Development Table 4.2 (170–420 ft over 65- or 85-ft podiums; locations flexible), all illustrative; the completed Alice Griffith buildings are outlined with DBI stories (no official height). The State Recreation Area and parks are not drawn.",
+      "massingNotes": "Boundary: DataSF Former Redevelopment Agency Project Areas (m288-24sn, ODC-PDDL), feature \"Bayview Hunters Point Area B Zone 1\" (about 271.1 acres, matching the 2024 notice); don't use the \"CP\" height district, which leaves out the State Recreation Area. Height limits run 40–420 ft with up to 12 towers (2010/2019 Design for Development) and up to 180 ft in Candlestick Center (2024). Massing: the 2024 height plan traced from Addendum 7 to the FEIR (Aug 2024), Figure 5 (40–85 ft blocks; Candlestick Center parcels to 180 ft under the 2024 Innovation District alternative), with 11 towers from the Design for Development Table 4.2 (170–420 ft over 65- or 85-ft podiums; locations flexible), all illustrative; the completed Alice Griffith buildings are outlined with DBI stories (no official height). The State Recreation Area and parks are not drawn. The 2024 amendment adds an alternative chapter only for Candlestick Center (OCII Resolution 28-2024); tower limits elsewhere (Table 4.2, 170–420 ft) are unchanged.",
       "officialLinks": [
         "https://sfocii.org/projects/hunters-point-shipyard-candlestick-point-2/overview",
         "https://www.sf.gov/news-mayor-lurie-breaks-ground-on-7200-long-awaited-new-homes-at-former-candlestick-park-site"
@@ -208,17 +216,20 @@
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201501236565",
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201608296272",
         "https://sfocii.org/sites/default/files/2024-09/Addendum%207%20to%20the%20CP-HPS2%202010%20FEIR.pdf",
-        "https://sfocii.org/sites/default/files/2025-10/Candlestick%20Point%20Design%20for%20Development%202024%20Amendment.pdf"
+        "https://sfocii.org/sites/default/files/2025-10/Candlestick%20Point%20Design%20for%20Development%202024%20Amendment.pdf",
+        "https://sfocii.org/files/inline-files/INFO%20MEMO_CPN%207%20RFP%20w%20Att.pdf",
+        "https://sfocii.org/sites/default/files/2025-05/INFO_MEMO_CP-HPS2_Approvals%20Summary_signed.pdf",
+        "https://sfocii.org/files/2026-04/20260317_OCII%20Minutes.pdf",
+        "https://sfocii.org/files/inline-files/MEMO%20-%20Bond%20Counsel%203rd%20Lien%20CP%20Housing%20Infra%20TAB%20%26%20Attachment.pdf",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202603026735"
       ],
       "verify": [
-        "whether the 2024 changes alter tower heights outside Candlestick Center",
-        "a Candlestick-only affordable housing share (official figures are project-wide with Shipyard Phase 2)",
-        "building permits for the first-phase blocks, and which of the seven are residential"
+        "building permits for the first-phase blocks (none as of Oct 7, 2026; a grading permit was filed July 22, 2026)",
+        "the first-phase street improvement permit (OCII expected it in fall 2026)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "developer": "FivePoint Holdings (Lennar spinoff)",
-        "stageNote": "The groundbreaking (reported as Sept 10, 2026) started the infrastructure backbone for the first seven blocks: six residential and one commercial. No vertical buildings yet.",
+        "developer": "FivePoint, a Lennar spinoff",
         "sources": [
           "https://sfstandard.com/2026/09/10/candlestick-park-bayview-redevelopment-fivepoint/",
           "https://www.sfchronicle.com/bayarea/article/housing-candlestick-point-22424741.php",
@@ -262,11 +273,15 @@
         "U.S. Navy (owns and cleans up the Phase 2 land)"
       ],
       "stage": "paused",
-      "stageNote": "No construction is under way on any Phase 2 parcel: the Navy still owns the land, and parts of it are being retested after questions about a Navy contractor's earlier work. The Navy expects to convey Phase 2, except Parcel F, in 2036–2038. Phase 1 on the hilltop is partly built, with 505 homes complete by June 30, 2024 and permits for 189 more marked complete since.",
+      "stageNote": "No construction is under way on any Phase 2 parcel: the Navy still owns the land, and it has been retesting parts of it, including Parcel C since Aug 2022, after questions about a Navy contractor's earlier work. The Navy expects to convey Phase 2, except Parcel F, in 2036–2038. Phase 1 on the hilltop is mostly built: OCII's draft annual report counts 767 homes complete by June 30, 2025, 293 of them affordable, and the city's 2026 capital plan has the developer finishing the Hillside roads by 2026 and building about 7 acres of parks in 2026–2030.",
       "timeline": [
         {
           "date": "1997-07-14",
           "event": "Board of Supervisors adopts the Hunters Point Shipyard Redevelopment Plan (Ordinance 285-97)."
+        },
+        {
+          "date": "1999-03-30",
+          "event": "Redevelopment Agency Commission selects Lennar/BVHP as the shipyard's developer."
         },
         {
           "date": "2003",
@@ -297,6 +312,10 @@
           "event": "EPA approves soil retesting on Parcel G."
         },
         {
+          "date": "2022-08",
+          "event": "Navy begins radiological retesting on Parcel C."
+        },
+        {
           "date": "2024-06-30",
           "event": "OCII reports 505 Phase 1 homes complete, 102 of them affordable."
         },
@@ -309,8 +328,16 @@
           "event": "City marks the permit for 52 Kirkwood (77 homes, Phase 1) complete."
         },
         {
+          "date": "2025-06-30",
+          "event": "OCII's draft annual report counts 767 Phase 1 homes complete, 293 of them affordable."
+        },
+        {
           "date": "2026-06-30",
           "event": "City marks the permits for 351 and 151 Friedell (67 and 45 homes, Phase 1) complete."
+        },
+        {
+          "date": "2026–2030",
+          "event": "Phase 1 Hillside parks, about 7 acres, scheduled (city capital plan)."
         }
       ],
       "nextMilestone": "Navy conveyance of Phase 2, except Parcel F, expected 2036–2038.",
@@ -341,32 +368,23 @@
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910083908",
         "https://data.sf.gov/d/h9wh-cg3m",
         "https://sfocii.org/sites/default/files/2025-10/2024%20Hunters%20Point%20Shipyard%20Redevelopment%20Plan.pdf",
-        "https://sfocii.org/sites/default/files/inline-files/1.%20HUNTERS%20POINT%20SHIPYARD%20PHASE%202%20DESIGN%20FOR%20DEVELOPMENT.pdf"
+        "https://sfocii.org/sites/default/files/inline-files/1.%20HUNTERS%20POINT%20SHIPYARD%20PHASE%202%20DESIGN%20FOR%20DEVELOPMENT.pdf",
+        "https://onesanfrancisco.org/cap-plan-2026/economic-neighborhood-development-enhancement-projects",
+        "https://sfocii.org/sites/default/files/inline-files/1.%20Phase%201%20Disposition%20Development%20Agreement%2C%20December%202003_1.pdf",
+        "https://sfocii.org/files/2025-11/INFO%20MEMO_Navy%20Fact%20Sheet%20Transmittal%20%26%20Attachment%201-4.pdf",
+        "https://cumulis.epa.gov/supercpad/SiteProfiles/index.cfm?fuseaction=second.cleanup&id=0902722",
+        "https://sfocii.org/files/inline-files/MEMO_Annual%20Housing%20Production%20Report%20%26%20Attachment%201.pdf"
       ],
       "verify": [
-        "the current status of the Navy's retesting and Parcel F",
-        "the Phase 1 roads and parks schedule (2026–2030) in the city's capital plan (onesanfrancisco.org/node/1217)",
+        "when the Navy selects a remedy for Parcel F (EPA: remedial investigation ongoing)",
         "Phase 2 parcel boundaries from the Navy (bracpmo.navy.mil was unreachable)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "stageNote": "FivePoint has pushed its Phase 2 start to 2038. Phase 1 roads and about 7 acres of parks are scheduled for 2026–2030.",
         "timeline": [
-          {
-            "date": "1999",
-            "event": "Lennar awarded rights to develop the shipyard."
-          },
           {
             "date": "2016",
             "event": "FivePoint spun off from Lennar."
-          },
-          {
-            "date": "2025",
-            "event": "FivePoint moves the Hunters Point start to 2038."
-          },
-          {
-            "date": "2026–2030",
-            "event": "Phase 1 roads and parks (about 7 acres)."
           }
         ],
         "sources": [
@@ -420,7 +438,7 @@
         "SF Planning (development agreement)"
       ],
       "stage": "partial",
-      "stageNote": "Partly built. The Sophie Maxwell Building at 1212 Maryland St. (8 stories, 105 homes, 100% affordable) has been built: the city marked its building permit complete on Aug 28, 2026. The UC Regents approved UCSF's clinical and life sciences building on Block 2 in Sept 2024. Amendments to the development agreement, Special Use District and Design for Development, which would raise some height limits, are before the Board of Supervisors.",
+      "stageNote": "Partly built. The Sophie Maxwell Building at 1212 Maryland St. (8 stories, 105 homes, 100% affordable) has been built: the city marked its building permit complete on Aug 28, 2026. UCSF's clinical and life sciences building on Block 2 is under construction (Planning Commission, July 2026). On Oct 6, 2026 the Board of Supervisors gave final passage to the amended development agreement and Special Use District, which raise some height limits; they await the Mayor's signature.",
       "timeline": [
         {
           "date": "2020-01-30",
@@ -447,8 +465,16 @@
           "event": "Building permit issued for the Sophie Maxwell Building, 105 affordable homes at 1212 Maryland St."
         },
         {
+          "date": "2024-06-20",
+          "event": "Planning Commission approves the design of UCSF's Block 2 building (Motion 21581)."
+        },
+        {
           "date": "2024-09-19",
           "event": "UC Regents approve UCSF's clinical and life sciences building on Block 2: about 300,000 sq ft, 8 stories, 130 ft to the roof."
+        },
+        {
+          "date": "2025-05-06",
+          "event": "Block 2 is assigned to the UC Regents (recorded May 7, 2025)."
         },
         {
           "date": "2026-07-16",
@@ -456,7 +482,7 @@
         },
         {
           "date": "2026-07-30",
-          "event": "Planning Commission recommends the amended development agreement (Resolution 21945)."
+          "event": "Planning Commission recommends the amended development agreement (Resolution 21945) and approves the Design for Development amendments (Motion 21947)."
         },
         {
           "date": "2026-08-28",
@@ -465,11 +491,19 @@
         {
           "date": "2026-09-28",
           "event": "Board's Land Use and Transportation Committee recommends the amended development agreement to the full Board."
+        },
+        {
+          "date": "2026-09-29",
+          "event": "Board of Supervisors passes the amended development agreement and Special Use District on first reading, 11–0."
+        },
+        {
+          "date": "2026-10-06",
+          "event": "Board of Supervisors gives the amendments final passage; they go to the Mayor."
         }
       ],
-      "nextMilestone": "Board of Supervisors final vote on the amended development agreement and Special Use District.",
+      "nextMilestone": "Mayor's signature on the amended development agreement and Special Use District, finally passed Oct 6, 2026.",
       "summary": "A decommissioned power plant on the Central Waterfront being turned into a dense neighborhood of about 2,600 homes, labs and offices, with its 300-foot concrete boiler stack kept as a landmark. It opens a stretch of bayfront that was closed to the public for 150 years.",
-      "massingNotes": "Official only. Drawn now: the site boundary (Draft EIR Fig. 2-2) and the 300-ft boiler stack (Draft EIR pp. 2-7, 4.D-8). Block height limits are traced from the Design for Development (Feb 26, 2020; Motion 20638), Figure 6.2.3 Building Height Plan (p. 245): 65 to 240 ft by block, drawn to the limit (illustrative, not building designs); Block 9 outlined only (two configurations, with or without Unit 3). The 2018 Draft EIR blocks are superseded and not drawn. Addendum 2 (July 2026) proposes higher limits (Figure 6): +8 ft on residential blocks and more on Blocks 1, 5, 11, 12 and 15; these aren't in force until the Board adopts the amendments. Built: the Sophie Maxwell Building (8 stories). Approved: UCSF Block 2 (8 stories, 130 ft plus an 18-ft screen).",
+      "massingNotes": "Official only. Drawn now: the site boundary (Draft EIR Fig. 2-2) and the 300-ft boiler stack (Draft EIR pp. 2-7, 4.D-8). Block height limits are traced from the Design for Development (Feb 26, 2020; Motion 20638), Figure 6.2.3 Building Height Plan (p. 245): 65 to 240 ft by block, drawn to the limit (illustrative, not building designs); Block 9 outlined only (two configurations, with or without Unit 3). The 2018 Draft EIR blocks are superseded and not drawn. Addendum 2 (July 2026) proposes higher limits (Figure 6): +8 ft on residential blocks and more on Blocks 1, 5, 11, 12 and 15; the Board finally passed the amendments on Oct 6, 2026 (maximum height 240 to 248 ft; Block 1 podium 85 to 120 ft, Block 5 podium 85 to 130 ft), but they aren't drawn until they take effect. Built: the Sophie Maxwell Building (8 stories). Under construction: UCSF Block 2 (8 stories, 130 ft plus an 18-ft screen; Planning Commission Resolution 21945, July 30, 2026).",
       "officialLinks": [
         "https://sfplanning.org/potrero-power-station",
         "https://sfplanning.org/sites/default/files/documents/citywide/potreropower_D4D_final.pdf",
@@ -490,12 +524,18 @@
         "https://ceqanet.lci.ca.gov/2017112005/9",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202212229038",
         "https://regents.universityofcalifornia.edu/regmeet/sept24/f5attach6.pdf",
-        "https://regents.universityofcalifornia.edu/minutes/2024/board9.19.pdf"
+        "https://regents.universityofcalifornia.edu/minutes/2024/board9.19.pdf",
+        "https://sfgov.legistar.com/LegislationDetail.aspx?ID=8127456&GUID=998D0F6D-2280-47E5-ABBF-12FB5A9C2988",
+        "https://sfgov.legistar.com/View.ashx?M=M&ID=1449004&GUID=82BD7CE6-C773-4BF3-A2FA-3A59A473DBB1",
+        "https://sfgov.legistar.com/View.ashx?M=A&ID=1452949&GUID=6CA19DD5-BB90-4C0E-A6E9-BD06EE6528FE",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=15966142&GUID=ED55A055-C559-4D8A-A99B-D950E20EC5E9",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=15819011&GUID=26E5C3B5-7BD9-4A4B-8261-7C2751F2137D",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=15865420&GUID=3E0820DB-AA3F-4A13-81C8-36E02A9C6166"
       ],
       "verify": [
-        "the Sophie Maxwell Building's opening date (press: Oct 2025; permit marked complete Aug 28, 2026)",
-        "when construction of UCSF's Block 2 building started (press: Aug 2025)",
-        "the Board of Supervisors' final action on the 2026 amendments (Files 260724 and 260770)"
+        "the Sophie Maxwell Building's opening date (press: Oct 2025; the only other record is a developer release reposted on sfbos.org; permit marked complete Aug 28, 2026)",
+        "the month construction of UCSF's Block 2 building started (Planning, July 2026: 'construction has commenced'; press: Aug 2025)",
+        "ordinance numbers and effective date for Files 260724 and 260770"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
@@ -513,7 +553,7 @@
             "event": "Foundation and excavation work on Block 2."
           }
         ],
-        "massing": "Block 2 (UCSF building, Herzog & de Meuron) under construction since Aug 2025.",
+        "massing": "Block 2 (UCSF building, Herzog & de Meuron), construction since Aug 2025.",
         "sources": [
           "https://sfyimby.com/2026/02/excavation-work-underway-for-potrero-power-station-block-2-san-francisco.html",
           "https://www.sfchronicle.com/realestate/article/one-s-f-s-biggest-developments-changing-plans-22365461.php",
@@ -548,14 +588,14 @@
         "retailSqft": null,
         "hotelKeys": null,
         "openSpaceAcres": 6.5,
-        "notes": "Port: 1,100–2,150 homes on the 28-Acre Site (1,500–3,000 across the Special Use District), 30% affordable, and 6.5 acres of parks (9 acres across the district). Proposition F (2014) allows 1–2 million sq ft of commercial and office space; the EIR studied up to about 2.26 million gsf of office. Buildings 2, 12 and 21 are kept and rehabilitated. A proposal the Port heard in Aug 2026 would add about 600 homes and lower the affordable rate to no less than 20%; it is not approved."
+        "notes": "Port: 1,100–2,150 homes on the 28-Acre Site (1,500–3,000 across the Special Use District), 30% affordable, and 6.5 acres of parks (9 acres across the district). Proposition F (2014) allows 1–2 million sq ft of commercial and office space; the EIR studied up to about 2.26 million gsf of office. Buildings 2, 12 and 21 are kept and rehabilitated. A proposal the Port heard in Aug 2026 would add about 600 homes and lower the affordable rate to no less than 20%; it is not approved. Phase 1, as approved in 2018, anticipates about 588 homes."
       },
       "developer": "FC Pier 70, LLC (Brookfield Properties)",
       "publicPartners": [
         "Port of San Francisco"
       ],
       "stage": "partial",
-      "stageNote": "Building 12's rehabilitation was completed in January 2022, and the city and Port accepted the Phase 1 streets in 2024; Phase 1 parks and new buildings haven't started. Phase 1 is in a permitted down-market delay, extended to Dec 26, 2026.",
+      "stageNote": "Building 12's rehabilitation was completed in January 2022, and the Port reports it nearly 90% leased (Aug 2026); it is still the project's only vertical building, and historic Buildings 2 and 21 haven't been rehabilitated. The city and Port accepted the Phase 1 streets in 2024; Phase 1 parks and new buildings haven't started. Phase 1 is in a permitted down-market delay, extended to Dec 26, 2026.",
       "timeline": [
         {
           "date": "2014-11-04",
@@ -602,6 +642,10 @@
           "event": "Phase 1's down-market delay reaches its 60-month limit and is extended six months, to Dec 26, 2026."
         },
         {
+          "date": "2026-07",
+          "event": "Developer presents proposed changes to the Dogpatch Neighborhood Association and the Potrero Boosters."
+        },
+        {
           "date": "2026-08-11",
           "event": "Port Commission hears a term sheet that would raise some residential parcels from 65 to 90 ft and add about 600 homes (informational)."
         }
@@ -629,21 +673,16 @@
         "https://www.sfport.com/media/8123/download?inline="
       ],
       "verify": [
-        "the status of Buildings 2 and 21",
-        "Building 12's tenants (press names General Catalyst)",
-        "which parcels the Aug 2026 proposal would raise from 65 to 90 ft"
+        "the two venture capital firms leasing Building 12's third floor (press names General Catalyst)",
+        "which parcels the Aug 2026 proposal would raise from 65 to 90 ft (the Port says only 'certain residential parcels')"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "stageNote": "General Catalyst leased about 70,000 sq ft in Building 12 in Jan 2026. Brookfield's first market-rate building (about 420 units) could start in 2027, and Phase 1 would total about 700 homes.",
+        "stageNote": "General Catalyst leased about 70,000 sq ft in Building 12 in Jan 2026. Brookfield's first market-rate building (about 420 units) could start in 2027, and under its proposal Phase 1 would total up to about 700 homes.",
         "timeline": [
           {
             "date": "2026-01",
             "event": "General Catalyst signs about 70,000 sq ft in Building 12."
-          },
-          {
-            "date": "2026-07",
-            "event": "Brookfield proposes about 600 more homes and taller buildings."
           }
         ],
         "sources": [
@@ -678,9 +717,9 @@
         "retailSqft": null,
         "hotelKeys": null,
         "openSpaceAcres": 8,
-        "notes": "Up to 1,200 rental homes (Port, Oct 2023); the Port's June 2026 report says at least 1,000. 1.4 million sq ft of commercial and office space. Phase 1 has about 52,000 sq ft of retail; the Draft EIR studied 241,000–244,800 sq ft of retail and production space in all. Plans also rehabilitate about 261,000 sq ft of Pier 48 and add a parking structure on Block D2."
+        "notes": "Up to 1,200 rental homes (Port, Oct 2023); the Port's June 2026 report says at least 1,000. 1.4 million sq ft of commercial and office space. Phase 1 has about 52,000 sq ft of retail; the Port's 2019 approvals call for 241,000–244,800 gsf of active retail and production space at full build-out. Plans also rehabilitate about 261,000 sq ft of Pier 48 and add a parking structure on Block D2."
       },
-      "developer": "Seawall Lot 337 Associates, LLC",
+      "developer": "Seawall Lot 337 Associates, LLC (Mission Rock Partners: the San Francisco Giants and Tishman Speyer)",
       "publicPartners": [
         "Port of San Francisco"
       ],
@@ -730,7 +769,7 @@
       ],
       "nextMilestone": "Phase 2 agreement amendments to the Port in fall 2026 and the Board of Supervisors in fall 2026 or winter 2027; construction could start as early as 2027.",
       "summary": "The Giants' former parking lot across McCovey Cove from Oracle Park, being built out as a waterfront neighborhood. The first four buildings and the 5-acre China Basin Park are done, and the Port is funding pre-development of the second phase.",
-      "massingNotes": "Boundary: DataSF Special Use Districts (5yf5-ms5f, Public Domain U.S. Government), feature \"Mission Rock\" (about 27.7 acres vs the official 28). Draft EIR Table 2-4 heights: Blocks A, D1 and F up to 240 ft, C and G 190 ft, the rest 90–120 ft (verify against the adopted Design Controls); built Phase 1 per permits: A 24 stories, F 23, G 13, B 8. Massing comes in Milestone 4.",
+      "massingNotes": "Boundary: DataSF Special Use Districts (5yf5-ms5f, Public Domain U.S. Government), feature \"Mission Rock\" (about 27.7 acres vs the official 28). Draft EIR Table 2-4 heights: Blocks A, D1 and F up to 240 ft, C and G 190 ft, the rest 90–120 ft (confirmed in the Port's Design Controls, Apr 24, 2018: B 120 ft, E 90 ft, H, I and J 120 ft if residential or 90 ft if commercial, K 120 ft, Block D's base to 100 ft); built Phase 1 per permits: A 24 stories, F 23, G 13, B 8. Massing comes in Milestone 4.",
       "officialLinks": [
         "https://www.sfport.com/projects-programs/mission-rock",
         "https://www.sfport.com/sites/default/files/2026-06/item_11a_mission_rock_phase_2_update_and_port_capital.pdf",
@@ -749,16 +788,16 @@
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910073785",
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201910285744",
         "https://data.sf.gov/d/5yf5-ms5f",
-        "https://data.sf.gov/d/h9wh-cg3m"
+        "https://data.sf.gov/d/h9wh-cg3m",
+        "https://www.sfport.com/sites/default/files/2025-07/Mission%20Rock%20Design%20Controls%204.24.18_FINAL_Reduced%20File.pdf",
+        "https://www.sfport.com/sites/default/files/Documents/Item%207A%20Mission%20Rock%20Phase%201%20Budget%20Approval%20%28003%29.pdf"
       ],
       "verify": [
-        "the total retail program at full build-out",
-        "block heights in the adopted Design Controls (Resolution 20021)",
-        "the Port and Board actions on the Phase 2 amendments"
+        "the Port and Board actions on the Phase 2 amendments (scheduled for fall 2026 and fall 2026 or winter 2027)",
+        "Visa headquarters' floor area (Port: Parcels B and G together about 620,000 sq ft)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "developer": "Mission Rock Partners (SF Giants + Tishman Speyer)",
         "stageNote": "Visa's headquarters on Parcel G is about 300,000 sq ft.",
         "sources": [
           "https://bisnow.com/san-francisco/news/office/visa-to-build-global-hq-at-giants-tishman-speyers-mission-rock-101678",
@@ -791,14 +830,14 @@
         "retailSqft": null,
         "hotelKeys": null,
         "openSpaceAcres": 40.5,
-        "notes": "OCII figures: 2,964 homes (698 affordable) and 6.5 acres of parks in Mission Bay North; 3,571 homes (1,218 affordable) and 34 acres of parks in Mission Bay South. Mission Bay South has 6.1 million sq ft of commercial and institutional space and 429 hotel rooms; Mission Bay North about 200,000 sq ft of commercial space. Includes UCSF's research campus and the Warriors' event center on an approximately 11-acre site."
+        "notes": "OCII figures: 2,964 homes (698 affordable) and 6.5 acres of parks in Mission Bay North; 3,571 homes (1,218 affordable) and 34 acres of parks in Mission Bay South. Mission Bay South has 6.1 million sq ft of commercial and institutional space and 429 hotel rooms; Mission Bay North about 200,000 sq ft of commercial space. Includes UCSF's research campus and the Warriors' event center on an approximately 11-acre site. Ordinance 22-26 (Feb 2026) raised Mission Bay South's planned homes from about 3,440 to 3,690, adding 250 affordable homes on Block 4 East. Mission Bay North has no hotel; the 429 hotel rooms are in Mission Bay South."
       },
       "developer": "FOCIL-MB LLC (successor to the original master developer, Catellus Development Corporation)",
       "publicPartners": [
         "SF Office of Community Investment and Infrastructure (OCII)"
       ],
       "stage": "partial",
-      "stageNote": "Largely built: most planned homes are finished, with mostly affordable homes left to build (Housing Element, Jan 2023). The city's 2022 capital plan expected 10 more Mission Bay parks over the following eight years.",
+      "stageNote": "Largely built. The last two affordable housing sites are moving: OCII approved 398 affordable homes on Block 4 East in Nov 2025, the Board raised the plan's height and housing limits for it in Feb 2026 (Ordinance 22-26), and the city issued building permits for both buildings in June and Sept 2026. Block 12 West, the last residential site, has no housing entitlement left; OCII and FOCIL propose about 535 homes there, with approvals expected in early 2027. The city's 2026 capital plan expects nine more Mission Bay parks over the next four years.",
       "timeline": [
         {
           "date": "1998-11",
@@ -811,6 +850,26 @@
         {
           "date": "2023-01",
           "event": "Adopted Housing Element reports most planned homes built and a proposal to add up to 815 homes on the two remaining affordable parcels."
+        },
+        {
+          "date": "2024",
+          "event": "Bayfront Park, about 5 acres, opens."
+        },
+        {
+          "date": "2025-11-18",
+          "event": "OCII approves 398 affordable homes in two buildings on Block 4 East."
+        },
+        {
+          "date": "2026-02-03",
+          "event": "Board of Supervisors finally passes Ordinance 22-26, allowing 250 more homes and 250-ft heights on Block 4 East's north half."
+        },
+        {
+          "date": "2026-06-26",
+          "event": "City issues the building permit for Block 4 East's first building (16 stories, 165 homes)."
+        },
+        {
+          "date": "2026-09-09",
+          "event": "City issues the building permit for Block 4 East's second building (23 stories, 233 homes)."
         }
       ],
       "nextMilestone": null,
@@ -821,7 +880,7 @@
         "https://sfocii.org/projects/mission-bay-south/overview"
       ],
       "sources": [
-        "https://sfocii.org/mission-bay",
+        "https://sfocii.org/projects/mission-bay/overview",
         "https://sfocii.org/projects/mission-bay-north/overview",
         "https://sfocii.org/projects/mission-bay-south/overview",
         "https://sfocii.org/files/inline-images/Mission%20Bay%20South%20Open%20Space.png",
@@ -834,12 +893,20 @@
         "https://sfocii.org/sites/default/files/inline-files/MB%20Land%20Use%20Map%20Oct%202023_0.pdf",
         "https://data.sf.gov/d/aaxw-2cb8",
         "https://data.sf.gov/d/i98e-djp9",
-        "https://data.sf.gov/d/acdm-wktn"
+        "https://data.sf.gov/d/acdm-wktn",
+        "https://sfbos.org/sites/default/files/o0022-26.pdf",
+        "https://sfocii.org/files/2025-11/MEMO_Mission%20Bay%20South%20Block%204%20East%20%26%20Attach%201-4.pdf",
+        "https://sfocii.org/files/2025-11/20251118_Minutes.pdf",
+        "https://sfocii.org/files/inline-files/MEMO_MBS%2012W%20MOU.pdf",
+        "https://sfocii.org/files/inline-files/MEMO-%202026AB%20MBS%20Bonds.pdf",
+        "https://onesanfrancisco.org/cap-plan-2026/economic-neighborhood-development-enhancement-projects",
+        "https://sfocii.org/projects/mission-bay-north/commercial",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202512161871",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202512172072"
       ],
       "verify": [
-        "whether the density increase on the last two affordable parcels (up to 815 more homes, 980 in all) was enacted",
-        "OCII's current schedule for the remaining parks (the 2022 capital plan figure is dated)",
-        "whether Mission Bay North has any hotel rooms"
+        "OCII's action on the Block 12 West memorandum of understanding (on its Oct 6, 2026 agenda)",
+        "first construction dates on Block 4 East's permits (202512161871 and 202512172072)"
       ],
       "lastVerified": "2026-10-02"
     },
@@ -1035,7 +1102,7 @@
         "SF Recreation and Park Department (India Basin Waterfront Park)"
       ],
       "stage": "entitled",
-      "stageNote": "Entitled. The Board of Supervisors approved the development agreement and zoning in October 2018, and the agreement was recorded in October 2019. DBI grading permits for the private 700 Innes site, filed in 2022, are still in plan check. The city's India Basin Waterfront Park is being built separately: 900 Innes opened in fall 2024, and the final phase broke ground on Aug 19, 2025.",
+      "stageNote": "Entitled. The Board of Supervisors approved the development agreement and zoning in October 2018, and the agreement was recorded in October 2019. Planning has approved the first two development phases (2020 and 2024), but DBI grading permits for the private 700 Innes site, filed in 2022, are still in plan check. The city's India Basin Waterfront Park is being built separately: 900 Innes opened in October 2024, and the final phase broke ground on Aug 19, 2025.",
       "timeline": [
         {
           "date": "2018-07-26",
@@ -1054,6 +1121,10 @@
           "event": "Development agreement recorded with the Assessor-Recorder."
         },
         {
+          "date": "2020-09-01",
+          "event": "Planning approves the first development phase, the Hillside (up to 622 homes)."
+        },
+        {
           "date": "2021",
           "event": "India Basin Waterfront Park project breaks ground."
         },
@@ -1062,8 +1133,16 @@
           "event": "Grading and site permits filed for 700 Innes; still in plan check."
         },
         {
-          "date": "2024",
-          "event": "The park's southern portion at 900 Innes Ave. opens in fall 2024."
+          "date": "2024-10",
+          "event": "The park's southern portion at 900 Innes Ave. opens."
+        },
+        {
+          "date": "2024-10-17",
+          "event": "Planning Commission amends the design standards to allow 150 small-lot homes in the Flats (Motion 21629)."
+        },
+        {
+          "date": "2024-11-14",
+          "event": "Planning approves the second development phase, the Flats (150 homes on 75 lots)."
         },
         {
           "date": "2025-08-19",
@@ -1098,12 +1177,14 @@
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202205033459",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202204212681",
         "https://data.sf.gov/d/5yf5-ms5f",
-        "https://sfplanning.s3.amazonaws.com/default/files/devagreements/indiabasin/IndiaBasin_Design_Standards_and_Guidelines.pdf"
+        "https://sfplanning.s3.amazonaws.com/default/files/devagreements/indiabasin/IndiaBasin_Design_Standards_and_Guidelines.pdf",
+        "https://citypln-m-extnl.sfgov.org/Commissions/CPC/11_7_2024/Commission%20Packet/20241017_cpc_min.pdf",
+        "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=412c652a5e35f4dbd7be7cf66f66e1dc9383e7442ec322b22158483d1c370ec0&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+        "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=deb9da60ff84e5c855fab97d7a1a10ea7e54bbc95e34911de28c283124d60085&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0"
       ],
       "verify": [
         "the developer default reported by the press in Sept 2026 (no public record found)",
-        "any amendments to the development agreement since 2019",
-        "the exact month 900 Innes opened (Rec and Park: fall 2024)"
+        "any ordinance amending the development agreement (none found; phasing changes have come through Planning's phase approvals)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",

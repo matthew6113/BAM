@@ -143,14 +143,15 @@
     "kind": "block",
     "block": "2",
     "label": "Block 2",
-    "stage": "entitled",
+    "stage": "construction",
     "height_ft": 130,
     "podium_ft": null,
     "base_ft": 0,
     "use": null,
     "phase": null,
     "illustrative": true,
-    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245"
+    "source": "illustrative: drawn to the height limit traced from Potrero Power Station Design for Development (Feb 26, 2020; Planning Commission Motion 20638), Figure 6.2.3, Building Height Plan, p. 245",
+    "note": "Under construction: UCSF's building (Planning Commission Resolution 21945, July 30, 2026, finding 4: 'construction has commenced')."
    },
    "geometry": {
     "type": "MultiPolygon",

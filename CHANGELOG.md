@@ -3,6 +3,56 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-07 (official-source pass: east San Francisco)
+
+Findings: `docs/official-research/update-2026-10-07-sf-east.md`. `lastVerified` unchanged (only these items re-checked).
+
+- **potrero-power-station:**
+  - The Board of Supervisors passed the amended development agreement and Special Use District on first
+    reading Sept 29, 2026 (11–0) and finally on Oct 6, 2026. Legistar status is "Mayors Office"; there are
+    no ordinance numbers yet. Next milestone: the Mayor's signature.
+  - UCSF's Block 2 building is under construction, on the Planning Commission's finding in Resolution
+    21945 (July 30, 2026). The massing shows Block 2 as under construction: `STAGES` in
+    `pipeline/bam_pipeline/sites/potrero_power_station.py` and the massing file. The press's Aug 2025
+    start month stays in `reported`.
+  - The amended heights (to 248 ft) aren't drawn until the amendments take effect.
+  - The Sophie Maxwell opening (Oct 2025) stays held back: the only record is a developer release
+    reposted on sfbos.org.
+- **candlestick-point:**
+  - Developer confirmed as FivePoint Holdings, LLC (OCII). The "Lennar spinoff" wording stays in `reported`.
+  - OCII's Candlestick-only affordable share is about 34%, counting workforce homes.
+  - Confirmed from OCII: the first phase's seven blocks (six residential, one commercial), infrastructure
+    first, and no building permits yet.
+  - The groundbreaking date is Sept 9 (not the press's Sept 10). Final map recorded June 22, 2026.
+  - The 2024 changes don't alter tower limits outside Candlestick Center.
+- **hunters-point-shipyard:**
+  - The 2038 date is the Navy's conveyance estimate (2036–2038), not a FivePoint start date, so the press
+    note is dropped.
+  - Confirmed: the Phase 1 roads and about 7 acres of parks (2026 capital plan), and Lennar/BVHP's
+    selection on Mar 30, 1999.
+  - New: retesting on Parcel C since Aug 2022, and 767 Phase 1 homes complete by June 30, 2025 (OCII
+    draft report).
+- **pier-70:**
+  - Port (Aug 2026): Building 12 is nearly 90% leased and still the only vertical building; Buildings 2
+    and 21 aren't rehabilitated. The approved Phase 1 anticipates 588 homes; the press's "about 700" is the
+    developer's proposal.
+  - The July 2026 neighborhood presentations are confirmed. General Catalyst stays unconfirmed: the Port
+    names two venture capital firms without naming them.
+- **mission-rock:** developer confirmed (Seawall Lot 337 Associates, whose sole member is Mission Rock
+  Partners: the Giants and Tishman Speyer). Block heights confirmed against the 2018 Design Controls. Retail
+  at build-out: 241,000–244,800 gsf of retail and production space (Port, 2019).
+- **mission-bay:**
+  - The density increase is partly enacted. Block 4 East: OCII approval (Nov 2025), Ordinance 22-26
+    (Feb 2026; plan cap 3,440 to 3,690 homes, 250-ft height) and two building permits (June and Sept 2026).
+    Block 12 West: about 535 homes proposed, approvals expected in early 2027.
+  - New parks schedule: nine parks in four years (2026 capital plan). Mission Bay North has no hotel.
+  - Fixed a broken OCII source link.
+- **india-basin:**
+  - 900 Innes opened in October 2024 (Rec and Park).
+  - No Board amendment to the development agreement was found. Planning approved Phase 1 (2020), a
+    design-standards amendment (Oct 2024) and Phase 2 (Nov 2024).
+  - The default stays unconfirmed, so the stage stays entitled.
+
 ## 2026-10-07 (official-source pass: west San Francisco and HOPE SF)
 
 Each project's held-back press facts (`reported`) and open questions (`verify`) were checked against
