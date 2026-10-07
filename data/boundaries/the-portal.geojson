@@ -1,0 +1,387 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "the-portal",
+  "source": "traced: TJPA, The Portal Monthly Status Report, September 2026, p. 4, Figure 1, The Portal Alignment and Major Components (drawing MP-05b-AL-20260512), georeferenced on 35 DataSF street intersections",
+  "sourceLabel": "TJPA, The Portal Monthly Status Report (Sept 2026), Figure 1",
+  "sourceUrl": "https://www.tjpa.org/media/40591?inline=",
+  "accuracy": "traced",
+  "accuracyNote": "Approximate alignment traced from TJPA's map of the current (2026) design: 1.76 miles from the tunnel's west end to the east end of the train box, which includes the below-grade approach at the west end (U-wall and tunnel stub box), so it is longer than TJPA's '1.3-mile tunnel'; plus 0.39 miles of trackwork on existing tracks to 16th Street (2.15 miles in all; TJPA: 'total project length is 2.2 miles'). Georeferenced on 35 street intersections (DataSF centrelines), RMS 1.18 m; the map draws the line about 37 m wide, so the centreline is good to several metres. Stations are the centres of the station shapes in the map. The site shown is a 40 m corridor around the alignment, for selecting it on the map; it is not a property line.",
+  "license": "Traced facts from a public TJPA report (the PDF is not redistributed). Georeference: Open Data Commons Public Domain Dedication and License (PDDL) 1.0; City and County of San Francisco. Trackwork: Public domain: 'a work of the United States government as defined in 17 U.S.C. § 101 ... available for unrestricted public use' (service copyright text).",
+  "otherSources": [
+   "https://data.sf.gov/d/3psu-pn9h",
+   "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer/0",
+   "https://www.sfcta.org/sites/default/files/2026-01/SFCTA_CAC_Item9_TJPAPortalProjectFiscalYear2026MEMO_2026-01-28.pdf"
+  ],
+  "georeference": {
+   "scale_m_per_unit": 2.07896,
+   "rotation_deg": 45.492,
+   "rms_m": 1.18,
+   "controls": [
+    {
+     "label": "07TH ST & TOWNSEND ST",
+     "residual_m": 2.01
+    },
+    {
+     "label": "07TH ST & KING ST",
+     "residual_m": 0.72
+    },
+    {
+     "label": "06TH ST & BRANNAN ST",
+     "residual_m": 1.5
+    },
+    {
+     "label": "05TH ST & BRANNAN ST",
+     "residual_m": 0.75
+    },
+    {
+     "label": "03RD ST & BRANNAN ST",
+     "residual_m": 0.89
+    },
+    {
+     "label": "03RD ST & BRYANT ST",
+     "residual_m": 2.12
+    },
+    {
+     "label": "03RD ST & HARRISON ST",
+     "residual_m": 0.88
+    },
+    {
+     "label": "03RD ST & FOLSOM ST",
+     "residual_m": 0.61
+    },
+    {
+     "label": "03RD ST & BERRY ST",
+     "residual_m": 1.72
+    },
+    {
+     "label": "02ND ST & MISSION ST",
+     "residual_m": 0.95
+    },
+    {
+     "label": "01ST ST & FOLSOM ST",
+     "residual_m": 0.44
+    },
+    {
+     "label": "01ST ST & HOWARD ST",
+     "residual_m": 0.53
+    },
+    {
+     "label": "01ST ST & MISSION ST",
+     "residual_m": 0.55
+    },
+    {
+     "label": "FREMONT ST & HARRISON ST",
+     "residual_m": 0.85
+    },
+    {
+     "label": "FREMONT ST & FOLSOM ST",
+     "residual_m": 0.87
+    },
+    {
+     "label": "FREMONT ST & HOWARD ST",
+     "residual_m": 1.17
+    },
+    {
+     "label": "FREMONT ST & MISSION ST",
+     "residual_m": 0.91
+    },
+    {
+     "label": "BEALE ST & BRYANT ST",
+     "residual_m": 1.88
+    },
+    {
+     "label": "BEALE ST & HARRISON ST",
+     "residual_m": 0.91
+    },
+    {
+     "label": "BEALE ST & FOLSOM ST",
+     "residual_m": 1.11
+    },
+    {
+     "label": "BEALE ST & HOWARD ST",
+     "residual_m": 0.72
+    },
+    {
+     "label": "MAIN ST & HARRISON ST",
+     "residual_m": 2.51
+    },
+    {
+     "label": "MAIN ST & FOLSOM ST",
+     "residual_m": 0.99
+    },
+    {
+     "label": "MAIN ST & HOWARD ST",
+     "residual_m": 1.63
+    },
+    {
+     "label": "MAIN ST & MISSION ST",
+     "residual_m": 1.05
+    },
+    {
+     "label": "SPEAR ST & HARRISON ST",
+     "residual_m": 0.61
+    },
+    {
+     "label": "SPEAR ST & FOLSOM ST",
+     "residual_m": 1.17
+    },
+    {
+     "label": "SPEAR ST & HOWARD ST",
+     "residual_m": 0.11
+    },
+    {
+     "label": "SPEAR ST & MISSION ST",
+     "residual_m": 0.82
+    },
+    {
+     "label": "NEW MONTGOMERY ST & HOWARD ST",
+     "residual_m": 1.1
+    },
+    {
+     "label": "HAWTHORNE ST & FOLSOM ST",
+     "residual_m": 0.81
+    },
+    {
+     "label": "HAWTHORNE ST & HOWARD ST",
+     "residual_m": 0.81
+    },
+    {
+     "label": "STEUART ST & HOWARD ST",
+     "residual_m": 2.0
+    },
+    {
+     "label": "STEUART ST & MISSION ST",
+     "residual_m": 0.55
+    },
+    {
+     "label": "ESSEX ST & FOLSOM ST",
+     "residual_m": 0.57
+    }
+   ]
+  },
+  "check": "Compared locally (not published) with the Authority's 'DTX (Downtown Extension)' line (1.32 mi, which predates the 2026 changes), sampled every 20 m. Its points lie median 7 m, 95th percentile 58 m, max 142 m from ours; ours lie median 20 m, 95th percentile 713 m, max 781 m from it (the far points are our approach south along Seventh Street, which its line doesn't include).",
+  "corridor": true,
+  "corridorMetres": 40
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Alignment corridor"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.399449,
+       37.770804
+      ],
+      [
+       -122.394475,
+       37.766784
+      ],
+      [
+       -122.394378,
+       37.766519
+      ],
+      [
+       -122.394546,
+       37.766277
+      ],
+      [
+       -122.394836,
+       37.766198
+      ],
+      [
+       -122.395123,
+       37.766283
+      ],
+      [
+       -122.400183,
+       37.770345
+      ],
+      [
+       -122.400723,
+       37.771025
+      ],
+      [
+       -122.400889,
+       37.771554
+      ],
+      [
+       -122.400883,
+       37.771991
+      ],
+      [
+       -122.400673,
+       37.772582
+      ],
+      [
+       -122.400224,
+       37.77321
+      ],
+      [
+       -122.399499,
+       37.77395
+      ],
+      [
+       -122.394614,
+       37.777875
+      ],
+      [
+       -122.392635,
+       37.779375
+      ],
+      [
+       -122.392244,
+       37.779893
+      ],
+      [
+       -122.392047,
+       37.780388
+      ],
+      [
+       -122.3921,
+       37.781044
+      ],
+      [
+       -122.392299,
+       37.781425
+      ],
+      [
+       -122.392633,
+       37.781803
+      ],
+      [
+       -122.397821,
+       37.785906
+      ],
+      [
+       -122.398244,
+       37.786423
+      ],
+      [
+       -122.398482,
+       37.78703
+      ],
+      [
+       -122.398508,
+       37.787402
+      ],
+      [
+       -122.398662,
+       37.787699
+      ],
+      [
+       -122.398676,
+       37.787972
+      ],
+      [
+       -122.398585,
+       37.788143
+      ],
+      [
+       -122.398198,
+       37.788535
+      ],
+      [
+       -122.395566,
+       37.790633
+      ],
+      [
+       -122.395157,
+       37.790732
+      ],
+      [
+       -122.394825,
+       37.790517
+      ],
+      [
+       -122.394866,
+       37.790179
+      ],
+      [
+       -122.397756,
+       37.787815
+      ],
+      [
+       -122.397614,
+       37.787576
+      ],
+      [
+       -122.397521,
+       37.786941
+      ],
+      [
+       -122.397117,
+       37.786365
+      ],
+      [
+       -122.391912,
+       37.782243
+      ],
+      [
+       -122.3915,
+       37.781773
+      ],
+      [
+       -122.391229,
+       37.781255
+      ],
+      [
+       -122.391127,
+       37.78085
+      ],
+      [
+       -122.391151,
+       37.780252
+      ],
+      [
+       -122.391413,
+       37.779597
+      ],
+      [
+       -122.391934,
+       37.77891
+      ],
+      [
+       -122.397466,
+       37.774579
+      ],
+      [
+       -122.398776,
+       37.773509
+      ],
+      [
+       -122.399483,
+       37.77279
+      ],
+      [
+       -122.399831,
+       37.772303
+      ],
+      [
+       -122.399982,
+       37.771877
+      ],
+      [
+       -122.399981,
+       37.771603
+      ],
+      [
+       -122.399875,
+       37.771292
+      ],
+      [
+       -122.399449,
+       37.770804
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

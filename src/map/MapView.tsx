@@ -57,7 +57,7 @@ export function syncStyle(map: maplibregl.Map, next: StyleInputs) {
 }
 
 /** Layers that open a project when clicked. */
-export const PROJECT_HIT_LAYERS = ['project-site-fill', 'project-markers'];
+export const PROJECT_HIT_LAYERS = ['project-site-fill', 'project-line-hit', 'project-markers'];
 
 interface Hover {
   name: string;

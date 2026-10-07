@@ -3,7 +3,7 @@
 
 PY = uv run --directory pipeline python -m
 
-.PHONY: help data tools fetch process buildings tiles fonts glyphs manifest sites photos dev build test e2e screenshots clean-build
+.PHONY: help data tools fetch process buildings tiles fonts glyphs manifest sites photos upkeep dev build test e2e screenshots clean-build
 
 help:
 	@echo "make data         Full data pipeline: fetch, process, tile, fonts, glyphs, manifest"
@@ -12,6 +12,7 @@ help:
 	@echo "make tiles        Rebuild PMTiles from data/build/"
 	@echo "make sites        Re-trace project boundaries and massing from their source documents"
 	@echo "make photos       Download the approved project photos from Wikimedia Commons into public/photos/"
+	@echo "make upkeep       Write the update checklist to docs/upkeep/<date>.md (see docs/UPKEEP.md)"
 	@echo "make dev          Start the dev server (http://127.0.0.1:5173)"
 	@echo "make test         Data, geometry, theme and helper tests"
 	@echo "make e2e          Playwright interaction tests (map controls, fly-in, panel, deep links)"
@@ -84,9 +85,18 @@ sites:
 	$(PY) bam_pipeline.sites.landuse_mare_island
 	$(PY) bam_pipeline.sites.traced_boundaries
 	$(PY) bam_pipeline.sites.landuse_sonoma_developmental_center
+	$(PY) bam_pipeline.sites.lines_bart_silicon_valley_phase_2
+	$(PY) bam_pipeline.sites.lines_the_portal
+	$(PY) bam_pipeline.sites.lines_cahsr_sf_sj
+	$(PY) bam_pipeline.sites.lines_valley_link
+	$(PY) bam_pipeline.sites.lines_sf_waterfront_flood_defense
+	$(PY) bam_pipeline.sites.bart_station_housing
 
 photos:
 	$(PY) bam_pipeline.photos
+
+upkeep:
+	$(PY) bam_pipeline.upkeep
 
 dev:
 	npx vite --host 127.0.0.1

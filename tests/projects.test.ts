@@ -1,6 +1,10 @@
 import { describe, expect, it } from 'vitest';
 import {
+  alignmentMidpoint,
+  alignmentOf,
   boundaryOf,
+  isLineProject,
+  lineOf,
   centroidOf,
   getProject,
   LAND_USE_CATEGORIES,
@@ -8,11 +12,14 @@ import {
   linePrefix,
   loadAllGeometry,
   MAPPED_PROJECTS,
+  PROJECTS,
   massingOf,
   metres,
   boundaryLine,
   siteOf,
   bboxOf,
+  markerPointsOf,
+  containsPoint,
 } from '../src/projects/data';
 import { isOfficialSource } from '../src/projects/official';
 import { STAGE_KEYS } from '../src/theme/theme';
@@ -116,6 +123,55 @@ describe('traced project geometry', () => {
   });
 });
 
+describe('line projects', () => {
+  const lineProjects = MAPPED_PROJECTS.filter((p) => isLineProject(p.id));
+
+  it('gives every line project a corridor boundary, so it can be selected', () => {
+    for (const p of PROJECTS.filter((q) => isLineProject(q.id))) expect(boundaryOf(p.id), p.id).toBeDefined();
+  });
+  for (const project of lineProjects) {
+    describe(project.id, () => {
+      const line = lineOf(project.id)!;
+      const meta = line.properties ?? {};
+
+      it('cites where its alignment came from, from the project sources', () => {
+        expect(['official', 'traced', 'approximate']).toContain(meta.accuracy);
+        expect(String(meta.accuracyNote)).toMatch(/\S/);
+        expect(String(meta.license)).toMatch(/\S/);
+        expect(project.sources).toContain(meta.sourceUrl);
+        expect(boundaryOf(project.id)!.properties?.corridor).toBe(true);
+      });
+
+      it('has an alignment, typed pieces and named stations', () => {
+        const pieces = line.features.filter((f) => f.properties.kind === 'line');
+        expect(pieces.length).toBeGreaterThan(0);
+        for (const f of line.features) {
+          const p = f.properties;
+          expect(['line', 'station'], p.name).toContain(p.kind);
+          expect(p.name).toMatch(/\S/);
+          expect(p.source, p.name).toMatch(/^(traced|GIS|constructed)/);
+          if (p.kind === 'line') expect(['new', 'tunnel', 'shared'], p.name).toContain(p.segment);
+          else expect(['new', 'rebuilt', 'existing'], p.name).toContain(p.status);
+        }
+      });
+
+      it('keeps its stations on the line', () => {
+        const parts = alignmentOf(project.id)!.geometry.coordinates as [number, number][][];
+        const near = (pt: [number, number]) =>
+          Math.min(...parts.flatMap((c) => c.map((q) => metres(pt, q))));
+        for (const f of line.features.filter((f) => f.properties.kind === 'station')) {
+          // Within 400 m of a vertex: stations sit beside or over the track, not on its centreline.
+          expect(near(f.geometry.coordinates as [number, number]), f.properties.name).toBeLessThan(400);
+        }
+      });
+
+      it('puts its marker on the line', () => {
+        expect(alignmentMidpoint(project.id)).toBeDefined();
+      });
+    });
+  }
+});
+
 describe('Potrero block height limits', () => {
   const blocks = massingOf('potrero-power-station')!.features.filter((f) => f.properties.kind === 'block');
   const zones = (b: string) =>
@@ -191,6 +247,27 @@ describe('geometry helpers', () => {
     expect(len(linePrefix(line, 0.5)) / whole).toBeCloseTo(0.5, 3);
     expect(linePrefix(line, 1)).toBe(line);
     expect(linePrefix(line, 0).geometry.coordinates[0].length).toBeGreaterThanOrEqual(2);
+  });
+
+  it('puts a regional marker on each station of a scattered program, and one on every other site', () => {
+    // Line projects put their one marker on the alignment instead (tested under 'line projects').
+    for (const project of MAPPED_PROJECTS.filter((p) => !isLineProject(p.id))) {
+      const boundary = boundaryOf(project.id)!;
+      const site = siteOf(project.id)!.geometry;
+      const parts = boundary.features.filter((f) => f.properties.kind === 'sub-area').map((f) => f.geometry);
+      const markers = markerPointsOf(site, parts);
+      if (project.id === 'bart-station-housing') {
+        expect(markers).toHaveLength(parts.length);
+        // On the station site (Lake Merritt's two blocks face each other across an intersection).
+        markers.forEach((m, i) => {
+          const [x0, y0, x1, y1] = bboxOf(parts[i]);
+          expect(inside(m, [x0, y0, x1, y1]), boundary.features[i + 1].properties.name).toBe(true);
+        });
+        expect(containsPoint(site, centroidOf(site))).toBe(false);
+      } else {
+        expect(markers, project.id).toHaveLength(1);
+      }
+    }
   });
 
   it('draws every piece of a multi-part site', () => {

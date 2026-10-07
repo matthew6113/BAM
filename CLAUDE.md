@@ -64,6 +64,10 @@ Workflow
   tiles, fonts, glyphs, manifest). Needs uv and Tippecanoe 2.79.0. Raw downloads are cached
   in `data/raw/`; individual steps are `make fetch|process|buildings|tiles|fonts|glyphs|manifest`.
 - `npm run dev`: dev server on http://127.0.0.1:5173 (style panel: Alt+Shift+S or `?style=1`).
+  Without a local `make data`, `npx vite --config vite.mock.config.ts` (port 5180) serves the deployed
+  site's tiles, glyphs and labels instead.
+- `make upkeep`: the update checklist (`docs/upkeep/<date>.md`); the six-weekly update procedure is
+  `docs/UPKEEP.md`. `make photos`: download approved project photos from Wikimedia Commons.
 - `make sites`: re-trace project boundaries and massing from source documents (outputs committed).
 - `npm test`: schema check of `data/projects.json`, traced-geometry provenance, theme and contrast tests.
 - `npm run e2e`: Playwright interaction tests (controls, fly-in, panel, deep links).

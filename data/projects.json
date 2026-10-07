@@ -2,7 +2,7 @@
   "_meta": {
     "title": "Bay Area megaprojects: researched project list",
     "preparedBy": "Claude (claude.ai chat) for Matthew Huguet",
-    "lastVerified": "2026-10-06",
+    "lastVerified": "2026-10-07",
     "notes": [
       "Every figure here came from the listed sources as of the lastVerified date. Items in each project's 'verify' list are known gaps; do not fill them by guessing.",
       "approxCenter values are rough [lon, lat] points for placing a marker only. Real site boundaries must come from official plan documents or parcel data, saved per project with their source.",
@@ -22,6 +22,11 @@
       {
         "name": "Piers 30–32 and Seawall Lot 330 (San Francisco)",
         "reason": "Removed from the map at Matthew's request (2026-10-03): the pier deal is paused and the seawall lot housing is only an application under review."
+      },
+      {
+        "name": "Link21 (second transbay rail crossing)",
+        "reason": "Researched 2026-10-07 and held as a watch item: still program-level planning with no adopted alignment or station list, federal Corridor ID work not expected to start until 2027, and MTC removed the second-crossing reference from the $50M RM3 project on June 24, 2026. See docs/official-research/candidates-link21-valleylink-waterfront.md.",
+        "source": "https://www.capitolcorridor.org/wp-content/uploads/2026/09/Sept-16-2026-CCJPA-Board-Meeting_Agenda-Packet_FINAL.pdf"
       }
     ],
     "candidatesNotYetResearched": []
@@ -3755,6 +3760,1321 @@
         ]
       },
       "lastVerified": "2026-10-06"
+    },
+    {
+      "id": "the-portal",
+      "name": "The Portal (Downtown Rail Extension)",
+      "aliases": [
+        "Downtown Rail Extension (DTX)",
+        "Transbay Downtown Rail Extension Project, Phase 2",
+        "Transbay Program Phase 2",
+        "Caltrain San Francisco Downtown Extension"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.3916,
+        37.7806
+      ],
+      "acres": null,
+      "acresNote": "A rail line, not a site: a 1.3-mile tunnel from Fourth and King to the Salesforce Transit Center, 2.2 miles of total construction including trackwork in Caltrain's Fourth and King railyard (TJPA, 2026). No official footprint acreage was found. The 2018 Final SEIS/EIR gave longer lengths (2.7 miles with a turnback track at Mariposa Street, 2 miles without it), which have since been superseded. Approximate center is the midpoint of the traced alignment (tunnel and train box) in data/lines/the-portal.geojson.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "A transit project, so the building program fields do not apply. Scope: a mostly underground rail extension along Townsend and Second Streets, built by cut-and-cover and mined tunneling. It includes a new underground Fourth and Townsend Street Station (two tracks, a center platform and two side platforms, serving Caltrain), the fit-out of the existing two-level train box under the Salesforce Transit Center (six tracks and three center platforms for Caltrain and high-speed rail), ventilation and emergency exit structures, and trackwork in Caltrain's Fourth and King railyard. The 2026 scope changes removed the high-speed rail platforms at Fourth and Townsend, the train box extension and the intercity bus facility. They also shortened the tunnel stub box by about 750 feet. Project budget: $8.255 billion in year-of-expenditure dollars (2023 estimate, including the completed train box, contingency and financing). The 2025 updated estimate is about $7.572 billion, and TJPA holds the difference as unallocated contingency. FTA's Capital Investment Grant share is $3.38 billion. TJPA's July 2026 funding plan lists $1,304 million committed from non-CIG sources, $1,303 million in planned state funds, $265 million in other planned sources and $729 million already invested in the train box, which leaves a $587 million gap. TJPA forecasts over 125,000 average daily riders."
+      },
+      "developer": "Transbay Joint Powers Authority (TJPA), lead agency",
+      "publicPartners": [
+        "Transbay Joint Powers Authority (lead agency)",
+        "Peninsula Corridor Joint Powers Board (Caltrain), primary rail operator",
+        "California High-Speed Rail Authority",
+        "Metropolitan Transportation Commission",
+        "San Francisco County Transportation Authority (Prop K and Prop L sales tax)",
+        "City and County of San Francisco",
+        "Federal Transit Administration (Capital Investment Grants, New Starts)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Environmentally cleared and in the Engineering phase of FTA's Capital Investment Grants program since May 2024, but not yet under construction or fully funded. Design is at 30% for the tunnel and stations and 60% for the early works. Right-of-way appraisals are under way, and proposals for the civil and tunnel progressive design-build contract are due Oct 9, 2026. The Full Funding Grant Agreement is targeted for July 2027. TJPA says utility relocation construction will start in 2028 and forecasts that the line will be ready for service on Nov 17, 2036.",
+      "timeline": [
+        {
+          "date": "1999",
+          "event": "San Francisco voters pass Proposition H, calling for Caltrain to be extended into downtown."
+        },
+        {
+          "date": "2005-02",
+          "event": "The federal Record of Decision completes environmental review of the Transbay Program, including the downtown extension."
+        },
+        {
+          "date": "2018",
+          "event": "The Salesforce Transit Center opens (Transbay Program Phase 1), with an empty two-level train box built for the future rail extension."
+        },
+        {
+          "date": "2018-12-13",
+          "event": "TJPA certifies the Final Supplemental EIS/EIR for refinements to the Transbay Program, including the downtown extension."
+        },
+        {
+          "date": "2019-07",
+          "event": "FTA issues an Amended Record of Decision for the Supplemental EIS/EIR."
+        },
+        {
+          "date": "2020-04",
+          "event": "Six agencies agree to the San Francisco Peninsula Rail Program MOU to advance the project together."
+        },
+        {
+          "date": "2021-12",
+          "event": "The project enters the Project Development phase of FTA's Capital Investment Grants program."
+        },
+        {
+          "date": "2023-01-12",
+          "event": "TJPA's Board adopts the first CEQA addendum (design refinements); FTA concurs with the matching NEPA re-evaluation on June 9, 2023."
+        },
+        {
+          "date": "2024-05-03",
+          "event": "FTA approves entry into the New Starts Engineering phase and sets the federal grant share at $3.38 billion."
+        },
+        {
+          "date": "2025-01",
+          "event": "The six partner agencies execute The Portal Project Implementation MOU."
+        },
+        {
+          "date": "2025-07",
+          "event": "TJPA's Board receives an updated cost estimate of $7.57 billion; the $8.255 billion budget is kept."
+        },
+        {
+          "date": "2025-12",
+          "event": "TJPA issues the request for proposals for the civil and tunnel progressive design-build contract."
+        },
+        {
+          "date": "2026-03-12",
+          "event": "TJPA's Board adopts the second CEQA addendum (removing the intercity bus facility, the train box extension and the high-speed rail platforms at Fourth and Townsend; acquiring 171 Second Street)."
+        },
+        {
+          "date": "2026-05-18",
+          "event": "TJPA applies for $750 million from the state's Transit and Intercity Rail Capital Program (Cycle 8)."
+        },
+        {
+          "date": "2026-08-26",
+          "event": "FTA concurs with the NEPA re-evaluation of the 2026 scope changes, finding no new significant impacts."
+        },
+        {
+          "date": "2026-09-30",
+          "event": "The Governor signs AB 2308, extending Transbay tax increment by 25 years beyond 2050 to help fund the project."
+        }
+      ],
+      "nextMilestone": "Civil and tunnel design-build proposals are due Oct 9, 2026, with the highest-scoring proposer to be named Nov 6, 2026 and the contract awarded Feb 11, 2027. The state's TIRCP Cycle 8 awards are expected in October 2026. The Full Funding Grant Agreement is targeted for July 2027.",
+      "summary": "A rail tunnel to bring Caltrain, and later high-speed rail, from the Fourth and King terminus about 1.3 miles into the Salesforce Transit Center, whose two-level underground train box was built for it and has stood empty since 2018. It adds an underground station at Fourth and Townsend. The $8.3 billion project is environmentally cleared and in federal engineering review, with a $3.38 billion federal grant in sight. It still needs the rest of its local and state funding, and TJPA forecasts service in late 2036.",
+      "massingNotes": "Draw as a line with two station points, not as buildings, and label it 'Approximate alignment'. Best official geometry: (1) The 2018 Final SEIS/EIR Volume 1 (tjpa.org), Figure 2-2 'Approved Transbay Program Phase 2 - DTX Alignment and Construction' (PDF p. 91), Figure 2-6 'Proposed Project Components' (PDF p. 105), Figure 2-9a Fourth and Townsend station plan and profile (PDF p. 108) and Figure 2-21 construction methods by location (PDF p. 136). (2) Figure 1 'The Portal Alignment and Major Components' in TJPA's September 2026 Monthly Status Report (p. 4), which reflects the 2026 scope. (3) The California High-Speed Rail Authority's ArcGIS layers have a 'DTX (Downtown Extension)' polyline of about 1.33 miles (services3.arcgis.com/rGGp0aiv6Rf11t2H, HSR_Statewide_Alignment layer 1 and Alignment_Hybrid_Feb_8_2024 layer 4). Their terms say the data 'are not to be redistributed without the express approval' of the Authority, so use them only to check a trace unless permission is granted. No TJPA or DataSF GIS layer was found. Stations: the Salesforce Transit Center train box, under the block between Beale and Second Streets at Mission and Fremont; Fourth and Townsend under Townsend Street between Fourth and Fifth Streets. The 2026 changes shortened the tunnel stub box by about 750 feet, so the 2018 figures overstate the west end.",
+      "officialLinks": [
+        "https://www.tjpa.org/portaldtx",
+        "https://www.tjpa.org/portaldtx/about-portal",
+        "https://www.tjpa.org/portaldtx/environmental-review"
+      ],
+      "sources": [
+        "https://www.tjpa.org/portaldtx",
+        "https://www.tjpa.org/portaldtx/about-portal",
+        "https://www.tjpa.org/portaldtx/frequently-asked-questions",
+        "https://www.tjpa.org/portaldtx/environmental-review",
+        "https://www.tjpa.org/portaldtx/project-schedule",
+        "https://www.tjpa.org/media/40591?inline=",
+        "https://www.tjpa.org/media/40552/download?inline",
+        "https://www.tjpa.org/media/40136/download?inline",
+        "https://www.tjpa.org/media/40503/download",
+        "https://www.tjpa.org/media/40582/download?inline",
+        "https://www.tjpa.org/files/2026-06/The%20Portal%20Project%20Implementation%20MOU%201-30-25.pdf",
+        "https://www.tjpa.org/uploads/2015/12/Vol-1-TJPA-Final-SEIS-EIR_11-18.pdf",
+        "https://www.sfcta.org/sites/default/files/2026-01/SFCTA_CAC_Item9_TJPAPortalProjectFiscalYear2026MEMO_2026-01-28.pdf",
+        "https://ceqanet.lci.ca.gov/1995063004",
+        "https://ceqanet.lci.ca.gov/1995063004/16",
+        "https://ceqanet.lci.ca.gov/1995063004/17",
+        "https://data.sf.gov/d/3psu-pn9h",
+        "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer/0"
+      ],
+      "verify": [
+        "the opening date: TJPA's July 2025 fact sheet and project page say 2035 'funding dependent'; the Sept 2026 status report forecasts ready-for-service on Nov 17, 2036; FTA's oversight consultant's July 2026 report lists a target of July 16, 2036 and a risk-based FFGA date of June 27, 2035",
+        "the civil and tunnel proposal due date: the Sept 2026 status report says Oct 9, 2026 in its text (p. 3) and Sept 25, 2026 in its six-month lookahead (p. 8)",
+        "the outcome of TIRCP Cycle 8 (TJPA applied for $750 million; awards delayed to October 2026)",
+        "the funding gap, which depends on how the sources are counted: $2,131 million (TJPA fact sheet, July 2025), about $2.2 billion (SFCTA memo, Jan 2026), $587 million 'to be planned' after $1,303 million of planned state funds (TJPA funding plan, July 2026)",
+        "CHSRA's $550 million commitment: the September 2026 report says TJPA must 'recommence conversations' with CHSRA because of its new business plan, while the 2026 Business Plan says the Authority 'remains committed to securing at least $550 million'",
+        "the Oct 8, 2026 TJPA Board item 'The Portal Update and Monthly Status Report for September 2026', and whether the Board took any new actions",
+        "the date of the second NEPA re-evaluation request: TJPA's report says Aug 5, 2026 and FTA's letter says the package is dated Aug 4, 2026",
+        "the drawn alignment is traced from TJPA's September 2026 status report Figure 1, a map at about 1 inch to 1,000 ft (RMS 1.2 m georeference, but the line is drawn about 37 m wide): check it, where the tunnel proper begins at the west end, and the station limits against TJPA's design drawings or GIS if they are published; the California High-Speed Rail Authority's 'DTX' polyline would need its permission"
+      ],
+      "lastVerified": "2026-10-07"
+    },
+    {
+      "id": "cahsr-sf-sj",
+      "name": "California High-Speed Rail: San Francisco to San Jose",
+      "aliases": [
+        "San Francisco to San Jose Project Section",
+        "California High-Speed Rail, Northern California",
+        "HSR blended system on the Caltrain corridor"
+      ],
+      "city": "San Francisco to San Jose (Caltrain corridor)",
+      "county": "San Francisco, San Mateo and Santa Clara",
+      "subregion": "Peninsula",
+      "approxCenter": [
+        -122.2564,
+        37.5047
+      ],
+      "acres": null,
+      "acresNote": "A rail line, not a site: about 49 miles of existing Caltrain corridor (48.9 miles of existing track in the Final EIR/EIS) from the Fourth and King station in San Francisco to San Jose Diridon, shared with Caltrain ('blended'). The Board's 2022 approval covers Fourth and King to Scott Boulevard in Santa Clara. The stretch from Scott Boulevard to Diridon and West Alma Avenue was approved with the San Jose to Merced section. No official acreage was found. Approximate center is the midpoint of the drawn line (Fourth and King to San José Diridon) in data/lines/cahsr-sf-sj.geojson.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "A transit project, so the building program fields do not apply. The approved project (Alternative A) runs high-speed trains on Caltrain's electrified tracks rather than a new dedicated line. It would modify about 17.4 miles of existing track, mostly within the Caltrain right-of-way, add no passing tracks, build a light maintenance facility in East Brisbane and modify eight existing stations or platforms. It would also add safety upgrades at 40 at-grade crossings, 8.8 miles of new fencing and 21 radio towers. High-speed rail stations: Fourth and King in San Francisco (interim, until The Portal brings trains to the Salesforce Transit Center), Millbrae (for SFO and BART) and San Jose Diridon. Gilroy, the next station south, is in the San Jose to Merced section. The Final EIR/EIS (June 2022) estimated the preferred alternative at about $5,317 million in 2021 dollars. The 2026 Business Plan estimates the 'San Francisco to Gilroy Blended Approach' at $1,273 million (year-of-expenditure dollars, San Francisco–Bakersfield scenario; $1,291 million in the Phase 1 scenario). That figure excludes the San Jose to Gilroy upgrades ($2 to $5 billion, a 'shared benefit' project) and The Portal. The Authority contributed $714 million to Caltrain's electrification of the 51 miles between San Francisco and San José, which high-speed trains will share."
+      },
+      "developer": "California High-Speed Rail Authority, lead agency (CEQA, and NEPA under assignment from the Federal Railroad Administration)",
+      "publicPartners": [
+        "California High-Speed Rail Authority (lead agency)",
+        "Peninsula Corridor Joint Powers Board (Caltrain), owner and operator of the shared corridor",
+        "Transbay Joint Powers Authority (The Portal, to the Salesforce Transit Center)",
+        "Federal Railroad Administration (NEPA assignment MOU, July 23, 2019)",
+        "City of San José, Santa Clara Valley Transportation Authority and Metropolitan Transportation Commission (Diridon Station partners)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Environmentally cleared: the Authority's Board certified the Final EIR/EIS and approved the route in August 2022, and the Record of Decision followed in October 2022. No construction has started. The 2026 Business Plan's schedule lists right-of-way, design, and the Fourth and King, Millbrae and San Jose station work as 'not started'. It plans for trains to reach the Bay Area over upgraded shared tracks by 2039 in its San Francisco–Bakersfield scenario. That depends on funding and on agreements with Caltrain and partners, including for the San Jose to Gilroy line. Until The Portal is built, Fourth and King is the interim terminus.",
+      "timeline": [
+        {
+          "date": "2005-11",
+          "event": "The Authority and the FRA certify the statewide Tier 1 program EIR/EIS for the high-speed rail system."
+        },
+        {
+          "date": "2008",
+          "event": "A second Tier 1 program EIR/EIS covers the Bay Area to Central Valley connection (revised under CEQA in 2012)."
+        },
+        {
+          "date": "2020-07-10",
+          "event": "The Authority issues the Draft EIR/EIS for the San Francisco to San Jose section."
+        },
+        {
+          "date": "2021-07-21",
+          "event": "A Revised/Supplemental Draft EIR/EIS adds monarch butterfly analysis and a smaller Millbrae station design option."
+        },
+        {
+          "date": "2022-04-28",
+          "event": "The Board certifies the San Jose to Merced Final EIR/EIS and approves its route, including San Jose Diridon station north to Scott Boulevard in Santa Clara."
+        },
+        {
+          "date": "2022-06-10",
+          "event": "The Authority publishes the San Francisco to San Jose Final EIR/EIS."
+        },
+        {
+          "date": "2022-08-17",
+          "event": "The Board votes 8–0 to certify the Final EIR/EIS and approve Alternative A from Fourth and King to Scott Boulevard, with the East Brisbane maintenance facility and the Millbrae station design (Resolutions HSRA 22-19, 22-20 and 22-21)."
+        },
+        {
+          "date": "2022-10-14",
+          "event": "The Authority's CEO signs the Record of Decision selecting Alternative A."
+        },
+        {
+          "date": "2024",
+          "event": "Caltrain's corridor electrification, which the Authority helped fund with $714 million, is completed; high-speed trains will share it."
+        },
+        {
+          "date": "2026-02-28",
+          "event": "The Draft 2026 Business Plan is released for public comment."
+        },
+        {
+          "date": "2026-06-01",
+          "event": "The final 2026 Business Plan is released. It proposes a San Francisco–Bakersfield service by 2039 over upgraded shared tracks, with Fourth and King as the interim San Francisco terminus."
+        }
+      ],
+      "nextMilestone": "None scheduled for this section. The 2026 Business Plan shows right-of-way, design, and the Fourth and King, Millbrae and San Jose station work as not started, within a San Francisco–Bakersfield timeline that runs to 2039.",
+      "summary": "The Bay Area end of California's high-speed rail line. Rather than building new tracks up the Peninsula, high-speed trains would share Caltrain's newly electrified corridor for about 49 miles from San Francisco to San Jose, stopping at Fourth and King (and later the Salesforce Transit Center via The Portal), Millbrae for SFO, and San Jose Diridon. The route was environmentally approved in 2022, but no construction has started and the Authority's current plan reaches the Bay Area by 2039.",
+      "massingNotes": "Draw as a line along the existing Caltrain corridor with station points (Fourth and King, Millbrae, San Jose Diridon; Salesforce Transit Center as the future terminus via The Portal), not as buildings. Label it 'Approximate alignment'. Best official geometry: (1) Final EIR/EIS Volume 3 Preliminary Engineering Plans, Alternative A Books A-1 and A-2 (composite plan, profile and typical sections), A-3 (stations) and A-4 (structures, maintenance facility, alignment data table), on hsr.ca.gov. (2) Resolution HSRA 22-20 Exhibit A, the map of the approved portion. (3) The Authority's ArcGIS Online layers (services3.arcgis.com/rGGp0aiv6Rf11t2H): HSR_Statewide_Alignment layer 1 (section 'F-J', about 42.8 miles, Fourth and King to Scott Boulevard; stations in layer 0), Alignment_Hybrid_Feb_8_2024 layer 4 (about 49 miles to Diridon), and NORCAL_LAYERS layer 1 'Preliminary Design Footprint' (polygons by feature type, e.g. 'Blended High Speed Rail Caltrain ROW', 'HSR Station Platform'). Their item terms say the data 'are not to be redistributed without the express approval from California High Speed Rail Authority', so they need the Authority's permission before the map can ship them. Open alternative: the U.S. DOT/BTS National Transportation Atlas 'North American Rail Network Lines – Passenger Rail' layer (public domain) for the Caltrain line itself, with the four station points from the Final EIR/EIS.",
+      "officialLinks": [
+        "https://hsr.ca.gov/high-speed-rail-in-california/project-sections/san-francisco-to-san-jose/",
+        "https://hsr.ca.gov/project-overview/project-sections/northern-california/"
+      ],
+      "sources": [
+        "https://hsr.ca.gov/high-speed-rail-in-california/project-sections/san-francisco-to-san-jose/",
+        "https://hsr.ca.gov/project-overview/project-sections/northern-california/",
+        "https://hsr.ca.gov/wp-content/uploads/2022/05/Final_EIRS_FJ_V1-03_Fact_Sheet.pdf",
+        "https://hsr.ca.gov/wp-content/uploads/2022/08/FJ-CEQA-Approval-Resolution-final-A11Y.pdf",
+        "https://hsr.ca.gov/wp-content/uploads/2022/08/22-19_FJ_CEQA_Approval_Resolution_Exhibit_A_Map.pdf",
+        "https://hsr.ca.gov/wp-content/uploads/2022/10/FJ-Final-ROD-Combined-A11Y.pdf",
+        "https://hsr.ca.gov/wp-content/uploads/2026/06/2026-Final-Business-Plan-060126-A11Y.pdf",
+        "https://hsr.ca.gov/wp-content/uploads/2026/09/Northern-California-At-a-Glance-Factsheet-A11Y.pdf",
+        "https://hsr.ca.gov/wp-content/uploads/2022/05/Final_EIRS_FJ_V3-04_Alternative-A_Book_A1.pdf",
+        "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer/0",
+        "https://www.caltrain.com/developer-resources"
+      ],
+      "verify": [
+        "the certification date: Resolution HSRA 22-20 is dated 8/17/2022, while the Authority's Northern California page says the Board certified the Final EIR/EIS on August 18, 2022 (the Board met Aug 17–18)",
+        "whether the 2026 Business Plan was formally adopted by the Board, and on what date (the plan says the final was 'released June 1, 2026')",
+        "the cost basis: the Final EIR/EIS's $5,317 million (2021 dollars) covers the full Alternative A, while the 2026 Business Plan's $1,273 million 'San Francisco to Gilroy Blended Approach' is a reduced early scope; the 2024 Business Plan carried $15,140 million for the same line item",
+        "Caltrain electrification's completion date: the 2026 Business Plan says '2024'; confirm the exact date of electrified service from Caltrain",
+        "the drawn line is the federal rail network's centreline for Caltrain's existing tracks (U.S. DOT/BTS NTAD), not the Authority's engineered alignment, and it stops at San José Diridon (the Final EIR/EIS section runs on to West Alma Avenue). The Authority's permission to redistribute its alignment and footprint GIS, or a trace of Final EIR/EIS Volume 3, would give the engineered alignment and the East Brisbane light maintenance facility, which isn't drawn",
+        "how the Portal's $550 million is handled: the Business Plan says the Authority 'remains committed to securing at least $550 million' but that Portal funding is not in its Phase 1 capital costs"
+      ],
+      "lastVerified": "2026-10-07"
+    },
+    {
+      "id": "bart-silicon-valley-phase-2",
+      "name": "BART Silicon Valley Phase II",
+      "aliases": [
+        "VTA's BART Silicon Valley Phase II Extension Project",
+        "BSVII",
+        "BART to downtown San José and Santa Clara"
+      ],
+      "city": "San Jose",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "approxCenter": [
+        -121.8958,
+        37.3337
+      ],
+      "acres": null,
+      "acresNote": "A rail line, not a site: about 6 miles of extension, about 5 miles of it in a single bored tunnel, from Berryessa/North San José to Santa Clara. No official acreage for the whole footprint was found; the 2002 CEQA notice for the original 16-mile corridor (SCH 2002022004) gives about 250 acres, which is not this phase. Approximate center is the midpoint along the alignment drawn from VTA's GIS layer.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "A transit project, so the building program fields do not apply. Scope: about 6 miles of BART extension, four stations (28th Street/Little Portugal, Downtown San José and Diridon underground; Santa Clara at grade next to the Santa Clara Caltrain station), a train maintenance and storage facility at Newhall Yard, and 48 BART cars bought through BART's existing contract (estimated $172.6 million). One tunnel about 53 feet across holds both tracks side by side. VTA forecasts 55,000 weekday riders. Budget adopted for FTA's Engineering phase: $12.746 billion (year-of-expenditure dollars), with FTA's share capped at $5.1 billion; VTA's July 2026 funding table shows a $564 million gap still to be filled."
+      },
+      "developer": "Santa Clara Valley Transportation Authority (VTA), project sponsor and owner; BART will operate and maintain it",
+      "publicPartners": [
+        "Santa Clara Valley Transportation Authority (lead agency and owner)",
+        "Bay Area Rapid Transit District (operator)",
+        "Federal Transit Administration (Capital Investment Grants, New Starts)",
+        "Metropolitan Transportation Commission (Regional Measure 3 funds)",
+        "California Transportation Commission (state grants)",
+        "City of San José",
+        "City of Santa Clara"
+      ],
+      "stage": "infrastructure",
+      "stageNote": "Early construction, ahead of tunneling. Crews finished excavating the West Portal launch structure for the tunnel boring machine in early September 2026, and demolition and utility relocation are under way at station sites. In August 2026 VTA signed a restated tunnel contract and gave notice to proceed with pre-tunneling work only. The federal grant agreement that would fund most of the line is not yet signed (VTA's target is late 2027), the boring machine is in storage in Germany with delivery expected in the second half of 2027, and FTA's oversight consultant rates the project high risk while VTA re-baselines its cost and schedule.",
+      "timeline": [
+        {
+          "date": "2001-11",
+          "event": "VTA selects the locally preferred alternative for the BART extension."
+        },
+        {
+          "date": "2016-03",
+          "event": "The project enters the Project Development phase of FTA's Capital Investment Grants program."
+        },
+        {
+          "date": "2018-04-05",
+          "event": "VTA's Board certifies the Final Subsequent EIR and approves the project, with a single-bore tunnel."
+        },
+        {
+          "date": "2018-04-26",
+          "event": "BART's Board accepts the SEIR and approves the project."
+        },
+        {
+          "date": "2018-06-04",
+          "event": "FTA issues the Record of Decision, the federal environmental approval."
+        },
+        {
+          "date": "2022-05-05",
+          "event": "VTA's Board awards the tunnel and trackwork contract (Contract Package 2) to Kiewit Shea Traylor."
+        },
+        {
+          "date": "2022-12-01",
+          "event": "FTA moves the project back into New Starts Project Development and issues a Letter of No Prejudice."
+        },
+        {
+          "date": "2024-08-01",
+          "event": "FTA approves entry into the New Starts Engineering phase, on a $12.746 billion budget and a February 2039 revenue service date, and caps its share at $5.1 billion."
+        },
+        {
+          "date": "2025-06-27",
+          "event": "VTA's Board authorizes the contractual off-ramp from the tunnel contract with Kiewit Shea Traylor."
+        },
+        {
+          "date": "2025-10-17",
+          "event": "VTA's Board approves advancing the Scenario 1 configuration, a single 53-foot bore from the West Portal to the East Portal, and pursuit of a Full Funding Grant Agreement."
+        },
+        {
+          "date": "2026-03-05",
+          "event": "VTA's Board approves a CEQA addendum moving the Diridon replacement parking to the Delmas lots near SAP Center."
+        },
+        {
+          "date": "2026-06-26",
+          "event": "VTA's Board votes 9–1 to restate the tunnel contract with Kiewit Shea Traylor as a target-price contract worth up to $3.55 billion, releasing no more than $400 million for pre-tunneling work."
+        },
+        {
+          "date": "2026-08-14",
+          "event": "VTA issues notice to proceed for pre-tunneling work, after signing the restated contract on Aug 9."
+        },
+        {
+          "date": "2026-08-26",
+          "event": "MTC approves a $192.5 million Regional Measure 3 allocation for the project."
+        },
+        {
+          "date": "2026-09",
+          "event": "Excavation of the West Portal launch structure reaches 100%."
+        }
+      ],
+      "nextMilestone": "VTA's roadmap (as reported to FTA in August 2026): an FFGA risk workshop in December 2026, updated grant documents to FTA in April 2027 and execution of the Full Funding Grant Agreement in November 2027; delivery of the tunnel boring machine is expected in the second half of 2027. VTA is re-baselining cost and schedule in the third quarter of 2026.",
+      "summary": "VTA's six-mile extension of BART from Berryessa through downtown San José to Santa Clara, with three underground stations, one at-grade station and a rail yard, built around a single tunnel about 53 feet across. Its adopted budget is $12.7 billion. Early works are under way at the tunnel launch site, but the federal grant that would pay for about 40% of it is not yet signed, and service is scheduled for 2039 (VTA aims for 2037).",
+      "massingNotes": "Draw as a line with four station points and a yard, not as buildings. Best official geometry: (1) Final SEIS/SEIR Volume III Appendix B, Project Plans and Profiles (Feb 2018, 56 sheets) and the BART station site plan concepts appendix, on vta.org; superseded in detail by the 2022 and 2024 CEQA addenda (larger tunnel, horizontal shifts up to 125 ft west of Diridon), whose figures should be preferred where they differ. (2) VTA's ArcGIS server publishes the track alignment (Hosted/BSVII_Alignment_2022, layer 22, 'Above Ground' and 'Tunnel' tracks) and the station, portal and Newhall Yard sites (Hosted/BSV_Phase_II_Stations) as public feature services; the map's line is drawn from these (accuracy 'official'). The older BART/BART MapServer ('Project boundary' 31, 'Stations' 34, 'Alignment' 35, 'Newhall Yard ROW' 44, station concepts 48–58) lists layers whose data sources are broken ('Layer not found'), so the yard and project boundary polygons are still unavailable. (3) The alignment map in the Feb 2026 CEQA addendum (Figure 2-1) and FTA's oversight report (Attachment F). Station locations: 28th Street/Little Portugal near Santa Clara Street and US 101; Downtown San José on Santa Clara Street near Market Street; Diridon between Montgomery and Cahill streets northeast of the Caltrain station; Santa Clara at grade next to the Santa Clara Caltrain station. Label everything 'Approximate alignment'.",
+      "officialLinks": [
+        "https://www.vta.org/projects/bart-sv/phase-ii",
+        "https://vtabart.org/",
+        "https://vtabart.org/transparency-commitment/"
+      ],
+      "sources": [
+        "https://www.vta.org/projects/bart-sv/phase-ii",
+        "https://www.vta.org/projects/bart-sv/phase-ii/planning-and-environmental",
+        "https://vtabart.org/wp-content/uploads/2026/09/2026-07-CA-BSVII-OP25-ProjectMonitoringReport_08-28-2026-091626-v1.pdf",
+        "https://vtabart.org/wp-content/uploads/2026/05/2026-03-CA-BSVII-OP25-ProjectMonitoringReport-051926-v1-1.pdf",
+        "https://vtabart.org/wp-content/uploads/2026/09/BSVII_Executive-Monthly-Report_July_2026.pdf",
+        "https://vtabart.org/wp-content/uploads/2026/09/2026_BSVII_October_ConstructionMonthlyUpdate-FINAL.pdf",
+        "https://vtabart.org/wp-content/uploads/2026/08/VTABSV_FactSheet_Overview-Benefits-051226_v1-3.pdf",
+        "https://vtabart.org/wp-content/uploads/2026/08/VTABSV_FactSheet_2025_Diridon_01062026.pdf",
+        "https://www.vta.org/sites/default/files/2026-03/2026-02_BSVII_Diridon_Parking_Addendum.pdf",
+        "https://www.vta.org/sites/default/files/2024-07/ceqa_addendum.pdf",
+        "https://www.vta.org/sites/default/files/2022-04/VolumeIII_AppendixB_ProjectPlansandProfiles_feb20_2018.pdf",
+        "https://santaclaravta.iqm2.com/Citizens/FileOpen.aspx?Type=15&ID=3034&Inline=True",
+        "https://santaclaravta.iqm2.com/Citizens/FileOpen.aspx?Type=15&ID=3133&Inline=True",
+        "https://ceqanet.lci.ca.gov/2002022004",
+        "https://santaclara.courts.ca.gov/system/files/civil/vtas-management-and-oversight-bart-silicon-valley-phase-ii.pdf",
+        "https://gtfs.vta.org/gtfs_vta.zip",
+        "https://gis.vta.org/gis/rest/services/Hosted/BSVII_Alignment_2022/FeatureServer/22",
+        "https://gis.vta.org/gis/rest/services/Hosted/BSV_Phase_II_Stations/FeatureServer/0",
+        "https://gis.vta.org/gis/rest/services/Hosted/BSV_Phase_II_Construction/FeatureServer/11"
+      ],
+      "verify": [
+        "the Record of Decision date: VTA's pages, the 2024 and 2026 addenda and VTA's monthly report say June 4, 2018, while FTA's oversight reports say June 18, 2018",
+        "FTA's Engineering-phase approval date: VTA's report and FTA's March 2026 oversight report say Aug 1, 2024; the July 2026 oversight report calls it a letter dated July 31, 2024",
+        "the date of the 2024 CEQA addendum: vta.org says the Board approved it June 28, 2024 (CEQAnet NOD received July 5, 2024), while the Feb 2026 addendum says August 2024",
+        "the revised cost and schedule from VTA's re-baseline (due Q3 2026); FTA's oversight consultant expects costs above the $12.746 billion budget",
+        "how the $564 million funding gap is closed before the FFGA (the Civil Grand Jury report of June 17, 2026 describes a larger gap)",
+        "tunnel size: FTA's reports say about 53 feet in diameter; the 2024 addendum gives an outer diameter of about 52 feet and a boring machine of about 54 feet",
+        "whether VTA's published alignment layer (BSVII_Alignment_2022, on gis.vta.org) still matches the Scenario 1 design approved in October 2025 and the coming re-baseline",
+        "the terms of use for VTA's GIS layers (the alignment and station services state no license)"
+      ],
+      "lastVerified": "2026-10-07"
+    },
+    {
+      "id": "diridon-station",
+      "name": "Diridon Station redevelopment",
+      "aliases": [
+        "San José Diridon Station",
+        "Diridon Integrated Station Concept (DISC)",
+        "Diridon Station Program",
+        "At-Grade Station Alternative"
+      ],
+      "city": "San Jose",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "approxCenter": [
+        -121.9024,
+        37.3307
+      ],
+      "acres": null,
+      "acresNote": "No official acreage for the station project was found. Its planning boundary is the DISC boundary (Alternatives Development Report, Figure 2-1), and the August 2026 Steering Committee materials map a 'Future Station Project Footprint'; neither gives an area. The map draws the August 2026 footprint as far as the slide shows it (about 12 acres as traced, cut at the slide's edges), which is not an official acreage. The Caltrain maintenance facility just north of the station (nearly 13 acres) is kept, not rebuilt. Approximate center is the San Jose Diridon Station parent stop in VTA's GTFS feed.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "A rebuilt rail station, so the building program fields do not apply. The preferred At-Grade Alternative keeps tracks and platforms at about today's level and digs a new concourse beneath them, with connections down to light rail and the future BART station; it keeps the historic depot and the Annex facade. Conceptual layout: three tracks and two platforms for Union Pacific, Amtrak, ACE and Capitol Corridor, four electrified tracks and two platforms for Caltrain, and three electrified tracks and two platforms for high-speed rail. The concourse level would include over 200,000 sq ft of new retail space. The Diridon Program adds street and rail-crossing work at Park Avenue, San Carlos Street (bridge replacement), Auzerais Avenue (new grade separation), West Virginia Street (closure with a walk-bike undercrossing), Stockton Avenue/The Alameda, and noise barriers. Two partner-owned sites (32 and 60 Stockton Avenue, owned by VTA; 698 W. Santa Clara Street, owned by Caltrain) are to be studied as transit-oriented development. Conceptual cost $3 billion to $6 billion and 7 to 10 years of construction. The surrounding Diridon Station Area Plan (up to 12,900 homes and 14.7 million sq ft of office and commercial space) is a separate city plan and is not counted here."
+      },
+      "developer": null,
+      "publicPartners": [
+        "Diridon Station Steering Committee (decision-making body under the partners' cooperative agreement)",
+        "Caltrain / Peninsula Corridor Joint Powers Board (leads engineering and environmental review)",
+        "City of San José (community engagement)",
+        "Santa Clara Valley Transportation Authority (governance, funding and advocacy)",
+        "California High-Speed Rail Authority",
+        "Metropolitan Transportation Commission"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In environmental review. The partner agencies' Steering Committee chose the At-Grade Alternative on May 21, 2025, and the environmental phase began in late 2025 with a three-year, $41 million budget. As of August 2026 the program was still being defined for review (no notice of preparation yet), the committee was backing state legislation (SB 1375) for a CEQA exemption for the station, and a bill to create a construction authority was being drafted for 2027. There is no construction funding.",
+      "timeline": [
+        {
+          "date": "2018-07",
+          "event": "The City of San José, Caltrain, VTA, the High-Speed Rail Authority and MTC sign a cooperative agreement to plan the new station."
+        },
+        {
+          "date": "2020-02",
+          "event": "San José's City Council, Caltrain's Board and the High-Speed Rail Authority Board accept the staff-recommended Concept Layout from the Diridon Integrated Station Concept Plan."
+        },
+        {
+          "date": "2024",
+          "event": "The partners sign an updated cooperative agreement, replacing the advisory board with a Steering Committee that has voting authority."
+        },
+        {
+          "date": "2025-05-21",
+          "event": "The Diridon Station Steering Committee approves the At-Grade Alternative and the Diridon Program of Projects for environmental review, with a three-year budget for that phase."
+        },
+        {
+          "date": "2025-06-02",
+          "event": "San José's Transportation and Environment Committee recommends that the City Council accept the Steering Committee's decision (Council agenda June 10, 2025)."
+        },
+        {
+          "date": "2025-08-18",
+          "event": "The partners publish the Diridon Station Alternatives Development Report."
+        },
+        {
+          "date": "2025",
+          "event": "The environmental phase begins in the fourth quarter of 2025, with ICF as the partners' environmental consultant."
+        },
+        {
+          "date": "2026-05-20",
+          "event": "The Steering Committee votes to support SB 1375, a CEQA exemption for urban intermodal rail stations, and appoints a subcommittee to draft legislation for a construction authority."
+        },
+        {
+          "date": "2026-08-19",
+          "event": "The Steering Committee receives the environmental review update: barrier locations and two transit-oriented development sites are added to the program definition."
+        }
+      ],
+      "nextMilestone": "Neighborhood meetings on the project definition from September to November 2026 and a community open house in November or December 2026; a final update on the CEQA exemption in fall 2026; a draft construction-authority bill and funding plan in winter 2027, with engineering and technical studies for environmental review to follow. The partners expect environmental review to take three to four years in all.",
+      "summary": "A plan by five public agencies to rebuild San José's 90-year-old Diridon Station into a hub for Caltrain, high-speed rail, BART, ACE, Capitol Corridor, Amtrak and light rail, keeping the tracks at street level with a new concourse dug beneath them. The partners estimate $3 billion to $6 billion and 7 to 10 years of construction; environmental review has begun, but construction funding has not been found.",
+      "massingNotes": "Draw as a station footprint, not buildings, labelled 'Approximate boundary' and 'Concept design'. Leads: Alternatives Development Report (Aug 2025, diridonsj.org), Figure 2-1 'DISC Boundary' (PDF p. 14), Figure 2-3 concourse plan and Figure 2-5 track and platform layout; the August 19, 2026 Steering Committee packet's TOD slide maps the 'Future Station Project Footprint' and the two TOD sites; the 2019 DISC Layout Development Report Appendix B has scaled layout drawings of the earlier elevated concept (superseded). No GIS layer for the footprint was found. The BART Diridon station (BSVII) sits underground on the northeast side and is a separate project; high-speed rail's San José station is part of the Authority's San Francisco to San José and San José to Merced projects.",
+      "officialLinks": [
+        "https://www.diridonsj.org/",
+        "https://www.diridonsj.org/s/DiridonStation_AlternativesDevelopmentReport_MainReport-accessible.pdf"
+      ],
+      "sources": [
+        "https://www.diridonsj.org/",
+        "https://www.diridonsj.org/disc",
+        "https://www.diridonsj.org/project-updates/committee-steers-at-grade-alternative-into-environmental-review",
+        "https://www.diridonsj.org/project-updates/august-2025-project-update-alternatives-development-report-published",
+        "https://www.diridonsj.org/s/DiridonStation_AlternativesDevelopmentReport_ExecutiveSummary.pdf",
+        "https://www.diridonsj.org/s/DiridonStation_AlternativesDevelopmentReport_MainReport-accessible.pdf",
+        "https://sanjose.legistar.com/LegislationDetail.aspx?ID=14732",
+        "https://legistar.granicus.com/sanjose/attachments/e09b1345-6450-452c-93a6-64d9facaee10.pdf",
+        "https://santaclaravta.iqm2.com/Citizens/Detail_Meeting.aspx?ID=4675",
+        "https://santaclaravta.iqm2.com/Citizens/FileOpen.aspx?Type=1&ID=4481&Inline=True",
+        "https://santaclaravta.iqm2.com/Citizens/FileOpen.aspx?Type=15&ID=3130&Inline=True",
+        "https://gtfs.vta.org/gtfs_vta.zip"
+      ],
+      "verify": [
+        "the City Council's action on June 10, 2025 (file 25-672 was renumbered; no outcome found on Legistar)",
+        "the cost basis: the Alternatives Development Report's executive summary says $3 to $6 billion in 2025 dollars, while its main report table and the City's June 2025 memo say 2023 dollars",
+        "whether SB 1375 (2025–26 session) passed and exempts the station from CEQA (leginfo.legislature.ca.gov blocked scripted access)",
+        "when the notice of preparation or notice of intent is filed, and which agency is CEQA lead (none found on CEQAnet as of 2026-10-07)",
+        "an official acreage for the station project",
+        "the full extent of the station project footprint: the map traces the August 2026 Steering Committee slide, which shows only the station area and is cut at the edges of its aerial photo; the footprint's north and south ends along the rail corridor need a fuller official figure (for example from the environmental documents)"
+      ],
+      "lastVerified": "2026-10-07"
+    },
+    {
+      "id": "valley-link",
+      "name": "Valley Link",
+      "aliases": [
+        "Valley Link Rail Project",
+        "Valley Link Phase 1A",
+        "Tri-Valley–San Joaquin Valley Regional Rail"
+      ],
+      "city": "Dublin, Pleasanton and Livermore",
+      "county": "Alameda",
+      "subregion": "East Bay",
+      "approxCenter": [
+        -121.7986,
+        37.7009
+      ],
+      "acres": null,
+      "acresNote": "Not applicable: a rail line, not a site. Phase 1A is about 11 miles of new passenger rail along I-580 from the Dublin/Pleasanton BART Station to the Vasco Road ACE Station in Livermore (AB 1171 Initial Project Report, June 10, 2026 board packet, PDF p. 30). Station and facility sites: Isabel Station parking on a 24-acre site, Vasco Road Station on about 13 acres, and the Livermore OMF on the southeastern part of a 13.75-acre site (PDF pp. 32–33).",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Transit infrastructure; the housing and commercial fields don't apply. Phase 1A: about 11 miles, three stations (Dublin/Pleasanton, an aerial station south of I-580 next to the BART station; Isabel, in the I-580 median in Livermore; Vasco Road, with a cross-platform transfer to ACE), a Livermore operations and maintenance facility, and six battery electric multiple unit (BEMU) trains on 15-minute weekday headways (June 10, 2026 packet, PDF pp. 30–33). Forecast about 16,000 weekday boardings in 2050 (PDF p. 35). Total project budget $2,045.7 million in year-of-expenditure dollars, of which $1,676.4 million is construction and rolling stock (PDF p. 39). The 22-mile Phase 1 to Mountain House, cleared under CEQA (2024) and NEPA (2025), is now Phase 1A plus Phase 1B (Southfront Road to Mountain House, funding to be determined); the 2021 EIR covered a 42-mile, seven-station system to North Lathrop."
+      },
+      "developer": "Tri-Valley–San Joaquin Valley Regional Rail Authority (project sponsor)",
+      "publicPartners": [
+        "Federal Transit Administration (NEPA lead agency; Capital Investment Grants program)",
+        "Caltrans (I-580 Project Approval and Environmental Document)",
+        "Metropolitan Transportation Commission (bridge toll funds)",
+        "Alameda County Transportation Commission",
+        "San Joaquin Regional Rail Commission (ACE; early operations manager)",
+        "BART",
+        "San Joaquin Council of Governments",
+        "California Transportation Commission (TIRCP)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Environmentally cleared and in design; no construction yet. The Authority certified the Subsequent EIR for the 22-mile Phase 1 in October 2024 and FTA issued a FONSI on May 27, 2025. In June 2025 the Board split delivery after cost increases at 30% design, starting with the 11-mile Phase 1A to Vasco Road; a joint CEQA addendum and NEPA re-evaluation for the 1.5-mile connection from I-580/First Street to Vasco Road is targeted for fall 2026. A CM/GC preconstruction contract went to Kiewit in June 2026. Construction funding is not yet secured: the Authority is preparing to ask FTA to enter the Capital Investment Grants Engineering phase.",
+      "timeline": [
+        {
+          "date": "2018-09-13",
+          "event": "The Authority publishes the notice of preparation for an EIR on the Valley Link Rail Project (SCH 2018092027)."
+        },
+        {
+          "date": "2019-06-30",
+          "event": "The Authority delivers its Project Feasibility Report to the Legislature, as AB 758 requires (final report adopted October 2019)."
+        },
+        {
+          "date": "2021-05-12",
+          "event": "The Board certifies the Final EIR for a 42-mile, seven-station line from Dublin/Pleasanton BART to North Lathrop, with an initial segment to Mountain House."
+        },
+        {
+          "date": "2023-04",
+          "event": "The Board adopts the 22-mile Phase 1 alignment to Mountain House, with four stations, as the locally preferred alternative."
+        },
+        {
+          "date": "2024-10-23",
+          "event": "The Board certifies the Subsequent EIR and approves the 22-mile Phase 1 project; the notice of determination is filed Oct 25."
+        },
+        {
+          "date": "2025-05-27",
+          "event": "FTA issues a Finding of No Significant Impact for Phase 1 under NEPA."
+        },
+        {
+          "date": "2025-06-11",
+          "event": "After cost increases at 30% design, the Board approves phased delivery starting with the 11-mile Phase 1A from Dublin/Pleasanton BART to the Vasco Road ACE Station, using battery-electric trains."
+        },
+        {
+          "date": "2025-09-10",
+          "event": "The Board chooses Construction Manager/General Contractor delivery for Phase 1A; the request for proposals goes out that month."
+        },
+        {
+          "date": "2026-02-26",
+          "event": "Alameda CTC awards $4 million in I-580 toll revenue for Phase 1A final design."
+        },
+        {
+          "date": "2026-06-10",
+          "event": "The Board awards Kiewit Infrastructure West a CM/GC preconstruction contract (Tier 1, up to $3 million) and requests MTC bridge toll funds to finish 30% design."
+        },
+        {
+          "date": "2026-08-26",
+          "event": "Cumulative MTC funding for project development reaches $53.8 million."
+        }
+      ],
+      "nextMilestone": "Joint CEQA addendum and NEPA re-evaluation for Phase 1A (targeted fall 2026), 30% design complete (December 2026), a request to FTA to enter the Capital Investment Grants Engineering phase, and an MTC final-design allocation request (board action targeted October 2026). The schedule in the June 2026 MTC request shows construction from summer 2029 to opening in summer 2033.",
+      "summary": "A new passenger rail line along the I-580 corridor linking BART at Dublin/Pleasanton with ACE commuter trains at Vasco Road in Livermore, so riders from the San Joaquin Valley can change trains across a platform instead of driving over the Altamont Pass. The first 11 miles, with three stations and battery-electric trains, are environmentally cleared and in design; an extension to Mountain House is cleared but unfunded.",
+      "massingNotes": "Drawn as a line (data/lines/valley-link.geojson, pipeline/bam_pipeline/sites/lines_valley_link.py), traced and approximate. No official GIS of the alignment exists. First Street to the tail tracks east of Vasco Road: Figure 4 of the June 10, 2026 board packet (AB 1171 Initial Project Report, PDF p. 31), fitted to OpenStreetMap building footprints. I-580 median, Dublin/Pleasanton to First Street: the 'Median Widening' line in the 2024 Draft SEIR Figures 2-4 to 2-6 (CEQAnet SCH 2018092027, document 6, Chapter 2), which the 2026 report keeps ('constructed within the I-580 median from the Dublin/Pleasanton BART Station to just east of the First Street overcrossing'). Stations: platform centres in SEIR Figures 2-13 (Dublin/Pleasanton) and 2-14 (Isabel) and the June 2026 Figure 4 (Vasco Road). About 11.4 miles as drawn, including the tail tracks at both ends. The short viaduct from the Dublin/Pleasanton platform into the median is not drawn in the figures and is a straight join. Phase 1B and the superseded 2021 route are not drawn.",
+      "officialLinks": [
+        "https://www.valleylinkrail.com/valleylink-project",
+        "https://www.getvalleylinked.com/"
+      ],
+      "sources": [
+        "https://www.valleylinkrail.com/valleylink-project",
+        "https://www.valleylinkrail.com/environmental-ceqa",
+        "https://www.getvalleylinked.com/",
+        "https://www.valleylinkrail.com/_files/ugd/95df9a_d5454624d39d4a078b0aa7b18dddc57c.pdf",
+        "https://www.valleylinkrail.com/_files/ugd/95df9a_1336405d248b467fb082db9ecc4416ae.pdf",
+        "https://www.valleylinkrail.com/_files/ugd/8f09e7_9cca9a978bb14766a336566c3710ef3a.pdf",
+        "https://www.valleylinkrail.com/_files/ugd/95df9a_af705a6cc23f44438b8f9b29cb18bec9.pdf",
+        "https://www.valleylinkrail.com/_files/ugd/95df9a_0f161a7a5be14083a255266808a38859.pdf",
+        "https://ceqanet.lci.ca.gov/Project/2018092027",
+        "https://ceqanet.lci.ca.gov/2018092027/9",
+        "https://ceqanet.lci.ca.gov/2018092027/6",
+        "https://ceqanet.lci.ca.gov/2018092027/6/Attachment/ZPbOAG",
+        "https://www.bart.gov/dev/schedules/google_transit.zip",
+        "https://caltrans-gis.dot.ca.gov/arcgis/rest/services/CHrailroad/CA_Transit_Stops/FeatureServer/0"
+      ],
+      "verify": [
+        "the joint CEQA addendum and NEPA re-evaluation for Phase 1A (targeted September to fall 2026; not yet on CEQAnet as of Oct 7, 2026)",
+        "the Phase 1A capital cost: the $2,045.7 million total project budget in the June 2026 MTC request is the only official figure found; the cost increase that drove the June 2025 phasing decision is not quantified in the documents read (the June 11, 2025 board packet was not read)",
+        "the opening date: the June 2026 schedule shows construction summer 2029 to summer 2033, while the May 2026 environmental update says construction is anticipated in FY 2028–29",
+        "the FONSI date: most Authority documents and the FONSI itself say May 2025 (CEQAnet received June 4, 2025), but one milestone list in the June 10, 2026 packet (PDF p. 45) says May 2024",
+        "the Alameda County Taxpayers Association lawsuit (Alameda Superior Court RG21110126), which the Authority lists as pending (Sept 9, 2026 packet, PDF p. 36)",
+        "the City of Dublin's project page (dublin.ca.gov/2107) still describes the 2019 plan to North Lathrop and is superseded",
+        "geometry: the I-580 median and station positions come from the 2024 Draft SEIR figures; check them against the Phase 1A CEQA addendum / NEPA re-evaluation figures when published, and the First Street to Vasco Road connection against final 30% design drawings",
+        "geometry: where the Dublin/Pleasanton viaduct crosses the eastbound I-580 lanes into the median is not drawn in any figure found (drawn as a straight join of about 80 m)"
+      ],
+      "reported": {
+        "note": "Reported by the press but not confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map.",
+        "program.notes": "Wikipedia and a Hacienda business-park newsletter say first-phase costs had doubled to about $4.4 billion by early 2025 against an original budget of about $2 billion, and that Phase 1A is fully funded, with construction from 2028 to 2031. The Authority's June 2026 documents instead say construction funding is not yet secured and show construction from summer 2029 to summer 2033.",
+        "sources": [
+          "https://en.wikipedia.org/wiki/Valley_Link",
+          "https://www.hacienda.org/news-events/hacienda-online/pulse/2026/feature-stories/commuters-benefit-valley-link-plan"
+        ]
+      },
+      "lastVerified": "2026-10-07"
+    },
+    {
+      "id": "sf-waterfront-flood-defense",
+      "name": "San Francisco waterfront flood defenses",
+      "aliases": [
+        "San Francisco Waterfront Coastal Flood Study",
+        "SF Waterfront Flood Study Recommended Plan",
+        "Waterfront Resilience Program",
+        "Embarcadero Seawall Program"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.393,
+        37.7752
+      ],
+      "acres": null,
+      "acresNote": "Not applicable: a 7.5-mile line of shoreline defenses along the Port of San Francisco's jurisdiction, from Aquatic Park to Heron's Head Park (Recommended Plan Highlights, Aug 2026, PDF pp. 9–10).",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Flood and seismic infrastructure; the housing and commercial fields don't apply. The USACE/City Recommended Plan combines floodproofing of piers and select buildings, raising and rebuilding wharves and historic buildings (including the Ferry Building and Ferry Plaza), raising the shoreline with seismically resilient structures, 2.8 miles of natural and nature-based features, two deployable closure structures and stormwater adaptations (Port staff report, Aug 7, 2026, PDF p. 5–6). First actions defend against 3.5 ft of sea level rise along the Embarcadero and 1.5 ft in South Beach/Mission Bay, adaptable later to as much as 7 ft (Highlights, PDF pp. 12, 24, 27). Estimated cost $17.8 billion in 2026 dollars ($14.1 billion design and construction, $3.7 billion real estate), at 20% design with a conditionally certified USACE estimate; if Congress approves, the federal government may pay up to 65% (staff report PDF p. 2; Aug 11, 2026 presentation PDF pp. 7, 14). The 2024 Draft Plan was estimated at $13.5 billion (2024 dollars). Separately, voters approved the $425 million Embarcadero Seawall Earthquake Safety Bond in 2018, and the City's capital plan schedules a $350 million Waterfront Safety & Climate bond for March 2028."
+      },
+      "developer": "Port of San Francisco (non-federal sponsor) with the U.S. Army Corps of Engineers",
+      "publicPartners": [
+        "U.S. Army Corps of Engineers, San Francisco District",
+        "Port of San Francisco",
+        "City and County of San Francisco (ClimateSF)",
+        "California Coastal Conservancy"
+      ],
+      "stage": "entitlement",
+      "stageNote": "Study complete, not authorized. USACE published the Final Integrated Feasibility Report and EIS on July 31, 2026, but there is no Record of Decision and no Chief's Report: the Chief of Engineers now requires 35% design before signing one, and the Port has been told it will not receive one on the 20%-design plan. Congress has not authorized or funded construction. The Port is designing early pieces with local money under a Section 221 agreement (Downtown Coastal Resilience Project, Broadway to Harrison; South Beach Coastal Resilience Project, Harrison to Townsend) and advocating for WRDA 2026 changes.",
+      "timeline": [
+        {
+          "date": "2018",
+          "event": "Congress approves a new start for the San Francisco Waterfront Coastal Flood Study with an initial $500,000 appropriation; voters approve the $425 million Embarcadero Seawall Earthquake Safety Bond."
+        },
+        {
+          "date": "2023-07-27",
+          "event": "USACE publishes its notice of intent to prepare an integrated feasibility report and EIS."
+        },
+        {
+          "date": "2024-01-26",
+          "event": "USACE and the City release the Draft Report and Draft Plan ($13.5 billion, 2024 dollars) for a 60-day comment period ending March 29."
+        },
+        {
+          "date": "2024-12-10",
+          "event": "Port Commission Resolution 24-62 authorizes a design and construction memorandum of understanding with USACE so the Port can advance design with local funds."
+        },
+        {
+          "date": "2026-03-06",
+          "event": "USACE's deputy commanding general confirms the Port will not receive a Chief's Report under the new 35% design rule."
+        },
+        {
+          "date": "2026-06-16",
+          "event": "The Port holds the first public workshop for the Downtown Coastal Resilience Project."
+        },
+        {
+          "date": "2026-07-31",
+          "event": "USACE publishes the Final Report and EIS with the Recommended Plan ($17.8 billion, 2026 dollars); the NEPA cooling period runs to Aug 31."
+        },
+        {
+          "date": "2026-08-11",
+          "event": "Port Commission hears an update on the Final Report, next steps and WRDA 2026 advocacy."
+        }
+      ],
+      "nextMilestone": "Congressional action: Senate and House WRDA 2026 bills include provisions to expedite the study and (Senate) bar a blanket 35% design requirement; the Port has requested $10 million in FY 2027 Energy & Water appropriations to design the Downtown Coastal Resilience Project and planned to advertise northern and southern waterfront design contracts from August 2026.",
+      "summary": "A plan to defend San Francisco's 7.5-mile Port waterfront, from Aquatic Park to Heron's Head Park, against sea level rise and earthquakes: raising the Embarcadero shoreline and seawall, rebuilding wharves and the Ferry Building's edge, levees and berms along Mission Bay and Islais Creek, and floodproofing elsewhere. The Army Corps' final study recommends it at $17.8 billion, but Congress has not authorized it; the first pieces near the Ferry Building and South Beach are in early design.",
+      "massingNotes": "Drawn as a line in four reaches (data/lines/sf-waterfront-flood-defense.geojson, pipeline/bam_pipeline/sites/lines_sf_waterfront_flood_defense.py), labelled approximate. No official GIS of the Recommended Plan's defense line was found (USACE's Final Report returns 403 to scripts; the Port's open data has only the jurisdiction polygon). Traced from the flood-impact segment line on slide 13 ('Draft Phasing and Implementation Strategy') of the Port's Aug 11, 2026 presentation, a plan-view map, fitted to DataSF street centrelines; reaches split at the map's dashed reach boundaries. About 11.3 miles as drawn, because it follows the water's edge into Mission Creek and Islais Creek and around the Pier 80-96 terminals (the Port: '7.5-mile' jurisdiction). The Highlights document's reach maps (pp. 10, 20-31) are oblique renderings and are not traceable. Subreaches (1.a to 4.c, Highlights Figure 2.7) and the Early Resilience Action areas are not drawn separately.",
+      "officialLinks": [
+        "https://www.sfport.com/wrp",
+        "https://www.sfport.com/sites/default/files/2026-08/260817_Highlights%20Document_Rec%20Plan.pdf"
+      ],
+      "sources": [
+        "https://www.sfport.com/wrp",
+        "https://www.sfport.com/wrp/embarcadero-seawall-resilience",
+        "https://www.sfport.com/sites/default/files/2026-08/260817_Highlights%20Document_Rec%20Plan.pdf",
+        "https://www.sfport.com/media/11433/download",
+        "https://www.sfport.com/media/11441/download",
+        "https://sfport.com/media/9510/download",
+        "https://www.onesanfrancisco.org/sites/default/files/2024-03/Agenda%20item%207%20-%20SF%20Waterfront%20Flood%20Study.pdf",
+        "https://onesanfrancisco.org/sites/default/files/inline-files/Full%20Capital%20Plan%20FY2026-FY2035_0.pdf",
+        "https://www.federalregister.gov/documents/2026/07/31/2026-15536/environmental-impact-statements-notice-of-availability",
+        "https://www.federalregister.gov/documents/2023/07/27/2023-15898/notice-of-intent-to-prepare-an-integrated-feasibility-report-and-environmental-impact-statement-for",
+        "https://data.sfgov.org/d/jmv6-xier",
+        "https://data.sf.gov/d/3psu-pn9h",
+        "https://data.sf.gov/d/txuc-3kzm"
+      ],
+      "verify": [
+        "the Final Integrated Feasibility Report and EIS itself (USACE, https://www.swt.usace.army.mil/Library/Docs-and-Comms/, 403 to scripts): length of each defense type, reach-by-reach heights and the benefit-cost ratio",
+        "whether WRDA 2026 is enacted with the Senate's design-maturity and expedite provisions, and any FY 2027 Energy & Water design funding",
+        "the Port's design contract awards for the northern and southern waterfront (RFPs planned from August 2026)",
+        "how much of the $425 million 2018 seawall bond has been spent and on which Embarcadero Early Projects (no current bond report was read)",
+        "the DataSF Port Jurisdiction layer's license and whether it matches the study area (jmv6-xier states no license; a copy, gtk5-z9iw, is marked ODC PDDL); it is not used for the drawn geometry",
+        "geometry: the line is the Port's Aug 2026 phasing-map shoreline, not an engineered alignment; replace it with the Final Report's plan sheets or design-phase GIS when available, and confirm whether the 7.5-mile figure is measured along the same line (11.3 miles as drawn)"
+      ],
+      "reported": {
+        "note": "Reported by the press but not confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map.",
+        "nextMilestone": "The SF Examiner (January 2025) reported the plan would go before Congress in 2026; under the 35% design rule USACE did not send a Chief's Report, so this is superseded.",
+        "sources": [
+          "https://www.sfexaminer.com/news/climate/sf-flood-resilience-plan-to-appear-before-congress-in-2026/article_890dd3ba-d528-11ef-a0fb-c7de1be686a1.html"
+        ]
+      },
+      "lastVerified": "2026-10-07"
+    },
+    {
+      "id": "ucsf-parnassus",
+      "name": "UCSF Parnassus Heights",
+      "aliases": [
+        "Comprehensive Parnassus Heights Plan",
+        "CPHP",
+        "Helen Diller Hospital",
+        "New Hospital at Parnassus Heights"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.4578,
+        37.7631
+      ],
+      "acres": 107,
+      "acresNote": "UC Regents and the CPHP EIR: the Parnassus Heights campus site comprises approximately 107 acres, including the 61-acre Mount Sutro Open Space Reserve, which stays permanent open space. Building is concentrated at the north end along Parnassus Avenue.",
+      "program": {
+        "homes": 762,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 61,
+        "notes": "The CPHP provides for about 2.9 million gsf of new building space (UC Notice of Determination, Jan 2021) and raises the campus space ceiling from 3.55 to 5.05 million gsf of non-residential space by about 2050. Homes are new on-campus units for students, trainees and faculty: 332 net new at Aldea and 430 in a new West Side district. Initial phase: the Helen Diller Hospital (15 stories, about 875,000 gsf, 336 beds, under construction, approved budget $4.33 billion in May 2022) and the Parnassus Research and Academic Building (9 stories, about 323,000 gsf, $843.1 million, approved Sept 2023). A separate MOU with the City commits UCSF to 1,263 homes citywide (40 percent affordable), mostly off this site."
+      },
+      "developer": "University of California, San Francisco (UC Regents)",
+      "publicPartners": [
+        "Regents of the University of California",
+        "City and County of San Francisco (CPHP memorandum of understanding)"
+      ],
+      "stage": "construction",
+      "stageNote": "The Helen Diller Hospital has been under construction since April 2024 (UC, April 2026); the state hospital regulator HCAI lists it as under construction (Oct 2026 data). The new hospital is planned to be complete in 2030, with Moffitt and Long renovations through 2034. Later CPHP phases run to about 2050.",
+      "timeline": [
+        {
+          "date": "2021-01-21",
+          "event": "UC Regents certify the CPHP EIR and approve Amendment #7 to the UCSF 2014 Long Range Development Plan, conditioned on the MOU with the City and County of San Francisco."
+        },
+        {
+          "date": "2022-05-19",
+          "event": "Regents certify the New Hospital EIR and approve its scope, design and $4.33 billion budget: a 15-story, about 875,000-gsf hospital with 336 beds."
+        },
+        {
+          "date": "2023-09-21",
+          "event": "UC approves the Parnassus Research and Academic Building: nine stories, about 323,000 gsf, $843.1 million."
+        },
+        {
+          "date": "2024-04",
+          "event": "Construction of the new hospital (now the Helen Diller Hospital) begins."
+        },
+        {
+          "date": "2026-04-14",
+          "event": "UC amends construction-hours mitigation for the hospital's structural steel and above-ground concrete phases."
+        }
+      ],
+      "nextMilestone": "New hospital completion, planned for 2030 (Regents, May 2022).",
+      "summary": "UCSF's plan to rebuild its oldest campus over about 30 years: a new 15-story hospital with 336 beds (under construction since 2024), a new research and academic building, and 762 new on-campus homes, adding about 2.9 million gross sq ft. The 61-acre Mount Sutro reserve stays open space.",
+      "massingNotes": "Boundary: the Parnassus Heights campus site boundary in the 2014 LRDP (Figure 6-11, as amended by Amendments #7 and #10) and the CPHP EIR figures, registered to DataSF parcels (acdm-wktn): block 2634A lots 003, 005, 011 and 012 total about 107.6 acres but likely miss campus blocks north of Parnassus Avenue; label 'Approximate boundary'. Massing: Helen Diller Hospital on block 2634A lot 005 (the former Langley Porter site, Parnassus Ave at Medical Center Way), 15 stories, about 269 ft to roof and 294 ft to the rooftop screen (New Hospital EIR, May 2022); a 5-story podium under a stepped tower. PRAB on the former UC Hall site, 9 stories. Aldea and West Side housing (6 to 10 stories, 72 to 120 ft, CPHP Draft EIR) and later phases are plan-level only. Illustrative massing.",
+      "officialLinks": [
+        "https://regents.universityofcalifornia.edu/regmeet/jan21/f5.pdf",
+        "https://regents.universityofcalifornia.edu/regmeet/may22/f6.pdf"
+      ],
+      "sources": [
+        "https://regents.universityofcalifornia.edu/regmeet/jan21/f5.pdf",
+        "https://regents.universityofcalifornia.edu/minutes/2021/board1.21.pdf",
+        "https://regents.universityofcalifornia.edu/regmeet/may22/f6.pdf",
+        "https://regents.universityofcalifornia.edu/minutes/2022/board5.19.pdf",
+        "https://regents.universityofcalifornia.edu/regmeet/sept23/f4.pdf",
+        "https://ceqanet.lci.ca.gov/2020010175/14",
+        "https://ceqanet.lci.ca.gov/2020010175",
+        "https://ceqanet.lci.ca.gov/2020010175/3/Attachment/el9B-o",
+        "https://ceqanet.lci.ca.gov/2020010175/7",
+        "https://ceqanet.lci.ca.gov/2021070547",
+        "https://ceqanet.lci.ca.gov/2021070547/3/Attachment/Squ362",
+        "https://ceqanet.lci.ca.gov/2021070547/6",
+        "https://ceqanet.lci.ca.gov/2021070547/6/Attachment/bP5FW8",
+        "https://data.chhs.ca.gov/dataset/hospital-building-data",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "current hospital budget and completion date (the $4.33 billion budget and 2030 completion are from May 2022)",
+        "whether the Parnassus Research and Academic Building is under construction or complete in 2026 (scheduled end of 2023 to 2028)",
+        "status and timing of Aldea Housing densification and West Side Housing (no project approvals found)",
+        "the 2014 LRDP campus boundary figure (campusplanning.ucsf.edu returns 403 to scripts)",
+        "MOU progress on the 1,263 citywide homes (latest official report found is April 2022)"
+      ],
+      "lastVerified": "2026-10-07"
+    },
+    {
+      "id": "tanforan",
+      "name": "Tanforan redevelopment",
+      "aliases": [
+        "Tanforan Redevelopment Project",
+        "Shops at Tanforan",
+        "Tanforan Mall"
+      ],
+      "city": "San Bruno",
+      "county": "San Mateo",
+      "subregion": "Peninsula",
+      "approxCenter": [
+        -122.418,
+        37.6364
+      ],
+      "acres": 44,
+      "acresNote": "City of San Bruno EIR: the 44-acre Shops at Tanforan site plus a vacant parcel north of Sneath Lane, six parcels (APNs 014-316-080, -300, -310, -330, -360 and 014-311-060). The Draft EIR lists the vacant lot as 014-316-060; the NOP and the County parcel layer give 014-311-060. County parcel polygons total about 43.9 acres.",
+      "program": {
+        "homes": 1514,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 1723580,
+        "commercialSqftTotal": null,
+        "retailSqft": 211950,
+        "hotelKeys": 170,
+        "openSpaceAcres": 8.2,
+        "notes": "Ranges from the EIR (June 2025 Draft, Oct 2026 Final): 1,014 to 1,514 homes, 1,174,000 to 1,723,580 sq ft of life-science lab and office, 111,950 to 211,950 sq ft of new retail, 55,000 to 69,000 sq ft of amenity space and a possible 170-room, 125,000-sq-ft hotel. Figures shown are the EIR maximums; the programmed area fixes 1,014 homes, and two flex zones swing between more lab/office (Scenario A) or more homes, retail and the hotel (Scenario B). Up to 200 affordable homes in a stand-alone building at the north end. Open space 8.2 acres (Scenario A) or 8 acres (Scenario B), mostly private. Target and the Century theater stay; about 785,489 sq ft of mall is demolished."
+      },
+      "developer": "ARE-San Francisco No. 96, LLC (Alexandria Real Estate)",
+      "publicPartners": [
+        "City of San Bruno"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In formal review. The Final EIR was published in October 2026; the City expects a Planning Commission hearing on Oct 20, 2026 and City Council consideration of EIR certification on Nov 10, 2026. Development agreement talks stalled in late 2025 and resumed in early 2026. No approvals for the redevelopment yet.",
+      "timeline": [
+        {
+          "date": "2023-12",
+          "event": "City of San Bruno issues the Notice of Preparation for the EIR."
+        },
+        {
+          "date": "2024-09-10",
+          "event": "City Council adopts Ordinances 1954 and 1955 (Housing Element), extending the site's planned-development zoning north of Sneath Lane and allowing multi-family homes."
+        },
+        {
+          "date": "2025-06-27",
+          "event": "Draft EIR published; comment period runs to Aug 11, 2025."
+        },
+        {
+          "date": "2025-08-26",
+          "event": "City Council endorses guiding principles for a development agreement."
+        },
+        {
+          "date": "2026-05-19",
+          "event": "Third joint City Council and Planning Commission study session; staff target a Planning Commission hearing in October and Council readings in November and December 2026."
+        },
+        {
+          "date": "2026-10",
+          "event": "Final EIR published (filed with the State Clearinghouse Oct 5, 2026)."
+        }
+      ],
+      "nextMilestone": "Planning Commission hearing on the Final EIR, anticipated Oct 20, 2026; City Council consideration anticipated Nov 10, 2026.",
+      "summary": "A plan to replace most of the Shops at Tanforan mall, next to San Bruno BART, with 1,014 to 1,514 homes, 1.2 to 1.7 million sq ft of lab and office space, new retail around a retail village and possibly a hotel. Target and the cinema stay. The EIR is final and hearings are expected in fall 2026.",
+      "massingNotes": "Boundary: County of San Mateo parcels (data.smcgov.org nr6j-72z7, Public Domain) for the six APNs, about 43.9 acres; check against Draft EIR Figure 2-3 (Existing Parcels). Massing: Draft EIR Figure 2-8 (Conceptual Site Plan) and Figure 2-10 (Conceptual Building Height Plan); buildings 1 to 7 stories, 20 to 79 ft 7 in, within the City's 79 ft 7 in limit and SFO safety limits of 127 to 148 ft above sea level (Final EIR revision). Three residential buildings on the north parcels along Sneath Lane; lab/office south of Tanforan Way; flex zones at the northwest and southeast corners. Illustrative massing.",
+      "officialLinks": [
+        "https://www.sanbruno.ca.gov/1176/Environmental-Review-Documents-CEQAEIR",
+        "https://ceqanet.lci.ca.gov/2023120409"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/2023120409",
+        "https://ceqanet.lci.ca.gov/2023120409/2",
+        "https://ceqanet.lci.ca.gov/2023120409/3",
+        "https://ceqanet.lci.ca.gov/2023120409/2/Attachment/bUptzG",
+        "https://ceqanet.lci.ca.gov/2023120409/3/Attachment/dIF3g9",
+        "https://www.sanbruno.ca.gov/1176/Environmental-Review-Documents-CEQAEIR",
+        "https://www.sanbruno.ca.gov/DocumentCenter/View/9642/Tanforan_Redevelopment_Project_FEIR_ADA",
+        "https://www.sanbruno.ca.gov/AgendaCenter/ViewFile/Agenda/_05192026-2573",
+        "https://www.sanbruno.ca.gov/AgendaCenter/ViewFile/Agenda/_05192026-2582",
+        "https://www.sanbruno.ca.gov/DocumentCenter/View/9615/October-2026-Development-Update",
+        "https://data.smcgov.org/d/nr6j-72z7"
+      ],
+      "verify": [
+        "Planning Commission outcome (hearing anticipated Oct 20, 2026) and City Council votes (Nov 10, 2026 and later readings)",
+        "development agreement terms (affordable share, community facilities district, phasing commitments) once a draft is posted",
+        "the vacant lot's APN (Draft EIR 014-316-060 vs NOP and County 014-311-060)",
+        "how many of the up to 200 affordable homes are committed in the final approvals"
+      ],
+      "lastVerified": "2026-10-07",
+      "reported": {
+        "note": "Reported by the developer in a City staff report but framed as the developer's own expectations, not City commitments; held out of the map until approvals confirm them.",
+        "timeline": "Developer (ARE) expectations if approved on schedule: demolition and site preparation by the end of 2027; residential partner begins the first building(s) by the end of 2028; first building(s) completed by the end of 2030; full build-out at least 10 to 15 years out (City staff report, May 19, 2026, p. 4).",
+        "sources": [
+          "https://www.sanbruno.ca.gov/AgendaCenter/ViewFile/Agenda/_05192026-2573"
+        ]
+      }
+    },
+    {
+      "id": "northgate-san-rafael",
+      "name": "Northgate Town Square",
+      "aliases": [
+        "Northgate Mall redevelopment",
+        "Northgate Mall Redevelopment Project",
+        "5800 Northgate Drive"
+      ],
+      "city": "San Rafael",
+      "county": "Marin",
+      "subregion": "North Bay",
+      "approxCenter": [
+        -122.5444,
+        38.0037
+      ],
+      "acres": 44.76,
+      "acresNote": "The City's approvals (Resolution 15360 and Ordinance 2043, Dec 2024) define the Project Site as the approximately 44.76-acre Northgate Mall property, APNs 175-060-12, -40, -59, -61, -66 and -67. The six parcels in the Marin County parcel layer come to about 43.9 acres. The 555 Northgate Drive affordable housing project (APN 175-060-32) is a separate site across Northgate Drive and is not part of this project.",
+      "program": {
+        "homes": 1422,
+        "affordableHomes": 143,
+        "affordablePct": 10,
+        "officeLabSqft": null,
+        "commercialSqftTotal": 219380,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Approved maximums at full buildout (Phase 2, '2040'): 1,422 homes, including 143 deed-restricted homes for low-income households (10%, dispersed through every residential building), and 219,380 sq ft of commercial space, down from about 766,507 sq ft in the existing mall. Phase 1 ('2025'): 864 homes (87 affordable) with 501,941 sq ft of commercial space still operating, including existing buildings kept until Phase 2. Six residential buildings: two townhome blocks (38 and 100 homes, 35 ft) and four apartment buildings of 280, 446, 309 and 249 homes (62 to 72 ft to the roof, 67.5 to 77.5 ft to the parapet), with ground-floor shops in the Phase 2 buildings. A density bonus concession raises the height limit to 78 ft. The privately owned, publicly accessible Town Square is 56,975 sq ft, with a 9,604 sq ft bicycle hub."
+      },
+      "developer": "Merlone Geier Partners, LLC (owner and applicant)",
+      "publicPartners": [
+        "City of San Rafael (lead agency)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. The City Council certified the EIR and approved the subdivision map, master use permit, design review and affordable housing agreement on Dec 2, 2024, and adopted the Planned Development rezoning (Ordinance 2043) on Dec 16, 2024. The City's project page says demolition was to begin in fall 2025; no City record yet confirms demolition or building permits, and the City's 2025 housing report counts no building permits for the project.",
+      "timeline": [
+        {
+          "date": "2017",
+          "event": "Merlone Geier Partners buys the Northgate Mall from The Macerich Company."
+        },
+        {
+          "date": "2021-03-10",
+          "event": "Merlone Geier applies for a Planned Development rezoning, subdivision map, master use permit and design review to redevelop the mall."
+        },
+        {
+          "date": "2021-12-09",
+          "event": "The City issues the notice of preparation for the project's EIR (SCH 2021120187)."
+        },
+        {
+          "date": "2024-01-05",
+          "event": "The City releases the Draft EIR."
+        },
+        {
+          "date": "2024-06-04",
+          "event": "Merlone Geier submits the revised project that the City later approves; it withdraws its development agreement application."
+        },
+        {
+          "date": "2024-10-29",
+          "event": "Planning Commission recommends approval (Resolutions 24-06, 24-07 and 24-08)."
+        },
+        {
+          "date": "2024-12-02",
+          "event": "City Council certifies the EIR (Resolution 15359) and approves the subdivision map, master use permit, design review, sign program and project-wide affordable housing agreement (Resolution 15360), 5–0."
+        },
+        {
+          "date": "2024-12-16",
+          "event": "City Council adopts Ordinance 2043, rezoning the site to the Northgate Town Square Planned Development District, 5–0."
+        },
+        {
+          "date": "2026-02-13",
+          "event": "The City seeks consultants for a Northgate Specific Plan covering the 100-plus-acre area around the mall."
+        }
+      ],
+      "nextMilestone": "Demolition and building permits for Phase 1 (the City's project page says demolition was to begin in fall 2025).",
+      "summary": "The redevelopment of the 1960s Northgate Mall in Terra Linda into an open-air town center: up to 1,422 homes, a town square and about 219,000 sq ft of shops and restaurants in place of most of the mall. Approved in 2024 and planned in two phases.",
+      "massingNotes": "Boundary: Marin County parcels (gis.marinpublic.com BaseMap/Basemap FeatureServer layer 13, Prop_ID 175-060-12, -40, -59, -61, -66, -67); 43.9 acres against 44.76 in the approvals. No license is stated on the service, so confirm terms. The ordinance's Exhibit D legal description and plan sheet SD-12 can check it. Buildings: the approved Development Plan (Ordinance 2043 Exhibit C, Phase 1 and Phase 2 site plans) and the Building Height Summary (Planning Commission staff report, Oct 29, 2024, Table 5, p. 23): Residential 1 and 2 townhomes 35 ft; Residential 3 and 5 62 ft (67.5 ft parapet); Residential 4 and 6 72 ft (77.5 ft parapet); Town Square Pavilion 45 ft 3 in; Major 1 46 ft 5 in; new retail pads 24 to 31 ft; cinema (existing) 46 ft 8 in. Phase 2 demolishes the Macy's and Kohl's buildings (CEQAnet notice of determination).",
+      "officialLinks": [
+        "https://www.cityofsanrafael.org/northgatetownsquaredev/",
+        "https://www.cityofsanrafael.org/northgate-town-square-rev/"
+      ],
+      "sources": [
+        "https://www.cityofsanrafael.org/northgatetownsquaredev/",
+        "https://www.cityofsanrafael.org/northgate-town-square-rev/",
+        "https://storage.googleapis.com/proudcity/sanrafaelca/2025/07/CC-Resolution-15359-Northgate-Town-Square-Project-Signed.pdf",
+        "https://storage.googleapis.com/proudcity/sanrafaelca/2025/07/Reso-15360-with-Attachments-signed.pdf",
+        "https://storage.googleapis.com/proudcity/sanrafaelca/2024/11/6.a-Northgate-Town-Square-Project.pdf",
+        "https://storage.googleapis.com/proudcity/sanrafaelca/2024/11/CC-SA-Minutes-2024-12-02.pdf",
+        "https://storage.googleapis.com/proudcity/sanrafaelca/2024/12/4.b-Northgate-Town-Square-Project-Ordinance-Adoption.pdf",
+        "https://storage.googleapis.com/proudcity/sanrafaelca/2025/02/CC-SA-Minutes-2024-12-16.pdf",
+        "https://storage.googleapis.com/proudcity/sanrafaelca/2024/10/A-PC-Staff-Report-10-29-2024.pdf",
+        "https://storage.googleapis.com/proudcity/sanrafaelca/2024/10/H-ATTACHMENT-2-Exhibit-C-Northgate-Town-Square-Development-Plan-2025-2040.pdf",
+        "https://storage.googleapis.com/proudcity/sanrafaelca/2024/10/I-ATTACHMENT-2-Exhibit-D-legal-description.pdf",
+        "https://storage.googleapis.com/proudcity/sanrafaelca/2026/03/0ce061e5-3.b-general-plan-and-housing-element-annual-progress-reports.pdf",
+        "https://storage.googleapis.com/proudcity/sanrafaelca/2025/11/e3d5ba62-4.d-funding-agreements-to-prepare-the-northgate-and-souteast-san-rafael-specific-plans.pdf",
+        "https://www.cityofsanrafael.org/rfp-northgate-specific-plan/",
+        "https://ceqanet.lci.ca.gov/2021120187",
+        "https://ceqanet.lci.ca.gov/2021120187/7",
+        "https://gis.marinpublic.com/arcgis/rest/services/BaseMap/Basemap/FeatureServer/13"
+      ],
+      "verify": [
+        "whether demolition has started and any demolition, grading or building permits issued (the City page said fall 2025; only a student newspaper reports work in 2026)",
+        "recording of the project-wide affordable housing agreement and any final map",
+        "the license terms of the Marin County parcel layer",
+        "the commercial total: the approvals say 219,380 sq ft at buildout, while the City's project pages still say 225,100 sq ft (the 2021 figure)"
+      ],
+      "reported": {
+        "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city or other public records confirm each one.",
+        "stageNote": "A San Rafael high school student newspaper (Apr 27, 2026) reports that 2026 began with deconstruction of parts of the former mall, including the old Sears building, with Ghilotti Bros. crews gutting it ahead of full demolition later in the year.",
+        "sources": [
+          "https://thevoice.srcs.org/9284/student-life/the-northgate-mall-begins-a-new-chapter/"
+        ]
+      },
+      "lastVerified": "2026-10-07"
+    },
+    {
+      "id": "ravenswood-business-district",
+      "name": "Ravenswood Business District / 4 Corners Specific Plan",
+      "aliases": [
+        "Ravenswood Business District",
+        "RBD Specific Plan Update",
+        "Ravenswood/4 Corners TOD Specific Plan",
+        "RBD/4 Corners"
+      ],
+      "city": "East Palo Alto",
+      "county": "San Mateo",
+      "subregion": "Peninsula",
+      "approxCenter": [
+        -122.1292,
+        37.4739
+      ],
+      "acres": 207,
+      "acresNote": "The adopted Specific Plan (p. 4 of the plan, PDF p. 13) says the Plan Area encompasses approximately 207 acres; the December 2024 notices of determination also give 207 acres. The plan area excludes University Village, the single-family neighborhood it wraps around. The 2022 notice of preparation gave 350 acres, and the City's GIS 'Specific Plan Boundary' polygon measures about 326 acres because it takes in University Village. It is a plan area of many properties, not one site.",
+      "program": {
+        "homes": 1600,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 3350000,
+        "commercialSqftTotal": null,
+        "retailSqft": 112400,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Net new development the plan allows (Table 4-1, Growth Scenario 2): 3,350,000 sq ft of office and R&D, 300,000 sq ft of industrial, 112,400 sq ft of retail, 154,700 sq ft of community and civic space, 53,500 sq ft of tenant amenity space and 1,600 homes (1,472 multifamily, 128 single-family or townhouse). Office/R&D space is handed out by City Council allocation: 2,700,000 sq ft for standard projects, a 250,000 sq ft reserve for projects under 150,000 sq ft and a 400,000 sq ft reserve for 'exemplary' projects. The City's inclusionary ordinance requires 20% of new homes to be affordable on site, or an alternative. The environmental notices give 3.3 million sq ft of office/R&D and 129,700 sq ft of civic space; the adopted plan's table is used here. Tallest buildings (seven to eight stories) go at the east end of Bay Road, at Four Corners and in the employment core."
+      },
+      "developer": "Multiple property owners",
+      "publicPartners": [
+        "City of East Palo Alto"
+      ],
+      "stage": "entitled",
+      "stageNote": "The City Council certified the environmental review and amended the General Plan on Dec 3, 2024, and adopted the updated specific plan and zoning on second reading on Dec 17, 2024, replacing the 2013 plan. Each project still needs its own approval; no office/R&D allocation under the 2024 plan has been found in City Council agendas through October 2026. The largest proposal in the area, Emerson Collective's East Palo Alto Waterfront, has a 299-home first phase under review.",
+      "timeline": [
+        {
+          "date": "2013",
+          "event": "City adopts the original Ravenswood/4 Corners TOD Specific Plan."
+        },
+        {
+          "date": "2021",
+          "event": "City Council starts the plan update to study a larger buildout."
+        },
+        {
+          "date": "2022-04-15",
+          "event": "The City issues the notice of preparation for a subsequent EIR (SCH 2022040352)."
+        },
+        {
+          "date": "2024-07-26",
+          "event": "The City releases the Draft Subsequent EIR."
+        },
+        {
+          "date": "2024-11-15",
+          "event": "The City releases the Final Subsequent EIR."
+        },
+        {
+          "date": "2024-11-27",
+          "event": "Design review application filed for East Palo Alto Waterfront Phase 1 (299 homes, about 11,000 sq ft of community and commercial space)."
+        },
+        {
+          "date": "2024-12-03",
+          "event": "City Council certifies the Final SEIR, amends the General Plan and introduces the specific plan and zoning ordinances (4 ayes, 1 abstention)."
+        },
+        {
+          "date": "2024-12-17",
+          "event": "City Council adopts the updated Ravenswood Business District/4 Corners Specific Plan and zoning amendments on second reading."
+        },
+        {
+          "date": "2026-03-03",
+          "event": "City Council hears the appeal of the 1675 Bay Road (Four Corners) townhome and mixed-use projects, 274 homes in all, which the Planning Commission had declined to approve; the City now lists both as approved."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "A rezoning of East Palo Alto's Ravenswood Business District and Four Corners, between University Village and the Bay, to allow up to 3.35 million sq ft of new office and R&D space and 1,600 homes. It's a zoning plan rather than a single development: each property owner builds under it with its own approvals.",
+      "massingNotes": "Plan-scale: draw the boundary only, no invented buildings. The City's ArcGIS 'Specific Plan Boundary' layer (services8.arcgis.com/Qac9ExiTge3RH5x7 2025_EPA_Zoning_Map_WFL1 FeatureServer layer 0, one polygon, about 326 acres) is the outer line and includes University Village, which the plan excludes; cut University Village out using Figure 1-3 'Plan Boundary' (adopted plan, PDF p. 18) or the City's zoning parcels (Final_Zoning FeatureServer layer 0) before drawing. No license is stated, so confirm terms. Land use and heights: Figure 6-1 Land Use Zones Map and Figure 6-3 Maximum Height Map (heights in feet) in Chapter 6.",
+      "officialLinks": [
+        "https://www.cityofepa.org/planning/page/ravenswood4-corners-specific-plan-adopted-12172024"
+      ],
+      "sources": [
+        "https://www.cityofepa.org/planning/page/ravenswood4-corners-specific-plan-adopted-12172024",
+        "https://www.cityofepa.org/sites/default/files/fileattachments/planning/page/9021/ravenswood_business_district_4_corners_specific_plan_final.pdf",
+        "https://ceqanet.lci.ca.gov/2022040352",
+        "https://ceqanet.lci.ca.gov/2022040352/2",
+        "https://ceqanet.lci.ca.gov/2022040352/4",
+        "https://ceqanet.lci.ca.gov/2022040352/5",
+        "https://granicus_production_attachments.s3.amazonaws.com/cityofepa/2120b3225e83b69e9a3e4c0e33e6acbc0.pdf",
+        "https://granicus_production_attachments.s3.amazonaws.com/cityofepa/54e7daedbe3bb2798129c4d1e21fa26f0.pdf",
+        "https://d3n9y02raazwpg.cloudfront.net/cityofepa/da8aa36c-d815-11ee-98bb-0050569183fa-3408cd31-ecd7-4429-9d91-65986d552499-1734654695.pdf",
+        "https://d3n9y02raazwpg.cloudfront.net/cityofepa/967a0d3d-d23a-11f0-bb28-005056a89546-3408cd31-ecd7-4429-9d91-65986d552499-1772343676.pdf",
+        "https://www.cityofepa.org/planning/project/epa-waterfront-phase-1",
+        "https://www.cityofepa.org/planning/project/east-palo-alto-epa-waterfront",
+        "https://www.cityofepa.org/planning/project/four-corners-mixed-use-project-dr25-007pre24-004-1675-bay-road",
+        "https://www.cityofepa.org/planning/project/four-corners-townhome-project-dr25-004-pre24-003-1675-bay-road",
+        "https://services8.arcgis.com/Qac9ExiTge3RH5x7/arcgis/rest/services/2025_EPA_Zoning_Map_WFL1/FeatureServer/0",
+        "https://services8.arcgis.com/Qac9ExiTge3RH5x7/arcgis/rest/services/Final_Zoning/FeatureServer/0"
+      ],
+      "verify": [
+        "the ordinance numbers adopting the plan and zoning (Dec 17, 2024) and the Dec 3, 2024 resolution numbers; the packets carry unnumbered drafts and the minutes aren't posted",
+        "the outcome and vote of the Mar 3, 2026 Four Corners appeal (the City's project pages say approved; no minutes found)",
+        "any office/R&D allocations or development agreements approved under the 2024 plan",
+        "the status of East Palo Alto Waterfront Phase 1 (design review filed Nov 27, 2024) and of the 2020 Bay Road (on hold) and 1990 Bay Road 'The Landing' proposals",
+        "the plan boundary without University Village (drawn approximately: the City's boundary layer less University Village's zoning parcels, 205 acres against the plan's 207; a trace of Figure 1-3 would confirm it), and the license terms of the City's GIS layers"
+      ],
+      "lastVerified": "2026-10-07"
+    },
+    {
+      "id": "bart-station-housing",
+      "name": "BART station-area housing",
+      "aliases": [
+        "BART transit-oriented development",
+        "BART TOD"
+      ],
+      "city": "Oakland, Berkeley, El Cerrito and Dublin",
+      "county": "Alameda",
+      "subregion": "East Bay",
+      "approxCenter": [
+        -122.26,
+        37.84
+      ],
+      "camera": {
+        "center": [
+          -122.246,
+          37.8398
+        ],
+        "zoom": 10.35,
+        "pitch": 45,
+        "bearing": 66
+      },
+      "acres": 32,
+      "acresNote": "Sum of the acreages BART's TOD Work Plan GIS layer gives for the parcels drawn at the six sites: West Oakland 5.5, Lake Merritt 2.8, North Berkeley 8.1, Ashby West Lot 4.5, El Cerrito Plaza 7.5 and Amador Station 3.6. At North Berkeley, Ashby and El Cerrito Plaza the parcels include station entrances and track land that won't be built on (El Cerrito's approved master plan site is about 6 acres plus the 0.48-acre Parcel A South).",
+      "program": {
+        "homes": 3701,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 800000,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Homes are a sum of the official per-site figures: West Oakland 762, Lake Merritt 557, North Berkeley 739, Ashby West Lot up to 600, El Cerrito Plaza 743 and Amador Station 300 (3,701, with Ashby at its upper figure). Office is a sum too: about 300,000 sq ft at West Oakland and up to 500,000 sq ft at Lake Merritt. Affordable homes by site: 240 at West Oakland, 233 at Lake Merritt, 381 at North Berkeley, half of Ashby's, 350 at El Cerrito Plaza and all 300 at Amador Station. Retail: about 53,000 sq ft at West Oakland, up to 16,500 sq ft at Lake Merritt and smaller ground-floor spaces elsewhere. Walnut Creek's last phase (about 240 homes, in planning) isn't counted."
+      },
+      "developer": "Six teams selected by BART: Mandela Station Partners and Mandela Station Affordable (West Oakland); Strada Investment Group and East Bay Asian Local Development Corporation (Lake Merritt); North Berkeley Housing Partners (BRIDGE Housing, EBALDC, Insight Housing and AvalonBay Communities); Adeline Alliance Partners with Resources for Community Development (Ashby); Holliday Development, Related California and Satellite Affordable Housing Associates (El Cerrito Plaza); and The Related Companies of California (Amador Station)",
+      "publicPartners": [
+        "BART",
+        "City of Oakland",
+        "City of Berkeley",
+        "City of El Cerrito",
+        "City of Dublin"
+      ],
+      "stage": "construction",
+      "stageNote": "Three sites are under construction: El Cerrito Plaza's first building (since November 2025), Lake Merritt's senior building and West Oakland's 240 affordable homes (since September 2026). North Berkeley is entitled (December 2024) and Amador Station is waiting for funding. The Ashby West Lot has a developer but no application with the City yet.",
+      "timeline": [
+        {
+          "date": "2018-09-30",
+          "event": "Governor signs AB 2923, setting zoning standards for BART-owned land near stations in Alameda, Contra Costa and San Francisco counties."
+        },
+        {
+          "date": "2019-02-06",
+          "event": "Oakland Planning Commission approves the West Oakland Preliminary Development Plan (PLN18490)."
+        },
+        {
+          "date": "2020-11-04",
+          "event": "Oakland Planning Commission approves the revised West Oakland Preliminary Development Plan."
+        },
+        {
+          "date": "2020-11-19",
+          "event": "BART Board selects Holliday Development, Related California and SAHA for El Cerrito Plaza."
+        },
+        {
+          "date": "2021",
+          "event": "City of Oakland approves the Lake Merritt Preliminary Development Plan, including its CEQA review."
+        },
+        {
+          "date": "2022-06",
+          "event": "Berkeley City Council adopts the R-BMU zoning district for the North Berkeley and Ashby BART stations."
+        },
+        {
+          "date": "2023-04-03",
+          "event": "City of El Cerrito approves Parcel A South, the first El Cerrito Plaza building (PL22-0150)."
+        },
+        {
+          "date": "2023-05",
+          "event": "BART and Mandela Station Partners sign a lease option for West Oakland."
+        },
+        {
+          "date": "2024-07-03",
+          "event": "City of El Cerrito issues the ministerial approval of the El Cerrito Plaza master plan (PL23-0024)."
+        },
+        {
+          "date": "2024-12-03",
+          "event": "Berkeley City Council adopts Ordinance 7,939-N.S., authorizing the Ashby property exchange with BART."
+        },
+        {
+          "date": "2024-12-11",
+          "event": "City of Berkeley approves the North Berkeley project, 739 homes, under AB 2011."
+        },
+        {
+          "date": "2025-07-10",
+          "event": "BART Board authorizes an exclusive negotiating agreement with Adeline Alliance Partners for the Ashby West Lot."
+        },
+        {
+          "date": "2025-11",
+          "event": "Construction of El Cerrito Plaza's Parcel A South begins."
+        },
+        {
+          "date": "2026-07-21",
+          "event": "Dublin City Council approves amended agreements with Related for Amador Station."
+        },
+        {
+          "date": "2026-09-14",
+          "event": "Construction of West Oakland's 240 affordable homes begins."
+        }
+      ],
+      "nextMilestone": "Ashby West Lot application to the City of Berkeley (BART: late 2026); North Berkeley's first phase to start construction (BART: 2027).",
+      "summary": "BART is building housing on its station parking lots. This entry maps the six sites where that work isn't finished: West Oakland, Lake Merritt, North Berkeley, Ashby, El Cerrito Plaza and Amador Station in Dublin. Together they plan about 3,700 homes, about half of them affordable, plus up to 800,000 sq ft of offices in Oakland. BART says the program has already delivered 4,232 homes and 874,000 sq ft of commercial space at 15 stations.",
+      "massingNotes": "A program-level entry added at Matthew's request (2026-10-07): no single site reaches 1,000 homes. The county is Alameda for five sites; El Cerrito Plaza is in Contra Costa County. Boundary: BART's TOD Work Plan GIS layer, one part per site: the parcels BART marks in progress at West Oakland, North Berkeley and El Cerrito Plaza, the APNs named by the City of Oakland for Lake Merritt and by the City of Dublin for Amador Station, and the Ashby West Lot parcel. Massing: West Oakland's towers and buildings traced from the 2020 revised Preliminary Development Plan (RMS 0.2 m), Lake Merritt's four buildings from the 2021 tract map and zoning table (RMS under 0.2 m) and El Cerrito Plaza's six buildings from the approved 2024 master plan (RMS 0.8 m), with heights from the plans. North Berkeley, the Ashby West Lot and Amador Station are illustrative height-limit envelopes (80 ft under Berkeley's R-BMU zoning, 90 ft at Amador Station per BART's AB 2923 layer).",
+      "officialLinks": [
+        "https://www.bart.gov/about/business/tod/upcoming",
+        "https://www.bart.gov/about/business/tod/completed"
+      ],
+      "sources": [
+        "https://www.bart.gov/about/business/tod/upcoming",
+        "https://www.bart.gov/about/business/tod/completed",
+        "https://www.bart.gov/about/business/tod/westoakland",
+        "https://www.bart.gov/news/articles/2026/news20260901-0",
+        "https://www.bart.gov/about/business/tod/lakemerritt",
+        "https://www.bart.gov/about/business/tod/north-berkeley",
+        "https://www.bart.gov/about/business/tod/ashby",
+        "https://www.bart.gov/about/business/tod/el-cerrito-plaza",
+        "https://www.bart.gov/about/business/tod/fremont",
+        "https://www.bart.gov/about/business/tod/walnutcreek",
+        "https://www.bart.gov/about/business/tod/ab2923",
+        "https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/West-Oakland-BART-Development-Mandela-Station",
+        "https://www.oaklandca.gov/files/assets/city/v/1/planning-amp-building/documents/dp/mandela-station-bart/wo-bart-pdp-revised-approval-dated-september-16-2020.pdf",
+        "https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/Lake-Merrit-BART-Transit-Oriented-Development",
+        "https://www.oaklandca.gov/files/assets/city/v/1/planning-amp-building/documents/dp/lake-merritt-bart/041421_drcstaffreport_lmbart_signed.pdf",
+        "https://berkeleyca.gov/construction-development/land-use-development/general-plan-and-area-plans/ashby-and-north-berkeley",
+        "https://berkeleyca.gov/sites/default/files/documents/Berkeley_City_2024_%20GP%20APR.pdf",
+        "https://berkeleyca.gov/sites/default/files/documents/2023-12-12%20NB%20BART%20ODS_ADOPTED.pdf",
+        "https://elcerrito.gov/1381/Transit-Oriented-Development-TOD",
+        "https://www.elcerrito.gov/DocumentCenter/View/20672/PL23-0024_Ministerial-Approval-Letter",
+        "https://www.elcerrito.gov/DocumentCenter/View/20671/Attachment-D_Project-Plans",
+        "https://www.elcerrito.gov/DocumentCenter/View/22554/PL22-0150-Parcel-A-South-Ministerial-Approval-Letter-Including-Conditions",
+        "https://ceqanet.lci.ca.gov/2010022005/8",
+        "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
+        "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/9"
+      ],
+      "verify": [
+        "Lake Merritt's home count: the City's 2021 plan and BART's project page say 557, while BART's upcoming-projects page lists 97 + 439 + 100 = 636 (the newer 439-home Building A would also change the drawn tower)",
+        "when Lake Merritt's senior building started construction: BART's project page says October 2024, its upcoming-projects page June 2025",
+        "the date the Oakland Planning Commission approved the Lake Merritt Preliminary Development Plan (BART gives only 2021)",
+        "West Oakland's split: the City lists 522 market-rate and 240 affordable homes, BART 525 and 236",
+        "North Berkeley's count: the City's 2024 report gives 739 homes (381 affordable), BART's project page about 743 (382 affordable)",
+        "El Cerrito Plaza heights: the approval letter says the master-plan buildings are 67 to 85 ft, but the Parcel D section sheet shows 57 ft; Parcel A-South's height in feet",
+        "El Cerrito Plaza's affordable total: 350 from the City's approvals (281 plus 69 at Parcel A South), 351 on BART's pages",
+        "the City of Dublin's planning approval for Amador Station (PLPA-2021-00019), its date and building heights",
+        "which BART parcel holds Walnut Creek Transit Village's last phase (about 240 homes, in planning), so it can be drawn",
+        "Fremont (developer selection expected October 2026 for an 8-acre first phase), Bay Fair and Richmond Transit Village Phase II, which aren't drawn yet"
+      ],
+      "lastVerified": "2026-10-07"
     }
   ]
 }

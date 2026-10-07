@@ -1,0 +1,91 @@
+{
+  "id": "ucsf-parnassus",
+  "name": "UCSF Parnassus Heights",
+  "aliases": [
+    "Comprehensive Parnassus Heights Plan",
+    "CPHP",
+    "Helen Diller Hospital",
+    "New Hospital at Parnassus Heights"
+  ],
+  "city": "San Francisco",
+  "county": "San Francisco",
+  "subregion": "San Francisco",
+  "approxCenter": [
+    -122.4578,
+    37.7631
+  ],
+  "acres": 107,
+  "acresNote": "UC Regents and the CPHP EIR: the Parnassus Heights campus site comprises approximately 107 acres, including the 61-acre Mount Sutro Open Space Reserve, which stays permanent open space. Building is concentrated at the north end along Parnassus Avenue.",
+  "program": {
+    "homes": 762,
+    "affordableHomes": null,
+    "affordablePct": null,
+    "officeLabSqft": null,
+    "commercialSqftTotal": null,
+    "retailSqft": null,
+    "hotelKeys": null,
+    "openSpaceAcres": 61,
+    "notes": "The CPHP provides for about 2.9 million gsf of new building space (UC Notice of Determination, Jan 2021) and raises the campus space ceiling from 3.55 to 5.05 million gsf of non-residential space by about 2050. Homes are new on-campus units for students, trainees and faculty: 332 net new at Aldea and 430 in a new West Side district. Initial phase: the Helen Diller Hospital (15 stories, about 875,000 gsf, 336 beds, under construction, approved budget $4.33 billion in May 2022) and the Parnassus Research and Academic Building (9 stories, about 323,000 gsf, $843.1 million, approved Sept 2023). A separate MOU with the City commits UCSF to 1,263 homes citywide (40 percent affordable), mostly off this site."
+  },
+  "developer": "University of California, San Francisco (UC Regents)",
+  "publicPartners": [
+    "Regents of the University of California",
+    "City and County of San Francisco (CPHP memorandum of understanding)"
+  ],
+  "stage": "construction",
+  "stageNote": "The Helen Diller Hospital has been under construction since April 2024 (UC, April 2026); the state hospital regulator HCAI lists it as under construction (Oct 2026 data). The new hospital is planned to be complete in 2030, with Moffitt and Long renovations through 2034. Later CPHP phases run to about 2050.",
+  "timeline": [
+    {
+      "date": "2021-01-21",
+      "event": "UC Regents certify the CPHP EIR and approve Amendment #7 to the UCSF 2014 Long Range Development Plan, conditioned on the MOU with the City and County of San Francisco."
+    },
+    {
+      "date": "2022-05-19",
+      "event": "Regents certify the New Hospital EIR and approve its scope, design and $4.33 billion budget: a 15-story, about 875,000-gsf hospital with 336 beds."
+    },
+    {
+      "date": "2023-09-21",
+      "event": "UC approves the Parnassus Research and Academic Building: nine stories, about 323,000 gsf, $843.1 million."
+    },
+    {
+      "date": "2024-04",
+      "event": "Construction of the new hospital (now the Helen Diller Hospital) begins."
+    },
+    {
+      "date": "2026-04-14",
+      "event": "UC amends construction-hours mitigation for the hospital's structural steel and above-ground concrete phases."
+    }
+  ],
+  "nextMilestone": "New hospital completion, planned for 2030 (Regents, May 2022).",
+  "summary": "UCSF's plan to rebuild its oldest campus over about 30 years: a new 15-story hospital with 336 beds (under construction since 2024), a new research and academic building, and 762 new on-campus homes, adding about 2.9 million gross sq ft. The 61-acre Mount Sutro reserve stays open space.",
+  "massingNotes": "Boundary: the Parnassus Heights campus site boundary in the 2014 LRDP (Figure 6-11, as amended by Amendments #7 and #10) and the CPHP EIR figures, registered to DataSF parcels (acdm-wktn): block 2634A lots 003, 005, 011 and 012 total about 107.6 acres but likely miss campus blocks north of Parnassus Avenue; label 'Approximate boundary'. Massing: Helen Diller Hospital on block 2634A lot 005 (the former Langley Porter site, Parnassus Ave at Medical Center Way), 15 stories, about 269 ft to roof and 294 ft to the rooftop screen (New Hospital EIR, May 2022); a 5-story podium under a stepped tower. PRAB on the former UC Hall site, 9 stories. Aldea and West Side housing (6 to 10 stories, 72 to 120 ft, CPHP Draft EIR) and later phases are plan-level only. Illustrative massing.",
+  "officialLinks": [
+    "https://regents.universityofcalifornia.edu/regmeet/jan21/f5.pdf",
+    "https://regents.universityofcalifornia.edu/regmeet/may22/f6.pdf"
+  ],
+  "sources": [
+    "https://regents.universityofcalifornia.edu/regmeet/jan21/f5.pdf",
+    "https://regents.universityofcalifornia.edu/minutes/2021/board1.21.pdf",
+    "https://regents.universityofcalifornia.edu/regmeet/may22/f6.pdf",
+    "https://regents.universityofcalifornia.edu/minutes/2022/board5.19.pdf",
+    "https://regents.universityofcalifornia.edu/regmeet/sept23/f4.pdf",
+    "https://ceqanet.lci.ca.gov/2020010175/14",
+    "https://ceqanet.lci.ca.gov/2020010175",
+    "https://ceqanet.lci.ca.gov/2020010175/3/Attachment/el9B-o",
+    "https://ceqanet.lci.ca.gov/2020010175/7",
+    "https://ceqanet.lci.ca.gov/2021070547",
+    "https://ceqanet.lci.ca.gov/2021070547/3/Attachment/Squ362",
+    "https://ceqanet.lci.ca.gov/2021070547/6",
+    "https://ceqanet.lci.ca.gov/2021070547/6/Attachment/bP5FW8",
+    "https://data.chhs.ca.gov/dataset/hospital-building-data",
+    "https://data.sf.gov/d/acdm-wktn"
+  ],
+  "verify": [
+    "current hospital budget and completion date (the $4.33 billion budget and 2030 completion are from May 2022)",
+    "whether the Parnassus Research and Academic Building is under construction or complete in 2026 (scheduled end of 2023 to 2028)",
+    "status and timing of Aldea Housing densification and West Side Housing (no project approvals found)",
+    "the 2014 LRDP campus boundary figure (campusplanning.ucsf.edu returns 403 to scripts)",
+    "MOU progress on the 1,263 citywide homes (latest official report found is April 2022)"
+  ],
+  "lastVerified": "2026-10-07"
+}
