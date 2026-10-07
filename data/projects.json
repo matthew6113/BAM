@@ -4892,14 +4892,15 @@
         "https://www.cityofepa.org/planning/project/east-palo-alto-epa-waterfront",
         "https://www.cityofepa.org/planning/project/four-corners-mixed-use-project-dr25-007pre24-004-1675-bay-road",
         "https://www.cityofepa.org/planning/project/four-corners-townhome-project-dr25-004-pre24-003-1675-bay-road",
-        "https://services8.arcgis.com/Qac9ExiTge3RH5x7/arcgis/rest/services/2025_EPA_Zoning_Map_WFL1/FeatureServer/0"
+        "https://services8.arcgis.com/Qac9ExiTge3RH5x7/arcgis/rest/services/2025_EPA_Zoning_Map_WFL1/FeatureServer/0",
+        "https://services8.arcgis.com/Qac9ExiTge3RH5x7/arcgis/rest/services/Final_Zoning/FeatureServer/0"
       ],
       "verify": [
         "the ordinance numbers adopting the plan and zoning (Dec 17, 2024) and the Dec 3, 2024 resolution numbers; the packets carry unnumbered drafts and the minutes aren't posted",
         "the outcome and vote of the Mar 3, 2026 Four Corners appeal (the City's project pages say approved; no minutes found)",
         "any office/R&D allocations or development agreements approved under the 2024 plan",
         "the status of East Palo Alto Waterfront Phase 1 (design review filed Nov 27, 2024) and of the 2020 Bay Road (on hold) and 1990 Bay Road 'The Landing' proposals",
-        "the plan boundary without University Village, and the license terms of the City's GIS layers"
+        "the plan boundary without University Village (drawn approximately: the City's boundary layer less University Village's zoning parcels, 205 acres against the plan's 207; a trace of Figure 1-3 would confirm it), and the license terms of the City's GIS layers"
       ],
       "lastVerified": "2026-10-07"
     }
