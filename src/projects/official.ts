@@ -60,7 +60,7 @@ const OFFICIAL_HOSTS = [
   'getvalleylinked.com',
   'tjpa.org', // Transbay Joint Powers Authority (The Portal / Downtown Rail Extension, Salesforce Transit Center)
   'sfcta.org', // San Francisco County Transportation Authority (Prop L sales tax, board memos)
-  'caltrain.com', // Peninsula Corridor Joint Powers Board (Caltrain): developer resources and GTFS licence
+  'caltrain.com', // Peninsula Corridor Joint Powers Board (Caltrain): developer resources and GTFS licence (Matthew, 2026-10-07: approved)
 ];
 
 /** Shared vendor hosts, accepted only under an agency's own path. */
