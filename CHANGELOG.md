@@ -3,6 +3,40 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-07 (official-source pass: west San Francisco and HOPE SF)
+
+Each project's held-back press facts (`reported`) and open questions (`verify`) were checked against
+official records. Findings, with URLs, pages and quotes: `docs/official-research/update-2026-10-07-sf-west.md`.
+`lastVerified` is unchanged, because only these items were re-checked, not whole records.
+
+- **treasure-island:** developer now names its owners (Stockbridge, Wilson Meany, Kenwood Investments,
+  Lennar; Board Budget and Legislative Analyst, 2024), replacing the press's "TIDG" in `reported`. Homes
+  completed: more than 1,200 by May 2026 (City Administrator), up from about 1,000. The press's
+  "phase one complete in July 2026" is contradicted: Planning says Major Phase 1 builds out through 2027.
+  It and its timeline entry are dropped. Added: the 2016 start of Stage 1 infrastructure (TIDA schedule),
+  the Bay FC facility permit (Jan 6, 2026), TIDA's unit-increase schedule (Board action targeted for
+  November) and 490 Avenue of the Palms switching to rentals (TIDA, Sept 2026).
+- **stonestown:** the 30 acres are "parking lots and streets" (Mayor's Office), so `reported.acresNote` is
+  removed. The affordable options are now spelled out from the development agreement (up to three parcels for
+  100% affordable buildings, inclusionary homes, or a fee on up to 390 homes). Added the Board's
+  approval of the financing plan (Resolution 36-26, Jan 27, 2026).
+- **balboa-reservoir:** the educator housing is confirmed by the adopted development agreement: about 150
+  homes, with City College first priority and SFUSD second. The press note is removed, and the open-space split
+  is added (park 2.0, SFPUC 1.2, paseos 0.8 acres).
+- **parkmerced:** no official record of the default, receivership or takeover, so the stage stays
+  entitled. Added Planning's Sept 2024 finding of no construction since 2011. Phase 1 affordable
+  homes corrected to 48 + 37 on site plus about $59.4M in fees, and heights corrected to the zoning's
+  45–145 ft (Ordinance 91-11; the 35-ft figure came from the 2010 staff report).
+- **potrero-hope-sf:** affordable homes now 800 (about 619 replacement + 200 tax-credit; MOHCD, 2025).
+  Phase 3 demolition has started: 23 permits (153 units) issued in April 2026, 19 marked complete by
+  Sept 1, 2026 (DBI, re-checked today). The City's 2022 schedule (last phase in 2034) is added.
+- **sunnydale-hope-sf:** EIR/EIS certified July 9, 2015 (Motion 19409), with CEQA findings Nov 17, 2016;
+  the buildings are Block 6 (242 Hahn St) and Block 7 (65 Santos St). The development agreement counts
+  694 market-rate and 1,074 affordable homes. All verify items are resolved.
+- **schlage-lock:** the agreement took effect Feb 27, 2015 for 15 years. The 2009 ordinances were finally
+  passed Apr 28, 2009. Grading began in 2016 and site preparation finished in early 2019. Zone 1 is about
+  20 acres (parcels listed). The Dec 2019 filings were three buildings, not two (146, 152 and 258 homes).
+
 ## 2026-10-07 (BART station-area housing, added)
 
 New project `bart-station-housing`, added at Matthew's request as one program-level entry: BART's

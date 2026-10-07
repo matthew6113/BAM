@@ -870,13 +870,13 @@
         "openSpaceAcres": 300,
         "notes": "8,000 homes is the development agreement's cap, 271 of them on Yerba Buena Island. The 27.2% affordable requirement (2,173 homes) replaces the 2011 figure of up to 2,400. About 311,000 sq ft of adaptive reuse in historic Buildings 1–3. In Jan 2026 the developer applied to add 1,400–2,800 homes; TIDA heard it as an informational item and it is not approved."
       },
-      "developer": "Treasure Island Community Development, LLC",
+      "developer": "Treasure Island Community Development, LLC (Stockbridge Capital Group, Wilson Meany, Kenwood Investments and Lennar)",
       "publicPartners": [
         "Treasure Island Development Authority (TIDA)",
         "SF Planning"
       ],
       "stage": "partial",
-      "stageNote": "About 1,000 homes had been completed by Feb 2026 (TIDA). The city has marked permits complete for six buildings since 2022, most recently 490 Avenue of the Palms (148 homes) on March 9, 2026. Ferry service began March 1, 2022.",
+      "stageNote": "More than 1,200 homes had been completed by May 2026 (City Administrator). The city has marked permits complete for six buildings since 2022, most recently 490 Avenue of the Palms (148 homes) on March 9, 2026, which TIDA said in Sept 2026 is switching from condominiums to rentals. Major Phase 1 is planned to build out through 2027. Ferry service began March 1, 2022.",
       "timeline": [
         {
           "date": "2003",
@@ -885,6 +885,10 @@
         {
           "date": "2011-06",
           "event": "Board of Supervisors approves the project and its development agreement (Ordinance 95-11)."
+        },
+        {
+          "date": "2016",
+          "event": "Stage 1 infrastructure work begins (TIDA schedule)."
         },
         {
           "date": "2022-03-01",
@@ -915,6 +919,10 @@
           "event": "City marks the permit for Hawkins (Parcel C2.2, 178 homes) complete."
         },
         {
+          "date": "2026-01-06",
+          "event": "Building permit issued for Bay FC's one-story training facility at 449 Avenue H."
+        },
+        {
           "date": "2026-01-30",
           "event": "Developer applies to raise the 8,000-home cap by 1,400 to 2,800 homes."
         },
@@ -925,11 +933,19 @@
         {
           "date": "2026-03-09",
           "event": "City marks the permit for 490 Avenue of the Palms (Parcel C3.4, 148 homes) complete."
+        },
+        {
+          "date": "2026-05-07",
+          "event": "City reports more than 1,200 homes completed on Treasure Island and Yerba Buena Island."
+        },
+        {
+          "date": "2026-06-05",
+          "event": "TIDA committee reviews the unit-increase schedule, aiming for Board of Supervisors action in November 2026."
         }
       ],
-      "nextMilestone": "Board of Supervisors action on the proposed unit increase, sought before the end of 2026.",
-      "summary": "A former naval base in the middle of the Bay becoming a new neighborhood of up to 8,000 homes and 300 acres of open space, with a smaller set of homes on Yerba Buena Island. About 1,000 homes are finished.",
-      "massingNotes": "Boundary: DataSF Height and Bulk Districts (h9wh-cg3m, Public Domain U.S. Government), the union of height values containing \"-TI\" or \"YBI\" (about 390.4 acres, without Job Corps); it also gives the height envelope, up to 450 ft (75-TI/450 Flex Zone-TI), with the 2024 Design for Development adding 5 ft in some areas. Tallest built so far is Isle House at 22 stories (permit). Massing: 43 Design for Development blocks (2024 update, Fig. T4.q, used for names and checked against the zoning) drawn to the zoning height districts, 45–125 ft, with flex tower zones to 240, 315 and 450 ft over their base (illustrative); built buildings from footprints with DBI stories (Isle House to its mapped 220 ft; others estimated at 10.3 ft per story, illustrative). Yerba Buena Island hillside zones, parks, the historic core and Job Corps are not drawn.",
+      "nextMilestone": "TIDA board action on the unit increase (targeted Oct 14, 2026), then the Planning Commission (Oct 22) and the Board of Supervisors (November). TIDA's schedule is subject to change; the Board introduction it targeted for Sept 29 didn't happen.",
+      "summary": "A former naval base in the middle of the Bay becoming a new neighborhood of up to 8,000 homes and 300 acres of open space, with a smaller set of homes on Yerba Buena Island. More than 1,200 homes are finished.",
+      "massingNotes": "Boundary: DataSF Height and Bulk Districts (h9wh-cg3m, Public Domain U.S. Government), the union of height values containing \"-TI\" or \"YBI\" (about 390.4 acres, without Job Corps); it also gives the height envelope, up to 450 ft (75-TI/450 Flex Zone-TI), with the 2024 Design for Development adding 5 ft in some areas. Tallest built so far is Isle House at 22 stories (permit). Massing: 43 Design for Development blocks (2024 update, Fig. T4.q, used for names and checked against the zoning) drawn to the zoning height districts, 45–125 ft, with flex tower zones to 240, 315 and 450 ft over their base (illustrative); built buildings from footprints with DBI stories (Isle House to its mapped 220 ft; others estimated at 10.3 ft per story, illustrative). Yerba Buena Island hillside zones, parks, the historic core and Job Corps are not drawn. The 2010 draft EIR expects about 5–7 residential buildings taller than 23 stories.",
       "officialLinks": [
         "https://sfplanning.org/project/treasure-island-yerba-buena-island",
         "https://media.api.sf.gov/documents/02.11.26_Item_9_Unit_Increase.pdf"
@@ -953,30 +969,27 @@
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201905170929",
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201905170931",
         "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201905170934",
-        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201905170935"
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201905170935",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=12854930&GUID=D1542E22-11D6-41BB-98DE-394E98977F40",
+        "https://www.sf.gov/news-city-administrator-carmen-chu-appoints-sheela-jivan-as-executive-director-of-treasure-island-development-authority",
+        "https://media.api.sf.gov/documents/090926_Item3DirectorsReport.pdf",
+        "https://media.api.sf.gov/documents/TIDA_ResidentialCapacityExpansion_HITS_20260605_FINAL.pdf",
+        "https://media.api.sf.gov/documents/LI092926.pdf",
+        "https://sfplanning.s3.amazonaws.com/sfmea/2007.0903E_V1.1.pdf",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202509034495"
       ],
       "verify": [
-        "the outcome of the proposed unit increase at TIDA and the Board",
-        "the story count of the tallest planned towers (only the 450-ft height limit is official)",
-        "whether TIDA considers phase one complete"
+        "TIDA, Planning Commission and Board action on the unit increase (targeted Oct–Nov 2026)",
+        "the story count of the tallest planned towers (only the 450-ft height limit is official; the 2010 draft EIR expects about 5–7 buildings taller than 23 stories)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "developer": "Treasure Island Development Group (Lennar, Stockbridge Capital Group, Wilson Meany)",
-        "stageNote": "Phase one finished in July 2026 with the opening of 490 Avenue of the Palms. More than 1,000 people now live in the new buildings, and Bay FC's training facility topped out in mid-2026.",
+        "stageNote": "More than 1,000 people now live in the new buildings, and Bay FC's training facility topped out in mid-2026.",
         "massingNotes": "Planned towers reach about 40 stories.",
         "timeline": [
           {
-            "date": "2016",
-            "event": "Infrastructure work begins."
-          },
-          {
             "date": "2026-06",
             "event": "1,000+ residents; Bay FC facility tops out."
-          },
-          {
-            "date": "2026-07",
-            "event": "Phase one complete."
           }
         ],
         "sources": [
@@ -1128,7 +1141,7 @@
         37.729
       ],
       "acres": 30,
-      "acresNote": "The notice of determination (2024) gives a project site of about 30 acres within the 43-acre Stonestown Galleria site (including 2 acres of public right-of-way); about 27 acres are redeveloped (Ordinance 205-24).",
+      "acresNote": "The notice of determination (2024) gives a project site of about 30 acres within the 43-acre Stonestown Galleria site (including 2 acres of public right-of-way); about 27 acres are redeveloped (Ordinance 205-24). The Mayor's Office described the 30 acres as parking lots and streets around the mall (July 2024).",
       "program": {
         "homes": 3491,
         "affordableHomes": null,
@@ -1138,7 +1151,7 @@
         "retailSqft": 160000,
         "hotelKeys": null,
         "openSpaceAcres": 6,
-        "notes": "Up to about 3,491 homes with the Variant Sub-Area (3,341 without), 20% required to be affordable; the 2026 financing plan projects 350 inclusionary homes. Includes 201 senior homes. About 53,000 sq ft of community space (63,000 with the variant) and about 6 net new acres of privately owned, publicly accessible open space. Heights of 30–190 ft. 710,000 sq ft of the existing mall stays, outside the Special Use District."
+        "notes": "Up to about 3,491 homes with the Variant Sub-Area (3,341 without), 20% required to be affordable. The development agreement lets the developer meet it with up to three parcels conveyed for 100% affordable buildings, on-site inclusionary homes, or an in-lieu fee on up to 390 homes; the 2026 financing plan assumes 350 inclusionary homes. Includes 201 senior homes. About 53,000 sq ft of community space (63,000 with the variant) and about 6 net new acres of privately owned, publicly accessible open space. Heights of 30–190 ft. 710,000 sq ft of the existing mall stays, outside the Special Use District."
       },
       "developer": "Stonestown NW Parcel LLC and affiliates (Brookfield Properties)",
       "publicPartners": [
@@ -1161,11 +1174,15 @@
           "event": "Development agreement, dated May 6, 2025, recorded."
         },
         {
+          "date": "2026-01-27",
+          "event": "Board of Supervisors approves the financing district's infrastructure financing plan (Resolution 36-26)."
+        },
+        {
           "date": "2026-02-12",
           "event": "Enhanced Infrastructure Financing District No. 2 formed and its financing plan adopted (Resolution 2026-03), for about $438M in 2025 dollars."
         }
       ],
-      "nextMilestone": "First-phase permits; the financing plan projects nine phases from 2028 to 2051.",
+      "nextMilestone": "First-phase permits; the financing plan projects the first project area (539 homes) for 2028–2030 and nine phases through 2051.",
       "summary": "A plan to build up to about 3,500 homes, shops, offices and six acres of open space on about 30 acres of the Stonestown Galleria site, while most of the existing mall stays. Approved in 2024, it is projected to build out in phases through 2051.",
       "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"Stonestown Special Use District\" (about 38.5 acres, larger than the 30-acre project site; unchecked). Alternatives: the financing district boundary (financing plan Exhibits A and B) or the Board's map (Legistar). Massing: parcel height limits traced from the adopted Design Standards and Guidelines (Apr 2024), Figure 5.9, p. 187: mostly 90 ft, with tower zones of 150 and 190 ft over a 90-ft base (towers are construction above 90 ft, Sec. 249.9(g)) and lower parcels of 30–50 ft (illustrative, drawn to the limit).",
       "officialLinks": [
@@ -1185,16 +1202,18 @@
         "https://media.api.sf.gov/documents/Reso_2026-03.pdf",
         "https://media.api.sf.gov/documents/Stonestown_IFP_1-8-26.pdf",
         "https://data.sf.gov/d/5yf5-ms5f",
-        "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=ad1e00d6088f207fc57af21017ef4288f33d767889f220aee642919f2961c494&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0"
+        "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=ad1e00d6088f207fc57af21017ef4288f33d767889f220aee642919f2961c494&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+        "https://www.sf.gov/news--major-new-housing-approved-stonestown-project-deliver-thousands-homes-and-new-open-space-west",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=13063588&GUID=C6F16E81-9350-475F-BF16-5C6BE2B5D65C",
+        "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7785989&GUID=EA757773-DCFE-4726-8BF2-A4AACE59183E"
       ],
       "verify": [
-        "how many affordable homes will be stand-alone rather than inclusionary (financing plan: 350 inclusionary, none stand-alone)",
-        "which boundary matches the 30-acre project site (DataSF's Special Use District is about 38.5 acres)",
+        "which affordable housing option the developer elects (parcels for 100% affordable buildings, inclusionary homes or fees)",
+        "the ~30-acre project site's exact boundary (Planning Code Figure 249.9-1 or the agreement's Exhibit A-1; the DataSF Special Use District, about 38 acres, excludes the mall but includes streets)",
         "the first-phase groundbreaking date"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "acresNote": "About 30 acres of surface parking around the mall.",
         "summary": "The largest housing plan on San Francisco's west side in decades.",
         "sources": [
           "https://www.connectcre.com/?p=412409",
@@ -1225,7 +1244,7 @@
         "retailSqft": 7500,
         "hotelKeys": null,
         "openSpaceAcres": 4,
-        "notes": "About 1,100 homes, 50% (550) affordable. About 4 acres of publicly accessible open space, including the roughly 2-acre Reservoir Park; about 7,500 gsf of retail and about 10,000 gsf of community space and childcare. Buildings of 25–78 ft. The 2020 draft key terms included about 150 homes with a preference for City College employees."
+        "notes": "About 1,100 homes, 50% (550) affordable. About 4 acres of publicly accessible open space, including the roughly 2-acre Reservoir Park; about 7,500 gsf of retail and about 10,000 gsf of community space and childcare. Buildings of 25–78 ft. The development agreement sets aside one affordable parcel (anticipated Parcel F) for about 150 moderate-income educator homes, with first priority for City College employees and second for SFUSD employees, if a property-tax exemption and agreements with both are secured. Open space: Reservoir Park about 2.0 acres, SFPUC open space 1.2 acres and paseos 0.8 acres."
       },
       "developer": "Reservoir Community Partners, LLC (BRIDGE Housing and AvalonBay)",
       "publicPartners": [
@@ -1316,19 +1335,12 @@
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202607094805",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202607084737",
         "https://data.sf.gov/d/5yf5-ms5f",
-        "https://sfplanning.org/sites/default/files/documents/citywide/balboareservoir_dsg.pdf"
+        "https://sfplanning.org/sites/default/files/documents/citywide/balboareservoir_dsg.pdf",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=8713042&GUID=118E2F08-E62A-4083-8AA8-8355A28BEA50"
       ],
       "verify": [
-        "whether the final development agreement kept about 150 homes with a City College employee preference",
-        "the open-space total once designs are final (development agreement: about 4 acres)"
+        "the open-space total once designs are final (development agreement: about 4.0 acres)"
       ],
-      "reported": {
-        "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "program.notes": "Housing for City College and SFUSD educators.",
-        "sources": [
-          "https://www.inglesidelight.com/balboa-reservoir-project-construction-start-date/"
-        ]
-      },
       "lastVerified": "2026-10-02"
     },
     {
@@ -1353,14 +1365,14 @@
         "retailSqft": null,
         "hotelKeys": null,
         "openSpaceAcres": 68,
-        "notes": "5,679 new homes for 8,900 total: 1,683 existing apartments in 11 towers are kept and 1,538 are replaced. Affordable housing is 15% inclusionary, on-site, off-site or by fee; Phase 1 anticipates about 220 on-site below-market-rate homes. 310,000 sq ft of commercial use (230,000 retail and 80,000 office in the 2010 staff report) and 64,000 sq ft of community and fitness space. Open space (68 acres) and heights (35–145 ft) are from the 2010 staff report."
+        "notes": "5,679 new homes for 8,900 total: 1,683 existing apartments in 11 towers are kept and 1,538 are replaced. Affordable housing is 15% inclusionary, on-site, off-site or by fee; For Phase 1, the approved programs provide 48 on-site below-market-rate homes in Subphases 1A–1B and 37 in 1C–1D, plus about $59.4M in in-lieu fees (Planning, Sept 2024). 310,000 sq ft of commercial use (230,000 retail and 80,000 office in the 2010 staff report) and 64,000 sq ft of community and fitness space. Zoning height districts run from 45 to 145 ft (Ordinance 91-11). Open space (68 acres) is from the 2010 staff report; the adopted agreement lists the open spaces without a total."
       },
       "developer": "Parkmerced Investors Properties, LLC (development agreement); Parkmerced Owner, LLC at the 2015 Phase 1 approval",
       "publicPartners": [
         "SF Planning (development agreement)"
       ],
       "stage": "entitled",
-      "stageNote": "Entitled. The Board approved the development agreement in June 2011 and the city approved Phase 1 (about 1,668 homes) in 2015. A permit for 199 Vidal Drive (64 homes) was issued in Oct 2018, but DBI records show no construction; three 2022 applications (471, 268 and 151 homes) are still pending.",
+      "stageNote": "Entitled. The Board approved the development agreement in June 2011 and the city approved Phase 1 (about 1,668 homes) in 2015. A permit for 199 Vidal Drive (64 homes) was issued in Oct 2018, but DBI records show no construction; three 2022 applications (471, 268 and 151 homes) are still pending. In Sept 2024 Planning reported no construction since the 2011 approval and cited the complexity of project financing.",
       "timeline": [
         {
           "date": "2010-05-12",
@@ -1389,10 +1401,14 @@
         {
           "date": "2023-12-12",
           "event": "Board of Supervisors approves Final Maps 10699 and 10700 for Subphases 1C and 1D (Motion M23-149)."
+        },
+        {
+          "date": "2024-09-19",
+          "event": "Planning's compliance review reports no construction since the 2011 approval."
         }
       ],
       "nextMilestone": null,
-      "summary": "An apartment complex on the southwest edge of the city, approved in 2011 to grow from about 3,200 to 8,900 homes. Fifteen years later, city records show no new building constructed.",
+      "summary": "An apartment complex built in 1941–1951 on the southwest edge of the city, approved in 2011 to grow from about 3,200 to 8,900 homes. Fifteen years later, city records show no new building constructed.",
       "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f, public domain), feature \"Parkmerced\" (about 161 acres, likely including streets); check against the recorded development agreement's Exhibits A and B. Massing: the \"-PM\" zoning height districts (DataSF h9wh-cg3m, Ordinance 91-11) drawn block by block and checked against the Design Standards and Guidelines (rev. 2014), Fig. 03.03.C: 45- and 65-ft fabric with mid-rise and tower envelopes of 85–145 ft over it (only part of each envelope may reach the limit), all illustrative. The 11 existing towers (130-ft districts), open space and streets are not drawn; no new building has started construction (DBI).",
       "officialLinks": [
         "https://sfplanning.org/project/parkmerced",
@@ -1411,12 +1427,15 @@
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202212198663",
         "https://data.sf.gov/d/5yf5-ms5f",
         "https://data.sf.gov/d/h9wh-cg3m",
-        "https://default.sfplanning.org/publications_reports/parkmerced/Parkmerced_Final_Design_Standards_and_Guidelines_Revised-09-16-14.pdf"
+        "https://default.sfplanning.org/publications_reports/parkmerced/Parkmerced_Final_Design_Standards_and_Guidelines_Revised-09-16-14.pdf",
+        "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=d292c3a2af3deb0033f11e167ce498e8508f14c64af3aa3b6eb2c566b3946e97&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+        "https://sfbos.archive.sf.gov/ftp/uploadedfiles/bdsupvrs/ordinances11/o0091-11.pdf"
       ],
       "verify": [
         "the current owner of the development parcels (the press reports a 2026 takeover)",
-        "open space and heights in the adopted development agreement (2010 staff report: 68 acres, 35–145 ft)",
-        "the affordable home count under the 15% requirement"
+        "the open-space total in the adopted documents (2010 staff report: 68 acres)",
+        "below-market-rate counts for phases after Phase 1",
+        "Planning's 2025 review of the development agreement"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
@@ -1437,7 +1456,7 @@
             "event": "Yellowstone takes over the development portion."
           }
         ],
-        "summary": "A WWII-era garden-apartment complex; the property has changed hands through default.",
+        "summary": "The property has changed hands through default.",
         "sources": [
           "https://www.bisnow.com/news/san-francisco/multifamily/douglas-wilson-cos-takes-reins-parkmerced-apartment-complex-in-court-appointed-receivership-129470",
           "https://www.thepromote.com/p/yellowstone-s-sf-megamove-blue-collar-bullion",
@@ -3118,14 +3137,14 @@
       "acresNote": "Ordinance 15-17 (development agreement) describes an approximately 38-acre irregularly shaped site bounded by 23rd Street and Missouri Street (it also says the project comprises nearly 40 acres). The Potrero HOPE SF Special Use District in DataSF measures about 36 acres.",
       "program": {
         "homes": 1700,
-        "affordableHomes": null,
+        "affordableHomes": 800,
         "affordablePct": null,
         "officeLabSqft": null,
         "commercialSqftTotal": 50000,
         "retailSqft": null,
         "hotelKeys": null,
         "openSpaceAcres": 3.5,
-        "notes": "Up to 1,700 homes. Ordinance 15-17: approximately 800 replacement and additional affordable units and up to 800 market-rate units; Planning's page: 619 replacement units, about 200 more affordable and about 800 market-rate. About 50,000 sq ft of neighborhood-serving space in the ordinance (Planning's page says about 45,000 sq ft of retail and community space)."
+        "notes": "Up to 1,700 homes: about 800 affordable (619 public-housing replacement units and about 200 tax-credit units) and about 800 market-rate (MOHCD, 2025; Ordinance 15-17). About 50,000 sq ft of neighborhood-serving space in the ordinance (Planning's page says about 45,000 sq ft of retail and community space)."
       },
       "developer": "BRIDGE Potrero Community Associates, LLC (BRIDGE Housing)",
       "publicPartners": [
@@ -3134,7 +3153,7 @@
         "SF Planning (development agreement)"
       ],
       "stage": "partial",
-      "stageNote": "Partly built. DBI marks permits complete for two affordable buildings: 72 homes at 1101 Connecticut St (Oct 2019) and 157 homes on Block B at 1801 25th St (Dec 2025). In April 2025 the City's HOPE SF loan committee took up funding to demolish 23 vacant buildings in the Phase 3 area.",
+      "stageNote": "Partly built. DBI marks permits complete for two affordable buildings: 72 homes at 1101 Connecticut St (Oct 2019) and 157 homes on Block B at 1801 25th St (Dec 2025). Demolition permits for the 23 vacant Phase 3 buildings (153 units) were issued in April 2026, and DBI marked 19 of them complete between Aug 25 and Sept 1, 2026.",
       "timeline": [
         {
           "date": "2015-12-10",
@@ -3161,15 +3180,27 @@
           "event": "Construction starts on Block B, 157 affordable homes at 1801 25th St (first construction document)."
         },
         {
+          "date": "2022-11-03",
+          "event": "City breaks ground on Block B and says the last of five phases will be finished in 2034."
+        },
+        {
           "date": "2025-04-04",
           "event": "HOPE SF loan committee considers predevelopment funding to demolish 23 buildings in the Phase 3 area."
         },
         {
           "date": "2025-12-04",
           "event": "Permit marked complete for Block B, 157 homes at 1801 25th St."
+        },
+        {
+          "date": "2026-04-17",
+          "event": "Demolition permits issued for the 23 Phase 3 buildings (153 units), through April 30."
+        },
+        {
+          "date": "2026-08-25",
+          "event": "DBI begins marking Phase 3 demolition permits complete (19 of 23 by Sept 1, 2026)."
         }
       ],
-      "nextMilestone": null,
+      "nextMilestone": "Phase 3 construction; the City's Nov 2022 announcement put the last of five phases at 2034.",
       "summary": "The rebuilding of the 619-unit Potrero Terrace and Annex public housing on Potrero Hill into a mixed-income neighborhood of about 1,700 homes, with new streets, utilities and 3.5 acres of open space, built in phases.",
       "massingNotes": "Boundary: DataSF Zoning Map – Special Use Districts (5yf5-ms5f), feature 'Potrero Hope SF' (about 36 acres; Public Domain), official. Heights from the Special Use District (Planning Code 249.74) and the Design Standards and Guidelines; permits give stories for the built blocks (five and seven stories). approxCenter is the SUD centroid. Massing: block height zones traced from the Design Standards and Guidelines height diagram, fitted to the SUD boundary and DataSF parcels, illustrative; completed and under-construction buildings from DBI permits, with heights estimated from stories (illustrative). The old public housing stays in the base map; streets and parks are not drawn.",
       "officialLinks": [
@@ -3186,12 +3217,13 @@
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201603172392",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202006108345",
         "https://data.sf.gov/d/5yf5-ms5f",
-        "https://default.sfplanning.org/devagreements/HOPE-SF/Potrero/HOPE-SF_Potrero_Design_Controls_Guidelines.pdf"
+        "https://default.sfplanning.org/devagreements/HOPE-SF/Potrero/HOPE-SF_Potrero_Design_Controls_Guidelines.pdf",
+        "https://data.sf.gov/resource/i98e-djp9.json?%24where=block%3D%274167%27%20AND%20permit_type_definition%3D%27demolitions%27%20AND%20filed_date%3E%272025-01-01%27",
+        "https://www.sf.gov/news--city-breaks-ground-157-new-affordable-homes-and-childcare-center-potrero-hope-sf"
       ],
       "verify": [
-        "the affordable count (Ord. 15-17: about 800 replacement and additional affordable; Planning's page: 619 plus about 200; the 2021 City announcement: 619 plus 155)",
-        "whether the Phase 3 demolition has started",
-        "the phase schedule (the 2021 City announcement gives 2035 for the last of five phases)"
+        "a current phase schedule (City announcements: 2034 in Nov 2022, 2035 in 2021)",
+        "the last four Phase 3 demolition permits (buildings C-7, D-18, D-19 and D-20)"
       ],
       "lastVerified": "2026-10-05"
     },
@@ -3212,7 +3244,7 @@
         37.711
       ],
       "acres": 20,
-      "acresNote": "The City's development agreement summary (OEWD, May 2, 2014) describes the 20-acre Schlage Lock site. The Visitacion Valley/Schlage Lock Special Use District in DataSF is larger (about 45 acres) because it also covers Zone 2 along Bayshore Boulevard and Leland Avenue.",
+      "acresNote": "The City's development agreement summary (OEWD, May 2, 2014) describes the 20-acre Schlage Lock site. The Visitacion Valley/Schlage Lock Special Use District in DataSF is larger (about 45 acres) because it also covers Zone 2 along Bayshore Boulevard and Leland Avenue. Zone 1 of the 2008 Redevelopment Plan is about 20 acres: parcels 5087/003, 003A, 004, 005; 5099/014; 5100/002, 003, 010; 5101/006, 007; 5102/009, 010.",
       "program": {
         "homes": 1679,
         "affordableHomes": null,
@@ -3222,7 +3254,7 @@
         "retailSqft": 46700,
         "hotelKeys": null,
         "openSpaceAcres": null,
-        "notes": "Vested program under the development agreement (Ord. 149-14): up to 1,679 homes, 46,700 sq ft of retail and commercial space, and rehabilitation of the historic Schlage office building. 15% inclusionary requirement, at least two-thirds of it on site. Parcel 1 must include a full-service grocery store of at least 15,000 sq ft. Two new neighborhood parks."
+        "notes": "Vested program under the development agreement (Ord. 149-14): up to 1,679 homes, 46,700 sq ft of retail and commercial space, and rehabilitation of the historic Schlage office building. 15% inclusionary requirement, at least two-thirds of it on site. Parcel 1 must include a full-service grocery store of at least 15,000 sq ft. Two new neighborhood parks. At least 10% of the completed homes must be below market rate at any time."
       },
       "developer": "Visitacion Development, LLC (Universal Paragon Corporation)",
       "publicPartners": [
@@ -3230,19 +3262,27 @@
         "Office of Economic and Workforce Development"
       ],
       "stage": "entitled",
-      "stageNote": "Approved in 2014 with a 15-year development agreement; Planning approved a revised Phase 1 (Parcels 1–3 and Leland Park) in Sept 2018. DBI marks the historic office building's rehabilitation permit complete (Sept 2022). Building permits for two apartment buildings (146 and 152 homes) were filed in Dec 2019 and haven't been issued.",
+      "stageNote": "Approved in 2014; the development agreement took effect Feb 27, 2015 for 15 years. Preliminary grading began in 2016 and site preparation was finished in early 2019 (Planning). Planning approved a revised Phase 1 (Parcels 1–3 and Leland Park, about 574 homes) in Sept 2018. DBI marks the historic office building's rehabilitation permit complete (Sept 2022). Building permits for three apartment buildings (146, 152 and 258 homes) were filed in Dec 2019 and haven't been issued.",
       "timeline": [
         {
           "date": "2008-12-18",
           "event": "Planning Commission and the former Redevelopment Agency certify the Visitacion Valley Redevelopment Program EIR."
         },
         {
-          "date": "2009",
-          "event": "Board of Supervisors adopts the Visitacion Valley Redevelopment Plan and the Schlage Lock/Visitacion Valley Special Use District (Ordinances 70-09 to 73-09)."
+          "date": "2009-04-28",
+          "event": "Board of Supervisors finally passes the Visitacion Valley Redevelopment Plan and the Schlage Lock/Visitacion Valley Special Use District (Ordinances 70-09 to 73-09); the Mayor signs them May 8, 2009."
         },
         {
           "date": "2014-07-22",
           "event": "Board of Supervisors finally passes the development agreement (Ordinance 149-14) and the revised Special Use District and zoning (Ordinance 150-14)."
+        },
+        {
+          "date": "2015-02-27",
+          "event": "Development agreement takes effect, for a 15-year term."
+        },
+        {
+          "date": "2016",
+          "event": "Site clearance and preliminary grading begin."
         },
         {
           "date": "2016-05-18",
@@ -3257,15 +3297,19 @@
           "event": "Planning approves a revised Phase 1 application with conditions."
         },
         {
+          "date": "2019",
+          "event": "Preliminary site preparation is finished (early 2019)."
+        },
+        {
           "date": "2019-12-18",
-          "event": "Building permits filed for a five-story, 146-home building and a seven-story, 152-home building."
+          "event": "Building permits filed for three apartment buildings: 146 homes (five stories), 152 homes and 258 homes (seven stories each)."
         },
         {
           "date": "2022-09-16",
           "event": "Permit marked complete for the historic office building's rehabilitation."
         }
       ],
-      "nextMilestone": null,
+      "nextMilestone": "Building permits for Phase 1; the development agreement's 15-year term runs to Feb 2030 unless extended.",
       "summary": "The former Schlage Lock factory site next to the Bayshore Caltrain station in Visitacion Valley, approved for up to 1,679 homes, shops including a grocery store, and two parks. The site's historic office building has been restored; the housing hasn't started.",
       "massingNotes": "Boundary: the DataSF Special Use District 'Visitacion Valley/Schlage SUD' (5yf5-ms5f, Public Domain) covers both zones (about 45 acres), so trace Zone 1 from the Design for Development (June 2014) site plan or the development agreement exhibits, registered to DataSF parcels (acdm-wktn, ODC PDDL; block 5087 holds about 8.4 acres of it). Heights by parcel (55 to 72 ft for Phase 1 Parcels 1–3, per the Phase 1 application) need confirming against the Design for Development. approxCenter is rough. Massing: the twelve development parcels traced from the DA's Conceptual Parcelization Plan (Exhibit L, Fig. 1.1; every parcel within 0.01 acre of its printed area), fitted to the assessor-parcel boundary (trimmed RMS 0.5 m), at the 2014 zoning heights (57-X to 86-X, DataSF h9wh-cg3m; checked against the D4D height map), illustrative; the rehabilitated 1926 office building is outlined (4 stories, no official height). Parks, streets and rail lots are not drawn.",
       "officialLinks": [
@@ -3284,13 +3328,16 @@
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201912189911",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201608155048",
         "https://default.sfplanning.org/Citywide/Visitacion_Valley/Visitacion_Valley_Schlage-Final_DA_Exhibits-082214.pdf",
-        "https://default.sfplanning.org/Citywide/Visitacion_Valley/Visitacion_Valley_Schlage-Design_for_Development_20140616_BoS.pdf"
+        "https://default.sfplanning.org/Citywide/Visitacion_Valley/Visitacion_Valley_Schlage-Design_for_Development_20140616_BoS.pdf",
+        "https://citypln-m-extnl.sfgov.org/SharedLinks.aspx?accesskey=71f79592c016eac7ed042539ae537e7f4e5984f24503573e7c32476693c52f78&VaultGUID=A4A7DACD-B0DC-4322-BD29-F6F07103C6E0",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=3175244&GUID=1A0A9328-DF86-46E7-8BD9-82230AB0ED89",
+        "https://sfgov.legistar.com/LegislationDetail.aspx?ID=483201&GUID=77B96D8C-A8A2-4332-9610-187637F925BC",
+        "http://archives.sfplanning.org/documents/3011-VV_Redevelopment_Plan_12.18.08_RedevCommissionFinal.pdf",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201912189912"
       ],
       "verify": [
-        "the development agreement's end date (15-year term from 2014)",
-        "the exact 2009 Board dates for Ordinances 70-09 to 73-09",
-        "whether any site work under the 2016 grading permits was finished",
-        "the acreage and parcels of Zone 1"
+        "whether the 15-year term (from Feb 27, 2015) will be extended",
+        "City compliance reports after the one covering 2022"
       ],
       "reported": {
         "note": "Reported by the developer but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city records confirm each one.",
@@ -3452,7 +3499,7 @@
         "retailSqft": null,
         "hotelKeys": null,
         "openSpaceAcres": 3.6,
-        "notes": "Up to 1,770 homes: 775 replacement units for existing Sunnydale-Velasco households, about 200 more affordable units and up to 730 market-rate units (Ord. 18-17; Planning's project page says about 694 market-rate). The development agreement commits at least 969 rent-restricted affordable apartments. About 60,000 sq ft of neighborhood-serving retail and community space. Open space: 3.6 acres in the ordinance, 3.5 acres on Planning's page."
+        "notes": "Up to 1,770 homes. The development agreement's housing plan counts 1,074 replacement and other affordable rental units and 694 market-rate units (Ordinance 18-17's digest: 775 replacement units for existing Sunnydale-Velasco households, about 200 more affordable and up to 730 market-rate). The development agreement commits at least 969 rent-restricted affordable apartments. About 60,000 sq ft of neighborhood-serving retail and community space. Open space: 3.6 acres in the ordinance, 3.5 acres on Planning's page."
       },
       "developer": "Sunnydale Development Co., LLC (Mercy Housing and Related California)",
       "publicPartners": [
@@ -3461,11 +3508,15 @@
         "SF Planning (development agreement)"
       ],
       "stage": "partial",
-      "stageNote": "Partly built. DBI marks permits complete for four affordable buildings with 392 homes: 1491 Sunnydale Ave (55, Feb 2020), 242 Hahn St (167, June 2022) and Blocks 3A and 3B at 1501 Sunnydale Ave (80 and 90, Apr 2025), plus a community center and childcare building at 1500 Sunnydale Ave (Oct 2024). Two more affordable buildings, Block 9 (95 homes) and an 89-home building, have been under construction since mid-2025.",
+      "stageNote": "Partly built. DBI marks permits complete for four affordable buildings with 392 homes: 1491 Sunnydale Ave (55, Feb 2020), 242 Hahn St (Block 6, 167, June 2022) and Blocks 3A and 3B at 1501 Sunnydale Ave (80 and 90, Apr 2025), plus a community center and childcare building at 1500 Sunnydale Ave (Oct 2024). Two more affordable buildings, Block 9 (95 homes) and Block 7 (89 homes at 65 Santos St), have been under construction since mid-2025.",
       "timeline": [
         {
           "date": "2015-07-09",
-          "event": "Environmental review (joint EIR/EIS) certified, per Planning's project page."
+          "event": "Planning Commission certifies the joint EIR/EIS (Motion 19409)."
+        },
+        {
+          "date": "2016-11-17",
+          "event": "Planning Commission adopts CEQA findings (Motion 19784) and recommends the approvals."
         },
         {
           "date": "2017-01-31",
@@ -3481,7 +3532,7 @@
         },
         {
           "date": "2022-06-24",
-          "event": "Permit marked complete for 167 homes at 242 Hahn St."
+          "event": "Permit marked complete for Block 6, 167 homes at 242 Hahn St."
         },
         {
           "date": "2022-07-15",
@@ -3501,7 +3552,7 @@
         },
         {
           "date": "2025-07-16",
-          "event": "Construction starts on an 89-home building at 1501 Sunnydale Ave (first construction document)."
+          "event": "Construction starts on Block 7, 89 homes at 65 Santos St (first construction document)."
         }
       ],
       "nextMilestone": null,
@@ -3525,13 +3576,13 @@
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202211146447",
         "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202211297323",
         "https://data.sf.gov/d/5yf5-ms5f",
-        "https://sfplanning.s3.amazonaws.com/default/files/devagreements/HOPE-SF/Sunnydale/HOPE-SF_Sunnydale_Design_Controls_Guidelines.pdf"
+        "https://sfplanning.s3.amazonaws.com/default/files/devagreements/HOPE-SF/Sunnydale/HOPE-SF_Sunnydale_Design_Controls_Guidelines.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20150709_cal.min.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20161117_cal.min.pdf",
+        "https://sfgov.legistar.com/LegislationDetail.aspx?ID=4148404&GUID=08E8196D-A70B-4B8A-80E5-24551FC6DE4E",
+        "https://sfgov.legistar.com/LegislationDetail.aspx?ID=7436365&GUID=2DC4A0BD-EE48-4121-98CD-3D724C44C203"
       ],
-      "verify": [
-        "the EIR/EIS certification date (Planning's page: July 9, 2015; the development agreement text: Nov 17, 2016)",
-        "the block names of 242 Hahn St and the 89-home building at 1501 Sunnydale Ave (likely Block 6 and Block 7)",
-        "the market-rate count (730 in the ordinance, about 694 on Planning's page)"
-      ],
+      "verify": [],
       "lastVerified": "2026-10-05"
     },
     {
