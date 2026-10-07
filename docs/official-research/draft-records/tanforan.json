@@ -1,0 +1,66 @@
+{
+  "id": "tanforan",
+  "name": "Tanforan redevelopment",
+  "aliases": ["Tanforan Redevelopment Project", "Shops at Tanforan", "Tanforan Mall"],
+  "city": "San Bruno",
+  "county": "San Mateo",
+  "subregion": "Peninsula",
+  "approxCenter": [-122.418, 37.6364],
+  "acres": 44,
+  "acresNote": "City of San Bruno EIR: the 44-acre Shops at Tanforan site plus a vacant parcel north of Sneath Lane, six parcels (APNs 014-316-080, -300, -310, -330, -360 and 014-311-060). The Draft EIR lists the vacant lot as 014-316-060; the NOP and the County parcel layer give 014-311-060. County parcel polygons total about 43.9 acres.",
+  "program": {
+    "homes": 1514,
+    "affordableHomes": null,
+    "affordablePct": null,
+    "officeLabSqft": 1723580,
+    "commercialSqftTotal": null,
+    "retailSqft": 211950,
+    "hotelKeys": 170,
+    "openSpaceAcres": 8.2,
+    "notes": "Ranges from the EIR (June 2025 Draft, Oct 2026 Final): 1,014 to 1,514 homes, 1,174,000 to 1,723,580 sq ft of life-science lab and office, 111,950 to 211,950 sq ft of new retail, 55,000 to 69,000 sq ft of amenity space and a possible 170-room, 125,000-sq-ft hotel. Figures shown are the EIR maximums; the programmed area fixes 1,014 homes, and two flex zones swing between more lab/office (Scenario A) or more homes, retail and the hotel (Scenario B). Up to 200 affordable homes in a stand-alone building at the north end. Open space 8.2 acres (Scenario A) or 8 acres (Scenario B), mostly private. Target and the Century theater stay; about 785,489 sq ft of mall is demolished."
+  },
+  "developer": "ARE-San Francisco No. 96, LLC (Alexandria Real Estate)",
+  "publicPartners": ["City of San Bruno"],
+  "stage": "entitlement",
+  "stageNote": "In formal review. The Final EIR was published in October 2026; the City expects a Planning Commission hearing on Oct 20, 2026 and City Council consideration of EIR certification on Nov 10, 2026. Development agreement talks stalled in late 2025 and resumed in early 2026. No approvals for the redevelopment yet.",
+  "timeline": [
+    { "date": "2023-12", "event": "City of San Bruno issues the Notice of Preparation for the EIR." },
+    { "date": "2024-09-10", "event": "City Council adopts Ordinances 1954 and 1955 (Housing Element), extending the site's planned-development zoning north of Sneath Lane and allowing multi-family homes." },
+    { "date": "2025-06-27", "event": "Draft EIR published; comment period runs to Aug 11, 2025." },
+    { "date": "2025-08-26", "event": "City Council endorses guiding principles for a development agreement." },
+    { "date": "2026-05-19", "event": "Third joint City Council and Planning Commission study session; staff target a Planning Commission hearing in October and Council readings in November and December 2026." },
+    { "date": "2026-10", "event": "Final EIR published (filed with the State Clearinghouse Oct 5, 2026)." }
+  ],
+  "nextMilestone": "Planning Commission hearing on the Final EIR, anticipated Oct 20, 2026; City Council consideration anticipated Nov 10, 2026.",
+  "summary": "A plan to replace most of the Shops at Tanforan mall, next to San Bruno BART, with 1,014 to 1,514 homes, 1.2 to 1.7 million sq ft of lab and office space, new retail around a retail village and possibly a hotel. Target and the cinema stay. The EIR is final and hearings are expected in fall 2026.",
+  "massingNotes": "Boundary: County of San Mateo parcels (data.smcgov.org nr6j-72z7, Public Domain) for the six APNs, about 43.9 acres; check against Draft EIR Figure 2-3 (Existing Parcels). Massing: Draft EIR Figure 2-8 (Conceptual Site Plan) and Figure 2-10 (Conceptual Building Height Plan); buildings 1 to 7 stories, 20 to 79 ft 7 in, within the City's 79 ft 7 in limit and SFO safety limits of 127 to 148 ft above sea level (Final EIR revision). Three residential buildings on the north parcels along Sneath Lane; lab/office south of Tanforan Way; flex zones at the northwest and southeast corners. Illustrative massing.",
+  "officialLinks": [
+    "https://www.sanbruno.ca.gov/1176/Environmental-Review-Documents-CEQAEIR",
+    "https://ceqanet.lci.ca.gov/2023120409"
+  ],
+  "sources": [
+    "https://ceqanet.lci.ca.gov/2023120409",
+    "https://ceqanet.lci.ca.gov/2023120409/2",
+    "https://ceqanet.lci.ca.gov/2023120409/3",
+    "https://ceqanet.lci.ca.gov/2023120409/2/Attachment/bUptzG",
+    "https://ceqanet.lci.ca.gov/2023120409/3/Attachment/dIF3g9",
+    "https://www.sanbruno.ca.gov/1176/Environmental-Review-Documents-CEQAEIR",
+    "https://www.sanbruno.ca.gov/DocumentCenter/View/9642/Tanforan_Redevelopment_Project_FEIR_ADA",
+    "https://www.sanbruno.ca.gov/AgendaCenter/ViewFile/Agenda/_05192026-2573",
+    "https://www.sanbruno.ca.gov/AgendaCenter/ViewFile/Agenda/_05192026-2582",
+    "https://www.sanbruno.ca.gov/DocumentCenter/View/9615/October-2026-Development-Update",
+    "https://data.smcgov.org/d/nr6j-72z7"
+  ],
+  "verify": [
+    "Planning Commission outcome (hearing anticipated Oct 20, 2026) and City Council votes (Nov 10, 2026 and later readings)",
+    "development agreement terms (affordable share, community facilities district, phasing commitments) once a draft is posted",
+    "the vacant lot's APN (Draft EIR 014-316-060 vs NOP and County 014-311-060)",
+    "how many of the up to 200 affordable homes are committed in the final approvals"
+  ],
+  "lastVerified": "2026-10-07",
+  "reported": {
+    "note": "Reported by the developer in a City staff report but framed as the developer's own expectations, not City commitments; held out of the map until approvals confirm them.",
+    "timeline": "Developer (ARE) expectations if approved on schedule: demolition and site preparation by the end of 2027; residential partner begins the first building(s) by the end of 2028; first building(s) completed by the end of 2030; full build-out at least 10 to 15 years out (City staff report, May 19, 2026, p. 4).",
+    "sources": ["https://www.sanbruno.ca.gov/AgendaCenter/ViewFile/Agenda/_05192026-2573"]
+  }
+}

@@ -1,0 +1,126 @@
+{
+ "id": "valley-link",
+ "name": "Valley Link",
+ "aliases": [
+  "Valley Link Rail Project",
+  "Valley Link Phase 1A",
+  "Tri-Valley–San Joaquin Valley Regional Rail"
+ ],
+ "city": "Dublin, Pleasanton and Livermore",
+ "county": "Alameda",
+ "subregion": "East Bay",
+ "approxCenter": [
+  -121.808,
+  37.699
+ ],
+ "acres": null,
+ "acresNote": "Not applicable: a rail line, not a site. Phase 1A is about 11 miles of new passenger rail along I-580 from the Dublin/Pleasanton BART Station to the Vasco Road ACE Station in Livermore (AB 1171 Initial Project Report, June 10, 2026 board packet, PDF p. 30). Station and facility sites: Isabel Station parking on a 24-acre site, Vasco Road Station on about 13 acres, and the Livermore OMF on the southeastern part of a 13.75-acre site (PDF pp. 32–33).",
+ "program": {
+  "homes": null,
+  "affordableHomes": null,
+  "affordablePct": null,
+  "officeLabSqft": null,
+  "commercialSqftTotal": null,
+  "retailSqft": null,
+  "hotelKeys": null,
+  "openSpaceAcres": null,
+  "notes": "Transit infrastructure; the housing and commercial fields don't apply. Phase 1A: about 11 miles, three stations (Dublin/Pleasanton, an aerial station south of I-580 next to the BART station; Isabel, in the I-580 median in Livermore; Vasco Road, with a cross-platform transfer to ACE), a Livermore operations and maintenance facility, and six battery electric multiple unit (BEMU) trains on 15-minute weekday headways (June 10, 2026 packet, PDF pp. 30–33). Forecast about 16,000 weekday boardings in 2050 (PDF p. 35). Total project budget $2,045.7 million in year-of-expenditure dollars, of which $1,676.4 million is construction and rolling stock (PDF p. 39). The 22-mile Phase 1 to Mountain House, cleared under CEQA (2024) and NEPA (2025), is now Phase 1A plus Phase 1B (Southfront Road to Mountain House, funding to be determined); the 2021 EIR covered a 42-mile, seven-station system to North Lathrop."
+ },
+ "developer": "Tri-Valley–San Joaquin Valley Regional Rail Authority (project sponsor)",
+ "publicPartners": [
+  "Federal Transit Administration (NEPA lead agency; Capital Investment Grants program)",
+  "Caltrans (I-580 Project Approval and Environmental Document)",
+  "Metropolitan Transportation Commission (bridge toll funds)",
+  "Alameda County Transportation Commission",
+  "San Joaquin Regional Rail Commission (ACE; early operations manager)",
+  "BART",
+  "San Joaquin Council of Governments",
+  "California Transportation Commission (TIRCP)"
+ ],
+ "stage": "entitled",
+ "stageNote": "Environmentally cleared and in design; no construction yet. The Authority certified the Subsequent EIR for the 22-mile Phase 1 in October 2024 and FTA issued a FONSI on May 27, 2025. In June 2025 the Board split delivery after cost increases at 30% design, starting with the 11-mile Phase 1A to Vasco Road; a joint CEQA addendum and NEPA re-evaluation for the 1.5-mile connection from I-580/First Street to Vasco Road is targeted for fall 2026. A CM/GC preconstruction contract went to Kiewit in June 2026. Construction funding is not yet secured: the Authority is preparing to ask FTA to enter the Capital Investment Grants Engineering phase.",
+ "timeline": [
+  {
+   "date": "2018-09-13",
+   "event": "The Authority publishes the notice of preparation for an EIR on the Valley Link Rail Project (SCH 2018092027)."
+  },
+  {
+   "date": "2019-06-30",
+   "event": "The Authority delivers its Project Feasibility Report to the Legislature, as AB 758 requires (final report adopted October 2019)."
+  },
+  {
+   "date": "2021-05-12",
+   "event": "The Board certifies the Final EIR for a 42-mile, seven-station line from Dublin/Pleasanton BART to North Lathrop, with an initial segment to Mountain House."
+  },
+  {
+   "date": "2023-04",
+   "event": "The Board adopts the 22-mile Phase 1 alignment to Mountain House, with four stations, as the locally preferred alternative."
+  },
+  {
+   "date": "2024-10-23",
+   "event": "The Board certifies the Subsequent EIR and approves the 22-mile Phase 1 project; the notice of determination is filed Oct 25."
+  },
+  {
+   "date": "2025-05-27",
+   "event": "FTA issues a Finding of No Significant Impact for Phase 1 under NEPA."
+  },
+  {
+   "date": "2025-06-11",
+   "event": "After cost increases at 30% design, the Board approves phased delivery starting with the 11-mile Phase 1A from Dublin/Pleasanton BART to the Vasco Road ACE Station, using battery-electric trains."
+  },
+  {
+   "date": "2025-09-10",
+   "event": "The Board chooses Construction Manager/General Contractor delivery for Phase 1A; the request for proposals goes out that month."
+  },
+  {
+   "date": "2026-02-26",
+   "event": "Alameda CTC awards $4 million in I-580 toll revenue for Phase 1A final design."
+  },
+  {
+   "date": "2026-06-10",
+   "event": "The Board awards Kiewit Infrastructure West a CM/GC preconstruction contract (Tier 1, up to $3 million) and requests MTC bridge toll funds to finish 30% design."
+  },
+  {
+   "date": "2026-08-26",
+   "event": "Cumulative MTC funding for project development reaches $53.8 million."
+  }
+ ],
+ "nextMilestone": "Joint CEQA addendum and NEPA re-evaluation for Phase 1A (targeted fall 2026), 30% design complete (December 2026), a request to FTA to enter the Capital Investment Grants Engineering phase, and an MTC final-design allocation request (board action targeted October 2026). The schedule in the June 2026 MTC request shows construction from summer 2029 to opening in summer 2033.",
+ "summary": "A new passenger rail line along the I-580 corridor linking BART at Dublin/Pleasanton with ACE commuter trains at Vasco Road in Livermore, so riders from the San Joaquin Valley can change trains across a platform instead of driving over the Altamont Pass. The first 11 miles, with three stations and battery-electric trains, are environmentally cleared and in design; an extension to Mountain House is cleared but unfunded.",
+ "massingNotes": "No official GIS for the alignment was found. Trace the Phase 1A line from the June 10, 2026 MTC request (AB 1171 Initial Project Report): Figure 3, Phase 1A and Phase 1B alignments (PDF p. 30), and Figure 4, the connection from I-580 to Vasco Road (PDF p. 31); the 2024 SEIR and 2024 EA on CEQAnet (SCH 2018092027, documents 6 and 8) have larger-scale alignment figures. Draw as approximate. Approximate center is the midpoint between the two end stations: Dublin/Pleasanton BART (BART GTFS stops.txt, -121.899245, 37.701610) and Vasco Rd ACE (Caltrans California Transit Stops, stop VAS, -121.717655, 37.697062). Draw Phase 1B (Southfront Road to Mountain House) only as a lighter, unfunded segment if at all, and do not draw the superseded 2021 42-mile route.",
+ "officialLinks": [
+  "https://www.valleylinkrail.com/valleylink-project",
+  "https://www.getvalleylinked.com/"
+ ],
+ "sources": [
+  "https://www.valleylinkrail.com/valleylink-project",
+  "https://www.valleylinkrail.com/environmental-ceqa",
+  "https://www.getvalleylinked.com/",
+  "https://www.valleylinkrail.com/_files/ugd/95df9a_d5454624d39d4a078b0aa7b18dddc57c.pdf",
+  "https://www.valleylinkrail.com/_files/ugd/95df9a_1336405d248b467fb082db9ecc4416ae.pdf",
+  "https://www.valleylinkrail.com/_files/ugd/8f09e7_9cca9a978bb14766a336566c3710ef3a.pdf",
+  "https://www.valleylinkrail.com/_files/ugd/95df9a_af705a6cc23f44438b8f9b29cb18bec9.pdf",
+  "https://www.valleylinkrail.com/_files/ugd/95df9a_0f161a7a5be14083a255266808a38859.pdf",
+  "https://ceqanet.lci.ca.gov/Project/2018092027",
+  "https://ceqanet.lci.ca.gov/2018092027/9",
+  "https://www.bart.gov/dev/schedules/google_transit.zip",
+  "https://caltrans-gis.dot.ca.gov/arcgis/rest/services/CHrailroad/CA_Transit_Stops/FeatureServer/0"
+ ],
+ "verify": [
+  "the joint CEQA addendum and NEPA re-evaluation for Phase 1A (targeted September to fall 2026; not yet on CEQAnet as of Oct 7, 2026)",
+  "the Phase 1A capital cost: the $2,045.7 million total project budget in the June 2026 MTC request is the only official figure found; the cost increase that drove the June 2025 phasing decision is not quantified in the documents read (the June 11, 2025 board packet was not read)",
+  "the opening date: the June 2026 schedule shows construction summer 2029 to summer 2033, while the May 2026 environmental update says construction is anticipated in FY 2028–29",
+  "the FONSI date: most Authority documents and the FONSI itself say May 2025 (CEQAnet received June 4, 2025), but one milestone list in the June 10, 2026 packet (PDF p. 45) says May 2024",
+  "the Alameda County Taxpayers Association lawsuit (Alameda Superior Court RG21110126), which the Authority lists as pending (Sept 9, 2026 packet, PDF p. 36)",
+  "the City of Dublin's project page (dublin.ca.gov/2107) still describes the 2019 plan to North Lathrop and is superseded"
+ ],
+ "reported": {
+  "note": "Reported by the press but not confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map.",
+  "program.notes": "Wikipedia and a Hacienda business-park newsletter say first-phase costs had doubled to about $4.4 billion by early 2025 against an original budget of about $2 billion, and that Phase 1A is fully funded, with construction from 2028 to 2031. The Authority's June 2026 documents instead say construction funding is not yet secured and show construction from summer 2029 to summer 2033.",
+  "sources": [
+   "https://en.wikipedia.org/wiki/Valley_Link",
+   "https://www.hacienda.org/news-events/hacienda-online/pulse/2026/feature-stories/commuters-benefit-valley-link-plan"
+  ]
+ },
+ "lastVerified": "2026-10-07"
+}

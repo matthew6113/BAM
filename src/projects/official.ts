@@ -56,6 +56,8 @@ const OFFICIAL_HOSTS = [
   // Tri-Valley–San Joaquin Valley Regional Rail Authority (Valley Link): agency site and its project/environmental site
   'valleylinkrail.com',
   'getvalleylinked.com',
+  'tjpa.org', // Transbay Joint Powers Authority (The Portal / Downtown Rail Extension, Salesforce Transit Center)
+  'sfcta.org', // San Francisco County Transportation Authority (Prop L sales tax, board memos)
 ];
 
 /** Shared vendor hosts, accepted only under an agency's own path. */
