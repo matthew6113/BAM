@@ -2,12 +2,12 @@
   "name": "Placeholder",
   "note": "Placeholder colors from docs/SPEC.md section 4. Matthew will supply the final palette: replace this file (or export one from the style panel) and nothing else needs to change.",
   "colors": {
-    "land": "#FFFFFF",
-    "water": "#ECEFF2",
-    "shoreline": "#A7B0BA",
-    "outsideRegion": "#F6F6F4",
-    "buildings": "#1E1E1E",
-    "labels": "#3B3B3B",
+    "land": "#FBFAF6",
+    "water": "#E3E8EA",
+    "shoreline": "#9CA6AE",
+    "outsideRegion": "#F2F0EA",
+    "buildings": "#3A3631",
+    "labels": "#3A3835",
     "context": "#C5CAD0",
     "contextExtrusion": "#C9CDD2",
     "selection": "#000000",
@@ -28,7 +28,8 @@
   },
   "opacity": {
     "buildings": 0.85,
-    "buildingsRegional": 0.6,
+    "buildingsRegional": 0.22,
+    "buildingsCity": 0.45,
     "contextExtrusion": 0.45,
     "siteFill": 0.14,
     "massingEnvelope": 0.16

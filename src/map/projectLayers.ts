@@ -224,6 +224,20 @@ export function projectLayers(
       paint: { 'line-color': stageCol, 'line-width': 1.5, 'line-dasharray': [3, 2] },
     },
     {
+      // A soft land-colored halo that clears the building ink around each dot.
+      id: 'project-marker-halos',
+      type: 'circle',
+      source: 'project-points',
+      maxzoom: 13,
+      filter: others,
+      paint: {
+        'circle-color': c.land,
+        'circle-radius': ['interpolate', ['linear'], ['zoom'], 6, 10, 10, 15, 12.5, 17],
+        'circle-blur': 0.35,
+        'circle-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
+      },
+    },
+    {
       id: 'project-markers',
       type: 'circle',
       source: 'project-points',
@@ -231,9 +245,9 @@ export function projectLayers(
       filter: others,
       paint: {
         'circle-color': stageCol,
-        'circle-radius': ['interpolate', ['linear'], ['zoom'], 6, 4, 10, 6, 12.5, 7],
+        'circle-radius': ['interpolate', ['linear'], ['zoom'], 6, 5, 10, 7.5, 12.5, 8.5],
         'circle-stroke-color': c.land,
-        'circle-stroke-width': 1.5,
+        'circle-stroke-width': 2,
         'circle-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
         'circle-stroke-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
       },

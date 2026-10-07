@@ -142,3 +142,24 @@ block E1 is drawn at the approved Development Agreement's 260 ft (June 2021), no
 draft design standards' 280 ft. The other Downtown West heights still come from that draft, since
 the approved 2021 standards couldn't be retrieved; they are labelled as such and flagged in the
 record's `verify` list.
+
+## 2026-10-07: overview look, option E (Matthew)
+
+Chosen from five options (current, soft ink, knockout halos, both, warm paper with both).
+The problem: at zooms 10 to 12 the city cores were near-black, and the darker stage dots
+(partly built, under construction) disappeared into them.
+
+**Warm paper.** Land `#FBFAF6`, outside the region `#F2F0EA`, water `#E3E8EA`, shoreline
+`#9CA6AE`, buildings `#3A3631`, labels `#3A3835`. Still placeholders until Matthew's palette.
+The previous cool white colors are kept as the "Cool white (before Oct 7)" preset.
+
+**Soft ink until street level.** Overview buildings ramp 22% (zoom 8) to 45% (zoom 12.5),
+then full ink (85%) at zoom 13, where the detail tiles take over. Theme keys
+`opacity.buildingsRegional`, `opacity.buildingsCity`, `opacity.buildings`.
+
+**Bigger dots with knockout halos.** Markers are 5 to 8.5 px with a 2 px land-colored ring, over
+a soft land-colored halo that clears the building ink around each dot. Both fade out with the
+markers between zoom 12 and 13.
+
+Still open: SF's dots overlap at the whole-bay zoom; the slate "partly built" color stays close
+to grey; UI chips are pure white on the off-white paper.

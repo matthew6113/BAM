@@ -161,7 +161,9 @@ export function StylePanel({ theme, onChange, onClose }: Props) {
         ))}
         <Slider label="Building opacity, street level" min={0.3} max={1} step={0.05} value={theme.opacity.buildings}
           onInput={(v) => set((t) => { t.opacity.buildings = v; })} />
-        <Slider label="Building opacity, regional" min={0.3} max={1} step={0.05} value={theme.opacity.buildingsRegional}
+        <Slider label="Building opacity, city (zoom 12.5)" min={0.1} max={1} step={0.05} value={theme.opacity.buildingsCity}
+          onInput={(v) => set((t) => { t.opacity.buildingsCity = v; })} />
+        <Slider label="Building opacity, regional" min={0.1} max={1} step={0.05} value={theme.opacity.buildingsRegional}
           onInput={(v) => set((t) => { t.opacity.buildingsRegional = v; })} />
         <Slider label="Shoreline weight" min={0.5} max={3} step={0.25} value={theme.map.shorelineWidth}
           onInput={(v) => set((t) => { t.map.shorelineWidth = v; })} />
