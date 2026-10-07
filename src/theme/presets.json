@@ -2,14 +2,25 @@
   "note": "Alternative starting points for the style panel. These are explorations, not the palette: theme.json is the default the map ships with.",
   "presets": [
     {
-      "name": "Warm paper",
+      "name": "Cool white and blue (before Oct 7)",
       "colors": {
-        "land": "#FBFAF6",
-        "water": "#E6EAEC",
-        "shoreline": "#9CA6AE",
-        "outsideRegion": "#F2F0EA",
-        "buildings": "#232220",
-        "labels": "#3A3835"
+        "land": "#FFFFFF",
+        "water": "#ECEFF2",
+        "shoreline": "#A7B0BA",
+        "outsideRegion": "#F6F6F4",
+        "buildings": "#1E1E1E",
+        "labels": "#3B3B3B"
+      },
+      "stages": {
+        "proposed": "#9DB4E0",
+        "entitlement": "#7898D4",
+        "entitled": "#4F78C4",
+        "infrastructure": "#3459A8",
+        "construction": "#1E3F86",
+        "partial": "#5A6B8C",
+        "paused": "#C08A1E",
+        "distressed": "#A3242B",
+        "complete": "@buildings"
       }
     },
     {

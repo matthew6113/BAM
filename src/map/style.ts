@@ -195,6 +195,19 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
       },
     },
     {
+      // The landed site's ground, under the existing buildings so footprints that stay still show,
+      // and so the black boundary reads against light gray rather than the building ink.
+      id: 'project-selection-fill',
+      type: 'fill',
+      source: 'project-sites',
+      filter: ['==', ['get', 'id'], selection?.id ?? ''],
+      paint: {
+        'fill-color': c.selectionFill,
+        'fill-opacity': selection?.phase === 'landed' ? 1 : 0,
+        'fill-opacity-transition': { duration: 600, delay: 0 },
+      },
+    },
+    {
       id: 'buildings-overview',
       type: 'fill',
       source: 'buildings-overview',
@@ -203,10 +216,12 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
       layout: { visibility: visible(L.buildings) },
       paint: {
         'fill-color': c.buildings,
-        // Lighter at regional zoom so density reads as tone; full ink from street level.
+        // Soft ink until street level, so density reads as tone and the project dots stay
+        // legible over the city cores; full ink from DETAIL_MIN_ZOOM.
         'fill-opacity': [
-          'interpolate', ['linear'], ['zoom'],
+          'interpolate', ['exponential', 1.4], ['zoom'],
           8, theme.opacity.buildingsRegional,
+          DETAIL_MIN_ZOOM - 0.5, theme.opacity.buildingsCity,
           DETAIL_MIN_ZOOM, theme.opacity.buildings,
         ],
       },

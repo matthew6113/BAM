@@ -260,6 +260,20 @@ export function projectLayers(
       paint: { 'line-color': stageCol, 'line-width': 1.5, 'line-dasharray': [3, 2] },
     },
     {
+      // A soft land-colored halo that clears the building ink around each dot.
+      id: 'project-marker-halos',
+      type: 'circle',
+      source: 'project-points',
+      maxzoom: 13,
+      filter: ['any', others, ['all', isSelected, ['==', ['get', 'scattered'], true]]],
+      paint: {
+        'circle-color': c.land,
+        'circle-radius': ['interpolate', ['linear'], ['zoom'], 6, 10, 10, 15, 12.5, 17],
+        'circle-blur': 0.35,
+        'circle-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
+      },
+    },
+    {
       id: 'project-markers',
       type: 'circle',
       source: 'project-points',
@@ -270,9 +284,9 @@ export function projectLayers(
       paint: {
         'circle-color': stageCol,
         'circle-radius': ['interpolate', ['linear'], ['zoom'],
-          6, ['case', isSelected, 5, 4], 10, ['case', isSelected, 8, 6], 12.5, ['case', isSelected, 9, 7]],
+          6, ['case', isSelected, 6, 5], 10, ['case', isSelected, 9, 7.5], 12.5, ['case', isSelected, 10, 8.5]],
         'circle-stroke-color': ['case', isSelected, c.labels, c.land],
-        'circle-stroke-width': ['case', isSelected, 2, 1.5],
+        'circle-stroke-width': 2,
         'circle-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
         'circle-stroke-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
       },
