@@ -40,10 +40,12 @@ Massing:
   upper floors" in the master plan set approved July 3, 2024 (PL23-0024, Attachment D, PDF p. 43),
   georeferenced by the four corners of the main lot's property line matched to BART's parcels. Heights from
   the A3 section sheets of the same set.
-- North Berkeley, Ashby and Amador Station: illustrative envelopes over the BART parcels at the official
-  height limit (R-BMU 80 ft for the Berkeley sites, per the adopted North Berkeley Objective Design
-  Standards citing BMC 23.202.150(F); 90 ft at Amador Station per BART's AB 2923 rezoned layer for the
-  City of Dublin), with existing buildings on the parcels cut out.
+- North Berkeley and Ashby: illustrative envelopes over the BART parcels at the official height limit
+  (R-BMU 80 ft, per the adopted North Berkeley Objective Design Standards citing BMC 23.202.150(F)), with
+  existing buildings on the parcels cut out.
+- Amador Station: an illustrative envelope over the BART parcels at the approved design's height, 5 stories
+  and 61 ft (City of Dublin development map; Site Development Review approved Aug 10, 2021). The approved
+  footprints aren't published; the zoning limit is 90 ft (BART's AB 2923 rezoned layer).
 
     uv run --directory pipeline python -m bam_pipeline.sites.bart_station_housing
 """
@@ -119,6 +121,9 @@ ECP_AS = ("https://www.elcerrito.gov/DocumentCenter/View/22554/"
           "PL22-0150-Parcel-A-South-Ministerial-Approval-Letter-Including-Conditions")
 EC_TOD = "https://elcerrito.gov/1381/Transit-Oriented-Development-TOD"
 DUBLIN_NOD = "https://ceqanet.lci.ca.gov/2010022005/8"
+# City of Dublin development map entry (5 stories / 61 feet; approved Aug 10, 2021) and the Planning Commission agenda
+DUBLIN_MAP = "https://dublin-development.icitywork.com/#projectDetail1380"
+DUBLIN_PC = "https://granicus_production_attachments.s3.amazonaws.com/dublin/98837e23cc8392d73e6155bda18f2be10.pdf"
 
 # --------------------------------------------------------------------------- sites
 
@@ -604,12 +609,14 @@ def main() -> None:
     dub = rz[rz["apn"].astype(str).str.contains("941-2842-00[24]", regex=True)]
     dub_h = sorted(set(dub["Building_Height"].astype(str)))
     feats.append(envelope(
-        sites["west-dublin"], "Amador Station", 90, "entitled",
-        f"BART parcels drawn to the 90-ft limit in BART's AB 2923 rezoned layer for these parcels (City of Dublin; "
+        sites["west-dublin"], "Amador Station", 61, "entitled",
+        f"BART parcels drawn to the approved height, 5 stories and 61 ft, of the Site Development Review the City of "
+        f"Dublin approved on Aug 10, 2021 ({DUBLIN_MAP}); the zoning limit is 90 ft (BART's AB 2923 rezoned layer, "
         f"“{'; '.join(dub_h)}”, {BART_REZONED})",
-        "300 affordable homes (City of Dublin, July 2026); construction awaits funding (BART). The design isn't drawn. "
-        "OpenStreetMap has two footprints here tagged building=construction (checked 2023); no official source says "
-        "work has started, so they aren't treated as buildings.",
+        "300 affordable homes in two buildings of 136 and 164 (City of Dublin); building permits for the first building "
+        "are under review (City of Dublin) and construction awaits funding (BART). The approved footprints aren't "
+        "published, so the parcels are drawn whole. OpenStreetMap has two footprints here tagged building=construction "
+        "(checked 2023); no official source says work has started, so they aren't treated as buildings.",
         cut_existing=False))
 
     srcs = sorted({d["url"] for d in DOCS.values()})
@@ -621,8 +628,9 @@ def main() -> None:
             "summary": (
                 "West Oakland, Lake Merritt and El Cerrito Plaza are traced from their approved plans, with heights "
                 "from the plans' sections and the City's zoning tables. North Berkeley, the Ashby West Lot and "
-                "Amador Station have no published design, so they are illustrative envelopes: BART's parcels "
-                "drawn to the height limit (80 ft in Berkeley's R-BMU district, 90 ft at Amador Station). Real "
+                "Amador Station have no published footprints, so they are illustrative envelopes: BART's parcels "
+                "drawn to the height limit (80 ft in Berkeley's R-BMU district) or the approved height (61 ft at "
+                "Amador Station). Real "
                 "buildings there will cover less of the land. Parcel A-South at El Cerrito Plaza is outlined "
                 "only: its approval gives stories, not feet."),
             "note": "Approved designs at three stations; height-limit envelopes, not designs, at the other three.",
@@ -632,7 +640,7 @@ def main() -> None:
             "license": f"Plans: City of Oakland and City of El Cerrito public records; parcels: {BART_LICENSE}; "
                        f"existing buildings: {OSM}",
             "documents": srcs + [BART_WORKPLAN, BART_REZONED, NB_ODS, BK_APR, ECP_APPROVAL, ECP_AS, EC_TOD,
-                                 DUBLIN_NOD, WO_PAGE, LM_PAGE, BART_LM, BART_NEWS_WO],
+                                 DUBLIN_NOD, DUBLIN_MAP, DUBLIN_PC, WO_PAGE, LM_PAGE, BART_LM, BART_NEWS_WO],
         },
         "features": feats,
     }
