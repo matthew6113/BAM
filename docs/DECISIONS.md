@@ -188,3 +188,10 @@ Placeholders still, until Matthew's palette; this supersedes the stage table in 
   presets can now carry stage colors.
 - Still open: the selection outline (`#000000`) is under 3:1 against the building ink; adjacent
   orange stages are close on small dots (the panel always names the stage).
+
+## 2026-10-07: selected site ground (Matthew)
+
+The landed project's site is filled light gray (`selectionFill`, `#DEDAD1`), so the black boundary
+reads against it instead of against the building ink (about 2.7:1, under 3:1). The fill sits under
+the existing buildings, so footprints that stay on a site still show, and fades in on landing.
+The contrast check now measures the selection against this ground (about 13:1).

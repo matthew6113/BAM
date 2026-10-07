@@ -195,6 +195,19 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
       },
     },
     {
+      // The landed site's ground, under the existing buildings so footprints that stay still show,
+      // and so the black boundary reads against light gray rather than the building ink.
+      id: 'project-selection-fill',
+      type: 'fill',
+      source: 'project-sites',
+      filter: ['==', ['get', 'id'], selection?.id ?? ''],
+      paint: {
+        'fill-color': c.selectionFill,
+        'fill-opacity': selection?.phase === 'landed' ? 1 : 0,
+        'fill-opacity-transition': { duration: 600, delay: 0 },
+      },
+    },
+    {
       id: 'buildings-overview',
       type: 'fill',
       source: 'buildings-overview',

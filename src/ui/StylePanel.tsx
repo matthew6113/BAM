@@ -26,6 +26,7 @@ const COLOR_LABELS: Record<ColorRole, string> = {
   context: 'Context lines',
   contextExtrusion: 'Building heights in 3D',
   selection: 'Selection highlight',
+  selectionFill: 'Selected site (ground)',
   panelBackground: 'Panel background',
   panelText: 'Panel text',
   panelRule: 'Panel rules',

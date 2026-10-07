@@ -44,9 +44,14 @@ describe('contrast helpers', () => {
       stages: { proposed: '#9DB4E0' },
     });
     const issues = contrastIssues(old).map((i) => `${i.subject}/${i.against}`);
-    // Proposed (#9DB4E0) is about 2.1:1 on white; selection (#000) is about 2:1 on the ink.
+    // Proposed (#9DB4E0) is about 2.1:1 on white.
     expect(issues).toContain('Stage: proposed/land');
-    expect(issues).toContain('Selection/buildings');
+  });
+
+  it('draws the selection boundary on a light ground it contrasts with', () => {
+    expect(contrastIssues(defaultTheme).filter((i) => i.subject === 'Selection')).toEqual([]);
+    const dark = normalizeTheme({ colors: { selectionFill: '#333333' } });
+    expect(contrastIssues(dark).map((i) => `${i.subject}/${i.against}`)).toContain('Selection/site ground');
   });
 });
 

@@ -11,6 +11,7 @@
     "context": "#C5CAD0",
     "contextExtrusion": "#C9CDD2",
     "selection": "#000000",
+    "selectionFill": "#DEDAD1",
     "panelBackground": "#FFFFFF",
     "panelText": "#1E1E1E",
     "panelRule": "#E3E3E3"
