@@ -3,6 +3,47 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-07 (official-source pass: East Bay, North Bay and BART)
+
+Findings: `docs/official-research/update-2026-10-07-east-north.md`. `lastVerified` unchanged. Facts whose only
+source is on a host not yet approved (see `docs/OFFICIAL-SOURCES.md`, "Hosts awaiting approval") are not applied.
+
+- **concord-naval-weapons-station:**
+  - Area Plan adopted Jan 24, 2012 (Resolution 12-4823.2).
+  - Concord First Partners' agreement was allowed to expire Jan 31, 2023 (3–2, Jan 28).
+  - Brookfield was picked Aug 26, 2023.
+  - SB 328 was signed Sept 29, 2026 (Chapter 785), not Sept 30.
+  - The press's "Lennar withdrew" is corrected: the Council declined to extend Lennar's agreement, which
+    expired Mar 31, 2020.
+  - All verify items resolved; the $6B cost estimate stays press-only.
+- **alameda-point:** the Radium arts center's lease option passed May 5, 2026 (Ordinance 3399; Planning Board
+  approval Mar 23). Block 11 was never built. Phase 2 land was conveyed Dec 29, 2022. The press's "May 2018
+  groundbreaking" is dropped: the city record says infrastructure began in March 2018.
+- **brooklyn-basin:** developer structure confirmed from the City's 2025 bond statement: Zarsion-OHP I, a joint
+  venture of Oakland Harbor Partners (Signature and Reynolds & Brown) and Zarsion America. The City bought the
+  affordable parcels Aug 28, 2014, and consented to the agreement's transfer Apr 22, 2014. BCDC has amended
+  the permit three times, none for the 600 added homes.
+- **suisun-expansion:** Solano LAFCo added as the responsible agency for the annexation (the notice of
+  preparation). The June 10, 2025 reimbursement agreement is dated from the City's FAQ. The CEO's
+  "175,000 homes" is dropped in favor of the official 173,913.
+- **mare-island:** from the North Mare Island agreement (cityofvallejo.net): plan adopted March 1999,
+  exclusive negotiation from July 2018, agreement signed May 24, 2022 (about 157 acres). The October 2024 draft
+  plan's maximum is about 14,400 homes (356 existing) and 8.22 million sq ft. The City's April 2026 report
+  and the July 2026 extension of the South Mare Island agreement are on Vallejo's CivicClerk host, which awaits
+  approval.
+- **sonoma-developmental-center:** added the 2024 CAL FIRE transfer (about 58 acres) and the applicant's
+  proposed three phases (March 2027 to August 2036). The Draft EIR is still not expected in 2026.
+- **esmeralda:**
+  - The Planning Commission voted 4–1 on Oct 1, 2026 to recommend approval. The Council's first reading is
+    Oct 7 and final action Oct 14.
+  - The developer is in contract to buy the land; Spight Properties II still owns it.
+  - Up to 1,524 residents (EIR addendum).
+  - The build-out phases are estimates, not guaranteed dates.
+  - Re-check after Oct 14.
+- **bart-station-housing:** Lake Merritt's senior building broke ground Oct 17, 2024 (ABAG; BART's project
+  page). El Cerrito Plaza's affordable total is the City's 350. The heights, Walnut Creek parcel and Fremont
+  items are narrowed. The items resolved by BART Board and Dublin records wait for host approval.
+
 ## 2026-10-07 (official-source pass: Peninsula and South Bay)
 
 Findings: `docs/official-research/update-2026-10-07-peninsula-south.md`. `lastVerified` unchanged. No stage changes.

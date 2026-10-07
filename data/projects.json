@@ -2413,12 +2413,12 @@
       "stageNote": "The City Council, sitting as the Local Reuse Authority, approved the Navy term sheet on May 26, 2026, and the Navy approved it in Sept 2026. Work on the Specific Plan, led by Brookfield with city and developer consultants, starts this winter, with more community engagement expected in early 2027.",
       "timeline": [
         {
-          "date": "2012",
-          "event": "City adopts the Area Plan for the reuse project, including 12,272 homes."
+          "date": "2012-01-24",
+          "event": "City Council adopts the Concord Reuse Project Area Plan as part of the General Plan (Resolution 12-4823.2), including 12,272 homes."
         },
         {
           "date": "2020-03-31",
-          "event": "City lets its exclusive negotiating agreement with Lennar, the earlier master developer, expire."
+          "event": "Exclusive negotiating agreement with Lennar Concord LLC, master developer for a first phase of about 500 acres, expires after the City Council declined on Mar 24 to extend it."
         },
         {
           "date": "2021-08-21",
@@ -2429,8 +2429,16 @@
           "event": "City approves a negotiating agreement with Concord First Partners."
         },
         {
+          "date": "2023-01-28",
+          "event": "City Council rejects Concord First Partners' term sheet and lets its negotiating agreement expire on Jan 31, 2023, 3–2."
+        },
+        {
+          "date": "2023-08-26",
+          "event": "City Council, as the Local Reuse Authority, picks Brookfield Properties as preferred master developer."
+        },
+        {
           "date": "2023-09-19",
-          "event": "Local Reuse Authority enters an exclusive agreement to negotiate with Brookfield (BCUS Acquisitions LLC)."
+          "event": "Local Reuse Authority approves an exclusive agreement to negotiate with Brookfield (BCUS Acquisitions LLC), Resolution 23-50."
         },
         {
           "date": "2024-03-19",
@@ -2445,8 +2453,8 @@
           "event": "Navy approves and executes the term sheet for about 2,422 acres."
         },
         {
-          "date": "2026-09-30",
-          "event": "City announces the Governor has signed SB 328, legislation supporting the redevelopment."
+          "date": "2026-09-29",
+          "event": "Governor signs SB 328 (Chapter 785, Statutes of 2026), legislation supporting the redevelopment."
         }
       ],
       "nextMilestone": "Specific Plan work starts winter 2026–27, with community engagement in early 2027.",
@@ -2470,27 +2478,17 @@
         "https://www.concordreuseproject.org/152/The-Area-Plan",
         "https://www.concordreuseproject.org/157/Specific-Plan",
         "https://www.concordreuseproject.org/DocumentCenter/View/1093/2012-01-24-Res-No-12-48232-Amend-Concord-2030-Urb-Area",
-        "https://www.concordreuseproject.org/DocumentCenter/View/1105"
+        "https://www.concordreuseproject.org/DocumentCenter/View/1105",
+        "https://stream.ci.concord.ca.us/OnBaseAgendaOnline/Documents/ViewAgenda?meetingId=938&type=minutes&doctype=2",
+        "https://stream.ci.concord.ca.us/OnBaseAgendaOnline/Documents/ViewAgenda?meetingId=1003&type=minutes&doctype=2",
+        "https://stream.ci.concord.ca.us/OnBaseAgendaOnline/Documents/ViewAgenda?meetingId=1007&type=minutes&doctype=2",
+        "https://concordreuseproject.org/DocumentCenter/View/2294/2023-Master-Developer-Request-for-Qualifications-RFQ",
+        "https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB328"
       ],
-      "verify": [
-        "the date the Area Plan was adopted in 2012",
-        "when and why the Concord First Partners agreement ended",
-        "the date the City Council first selected Brookfield (press: Aug 2023)",
-        "the date the Governor signed SB 328"
-      ],
+      "verify": [],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
         "program.notes": "Estimated cost about $6B.",
-        "timeline": [
-          {
-            "date": "2016",
-            "event": "Lennar selected (withdrew in 2020)."
-          },
-          {
-            "date": "2023-08",
-            "event": "Brookfield selected."
-          }
-        ],
         "sources": [
           "https://www.claycord.com/2026/09/24/u-s-navy-approves-key-financial-agreement-for-concord-naval-weapons-station-redevelopment/",
           "https://localnewsmatters.org/2026/05/27/concord-reaches-milestone-agreement-to-transform-former-naval-weapons-station/",
@@ -2625,7 +2623,7 @@
         "City of Alameda"
       ],
       "stage": "partial",
-      "stageNote": "Partly built. Alameda Point Partners has finished the buildings on Blocks 6, 7, 8 and 9 (454 homes, including 128 affordable), two large parks, and the Seaplane Lagoon ferry terminal, which opened for service on July 1, 2021. Since 2023 the project's milestones have been tolled under the agreements' economic force majeure terms.",
+      "stageNote": "Partly built. Alameda Point Partners has finished the buildings on Blocks 6, 7, 8 and 9 (454 homes, including 128 affordable), two large parks, and the Seaplane Lagoon ferry terminal, which opened for service on July 1, 2021. Since 2023 the project's milestones have been tolled under the agreements' economic force majeure terms. Block 11, planned for 220 rental homes, has not been built.",
       "timeline": [
         {
           "date": "2015-06",
@@ -2657,7 +2655,11 @@
         },
         {
           "date": "2022-11-14",
-          "event": "First amendment to the development agreement adopted (Ordinance 3328)."
+          "event": "City and Alameda Point Partners enter into the first amendment to the development agreement (Ordinance 3328)."
+        },
+        {
+          "date": "2022-12-29",
+          "event": "City conveys the Phase 2 land to Alameda Point Partners."
         },
         {
           "date": "2023",
@@ -2666,6 +2668,14 @@
         {
           "date": "2026-03-09",
           "event": "Planning Board holds the development agreement's annual review."
+        },
+        {
+          "date": "2026-03-23",
+          "event": "Planning Board approves a Site A development plan amendment for the Radium performing arts center on Blocks 12 and 13, 5–0."
+        },
+        {
+          "date": "2026-05-05",
+          "event": "City Council gives final passage to Ordinance 3399, a lease option toward a 66-year ground lease of about 1.87 acres to Radium Presents for the performing arts center."
         }
       ],
       "nextMilestone": null,
@@ -2686,24 +2696,19 @@
         "https://alameda.legistar.com/LegislationDetail.aspx?ID=6711&GUID=6634ADEE-5B8D-42B2-A475-3097540463FB",
         "https://legistar1.granicus.com/alameda/attachments/0a9551c2-cd42-4dcf-82bd-4e84b38110c0.pdf",
         "https://legistar1.granicus.com/alameda/attachments/cc7a429d-3973-4f6f-83a1-6cef51878c67.pdf",
-        "https://legistar1.granicus.com/alameda/attachments/dfc15a4c-b254-4699-b53d-2b4f7118c903.pdf"
+        "https://legistar1.granicus.com/alameda/attachments/dfc15a4c-b254-4699-b53d-2b4f7118c903.pdf",
+        "https://webapi.legistar.com/v1/alameda/matters/15679/texts/16881",
+        "https://webapi.legistar.com/v1/alameda/matters/15775/texts/16983",
+        "https://webapi.legistar.com/v1/alameda/matters/15841/texts/17048",
+        "https://webapi.legistar.com/v1/alameda/matters/12022/texts/12769"
       ],
       "verify": [
-        "the final action on the Radium performing arts center on Blocks 12/13 (heard Mar 2026)",
-        "whether Block 11 (220 rental homes, due to start in summer 2022) was built",
         "the members of Alameda Point Partners (press: Trammell Crow Residential, srmERNST and others)",
-        "when the Navy will convey Phase 3 land",
-        "plans for Site B"
+        "when the Navy will convey Phase 3 land (the City's 2022 report expected none before 2031)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
         "developer": "Alameda Point Partners (Trammell Crow Residential, srmERNST, Eden Housing and others)",
-        "timeline": [
-          {
-            "date": "2018-05",
-            "event": "Groundbreaking."
-          }
-        ],
         "sources": [
           "https://rebusinessonline.com/trammell-crow-led-group-to-build-500m-mixed-use-project-in-bay-area/",
           "https://rebusinessonline.com/city-of-alameda-alameda-point-partners-break-ground-on-1b-mixed-use-development-on-former-naval-air-station/",
@@ -2738,13 +2743,13 @@
         "openSpaceAcres": 31,
         "notes": "Up to 3,700 homes since the May 2023 approvals added 600 (3,100 before). The 465 affordable homes are all built: Parcel A (254) and Parcel F (211). Up to 200,000 sq ft of commercial space; about 31 acres of parks and public open space and two renovated marinas."
       },
-      "developer": "Zarsion-OHP I, LLC (affordable parcels with MidPen Housing and the Oakland Housing Authority)",
+      "developer": "Zarsion-OHP I, LLC, a joint venture of Oakland Harbor Partners (Signature Development and Reynolds & Brown) and Zarsion America (affordable parcels with MidPen Housing and the Oakland Housing Authority)",
       "publicPartners": [
         "City of Oakland",
         "Oakland Housing Authority"
       ],
       "stage": "partial",
-      "stageNote": "Partly built. As of July 2025, Parcels A, B, C and F were complete and occupied and Parcels G and J complete and leasing: 1,696 homes in all, including all 465 affordable homes. Parcels D, E, H, K, L and M are still to come, with the last expected to start construction around 2031.",
+      "stageNote": "Partly built. As of July 2025, Parcels A, B, C and F were complete and occupied and Parcels G and J complete and leasing: 1,696 homes in all, including all 465 affordable homes. Parcels D, E, H, K, L and M are still to come, with the last expected to start construction around 2031. The City's July 2025 report expected Parcels D and E to start construction around 2029.",
       "timeline": [
         {
           "date": "2006-07-18",
@@ -2757,6 +2762,14 @@
         {
           "date": "2013-05-07",
           "event": "City authorizes early purchase of the affordable housing parcels (Resolution 84349)."
+        },
+        {
+          "date": "2014-04-22",
+          "event": "City Council consents to the transfer of the development agreement to Zarsion-OHP I, LLC (Resolution 84934)."
+        },
+        {
+          "date": "2014-08-28",
+          "event": "City buys the affordable housing parcels from the developer for about $21.5 million."
         },
         {
           "date": "2017-01-17",
@@ -2798,24 +2811,19 @@
         "https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Oakland_Parcels_Public/FeatureServer/0",
         "https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/3.19.2025-pc-meeting-minutes-appr-via-catherine-3.28.2025.pdf",
         "https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/3.5.2025-pc-meeting-minutes-appr-via-catherine-3.12.2025.pdf",
-        "https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/item-2-staff-report-2-19-25-bb-parcel-h-option-2-case-file-pud06010-r02-pudf05-planning-commission-3.5.2025.pdf"
+        "https://www.oaklandca.gov/files/assets/city/v/1/public-meetings/planning-commission/2025/item-2-staff-report-2-19-25-bb-parcel-h-option-2-case-file-pud06010-r02-pudf05-planning-commission-3.5.2025.pdf",
+        "https://oakland.legistar1.com/oakland/attachments/33990.pdf",
+        "https://oakland.legistar1.com/oakland/attachments/13d0d960-4f48-4bb0-9421-71aa20bb274a.pdf",
+        "https://www.bcdc.ca.gov/wp-content/uploads/sites/354/2024/12/2025-06-09-Brooklyn-Basin-Staff-Report.pdf"
       ],
       "verify": [
-        "whether BCDC has amended its permit (2006.007.00) for the 600 added homes",
-        "the start dates of Parcels D, E and H",
-        "the expected completion year (press: toward 2038)",
-        "the role of Signature Development Group and Reynolds & Brown in the current ownership"
+        "whether BCDC amends permit 2006.007.00 for the 600 added homes (amended three times as of June 2025)",
+        "the start dates of Parcels D, E and H (City estimates, July 2025: D and E in 2029, H in 2025)",
+        "the expected completion year (press: toward 2038; the City expects the last parcels to start around 2031)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "developer": "Signature Development Group with Zarsion Holdings and Reynolds & Brown (affordable homes by MidPen Housing)",
         "program.notes": "The 600-unit increase would push completion toward 2038.",
-        "timeline": [
-          {
-            "date": "2014",
-            "event": "City acquires parcels for 465 affordable homes."
-          }
-        ],
         "sources": [
           "https://www.oakha.org/?p=37354",
           "https://www.bisnow.com/news/oakland/multifamily/brooklyn-basin-project-seeks-to-extend-timeline-add-more-apartments-94013",
@@ -2853,7 +2861,8 @@
       },
       "developer": "California Forever",
       "publicPartners": [
-        "City of Suisun City (lead agency)"
+        "City of Suisun City (lead agency)",
+        "Solano LAFCO (responsible agency for the annexation)"
       ],
       "stage": "entitlement",
       "stageNote": "California Forever applied to Suisun City in Oct 2025 to annex its land and build a new community. The City issued the Notice of Preparation for the environmental impact report on Nov 12, 2025; no draft EIR has been published. The City's FAQ says final decisions are expected beyond 2026.",
@@ -2865,6 +2874,10 @@
         {
           "date": "2025-01",
           "event": "Suisun City Council directs the City Manager to explore annexation opportunities."
+        },
+        {
+          "date": "2025-06-10",
+          "event": "City approves a reimbursement agreement with California Forever to fund the City's review of the annexation."
         },
         {
           "date": "2025-10-14",
@@ -2891,17 +2904,13 @@
         "https://suisunexpansion.com/faqs/"
       ],
       "verify": [
-        "the draft EIR release date",
+        "the draft EIR release date (not posted on CEQAnet as of Oct 7, 2026)",
         "whether an annexation application has been filed with Solano LAFCo",
-        "the source link for the June 10, 2025 reimbursement agreement (Resolution 50, in the June 17, 2025 council packet)",
         "whether the city formally accepted the application as complete"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "program.notes": "California Forever's CEO has described ~175,000 homes over 40 years plus jobs and entertainment. A separate Solano Shipyard proposal covers ~7,500 acres near Collinsville.",
-        "publicPartners": [
-          "Solano LAFCO"
-        ],
+        "program.notes": "A separate Solano Shipyard proposal covers ~7,500 acres near Collinsville.",
         "stageNote": "EIR results expected fall 2026, with certification targeted for winter 2026 and approval hearings in spring 2027.",
         "timeline": [
           {
@@ -3033,7 +3042,7 @@
         "retailSqft": null,
         "hotelKeys": null,
         "openSpaceAcres": null,
-        "notes": "Up to 14,000 homes and 14,900–17,000 jobs, as the City estimates for the Mare Island Company's first draft specific plan (Oct 2024); not approved. The City's October 2025 infrastructure assessment used an earlier preliminary plan (Feb 2023): 9,271 homes and about 8.13 million sq ft of commercial uses, built out by about 2063. The draft's mixed-use zones allow up to 85 ft."
+        "notes": "Up to 14,000 homes and 14,900–17,000 jobs, as the City estimates for the Mare Island Company's first draft specific plan (Oct 2024); not approved. The City's October 2025 infrastructure assessment used an earlier preliminary plan (Feb 2023): 9,271 homes and about 8.13 million sq ft of commercial uses, built out by about 2063. The draft's mixed-use zones allow up to 85 ft. The October 2024 draft's maximum is about 14,400 homes, including 356 existing, and about 8.22 million sq ft of non-residential space (3.77 million new)."
       },
       "developer": "Mare Island Company (Nimitz Group)",
       "publicPartners": [
@@ -3043,7 +3052,7 @@
       "stageNote": "A new specific plan is under City review. The Mare Island Company submitted a first draft in October 2024, and the City sent back comments on Feb 7, 2026. A second draft with infrastructure and financing plans, a CEQA notice of preparation and an EIR come next.",
       "timeline": [
         {
-          "date": "1999",
+          "date": "1999-03",
           "event": "City Council adopts the Mare Island Specific Plan for the former naval shipyard."
         },
         {
@@ -3059,8 +3068,16 @@
           "event": "The Mare Island Specific Plan is amended."
         },
         {
+          "date": "2018-07",
+          "event": "City and the Nimitz Group enter an exclusive right to negotiate for about 157 acres of North Mare Island."
+        },
+        {
           "date": "2022-02",
           "event": "A CEQA addendum to the specific plan EIRs is prepared for the North Mare Island disposition and development agreement."
+        },
+        {
+          "date": "2022-05-24",
+          "event": "City and the Nimitz Group sign the North Mare Island disposition and development agreement (about 157 acres)."
         },
         {
           "date": "2024-10-10",
@@ -3095,13 +3112,16 @@
         "https://ceqanet.lci.ca.gov/2003092057/2",
         "https://portal.cityofvallejo.net/arcgis/rest/services/CityGIS_Viewer/Planning_Development_Services/MapServer/67",
         "https://www.cityofvallejo.net/common/pages/DisplayFile.aspx?itemId=19272505",
-        "https://www.cityofvallejo.net/common/pages/DisplayFile.aspx?itemId=19272509"
+        "https://www.cityofvallejo.net/common/pages/DisplayFile.aspx?itemId=19272509",
+        "https://www.cityofvallejo.net/common/pages/DisplayFile.aspx?itemId=19273002",
+        "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=C089Acmx"
       ],
       "verify": [
         "the new plan's area and boundary, and its commercial program",
-        "the existing agreements with the Mare Island Company/Nimitz Group (the 2018 exclusive negotiating agreement for 157 acres of North Mare Island and the later disposition and development agreement), from council records",
+        "the extension of the South Mare Island development agreement (Lennar's 2001 agreement, now held by the Nimitz Group)",
         "the April 27, 2026 council staff report",
-        "how much was built under the 1999–2014 plan (homes, reuse of shipyard buildings)"
+        "an official count of homes built under the 1999 plan (the 2024 draft plan counts 356 existing homes)",
+        "the 2014 plan amendment (the North Mare Island agreement lists amendments in 2007, 2008, 2013 and 2017)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
@@ -3482,7 +3502,7 @@
         "retailSqft": null,
         "hotelKeys": 150,
         "openSpaceAcres": 67,
-        "notes": "Eldridge Renewal's application as described in the county's 2025 notice of preparation: 990 homes (785 market rate, 200 affordable to lower-income households, 5 independent-living homes), about 130,000 sq ft of office, retail, R&D and micro-manufacturing, and a 150-room hotel with conference space and a parking structure (about 120,000 sq ft; the notice's background gives 250,000 sq ft for commercial and hotel together). About 67 acres of parks and open space (the county's project page says about 70). The repealed 2022 specific plan allowed 620 base homes plus density-bonus units, 230,000 sq ft of commercial and office space and a 120-room hotel."
+        "notes": "Eldridge Renewal's application as described in the county's 2025 notice of preparation: 990 homes (785 market rate, 200 affordable to lower-income households, 5 independent-living homes), about 130,000 sq ft of office, retail, R&D and micro-manufacturing, and a 150-room hotel with conference space and a parking structure (about 120,000 sq ft; the notice's background gives 250,000 sq ft for commercial and hotel together). About 67 acres of parks and open space (the county's project page says about 70). The repealed 2022 specific plan allowed 620 base homes plus density-bonus units, 230,000 sq ft of commercial and office space and a 120-room hotel. The applicant proposes building in three phases from March 2027 to August 2036 (county scoping materials)."
       },
       "developer": "Eldridge Renewal, LLC",
       "publicPartners": [
@@ -3515,6 +3535,10 @@
         {
           "date": "2023-08",
           "event": "Eldridge Renewal files an SB 330 preliminary application for a mixed-use housing project on the campus."
+        },
+        {
+          "date": "2024",
+          "event": "The state transfers about 58 acres of open space to CAL FIRE for its Sonoma Lake Napa Unit headquarters and Glen Ellen fire station."
         },
         {
           "date": "2024-01",
@@ -3562,13 +3586,15 @@
         "https://sonomacounty.gov/board-of-supervisors-decertifies-eir-and-repeals-the-approval-of-the-sonoma-developmental-center-specific-plan-in-response-to-court-ruling",
         "https://www.dgs.ca.gov/-/media/Divisions/DGS/LegReports/Accessible-Reports/2023/2023-SDC-Annual-Report-ADA-Final.pdf",
         "https://www.dgs.ca.gov/-/media/Divisions/RESD/Publications/AMB/Surplus-Property-for-Sale-PDFs/2024-Surplus-and-Excess-Property-Report-Final-v26.pdf",
-        "https://socogis.sonomacounty.ca.gov/map/rest/services/CRAPublic/ParcelsPublicShapeFile/FeatureServer/0"
+        "https://socogis.sonomacounty.ca.gov/map/rest/services/CRAPublic/ParcelsPublicShapeFile/FeatureServer/0",
+        "https://permitsonoma.org/Microsites/Permit%20Sonoma/Documents/Divisions/Planning/Project%20Review/SDC/6_Development%20Phasing%20Plan.pdf",
+        "https://permitsonoma.org/Microsites/Permit%20Sonoma/Documents/Divisions/Planning/Project%20Review/SDC/1A_Project%20Background.pdf",
+        "https://spwb.ca.gov/media/docs/meetings/2025/02-14-2025-Minutes.pdf"
       ],
       "verify": [
         "the buyer the state selected in April 2023 and whether a purchase and sale agreement has been signed (DGS reports don't name it; press names Eldridge Renewal's Grupe and Rogal team)",
-        "the date the Draft EIR will be released (Permit Sonoma's project page says not in 2026)",
-        "the CAL FIRE transfer date (notice of preparation: Feb 2024; DGS 2024 report: March 2024, 58.15 acres)",
-        "the proposed phasing (county scoping boards: three phases, March 2027 to August 2036), published on permitsonoma.org"
+        "the date the Draft EIR will be released (Permit Sonoma, Oct 2026: not in 2026, no new date)",
+        "the CAL FIRE transfer month (notice of preparation: Feb 2024; DGS: March 2024; the State Public Works Board calls the site 53 acres)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
@@ -3828,15 +3854,15 @@
         "retailSqft": 17300,
         "hotelKeys": 160,
         "openSpaceAcres": 162,
-        "notes": "Proposed maximums from the draft Esmeralda Specific Plan development budget (Table 2-3): 605 homes (236 detached single-family, 169 attached condominium or rental, 200 senior living), 160 hotel rooms (up to 30 may be hotel-run residences), 14,000 sq ft spa, 17,300 sq ft retail outside the hotel, 18,400 sq ft office and co-working, 8,000 sq ft light industrial or maker space and 8,000 sq ft preschool or daycare; a K–6 school (up to 200 students) and a 500-seat amphitheater would each need a later use permit. Hotel floor area is not capped. About 162 acres of publicly accessible open space, including a 4.75-acre public sports park to be dedicated to the City. The draft development agreement has the developer pay an inclusionary housing in-lieu fee (about $2.9 million at full build-out) instead of building affordable units on site. The approved but unbuilt Alexander Valley Resort plan it would replace allowed a hotel, spa and golf course, over 100,000 sq ft of commercial uses and up to 235 low-density homes."
+        "notes": "Proposed maximums from the draft Esmeralda Specific Plan development budget (Table 2-3): 605 homes (236 detached single-family, 169 attached condominium or rental, 200 senior living), 160 hotel rooms (up to 30 may be hotel-run residences), 14,000 sq ft spa, 17,300 sq ft retail outside the hotel, 18,400 sq ft office and co-working, 8,000 sq ft light industrial or maker space and 8,000 sq ft preschool or daycare; a K–6 school (up to 200 students) and a 500-seat amphitheater would each need a later use permit. Hotel floor area is not capped. About 162 acres of publicly accessible open space, including a 4.75-acre public sports park to be dedicated to the City. The draft development agreement has the developer pay an inclusionary housing in-lieu fee (about $2.9 million at full build-out) instead of building affordable units on site. The approved but unbuilt Alexander Valley Resort plan it would replace allowed a hotel, spa and golf course, over 100,000 sq ft of commercial uses and up to 235 low-density homes. The City's EIR addendum estimates up to 1,524 new residents. Its eight build-out phases (2027–2036) are estimates, not guaranteed dates; site preparation and the resort-hotel phase must come first, and the development agreement would run 20 years."
       },
-      "developer": "Esmeralda Land Company, LP (applicant); Spight Properties II, LLC (property owner)",
+      "developer": "Esmeralda Land Company, LP (applicant, in contract to buy the land); Spight Properties II, LLC (property owner)",
       "publicPartners": [
         "City of Cloverdale (lead agency)",
         "Sonoma County Airport Land Use Commission"
       ],
       "stage": "entitlement",
-      "stageNote": "In public hearings. The Planning Commission held its hearing on Oct 1, 2026, and the City Council is set to introduce the zoning and development agreement ordinances on Oct 7 and take final action on Oct 14. Environmental review is an addendum to the 2009 Alexander Valley Resort EIR rather than a new EIR.",
+      "stageNote": "In public hearings. On Oct 1, 2026 the Planning Commission voted 4–1 to recommend approval. The City Council takes up the zoning and development agreement ordinances on Oct 7 (first reading) and Oct 14, 2026, when it will also consider the other approvals and the CEQA addendum. Environmental review is an addendum to the 2009 Alexander Valley Resort EIR rather than a new EIR.",
       "timeline": [
         {
           "date": "2003-07-28",
@@ -3880,7 +3906,7 @@
         },
         {
           "date": "2026-10-01",
-          "event": "Planning Commission holds its public hearing to make a recommendation to the City Council."
+          "event": "Planning Commission votes 4–1 to recommend that the City Council approve the project and adopt the addendum."
         }
       ],
       "nextMilestone": "City Council hearings on Oct 7 and Oct 14, 2026 (first and second readings of the zoning and development agreement ordinances); the City's schedule also allows the Council to send the approvals to voters.",
@@ -3904,18 +3930,17 @@
         "https://www.cloverdale.net/AgendaCenter/ViewFile/Agenda/_10072026-1438",
         "https://cloverdale.granicus.com/services/legistar/download/pdf/4407704/Agenda_Report.pdf",
         "https://ceqanet.lci.ca.gov/2003072142",
-        "https://socogis.sonomacounty.ca.gov/map/rest/services/CRAPublic/ParcelsPublicShapeFile/FeatureServer/0"
+        "https://socogis.sonomacounty.ca.gov/map/rest/services/CRAPublic/ParcelsPublicShapeFile/FeatureServer/0",
+        "https://cloverdale.granicus.com/services/legistar/download/pdf/4413447/Agenda_Report.pdf",
+        "https://cloverdale.granicus.com/services/legistar/download/pdf/4407703/Attachment_2_-_Ordinance_Adopting_DA.pdf"
       ],
       "verify": [
-        "the Planning Commission's Oct 1, 2026 recommendation and vote (the Council staff report says a summary will be added; minutes not yet posted)",
-        "the City Council's actions on Oct 7 and Oct 14, 2026, and whether it sends the approvals to voters (the City's schedule names March 9, 2027 as the earliest election)",
-        "who owns the land: the Nov 2025 staff summary says Esmeralda Land Company has acquired it, while the Oct 2026 staff report lists Spight Properties II, LLC as owner",
-        "the build-out schedule: the Addendum assumes eight phases from 2027 to 2036, the Specific Plan estimates about 12 years after vesting, and the development agreement would run 20 years"
+        "the City Council's actions on Oct 7 and Oct 14, 2026, and whether it sends the approvals to voters (the City's schedule names March 9, 2027 as the earliest election)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "developer": "Esmeralda Land Company, founded by Devon Zuegel (organizer of the Edge Esmeralda gatherings), with Michael Yarne as director of development; backed by 19 Bay Area families. The company holds an option and plans to close on the land once it has approvals.",
-        "program.notes": "Homes priced from about $600,000 to $4 million, according to project documents described by the Press Democrat; about 1,500 residents at full build-out.",
+        "developer": "Esmeralda Land Company was founded by Devon Zuegel (organizer of the Edge Esmeralda gatherings), with Michael Yarne as director of development; backed by 19 Bay Area families.",
+        "program.notes": "Homes priced from about $600,000 to $4 million, according to project documents described by the Press Democrat.",
         "sources": [
           "https://www.pressdemocrat.com/2026/02/09/cloverdale-esmeralda-development-housing-resort/",
           "https://www.cp-dr.com/post/sonoma-development-hopes-to-break-california-s-new-urbanist-drought"
@@ -3968,7 +3993,7 @@
         "City of Dublin"
       ],
       "stage": "construction",
-      "stageNote": "Three sites are under construction: El Cerrito Plaza's first building (since November 2025), Lake Merritt's senior building and West Oakland's 240 affordable homes (since September 2026). North Berkeley is entitled (December 2024) and Amador Station is waiting for funding. The Ashby West Lot has a developer but no application with the City yet.",
+      "stageNote": "Three sites are under construction: El Cerrito Plaza's first building (since November 2025), Lake Merritt's senior building (since October 2024) and West Oakland's 240 affordable homes (since September 2026). North Berkeley is entitled (December 2024) and Amador Station is waiting for funding. The Ashby West Lot has a developer but no application with the City yet.",
       "timeline": [
         {
           "date": "2018-09-30",
@@ -4005,6 +4030,10 @@
         {
           "date": "2024-07-03",
           "event": "City of El Cerrito issues the ministerial approval of the El Cerrito Plaza master plan (PL23-0024)."
+        },
+        {
+          "date": "2024-10-17",
+          "event": "Construction of Lake Merritt's 97-home senior building begins with a groundbreaking."
         },
         {
           "date": "2024-12-03",
@@ -4063,19 +4092,18 @@
         "https://www.elcerrito.gov/DocumentCenter/View/22554/PL22-0150-Parcel-A-South-Ministerial-Approval-Letter-Including-Conditions",
         "https://ceqanet.lci.ca.gov/2010022005/8",
         "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
-        "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/9"
+        "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/9",
+        "https://abag.ca.gov/news/oakland-celebrates-groundbreaking-new-affordable-housing-seniors"
       ],
       "verify": [
         "Lake Merritt's home count: the City's 2021 plan and BART's project page say 557, while BART's upcoming-projects page lists 97 + 439 + 100 = 636 (the newer 439-home Building A would also change the drawn tower)",
-        "when Lake Merritt's senior building started construction: BART's project page says October 2024, its upcoming-projects page June 2025",
         "the date the Oakland Planning Commission approved the Lake Merritt Preliminary Development Plan (BART gives only 2021)",
         "West Oakland's split: the City lists 522 market-rate and 240 affordable homes, BART 525 and 236",
         "North Berkeley's count: the City's 2024 report gives 739 homes (381 affordable), BART's project page about 743 (382 affordable)",
-        "El Cerrito Plaza heights: the approval letter says the master-plan buildings are 67 to 85 ft, but the Parcel D section sheet shows 57 ft; Parcel A-South's height in feet",
-        "El Cerrito Plaza's affordable total: 350 from the City's approvals (281 plus 69 at Parcel A South), 351 on BART's pages",
+        "El Cerrito Plaza building heights in feet for Parcels A-North, B and C-West (the approval letter gives 67–85 ft and stories; the plan sections show only C-East at 76.5 ft and D at 57 ft) and Parcel A-South (6 stories)",
         "the City of Dublin's planning approval for Amador Station (PLPA-2021-00019), its date and building heights",
-        "which BART parcel holds Walnut Creek Transit Village's last phase (about 240 homes, in planning), so it can be drawn",
-        "Fremont (developer selection expected October 2026 for an 8-acre first phase), Bay Fair and Richmond Transit Village Phase II, which aren't drawn yet"
+        "whether Walnut Creek Transit Village's last phase (about 240 homes, in planning) is on APN 174-180-004-7, the only lease-option parcel there without buildings in BART's parcel data",
+        "Fremont (BART released an RFP on Apr 28, 2026 for an 8-acre first phase; developer selection expected October 2026), Bay Fair and Richmond Transit Village Phase II, which aren't drawn yet"
       ],
       "lastVerified": "2026-10-07"
     }

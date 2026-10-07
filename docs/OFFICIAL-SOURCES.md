@@ -97,6 +97,23 @@ Network access was broadened on 2026-10-02 and every lead below was read:
 - The SF Legistar API (webapi.legistar.com) stops around 2020; read file pages on
   sfgov.legistar.com instead. sfgov.legistar.com is now an official host.
 
+## Hosts awaiting Matthew's approval (2026-10-07)
+
+All of these are agency-run systems, on vendor domains under the agency's own name or path, like the
+hosts already approved. They aren't in `src/projects/official.ts` yet, so the facts below are held until
+Matthew approves them.
+
+| Host | Agency | Facts waiting |
+|---|---|---|
+| `vallejoca.api.civicclerk.com` | City of Vallejo (agendas, staff reports, minutes) | Mare Island: April 27, 2026 report (about 3,131 acres, 9,750–14,400 homes, CEQA schedule); July 28, 2026 extension of the South Mare Island development agreement to Sept 11, 2031; the 2019 Lennar-to-Nimitz transfer; the Connolly Street pause |
+| `bart.legistar1.com/bart/`, `webapi.legistar.com/v1/bart/` | BART Board | BART housing: Lake Merritt stays at 557 homes (Building A 360); the Oakland Planning Commission approved the PDP May 19, 2021; West Oakland 522/240; North Berkeley option agreement (June 2026); Ashby West Lot agreement (Feb 2026) |
+| `dublin-development.icitywork.com`, `granicus_production_attachments.s3.amazonaws.com/dublin/` | City of Dublin | BART housing: Amador Station approved Aug 10, 2021 (5 stories, 61 ft) |
+| `alamedacounty.granicus.com` | Alameda County Board of Supervisors | Oakland Coliseum: County still negotiating price and terms in closed session as of Oct 6, 2026 |
+| `solano.legistar.com`, `webapi.legistar.com/v1/solano/` | Solano County | Suisun: County opposed the shipbuilding bill (Aug 25, 2026); the airport commission calls the Draft EIR "forthcoming" (Aug 27, 2026) |
+| `storage.googleapis.com/proudcity/solanocountylafcoca/` | Solano LAFCo's file store (linked from solanolafco.gov) | Suisun: no annexation application filed with LAFCo as of Aug 10, 2026 |
+| `suisun.com` | City of Suisun City (main site) | Suisun: the reimbursement agreement text (growth phased to 2071) |
+| `public-gis-missioncity.opendata.arcgis.com` | City of Santa Clara (ArcGIS Hub) | Tasman East: zoning layer license (PDDL 1.0) |
+
 ## Status of the other projects
 
 All projects are mapped and pass the official-sources test. What remains open is listed in
