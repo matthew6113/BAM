@@ -7,9 +7,11 @@ import type { Feature, FeatureCollection, MultiPolygon, Point, Polygon } from 'g
 import { stageColor, STAGE_KEYS, type StageKey, type Theme } from '../theme/theme';
 import {
   boundaryLine,
+  boundaryOf,
   centroidOf,
   landUseOf,
   MAPPED_PROJECTS,
+  markerPointsOf,
   massingOf,
   pointFeature,
   siteOf,
@@ -30,13 +32,14 @@ export interface Selection {
 
 const EMPTY: FeatureCollection = { type: 'FeatureCollection', features: [] };
 
-/** One point per mapped project (site centroid), for the regional markers. */
+/** One point per mapped project (site centroid; one per piece for scattered sites), for the regional markers. */
 function projectPoints(): FeatureCollection<Point> {
   return {
     type: 'FeatureCollection',
-    features: MAPPED_PROJECTS.map((p) => {
-      const site = siteOf(p.id)!;
-      return pointFeature(centroidOf(site.geometry), { id: p.id, name: p.name, stage: p.stage });
+    features: MAPPED_PROJECTS.flatMap((p) => {
+      const parts = (boundaryOf(p.id)?.features ?? []).filter((f) => f.properties.kind === 'sub-area').map((f) => f.geometry);
+      const at = markerPointsOf(siteOf(p.id)!.geometry, parts);
+      return at.map((xy) => pointFeature(xy, { id: p.id, name: p.name, stage: p.stage, scattered: at.length > 1 }));
     }),
   };
 }
@@ -120,6 +123,7 @@ export function projectLayers(
   const others: ExpressionSpecification = hidden.length
     ? ['all', ['!=', ['get', 'id'], selectedId], ['!', ['in', ['get', 'id'], ['literal', hidden]]]]
     : ['!=', ['get', 'id'], selectedId];
+  const isSelected: ExpressionSpecification = ['==', ['get', 'id'], selectedId];
   const landed = selection?.phase === 'landed';
   const exaggeration = theme.map.heightExaggeration;
   // Before landing, buildings that have not risen yet stand at zero height.
@@ -228,12 +232,15 @@ export function projectLayers(
       type: 'circle',
       source: 'project-points',
       maxzoom: 13,
-      filter: others,
+      // A scattered program (BART's station sites) keeps its markers once selected: from its
+      // regional landing view the sites themselves are only a few pixels across.
+      filter: ['any', others, ['all', isSelected, ['==', ['get', 'scattered'], true]]],
       paint: {
         'circle-color': stageCol,
-        'circle-radius': ['interpolate', ['linear'], ['zoom'], 6, 4, 10, 6, 12.5, 7],
-        'circle-stroke-color': c.land,
-        'circle-stroke-width': 1.5,
+        'circle-radius': ['interpolate', ['linear'], ['zoom'],
+          6, ['case', isSelected, 5, 4], 10, ['case', isSelected, 8, 6], 12.5, ['case', isSelected, 9, 7]],
+        'circle-stroke-color': ['case', isSelected, c.labels, c.land],
+        'circle-stroke-width': ['case', isSelected, 2, 1.5],
         'circle-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
         'circle-stroke-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
       },

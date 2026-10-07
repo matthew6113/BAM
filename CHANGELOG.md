@@ -3,6 +3,34 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-07 (BART station-area housing, added)
+
+New project `bart-station-housing`, added at Matthew's request as one program-level entry: BART's
+housing on its own station land where the work isn't finished. No single site reaches the usual
+1,000-home bar (see `docs/official-research/candidates-transit-south-bay.md`). Re-checked BART's
+upcoming and completed TOD pages today: Millbrae's Gateway is now listed as completed (2025), so it
+is left out with the other 15 delivered stations (4,232 homes, 874,000 sq ft). Six sites are drawn:
+West Oakland (762 homes; 240 affordable under construction since Sept 14, 2026), Lake Merritt (557
+homes and up to 500,000 sq ft of office; the senior building is under construction), North Berkeley
+(739 homes, entitled Dec 2024), the Ashby West Lot (up to 600 homes; developer selected), El Cerrito
+Plaza (743 homes; first building under construction since Nov 2025) and Amador Station at West
+Dublin/Pleasanton (300 affordable homes; awaiting funding). Homes total 3,701, an explicit sum of the
+official per-site figures (Ashby at its "up to" figure). Walnut Creek's last phase, Fremont, Bay Fair
+and Richmond are named in the record but not drawn: no official source places a defined project on a
+parcel yet.
+
+Boundary: one part per site from BART's own TOD Work Plan GIS layer (BART's ArcGIS organisation,
+added to `src/projects/official.ts`), selected by BART's "in progress" status or by APNs named in City
+of Oakland and City of Dublin records. Massing: West Oakland (2020 revised PDP), Lake Merritt (2021 tract
+map and zoning table) and El Cerrito Plaza (2024 approved master plan) are traced from the approved plans
+with their heights; North Berkeley, Ashby and Amador Station are illustrative height-limit envelopes (80 ft
+R-BMU, 90 ft at Amador). Conflicts between official documents (Lake Merritt 557 vs 636 homes, start date,
+El Cerrito heights) are in the record's `verify` list. Pipeline: `bam_pipeline.sites.bart_station_housing`
+(in `make sites`). The landing camera frames all six stations from El Cerrito to Dublin (centred on the
+sites' centroid, as the camera test requires); because the sites are only a few pixels across at that
+scale, a site whose centroid falls more than 1 km off it now gets one regional marker per station, and
+those markers stay visible (slightly larger) while the program is open. No other project's markers change.
+
 ## 2026-10-06 (project photos and official links)
 
 Project photos, approved by Matthew: one openly licensed or public-domain photo for each of 23
