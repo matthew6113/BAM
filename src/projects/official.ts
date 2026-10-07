@@ -30,6 +30,8 @@ const OFFICIAL_HOSTS = [
   'permitsonoma.org', // Permit Sonoma, Sonoma County's planning department
   'cloverdale.net', // City of Cloverdale (agendas, staff reports)
   'cloverdale.granicus.com', // City of Cloverdale's agenda file server
+  // Transit and regional agencies' own sites, several on non-government domains
+  // (Matthew, 2026-10-07: approved, with the agenda and document stores below)
   'vta.org', // Santa Clara Valley Transportation Authority (www., gis., gtfs. subdomains)
   'vtabart.org', // VTA's BART Silicon Valley Phase II project site (reports, FTA oversight reports)
   'diridonsj.org', // Diridon Station partner agencies' project site, run by the City of San José
