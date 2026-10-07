@@ -163,3 +163,28 @@ markers between zoom 12 and 13.
 
 Still open: SF's dots overlap at the whole-bay zoom; the slate "partly built" color stays close
 to grey; UI chips are pure white on the off-white paper.
+
+## 2026-10-07: stage colors, International orange (Matthew)
+
+Chosen from five schemes (bay blue, International orange, bay teal, a hue per stage, night).
+Placeholders still, until Matthew's palette; this supersedes the stage table in SPEC section 4.
+
+| Stage | Color |
+|---|---|
+| Proposed | `#D0612C` |
+| Entitlement | `#C04E1C` |
+| Entitled | `#A93F12` |
+| Infrastructure | `#8C310C` |
+| Under construction | `#6C2408` |
+| Partly built | `#8C6A55` |
+| Complete | the building ink (`@buildings`) |
+| Paused | `#4F6E8E` |
+| Distressed | `#7A1E4A` |
+
+- Every stage now has at least 3:1 against land and water (the old light blues failed); a test
+  enforces it.
+- Paused and distressed sit off the orange ramp (slate blue, plum) so they read as exceptions.
+- The previous colors and blues are kept as the "Cool white and blue (before Oct 7)" preset;
+  presets can now carry stage colors.
+- Still open: the selection outline (`#000000`) is under 3:1 against the building ink; adjacent
+  orange stages are close on small dots (the panel always names the stage).

@@ -144,7 +144,13 @@ export function StylePanel({ theme, onChange, onClose }: Props) {
             const name = (e.target as HTMLSelectElement).value;
             if (name === '__default') return onChange(structuredClone(defaultTheme));
             const p = presets.presets.find((x) => x.name === name);
-            if (p) set((t) => { Object.assign(t.colors, p.colors); t.name = p.name; });
+            if (p) {
+              set((t) => {
+                Object.assign(t.colors, p.colors);
+                if ('stages' in p) Object.assign(t.stages, p.stages);
+                t.name = p.name;
+              });
+            }
           }}
         >
           <option value="">Choose a preset…</option>

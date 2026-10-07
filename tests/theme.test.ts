@@ -33,8 +33,17 @@ describe('contrast helpers', () => {
     expect(over('#1E1E1E', 0.85, '#FFFFFF')).toBe('#404040');
   });
 
-  it('reports the placeholder palette issues found in the planning audit', () => {
-    const issues = contrastIssues(defaultTheme).map((i) => `${i.subject}/${i.against}`);
+  it('gives every stage at least 3:1 against land and water', () => {
+    const issues = contrastIssues(defaultTheme).filter((i) => i.subject.startsWith('Stage'));
+    expect(issues).toEqual([]);
+  });
+
+  it('still reports the old blue palette issues found in the planning audit', () => {
+    const old = normalizeTheme({
+      colors: { land: '#FFFFFF', water: '#ECEFF2', buildings: '#1E1E1E' },
+      stages: { proposed: '#9DB4E0' },
+    });
+    const issues = contrastIssues(old).map((i) => `${i.subject}/${i.against}`);
     // Proposed (#9DB4E0) is about 2.1:1 on white; selection (#000) is about 2:1 on the ink.
     expect(issues).toContain('Stage: proposed/land');
     expect(issues).toContain('Selection/buildings');
