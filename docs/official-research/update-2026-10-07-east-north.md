@@ -1,5 +1,7 @@
 # Official-source pass, 2026-10-07: East Bay, North Bay and BART
 
+> Matthew approved the flagged hosts on 2026-10-07; the facts held for them are applied (see `CHANGELOG.md`, "hosts approved; held facts applied").
+
 Projects: concord-naval-weapons-station, oakland-coliseum, alameda-point, brooklyn-basin,
 suisun-expansion, mare-island, sonoma-developmental-center, esmeralda, bart-station-housing.
 

@@ -3,6 +3,45 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-07 (hosts approved; held facts applied)
+
+Matthew approved the eight agency hosts listed in `docs/OFFICIAL-SOURCES.md` ("Hosts approved 2026-10-07"), and
+the facts held for them are applied. Findings: `docs/official-research/update-2026-10-07-east-north.md` and
+`update-2026-10-07-peninsula-south.md`; key quotes re-checked against the documents on Oct 7. `lastVerified` unchanged.
+
+- **mare-island:**
+  - Acres 5,250 → 3,131: the City's April 27, 2026 report gives about 3,131 acres (1,302 developable) for the
+    draft new plan, which keeps the existing plan boundary (the drawn 2005 plan area measures about 3,090). The
+    5,250 is the whole island in the 2005 EIR.
+  - The April 2026 range (9,750 to 14,400 homes, 895 dormitory units) and the City's tentative schedule: NOP late
+    summer 2026, public draft EIR winter 2026–27, adoption hearings fall or winter 2027.
+  - Timeline: 2001 Lennar development agreement; the July 31, 2019 consent to transfer to the Nimitz Group (escrow
+    closed November 2019); the Connolly Street pause (Apr 27, 2026); the final extension to Sept 11, 2031
+    (Resolution 138 N.C., July 28, 2026).
+  - Press corrected: the 2019 purchase was Lennar's South Island, about 670 acres, not "about 500". Both press
+    timeline entries are dropped from `reported`, which is now empty.
+- **oakland-coliseum:** the County Board was still negotiating price and terms in closed session on Oct 6, 2026;
+  no closing recorded. Next milestone notes the Sept 1 target has passed (deadline Jan 30, 2027).
+- **suisun-expansion:**
+  - No annexation application filed with Solano LAFCo as of Aug 10, 2026.
+  - The County's airport land use commission calls the Draft EIR "forthcoming" (Aug 2026).
+  - The posted (unsigned) reimbursement agreement phases growth to full buildout in 2071.
+  - Solano County opposed the shipbuilding bill 3–2 (Aug 25, 2026).
+  - The June 10, 2025 Council approval is now also sourced to County file 25-577.
+- **bart-station-housing:**
+  - Resolved from BART Board records:
+    - Lake Merritt stays at 557 homes, approved by the Oakland Planning Commission on May 19, 2021.
+    - The senior building's final development plan was approved July 20, 2022, with completion expected spring 2027.
+    - West Oakland is 522 market rate and 240 affordable.
+    - North Berkeley stays at 739; its option agreement was executed June 2026.
+    - The Ashby West Lot negotiating agreement was executed February 2026.
+  - Amador Station (City of Dublin): Site Development Review approved Aug 10, 2021 for 300 affordable homes in two
+    buildings of 5 stories and 61 ft; agreements Sept 21, 2021; building permits for the first building under
+    review. Its illustrative envelope is now drawn at the approved 61 ft instead of the 90-ft zoning limit
+    (`make sites` output; only that feature changed).
+- **tasman-east:** the City of Santa Clara's open-data terms (May 21, 2018, §IX) put the zoning layer under ODC
+  PDDL 1.0; recorded in `data/CREDITS.md` and the boundary file. The license verify item is resolved.
+
 ## 2026-10-07 (official-source pass: East Bay, North Bay and BART)
 
 Findings: `docs/official-research/update-2026-10-07-east-north.md`. `lastVerified` unchanged. Facts whose only

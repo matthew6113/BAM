@@ -97,22 +97,22 @@ Network access was broadened on 2026-10-02 and every lead below was read:
 - The SF Legistar API (webapi.legistar.com) stops around 2020; read file pages on
   sfgov.legistar.com instead. sfgov.legistar.com is now an official host.
 
-## Hosts awaiting Matthew's approval (2026-10-07)
+## Hosts approved 2026-10-07
 
-All of these are agency-run systems, on vendor domains under the agency's own name or path, like the
-hosts already approved. They aren't in `src/projects/official.ts` yet, so the facts below are held until
-Matthew approves them.
+These agency-run systems, on vendor domains under the agency's own name or path, were approved by Matthew on
+2026-10-07 and added to `src/projects/official.ts`. The facts that waited on them are now applied (logged in
+`CHANGELOG.md`).
 
-| Host | Agency | Facts waiting |
+| Host | Agency | Facts applied |
 |---|---|---|
 | `vallejoca.api.civicclerk.com` | City of Vallejo (agendas, staff reports, minutes) | Mare Island: April 27, 2026 report (about 3,131 acres, 9,750–14,400 homes, CEQA schedule); July 28, 2026 extension of the South Mare Island development agreement to Sept 11, 2031; the 2019 Lennar-to-Nimitz transfer; the Connolly Street pause |
 | `bart.legistar1.com/bart/`, `webapi.legistar.com/v1/bart/` | BART Board | BART housing: Lake Merritt stays at 557 homes (Building A 360); the Oakland Planning Commission approved the PDP May 19, 2021; West Oakland 522/240; North Berkeley option agreement (June 2026); Ashby West Lot agreement (Feb 2026) |
-| `dublin-development.icitywork.com`, `granicus_production_attachments.s3.amazonaws.com/dublin/` | City of Dublin | BART housing: Amador Station approved Aug 10, 2021 (5 stories, 61 ft) |
+| `dublin-development.icitywork.com`, `granicus_production_attachments.s3.amazonaws.com/dublin/` | City of Dublin | BART housing: Amador Station approved Aug 10, 2021 (5 stories, 61 ft); its envelope is now drawn at 61 ft |
 | `alamedacounty.granicus.com` | Alameda County Board of Supervisors | Oakland Coliseum: County still negotiating price and terms in closed session as of Oct 6, 2026 |
-| `solano.legistar.com`, `webapi.legistar.com/v1/solano/` | Solano County | Suisun: County opposed the shipbuilding bill (Aug 25, 2026); the airport commission calls the Draft EIR "forthcoming" (Aug 27, 2026) |
+| `solano.legistar.com`, `webapi.legistar.com/v1/solano/` | Solano County | Suisun: County opposed the shipbuilding bill (Aug 25, 2026); the airport commission calls the Draft EIR "forthcoming" (Aug 27, 2026); the Council's June 10, 2025 agreement (County file 25-577) |
 | `storage.googleapis.com/proudcity/solanocountylafcoca/` | Solano LAFCo's file store (linked from solanolafco.gov) | Suisun: no annexation application filed with LAFCo as of Aug 10, 2026 |
 | `suisun.com` | City of Suisun City (main site) | Suisun: the reimbursement agreement text (growth phased to 2071) |
-| `public-gis-missioncity.opendata.arcgis.com` | City of Santa Clara (ArcGIS Hub) | Tasman East: zoning layer license (PDDL 1.0) |
+| `public-gis-missioncity.opendata.arcgis.com` | City of Santa Clara (ArcGIS Hub) | Tasman East: zoning layer license (ODC PDDL 1.0, terms §IX, checked 2026-10-07), recorded in `data/CREDITS.md` |
 
 ## Status of the other projects
 
@@ -123,9 +123,12 @@ network access; the "Update with full network access" sections in `docs/official
 supersede it.
 
 ### Next
-- Work through every `reported` and `verify` item against official records. A pass
-  started 2026-10-07; its results go in `docs/official-research/` and the changes are
-  logged in `CHANGELOG.md`.
+- The 2026-10-07 pass covered every project then mapped (findings in
+  `docs/official-research/update-2026-10-07-*.md`, changes in `CHANGELOG.md`). Still open
+  from it: Potrero's ordinance numbers once the Mayor signs; Esmeralda after the Council's
+  Oct 14, 2026 action; Mare Island's CEQA notice of preparation (City: late summer 2026).
+- Lead: CEQAnet lists a final EIR for the Tanforan Redevelopment Project (City of San
+  Bruno, SCH 2023120409) posted Oct 5, 2026; check it against the `tanforan` record.
 - For each new project: find the official boundary (prefer GIS: a plan area, Special Use
   District or parcels, over tracing a figure), confirm each fact against an agency
   source, and move press-only facts into `reported`. `src/projects/official.ts` lists the
