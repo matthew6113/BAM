@@ -1,0 +1,113 @@
+{
+  "id": "northgate-san-rafael",
+  "name": "Northgate Town Square",
+  "aliases": [
+    "Northgate Mall redevelopment",
+    "Northgate Mall Redevelopment Project",
+    "5800 Northgate Drive"
+  ],
+  "city": "San Rafael",
+  "county": "Marin",
+  "subregion": "North Bay",
+  "approxCenter": [
+    -122.5444,
+    38.0037
+  ],
+  "acres": 44.76,
+  "acresNote": "The City's approvals (Resolution 15360 and Ordinance 2043, Dec 2024) define the Project Site as the approximately 44.76-acre Northgate Mall property, APNs 175-060-12, -40, -59, -61, -66 and -67. The six parcels in the Marin County parcel layer come to about 43.9 acres. The 555 Northgate Drive affordable housing project (APN 175-060-32) is a separate site across Northgate Drive and is not part of this project.",
+  "program": {
+    "homes": 1422,
+    "affordableHomes": 143,
+    "affordablePct": 10,
+    "officeLabSqft": null,
+    "commercialSqftTotal": 219380,
+    "retailSqft": null,
+    "hotelKeys": null,
+    "openSpaceAcres": null,
+    "notes": "Approved maximums at full buildout (Phase 2, '2040'): 1,422 homes, including 143 deed-restricted homes for low-income households (10%, dispersed through every residential building), and 219,380 sq ft of commercial space, down from about 766,507 sq ft in the existing mall. Phase 1 ('2025'): 864 homes (87 affordable) with 501,941 sq ft of commercial space still operating, including existing buildings kept until Phase 2. Six residential buildings: two townhome blocks (38 and 100 homes, 35 ft) and four apartment buildings of 280, 446, 309 and 249 homes (62 to 72 ft to the roof, 67.5 to 77.5 ft to the parapet), with ground-floor shops in the Phase 2 buildings. A density bonus concession raises the height limit to 78 ft. The privately owned, publicly accessible Town Square is 56,975 sq ft, with a 9,604 sq ft bicycle hub."
+  },
+  "developer": "Merlone Geier Partners, LLC (owner and applicant)",
+  "publicPartners": [
+    "City of San Rafael (lead agency)"
+  ],
+  "stage": "entitled",
+  "stageNote": "Approved. The City Council certified the EIR and approved the subdivision map, master use permit, design review and affordable housing agreement on Dec 2, 2024, and adopted the Planned Development rezoning (Ordinance 2043) on Dec 16, 2024. The City's project page says demolition was to begin in fall 2025; no City record yet confirms demolition or building permits, and the City's 2025 housing report counts no building permits for the project.",
+  "timeline": [
+    {
+      "date": "2017",
+      "event": "Merlone Geier Partners buys the Northgate Mall from The Macerich Company."
+    },
+    {
+      "date": "2021-03-10",
+      "event": "Merlone Geier applies for a Planned Development rezoning, subdivision map, master use permit and design review to redevelop the mall."
+    },
+    {
+      "date": "2021-12-09",
+      "event": "The City issues the notice of preparation for the project's EIR (SCH 2021120187)."
+    },
+    {
+      "date": "2024-01-05",
+      "event": "The City releases the Draft EIR."
+    },
+    {
+      "date": "2024-06-04",
+      "event": "Merlone Geier submits the revised project that the City later approves; it withdraws its development agreement application."
+    },
+    {
+      "date": "2024-10-29",
+      "event": "Planning Commission recommends approval (Resolutions 24-06, 24-07 and 24-08)."
+    },
+    {
+      "date": "2024-12-02",
+      "event": "City Council certifies the EIR (Resolution 15359) and approves the subdivision map, master use permit, design review, sign program and project-wide affordable housing agreement (Resolution 15360), 5–0."
+    },
+    {
+      "date": "2024-12-16",
+      "event": "City Council adopts Ordinance 2043, rezoning the site to the Northgate Town Square Planned Development District, 5–0."
+    },
+    {
+      "date": "2026-02-13",
+      "event": "The City seeks consultants for a Northgate Specific Plan covering the 100-plus-acre area around the mall."
+    }
+  ],
+  "nextMilestone": "Demolition and building permits for Phase 1 (the City's project page says demolition was to begin in fall 2025).",
+  "summary": "The redevelopment of the 1960s Northgate Mall in Terra Linda into an open-air town center: up to 1,422 homes, a town square and about 219,000 sq ft of shops and restaurants in place of most of the mall. Approved in 2024 and planned in two phases.",
+  "massingNotes": "Boundary: Marin County parcels (gis.marinpublic.com BaseMap/Basemap FeatureServer layer 13, Prop_ID 175-060-12, -40, -59, -61, -66, -67); 43.9 acres against 44.76 in the approvals. No license is stated on the service, so confirm terms. The ordinance's Exhibit D legal description and plan sheet SD-12 can check it. Buildings: the approved Development Plan (Ordinance 2043 Exhibit C, Phase 1 and Phase 2 site plans) and the Building Height Summary (Planning Commission staff report, Oct 29, 2024, Table 5, p. 23): Residential 1 and 2 townhomes 35 ft; Residential 3 and 5 62 ft (67.5 ft parapet); Residential 4 and 6 72 ft (77.5 ft parapet); Town Square Pavilion 45 ft 3 in; Major 1 46 ft 5 in; new retail pads 24 to 31 ft; cinema (existing) 46 ft 8 in. Phase 2 demolishes the Macy's and Kohl's buildings (CEQAnet notice of determination).",
+  "officialLinks": [
+    "https://www.cityofsanrafael.org/northgatetownsquaredev/",
+    "https://www.cityofsanrafael.org/northgate-town-square-rev/"
+  ],
+  "sources": [
+    "https://www.cityofsanrafael.org/northgatetownsquaredev/",
+    "https://www.cityofsanrafael.org/northgate-town-square-rev/",
+    "https://storage.googleapis.com/proudcity/sanrafaelca/2025/07/CC-Resolution-15359-Northgate-Town-Square-Project-Signed.pdf",
+    "https://storage.googleapis.com/proudcity/sanrafaelca/2025/07/Reso-15360-with-Attachments-signed.pdf",
+    "https://storage.googleapis.com/proudcity/sanrafaelca/2024/11/6.a-Northgate-Town-Square-Project.pdf",
+    "https://storage.googleapis.com/proudcity/sanrafaelca/2024/11/CC-SA-Minutes-2024-12-02.pdf",
+    "https://storage.googleapis.com/proudcity/sanrafaelca/2024/12/4.b-Northgate-Town-Square-Project-Ordinance-Adoption.pdf",
+    "https://storage.googleapis.com/proudcity/sanrafaelca/2025/02/CC-SA-Minutes-2024-12-16.pdf",
+    "https://storage.googleapis.com/proudcity/sanrafaelca/2024/10/A-PC-Staff-Report-10-29-2024.pdf",
+    "https://storage.googleapis.com/proudcity/sanrafaelca/2024/10/H-ATTACHMENT-2-Exhibit-C-Northgate-Town-Square-Development-Plan-2025-2040.pdf",
+    "https://storage.googleapis.com/proudcity/sanrafaelca/2024/10/I-ATTACHMENT-2-Exhibit-D-legal-description.pdf",
+    "https://storage.googleapis.com/proudcity/sanrafaelca/2026/03/0ce061e5-3.b-general-plan-and-housing-element-annual-progress-reports.pdf",
+    "https://storage.googleapis.com/proudcity/sanrafaelca/2025/11/e3d5ba62-4.d-funding-agreements-to-prepare-the-northgate-and-souteast-san-rafael-specific-plans.pdf",
+    "https://www.cityofsanrafael.org/rfp-northgate-specific-plan/",
+    "https://ceqanet.lci.ca.gov/2021120187",
+    "https://ceqanet.lci.ca.gov/2021120187/7",
+    "https://gis.marinpublic.com/arcgis/rest/services/BaseMap/Basemap/FeatureServer/13"
+  ],
+  "verify": [
+    "whether demolition has started and any demolition, grading or building permits issued (the City page said fall 2025; only a student newspaper reports work in 2026)",
+    "recording of the project-wide affordable housing agreement and any final map",
+    "the license terms of the Marin County parcel layer",
+    "the commercial total: the approvals say 219,380 sq ft at buildout, while the City's project pages still say 225,100 sq ft (the 2021 figure)"
+  ],
+  "reported": {
+    "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city or other public records confirm each one.",
+    "stageNote": "A San Rafael high school student newspaper (Apr 27, 2026) reports that 2026 began with deconstruction of parts of the former mall, including the old Sears building, with Ghilotti Bros. crews gutting it ahead of full demolition later in the year.",
+    "sources": [
+      "https://thevoice.srcs.org/9284/student-life/the-northgate-mall-begins-a-new-chapter/"
+    ]
+  },
+  "lastVerified": "2026-10-07"
+}

@@ -1,0 +1,108 @@
+{
+  "id": "diridon-station",
+  "name": "Diridon Station redevelopment",
+  "aliases": [
+    "San José Diridon Station",
+    "Diridon Integrated Station Concept (DISC)",
+    "Diridon Station Program",
+    "At-Grade Station Alternative"
+  ],
+  "city": "San Jose",
+  "county": "Santa Clara",
+  "subregion": "South Bay",
+  "approxCenter": [
+    -121.9024,
+    37.3307
+  ],
+  "acres": null,
+  "acresNote": "No official acreage for the station project was found. Its planning boundary is the DISC boundary (Alternatives Development Report, Figure 2-1), and the August 2026 Steering Committee materials map a 'Future Station Project Footprint'; neither gives an area. The Caltrain maintenance facility just north of the station (nearly 13 acres) is kept, not rebuilt. Approximate center is the San Jose Diridon Station parent stop in VTA's GTFS feed.",
+  "program": {
+    "homes": null,
+    "affordableHomes": null,
+    "affordablePct": null,
+    "officeLabSqft": null,
+    "commercialSqftTotal": null,
+    "retailSqft": null,
+    "hotelKeys": null,
+    "openSpaceAcres": null,
+    "notes": "A rebuilt rail station, so the building program fields do not apply. The preferred At-Grade Alternative keeps tracks and platforms at about today's level and digs a new concourse beneath them, with connections down to light rail and the future BART station; it keeps the historic depot and the Annex facade. Conceptual layout: three tracks and two platforms for Union Pacific, Amtrak, ACE and Capitol Corridor, four electrified tracks and two platforms for Caltrain, and three electrified tracks and two platforms for high-speed rail. The concourse level would include over 200,000 sq ft of new retail space. The Diridon Program adds street and rail-crossing work at Park Avenue, San Carlos Street (bridge replacement), Auzerais Avenue (new grade separation), West Virginia Street (closure with a walk-bike undercrossing), Stockton Avenue/The Alameda, and noise barriers. Two partner-owned sites (32 and 60 Stockton Avenue, owned by VTA; 698 W. Santa Clara Street, owned by Caltrain) are to be studied as transit-oriented development. Conceptual cost $3 billion to $6 billion and 7 to 10 years of construction. The surrounding Diridon Station Area Plan (up to 12,900 homes and 14.7 million sq ft of office and commercial space) is a separate city plan and is not counted here."
+  },
+  "developer": null,
+  "publicPartners": [
+    "Diridon Station Steering Committee (decision-making body under the partners' cooperative agreement)",
+    "Caltrain / Peninsula Corridor Joint Powers Board (leads engineering and environmental review)",
+    "City of San José (community engagement)",
+    "Santa Clara Valley Transportation Authority (governance, funding and advocacy)",
+    "California High-Speed Rail Authority",
+    "Metropolitan Transportation Commission"
+  ],
+  "stage": "entitlement",
+  "stageNote": "In environmental review. The partner agencies' Steering Committee chose the At-Grade Alternative on May 21, 2025, and the environmental phase began in late 2025 with a three-year, $41 million budget. As of August 2026 the program was still being defined for review (no notice of preparation yet), the committee was backing state legislation (SB 1375) for a CEQA exemption for the station, and a bill to create a construction authority was being drafted for 2027. There is no construction funding.",
+  "timeline": [
+    {
+      "date": "2018-07",
+      "event": "The City of San José, Caltrain, VTA, the High-Speed Rail Authority and MTC sign a cooperative agreement to plan the new station."
+    },
+    {
+      "date": "2020-02",
+      "event": "San José's City Council, Caltrain's Board and the High-Speed Rail Authority Board accept the staff-recommended Concept Layout from the Diridon Integrated Station Concept Plan."
+    },
+    {
+      "date": "2024",
+      "event": "The partners sign an updated cooperative agreement, replacing the advisory board with a Steering Committee that has voting authority."
+    },
+    {
+      "date": "2025-05-21",
+      "event": "The Diridon Station Steering Committee approves the At-Grade Alternative and the Diridon Program of Projects for environmental review, with a three-year budget for that phase."
+    },
+    {
+      "date": "2025-06-02",
+      "event": "San José's Transportation and Environment Committee recommends that the City Council accept the Steering Committee's decision (Council agenda June 10, 2025)."
+    },
+    {
+      "date": "2025-08-18",
+      "event": "The partners publish the Diridon Station Alternatives Development Report."
+    },
+    {
+      "date": "2025",
+      "event": "The environmental phase begins in the fourth quarter of 2025, with ICF as the partners' environmental consultant."
+    },
+    {
+      "date": "2026-05-20",
+      "event": "The Steering Committee votes to support SB 1375, a CEQA exemption for urban intermodal rail stations, and appoints a subcommittee to draft legislation for a construction authority."
+    },
+    {
+      "date": "2026-08-19",
+      "event": "The Steering Committee receives the environmental review update: barrier locations and two transit-oriented development sites are added to the program definition."
+    }
+  ],
+  "nextMilestone": "Neighborhood meetings on the project definition from September to November 2026 and a community open house in November or December 2026; a final update on the CEQA exemption in fall 2026; a draft construction-authority bill and funding plan in winter 2027, with engineering and technical studies for environmental review to follow. The partners expect environmental review to take three to four years in all.",
+  "summary": "A plan by five public agencies to rebuild San José's 90-year-old Diridon Station into a hub for Caltrain, high-speed rail, BART, ACE, Capitol Corridor, Amtrak and light rail, keeping the tracks at street level with a new concourse dug beneath them. The partners estimate $3 billion to $6 billion and 7 to 10 years of construction; environmental review has begun, but construction funding has not been found.",
+  "massingNotes": "Draw as a station footprint, not buildings, labelled 'Approximate boundary' and 'Concept design'. Leads: Alternatives Development Report (Aug 2025, diridonsj.org), Figure 2-1 'DISC Boundary' (PDF p. 14), Figure 2-3 concourse plan and Figure 2-5 track and platform layout; the August 19, 2026 Steering Committee packet's TOD slide maps the 'Future Station Project Footprint' and the two TOD sites; the 2019 DISC Layout Development Report Appendix B has scaled layout drawings of the earlier elevated concept (superseded). No GIS layer for the footprint was found. The BART Diridon station (BSVII) sits underground on the northeast side and is a separate project; high-speed rail's San José station is part of the Authority's San Francisco to San José and San José to Merced projects.",
+  "officialLinks": [
+    "https://www.diridonsj.org/",
+    "https://www.diridonsj.org/s/DiridonStation_AlternativesDevelopmentReport_MainReport-accessible.pdf"
+  ],
+  "sources": [
+    "https://www.diridonsj.org/",
+    "https://www.diridonsj.org/disc",
+    "https://www.diridonsj.org/project-updates/committee-steers-at-grade-alternative-into-environmental-review",
+    "https://www.diridonsj.org/project-updates/august-2025-project-update-alternatives-development-report-published",
+    "https://www.diridonsj.org/s/DiridonStation_AlternativesDevelopmentReport_ExecutiveSummary.pdf",
+    "https://www.diridonsj.org/s/DiridonStation_AlternativesDevelopmentReport_MainReport-accessible.pdf",
+    "https://sanjose.legistar.com/LegislationDetail.aspx?ID=14732",
+    "https://legistar.granicus.com/sanjose/attachments/e09b1345-6450-452c-93a6-64d9facaee10.pdf",
+    "https://santaclaravta.iqm2.com/Citizens/Detail_Meeting.aspx?ID=4675",
+    "https://santaclaravta.iqm2.com/Citizens/FileOpen.aspx?Type=1&ID=4481&Inline=True",
+    "https://santaclaravta.iqm2.com/Citizens/FileOpen.aspx?Type=15&ID=3130&Inline=True",
+    "https://gtfs.vta.org/gtfs_vta.zip"
+  ],
+  "verify": [
+    "the City Council's action on June 10, 2025 (file 25-672 was renumbered; no outcome found on Legistar)",
+    "the cost basis: the Alternatives Development Report's executive summary says $3 to $6 billion in 2025 dollars, while its main report table and the City's June 2025 memo say 2023 dollars",
+    "whether SB 1375 (2025–26 session) passed and exempts the station from CEQA (leginfo.legislature.ca.gov blocked scripted access)",
+    "when the notice of preparation or notice of intent is filed, and which agency is CEQA lead (none found on CEQAnet as of 2026-10-07)",
+    "an official footprint or acreage for the station project"
+  ],
+  "lastVerified": "2026-10-07"
+}

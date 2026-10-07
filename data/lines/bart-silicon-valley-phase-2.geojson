@@ -1,0 +1,613 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "bart-silicon-valley-phase-2",
+  "source": "GIS: VTA, BSVII_Alignment_2022 (track alignment) and BSV Phase II Stations, public hosted feature services on gis.vta.org",
+  "sourceLabel": "VTA GIS alignment",
+  "sourceUrl": "https://gis.vta.org/gis/rest/services/Hosted/BSVII_Alignment_2022/FeatureServer/22",
+  "accuracy": "official",
+  "accuracyNote": "Alignment from VTA's published GIS layer of the project's tracks (dated 2022 in its name), drawn as the centreline between the two tracks. 6.5 miles as drawn including the tail track west of Santa Clara (6.2 miles from Berryessa/North San José to the Santa Clara station; VTA and FTA describe about 6 miles); the tunnel section is 5.0 miles (FTA: about five). Station points are VTA's published station sites, not platform outlines. The design may shift as VTA re-baselines the project; Newhall Yard and the portals are not drawn.",
+  "license": "VTA public GIS service (gis.vta.org, ArcGIS Enterprise hosted feature services shared publicly); no license or terms of use stated on the service or its portal item.",
+  "lengthMiles": 6.54,
+  "tunnelMiles": 5.02,
+  "berryessaToSantaClaraMiles": 6.22,
+  "layers": {
+   "alignment": "https://gis.vta.org/gis/rest/services/Hosted/BSVII_Alignment_2022/FeatureServer/22",
+   "stations": "https://gis.vta.org/gis/rest/services/Hosted/BSV_Phase_II_Stations/FeatureServer/0",
+   "phase1Stations": "https://gis.vta.org/gis/rest/services/Hosted/BSV_Phase_II_Construction/FeatureServer/11"
+  },
+  "lengthKm": 10.52
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "line",
+    "segment": "new",
+    "name": "Santa Clara and Newhall Yard (above ground)",
+    "note": "At-grade and surface track from the tail track west of Santa Clara station to the West Portal",
+    "source": "GIS: VTA BSVII_Alignment_2022 (Hosted feature service, layer 22), centreline of the two tracks"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -121.942002,
+      37.356792
+     ],
+     [
+      -121.941585,
+      37.356352
+     ],
+     [
+      -121.941494,
+      37.356261
+     ],
+     [
+      -121.941397,
+      37.356174
+     ],
+     [
+      -121.941295,
+      37.356091
+     ],
+     [
+      -121.941187,
+      37.356013
+     ],
+     [
+      -121.941074,
+      37.35594
+     ],
+     [
+      -121.940957,
+      37.355871
+     ],
+     [
+      -121.940835,
+      37.355807
+     ],
+     [
+      -121.940709,
+      37.355749
+     ],
+     [
+      -121.940579,
+      37.355696
+     ],
+     [
+      -121.940447,
+      37.355649
+     ],
+     [
+      -121.940311,
+      37.355607
+     ],
+     [
+      -121.940172,
+      37.355571
+     ],
+     [
+      -121.939704,
+      37.35546
+     ],
+     [
+      -121.939215,
+      37.355362
+     ],
+     [
+      -121.938951,
+      37.355288
+     ],
+     [
+      -121.938647,
+      37.355179
+     ],
+     [
+      -121.938358,
+      37.355046
+     ],
+     [
+      -121.933379,
+      37.352396
+     ],
+     [
+      -121.931288,
+      37.351246
+     ],
+     [
+      -121.928659,
+      37.349844
+     ],
+     [
+      -121.927853,
+      37.349429
+     ],
+     [
+      -121.927325,
+      37.349166
+     ],
+     [
+      -121.924852,
+      37.347987
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "line",
+    "segment": "tunnel",
+    "name": "Single-bore tunnel",
+    "note": "About five miles between the West Portal and the East Portal",
+    "source": "GIS: VTA BSVII_Alignment_2022 (Hosted feature service, layer 22), centreline of the two tracks"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -121.924852,
+      37.347987
+     ],
+     [
+      -121.923498,
+      37.347336
+     ],
+     [
+      -121.919564,
+      37.345477
+     ],
+     [
+      -121.918941,
+      37.345169
+     ],
+     [
+      -121.918431,
+      37.344889
+     ],
+     [
+      -121.917984,
+      37.344615
+     ],
+     [
+      -121.917725,
+      37.344443
+     ],
+     [
+      -121.917266,
+      37.344112
+     ],
+     [
+      -121.916752,
+      37.343696
+     ],
+     [
+      -121.916264,
+      37.343259
+     ],
+     [
+      -121.910665,
+      37.338129
+     ],
+     [
+      -121.910232,
+      37.337715
+     ],
+     [
+      -121.909895,
+      37.337356
+     ],
+     [
+      -121.909649,
+      37.337055
+     ],
+     [
+      -121.909429,
+      37.336742
+     ],
+     [
+      -121.909233,
+      37.33642
+     ],
+     [
+      -121.909103,
+      37.336172
+     ],
+     [
+      -121.908969,
+      37.335877
+     ],
+     [
+      -121.90885,
+      37.335577
+     ],
+     [
+      -121.90834,
+      37.334146
+     ],
+     [
+      -121.908227,
+      37.333889
+     ],
+     [
+      -121.908091,
+      37.33364
+     ],
+     [
+      -121.907985,
+      37.333479
+     ],
+     [
+      -121.907868,
+      37.333323
+     ],
+     [
+      -121.90774,
+      37.333174
+     ],
+     [
+      -121.9076,
+      37.33303
+     ],
+     [
+      -121.90745,
+      37.332894
+     ],
+     [
+      -121.907291,
+      37.332765
+     ],
+     [
+      -121.906991,
+      37.332559
+     ],
+     [
+      -121.906761,
+      37.332428
+     ],
+     [
+      -121.906519,
+      37.33231
+     ],
+     [
+      -121.906268,
+      37.332207
+     ],
+     [
+      -121.906008,
+      37.33212
+     ],
+     [
+      -121.905795,
+      37.332061
+     ],
+     [
+      -121.905468,
+      37.331991
+     ],
+     [
+      -121.905246,
+      37.331958
+     ],
+     [
+      -121.90491,
+      37.331927
+     ],
+     [
+      -121.904572,
+      37.331917
+     ],
+     [
+      -121.904177,
+      37.331921
+     ],
+     [
+      -121.900173,
+      37.33203
+     ],
+     [
+      -121.899948,
+      37.332043
+     ],
+     [
+      -121.899724,
+      37.332065
+     ],
+     [
+      -121.899447,
+      37.332107
+     ],
+     [
+      -121.899229,
+      37.332153
+     ],
+     [
+      -121.899014,
+      37.332209
+     ],
+     [
+      -121.898753,
+      37.332294
+     ],
+     [
+      -121.898499,
+      37.332393
+     ],
+     [
+      -121.898254,
+      37.332505
+     ],
+     [
+      -121.887679,
+      37.337526
+     ],
+     [
+      -121.883962,
+      37.339323
+     ],
+     [
+      -121.867416,
+      37.347173
+     ],
+     [
+      -121.866983,
+      37.347389
+     ],
+     [
+      -121.866616,
+      37.347604
+     ],
+     [
+      -121.866323,
+      37.347818
+     ],
+     [
+      -121.866096,
+      37.348022
+     ],
+     [
+      -121.865927,
+      37.348205
+     ],
+     [
+      -121.865777,
+      37.348398
+     ],
+     [
+      -121.865672,
+      37.348559
+     ],
+     [
+      -121.865559,
+      37.348767
+     ],
+     [
+      -121.865468,
+      37.348981
+     ],
+     [
+      -121.865398,
+      37.3492
+     ],
+     [
+      -121.86535,
+      37.349422
+     ],
+     [
+      -121.865323,
+      37.349647
+     ],
+     [
+      -121.865311,
+      37.349872
+     ],
+     [
+      -121.865311,
+      37.350188
+     ],
+     [
+      -121.865382,
+      37.353522
+     ],
+     [
+      -121.865407,
+      37.353792
+     ],
+     [
+      -121.865456,
+      37.35406
+     ],
+     [
+      -121.86552,
+      37.354281
+     ],
+     [
+      -121.865606,
+      37.354496
+     ],
+     [
+      -121.865763,
+      37.354788
+     ],
+     [
+      -121.865843,
+      37.354908
+     ],
+     [
+      -121.865961,
+      37.355063
+     ],
+     [
+      -121.866197,
+      37.355319
+     ],
+     [
+      -121.866466,
+      37.355554
+     ],
+     [
+      -121.866881,
+      37.355862
+     ],
+     [
+      -121.86965,
+      37.357784
+     ],
+     [
+      -121.870059,
+      37.358092
+     ],
+     [
+      -121.870444,
+      37.358418
+     ],
+     [
+      -121.870767,
+      37.358728
+     ],
+     [
+      -121.871096,
+      37.359091
+     ],
+     [
+      -121.871338,
+      37.359392
+     ],
+     [
+      -121.871451,
+      37.359548
+     ],
+     [
+      -121.871699,
+      37.359928
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "line",
+    "segment": "new",
+    "name": "East Portal approach (above ground)",
+    "note": "Surface track from the Phase I tail tracks south of Berryessa to the East Portal",
+    "source": "GIS: VTA BSVII_Alignment_2022 (Hosted feature service, layer 22), centreline of the two tracks"
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -121.871699,
+      37.359928
+     ],
+     [
+      -121.87188,
+      37.360249
+     ],
+     [
+      -121.871983,
+      37.360456
+     ],
+     [
+      -121.872114,
+      37.360752
+     ],
+     [
+      -121.872229,
+      37.361052
+     ],
+     [
+      -121.87367,
+      37.365361
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "station",
+    "status": "new",
+    "name": "Diridon",
+    "note": "Underground",
+    "source": "GIS: VTA BSV Phase II Stations layer (Diridon BART Station)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -121.901707,
+     37.331665
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "station",
+    "status": "new",
+    "name": "28th Street/Little Portugal",
+    "note": "Underground",
+    "source": "GIS: VTA BSV Phase II Stations layer (28th Street/Little Portugal BART Station)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -121.865175,
+     37.351379
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "station",
+    "status": "new",
+    "name": "Santa Clara",
+    "note": "At grade, next to the Santa Clara Caltrain station",
+    "source": "GIS: VTA BSV Phase II Stations layer (Santa Clara BART Station)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -121.933418,
+     37.353258
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "station",
+    "status": "new",
+    "name": "Downtown San José",
+    "note": "Underground",
+    "source": "GIS: VTA BSV Phase II Stations layer (Downtown San José BART Station)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -121.890172,
+     37.336617
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "station",
+    "status": "existing",
+    "name": "Berryessa/North San José",
+    "note": "Existing BART station (Phase I, opened 2020); the extension starts here",
+    "source": "GIS: VTA BSV Phase I Stations layer (Berryessa)"
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -121.874552,
+     37.368468
+    ]
+   }
+  }
+ ]
+}
