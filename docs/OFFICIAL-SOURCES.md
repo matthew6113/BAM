@@ -97,36 +97,19 @@ Network access was broadened on 2026-10-02 and every lead below was read:
 - The SF Legistar API (webapi.legistar.com) stops around 2020; read file pages on
   sfgov.legistar.com instead. sfgov.legistar.com is now an official host.
 
-## The other 24 projects
+## Status of the other projects
 
-### San Francisco (11): checked against the bucket
-
-Summary of `docs/official-research/`:
-- Well covered (approvals, program, heights, parcels): India Basin, Balboa Reservoir,
-  Pier 70, Mission Rock, Mission Bay, Candlestick Point, Hunters Point Shipyard, Treasure
-  Island, Parkmerced (2010 documents only).
-- Conflicts to resolve with the newest official figure: Pier 70 homes (data 2,000; Housing
-  Element 2023 "up to 2,150") and open space (9 vs 6.5 acres); Mission Rock homes (1,200 vs
-  "up to 1,300") and retail (200,000 vs ~241,000 gsf); Candlestick office (data 2M; latest
-  readable official figure 750,000 sq ft in 2019, before the reported 2024 transfer);
-  Treasure Island acres (405 vs ~400); India Basin acres note; Balboa open space (4.2 vs ~4).
-- Nothing official reachable: Stonestown (case 2021-012028; all its documents are on blocked
-  hosts) and Piers 30–32's current deal (only site size confirmed).
-- Every 2024–2026 event (Candlestick groundbreaking and phase split, Treasure Island phase
-  one, India Basin default, Parkmerced receivership, Pier 70 density proposal) is
-  press-only so far. Official sources for them sit on blocked hosts (OCII, TIDA, Port,
-  sfbos, CEQAnet); each findings file lists the exact documents to fetch.
+All projects are mapped and pass the official-sources test. What remains open is listed in
+each record: `reported` holds press-only facts the map doesn't show, and `verify` holds
+open questions. The San Francisco summary that used to sit here predates the broader
+network access; the "Update with full network access" sections in `docs/official-research/`
+supersede it.
 
 ### Next
-1. Done (Milestone 3): findings applied and all projects mapped.
-2. With broader network access: the Potrero D4D, DA and Addendum 2; Stonestown; and the
-   2024–2026 records above.
-3. The 13 projects outside San Francisco have no reachable official host at all.
-
-### For each project
-
-None are on the map yet; Milestone 3 adds them. For each one:
-- Find the official boundary. Prefer GIS (a plan area, Special Use District or parcels) over tracing a figure.
-- Confirm each fact in `projects.json` against an agency source.
-- Move press-only facts into `reported`.
-- `src/projects/official.ts` lists the accepted hosts, and its test enforces the rule once a project is mapped.
+- Work through every `reported` and `verify` item against official records. A pass
+  started 2026-10-07; its results go in `docs/official-research/` and the changes are
+  logged in `CHANGELOG.md`.
+- For each new project: find the official boundary (prefer GIS: a plan area, Special Use
+  District or parcels, over tracing a figure), confirm each fact against an agency
+  source, and move press-only facts into `reported`. `src/projects/official.ts` lists the
+  accepted hosts, and its test enforces the rule.
