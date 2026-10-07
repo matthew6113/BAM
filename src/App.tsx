@@ -4,7 +4,7 @@ import type { Map as MapLibreMap } from 'maplibre-gl';
 import { homeCamera, MapView, MAX_PITCH_3D, syncStyle } from './map/MapView';
 import type { Selection } from './map/projectLayers';
 import type { ViewMode } from './map/style';
-import { boundaryLine, centroidOf, getProject, loadProjectGeometry, MAPPED_PROJECTS, massingOf, siteOf } from './projects/data';
+import { alignmentOf, boundaryLine, centroidOf, getProject, loadProjectGeometry, MAPPED_PROJECTS, massingOf, siteOf } from './projects/data';
 import {
   currentCamera,
   flyIn,
@@ -123,7 +123,9 @@ export function App() {
     syncStyle(map, { theme: live.current.theme, mode: '3d', selection: flying });
     if (massing) lowerMassing(map, massing);
     const padding = panelPadding(map);
-    await flyIn(map, landingCamera(map, project, site.geometry, padding), padding, boundaryLine(site.geometry), current);
+    // A line project draws its alignment; any other project, its site boundary.
+    const drawing = alignmentOf(id) ?? boundaryLine(site.geometry);
+    await flyIn(map, landingCamera(map, project, site.geometry, padding), padding, drawing, current);
     if (!current()) return;
 
     const landed: Selection = { id, phase: 'landed' };
