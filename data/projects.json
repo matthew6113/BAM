@@ -2534,7 +2534,7 @@
         "Alameda County"
       ],
       "stage": "proposed",
-      "stageNote": "The City's interest is being sold. Under Ordinance 13895 (July 21, 2026), Oakland Acquisition Company buys the Arena Parcel for $50M in cash and the Stadium Parcel for $60M with seller financing in one closing, targeted for Sept 1, 2026 and no later than Jan 30, 2027. Alameda County approved a non-binding term sheet for its interest on May 28, 2026. No development plan has been approved.",
+      "stageNote": "The City's interest is being sold. Under Ordinance 13895 (July 21, 2026), Oakland Acquisition Company buys the Arena Parcel for $50M in cash and the Stadium Parcel for $60M with seller financing in one closing, targeted for Sept 1, 2026 and no later than Jan 30, 2027. Alameda County approved a non-binding term sheet for its interest on May 28, 2026. No development plan has been approved. As of Oct 6, 2026, the County Board was still negotiating price and terms for its interest in closed session; no closing has been recorded.",
       "timeline": [
         {
           "date": "2015-03-31",
@@ -2565,7 +2565,7 @@
           "event": "City Council gives final passage to the second amendment of the sale (Ordinance 13895) and allocates $50M of proceeds to CalPERS (Resolution 91262)."
         }
       ],
-      "nextMilestone": "Closing of the sale of both parcels (target Sept 1, 2026; no later than Jan 30, 2027).",
+      "nextMilestone": "The County's sale agreement and the closing of both parcels' sale (the Sept 1, 2026 target has passed; the deadline is Jan 30, 2027).",
       "summary": "The Oakland–Alameda County Coliseum complex next to the Coliseum BART station, being sold to Oakland Acquisition Company, a partnership of Loop Capital and the African American Sports and Entertainment Group. The City will receive $125M in total for its interest; any development needs city approval.",
       "massingNotes": "Boundary: Alameda County Assessor parcels (Alameda County ArcGIS Parcels FeatureServer, county disclaimer only): APN 41-3901-8 (Stadium, 103.2 ac) plus 41-3901-9 (Arena, 8.7 ac), 111.8 acres. No massing (checked Oct 2026): no plan is filed or approved. The site is zoned D-CO-2, with a 159-ft limit measured above mean sea level (Planning Code Table 17.101H.03, Ord. 13302, 2015; unchanged in Ord. 13894, 2026), but that limit covers the whole site with no blocks, so drawing it would look like a project that doesn't exist.",
       "officialLinks": [
@@ -2579,11 +2579,12 @@
         "https://acgov.org/board/bos_calendar/documents/DocsAgendaReg_05_28_26%20Spmtg/GENERAL%20ADMINISTRATION/Regular%20Calendar/County_Term_Sheet_Final.pdf",
         "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0",
         "https://oakland.legistar1.com/oakland/attachments/a60c2e98-0339-4f02-a7cd-1f2205ceb9be.pdf",
-        "https://oakland.legistar1.com/oakland/attachments/96560420-1fc5-4f3b-8a34-0d0e9e246ce7.pdf"
+        "https://oakland.legistar1.com/oakland/attachments/96560420-1fc5-4f3b-8a34-0d0e9e246ce7.pdf",
+        "https://alamedacounty.granicus.com/DocumentViewer.php?file=alamedacounty_d4e298d1c0e6a7f501cce3ace7f4b72e.pdf&view=1"
       ],
       "verify": [
-        "whether the sale closed",
-        "whether the County's sale has moved past the non-binding term sheet"
+        "whether the sale closed (no record as of Oct 6, 2026; target Sept 1, 2026, deadline Jan 30, 2027)",
+        "whether the County approves a purchase agreement (closed-session negotiations through Oct 6, 2026)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
@@ -2862,7 +2863,7 @@
         "retailSqft": null,
         "hotelKeys": null,
         "openSpaceAcres": null,
-        "notes": "Proposed, as described for environmental review in the Notice of Preparation (Table 1): 173,913 homes and about 147M sq ft of non-residential space at full buildout, for about 400,000 people; the 20-year plan covers 65,217 homes and 150,000 people. Nothing is approved."
+        "notes": "Proposed, as described for environmental review in the Notice of Preparation (Table 1): 173,913 homes and about 147M sq ft of non-residential space at full buildout, for about 400,000 people; the 20-year plan covers 65,217 homes and 150,000 people. Nothing is approved. The City's reimbursement agreement with the applicant, as posted (an unsigned copy), phases growth to 15,000 residents by 2034, 50,000 by 2038 and 150,000 by 2048, with full buildout not until 2071."
       },
       "developer": "California Forever",
       "publicPartners": [
@@ -2870,7 +2871,7 @@
         "Solano LAFCO (responsible agency for the annexation)"
       ],
       "stage": "entitlement",
-      "stageNote": "California Forever applied to Suisun City in Oct 2025 to annex its land and build a new community. The City issued the Notice of Preparation for the environmental impact report on Nov 12, 2025; no draft EIR has been published. The City's FAQ says final decisions are expected beyond 2026.",
+      "stageNote": "California Forever applied to Suisun City in Oct 2025 to annex its land and build a new community. The City issued the Notice of Preparation for the environmental impact report on Nov 12, 2025; no draft EIR has been published. The City's FAQ says final decisions are expected beyond 2026. As of Aug 10, 2026 no annexation application had been filed with Solano LAFCo.",
       "timeline": [
         {
           "date": "2024-07-22",
@@ -2882,7 +2883,7 @@
         },
         {
           "date": "2025-06-10",
-          "event": "City approves a reimbursement agreement with California Forever to fund the City's review of the annexation."
+          "event": "City Council approves a reimbursement agreement with California Forever to fund the City's review of the annexation."
         },
         {
           "date": "2025-10-14",
@@ -2891,9 +2892,13 @@
         {
           "date": "2025-11-12",
           "event": "City issues the Notice of Preparation for the environmental impact report."
+        },
+        {
+          "date": "2026-08-25",
+          "event": "Solano County Board of Supervisors votes 3–2 to oppose the proposed Solano Maritime and Manufacturing Act; County staff had been shown a concept in May linking shipbuilding legislation to the Suisun plan."
         }
       ],
-      "nextMilestone": "Draft environmental impact report (no official date).",
+      "nextMilestone": "Draft environmental impact report (no official date; Solano County's airport land use commission called it forthcoming in August 2026).",
       "summary": "The plan backed by California Forever for a new community on Solano County farmland, now pursued as an annexation to Suisun City after a county ballot measure was withdrawn.",
       "massingNotes": "Boundary: no official GIS. Trace the Notice of Preparation Figure 2 (p. 15), with Figures 5 and 6, and label it approximate. Plan-scale only. Land use: the seven proposed specific plan zones (NOP Figure 5, Table 1) and the two area plan sub-areas (Figure 2), georeferenced to OpenStreetMap roads (RMS 19 m and 32 m), every zone labelled proposed and approximate; nothing is adopted.",
       "officialLinks": [
@@ -2906,11 +2911,17 @@
         "https://content.solanocounty.gov/sites/default/files/2025-05/CA%20Forever%20Initiative%20Withdrawal%20Letter-07222024.pdf",
         "https://suisunexpansion.com/vision-and-background/history-background/",
         "https://suisunexpansion.com/5843-2/",
-        "https://suisunexpansion.com/faqs/"
+        "https://suisunexpansion.com/faqs/",
+        "https://solano.legistar.com/LegislationDetail.aspx?ID=20223&GUID=82695E32-CA7B-4782-ACA0-6885B5BCBD08",
+        "https://webapi.legistar.com/v1/solano/matters/21337/texts/22058",
+        "https://webapi.legistar.com/v1/solano/matters/21370/texts/22091",
+        "https://storage.googleapis.com/proudcity/solanocountylafcoca/2026/08/12_eo-updates_staff-report_complete-b97e62de.pdf",
+        "https://suisunexpansion.com/reimbursement-agreement/",
+        "https://www.suisun.com/files/sharedassets/suisuncity/v/1/departments/city-manager/cf/reimbursement-agreement_2.pdf"
       ],
       "verify": [
         "the draft EIR release date (not posted on CEQAnet as of Oct 7, 2026)",
-        "whether an annexation application has been filed with Solano LAFCo",
+        "whether an annexation application has been filed with Solano LAFCo (none as of Aug 10, 2026)",
         "whether the city formally accepted the application as complete"
       ],
       "reported": {
@@ -3036,8 +3047,8 @@
         -122.275,
         38.092
       ],
-      "acres": 5250,
-      "acresNote": "Total acres CEQAnet lists for the 2003–2005 Amended and Restated Mare Island Specific Plan EIR (SCH 2003092057), covering the whole former shipyard including wetlands and dredge ponds. The new plan's area isn't stated yet; the infrastructure assessment's build-out scenario excludes Navy and State lands.",
+      "acres": 3131,
+      "acresNote": "About 3,131 acres, about 1,302 of them developable, per the City's April 27, 2026 report on the draft new specific plan, which keeps the existing plan's overall boundary (the drawn 2005 plan area measures about 3,090 acres). CEQAnet lists 5,250 acres for the 2003–2005 Amended and Restated Mare Island Specific Plan EIR (SCH 2003092057), which covers the whole former shipyard including wetlands and dredge ponds.",
       "program": {
         "homes": 14000,
         "affordableHomes": null,
@@ -3047,18 +3058,22 @@
         "retailSqft": null,
         "hotelKeys": null,
         "openSpaceAcres": null,
-        "notes": "Up to 14,000 homes and 14,900–17,000 jobs, as the City estimates for the Mare Island Company's first draft specific plan (Oct 2024); not approved. The City's October 2025 infrastructure assessment used an earlier preliminary plan (Feb 2023): 9,271 homes and about 8.13 million sq ft of commercial uses, built out by about 2063. The draft's mixed-use zones allow up to 85 ft. The October 2024 draft's maximum is about 14,400 homes, including 356 existing, and about 8.22 million sq ft of non-residential space (3.77 million new)."
+        "notes": "Up to 14,000 homes and 14,900–17,000 jobs, as the City estimates for the Mare Island Company's first draft specific plan (Oct 2024); not approved. The City's April 2026 report gives a range of about 9,750 to 14,400 homes and about 895 dormitory units. The City's October 2025 infrastructure assessment used an earlier preliminary plan (Feb 2023): 9,271 homes and about 8.13 million sq ft of commercial uses, built out by about 2063. The draft's mixed-use zones allow up to 85 ft. The October 2024 draft's maximum is about 14,400 homes, including 356 existing, and about 8.22 million sq ft of non-residential space (3.77 million new)."
       },
       "developer": "Mare Island Company (Nimitz Group)",
       "publicPartners": [
         "City of Vallejo (specific plan, lead agency)"
       ],
       "stage": "entitlement",
-      "stageNote": "A new specific plan is under City review. The Mare Island Company submitted a first draft in October 2024, and the City sent back comments on Feb 7, 2026. A second draft with infrastructure and financing plans, a CEQA notice of preparation and an EIR come next.",
+      "stageNote": "A new specific plan is under City review. The Mare Island Company submitted a first draft in October 2024, and the City sent back comments on Feb 7, 2026. The City's tentative schedule (April 2026) has a CEQA notice of preparation in late summer 2026, a second draft with infrastructure and financing plans in fall or winter 2026, a public draft EIR in winter 2026–27 and adoption hearings in fall or winter 2027. On July 28, 2026 the City Council gave the South Mare Island development agreement its third and final extension, to Sept 11, 2031.",
       "timeline": [
         {
           "date": "1999-03",
           "event": "City Council adopts the Mare Island Specific Plan for the former naval shipyard."
+        },
+        {
+          "date": "2001-09-12",
+          "event": "City and Lennar Mare Island sign the development agreement for South Mare Island (about 670 acres)."
         },
         {
           "date": "2003-09-18",
@@ -3075,6 +3090,10 @@
         {
           "date": "2018-07",
           "event": "City and the Nimitz Group enter an exclusive right to negotiate for about 157 acres of North Mare Island."
+        },
+        {
+          "date": "2019-07-31",
+          "event": "City Council consents to the transfer of Lennar's South Mare Island holdings to the Nimitz Group; escrow closes in November 2019."
         },
         {
           "date": "2022-02",
@@ -3099,9 +3118,17 @@
         {
           "date": "2026-04-27",
           "event": "City Council receives an informational update on the specific plan, environmental review, infrastructure planning and development agreements."
+        },
+        {
+          "date": "2026-04-27",
+          "event": "City reports that the Mare Island Company has paused its Connolly Street corridor project; the Council has asked the City Attorney to find a mediator for talks between the City and the Vallejo Flood and Wastewater District."
+        },
+        {
+          "date": "2026-07-28",
+          "event": "City Council approves the third and final extension of the South Mare Island development agreement, to Sept 11, 2031 (Resolution 138 N.C.)."
         }
       ],
-      "nextMilestone": "Second draft of the specific plan, with infrastructure and financing plans, and the CEQA notice of preparation.",
+      "nextMilestone": "CEQA notice of preparation (City's tentative schedule: late summer 2026) and the second draft of the specific plan, with infrastructure and financing plans (fall or winter 2026).",
       "summary": "The former Mare Island Naval Shipyard across the strait from downtown Vallejo, where a new specific plan from the Mare Island Company proposes up to about 14,000 homes in nine neighborhoods around the historic shipyard core. It's in early City review, with no approvals yet.",
       "massingNotes": "Boundary: City of Vallejo GIS, Planning_Development_Services MapServer layer 67 (Existing Specific Plan Area), feature Mare Island (2005), about 3,093 acres, drawn as approximate (layer 3's SP-4 zoning area, about 4,220 acres, runs out over the bay); no license is stated, so ask the City before redistributing. The new plan's boundary (Figure in the Oct 2024 draft) may differ. Approximate center is the layer's bounding-box centre, shifted toward the developed east shore. Massing comes in Milestone 4, and only once the City adopts a plan: the draft's development standards (85-ft limit in the CRMX and CR zones) are applicant proposals under review. Land use: the adopted Mare Island Specific Plan's land-use map (Figure 3.1, revised Jan 2008, the newest the City posts), fitted to existing buildings (trimmed RMS 11 m) and labelled approximate; the developer's draft for the new plan is not drawn.",
       "officialLinks": [
@@ -3119,32 +3146,18 @@
         "https://www.cityofvallejo.net/common/pages/DisplayFile.aspx?itemId=19272505",
         "https://www.cityofvallejo.net/common/pages/DisplayFile.aspx?itemId=19272509",
         "https://www.cityofvallejo.net/common/pages/DisplayFile.aspx?itemId=19273002",
-        "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=C089Acmx"
+        "https://www.cityofvallejo.net/common/pages/GetFile.ashx?key=C089Acmx",
+        "https://vallejoca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=12195,plainText=false)",
+        "https://vallejoca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=12401,plainText=false)",
+        "https://vallejoca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=13569,plainText=false)",
+        "https://vallejoca.api.civicclerk.com/v1/Meetings/GetMeetingFileStream(fileId=13637,plainText=false)"
       ],
       "verify": [
-        "the new plan's area and boundary, and its commercial program",
-        "the extension of the South Mare Island development agreement (Lennar's 2001 agreement, now held by the Nimitz Group)",
-        "the April 27, 2026 council staff report",
+        "the new plan's boundary as a map (the City says the draft keeps the existing plan boundary; it isn't published as GIS)",
+        "whether the CEQA notice of preparation (City: late summer 2026) has been issued",
         "an official count of homes built under the 1999 plan (the 2024 draft plan counts 356 existing homes)",
         "the 2014 plan amendment (the North Mare Island agreement lists amendments in 2007, 2008, 2013 and 2017)"
       ],
-      "reported": {
-        "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
-        "timeline": [
-          {
-            "date": "2019-11",
-            "event": "Nimitz Group completes its purchase of about 500 acres of South Mare Island from Lennar Mare Island, bringing its holdings to over 800 acres."
-          },
-          {
-            "date": "2026-04",
-            "event": "The Connolly Street corridor project is paused during mediation between the City and the Vallejo Flood and Wastewater District."
-          }
-        ],
-        "sources": [
-          "https://stories.opengov.com/cityofvallejo/published/arHGvVTeZ",
-          "https://www.vallejosun.com/central-corridor-project-on-mare-island-halted-while-vallejo-negotiates-with-developer-on-infrastructure/"
-        ]
-      },
       "lastVerified": "2026-10-05"
     },
     {
@@ -3801,7 +3814,7 @@
       ],
       "nextMilestone": "A final supplemental EIR and hearings on the amendment adding 1,500 homes.",
       "summary": "A city plan to turn 45 acres of warehouses next to the Lick Mill light rail station in north Santa Clara into a high-density neighborhood of 4,500 homes, with shops, parks and a walking and biking network to the Guadalupe River trail. Adopted in 2018; seven apartment buildings with about 1,750 homes had occupancy by late 2025, and the city is preparing an amendment to add 1,500 more.",
-      "massingNotes": "Boundary: City of Santa Clara zoning (map.santaclaraca.gov OPENDATA/RegionalZoningOpenData MapServer layer 0), the 37 parcels with ZONGDSGN 'TN' and SPPLAN 'TE', dissolved (about 41 acres net of the plan's streets, against the plan's 45; approximate); the layer's 10 other TN parcels are retired records lying wholly inside these, so they add nothing; City open-data terms of use (2018). approxCenter is the rough centroid of those parcels. Massing from the plan's height tiers (65, 85 and 220 ft) and each project's approvals comes in Milestone 4. Massing: 13 completed buildings from OpenStreetMap footprints matched to APR parcels, with official heights where given (Related 214 and 217 ft, Greystar 85 ft) or estimated from official story counts (illustrative); the other 24 plan parcels drawn to the plan's 220-ft tower limit over an 85-ft podium (Final EIR, Draft EIR §2.3.4), illustrative. The FAA threshold is about 175 ft.",
+      "massingNotes": "Boundary: City of Santa Clara zoning (map.santaclaraca.gov OPENDATA/RegionalZoningOpenData MapServer layer 0), the 37 parcels with ZONGDSGN 'TN' and SPPLAN 'TE', dissolved (about 41 acres net of the plan's streets, against the plan's 45; approximate); the layer's 10 other TN parcels are retired records lying wholly inside these, so they add nothing; City of Santa Clara open-data terms of use (2018): ODC PDDL 1.0, credit City of Santa Clara. approxCenter is the rough centroid of those parcels. Massing from the plan's height tiers (65, 85 and 220 ft) and each project's approvals comes in Milestone 4. Massing: 13 completed buildings from OpenStreetMap footprints matched to APR parcels, with official heights where given (Related 214 and 217 ft, Greystar 85 ft) or estimated from official story counts (illustrative); the other 24 plan parcels drawn to the plan's 220-ft tower limit over an 85-ft podium (Final EIR, Draft EIR §2.3.4), illustrative. The FAA threshold is about 175 ft.",
       "officialLinks": [
         "https://santaclara.legistar.com/LegislationDetail.aspx?ID=2564&GUID=D9199C07-2D4D-40E5-ADCB-5DBD76072087",
         "https://santaclara.legistar.com/LegislationDetail.aspx?ID=21103&GUID=8DB4A0CB-9F3D-4D0B-A43B-53AAAFF3C7EC"
@@ -3822,13 +3835,13 @@
         "https://map.santaclaraca.gov/maps/rest/services/OPENDATA/RegionalZoningOpenData/MapServer/0",
         "https://santaclara.legistar1.com/santaclara/attachments/6329e9a6-e29a-4f31-a2cf-ab8a09b2f902.pdf",
         "https://santaclara.legistar1.com/santaclara/attachments/e6c34bac-7ee7-4ada-a313-704e06eb3ee0.pdf",
-        "https://ceqanet.lci.ca.gov/2016122027/7"
+        "https://ceqanet.lci.ca.gov/2016122027/7",
+        "https://public-gis-missioncity.opendata.arcgis.com/pages/terms-of-use"
       ],
       "verify": [
         "certificates of occupancy issued in 2026 (the state's annual report for 2026 isn't out yet)",
         "a certificate of occupancy for the 311-home building at 5123 Calle del Sol (also 2240 Calle de Luna, APN 097-46-019), which the Draft SEIR lists as constructed",
         "hearing dates for the amendment adding 1,500 homes",
-        "the City of Santa Clara's open-data license for the zoning layer (its ArcGIS Hub terms give PDDL 1.0; that host needs Matthew's approval)",
         "the date of the plan's first amendment (Sept or Nov 17, 2020) and the plan area (46 or 45 acres)"
       ],
       "lastVerified": "2026-10-05"
@@ -5146,7 +5159,7 @@
         "retailSqft": null,
         "hotelKeys": null,
         "openSpaceAcres": null,
-        "notes": "Homes are a sum of the official per-site figures: West Oakland 762, Lake Merritt 557, North Berkeley 739, Ashby West Lot up to 600, El Cerrito Plaza 743 and Amador Station 300 (3,701, with Ashby at its upper figure). Office is a sum too: about 300,000 sq ft at West Oakland and up to 500,000 sq ft at Lake Merritt. Affordable homes by site: 240 at West Oakland, 233 at Lake Merritt, 381 at North Berkeley, half of Ashby's, 350 at El Cerrito Plaza and all 300 at Amador Station. Retail: about 53,000 sq ft at West Oakland, up to 16,500 sq ft at Lake Merritt and smaller ground-floor spaces elsewhere. Walnut Creek's last phase (about 240 homes, in planning) isn't counted."
+        "notes": "Homes are a sum of the official per-site figures: West Oakland 762 (522 market rate, 240 affordable), Lake Merritt 557, North Berkeley 739, Ashby West Lot up to 600, El Cerrito Plaza 743 and Amador Station 300 in two buildings of 136 and 164 (3,701, with Ashby at its upper figure). Office is a sum too: about 300,000 sq ft at West Oakland and up to 500,000 sq ft at Lake Merritt. Affordable homes by site: 240 at West Oakland, 233 at Lake Merritt, 381 at North Berkeley, half of Ashby's, 350 at El Cerrito Plaza and all 300 at Amador Station. Retail: about 53,000 sq ft at West Oakland, up to 16,500 sq ft at Lake Merritt and smaller ground-floor spaces elsewhere. Walnut Creek's last phase (about 240 homes, in planning) isn't counted."
       },
       "developer": "Six teams selected by BART: Mandela Station Partners and Mandela Station Affordable (West Oakland); Strada Investment Group and East Bay Asian Local Development Corporation (Lake Merritt); North Berkeley Housing Partners (BRIDGE Housing, EBALDC, Insight Housing and AvalonBay Communities); Adeline Alliance Partners with Resources for Community Development (Ashby); Holliday Development, Related California and Satellite Affordable Housing Associates (El Cerrito Plaza); and The Related Companies of California (Amador Station)",
       "publicPartners": [
@@ -5157,7 +5170,7 @@
         "City of Dublin"
       ],
       "stage": "construction",
-      "stageNote": "Three sites are under construction: El Cerrito Plaza's first building (since November 2025), Lake Merritt's senior building (since October 2024) and West Oakland's 240 affordable homes (since September 2026). North Berkeley is entitled (December 2024) and Amador Station is waiting for funding. The Ashby West Lot has a developer but no application with the City yet.",
+      "stageNote": "Three sites are under construction: El Cerrito Plaza's first building (since November 2025), Lake Merritt's senior building (since October 2024; BART expects completion in spring 2027) and West Oakland's 240 affordable homes (since September 2026). North Berkeley is entitled (December 2024) and Amador Station, approved in 2021, is waiting for funding, and the City of Dublin is reviewing building permits for its first building. The Ashby West Lot has a developer (negotiating agreement signed February 2026) but no application with the City yet.",
       "timeline": [
         {
           "date": "2018-09-30",
@@ -5176,12 +5189,24 @@
           "event": "BART Board selects Holliday Development, Related California and SAHA for El Cerrito Plaza."
         },
         {
-          "date": "2021",
-          "event": "City of Oakland approves the Lake Merritt Preliminary Development Plan, including its CEQA review."
+          "date": "2021-05-19",
+          "event": "Oakland Planning Commission approves the Lake Merritt Preliminary Development Plan (557 homes) and its CEQA findings."
+        },
+        {
+          "date": "2021-08-10",
+          "event": "Dublin Planning Commission approves the site development review for Amador Station: 300 affordable homes in two buildings of 5 stories and 61 ft."
+        },
+        {
+          "date": "2021-09-21",
+          "event": "Dublin City Council approves Amador Station's community benefit and affordable housing agreements."
         },
         {
           "date": "2022-06",
           "event": "Berkeley City Council adopts the R-BMU zoning district for the North Berkeley and Ashby BART stations."
+        },
+        {
+          "date": "2022-07-20",
+          "event": "City of Oakland approves the final development plan for Lake Merritt's senior building."
         },
         {
           "date": "2023-04-03",
@@ -5216,6 +5241,14 @@
           "event": "Construction of El Cerrito Plaza's Parcel A South begins."
         },
         {
+          "date": "2026-02",
+          "event": "BART executes the exclusive negotiating agreement for the Ashby West Lot with Adeline Alliance Partners and Resources for Community Development."
+        },
+        {
+          "date": "2026-06",
+          "event": "BART and North Berkeley Housing Partners execute the option agreement for North Berkeley."
+        },
+        {
           "date": "2026-07-21",
           "event": "Dublin City Council approves amended agreements with Related for Amador Station."
         },
@@ -5226,7 +5259,7 @@
       ],
       "nextMilestone": "Ashby West Lot application to the City of Berkeley (BART: late 2026); North Berkeley's first phase to start construction (BART: 2027).",
       "summary": "BART is building housing on its station parking lots. This entry maps the six sites where that work isn't finished: West Oakland, Lake Merritt, North Berkeley, Ashby, El Cerrito Plaza and Amador Station in Dublin. Together they plan about 3,700 homes, about half of them affordable, plus up to 800,000 sq ft of offices in Oakland. BART says the program has already delivered 4,232 homes and 874,000 sq ft of commercial space at 15 stations.",
-      "massingNotes": "A program-level entry added at Matthew's request (2026-10-07): no single site reaches 1,000 homes. The county is Alameda for five sites; El Cerrito Plaza is in Contra Costa County. Boundary: BART's TOD Work Plan GIS layer, one part per site: the parcels BART marks in progress at West Oakland, North Berkeley and El Cerrito Plaza, the APNs named by the City of Oakland for Lake Merritt and by the City of Dublin for Amador Station, and the Ashby West Lot parcel. Massing: West Oakland's towers and buildings traced from the 2020 revised Preliminary Development Plan (RMS 0.2 m), Lake Merritt's four buildings from the 2021 tract map and zoning table (RMS under 0.2 m) and El Cerrito Plaza's six buildings from the approved 2024 master plan (RMS 0.8 m), with heights from the plans. North Berkeley, the Ashby West Lot and Amador Station are illustrative height-limit envelopes (80 ft under Berkeley's R-BMU zoning, 90 ft at Amador Station per BART's AB 2923 layer).",
+      "massingNotes": "A program-level entry added at Matthew's request (2026-10-07): no single site reaches 1,000 homes. The county is Alameda for five sites; El Cerrito Plaza is in Contra Costa County. Boundary: BART's TOD Work Plan GIS layer, one part per site: the parcels BART marks in progress at West Oakland, North Berkeley and El Cerrito Plaza, the APNs named by the City of Oakland for Lake Merritt and by the City of Dublin for Amador Station, and the Ashby West Lot parcel. Massing: West Oakland's towers and buildings traced from the 2020 revised Preliminary Development Plan (RMS 0.2 m), Lake Merritt's four buildings from the 2021 tract map and zoning table (RMS under 0.2 m) and El Cerrito Plaza's six buildings from the approved 2024 master plan (RMS 0.8 m), with heights from the plans. North Berkeley, the Ashby West Lot and Amador Station (whose approved footprints aren't published) are illustrative envelopes (80 ft under Berkeley's R-BMU zoning; at Amador Station the approved 61 ft, under the 90 ft allowed in BART's AB 2923 layer).",
       "officialLinks": [
         "https://www.bart.gov/about/business/tod/upcoming",
         "https://www.bart.gov/about/business/tod/completed"
@@ -5257,15 +5290,14 @@
         "https://ceqanet.lci.ca.gov/2010022005/8",
         "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
         "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/9",
-        "https://abag.ca.gov/news/oakland-celebrates-groundbreaking-new-affordable-housing-seniors"
+        "https://abag.ca.gov/news/oakland-celebrates-groundbreaking-new-affordable-housing-seniors",
+        "https://bart.legistar1.com/bart/attachments/08720c9b-3cc2-478d-a267-b29d7dd52f0f.pdf",
+        "https://bart.legistar1.com/bart/attachments/16be8698-d087-474d-af27-34a157f46d12.pdf",
+        "https://dublin-development.icitywork.com/#projectDetail1380",
+        "https://granicus_production_attachments.s3.amazonaws.com/dublin/98837e23cc8392d73e6155bda18f2be10.pdf"
       ],
       "verify": [
-        "Lake Merritt's home count: the City's 2021 plan and BART's project page say 557, while BART's upcoming-projects page lists 97 + 439 + 100 = 636 (the newer 439-home Building A would also change the drawn tower)",
-        "the date the Oakland Planning Commission approved the Lake Merritt Preliminary Development Plan (BART gives only 2021)",
-        "West Oakland's split: the City lists 522 market-rate and 240 affordable homes, BART 525 and 236",
-        "North Berkeley's count: the City's 2024 report gives 739 homes (381 affordable), BART's project page about 743 (382 affordable)",
         "El Cerrito Plaza building heights in feet for Parcels A-North, B and C-West (the approval letter gives 67–85 ft and stories; the plan sections show only C-East at 76.5 ft and D at 57 ft) and Parcel A-South (6 stories)",
-        "the City of Dublin's planning approval for Amador Station (PLPA-2021-00019), its date and building heights",
         "whether Walnut Creek Transit Village's last phase (about 240 homes, in planning) is on APN 174-180-004-7, the only lease-option parcel there without buildings in BART's parcel data",
         "Fremont (BART released an RFP on Apr 28, 2026 for an 8-acre first phase; developer selection expected October 2026), Bay Fair and Richmond Transit Village Phase II, which aren't drawn yet"
       ],

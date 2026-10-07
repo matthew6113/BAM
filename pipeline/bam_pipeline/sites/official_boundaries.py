@@ -285,7 +285,7 @@ SPECS: dict[str, dict] = {
                  "Tasman Drive, the Guadalupe River, the golf course and Lafayette Street. The plan's own streets are "
                  "outside the parcels, so the shape is net of them. The layer's 10 other TN parcels are retired records "
                  "that lie wholly inside these and add no area."),
-        "license": "City of Santa Clara Open Data Portal terms of use (2018)",
+        "license": "City of Santa Clara Open Data Portal terms of use (2018): ODC PDDL 1.0, credit City of Santa Clara",
     },
     "sunnydale-hope-sf": {
         "label": "DataSF special use districts",
@@ -318,7 +318,8 @@ SPECS: dict[str, dict] = {
         "layer": "City of Vallejo GIS, Existing Specific Plan Area “Mare Island” (2005)",
         "accuracy": "approximate",
         "note": ("The adopted 2005 Mare Island Specific Plan area, about 3,100 acres; the whole island is 5,250 acres "
-                 "in the 2005 EIR. The new specific plan's boundary isn't published, and may differ."),
+                 "in the 2005 EIR. The City's April 27, 2026 report says the draft new plan keeps the same overall "
+                 "boundary (about 3,131 acres); no map of it is published as GIS."),
         "license": "City of Vallejo GIS (no license stated)",
     },
     "esmeralda": {

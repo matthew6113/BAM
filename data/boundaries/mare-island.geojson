@@ -7,7 +7,7 @@
   "sourceUrl": "https://portal.cityofvallejo.net/arcgis/rest/services/CityGIS_Viewer/Planning_Development_Services/MapServer/67",
   "query": "https://portal.cityofvallejo.net/arcgis/rest/services/CityGIS_Viewer/Planning_Development_Services/MapServer/67/query?where=Name+%3D+%27Mare+Island%27+and+Year+%3D+2005&outFields=%2A&outSR=4326&f=geojson",
   "accuracy": "approximate",
-  "accuracyNote": "The adopted 2005 Mare Island Specific Plan area, about 3,100 acres; the whole island is 5,250 acres in the 2005 EIR. The new specific plan's boundary isn't published, and may differ. 3,093.0 acres as drawn.",
+  "accuracyNote": "The adopted 2005 Mare Island Specific Plan area, about 3,100 acres; the whole island is 5,250 acres in the 2005 EIR. The City's April 27, 2026 report says the draft new plan keeps the same overall boundary (about 3,131 acres); no map of it is published as GIS. 3,093.0 acres as drawn.",
   "license": "City of Vallejo GIS (no license stated)",
   "features_used": 1
  },
