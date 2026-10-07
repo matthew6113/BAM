@@ -1,0 +1,91 @@
+{
+  "id": "bart-silicon-valley-phase-2",
+  "name": "BART Silicon Valley Phase II",
+  "aliases": [
+    "VTA's BART Silicon Valley Phase II Extension Project",
+    "BSVII",
+    "BART to downtown San José and Santa Clara"
+  ],
+  "city": "San Jose",
+  "county": "Santa Clara",
+  "subregion": "South Bay",
+  "approxCenter": [-121.8998, 37.3587],
+  "acres": null,
+  "acresNote": "A rail line, not a site: about 6 miles of extension, about 5 miles of it in a single bored tunnel, from Berryessa/North San José to Santa Clara. No official acreage for the whole footprint was found; the 2002 CEQA notice for the original 16-mile corridor (SCH 2002022004) gives about 250 acres, which is not this phase. Approximate center is the middle of the bounding box of Berryessa/North San José, Diridon and Santa Clara Transit Center stops in VTA's GTFS feed.",
+  "program": {
+    "homes": null,
+    "affordableHomes": null,
+    "affordablePct": null,
+    "officeLabSqft": null,
+    "commercialSqftTotal": null,
+    "retailSqft": null,
+    "hotelKeys": null,
+    "openSpaceAcres": null,
+    "notes": "A transit project, so the building program fields do not apply. Scope: about 6 miles of BART extension, four stations (28th Street/Little Portugal, Downtown San José and Diridon underground; Santa Clara at grade next to the Santa Clara Caltrain station), a train maintenance and storage facility at Newhall Yard, and 48 BART cars bought through BART's existing contract (estimated $172.6 million). One tunnel about 53 feet across holds both tracks side by side. VTA forecasts 55,000 weekday riders. Budget adopted for FTA's Engineering phase: $12.746 billion (year-of-expenditure dollars), with FTA's share capped at $5.1 billion; VTA's July 2026 funding table shows a $564 million gap still to be filled."
+  },
+  "developer": "Santa Clara Valley Transportation Authority (VTA), project sponsor and owner; BART will operate and maintain it",
+  "publicPartners": [
+    "Santa Clara Valley Transportation Authority (lead agency and owner)",
+    "Bay Area Rapid Transit District (operator)",
+    "Federal Transit Administration (Capital Investment Grants, New Starts)",
+    "Metropolitan Transportation Commission (Regional Measure 3 funds)",
+    "California Transportation Commission (state grants)",
+    "City of San José",
+    "City of Santa Clara"
+  ],
+  "stage": "infrastructure",
+  "stageNote": "Early construction, ahead of tunneling. Crews finished excavating the West Portal launch structure for the tunnel boring machine in early September 2026, and demolition and utility relocation are under way at station sites. In August 2026 VTA signed a restated tunnel contract and gave notice to proceed with pre-tunneling work only. The federal grant agreement that would fund most of the line is not yet signed (VTA's target is late 2027), the boring machine is in storage in Germany with delivery expected in the second half of 2027, and FTA's oversight consultant rates the project high risk while VTA re-baselines its cost and schedule.",
+  "timeline": [
+    { "date": "2001-11", "event": "VTA selects the locally preferred alternative for the BART extension." },
+    { "date": "2016-03", "event": "The project enters the Project Development phase of FTA's Capital Investment Grants program." },
+    { "date": "2018-04-05", "event": "VTA's Board certifies the Final Subsequent EIR and approves the project, with a single-bore tunnel." },
+    { "date": "2018-04-26", "event": "BART's Board accepts the SEIR and approves the project." },
+    { "date": "2018-06-04", "event": "FTA issues the Record of Decision, the federal environmental approval." },
+    { "date": "2022-05-05", "event": "VTA's Board awards the tunnel and trackwork contract (Contract Package 2) to Kiewit Shea Traylor." },
+    { "date": "2022-12-01", "event": "FTA moves the project back into New Starts Project Development and issues a Letter of No Prejudice." },
+    { "date": "2024-08-01", "event": "FTA approves entry into the New Starts Engineering phase, on a $12.746 billion budget and a February 2039 revenue service date, and caps its share at $5.1 billion." },
+    { "date": "2025-06-27", "event": "VTA's Board authorizes the contractual off-ramp from the tunnel contract with Kiewit Shea Traylor." },
+    { "date": "2025-10-17", "event": "VTA's Board approves advancing the Scenario 1 configuration, a single 53-foot bore from the West Portal to the East Portal, and pursuit of a Full Funding Grant Agreement." },
+    { "date": "2026-03-05", "event": "VTA's Board approves a CEQA addendum moving the Diridon replacement parking to the Delmas lots near SAP Center." },
+    { "date": "2026-06-26", "event": "VTA's Board votes 9–1 to restate the tunnel contract with Kiewit Shea Traylor as a target-price contract worth up to $3.55 billion, releasing no more than $400 million for pre-tunneling work." },
+    { "date": "2026-08-14", "event": "VTA issues notice to proceed for pre-tunneling work, after signing the restated contract on Aug 9." },
+    { "date": "2026-08-26", "event": "MTC approves a $192.5 million Regional Measure 3 allocation for the project." },
+    { "date": "2026-09", "event": "Excavation of the West Portal launch structure reaches 100%." }
+  ],
+  "nextMilestone": "VTA's roadmap (as reported to FTA in August 2026): an FFGA risk workshop in December 2026, updated grant documents to FTA in April 2027 and execution of the Full Funding Grant Agreement in November 2027; delivery of the tunnel boring machine is expected in the second half of 2027. VTA is re-baselining cost and schedule in the third quarter of 2026.",
+  "summary": "VTA's six-mile extension of BART from Berryessa through downtown San José to Santa Clara, with three underground stations, one at-grade station and a rail yard, built around a single tunnel about 53 feet across. Its adopted budget is $12.7 billion. Early works are under way at the tunnel launch site, but the federal grant that would pay for about 40% of it is not yet signed, and service is scheduled for 2039 (VTA aims for 2037).",
+  "massingNotes": "Draw as a line with four station points and a yard, not as buildings. Best official geometry: (1) Final SEIS/SEIR Volume III Appendix B, Project Plans and Profiles (Feb 2018, 56 sheets) and the BART station site plan concepts appendix, on vta.org; superseded in detail by the 2022 and 2024 CEQA addenda (larger tunnel, horizontal shifts up to 125 ft west of Diridon), whose figures should be preferred where they differ. (2) VTA's ArcGIS server, gis.vta.org/gis/rest/services/BART/BART/MapServer, has layers 'Stations' (34), 'Alignment' (35), 'Project boundary' (31), 'Newhall Yard ROW' (44) and station concept footprints (48–58), but on 2026-10-07 the query endpoints returned 'Layer not found' (only map export works), so the vectors could not be downloaded; ask VTA or retry. (3) The alignment map in the Feb 2026 CEQA addendum (Figure 2-1) and FTA's oversight report (Attachment F). Station locations: 28th Street/Little Portugal near Santa Clara Street and US 101; Downtown San José on Santa Clara Street near Market Street; Diridon between Montgomery and Cahill streets northeast of the Caltrain station; Santa Clara at grade next to the Santa Clara Caltrain station. Label everything 'Approximate alignment'.",
+  "officialLinks": [
+    "https://www.vta.org/projects/bart-sv/phase-ii",
+    "https://vtabart.org/",
+    "https://vtabart.org/transparency-commitment/"
+  ],
+  "sources": [
+    "https://www.vta.org/projects/bart-sv/phase-ii",
+    "https://www.vta.org/projects/bart-sv/phase-ii/planning-and-environmental",
+    "https://vtabart.org/wp-content/uploads/2026/09/2026-07-CA-BSVII-OP25-ProjectMonitoringReport_08-28-2026-091626-v1.pdf",
+    "https://vtabart.org/wp-content/uploads/2026/05/2026-03-CA-BSVII-OP25-ProjectMonitoringReport-051926-v1-1.pdf",
+    "https://vtabart.org/wp-content/uploads/2026/09/BSVII_Executive-Monthly-Report_July_2026.pdf",
+    "https://vtabart.org/wp-content/uploads/2026/09/2026_BSVII_October_ConstructionMonthlyUpdate-FINAL.pdf",
+    "https://vtabart.org/wp-content/uploads/2026/08/VTABSV_FactSheet_Overview-Benefits-051226_v1-3.pdf",
+    "https://vtabart.org/wp-content/uploads/2026/08/VTABSV_FactSheet_2025_Diridon_01062026.pdf",
+    "https://www.vta.org/sites/default/files/2026-03/2026-02_BSVII_Diridon_Parking_Addendum.pdf",
+    "https://www.vta.org/sites/default/files/2024-07/ceqa_addendum.pdf",
+    "https://www.vta.org/sites/default/files/2022-04/VolumeIII_AppendixB_ProjectPlansandProfiles_feb20_2018.pdf",
+    "https://santaclaravta.iqm2.com/Citizens/FileOpen.aspx?Type=15&ID=3034&Inline=True",
+    "https://santaclaravta.iqm2.com/Citizens/FileOpen.aspx?Type=15&ID=3133&Inline=True",
+    "https://ceqanet.lci.ca.gov/2002022004",
+    "https://santaclara.courts.ca.gov/system/files/civil/vtas-management-and-oversight-bart-silicon-valley-phase-ii.pdf",
+    "https://gtfs.vta.org/gtfs_vta.zip"
+  ],
+  "verify": [
+    "the Record of Decision date: VTA's pages, the 2024 and 2026 addenda and VTA's monthly report say June 4, 2018, while FTA's oversight reports say June 18, 2018",
+    "FTA's Engineering-phase approval date: VTA's report and FTA's March 2026 oversight report say Aug 1, 2024; the July 2026 oversight report calls it a letter dated July 31, 2024",
+    "the date of the 2024 CEQA addendum: vta.org says the Board approved it June 28, 2024 (CEQAnet NOD received July 5, 2024), while the Feb 2026 addendum says August 2024",
+    "the revised cost and schedule from VTA's re-baseline (due Q3 2026); FTA's oversight consultant expects costs above the $12.746 billion budget",
+    "how the $564 million funding gap is closed before the FFGA (the Civil Grand Jury report of June 17, 2026 describes a larger gap)",
+    "tunnel size: FTA's reports say about 53 feet in diameter; the 2024 addendum gives an outer diameter of about 52 feet and a boring machine of about 54 feet",
+    "the alignment and station geometry from gis.vta.org (query endpoints failed on 2026-10-07)"
+  ],
+  "lastVerified": "2026-10-07"
+}

@@ -30,6 +30,18 @@ const OFFICIAL_HOSTS = [
   'permitsonoma.org', // Permit Sonoma, Sonoma County's planning department
   'cloverdale.net', // City of Cloverdale (agendas, staff reports)
   'cloverdale.granicus.com', // City of Cloverdale's agenda file server
+  // Transit and regional agencies' own sites, several on non-government domains
+  // (Matthew, 2026-10-07: approved, with the agenda and document stores below)
+  'vta.org', // Santa Clara Valley Transportation Authority (www., gis., gtfs. subdomains)
+  'vtabart.org', // VTA's BART Silicon Valley Phase II project site (reports, FTA oversight reports)
+  'diridonsj.org', // Diridon Station partner agencies' project site, run by the City of San José
+  'santaclaravta.iqm2.com', // VTA's agenda system (Board, BSVII Oversight, Diridon Steering Committee)
+  'cityofsanrafael.org', // City of San Rafael (www., publicrecords. Laserfiche)
+  'gis.marinpublic.com', // Marin County GIS (assessor parcels)
+  'cityofepa.org', // City of East Palo Alto
+  'cityofepa.granicus.com', // City of East Palo Alto's agenda system
+  'eastpaloalto.iqm2.com', // City of East Palo Alto's agenda system before Sept 2023
+  'smcgov.org', // County of San Mateo (data.smcgov.org open data, assessor parcels)
   // Agenda systems: one subdomain per agency
   'brisbaneca.api.civicclerk.com',
   'mountainview.legistar.com',
@@ -43,6 +55,12 @@ const OFFICIAL_HOSTS = [
   'alameda.legistar.com',
   // City of Cupertino's document server (its Legistar item for The Rise links its approved plans here)
   'apps.cupertino.org',
+  // Tri-Valley–San Joaquin Valley Regional Rail Authority (Valley Link): agency site and its project/environmental site
+  'valleylinkrail.com',
+  'getvalleylinked.com',
+  'tjpa.org', // Transbay Joint Powers Authority (The Portal / Downtown Rail Extension, Salesforce Transit Center)
+  'sfcta.org', // San Francisco County Transportation Authority (Prop L sales tax, board memos)
+  'caltrain.com', // Peninsula Corridor Joint Powers Board (Caltrain): developer resources and GTFS licence (Matthew, 2026-10-07: approved)
 ];
 
 /** Shared vendor hosts, accepted only under an agency's own path. */
@@ -57,12 +75,17 @@ const OFFICIAL_PREFIXES = [
   'webapi.legistar.com/v1/oakland/',
   'webapi.legistar.com/v1/alameda/',
   'd3n9y02raazwpg.cloudfront.net/suisuncityca/', // Suisun City agenda packets
+  'd3n9y02raazwpg.cloudfront.net/cityofepa/', // East Palo Alto agenda packets (Granicus)
+  'granicus_production_attachments.s3.amazonaws.com/cityofepa/', // East Palo Alto agendas and minutes (Granicus)
+  'storage.googleapis.com/proudcity/sanrafaelca/', // City of San Rafael's document store (staff reports, resolutions)
+  'services8.arcgis.com/qac9exitge3rh5x7/', // City of East Palo Alto
   // ArcGIS Online organisations
   'services9.arcgis.com/ugpgsv1ugl0phsgx/', // City of Brisbane
   'services7.arcgis.com/urrq0o3z2aaiiwyu/', // City of Menlo Park
   'services5.arcgis.com/robnthsnjoz2wm1p/', // Alameda County
   'services9.arcgis.com/ucdlsg1ewpnogy4c/', // City of Alameda
   'services.arcgis.com/9tc74adhuml0x5yz/', // City of Oakland
+  'services.arcgis.com/xoi1kzai0ewdrezv/', // US DOT Bureau of Transportation Statistics (NTAD)
   // BART (SF Bay Area Rapid Transit District): its AB 2923 parcel and TOD Work Plan service, linked from
   // bart.gov/about/business/tod/ab2923; the organisation's items are owned by a bart.gov account.
   'services.arcgis.com/sqs7rnuf1bqinj5n/',

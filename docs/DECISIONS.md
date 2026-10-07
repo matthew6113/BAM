@@ -142,3 +142,56 @@ block E1 is drawn at the approved Development Agreement's 260 ft (June 2021), no
 draft design standards' 280 ft. The other Downtown West heights still come from that draft, since
 the approved 2021 standards couldn't be retrieved; they are labelled as such and flagged in the
 record's `verify` list.
+
+## 2026-10-07: overview look, option E (Matthew)
+
+Chosen from five options (current, soft ink, knockout halos, both, warm paper with both).
+The problem: at zooms 10 to 12 the city cores were near-black, and the darker stage dots
+(partly built, under construction) disappeared into them.
+
+**Warm paper.** Land `#FBFAF6`, outside the region `#F2F0EA`, water `#E3E8EA`, shoreline
+`#9CA6AE`, buildings `#3A3631`, labels `#3A3835`. Still placeholders until Matthew's palette.
+The previous cool white colors are kept as the "Cool white (before Oct 7)" preset.
+
+**Soft ink until street level.** Overview buildings ramp 22% (zoom 8) to 45% (zoom 12.5),
+then full ink (85%) at zoom 13, where the detail tiles take over. Theme keys
+`opacity.buildingsRegional`, `opacity.buildingsCity`, `opacity.buildings`.
+
+**Bigger dots with knockout halos.** Markers are 5 to 8.5 px with a 2 px land-colored ring, over
+a soft land-colored halo that clears the building ink around each dot. Both fade out with the
+markers between zoom 12 and 13.
+
+Still open: SF's dots overlap at the whole-bay zoom; the slate "partly built" color stays close
+to grey; UI chips are pure white on the off-white paper.
+
+## 2026-10-07: stage colors, International orange (Matthew)
+
+Chosen from five schemes (bay blue, International orange, bay teal, a hue per stage, night).
+Placeholders still, until Matthew's palette; this supersedes the stage table in SPEC section 4.
+
+| Stage | Color |
+|---|---|
+| Proposed | `#D0612C` |
+| Entitlement | `#C04E1C` |
+| Entitled | `#A93F12` |
+| Infrastructure | `#8C310C` |
+| Under construction | `#6C2408` |
+| Partly built | `#8C6A55` |
+| Complete | the building ink (`@buildings`) |
+| Paused | `#4F6E8E` |
+| Distressed | `#7A1E4A` |
+
+- Every stage now has at least 3:1 against land and water (the old light blues failed); a test
+  enforces it.
+- Paused and distressed sit off the orange ramp (slate blue, plum) so they read as exceptions.
+- The previous colors and blues are kept as the "Cool white and blue (before Oct 7)" preset;
+  presets can now carry stage colors.
+- Still open: the selection outline (`#000000`) is under 3:1 against the building ink; adjacent
+  orange stages are close on small dots (the panel always names the stage).
+
+## 2026-10-07: selected site ground (Matthew)
+
+The landed project's site is filled light gray (`selectionFill`, `#DEDAD1`), so the black boundary
+reads against it instead of against the building ink (about 2.7:1, under 3:1). The fill sits under
+the existing buildings, so footprints that stay on a site still show, and fades in on landing.
+The contrast check now measures the selection against this ground (about 13:1).

@@ -1,0 +1,76 @@
+{
+  "id": "cahsr-sf-sj",
+  "name": "California High-Speed Rail: San Francisco to San Jose",
+  "aliases": [
+    "San Francisco to San Jose Project Section",
+    "California High-Speed Rail, Northern California",
+    "HSR blended system on the Caltrain corridor"
+  ],
+  "city": "San Francisco to San Jose (Caltrain corridor)",
+  "county": "San Francisco, San Mateo and Santa Clara",
+  "subregion": "Peninsula",
+  "approxCenter": [-122.2818, 37.5259],
+  "acres": null,
+  "acresNote": "A rail line, not a site: about 49 miles of existing Caltrain corridor (48.9 miles of existing track in the Final EIR/EIS) from the Fourth and King station in San Francisco to San Jose Diridon, shared with Caltrain ('blended'). The Board's 2022 approval covers Fourth and King to Scott Boulevard in Santa Clara. The stretch from Scott Boulevard to Diridon and West Alma Avenue was approved with the San Jose to Merced section. No official acreage was found. Approximate center is the midpoint of the 'San Francisco to San Jose' line in the Authority's statewide alignment layer.",
+  "program": {
+    "homes": null,
+    "affordableHomes": null,
+    "affordablePct": null,
+    "officeLabSqft": null,
+    "commercialSqftTotal": null,
+    "retailSqft": null,
+    "hotelKeys": null,
+    "openSpaceAcres": null,
+    "notes": "A transit project, so the building program fields do not apply. The approved project (Alternative A) runs high-speed trains on Caltrain's electrified tracks rather than a new dedicated line. It would modify about 17.4 miles of existing track, mostly within the Caltrain right-of-way, add no passing tracks, build a light maintenance facility in East Brisbane and modify eight existing stations or platforms. It would also add safety upgrades at 40 at-grade crossings, 8.8 miles of new fencing and 21 radio towers. High-speed rail stations: Fourth and King in San Francisco (interim, until The Portal brings trains to the Salesforce Transit Center), Millbrae (for SFO and BART) and San Jose Diridon. Gilroy, the next station south, is in the San Jose to Merced section. The Final EIR/EIS (June 2022) estimated the preferred alternative at about $5,317 million in 2021 dollars. The 2026 Business Plan estimates the 'San Francisco to Gilroy Blended Approach' at $1,273 million (year-of-expenditure dollars, San Francisco–Bakersfield scenario; $1,291 million in the Phase 1 scenario). That figure excludes the San Jose to Gilroy upgrades ($2 to $5 billion, a 'shared benefit' project) and The Portal. The Authority contributed $714 million to Caltrain's electrification of the 51 miles between San Francisco and San José, which high-speed trains will share."
+  },
+  "developer": "California High-Speed Rail Authority, lead agency (CEQA, and NEPA under assignment from the Federal Railroad Administration)",
+  "publicPartners": [
+    "California High-Speed Rail Authority (lead agency)",
+    "Peninsula Corridor Joint Powers Board (Caltrain), owner and operator of the shared corridor",
+    "Transbay Joint Powers Authority (The Portal, to the Salesforce Transit Center)",
+    "Federal Railroad Administration (NEPA assignment MOU, July 23, 2019)",
+    "City of San José, Santa Clara Valley Transportation Authority and Metropolitan Transportation Commission (Diridon Station partners)"
+  ],
+  "stage": "entitled",
+  "stageNote": "Environmentally cleared: the Authority's Board certified the Final EIR/EIS and approved the route in August 2022, and the Record of Decision followed in October 2022. No construction has started. The 2026 Business Plan's schedule lists right-of-way, design, and the Fourth and King, Millbrae and San Jose station work as 'not started'. It plans for trains to reach the Bay Area over upgraded shared tracks by 2039 in its San Francisco–Bakersfield scenario. That depends on funding and on agreements with Caltrain and partners, including for the San Jose to Gilroy line. Until The Portal is built, Fourth and King is the interim terminus.",
+  "timeline": [
+    { "date": "2005-11", "event": "The Authority and the FRA certify the statewide Tier 1 program EIR/EIS for the high-speed rail system." },
+    { "date": "2008", "event": "A second Tier 1 program EIR/EIS covers the Bay Area to Central Valley connection (revised under CEQA in 2012)." },
+    { "date": "2020-07-10", "event": "The Authority issues the Draft EIR/EIS for the San Francisco to San Jose section." },
+    { "date": "2021-07-21", "event": "A Revised/Supplemental Draft EIR/EIS adds monarch butterfly analysis and a smaller Millbrae station design option." },
+    { "date": "2022-04-28", "event": "The Board certifies the San Jose to Merced Final EIR/EIS and approves its route, including San Jose Diridon station north to Scott Boulevard in Santa Clara." },
+    { "date": "2022-06-10", "event": "The Authority publishes the San Francisco to San Jose Final EIR/EIS." },
+    { "date": "2022-08-17", "event": "The Board votes 8–0 to certify the Final EIR/EIS and approve Alternative A from Fourth and King to Scott Boulevard, with the East Brisbane maintenance facility and the Millbrae station design (Resolutions HSRA 22-19, 22-20 and 22-21)." },
+    { "date": "2022-10-14", "event": "The Authority's CEO signs the Record of Decision selecting Alternative A." },
+    { "date": "2024", "event": "Caltrain's corridor electrification, which the Authority helped fund with $714 million, is completed; high-speed trains will share it." },
+    { "date": "2026-02-28", "event": "The Draft 2026 Business Plan is released for public comment." },
+    { "date": "2026-06-01", "event": "The final 2026 Business Plan is released. It proposes a San Francisco–Bakersfield service by 2039 over upgraded shared tracks, with Fourth and King as the interim San Francisco terminus." }
+  ],
+  "nextMilestone": "None scheduled for this section. The 2026 Business Plan shows right-of-way, design, and the Fourth and King, Millbrae and San Jose station work as not started, within a San Francisco–Bakersfield timeline that runs to 2039.",
+  "summary": "The Bay Area end of California's high-speed rail line. Rather than building new tracks up the Peninsula, high-speed trains would share Caltrain's newly electrified corridor for about 49 miles from San Francisco to San Jose, stopping at Fourth and King (and later the Salesforce Transit Center via The Portal), Millbrae for SFO, and San Jose Diridon. The route was environmentally approved in 2022, but no construction has started and the Authority's current plan reaches the Bay Area by 2039.",
+  "massingNotes": "Draw as a line along the existing Caltrain corridor with station points (Fourth and King, Millbrae, San Jose Diridon; Salesforce Transit Center as the future terminus via The Portal), not as buildings. Label it 'Approximate alignment'. Best official geometry: (1) Final EIR/EIS Volume 3 Preliminary Engineering Plans, Alternative A Books A-1 and A-2 (composite plan, profile and typical sections), A-3 (stations) and A-4 (structures, maintenance facility, alignment data table), on hsr.ca.gov. (2) Resolution HSRA 22-20 Exhibit A, the map of the approved portion. (3) The Authority's ArcGIS Online layers (services3.arcgis.com/rGGp0aiv6Rf11t2H): HSR_Statewide_Alignment layer 1 (section 'F-J', about 42.8 miles, Fourth and King to Scott Boulevard; stations in layer 0), Alignment_Hybrid_Feb_8_2024 layer 4 (about 49 miles to Diridon), and NORCAL_LAYERS layer 1 'Preliminary Design Footprint' (polygons by feature type, e.g. 'Blended High Speed Rail Caltrain ROW', 'HSR Station Platform'). Their item terms say the data 'are not to be redistributed without the express approval from California High Speed Rail Authority', so they need the Authority's permission before the map can ship them. Open alternative: the U.S. DOT/BTS National Transportation Atlas 'North American Rail Network Lines – Passenger Rail' layer (public domain) for the Caltrain line itself, with the four station points from the Final EIR/EIS.",
+  "officialLinks": [
+    "https://hsr.ca.gov/high-speed-rail-in-california/project-sections/san-francisco-to-san-jose/",
+    "https://hsr.ca.gov/project-overview/project-sections/northern-california/"
+  ],
+  "sources": [
+    "https://hsr.ca.gov/high-speed-rail-in-california/project-sections/san-francisco-to-san-jose/",
+    "https://hsr.ca.gov/project-overview/project-sections/northern-california/",
+    "https://hsr.ca.gov/wp-content/uploads/2022/05/Final_EIRS_FJ_V1-03_Fact_Sheet.pdf",
+    "https://hsr.ca.gov/wp-content/uploads/2022/08/FJ-CEQA-Approval-Resolution-final-A11Y.pdf",
+    "https://hsr.ca.gov/wp-content/uploads/2022/08/22-19_FJ_CEQA_Approval_Resolution_Exhibit_A_Map.pdf",
+    "https://hsr.ca.gov/wp-content/uploads/2022/10/FJ-Final-ROD-Combined-A11Y.pdf",
+    "https://hsr.ca.gov/wp-content/uploads/2026/06/2026-Final-Business-Plan-060126-A11Y.pdf",
+    "https://hsr.ca.gov/wp-content/uploads/2026/09/Northern-California-At-a-Glance-Factsheet-A11Y.pdf",
+    "https://hsr.ca.gov/wp-content/uploads/2022/05/Final_EIRS_FJ_V3-04_Alternative-A_Book_A1.pdf"
+  ],
+  "verify": [
+    "the certification date: Resolution HSRA 22-20 is dated 8/17/2022, while the Authority's Northern California page says the Board certified the Final EIR/EIS on August 18, 2022 (the Board met Aug 17–18)",
+    "whether the 2026 Business Plan was formally adopted by the Board, and on what date (the plan says the final was 'released June 1, 2026')",
+    "the cost basis: the Final EIR/EIS's $5,317 million (2021 dollars) covers the full Alternative A, while the 2026 Business Plan's $1,273 million 'San Francisco to Gilroy Blended Approach' is a reduced early scope; the 2024 Business Plan carried $15,140 million for the same line item",
+    "Caltrain electrification's completion date: the 2026 Business Plan says '2024'; confirm the exact date of electrified service from Caltrain",
+    "permission from the Authority to redistribute its alignment and footprint GIS, or a trace from Volume 3",
+    "how the Portal's $550 million is handled: the Business Plan says the Authority 'remains committed to securing at least $550 million' but that Portal funding is not in its Phase 1 capital costs"
+  ],
+  "lastVerified": "2026-10-07"
+}

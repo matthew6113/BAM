@@ -35,6 +35,9 @@ SF_REDEV = "m288-24sn"  # Former San Francisco Redevelopment Agency Project Area
 SF_HEIGHT = "h9wh-cg3m"  # Zoning Map - Height and Bulk Districts (Public Domain U.S. Government)
 SF_PARCELS = "acdm-wktn"  # Parcels - Active and Retired (ODC-PDDL)
 SCC_PARCELS = ("https://data.sccgov.org", "ubcd-cewv")  # Santa Clara County parcels
+# County of San Mateo parcels (Public Domain). The GeoJSON endpoint returns no geometry: the
+# polygon is the WKT text field "shape", in State Plane California III feet.
+SMC_PARCELS = ("https://data.smcgov.org", "nr6j-72z7")
 
 MENLO_PARCELS = "https://services7.arcgis.com/uRrQ0O3z2aaiIWYU/arcgis/rest/services/City_of_Menlo_Park_Parcels/FeatureServer/7"
 MV_PARCELS = "https://maps.mountainview.gov/arcgis/rest/services/Public/Parcel/MapServer/0"
@@ -46,6 +49,10 @@ ALCO_PARCELS = "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/servic
 OAK_ZONING = "https://services.arcgis.com/9tC74aDHuml0x5Yz/arcgis/rest/services/Zoning_Group_Layers_/FeatureServer/0"
 SC_ZONING = "https://map.santaclaraca.gov/maps/rest/services/OPENDATA/RegionalZoningOpenData/MapServer/0"
 SONOMA_PARCELS = "https://socogis.sonomacounty.ca.gov/map/rest/services/CRAPublic/ParcelsPublicShapeFile/FeatureServer/0"
+MARIN_PARCELS = "https://gis.marinpublic.com/arcgis/rest/services/BaseMap/Basemap/FeatureServer/13"
+EPA_SP_BOUNDARY = ("https://services8.arcgis.com/Qac9ExiTge3RH5x7/arcgis/rest/services/"
+                   "2025_EPA_Zoning_Map_WFL1/FeatureServer/0")
+EPA_ZONING = "https://services8.arcgis.com/Qac9ExiTge3RH5x7/arcgis/rest/services/Final_Zoning/FeatureServer/0"
 # Layer 67 is the adopted plan's own area; layer 3 (zoning "SP-4") runs out over the bay.
 VALLEJO_SP = ("https://portal.cityofvallejo.net/arcgis/rest/services/CityGIS_Viewer/"
               "Planning_Development_Services/MapServer/67")
@@ -70,6 +77,19 @@ ESMERALDA_APNS = [  # Cloverdale Planning Commission staff report, Oct 1, 2026, 
 ]
 
 
+UCSF_PARNASSUS_BLKLOTS = [  # DataSF parcels, block 2634A (New Hospital EIR: "Block 2634A/Lot 011 & 005")
+    "2634A003", "2634A005", "2634A011", "2634A012",
+]
+
+TANFORAN_APNS = [  # Draft EIR p. 53; the vacant lot is 014-311-060 in the NOP and the County layer (014-316-060 in the DEIR)
+    "014316080", "014316300", "014316310", "014316360", "014316330", "014311060",
+]
+
+NORTHGATE_APNS = [  # San Rafael Resolution 15360 and Ordinance 2043 (Dec 2024)
+    "175-060-12", "175-060-40", "175-060-59", "175-060-61", "175-060-66", "175-060-67",
+]
+
+
 def _sql_list(values) -> str:
     return ", ".join(f"'{v}'" for v in values)
 
@@ -82,6 +102,21 @@ def socrata(base: str, dataset: str, where: str) -> dict:
 def arcgis(layer: str, where: str) -> dict:
     q = urllib.parse.urlencode({"where": where, "outFields": "*", "outSR": 4326, "f": "geojson"})
     return {"url": f"{layer}/query?{q}", "landing": layer}
+
+
+# University Village, which the Ravenswood/4 Corners plan leaves out (Figure 1-3), in the City's
+# zoning parcels: its single-family (R-LD) lots, the school site (PI), the park strip and Jack
+# Farrell Park (PR, by APN; the plan's other PR parcels are in the plan area).
+RAVENSWOOD_UV = {
+    "label": "East Palo Alto zoning parcels",
+    **arcgis(EPA_ZONING, "New_Zone in ('R-LD', 'PI') or APN in ('093580010', '063088210')"),
+    "url": arcgis(EPA_ZONING, "New_Zone in ('R-LD', 'PI') or APN in ('093580010', '063088210')")["url"]
+           + "&" + urllib.parse.urlencode({"geometry": "-122.1418,37.4687,-122.1264,37.4840",
+                                           "geometryType": "esriGeometryEnvelope", "inSR": 4326,
+                                           "spatialRel": "esriSpatialRelIntersects"}),
+    "close_m": 20,  # fills University Village's own streets between its lots
+    "open_m": 6,  # drops the street-edge slivers the cut leaves along University Avenue
+}
 
 
 # id -> source query, the layer's name, what the shape covers, accuracy and license.
@@ -300,29 +335,94 @@ SPECS: dict[str, dict] = {
                  "it is still drawn here."),
         "license": "CC BY-SA 3.0, County of Sonoma",
     },
+    "ucsf-parnassus": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(UCSF_PARNASSUS_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 2634A lots 003, 005, 011 and 012",
+        "accuracy": "approximate",
+        "note": ("The four assessor parcels of block 2634A that hold the Parnassus Heights campus and the Mount Sutro "
+                 "Open Space Reserve, against the approximately 107 acres the Regents and the CPHP EIR give for the site. "
+                 "The official campus boundary (2014 LRDP Figure 6-11, as amended) couldn't be read, and campus blocks "
+                 "north of Parnassus Avenue may be missing."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "tanforan": {
+        "label": "San Mateo County parcels",
+        "url": f"{SMC_PARCELS[0]}/resource/{SMC_PARCELS[1]}.json?"
+               + urllib.parse.urlencode({"$where": f"apn in ({_sql_list(TANFORAN_APNS)})", "$limit": 5000}),
+        "landing": f"{SMC_PARCELS[0]}/d/{SMC_PARCELS[1]}",
+        "wkt": {"field": "shape", "crs": "EPSG:2227"},
+        "layer": "County of San Mateo parcels, the six APNs in the Tanforan Redevelopment Project EIR",
+        "accuracy": "official",
+        "note": ("The six parcels the Draft EIR (p. 53) lists for the 44-acre project site: the Shops at Tanforan and the "
+                 "vacant lot north of Sneath Lane, whose APN the Draft EIR gives as 014-316-060 and the NOP and the "
+                 "County layer as 014-311-060."),
+        "license": "Public Domain (County of San Mateo)",
+    },
+    "northgate-san-rafael": {
+        "label": "Marin County parcels",
+        **arcgis(MARIN_PARCELS, f"Prop_ID IN ({_sql_list(NORTHGATE_APNS)})"),
+        "layer": "Marin County parcels (Marin GIS Basemap, layer 13), the six APNs in San Rafael Resolution 15360 and Ordinance 2043",
+        "accuracy": "approximate",
+        "note": ("The six Northgate Mall parcels the City's approvals name as the Project Site, against the approvals' "
+                 "approximately 44.76 acres. Not yet checked against the Ordinance 2043 legal description (Exhibit D). "
+                 "The County's parcel service states no license; its terms are an open item."),
+        "license": "Marin County GIS (no license stated; terms to confirm)",
+    },
+    "ravenswood-business-district": {
+        "label": "East Palo Alto’s specific plan boundary",
+        **arcgis(EPA_SP_BOUNDARY, "1=1"),
+        "minus": RAVENSWOOD_UV,
+        "layer": ("City of East Palo Alto, 2025 EPA Zoning Map “Specific Plan Boundary”, less University Village "
+                  "as drawn by the City's zoning parcels (Final_Zoning)"),
+        "accuracy": "approximate",
+        "note": ("The City's specific plan boundary layer is the plan's outer line (about 327 acres) and takes in "
+                 "University Village, which the adopted plan leaves out (Figure 1-3). University Village is cut out "
+                 "here as the City's zoning parcels zoned R-LD (its single-family lots) and PI (the school site) and "
+                 "its two PR park parcels inside the line, closed over their own streets, against the plan's "
+                 "approximately 207 acres. The narrow strip along the rail line north of Tulane Avenue, which the "
+                 "plan includes, is too thin to keep."),
+        "license": "City of East Palo Alto ArcGIS (no license stated; terms to confirm)",
+    },
 }
 
 
-def fetch(project: str, spec: dict) -> dict:
+def fetch(name: str, spec: dict) -> dict:
     RAW.mkdir(parents=True, exist_ok=True)
-    cache = RAW / f"{project}.geojson"
+    cache = RAW / f"{name}.{'json' if 'wkt' in spec else 'geojson'}"
     if not cache.exists():
         req = urllib.request.Request(spec["url"], headers={"User-Agent": "Mozilla/5.0 (bay-area-megaprojects pipeline)"})
         with urllib.request.urlopen(req, timeout=120) as r:
             cache.write_bytes(r.read())
-    fc = json.loads(cache.read_text())
-    if not fc.get("features"):
-        raise SystemExit(f"{project}: the query returned no features ({spec['url']})")
-    return fc
+    data = json.loads(cache.read_text())
+    if "wkt" in spec:  # Socrata rows with the polygon as WKT text in a projected CRS
+        field, crs = spec["wkt"]["field"], spec["wkt"]["crs"]
+        rows = [r for r in data if r.get(field)]
+        geoms = gpd.GeoSeries([shapely.force_2d(shapely.from_wkt(r[field])) for r in rows], crs=crs).to_crs(4326)
+        data = {"type": "FeatureCollection",
+                "features": [{"type": "Feature", "geometry": mapping(g), "properties": {}} for g in geoms]}
+    if not data.get("features"):
+        raise SystemExit(f"{name}: the query returned no features ({spec['url']})")
+    return data
+
+
+def _utm_shapes(fc: dict) -> gpd.GeoSeries:
+    geoms = [shapely.make_valid(shape(f["geometry"])) for f in fc["features"] if f.get("geometry")]
+    return gpd.GeoSeries(geoms, crs=4326).to_crs(UTM)
 
 
 def build(project: str) -> None:
     spec = SPECS[project]
-    fc = fetch(project, spec)
-    geoms = [shapely.make_valid(shape(f["geometry"])) for f in fc["features"] if f.get("geometry")]
-    utm = gpd.GeoSeries(geoms, crs=4326).to_crs(UTM)
+    utm = _utm_shapes(fetch(project, spec))
+    geoms = list(utm)
     # Join neighbouring shapes; slivers between adjoining parcels close at 0.5 m.
     site = shapely.union_all(utm.buffer(0.5).to_numpy()).buffer(-0.5)
+    if "minus" in spec:  # an area the layer takes in but the plan leaves out
+        cut = spec["minus"]
+        parts = _utm_shapes(fetch(f"{project}-minus", cut))
+        parts = parts[parts.representative_point().within(site)]
+        hole = shapely.union_all(parts.buffer(cut["close_m"]).to_numpy()).buffer(-cut["close_m"])
+        site = site.difference(hole).buffer(-cut["open_m"]).buffer(cut["open_m"])
     # 1 m is well inside map precision and keeps the bundled files small.
     site = site.simplify(1.0, preserve_topology=True)
     acres = site.area / ACRE_M2
@@ -339,6 +439,8 @@ def build(project: str) -> None:
             "accuracyNote": f"{spec['note']} {acres:,.1f} acres as drawn.",
             "license": spec["license"],
             "features_used": len(geoms),
+            **({"minusSource": spec["minus"]["label"], "minusSourceUrl": spec["minus"]["landing"],
+                "minusQuery": spec["minus"]["url"]} if "minus" in spec else {}),
         },
         "features": [{"type": "Feature", "properties": {"kind": "site", "name": "Project site"}, "geometry": mapping(wgs)}],
     }

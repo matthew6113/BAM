@@ -1,0 +1,633 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "valley-link",
+  "source": "Tri-Valley-San Joaquin Valley Regional Rail Authority, Board packet, June 10, 2026 (item 4.c.2, AB 1171 Initial Project Report), Figure 4 (First Street to Vasco Road); Valley Link Rail Project Draft Subsequent EIR, Chapter 2, Project Description (April 2024, SCH 2018092027), Figures 2-4 to 2-6 (I-580 median), 2-13 and 2-14 (stations); georeferenced to OpenStreetMap streets and building footprints",
+  "sourceLabel": "Valley Link Board packet (June 10, 2026), Figure 4, and Draft SEIR (2024) figures",
+  "sourceUrl": "https://www.valleylinkrail.com/_files/ugd/8f09e7_9cca9a978bb14766a336566c3710ef3a.pdf",
+  "accuracy": "traced",
+  "accuracyNote": "Approximate alignment traced from the Authority's figures: 11.4 miles as drawn (the Authority: 'approximately 11 miles'). Figure 4 of the June 2026 report gives the current Phase 1A route from First Street to Vasco Road; the I-580 median and the stations come from the 2024 Draft SEIR, whose median alignment the 2026 report keeps. The figures are fitted to OpenStreetMap with RMS 1.3-3.0 m, and the lines are drawn tens of metres wide, so the centreline is good to about 10-20 m, not to the track. The 82-m join from the Dublin/Pleasanton platform into the median is not drawn in the figures and is a straight line. Phase 1B (Southfront Road to Mountain House, unfunded) is not drawn. The site shown is a 60 m corridor around the alignment, for selecting it on the map; it is not a property line.",
+  "license": "Traced facts from public documents of the Tri-Valley-San Joaquin Valley Regional Rail Authority (PDFs not redistributed). Georeference: OpenStreetMap contributors (ODbL 1.0), via Overture Maps. Station checks: BART GTFS (bart.gov developer terms); Caltrans California Transit Stops (public, no license stated).",
+  "otherSources": [
+   "https://ceqanet.lci.ca.gov/2018092027/6",
+   "https://ceqanet.lci.ca.gov/2018092027/6/Attachment/ZPbOAG",
+   "https://www.bart.gov/dev/schedules/google_transit.zip",
+   "https://caltrans-gis.dot.ca.gov/arcgis/rest/services/CHrailroad/CA_Transit_Stops/FeatureServer/0"
+  ],
+  "georeference": {
+   "Figure 4": {
+    "scale_m_per_unit": 2.60852,
+    "rotation_deg": 1.556,
+    "rms_m": 2.95,
+    "controls": [],
+    "method": "building-footprint match: OpenStreetMap footprints rendered in the figure's frame and correlated with the aerial photo (coarse search over scale and rotation), then tile by tile (120 px tiles, half overlapping); each tile's local shift is a control point for trace.fit_similarity",
+    "coarse_correlation": 0.286,
+    "tiles_used": 73,
+    "tiles_dropped_as_outliers": 1,
+    "median_m": 2.43,
+    "max_m": 5.77,
+    "start": "First Street x I-580, 2.6 m/px",
+    "line_gaps_bridged_px": [
+     11.7,
+     10.2
+    ]
+   },
+   "Figure 2-13": {
+    "scale_m_per_unit": 0.38517,
+    "rotation_deg": 1.719,
+    "rms_m": 1.61,
+    "controls": [],
+    "method": "building-footprint match: OpenStreetMap footprints rendered in the figure's frame and correlated with the aerial photo (coarse search over scale and rotation), then tile by tile (200 px tiles, half overlapping); each tile's local shift is a control point for trace.fit_similarity",
+    "coarse_correlation": 0.124,
+    "tiles_used": 20,
+    "tiles_dropped_as_outliers": 2,
+    "median_m": 1.28,
+    "max_m": 3.38,
+    "start": "the existing BART platform (BART GTFS stop L30-1), 0.387 m/px (scale bar)"
+   },
+   "Figure 2-14": {
+    "scale_m_per_unit": 0.65116,
+    "rotation_deg": 1.546,
+    "rms_m": 1.27,
+    "controls": [],
+    "method": "building-footprint match: OpenStreetMap footprints rendered in the figure's frame and correlated with the aerial photo (coarse search over scale and rotation), then tile by tile (200 px tiles, half overlapping); each tile's local shift is a control point for trace.fit_similarity",
+    "coarse_correlation": 0.151,
+    "tiles_used": 16,
+    "tiles_dropped_as_outliers": 0,
+    "median_m": 1.06,
+    "max_m": 2.61,
+    "start": "Isabel Avenue x I-580, 0.651 m/px (scale bar)"
+   },
+   "Figure 2-4": {
+    "scale_m_per_unit": 2.7461,
+    "rotation_deg": 1.527,
+    "rms_m": 1.6,
+    "controls": [
+     {
+      "label": "street casings vs OpenStreetMap streets: trimmed RMS over the closest 50% of 18568 points",
+      "residual_m": 1.6
+     }
+    ],
+    "method": "trimmed ICP",
+    "points": 18568,
+    "inlier_share": 0.5,
+    "median_m": 2.96,
+    "p90_m": 13.08,
+    "start": "Hacienda Drive and Santa Rita Road crossings of I-580 (hand-located in the figure)"
+   },
+   "Figure 2-5": {
+    "scale_m_per_unit": 2.7461,
+    "rotation_deg": 1.596,
+    "rms_m": 2.76,
+    "controls": [
+     {
+      "label": "street casings vs OpenStreetMap streets: trimmed RMS over the closest 50% of 16679 points",
+      "residual_m": 2.76
+     }
+    ],
+    "method": "trimmed ICP",
+    "points": 16679,
+    "inlier_share": 0.5,
+    "median_m": 5.49,
+    "p90_m": 306.2,
+    "start": "Fallon Road and Airway Boulevard crossings of I-580 (hand-located in the figure)"
+   },
+   "Figure 2-6": {
+    "scale_m_per_unit": 2.7461,
+    "rotation_deg": 1.548,
+    "rms_m": 1.99,
+    "controls": [
+     {
+      "label": "street casings vs OpenStreetMap streets: trimmed RMS over the closest 50% of 15277 points",
+      "residual_m": 1.99
+     }
+    ],
+    "method": "trimmed ICP",
+    "points": 15277,
+    "inlier_share": 0.5,
+    "median_m": 3.73,
+    "p90_m": 97.09,
+    "start": "North Livermore Avenue and First Street crossings of I-580 (hand-located in the figure)"
+   },
+   "overlap_agreement_m": [
+    0.9,
+    6.4
+   ]
+  },
+  "check": "Dublin/Pleasanton platform centre 113 m from BART GTFS stop L30-1; Vasco Road platform centre 75 m from Caltrans' ACE stop VAS; Figure 4's line starts 10.9 m from the traced median line.",
+  "corridor": true,
+  "corridorMetres": 60
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Alignment corridor"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.706239,
+       37.69807
+      ],
+      [
+       -121.723096,
+       37.69589
+      ],
+      [
+       -121.725162,
+       37.695557
+      ],
+      [
+       -121.730194,
+       37.694961
+      ],
+      [
+       -121.731068,
+       37.694952
+      ],
+      [
+       -121.73181,
+       37.695144
+      ],
+      [
+       -121.732571,
+       37.695604
+      ],
+      [
+       -121.732944,
+       37.696062
+      ],
+      [
+       -121.73314,
+       37.696541
+      ],
+      [
+       -121.733188,
+       37.696982
+      ],
+      [
+       -121.732883,
+       37.703144
+      ],
+      [
+       -121.733084,
+       37.703508
+      ],
+      [
+       -121.733371,
+       37.703714
+      ],
+      [
+       -121.733845,
+       37.703845
+      ],
+      [
+       -121.734543,
+       37.703723
+      ],
+      [
+       -121.737613,
+       37.702613
+      ],
+      [
+       -121.740121,
+       37.701978
+      ],
+      [
+       -121.741676,
+       37.70184
+      ],
+      [
+       -121.744005,
+       37.701791
+      ],
+      [
+       -121.745511,
+       37.701875
+      ],
+      [
+       -121.74624,
+       37.702009
+      ],
+      [
+       -121.748076,
+       37.702088
+      ],
+      [
+       -121.750363,
+       37.702121
+      ],
+      [
+       -121.757144,
+       37.702412
+      ],
+      [
+       -121.759436,
+       37.702434
+      ],
+      [
+       -121.761578,
+       37.70228
+      ],
+      [
+       -121.763255,
+       37.702073
+      ],
+      [
+       -121.772611,
+       37.700521
+      ],
+      [
+       -121.773124,
+       37.70037
+      ],
+      [
+       -121.774313,
+       37.700296
+      ],
+      [
+       -121.774569,
+       37.70019
+      ],
+      [
+       -121.775749,
+       37.700027
+      ],
+      [
+       -121.787247,
+       37.699039
+      ],
+      [
+       -121.788713,
+       37.699104
+      ],
+      [
+       -121.789894,
+       37.699269
+      ],
+      [
+       -121.794124,
+       37.700188
+      ],
+      [
+       -121.797222,
+       37.700327
+      ],
+      [
+       -121.818407,
+       37.700446
+      ],
+      [
+       -121.827186,
+       37.700587
+      ],
+      [
+       -121.858444,
+       37.700808
+      ],
+      [
+       -121.862907,
+       37.700892
+      ],
+      [
+       -121.86556,
+       37.700854
+      ],
+      [
+       -121.877647,
+       37.701045
+      ],
+      [
+       -121.878492,
+       37.700961
+      ],
+      [
+       -121.878853,
+       37.701009
+      ],
+      [
+       -121.87965,
+       37.700965
+      ],
+      [
+       -121.883629,
+       37.701027
+      ],
+      [
+       -121.884241,
+       37.701094
+      ],
+      [
+       -121.894544,
+       37.701172
+      ],
+      [
+       -121.894899,
+       37.700755
+      ],
+      [
+       -121.895173,
+       37.700609
+      ],
+      [
+       -121.896681,
+       37.700532
+      ],
+      [
+       -121.902222,
+       37.700598
+      ],
+      [
+       -121.902627,
+       37.700768
+      ],
+      [
+       -121.902805,
+       37.701157
+      ],
+      [
+       -121.902631,
+       37.701494
+      ],
+      [
+       -121.902162,
+       37.701673
+      ],
+      [
+       -121.895783,
+       37.701644
+      ],
+      [
+       -121.895336,
+       37.702144
+      ],
+      [
+       -121.894896,
+       37.702275
+      ],
+      [
+       -121.890693,
+       37.70219
+      ],
+      [
+       -121.884187,
+       37.702176
+      ],
+      [
+       -121.883576,
+       37.702109
+      ],
+      [
+       -121.879596,
+       37.70205
+      ],
+      [
+       -121.877653,
+       37.702128
+      ],
+      [
+       -121.865531,
+       37.701936
+      ],
+      [
+       -121.862901,
+       37.701973
+      ],
+      [
+       -121.858351,
+       37.701889
+      ],
+      [
+       -121.827167,
+       37.701668
+      ],
+      [
+       -121.818388,
+       37.701528
+      ],
+      [
+       -121.80282,
+       37.701455
+      ],
+      [
+       -121.802239,
+       37.701399
+      ],
+      [
+       -121.799426,
+       37.701447
+      ],
+      [
+       -121.798833,
+       37.701384
+      ],
+      [
+       -121.797227,
+       37.701422
+      ],
+      [
+       -121.795931,
+       37.701313
+      ],
+      [
+       -121.794886,
+       37.701332
+      ],
+      [
+       -121.793959,
+       37.701261
+      ],
+      [
+       -121.789625,
+       37.700329
+      ],
+      [
+       -121.788559,
+       37.700178
+      ],
+      [
+       -121.787278,
+       37.700121
+      ],
+      [
+       -121.775964,
+       37.701095
+      ],
+      [
+       -121.775052,
+       37.701219
+      ],
+      [
+       -121.774706,
+       37.701355
+      ],
+      [
+       -121.773449,
+       37.701433
+      ],
+      [
+       -121.772896,
+       37.701579
+      ],
+      [
+       -121.763516,
+       37.703134
+      ],
+      [
+       -121.761741,
+       37.703354
+      ],
+      [
+       -121.759512,
+       37.703514
+      ],
+      [
+       -121.757085,
+       37.703492
+      ],
+      [
+       -121.750302,
+       37.703201
+      ],
+      [
+       -121.748014,
+       37.703169
+      ],
+      [
+       -121.746068,
+       37.703084
+      ],
+      [
+       -121.745317,
+       37.702949
+      ],
+      [
+       -121.743935,
+       37.702872
+      ],
+      [
+       -121.741782,
+       37.702919
+      ],
+      [
+       -121.740474,
+       37.703069
+      ],
+      [
+       -121.740175,
+       37.703186
+      ],
+      [
+       -121.73954,
+       37.703255
+      ],
+      [
+       -121.737684,
+       37.703762
+      ],
+      [
+       -121.735047,
+       37.704729
+      ],
+      [
+       -121.734532,
+       37.704868
+      ],
+      [
+       -121.733802,
+       37.704935
+      ],
+      [
+       -121.733045,
+       37.704788
+      ],
+      [
+       -121.732531,
+       37.704569
+      ],
+      [
+       -121.731886,
+       37.704033
+      ],
+      [
+       -121.731544,
+       37.70335
+      ],
+      [
+       -121.731533,
+       37.702173
+      ],
+      [
+       -121.731826,
+       37.696966
+      ],
+      [
+       -121.731701,
+       37.696513
+      ],
+      [
+       -121.73152,
+       37.696296
+      ],
+      [
+       -121.730903,
+       37.696032
+      ],
+      [
+       -121.730335,
+       37.696038
+      ],
+      [
+       -121.724778,
+       37.696718
+      ],
+      [
+       -121.719786,
+       37.697441
+      ],
+      [
+       -121.71937,
+       37.697429
+      ],
+      [
+       -121.717568,
+       37.697721
+      ],
+      [
+       -121.709857,
+       37.698675
+      ],
+      [
+       -121.706839,
+       37.699132
+      ],
+      [
+       -121.706068,
+       37.699079
+      ],
+      [
+       -121.70582,
+       37.698905
+      ],
+      [
+       -121.705715,
+       37.698712
+      ],
+      [
+       -121.70581,
+       37.698305
+      ],
+      [
+       -121.706239,
+       37.69807
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

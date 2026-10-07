@@ -1,0 +1,182 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "diridon-station",
+  "source": "traced: Diridon Station Steering Committee, Aug 19, 2026 meeting packet, environmental review update, slide 11 \"TOD Sites for Environmental\", \"Future Station Project Footprint\" (packet p. 92)",
+  "sourceUrl": "https://santaclaravta.iqm2.com/Citizens/FileOpen.aspx?Type=1&ID=4481&Inline=True",
+  "sourceLabel": "Steering Committee slide (PDF)",
+  "accuracy": "traced",
+  "accuracyShort": "RMS 1.2 m",
+  "accuracyNote": "The Future Station Project Footprint for the At-Grade Alternative as the partner agencies drew it in August 2026, read from the slide's vector outline and placed by fitting the slide's aerial photo to OpenStreetMap building outlines (RMS 1.2 m over the closest 60% of 16,201 edge points; two street crossings within 1.8 m). It is a planning footprint for environmental review, not a property line. The slide shows only the station area: the footprint runs on along the rail corridor north and south past the edges of the photo, and is cut there. 12 acres as drawn; no official acreage is published. It overlaps the mapped Downtown West site by about 1 acre(s).",
+  "license": "Shape traced from a public Diridon Station Steering Committee (VTA agenda) packet. Georeference: OpenStreetMap contributors (ODbL 1.0), via Overture Maps.",
+  "georeference": {
+   "scale_m_per_unit": 0.14716,
+   "rotation_deg": 93.437,
+   "rms_m": 1.19,
+   "controls": [
+    {
+     "label": "aerial photo edges vs Overture (OpenStreetMap) building outlines: trimmed RMS over the closest 60% of 16201 points",
+     "residual_m": 1.19
+    }
+   ],
+   "method": "trimmed ICP",
+   "points": 16201,
+   "inlier_share": 0.6,
+   "median_m": 1.7,
+   "p90_m": 4.15,
+   "street_crossings_m": {
+    "West Santa Clara Street / Cahill Street": 0.5,
+    "West San Fernando Street / Cahill Street": 1.8
+   }
+  },
+  "cutAtFigureFrame": true
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.902635,
+       37.3291319
+      ],
+      [
+       -121.9026146,
+       37.3294574
+      ],
+      [
+       -121.9025909,
+       37.3295966
+      ],
+      [
+       -121.902453,
+       37.3296424
+      ],
+      [
+       -121.9020478,
+       37.329648
+      ],
+      [
+       -121.9021961,
+       37.3319046
+      ],
+      [
+       -121.9026134,
+       37.331893
+      ],
+      [
+       -121.9026278,
+       37.332036
+      ],
+      [
+       -121.9027612,
+       37.3323464
+      ],
+      [
+       -121.9029054,
+       37.3326472
+      ],
+      [
+       -121.9031454,
+       37.333044
+      ],
+      [
+       -121.9033733,
+       37.3333745
+      ],
+      [
+       -121.9038663,
+       37.3339499
+      ],
+      [
+       -121.9040899,
+       37.3341425
+      ],
+      [
+       -121.9041553,
+       37.3341811
+      ],
+      [
+       -121.9046809,
+       37.3341608
+      ],
+      [
+       -121.9044725,
+       37.3339356
+      ],
+      [
+       -121.9041136,
+       37.3335882
+      ],
+      [
+       -121.9038066,
+       37.333248
+      ],
+      [
+       -121.903624,
+       37.3329761
+      ],
+      [
+       -121.9035087,
+       37.3327748
+      ],
+      [
+       -121.9034227,
+       37.33249
+      ],
+      [
+       -121.9033872,
+       37.3320935
+      ],
+      [
+       -121.9033891,
+       37.3318411
+      ],
+      [
+       -121.9036814,
+       37.3318252
+      ],
+      [
+       -121.9036512,
+       37.3313471
+      ],
+      [
+       -121.9033993,
+       37.3313476
+      ],
+      [
+       -121.903334,
+       37.330271
+      ],
+      [
+       -121.9033519,
+       37.330188
+      ],
+      [
+       -121.9032961,
+       37.3296459
+      ],
+      [
+       -121.9032486,
+       37.3287704
+      ],
+      [
+       -121.902609,
+       37.3287952
+      ],
+      [
+       -121.902635,
+       37.3291319
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

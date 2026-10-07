@@ -1,4 +1,4 @@
-import type { Feature, FeatureCollection, Geometry, MultiLineString, MultiPolygon, Point, Polygon } from 'geojson';
+import type { Feature, FeatureCollection, Geometry, LineString, MultiLineString, MultiPolygon, Point, Polygon } from 'geojson';
 import data from '../../data/projects.json';
 import photoData from '../../data/photos.json';
 import type { StageKey } from '../theme/theme';
@@ -73,13 +73,27 @@ export interface LandUseProps {
   note?: string;
 }
 
+/** Line projects (rail lines, shoreline defenses): alignment pieces and stations. */
+export type LineSegment = 'new' | 'tunnel' | 'shared';
+export interface LineProps {
+  kind: 'line' | 'station';
+  name: string;
+  segment?: LineSegment;
+  status?: 'new' | 'rebuilt' | 'existing';
+  source: string;
+  note?: string;
+}
+
 type Collection<G extends Geometry, P> = FeatureCollection<G, P> & { properties?: Record<string, unknown> };
 export type Boundary = Collection<Polygon | MultiPolygon, BoundaryProps>;
 export type Massing = Collection<Polygon | MultiPolygon, MassingProps>;
 export type LandUse = Collection<Polygon | MultiPolygon, LandUseProps>;
+export type Line = Collection<LineString | MultiLineString | Point, LineProps>;
 
 // Traced project geometry lives in data/ (committed, with its sources) and is bundled.
 const boundaryFiles = import.meta.glob('../../data/boundaries/*.geojson', { query: '?raw', import: 'default', eager: true });
+// Line projects' alignments are small and drawn regionally, so they're bundled too.
+const lineFiles = import.meta.glob('../../data/lines/*.geojson', { query: '?raw', import: 'default', eager: true });
 // Massing and land use are only needed once a project is opened, so each file is its own
 // chunk, fetched by loadProjectGeometry() before the fly-in. Boundaries stay in the bundle:
 // the regional view draws every site.
@@ -96,6 +110,7 @@ function byId<T>(files: Record<string, unknown>): Map<string, T> {
 }
 
 const BOUNDARIES = byId<Boundary>(boundaryFiles);
+const LINES = byId<Line>(lineFiles);
 const MASSING = new Map<string, Massing>();
 const LAND_USE = new Map<string, LandUse>();
 
@@ -127,6 +142,37 @@ export function getProject(id: string): Project | undefined {
 
 export function boundaryOf(id: string): Boundary | undefined {
   return BOUNDARIES.get(id);
+}
+
+/** A line project's alignment and stations (its boundary is only a corridor for selecting it). */
+export function lineOf(id: string): Line | undefined {
+  return LINES.get(id);
+}
+
+export function isLineProject(id: string): boolean {
+  return LINES.has(id);
+}
+
+/** Every alignment piece of a line project as one MultiLineString, for the drawing animation. */
+export function alignmentOf(id: string): Feature<MultiLineString> | undefined {
+  const line = LINES.get(id);
+  if (!line) return undefined;
+  const parts: [number, number][][] = [];
+  for (const f of line.features) {
+    if (f.geometry.type === 'LineString') parts.push(f.geometry.coordinates as [number, number][]);
+    else if (f.geometry.type === 'MultiLineString') parts.push(...(f.geometry.coordinates as [number, number][][]));
+  }
+  return { type: 'Feature', properties: {}, geometry: { type: 'MultiLineString', coordinates: parts } };
+}
+
+/** The point halfway along a line project's longest alignment piece (for its regional marker). */
+export function alignmentMidpoint(id: string): [number, number] | undefined {
+  const parts = alignmentOf(id)?.geometry.coordinates as [number, number][][] | undefined;
+  if (!parts?.length) return undefined;
+  const len = (c: [number, number][]) => c.slice(1).reduce((s, p, i) => s + metres(c[i], p), 0);
+  const longest = parts.reduce((a, b) => (len(b) > len(a) ? b : a));
+  const prefix = ringPrefix(longest, 0.5);
+  return prefix[prefix.length - 1];
 }
 
 export function siteOf(id: string): Feature<Polygon | MultiPolygon, BoundaryProps> | undefined {

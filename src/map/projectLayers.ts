@@ -3,16 +3,20 @@ import type {
   LayerSpecification,
   SourceSpecification,
 } from 'maplibre-gl';
-import type { Feature, FeatureCollection, MultiPolygon, Point, Polygon } from 'geojson';
+import type { Feature, FeatureCollection, Geometry, MultiPolygon, Point, Polygon } from 'geojson';
 import { stageColor, STAGE_KEYS, type StageKey, type Theme } from '../theme/theme';
 import {
+  alignmentMidpoint,
   boundaryLine,
   boundaryOf,
   centroidOf,
+  isLineProject,
+  lineOf,
   landUseOf,
   MAPPED_PROJECTS,
   markerPointsOf,
   massingOf,
+  getProject,
   pointFeature,
   siteOf,
   type Massing,
@@ -30,6 +34,8 @@ export interface Selection {
   phase: FlightPhase;
 }
 
+const getStage = (id: string) => getProject(id)?.stage;
+
 const EMPTY: FeatureCollection = { type: 'FeatureCollection', features: [] };
 
 /** One point per mapped project (site centroid; one per piece for scattered sites), for the regional markers. */
@@ -38,7 +44,9 @@ function projectPoints(): FeatureCollection<Point> {
     type: 'FeatureCollection',
     features: MAPPED_PROJECTS.flatMap((p) => {
       const parts = (boundaryOf(p.id)?.features ?? []).filter((f) => f.properties.kind === 'sub-area').map((f) => f.geometry);
-      const at = markerPointsOf(siteOf(p.id)!.geometry, parts);
+      // A line's marker sits on the line, not at the middle of its corridor.
+      const mid = alignmentMidpoint(p.id);
+      const at = mid ? [mid] : markerPointsOf(siteOf(p.id)!.geometry, parts);
       return at.map((xy) => pointFeature(xy, { id: p.id, name: p.name, stage: p.stage, scattered: at.length > 1 }));
     }),
   };
@@ -49,8 +57,25 @@ function projectSites(): FeatureCollection<Polygon | MultiPolygon> {
     type: 'FeatureCollection',
     features: MAPPED_PROJECTS.map((p) => {
       const site = siteOf(p.id)!;
-      return { type: 'Feature', properties: { id: p.id, name: p.name, stage: p.stage }, geometry: site.geometry };
+      return {
+        type: 'Feature',
+        properties: { id: p.id, name: p.name, stage: p.stage, line: isLineProject(p.id) },
+        geometry: site.geometry,
+      };
     }),
+  };
+}
+
+/** Every mapped line project's alignment and stations, tagged with the project's id, name and stage. */
+function projectLines(): FeatureCollection<Geometry> {
+  return {
+    type: 'FeatureCollection',
+    features: MAPPED_PROJECTS.flatMap((p) =>
+      (lineOf(p.id)?.features ?? []).map((f) => ({
+        ...f,
+        properties: { ...f.properties, label: f.properties.name, id: p.id, name: p.name, stage: p.stage },
+      })),
+    ),
   };
 }
 
@@ -83,10 +108,12 @@ export function projectSources(selection: Selection | null): Record<string, Sour
   const massing = selection ? massingOf(selection.id) : undefined;
   const landUse = selection ? landUseOf(selection.id) : undefined;
   const site = selection ? siteOf(selection.id) : undefined;
-  const drawn = selection?.phase === 'landed' && site ? boundaryLine(site.geometry) : undefined;
+  // A landed line project is drawn by its own layers, so the drawing line clears.
+  const drawn = selection?.phase === 'landed' && site && !isLineProject(selection.id) ? boundaryLine(site.geometry) : undefined;
   return {
     'project-points': { type: 'geojson', data: projectPoints() },
     'project-sites': { type: 'geojson', data: projectSites() },
+    'project-lines': { type: 'geojson', data: projectLines() },
     // Filled by the fly-in as the camera approaches; complete once landed.
     'project-boundary-draw': { type: 'geojson', data: drawn ? { type: 'FeatureCollection', features: [drawn] } : EMPTY },
     // Plan-scale projects: the adopted plan's land-use zones, flat on the ground.
@@ -99,7 +126,8 @@ export function projectSources(selection: Selection | null): Record<string, Sour
 /** Filter for context buildings: near the selected site, but not on it. */
 export function contextFilter(selection: Selection | null): ExpressionSpecification {
   const site = selection ? siteOf(selection.id) : undefined;
-  if (!site) return ['has', 'h'];
+  // A line's corridor runs for miles: its surroundings get the same faint context as the region.
+  if (!site || isLineProject(selection!.id)) return ['has', 'h'];
   // ['distance', GeoJSON] measures metres from each building to the site polygon.
   return [
     'all',
@@ -125,6 +153,9 @@ export function projectLayers(
     : ['!=', ['get', 'id'], selectedId];
   const isSelected: ExpressionSpecification = ['==', ['get', 'id'], selectedId];
   const landed = selection?.phase === 'landed';
+  // Line projects draw their alignment instead of a site.
+  const othersSites: ExpressionSpecification = ['all', others, ['!', ['get', 'line']]];
+  const lineSelected = !!selection && isLineProject(selection.id);
   const exaggeration = theme.map.heightExaggeration;
   // Before landing, buildings that have not risen yet stand at zero height.
   const rise: ExpressionSpecification = ['coalesce', ['feature-state', 'rise'], landed ? 1 : 0];
@@ -142,7 +173,7 @@ export function projectLayers(
       type: 'fill',
       source: 'project-sites',
       minzoom: 11.5,
-      filter: others,
+      filter: othersSites,
       paint: {
         'fill-color': stageCol,
         'fill-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, theme.opacity.siteFill],
@@ -153,7 +184,7 @@ export function projectLayers(
       type: 'line',
       source: 'project-sites',
       minzoom: 11.5,
-      filter: others,
+      filter: othersSites,
       layout: { 'line-join': 'round' },
       paint: {
         'line-color': stageCol,
@@ -186,9 +217,10 @@ export function projectLayers(
       id: 'project-boundary-draw',
       type: 'line',
       source: 'project-boundary-draw',
-      layout: { 'line-join': 'round', 'line-cap': 'round' },
+      layout: { 'line-join': 'round', 'line-cap': 'round', visibility: lineSelected ? 'none' : 'visible' },
       paint: { 'line-color': c.selection, 'line-width': ['interpolate', ['linear'], ['zoom'], 12, 1.5, 17, 2.5] },
     },
+    ...lineLayers(theme, selection, fonts, hidden),
     // Massing: one extrusion layer per stage, so each stage gets its own solidity.
     ...presentStages
       .filter((s) => s !== undefined)
@@ -228,6 +260,20 @@ export function projectLayers(
       paint: { 'line-color': stageCol, 'line-width': 1.5, 'line-dasharray': [3, 2] },
     },
     {
+      // A soft land-colored halo that clears the building ink around each dot.
+      id: 'project-marker-halos',
+      type: 'circle',
+      source: 'project-points',
+      maxzoom: 13,
+      filter: ['any', others, ['all', isSelected, ['==', ['get', 'scattered'], true]]],
+      paint: {
+        'circle-color': c.land,
+        'circle-radius': ['interpolate', ['linear'], ['zoom'], 6, 10, 10, 15, 12.5, 17],
+        'circle-blur': 0.35,
+        'circle-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
+      },
+    },
+    {
       id: 'project-markers',
       type: 'circle',
       source: 'project-points',
@@ -238,9 +284,9 @@ export function projectLayers(
       paint: {
         'circle-color': stageCol,
         'circle-radius': ['interpolate', ['linear'], ['zoom'],
-          6, ['case', isSelected, 5, 4], 10, ['case', isSelected, 8, 6], 12.5, ['case', isSelected, 9, 7]],
+          6, ['case', isSelected, 6, 5], 10, ['case', isSelected, 9, 7.5], 12.5, ['case', isSelected, 10, 8.5]],
         'circle-stroke-color': ['case', isSelected, c.labels, c.land],
-        'circle-stroke-width': ['case', isSelected, 2, 1.5],
+        'circle-stroke-width': 2,
         'circle-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
         'circle-stroke-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
       },
@@ -278,6 +324,97 @@ export function projectLayers(
     },
   ];
   return layers;
+}
+
+const lineWidth = (z6: number, z10: number, z15: number): ExpressionSpecification =>
+  ['interpolate', ['exponential', 1.6], ['zoom'], 6, z6, 10, z10, 15, z15];
+
+/**
+ * Line projects, drawn as a cased line (Matthew, 2026-10-07: option C): a bold stage-coloured
+ * line on a land-coloured casing, so it reads over the building print at every zoom. Tunnel
+ * runs are a hollow tube; track the project shares with existing service is drawn lighter.
+ * While the camera flies in, the selected line draws itself (as a site's boundary does).
+ */
+function lineLayers(
+  theme: Theme,
+  selection: Selection | null,
+  fonts: { medium: string[]; regular: string[] },
+  hidden: string[],
+): LayerSpecification[] {
+  const c = theme.colors;
+  const stageCol = stageColorExpression(theme);
+  const selectedId = selection?.id ?? '';
+  const landed = selection?.phase === 'landed';
+  const notHidden: ExpressionSpecification = hidden.length ? ['!', ['in', ['get', 'id'], ['literal', hidden]]] : true as never;
+  // The selected line is drawn by the fly-in until it lands.
+  const shown: ExpressionSpecification = landed ? notHidden : ['all', notHidden, ['!=', ['get', 'id'], selectedId]];
+  const isLine: ExpressionSpecification = ['==', ['get', 'kind'], 'line'];
+  const tunnel: ExpressionSpecification = ['==', ['get', 'segment'], 'tunnel'];
+  const drawStage = selection ? (getStage(selection.id) as StageKey | undefined) : undefined;
+  const drawColor = drawStage ? stageColor(theme, drawStage) : c.selection;
+  const lineSelected = !!selection && isLineProject(selection.id);
+  const round = { 'line-join': 'round', 'line-cap': 'round' } as const;
+  return [
+    {
+      id: 'project-line-casing', type: 'line', source: 'project-lines',
+      filter: ['all', shown, isLine], layout: round,
+      paint: { 'line-color': c.land, 'line-width': lineWidth(2.6, 4.5, 11) },
+    },
+    {
+      id: 'project-line-core', type: 'line', source: 'project-lines',
+      filter: ['all', shown, isLine, ['!', tunnel]], layout: round,
+      paint: {
+        'line-color': stageCol,
+        'line-width': lineWidth(1.3, 2.2, 6),
+        'line-opacity': ['case', ['==', ['get', 'segment'], 'shared'], 0.55, 1],
+      },
+    },
+    {
+      id: 'project-line-tube', type: 'line', source: 'project-lines',
+      filter: ['all', shown, isLine, tunnel], layout: round,
+      paint: { 'line-color': stageCol, 'line-width': lineWidth(1.8, 3, 9) },
+    },
+    {
+      id: 'project-line-tube-hollow', type: 'line', source: 'project-lines',
+      filter: ['all', shown, isLine, tunnel], layout: round,
+      paint: { 'line-color': c.land, 'line-width': lineWidth(0.6, 1.2, 4.5) },
+    },
+    {
+      // Drawn by the fly-in: the selected line, growing along its length.
+      id: 'project-line-draw-casing', type: 'line', source: 'project-boundary-draw', layout: { ...round, visibility: lineSelected ? 'visible' : 'none' },
+      paint: { 'line-color': c.land, 'line-width': lineWidth(2.6, 4.5, 11) },
+    },
+    {
+      id: 'project-line-draw', type: 'line', source: 'project-boundary-draw', layout: { ...round, visibility: lineSelected ? 'visible' : 'none' },
+      paint: { 'line-color': drawColor, 'line-width': lineWidth(1.3, 2.2, 6) },
+    },
+    {
+      id: 'project-line-stations', type: 'circle', source: 'project-lines', minzoom: 9,
+      filter: ['all', shown, ['==', ['get', 'kind'], 'station']],
+      paint: {
+        'circle-color': ['case', ['==', ['get', 'status'], 'existing'], c.land, stageCol],
+        'circle-radius': lineWidth(1.5, 3, 8),
+        'circle-stroke-color': ['case', ['==', ['get', 'status'], 'existing'], stageCol, c.land],
+        'circle-stroke-width': lineWidth(0.8, 1.2, 2.5),
+      },
+    },
+    {
+      // Stations are named only on the open project: labels stay sparse.
+      id: 'project-line-station-labels', type: 'symbol', source: 'project-lines', minzoom: 10.5,
+      filter: ['all', ['==', ['get', 'kind'], 'station'], ['==', ['get', 'id'], landed ? selectedId : '']],
+      layout: {
+        'text-field': ['get', 'label'], 'text-font': fonts.medium, 'text-size': 12,
+        'text-offset': [0, 0.9], 'text-anchor': 'top', 'text-max-width': 9,
+      },
+      paint: { 'text-color': c.labels, 'text-halo-color': c.land, 'text-halo-width': 2, 'text-halo-blur': 0.5 },
+    },
+    {
+      // Wide and invisible: makes a thin line easy to hover and click.
+      id: 'project-line-hit', type: 'line', source: 'project-lines',
+      filter: ['all', ['!=', ['get', 'id'], selectedId], notHidden, isLine], layout: round,
+      paint: { 'line-color': c.land, 'line-opacity': 0, 'line-width': 16 },
+    },
+  ] as LayerSpecification[];
 }
 
 export type { Feature };

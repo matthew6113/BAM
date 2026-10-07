@@ -143,7 +143,9 @@ export function ProjectPanel({ project, onClose, onPrev, onNext, prevName, nextN
             <a href={lMeta.sourceUrl}>{typeof lMeta.sourceLabel === 'string' ? lMeta.sourceLabel : 'Land-use source'}</a>.{' '}
           </>
         )}
-        {bMeta.accuracy === 'official' ? <>Boundary from </> : <strong>Approximate boundary, </strong>}
+        {bMeta.accuracy === 'official'
+          ? <>{bMeta.corridor ? 'Alignment' : 'Boundary'} from </>
+          : <strong>Approximate {bMeta.corridor ? 'alignment' : 'boundary'}, </strong>}
         {bMeta.accuracy === 'traced' && <>traced{typeof bMeta.accuracyShort === 'string' && ` (${bMeta.accuracyShort})`} from </>}
         {bMeta.accuracy === 'approximate' && <>from </>}
         {typeof bMeta.sourceUrl === 'string' && (

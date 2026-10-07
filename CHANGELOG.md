@@ -171,6 +171,27 @@ official records. Findings, with URLs, pages and quotes: `docs/official-research
   passed Apr 28, 2009. Grading began in 2016 and site preparation finished in early 2019. Zone 1 is about
   20 acres (parcels listed). The Dec 2019 filings were three buildings, not two (146, 152 and 258 homes).
 
+## 2026-10-07 (ten projects added; line projects)
+
+Ten projects added after official-source research (notes in `docs/official-research/candidates-*.md`,
+Oct 7): The Portal, California High-Speed Rail San Francisco to San Jose, BART Silicon Valley Phase II,
+Diridon Station, Valley Link (Phase 1A), the San Francisco waterfront flood defenses, UCSF Parnassus
+Heights, Tanforan, Northgate Town Square and the Ravenswood Business District / 4 Corners plan. Link21 is
+listed under `_meta.dropped` as a watch item: no alignment yet, and federal corridor planning isn't
+expected to start until 2027. Corrections to commonly reported figures are in each record (for example,
+UCSF's "1,200 homes" is the citywide MOU commitment; the plan adds 762 on campus).
+
+Line projects (Matthew chose the cased-line style, option C): six projects are drawn as alignments with
+stations (`data/lines/`, written by `bam_pipeline.sites.lines`), with a 60 m corridor as their boundary
+for selection. Sources: TJPA's Sept 2026 status report figure (The Portal, traced, RMS 1.2 m); US DOT BTS
+NTAD rail network and Caltrain GTFS (HSR; CHSRA's own layers forbid redistribution and were used only to
+check); VTA's public alignment layers (BART Phase II); Valley Link's June 2026 packet and 2024 Draft SEIR
+figures (traced, RMS 1.3–3.0 m); the Port's Aug 2026 phasing map (waterfront, traced, RMS 2.6 m; drawn
+11.3 mi along the water's edge against the official 7.5 mi, flagged). Diridon is a traced station
+footprint (partial). Site boundaries: DataSF parcels (UCSF, approximate), San Mateo County parcels
+(Tanforan), Marin County parcels (Northgate) and East Palo Alto's plan boundary minus University Village
+(Ravenswood). Open licence items: VTA GIS, Marin County parcels and East Palo Alto's layers state none.
+
 ## 2026-10-07 (BART station-area housing, added)
 
 New project `bart-station-housing`, added at Matthew's request as one program-level entry: BART's

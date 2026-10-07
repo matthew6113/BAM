@@ -137,8 +137,8 @@ export function contrastIssues(theme: Theme): ContrastIssue[] {
     const ratio = contrast(theme.colors.labels, bg);
     if (ratio < 4.5) issues.push({ subject: 'Labels', against: name, ratio, needed: 4.5 });
   }
-  const ink = over(theme.colors.buildings, theme.opacity.buildings, theme.colors.land);
-  const sel = contrast(theme.colors.selection, ink);
-  if (sel < 3) issues.push({ subject: 'Selection', against: 'buildings', ratio: sel, needed: 3 });
+  // The boundary sits on the selected site's ground (selectionFill), not on the building ink.
+  const sel = contrast(theme.colors.selection, theme.colors.selectionFill);
+  if (sel < 3) issues.push({ subject: 'Selection', against: 'site ground', ratio: sel, needed: 3 });
   return issues;
 }

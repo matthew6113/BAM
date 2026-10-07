@@ -1,0 +1,894 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "valley-link",
+  "source": "Tri-Valley-San Joaquin Valley Regional Rail Authority, Board packet, June 10, 2026 (item 4.c.2, AB 1171 Initial Project Report), Figure 4 (First Street to Vasco Road); Valley Link Rail Project Draft Subsequent EIR, Chapter 2, Project Description (April 2024, SCH 2018092027), Figures 2-4 to 2-6 (I-580 median), 2-13 and 2-14 (stations); georeferenced to OpenStreetMap streets and building footprints",
+  "sourceLabel": "Valley Link Board packet (June 10, 2026), Figure 4, and Draft SEIR (2024) figures",
+  "sourceUrl": "https://www.valleylinkrail.com/_files/ugd/8f09e7_9cca9a978bb14766a336566c3710ef3a.pdf",
+  "accuracy": "traced",
+  "accuracyNote": "Approximate alignment traced from the Authority's figures: 11.4 miles as drawn (the Authority: 'approximately 11 miles'). Figure 4 of the June 2026 report gives the current Phase 1A route from First Street to Vasco Road; the I-580 median and the stations come from the 2024 Draft SEIR, whose median alignment the 2026 report keeps. The figures are fitted to OpenStreetMap with RMS 1.3-3.0 m, and the lines are drawn tens of metres wide, so the centreline is good to about 10-20 m, not to the track. The 82-m join from the Dublin/Pleasanton platform into the median is not drawn in the figures and is a straight line. Phase 1B (Southfront Road to Mountain House, unfunded) is not drawn.",
+  "license": "Traced facts from public documents of the Tri-Valley-San Joaquin Valley Regional Rail Authority (PDFs not redistributed). Georeference: OpenStreetMap contributors (ODbL 1.0), via Overture Maps. Station checks: BART GTFS (bart.gov developer terms); Caltrans California Transit Stops (public, no license stated).",
+  "otherSources": [
+   "https://ceqanet.lci.ca.gov/2018092027/6",
+   "https://ceqanet.lci.ca.gov/2018092027/6/Attachment/ZPbOAG",
+   "https://www.bart.gov/dev/schedules/google_transit.zip",
+   "https://caltrans-gis.dot.ca.gov/arcgis/rest/services/CHrailroad/CA_Transit_Stops/FeatureServer/0"
+  ],
+  "georeference": {
+   "Figure 4": {
+    "scale_m_per_unit": 2.60852,
+    "rotation_deg": 1.556,
+    "rms_m": 2.95,
+    "controls": [],
+    "method": "building-footprint match: OpenStreetMap footprints rendered in the figure's frame and correlated with the aerial photo (coarse search over scale and rotation), then tile by tile (120 px tiles, half overlapping); each tile's local shift is a control point for trace.fit_similarity",
+    "coarse_correlation": 0.286,
+    "tiles_used": 73,
+    "tiles_dropped_as_outliers": 1,
+    "median_m": 2.43,
+    "max_m": 5.77,
+    "start": "First Street x I-580, 2.6 m/px",
+    "line_gaps_bridged_px": [
+     11.7,
+     10.2
+    ]
+   },
+   "Figure 2-13": {
+    "scale_m_per_unit": 0.38517,
+    "rotation_deg": 1.719,
+    "rms_m": 1.61,
+    "controls": [],
+    "method": "building-footprint match: OpenStreetMap footprints rendered in the figure's frame and correlated with the aerial photo (coarse search over scale and rotation), then tile by tile (200 px tiles, half overlapping); each tile's local shift is a control point for trace.fit_similarity",
+    "coarse_correlation": 0.124,
+    "tiles_used": 20,
+    "tiles_dropped_as_outliers": 2,
+    "median_m": 1.28,
+    "max_m": 3.38,
+    "start": "the existing BART platform (BART GTFS stop L30-1), 0.387 m/px (scale bar)"
+   },
+   "Figure 2-14": {
+    "scale_m_per_unit": 0.65116,
+    "rotation_deg": 1.546,
+    "rms_m": 1.27,
+    "controls": [],
+    "method": "building-footprint match: OpenStreetMap footprints rendered in the figure's frame and correlated with the aerial photo (coarse search over scale and rotation), then tile by tile (200 px tiles, half overlapping); each tile's local shift is a control point for trace.fit_similarity",
+    "coarse_correlation": 0.151,
+    "tiles_used": 16,
+    "tiles_dropped_as_outliers": 0,
+    "median_m": 1.06,
+    "max_m": 2.61,
+    "start": "Isabel Avenue x I-580, 0.651 m/px (scale bar)"
+   },
+   "Figure 2-4": {
+    "scale_m_per_unit": 2.7461,
+    "rotation_deg": 1.527,
+    "rms_m": 1.6,
+    "controls": [
+     {
+      "label": "street casings vs OpenStreetMap streets: trimmed RMS over the closest 50% of 18568 points",
+      "residual_m": 1.6
+     }
+    ],
+    "method": "trimmed ICP",
+    "points": 18568,
+    "inlier_share": 0.5,
+    "median_m": 2.96,
+    "p90_m": 13.08,
+    "start": "Hacienda Drive and Santa Rita Road crossings of I-580 (hand-located in the figure)"
+   },
+   "Figure 2-5": {
+    "scale_m_per_unit": 2.7461,
+    "rotation_deg": 1.596,
+    "rms_m": 2.76,
+    "controls": [
+     {
+      "label": "street casings vs OpenStreetMap streets: trimmed RMS over the closest 50% of 16679 points",
+      "residual_m": 2.76
+     }
+    ],
+    "method": "trimmed ICP",
+    "points": 16679,
+    "inlier_share": 0.5,
+    "median_m": 5.49,
+    "p90_m": 306.2,
+    "start": "Fallon Road and Airway Boulevard crossings of I-580 (hand-located in the figure)"
+   },
+   "Figure 2-6": {
+    "scale_m_per_unit": 2.7461,
+    "rotation_deg": 1.548,
+    "rms_m": 1.99,
+    "controls": [
+     {
+      "label": "street casings vs OpenStreetMap streets: trimmed RMS over the closest 50% of 15277 points",
+      "residual_m": 1.99
+     }
+    ],
+    "method": "trimmed ICP",
+    "points": 15277,
+    "inlier_share": 0.5,
+    "median_m": 3.73,
+    "p90_m": 97.09,
+    "start": "North Livermore Avenue and First Street crossings of I-580 (hand-located in the figure)"
+   },
+   "overlap_agreement_m": [
+    0.9,
+    6.4
+   ]
+  },
+  "check": "Dublin/Pleasanton platform centre 113 m from BART GTFS stop L30-1; Vasco Road platform centre 75 m from Caltrans' ACE stop VAS; Figure 4's line starts 10.9 m from the traced median line.",
+  "lengthKm": 18.34
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "line",
+    "segment": "new",
+    "name": "Dublin/Pleasanton Station and approach, elevated south of eastbound I-580",
+    "source": "traced: Valley Link Rail Project Draft Subsequent EIR, Chapter 2, Project Description (April 2024, SCH 2018092027), PDF p. 18, Figure 2-13, Dublin/Pleasanton Station: 'Proposed Rail Alignment', centre of the two tracks (RMS 1.61 m georeference)."
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -121.902125,
+      37.701133
+     ],
+     [
+      -121.901473,
+      37.70111
+     ],
+     [
+      -121.896675,
+      37.701073
+     ],
+     [
+      -121.896356,
+      37.701079
+     ],
+     [
+      -121.895404,
+      37.701118
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "line",
+    "segment": "new",
+    "name": "Viaduct over eastbound I-580 into the median",
+    "source": "constructed: a straight join between the end of the alignment in Figure 2-13 and the start of the median widening in Figure 2-4, which the SEIR describes as 'an elevated viaduct over the eastbound I-580 freeway lanes to the median of I-580' (p. 2-6). Not drawn in the figures."
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -121.895404,
+      37.701118
+     ],
+     [
+      -121.894892,
+      37.701735
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "line",
+    "segment": "new",
+    "name": "In the I-580 median, Dublin/Pleasanton to First Street",
+    "source": "traced: Valley Link Rail Project Draft Subsequent EIR, Chapter 2, Project Description (April 2024, SCH 2018092027), PDF pp. 9-11, Figures 2-4 to 2-6 (Proposed Project 1-3 of 9): the 'Median Widening' line (trimmed RMS 1.6, 2.76, 1.99 m). The 2026 report: 'Phase 1A would be constructed within the I-580 median from the Dublin/Pleasanton BART Station to just east of the First Street overcrossing'."
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -121.894892,
+      37.701735
+     ],
+     [
+      -121.894408,
+      37.701706
+     ],
+     [
+      -121.8907,
+      37.701649
+     ],
+     [
+      -121.884189,
+      37.701635
+     ],
+     [
+      -121.883627,
+      37.701568
+     ],
+     [
+      -121.880512,
+      37.701563
+     ],
+     [
+      -121.879935,
+      37.701553
+     ],
+     [
+      -121.879639,
+      37.701505
+     ],
+     [
+      -121.878798,
+      37.701555
+     ],
+     [
+      -121.878517,
+      37.701502
+     ],
+     [
+      -121.877678,
+      37.701587
+     ],
+     [
+      -121.875122,
+      37.701513
+     ],
+     [
+      -121.872287,
+      37.701513
+     ],
+     [
+      -121.867457,
+      37.701438
+     ],
+     [
+      -121.86604,
+      37.701447
+     ],
+     [
+      -121.865572,
+      37.701395
+     ],
+     [
+      -121.862909,
+      37.701433
+     ],
+     [
+      -121.858672,
+      37.701395
+     ],
+     [
+      -121.858437,
+      37.701349
+     ],
+     [
+      -121.840515,
+      37.701211
+     ],
+     [
+      -121.836839,
+      37.701208
+     ],
+     [
+      -121.835702,
+      37.701173
+     ],
+     [
+      -121.83173,
+      37.701169
+     ],
+     [
+      -121.830109,
+      37.701117
+     ],
+     [
+      -121.827181,
+      37.701128
+     ],
+     [
+      -121.818393,
+      37.700987
+     ],
+     [
+      -121.814998,
+      37.701002
+     ],
+     [
+      -121.805932,
+      37.70093
+     ],
+     [
+      -121.805371,
+      37.700903
+     ],
+     [
+      -121.802817,
+      37.700915
+     ],
+     [
+      -121.802277,
+      37.700858
+     ],
+     [
+      -121.799411,
+      37.700906
+     ],
+     [
+      -121.798836,
+      37.700838
+     ],
+     [
+      -121.798547,
+      37.70087
+     ],
+     [
+      -121.797425,
+      37.700844
+     ],
+     [
+      -121.79724,
+      37.700882
+     ],
+     [
+      -121.796821,
+      37.700815
+     ],
+     [
+      -121.796295,
+      37.700824
+     ],
+     [
+      -121.796,
+      37.70077
+     ],
+     [
+      -121.79487,
+      37.700791
+     ],
+     [
+      -121.794028,
+      37.700723
+     ],
+     [
+      -121.793466,
+      37.700642
+     ],
+     [
+      -121.793183,
+      37.700543
+     ],
+     [
+      -121.789774,
+      37.699801
+     ],
+     [
+      -121.78865,
+      37.699642
+     ],
+     [
+      -121.787808,
+      37.69958
+     ],
+     [
+      -121.787247,
+      37.69958
+     ],
+     [
+      -121.784556,
+      37.699772
+     ],
+     [
+      -121.783266,
+      37.699914
+     ],
+     [
+      -121.777574,
+      37.700388
+     ],
+     [
+      -121.775864,
+      37.70056
+     ],
+     [
+      -121.774746,
+      37.700713
+     ],
+     [
+      -121.774591,
+      37.700821
+     ],
+     [
+      -121.773238,
+      37.700903
+     ],
+     [
+      -121.773037,
+      37.700998
+     ],
+     [
+      -121.772757,
+      37.701049
+     ],
+     [
+      -121.763377,
+      37.702605
+     ],
+     [
+      -121.761667,
+      37.702816
+     ],
+     [
+      -121.760796,
+      37.702892
+     ],
+     [
+      -121.759458,
+      37.702975
+     ],
+     [
+      -121.757122,
+      37.702952
+     ],
+     [
+      -121.750326,
+      37.702661
+     ],
+     [
+      -121.748051,
+      37.702629
+     ],
+     [
+      -121.746148,
+      37.702547
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "line",
+    "segment": "new",
+    "name": "First Street to Vasco Road: flyover, Southfront and Mid-town aerial viaducts, then at grade beside the UPRR tracks",
+    "source": "traced: Tri-Valley-San Joaquin Valley Regional Rail Authority, Board packet, June 10, 2026 (item 4.c.2, AB 1171 Initial Project Report), PDF p. 31, Figure 4, Valley Link Phase 1A Connection From I-580 to Vasco Road Station: the blue Valley Link alignment to the tail tracks east of Vasco Road (RMS 2.95 m georeference).",
+    "note": "Runs parallel to the existing Union Pacific tracks, not on them: 'returning to grade south of the proposed Livermore OMF parallel to the existing UPRR tracks' (2026 report, PDF p. 30)."
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -121.746148,
+      37.702547
+     ],
+     [
+      -121.745622,
+      37.702455
+     ],
+     [
+      -121.745414,
+      37.70241
+     ],
+     [
+      -121.744526,
+      37.702396
+     ],
+     [
+      -121.743993,
+      37.702332
+     ],
+     [
+      -121.743075,
+      37.702318
+     ],
+     [
+      -121.741715,
+      37.70238
+     ],
+     [
+      -121.74077,
+      37.702484
+     ],
+     [
+      -121.740593,
+      37.702533
+     ],
+     [
+      -121.740208,
+      37.702514
+     ],
+     [
+      -121.740033,
+      37.702657
+     ],
+     [
+      -121.739737,
+      37.70266
+     ],
+     [
+      -121.739354,
+      37.702735
+     ],
+     [
+      -121.737822,
+      37.703128
+     ],
+     [
+      -121.737764,
+      37.703175
+     ],
+     [
+      -121.737675,
+      37.703176
+     ],
+     [
+      -121.737617,
+      37.703224
+     ],
+     [
+      -121.737528,
+      37.703225
+     ],
+     [
+      -121.736293,
+      37.703662
+     ],
+     [
+      -121.736058,
+      37.703782
+     ],
+     [
+      -121.735822,
+      37.703831
+     ],
+     [
+      -121.735293,
+      37.704049
+     ],
+     [
+      -121.735205,
+      37.704049
+     ],
+     [
+      -121.734823,
+      37.704218
+     ],
+     [
+      -121.734381,
+      37.704341
+     ],
+     [
+      -121.73379,
+      37.704394
+     ],
+     [
+      -121.733285,
+      37.704282
+     ],
+     [
+      -121.732987,
+      37.704168
+     ],
+     [
+      -121.732568,
+      37.703866
+     ],
+     [
+      -121.732447,
+      37.703727
+     ],
+     [
+      -121.732295,
+      37.703493
+     ],
+     [
+      -121.732202,
+      37.703212
+     ],
+     [
+      -121.732213,
+      37.702178
+     ],
+     [
+      -121.732266,
+      37.701801
+     ],
+     [
+      -121.732323,
+      37.699966
+     ],
+     [
+      -121.732508,
+      37.696955
+     ],
+     [
+      -121.732474,
+      37.69665
+     ],
+     [
+      -121.732319,
+      37.696275
+     ],
+     [
+      -121.732047,
+      37.695949
+     ],
+     [
+      -121.731867,
+      37.69581
+     ],
+     [
+      -121.73145,
+      37.695603
+     ],
+     [
+      -121.731004,
+      37.69549
+     ],
+     [
+      -121.730264,
+      37.695498
+     ],
+     [
+      -121.729615,
+      37.695599
+     ],
+     [
+      -121.729349,
+      37.695602
+     ],
+     [
+      -121.729084,
+      37.695676
+     ],
+     [
+      -121.728611,
+      37.695704
+     ],
+     [
+      -121.728316,
+      37.695778
+     ],
+     [
+      -121.727961,
+      37.695782
+     ],
+     [
+      -121.727814,
+      37.69583
+     ],
+     [
+      -121.727666,
+      37.695809
+     ],
+     [
+      -121.727401,
+      37.695882
+     ],
+     [
+      -121.727164,
+      37.695861
+     ],
+     [
+      -121.727016,
+      37.695886
+     ],
+     [
+      -121.726958,
+      37.695934
+     ],
+     [
+      -121.725806,
+      37.69604
+     ],
+     [
+      -121.725423,
+      37.696115
+     ],
+     [
+      -121.725245,
+      37.696093
+     ],
+     [
+      -121.724951,
+      37.69619
+     ],
+     [
+      -121.724743,
+      37.696169
+     ],
+     [
+      -121.723799,
+      37.696344
+     ],
+     [
+      -121.723563,
+      37.696346
+     ],
+     [
+      -121.723238,
+      37.69642
+     ],
+     [
+      -121.722087,
+      37.69655
+     ],
+     [
+      -121.72194,
+      37.696599
+     ],
+     [
+      -121.721673,
+      37.696602
+     ],
+     [
+      -121.721526,
+      37.69665
+     ],
+     [
+      -121.72005,
+      37.696807
+     ],
+     [
+      -121.719696,
+      37.696905
+     ],
+     [
+      -121.719341,
+      37.696886
+     ],
+     [
+      -121.718927,
+      37.696937
+     ],
+     [
+      -121.718072,
+      37.697087
+     ],
+     [
+      -121.717688,
+      37.697115
+     ],
+     [
+      -121.717452,
+      37.697188
+     ],
+     [
+      -121.71692,
+      37.697217
+     ],
+     [
+      -121.715946,
+      37.697369
+     ],
+     [
+      -121.715828,
+      37.697346
+     ],
+     [
+      -121.715149,
+      37.697471
+     ],
+     [
+      -121.714529,
+      37.697525
+     ],
+     [
+      -121.714234,
+      37.697598
+     ],
+     [
+      -121.713998,
+      37.697601
+     ],
+     [
+      -121.71385,
+      37.69765
+     ],
+     [
+      -121.712846,
+      37.697754
+     ],
+     [
+      -121.712699,
+      37.697803
+     ],
+     [
+      -121.712433,
+      37.697806
+     ],
+     [
+      -121.711666,
+      37.697931
+     ],
+     [
+      -121.71134,
+      37.697935
+     ],
+     [
+      -121.710485,
+      37.698085
+     ],
+     [
+      -121.709746,
+      37.69814
+     ],
+     [
+      -121.70895,
+      37.69829
+     ],
+     [
+      -121.7083,
+      37.698343
+     ],
+     [
+      -121.708094,
+      37.698416
+     ],
+     [
+      -121.706912,
+      37.698546
+     ],
+     [
+      -121.706765,
+      37.698595
+     ],
+     [
+      -121.706381,
+      37.698599
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "station",
+    "status": "new",
+    "name": "Dublin/Pleasanton",
+    "note": "A new double-track aerial Valley Link platform south of eastbound I-580, beside the existing BART station (its centre is 113 m from BART's platform stop). Transfers are through the BART station concourse.",
+    "source": "traced: Valley Link Rail Project Draft Subsequent EIR, Chapter 2, Project Description (April 2024, SCH 2018092027), PDF p. 18, Figure 2-13, Dublin/Pleasanton Station: centre of the 'Elevated Valley Link Platform'."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -121.898141,
+     37.70109
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "station",
+    "status": "new",
+    "name": "Isabel",
+    "note": "A new at-grade platform in the I-580 median east of Isabel Avenue, with parking south of the freeway.",
+    "source": "traced: Valley Link Rail Project Draft Subsequent EIR, Chapter 2, Project Description (April 2024, SCH 2018092027), PDF p. 19, Figure 2-14, Isabel Station: centre of the 'At-Grade Valley Link Platform' (RMS 1.27 m georeference)."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -121.800129,
+     37.700898
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "station",
+    "status": "new",
+    "name": "Vasco Road",
+    "note": "New Valley Link platforms beside the existing Vasco Road ACE platform, for cross-platform transfers (the figure's platform centre is 75 m from Caltrans' ACE stop point).",
+    "source": "traced: Tri-Valley-San Joaquin Valley Regional Rail Authority, Board packet, June 10, 2026 (item 4.c.2, AB 1171 Initial Project Report), PDF p. 31, Figure 4, Valley Link Phase 1A Connection From I-580 to Vasco Road Station: centre of the green 'Valley Link Vasco Road Station Platform'."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -121.718508,
+     37.697007
+    ]
+   }
+  }
+ ]
+}
