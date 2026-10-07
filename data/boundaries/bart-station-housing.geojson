@@ -1,0 +1,722 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "bart-station-housing",
+  "source": "BART TOD Work Plan layer (BART AB 2923 public service, layer 2): BART-owned parcels at each site",
+  "sourceLabel": "BART TOD parcels",
+  "sourceUrl": "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
+  "query": "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2/query?where=STATION_AR+IN+%28...%29&outFields=%2A&outSR=4326&f=geojson",
+  "accuracy": "approximate",
+  "accuracyNote": "Six BART station sites, each drawn from BART's own parcel layer: West Oakland, Lake Merritt, North Berkeley, Ashby (West Lot), El Cerrito Plaza and West Dublin/Pleasanton (Amador Station). The parcels at North Berkeley, Ashby and El Cerrito Plaza include station entrances and track right-of-way that won't be built on. Walnut Creek, Fremont, Bay Fair and Richmond aren't drawn: no official source places a defined project on a parcel yet. 32.0 acres as drawn.",
+  "license": "BART public ArcGIS Online service (no license stated)",
+  "features_used": 16
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.9280891,
+        37.7011112
+       ],
+       [
+        -121.9278544,
+        37.7006433
+       ],
+       [
+        -121.9280941,
+        37.7005836
+       ],
+       [
+        -121.9280233,
+        37.7003954
+       ],
+       [
+        -121.9281668,
+        37.7003548
+       ],
+       [
+        -121.9292189,
+        37.7000997
+       ],
+       [
+        -121.9296713,
+        37.7010014
+       ],
+       [
+        -121.9282777,
+        37.7014427
+       ],
+       [
+        -121.9281105,
+        37.7011094
+       ],
+       [
+        -121.9280891,
+        37.7011112
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.26596,
+        37.7963995
+       ],
+       [
+        -122.2668905,
+        37.796765
+       ],
+       [
+        -122.2665836,
+        37.7972571
+       ],
+       [
+        -122.2656531,
+        37.7968916
+       ],
+       [
+        -122.26596,
+        37.7963995
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2643466,
+        37.7966244
+       ],
+       [
+        -122.2652812,
+        37.7969915
+       ],
+       [
+        -122.2649743,
+        37.7974837
+       ],
+       [
+        -122.2640397,
+        37.7971167
+       ],
+       [
+        -122.2643466,
+        37.7966244
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2941618,
+        37.8039491
+       ],
+       [
+        -122.2963261,
+        37.8044416
+       ],
+       [
+        -122.2959748,
+        37.805413
+       ],
+       [
+        -122.2938082,
+        37.8049344
+       ],
+       [
+        -122.2941618,
+        37.8039491
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2696566,
+        37.8544089
+       ],
+       [
+        -122.2696299,
+        37.8543797
+       ],
+       [
+        -122.2696151,
+        37.8543408
+       ],
+       [
+        -122.2705179,
+        37.8519624
+       ],
+       [
+        -122.2705615,
+        37.8518999
+       ],
+       [
+        -122.2706115,
+        37.8518881
+       ],
+       [
+        -122.2706603,
+        37.8518984
+       ],
+       [
+        -122.2706991,
+        37.8519321
+       ],
+       [
+        -122.2707051,
+        37.8519663
+       ],
+       [
+        -122.2709557,
+        37.854263
+       ],
+       [
+        -122.2697349,
+        37.8544235
+       ],
+       [
+        -122.2696915,
+        37.85442
+       ],
+       [
+        -122.2696566,
+        37.8544089
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2824483,
+        37.8731507
+       ],
+       [
+        -122.2845126,
+        37.8728929
+       ],
+       [
+        -122.2846026,
+        37.8737024
+       ],
+       [
+        -122.2846136,
+        37.8737059
+       ],
+       [
+        -122.2846932,
+        37.8744963
+       ],
+       [
+        -122.2826483,
+        37.8747662
+       ],
+       [
+        -122.2825389,
+        37.8739638
+       ],
+       [
+        -122.2824483,
+        37.8731507
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2995438,
+        37.9032372
+       ],
+       [
+        -122.2985607,
+        37.9020115
+       ],
+       [
+        -122.2999375,
+        37.9015823
+       ],
+       [
+        -122.3005642,
+        37.9029089
+       ],
+       [
+        -122.2998752,
+        37.9031133
+       ],
+       [
+        -122.2996635,
+        37.9031993
+       ],
+       [
+        -122.2995438,
+        37.9032372
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2993815,
+        37.9032862
+       ],
+       [
+        -122.2987727,
+        37.9034701
+       ],
+       [
+        -122.2981395,
+        37.9021428
+       ],
+       [
+        -122.2983995,
+        37.9020618
+       ],
+       [
+        -122.2993815,
+        37.9032862
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2996136,
+        37.9037917
+       ],
+       [
+        -122.3000672,
+        37.9042774
+       ],
+       [
+        -122.2992689,
+        37.9045156
+       ],
+       [
+        -122.2988511,
+        37.9036344
+       ],
+       [
+        -122.2993126,
+        37.9034972
+       ],
+       [
+        -122.2996136,
+        37.9037917
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "sub-area",
+    "name": "West Oakland (Mandela Station)",
+    "acres": 5.53,
+    "apns": [
+     "004-0077-003-00",
+     "004-0071-003-00",
+     "(vacated street, no APN)"
+    ],
+    "accuracy": "official",
+    "source": "BART TOD Work Plan layer: the parcels BART's TOD Work Plan layer marks “In Progress” at West Oakland, which form the block the City of Oakland describes (about 5.58 acres between 7th, 5th and Chester Streets and Mandela Parkway)"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2963261,
+       37.8044416
+      ],
+      [
+       -122.2959748,
+       37.805413
+      ],
+      [
+       -122.2938082,
+       37.8049344
+      ],
+      [
+       -122.2941618,
+       37.8039491
+      ],
+      [
+       -122.2963261,
+       37.8044416
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "sub-area",
+    "name": "Lake Merritt",
+    "acres": 2.76,
+    "apns": [
+     "001-0171-002-00",
+     "001-0169-001-00"
+    ],
+    "accuracy": "official",
+    "source": "BART TOD Work Plan layer: APNs 001-0169-001-00 (Block 1) and 001-0171-002-00 (Block 2), named in the Oakland DRC staff report of Apr 14, 2021 (PLN20038), p. 8"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2652812,
+        37.7969915
+       ],
+       [
+        -122.2649743,
+        37.7974837
+       ],
+       [
+        -122.2640397,
+        37.7971167
+       ],
+       [
+        -122.2643466,
+        37.7966244
+       ],
+       [
+        -122.2652812,
+        37.7969915
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2668905,
+        37.796765
+       ],
+       [
+        -122.2665836,
+        37.7972571
+       ],
+       [
+        -122.2656531,
+        37.7968916
+       ],
+       [
+        -122.26596,
+        37.7963995
+       ],
+       [
+        -122.2668905,
+        37.796765
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "sub-area",
+    "name": "North Berkeley",
+    "acres": 8.12,
+    "apns": [
+     "058-2146-016-05",
+     "058-2147-018-05",
+     "058-2149-019-04",
+     "058-2148-017-04"
+    ],
+    "accuracy": "approximate",
+    "source": "BART TOD Work Plan layer: the four parcels BART's TOD Work Plan layer marks “In Progress” at North Berkeley (BART: “about 8.2 acres of BART-owned land surrounding the station”); they include the station"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2846932,
+       37.8744963
+      ],
+      [
+       -122.2826483,
+       37.8747662
+      ],
+      [
+       -122.2825389,
+       37.8739638
+      ],
+      [
+       -122.2824483,
+       37.8731507
+      ],
+      [
+       -122.2845126,
+       37.8728929
+      ],
+      [
+       -122.2846026,
+       37.8737024
+      ],
+      [
+       -122.2846136,
+       37.8737059
+      ],
+      [
+       -122.2846932,
+       37.8744963
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "sub-area",
+    "name": "Ashby (West Lot)",
+    "acres": 4.45,
+    "apns": [
+     "053-1597-039-04"
+    ],
+    "accuracy": "approximate",
+    "source": "BART TOD Work Plan layer: APN 053-1597-039-04, the Ashby West Lot parcel in BART's TOD Work Plan layer (BART: “a +/- 4-acre site (West Lot)”); it includes the station entrance"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2709557,
+       37.854263
+      ],
+      [
+       -122.2697349,
+       37.8544235
+      ],
+      [
+       -122.2696915,
+       37.85442
+      ],
+      [
+       -122.2696566,
+       37.8544089
+      ],
+      [
+       -122.2696299,
+       37.8543797
+      ],
+      [
+       -122.2696151,
+       37.8543408
+      ],
+      [
+       -122.2705179,
+       37.8519624
+      ],
+      [
+       -122.2705615,
+       37.8518999
+      ],
+      [
+       -122.2706115,
+       37.8518881
+      ],
+      [
+       -122.2706603,
+       37.8518984
+      ],
+      [
+       -122.2706991,
+       37.8519321
+      ],
+      [
+       -122.2707051,
+       37.8519663
+      ],
+      [
+       -122.2709557,
+       37.854263
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "sub-area",
+    "name": "El Cerrito Plaza",
+    "acres": 7.54,
+    "apns": [
+     "504-130-031-9",
+     "504-050-012-5",
+     "504-121-017-9",
+     "504-122-010-3"
+    ],
+    "accuracy": "approximate",
+    "source": "BART TOD Work Plan layer: the four parcels BART's TOD Work Plan layer marks “In Progress” at El Cerrito Plaza; they include the station and track right-of-way, which the master plan does not build on"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2993815,
+        37.9032862
+       ],
+       [
+        -122.2987727,
+        37.9034701
+       ],
+       [
+        -122.2981395,
+        37.9021428
+       ],
+       [
+        -122.2983995,
+        37.9020618
+       ],
+       [
+        -122.2993815,
+        37.9032862
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3005642,
+        37.9029089
+       ],
+       [
+        -122.2998752,
+        37.9031133
+       ],
+       [
+        -122.2996635,
+        37.9031993
+       ],
+       [
+        -122.2995438,
+        37.9032372
+       ],
+       [
+        -122.2985607,
+        37.9020115
+       ],
+       [
+        -122.2999375,
+        37.9015823
+       ],
+       [
+        -122.3005642,
+        37.9029089
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3000672,
+        37.9042774
+       ],
+       [
+        -122.2992689,
+        37.9045156
+       ],
+       [
+        -122.2988511,
+        37.9036344
+       ],
+       [
+        -122.2993126,
+        37.9034972
+       ],
+       [
+        -122.2996136,
+        37.9037917
+       ],
+       [
+        -122.3000672,
+        37.9042774
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "sub-area",
+    "name": "West Dublin/Pleasanton (Amador Station)",
+    "acres": 3.61,
+    "apns": [
+     "941-2842-004-00",
+     "941-2842-002-00"
+    ],
+    "accuracy": "official",
+    "source": "BART TOD Work Plan layer: APNs 941-2842-002-00 and 941-2842-004-00, named in the City of Dublin's Notice of Determination for Amador Station (CEQAnet SCH 2010022005, received July 28, 2026)"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9296713,
+       37.7010014
+      ],
+      [
+       -121.9282777,
+       37.7014427
+      ],
+      [
+       -121.9281105,
+       37.7011094
+      ],
+      [
+       -121.9280891,
+       37.7011112
+      ],
+      [
+       -121.9278544,
+       37.7006433
+      ],
+      [
+       -121.9280941,
+       37.7005836
+      ],
+      [
+       -121.9280233,
+       37.7003954
+      ],
+      [
+       -121.9281668,
+       37.7003548
+      ],
+      [
+       -121.9292189,
+       37.7000997
+      ],
+      [
+       -121.9296713,
+       37.7010014
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

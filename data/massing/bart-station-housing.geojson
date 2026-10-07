@@ -1,0 +1,2389 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "bart-station-housing",
+  "illustrative": true,
+  "summary": "West Oakland, Lake Merritt and El Cerrito Plaza are traced from their approved plans, with heights from the plans' sections and the City's zoning tables. North Berkeley, the Ashby West Lot and Amador Station have no published design, so they are illustrative envelopes: BART's parcels drawn to the height limit (80 ft in Berkeley's R-BMU district, 90 ft at Amador Station). Real buildings there will cover less of the land. Parcel A-South at El Cerrito Plaza is outlined only: its approval gives stories, not feet.",
+  "note": "Approved designs at three stations; height-limit envelopes, not designs, at the other three.",
+  "sourceUrl": "https://www.oaklandca.gov/files/assets/city/v/1/planning-amp-building/documents/dp/mandela-station-bart/wo-bart-pdp-revised-approval-dated-september-16-2020.pdf",
+  "sourceLabel": "West Oakland plan, 2020 (PDF)",
+  "georeference": {
+   "west_oakland": {
+    "scale_m_per_unit": 0.21282,
+    "rotation_deg": -15.551,
+    "rms_m": 0.17,
+    "controls": [
+     {
+      "label": "7th St / Chester St parcel corner",
+      "residual_m": 0.17
+     },
+     {
+      "label": "7th St / Mandela Pkwy parcel corner",
+      "residual_m": 0.14
+     },
+     {
+      "label": "5th St / Mandela Pkwy parcel corner",
+      "residual_m": 0.17
+     },
+     {
+      "label": "5th St / Chester St parcel corner",
+      "residual_m": 0.19
+     }
+    ],
+    "method": "least-squares similarity on the four corners of the plan's site rectangle (lines fitted to the red site line) matched to the corners of BART's parcels",
+    "page": "Revised PDP, PDF p. 124 (100 dpi); p. 120 shares its frame"
+   },
+   "lake_merritt": {
+    "Block 1": {
+     "scale_m_per_unit": 0.06113,
+     "rotation_deg": -25.877,
+     "rms_m": 0.07,
+     "controls": [
+      {
+       "label": "Block 1: 9th St / Oak St block corner",
+       "residual_m": 0.07
+      },
+      {
+       "label": "Block 1: 9th St / Fallon St block corner",
+       "residual_m": 0.07
+      },
+      {
+       "label": "Block 1: 8th St / Fallon St block corner",
+       "residual_m": 0.07
+      },
+      {
+       "label": "Block 1: 8th St / Oak St block corner",
+       "residual_m": 0.07
+      }
+     ],
+     "page": "DRC staff report PDF p. 81 (sheet C4.1)"
+    },
+    "Block 2": {
+     "scale_m_per_unit": 0.06094,
+     "rotation_deg": -25.882,
+     "rms_m": 0.17,
+     "controls": [
+      {
+       "label": "Block 2: 8th St / Madison St block corner",
+       "residual_m": 0.18
+      },
+      {
+       "label": "Block 2: 8th St / Oak St block corner",
+       "residual_m": 0.17
+      },
+      {
+       "label": "Block 2: 7th St / Oak St block corner",
+       "residual_m": 0.17
+      },
+      {
+       "label": "Block 2: 7th St / Madison St block corner",
+       "residual_m": 0.17
+      }
+     ],
+     "page": "DRC staff report PDF p. 82 (sheet C4.2)"
+    }
+   },
+   "el_cerrito_plaza": {
+    "scale_m_per_unit": 0.12255,
+    "rotation_deg": 111.221,
+    "rms_m": 0.82,
+    "controls": [
+     {
+      "label": "Liberty St / Fairmount Ave lot corner",
+      "residual_m": 1.03
+     },
+     {
+      "label": "Liberty St / Central Ave lot corner",
+      "residual_m": 0.47
+     },
+     {
+      "label": "Central Ave / Richmond St lot corner",
+      "residual_m": 0.5
+     },
+     {
+      "label": "Fairmount Ave / Richmond St lot corner",
+      "residual_m": 1.06
+     }
+    ],
+    "method": "least-squares similarity on the four corners of the main lot's property line matched to the corners of BART's parcels",
+    "page": "sheet A1.01, PDF p. 43 (100 dpi)"
+   }
+  },
+  "license": "Plans: City of Oakland and City of El Cerrito public records; parcels: BART public ArcGIS Online service (no license stated); existing buildings: OpenStreetMap contributors (ODbL 1.0), via Overture Maps",
+  "documents": [
+   "https://www.elcerrito.gov/DocumentCenter/View/20671/Attachment-D_Project-Plans",
+   "https://www.oaklandca.gov/files/assets/city/v/1/planning-amp-building/documents/dp/lake-merritt-bart/041421_drcstaffreport_lmbart_signed.pdf",
+   "https://www.oaklandca.gov/files/assets/city/v/1/planning-amp-building/documents/dp/mandela-station-bart/wo-bart-pdp-revised-approval-dated-september-16-2020.pdf",
+   "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
+   "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/9",
+   "https://berkeleyca.gov/sites/default/files/documents/2023-12-12%20NB%20BART%20ODS_ADOPTED.pdf",
+   "https://berkeleyca.gov/sites/default/files/documents/Berkeley_City_2024_%20GP%20APR.pdf",
+   "https://www.elcerrito.gov/DocumentCenter/View/20672/PL23-0024_Ministerial-Approval-Letter",
+   "https://www.elcerrito.gov/DocumentCenter/View/22554/PL22-0150-Parcel-A-South-Ministerial-Approval-Letter-Including-Conditions",
+   "https://elcerrito.gov/1381/Transit-Oriented-Development-TOD",
+   "https://ceqanet.lci.ca.gov/2010022005/8",
+   "https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/West-Oakland-BART-Development-Mandela-Station",
+   "https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/Lake-Merrit-BART-Transit-Oriented-Development",
+   "https://www.bart.gov/about/business/tod/lakemerritt",
+   "https://www.bart.gov/news/articles/2026/news20260901-0"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "West Oakland",
+    "label": "T1 tower",
+    "stage": "entitled",
+    "height_ft": 320,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: West Oakland BART TOD Revised Preliminary Development Plan, approved by the Oakland Planning Commission Nov 4, 2020 (PLN18490-R02; plan set dated July 24, 2020), PDF p. 124 (floors 20-31 plan); height: sheet A-20.01, roof 320'-0\"",
+    "note": "31 stories; 522 market-rate homes in T1 (City of Oakland project page)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2943711,
+       37.8050599
+      ],
+      [
+       -122.2938126,
+       37.804935
+      ],
+      [
+       -122.2939431,
+       37.8045736
+      ],
+      [
+       -122.2941552,
+       37.8046617
+      ],
+      [
+       -122.2941073,
+       37.8047944
+      ],
+      [
+       -122.2944396,
+       37.80487
+      ],
+      [
+       -122.2943711,
+       37.8050599
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "West Oakland",
+    "label": "T1 west wing",
+    "stage": "entitled",
+    "height_ft": 189.7,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: West Oakland BART TOD Revised Preliminary Development Plan, approved by the Oakland Planning Commission Nov 4, 2020 (PLN18490-R02; plan set dated July 24, 2020), PDF p. 124 (outline of the floors below the 19th-floor roof terrace); height: sheet A-20.01, 19th-floor level 189'-8\""
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2947838,
+       37.8051497
+      ],
+      [
+       -122.2943717,
+       37.8050581
+      ],
+      [
+       -122.2944396,
+       37.80487
+      ],
+      [
+       -122.2947391,
+       37.804946
+      ],
+      [
+       -122.2947318,
+       37.8049663
+      ],
+      [
+       -122.294841,
+       37.8049911
+      ],
+      [
+       -122.2947838,
+       37.8051497
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "West Oakland",
+    "label": "T1 podium",
+    "stage": "entitled",
+    "height_ft": 39.3,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Retail, parking",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: West Oakland BART TOD Revised Preliminary Development Plan, approved by the Oakland Planning Commission Nov 4, 2020 (PLN18490-R02; plan set dated July 24, 2020), PDF p. 124 (T1 development area line); height: sheet A-20.01, 4th-floor level 39'-4\" (the podium roof terraces are at the 4th floor)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2943718,
+        37.8050595
+       ],
+       [
+        -122.2947838,
+        37.8051501
+       ],
+       [
+        -122.2948416,
+        37.804991
+       ],
+       [
+        -122.2947325,
+        37.804966
+       ],
+       [
+        -122.2947389,
+        37.8049481
+       ],
+       [
+        -122.2949612,
+        37.8050344
+       ],
+       [
+        -122.2949093,
+        37.8051782
+       ],
+       [
+        -122.2943718,
+        37.8050595
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2938083,
+        37.804935
+       ],
+       [
+        -122.29394,
+        37.8045689
+       ],
+       [
+        -122.2944968,
+        37.8047952
+       ],
+       [
+        -122.2944782,
+        37.8048468
+       ],
+       [
+        -122.2947197,
+        37.8049406
+       ],
+       [
+        -122.2944398,
+        37.8048695
+       ],
+       [
+        -122.294108,
+        37.8047941
+       ],
+       [
+        -122.2941557,
+        37.8046615
+       ],
+       [
+        -122.2939431,
+        37.8045731
+       ],
+       [
+        -122.2938121,
+        37.804935
+       ],
+       [
+        -122.2939939,
+        37.804976
+       ],
+       [
+        -122.2938083,
+        37.804935
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "West Oakland",
+    "label": "T3 (affordable homes)",
+    "stage": "construction",
+    "height_ft": 70,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable residential",
+    "phase": "Phase 1",
+    "illustrative": false,
+    "source": "traced: West Oakland BART TOD Revised Preliminary Development Plan, approved by the Oakland Planning Commission Nov 4, 2020 (PLN18490-R02; plan set dated July 24, 2020), PDF p. 120 (typical floor plan); height: sheet A-30.02, roof 70'-0\"; under construction: BART, Sept 1, 2026 (https://www.bart.gov/news/articles/2026/news20260901-0)",
+    "note": "7 stories, 240 affordable homes; BART says construction began September 2026. The courtyard is approximate."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2954678,
+       37.8047525
+      ],
+      [
+       -122.2952872,
+       37.8046885
+      ],
+      [
+       -122.295446,
+       37.8042487
+      ],
+      [
+       -122.2961502,
+       37.8044087
+      ],
+      [
+       -122.2959931,
+       37.8048439
+      ],
+      [
+       -122.2958978,
+       37.8048222
+      ],
+      [
+       -122.2958718,
+       37.8048942
+      ],
+      [
+       -122.2961355,
+       37.804972
+      ],
+      [
+       -122.2961022,
+       37.8050642
+      ],
+      [
+       -122.2958122,
+       37.8049305
+      ],
+      [
+       -122.2954678,
+       37.8047525
+      ]
+     ],
+     [
+      [
+       -122.2956298,
+       37.804478
+      ],
+      [
+       -122.2955592,
+       37.8046735
+      ],
+      [
+       -122.2957693,
+       37.804809
+      ],
+      [
+       -122.2958692,
+       37.8045324
+      ],
+      [
+       -122.2956298,
+       37.804478
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "West Oakland",
+    "label": "T3 ground floor",
+    "stage": "construction",
+    "height_ft": 20,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Retail, parking",
+    "phase": "Phase 1",
+    "illustrative": false,
+    "source": "traced: West Oakland BART TOD Revised Preliminary Development Plan, approved by the Oakland Planning Commission Nov 4, 2020 (PLN18490-R02; plan set dated July 24, 2020), PDF p. 124 (T3 outline); height: sheet A-30.02, 2nd-floor level 20'-0\" (decks and courtyard at the 2nd floor)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2957513,
+        37.8049286
+       ],
+       [
+        -122.2955199,
+        37.8047823
+       ],
+       [
+        -122.2953415,
+        37.8047082
+       ],
+       [
+        -122.2954676,
+        37.8047529
+       ],
+       [
+        -122.2958119,
+        37.8049309
+       ],
+       [
+        -122.2960317,
+        37.8050322
+       ],
+       [
+        -122.2957513,
+        37.8049286
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2954573,
+        37.8042453
+       ],
+       [
+        -122.2963242,
+        37.8044423
+       ],
+       [
+        -122.2961333,
+        37.8049709
+       ],
+       [
+        -122.2958725,
+        37.8048939
+       ],
+       [
+        -122.2958982,
+        37.8048228
+       ],
+       [
+        -122.2959936,
+        37.8048441
+       ],
+       [
+        -122.2961507,
+        37.8044085
+       ],
+       [
+        -122.2954554,
+        37.8042504
+       ],
+       [
+        -122.2954573,
+        37.8042453
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2958685,
+        37.8045327
+       ],
+       [
+        -122.295769,
+        37.8048082
+       ],
+       [
+        -122.2955599,
+        37.8046733
+       ],
+       [
+        -122.2956302,
+        37.8044786
+       ],
+       [
+        -122.2958685,
+        37.8045327
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "West Oakland",
+    "label": "T4 (office)",
+    "stage": "entitled",
+    "height_ft": 100,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, retail",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: West Oakland BART TOD Revised Preliminary Development Plan, approved by the Oakland Planning Commission Nov 4, 2020 (PLN18490-R02; plan set dated July 24, 2020), PDF p. 124 (T4 roof outline); height: sheet A-30.01, roof 100'-0\" (the City describes a “100-ft tall” office building, https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/West-Oakland-BART-Development-Mandela-Station)"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2950712,
+       37.8045207
+      ],
+      [
+       -122.2948365,
+       37.8044673
+      ],
+      [
+       -122.2948411,
+       37.8044544
+      ],
+      [
+       -122.294783,
+       37.8044412
+      ],
+      [
+       -122.2947404,
+       37.8045313
+      ],
+      [
+       -122.2940563,
+       37.8042601
+      ],
+      [
+       -122.2941608,
+       37.8039706
+      ],
+      [
+       -122.2944629,
+       37.8040392
+      ],
+      [
+       -122.2944602,
+       37.8040466
+      ],
+      [
+       -122.2946741,
+       37.8040952
+      ],
+      [
+       -122.2946807,
+       37.8040768
+      ],
+      [
+       -122.2951897,
+       37.8041924
+      ],
+      [
+       -122.2950712,
+       37.8045207
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "Lake Merritt Block 1",
+    "label": "Building A tower",
+    "stage": "entitled",
+    "height_ft": 275,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: Lake Merritt BART TOD, City of Oakland Design Review Committee staff report, Apr 14, 2021 (PLN20038), with the Preliminary Development Plan set, sheet C4.1 (Vesting Tentative Tract Map, Block 1), PDF p. 81; tower set back 26'-7\" from the lot's west line per sheet A2.13 (PDF p. 94); height: staff report p. 8, “Building A: 275 ft”",
+    "note": "28 stories; 360 homes in the 2021 plan. BART's upcoming-projects page now lists a 439-home market-rate building here."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2640397,
+       37.7971173
+      ],
+      [
+       -122.2641534,
+       37.7969351
+      ],
+      [
+       -122.2643754,
+       37.7969546
+      ],
+      [
+       -122.2647837,
+       37.7971753
+      ],
+      [
+       -122.2646664,
+       37.7973634
+      ],
+      [
+       -122.2640397,
+       37.7971173
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "Lake Merritt Block 1",
+    "label": "Building A base",
+    "stage": "entitled",
+    "height_ft": 48,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential, retail",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: Lake Merritt BART TOD, City of Oakland Design Review Committee staff report, Apr 14, 2021 (PLN20038), with the Preliminary Development Plan set, sheet C4.1 (Vesting Tentative Tract Map, Block 1), PDF p. 81; height: staff report p. 8, building base “Building A: 48 ft”"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2646669,
+       37.7973636
+      ],
+      [
+       -122.2647842,
+       37.7971755
+      ],
+      [
+       -122.2648607,
+       37.7972169
+      ],
+      [
+       -122.2647491,
+       37.7973959
+      ],
+      [
+       -122.2646669,
+       37.7973636
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "Lake Merritt Block 1",
+    "label": "Building B (Chinatown senior homes)",
+    "stage": "construction",
+    "height_ft": 83,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable senior residential",
+    "phase": "Phase 1",
+    "illustrative": false,
+    "source": "traced: Lake Merritt BART TOD, City of Oakland Design Review Committee staff report, Apr 14, 2021 (PLN20038), with the Preliminary Development Plan set, sheet C4.1 (Vesting Tentative Tract Map, Block 1), PDF p. 81 (Lot 2); height: staff report p. 8, “Building B: 83 ft”; under construction per BART (https://www.bart.gov/about/business/tod/lakemerritt)",
+    "note": "7 stories, 97 affordable senior homes. BART's pages give the construction start as October 2024 (project page) and June 2025 (upcoming-projects page). The lot is drawn; the building is slightly smaller."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2651212,
+       37.796928
+      ],
+      [
+       -122.2650528,
+       37.7970377
+      ],
+      [
+       -122.2650139,
+       37.797083
+      ],
+      [
+       -122.2643021,
+       37.7966966
+      ],
+      [
+       -122.2643473,
+       37.7966241
+      ],
+      [
+       -122.2651212,
+       37.796928
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "Lake Merritt Block 2",
+    "label": "Building C tower (office)",
+    "stage": "entitled",
+    "height_ft": 275,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: Lake Merritt BART TOD, City of Oakland Design Review Committee staff report, Apr 14, 2021 (PLN20038), with the Preliminary Development Plan set, sheet C4.2 (Vesting Tentative Tract Map, Block 2), PDF p. 82; tower set back 22'-8\" from the west lot line and 11'-0\" from Oak Street per sheet A2.33 (floors 4-12, PDF p. 109); height: staff report p. 8, “Building C: 275 ft”",
+    "note": "19 stories, up to 500,000 sq ft of office (City of Oakland). Upper floors may step in further; drawn at the floors 4-12 outline."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2661294,
+       37.7970772
+      ],
+      [
+       -122.265687,
+       37.7969035
+      ],
+      [
+       -122.2659925,
+       37.7964137
+      ],
+      [
+       -122.2664349,
+       37.7965875
+      ],
+      [
+       -122.2661294,
+       37.7970772
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "Lake Merritt Block 2",
+    "label": "Building C base",
+    "stage": "entitled",
+    "height_ft": 45,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, retail",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: Lake Merritt BART TOD, City of Oakland Design Review Committee staff report, Apr 14, 2021 (PLN20038), with the Preliminary Development Plan set, sheet C4.2 (Vesting Tentative Tract Map, Block 2), PDF p. 82; height: staff report p. 8, building base “Building C: 45 ft”"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2661299,
+        37.7970774
+       ],
+       [
+        -122.2664354,
+        37.7965877
+       ],
+       [
+        -122.2665053,
+        37.7966151
+       ],
+       [
+        -122.2661999,
+        37.7971049
+       ],
+       [
+        -122.2661299,
+        37.7970774
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2656528,
+        37.7968901
+       ],
+       [
+        -122.2659583,
+        37.7964003
+       ],
+       [
+        -122.265992,
+        37.7964135
+       ],
+       [
+        -122.2656865,
+        37.7969033
+       ],
+       [
+        -122.2656528,
+        37.7968901
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "Lake Merritt Block 2",
+    "label": "Building D (family homes)",
+    "stage": "entitled",
+    "height_ft": 83,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable residential",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: Lake Merritt BART TOD, City of Oakland Design Review Committee staff report, Apr 14, 2021 (PLN20038), with the Preliminary Development Plan set, sheet C4.2 (Vesting Tentative Tract Map, Block 2), PDF p. 82 (Lot 2, 24,810 sq ft, split from Lot 1 along the 200-ft lot line); height: staff report p. 8, “Building D: 83 ft”",
+    "note": "7 stories, 100 affordable family homes."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2665853,
+       37.7972563
+      ],
+      [
+       -122.2661999,
+       37.7971049
+      ],
+      [
+       -122.2665053,
+       37.7966151
+      ],
+      [
+       -122.2668908,
+       37.7967665
+      ],
+      [
+       -122.2665853,
+       37.7972563
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "El Cerrito Plaza",
+    "label": "Parcel C-West",
+    "stage": "entitled",
+    "height_ft": 78,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable residential, possible library",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: El Cerrito Plaza BART TOD master plan, Attachment D (project plans, May 20, 2024) to the City of El Cerrito's ministerial approval PL23-0024 of July 3, 2024, sheet A1.01 overall site plan - upper floors (PDF p. 43); height: sheet A3.50C-W section (PDF p. 65): ground (library) level 0'-0\", roof 78'-0\"",
+    "note": "6 stories, 79 homes (approval letter, Table 1)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2997552,
+        37.9020923
+       ],
+       [
+        -122.2998139,
+        37.9020746
+       ],
+       [
+        -122.2998177,
+        37.9020794
+       ],
+       [
+        -122.2998906,
+        37.9020574
+       ],
+       [
+        -122.2998895,
+        37.9020519
+       ],
+       [
+        -122.2999637,
+        37.9020295
+       ],
+       [
+        -122.2999675,
+        37.9020343
+       ],
+       [
+        -122.3000405,
+        37.9020123
+       ],
+       [
+        -122.3000393,
+        37.9020068
+       ],
+       [
+        -122.3000706,
+        37.9019974
+       ],
+       [
+        -122.3001107,
+        37.902081
+       ],
+       [
+        -122.3001485,
+        37.9020696
+       ],
+       [
+        -122.3001777,
+        37.9021306
+       ],
+       [
+        -122.3001065,
+        37.9021532
+       ],
+       [
+        -122.3001076,
+        37.9021587
+       ],
+       [
+        -122.29989,
+        37.9022242
+       ],
+       [
+        -122.2998863,
+        37.9022194
+       ],
+       [
+        -122.2997742,
+        37.9022531
+       ],
+       [
+        -122.2997754,
+        37.9022587
+       ],
+       [
+        -122.2997402,
+        37.9022693
+       ],
+       [
+        -122.2996854,
+        37.9021487
+       ],
+       [
+        -122.2996914,
+        37.9021457
+       ],
+       [
+        -122.2996637,
+        37.9020879
+       ],
+       [
+        -122.2997419,
+        37.9020644
+       ],
+       [
+        -122.2997552,
+        37.9020923
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.299914,
+        37.9017515
+       ],
+       [
+        -122.2999867,
+        37.901732
+       ],
+       [
+        -122.3000154,
+        37.9017919
+       ],
+       [
+        -122.2999776,
+        37.9018033
+       ],
+       [
+        -122.3000177,
+        37.9018869
+       ],
+       [
+        -122.2999864,
+        37.9018963
+       ],
+       [
+        -122.2999826,
+        37.9018915
+       ],
+       [
+        -122.2999096,
+        37.9019135
+       ],
+       [
+        -122.2999108,
+        37.901919
+       ],
+       [
+        -122.2998391,
+        37.9019406
+       ],
+       [
+        -122.2998354,
+        37.9019358
+       ],
+       [
+        -122.2997637,
+        37.9019574
+       ],
+       [
+        -122.2997649,
+        37.901963
+       ],
+       [
+        -122.2997284,
+        37.9019739
+       ],
+       [
+        -122.2996883,
+        37.9018903
+       ],
+       [
+        -122.299614,
+        37.9019126
+       ],
+       [
+        -122.2995843,
+        37.9018507
+       ],
+       [
+        -122.2996182,
+        37.9018405
+       ],
+       [
+        -122.299617,
+        37.9018349
+       ],
+       [
+        -122.2996926,
+        37.9018122
+       ],
+       [
+        -122.2996964,
+        37.901817
+       ],
+       [
+        -122.2997681,
+        37.9017954
+       ],
+       [
+        -122.2997669,
+        37.9017899
+       ],
+       [
+        -122.2999102,
+        37.9017467
+       ],
+       [
+        -122.299914,
+        37.9017515
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "El Cerrito Plaza",
+    "label": "Parcel C-East",
+    "stage": "entitled",
+    "height_ft": 76.5,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable residential",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: El Cerrito Plaza BART TOD master plan, Attachment D (project plans, May 20, 2024) to the City of El Cerrito's ministerial approval PL23-0024 of July 3, 2024, sheet A1.01 overall site plan - upper floors (PDF p. 43); height: sheet A3.50C-E section (PDF p. 70): building height 76'-6\"",
+    "note": "6 stories, 84 homes (approval letter, Table 1)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2990826,
+        37.9020016
+       ],
+       [
+        -122.2991049,
+        37.9020233
+       ],
+       [
+        -122.2991,
+        37.9020288
+       ],
+       [
+        -122.2991452,
+        37.9020761
+       ],
+       [
+        -122.2991535,
+        37.9020748
+       ],
+       [
+        -122.2991745,
+        37.9020968
+       ],
+       [
+        -122.2991683,
+        37.9021009
+       ],
+       [
+        -122.2992167,
+        37.9021523
+       ],
+       [
+        -122.2992258,
+        37.9021511
+       ],
+       [
+        -122.2992683,
+        37.9021962
+       ],
+       [
+        -122.2992671,
+        37.9022056
+       ],
+       [
+        -122.2993108,
+        37.902252
+       ],
+       [
+        -122.2993179,
+        37.9022498
+       ],
+       [
+        -122.2994261,
+        37.9023579
+       ],
+       [
+        -122.299365,
+        37.9023762
+       ],
+       [
+        -122.2993662,
+        37.9023818
+       ],
+       [
+        -122.2993336,
+        37.9023916
+       ],
+       [
+        -122.2993195,
+        37.9023621
+       ],
+       [
+        -122.2992288,
+        37.9024125
+       ],
+       [
+        -122.2991853,
+        37.9023653
+       ],
+       [
+        -122.299177,
+        37.9023666
+       ],
+       [
+        -122.2991593,
+        37.9023483
+       ],
+       [
+        -122.299135,
+        37.9023226
+       ],
+       [
+        -122.2991398,
+        37.9023173
+       ],
+       [
+        -122.299091,
+        37.9022649
+       ],
+       [
+        -122.2990827,
+        37.9022662
+       ],
+       [
+        -122.2990617,
+        37.9022442
+       ],
+       [
+        -122.2991897,
+        37.902134
+       ],
+       [
+        -122.2991586,
+        37.9021065
+       ],
+       [
+        -122.2990127,
+        37.9021916
+       ],
+       [
+        -122.2989926,
+        37.9021716
+       ],
+       [
+        -122.2989974,
+        37.9021663
+       ],
+       [
+        -122.2989519,
+        37.9021177
+       ],
+       [
+        -122.2989436,
+        37.9021191
+       ],
+       [
+        -122.2989221,
+        37.902096
+       ],
+       [
+        -122.2990826,
+        37.9020016
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2993426,
+        37.9021054
+       ],
+       [
+        -122.2993486,
+        37.9021024
+       ],
+       [
+        -122.2993357,
+        37.9020755
+       ],
+       [
+        -122.2994348,
+        37.9020457
+       ],
+       [
+        -122.2994209,
+        37.9020168
+       ],
+       [
+        -122.2995043,
+        37.9019917
+       ],
+       [
+        -122.2996181,
+        37.9022292
+       ],
+       [
+        -122.2996298,
+        37.9022257
+       ],
+       [
+        -122.299662,
+        37.9022928
+       ],
+       [
+        -122.2996268,
+        37.9023034
+       ],
+       [
+        -122.299623,
+        37.9022986
+       ],
+       [
+        -122.2995501,
+        37.9023206
+       ],
+       [
+        -122.2995512,
+        37.9023261
+       ],
+       [
+        -122.2994613,
+        37.9023532
+       ],
+       [
+        -122.2993426,
+        37.9021054
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "El Cerrito Plaza",
+    "label": "Parcel B",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential, BART garage",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: El Cerrito Plaza BART TOD master plan, Attachment D (project plans, May 20, 2024) to the City of El Cerrito's ministerial approval PL23-0024 of July 3, 2024, sheet A1.01 overall site plan - upper floors (PDF p. 43); height: sheet A3.50B section (PDF p. 60): 85' to average grade (78' on the station side)",
+    "note": "7 stories, 259 homes and the 145-space BART garage (approval letter, Table 1)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3002196,
+        37.9022243
+       ],
+       [
+        -122.3003685,
+        37.9025351
+       ],
+       [
+        -122.3003568,
+        37.9025386
+       ],
+       [
+        -122.3005324,
+        37.9029052
+       ],
+       [
+        -122.3004412,
+        37.9029326
+       ],
+       [
+        -122.3003924,
+        37.9028339
+       ],
+       [
+        -122.3002545,
+        37.9028753
+       ],
+       [
+        -122.3003005,
+        37.9029749
+       ],
+       [
+        -122.2997727,
+        37.9031337
+       ],
+       [
+        -122.2997134,
+        37.9030145
+       ],
+       [
+        -122.2996932,
+        37.9030206
+       ],
+       [
+        -122.2996753,
+        37.9029834
+       ],
+       [
+        -122.2996618,
+        37.9029863
+       ],
+       [
+        -122.2996504,
+        37.9029626
+       ],
+       [
+        -122.3002368,
+        37.9027862
+       ],
+       [
+        -122.3001493,
+        37.9026034
+       ],
+       [
+        -122.3001383,
+        37.9026055
+       ],
+       [
+        -122.3000745,
+        37.9024723
+       ],
+       [
+        -122.2998791,
+        37.9025311
+       ],
+       [
+        -122.2998817,
+        37.9025398
+       ],
+       [
+        -122.2997892,
+        37.9025676
+       ],
+       [
+        -122.2997819,
+        37.9025556
+       ],
+       [
+        -122.2997337,
+        37.9025701
+       ],
+       [
+        -122.2996585,
+        37.9024132
+       ],
+       [
+        -122.2997067,
+        37.9023986
+       ],
+       [
+        -122.2997016,
+        37.9023848
+       ],
+       [
+        -122.2997941,
+        37.902357
+       ],
+       [
+        -122.2997994,
+        37.9023649
+       ],
+       [
+        -122.3000535,
+        37.9022884
+       ],
+       [
+        -122.3000508,
+        37.9022798
+       ],
+       [
+        -122.3001173,
+        37.9022598
+       ],
+       [
+        -122.3001148,
+        37.9022546
+       ],
+       [
+        -122.3002196,
+        37.9022243
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2995209,
+        37.9024215
+       ],
+       [
+        -122.2997575,
+        37.902713
+       ],
+       [
+        -122.2997789,
+        37.9027578
+       ],
+       [
+        -122.299791,
+        37.9027549
+       ],
+       [
+        -122.2998434,
+        37.9028207
+       ],
+       [
+        -122.2996328,
+        37.9029259
+       ],
+       [
+        -122.2994173,
+        37.9026535
+       ],
+       [
+        -122.2994162,
+        37.902631
+       ],
+       [
+        -122.2993979,
+        37.9026097
+       ],
+       [
+        -122.299421,
+        37.902598
+       ],
+       [
+        -122.2993564,
+        37.902517
+       ],
+       [
+        -122.2994407,
+        37.9024751
+       ],
+       [
+        -122.2994353,
+        37.9024638
+       ],
+       [
+        -122.2995209,
+        37.9024215
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "El Cerrito Plaza",
+    "label": "Parcel D",
+    "stage": "entitled",
+    "height_ft": 57,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable residential",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: El Cerrito Plaza BART TOD master plan, Attachment D (project plans, May 20, 2024) to the City of El Cerrito's ministerial approval PL23-0024 of July 3, 2024, sheet A1.01 overall site plan - upper floors (PDF p. 43); height: sheet A3.50D section (PDF p. 75): building height 57'-0\"",
+    "note": "5 stories, 118 homes (approval letter, Table 1). The approval letter gives 67-85 ft for the five master-plan buildings; the section sheet's 57 ft is used."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2987411,
+       37.9028167
+      ],
+      [
+       -122.2987778,
+       37.9028931
+      ],
+      [
+       -122.2987965,
+       37.9028887
+      ],
+      [
+       -122.2990335,
+       37.9033833
+      ],
+      [
+       -122.2988041,
+       37.9034523
+      ],
+      [
+       -122.29877,
+       37.903381
+      ],
+      [
+       -122.2988958,
+       37.9033417
+      ],
+      [
+       -122.2988573,
+       37.9032614
+      ],
+      [
+       -122.2987309,
+       37.9032994
+      ],
+      [
+       -122.2985117,
+       37.902842
+      ],
+      [
+       -122.298616,
+       37.9028107
+      ],
+      [
+       -122.2986337,
+       37.9028476
+      ],
+      [
+       -122.2987411,
+       37.9028167
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "El Cerrito Plaza",
+    "label": "Parcel A-South",
+    "stage": "construction",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable residential",
+    "phase": "Phase 1",
+    "illustrative": false,
+    "source": "traced: El Cerrito Plaza BART TOD master plan, Attachment D (project plans, May 20, 2024) to the City of El Cerrito's ministerial approval PL23-0024 of July 3, 2024, sheet A1.01 overall site plan - upper floors (PDF p. 43); height: approval PL22-0150 (Apr 3, 2023): a 6-story building; no height in feet was found",
+    "note": "70 homes, 69 of them affordable; construction began November 2025 (City of El Cerrito). Drawn as an outline: no official height in feet was found."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2990478,
+       37.9035904
+      ],
+      [
+       -122.2990849,
+       37.9036784
+      ],
+      [
+       -122.2990898,
+       37.9036782
+      ],
+      [
+       -122.299123,
+       37.9037474
+      ],
+      [
+       -122.299363,
+       37.9036716
+      ],
+      [
+       -122.2992432,
+       37.9035565
+      ],
+      [
+       -122.2993128,
+       37.9035119
+      ],
+      [
+       -122.2993571,
+       37.9035576
+      ],
+      [
+       -122.2993707,
+       37.9035861
+      ],
+      [
+       -122.2993876,
+       37.9035839
+      ],
+      [
+       -122.2994353,
+       37.9036369
+      ],
+      [
+       -122.2994566,
+       37.9036565
+      ],
+      [
+       -122.2994641,
+       37.9036566
+      ],
+      [
+       -122.2994836,
+       37.9036755
+      ],
+      [
+       -122.2994873,
+       37.9036862
+      ],
+      [
+       -122.2995579,
+       37.9037465
+      ],
+      [
+       -122.2994643,
+       37.9038113
+      ],
+      [
+       -122.2994117,
+       37.9038271
+      ],
+      [
+       -122.2994084,
+       37.9038234
+      ],
+      [
+       -122.2992227,
+       37.903884
+      ],
+      [
+       -122.2992194,
+       37.9038802
+      ],
+      [
+       -122.2991464,
+       37.9039022
+      ],
+      [
+       -122.2991471,
+       37.9039067
+      ],
+      [
+       -122.2991119,
+       37.9039173
+      ],
+      [
+       -122.2991051,
+       37.9039031
+      ],
+      [
+       -122.2990029,
+       37.9039324
+      ],
+      [
+       -122.2989762,
+       37.903886
+      ],
+      [
+       -122.2989465,
+       37.9038147
+      ],
+      [
+       -122.2989035,
+       37.9037343
+      ],
+      [
+       -122.2989073,
+       37.9037318
+      ],
+      [
+       -122.2988614,
+       37.9036465
+      ],
+      [
+       -122.2990478,
+       37.9035904
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "El Cerrito Plaza",
+    "label": "Parcel A-North",
+    "stage": "entitled",
+    "height_ft": 75,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: El Cerrito Plaza BART TOD master plan, Attachment D (project plans, May 20, 2024) to the City of El Cerrito's ministerial approval PL23-0024 of July 3, 2024, sheet A1.01 overall site plan - upper floors (PDF p. 43); height: sheet A3.50A-N section (PDF p. 51): 75' to average grade",
+    "note": "6 stories, 133 homes (approval letter, Table 1)."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2991994,
+        37.9040563
+       ],
+       [
+        -122.2991069,
+        37.9040842
+       ],
+       [
+        -122.2990668,
+        37.9040005
+       ],
+       [
+        -122.2991594,
+        37.9039727
+       ],
+       [
+        -122.2991994,
+        37.9040563
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2992952,
+        37.9040476
+       ],
+       [
+        -122.2992472,
+        37.9039475
+       ],
+       [
+        -122.2992928,
+        37.9039338
+       ],
+       [
+        -122.299298,
+        37.9039416
+       ],
+       [
+        -122.2995988,
+        37.9038535
+       ],
+       [
+        -122.2996344,
+        37.9039279
+       ],
+       [
+        -122.2997118,
+        37.9039058
+       ],
+       [
+        -122.2998661,
+        37.9042279
+       ],
+       [
+        -122.2999534,
+        37.9042017
+       ],
+       [
+        -122.2999925,
+        37.9042832
+       ],
+       [
+        -122.2994926,
+        37.9044348
+       ],
+       [
+        -122.2994446,
+        37.9043346
+       ],
+       [
+        -122.2993951,
+        37.9043495
+       ],
+       [
+        -122.2993555,
+        37.9042669
+       ],
+       [
+        -122.2997139,
+        37.9041591
+       ],
+       [
+        -122.2996501,
+        37.9040259
+       ],
+       [
+        -122.2993777,
+        37.9041079
+       ],
+       [
+        -122.2993804,
+        37.9041165
+       ],
+       [
+        -122.2992865,
+        37.9041447
+       ],
+       [
+        -122.299247,
+        37.9040621
+       ],
+       [
+        -122.2992952,
+        37.9040476
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2994061,
+        37.9044596
+       ],
+       [
+        -122.2993019,
+        37.904491
+       ],
+       [
+        -122.2992667,
+        37.9044177
+       ],
+       [
+        -122.299371,
+        37.9043863
+       ],
+       [
+        -122.2994061,
+        37.9044596
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "North Berkeley",
+    "label": "North Berkeley",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential (mixed use)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: BART parcels drawn to the R-BMU zoning district's 80-ft / 7-story maximum (BMC 23.202.150(F)), as stated in the City of Berkeley's adopted North Berkeley BART Objective Design Standards, Dec 2023, Sec. 2.1.1 (https://berkeleyca.gov/sites/default/files/documents/2023-12-12%20NB%20BART%20ODS_ADOPTED.pdf)",
+    "note": "Entitled Dec 11, 2024 for 739 homes in buildings of 3 to 8 stories (City of Berkeley 2024 General Plan progress report); the design isn't drawn. Paths, plazas and the station area will stay open. 3 existing building(s) on the parcels (OpenStreetMap) are cut out."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2826483,
+       37.8747662
+      ],
+      [
+       -122.2825389,
+       37.8739638
+      ],
+      [
+       -122.2824483,
+       37.8731507
+      ],
+      [
+       -122.2845126,
+       37.8728929
+      ],
+      [
+       -122.2846026,
+       37.8737024
+      ],
+      [
+       -122.2846136,
+       37.8737059
+      ],
+      [
+       -122.2846932,
+       37.8744963
+      ],
+      [
+       -122.2826483,
+       37.8747662
+      ]
+     ],
+     [
+      [
+       -122.2836151,
+       37.8740038
+      ],
+      [
+       -122.2836209,
+       37.8739611
+      ],
+      [
+       -122.283613,
+       37.8739258
+      ],
+      [
+       -122.2835941,
+       37.8738913
+      ],
+      [
+       -122.2835643,
+       37.873863
+      ],
+      [
+       -122.2835269,
+       37.8738415
+      ],
+      [
+       -122.2834809,
+       37.8738283
+      ],
+      [
+       -122.2834339,
+       37.8738254
+      ],
+      [
+       -122.2833877,
+       37.8738315
+      ],
+      [
+       -122.2833444,
+       37.873847
+      ],
+      [
+       -122.2833068,
+       37.873872
+      ],
+      [
+       -122.2832684,
+       37.8738561
+      ],
+      [
+       -122.2832598,
+       37.8738561
+      ],
+      [
+       -122.2832225,
+       37.8739072
+      ],
+      [
+       -122.2832273,
+       37.8739165
+      ],
+      [
+       -122.2832671,
+       37.8739331
+      ],
+      [
+       -122.2832625,
+       37.8739728
+      ],
+      [
+       -122.2832681,
+       37.8740076
+      ],
+      [
+       -122.28329,
+       37.8740425
+      ],
+      [
+       -122.2833199,
+       37.8740707
+      ],
+      [
+       -122.2833566,
+       37.874092
+      ],
+      [
+       -122.2834018,
+       37.8741055
+      ],
+      [
+       -122.283449,
+       37.8741089
+      ],
+      [
+       -122.2834934,
+       37.8741018
+      ],
+      [
+       -122.2835345,
+       37.8740872
+      ],
+      [
+       -122.283578,
+       37.8740599
+      ],
+      [
+       -122.2836019,
+       37.8740699
+      ],
+      [
+       -122.2836115,
+       37.8740688
+      ],
+      [
+       -122.2836438,
+       37.8740222
+      ],
+      [
+       -122.2836397,
+       37.8740143
+      ],
+      [
+       -122.2836151,
+       37.8740038
+      ]
+     ],
+     [
+      [
+       -122.2833917,
+       37.8742208
+      ],
+      [
+       -122.2834044,
+       37.8742286
+      ],
+      [
+       -122.2837561,
+       37.8741936
+      ],
+      [
+       -122.2837648,
+       37.8741863
+      ],
+      [
+       -122.2837614,
+       37.874162
+      ],
+      [
+       -122.2837489,
+       37.8741551
+      ],
+      [
+       -122.2833973,
+       37.8741901
+      ],
+      [
+       -122.2833886,
+       37.8741974
+      ],
+      [
+       -122.2833917,
+       37.8742208
+      ]
+     ],
+     [
+      [
+       -122.284327,
+       37.8745099
+      ],
+      [
+       -122.2843398,
+       37.8745176
+      ],
+      [
+       -122.2846712,
+       37.8744815
+      ],
+      [
+       -122.284675,
+       37.8744735
+      ],
+      [
+       -122.2846426,
+       37.8742924
+      ],
+      [
+       -122.2846326,
+       37.8742894
+      ],
+      [
+       -122.2843012,
+       37.8743256
+      ],
+      [
+       -122.2842974,
+       37.8743336
+      ],
+      [
+       -122.284327,
+       37.8745099
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Ashby West Lot",
+    "label": "Ashby West Lot",
+    "stage": "proposed",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential (mixed use)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the West Lot parcel drawn to the R-BMU zoning district's 80-ft / 7-story maximum (BMC 23.202.150(F)), as stated in the City of Berkeley's adopted North Berkeley BART Objective Design Standards, Dec 2023, Sec. 2.1.1 (https://berkeleyca.gov/sites/default/files/documents/2023-12-12%20NB%20BART%20ODS_ADOPTED.pdf)",
+    "note": "Developer selected July 2025; BART describes five buildings of 6 to 8 stories with up to 600 homes. No design has been filed with the City."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2709557,
+       37.854263
+      ],
+      [
+       -122.2697349,
+       37.8544235
+      ],
+      [
+       -122.2696915,
+       37.85442
+      ],
+      [
+       -122.2696566,
+       37.8544089
+      ],
+      [
+       -122.2696299,
+       37.8543797
+      ],
+      [
+       -122.2696151,
+       37.8543408
+      ],
+      [
+       -122.2705179,
+       37.8519624
+      ],
+      [
+       -122.2705615,
+       37.8518999
+      ],
+      [
+       -122.2706115,
+       37.8518881
+      ],
+      [
+       -122.2706603,
+       37.8518984
+      ],
+      [
+       -122.2706991,
+       37.8519321
+      ],
+      [
+       -122.2707051,
+       37.8519663
+      ],
+      [
+       -122.2709557,
+       37.854263
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Amador Station",
+    "label": "Amador Station",
+    "stage": "entitled",
+    "height_ft": 90,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential (mixed use)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: BART parcels drawn to the 90-ft limit in BART's AB 2923 rezoned layer for these parcels (City of Dublin; “Min: 0 Max: 90 feet or 8 stories”, https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/9)",
+    "note": "300 affordable homes (City of Dublin, July 2026); construction awaits funding (BART). The design isn't drawn. OpenStreetMap has two footprints here tagged building=construction (checked 2023); no official source says work has started, so they aren't treated as buildings."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9296713,
+       37.7010014
+      ],
+      [
+       -121.9282777,
+       37.7014427
+      ],
+      [
+       -121.9281105,
+       37.7011094
+      ],
+      [
+       -121.9280891,
+       37.7011112
+      ],
+      [
+       -121.9278544,
+       37.7006433
+      ],
+      [
+       -121.9280941,
+       37.7005836
+      ],
+      [
+       -121.9280233,
+       37.7003954
+      ],
+      [
+       -121.9281668,
+       37.7003548
+      ],
+      [
+       -121.9292189,
+       37.7000997
+      ],
+      [
+       -121.9296713,
+       37.7010014
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

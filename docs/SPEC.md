@@ -221,9 +221,10 @@ Elsewhere
 
 ## 13. Maintenance
 
-Statuses change. Keep a `CHANGELOG.md` of data updates. Each quarter, re-check every
-project's stage and stage note against current reporting and official pages, update
-`lastVerified`, and redeploy. This could later run as a scheduled task.
+Statuses change. Keep a `CHANGELOG.md` of data updates. About every six weeks (Matthew,
+2026-10-07), a scheduled routine re-checks every project against official pages, updates
+`lastVerified`, lists new project leads for Matthew, and opens a PR; merging it redeploys.
+The procedure is `docs/UPKEEP.md`; `make upkeep` writes the checklist.
 
 ## 14. Open questions for Matthew
 

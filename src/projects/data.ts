@@ -202,6 +202,35 @@ export function centroidOf(g: Polygon | MultiPolygon): [number, number] {
   return [ox + cx / (3 * a), oy + cy / (3 * a)];
 }
 
+/** Whether a point lies inside any outer ring of a (multi)polygon (ray casting). */
+export function containsPoint(g: Polygon | MultiPolygon, [x, y]: [number, number]): boolean {
+  return outerRings(g).some((ring) => {
+    let inside = false;
+    for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+      const [xi, yi] = ring[i];
+      const [xj, yj] = ring[j];
+      if (yi > y !== yj > y && x < ((xj - xi) * (y - yi)) / (yj - yi) + xi) inside = !inside;
+    }
+    return inside;
+  });
+}
+
+/**
+ * Where a site's regional markers go: its centroid, unless that falls well off the site (more
+ * than `maxGapM` from it), as it does for a program of station sites kilometres apart. Then each
+ * part (the boundary's named sub-areas, or else each piece) gets its own marker.
+ */
+export function markerPointsOf(
+  g: Polygon | MultiPolygon, parts: (Polygon | MultiPolygon)[] = [], maxGapM = 1000,
+): [number, number][] {
+  const c = centroidOf(g);
+  if (g.type === 'Polygon' || containsPoint(g, c)) return [c];
+  const gap = Math.min(...outerRings(g).flatMap((ring) => ring.map((v) => metres(c, v))));
+  if (gap <= maxGapM) return [c];
+  const pieces = parts.length ? parts : g.coordinates.map((p): Polygon => ({ type: 'Polygon', coordinates: p }));
+  return pieces.map((p) => centroidOf(p));
+}
+
 /** Ground distance in metres (equirectangular; fine at site scale). */
 export function metres(a: [number, number], b: [number, number]): number {
   const k = Math.cos(((a[1] + b[1]) / 2) * (Math.PI / 180)) * 111320;
