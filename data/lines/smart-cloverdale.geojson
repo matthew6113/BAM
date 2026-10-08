@@ -1,0 +1,448 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "smart-cloverdale",
+  "source": "GIS: U.S. DOT Bureau of Transportation Statistics, NTAD North American Rail Network Lines, SMART-owned track (RROWNER 'SMRT'/'SMAR', out of service north of Windsor), routed between FRA nodes",
+  "sourceLabel": "U.S. DOT/BTS National Transportation Atlas (rail network); County of Sonoma and SMART GIS",
+  "sourceUrl": "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer/0",
+  "accuracy": "approximate",
+  "accuracyNote": "Approximate alignment: the federal rail network's centreline for SMART's existing, out-of-service track, 13.4 miles as drawn, cut from where the County of Sonoma's Lytton Springs Road centreline crosses the line to where its E 1st Street centreline in Cloverdale crosses it (the Strategic Plan's limits). One centreline, not SMART's engineered alignment. SMART Cloverdale extension stations: Geyserville; Cloverdale (site to be determined).",
+  "license": "Line: Public domain: 'a work of the United States government as defined in 17 U.S.C. § 101 ... available for unrestricted public use' (service copyright text). Cut points: County of Sonoma street centrelines (Streets_Public): 'You must source attribution “County of Sonoma”' (service copyright text). Stations: County of Sonoma parcels: CC BY-SA 3.0, credit 'County of Sonoma'. SMART station points: SMART's layer on the County of Sonoma GIS server (copyright 'SMART'; no licence stated).",
+  "otherSources": [
+   "https://www.sonomamarintrain.org/sites/default/files/Document%20Library/SMART_StrategicPlan_FY25-30.pdf",
+   "https://www.sonomamarintrain.org/geyserville",
+   "https://socogis.sonomacounty.ca.gov/map/rest/services/BASEPublic/Streets_Public/FeatureServer/0",
+   "https://socogis.sonomacounty.ca.gov/map/rest/services/SMARTPublic/SMART_Stations/FeatureServer/0",
+   "https://socogis.sonomacounty.ca.gov/map/rest/services/SMARTPublic/SMART_Rail_Tracks/FeatureServer/0"
+  ],
+  "fraArcIds": [
+   328131,
+   337129,
+   340389,
+   342087,
+   342613,
+   524404
+  ],
+  "check": "Against SMART's own track layer (https://socogis.sonomacounty.ca.gov/map/rest/services/SMARTPublic/SMART_Rail_Tracks/FeatureServer/0), sampled every 25 m: median 6 m, 95th percentile 15 m, maximum 27 m apart; that layer doesn't cover the last 75 m of the line.",
+  "lengthKm": 21.64
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "line",
+    "segment": "new",
+    "name": "Lytton Springs Road to Cloverdale (Cloverdale extension)",
+    "approval": "Covered by SMART's 2006 EIR and 2008 SEIR (SCH 2002112033); Geyserville station adopted Aug 19, 2026; unfunded",
+    "source": "GIS: U.S. DOT Bureau of Transportation Statistics, NTAD North American Rail Network Lines, SMART-owned track (RROWNER 'SMRT'/'SMAR', out of service north of Windsor), routed between FRA nodes; cut from where the County of Sonoma's Lytton Springs Road centreline crosses the line to where its E 1st Street centreline in Cloverdale crosses it (the Strategic Plan's limits)."
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.872296,
+      38.659334
+     ],
+     [
+      -122.873303,
+      38.663126
+     ],
+     [
+      -122.87552,
+      38.67148
+     ],
+     [
+      -122.88051,
+      38.68901
+     ],
+     [
+      -122.88065,
+      38.68965
+     ],
+     [
+      -122.88104,
+      38.69038
+     ],
+     [
+      -122.88197,
+      38.69189
+     ],
+     [
+      -122.88204,
+      38.69195
+     ],
+     [
+      -122.88423,
+      38.69406
+     ],
+     [
+      -122.88492,
+      38.6946
+     ],
+     [
+      -122.88806,
+      38.69684
+     ],
+     [
+      -122.89629,
+      38.70297
+     ],
+     [
+      -122.89951,
+      38.70529
+     ],
+     [
+      -122.902341,
+      38.707312
+     ],
+     [
+      -122.90266,
+      38.70754
+     ],
+     [
+      -122.90606,
+      38.71001
+     ],
+     [
+      -122.9079,
+      38.71143
+     ],
+     [
+      -122.90885,
+      38.7121
+     ],
+     [
+      -122.909666,
+      38.712691
+     ],
+     [
+      -122.91023,
+      38.7131
+     ],
+     [
+      -122.91865,
+      38.71884
+     ],
+     [
+      -122.92537,
+      38.72346
+     ],
+     [
+      -122.93365,
+      38.729024
+     ],
+     [
+      -122.935464,
+      38.730243
+     ],
+     [
+      -122.9361,
+      38.73067
+     ],
+     [
+      -122.938684,
+      38.732475
+     ],
+     [
+      -122.93892,
+      38.73264
+     ],
+     [
+      -122.93987,
+      38.7336
+     ],
+     [
+      -122.94241,
+      38.73726
+     ],
+     [
+      -122.942657,
+      38.737608
+     ],
+     [
+      -122.943663,
+      38.739024
+     ],
+     [
+      -122.94872,
+      38.74614
+     ],
+     [
+      -122.949365,
+      38.747006
+     ],
+     [
+      -122.94945,
+      38.74712
+     ],
+     [
+      -122.949557,
+      38.747222
+     ],
+     [
+      -122.95126,
+      38.74884
+     ],
+     [
+      -122.95284,
+      38.74992
+     ],
+     [
+      -122.95825,
+      38.75331
+     ],
+     [
+      -122.96245,
+      38.75598
+     ],
+     [
+      -122.96349,
+      38.75674
+     ],
+     [
+      -122.96628,
+      38.75935
+     ],
+     [
+      -122.966342,
+      38.759414
+     ],
+     [
+      -122.96712,
+      38.76022
+     ],
+     [
+      -122.9677,
+      38.7607
+     ],
+     [
+      -122.96814,
+      38.76109
+     ],
+     [
+      -122.96915,
+      38.7618
+     ],
+     [
+      -122.97037,
+      38.76245
+     ],
+     [
+      -122.97311,
+      38.76346
+     ],
+     [
+      -122.975063,
+      38.764114
+     ],
+     [
+      -122.975469,
+      38.764249
+     ],
+     [
+      -122.98282,
+      38.76671
+     ],
+     [
+      -122.99138,
+      38.76958
+     ],
+     [
+      -122.99268,
+      38.77016
+     ],
+     [
+      -122.99348,
+      38.7706
+     ],
+     [
+      -122.99466,
+      38.77165
+     ],
+     [
+      -122.99533,
+      38.77267
+     ],
+     [
+      -122.99568,
+      38.77367
+     ],
+     [
+      -122.9959,
+      38.77701
+     ],
+     [
+      -122.996071,
+      38.778006
+     ],
+     [
+      -122.99608,
+      38.77806
+     ],
+     [
+      -122.99641,
+      38.77916
+     ],
+     [
+      -122.9969,
+      38.7802
+     ],
+     [
+      -122.997553,
+      38.781164
+     ],
+     [
+      -122.998177,
+      38.782085
+     ],
+     [
+      -123.00049,
+      38.7855
+     ],
+     [
+      -123.001057,
+      38.786346
+     ],
+     [
+      -123.001093,
+      38.786399
+     ],
+     [
+      -123.0011,
+      38.78641
+     ],
+     [
+      -123.0011,
+      38.78641
+     ],
+     [
+      -123.00211,
+      38.78749
+     ],
+     [
+      -123.00291,
+      38.7883
+     ],
+     [
+      -123.00394,
+      38.78902
+     ],
+     [
+      -123.0074,
+      38.79082
+     ],
+     [
+      -123.00967,
+      38.79189
+     ],
+     [
+      -123.010467,
+      38.792299
+     ],
+     [
+      -123.0108,
+      38.79247
+     ],
+     [
+      -123.01123,
+      38.79295
+     ],
+     [
+      -123.011256,
+      38.793001
+     ],
+     [
+      -123.01138,
+      38.79324
+     ],
+     [
+      -123.01161,
+      38.79408
+     ],
+     [
+      -123.01181,
+      38.79472
+     ],
+     [
+      -123.01189,
+      38.79512
+     ],
+     [
+      -123.01205,
+      38.79729
+     ],
+     [
+      -123.011985,
+      38.798477
+     ],
+     [
+      -123.0119,
+      38.80003
+     ],
+     [
+      -123.01185,
+      38.80148
+     ],
+     [
+      -123.01168,
+      38.80486
+     ],
+     [
+      -123.0116,
+      38.80595
+     ],
+     [
+      -123.01156,
+      38.80648
+     ],
+     [
+      -123.011511,
+      38.806884
+     ],
+     [
+      -123.01148,
+      38.80714
+     ],
+     [
+      -123.01147,
+      38.807179
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "station",
+    "status": "new",
+    "name": "Geyserville",
+    "note": "Adopted by SMART's Board on Aug 19, 2026 (Resolution 2026-26) for 255 Highway 128.",
+    "source": "GIS: County of Sonoma parcel APN 140-110-011 (255 HWY 128, 'RIGHT-OF-WAY'), the County's centroid fields (https://socogis.sonomacounty.ca.gov/map/rest/services/CRAPublic/ParcelsPublicShapeFile/FeatureServer/0)."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.902098,
+     38.707078
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "station",
+    "status": "new",
+    "name": "Cloverdale (site to be determined)",
+    "note": "SMART lists the Cloverdale station's location as to be determined; drawn at SMART's own GIS point.",
+    "source": "GIS: SMART's station layer on the County of Sonoma server, 'Cloverdale Station' (https://socogis.sonomacounty.ca.gov/map/rest/services/SMARTPublic/SMART_Stations/FeatureServer/0)."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -123.012009,
+     38.798481
+    ]
+   }
+  }
+ ]
+}
