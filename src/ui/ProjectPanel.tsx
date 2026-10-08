@@ -66,7 +66,7 @@ function StageBar({ project }: { project: Project }) {
   );
 }
 
-function KeyNumbers({ project }: { project: Project }) {
+function numberRows(project: Project): [string, string][] {
   const p = project.program;
   const rows: [string, string][] = [];
   if (p.homes != null) rows.push(['Homes', formatInt(p.homes)]);
@@ -79,6 +79,11 @@ function KeyNumbers({ project }: { project: Project }) {
   if (p.hotelKeys != null) rows.push(['Hotel rooms', formatInt(p.hotelKeys)]);
   if (p.openSpaceAcres != null) rows.push(['Open space', `${formatNumber(p.openSpaceAcres)} acres`]);
   if (project.acres != null) rows.push(['Site', `${formatNumber(project.acres)} acres`]);
+  return rows;
+}
+
+function KeyNumbers({ project }: { project: Project }) {
+  const rows = numberRows(project);
   if (!rows.length) return null;
   return (
     <section aria-labelledby="pp-numbers">
@@ -91,7 +96,18 @@ function KeyNumbers({ project }: { project: Project }) {
           </div>
         ))}
       </dl>
-      {p.notes && <p class="small">{p.notes}</p>}
+      {project.program.notes && <p class="small">{project.program.notes}</p>}
+    </section>
+  );
+}
+
+/** Transit lines have no housing or floor-area numbers; their notes (scope, funding) follow the summary. */
+function ProgramNotes({ project }: { project: Project }) {
+  if (numberRows(project).length || !project.program.notes) return null;
+  return (
+    <section aria-labelledby="pp-program">
+      <h3 id="pp-program">Program</h3>
+      <p class="small">{project.program.notes}</p>
     </section>
   );
 }
@@ -172,6 +188,8 @@ export function ProjectPanel({ project, onClose, onPrev, onNext, prevName, nextN
         <p class="summary">{project.stageNote}</p>
         <p class="small">As of {formatDate(project.lastVerified)}.</p>
       </section>
+
+      <ProgramNotes project={project} />
 
       {project.timeline.length > 0 && (
         <section aria-labelledby="pp-timeline">

@@ -335,7 +335,8 @@ const lineWidth = (z6: number, z10: number, z15: number): ExpressionSpecificatio
  * Line projects, drawn as a cased line (Matthew, 2026-10-07: option C): a bold stage-coloured
  * line on a land-coloured casing, so it reads over the building print at every zoom. Tunnel
  * runs are a hollow tube; track the project shares with existing service is drawn lighter, and a
- * proposed line (no approvals or funding to build) is dashed, as a proposed site's outline is.
+ * proposed line (no approvals or funding to build) is dashed, per the stage spec's "outline only
+ * (dashed)". Proposed sites still draw a solid outline and faint fill (not yet changed).
  * While the camera flies in, the selected line draws itself (as a site's boundary does).
  */
 function lineLayers(
@@ -349,8 +350,11 @@ function lineLayers(
   const selectedId = selection?.id ?? '';
   const landed = selection?.phase === 'landed';
   const notHidden: ExpressionSpecification = hidden.length ? ['!', ['in', ['get', 'id'], ['literal', hidden]]] : true as never;
-  // The selected line is drawn by the fly-in until it lands.
-  const shown: ExpressionSpecification = landed ? notHidden : ['all', notHidden, ['!=', ['get', 'id'], selectedId]];
+  // The selected line is drawn by the fly-in until it lands; once landed it stays drawn even if the
+  // index filter hides its stage, as an open site does.
+  const shown: ExpressionSpecification = landed
+    ? ['any', ['==', ['get', 'id'], selectedId], notHidden]
+    : ['all', notHidden, ['!=', ['get', 'id'], selectedId]];
   const isLine: ExpressionSpecification = ['==', ['get', 'kind'], 'line'];
   const tunnel: ExpressionSpecification = ['==', ['get', 'segment'], 'tunnel'];
   const proposed: ExpressionSpecification = ['==', ['get', 'stage'], 'proposed'];
