@@ -155,6 +155,9 @@ export function projectLayers(
   const landed = selection?.phase === 'landed';
   // Line projects draw their alignment instead of a site.
   const othersSites: ExpressionSpecification = ['all', others, ['!', ['get', 'line']]];
+  // A proposed site (no approvals yet) is an outline only, dashed, per the stage spec (Matthew, 2026-10-08).
+  const proposedSite: ExpressionSpecification = ['==', ['get', 'stage'], 'proposed'];
+  const selectedProposed = !!selection && getStage(selection.id) === 'proposed';
   const lineSelected = !!selection && isLineProject(selection.id);
   const exaggeration = theme.map.heightExaggeration;
   // Before landing, buildings that have not risen yet stand at zero height.
@@ -169,6 +172,7 @@ export function projectLayers(
 
   const layers: LayerSpecification[] = [
     {
+      // Also the click target for sites (PROJECT_HIT_LAYERS), so a proposed site stays in it, unfilled.
       id: 'project-site-fill',
       type: 'fill',
       source: 'project-sites',
@@ -176,7 +180,7 @@ export function projectLayers(
       filter: othersSites,
       paint: {
         'fill-color': stageCol,
-        'fill-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, theme.opacity.siteFill],
+        'fill-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, ['case', proposedSite, 0, theme.opacity.siteFill]],
       },
     },
     {
@@ -184,12 +188,26 @@ export function projectLayers(
       type: 'line',
       source: 'project-sites',
       minzoom: 11.5,
-      filter: othersSites,
+      filter: ['all', othersSites, ['!', proposedSite]],
       layout: { 'line-join': 'round' },
       paint: {
         'line-color': stageCol,
         'line-width': ['interpolate', ['linear'], ['zoom'], 12, 1, 16, 2],
         'line-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, 1],
+      },
+    },
+    {
+      id: 'project-site-outline-proposed',
+      type: 'line',
+      source: 'project-sites',
+      minzoom: 11.5,
+      filter: ['all', othersSites, proposedSite],
+      layout: { 'line-join': 'round' },
+      paint: {
+        'line-color': stageCol,
+        'line-width': ['interpolate', ['linear'], ['zoom'], 12, 1, 16, 2],
+        'line-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, 1],
+        'line-dasharray': [3, 2],
       },
     },
     {
@@ -217,8 +235,14 @@ export function projectLayers(
       id: 'project-boundary-draw',
       type: 'line',
       source: 'project-boundary-draw',
-      layout: { 'line-join': 'round', 'line-cap': 'round', visibility: lineSelected ? 'none' : 'visible' },
-      paint: { 'line-color': c.selection, 'line-width': ['interpolate', ['linear'], ['zoom'], 12, 1.5, 17, 2.5] },
+      // A proposed site's boundary draws dashed too (butt caps, so the dashes stay crisp).
+      layout: {
+        'line-join': 'round', 'line-cap': selectedProposed ? 'butt' : 'round', visibility: lineSelected ? 'none' : 'visible',
+      },
+      paint: {
+        'line-color': c.selection, 'line-width': ['interpolate', ['linear'], ['zoom'], 12, 1.5, 17, 2.5],
+        ...(selectedProposed ? { 'line-dasharray': [3, 2] } : {}),
+      },
     },
     ...lineLayers(theme, selection, fonts, hidden),
     // Massing: one extrusion layer per stage, so each stage gets its own solidity.
@@ -336,7 +360,7 @@ const lineWidth = (z6: number, z10: number, z15: number): ExpressionSpecificatio
  * line on a land-coloured casing, so it reads over the building print at every zoom. Tunnel
  * runs are a hollow tube; track the project shares with existing service is drawn lighter, and a
  * proposed line (no approvals or funding to build) is dashed, per the stage spec's "outline only
- * (dashed)". Proposed sites still draw a solid outline and faint fill (not yet changed).
+ * (dashed)", as a proposed site's outline is.
  * While the camera flies in, the selected line draws itself (as a site's boundary does).
  */
 function lineLayers(
