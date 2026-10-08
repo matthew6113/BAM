@@ -2,7 +2,7 @@
   "_meta": {
     "title": "Bay Area megaprojects: researched project list",
     "preparedBy": "Claude (claude.ai chat) for Matthew Huguet",
-    "lastVerified": "2026-10-07",
+    "lastVerified": "2026-10-08",
     "notes": [
       "Every figure here came from the listed sources as of the lastVerified date. Items in each project's 'verify' list are known gaps; do not fill them by guessing.",
       "approxCenter values are rough [lon, lat] points for placing a marker only. Real site boundaries must come from official plan documents or parcel data, saved per project with their source.",
@@ -5212,7 +5212,7 @@
         38.6041
       ],
       "acres": null,
-      "acresNote": "Not applicable: a rail line, not a site. The extension runs about 9 miles along SMART's existing right-of-way, from milepost 62.94 near Windsor River Road to milepost 72.00 at Lytton Springs Road and Healdsburg Avenue; the right-of-way is 60 to 250 feet wide (CEQA addendum, Dec 2025, PDF pp. 7 and 18).",
+      "acresNote": "A rail line, not a site. The extension runs about 9 miles along SMART's existing right-of-way, from milepost 62.94 near Windsor River Road to milepost 72.00 at Lytton Springs Road and Healdsburg Avenue; the right-of-way is 60 to 250 feet wide (CEQA addendum, Dec 2025, PDF pp. 7 and 18). CEQAnet's Dec 19, 2025 notice for the addendum lists 103 total acres, and the addendum's field surveys covered about 103.5 acres, mostly within SMART's right-of-way (PDF p. 64).",
       "program": {
         "homes": null,
         "affordableHomes": null,
@@ -5222,11 +5222,12 @@
         "retailSqft": null,
         "hotelKeys": null,
         "openSpaceAcres": null,
-        "notes": "Transit infrastructure; the housing and commercial fields don't apply. About 9 miles of Class IV main-line track rebuilt on SMART's out-of-service Northwestern Pacific right-of-way from Windsor to Lytton Springs Road north of Healdsburg, one new station in Healdsburg (the system's fifteenth), a 5.5-mile extension of the SMART Pathway, 21 at-grade crossings, Positive Train Control, station gauntlet tracks for freight, bridge work including replacement of the 565-foot Russian River railroad bridge in place, and dispatch and broadband upgrades (CTC baseline agreement, PDF pp. 5 and 30; CEQA addendum, PDF pp. 24 and 26). Cost estimate $268,749,000, which SMART and the CTC describe as fully funded: TIRCP $34.8 million (cycles 3 and 6) and $81 million (cycle 7), SCCP $56 million, LPP competitive $25 million, Regional Measure 3 $40 million, FRA CRISI $28.14 million, Sonoma County Measure M $2 million and FTA Community Project Funding $1.8 million (baseline agreement, PDF p. 37). A $6 million zero-emission switcher locomotive is funded alongside it. Delivered by progressive design-build; the Phase I agreement with Stacy and Witbeck/Herzog, a joint venture, is $21,754,398.54 (Sept 17, 2025)."
+        "notes": "Transit infrastructure; the housing and commercial fields don't apply. About 9 miles of Class IV main-line track rebuilt on SMART's out-of-service Northwestern Pacific right-of-way from Windsor to Lytton Springs Road north of Healdsburg, one new station in Healdsburg (the system's fifteenth), a 5.5-mile extension of the SMART Pathway, 21 at-grade crossings, Positive Train Control, station gauntlet tracks for freight, bridge work including replacement of the roughly 565-foot Russian River railroad bridge in the same location, and dispatch and broadband upgrades (CTC baseline agreement, PDF pp. 5 and 30; CEQA addendum, PDF pp. 24 and 26). Cost estimate $268,749,000, which SMART and the CTC describe as fully funded: TIRCP $34.8 million (cycles 3 and 6) and $81 million (cycle 7), SCCP $56 million, LPP competitive $25 million, Regional Measure 3 $40 million, FRA CRISI $28.14 million, Sonoma County Measure M $2 million and FTA Community Project Funding $1.8 million (baseline agreement, Dec 2025, PDF p. 37; CTC, Jan 2026). In June 2026 the CTC added $207,000 in LPP formulaic funds for construction (Resolution LPP-P-2526-17). A $6 million zero-emission switcher locomotive is funded alongside it. Delivered by progressive design-build; the Phase I agreement with Stacy and Witbeck/Herzog, a joint venture, was awarded for $21,754,398.54 on Sept 17, 2025 and amended on Aug 19, 2026 to $22,506,169.82, adding design work paid for by the City of Healdsburg and the County of Sonoma."
       },
-      "developer": "Sonoma-Marin Area Rail Transit District (SMART; project sponsor)",
+      "developer": "Sonoma-Marin Area Rail Transit District (SMART; implementing agency and CEQA lead agency)",
       "publicPartners": [
-        "California Transportation Commission (TIRCP, SCCP and LPP funds; CEQA responsible agency)",
+        "California Transportation Commission (SCCP and LPP funds; allocates TIRCP funds; CEQA responsible agency)",
+        "California State Transportation Agency (TIRCP grants)",
         "Caltrans (grant administration)",
         "Metropolitan Transportation Commission (Regional Measure 3)",
         "Sonoma County Transportation and Climate Authority (Measure M)",
@@ -5237,7 +5238,7 @@
         "County of Sonoma"
       ],
       "stage": "entitled",
-      "stageNote": "Funded, environmentally cleared and in design; construction hasn't started. The route is covered by SMART's 2006 EIR and 2008 SEIR for the 70-mile system; the Board adopted an addendum for this segment on Dec 17, 2025, and the California Transportation Commission approved it as a responsible agency on Jan 29, 2026. The progressive design-build team, under contract since September 2025, had prepared 50% design documents by September 2026, and utility potholing began in April 2026. The first construction package, Windsor Station to Front Street, is due for award in October 2026, with construction starting in spring 2027. SMART is also reopening where the Healdsburg station goes: the historic Depot/Hudson Street site the City prefers, or a Downtown site on Vine Street about 0.45 mile away. Service is planned for December 2028.",
+      "stageNote": "Funded, environmentally cleared and in design; construction hasn't started. The route is covered by SMART's 2006 EIR and 2008 SEIR for the 70-mile system; the Board adopted an addendum for this segment on Dec 17, 2025, and the California Transportation Commission, as a responsible agency, accepted it and approved the project for future consideration of funding on Jan 29, 2026. The progressive design-build team, under contract since September 2025, had prepared 50% design documents by September 2026, and utility potholing began in April 2026. The first construction package, Windsor Station to Front Street, is due for award in October 2026, with construction starting in spring 2027; a second package, Front Street to North Street, includes the station. SMART is also asking the public where the Healdsburg station should go: the historic Depot/Hudson Street site the City prefers (reaffirmed in September 2026), or a Downtown site on Vine Street about 0.45 mile away. Service is planned for December 2028.",
       "timeline": [
         {
           "date": "2006-07",
@@ -5284,13 +5285,21 @@
           "event": "Field work begins with utility potholing near Grove Street and north from Old Redwood Highway."
         },
         {
+          "date": "2026-06",
+          "event": "The California Transportation Commission extends the deadline to allocate $81.2 million in SCCP and LPP construction funds to June 30, 2027."
+        },
+        {
+          "date": "2026-09",
+          "event": "The Healdsburg City Council reaffirms its preference for the Depot/Hudson station site."
+        },
+        {
           "date": "2026-09-16",
           "event": "SMART's Board takes up a staff request to reopen the Healdsburg station location and gather public input on the Depot/Hudson and Downtown sites."
         }
       ],
-      "nextMilestone": "Award of the first construction package (Phase 2A, Windsor Station to Front Street), targeted for October 2026, and a decision on the Healdsburg station site after public outreach (community meeting Oct 22, survey open to Nov 30, staff analysis aimed at the December 2026 Board meeting). SMART's schedule shows construction from January 2027 to November 2028, testing in November and December 2028, and service from December 2028.",
+      "nextMilestone": "The California Transportation Commission is scheduled to consider a $162.2 million construction allocation (SCCP, LPP and TIRCP) on Oct 15-16, 2026. Then award of the first construction package (Phase 2A, Windsor Station to Front Street), targeted for October 2026, and a decision on the Healdsburg station site after public outreach (community meeting Oct 22, survey open to Nov 30, staff analysis aimed at the December 2026 Board meeting). SMART's schedule shows construction from January 2027 to November 2028, testing in November and December 2028, and service from December 2028.",
       "summary": "The next step north for SMART's trains: about nine miles of railroad, idle for decades, rebuilt from today's end of the line at Windsor through Healdsburg, with a new Healdsburg station, a replacement Russian River rail bridge and the SMART Pathway alongside. It is funded at about $269 million, in design, and planned to open in late 2028; where the Healdsburg station goes is being reconsidered.",
-      "massingNotes": "Drawn as a line (data/lines/smart-healdsburg.geojson, pipeline/bam_pipeline/sites/lines_smart.py): U.S. DOT/BTS NTAD North American Rail Network arcs owned by SMART (FRAARCID 331995 and 328131; NET 'X', out of service), from the SMART Windsor platform (National Transit Map stop 4251896) to the Lytton Springs Road crossing, the addendum's northern limit at milepost 72.00. About 8.9 miles as drawn. Checked against SMART's own track layer on the County of Sonoma GIS (median 4 m apart, maximum 22 m) and FRA-surveyed grade crossings (1 to 13 m). Approximate alignment: one centreline. Stations: Windsor (existing) and Healdsburg, drawn at the Depot/Hudson site from SMART's station layer and named as under review (Matthew, 2026-10-07).",
+      "massingNotes": "Drawn as a line (data/lines/smart-healdsburg.geojson, pipeline/bam_pipeline/sites/lines_smart.py): U.S. DOT/BTS NTAD North American Rail Network arcs owned by SMART (FRAARCID 331995 and 328131; NET 'X', out of service), from the SMART Windsor station (National Transit Map stop 4251896, projected onto the track) to the Lytton Springs Road crossing, the addendum's northern limit at milepost 72.00. About 8.9 miles as drawn. Checked against SMART's own track layer on the County of Sonoma GIS (median 4 m apart, maximum 22 m) and against FRA's crossing inventory, using the 17 crossings from Starr Road to Healdsburg Avenue (milepost 68.20) whose coordinates SMART reported as measured (1 to 12 m). Approximate alignment: one centreline. Stations: Windsor (existing) and Healdsburg, drawn at the Depot/Hudson site from SMART's station layer, at about milepost 68 between the Front Street and Healdsburg Avenue crossings (inside the addendum's milepost 67.75 to 68.2 station area), and named as under review (Matthew, 2026-10-07).",
       "officialLinks": [
         "https://www.sonomamarintrain.org/healdsburgextension",
         "https://www.sonomamarintrain.org/healdsburgstationlocation"
@@ -5316,13 +5325,17 @@
         "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_National_Transit_Map_Stops/FeatureServer/0",
         "https://socogis.sonomacounty.ca.gov/map/rest/services/SMARTPublic/SMART_Rail_Tracks/FeatureServer/0",
         "https://socogis.sonomacounty.ca.gov/map/rest/services/SMARTPublic/SMART_Stations/FeatureServer/0",
-        "https://socogis.sonomacounty.ca.gov/map/rest/services/BASEPublic/Streets_Public/FeatureServer/0"
+        "https://socogis.sonomacounty.ca.gov/map/rest/services/BASEPublic/Streets_Public/FeatureServer/0",
+        "https://catc.ca.gov/-/media/ctc-media/documents/ctc-meetings/2026/2026-01/35-2-2c3-a11y.pdf",
+        "https://catc.ca.gov/-/media/ctc-media/documents/ctc-meetings/2026/2026-08/03-1-2-a11y.pdf",
+        "https://catc.ca.gov/-/media/ctc-media/documents/ctc-meetings/2026/2026-10/99-2-6s8-a11y.pdf",
+        "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_Railroad_Grade_Crossings/FeatureServer/0"
       ],
       "verify": [
-        "the Healdsburg station site: the CEQA addendum (PDF p. 27) keeps the platform 'near the Depot buildings', but SMART reopened the choice on Sept 16, 2026 between Depot/Hudson and Downtown (Vine Street between North and Matheson streets); staff analysis is aimed at the December 2026 Board meeting. Whether a Downtown site would need further CEQA review isn't stated",
-        "the Phase 2A construction package award (targeted October 2026; the Board meets Oct 21) and the construction start: SMART said January 2026 in September 2025, the CTC baseline agreement says summer 2026, and SMART's current pages say January or spring 2027",
-        "the CTC construction allocation: Caltrans recommended on June 25-26, 2026 extending the deadline for the $81,207,000 SCCP and LPP construction allocation to June 30, 2027; the Commission's vote was not checked",
-        "the CRISI grant: the June 2026 CTC item says the agreement was still unexecuted, while SMART's Sept 16, 2026 budget amendment (packet PDF p. 33) says it received authorization to use the funds late in fiscal 2026",
+        "the Healdsburg station site: the CEQA addendum (PDF p. 27) keeps the platform 'near the Depot buildings', but on Sept 16, 2026 SMART staff asked the Board for direction to run public outreach on the site, Depot/Hudson or Downtown (Vine Street between North and Matheson streets), and SMART now runs that outreach (survey, Oct 22 community meeting). No document read records what the Board did on Sept 16; staff analysis is aimed at the December 2026 Board meeting. Whether a Downtown site would need further CEQA review isn't stated",
+        "the Phase 2A construction package award (targeted October 2026; no Oct 21 Board agenda was posted as of Oct 8) and the construction start: SMART said January 2026 in September 2025; the CTC baseline agreement sets the begin-construction milestone at Apr 1, 2026 (PDF p. 8), while its project report says summer 2026 (PDF p. 35); SMART's current pages say January or spring 2027",
+        "the CTC's vote on the $162,207,000 construction allocation Caltrans recommends for its Oct 15-16, 2026 meeting (SCCP $56 million, LPP $25.2 million, TIRCP $81 million)",
+        "the CRISI grant agreement: Caltrans' item for the CTC's June 25-26, 2026 meeting (attachment p. 1) says it had not been executed and the target was June 2026, and SMART's Sept 16, 2026 budget amendment (packet PDF p. 33) adds $1,154,319 of CRISI funds, saying SMART \"received authorization to utilize these funds late last fiscal year\". Neither says when the agreement was executed. The Caltrans item gives the grant as $28,000,000; the baseline agreement as $28,140,000 (PDF p. 37)",
         "the number of bridges: the baseline agreement fact sheet says six (PDF p. 5) and its project report says nine (PDF p. 30)",
         "how long the line has been idle: SMART's Sept 17, 2025 staff report says out of service since 1998, the CEQA addendum says no rail service since 2001",
         "the Windsor opening date: SMART's FY 2025 Annual Report says service launched May 30, 2025 (PDF p. 19); Caltrans' 2025 State Rail Annual Report says May 31, 2025 (PDF p. 7)",
@@ -5337,7 +5350,7 @@
           "https://www.masstransitmag.com/rail/news/55401111/ca-smart-board-approves-adding-geyserville-stop-after-north-bay-train-line-reaches-healdsburg"
         ]
       },
-      "lastVerified": "2026-10-07"
+      "lastVerified": "2026-10-08"
     },
     {
       "id": "smart-cloverdale",
@@ -5355,7 +5368,7 @@
         38.7357
       ],
       "acres": null,
-      "acresNote": "Not applicable: a rail line, not a site. SMART's 2025-2030 Strategic Plan describes the extension as 13.5 miles of rail and pathway from Lytton Springs Road to 1st Street in Cloverdale (PDF p. 33), all on SMART's existing right-of-way; SMART owns the corridor north to milepost 89 in Cloverdale.",
+      "acresNote": "Not applicable: a rail line, not a site. SMART's 2025-2030 Strategic Plan describes the extension as 13.5 miles of rail and pathway from Lytton Springs Road to 1st Street in Cloverdale (PDF p. 33), along SMART's existing railroad right-of-way, which SMART owns north to milepost 89.0 in Cloverdale (Aug 19, 2026 packet, PDF p. 244).",
       "program": {
         "homes": null,
         "affordableHomes": null,
@@ -5370,12 +5383,10 @@
       "developer": "Sonoma-Marin Area Rail Transit District (SMART; project sponsor)",
       "publicPartners": [
         "Metropolitan Transportation Commission (Plan Bay Area 2050+)",
-        "Caltrans (US 101 North Comprehensive Multimodal Corridor Plan)",
-        "County of Sonoma",
-        "City of Cloverdale"
+        "Caltrans (US 101 North Comprehensive Multimodal Corridor Plan)"
       ],
       "stage": "proposed",
-      "stageNote": "Shown as proposed because nothing is funded to build and there is no schedule, although the line is environmentally cleared. SMART's 2006 EIR and 2008 SEIR covered the whole 70-mile corridor to Cloverdale, and on Aug 19, 2026 the Board added a Geyserville station to the project under a CEQA statutory exemption for rail projects (SB 71). The extension is in Plan Bay Area 2050+, adopted in March 2026, with a $353 million capital cost and a 2025-2035 opening period, but SMART says it still needs state and federal grants and has applications pending or in development. A Geyserville station lets SMART split the 18 miles into two smaller projects that may compete better for grants. The Cloverdale station site is listed as to be determined, and the Healdsburg design-build contract includes options to continue north if more grants are secured.",
+      "stageNote": "Shown as proposed: environmentally cleared but not yet fully funded, with no construction schedule; SMART says the Cloverdale station will be completed when funding becomes available. SMART's 2006 EIR and 2008 SEIR covered the whole 70-mile corridor to Cloverdale. On Aug 19, 2026 the Board adopted a Geyserville station into SMART's program and approved it as a station project of its own, statutorily exempt from CEQA as a passenger rail project (Public Resources Code 21080.25, as amended by SB 71), to be advanced as part of the extension to Cloverdale; SMART filed the notice of exemption the next day. The extension is in Plan Bay Area 2050+, adopted in March 2026, with a $353 million capital cost and a 2025-2035 opening period, but SMART says it still needs state and federal grants and has applications pending or in development. SMART puts Healdsburg to Cloverdale at about 18 miles, and a Geyserville station at about the midpoint lets it split that into two smaller projects that may compete better for grants. The Cloverdale station site is listed as to be determined, and the Healdsburg design-build contract includes options to continue north if more grants are secured.",
       "timeline": [
         {
           "date": "2006-07",
@@ -5390,8 +5401,8 @@
           "event": "The Governor signs SB 904, removing the bar on SMART stations in unincorporated areas north of Healdsburg."
         },
         {
-          "date": "2024-12",
-          "event": "SMART's Board adopts the 2025-2030 Strategic Plan, with goals to complete the extension to Cloverdale and to pursue a Geyserville station."
+          "date": "2024-12-18",
+          "event": "SMART's Board adopts the 2025-2030 Strategic Plan, whose goal to complete system extensions to Cloverdale includes pursuing a Geyserville station."
         },
         {
           "date": "2026-03",
@@ -5406,13 +5417,17 @@
           "event": "The Board adopts a Geyserville station at 255 Highway 128 into SMART's program, 11-0, and finds it statutorily exempt from CEQA."
         },
         {
+          "date": "2026-08-20",
+          "event": "SMART files a CEQA notice of exemption for the Geyserville station (SCH 2026080751)."
+        },
+        {
           "date": "2026-09",
           "event": "Caltrans amends the US 101 North corridor plan to add the Geyserville station, listed as in development with funding required."
         }
       ],
-      "nextMilestone": "None scheduled. SMART's next steps are to file the Geyserville notice of exemption, have the station added to Plan Bay Area and other plans, and keep applying for state and federal grants to complete the system to Cloverdale.",
+      "nextMilestone": "None scheduled. SMART's next steps are to have the Geyserville station added to Plan Bay Area and other plans, and to keep applying for state and federal grants to complete the system to Cloverdale.",
       "summary": "The last leg of the voter-approved SMART system: about 13.5 miles of out-of-service railroad from north of Healdsburg to Cloverdale, with new stations at Geyserville (adopted in August 2026) and Cloverdale. It was environmentally cleared with the rest of the line and is in the regional plan, but it has no construction funding yet.",
-      "massingNotes": "Drawn as a line (data/lines/smart-cloverdale.geojson, pipeline/bam_pipeline/sites/lines_smart.py): U.S. DOT/BTS NTAD North American Rail Network arcs owned by SMART (FRAARCID 328131, 340389, 342087, 342613, 337129 and the south end of 524404; NET 'X', out of service), from the Lytton Springs Road crossing (milepost 72.00) to the East 1st Street crossing in Cloverdale. About 13.4 miles as drawn, matching the Strategic Plan's 13.5. Checked against SMART's own track layer on the County of Sonoma GIS (median 6 m apart, maximum 27 m; that layer stops about 75 m short of 1st Street). Approximate alignment: one centreline. Geyserville station: the 255 Highway 128 right-of-way parcel (County of Sonoma APN 140-110-011) on the line. Cloverdale station: approximate, location to be determined.",
+      "massingNotes": "Drawn as a line (data/lines/smart-cloverdale.geojson, pipeline/bam_pipeline/sites/lines_smart.py): U.S. DOT/BTS NTAD North American Rail Network arcs owned by SMART (FRAARCID 328131 (its northern 8.9 miles), 340389, 342087, 342613, 337129 and the southern 0.8 mile of 524404; NET 'X', out of service), from the Lytton Springs Road crossing (milepost 72.00) to the East 1st Street crossing in Cloverdale. About 13.45 miles as drawn, matching the Strategic Plan's 13.5. Checked against SMART's own track layer on the County of Sonoma GIS (median about 6 m apart, maximum about 28 m; that layer stops about 75 m short of East 1st Street). Approximate alignment: one centreline, dashed because the extension is proposed. Geyserville station: drawn at the County of Sonoma's point for the 255 Highway 128 right-of-way parcel (APN 140-110-011); SMART's notice of exemption lists two parcels for the station, APNs 140-110-011 and 140-110-012. Cloverdale station: approximate, at SMART's own GIS point; its site is to be determined.",
       "officialLinks": [
         "https://www.sonomamarintrain.org/geyserville"
       ],
@@ -5431,15 +5446,15 @@
         "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer/0",
         "https://socogis.sonomacounty.ca.gov/map/rest/services/CRAPublic/ParcelsPublicShapeFile/FeatureServer/0",
         "https://socogis.sonomacounty.ca.gov/map/rest/services/SMARTPublic/SMART_Stations/FeatureServer/0",
-        "https://socogis.sonomacounty.ca.gov/map/rest/services/BASEPublic/Streets_Public/FeatureServer/0"
+        "https://socogis.sonomacounty.ca.gov/map/rest/services/BASEPublic/Streets_Public/FeatureServer/0",
+        "https://ceqanet.lci.ca.gov/2026080751"
       ],
       "verify": [
-        "the Cloverdale station site: SMART lists it as to be determined; SMART's GIS layer on the County server places it near the Asti Road and Citrus Fair Drive depot (38.79848, -123.01199), and the City's draft Esmeralda Specific Plan says 'a potential future SMART station near Asti and East 1st Street' (PDF p. 34)",
-        "the length: 13.5 miles from Lytton Springs Road to 1st Street (Strategic Plan, PDF p. 33) and '13.5 miles between the northern limits of Healdsburg and Cloverdale' (PDF p. 19), against 'approximately 18 miles' between Healdsburg and Cloverdale (June 17, 2026 staff report) and 'two approximately nine-mile projects' (Geyserville page)",
-        "the cost: $353 million capital (Plan Bay Area 2050+, year of expenditure) against $401.7 million in pending grants (Strategic Plan, Dec 2024); a February 2023 SMART estimate of $308 million is superseded",
+        "the Cloverdale station site: SMART lists it as to be determined; SMART's GIS layer on the County server places it near the Asti Road and Citrus Fair Drive depot (38.79848, -123.01201), and the City's draft Esmeralda Specific Plan says 'a potential future SMART station near Asti and East 1st Street' (PDF p. 34)",
+        "the length: the Strategic Plan gives 13.5 miles from Lytton Springs Road to 1st Street in Cloverdale (PDF pp. 19 and 33), while SMART's June 17, 2026 staff report and Geyserville page speak of about 18 miles between Healdsburg and Cloverdale (Aug 19, 2026 packet, PDF p. 85). They probably measure different stretches (as drawn, about 17 track miles from the Healdsburg station site to 1st Street), but SMART doesn't say where its 18 miles starts, and the Strategic Plan's 'halfway' for Geyserville (PDF p. 19) fits that longer stretch, not the 13.5 miles",
+        "the cost: $353 million capital in Plan Bay Area 2050+ (year of expenditure, PDF p. 42) against $401.7 million in the Strategic Plan's FY2025-30 capital projects, all from grants not yet received (PDF pp. 43 and 47; Dec 2024). They may not be like for like: SMART's figure covers the pathway and rail extension (PDF p. 48), and the two also differ on Windsor to Healdsburg ($175 million against $268.3 million). A February 2023 SMART estimate was $308 million including $40 million for the pathway",
         "the timing: SMART says the California State Rail Plan carries Cloverdale as a near-term project to be completed by 2031 (Sept 16, 2026 packet, PDF p. 49), while Caltrans' 2025 State Rail Annual Report says 'In the medium-term, SMART will extend to Cloverdale'; the City's draft Esmeralda plan says SMART is 'planning to reach Cloverdale ... by 2035'. No SMART schedule exists",
-        "the Geyserville notice of exemption: not on CEQAnet's list for SCH 2002112033 as of Oct 7, 2026",
-        "Geyserville is not yet in Plan Bay Area (Caltrans CMCP amendment, Sept 2026); the plan's entry names one new station, Cloverdale",
+        "Geyserville is not yet in Plan Bay Area: the Plan Bay Area 2050+ entry names one new station, Cloverdale (PDF p. 42), and SMART says the station 'would need to be amended into the regional transportation plan' (June 17, 2026 staff report, Aug 19 packet, PDF p. 86); Caltrans' September 2026 corridor plan amendment lists it at milepost 76, in development, with funding required",
         "the line passes through the Esmeralda site in Cloverdale, inside the 80-foot SMART corridor that site excludes",
         "the license of SMART's station layer on the County of Sonoma GIS server (none stated), used for the Cloverdale station point"
       ],
@@ -5451,7 +5466,7 @@
           "https://www.pressdemocrat.com/2013/11/03/quirkscloverdale"
         ]
       },
-      "lastVerified": "2026-10-07"
+      "lastVerified": "2026-10-08"
     }
   ]
 }
