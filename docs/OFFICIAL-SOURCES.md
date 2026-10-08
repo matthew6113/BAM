@@ -127,6 +127,10 @@ supersede it.
   `docs/official-research/update-2026-10-07-*.md`, changes in `CHANGELOG.md`). Still open
   from it: Potrero's ordinance numbers once the Mayor signs; Esmeralda after the Council's
   Oct 14, 2026 action; Mare Island's CEQA notice of preparation (City: late summer 2026).
+- SMART (added 2026-10-08, `docs/official-research/candidates-smart.md`): the CTC's vote on the $162.2M Healdsburg
+  construction allocation (Oct 15-16, 2026), the Phase 2A award (SMART Board, Oct 21), the Healdsburg station
+  site (Board, December 2026), and any Cloverdale funding. Hosts `sonomamarintrain.org` and `planbayarea.org`
+  were approved by Matthew on 2026-10-07.
 - Lead: CEQAnet lists a final EIR for the Tanforan Redevelopment Project (City of San
   Bruno, SCH 2023120409) posted Oct 5, 2026; check it against the `tanforan` record.
 - For each new project: find the official boundary (prefer GIS: a plan area, Special Use

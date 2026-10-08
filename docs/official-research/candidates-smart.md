@@ -89,3 +89,39 @@ Every station is within 5 m of the line.
 
 - **Grant total.** The Press Democrat via Mass Transit (Aug 27, 2026) reports $735M in grants won.
 - **Cloverdale depot.** Wikipedia and the Press Democrat (2013) describe the depot at 501 Asti Road as the planned terminus.
+
+## Verification (2026-10-08)
+
+A second, adversarial pass checked every claim in both records against the official documents. One
+skeptic per field group tried to refute each claim, and a second agent independently re-checked every
+flag before it was accepted. Results:
+- 270 claims held as written.
+- 37 corrections were confirmed and applied.
+- 3 flags were overturned on the second check: SMART's "milepost 89" ownership, the CTC's own "fully
+  funded" wording, and SMART-owned arcs.
+
+The main corrections:
+- **Phase I agreement.** It was amended on Aug 19, 2026 to $22,506,169.82, for design work paid for by
+  the City of Healdsburg and the County of Sonoma.
+- **Funding.** The CTC added $207,000 in LPP formulaic funds in June 2026. It extended the $81.2M
+  construction allocation deadline to June 30, 2027 (adopted June minutes, 8-0). For its Oct 15–16,
+  2026 meeting, Caltrans recommends a $162.2M construction allocation.
+- **CEQA wording.** The CTC "accepted" the addendum and approved the project for funding; it did not
+  "approve the addendum".
+- **Station outreach.** SMART staff asked the Board on Sept 16 for direction to consult on the
+  station. No record of the Board's action has been read, so the record no longer says SMART "reopened"
+  the site that day. The City reaffirmed the Depot/Hudson preference in September 2026.
+- **Geyserville.** Its notice of exemption was filed on Aug 20, 2026 under a new SCH number,
+  2026080751, and lists two parcels (140-110-011 and 140-110-012). The exemption is PRC 21080.25, as
+  amended by SB 71.
+- **Cloverdale.** It is "not yet fully funded" with "no construction schedule". SMART says the station
+  "will be completed when funding becomes available". The City of Cloverdale and the County of Sonoma
+  are no longer listed as partners, because no official record names them.
+- **Geometry wording.**
+  - The Windsor point is National Transit Map station 4251896, not a platform.
+  - The comparison with SMART's track layer is now sampled every 5 m and limited to the stretch that
+    layer covers (Cloverdale: maximum 28 m).
+  - Lengths are measured on the ground: 8.86 and 13.45 miles.
+
+SMART's own Geyserville and Construction Updates pages still describe the station as "being
+evaluated", so the adoption is cited to the Aug 19 packet and the notice of exemption.

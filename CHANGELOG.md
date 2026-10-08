@@ -3,6 +3,31 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-08 (SMART Healdsburg and Cloverdale extensions added)
+
+Two line projects added at Matthew's request ("the green line additions for SMART"). Research:
+`docs/official-research/candidates-smart.md`. Every claim was then re-checked adversarially on Oct 8: 270 held,
+37 corrections were applied, and 18 newer official facts were added. Hosts approved: `sonomamarintrain.org` and
+`planbayarea.org`.
+
+- **smart-healdsburg** (`entitled`): about 9 miles from Windsor to Lytton Springs Road, with a new Healdsburg station.
+  - Funded at $268,749,000 per the CTC baseline agreement and the CTC's January 2026 item.
+  - CEQA addendum adopted Dec 17, 2025.
+  - Progressive design-build Phase I awarded Sept 17, 2025 and amended Aug 19, 2026 ($22.5 million).
+  - The CTC considers a $162.2 million construction allocation on Oct 15-16, 2026.
+  - SMART's schedule: construction from 2027, service December 2028.
+  - The station is drawn at the Depot/Hudson site and named "site under review" (SMART is consulting on a
+    Downtown alternative; decision aimed at December 2026).
+- **smart-cloverdale** (`proposed`, dashed): about 13.5 miles to Cloverdale, with stations at Geyserville (adopted
+  Aug 19, 2026; notice of exemption SCH 2026080751) and Cloverdale (site to be determined).
+  - Environmentally cleared in 2006/2008, but no construction funding or schedule.
+  - Plan Bay Area 2050+ lists it at $353 million capital.
+- **Geometry** (`pipeline/bam_pipeline/sites/lines_smart.py`, new `make sites` step):
+  - NTAD rail lines (SMART-owned, out-of-service track), cut at County of Sonoma street crossings.
+  - Stations from the National Transit Map, SMART's station layer and the County's Geyserville parcel.
+  - 8.86 and 13.45 miles as drawn, a median 4 and 6 m from SMART's own track layer.
+- `_meta.lastVerified` moves to 2026-10-08, the date of the SMART re-check.
+
 ## 2026-10-07 (San Francisco waterfront flood defenses removed)
 
 Removed `sf-waterfront-flood-defense` from the map at Matthew's request. The record moves to `_meta.dropped`; its
