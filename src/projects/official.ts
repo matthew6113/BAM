@@ -61,6 +61,16 @@ const OFFICIAL_HOSTS = [
   'tjpa.org', // Transbay Joint Powers Authority (The Portal / Downtown Rail Extension, Salesforce Transit Center)
   'sfcta.org', // San Francisco County Transportation Authority (Prop L sales tax, board memos)
   'caltrain.com', // Peninsula Corridor Joint Powers Board (Caltrain): developer resources and GTFS licence (Matthew, 2026-10-07: approved)
+  // Agency agenda systems and sites from the official-source pass (Matthew, 2026-10-07: approved)
+  'vallejoca.api.civicclerk.com', // City of Vallejo agendas, staff reports and minutes
+  'alamedacounty.granicus.com', // Alameda County Board of Supervisors agendas
+  'solano.legistar.com', // Solano County Board of Supervisors legislative files
+  'suisun.com', // City of Suisun City (main site)
+  'dublin-development.icitywork.com', // City of Dublin's development map (linked from dublin.ca.gov)
+  'public-gis-missioncity.opendata.arcgis.com', // City of Santa Clara's open-data hub (terms of use)
+  // SMART's northern extensions (Matthew, 2026-10-07: approved)
+  'sonomamarintrain.org', // Sonoma-Marin Area Rail Transit District (board packets, project pages, plans)
+  'planbayarea.org', // MTC/ABAG's Plan Bay Area site (adopted plan documents)
 ];
 
 /** Shared vendor hosts, accepted only under an agency's own path. */
@@ -79,6 +89,12 @@ const OFFICIAL_PREFIXES = [
   'granicus_production_attachments.s3.amazonaws.com/cityofepa/', // East Palo Alto agendas and minutes (Granicus)
   'storage.googleapis.com/proudcity/sanrafaelca/', // City of San Rafael's document store (staff reports, resolutions)
   'services8.arcgis.com/qac9exitge3rh5x7/', // City of East Palo Alto
+  // From the official-source pass (Matthew, 2026-10-07: approved)
+  'bart.legistar1.com/bart/', // BART Board legislative files and attachments
+  'webapi.legistar.com/v1/bart/',
+  'webapi.legistar.com/v1/solano/', // Solano County
+  'granicus_production_attachments.s3.amazonaws.com/dublin/', // City of Dublin agendas and staff reports
+  'storage.googleapis.com/proudcity/solanocountylafcoca/', // Solano LAFCo's file store (linked from solanolafco.gov)
   // ArcGIS Online organisations
   'services9.arcgis.com/ugpgsv1ugl0phsgx/', // City of Brisbane
   'services7.arcgis.com/urrq0o3z2aaiiwyu/', // City of Menlo Park

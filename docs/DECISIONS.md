@@ -195,3 +195,23 @@ The landed project's site is filled light gray (`selectionFill`, `#DEDAD1`), so 
 reads against it instead of against the building ink (about 2.7:1, under 3:1). The fill sits under
 the existing buildings, so footprints that stay on a site still show, and fades in on landing.
 The contrast check now measures the selection against this ground (about 13:1).
+
+## 2026-10-07: flood defenses out, SMART extensions in (Matthew)
+
+- The San Francisco waterfront flood defenses come off the map (listed under `_meta.dropped`).
+- SMART's northern extensions go on as two line projects:
+  - Healdsburg (Windsor to Lytton Springs Road), entitled and funded.
+  - Cloverdale (Lytton Springs Road to Cloverdale), drawn as proposed: it is environmentally cleared but has no
+    construction funding or schedule, and the lighter, dashed line says so.
+- The Healdsburg station is drawn at the Depot/Hudson site in the approved project, named "site under review" while
+  SMART consults on a Downtown alternative.
+- SMART's lines use the stage colours, not SMART green.
+- `sonomamarintrain.org` and `planbayarea.org` are accepted as official hosts.
+- Follow-on map change: a proposed line project is dashed (the stage spec's "outline only (dashed)"), and the open
+  line's station names draw above other projects' markers.
+- Proposed sites are dashed too (Matthew, 2026-10-08: "Used dashed lines"): a dashed stage-coloured outline and no
+  fill, per the stage spec. The fill stays in the map at zero opacity, since it is the site's click target. Once
+  landed, a proposed site's black boundary also draws dashed; the gray selected-site ground is unchanged. Screenshots:
+  `docs/screenshots/proposed/`.
+- The panel now shows a line project's program notes (scope, funding) under "Program", after "Where it stands", when it has no housing or
+  floor-area numbers; before, transit projects' notes were hidden.

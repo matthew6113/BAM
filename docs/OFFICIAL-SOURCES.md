@@ -97,36 +97,43 @@ Network access was broadened on 2026-10-02 and every lead below was read:
 - The SF Legistar API (webapi.legistar.com) stops around 2020; read file pages on
   sfgov.legistar.com instead. sfgov.legistar.com is now an official host.
 
-## The other 24 projects
+## Hosts approved 2026-10-07
 
-### San Francisco (11): checked against the bucket
+These agency-run systems, on vendor domains under the agency's own name or path, were approved by Matthew on
+2026-10-07 and added to `src/projects/official.ts`. The facts that waited on them are now applied (logged in
+`CHANGELOG.md`).
 
-Summary of `docs/official-research/`:
-- Well covered (approvals, program, heights, parcels): India Basin, Balboa Reservoir,
-  Pier 70, Mission Rock, Mission Bay, Candlestick Point, Hunters Point Shipyard, Treasure
-  Island, Parkmerced (2010 documents only).
-- Conflicts to resolve with the newest official figure: Pier 70 homes (data 2,000; Housing
-  Element 2023 "up to 2,150") and open space (9 vs 6.5 acres); Mission Rock homes (1,200 vs
-  "up to 1,300") and retail (200,000 vs ~241,000 gsf); Candlestick office (data 2M; latest
-  readable official figure 750,000 sq ft in 2019, before the reported 2024 transfer);
-  Treasure Island acres (405 vs ~400); India Basin acres note; Balboa open space (4.2 vs ~4).
-- Nothing official reachable: Stonestown (case 2021-012028; all its documents are on blocked
-  hosts) and Piers 30–32's current deal (only site size confirmed).
-- Every 2024–2026 event (Candlestick groundbreaking and phase split, Treasure Island phase
-  one, India Basin default, Parkmerced receivership, Pier 70 density proposal) is
-  press-only so far. Official sources for them sit on blocked hosts (OCII, TIDA, Port,
-  sfbos, CEQAnet); each findings file lists the exact documents to fetch.
+| Host | Agency | Facts applied |
+|---|---|---|
+| `vallejoca.api.civicclerk.com` | City of Vallejo (agendas, staff reports, minutes) | Mare Island: April 27, 2026 report (about 3,131 acres, 9,750–14,400 homes, CEQA schedule); July 28, 2026 extension of the South Mare Island development agreement to Sept 11, 2031; the 2019 Lennar-to-Nimitz transfer; the Connolly Street pause |
+| `bart.legistar1.com/bart/`, `webapi.legistar.com/v1/bart/` | BART Board | BART housing: Lake Merritt stays at 557 homes (Building A 360); the Oakland Planning Commission approved the PDP May 19, 2021; West Oakland 522/240; North Berkeley option agreement (June 2026); Ashby West Lot agreement (Feb 2026) |
+| `dublin-development.icitywork.com`, `granicus_production_attachments.s3.amazonaws.com/dublin/` | City of Dublin | BART housing: Amador Station approved Aug 10, 2021 (5 stories, 61 ft); its envelope is now drawn at 61 ft |
+| `alamedacounty.granicus.com` | Alameda County Board of Supervisors | Oakland Coliseum: County still negotiating price and terms in closed session as of Oct 6, 2026 |
+| `solano.legistar.com`, `webapi.legistar.com/v1/solano/` | Solano County | Suisun: County opposed the shipbuilding bill (Aug 25, 2026); the airport commission calls the Draft EIR "forthcoming" (Aug 27, 2026); the Council's June 10, 2025 agreement (County file 25-577) |
+| `storage.googleapis.com/proudcity/solanocountylafcoca/` | Solano LAFCo's file store (linked from solanolafco.gov) | Suisun: no annexation application filed with LAFCo as of Aug 10, 2026 |
+| `suisun.com` | City of Suisun City (main site) | Suisun: the reimbursement agreement text (growth phased to 2071) |
+| `public-gis-missioncity.opendata.arcgis.com` | City of Santa Clara (ArcGIS Hub) | Tasman East: zoning layer license (ODC PDDL 1.0, terms §IX, checked 2026-10-07), recorded in `data/CREDITS.md` |
+
+## Status of the other projects
+
+All projects are mapped and pass the official-sources test. What remains open is listed in
+each record: `reported` holds press-only facts the map doesn't show, and `verify` holds
+open questions. The San Francisco summary that used to sit here predates the broader
+network access; the "Update with full network access" sections in `docs/official-research/`
+supersede it.
 
 ### Next
-1. Done (Milestone 3): findings applied and all projects mapped.
-2. With broader network access: the Potrero D4D, DA and Addendum 2; Stonestown; and the
-   2024–2026 records above.
-3. The 13 projects outside San Francisco have no reachable official host at all.
-
-### For each project
-
-None are on the map yet; Milestone 3 adds them. For each one:
-- Find the official boundary. Prefer GIS (a plan area, Special Use District or parcels) over tracing a figure.
-- Confirm each fact in `projects.json` against an agency source.
-- Move press-only facts into `reported`.
-- `src/projects/official.ts` lists the accepted hosts, and its test enforces the rule once a project is mapped.
+- The 2026-10-07 pass covered every project then mapped (findings in
+  `docs/official-research/update-2026-10-07-*.md`, changes in `CHANGELOG.md`). Still open
+  from it: Potrero's ordinance numbers once the Mayor signs; Esmeralda after the Council's
+  Oct 14, 2026 action; Mare Island's CEQA notice of preparation (City: late summer 2026).
+- SMART (added 2026-10-08, `docs/official-research/candidates-smart.md`): the CTC's vote on the $162.2M Healdsburg
+  construction allocation (Oct 15-16, 2026), the Phase 2A award (targeted October 2026; no Board agenda posted as of Oct 8), the Healdsburg station
+  site (Board, December 2026), and any Cloverdale funding. Hosts `sonomamarintrain.org` and `planbayarea.org`
+  were approved by Matthew on 2026-10-07.
+- Lead: CEQAnet lists a final EIR for the Tanforan Redevelopment Project (City of San
+  Bruno, SCH 2023120409) posted Oct 5, 2026; check it against the `tanforan` record.
+- For each new project: find the official boundary (prefer GIS: a plan area, Special Use
+  District or parcels, over tracing a figure), confirm each fact against an agency
+  source, and move press-only facts into `reported`. `src/projects/official.ts` lists the
+  accepted hosts, and its test enforces the rule.

@@ -155,6 +155,9 @@ export function projectLayers(
   const landed = selection?.phase === 'landed';
   // Line projects draw their alignment instead of a site.
   const othersSites: ExpressionSpecification = ['all', others, ['!', ['get', 'line']]];
+  // A proposed site (no approvals yet) is an outline only, dashed, per the stage spec (Matthew, 2026-10-08).
+  const proposedSite: ExpressionSpecification = ['==', ['get', 'stage'], 'proposed'];
+  const selectedProposed = !!selection && getStage(selection.id) === 'proposed';
   const lineSelected = !!selection && isLineProject(selection.id);
   const exaggeration = theme.map.heightExaggeration;
   // Before landing, buildings that have not risen yet stand at zero height.
@@ -169,6 +172,7 @@ export function projectLayers(
 
   const layers: LayerSpecification[] = [
     {
+      // Also the click target for sites (PROJECT_HIT_LAYERS), so a proposed site stays in it, unfilled.
       id: 'project-site-fill',
       type: 'fill',
       source: 'project-sites',
@@ -176,7 +180,7 @@ export function projectLayers(
       filter: othersSites,
       paint: {
         'fill-color': stageCol,
-        'fill-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, theme.opacity.siteFill],
+        'fill-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, ['case', proposedSite, 0, theme.opacity.siteFill]],
       },
     },
     {
@@ -184,12 +188,26 @@ export function projectLayers(
       type: 'line',
       source: 'project-sites',
       minzoom: 11.5,
-      filter: othersSites,
+      filter: ['all', othersSites, ['!', proposedSite]],
       layout: { 'line-join': 'round' },
       paint: {
         'line-color': stageCol,
         'line-width': ['interpolate', ['linear'], ['zoom'], 12, 1, 16, 2],
         'line-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, 1],
+      },
+    },
+    {
+      id: 'project-site-outline-proposed',
+      type: 'line',
+      source: 'project-sites',
+      minzoom: 11.5,
+      filter: ['all', othersSites, proposedSite],
+      layout: { 'line-join': 'round' },
+      paint: {
+        'line-color': stageCol,
+        'line-width': ['interpolate', ['linear'], ['zoom'], 12, 1, 16, 2],
+        'line-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, 1],
+        'line-dasharray': [3, 2],
       },
     },
     {
@@ -217,8 +235,14 @@ export function projectLayers(
       id: 'project-boundary-draw',
       type: 'line',
       source: 'project-boundary-draw',
-      layout: { 'line-join': 'round', 'line-cap': 'round', visibility: lineSelected ? 'none' : 'visible' },
-      paint: { 'line-color': c.selection, 'line-width': ['interpolate', ['linear'], ['zoom'], 12, 1.5, 17, 2.5] },
+      // A proposed site's boundary draws dashed too (butt caps, so the dashes stay crisp).
+      layout: {
+        'line-join': 'round', 'line-cap': selectedProposed ? 'butt' : 'round', visibility: lineSelected ? 'none' : 'visible',
+      },
+      paint: {
+        'line-color': c.selection, 'line-width': ['interpolate', ['linear'], ['zoom'], 12, 1.5, 17, 2.5],
+        ...(selectedProposed ? { 'line-dasharray': [3, 2] } : {}),
+      },
     },
     ...lineLayers(theme, selection, fonts, hidden),
     // Massing: one extrusion layer per stage, so each stage gets its own solidity.
@@ -323,7 +347,9 @@ export function projectLayers(
       paint: { 'text-color': c.labels, 'text-halo-color': c.land, 'text-halo-width': 1.8 },
     },
   ];
-  return layers;
+  // The open line's station names draw last, above other projects' markers (Esmeralda's sits on Cloverdale).
+  const labels = layers.findIndex((l) => l.id === 'project-line-station-labels');
+  return [...layers.slice(0, labels), ...layers.slice(labels + 1), layers[labels]];
 }
 
 const lineWidth = (z6: number, z10: number, z15: number): ExpressionSpecification =>
@@ -332,7 +358,9 @@ const lineWidth = (z6: number, z10: number, z15: number): ExpressionSpecificatio
 /**
  * Line projects, drawn as a cased line (Matthew, 2026-10-07: option C): a bold stage-coloured
  * line on a land-coloured casing, so it reads over the building print at every zoom. Tunnel
- * runs are a hollow tube; track the project shares with existing service is drawn lighter.
+ * runs are a hollow tube; track the project shares with existing service is drawn lighter, and a
+ * proposed line (no approvals or funding to build) is dashed, per the stage spec's "outline only
+ * (dashed)", as a proposed site's outline is.
  * While the camera flies in, the selected line draws itself (as a site's boundary does).
  */
 function lineLayers(
@@ -346,10 +374,15 @@ function lineLayers(
   const selectedId = selection?.id ?? '';
   const landed = selection?.phase === 'landed';
   const notHidden: ExpressionSpecification = hidden.length ? ['!', ['in', ['get', 'id'], ['literal', hidden]]] : true as never;
-  // The selected line is drawn by the fly-in until it lands.
-  const shown: ExpressionSpecification = landed ? notHidden : ['all', notHidden, ['!=', ['get', 'id'], selectedId]];
+  // The selected line is drawn by the fly-in until it lands; once landed it stays drawn even if the
+  // index filter hides its stage, as an open site does.
+  const shown: ExpressionSpecification = landed
+    ? ['any', ['==', ['get', 'id'], selectedId], notHidden]
+    : ['all', notHidden, ['!=', ['get', 'id'], selectedId]];
   const isLine: ExpressionSpecification = ['==', ['get', 'kind'], 'line'];
   const tunnel: ExpressionSpecification = ['==', ['get', 'segment'], 'tunnel'];
+  const proposed: ExpressionSpecification = ['==', ['get', 'stage'], 'proposed'];
+  const dash = [2, 1.6];
   const drawStage = selection ? (getStage(selection.id) as StageKey | undefined) : undefined;
   const drawColor = drawStage ? stageColor(theme, drawStage) : c.selection;
   const lineSelected = !!selection && isLineProject(selection.id);
@@ -362,12 +395,17 @@ function lineLayers(
     },
     {
       id: 'project-line-core', type: 'line', source: 'project-lines',
-      filter: ['all', shown, isLine, ['!', tunnel]], layout: round,
+      filter: ['all', shown, isLine, ['!', tunnel], ['!', proposed]], layout: round,
       paint: {
         'line-color': stageCol,
         'line-width': lineWidth(1.3, 2.2, 6),
         'line-opacity': ['case', ['==', ['get', 'segment'], 'shared'], 0.55, 1],
       },
+    },
+    {
+      id: 'project-line-core-proposed', type: 'line', source: 'project-lines',
+      filter: ['all', shown, isLine, ['!', tunnel], proposed], layout: { 'line-join': 'round' },
+      paint: { 'line-color': stageCol, 'line-width': lineWidth(1.3, 2.2, 6), 'line-dasharray': dash },
     },
     {
       id: 'project-line-tube', type: 'line', source: 'project-lines',
@@ -385,8 +423,13 @@ function lineLayers(
       paint: { 'line-color': c.land, 'line-width': lineWidth(2.6, 4.5, 11) },
     },
     {
-      id: 'project-line-draw', type: 'line', source: 'project-boundary-draw', layout: { ...round, visibility: lineSelected ? 'visible' : 'none' },
-      paint: { 'line-color': drawColor, 'line-width': lineWidth(1.3, 2.2, 6) },
+      id: 'project-line-draw', type: 'line', source: 'project-boundary-draw',
+      layout: drawStage === 'proposed' ? { 'line-join': 'round', visibility: lineSelected ? 'visible' : 'none' }
+        : { ...round, visibility: lineSelected ? 'visible' : 'none' },
+      paint: {
+        'line-color': drawColor, 'line-width': lineWidth(1.3, 2.2, 6),
+        ...(drawStage === 'proposed' ? { 'line-dasharray': dash } : {}),
+      },
     },
     {
       id: 'project-line-stations', type: 'circle', source: 'project-lines', minzoom: 9,

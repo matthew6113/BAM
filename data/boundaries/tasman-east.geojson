@@ -8,7 +8,7 @@
   "query": "https://map.santaclaraca.gov/maps/rest/services/OPENDATA/RegionalZoningOpenData/MapServer/0/query?where=ZONGDSGN+%3D+%27TN%27+and+SPPLAN+%3D+%27TE%27&outFields=%2A&outSR=4326&f=geojson",
   "accuracy": "approximate",
   "accuracyNote": "The parcels of the Tasman East Specific Plan area, which the City describes as about 45 acres between Tasman Drive, the Guadalupe River, the golf course and Lafayette Street. The plan's own streets are outside the parcels, so the shape is net of them. The layer's 10 other TN parcels are retired records that lie wholly inside these and add no area. 41.0 acres as drawn.",
-  "license": "City of Santa Clara Open Data Portal terms of use (2018)",
+  "license": "City of Santa Clara Open Data Portal terms of use (2018): ODC PDDL 1.0, credit City of Santa Clara",
   "features_used": 37
  },
  "features": [

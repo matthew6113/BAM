@@ -223,6 +223,11 @@ describe('official sources', () => {
     expect(isOfficialSource('https://www.cupertino.org/x')).toBe(false);
     expect(isOfficialSource('https://services7.arcgis.com/uRrQ0O3z2aaiIWYU/arcgis/rest/services/x')).toBe(true);
     expect(isOfficialSource('https://services7.arcgis.com/someoneelse/arcgis/rest/services/x')).toBe(false);
+    expect(isOfficialSource('https://bart.legistar1.com/bart/attachments/x.pdf')).toBe(true);
+    expect(isOfficialSource('https://webapi.legistar.com/v1/solano/matters/1/texts/2')).toBe(true);
+    expect(isOfficialSource('https://webapi.legistar.com/v1/someoneelse/matters/1')).toBe(false);
+    expect(isOfficialSource('https://storage.googleapis.com/proudcity/solanocountylafcoca/2026/08/x.pdf')).toBe(true);
+    expect(isOfficialSource('https://storage.googleapis.com/someoneelse/x.pdf')).toBe(false);
     expect(isOfficialSource('https://sfyimby.com/2026/02/x.html')).toBe(false);
     expect(isOfficialSource('https://www.sfchronicle.com/x')).toBe(false);
     expect(isOfficialSource('https://sfplanning.org.example.com/x')).toBe(false);

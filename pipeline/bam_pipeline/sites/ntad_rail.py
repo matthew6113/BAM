@@ -1,8 +1,9 @@
-"""U.S. DOT/BTS NTAD North American Rail Network Lines: fetch the Caltrain corridor and route along it.
+"""U.S. DOT/BTS NTAD North American Rail Network Lines: fetch a railroad's arcs (Caltrain, SMART) and route along them.
 
 The National Transportation Atlas Database rail network is "a work of the United States
 government ... not protected by any U.S. copyrights" (public domain). Each arc carries its
-owner (RROWNER1..3), its network class (NET: M main, S siding, Y yard, I industry, O other) and
+owner (RROWNER1..3), its network class (NET: M main, S siding, Y yard, I industry, O other,
+X out of service, A abandoned) and
 the FRA node ids at either end (FRFRANODE, TOFRANODE), so a route between two places is a
 shortest path over the arcs.
 
@@ -34,11 +35,13 @@ OWNER = "JPBX"  # Peninsula Corridor Joint Powers Board (Caltrain) in the NTAD o
 PAGE = 200
 
 
-def fetch_jpbx() -> gpd.GeoDataFrame:
-    """Every NTAD arc the Peninsula Corridor Joint Powers Board owns, cached in data/raw/lines/."""
-    if not CACHE.exists():
-        CACHE.parent.mkdir(parents=True, exist_ok=True)
-        where = " OR ".join(f"RROWNER{i}='{OWNER}'" for i in (1, 2, 3))
+def fetch_owner(owners: tuple[str, ...], cache_name: str) -> gpd.GeoDataFrame:
+    """Every NTAD arc owned (RROWNER1..3) by any of `owners`, cached as data/raw/lines/<cache_name>."""
+    cache = CACHE.parent / cache_name
+    if not cache.exists():
+        cache.parent.mkdir(parents=True, exist_ok=True)
+        codes = ", ".join(f"'{o}'" for o in owners)
+        where = " OR ".join(f"RROWNER{i} IN ({codes})" for i in (1, 2, 3))
         feats, offset = [], 0
         while True:
             q = urllib.parse.urlencode({
@@ -56,8 +59,13 @@ def fetch_jpbx() -> gpd.GeoDataFrame:
             count = json.load(r)["count"]
         if count != len(feats):
             raise SystemExit(f"NTAD: fetched {len(feats)} arcs but the service reports {count}")
-        CACHE.write_text(json.dumps({"type": "FeatureCollection", "features": feats}))
-    return gpd.read_file(CACHE)
+        cache.write_text(json.dumps({"type": "FeatureCollection", "features": feats}))
+    return gpd.read_file(cache)
+
+
+def fetch_jpbx() -> gpd.GeoDataFrame:
+    """Every NTAD arc the Peninsula Corridor Joint Powers Board owns, cached in data/raw/lines/."""
+    return fetch_owner((OWNER,), CACHE.name)
 
 
 def route(arcs: gpd.GeoDataFrame, start: Point, end: Point, nets=("M", "S", "O")) -> tuple[LineString, list[int]]:

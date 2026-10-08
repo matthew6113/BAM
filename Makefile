@@ -89,7 +89,7 @@ sites:
 	$(PY) bam_pipeline.sites.lines_the_portal
 	$(PY) bam_pipeline.sites.lines_cahsr_sf_sj
 	$(PY) bam_pipeline.sites.lines_valley_link
-	$(PY) bam_pipeline.sites.lines_sf_waterfront_flood_defense
+	$(PY) bam_pipeline.sites.lines_smart
 	$(PY) bam_pipeline.sites.bart_station_housing
 
 photos:

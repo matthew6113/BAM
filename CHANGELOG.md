@@ -3,6 +3,245 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-08 (SMART Healdsburg and Cloverdale extensions added)
+
+Two line projects added at Matthew's request ("the green line additions for SMART"). Research:
+`docs/official-research/candidates-smart.md`. Every claim was then re-checked adversarially on Oct 8: 270 held,
+37 corrections were applied (several of them newer official facts, such as the Phase I amendment and the CTC's
+Oct 15-16 allocation) and 3 flags were overturned. Hosts approved: `sonomamarintrain.org` and
+`planbayarea.org`.
+
+- **smart-healdsburg** (`entitled`): about 9 miles from Windsor to Lytton Springs Road, with a new Healdsburg station.
+  - Funded at $268,749,000 per the CTC baseline agreement and the CTC's January 2026 item.
+  - CEQA addendum adopted Dec 17, 2025.
+  - Progressive design-build Phase I awarded Sept 17, 2025 and amended Aug 19, 2026 ($22.5 million).
+  - The CTC considers a $162.2 million construction allocation on Oct 15-16, 2026.
+  - SMART's schedule: construction from 2027, service December 2028.
+  - The station is drawn at the Depot/Hudson site and named "site under review" (SMART is consulting on a
+    Downtown alternative; decision aimed at December 2026).
+- **smart-cloverdale** (`proposed`, dashed): about 13.5 miles to Cloverdale, with stations at Geyserville (adopted
+  Aug 19, 2026; notice of exemption SCH 2026080751) and Cloverdale (site to be determined).
+  - Environmentally cleared in 2006/2008, but no construction funding or schedule.
+  - Plan Bay Area 2050+ lists it at $353 million capital.
+- **Geometry** (`pipeline/bam_pipeline/sites/lines_smart.py`, new `make sites` step):
+  - NTAD rail lines (SMART-owned, out-of-service track), cut at County of Sonoma street crossings.
+  - Stations from the National Transit Map, SMART's station layer and the County's Geyserville parcel.
+  - 8.86 and 13.45 miles as drawn, a median 4 and 6 m from SMART's own track layer.
+- `_meta.lastVerified` moves to 2026-10-08, the date of the SMART re-check.
+
+## 2026-10-07 (San Francisco waterfront flood defenses removed)
+
+Removed `sf-waterfront-flood-defense` from the map at Matthew's request. The record moves to `_meta.dropped`; its
+line and corridor files (`data/lines/`, `data/boundaries/`), its pipeline step and its credits row are deleted. The
+research notes and draft record stay in `docs/official-research/` as history.
+
+## 2026-10-07 (hosts approved; held facts applied)
+
+Matthew approved the eight agency hosts listed in `docs/OFFICIAL-SOURCES.md` ("Hosts approved 2026-10-07"), and
+the facts held for them are applied. Findings: `docs/official-research/update-2026-10-07-east-north.md` and
+`update-2026-10-07-peninsula-south.md`; key quotes re-checked against the documents on Oct 7. `lastVerified` unchanged.
+
+- **mare-island:**
+  - Acres 5,250 → 3,131: the City's April 27, 2026 report gives about 3,131 acres (1,302 developable) for the
+    draft new plan, which keeps the existing plan boundary (the drawn 2005 plan area measures about 3,090). The
+    5,250 is the whole island in the 2005 EIR.
+  - The April 2026 range (9,750 to 14,400 homes, 895 dormitory units) and the City's tentative schedule: NOP late
+    summer 2026, public draft EIR winter 2026–27, adoption hearings fall or winter 2027.
+  - Timeline: 2001 Lennar development agreement; the July 31, 2019 consent to transfer to the Nimitz Group (escrow
+    closed November 2019); the Connolly Street pause (Apr 27, 2026); the final extension to Sept 11, 2031
+    (Resolution 138 N.C., July 28, 2026).
+  - Press corrected: the 2019 purchase was Lennar's South Island, about 670 acres, not "about 500". Both press
+    timeline entries are dropped from `reported`, which is now empty.
+- **oakland-coliseum:** the County Board was still negotiating price and terms in closed session on Oct 6, 2026;
+  no closing recorded. Next milestone notes the Sept 1 target has passed (deadline Jan 30, 2027).
+- **suisun-expansion:**
+  - No annexation application filed with Solano LAFCo as of Aug 10, 2026.
+  - The County's airport land use commission calls the Draft EIR "forthcoming" (Aug 2026).
+  - The posted (unsigned) reimbursement agreement phases growth to full buildout in 2071.
+  - Solano County opposed the shipbuilding bill 3–2 (Aug 25, 2026).
+  - The June 10, 2025 Council approval is now also sourced to County file 25-577.
+- **bart-station-housing:**
+  - Resolved from BART Board records:
+    - Lake Merritt stays at 557 homes, approved by the Oakland Planning Commission on May 19, 2021.
+    - The senior building's final development plan was approved July 20, 2022, with completion expected spring 2027.
+    - West Oakland is 522 market rate and 240 affordable.
+    - North Berkeley stays at 739; its option agreement was executed June 2026.
+    - The Ashby West Lot negotiating agreement was executed February 2026.
+  - Amador Station (City of Dublin): Site Development Review approved Aug 10, 2021 for 300 affordable homes in two
+    buildings of 5 stories and 61 ft; agreements Sept 21, 2021; building permits for the first building under
+    review. Its illustrative envelope is now drawn at the approved 61 ft instead of the 90-ft zoning limit
+    (`make sites` output; only that feature changed).
+- **tasman-east:** the City of Santa Clara's open-data terms (May 21, 2018, §IX) put the zoning layer under ODC
+  PDDL 1.0; recorded in `data/CREDITS.md` and the boundary file. The license verify item is resolved.
+
+## 2026-10-07 (official-source pass: East Bay, North Bay and BART)
+
+Findings: `docs/official-research/update-2026-10-07-east-north.md`. `lastVerified` unchanged. Facts whose only
+source is on a host not yet approved (see `docs/OFFICIAL-SOURCES.md`, "Hosts awaiting approval") are not applied.
+
+- **concord-naval-weapons-station:**
+  - Area Plan adopted Jan 24, 2012 (Resolution 12-4823.2).
+  - Concord First Partners' agreement was allowed to expire Jan 31, 2023 (3–2, Jan 28).
+  - Brookfield was picked Aug 26, 2023.
+  - SB 328 was signed Sept 29, 2026 (Chapter 785), not Sept 30.
+  - The press's "Lennar withdrew" is corrected: the Council declined to extend Lennar's agreement, which
+    expired Mar 31, 2020.
+  - All verify items resolved; the $6B cost estimate stays press-only.
+- **alameda-point:** the Radium arts center's lease option passed May 5, 2026 (Ordinance 3399; Planning Board
+  approval Mar 23). Block 11 was never built. Phase 2 land was conveyed Dec 29, 2022. The press's "May 2018
+  groundbreaking" is dropped: the city record says infrastructure began in March 2018.
+- **brooklyn-basin:** developer structure confirmed from the City's 2025 bond statement: Zarsion-OHP I, a joint
+  venture of Oakland Harbor Partners (Signature and Reynolds & Brown) and Zarsion America. The City bought the
+  affordable parcels Aug 28, 2014, and consented to the agreement's transfer Apr 22, 2014. BCDC has amended
+  the permit three times, none for the 600 added homes.
+- **suisun-expansion:** Solano LAFCo added as the responsible agency for the annexation (the notice of
+  preparation). The June 10, 2025 reimbursement agreement is dated from the City's FAQ. The CEO's
+  "175,000 homes" is dropped in favor of the official 173,913.
+- **mare-island:** from the North Mare Island agreement (cityofvallejo.net): plan adopted March 1999,
+  exclusive negotiation from July 2018, agreement signed May 24, 2022 (about 157 acres). The October 2024 draft
+  plan's maximum is about 14,400 homes (356 existing) and 8.22 million sq ft. The City's April 2026 report
+  and the July 2026 extension of the South Mare Island agreement are on Vallejo's CivicClerk host, which awaits
+  approval.
+- **sonoma-developmental-center:** added the 2024 CAL FIRE transfer (about 58 acres) and the applicant's
+  proposed three phases (March 2027 to August 2036). The Draft EIR is still not expected in 2026.
+- **esmeralda:**
+  - The Planning Commission voted 4–1 on Oct 1, 2026 to recommend approval. The Council's first reading is
+    Oct 7 and final action Oct 14.
+  - The developer is in contract to buy the land; Spight Properties II still owns it.
+  - Up to 1,524 residents (EIR addendum).
+  - The build-out phases are estimates, not guaranteed dates.
+  - Re-check after Oct 14.
+- **bart-station-housing:** Lake Merritt's senior building broke ground Oct 17, 2024 (ABAG; BART's project
+  page). El Cerrito Plaza's affordable total is the City's 350. The heights, Walnut Creek parcel and Fremont
+  items are narrowed. The items resolved by BART Board and Dublin records wait for host approval.
+
+## 2026-10-07 (official-source pass: Peninsula and South Bay)
+
+Findings: `docs/official-research/update-2026-10-07-peninsula-south.md`. `lastVerified` unchanged. No stage changes.
+
+- **brisbane-baylands:**
+  - The press's "small portion in San Francisco" is contradicted: the plan area is entirely within Brisbane.
+  - The press's "2027 start" is the plan's projected completion of remediation west of Caltrain (mid-2027),
+    not a construction start.
+  - A development agreement is required; the Council hears it Oct 26, after more hearings Oct 15 and
+    Oct 20, with deliberations Nov 9, 2026.
+  - Confirmed for the summary: a former rail yard and San Francisco landfill on the city line, two decades
+    in planning (first EIR notice Feb 27, 2006).
+- **willow-village:** the approval numbers are Resolutions 6790–6794 (Dec 6, 2022) and Ordinances 1094 and
+  1095 (Dec 13, 2022, 4–0 with one recusal). The development agreement was recorded Mar 31, 2023, and its
+  initial term runs to January 2033, not 2032. The reason for the pause stays press-only.
+- **parkline:** the approval numbers are Resolutions 6996–6999 and Ordinances 1125–1126. City staff report
+  that SRI has decided to vacate Buildings P, S and T and may occupy a new office building. The Phase 2
+  home mix (220 single-family, 108 townhomes) is confirmed. The city's page and staff report differ on
+  the below-market-rate count (293 vs 294).
+- **related-santa-clara:** confirmed: the former golf course and closed landfill across from Levi's Stadium,
+  and the CityPlace name. Added: the city's Oct 2026 note that data centers on Parcels 1–2 need a
+  conditional use permit and that Silicon Valley Power has accepted no new data-center applications since 2023.
+- **downtown-west:** the ordinances were finally adopted June 8, 2021 (30608–30610). Heights are 160–290 ft
+  above ground, subject to FAA review. The Nov 2024 memo's interim-use note is added. Google's 2026
+  ministerial permit filings are noted as an open question.
+- **north-bayshore:** Google's termination of the Landings office project (Feb 2024) is confirmed by city
+  reports and moves out of `reported`. No permit for a master-plan phase has come before the city since 2023.
+- **moffett-park:** confirmed Resolution 1199-23 (EIR) and 40 affordable homes at 1215 Bordeaux Dr.
+- **the-rise:**
+  - The press's "2019 mall demolished" is contradicted (demolition permits were issued in Sept 2021), so it
+    is dropped.
+  - Votes: Resolution 24-077 (fee waiver, 4–1) and Resolution 26-080 (Phase 1 final map, 4–0 with one
+    abstention). The 2022 modification is dated June 3, 2022.
+  - Tallest building: about 228 ft (an office tower) in the 2024 approved plans. The press's "about 200 ft"
+    is the tallest residential tower.
+- **middlefield-park:** the development agreement is Ordinance 19.22. The Council approved the Clyde Ave park
+  lease terms June 23, 2026 (7–0).
+- **tasman-east:** the Draft Supplemental EIR for the 1,500-home amendment was released Aug 28, 2026
+  (comments to Oct 13). Its status figures are added: 2,664 homes in built and approved projects, two
+  approvals abandoned, about 12 acres left. The zoning layer's PDDL license is on a city ArcGIS Hub host
+  that needs Matthew's approval, so it stays open.
+- **berryessa-flea-market:** no new application found in the city's planning data (verify item narrowed).
+
+## 2026-10-07 (official-source pass: east San Francisco)
+
+Findings: `docs/official-research/update-2026-10-07-sf-east.md`. `lastVerified` unchanged (only these items re-checked).
+
+- **potrero-power-station:**
+  - The Board of Supervisors passed the amended development agreement and Special Use District on first
+    reading Sept 29, 2026 (11–0) and finally on Oct 6, 2026. Legistar status is "Mayors Office"; there are
+    no ordinance numbers yet. Next milestone: the Mayor's signature.
+  - UCSF's Block 2 building is under construction, on the Planning Commission's finding in Resolution
+    21945 (July 30, 2026). The massing shows Block 2 as under construction: `STAGES` in
+    `pipeline/bam_pipeline/sites/potrero_power_station.py` and the massing file. The press's Aug 2025
+    start month stays in `reported`.
+  - The amended heights (to 248 ft) aren't drawn until the amendments take effect.
+  - The Sophie Maxwell opening (Oct 2025) stays held back: the only record is a developer release
+    reposted on sfbos.org.
+- **candlestick-point:**
+  - Developer confirmed as FivePoint Holdings, LLC (OCII). The "Lennar spinoff" wording stays in `reported`.
+  - OCII's Candlestick-only affordable share is about 34%, counting workforce homes.
+  - Confirmed from OCII: the first phase's seven blocks (six residential, one commercial), infrastructure
+    first, and no building permits yet.
+  - The groundbreaking date is Sept 9 (not the press's Sept 10). Final map recorded June 22, 2026.
+  - The 2024 changes don't alter tower limits outside Candlestick Center.
+- **hunters-point-shipyard:**
+  - The 2038 date is the Navy's conveyance estimate (2036–2038), not a FivePoint start date, so the press
+    note is dropped.
+  - Confirmed: the Phase 1 roads and about 7 acres of parks (2026 capital plan), and Lennar/BVHP's
+    selection on Mar 30, 1999.
+  - New: retesting on Parcel C since Aug 2022, and 767 Phase 1 homes complete by June 30, 2025 (OCII
+    draft report).
+- **pier-70:**
+  - Port (Aug 2026): Building 12 is nearly 90% leased and still the only vertical building; Buildings 2
+    and 21 aren't rehabilitated. The approved Phase 1 anticipates 588 homes; the press's "about 700" is the
+    developer's proposal.
+  - The July 2026 neighborhood presentations are confirmed. General Catalyst stays unconfirmed: the Port
+    names two venture capital firms without naming them.
+- **mission-rock:** developer confirmed (Seawall Lot 337 Associates, whose sole member is Mission Rock
+  Partners: the Giants and Tishman Speyer). Block heights confirmed against the 2018 Design Controls. Retail
+  at build-out: 241,000–244,800 gsf of retail and production space (Port, 2019).
+- **mission-bay:**
+  - The density increase is partly enacted. Block 4 East: OCII approval (Nov 2025), Ordinance 22-26
+    (Feb 2026; plan cap 3,440 to 3,690 homes, 250-ft height) and two building permits (June and Sept 2026).
+    Block 12 West: about 535 homes proposed, approvals expected in early 2027.
+  - New parks schedule: nine parks in four years (2026 capital plan). Mission Bay North has no hotel.
+  - Fixed a broken OCII source link.
+- **india-basin:**
+  - 900 Innes opened in October 2024 (Rec and Park).
+  - No Board amendment to the development agreement was found. Planning approved Phase 1 (2020), a
+    design-standards amendment (Oct 2024) and Phase 2 (Nov 2024).
+  - The default stays unconfirmed, so the stage stays entitled.
+
+## 2026-10-07 (official-source pass: west San Francisco and HOPE SF)
+
+Each project's held-back press facts (`reported`) and open questions (`verify`) were checked against
+official records. Findings, with URLs, pages and quotes: `docs/official-research/update-2026-10-07-sf-west.md`.
+`lastVerified` is unchanged, because only these items were re-checked, not whole records.
+
+- **treasure-island:** developer now names its owners (Stockbridge, Wilson Meany, Kenwood Investments,
+  Lennar; Board Budget and Legislative Analyst, 2024), replacing the press's "TIDG" in `reported`. Homes
+  completed: more than 1,200 by May 2026 (City Administrator), up from about 1,000. The press's
+  "phase one complete in July 2026" is contradicted: Planning says Major Phase 1 builds out through 2027.
+  It and its timeline entry are dropped. Added: the 2016 start of Stage 1 infrastructure (TIDA schedule),
+  the Bay FC facility permit (Jan 6, 2026), TIDA's unit-increase schedule (Board action targeted for
+  November) and 490 Avenue of the Palms switching to rentals (TIDA, Sept 2026).
+- **stonestown:** the 30 acres are "parking lots and streets" (Mayor's Office), so `reported.acresNote` is
+  removed. The affordable options are now spelled out from the development agreement (up to three parcels for
+  100% affordable buildings, inclusionary homes, or a fee on up to 390 homes). Added the Board's
+  approval of the financing plan (Resolution 36-26, Jan 27, 2026).
+- **balboa-reservoir:** the educator housing is confirmed by the adopted development agreement: about 150
+  homes, with City College first priority and SFUSD second. The press note is removed, and the open-space split
+  is added (park 2.0, SFPUC 1.2, paseos 0.8 acres).
+- **parkmerced:** no official record of the default, receivership or takeover, so the stage stays
+  entitled. Added Planning's Sept 2024 finding of no construction since 2011. Phase 1 affordable
+  homes corrected to 48 + 37 on site plus about $59.4M in fees, and heights corrected to the zoning's
+  45–145 ft (Ordinance 91-11; the 35-ft figure came from the 2010 staff report).
+- **potrero-hope-sf:** affordable homes now 800 (about 619 replacement + 200 tax-credit; MOHCD, 2025).
+  Phase 3 demolition has started: 23 permits (153 units) issued in April 2026, 19 marked complete by
+  Sept 1, 2026 (DBI, re-checked today). The City's 2022 schedule (last phase in 2034) is added.
+- **sunnydale-hope-sf:** EIR/EIS certified July 9, 2015 (Motion 19409), with CEQA findings Nov 17, 2016;
+  the buildings are Block 6 (242 Hahn St) and Block 7 (65 Santos St). The development agreement counts
+  694 market-rate and 1,074 affordable homes. All verify items are resolved.
+- **schlage-lock:** the agreement took effect Feb 27, 2015 for 15 years. The 2009 ordinances were finally
+  passed Apr 28, 2009. Grading began in 2016 and site preparation finished in early 2019. Zone 1 is about
+  20 acres (parcels listed). The Dec 2019 filings were three buildings, not two (146, 152 and 258 homes).
+
 ## 2026-10-07 (ten projects added; line projects)
 
 Ten projects added after official-source research (notes in `docs/official-research/candidates-*.md`,

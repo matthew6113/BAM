@@ -1,0 +1,308 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "smart-healdsburg",
+  "source": "GIS: U.S. DOT Bureau of Transportation Statistics, NTAD North American Rail Network Lines, SMART-owned track (RROWNER 'SMRT'/'SMAR', out of service north of Windsor), routed between FRA nodes",
+  "sourceLabel": "U.S. DOT/BTS National Transportation Atlas (rail network); County of Sonoma and SMART GIS",
+  "sourceUrl": "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer/0",
+  "accuracy": "approximate",
+  "accuracyNote": "Approximate alignment: the federal rail network's centreline for SMART's existing, out-of-service track, 8.9 miles as drawn, cut from the Windsor station (National Transit Map stop 4251896) projected onto the line, to where the County of Sonoma's Lytton Springs Road centreline crosses it (the addendum's milepost 72.00). One centreline, not SMART's engineered alignment. SMART Healdsburg extension stations: Windsor; Healdsburg (site under review).",
+  "license": "Line: Public domain: 'a work of the United States government as defined in 17 U.S.C. § 101 ... available for unrestricted public use' (service copyright text). Cut points: County of Sonoma street centrelines (Streets_Public): CC BY-SA 3.0 US (layer licence), credit 'County of Sonoma'. Stations: BTS National Transit Map stops: Creative Commons Attribution 3.0 United States (service copyright text). SMART station points: SMART's layer on the County of Sonoma GIS server (copyright 'SMART'; no licence stated).",
+  "otherSources": [
+   "https://ceqanet.lci.ca.gov/2002112033/46/Attachment/xgdCcY",
+   "https://www.sonomamarintrain.org/healdsburgstationlocation",
+   "https://socogis.sonomacounty.ca.gov/map/rest/services/BASEPublic/Streets_Public/FeatureServer/0",
+   "https://socogis.sonomacounty.ca.gov/map/rest/services/SMARTPublic/SMART_Stations/FeatureServer/0",
+   "https://socogis.sonomacounty.ca.gov/map/rest/services/SMARTPublic/SMART_Rail_Tracks/FeatureServer/0"
+  ],
+  "fraArcIds": [
+   328131,
+   331995
+  ],
+  "check": "Against SMART's own track layer (https://socogis.sonomacounty.ca.gov/map/rest/services/SMARTPublic/SMART_Rail_Tracks/FeatureServer/0), sampled every 5 m: median 4 m, 95th percentile 14 m, maximum 22 m apart.",
+  "lengthKm": 14.25
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "line",
+    "segment": "new",
+    "name": "Windsor to Lytton Springs Road (Healdsburg extension)",
+    "approval": "CEQA addendum adopted by SMART's Board Dec 17, 2025 (SCH 2002112033); funded (CTC baseline agreement)",
+    "source": "GIS: U.S. DOT Bureau of Transportation Statistics, NTAD North American Rail Network Lines, SMART-owned track (RROWNER 'SMRT'/'SMAR', out of service north of Windsor), routed between FRA nodes; cut from the Windsor station (National Transit Map stop 4251896) projected onto the line, to where the County of Sonoma's Lytton Springs Road centreline crosses it (the addendum's milepost 72.00)."
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      -122.818502,
+      38.549126
+     ],
+     [
+      -122.819539,
+      38.550309
+     ],
+     [
+      -122.826147,
+      38.557844
+     ],
+     [
+      -122.83405,
+      38.56659
+     ],
+     [
+      -122.838797,
+      38.571767
+     ],
+     [
+      -122.84002,
+      38.5731
+     ],
+     [
+      -122.840486,
+      38.573642
+     ],
+     [
+      -122.84113,
+      38.57439
+     ],
+     [
+      -122.84161,
+      38.57523
+     ],
+     [
+      -122.8437,
+      38.58037
+     ],
+     [
+      -122.84523,
+      38.58408
+     ],
+     [
+      -122.84694,
+      38.58804
+     ],
+     [
+      -122.84824,
+      38.591434
+     ],
+     [
+      -122.84864,
+      38.59248
+     ],
+     [
+      -122.84875,
+      38.59277
+     ],
+     [
+      -122.85105,
+      38.59821
+     ],
+     [
+      -122.85159,
+      38.5997
+     ],
+     [
+      -122.85202,
+      38.60056
+     ],
+     [
+      -122.85262,
+      38.60136
+     ],
+     [
+      -122.8533,
+      38.60214
+     ],
+     [
+      -122.85402,
+      38.60275
+     ],
+     [
+      -122.85507,
+      38.60324
+     ],
+     [
+      -122.855624,
+      38.603425
+     ],
+     [
+      -122.8557,
+      38.60345
+     ],
+     [
+      -122.86009,
+      38.60497
+     ],
+     [
+      -122.86087,
+      38.60524
+     ],
+     [
+      -122.86141,
+      38.60541
+     ],
+     [
+      -122.86985,
+      38.60828
+     ],
+     [
+      -122.86996,
+      38.60831
+     ],
+     [
+      -122.870896,
+      38.608865
+     ],
+     [
+      -122.87114,
+      38.60901
+     ],
+     [
+      -122.87198,
+      38.6097
+     ],
+     [
+      -122.87226,
+      38.61002
+     ],
+     [
+      -122.87259,
+      38.61052
+     ],
+     [
+      -122.87296,
+      38.6116
+     ],
+     [
+      -122.87308,
+      38.61234
+     ],
+     [
+      -122.873135,
+      38.613054
+     ],
+     [
+      -122.87335,
+      38.61585
+     ],
+     [
+      -122.87413,
+      38.62627
+     ],
+     [
+      -122.87483,
+      38.63499
+     ],
+     [
+      -122.87489,
+      38.63699
+     ],
+     [
+      -122.8748,
+      38.63803
+     ],
+     [
+      -122.8744,
+      38.63972
+     ],
+     [
+      -122.8739,
+      38.64096
+     ],
+     [
+      -122.87347,
+      38.64175
+     ],
+     [
+      -122.87286,
+      38.64261
+     ],
+     [
+      -122.87219,
+      38.64337
+     ],
+     [
+      -122.86974,
+      38.64543
+     ],
+     [
+      -122.86917,
+      38.64612
+     ],
+     [
+      -122.86897,
+      38.64673
+     ],
+     [
+      -122.86885,
+      38.64734
+     ],
+     [
+      -122.86888,
+      38.64772
+     ],
+     [
+      -122.86908,
+      38.64848
+     ],
+     [
+      -122.869681,
+      38.65051
+     ],
+     [
+      -122.87027,
+      38.652497
+     ],
+     [
+      -122.870333,
+      38.652708
+     ],
+     [
+      -122.87229,
+      38.65931
+     ],
+     [
+      -122.872296,
+      38.659334
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "station",
+    "status": "existing",
+    "name": "Windsor",
+    "note": "Today's end of the line (service since May 2025).",
+    "source": "GIS: BTS National Transit Map stops, SMART feed, stop 4251896 'SMART Windsor' (https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_National_Transit_Map_Stops/FeatureServer/0)."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.818483,
+     38.549136
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "station",
+    "status": "new",
+    "name": "Healdsburg (site under review)",
+    "note": "Drawn at the historic Depot/Hudson Street site in the approved project. On Sept 16, 2026 SMART staff asked the Board for direction to consult the public on it and a Downtown site on Vine Street, about 0.45 mile away; staff analysis is aimed at the December 2026 Board meeting.",
+    "source": "GIS: SMART's station layer on the County of Sonoma server, 'Healdsburg Station' (https://socogis.sonomacounty.ca.gov/map/rest/services/SMARTPublic/SMART_Stations/FeatureServer/0)."
+   },
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -122.866838,
+     38.60727
+    ]
+   }
+  }
+ ]
+}

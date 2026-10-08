@@ -438,7 +438,7 @@ def main() -> None:
             "sourceLabel": "Draft specific plan land use, 2026 (PDF)",
             "georeference": {"figure_2_1": georef},
             "license": ("Zone shapes: traced from a public City of Cloverdale planning document. Fitted to County of "
-                        "Sonoma parcels (CC BY-SA 3.0, County of Sonoma)."),
+                        "Sonoma parcels (CC BY-SA 3.0 US, County of Sonoma)."),
             "documents": [PROJECT_PAGE, SP["url"], PC_REPORT, SONOMA_PARCELS],
             "superseded": ("The 2009 Alexander Valley Resort Specific Plan (amended 2016 and 2018), approved for the same "
                            "site but never built, would be replaced; it isn't drawn."),
