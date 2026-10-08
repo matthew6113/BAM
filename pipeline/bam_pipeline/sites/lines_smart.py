@@ -46,6 +46,7 @@ import urllib.request
 import geopandas as gpd
 import numpy as np
 import shapely
+from pyproj import Geod
 from shapely.geometry import LineString, MultiLineString, Point, shape
 from shapely.ops import linemerge, substring
 
@@ -127,16 +128,16 @@ def _crossing(line_utm: LineString, street_wgs, label: str) -> float:
 
 
 def _check(line_wgs: LineString) -> str:
-    """How far the drawn line runs from SMART's own track layer (a check only; that layer states no licence)."""
+    """How far the drawn line runs from SMART's own track layer (a check only; that layer states no licence), every 5 m."""
     fc = _query(SMART_TRACKS, {"where": "1=1"}, "smart_tracks.geojson")
     tracks = gpd.GeoSeries([shape(f["geometry"]) for f in fc["features"]], crs=4326).to_crs(UTM).union_all()
     l = gpd.GeoSeries([line_wgs], crs=4326).to_crs(UTM).iloc[0]
     # Compare only where SMART's layer runs alongside: it stops short of 1st Street in Cloverdale.
     ends = [l.project(Point(c)) for g in getattr(tracks, "geoms", [tracks]) for c in (g.coords[0], g.coords[-1])]
     lo, hi = max(0.0, min(ends)), min(l.length, max(ends))
-    d = np.array([tracks.distance(l.interpolate(s)) for s in np.arange(lo, hi, 25.0)])
+    d = np.array([tracks.distance(l.interpolate(s)) for s in np.arange(lo, hi, 5.0)])
     gap = l.length - hi + lo
-    return (f"Against SMART's own track layer ({SMART_TRACKS}), sampled every 25 m: median {np.median(d):.0f} m, "
+    return (f"Against SMART's own track layer ({SMART_TRACKS}), sampled every 5 m: median {np.median(d):.0f} m, "
             f"95th percentile {np.percentile(d, 95):.0f} m, maximum {d.max():.0f} m apart"
             + (f"; that layer doesn't cover the last {gap:.0f} m of the line." if gap > 25 else "."))
 
@@ -183,7 +184,7 @@ def main() -> None:
 
     for pid, seg in pieces.items():
         seg_wgs = gpd.GeoSeries([seg], crs=UTM).to_crs(4326).iloc[0]
-        mi = seg.length / 1609.344
+        mi = Geod(ellps="WGS84").geometry_length(seg_wgs) / 1609.344  # on the ground, not the UTM grid
         if pid == "smart-healdsburg":
             name = "Windsor to Lytton Springs Road (Healdsburg extension)"
             cut = ("from the Windsor station (National Transit Map stop 4251896) projected onto the line, to where the "

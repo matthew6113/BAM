@@ -6,7 +6,7 @@
   "sourceLabel": "U.S. DOT/BTS National Transportation Atlas (rail network); County of Sonoma and SMART GIS",
   "sourceUrl": "https://services.arcgis.com/xOi1kZaI0eWDREZv/arcgis/rest/services/NTAD_North_American_Rail_Network_Lines/FeatureServer/0",
   "accuracy": "approximate",
-  "accuracyNote": "Approximate alignment: the federal rail network's centreline for SMART's existing, out-of-service track, 13.4 miles as drawn, cut from where the County of Sonoma's Lytton Springs Road centreline crosses the line to where its E 1st Street centreline in Cloverdale crosses it (the Strategic Plan's limits). One centreline, not SMART's engineered alignment. SMART Cloverdale extension stations: Geyserville; Cloverdale (site to be determined).",
+  "accuracyNote": "Approximate alignment: the federal rail network's centreline for SMART's existing, out-of-service track, 13.5 miles as drawn, cut from where the County of Sonoma's Lytton Springs Road centreline crosses the line to where its E 1st Street centreline in Cloverdale crosses it (the Strategic Plan's limits). One centreline, not SMART's engineered alignment. SMART Cloverdale extension stations: Geyserville; Cloverdale (site to be determined).",
   "license": "Line: Public domain: 'a work of the United States government as defined in 17 U.S.C. § 101 ... available for unrestricted public use' (service copyright text). Cut points: County of Sonoma street centrelines (Streets_Public): 'You must source attribution “County of Sonoma”' (service copyright text). Stations: County of Sonoma parcels: CC BY-SA 3.0, credit 'County of Sonoma'. SMART station points: SMART's layer on the County of Sonoma GIS server (copyright 'SMART'; no licence stated).",
   "otherSources": [
    "https://www.sonomamarintrain.org/sites/default/files/Document%20Library/SMART_StrategicPlan_FY25-30.pdf",
@@ -23,7 +23,7 @@
    342613,
    524404
   ],
-  "check": "Against SMART's own track layer (https://socogis.sonomacounty.ca.gov/map/rest/services/SMARTPublic/SMART_Rail_Tracks/FeatureServer/0), sampled every 25 m: median 6 m, 95th percentile 15 m, maximum 27 m apart; that layer doesn't cover the last 75 m of the line.",
+  "check": "Against SMART's own track layer (https://socogis.sonomacounty.ca.gov/map/rest/services/SMARTPublic/SMART_Rail_Tracks/FeatureServer/0), sampled every 5 m: median 6 m, 95th percentile 15 m, maximum 28 m apart; that layer doesn't cover the last 75 m of the line.",
   "lengthKm": 21.64
  },
  "features": [

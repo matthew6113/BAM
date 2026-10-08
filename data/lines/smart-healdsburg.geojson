@@ -19,7 +19,7 @@
    328131,
    331995
   ],
-  "check": "Against SMART's own track layer (https://socogis.sonomacounty.ca.gov/map/rest/services/SMARTPublic/SMART_Rail_Tracks/FeatureServer/0), sampled every 25 m: median 4 m, 95th percentile 15 m, maximum 22 m apart.",
+  "check": "Against SMART's own track layer (https://socogis.sonomacounty.ca.gov/map/rest/services/SMARTPublic/SMART_Rail_Tracks/FeatureServer/0), sampled every 5 m: median 4 m, 95th percentile 14 m, maximum 22 m apart.",
   "lengthKm": 14.25
  },
  "features": [
