@@ -7,7 +7,8 @@ says what changed, why and against which source. Code changes live in git histor
 
 Two line projects added at Matthew's request ("the green line additions for SMART"). Research:
 `docs/official-research/candidates-smart.md`. Every claim was then re-checked adversarially on Oct 8: 270 held,
-37 corrections were applied, and 18 newer official facts were added. Hosts approved: `sonomamarintrain.org` and
+37 corrections were applied (several of them newer official facts, such as the Phase I amendment and the CTC's
+Oct 15-16 allocation) and 3 flags were overturned. Hosts approved: `sonomamarintrain.org` and
 `planbayarea.org`.
 
 - **smart-healdsburg** (`entitled`): about 9 miles from Windsor to Lytton Springs Road, with a new Healdsburg station.

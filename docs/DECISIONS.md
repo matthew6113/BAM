@@ -209,3 +209,7 @@ The contrast check now measures the selection against this ground (about 13:1).
 - `sonomamarintrain.org` and `planbayarea.org` are accepted as official hosts.
 - Follow-on map change: a proposed line project is dashed (the stage spec's "outline only (dashed)"), and the open
   line's station names draw above other projects' markers.
+- Open for Matthew: proposed sites still draw a solid outline and faint fill. Either bring them to the spec (dashed
+  outline, no fill) or record that only lines are dashed.
+- The panel now shows a line project's program notes (scope, funding) under "Program", after "Where it stands", when it has no housing or
+  floor-area numbers; before, transit projects' notes were hidden.
