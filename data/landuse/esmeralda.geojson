@@ -26,7 +26,7 @@
     "target": "data/boundaries/esmeralda.geojson (County of Sonoma parcels named in the Planning Commission staff report, Oct 1, 2026)"
    }
   },
-  "license": "Zone shapes: traced from a public City of Cloverdale planning document. Fitted to County of Sonoma parcels (CC BY-SA 3.0, County of Sonoma).",
+  "license": "Zone shapes: traced from a public City of Cloverdale planning document. Fitted to County of Sonoma parcels (CC BY-SA 3.0 US, County of Sonoma).",
   "documents": [
    "https://www.cloverdale.net/esmeralda",
    "https://www.cloverdale.net/DocumentCenter/View/7035/Draft-Specific-Plan---Revised-92926",

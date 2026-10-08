@@ -2,13 +2,13 @@
 
 Two line projects on one railroad, split where SMART's own projects split:
 
-- smart-healdsburg: from the Windsor platform, today's end of service, north to the Lytton Springs
+- smart-healdsburg: from the Windsor station, today's end of service, north to the Lytton Springs
   Road crossing at Healdsburg Avenue, the northern limit of the Healdsburg Extension Project
   ("milepost (MP) 72.00, located at the intersection of Lytton Springs Road and Healdsburg Avenue",
-  CEQA addendum, Dec 2025, PDF p. 7). Stations: Windsor (existing) and Healdsburg (new). SMART
-  reopened the Healdsburg site on Sept 16, 2026 (the historic Depot/Hudson site or a Downtown site
-  on Vine Street); it is drawn at SMART's Depot point and named as under review (Matthew,
-  2026-10-07).
+  CEQA addendum, Dec 2025, PDF p. 7). Stations: Windsor (existing) and Healdsburg (new). On Sept 16,
+  2026 SMART staff asked the Board for direction to consult the public on the Healdsburg site (the
+  historic Depot/Hudson site or a Downtown site on Vine Street); it is drawn at SMART's Depot point
+  and named as under review (Matthew, 2026-10-07).
 - smart-cloverdale: from Lytton Springs Road to the 1st Street crossing in Cloverdale ("13.5 miles
   of rail and pathway, from Lytton Springs Road to 1st Street in Cloverdale", SMART Strategic Plan
   FY25-30, PDF p. 33). Stations: Geyserville (new; adopted Aug 19, 2026 at 255 Highway 128) and
@@ -30,7 +30,7 @@ Sources and method:
   'SMART Windsor'; CC BY 3.0 US). Healdsburg and Cloverdale from SMART's own station layer on the
   County of Sonoma GIS server (SMARTPublic/SMART_Stations; copyright 'SMART', no licence stated).
   Geyserville from the County of Sonoma parcel SMART's Board adopted, APN 140-110-011 (255 Hwy
-  128; the County's own centroid fields; CC BY-SA 3.0, credit 'County of Sonoma').
+  128; the County's own centroid fields; CC BY-SA 3.0 US, credit 'County of Sonoma').
 - Check: the drawn line against SMART's own track layer (SMARTPublic/SMART_Rail_Tracks), reported
   in each output's `check`.
 
@@ -73,10 +73,10 @@ GEYSERVILLE = "https://www.sonomamarintrain.org/geyserville"
 
 LICENSES = {
     "ntad": ntad_rail.NTAD["license"],
-    "streets": "County of Sonoma street centrelines (Streets_Public): 'You must source attribution “County of Sonoma”' (service copyright text).",
+    "streets": "County of Sonoma street centrelines (Streets_Public): CC BY-SA 3.0 US (layer licence), credit 'County of Sonoma'.",
     "ntm": "BTS National Transit Map stops: Creative Commons Attribution 3.0 United States (service copyright text).",
     "smart": "SMART station points: SMART's layer on the County of Sonoma GIS server (copyright 'SMART'; no licence stated).",
-    "parcels": "County of Sonoma parcels: CC BY-SA 3.0, credit 'County of Sonoma'.",
+    "parcels": "County of Sonoma parcels: CC BY-SA 3.0 US (layer licence), credit 'County of Sonoma'.",
 }
 
 
@@ -194,8 +194,8 @@ def main() -> None:
                  f"GIS: BTS National Transit Map stops, SMART feed, stop {WINDSOR_STOP} 'SMART Windsor' ({NTM_STOPS})."),
                 (healdsburg, "Healdsburg (site under review)", "new",
                  "Drawn at the historic Depot/Hudson Street site in the approved project. On Sept 16, 2026 SMART "
-                 "reopened the choice between it and a Downtown site on Vine Street, about 0.45 mile away; a "
-                 "decision is aimed at the December 2026 Board meeting.",
+                 "staff asked the Board for direction to consult the public on it and a Downtown site on Vine Street, "
+                 "about 0.45 mile away; staff analysis is aimed at the December 2026 Board meeting.",
                  f"GIS: SMART's station layer on the County of Sonoma server, 'Healdsburg Station' ({SMART_STATIONS})."),
             ]
             approval = "CEQA addendum adopted by SMART's Board Dec 17, 2025 (SCH 2002112033); funded (CTC baseline agreement)"

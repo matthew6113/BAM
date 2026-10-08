@@ -334,7 +334,7 @@ SPECS: dict[str, dict] = {
                  "running northwest from the site's north corner outside Cloverdale's city limits (Permit Sonoma City "
                  "Limits layer), is the roughly 4-acre unincorporated \u201cPanhandle\u201d the plan now excludes, and "
                  "it is still drawn here."),
-        "license": "CC BY-SA 3.0, County of Sonoma",
+        "license": "CC BY-SA 3.0 US, County of Sonoma",
     },
     "ucsf-parnassus": {
         "label": "DataSF parcels",

@@ -8,7 +8,7 @@
   "query": "https://socogis.sonomacounty.ca.gov/map/rest/services/CRAPublic/ParcelsPublicShapeFile/FeatureServer/0/query?where=APN+IN+%28%27117-050-010%27%2C+%27117-050-011%27%2C+%27117-050-012%27%2C+%27117-050-017%27%2C+%27117-050-024%27%2C+%27117-050-026%27%2C+%27117-050-027%27%2C+%27117-050-028%27%2C+%27117-050-029%27%2C+%27116-310-013%27%2C+%27116-310-014%27%29&outFields=%2A&outSR=4326&f=geojson",
   "accuracy": "approximate",
   "accuracyNote": "The 11 parcels the Planning Commission staff report lists for the Esmeralda Specific Plan, in two pieces either side of the 80-foot SMART rail corridor, which isn't one of the parcels (the plan leaves it out of its land-use districts). The County's parcel shapes run a little over the Plan Area's 261.44 acres (Addendum Exhibit 3): about 3.8 acres of parcel 116-310-014, a narrow strip running northwest from the site's north corner outside Cloverdale's city limits (Permit Sonoma City Limits layer), is the roughly 4-acre unincorporated \u201cPanhandle\u201d the plan now excludes, and it is still drawn here. 265.4 acres as drawn.",
-  "license": "CC BY-SA 3.0, County of Sonoma",
+  "license": "CC BY-SA 3.0 US, County of Sonoma",
   "features_used": 11
  },
  "features": [
