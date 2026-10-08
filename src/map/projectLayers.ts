@@ -323,7 +323,9 @@ export function projectLayers(
       paint: { 'text-color': c.labels, 'text-halo-color': c.land, 'text-halo-width': 1.8 },
     },
   ];
-  return layers;
+  // The open line's station names draw last, above other projects' markers (Esmeralda's sits on Cloverdale).
+  const labels = layers.findIndex((l) => l.id === 'project-line-station-labels');
+  return [...layers.slice(0, labels), ...layers.slice(labels + 1), layers[labels]];
 }
 
 const lineWidth = (z6: number, z10: number, z15: number): ExpressionSpecification =>
@@ -332,7 +334,8 @@ const lineWidth = (z6: number, z10: number, z15: number): ExpressionSpecificatio
 /**
  * Line projects, drawn as a cased line (Matthew, 2026-10-07: option C): a bold stage-coloured
  * line on a land-coloured casing, so it reads over the building print at every zoom. Tunnel
- * runs are a hollow tube; track the project shares with existing service is drawn lighter.
+ * runs are a hollow tube; track the project shares with existing service is drawn lighter, and a
+ * proposed line (no approvals or funding to build) is dashed, as a proposed site's outline is.
  * While the camera flies in, the selected line draws itself (as a site's boundary does).
  */
 function lineLayers(
@@ -350,6 +353,8 @@ function lineLayers(
   const shown: ExpressionSpecification = landed ? notHidden : ['all', notHidden, ['!=', ['get', 'id'], selectedId]];
   const isLine: ExpressionSpecification = ['==', ['get', 'kind'], 'line'];
   const tunnel: ExpressionSpecification = ['==', ['get', 'segment'], 'tunnel'];
+  const proposed: ExpressionSpecification = ['==', ['get', 'stage'], 'proposed'];
+  const dash = [2, 1.6];
   const drawStage = selection ? (getStage(selection.id) as StageKey | undefined) : undefined;
   const drawColor = drawStage ? stageColor(theme, drawStage) : c.selection;
   const lineSelected = !!selection && isLineProject(selection.id);
@@ -362,12 +367,17 @@ function lineLayers(
     },
     {
       id: 'project-line-core', type: 'line', source: 'project-lines',
-      filter: ['all', shown, isLine, ['!', tunnel]], layout: round,
+      filter: ['all', shown, isLine, ['!', tunnel], ['!', proposed]], layout: round,
       paint: {
         'line-color': stageCol,
         'line-width': lineWidth(1.3, 2.2, 6),
         'line-opacity': ['case', ['==', ['get', 'segment'], 'shared'], 0.55, 1],
       },
+    },
+    {
+      id: 'project-line-core-proposed', type: 'line', source: 'project-lines',
+      filter: ['all', shown, isLine, ['!', tunnel], proposed], layout: { 'line-join': 'round' },
+      paint: { 'line-color': stageCol, 'line-width': lineWidth(1.3, 2.2, 6), 'line-dasharray': dash },
     },
     {
       id: 'project-line-tube', type: 'line', source: 'project-lines',
@@ -385,8 +395,13 @@ function lineLayers(
       paint: { 'line-color': c.land, 'line-width': lineWidth(2.6, 4.5, 11) },
     },
     {
-      id: 'project-line-draw', type: 'line', source: 'project-boundary-draw', layout: { ...round, visibility: lineSelected ? 'visible' : 'none' },
-      paint: { 'line-color': drawColor, 'line-width': lineWidth(1.3, 2.2, 6) },
+      id: 'project-line-draw', type: 'line', source: 'project-boundary-draw',
+      layout: drawStage === 'proposed' ? { 'line-join': 'round', visibility: lineSelected ? 'visible' : 'none' }
+        : { ...round, visibility: lineSelected ? 'visible' : 'none' },
+      paint: {
+        'line-color': drawColor, 'line-width': lineWidth(1.3, 2.2, 6),
+        ...(drawStage === 'proposed' ? { 'line-dasharray': dash } : {}),
+      },
     },
     {
       id: 'project-line-stations', type: 'circle', source: 'project-lines', minzoom: 9,
