@@ -68,6 +68,9 @@ const OFFICIAL_HOSTS = [
   'suisun.com', // City of Suisun City (main site)
   'dublin-development.icitywork.com', // City of Dublin's development map (linked from dublin.ca.gov)
   'public-gis-missioncity.opendata.arcgis.com', // City of Santa Clara's open-data hub (terms of use)
+  // SMART's northern extensions (Matthew, 2026-10-07: approved)
+  'sonomamarintrain.org', // Sonoma-Marin Area Rail Transit District (board packets, project pages, plans)
+  'planbayarea.org', // MTC/ABAG's Plan Bay Area site (adopted plan documents)
 ];
 
 /** Shared vendor hosts, accepted only under an agency's own path. */
