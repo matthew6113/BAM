@@ -215,3 +215,15 @@ The contrast check now measures the selection against this ground (about 13:1).
   `docs/screenshots/proposed/`.
 - The panel now shows a line project's program notes (scope, funding) under "Program", after "Where it stands", when it has no housing or
   floor-area numbers; before, transit projects' notes were hidden.
+
+## 2026-10-09: sharing (Matthew: "do all")
+
+- The map moves to **map.matthewhuguet.com** (CNAME in Squarespace DNS, custom domain in GitHub Pages).
+  Hosting stays on GitHub Pages. The deploy reads the Pages address each build, so the switch needs no
+  code change.
+- Link previews: a 1200 × 630 card (`public/share-card.png`, `npm run share-card`), canonical and
+  og:url per page, and twitter:card.
+- Icons: an ink tile with a stage-coloured dot, drawn from theme.json at build (SVG, 32 px and
+  180 px PNGs).
+- Byline: "by Matthew Huguet" under the title, linking to www.matthewhuguet.com.
+- Squarespace: a project page that links out (copy and screenshots in `docs/share/`), not an embed.
