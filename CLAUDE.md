@@ -76,5 +76,10 @@ Workflow
   `m2/` (headless Chromium with SwiftShader WebGL; set `SHOTS_DIR` to write elsewhere).
   Fly-in frames use `?test=1&at=<seconds>`, which holds the flight still.
 - Deploy: push to `main`. `.github/workflows/deploy.yml` builds the data and site and publishes
-  to GitHub Pages (https://matthew6113.github.io/BAM/, base path `/BAM/` via `BASE_PATH`).
-  Pull requests build and test only. Every tile file must stay under 100 MB.
+  to GitHub Pages. The build asks Pages for the site's address (`actions/configure-pages`) and passes
+  it as `BASE_PATH` and `SITE_URL`: https://map.matthewhuguet.com once the custom domain is set
+  (`docs/share/README.md`), https://matthew6113.github.io/BAM/ before. Pull requests build and test
+  only. Every tile file must stay under 100 MB.
+- `npm run share-card`: redraw the link-preview card (`public/share-card.png`) from the running dev
+  server (or `SHOOT_BASE=http://localhost:5180` with the mock config); needed after a palette change
+  (`npm test` flags a stale card locally). Icons are drawn from the theme at build.

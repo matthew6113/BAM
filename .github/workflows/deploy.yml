@@ -16,8 +16,6 @@ env:
   # Keep in sync with pipeline/bam_pipeline/config.py and the Makefile requirements.
   OVERTURE_RELEASE: "2026-09-23.1"
   TIPPECANOE_VERSION: "2.79.0"
-  # GitHub Pages serves the project site from /BAM/.
-  BASE_PATH: /BAM/
 
 jobs:
   build:
@@ -26,8 +24,17 @@ jobs:
     permissions:
       # Write is only used on main, to archive the Overture extract as a release asset.
       contents: write
+      # Read the Pages site's address (below).
+      pages: read
     steps:
       - uses: actions/checkout@v7
+
+      # Where GitHub Pages serves the site: https://matthew6113.github.io/BAM (base path /BAM)
+      # until a custom domain is set in Settings -> Pages, then https://map.matthewhuguet.com
+      # (base path empty). The build follows it, so setting the domain needs only a redeploy.
+      - name: Read the Pages address
+        id: pages
+        uses: actions/configure-pages@v6
 
       - uses: actions/setup-node@v7
         with:
@@ -103,7 +110,15 @@ jobs:
 
       - run: npm test
 
+      # Always https: GitHub serves github.io and a custom domain over HTTPS, while base_url says http://
+      # until "Enforce HTTPS" is ticked (and the build wouldn't rerun when it is).
       - run: npm run build
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+          SITE_URL: https://${{ steps.pages.outputs.host }}${{ steps.pages.outputs.base_path }}
+
+      - name: Show where this build is for
+        run: echo "Built for https://${{ steps.pages.outputs.host }}${{ steps.pages.outputs.base_path }} (base path '${{ steps.pages.outputs.base_path }}/')"
 
       - name: Upload the site
         if: github.event_name != 'pull_request'

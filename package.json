@@ -12,7 +12,8 @@
     "test": "vitest run",
     "glyphs": "node scripts/build-glyphs.mjs",
     "screenshots": "playwright test tests/screenshots",
-    "e2e": "playwright test tests/interaction.spec.ts tests/project.spec.ts"
+    "e2e": "playwright test tests/interaction.spec.ts tests/project.spec.ts",
+    "share-card": "node scripts/shareCard.mjs"
   },
   "dependencies": {
     "maplibre-gl": "6.11.2",

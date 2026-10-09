@@ -1,5 +1,5 @@
 /**
- * Deep links: /p/{project-id} under the site's base path (/BAM/ on GitHub Pages).
+ * Deep links: /p/{project-id} under the site's base path (/BAM/ on github.io, / on map.matthewhuguet.com).
  * Query and hash are kept, so view options and the camera survive navigation.
  */
 const BASE = import.meta.env.BASE_URL;
