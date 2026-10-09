@@ -81,4 +81,5 @@ Workflow
   (`docs/share/README.md`), https://matthew6113.github.io/BAM/ before. Pull requests build and test
   only. Every tile file must stay under 100 MB.
 - `npm run share-card`: redraw the link-preview card (`public/share-card.png`) from the running dev
-  server; needed after a palette change (a test checks). Icons are drawn from the theme at build.
+  server (or `SHOOT_BASE=http://localhost:5180` with the mock config); needed after a palette change
+  (`npm test` flags a stale card locally). Icons are drawn from the theme at build.

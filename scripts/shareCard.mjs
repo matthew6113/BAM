@@ -1,18 +1,21 @@
 // The link-preview card (1200 x 630) that LinkedIn, iMessage, Slack and others show for the map:
-//   npm run share-card        (with the dev server on 5173: `npm run dev`, or the mock config)
+//   npm run share-card        with `npm run dev` running (local map data from `make data`), or
+//   SHOOT_BASE=http://localhost:5180 npm run share-card   with `npx vite --config vite.mock.config.ts`
+//                             (the deployed site's tiles and fonts; no `make data` needed)
 // Renders the live map with its interface hidden, sets the title, byline and data credit beside it
 // in the map's own fonts and theme colours, and writes public/share-card.png. It also writes
 // public/share-card.json with the theme it was drawn from; a unit test flags a stale card after a
 // palette change, so the card is redrawn with the new colours.
 import { chromium } from '@playwright/test';
 import { readFileSync, writeFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 
 const root = new URL('../', import.meta.url);
 const read = (p) => readFileSync(new URL(p, root));
 const theme = JSON.parse(read('src/theme/theme.json'));
 const W = 1200;
 const H = 630;
-const BASE = process.env.SHOOT_BASE ?? 'http://127.0.0.1:5173';
+const BASE = process.env.SHOOT_BASE ?? 'http://localhost:5173';
 // The middle of the Bay, set right of centre so the text has the left side.
 const CAMERA = { center: [-122.5, 37.66], zoom: 8.85, pitch: 0, bearing: 0 };
 
@@ -23,7 +26,13 @@ const rgba = (hex, a) => {
   const [r, g, b] = [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16));
   return `rgba(${r}, ${g}, ${b}, ${a})`;
 };
-const font = (file) => `data:font/woff2;base64,${read(`public/generated/fonts/${file}`).toString('base64')}`;
+// Fonts come from the server under test (public/generated is git-ignored; the mock config proxies it).
+const font = async (file) => {
+  const res = await fetch(`${BASE}/generated/fonts/${file}`);
+  if (!res.ok) throw new Error(`font ${file}: HTTP ${res.status}`);
+  return `data:font/woff2;base64,${Buffer.from(await res.arrayBuffer()).toString('base64')}`;
+};
+const [franklin, serif] = await Promise.all([font('LibreFranklin-Variable.woff2'), font('SourceSerif4-Variable.woff2')]);
 
 const browser = await chromium.launch({
   args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'],
@@ -50,8 +59,8 @@ await page.close();
 // 2. The card.
 const card = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
 await card.setContent(`<!doctype html><html><head><style>
-  @font-face { font-family: 'Libre Franklin'; src: url(${font('LibreFranklin-Variable.woff2')}) format('woff2'); font-weight: 100 900; }
-  @font-face { font-family: 'Source Serif 4'; src: url(${font('SourceSerif4-Variable.woff2')}) format('woff2'); font-weight: 200 900; }
+  @font-face { font-family: 'Libre Franklin'; src: url(${franklin}) format('woff2'); font-weight: 100 900; }
+  @font-face { font-family: 'Source Serif 4'; src: url(${serif}) format('woff2'); font-weight: 200 900; }
   html, body { margin: 0; }
   body { width: ${W}px; height: ${H}px; position: relative; overflow: hidden; background: ${c.land}; }
   .map { position: absolute; inset: 0; background: url(data:image/png;base64,${mapPng}) center / cover; }
@@ -76,7 +85,7 @@ await card.setContent(`<!doctype html><html><head><style>
   <div class="credit">Map data © OpenStreetMap contributors, Overture Maps Foundation</div>
 </body></html>`);
 await card.evaluate(() => document.fonts.ready);
-await card.screenshot({ path: new URL('public/share-card.png', root).pathname, type: 'png' });
+await card.screenshot({ path: fileURLToPath(new URL('public/share-card.png', root)), type: 'png' });
 await browser.close();
 
 writeFileSync(new URL('public/share-card.json', root), `${JSON.stringify({

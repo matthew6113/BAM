@@ -1,6 +1,6 @@
 {
   "name": "Placeholder",
-  "note": "Placeholder colors (warm paper and International orange, chosen Oct 7, 2026; see docs/DECISIONS.md). Matthew will supply the final palette: replace this file (or export one from the style panel) and nothing else needs to change. After a palette change, also redraw the link-preview card: npm run share-card.",
+  "note": "Placeholder colors (warm paper and International orange, chosen Oct 7, 2026; see docs/DECISIONS.md). Matthew will supply the final palette: replace this file (or export one from the style panel); no code needs to change. Then redraw the link-preview card with npm run share-card (docs/share/README.md); the icons follow the theme by themselves.",
   "colors": {
     "land": "#FBFAF6",
     "water": "#E3E8EA",
