@@ -8,19 +8,21 @@ const escape = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 /** Swap the page's title, description and address (plain and Open Graph) for a project's. */
-function retitle(html: string, title: string, description: string, path: string): string {
+export function retitle(html: string, title: string, description: string, path: string): string {
   const t = escape(title);
   const d = escape(description);
   const site = siteUrl();
+  // Replacer functions, not strings: summaries contain '$' ("$269 million"), which a replacement
+  // string would read as a group reference.
   let out = html
-    .replace(/<title>[^<]*<\/title>/, `<title>${t}</title>`)
-    .replace(/(<meta name="description" content=")[^"]*(")/, `$1${d}$2`)
-    .replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${t}$2`)
-    .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${d}$2`);
+    .replace(/<title>[^<]*<\/title>/, () => `<title>${t}</title>`)
+    .replace(/(<meta name="description" content=")[^"]*(")/, (_, a: string, b: string) => a + d + b)
+    .replace(/(<meta property="og:title" content=")[^"]*(")/, (_, a: string, b: string) => a + t + b)
+    .replace(/(<meta property="og:description" content=")[^"]*(")/, (_, a: string, b: string) => a + d + b);
   if (site) {
     out = out
-      .replace(/(<link rel="canonical" href=")[^"]*(")/, `$1${site}/${path}$2`)
-      .replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${site}/${path}$2`);
+      .replace(/(<link rel="canonical" href=")[^"]*(")/, (_, a: string, b: string) => `${a}${site}/${path}${b}`)
+      .replace(/(<meta property="og:url" content=")[^"]*(")/, (_, a: string, b: string) => `${a}${site}/${path}${b}`);
   }
   return out;
 }

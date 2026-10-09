@@ -110,13 +110,15 @@ jobs:
 
       - run: npm test
 
+      # Always https: GitHub serves github.io and a custom domain over HTTPS, while base_url says http://
+      # until "Enforce HTTPS" is ticked (and the build wouldn't rerun when it is).
       - run: npm run build
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}/
-          SITE_URL: ${{ steps.pages.outputs.base_url }}
+          SITE_URL: https://${{ steps.pages.outputs.host }}${{ steps.pages.outputs.base_path }}
 
       - name: Show where this build is for
-        run: echo "Built for ${{ steps.pages.outputs.base_url }} (base path '${{ steps.pages.outputs.base_path }}/')"
+        run: echo "Built for https://${{ steps.pages.outputs.host }}${{ steps.pages.outputs.base_path }} (base path '${{ steps.pages.outputs.base_path }}/')"
 
       - name: Upload the site
         if: github.event_name != 'pull_request'

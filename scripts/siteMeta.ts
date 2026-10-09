@@ -141,7 +141,7 @@ export function siteMeta(root: string): Plugin {
             ]
           : []),
       ];
-      return html.replace(/\s*<link rel="icon" href="data:," \/>/, `\n    ${tags.join('\n    ')}`);
+      return html.replace(/\s*<link rel="icon" href="data:," \/>/, () => `\n    ${tags.join('\n    ')}`);
     },
     generateBundle() {
       const { ink, dot } = iconColors(root);
