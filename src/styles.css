@@ -91,6 +91,31 @@ body {
     0 0 6px var(--color-land);
 }
 
+.title .byline {
+  margin: 1px 0 0;
+  font-size: 12px;
+  color: var(--color-labels);
+  /* Small text over the building print in 3D views needs a fuller halo than the title. */
+  text-shadow:
+    0 0 2px var(--color-land),
+    0 0 2px var(--color-land),
+    0 0 3px var(--color-land),
+    0 0 6px var(--color-land),
+    0 0 10px var(--color-land);
+}
+
+.title .byline a {
+  pointer-events: auto;
+  color: inherit;
+  text-decoration-color: var(--color-context);
+  text-underline-offset: 2px;
+}
+
+.title .byline a:hover {
+  color: var(--color-panel-text);
+  text-decoration-color: currentColor;
+}
+
 .skip-link {
   position: absolute;
   left: -9999px;

@@ -239,6 +239,7 @@ export function App() {
       <a class="skip-link" href="#controls-start">Skip to map controls</a>
       <header class="title">
         <h1>{SITE_TITLE}</h1>
+        <p class="byline">by <a href="https://www.matthewhuguet.com/">Matthew Huguet</a></p>
         <ProjectIndex openId={openId} onOpen={(id, opener) => void openProject(id, { opener })}
           filter={filter} onFilter={setFilter} />
       </header>
