@@ -1,7 +1,7 @@
 import region from '../generated/region.json';
 import projects from '../../data/projects.json';
 
-/** Absolute URL of the site root, including the base path on GitHub Pages (/BAM/). */
+/** Absolute URL of the site root, including any base path (/BAM/ on github.io, none on the custom domain). */
 const SITE = `${location.origin}${import.meta.env.BASE_URL}`;
 
 /** Where the PMTiles archives live. Defaults to the site itself; set VITE_TILE_BASE_URL for object storage. */
