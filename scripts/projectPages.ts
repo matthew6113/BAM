@@ -2,19 +2,27 @@ import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 import type { Plugin } from 'vite';
 import data from '../data/projects.json' with { type: 'json' };
+import { siteUrl } from './siteMeta.ts';
 
 const escape = (s: string) =>
   s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-/** Swap the page's title and description (plain and Open Graph) for a project's. */
-function retitle(html: string, title: string, description: string): string {
+/** Swap the page's title, description and address (plain and Open Graph) for a project's. */
+function retitle(html: string, title: string, description: string, path: string): string {
   const t = escape(title);
   const d = escape(description);
-  return html
+  const site = siteUrl();
+  let out = html
     .replace(/<title>[^<]*<\/title>/, `<title>${t}</title>`)
     .replace(/(<meta name="description" content=")[^"]*(")/, `$1${d}$2`)
     .replace(/(<meta property="og:title" content=")[^"]*(")/, `$1${t}$2`)
     .replace(/(<meta property="og:description" content=")[^"]*(")/, `$1${d}$2`);
+  if (site) {
+    out = out
+      .replace(/(<link rel="canonical" href=")[^"]*(")/, `$1${site}/${path}$2`)
+      .replace(/(<meta property="og:url" content=")[^"]*(")/, `$1${site}/${path}$2`);
+  }
+  return out;
 }
 
 /**
@@ -39,7 +47,7 @@ export function projectPages(root: string): Plugin {
         this.emitFile({
           type: 'asset',
           fileName: `p/${p.id}/index.html`,
-          source: retitle(html, `${p.name} · ${site}`, p.summary),
+          source: retitle(html, `${p.name} · ${site}`, p.summary, `p/${p.id}/`),
         });
       }
       this.emitFile({ type: 'asset', fileName: '404.html', source: html });

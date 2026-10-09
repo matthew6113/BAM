@@ -1,0 +1,29 @@
+{
+  "note": "Theme the share card was drawn with (scripts/shareCard.mjs). Redraw it after a palette change: npm run share-card.",
+  "colors": {
+    "land": "#FBFAF6",
+    "water": "#E3E8EA",
+    "shoreline": "#9CA6AE",
+    "outsideRegion": "#F2F0EA",
+    "buildings": "#3A3631",
+    "labels": "#3A3835",
+    "context": "#C5CAD0",
+    "contextExtrusion": "#C9CDD2",
+    "selection": "#000000",
+    "selectionFill": "#DEDAD1",
+    "panelBackground": "#FFFFFF",
+    "panelText": "#1E1E1E",
+    "panelRule": "#E3E3E3"
+  },
+  "stages": {
+    "proposed": "#D0612C",
+    "entitlement": "#C04E1C",
+    "entitled": "#A93F12",
+    "infrastructure": "#8C310C",
+    "construction": "#6C2408",
+    "partial": "#8C6A55",
+    "complete": "@buildings",
+    "paused": "#4F6E8E",
+    "distressed": "#7A1E4A"
+  }
+}
