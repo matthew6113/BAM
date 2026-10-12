@@ -3,6 +3,33 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-12 (Oceanwide Center and 30 Van Ness added)
+
+Two single-site San Francisco towers added at Matthew's request ("Oceanside center" and 30 Van Ness). Both are
+well below the usual 1,000-home bar. Research: `docs/official-research/candidates-oceanwide-30-van-ness.md`.
+No San Francisco record uses the name "Oceanside Center"; the match is Oceanwide Center at 50 First Street.
+No new hosts were needed.
+
+- **oceanwide-center** (`paused`): two towers approved by the Planning Commission on May 5, 2016 (Motions
+  19634–19638): an 850-ft First Street Tower (910 ft to its top, office and 109 homes) and a 605-ft Mission Street
+  Tower (169-room hotel and 156 homes), 265 homes and about 1.08 million sq ft of office in all. Ordinance 137-16
+  (July 26, 2016) vacated and sold parts of Jessie Street and Elim Alley. DBI issued both site permits in 2017;
+  demolition, shoring and excavation followed, and the last inspection recorded under the Mission Street Tower's
+  site permit is Sept 21, 2020. An Aug 17, 2026 Zoning Administrator record calls the site "formerly Oceanwide".
+  The creditor takeover, foreclosure, January 2026 sale and the new owner's "Fifty at First" office tower are
+  press-only and sit in `reported` (with the press stage, `distressed`).
+- **30-van-ness** (`paused`): a 47-story, 520-ft tower (540 ft with screening) with 333 homes over a nine-story
+  office podium, approved May 21, 2020 and amended Nov 7, 2024 (Motion 21643) and March 13, 2025 (Motion 21700).
+  Construction began July 18, 2022 and was halted about 16 months later (Ordinance 01-25, finally passed Jan 28,
+  2025, which also created the 30 Van Ness Avenue Special Use District with lower affordable housing terms and a
+  May 1, 2029 sunset unless construction restarts).
+- **Geometry:** boundaries from DataSF parcels (new entries in `official_boundaries.py`). Massing is illustrative
+  and drawn as paused: Oceanwide's two towers traced from the 2016 CPE checklist's floor plans (registered to the
+  parcels, RMS 0.3 m; `massing_oceanwide_center.py`); 30 Van Ness's podium and tower laid out from the 2020 plan
+  set's dimensions (`massing_30_van_ness.py`). Both modules are in `make sites`. Tuned landing cameras; screenshots
+  `docs/screenshots/m4/34-landed-oceanwide-center.png` and `35-landed-30-van-ness.png`.
+- `_meta.lastVerified` moves to 2026-10-12, the date these two were checked.
+
 ## 2026-10-08 (SMART Healdsburg and Cloverdale extensions added)
 
 Two line projects added at Matthew's request ("the green line additions for SMART"). Research:

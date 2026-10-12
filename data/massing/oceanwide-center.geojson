@@ -1,0 +1,175 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "oceanwide-center",
+  "illustrative": true,
+  "summary": "Illustrative massing: the two approved towers as single volumes, their footprints traced from the 2016 CPE checklist's floor plans and extruded to the roof heights in Planning Motion 19635 (about 850 ft and 605 ft; parapet and equipment reach 910 and 636 ft). Setbacks, the First Street Tower's open ground-floor \u201curban room\u201d and the two historic First Street buildings the project keeps are not drawn. Neither tower rose above its foundations.",
+  "note": "The approved towers as simple volumes at their roof heights, not the final designs.",
+  "sourceUrl": "https://sfmea.sfplanning.org/2006.1523E_Checklist.pdf",
+  "sourceLabel": "CPE checklist floor plans, 2016 (PDF)",
+  "heightSourceUrl": "https://sfgov.legistar.com/View.ashx?M=F&ID=4454990&GUID=A40F1C7E-8BCB-4D64-AC85-1CFCDFB96DF1",
+  "georeference": {
+   "figure_2": {
+    "scale_m_per_unit": 0.24492,
+    "rotation_deg": 135.555,
+    "rms_m": 0.3,
+    "controls": [
+     {
+      "label": "First / Mission corner (lot 009)",
+      "residual_m": 0.21
+     },
+     {
+      "label": "First / Stevenson corner (lot 003)",
+      "residual_m": 0.11
+     },
+     {
+      "label": "Mission / Ecker corner (lot 012)",
+      "residual_m": 0.37
+     },
+     {
+      "label": "Ecker Place, rear of lot 012",
+      "residual_m": 0.3
+     },
+     {
+      "label": "Stevenson Street, rear of lot 055",
+      "residual_m": 0.19
+     },
+     {
+      "label": "Rear corner of lot 055",
+      "residual_m": 0.3
+     },
+     {
+      "label": "Rear jog of lot 055",
+      "residual_m": 0.26
+     },
+     {
+      "label": "Rear of lot 006",
+      "residual_m": 0.42
+     },
+     {
+      "label": "Rear jog of lot 006",
+      "residual_m": 0.39
+     },
+     {
+      "label": "Rear of lot 007",
+      "residual_m": 0.43
+     },
+     {
+      "label": "Rear corner of lot 011",
+      "residual_m": 0.13
+     }
+    ]
+   },
+   "figure_3_to_figure_2": {
+    "rms_pt": 0.37,
+    "controls": 7
+   },
+   "method": "Figure 2's red property-line corners matched to DataSF parcel vertices (similarity)."
+  },
+  "license": "Tower footprints: traced from a public SF Planning document. Georeference: DataSF parcels (ODC-PDDL)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "First Street Tower",
+    "stage": "paused",
+    "height_ft": 850,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, with homes on floors 43 to 60",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: footprint traced from the Community Plan Exemption Checklist, 50 First Street (Oceanwide Center), Case No. 2006.1523E, Figure 3 (typical office floor, PDF p. 7), registered through Figure 2 (p. 6); roof height from Planning Commission Motion No. 19635 (Downtown Project Authorization), May 5, 2016, Board of Supervisors File No. 160382",
+    "note": "Roof at about 850 ft (60 stories); mechanical and architectural features reach 910 ft (Motion 19635). About 1.06 million gross sq ft of office and 109 homes (CPE checklist, Table 2). Drawn at the office floor's size; the residential floors above are smaller."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3984124,
+       37.7896795
+      ],
+      [
+       -122.3986009,
+       37.7898276
+      ],
+      [
+       -122.3985156,
+       37.7898959
+      ],
+      [
+       -122.3987455,
+       37.7900766
+      ],
+      [
+       -122.3988415,
+       37.7899996
+      ],
+      [
+       -122.3990267,
+       37.7901451
+      ],
+      [
+       -122.3986384,
+       37.7904564
+      ],
+      [
+       -122.3980348,
+       37.7899821
+      ],
+      [
+       -122.3984124,
+       37.7896795
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Mission Street Tower",
+    "stage": "paused",
+    "height_ft": 605,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Hotel (169 rooms) on floors 3 to 21, 156 homes above",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: footprint traced from the Community Plan Exemption Checklist, 50 First Street (Oceanwide Center), Case No. 2006.1523E, Figure 2 (level 1 floor plan, corner columns, PDF p. 6); roof height from Planning Commission Motion No. 19635 (Downtown Project Authorization), May 5, 2016, Board of Supervisors File No. 160382",
+    "note": "Roof at about 605 ft (54 stories); screening to 625 ft and elevator equipment to 636 ft (Motion 19635). Lower floors 133 ft long, 164 ft 11 in on the diagonal."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3983724,
+       37.7892846
+      ],
+      [
+       -122.3986065,
+       37.7894691
+      ],
+      [
+       -122.3982959,
+       37.7897171
+      ],
+      [
+       -122.3980619,
+       37.7895326
+      ],
+      [
+       -122.3983724,
+       37.7892846
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

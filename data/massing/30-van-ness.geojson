@@ -1,0 +1,135 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "30-van-ness",
+  "illustrative": true,
+  "summary": "Illustrative massing: the approved 130-ft podium over the whole lot and a 520-ft tower set out from the dimensions on the 2020 plan set (12 ft from Van Ness Avenue, 55 ft 7 in from Fell Street, 141 ft long, 13,200 sq ft). The 2024 and 2025 approvals kept the same envelope. The tower's faceted plan and sloped top are not drawn; construction stopped at the excavation and foundations.",
+  "note": "The approved podium and tower as simple volumes, not the final design.",
+  "sourceUrl": "https://commissions.sfplanning.org/cpcpackets/2017-008051DNXCUAOFASHDENV.pdf",
+  "sourceLabel": "Planning Commission packet, 2020 (PDF)",
+  "envelopeSourceUrl": "https://citypln-m-extnl.sfgov.org/Commissions/CPC/3_13_2025/Commission%20Packet/2024-008290DNX-02.pdf",
+  "georeference": {
+   "method": "Plan dimensions laid out from the Van Ness Avenue / Fell Street corner of the DataSF parcel, along its two frontages.",
+   "frontages_as_mapped": {
+    "fell_frontage_ft": 164.0,
+    "van_ness_frontage_ft": 282.7,
+    "corner_angle_deg": 90.08
+   }
+  },
+  "license": "Dimensions: from a public SF Planning document. Lot: DataSF parcels (ODC-PDDL)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Podium",
+    "stage": "paused",
+    "height_ft": 130,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, with shops and lobbies on the ground floor",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the lot (DataSF parcel 0835/004) less the tower, at the 130-ft podium height in the Planning Commission packet, Record No. 2017-008051 (30 Van Ness Avenue), hearing May 21, 2020, draft Downtown Project Authorization, PDF p. 34",
+    "note": "A nine-story podium of about 253,000 gross sq ft of office (Motion 21700, 2025). The existing building's walls are kept as part of it."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4190637,
+       37.7755421
+      ],
+      [
+       -122.4191149,
+       37.7755356
+      ],
+      [
+       -122.4192686,
+       37.7763027
+      ],
+      [
+       -122.4187084,
+       37.7763741
+      ],
+      [
+       -122.418613,
+       37.7758981
+      ],
+      [
+       -122.4190637,
+       37.7755421
+      ]
+     ],
+     [
+      [
+       -122.4191208,
+       37.7757746
+      ],
+      [
+       -122.4188008,
+       37.7758153
+      ],
+      [
+       -122.4188775,
+       37.7761979
+      ],
+      [
+       -122.4191974,
+       37.7761571
+      ],
+      [
+       -122.4191208,
+       37.7757746
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Tower",
+    "stage": "paused",
+    "height_ft": 520,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (333)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: a 141 x 93.6 ft rectangle set out from the dimensions on the Planning Commission packet, Record No. 2017-008051 (30 Van Ness Avenue), hearing May 21, 2020, PDF p. 488 (typical residential floor plan L13-L15); roof height from the same packet (PDF p. 34) and Motion 21700 (2025)",
+    "note": "Roof up to 520 ft, 540 ft with rooftop screening and equipment (Motion 21700). The real floor plate is faceted, and the top five floors slope down toward Fell Street."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4191974,
+       37.7761571
+      ],
+      [
+       -122.4188775,
+       37.7761979
+      ],
+      [
+       -122.4188008,
+       37.7758153
+      ],
+      [
+       -122.4191208,
+       37.7757746
+      ],
+      [
+       -122.4191974,
+       37.7761571
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
