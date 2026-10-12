@@ -3,6 +3,11 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-12 (Alameda Point photo)
+
+**alameda-point-plan**: photo swapped at Matthew's request from the 1995 Navy aerial to Bill Abbott's
+October 2018 aerial of Alameda Point's piers and hangars (CC BY-SA 2.0, Wikimedia Commons).
+
 ## 2026-10-12 (photos: transit and newer sites)
 
 Fourteen more project photos approved by Matthew from `docs/images/candidates-transit.md` and
