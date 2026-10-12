@@ -22,6 +22,7 @@ import {
   containsPoint,
 } from '../src/projects/data';
 import { isOfficialSource } from '../src/projects/official';
+import { CATEGORIES, isFiltered, matchesFilter, NO_FILTER } from '../src/projects/filter';
 import { STAGE_KEYS } from '../src/theme/theme';
 import { formatDate, formatSqft, sourceText } from '../src/ui/format';
 import { pathForProject, projectIdFromPath } from '../src/router';
@@ -311,5 +312,55 @@ describe('deep links', () => {
     expect(projectIdFromPath('/p/Not_An_Id')).toBeNull();
     expect(pathForProject('potrero-power-station')).toBe('/p/potrero-power-station');
     expect(getProject('potrero-power-station')?.name).toBe('Potrero Power Station');
+  });
+});
+
+describe('buildings and transportation', () => {
+  const keys = CATEGORIES.map((c) => c.key) as string[];
+  const ids = (cat: string) => PROJECTS.filter((p) => p.category === cat).map((p) => p.id);
+
+  it('gives every project a category', () => {
+    for (const p of PROJECTS) expect(keys, p.id).toContain(p.category);
+  });
+
+  it('puts every line project under transportation', () => {
+    const lines = PROJECTS.filter((p) => isLineProject(p.id));
+    expect(lines.length).toBeGreaterThan(0);
+    for (const p of lines) expect(p.category, p.id).toBe('transportation');
+  });
+
+  it('follows the classification Matthew set (2026-10-12)', () => {
+    for (const id of ['mission-bay-ferry-landing', 'berkeley-pier-ferry', 'redwood-city-ferry-terminal'])
+      expect(ids('transportation'), id).toContain(id);
+    for (const id of ['diridon-station', 'bart-station-housing', 'potrero-power-station'])
+      expect(ids('buildings'), id).toContain(id);
+  });
+
+  it('filters by tab, alone and with the other filters', () => {
+    const shown = (f: typeof NO_FILTER) => MAPPED_PROJECTS.filter((p) => matchesFilter(p, f));
+    const all = shown(NO_FILTER);
+    const transport = shown({ ...NO_FILTER, category: 'transportation' });
+    const buildings = shown({ ...NO_FILTER, category: 'buildings' });
+    expect(all).toHaveLength(MAPPED_PROJECTS.length);
+    expect(transport.length).toBeGreaterThan(0);
+    expect(buildings.length).toBeGreaterThan(0);
+    expect(transport.length + buildings.length).toBe(all.length);
+    expect(transport.every((p) => p.category === 'transportation')).toBe(true);
+    expect(buildings.every((p) => p.category === 'buildings')).toBe(true);
+
+    // Combines with search, stage and area: a SMART extension is transportation in the North Bay.
+    const smart = { ...NO_FILTER, query: 'smart', subregion: 'North Bay' };
+    expect(shown({ ...smart, category: 'transportation' }).map((p) => p.id)).toEqual(
+      shown(smart).filter((p) => p.category === 'transportation').map((p) => p.id),
+    );
+    expect(shown({ ...smart, category: 'buildings' }).some((p) => p.id.startsWith('smart-'))).toBe(false);
+    const stage = transport[0].stage;
+    expect(shown({ ...NO_FILTER, category: 'transportation', hiddenStages: [stage] }).some((p) => p.stage === stage)).toBe(false);
+  });
+
+  it('counts a tab as a filter, and clearing filters returns to All', () => {
+    expect(isFiltered(NO_FILTER)).toBe(false);
+    expect(isFiltered({ ...NO_FILTER, category: 'buildings' })).toBe(true);
+    expect(NO_FILTER.category).toBe('');
   });
 });

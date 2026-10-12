@@ -57,7 +57,7 @@
     "project": {
       "type": "object",
       "required": [
-        "id", "name", "city", "county", "subregion", "approxCenter", "acres", "program", "developer",
+        "id", "name", "city", "county", "subregion", "category", "approxCenter", "acres", "program", "developer",
         "publicPartners", "stage", "stageNote", "timeline", "summary", "sources", "verify", "lastVerified"
       ],
       "additionalProperties": false,
@@ -68,6 +68,10 @@
         "city": { "type": "string" },
         "county": { "type": "string" },
         "subregion": { "enum": ["San Francisco", "Peninsula", "South Bay", "East Bay", "North Bay"] },
+        "category": {
+          "description": "Index tab: transportation (rail lines, stations-only transit and ferry terminals: transportation and infrastructure) or buildings (everything else).",
+          "enum": ["buildings", "transportation"]
+        },
         "approxCenter": {
           "type": "array",
           "prefixItems": [
