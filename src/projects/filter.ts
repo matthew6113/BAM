@@ -7,9 +7,18 @@ export interface ProjectFilter {
   hiddenStages: string[];
   /** One subregion, or '' for all. */
   subregion: string;
+  /** The index tab: one category, or '' for all. */
+  category: Category | '';
 }
 
-export const NO_FILTER: ProjectFilter = { query: '', hiddenStages: [], subregion: '' };
+/** The two groups the index tabs divide projects into (`category` in data/projects.json). */
+export type Category = 'buildings' | 'transportation';
+export const CATEGORIES: { key: Category; label: string }[] = [
+  { key: 'buildings', label: 'Buildings' },
+  { key: 'transportation', label: 'Transportation' },
+];
+
+export const NO_FILTER: ProjectFilter = { query: '', hiddenStages: [], subregion: '', category: '' };
 
 function fold(s: string): string {
   return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
@@ -18,6 +27,7 @@ function fold(s: string): string {
 export function matchesFilter(p: Project, f: ProjectFilter): boolean {
   if (f.hiddenStages.includes(p.stage)) return false;
   if (f.subregion && p.subregion !== f.subregion) return false;
+  if (f.category && p.category !== f.category) return false;
   const q = fold(f.query.trim());
   if (!q) return true;
   const hay = [p.name, p.city, p.county, ...(p.aliases ?? [])].map(fold).join(' ');
@@ -25,5 +35,5 @@ export function matchesFilter(p: Project, f: ProjectFilter): boolean {
 }
 
 export function isFiltered(f: ProjectFilter): boolean {
-  return f.query.trim() !== '' || f.hiddenStages.length > 0 || f.subregion !== '';
+  return f.query.trim() !== '' || f.hiddenStages.length > 0 || f.subregion !== '' || f.category !== '';
 }

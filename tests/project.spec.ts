@@ -81,6 +81,58 @@ test('the Projects list is a keyboard route in and focus comes back out', async 
   await expect(item).toBeFocused();
 });
 
+test('the Buildings and Transportation tabs filter the list and the map, and All restores both', async ({ page }) => {
+  await page.goto('/?test=1');
+  await ready(page);
+  // Ids the map leaves out: the literal list in the site layer's filter.
+  const mapHidden = () =>
+    page.evaluate(() => {
+      const find = (e: unknown): string[] =>
+        !Array.isArray(e) ? [] : e[0] === 'literal' && Array.isArray(e[1]) ? e[1] : e.flatMap(find);
+      return find((window as any).__map.getFilter('project-site-fill')).sort();
+    });
+  await page.getByRole('button', { name: /^Projects/ }).click();
+  const list = page.locator('#project-index-list > li');
+  const tabs = page.getByRole('tablist', { name: 'Project type' });
+  const tab = (name: RegExp) => tabs.getByRole('tab', { name });
+  const total = await list.count();
+  await expect(tab(/^All/)).toHaveAttribute('aria-selected', 'true');
+  expect(await mapHidden()).toEqual([]);
+
+  const nTransport = Number(await tab(/^Transportation/).locator('.n').textContent());
+  const nBuildings = Number(await tab(/^Buildings/).locator('.n').textContent());
+  expect(nTransport).toBeGreaterThan(0);
+  expect(nTransport + nBuildings).toBe(total);
+
+  await tab(/^Transportation/).click();
+  await expect(tab(/^Transportation/)).toHaveAttribute('aria-selected', 'true');
+  await expect(list).toHaveCount(nTransport);
+  await expect(page.locator('#project-index-list')).toContainText('The Portal');
+  await expect(page.locator('#project-index-list')).toContainText('Mission Bay Ferry Landing');
+  await expect(page.locator('#project-index-list')).not.toContainText('Potrero Power Station');
+  await expect(page.locator('.index-toggle .count')).toHaveText(`${nTransport} of ${total}`);
+  await expect.poll(mapHidden).toHaveLength(nBuildings);
+  expect(await mapHidden()).toContain('potrero-power-station');
+
+  // Arrow keys move between tabs; the selected tab combines with search.
+  await page.keyboard.press('ArrowLeft');
+  await expect(tab(/^Buildings/)).toBeFocused();
+  await expect(list).toHaveCount(nBuildings);
+  await page.getByRole('searchbox', { name: 'Search projects' }).fill('potrero');
+  await expect(list).toHaveCount(2); // Potrero Power Station and Potrero HOPE SF
+
+  await tab(/^All/).click();
+  await page.getByRole('searchbox', { name: 'Search projects' }).fill('');
+  await expect(list).toHaveCount(total);
+  await expect.poll(mapHidden).toEqual([]);
+
+  // Show all projects clears the tab too.
+  await tab(/^Transportation/).click();
+  await page.getByRole('button', { name: 'Show all projects' }).click();
+  await expect(tab(/^All/)).toHaveAttribute('aria-selected', 'true');
+  await expect(list).toHaveCount(total);
+});
+
 test('the back button closes the project', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/?test=1#map=13.2/37.757/-122.39');

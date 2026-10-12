@@ -111,6 +111,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.386,
         37.711
@@ -259,6 +260,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.368,
         37.725
@@ -416,6 +418,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.384,
         37.756
@@ -582,6 +585,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.384,
         37.761
@@ -711,6 +715,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.389,
         37.775
@@ -824,6 +829,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.392,
         37.77
@@ -929,6 +935,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.372,
         37.823
@@ -1088,6 +1095,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.377,
         37.733
@@ -1226,6 +1234,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.477,
         37.729
@@ -1319,6 +1328,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.453,
         37.726
@@ -1440,6 +1450,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.481,
         37.718
@@ -1564,6 +1575,7 @@
       "city": "Brisbane",
       "county": "San Mateo",
       "subregion": "Peninsula",
+      "category": "buildings",
       "approxCenter": [
         -122.397,
         37.693
@@ -1676,6 +1688,7 @@
       "city": "Menlo Park",
       "county": "San Mateo",
       "subregion": "Peninsula",
+      "category": "buildings",
       "approxCenter": [
         -122.152,
         37.482
@@ -1779,6 +1792,7 @@
       "city": "Menlo Park",
       "county": "San Mateo",
       "subregion": "Peninsula",
+      "category": "buildings",
       "approxCenter": [
         -122.177,
         37.457
@@ -1879,6 +1893,7 @@
       "city": "Santa Clara",
       "county": "Santa Clara",
       "subregion": "South Bay",
+      "category": "buildings",
       "approxCenter": [
         -121.972,
         37.408
@@ -1983,6 +1998,7 @@
       "city": "San Jose",
       "county": "Santa Clara",
       "subregion": "South Bay",
+      "category": "buildings",
       "approxCenter": [
         -121.903,
         37.331
@@ -2085,6 +2101,7 @@
       "city": "Mountain View",
       "county": "Santa Clara",
       "subregion": "South Bay",
+      "category": "buildings",
       "approxCenter": [
         -122.077,
         37.418
@@ -2182,6 +2199,7 @@
       "city": "Sunnyvale",
       "county": "Santa Clara",
       "subregion": "South Bay",
+      "category": "buildings",
       "approxCenter": [
         -122.022,
         37.41
@@ -2272,6 +2290,7 @@
       "city": "Cupertino",
       "county": "Santa Clara",
       "subregion": "South Bay",
+      "category": "buildings",
       "approxCenter": [
         -122.009,
         37.325
@@ -2396,6 +2415,7 @@
       "city": "Concord",
       "county": "Contra Costa",
       "subregion": "East Bay",
+      "category": "buildings",
       "approxCenter": [
         -121.965,
         37.975
@@ -2515,6 +2535,7 @@
       "city": "Oakland",
       "county": "Alameda",
       "subregion": "East Bay",
+      "category": "buildings",
       "approxCenter": [
         -122.2,
         37.752
@@ -2611,6 +2632,7 @@
       "city": "Alameda",
       "county": "Alameda",
       "subregion": "East Bay",
+      "category": "buildings",
       "approxCenter": [
         -122.3,
         37.78
@@ -2736,6 +2758,7 @@
       "city": "Oakland",
       "county": "Alameda",
       "subregion": "East Bay",
+      "category": "buildings",
       "approxCenter": [
         -122.257,
         37.788
@@ -2852,6 +2875,7 @@
       "city": "Suisun City (proposed annexation)",
       "county": "Solano",
       "subregion": "North Bay",
+      "category": "buildings",
       "approxCenter": [
         -121.93,
         38.2
@@ -2960,6 +2984,7 @@
       "city": "San José",
       "county": "Santa Clara",
       "subregion": "South Bay",
+      "category": "buildings",
       "approxCenter": [
         -121.878,
         37.368
@@ -3047,6 +3072,7 @@
       "city": "Vallejo",
       "county": "Solano",
       "subregion": "North Bay",
+      "category": "buildings",
       "approxCenter": [
         -122.275,
         38.092
@@ -3174,6 +3200,7 @@
       "city": "Mountain View",
       "county": "Santa Clara",
       "subregion": "South Bay",
+      "category": "buildings",
       "approxCenter": [
         -122.049,
         37.397
@@ -3278,6 +3305,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.397,
         37.754
@@ -3388,6 +3416,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.403,
         37.711
@@ -3509,6 +3538,7 @@
       "city": "Eldridge (unincorporated, near Glen Ellen)",
       "county": "Sonoma",
       "subregion": "North Bay",
+      "category": "buildings",
       "approxCenter": [
         -122.515,
         38.349
@@ -3639,6 +3669,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.418,
         37.711
@@ -3751,6 +3782,7 @@
       "city": "Santa Clara",
       "county": "Santa Clara",
       "subregion": "South Bay",
+      "category": "buildings",
       "approxCenter": [
         -121.965,
         37.409
@@ -3861,6 +3893,7 @@
       "city": "Cloverdale",
       "county": "Sonoma",
       "subregion": "North Bay",
+      "category": "buildings",
       "approxCenter": [
         -123.002,
         38.784
@@ -3982,6 +4015,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "transportation",
       "approxCenter": [
         -122.3916,
         37.7806
@@ -4128,6 +4162,7 @@
       "city": "San Francisco to San Jose (Caltrain corridor)",
       "county": "San Francisco, San Mateo and Santa Clara",
       "subregion": "Peninsula",
+      "category": "transportation",
       "approxCenter": [
         -122.2564,
         37.5047
@@ -4242,6 +4277,7 @@
       "city": "San Jose",
       "county": "Santa Clara",
       "subregion": "South Bay",
+      "category": "transportation",
       "approxCenter": [
         -121.8958,
         37.3337
@@ -4386,6 +4422,7 @@
       "city": "San Jose",
       "county": "Santa Clara",
       "subregion": "South Bay",
+      "category": "buildings",
       "approxCenter": [
         -121.9024,
         37.3307
@@ -4494,6 +4531,7 @@
       "city": "Dublin, Pleasanton and Livermore",
       "county": "Alameda",
       "subregion": "East Bay",
+      "category": "transportation",
       "approxCenter": [
         -121.7986,
         37.7009
@@ -4625,6 +4663,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.4578,
         37.7631
@@ -4715,6 +4754,7 @@
       "city": "San Bruno",
       "county": "San Mateo",
       "subregion": "Peninsula",
+      "category": "buildings",
       "approxCenter": [
         -122.418,
         37.6364
@@ -4810,6 +4850,7 @@
       "city": "San Rafael",
       "county": "Marin",
       "subregion": "North Bay",
+      "category": "buildings",
       "approxCenter": [
         -122.5444,
         38.0037
@@ -4924,6 +4965,7 @@
       "city": "East Palo Alto",
       "county": "San Mateo",
       "subregion": "Peninsula",
+      "category": "buildings",
       "approxCenter": [
         -122.1292,
         37.4739
@@ -5028,6 +5070,7 @@
       "city": "Oakland, Berkeley, El Cerrito and Dublin",
       "county": "Alameda",
       "subregion": "East Bay",
+      "category": "buildings",
       "approxCenter": [
         -122.26,
         37.84
@@ -5207,6 +5250,7 @@
       "city": "Windsor and Healdsburg",
       "county": "Sonoma",
       "subregion": "North Bay",
+      "category": "transportation",
       "approxCenter": [
         -122.8576,
         38.6041
@@ -5363,6 +5407,7 @@
       "city": "Healdsburg, Geyserville and Cloverdale",
       "county": "Sonoma",
       "subregion": "North Bay",
+      "category": "transportation",
       "approxCenter": [
         -122.9413,
         38.7357
@@ -5480,6 +5525,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.3984,
         37.7899
@@ -5632,6 +5678,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "buildings",
       "approxCenter": [
         -122.4189,
         37.776
@@ -5782,6 +5829,7 @@
       "city": "Alameda",
       "county": "Alameda",
       "subregion": "East Bay",
+      "category": "buildings",
       "approxCenter": [
         -122.2949,
         37.7839
@@ -5903,6 +5951,7 @@
       "city": "Alameda",
       "county": "Alameda",
       "subregion": "East Bay",
+      "category": "buildings",
       "approxCenter": [
         -122.3012,
         37.7869
@@ -6003,6 +6052,7 @@
       "city": "Alameda",
       "county": "Alameda",
       "subregion": "East Bay",
+      "category": "buildings",
       "approxCenter": [
         -122.2586,
         37.7803
@@ -6100,6 +6150,7 @@
       "city": "Alameda",
       "county": "Alameda",
       "subregion": "East Bay",
+      "category": "buildings",
       "approxCenter": [
         -122.2479,
         37.7752
@@ -6201,6 +6252,7 @@
       "city": "San Francisco",
       "county": "San Francisco",
       "subregion": "San Francisco",
+      "category": "transportation",
       "approxCenter": [
         -122.3852,
         37.7667
@@ -6332,6 +6384,7 @@
       "city": "Berkeley",
       "county": "Alameda",
       "subregion": "East Bay",
+      "category": "transportation",
       "approxCenter": [
         -122.3155,
         37.8655
@@ -6431,6 +6484,7 @@
       "city": "Redwood City",
       "county": "San Mateo",
       "subregion": "Peninsula",
+      "category": "transportation",
       "approxCenter": [
         -122.2047,
         37.5169

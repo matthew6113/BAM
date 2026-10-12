@@ -176,6 +176,9 @@ Project panel (right side on desktop, bottom sheet on mobile), in this order:
 
 Elsewhere
 - Project index: a searchable list grouped by subregion, with filters by stage and size.
+  Tabs at the top divide it into All, Buildings and Transportation (transportation and
+  infrastructure: rail lines and ferry terminals), set by each record's `category`
+  (Matthew, 2026-10-12). The tab filters the map too.
 - Legend that doubles as a stage filter, with a count per stage.
 - Deep links per project (for example `/p/potrero-power-station`) that open with the
   fly-in.

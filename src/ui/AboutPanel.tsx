@@ -31,7 +31,8 @@ export function AboutPanel({ onClose }: Props) {
         An interactive 3D map of the Bay Area's largest development projects, {MAPPED_PROJECTS.length} of
         them so far, by <a href="https://www.matthewhuguet.com/">Matthew Huguet</a>. Click a project, or
         pick one from the Projects list, to fly in and see what it is, where it stands and where each fact
-        comes from.
+        comes from. The list groups them into buildings and transportation (rail lines and ferry
+        terminals).
       </p>
 
       <section aria-labelledby="about-read">

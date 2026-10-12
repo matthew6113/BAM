@@ -1,6 +1,6 @@
-import { useState } from 'preact/hooks';
+import { useRef, useState } from 'preact/hooks';
 import { MAPPED_PROJECTS, PROJECTS, STAGES, stageLabel } from '../projects/data';
-import { isFiltered, matchesFilter, NO_FILTER, type ProjectFilter } from '../projects/filter';
+import { CATEGORIES, isFiltered, matchesFilter, NO_FILTER, type ProjectFilter } from '../projects/filter';
 
 interface Props {
   openId: string | null;
@@ -11,13 +11,30 @@ interface Props {
 
 const SUBREGIONS = [...new Set(MAPPED_PROJECTS.map((p) => p.subregion))].sort();
 const STAGE_ORDER = [...STAGES].sort((a, b) => a.order - b.order);
+const TABS = [
+  { key: '' as const, label: 'All', n: undefined },
+  ...CATEGORIES.map((c) => ({ ...c, n: MAPPED_PROJECTS.filter((p) => p.category === c.key).length })),
+];
 
 /**
- * The projects index: search, a stage legend that doubles as a filter, and a subregion
- * filter. The same filter decides which projects the map draws.
+ * The projects index: tabs for buildings and transportation, search, a stage legend that
+ * doubles as a filter, and a subregion filter. The same filter decides which projects the
+ * map draws.
  */
 export function ProjectIndex({ openId, onOpen, filter, onFilter }: Props) {
   const [expanded, setExpanded] = useState(false);
+  const tabList = useRef<HTMLDivElement>(null);
+  const tabIndex = TABS.findIndex((t) => t.key === filter.category);
+  // Arrow keys, Home and End move between the tabs (the tab list is one tab stop).
+  const onTabKey = (e: KeyboardEvent) => {
+    const step = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
+    const next = step !== undefined ? (tabIndex + step + TABS.length) % TABS.length
+      : e.key === 'Home' ? 0 : e.key === 'End' ? TABS.length - 1 : -1;
+    if (next < 0) return;
+    e.preventDefault();
+    onFilter({ ...filter, category: TABS[next].key });
+    tabList.current?.querySelectorAll<HTMLElement>('[role="tab"]')[next]?.focus();
+  };
   const shown = MAPPED_PROJECTS.filter((p) => matchesFilter(p, filter));
   const stages = STAGE_ORDER.filter((s) => MAPPED_PROJECTS.some((p) => p.stage === s.key));
   const toggleStage = (key: string) =>
@@ -37,6 +54,19 @@ export function ProjectIndex({ openId, onOpen, filter, onFilter }: Props) {
         <svg viewBox="0 0 12 12" aria-hidden="true"><path d={expanded ? 'M3 7.5 6 4.5l3 3' : 'M3 4.5 6 7.5l3-3'} /></svg>
       </button>
       <div id="project-index-body" hidden={!expanded}>
+        <div class="category-tabs" role="tablist" aria-label="Project type" ref={tabList} onKeyDown={onTabKey}>
+          {TABS.map((t) => {
+            const on = t.key === filter.category;
+            return (
+              <button type="button" role="tab" aria-selected={on}
+                aria-controls="project-index-list" tabIndex={on ? 0 : -1}
+                onClick={() => onFilter({ ...filter, category: t.key })}>
+                {t.label}
+                {t.n !== undefined && <span class="n">{t.n}</span>}
+              </button>
+            );
+          })}
+        </div>
         <label class="search">
           <span class="visually-hidden">Search projects</span>
           <input type="search" placeholder="Search by name or city" value={filter.query}
