@@ -81,6 +81,16 @@ UCSF_PARNASSUS_BLKLOTS = [  # DataSF parcels, block 2634A (New Hospital EIR: "Bl
     "2634A003", "2634A005", "2634A011", "2634A012",
 ]
 
+# Oceanwide Center: the eight lots in Planning Motion 19635 and the CPE checklist (3708/003, 006, 007, 009,
+# 010, 011, 012, 055), plus 176 and 177, the parts of Jessie Street and Elim Alley vacated to the project by
+# Ordinance 137-16 (added to the parcel layer on July 26, 2016; together about the CPE's 4,859 sq ft).
+OCEANWIDE_BLKLOTS = [
+    "3708003", "3708006", "3708007", "3708009", "3708010", "3708011", "3708012", "3708055", "3708176", "3708177",
+]
+
+# 30 Van Ness: the single lot named in Ordinance 01-25 (Planning Code Section 249.99) and Motion 21700.
+VAN_NESS_30_BLKLOTS = ["0835004"]
+
 TANFORAN_APNS = [  # Draft EIR p. 53; the vacant lot is 014-311-060 in the NOP and the County layer (014-316-060 in the DEIR)
     "014316080", "014316300", "014316310", "014316360", "014316330", "014311060",
 ]
@@ -345,6 +355,27 @@ SPECS: dict[str, dict] = {
                  "Open Space Reserve, against the approximately 107 acres the Regents and the CPHP EIR give for the site. "
                  "The official campus boundary (2014 LRDP Figure 6-11, as amended) couldn't be read, and campus blocks "
                  "north of Parnassus Avenue may be missing."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "oceanwide-center": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(OCEANWIDE_BLKLOTS)})"),
+        "layer": ("DataSF Parcels – Active and Retired, block 3708 lots 003, 006, 007, 009, 010, 011, 012 and 055 "
+                  "and the vacated street lots 176 and 177"),
+        "accuracy": "official",
+        "note": ("The eight lots Planning Motion 19635 (May 5, 2016) approves, with the portions of Jessie Street and "
+                 "Elim Alley vacated to the project by Ordinance 137-16, against the CPE checklist's 59,445 sq ft "
+                 "(1.36 acres). The corner building at 82–84 First Street and 510 Mission Street (lot 008) isn't part "
+                 "of the project, so 88 First Street (lot 009) is drawn as a separate piece."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "30-van-ness": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(VAN_NESS_30_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 0835 lot 004",
+        "accuracy": "official",
+        "note": ("Assessor's Block 0835, Lot 004, the whole of the 30 Van Ness Avenue Special Use District "
+                 "(Ordinance 01-25); Motion 21700 gives the lot as 38,123 sq ft."),
         "license": "ODC Public Domain Dedication and License (DataSF)",
     },
     "tanforan": {

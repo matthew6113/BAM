@@ -1,0 +1,116 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "oceanwide-center",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 3708 lots 003, 006, 007, 009, 010, 011, 012 and 055 and the vacated street lots 176 and 177",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273708003%27%2C+%273708006%27%2C+%273708007%27%2C+%273708009%27%2C+%273708010%27%2C+%273708011%27%2C+%273708012%27%2C+%273708055%27%2C+%273708176%27%2C+%273708177%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The eight lots Planning Motion 19635 (May 5, 2016) approves, with the portions of Jessie Street and Elim Alley vacated to the project by Ordinance 137-16, against the CPE checklist's 59,445 sq ft (1.36 acres). The corner building at 82\u201384 First Street and 510 Mission Street (lot 008) isn't part of the project, so 88 First Street (lot 009) is drawn as a separate piece. 1.4 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 10
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3980476,
+        37.7897585
+       ],
+       [
+        -122.3979004,
+        37.7898748
+       ],
+       [
+        -122.3977652,
+        37.7897685
+       ],
+       [
+        -122.3979123,
+        37.7896522
+       ],
+       [
+        -122.3980476,
+        37.7897585
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3990494,
+        37.7901304
+       ],
+       [
+        -122.3986386,
+        37.7904549
+       ],
+       [
+        -122.3979619,
+        37.7899231
+       ],
+       [
+        -122.3982244,
+        37.7897138
+       ],
+       [
+        -122.3981727,
+        37.7896732
+       ],
+       [
+        -122.3981138,
+        37.7897178
+       ],
+       [
+        -122.3979712,
+        37.7896057
+       ],
+       [
+        -122.3983782,
+        37.789284
+       ],
+       [
+        -122.3986229,
+        37.7894763
+       ],
+       [
+        -122.3983963,
+        37.7896565
+       ],
+       [
+        -122.3986014,
+        37.7898266
+       ],
+       [
+        -122.3985435,
+        37.7898776
+       ],
+       [
+        -122.3987576,
+        37.7900459
+       ],
+       [
+        -122.3988527,
+        37.7899758
+       ],
+       [
+        -122.3990494,
+        37.7901304
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

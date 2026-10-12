@@ -91,6 +91,8 @@ sites:
 	$(PY) bam_pipeline.sites.lines_valley_link
 	$(PY) bam_pipeline.sites.lines_smart
 	$(PY) bam_pipeline.sites.bart_station_housing
+	$(PY) bam_pipeline.sites.massing_oceanwide_center
+	$(PY) bam_pipeline.sites.massing_30_van_ness
 
 photos:
 	$(PY) bam_pipeline.photos

@@ -2,7 +2,7 @@
   "_meta": {
     "title": "Bay Area megaprojects: researched project list",
     "preparedBy": "Claude (claude.ai chat) for Matthew Huguet",
-    "lastVerified": "2026-10-08",
+    "lastVerified": "2026-10-12",
     "notes": [
       "Every figure here came from the listed sources as of the lastVerified date. Items in each project's 'verify' list are known gaps; do not fill them by guessing.",
       "approxCenter values are rough [lon, lat] points for placing a marker only. Real site boundaries must come from official plan documents or parcel data, saved per project with their source.",
@@ -5468,6 +5468,306 @@
         ]
       },
       "lastVerified": "2026-10-08"
+    },
+    {
+      "id": "oceanwide-center",
+      "name": "Oceanwide Center",
+      "aliases": [
+        "50 First Street",
+        "50 First Street (Oceanwide Center)",
+        "First and Mission"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.3984,
+        37.7899
+      ],
+      "camera": {
+        "center": [
+          -122.3982,
+          37.7898
+        ],
+        "zoom": 16.1,
+        "pitch": 52,
+        "bearing": -70
+      },
+      "acres": 1.36,
+      "acresNote": "CPE checklist (Planning case 2006.1523E): eight lots on Assessor's Block 3708 (54,586 sq ft) plus about 4,859 sq ft of vacated Jessie Street and Elim Alley, 59,445 sq ft (1.36 acres) in all.",
+      "program": {
+        "homes": 265,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 1079925,
+        "commercialSqftTotal": null,
+        "retailSqft": 12501,
+        "hotelKeys": 169,
+        "openSpaceAcres": null,
+        "notes": "As approved in 2016 (CPE checklist Table 2; Motion 19635): two towers over a shared four-level basement. The First Street Tower is 850 ft to the roof (910 ft to the top of its mechanical and architectural features), 60 stories, with about 1.06 million gross sq ft of office and 109 homes. The Mission Street Tower is 605 ft to the roof (screening to 625 ft, elevator equipment to 636 ft), 54 stories, with a 169-room hotel and 156 homes. 2,136,410 sq ft in all, including 788,638 gsf of residential and 255,346 gsf of hotel, and about 26,348 sq ft of public open space, mostly the First Street Tower's 68-ft-tall ground-floor “urban room”. No affordable homes on site: Ordinance 137-16 waived about $27 million of affordable housing fees (Planning Code Sections 413 and 415) and required Oceanwide Center LLC to pay the same amount into the new Downtown Neighborhoods Preservation Fund. The historic buildings at 88 First Street and (in part) 76-78 First Street are kept."
+      },
+      "developer": "Oceanwide Center LLC (2016 approvals)",
+      "publicPartners": [
+        "San Francisco Planning Commission",
+        "San Francisco Board of Supervisors",
+        "San Francisco Department of Building Inspection"
+      ],
+      "stage": "paused",
+      "stageNote": "Both towers' site permits were issued in 2017, and demolition, excavation, shoring and the first foundation pours followed. The Department of Building Inspection's last recorded inspection under the Mission Street Tower's site permit was on Sept 21, 2020; neither tower rose above ground. An August 2026 Zoning Administrator record calls the site “formerly Oceanwide”.",
+      "timeline": [
+        {
+          "date": "2006-12-21",
+          "event": "SF Planning opens case 2006.1523 for a mixed-use tower project at First and Mission streets."
+        },
+        {
+          "date": "2016-05-05",
+          "event": "Planning Commission approves the project: shadow findings (Motion 19634), Downtown Project Authorization with exceptions (Motion 19635), office allocation (Motion 19636), the hotel (Motion 19637) and General Plan findings for the street vacation (Motion 19638)."
+        },
+        {
+          "date": "2016-06-07",
+          "event": "Board of Supervisors declares its intention to vacate parts of Jessie Street and Elim Alley for the project (Resolution 226-16)."
+        },
+        {
+          "date": "2016-07-26",
+          "event": "Board finally passes Ordinance 137-16: it vacates the street areas and sells them to Oceanwide Center LLC for $22,619,000 plus about $13 million for a new Downtown Neighborhoods Preservation Fund, and swaps about $27 million of affordable housing fees for an equal payment into that fund."
+        },
+        {
+          "date": "2017-02-01",
+          "event": "DBI issues the site permit for the Mission Street Tower (permit 201510301302; 55 stories and 156 homes on the permit)."
+        },
+        {
+          "date": "2017-07-05",
+          "event": "DBI issues the site permit for the 60-story First Street Tower (permit 201510301303)."
+        },
+        {
+          "date": "2017-10-11",
+          "event": "DBI permits to demolish the office buildings at 50 and 62 First Street are marked complete (40 First Street follows on Jan 5, 2018)."
+        },
+        {
+          "date": "2019-08-27",
+          "event": "DBI marks the First Street Tower's excavation and bracing permit complete, after the shoring walls for both towers."
+        },
+        {
+          "date": "2020-09-21",
+          "event": "Last DBI inspection recorded under the Mission Street Tower's site permit, a partial concrete pour."
+        },
+        {
+          "date": "2026-08-17",
+          "event": "Zoning Administrator issues a determination (2026-004804ZAD) recording that development rights once owned by Oceanwide Center LLC belong to a new owner."
+        }
+      ],
+      "nextMilestone": "None on record: no new Planning application for the site was found as of Oct 12, 2026.",
+      "summary": "Two towers approved in 2016 at First and Mission streets: an 850-ft office and residential tower on First Street (910 ft to its top) and a 605-ft hotel and residential tower on Mission Street, with 265 homes, a 169-room hotel and about 1.08 million sq ft of office. Demolition, excavation and foundation work ran from 2017, but neither tower rose above ground.",
+      "massingNotes": "Added at Matthew's request (2026-10-12); a single-site project below the usual 1,000-home bar. Boundary: DataSF parcels (acdm-wktn), block 3708 lots 003, 006, 007, 009, 010, 011, 012 and 055 named in Motion 19635, plus lots 176 and 177, the vacated parts of Jessie Street and Elim Alley; about 1.36 acres as drawn, matching the CPE checklist. Massing (pipeline/bam_pipeline/sites/massing_oceanwide_center.py): the two towers' footprints traced from the CPE checklist's Figure 2 (level 1) and Figure 3 (typical office floor), registered to the parcels' corners (RMS 0.3 m), extruded to the roof heights in Motion 19635 (850 and 605 ft). Illustrative, drawn as paused.",
+      "officialLinks": [
+        "https://sfgov.legistar.com/LegislationDetail.aspx?ID=2694215&GUID=FE35D8F3-4DA8-432E-A2A3-BD70AD9B1EA0",
+        "https://sfmea.sfplanning.org/2006.1523E_Checklist.pdf"
+      ],
+      "sources": [
+        "https://sfmea.sfplanning.org/2006.1523E_Checklist.pdf",
+        "https://commissions.sfplanning.org/cpcpackets/2006.1523DNXOFACUAVARSHDGPR.pdf",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=4454989&GUID=A607B5ED-2BAF-45E0-B68A-0F7144DFE111",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=4454990&GUID=A40F1C7E-8BCB-4D64-AC85-1CFCDFB96DF1",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=4455071&GUID=C79112F3-6AF1-4550-8F1D-752503B854C9",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=4455072&GUID=3A31535A-431D-439D-938F-DC9B031B1FC6",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=4455073&GUID=04D84447-104D-49A2-94EC-20C093ED3B12",
+        "https://sfgov.legistar.com/LegislationDetail.aspx?ID=2694215&GUID=FE35D8F3-4DA8-432E-A2A3-BD70AD9B1EA0",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=4607514&GUID=63A81AD4-51FC-4983-90E4-5D42DDF0EE87",
+        "https://sfgov.legistar.com/LegislationDetail.aspx?ID=2694454&GUID=17F014EE-EA60-459F-B69D-CA1A98DDE517",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201510301302",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201510301303",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201604215374",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201604215375",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201604215368",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201708296204",
+        "https://data.sf.gov/resource/vckc-dh2h.json?reference_number=201510301302",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2026-004804ZAD",
+        "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2006.1523",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "whether the 2016 Planning approvals and the 2017 site permits are still in force",
+        "who owns the site now (the 2026 Zoning Administrator record names no owner)",
+        "when work on the site stopped (DBI's last recorded inspection is Sept 21, 2020)",
+        "any new Planning application for the site",
+        "the Mission Street Tower's story count (54 in the CPE checklist, 55 on the DBI permit)"
+      ],
+      "lastVerified": "2026-10-12",
+      "reported": {
+        "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
+        "stage": "distressed",
+        "stageNote": "Creditors took over the stalled project in 2021, the site went through foreclosure, and a new owner bought it in January 2026 and has shown a different, office-only tower.",
+        "timeline": [
+          {
+            "date": "2021-10",
+            "event": "Creditors take control of the project after Oceanwide subsidiaries miss payments on $321.5 million of notes."
+          },
+          {
+            "date": "2024",
+            "event": "The site goes into foreclosure after a settlement with the general contractors."
+          },
+          {
+            "date": "2026-01",
+            "event": "The San Francisco Recovery Fund buys the site, for a reported $60 million."
+          },
+          {
+            "date": "2026-09",
+            "event": "The new owner shows “Fifty at First”, a 915-ft, 56-floor office tower of about 1.5 million sq ft; no permits filed yet."
+          }
+        ],
+        "sources": [
+          "https://www.bisnow.com/news/san-francisco/office/creditors-take-over-stalled-2m-sf-oceanwide-center-in-san-francisco-110715",
+          "https://www.sfchronicle.com/realestate/article/sf-oceanwide-sale-downtown-21235668.php",
+          "https://sfyimby.com/2026/09/oceanwide-center-no-more-renderings-revealed-for-fifty-at-first-san-francisco.html"
+        ]
+      }
+    },
+    {
+      "id": "30-van-ness",
+      "name": "30 Van Ness",
+      "aliases": [
+        "30 Van Ness Avenue",
+        "30 Van Ness Avenue Special Use District"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.4189,
+        37.776
+      ],
+      "camera": {
+        "center": [
+          -122.4188,
+          37.7763
+        ],
+        "zoom": 16.5,
+        "pitch": 55,
+        "bearing": 25
+      },
+      "acres": 0.88,
+      "acresNote": "Planning Commission Motion 21700 (2025): a 38,123 sq ft corner lot (Assessor's Block 0835, Lot 004) on Van Ness Avenue between Market and Fell streets, about 0.88 acres.",
+      "program": {
+        "homes": 333,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 252905,
+        "commercialSqftTotal": null,
+        "retailSqft": 6414,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "As last approved (Motion 21700, March 13, 2025): a 47-story building up to 520 ft to the roof (540 ft with rooftop screening and equipment), about 722,000 gross sq ft, with 333 homes in a tower over a nine-story office podium, 146 parking spaces and about 1,555 sq ft of public open space. Affordable housing: the 2020 approval required 25% of the homes on site; the 30 Van Ness Avenue Special Use District (Ordinance 01-25) lowered the requirement to a 16.4% fee, 12% on site or 16.4% off site, and Motion 21700 has the project pay the fee, less a credit for impact fees already paid. The existing five-story building at the site is altered and kept as part of the podium."
+      },
+      "developer": "30 Van Ness Development, LLC (Lendlease)",
+      "publicPartners": [
+        "San Francisco Planning Commission",
+        "San Francisco Board of Supervisors",
+        "City and County of San Francisco (seller of the site)"
+      ],
+      "stage": "paused",
+      "stageNote": "Construction began on July 18, 2022 and the developer halted it about 16 months later, citing feasibility (Ordinance 01-25). In March 2025 the site was an excavated construction site with initial foundation work done (Motion 21700). The special use district lapses on May 1, 2029 unless construction has restarted.",
+      "timeline": [
+        {
+          "date": "2015-08-06",
+          "event": "Ordinance 153-15 is enacted, authorizing the sale of the City's office building at 30 Van Ness Avenue by competitive bid for at least $87 million."
+        },
+        {
+          "date": "2017-03-30",
+          "event": "Resolution 95-17 is enacted, approving the sale to Lendlease Development, Inc. for $70 million with a City lease-back."
+        },
+        {
+          "date": "2017-05-05",
+          "event": "The City conveys the property to 30 Van Ness Development LLC."
+        },
+        {
+          "date": "2020-05-21",
+          "event": "Planning Commission certifies the Hub Plan and 30 Van Ness EIR (Resolution 20707) and approves the project (Motions 20714 and 20717 to 20719): a 47-story building up to 520 ft with 333 homes, 25% of them affordable on site."
+        },
+        {
+          "date": "2020-07-28",
+          "event": "Board finally passes the Hub Plan zoning changes (Ordinances 124-20 and 126-20); Ordinance 124-20 adopts the Planning Commission's environmental findings."
+        },
+        {
+          "date": "2021-08-25",
+          "event": "DBI issues the site permit for the tower (permit 201912139539)."
+        },
+        {
+          "date": "2022-07-18",
+          "event": "The developer begins construction."
+        },
+        {
+          "date": "2023-03-14",
+          "event": "The developer pays $41,000,577.28 in development impact fees."
+        },
+        {
+          "date": "2023",
+          "event": "The developer halts construction about 16 months after it began, citing feasibility."
+        },
+        {
+          "date": "2024-11-07",
+          "event": "Planning Commission modifies the approval (Motion 21643: about 18,800 sq ft more office, less retail, new affordable housing terms) and recommends a 30 Van Ness special use district (Resolution 21642)."
+        },
+        {
+          "date": "2025-01-28",
+          "event": "Board finally passes Ordinance 01-25, creating the 30 Van Ness Avenue Special Use District with lower affordable housing requirements and a May 1, 2029 sunset unless construction restarts."
+        },
+        {
+          "date": "2025-03-13",
+          "event": "Planning Commission conforms the approval to the ordinance; the project will pay the affordable housing fee (Motion 21700)."
+        },
+        {
+          "date": "2025-06-17",
+          "event": "DBI issues a permit revision adding bracing to the excavation's support system for an extended design life (permit 202208100237)."
+        }
+      ],
+      "nextMilestone": "Restarting construction: the special use district expires on May 1, 2029 unless construction has recommenced (Ordinance 01-25).",
+      "summary": "A 47-story, 520-ft tower at Market Street and Van Ness Avenue on the site of a former City office building: 333 homes over a nine-story office podium of about 253,000 sq ft. Approved in 2020 and started in 2022, construction stopped in 2023 with the site excavated; in 2025 the City eased its affordable housing terms to improve the project's feasibility.",
+      "massingNotes": "Added at Matthew's request (2026-10-12); a single-site project below the usual 1,000-home bar. Boundary: DataSF parcels (acdm-wktn), block 0835 lot 004, the lot Ordinance 01-25 names (about 0.88 acres). Massing (pipeline/bam_pipeline/sites/massing_30_van_ness.py): the 130-ft podium over the lot and a 141 x 93.6 ft tower (13,200 sq ft) at 520 ft, set out from the dimensions on the 2020 plan set (typical residential floor plan, packet p. 488); the 2024 and 2025 approvals kept the envelope. Illustrative, drawn as paused.",
+      "officialLinks": [
+        "https://citypln-m-extnl.sfgov.org/Commissions/CPC/3_13_2025/Commission%20Packet/2024-008290DNX-02.pdf",
+        "https://www.sfbos.org/sites/default/files/o0001-25.pdf"
+      ],
+      "sources": [
+        "https://www.sfbos.org/sites/default/files/o0001-25.pdf",
+        "https://citypln-m-extnl.sfgov.org/Commissions/CPC/3_13_2025/Commission%20Packet/2024-008290DNX-02.pdf",
+        "https://commissions.sfplanning.org/cpcpackets/2017-008051DNXCUAOFASHDENV.pdf",
+        "https://sfplanning.org/sites/default/files/agendas/2024-11/20241107_cpc%20(ID%201480316).pdf",
+        "https://sfplanning.org/sites/default/files/agendas/2025-03/20250313_cpc%20%28ID%201499365%29.pdf",
+        "https://citypln-m-extnl.sfgov.org/Commissions/CPC/3_27_2025/Commission%20Packet/20250313_cpc_min.pdf",
+        "https://sfgov.legistar.com/View.ashx?M=F&ID=13549190&GUID=41501879-C86D-4470-8C24-BA49C2117FFF",
+        "https://sfbos.org/sites/default/files/lut111824_240872_Notice.pdf",
+        "https://www.sfbos.org/sites/default/files/o0124-20.pdf",
+        "https://www.sfbos.org/sites/default/files/o0126-20.pdf",
+        "https://sfgov.legistar.com/LegislationDetail.aspx?ID=2974444&GUID=9094FC64-BA1F-43EF-99C4-181477D6237D",
+        "https://webapi.legistar.com/v1/sfgov/matters/29638",
+        "https://webapi.legistar.com/v1/sfgov/matters/31789",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201912139539",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202208100237",
+        "https://data.sf.gov/resource/vckc-dh2h.json?reference_number=201912139539",
+        "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2017-008051PRJ",
+        "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2024-008290PRJ",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2024-008290DNX-02",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the exact month construction stopped (Ordinance 01-25 says about 16 months after July 18, 2022)",
+        "whether construction has restarted since March 2025",
+        "the motion number and outcome of the November 2024 large-cap office allocation (record 2024-008290OFA)",
+        "the 2021 site permit's 348 homes and 515 ft 4 in height, against the 333 homes and 520 ft approved"
+      ],
+      "lastVerified": "2026-10-12",
+      "reported": {
+        "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
+        "timeline": [
+          {
+            "date": "2023-08",
+            "event": "Lendlease halts construction, citing market conditions."
+          }
+        ],
+        "sources": [
+          "https://sfyimby.com/2025/03/meeting-tomorrow-for-30-van-ness-avenue-san-francisco.html"
+        ]
+      }
     }
   ]
 }

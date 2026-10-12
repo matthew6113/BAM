@@ -1,0 +1,54 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "30-van-ness",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 0835 lot 004",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%270835004%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "Assessor's Block 0835, Lot 004, the whole of the 30 Van Ness Avenue Special Use District (Ordinance 01-25); Motion 21700 gives the lot as 38,123 sq ft. 0.9 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4192686,
+       37.7763027
+      ],
+      [
+       -122.4187084,
+       37.7763741
+      ],
+      [
+       -122.418613,
+       37.7758981
+      ],
+      [
+       -122.4190637,
+       37.7755421
+      ],
+      [
+       -122.4191149,
+       37.7755356
+      ],
+      [
+       -122.4192686,
+       37.7763027
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
