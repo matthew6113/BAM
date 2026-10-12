@@ -31,6 +31,8 @@ RAW = config.ROOT / "data" / "raw" / "photos"
 OUT = config.ROOT / "public" / "photos"
 API = "https://commons.wikimedia.org/w/api.php"
 WIDTH = 1200
+# Wikimedia serves (and rate-limits less) only its standard thumbnail widths: https://w.wiki/GHai
+THUMB = 1280
 # Wikimedia asks automated clients to identify themselves.
 MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September",
           "October", "November", "December"]
@@ -65,7 +67,7 @@ def commons_info(title: str) -> dict:
     if not cache.exists():
         q = urllib.parse.urlencode({
             "action": "query", "format": "json", "formatversion": "2", "titles": title,
-            "prop": "imageinfo", "iiprop": "url|extmetadata|size|mime", "iiurlwidth": WIDTH,
+            "prop": "imageinfo", "iiprop": "url|extmetadata|size|mime", "iiurlwidth": THUMB,
         })
         RAW.mkdir(parents=True, exist_ok=True)
         cache.write_bytes(get(f"{API}?{q}"))
@@ -103,8 +105,9 @@ def build(photo: dict, allowed: list[str]) -> dict:
     if not author:
         raise SystemExit(f"{photo['id']}: no author on the Commons page")
 
-    # Small originals come straight from the file; large ones from Commons' resized copy.
-    src = info["url"] if info.get("size", 0) < 3_000_000 else (info.get("thumburl") or info["url"])
+    # Originals no wider than the standard thumbnail come straight from the file; others from
+    # Commons' standard-size copy, resized here.
+    src = info["url"] if info.get("width", 0) <= THUMB else (info.get("thumburl") or info["url"])
     raw = RAW / f"{photo['id']}{'.jpg' if src.lower().endswith(('.jpg', '.jpeg')) else '.img'}"
     if not raw.exists():
         raw.write_bytes(get(src))
