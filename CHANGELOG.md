@@ -3,6 +3,29 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-12 (photos: transit and newer sites)
+
+Fourteen more project photos approved by Matthew from `docs/images/candidates-transit.md` and
+`docs/images/candidates-newer-sites.md`, downloaded from Wikimedia Commons (credits in
+`data/CREDITS.md`): the-portal, cahsr-sf-sj, bart-silicon-valley-phase-2, diridon-station, valley-link,
+smart-healdsburg, smart-cloverdale, mission-bay-ferry-landing, berkeley-pier-ferry,
+redwood-city-ferry-terminal, ucsf-parnassus, northgate-san-rafael, bart-station-housing and
+alameda-point-plan.
+
+- **smart-cloverdale:** SMART's stations page still lists the Cloverdale station site as "TBD", so the
+  caption says only "the existing Cloverdale station" and a note says the site is to be determined.
+- **berkeley-pier-ferry:** the recommended Flickr photo ("berkeley pier", eb78) isn't on Commons, so the
+  Commons alternative "Berkeley pier old part 3308" (Amatulic, 2014) is used.
+- **redwood-city-ferry-terminal:** the USACE aerial has no date on Commons or in its file, so it's shown
+  as an undated photo.
+- **alameda-point-plan:** the recommended Seaplane Lagoon aerial is the same Commons file alameda-point
+  already uses, and the next two candidates are Flickr-only, so the next listed Commons candidate is
+  used: the 1995 Navy aerial of Naval Air Station Alameda (public domain), marked as historic.
+- **the-portal:** Commons dates the photo 26 January 2015, although its title says June 2015; the
+  credit uses the Commons date.
+- `docs/images/PERMISSIONS.md` gains the permission contacts from both research files (rows 39-68,
+  with rows 27 and 34 extended) and all 21 of their projects in the per-project checklist.
+
 ## 2026-10-12 (photos)
 
 Four more approved project photos downloaded from Wikimedia Commons: berryessa-flea-market,

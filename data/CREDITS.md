@@ -138,9 +138,9 @@ The license texts ship with the fonts in `public/generated/fonts/`.
 
 ## Project photos (`data/photos.json`, `public/photos/`)
 
-One openly licensed or public-domain photo per project, approved by Matthew on 2026-10-06, all
-from Wikimedia Commons. `make photos` reads each file's author and license from its own Commons
-page, refuses any license outside CC0, public domain, CC BY and CC BY-SA, and copies a 1200 px
+One openly licensed or public-domain photo per project, approved by Matthew on 2026-10-06 and
+2026-10-12, all from Wikimedia Commons. `make photos` reads each file's author and license from its
+own Commons page, refuses any license outside CC0, public domain, CC BY and CC BY-SA, and copies a 1200 px
 version into `public/photos/` (no hotlinking; metadata stripped). The panel shows each photo with
 its credit: author, date taken, license with a link, and "via Wikimedia Commons" with a link to
 the file page. CC BY and CC BY-SA photos are marked "Resized and re-encoded". The resized copies of
@@ -170,6 +170,20 @@ CC BY-SA photos are shared under the same license as the original.
 | concord-naval-weapons-station | Wing | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2015-02-01 | [Commons](https://commons.wikimedia.org/wiki/File:Concord_Naval_Weapons_Station_20150201.jpg) |
 | suisun-expansion | Missvain | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | 2023-09-07 | [Commons](https://commons.wikimedia.org/wiki/File:Wind_turbines_-_September_2023_-_Sarah_Stierch.jpg) |
 | sonoma-developmental-center | Missvain | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | 2022-12-16 | [Commons](https://commons.wikimedia.org/wiki/File:Sonoma_Developmental_Center_-_Demember_2022_-_Sarah_Stierch_01.jpg) |
+| the-portal | RChin | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | 2015-01-26 | [Commons](https://commons.wikimedia.org/wiki/File:Transbay_Transit_Center_construction_from_above,_June_2015.jpg) |
+| cahsr-sf-sj | Pi.1415926535 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2024-04-23 | [Commons](https://commons.wikimedia.org/wiki/File:Caltrain_KISS_set_at_4th_and_King,_April_2024.jpg) |
+| bart-silicon-valley-phase-2 | Pi.1415926535 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | 2017-10-29 | [Commons](https://commons.wikimedia.org/wiki/File:Proposed_BART_yard_site_in_San_Jose,_October_2017.jpg) |
+| diridon-station | Pi.1415926535 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | 2019-11-29 | [Commons](https://commons.wikimedia.org/wiki/File:San_Jose_Diridon_station,_November_2019.JPG) |
+| valley-link | Pi.1415926535 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | 2018-05-10 | [Commons](https://commons.wikimedia.org/wiki/File:Dublin_Pleasanton_station_from_garage,_May_2018.JPG) |
+| smart-healdsburg | Pi.1415926535 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2022-07-21 | [Commons](https://commons.wikimedia.org/wiki/File:NWP_bridge_in_Healdsburg,_July_2022.JPG) |
+| smart-cloverdale | Pi.1415926535 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2022-07-21 | [Commons](https://commons.wikimedia.org/wiki/File:Cloverdale_station_from_the_northeast,_July_2022.JPG) |
+| mission-bay-ferry-landing | Pi.1415926535 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2020-10-04 | [Commons](https://commons.wikimedia.org/wiki/File:Remains_of_SP_freight_pier_off_16th_Street,_October_2020.JPG) |
+| berkeley-pier-ferry | Amatulic | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) | 2014-03-08 | [Commons](https://commons.wikimedia.org/wiki/File:Berkeley_pier_old_part_3308.jpg) |
+| redwood-city-ferry-terminal | U.S. Army Corps of Engineers, photographer not specified or unknown | Public domain | Undated | [Commons](https://commons.wikimedia.org/wiki/File:Redwood_City_port_aerial_view.jpg) |
+| ucsf-parnassus | Alfred Twu | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | 2021-09-21 | [Commons](https://commons.wikimedia.org/wiki/File:University_of_California_San_Francisco_-_Parnassus_campus.jpg) |
+| northgate-san-rafael | Mx. Granger | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | 2014-07-20 | [Commons](https://commons.wikimedia.org/wiki/File:The_Mall_at_Northgate.jpg) |
+| bart-station-housing | Pi.1415926535 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2025-09-27 | [Commons](https://commons.wikimedia.org/wiki/File:TOD_construction_at_Lake_Merritt_station,_September_2025.jpg) |
+| alameda-point-plan | PH2 Bruce Trombecky, USN | Public domain | 1995-07-30 | [Commons](https://commons.wikimedia.org/wiki/File:NAS_Alameda_aerial_view_in_1995.JPEG) |
 
 Approved but not yet downloaded (Wikimedia rate-limited; `make photos` fetches it):
 the-rise.
