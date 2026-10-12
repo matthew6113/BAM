@@ -93,6 +93,9 @@ sites:
 	$(PY) bam_pipeline.sites.bart_station_housing
 	$(PY) bam_pipeline.sites.massing_oceanwide_center
 	$(PY) bam_pipeline.sites.massing_30_van_ness
+	$(PY) bam_pipeline.sites.massing_west_midway_reshap
+	$(PY) bam_pipeline.sites.landuse_alameda_point_plan
+	$(PY) bam_pipeline.sites.massing_alameda_marina
 
 photos:
 	$(PY) bam_pipeline.photos

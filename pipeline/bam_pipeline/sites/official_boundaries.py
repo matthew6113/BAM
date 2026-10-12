@@ -91,6 +91,21 @@ OCEANWIDE_BLKLOTS = [
 # 30 Van Ness: the single lot named in Ordinance 01-25 (Planning Code Section 249.99) and Motion 21700.
 VAN_NESS_30_BLKLOTS = ["0835004"]
 
+# West Midway and RESHAP (Alameda Point): the lots of Tract 8696 "West Midway Large Lot" (final map approved
+# Apr 2025, Legistar matter 14761) inside the block bounded by Pan Am Way, West Midway Avenue, Main Street and
+# West Tower Avenue, as the Alameda County Assessor numbers them after the map recorded (books 74-1385 to 74-1388).
+WEST_MIDWAY_APNS = (
+    [f"74-1385-{n}" for n in range(1, 12)] + ["74-1386-1", "74-1386-2"]
+    + [f"74-1387-{n}" for n in range(1, 6)] + [f"74-1388-{n}" for n in range(1, 6)]
+)
+
+# Encinal Terminals: Ordinance 3312 (Feb 1, 2022) names APNs 072-0382-001, 072-0382-002, 072-0383-003 and
+# 072-0382-009 (the City's 6.4-acre tidelands parcel). The Assessor now splits 072-0383-003 into 72-383-3-1, a
+# strip under the Clement Avenue extension, so it's left out; the other three are the site.
+ENCINAL_APNS = ["72-382-1", "72-382-2", "72-382-9"]
+
+ALAMEDA_ZONING = ("https://services9.arcgis.com/ucDLsG1EwPnOGY4c/arcgis/rest/services/Zoning_v03/FeatureServer/0")
+
 TANFORAN_APNS = [  # Draft EIR p. 53; the vacant lot is 014-311-060 in the NOP and the County layer (014-316-060 in the DEIR)
     "014316080", "014316300", "014316310", "014316360", "014316330", "014311060",
 ]
@@ -268,6 +283,43 @@ SPECS: dict[str, dict] = {
         "accuracy": "official",
         "note": "The Stadium and Arena parcels, about 112 acres.",
         "license": "Alameda County open data (county disclaimer)",
+    },
+    "west-midway-reshap": {
+        "label": "Alameda County parcels",
+        **arcgis(ALCO_PARCELS, f"APN in ({_sql_list(WEST_MIDWAY_APNS)})"),
+        "layer": ("Alameda County Assessor parcels: the 23 lots of Tract 8696 (West Midway Large Lot) between "
+                  "Pan Am Way, West Midway Avenue, Main Street and West Tower Avenue"),
+        "accuracy": "official",
+        "close_m": 30,  # takes in the new internal streets between the lots (Waves and Valor avenues, Orion Street)
+        "note": ("The 26-acre West Midway site and the 8.5-acre RESHAP campus beside it, as the County's parcels of "
+                 "the 2025 final map draw them, closed over the new streets between the lots. The lots alone are "
+                 "about 29.4 acres."),
+        "license": "Alameda County open data (county disclaimer)",
+    },
+    "encinal-terminals": {
+        "label": "Alameda County parcels",
+        **arcgis(ALCO_PARCELS, f"APN in ({_sql_list(ENCINAL_APNS)})"),
+        "layer": "Alameda County Assessor parcels 72-382-1, 72-382-2 and 72-382-9 (1521 and 1527 Buena Vista Avenue)",
+        "accuracy": "approximate",
+        "note": ("The three parcels Ordinance 3312 (2022) names for the Encinal Terminals Master Plan, including the "
+                 "City's 6.4-acre tidelands parcel (72-382-9). They reach out over the wharf and the water's edge, so "
+                 "they cover more than the master plan's 23-acre site; the fourth APN in the ordinance is now a "
+                 "strip under the Clement Avenue extension and is left out."),
+        "license": "Alameda County open data (county disclaimer)",
+    },
+    "alameda-marina": {
+        "label": "City of Alameda zoning",
+        **arcgis(ALAMEDA_ZONING, "zone = 'M-X'"),
+        "url": arcgis(ALAMEDA_ZONING, "zone = 'M-X'")["url"] + "&" + urllib.parse.urlencode(
+            {"geometry": "-122.2471,37.7753", "geometryType": "esriGeometryPoint", "inSR": 4326,
+             "spatialRel": "esriSpatialRelIntersects"}),
+        "layer": ("City of Alameda zoning (Zoning v03), the M-X Mixed Use Planned Development District polygon "
+                  "between Grand Street and Willow Street north of Clement Avenue"),
+        "accuracy": "approximate",
+        "note": ("The Alameda Marina Master Plan's uplands as the City's zoning map draws them (the master plan's "
+                 "27 acres of private uplands and submerged land). The 17 acres of City tidelands in the plan, "
+                 "mostly the 530-slip marina, aren't zoned M-X and aren't drawn."),
+        "license": "City of Alameda ArcGIS Online (no license stated)",
     },
     "brooklyn-basin": {
         "label": "Oakland zoning",
@@ -449,6 +501,8 @@ def build(project: str) -> None:
     geoms = list(utm)
     # Join neighbouring shapes; slivers between adjoining parcels close at 0.5 m.
     site = shapely.union_all(utm.buffer(0.5).to_numpy()).buffer(-0.5)
+    if "close_m" in spec:  # lots of one subdivision, joined over the streets between them
+        site = site.buffer(spec["close_m"], join_style="mitre").buffer(-spec["close_m"], join_style="mitre")
     if "minus" in spec:  # an area the layer takes in but the plan leaves out
         cut = spec["minus"]
         parts = _utm_shapes(fetch(f"{project}-minus", cut))

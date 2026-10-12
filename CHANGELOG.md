@@ -3,6 +3,40 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-12 (Alameda: West Midway and RESHAP, the rest of Alameda Point, Encinal Terminals, Alameda Marina)
+
+Four City of Alameda projects added at Matthew's request ("whatever is going on with Alameda"). Research,
+with the items left out: `docs/official-research/candidates-alameda.md`. Every fact is from City of Alameda
+Legistar records (staff reports, minutes, attachments) and City and County GIS; no press facts were needed, so
+none of the four has a `reported` block. No new hosts were needed. `alameda-point` (Site A) is unchanged.
+
+- **west-midway-reshap** (`infrastructure`): 478 Brookfield/Catellus townhomes and condominiums (West Midway) and
+  RESHAP's 332 supportive and affordable homes on one 34.5-acre block of the Main Street Neighborhood; 324 homes
+  (40%) deed-restricted very low and low income (Dec 2023 staff report). Ordinances 3345–3348 (Sept 5, 2023) and
+  3364 (Mar 19, 2024); Phase A design (284 homes) approved Dec 8, 2025. Demolition is done and RESHAP's site work is
+  nearly complete (City, Aug 2026); West Midway vertical construction aimed at Q1 2027.
+- **alameda-point-plan** (`entitled`, plan-scale): the rest of the former naval air station outside Site A and West
+  Midway/RESHAP, drawn as the City's Alameda Point zoning districts (Main Street Neighborhood, Waterfront Town Center,
+  Adaptive Reuse, Enterprise District, open space). No homes figure: the City's 2026 study of Main Street Neighborhood
+  North (600–1,000 homes, a developer RFQ being weighed) and the October 2025 Navy fee cut (Resolution 16333) are in
+  the notes; Pacific Fusion's 2025 withdrawal from the Enterprise District is in the timeline.
+- **encinal-terminals** (`entitled`): 589 homes (80 affordable), 50,000 sq ft, a 160-slip marina and 4.5 acres of
+  waterfront park on a vacant 23-acre site (Ordinances 3311–3313, Feb 1, 2022). Milestones extended by Ordinance 3379
+  (Jan 21, 2025); a two-year EV storage use permit (Mar 23, 2026) runs to the first site milestone in March 2028.
+- **alameda-marina** (`partial`): 801 homes on the 44-acre marina site (760 in 2018; Ordinance 3351, 2023). The Launch
+  (360) is complete, 182 townhomes are under construction, The Foundry (259) is approved; Ordinance 3406 (July 7, 2026)
+  cut The Foundry's affordable homes from 43 to 21, so 95 affordable homes in all.
+- **Geometry:** boundaries from Alameda County Assessor parcels (West Midway/RESHAP, Encinal Terminals; new entries in
+  `official_boundaries.py`, which gains a `close_m` option to join a subdivision's lots over its streets) and the City
+  of Alameda's zoning GIS (Alameda Marina; the Alameda Point plan area, written by its land-use module). Massing:
+  West Midway's blocks traced from its 2023 Development Plan (40/50 ft) and RESHAP's buildings from its 2023 land use
+  diagram (±50 ft), fitted to the parcels (`massing_west_midway_reshap.py`); Alameda Marina's Launch from OpenStreetMap
+  at 60 ft with the unbuilt phases as lots at 45 and 65 ft (`massing_alameda_marina.py`); Alameda Point land-use zones
+  as published (`landuse_alameda_point_plan.py`). Encinal Terminals has a boundary only (its master plan sets no
+  blocks or designs). All three modules are in `make sites`. Screenshots `docs/screenshots/m4/36`–`39`.
+- Credits: the City of Alameda's zoning layer states no license (open item, `data/CREDITS.md`); the in-map credits
+  now name the City of Alameda.
+
 ## 2026-10-12 (Oceanwide Center and 30 Van Ness added)
 
 Two single-site San Francisco towers added at Matthew's request ("Oceanside center" and 30 Van Ness). Both are

@@ -1,0 +1,126 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "west-midway-reshap",
+  "source": "Alameda County Assessor parcels: the 23 lots of Tract 8696 (West Midway Large Lot) between Pan Am Way, West Midway Avenue, Main Street and West Tower Avenue",
+  "sourceLabel": "Alameda County parcels",
+  "sourceUrl": "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0",
+  "query": "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0/query?where=APN+in+%28%2774-1385-1%27%2C+%2774-1385-2%27%2C+%2774-1385-3%27%2C+%2774-1385-4%27%2C+%2774-1385-5%27%2C+%2774-1385-6%27%2C+%2774-1385-7%27%2C+%2774-1385-8%27%2C+%2774-1385-9%27%2C+%2774-1385-10%27%2C+%2774-1385-11%27%2C+%2774-1386-1%27%2C+%2774-1386-2%27%2C+%2774-1387-1%27%2C+%2774-1387-2%27%2C+%2774-1387-3%27%2C+%2774-1387-4%27%2C+%2774-1387-5%27%2C+%2774-1388-1%27%2C+%2774-1388-2%27%2C+%2774-1388-3%27%2C+%2774-1388-4%27%2C+%2774-1388-5%27%29&outFields=%2A&outSR=4326&f=geojson",
+  "accuracy": "official",
+  "accuracyNote": "The 26-acre West Midway site and the 8.5-acre RESHAP campus beside it, as the County's parcels of the 2025 final map draw them, closed over the new streets between the lots. The lots alone are about 29.4 acres. 34.4 acres as drawn.",
+  "license": "Alameda County open data (county disclaimer)",
+  "features_used": 23
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2946327,
+       37.7828692
+      ],
+      [
+       -122.2948395,
+       37.7828015
+      ],
+      [
+       -122.2981104,
+       37.7829723
+      ],
+      [
+       -122.298158,
+       37.7829909
+      ],
+      [
+       -122.298175,
+       37.7830308
+      ],
+      [
+       -122.2981189,
+       37.7837229
+      ],
+      [
+       -122.2979828,
+       37.7853989
+      ],
+      [
+       -122.2979596,
+       37.7854366
+      ],
+      [
+       -122.2979227,
+       37.7854499
+      ],
+      [
+       -122.297828,
+       37.7854445
+      ],
+      [
+       -122.2975322,
+       37.7853868
+      ],
+      [
+       -122.2973234,
+       37.7853064
+      ],
+      [
+       -122.2969888,
+       37.7851342
+      ],
+      [
+       -122.2967586,
+       37.7850689
+      ],
+      [
+       -122.2965976,
+       37.7850475
+      ],
+      [
+       -122.2915965,
+       37.7847911
+      ],
+      [
+       -122.2915718,
+       37.7826934
+      ],
+      [
+       -122.2915935,
+       37.7826529
+      ],
+      [
+       -122.2916456,
+       37.782638
+      ],
+      [
+       -122.2923822,
+       37.7826757
+      ],
+      [
+       -122.2925167,
+       37.7827094
+      ],
+      [
+       -122.2926524,
+       37.7826895
+      ],
+      [
+       -122.2944386,
+       37.782781
+      ],
+      [
+       -122.2946327,
+       37.7828692
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
