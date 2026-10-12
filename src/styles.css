@@ -362,7 +362,7 @@ body {
 
 .category-tabs .n {
   font-weight: 400;
-  color: color-mix(in srgb, var(--color-panel-text) 60%, transparent);
+  color: color-mix(in srgb, var(--color-panel-text) 66%, transparent);
 }
 
 .project-index .search input {
@@ -412,7 +412,7 @@ body {
 }
 
 .stage-toggle .n {
-  color: color-mix(in srgb, var(--color-panel-text) 60%, transparent);
+  color: color-mix(in srgb, var(--color-panel-text) 66%, transparent);
 }
 
 .stage-toggle[aria-pressed='false'] {
@@ -451,7 +451,7 @@ body {
 
 .project-index .where {
   font-size: 12px;
-  color: color-mix(in srgb, var(--color-panel-text) 60%, transparent);
+  color: color-mix(in srgb, var(--color-panel-text) 66%, transparent);
 }
 
 .project-index .clear {
