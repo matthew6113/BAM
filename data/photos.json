@@ -297,23 +297,63 @@
     {
       "id": "berryessa-flea-market",
       "file": "File:Berryessa_Flea_Market_from_new_BART_station.jpg",
-      "caption": "The flea market, seen from the Berryessa BART station."
+      "caption": "The flea market, seen from the Berryessa BART station.",
+      "page": "https://commons.wikimedia.org/wiki/File:Berryessa_Flea_Market_from_new_BART_station.jpg",
+      "author": "Dicklyon",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "taken": "2020-06-13",
+      "src": "photos/berryessa-flea-market.jpg",
+      "width": 1200,
+      "height": 900,
+      "sha256": "b6ad185cfda713ced53522c1e560495b8c3d36a57d64de989080ce80f0912edb",
+      "modified": "Resized and re-encoded"
     },
     {
       "id": "concord-naval-weapons-station",
       "file": "File:Concord_Naval_Weapons_Station_20150201.jpg",
       "caption": "The Inland Area's grid of ammunition bunkers from the air.",
-      "note": "Older photo."
+      "note": "Older photo.",
+      "page": "https://commons.wikimedia.org/wiki/File:Concord_Naval_Weapons_Station_20150201.jpg",
+      "author": "Wing",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "taken": "2015-02-01",
+      "src": "photos/concord-naval-weapons-station.jpg",
+      "width": 1200,
+      "height": 800,
+      "sha256": "e59c0c6900281fd878ef7256da6201803665cd54771f0cf2f82e008e957cda8e",
+      "modified": "Resized and re-encoded"
     },
     {
       "id": "suisun-expansion",
       "file": "File:Wind_turbines_-_September_2023_-_Sarah_Stierch.jpg",
-      "caption": "Dry grassland and wind turbines near Birds Landing, near the site."
+      "caption": "Dry grassland and wind turbines near Birds Landing, near the site.",
+      "page": "https://commons.wikimedia.org/wiki/File:Wind_turbines_-_September_2023_-_Sarah_Stierch.jpg",
+      "author": "Missvain",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "taken": "2023-09-07",
+      "src": "photos/suisun-expansion.jpg",
+      "width": 1200,
+      "height": 900,
+      "sha256": "de276e6a2f0e2286468a96af8a57c3e46d1fa588985d7302b30ae3dbd717beb6",
+      "modified": "Resized and re-encoded"
     },
     {
       "id": "sonoma-developmental-center",
       "file": "File:Sonoma_Developmental_Center_-_Demember_2022_-_Sarah_Stierch_01.jpg",
-      "caption": "The Sonoma Developmental Center campus, seen from a hillside to the west."
+      "caption": "The Sonoma Developmental Center campus, seen from a hillside to the west.",
+      "page": "https://commons.wikimedia.org/wiki/File:Sonoma_Developmental_Center_-_Demember_2022_-_Sarah_Stierch_01.jpg",
+      "author": "Missvain",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "taken": "2022-12-16",
+      "src": "photos/sonoma-developmental-center.jpg",
+      "width": 1200,
+      "height": 900,
+      "sha256": "b6bdd2a93c5b0f5abeeee0571a37ef3af9831108e470b965f61ac142c4b231f9",
+      "modified": "Resized and re-encoded"
     }
   ]
 }

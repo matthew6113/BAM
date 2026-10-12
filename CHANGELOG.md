@@ -3,6 +3,12 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-12 (photos)
+
+Four more approved project photos downloaded from Wikimedia Commons: berryessa-flea-market,
+concord-naval-weapons-station, suisun-expansion and sonoma-developmental-center (credits in
+`data/CREDITS.md`). The Rise's is still pending (Wikimedia rate limits).
+
 ## 2026-10-12 (New ferry terminals: Mission Bay, Berkeley, Redwood City)
 
 Three new ferry terminals added at Matthew's request ("please check for upcoming ferry terminals, and add as

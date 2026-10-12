@@ -166,9 +166,13 @@ CC BY-SA photos are shared under the same license as the original.
 | willow-village | EspartacoPalma | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2015-04-03 | [Commons](https://commons.wikimedia.org/wiki/File:Menlo_Science_%26_Technology_Park_entrance.jpg) |
 | downtown-west | 94rain | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2023-06-17 | [Commons](https://commons.wikimedia.org/wiki/File:Montgomery_Street,_Near_the_San_Jose_Diridon_Station,_Jun_17,_2023_-_52.jpg) |
 | moffett-park | Grendelkhan | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2018-06-27 | [Commons](https://commons.wikimedia.org/wiki/File:Google_Moffett_Place_offices_from_the_air.jpg) |
+| berryessa-flea-market | Dicklyon | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2020-06-13 | [Commons](https://commons.wikimedia.org/wiki/File:Berryessa_Flea_Market_from_new_BART_station.jpg) |
+| concord-naval-weapons-station | Wing | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2015-02-01 | [Commons](https://commons.wikimedia.org/wiki/File:Concord_Naval_Weapons_Station_20150201.jpg) |
+| suisun-expansion | Missvain | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | 2023-09-07 | [Commons](https://commons.wikimedia.org/wiki/File:Wind_turbines_-_September_2023_-_Sarah_Stierch.jpg) |
+| sonoma-developmental-center | Missvain | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) | 2022-12-16 | [Commons](https://commons.wikimedia.org/wiki/File:Sonoma_Developmental_Center_-_Demember_2022_-_Sarah_Stierch_01.jpg) |
 
-Approved but not yet downloaded (Wikimedia rate-limited this run; `make photos` fetches them):
-the-rise, berryessa-flea-market, concord-naval-weapons-station, suisun-expansion, sonoma-developmental-center.
+Approved but not yet downloaded (Wikimedia rate-limited; `make photos` fetches it):
+the-rise.
 
 ## Renderings
 
