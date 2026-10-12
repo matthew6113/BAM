@@ -35,6 +35,21 @@
   box-sizing: border-box;
 }
 
+/* The page runs edge to edge (viewport-fit=cover), so anything pinned to an edge keeps clear of
+   the notch, rounded corners and home indicator: zero everywhere but a phone that has them. */
+:root {
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+}
+
+html {
+  /* iOS Safari enlarges text when a phone turns to landscape unless told not to; zoom still works. */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 html,
 body,
 #app {
@@ -73,8 +88,8 @@ body {
 
 .title {
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: calc(16px + var(--safe-top));
+  left: calc(16px + var(--safe-left));
   pointer-events: none;
   z-index: 2;
 }
@@ -128,15 +143,15 @@ body {
 }
 
 .skip-link:focus {
-  left: 16px;
+  left: calc(16px + var(--safe-left));
 }
 
 /* ---------------------------------------------------------------- controls */
 
 .controls {
   position: absolute;
-  right: 16px;
-  bottom: 28px;
+  right: calc(16px + var(--safe-right));
+  bottom: calc(28px + var(--safe-bottom));
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -221,9 +236,9 @@ body {
 
 .credits {
   position: absolute;
-  left: 12px;
-  bottom: 10px;
-  max-width: min(520px, calc(100% - 140px));
+  left: calc(12px + var(--safe-left));
+  bottom: calc(10px + var(--safe-bottom));
+  max-width: min(520px, calc(100% - 140px - var(--safe-left) - var(--safe-right)));
   z-index: 2;
   font-size: 11px;
   color: var(--color-labels);
@@ -426,6 +441,14 @@ body {
   color: var(--color-panel-text);
 }
 
+/* iOS Safari zooms the whole page into a field set under 16 px when it takes focus. */
+@media (pointer: coarse) {
+  .project-index .search input,
+  .project-index .subregion select {
+    font-size: 16px;
+  }
+}
+
 .project-index .where {
   font-size: 12px;
   color: color-mix(in srgb, var(--color-panel-text) 60%, transparent);
@@ -546,7 +569,7 @@ body {
   z-index: 3;
   background: var(--color-panel-background);
   border-left: 1px solid var(--color-panel-rule);
-  padding: 18px 22px 28px;
+  padding: calc(18px + var(--safe-top)) calc(22px + var(--safe-right)) calc(28px + var(--safe-bottom)) 22px;
   animation: panel-in 320ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 
@@ -938,7 +961,7 @@ body {
   }
 
   .with-about .controls {
-    right: 10px;
+    right: calc(10px + var(--safe-right));
   }
 
   .with-about .style-toggle {
@@ -1132,13 +1155,13 @@ body {
 
 @media (max-width: 640px) {
   .title {
-    top: 12px;
-    left: 12px;
+    top: calc(12px + var(--safe-top));
+    left: calc(12px + var(--safe-left));
   }
 
   .controls {
-    right: 10px;
-    bottom: 40px;
+    right: calc(10px + var(--safe-right));
+    bottom: calc(40px + var(--safe-bottom));
   }
 
   .style-panel {
@@ -1164,7 +1187,7 @@ body {
     border-left: 0;
     border-top: 1px solid var(--color-panel-rule);
     box-shadow: 0 -2px 10px color-mix(in srgb, var(--color-panel-text) 10%, transparent);
-    padding: 14px 16px calc(24px + env(safe-area-inset-bottom));
+    padding: 14px calc(16px + var(--safe-right)) calc(24px + var(--safe-bottom)) calc(16px + var(--safe-left));
     animation-name: sheet-in;
   }
 
@@ -1180,7 +1203,7 @@ body {
   }
 
   .with-project .controls {
-    right: 10px;
+    right: calc(10px + var(--safe-right));
     bottom: calc(50% + 12px);
   }
 
