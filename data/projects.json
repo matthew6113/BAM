@@ -6189,6 +6189,332 @@
         "the master plan ordinance's number and final passage date (July 2018)"
       ],
       "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "mission-bay-ferry-landing",
+      "name": "Mission Bay Ferry Landing",
+      "aliases": [
+        "Mission Bay Ferry Landing and Water Taxi Landing",
+        "MBFL",
+        "16th Street ferry landing"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "approxCenter": [
+        -122.3852,
+        37.7667
+      ],
+      "camera": {
+        "center": [
+          -122.3858,
+          37.7668
+        ],
+        "zoom": 15.7,
+        "pitch": 50,
+        "bearing": -25
+      },
+      "acres": null,
+      "acresNote": "A ferry landing, not a development site. The Final Mitigated Negative Declaration lists the Port lots 9900/064 and 9900/064H with a lot size of 153,257 sq ft (cover page); the landing itself is a pier of about 108 by 22 ft, a 26 by 22 ft connecting ramp, an 85 by 10 ft gangway and a 135 by 42 ft float (Table 1, p. 5).",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Transit infrastructure; the housing and commercial fields don't apply. A single-float, two-berth ferry landing in the Bay at Terry A. Francois Boulevard, about 100 ft south of 16th Street, with a covered pier, gangway, guide and fender piles, a Ferry Landing Plaza, improvements to Agua Vista Park and connections to the emergency firefighting water system. The Port says it can handle up to 6,000 passengers a day (May 2025). San Francisco Bay Ferry (WETA) is building the float as an electric charging float for battery-electric ferries; service is planned to the Downtown San Francisco Ferry Building, with special-event service to Chase Center. Phase 2B construction contract: $33,018,200 (plus a $3,301,820 contingency), funded by Port capital ($640,000), the 2012 GO bond ($2 million), the SFPUC ($4 million), a UCSF grant ($2.5 million), the SF sales tax ($4.5 million), Regional Measure 3 ($13.86 million) and an EPA grant ($5,518,200). The Board of Supervisors says the SFCTA's $4.5 million grant leverages more than $75.8 million from other local, state and federal sources for the landing. WETA's FY2026/27 capital budget carries $39.1 million for its Mission Bay electrification project."
+      },
+      "developer": "Port of San Francisco (project sponsor; San Francisco Public Works manages construction) with the San Francisco Bay Area Water Emergency Transportation Authority (WETA, San Francisco Bay Ferry; the float)",
+      "publicPartners": [
+        "Port of San Francisco",
+        "San Francisco Bay Area Water Emergency Transportation Authority (WETA)",
+        "San Francisco Public Works",
+        "San Francisco Planning Department (CEQA lead agency)",
+        "San Francisco County Transportation Authority (sales tax grant)",
+        "San Francisco Public Utilities Commission",
+        "Metropolitan Transportation Commission (Regional Measure 3)",
+        "U.S. Environmental Protection Agency (Clean Ports grant)"
+      ],
+      "stage": "infrastructure",
+      "stageNote": "Site work and contracts, before the landing itself is built. The Planning Department cleared the project with a mitigated negative declaration in 2018 (with a 2019 addendum and an April 2026 memorandum to file), and the BCDC, Army Corps, Water Board and wildlife permits are in hand. Dredging and site preparation (Phase 1) were finished in 2020, and the Port put marine demolition and an erosion-protection mattress (Phase 2a) out to bid in 2025. On July 23, 2026 the Public Works Commission awarded the $33 million contract for the landing, plaza and Agua Vista Park (Phase 2B), with construction expected to start in August 2026 and finish in May 2028. WETA is designing the charging float, which it will fabricate and install.",
+      "timeline": [
+        {
+          "date": "2016-11",
+          "event": "The Port Commission awards the design contract to the COWI/OLMM Joint Venture (Resolution 16-44)."
+        },
+        {
+          "date": "2016-12",
+          "event": "The Port Commission adopts a memorandum of understanding with WETA for planning and design (Resolution 16-46)."
+        },
+        {
+          "date": "2018-06-18",
+          "event": "The Planning Department issues the Final Mitigated Negative Declaration (Case 2017-008824ENV; notice of determination July 6, 2018)."
+        },
+        {
+          "date": "2019-06-04",
+          "event": "The Planning Department issues an addendum to the mitigated negative declaration."
+        },
+        {
+          "date": "2019-12-17",
+          "event": "BCDC issues Permit No. 2017.008.00."
+        },
+        {
+          "date": "2020-04",
+          "event": "The Port Commission authorizes the Phase 1 dredging and site preparation contract with The Dutra Group (up to $13.1 million); the work is completed in 2020."
+        },
+        {
+          "date": "2025-03",
+          "event": "The Port Commission adopts a new memorandum of understanding with WETA covering design and construction (Resolution 25-14)."
+        },
+        {
+          "date": "2025-05",
+          "event": "Port staff ask the Port Commission to award the Phase 2a marine demolition and mattress contract to Vortex Marine Construction ($13,114,750)."
+        },
+        {
+          "date": "2026-04-30",
+          "event": "The Planning Department issues a memorandum to file on the mitigated negative declaration."
+        },
+        {
+          "date": "2026-06-09",
+          "event": "The Port Commission authorizes San Francisco Public Works to advertise, award and oversee Phase 2B, with a budget of up to $41 million."
+        },
+        {
+          "date": "2026-07-14",
+          "event": "The Board of Supervisors lets the Port accept a $4.5 million SFCTA grant for construction (Resolution 404-26) and extends the design contract to June 30, 2028 (Resolution 399-26)."
+        },
+        {
+          "date": "2026-07-23",
+          "event": "The Public Works Commission awards the Phase 2B and Agua Vista Park contract to McGuire and Hester - Power Engineering Construction Company JV ($33,018,200)."
+        }
+      ],
+      "nextMilestone": "Construction of the landing, plaza and park, expected from August 2026 to substantial completion in March 2028 and final completion in May 2028 (Public Works). WETA plans to issue its request for proposals to build the charging float in January 2027, and expects Mission Bay electric ferry service in November 2028.",
+      "summary": "A new two-berth ferry landing at the foot of 16th Street, by Chase Center and UCSF, built by the Port with San Francisco Bay Ferry's first electric charging float. Its environmental review and permits are done, the $33 million construction contract was awarded in July 2026, and service is planned for 2028.",
+      "massingNotes": "Added 2026-10-12 (Matthew: \"please check for upcoming ferry terminals\"). Boundary: DataSF parcels, the two Port lots named in the Final MND (9900/064 and 9900/064H); in the parcel map lot 064 also covers the water around the old Pier 64 north of the landing, so the site drawn (6.8 acres) is about twice the MND's lot size. No massing: the landing is a pier, gangway and float on the water.",
+      "officialLinks": [
+        "https://www.sfbayferry.com/project/mission-bay-ferry-landing/",
+        "https://sfmea.sfplanning.org/Mission%20Bay%20Ferry_Final%20MND_061818.pdf"
+      ],
+      "sources": [
+        "https://sfmea.sfplanning.org/Mission%20Bay%20Ferry_Final%20MND_061818.pdf",
+        "https://ceqanet.lci.ca.gov/Project/2018052002",
+        "https://www.sfport.com/media/10211/download",
+        "https://www.sfport.com/media/10448/download",
+        "https://www.sfport.com/media/10449/download",
+        "https://sfpublicworks.org/sites/default/files/Commissions/July%2023%2C%202026/Item%206_PWC%20Mission%20Bay%20Ferry%20SR%20Reso%20award%202026-7-23%20v722.pdf",
+        "https://sfpublicworks.org/sites/default/files/Commissions/July%2023%2C%202026/Resolution%207-23-2026/PWC%20Resolution%202026-0068%20Mission%20Bay%20Ferry%20Award%202026-7-23.pdf",
+        "https://media.api.sf.gov/documents/r0404-26.pdf",
+        "https://media.api.sf.gov/documents/r0399-26.pdf",
+        "https://www.sfbayferry.com/project/mission-bay-ferry-landing/",
+        "https://d262kwcyxl71on.cloudfront.net/wp-content/uploads/20260921171636/b9252026aFULLLink.pdf",
+        "https://d262kwcyxl71on.cloudfront.net/wp-content/uploads/20260612202624/FY2027-Final-Budget.pdf",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "whether the Public Works contract has its notice to proceed and work has started on the water (expected August 2026); the commission's signed resolution number is hard to read (the file name says 2026-0068)",
+        "whether the Port Commission adopted the Phase 2a award (Resolution 25-26) and whether that marine demolition is finished; WETA's September 2026 report says only that pre-construction work is complete",
+        "the total project cost: the Board of Supervisors cites the $4.5 million SFCTA grant plus more than $75.8 million from other sources, while the Port's June 2026 authorization caps Phase 2B at $41 million and WETA carries $39.1 million for its part",
+        "whether the water taxi landing in the 2018 MND is still part of the project; the 2026 contract doesn't mention it"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "berkeley-pier-ferry",
+      "name": "Berkeley Pier and ferry terminal",
+      "aliases": [
+        "Berkeley Water Transportation Pier Ferry Project",
+        "BWTPF",
+        "Berkeley Pier with Ferry Access Project",
+        "Berkeley Ferry Project"
+      ],
+      "city": "Berkeley",
+      "county": "Alameda",
+      "subregion": "East Bay",
+      "approxCenter": [
+        -122.3155,
+        37.8655
+      ],
+      "acres": 195.6,
+      "acresNote": "CEQAnet's record for the Draft EIR gives 195.6 total acres (Feb 26, 2026): the pier, breakwater and floats, the dredged approach channel along the closed pier, the plaza, Seawall Drive and its parking lot, and University Avenue to Frontage Road.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Transit and recreation infrastructure; the housing and commercial fields don't apply. Replaces the Berkeley Municipal Pier, closed since July 2015, with a new public pier up to 1,080 ft long and 22 ft wide on the same alignment, a breakwater of about 400 by 15 ft, two 135 by 42 ft ferry floats built as universal charging floats for electric ferries (one float and gangway in the first phase), a public plaza with a restroom, a Bay Trail extension, a rebuilt Seawall Drive parking lot, a raised cycle track and bus stops on University Avenue, and dredging (Draft EIR, pp. 2-4 to 2-12). It would start zero-emission ferry service from Berkeley to San Francisco, which WETA projects at over 1,000 average weekday passengers. Cost: $105.8 million for the whole project at 60% design (City, Sept 2026); WETA's June 2026 fact sheet gives $104 million, $79 million for the pier and terminal and $25 million for the plaza and landside work. About $11 million is secured for design and environmental review (State Coastal Conservancy $2.96 million, Alameda CTC $5.139 million, WETA up to $3 million of Regional Measure 3); construction funding hasn't been identified. Plan Bay Area 2050+ lists the Berkeley-San Francisco service with a new terminal at $124 million capital, opening 2025-2035."
+      },
+      "developer": "City of Berkeley (lead agency; Parks, Recreation and Waterfront Department) with the San Francisco Bay Area Water Emergency Transportation Authority (WETA, San Francisco Bay Ferry)",
+      "publicPartners": [
+        "City of Berkeley",
+        "San Francisco Bay Area Water Emergency Transportation Authority (WETA)",
+        "Alameda County Transportation Commission (design and environmental grant)",
+        "California State Coastal Conservancy (design and environmental grant)",
+        "Metropolitan Transportation Commission (Regional Measure 3)",
+        "San Francisco Bay Conservation and Development Commission (permit; responsible agency)"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In environmental review and design. The City published the Draft EIR on Feb 27, 2026 and its review closed on April 28, 2026; the Final EIR is expected to go to the City Council in fall 2026. The Governor has certified the project for streamlined judicial review (SB 149). Design reached 60% in spring 2026 and 90% is due in fall 2026; the design and environmental phase runs into 2027. No construction money has been found yet, and the City is applying for up to $25 million of Regional Measure 3 funds for the landside work.",
+      "timeline": [
+        {
+          "date": "2015-07",
+          "event": "The City closes the Berkeley Pier for structural problems."
+        },
+        {
+          "date": "2019-03-12",
+          "event": "The City Council approves a memorandum of understanding with WETA to study rebuilding the pier for ferry service (Resolution 68,782)."
+        },
+        {
+          "date": "2021-12-07",
+          "event": "The feasibility study's preferred concept is presented to the City Council."
+        },
+        {
+          "date": "2023-07-11",
+          "event": "The City accepts a $5.139 million Alameda CTC grant for environmental review and permitting (Resolution 70,950)."
+        },
+        {
+          "date": "2024-05-14",
+          "event": "The City and WETA amend their memorandum of understanding; WETA adds up to $3 million of Regional Measure 3 funds (Resolution 71,325)."
+        },
+        {
+          "date": "2025-04-18",
+          "event": "The City issues the notice of preparation of an EIR (SCH 2025040995)."
+        },
+        {
+          "date": "2026-02-27",
+          "event": "The City publishes the Draft EIR; the review period runs to April 28, 2026."
+        },
+        {
+          "date": "2026-09-15",
+          "event": "The City Council authorizes an application for up to $25 million of Regional Measure 3 Safe Routes to Transit and Bay Trail funds for the landside work."
+        }
+      ],
+      "nextMilestone": "The Final EIR and project approval at the City Council, expected in fall 2026; 90% design in fall 2026; permits from BCDC, the Army Corps and other agencies before any construction.",
+      "summary": "A new public pier and ferry terminal at the foot of University Avenue, replacing the Berkeley Pier that closed in 2015, with a breakwater, charging floats for electric ferries to San Francisco and a new waterfront plaza. Its Draft EIR came out in February 2026; the roughly $106 million project has no construction funding yet.",
+      "massingNotes": "Added 2026-10-12 (Matthew: \"please check for upcoming ferry terminals\"). Boundary traced from the Draft EIR's Figure 2-2, Project Site Location (PDF p. 54): the main frame placed by its scale bar and the University Avenue roundabout (OpenStreetMap streets agree to about 5 m), the outer dredged channel from the figure's inset fitted to it (trimmed RMS about 4.5 m); 186 acres as drawn against CEQAnet's 195.6 (pipeline/bam_pipeline/sites/boundary_berkeley_pier_ferry.py). No massing: the pier, breakwater and floats are low structures on the water.",
+      "officialLinks": [
+        "https://berkeleyca.gov/node/9711",
+        "https://www.sfbayferry.com/project/berkeley-ferry-project/"
+      ],
+      "sources": [
+        "https://berkeleyca.gov/node/9711",
+        "https://ceqanet.lci.ca.gov/Project/2025040995",
+        "https://ceqanet.lci.ca.gov/2025040995/2",
+        "https://ceqanet.lci.ca.gov/2025040995/2/Attachment/-QKY5z",
+        "https://ceqanet.lci.ca.gov/2025040995/2/Attachment/LX2HZH",
+        "https://berkeleyca.gov/sites/default/files/2026-09-15%20Item%2012%20Grant%20Application%20Safe%20Routes.pdf",
+        "https://www.sfbayferry.com/project/berkeley-ferry-project/",
+        "https://d262kwcyxl71on.cloudfront.net/wp-content/uploads/20260625163056/Berkeley-Pier-Terminal-Project-Fact-Sheet_Final.pdf",
+        "https://d262kwcyxl71on.cloudfront.net/wp-content/uploads/20260921171636/b9252026aFULLLink.pdf",
+        "https://d262kwcyxl71on.cloudfront.net/wp-content/uploads/20260612202624/FY2027-Final-Budget.pdf",
+        "https://planbayarea.org/sites/default/files/documents/2026-04/Final_Plan_Bay_Area_2050_Plus_Transportation_Project_List_Report.pdf"
+      ],
+      "verify": [
+        "the cost: $105.8 million at 60% design (City, Sept 15, 2026) against $104 million in WETA's June 2026 fact sheet",
+        "the Draft EIR review period: the first notice of availability gave 45 days, to April 13, 2026; a revised notice extended it, and the City now says the review closed on April 28, 2026",
+        "the Final EIR certification and project approval, expected at the City Council in fall 2026"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "redwood-city-ferry-terminal",
+      "name": "Redwood City ferry terminal",
+      "aliases": [
+        "Port of Redwood City Ferry Terminal Project",
+        "Redwood City Ferry Project"
+      ],
+      "city": "Redwood City",
+      "county": "San Mateo",
+      "subregion": "Peninsula",
+      "approxCenter": [
+        -122.2047,
+        37.5169
+      ],
+      "camera": {
+        "center": [
+          -122.2044,
+          37.5162
+        ],
+        "zoom": 15.4,
+        "pitch": 50,
+        "bearing": -15
+      },
+      "acres": 9.2,
+      "acresNote": "The 9.2-acre Port parcel (APN 054-300-380) at the confluence of Redwood Creek and Westpoint Slough (Draft EIR notice of availability, Sept 2026). Road, rail and Bay Trail work along Seaport Boulevard lies outside it, and the float extends into Redwood Creek.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Transit infrastructure; the housing and commercial fields don't apply. A pile-supported float with berths for two ferries, a gangway and access pier, a parking lot with transit stops, a Bay Trail extension and widening of Seaport Boulevard, with the site raised from about 10 to 17 ft NAVD for sea level rise. San Francisco Bay Ferry would run two routes with 320-passenger vessels, to the San Francisco Ferry Terminal (about 61 minutes) and Oakland's Jack London Square (about 71 minutes), starting with 3 to 4 weekday peak trips each way. The project also rezones the site from General Industrial to General Commercial for future visitor-serving uses: a hotel of up to three stories and 180,000 sq ft (CEQAnet: 100-200 rooms), up to 20,000 sq ft of restaurants and up to 10,000 sq ft of office (Draft EIR, p. ES-7). Plan Bay Area 2050+ lists the Oakland-Redwood City service with a new terminal at $78 million capital, opening 2036-2050. The San Mateo County Transportation Authority funds the environmental review."
+      },
+      "developer": "Port of Redwood City (lead agency and project applicant) with the San Francisco Bay Area Water Emergency Transportation Authority (WETA, San Francisco Bay Ferry; operator and responsible agency)",
+      "publicPartners": [
+        "Port of Redwood City",
+        "San Francisco Bay Area Water Emergency Transportation Authority (WETA)",
+        "City of Redwood City (rezoning)",
+        "San Mateo County Transportation Authority (environmental review funding)",
+        "San Francisco Bay Conservation and Development Commission (Seaport Plan amendment)"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In environmental review. The Port issued a notice of preparation in April 2024 and published the Draft EIR on Sept 17, 2026, with comments due Nov 2, 2026. Approval also needs a City of Redwood City rezoning and a BCDC Seaport Plan amendment. The Draft EIR assumes about four years of construction starting in 2027: nine months to raise the site, then about 15 months for the terminal and access, with the visitor-serving uses after.",
+      "timeline": [
+        {
+          "date": "2024-04-30",
+          "event": "The Port of Redwood City files a notice of preparation of an EIR with an initial study (SCH 2024041306)."
+        },
+        {
+          "date": "2024-05-15",
+          "event": "The Port holds the public scoping meeting."
+        },
+        {
+          "date": "2024-07-28",
+          "event": "San Francisco Bay Ferry and the Port begin a pilot of Sunday ferry service from a Port dock to Giants games."
+        },
+        {
+          "date": "2026-09-17",
+          "event": "The Port publishes the Draft EIR for a 45-day review."
+        },
+        {
+          "date": "2026-10-07",
+          "event": "The Port holds a public meeting on the Draft EIR."
+        }
+      ],
+      "nextMilestone": "Comments on the Draft EIR are due Nov 2, 2026; then a Final EIR and decisions by the Port, the City of Redwood City (rezoning) and BCDC (Seaport Plan amendment).",
+      "summary": "A new ferry terminal at the Port of Redwood City, with two berths for San Francisco Bay Ferry boats to San Francisco and Oakland, a parking lot and Bay Trail link, and room for a future hotel and restaurants. Its Draft EIR came out in September 2026; construction could start in 2027.",
+      "massingNotes": "Added 2026-10-12 (Matthew: \"please check for upcoming ferry terminals\"). Boundary: County of San Mateo parcels, APN 054-300-380, the parcel the Draft EIR names (9.4 acres as drawn against 9.2). No massing: the hotel and restaurant uses are a rezoning allowance with no design yet, and the terminal is a float, gangway and pier.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/Project/2024041306",
+        "https://www.sfbayferry.com/project/redwood-city-ferry-study/"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/Project/2024041306",
+        "https://ceqanet.lci.ca.gov/2024041306/2",
+        "https://ceqanet.lci.ca.gov/2024041306/2/Attachment/L59I-_",
+        "https://ceqanet.lci.ca.gov/2024041306/2/Attachment/e0miq4",
+        "https://www.sfbayferry.com/project/redwood-city-ferry-study/",
+        "https://www.sfbayferry.com/our-ferry-future/",
+        "https://d262kwcyxl71on.cloudfront.net/wp-content/uploads/20260921171636/b9252026aFULLLink.pdf",
+        "https://d262kwcyxl71on.cloudfront.net/wp-content/uploads/20260612202624/FY2027-Final-Budget.pdf",
+        "https://planbayarea.org/sites/default/files/documents/2026-04/Final_Plan_Bay_Area_2050_Plus_Transportation_Project_List_Report.pdf",
+        "https://data.smcgov.org/d/nr6j-72z7"
+      ],
+      "verify": [
+        "the end of the comment period: the notice of availability says Nov 2, 2026 (45 days from Sept 17); CEQAnet lists Sept 23 to Nov 9, 2026",
+        "a cost for the terminal itself: the Draft EIR gives none; Plan Bay Area 2050+'s $78 million covers the Oakland-Redwood City service with the terminal",
+        "the opening date: the Draft EIR puts construction from 2027, while Plan Bay Area 2050+ lists the service for 2036-2050",
+        "the 2024 pilot start date, which comes from WETA's news page title (July 28, 2024)"
+      ],
+      "lastVerified": "2026-10-12"
     }
   ]
 }

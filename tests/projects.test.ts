@@ -228,6 +228,8 @@ describe('official sources', () => {
     expect(isOfficialSource('https://webapi.legistar.com/v1/someoneelse/matters/1')).toBe(false);
     expect(isOfficialSource('https://storage.googleapis.com/proudcity/solanocountylafcoca/2026/08/x.pdf')).toBe(true);
     expect(isOfficialSource('https://storage.googleapis.com/someoneelse/x.pdf')).toBe(false);
+    expect(isOfficialSource('https://d262kwcyxl71on.cloudfront.net/wp-content/uploads/20260921171636/x.pdf')).toBe(true);
+    expect(isOfficialSource('https://d1234567890abc.cloudfront.net/wp-content/uploads/x.pdf')).toBe(false);
     expect(isOfficialSource('https://sfyimby.com/2026/02/x.html')).toBe(false);
     expect(isOfficialSource('https://www.sfchronicle.com/x')).toBe(false);
     expect(isOfficialSource('https://sfplanning.org.example.com/x')).toBe(false);

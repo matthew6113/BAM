@@ -71,6 +71,10 @@ const OFFICIAL_HOSTS = [
   // SMART's northern extensions (Matthew, 2026-10-07: approved)
   'sonomamarintrain.org', // Sonoma-Marin Area Rail Transit District (board packets, project pages, plans)
   'planbayarea.org', // MTC/ABAG's Plan Bay Area site (adopted plan documents)
+  // Ferry terminals (2026-10-12; proof in docs/official-research/candidates-ferry-terminals.md)
+  'sfbayferry.com', // San Francisco Bay Area Water Emergency Transportation Authority (WETA), which runs San Francisco Bay Ferry
+  'sanfranciscobayferry.com', // WETA's former domain, now redirecting to sfbayferry.com; cited in the agencies' EIRs
+  'sfpublicworks.org', // San Francisco Public Works (linked from sf.gov); its Commission awards the Mission Bay landing contract
 ];
 
 /** Shared vendor hosts, accepted only under an agency's own path. */
@@ -105,6 +109,9 @@ const OFFICIAL_PREFIXES = [
   // BART (SF Bay Area Rapid Transit District): its AB 2923 parcel and TOD Work Plan service, linked from
   // bart.gov/about/business/tod/ab2923; the organisation's items are owned by a bart.gov account.
   'services.arcgis.com/sqs7rnuf1bqinj5n/',
+  // WETA's document store: the CloudFront distribution behind sfbayferry.com's WordPress uploads, linked from
+  // its Board Meetings page (board packets, budgets, project fact sheets).
+  'd262kwcyxl71on.cloudfront.net/wp-content/uploads/',
 ];
 
 export function isOfficialSource(url: string): boolean {

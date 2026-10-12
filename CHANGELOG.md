@@ -3,6 +3,33 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-12 (New ferry terminals: Mission Bay, Berkeley, Redwood City)
+
+Three new ferry terminals added at Matthew's request ("please check for upcoming ferry terminals, and add as
+applicable"). Survey, with the terminals left out (Harbor Bay's planned replacement, the Vallejo reconfiguration,
+Larkspur's expansion, Treasure Island and other electrification work, Carquinez Strait ideas, finished terminals):
+`docs/official-research/candidates-ferry-terminals.md`. Each is its own project (different lead agencies, stages
+and CEQA records), not a program. No press facts were needed, so none has a `reported` block.
+
+- **mission-bay-ferry-landing** (`infrastructure`): a two-berth landing at Terry A. Francois Boulevard and 16th
+  Street. Final MND June 18, 2018 (Case 2017-008824ENV), permits 2019-2025, Phase 1 dredging finished 2020. On July
+  23, 2026 the Public Works Commission awarded the $33,018,200 Phase 2B contract (landing, plaza, Agua Vista Park);
+  construction expected August 2026 to May 2028. WETA builds the charging float and expects electric service in
+  November 2028.
+- **berkeley-pier-ferry** (`entitlement`): the City of Berkeley's new 1,080-ft public pier, breakwater and ferry
+  terminal replacing the pier closed in 2015. Draft EIR Feb 27, 2026 (SCH 2025040995); Final EIR to the Council in
+  fall 2026; $105.8 million at 60% design (City, Sept 2026), with no construction funding yet.
+- **redwood-city-ferry-terminal** (`entitlement`): the Port of Redwood City's two-berth terminal for service to San
+  Francisco and Oakland, with a rezoning for a future hotel and restaurants. Draft EIR Sept 17, 2026 (SCH
+  2024041306), comments to Nov 2, 2026; construction assumed from 2027.
+- **Geometry:** Mission Bay and Redwood City boundaries from the parcels named in their CEQA documents (DataSF;
+  County of San Mateo; new entries in `official_boundaries.py`). Berkeley's traced from the Draft EIR's Figure 2-2
+  with its inset (`boundary_berkeley_pier_ferry.py`, added to `make sites`). No massing for any of them. Screenshots
+  `docs/screenshots/m4/40`–`42`.
+- **Hosts:** WETA's `sfbayferry.com` (and its former `sanfranciscobayferry.com`), WETA's document store
+  (`d262kwcyxl71on.cloudfront.net/wp-content/uploads/`, prefix only) and San Francisco Public Works'
+  `sfpublicworks.org`, with the proof in the findings file.
+
 ## 2026-10-12 (Alameda: West Midway and RESHAP, the rest of Alameda Point, Encinal Terminals, Alameda Marina)
 
 Four City of Alameda projects added at Matthew's request ("whatever is going on with Alameda"). Research,

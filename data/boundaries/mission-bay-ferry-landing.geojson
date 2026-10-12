@@ -1,0 +1,130 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "mission-bay-ferry-landing",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 9900 lots 064 and 064H",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%279900064%27%2C+%279900064H%27%29&%24limit=5000",
+  "accuracy": "approximate",
+  "accuracyNote": "The two Port of San Francisco lots the Final Mitigated Negative Declaration names for the Mission Bay Ferry Landing and Water Taxi Landing (Case 2017-008824ENV, cover page: Block/Lot 9900/064 and 9900/064H, 153,257 sq ft): the shoreline strip along Terry A. Francois Boulevard from 16th Street south past Agua Vista Park. In the City's parcel map lot 064 also takes in the water around the old Pier 64 north of the landing, where the Port's Phase 2a contract removes marine debris, so the lots drawn are about twice the MND's lot size. The pier, gangway and float stand in the Bay and aren't drawn separately; the lots also take in the 2018 water taxi landing site, which the 2026 construction contract doesn't mention. 6.8 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 2
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3867399,
+       37.765273
+      ],
+      [
+       -122.3864872,
+       37.7655738
+      ],
+      [
+       -122.3863771,
+       37.765742
+      ],
+      [
+       -122.3854908,
+       37.7675765
+      ],
+      [
+       -122.3854291,
+       37.7677565
+      ],
+      [
+       -122.385369,
+       37.7681287
+      ],
+      [
+       -122.3847006,
+       37.768171
+      ],
+      [
+       -122.3846209,
+       37.768075
+      ],
+      [
+       -122.3838816,
+       37.7681217
+      ],
+      [
+       -122.3838383,
+       37.7677456
+      ],
+      [
+       -122.3824567,
+       37.7678328
+      ],
+      [
+       -122.3824403,
+       37.7676918
+      ],
+      [
+       -122.3848983,
+       37.7675357
+      ],
+      [
+       -122.3848441,
+       37.7670134
+      ],
+      [
+       -122.3828553,
+       37.7671385
+      ],
+      [
+       -122.3828009,
+       37.7667838
+      ],
+      [
+       -122.3858632,
+       37.76659
+      ],
+      [
+       -122.3859337,
+       37.7663619
+      ],
+      [
+       -122.3859147,
+       37.7662845
+      ],
+      [
+       -122.3862918,
+       37.7656903
+      ],
+      [
+       -122.3865194,
+       37.7654117
+      ],
+      [
+       -122.386541,
+       37.7652886
+      ],
+      [
+       -122.3864704,
+       37.765278
+      ],
+      [
+       -122.3864629,
+       37.7652295
+      ],
+      [
+       -122.3867399,
+       37.765273
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
