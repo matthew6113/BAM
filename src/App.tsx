@@ -288,7 +288,7 @@ export function App() {
           </a>
         </p>
         <ProjectIndex openId={openId} onOpen={(id, opener) => void openProject(id, { opener })}
-          filter={filter} onFilter={setFilter} />
+          filter={filter} onFilter={setFilter} onExpand={() => setInteracted(true)} />
       </header>
       <MapView theme={theme} mode={mode} selection={selection} hidden={hidden} onReady={onReady}
         onFirstInteraction={() => setInteracted(true)}
