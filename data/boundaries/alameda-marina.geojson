@@ -1,0 +1,110 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "alameda-marina",
+  "source": "City of Alameda zoning (Zoning v03), the M-X Mixed Use Planned Development District polygon between Grand Street and Willow Street north of Clement Avenue",
+  "sourceLabel": "City of Alameda zoning",
+  "sourceUrl": "https://services9.arcgis.com/ucDLsG1EwPnOGY4c/arcgis/rest/services/Zoning_v03/FeatureServer/0",
+  "query": "https://services9.arcgis.com/ucDLsG1EwPnOGY4c/arcgis/rest/services/Zoning_v03/FeatureServer/0/query?where=zone+%3D+%27M-X%27&outFields=%2A&outSR=4326&f=geojson&geometry=-122.2471%2C37.7753&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects",
+  "accuracy": "approximate",
+  "accuracyNote": "The Alameda Marina Master Plan's uplands as the City's zoning map draws them (the master plan's 27 acres of private uplands and submerged land). The 17 acres of City tidelands in the plan, mostly the 530-slip marina, aren't zoned M-X and aren't drawn. 27.3 acres as drawn.",
+  "license": "City of Alameda ArcGIS Online (no license stated)",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2521973,
+       37.7759844
+      ],
+      [
+       -122.2516231,
+       37.7768135
+      ],
+      [
+       -122.2517535,
+       37.7768749
+      ],
+      [
+       -122.2514329,
+       37.7773379
+      ],
+      [
+       -122.2514467,
+       37.7773996
+      ],
+      [
+       -122.2513361,
+       37.777565
+      ],
+      [
+       -122.2511609,
+       37.7766464
+      ],
+      [
+       -122.2500569,
+       37.7760522
+      ],
+      [
+       -122.2485151,
+       37.7756979
+      ],
+      [
+       -122.2483485,
+       37.7753955
+      ],
+      [
+       -122.2481522,
+       37.7753924
+      ],
+      [
+       -122.2472985,
+       37.776637
+      ],
+      [
+       -122.2461452,
+       37.7762649
+      ],
+      [
+       -122.2465295,
+       37.7757047
+      ],
+      [
+       -122.2465156,
+       37.7756934
+      ],
+      [
+       -122.246811,
+       37.7752524
+      ],
+      [
+       -122.2462573,
+       37.7752054
+      ],
+      [
+       -122.244228,
+       37.7754834
+      ],
+      [
+       -122.2457843,
+       37.7732147
+      ],
+      [
+       -122.2521973,
+       37.7759844
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

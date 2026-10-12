@@ -5768,6 +5768,427 @@
           "https://sfyimby.com/2025/03/meeting-tomorrow-for-30-van-ness-avenue-san-francisco.html"
         ]
       }
+    },
+    {
+      "id": "west-midway-reshap",
+      "name": "West Midway and RESHAP (Alameda Point)",
+      "aliases": [
+        "West Midway",
+        "RESHAP",
+        "Rebuilding the Existing Supportive Housing at Alameda Point",
+        "Stardust Gardens",
+        "Main Street Neighborhood"
+      ],
+      "city": "Alameda",
+      "county": "Alameda",
+      "subregion": "East Bay",
+      "approxCenter": [
+        -122.2949,
+        37.7839
+      ],
+      "acres": 34.5,
+      "acresNote": "City staff reports: West Midway is \"approximately 26 acres\" (July 2023) and the RESHAP campus \"approximately 8.5 acres\" (Dec 2023; 8 acres in July 2023), side by side on one block between Pan Am Way, West Midway Avenue, Main Street and West Tower Avenue.",
+      "program": {
+        "homes": 810,
+        "affordableHomes": 324,
+        "affordablePct": 40,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "West Midway (BC West Midway LLC): 478 townhomes and condominiums in three- and four-story buildings, 40 ft (50 ft for the four-story condominiums), including 44 moderate-income homes and 43 \"affordable by design\" workforce homes, plus up to 10,000 sq ft of commercial space at Pan Am Way and West Tower Avenue and four small parks. RESHAP (MidPen Housing and the Collaborating Partners): 332 homes for formerly unhoused and low-income households in four buildings up to about 50 ft, replacing 201 Navy-era homes, with about 40,000 sq ft of community-serving and office space. Together 810 homes, 324 (40%) deed-restricted for very low and low incomes (Dec 2023 staff report). West Midway also pays $2.5 million toward a planned Main Street Neighborhood park."
+      },
+      "developer": "BC West Midway LLC (Brookfield and Catellus); MidPen Housing with the Collaborating Partners (Alameda Point Collaborative, Building Futures, Operation Dignity) for RESHAP",
+      "publicPartners": [
+        "City of Alameda"
+      ],
+      "stage": "infrastructure",
+      "stageNote": "Site work. The old commissary and other buildings are down and the West Midway developer has finished the infrastructure for RESHAP's first building; the City reported in August 2026 that site work for RESHAP is nearly complete. West Midway's first 284 homes passed design review in December 2025, with vertical construction aimed at early 2027, market permitting.",
+      "timeline": [
+        {
+          "date": "2014-02",
+          "event": "City Council certifies the Alameda Point Project EIR (Resolution 14891)."
+        },
+        {
+          "date": "2017-03-21",
+          "event": "City Council approves the Main Street Neighborhood Specific Plan, with rebuilding the supportive housing (RESHAP) as a primary objective."
+        },
+        {
+          "date": "2018",
+          "event": "City approves a first RESHAP Development Plan and agreements for an 8-acre site at West Midway and Main Street."
+        },
+        {
+          "date": "2020-10-06",
+          "event": "City and the Brookfield/Catellus team sign an exclusive negotiating agreement for the 26-acre West Midway site."
+        },
+        {
+          "date": "2023-05-08",
+          "event": "Planning Board approves the RESHAP Development Plan (309 homes), now at Pan Am Way and West Midway Avenue."
+        },
+        {
+          "date": "2023-05-22",
+          "event": "Planning Board approves the West Midway Development Plan (478 homes)."
+        },
+        {
+          "date": "2023-07-18",
+          "event": "City Council introduces the West Midway and RESHAP disposition and development agreements, 4–1, and lends $9.5 million for RESHAP's first infrastructure."
+        },
+        {
+          "date": "2023-09-05",
+          "event": "City Council gives final passage to Ordinances 3345 and 3346 (RESHAP) and 3347 and 3348 (West Midway)."
+        },
+        {
+          "date": "2023-12-04",
+          "event": "Planning Board raises RESHAP to 332 homes without changing its buildings; Ordinance 3364 amends its development agreement on Mar 19, 2024."
+        },
+        {
+          "date": "2024-01",
+          "event": "City Council approves Vesting Tentative Map Tract 8696 subdividing the City's 160-acre parcel for the two projects."
+        },
+        {
+          "date": "2025-12-08",
+          "event": "Planning Board approves the design and vesting tentative map for West Midway Phase A, 284 homes in 62 buildings, 6–0."
+        },
+        {
+          "date": "2026-05-26",
+          "event": "Planning Board holds the West Midway development agreement's annual review."
+        }
+      ],
+      "nextMilestone": "West Midway vertical construction, aimed at the first quarter of 2027 and \"market dependent\" (City housing update, Dec 6, 2025); funding for RESHAP's first building, Stardust Gardens (80 homes).",
+      "summary": "Two linked projects on one block of Alameda Point's Main Street Neighborhood: 478 townhomes and condominiums by Brookfield and Catellus, and a new 332-home supportive housing campus that replaces the Navy-era homes of the Alameda Point Collaborative and its partners.",
+      "massingNotes": "Added 2026-10-12 (Matthew: \"whatever is going on with Alameda\"). Boundary: Alameda County Assessor parcels of the 2025 Tract 8696 final map in the block (books 74-1385 to 74-1388), closed over the new internal streets, 34.4 acres as drawn. Massing (pipeline/bam_pipeline/sites/massing_west_midway_reshap.py): West Midway's six blocks traced from the 2023 Development Plan's Land Use Diagram & Building Heights (sheet 10) at 40 and 50 ft, and RESHAP's residential buildings from its 2023 land use diagram (p. 13) at the plan's ±50-ft limit, both fitted to the Tract 8696 lots (trimmed RMS about 2.2 m and 1.0 m). All illustrative: blocks at height limits, not building designs.",
+      "officialLinks": [
+        "https://webapi.legistar.com/v1/alameda/matters/15369/texts/16553",
+        "https://webapi.legistar.com/v1/alameda/matters/12958/texts/13834"
+      ],
+      "sources": [
+        "https://webapi.legistar.com/v1/alameda/matters/12958/texts/13834",
+        "https://webapi.legistar.com/v1/alameda/matters/12957/texts/13833",
+        "https://webapi.legistar.com/v1/alameda/matters/13437/texts/14367",
+        "https://webapi.legistar.com/v1/alameda/matters/13172/texts/14074",
+        "https://webapi.legistar.com/v1/alameda/matters/13200/texts/14105",
+        "https://webapi.legistar.com/v1/alameda/matters/13713/texts/14683",
+        "https://webapi.legistar.com/v1/alameda/matters/15369/texts/16553",
+        "https://webapi.legistar.com/v1/alameda/matters/15541/texts/16731",
+        "https://webapi.legistar.com/v1/alameda/matters/15831/texts/17037",
+        "https://webapi.legistar.com/v1/alameda/matters/16042/texts/17254",
+        "https://webapi.legistar.com/v1/alameda/matters/13468/texts/14400",
+        "https://webapi.legistar.com/v1/alameda/matters/9626/texts/10264",
+        "https://legistar1.granicus.com/alameda/attachments/5be8021b-f3c6-4a76-8312-60267b458f36.pdf",
+        "https://legistar1.granicus.com/alameda/attachments/d3ee17a1-dd9a-4874-99d4-ae7134ed1c5b.pdf",
+        "https://legistar1.granicus.com/alameda/attachments/f39cda77-9fb6-4fe0-a9e7-2408361ab198.pdf",
+        "https://legistar1.granicus.com/alameda/attachments/bbbc4de9-eb75-4e85-ba12-558cf678e02e.pdf",
+        "https://legistar1.granicus.com/alameda/attachments/45e7c77c-b08a-43c0-849b-849eb0a24404.pdf",
+        "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0"
+      ],
+      "verify": [
+        "the date the City Council approved the Tract 8696 final map (its sheets are dated May 2025)",
+        "whether RESHAP's first building, Stardust Gardens, has started construction after the City's August 2026 operating-subsidy item",
+        "the exact acreage of the RESHAP campus (8 acres in 2023 reports, 8.5 acres later)"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "alameda-point-plan",
+      "name": "Alameda Point (rest of the base)",
+      "aliases": [
+        "Alameda Point",
+        "Naval Air Station Alameda",
+        "Main Street Neighborhood North",
+        "Enterprise District",
+        "Site B",
+        "Alameda Point Adaptive Reuse"
+      ],
+      "city": "Alameda",
+      "county": "Alameda",
+      "subregion": "East Bay",
+      "approxCenter": [
+        -122.3012,
+        37.7869
+      ],
+      "acres": null,
+      "acresNote": "No official figure for the base outside Site A and West Midway/RESHAP. The City counts \"roughly 129 undeveloped acres\" zoned for residential or mixed use (Sept 2025) and \"slightly more than 100 acres\" in the Enterprise District (Nov 2025). The zoning districts drawn here cover about 787 acres, about 298 of them open space.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Plan-scale: the 2014 Alameda Point zoning and EIR, the Town Center and Waterfront Precise Plan (2014) and the Main Street Neighborhood Specific Plan (2017) govern what can be built. A 2026 City feasibility study found room for about 600 to 1,000 existing and new homes in Main Street Neighborhood North (about 31 acres north of West Midway Avenue). The Enterprise District is zoned for jobs, not housing. Alameda Point housing must be 25% affordable (2001 Renewed Hope settlement). Beyond 2,011 market-rate homes the City pays the Navy a fee per home, cut from about $103,000 to $73,000 in October 2025; 677 had been built and 1,084 entitled, leaving about 250 under the baseline (June 2026)."
+      },
+      "developer": "City of Alameda (landowner; no developer selected outside Site A and West Midway/RESHAP)",
+      "publicPartners": [
+        "City of Alameda",
+        "U.S. Navy"
+      ],
+      "stage": "entitled",
+      "stageNote": "Zoned and planned since 2014–2017, with no developer for the remaining land. In 2026 the City is studying Main Street Neighborhood North for a developer search in late 2026 or early 2027, and repositioning the Enterprise District after Pacific Fusion took its fusion research facility to New Mexico in 2025.",
+      "timeline": [
+        {
+          "date": "2013",
+          "event": "Navy completes the first major conveyance of Alameda Point land to the City under the 2000 Economic Development Conveyance agreement."
+        },
+        {
+          "date": "2014-02",
+          "event": "City Council certifies the Alameda Point Project EIR (Resolution 14891)."
+        },
+        {
+          "date": "2014",
+          "event": "City adopts the Alameda Point zoning districts, the Master Infrastructure Plan and the Town Center and Waterfront Precise Plan."
+        },
+        {
+          "date": "2017-03-21",
+          "event": "City Council approves the Main Street Neighborhood Specific Plan."
+        },
+        {
+          "date": "2025-06-17",
+          "event": "City Council adopts CEQA findings for a 220,000 sq ft Pacific Fusion research facility on 13 acres of the Enterprise District, under a purchase option."
+        },
+        {
+          "date": "2025-09",
+          "event": "Pacific Fusion announces it will build in Albuquerque, New Mexico, and terminates its option."
+        },
+        {
+          "date": "2025-10-21",
+          "event": "City Council adopts Resolution 16333, a third amendment to the Navy conveyance agreement lowering the housing fee."
+        },
+        {
+          "date": "2025-12-06",
+          "event": "City Council, Planning Board and Historical Advisory Board tour Main Street Neighborhood North."
+        },
+        {
+          "date": "2026-06-08",
+          "event": "Planning Board holds a study session on a possible developer search for Main Street Neighborhood North."
+        }
+      ],
+      "nextMilestone": "A possible request for qualifications for a Main Street Neighborhood North developer, \"in late 2026/early 2027\", if the Council directs it.",
+      "summary": "The rest of the former Naval Air Station Alameda beyond Site A and West Midway: a historic Navy town of hangars, officers' homes and open shoreline, zoned since 2014 for a mix of new neighborhoods, reused hangars and job land, with the City now weighing the next housing phase north of West Midway.",
+      "massingNotes": "Added 2026-10-12 (Matthew: \"whatever is going on with Alameda\"). Plan-scale (SPEC §7): boundary and land-use zones only. Both from the City of Alameda's zoning GIS (Zoning v03, the AP- districts as published), less Site A and West Midway/RESHAP (mapped on their own) and the AP-NR/G Nature Reserve; pipeline/bam_pipeline/sites/landuse_alameda_point_plan.py. The edge along Site A follows Site A's traced boundary, so it's approximate.",
+      "officialLinks": [
+        "https://webapi.legistar.com/v1/alameda/matters/15882/texts/17089",
+        "https://legistar1.granicus.com/alameda/attachments/8389ebfc-3f86-47a1-9c23-57713c4c6175.pdf"
+      ],
+      "sources": [
+        "https://webapi.legistar.com/v1/alameda/matters/15882/texts/17089",
+        "https://legistar1.granicus.com/alameda/attachments/8389ebfc-3f86-47a1-9c23-57713c4c6175.pdf",
+        "https://legistar1.granicus.com/alameda/attachments/f39cda77-9fb6-4fe0-a9e7-2408361ab198.pdf",
+        "https://webapi.legistar.com/v1/alameda/matters/15167/texts/16344",
+        "https://webapi.legistar.com/v1/alameda/matters/15287/texts/16468",
+        "https://webapi.legistar.com/v1/alameda/matters/15362/texts/16546",
+        "https://webapi.legistar.com/v1/alameda/matters/14861/texts/16009",
+        "https://webapi.legistar.com/v1/alameda/matters/16042/texts/17254",
+        "https://webapi.legistar.com/v1/alameda/matters/15369/texts/16553",
+        "https://webapi.legistar.com/v1/alameda/matters/12958/texts/13834",
+        "https://services9.arcgis.com/ucDLsG1EwPnOGY4c/arcgis/rest/services/Zoning_v03/FeatureServer/0"
+      ],
+      "verify": [
+        "whether the City Council directed staff to issue the Main Street Neighborhood North developer RFQ",
+        "which Alameda Point parcels the Navy still holds",
+        "the Main Street Neighborhood Specific Plan's adoption resolution number"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "encinal-terminals",
+      "name": "Encinal Terminals",
+      "aliases": [
+        "1521 Buena Vista Avenue",
+        "Encinal Terminals Tidelands Exchange Master Plan",
+        "Northern Waterfront"
+      ],
+      "city": "Alameda",
+      "county": "Alameda",
+      "subregion": "East Bay",
+      "approxCenter": [
+        -122.2586,
+        37.7803
+      ],
+      "acres": 23,
+      "acresNote": "\"the 23-acre site\" (City Council staff report, May 2026): three private parcels and a 6.4-acre City-owned tidelands parcel in the middle, between the Alaska Basin and Fortman Marina.",
+      "program": {
+        "homes": 589,
+        "affordableHomes": 80,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": 50000,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 4.5,
+        "notes": "Approved in 2022: up to 589 multifamily homes, 80 of them deed-restricted (45 very low and low income, 35 moderate), up to 50,000 sq ft of commercial and maritime commercial space, a 160-slip marina and 4.5 acres of waterfront parks and promenades. A tidelands exchange with the State (recorded 2023) moves the public trust lands to the waterfront edge. Heights follow the multifamily district limits, which the Planning Board may waive."
+      },
+      "developer": "North Waterfront Cove, LLC (development agreement); Bayview Landing LP owns the private parcels and leases the City's",
+      "publicPartners": [
+        "City of Alameda"
+      ],
+      "stage": "entitled",
+      "stageNote": "Entitled but not started: the City says market conditions have made the project infeasible for now. In January 2025 the City extended its interim milestones, and in March 2026 the Planning Board allowed the vacant site to store new electric vehicles for two years, until the first development milestone in March 2028.",
+      "timeline": [
+        {
+          "date": "2007-07-17",
+          "event": "City Council certifies the Northern Waterfront General Plan Amendment EIR (Resolutions 14134 and 14135)."
+        },
+        {
+          "date": "2017-12-19",
+          "event": "City Council certifies a Focused Supplemental EIR for the master plan and tidelands exchange (Resolution 15337)."
+        },
+        {
+          "date": "2018",
+          "event": "City and developer enter a development agreement, disposition and development agreement and tidelands exchange agreement."
+        },
+        {
+          "date": "2022-02-01",
+          "event": "City Council gives final passage to Ordinances 3311 (DDA), 3312 (amended master plan and density bonus, 589 homes) and 3313 (development agreement)."
+        },
+        {
+          "date": "2023-02",
+          "event": "State Exchange Agreement for the tidelands is signed and recorded; enabling legislation follows in July 2023."
+        },
+        {
+          "date": "2024-02",
+          "event": "A title validation action confirms the exchange."
+        },
+        {
+          "date": "2025-01-21",
+          "event": "City Council gives final passage to Ordinance 3379, extending the master plan's and development agreement's interim milestones."
+        },
+        {
+          "date": "2026-03-23",
+          "event": "Planning Board approves a two-year use permit for outdoor storage of new electric vehicles on the vacant site (Resolution PB-26-2)."
+        },
+        {
+          "date": "2026-05-05",
+          "event": "City Council introduces a lease amendment allowing the interim use on the City's 6.4 tidelands acres."
+        }
+      ],
+      "nextMilestone": "Forming an assessment district for the public waterfront: kickoff by August 2026, draft rate method by December 2026, first hearings by June 2027; first site milestone March 2028.",
+      "summary": "A vacant former shipping container yard on the Oakland Estuary, entitled in 2022 for up to 589 homes, a 160-slip marina and 4.5 acres of waterfront park, waiting for the housing market to turn.",
+      "massingNotes": "Added 2026-10-12 (Matthew: \"whatever is going on with Alameda\"). Boundary: Alameda County Assessor parcels 72-382-1, 72-382-2 and 72-382-9 named in Ordinance 3312 (31 acres as drawn; they run over the wharf and water's edge, so more than the 23-acre site). No massing: the master plan sets uses, not blocks or building designs, and heights follow the zoning's multifamily limits with waivers allowed.",
+      "officialLinks": [
+        "https://webapi.legistar.com/v1/alameda/matters/15672/texts/16874",
+        "https://webapi.legistar.com/v1/alameda/matters/14385/texts/15452"
+      ],
+      "sources": [
+        "https://webapi.legistar.com/v1/alameda/matters/15672/texts/16874",
+        "https://webapi.legistar.com/v1/alameda/matters/14385/texts/15452",
+        "https://legistar1.granicus.com/alameda/attachments/6e80b41d-a385-45cf-89fc-f1475d4a2cb1.pdf",
+        "https://legistar1.granicus.com/alameda/attachments/218a2f69-a717-4836-9192-6b4c8d5878b9.pdf",
+        "https://webapi.legistar.com/v1/alameda/matters/11554/texts/12276",
+        "https://webapi.legistar.com/v1/alameda/matters/14561/texts/15654",
+        "https://webapi.legistar.com/v1/alameda/matters/15830/texts/17036",
+        "https://webapi.legistar.com/v1/alameda/matters/15841/texts/17048",
+        "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0"
+      ],
+      "verify": [
+        "final passage of the 2026 tidelands lease amendment",
+        "whether the electric vehicle storage has begun"
+      ],
+      "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "alameda-marina",
+      "name": "Alameda Marina",
+      "aliases": [
+        "1815 Clement Avenue",
+        "The Launch",
+        "The Foundry",
+        "Alameda Marina Master Plan"
+      ],
+      "city": "Alameda",
+      "county": "Alameda",
+      "subregion": "East Bay",
+      "approxCenter": [
+        -122.2479,
+        37.7752
+      ],
+      "acres": 44,
+      "acresNote": "\"the 44-acre site\" (City Council staff report, Oct 2024): 27 acres of private uplands and submerged land and about 17 acres of City tidelands, mostly the marina.",
+      "program": {
+        "homes": 801,
+        "affordableHomes": 95,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": 250000,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 3.59,
+        "notes": "Three phases: The Launch (360 rental homes, 49 affordable, complete), 182 townhomes in 31 buildings (25 affordable, under construction) and The Foundry (259 rental homes, approved 2023). The 2018 master plan allowed 760 homes; a 2023 density bonus raised it to 801 (Ordinance 3351). In July 2026 Ordinance 3406 cut The Foundry's affordable homes from 43 to 21 very low-income homes under the City's revised inclusionary rules, so 95 in all. Up to 250,000 sq ft of commercial and maritime commercial space around the historic Building 19, about 3.59 acres of shoreline open space and a 530-slip marina. Height limits: 65 ft for the two large residential buildings, 45 ft elsewhere."
+      },
+      "developer": "Alameda Marina, LLC",
+      "publicPartners": [
+        "City of Alameda"
+      ],
+      "stage": "partial",
+      "stageNote": "Partly built. The Launch is complete and occupied and the 182 townhomes are under construction (City report, June 2026). The Foundry, the last residential building, hadn't started; after the City reduced its affordable homes in July 2026, the developer said it could begin that summer.",
+      "timeline": [
+        {
+          "date": "2018-07-10",
+          "event": "City Council certifies the Alameda Marina EIR (Resolution 15413) and introduces the master plan ordinance (760 homes)."
+        },
+        {
+          "date": "2019-07-16",
+          "event": "City Council approves Tentative Map 8500 (Resolution 15570)."
+        },
+        {
+          "date": "2019-10-14",
+          "event": "Planning Board approves The Launch (Wrap A), 360 homes."
+        },
+        {
+          "date": "2020-11",
+          "event": "City Council approves the Tract 8500 final map, creating five development lots."
+        },
+        {
+          "date": "2023-07-10",
+          "event": "Planning Board approves The Foundry (Wrap B) design and recommends raising it to 259 homes."
+        },
+        {
+          "date": "2023-09-19",
+          "event": "City Council adopts Ordinance 3351, raising the site to 801 homes by density bonus."
+        },
+        {
+          "date": "2024-11",
+          "event": "The Tract 8711 final map for The Foundry's condominiums goes to the City Council."
+        },
+        {
+          "date": "2026-05-26",
+          "event": "Planning Board recommends reducing The Foundry's affordable homes, unanimously."
+        },
+        {
+          "date": "2026-07-07",
+          "event": "City Council gives final passage to Ordinance 3406, cutting The Foundry's affordable homes from 43 to 21."
+        }
+      ],
+      "nextMilestone": "Construction of The Foundry (259 homes), which the developer told the City could start in summer 2026.",
+      "summary": "The redevelopment of a historic shipbuilding and boatyard site on the Oakland Estuary into 801 homes around a rebuilt 530-slip marina, maritime businesses and a new shoreline park; the first apartment building is open and townhomes are going up.",
+      "massingNotes": "Added 2026-10-12 (Matthew: \"whatever is going on with Alameda\"). Boundary: City of Alameda zoning, the M-X polygon between Grand and Willow streets north of Clement Avenue (27.3 acres as drawn, the private uplands; the marina tidelands aren't drawn). Massing (pipeline/bam_pipeline/sites/massing_alameda_marina.py): The Launch from OpenStreetMap at 60 ft (2019 staff report); the townhome lots (Assessor parcels of Tract 8610) at the 45-ft limit and The Foundry's lot (71-291-12) at 65 ft, both illustrative.",
+      "officialLinks": [
+        "https://webapi.legistar.com/v1/alameda/matters/15877/texts/17084",
+        "https://webapi.legistar.com/v1/alameda/matters/13098/texts/13998"
+      ],
+      "sources": [
+        "https://webapi.legistar.com/v1/alameda/matters/7315/texts/7770",
+        "https://webapi.legistar.com/v1/alameda/matters/7605/texts/8081",
+        "https://webapi.legistar.com/v1/alameda/matters/9050/texts/9650",
+        "https://webapi.legistar.com/v1/alameda/matters/9483/texts/10108",
+        "https://webapi.legistar.com/v1/alameda/matters/13013/texts/13902",
+        "https://webapi.legistar.com/v1/alameda/matters/13098/texts/13998",
+        "https://webapi.legistar.com/v1/alameda/matters/14310/texts/15369",
+        "https://legistar1.granicus.com/alameda/attachments/5e058a67-4738-4a31-8fb8-09ab86c063a5.pdf",
+        "https://legistar1.granicus.com/alameda/attachments/2f81b5d0-9f4a-482a-8ff8-6ccdee109654.pdf",
+        "https://webapi.legistar.com/v1/alameda/matters/15877/texts/17084",
+        "https://webapi.legistar.com/v1/alameda/matters/16009/texts/17219",
+        "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0",
+        "https://services9.arcgis.com/ucDLsG1EwPnOGY4c/arcgis/rest/services/Zoning_v03/FeatureServer/0"
+      ],
+      "verify": [
+        "whether The Foundry started construction in summer 2026",
+        "whether the Phase II townhomes are complete",
+        "the master plan ordinance's number and final passage date (July 2018)"
+      ],
+      "lastVerified": "2026-10-12"
     }
   ]
 }

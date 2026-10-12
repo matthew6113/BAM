@@ -1,0 +1,134 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "encinal-terminals",
+  "source": "Alameda County Assessor parcels 72-382-1, 72-382-2 and 72-382-9 (1521 and 1527 Buena Vista Avenue)",
+  "sourceLabel": "Alameda County parcels",
+  "sourceUrl": "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0",
+  "query": "https://services5.arcgis.com/ROBnTHSNjoZ2Wm1P/arcgis/rest/services/Parcels/FeatureServer/0/query?where=APN+in+%28%2772-382-1%27%2C+%2772-382-2%27%2C+%2772-382-9%27%29&outFields=%2A&outSR=4326&f=geojson",
+  "accuracy": "approximate",
+  "accuracyNote": "The three parcels Ordinance 3312 (2022) names for the Encinal Terminals Master Plan, including the City's 6.4-acre tidelands parcel (72-382-9). They reach out over the wharf and the water's edge, so they cover more than the master plan's 23-acre site; the fourth APN in the ordinance is now a strip under the Clement Avenue extension and is left out. 31.0 acres as drawn.",
+  "license": "Alameda County open data (county disclaimer)",
+  "features_used": 3
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2603138,
+       37.7779926
+      ],
+      [
+       -122.2599172,
+       37.7823523
+      ],
+      [
+       -122.2595571,
+       37.7821486
+      ],
+      [
+       -122.2586654,
+       37.7824422
+      ],
+      [
+       -122.2573251,
+       37.7824988
+      ],
+      [
+       -122.2564054,
+       37.7818053
+      ],
+      [
+       -122.2568857,
+       37.7811332
+      ],
+      [
+       -122.2564571,
+       37.7809372
+      ],
+      [
+       -122.2583789,
+       37.7782525
+      ],
+      [
+       -122.2584016,
+       37.7780883
+      ],
+      [
+       -122.2584537,
+       37.7780887
+      ],
+      [
+       -122.2585314,
+       37.7775186
+      ],
+      [
+       -122.2586372,
+       37.7775521
+      ],
+      [
+       -122.2586624,
+       37.7775164
+      ],
+      [
+       -122.2588292,
+       37.7775444
+      ],
+      [
+       -122.2588232,
+       37.7775836
+      ],
+      [
+       -122.2588671,
+       37.7776219
+      ],
+      [
+       -122.258984,
+       37.7776729
+      ],
+      [
+       -122.2591945,
+       37.7778835
+      ],
+      [
+       -122.2591872,
+       37.7780787
+      ],
+      [
+       -122.2595926,
+       37.778112
+      ],
+      [
+       -122.2596246,
+       37.7778888
+      ],
+      [
+       -122.2596008,
+       37.7778591
+      ],
+      [
+       -122.2597785,
+       37.7778642
+      ],
+      [
+       -122.2597755,
+       37.777924
+      ],
+      [
+       -122.2603138,
+       37.7779926
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

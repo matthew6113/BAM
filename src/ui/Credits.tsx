@@ -25,7 +25,7 @@ export function Credits({ collapse }: Props) {
         <a href="https://overturemaps.org">Overture Maps Foundation</a> (release {OVERTURE_RELEASE}, ODbL).
         Building footprints from OpenStreetMap, Microsoft and Esri Community Maps contributors; heights
         from OpenStreetMap and USGS lidar. Project boundaries come from city and county GIS (DataSF;
-        Menlo Park; Mountain View; San José, CC-BY; Sunnyvale; Brisbane; Oakland; East Palo Alto; Santa
+        Menlo Park; Mountain View; San José, CC-BY; Sunnyvale; Brisbane; Oakland; the City of Alameda; East Palo Alto; Santa
         Clara, Alameda, San Mateo, Marin and Sonoma counties) or are traced from public planning documents, cited in each project's panel.
         Rail lines from the U.S. DOT National Transportation Atlas (BTS) and VTA GIS; stations from Caltrain's
         GTFS feed, the BTS National Transit Map (CC BY 3.0 US), SMART and the County of Sonoma (CC BY-SA 3.0 US). Project
