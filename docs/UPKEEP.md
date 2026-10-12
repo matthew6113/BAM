@@ -68,6 +68,17 @@ size (homes and sq ft as the official source states them), stage, the official s
 a one-line recommendation (include, exclude or borderline, and why). Also flag projects on the
 map that look finished or dead, which Matthew may want to drop or keep as "complete".
 
+### Pre-approved: add when ready
+
+Matthew has already said yes to these. When the condition is met, add them in the same PR (the
+usual research and mapping steps; see `docs/official-research/candidates-ferry-terminals.md`) and
+say so under "What changed". Until then, note their status under "New projects for Matthew".
+
+- **Harbor Bay replacement ferry terminal** (Alameda, WETA): add once its CEQA document (initial
+  study, notice of preparation or draft EIR) is published.
+- **Larkspur ferry service and parking expansion** (Golden Gate Bridge District): add once its
+  Draft EIR is published (the notice of preparation was 2024).
+
 ## 5. Check and open the PR
 
 - `npx tsc --noEmit` and `npm test` must pass.

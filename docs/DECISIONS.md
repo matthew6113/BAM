@@ -227,3 +227,14 @@ The contrast check now measures the selection against this ground (about 13:1).
   180 px PNGs).
 - Byline: "by Matthew Huguet" under the title, linking to www.matthewhuguet.com.
 - Squarespace: a project page that links out (copy and screenshots in `docs/share/`), not an embed.
+
+## 2026-10-12: ferry terminals (Matthew)
+
+- Mission Bay, Berkeley Pier and Redwood City ferry terminals added as separate projects.
+- New official hosts approved: `sfbayferry.com`, `sanfranciscobayferry.com`, WETA's CloudFront document
+  store (path prefix only) and `sfpublicworks.org`.
+- Mission Bay Ferry Landing keeps the two Port lots named in its 2018 clearance as its boundary
+  (including the water around old Pier 64), not a traced landing.
+- Berkeley keeps its wide landing view with the full dredged channel.
+- Harbor Bay and Larkspur: add once their environmental documents are published (pre-approved in
+  `docs/UPKEEP.md`, step 4).
