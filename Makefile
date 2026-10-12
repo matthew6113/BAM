@@ -96,6 +96,7 @@ sites:
 	$(PY) bam_pipeline.sites.massing_west_midway_reshap
 	$(PY) bam_pipeline.sites.landuse_alameda_point_plan
 	$(PY) bam_pipeline.sites.massing_alameda_marina
+	$(PY) bam_pipeline.sites.boundary_berkeley_pier_ferry
 
 photos:
 	$(PY) bam_pipeline.photos

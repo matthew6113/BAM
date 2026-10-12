@@ -1,0 +1,90 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "redwood-city-ferry-terminal",
+  "source": "County of San Mateo parcels, APN 054-300-380, the parcel named in the Port of Redwood City's Draft EIR",
+  "sourceLabel": "San Mateo County parcels",
+  "sourceUrl": "https://data.smcgov.org/d/nr6j-72z7",
+  "query": "https://data.smcgov.org/resource/nr6j-72z7.json?%24where=apn+in+%28%27054300380%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The 9.2-acre parcel the Draft EIR's notice of completion lists for the Port of Redwood City Ferry Terminal Project (CEQAnet SCH 2024041306, Sept 2026): the ferry terminal, parking lot and the area rezoned for future visitor-serving uses. The float and access pier extend into Redwood Creek off the parcel, and the Seaport Boulevard, railroad and Bay Trail work in the wider project area isn't drawn. 9.4 acres as drawn.",
+  "license": "Public Domain (County of San Mateo)",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2058138,
+       37.5161887
+      ],
+      [
+       -122.2056374,
+       37.5165098
+      ],
+      [
+       -122.2056747,
+       37.5165437
+      ],
+      [
+       -122.2055792,
+       37.5170097
+      ],
+      [
+       -122.2052951,
+       37.5175265
+      ],
+      [
+       -122.2051757,
+       37.5176591
+      ],
+      [
+       -122.2050093,
+       37.5175126
+      ],
+      [
+       -122.2047915,
+       37.5176153
+      ],
+      [
+       -122.2043484,
+       37.5174931
+      ],
+      [
+       -122.204042,
+       37.5172719
+      ],
+      [
+       -122.2034793,
+       37.5170007
+      ],
+      [
+       -122.2034411,
+       37.5169406
+      ],
+      [
+       -122.202963,
+       37.5165308
+      ],
+      [
+       -122.2035802,
+       37.515409
+      ],
+      [
+       -122.2058138,
+       37.5161887
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

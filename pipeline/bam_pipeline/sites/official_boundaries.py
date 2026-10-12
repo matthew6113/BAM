@@ -110,6 +110,12 @@ TANFORAN_APNS = [  # Draft EIR p. 53; the vacant lot is 014-311-060 in the NOP a
     "014316080", "014316300", "014316310", "014316360", "014316330", "014311060",
 ]
 
+# Mission Bay Ferry Landing: the Port lots on the cover page of the Final MND (Case 2017-008824ENV, June 18, 2018).
+MISSION_BAY_FERRY_BLKLOTS = ["9900064", "9900064H"]
+
+# Port of Redwood City Ferry Terminal: the parcel in the Draft EIR's CEQAnet record (SCH 2024041306, Sept 24, 2026).
+REDWOOD_CITY_FERRY_APNS = ["054300380"]
+
 NORTHGATE_APNS = [  # San Rafael Resolution 15360 and Ordinance 2043 (Dec 2024)
     "175-060-12", "175-060-40", "175-060-59", "175-060-61", "175-060-66", "175-060-67",
 ]
@@ -429,6 +435,35 @@ SPECS: dict[str, dict] = {
         "note": ("Assessor's Block 0835, Lot 004, the whole of the 30 Van Ness Avenue Special Use District "
                  "(Ordinance 01-25); Motion 21700 gives the lot as 38,123 sq ft."),
         "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "mission-bay-ferry-landing": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(MISSION_BAY_FERRY_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 9900 lots 064 and 064H",
+        "accuracy": "approximate",
+        "note": ("The two Port of San Francisco lots the Final Mitigated Negative Declaration names for the Mission Bay "
+                 "Ferry Landing and Water Taxi Landing (Case 2017-008824ENV, cover page: Block/Lot 9900/064 and 9900/064H, "
+                 "153,257 sq ft): the shoreline strip along Terry A. Francois Boulevard from 16th Street south past Agua "
+                 "Vista Park. In the City's parcel map lot 064 also takes in the water around the old Pier 64 north of "
+                 "the landing, where the Port's Phase 2a contract removes marine debris, so the lots drawn are about "
+                 "twice the MND's lot size. The pier, gangway and float stand in the Bay and aren't drawn separately; "
+                 "the lots also take in the 2018 water taxi landing site, which the 2026 construction contract doesn't "
+                 "mention."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "redwood-city-ferry-terminal": {
+        "label": "San Mateo County parcels",
+        "url": f"{SMC_PARCELS[0]}/resource/{SMC_PARCELS[1]}.json?"
+               + urllib.parse.urlencode({"$where": f"apn in ({_sql_list(REDWOOD_CITY_FERRY_APNS)})", "$limit": 5000}),
+        "landing": f"{SMC_PARCELS[0]}/d/{SMC_PARCELS[1]}",
+        "wkt": {"field": "shape", "crs": "EPSG:2227"},
+        "layer": "County of San Mateo parcels, APN 054-300-380, the parcel named in the Port of Redwood City's Draft EIR",
+        "accuracy": "official",
+        "note": ("The 9.2-acre parcel the Draft EIR's notice of completion lists for the Port of Redwood City Ferry Terminal "
+                 "Project (CEQAnet SCH 2024041306, Sept 2026): the ferry terminal, parking lot and the area rezoned for "
+                 "future visitor-serving uses. The float and access pier extend into Redwood Creek off the parcel, and the "
+                 "Seaport Boulevard, railroad and Bay Trail work in the wider project area isn't drawn."),
+        "license": "Public Domain (County of San Mateo)",
     },
     "tanforan": {
         "label": "San Mateo County parcels",
