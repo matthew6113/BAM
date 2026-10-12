@@ -798,6 +798,117 @@ body {
   }
 }
 
+/* ---------------------------------------------------------------- about panel */
+
+/* The about page reuses the project panel (side panel on desktop, bottom sheet on a phone). */
+.with-about .controls,
+.with-about .style-toggle {
+  right: calc(min(400px, 45%) + 16px);
+}
+
+.about-panel p {
+  margin: 0 0 8px;
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.about-panel .lede {
+  margin: 14px 0 16px;
+}
+
+.about-panel .stage-key,
+.about-panel .notes {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+
+.about-panel .stage-key li {
+  display: grid;
+  grid-template-columns: 12px 1fr;
+  gap: 8px;
+  padding: 3px 0;
+}
+
+.about-panel .stage-key i {
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+  border-radius: 2px;
+}
+
+/* Proposed sites are drawn as a dashed outline with no fill, so their key is too. */
+.about-panel .stage-key i.outline {
+  border: 1.5px dashed;
+}
+
+.about-panel .stage-key strong {
+  font-weight: 600;
+}
+
+.about-panel .stage-key span {
+  color: color-mix(in srgb, var(--color-panel-text) 72%, transparent);
+}
+
+.about-panel .stage-key strong {
+  color: var(--color-panel-text);
+}
+
+.about-panel .notes {
+  margin-top: 12px;
+  color: color-mix(in srgb, var(--color-panel-text) 72%, transparent);
+}
+
+.about-panel .notes li {
+  position: relative;
+  padding: 2px 0 2px 12px;
+}
+
+.about-panel .notes li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.75em;
+  width: 5px;
+  border-top: 1px solid currentColor;
+}
+
+.about-panel .small {
+  font-size: 12px;
+}
+
+.about-panel .updated {
+  border-top: 1px solid var(--color-panel-rule);
+  padding-top: 14px;
+  margin: 0;
+}
+
+.title .byline a[aria-current='page'] {
+  color: var(--color-panel-text);
+  text-decoration-color: currentColor;
+}
+
+@media (max-width: 719px) {
+  /* A page to read, not a site to keep in view: the sheet takes most of the screen. */
+  .project-panel.about-panel {
+    height: 85%;
+  }
+
+  .with-about .controls {
+    right: 10px;
+  }
+
+  .with-about .style-toggle {
+    right: 16px;
+  }
+
+  .with-about .project-index {
+    display: none;
+  }
+}
+
 /* ---------------------------------------------------------------- style panel */
 
 .style-toggle {

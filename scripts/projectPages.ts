@@ -27,10 +27,13 @@ export function retitle(html: string, title: string, description: string, path: 
   return out;
 }
 
+const ABOUT_DESCRIPTION =
+  'About the map: how to read it, where its facts come from, and credits for its data, photos and software.';
+
 /**
  * Static hosts have no rewrites, so every deep link gets a real page: dist/p/{id}/index.html
- * is the app with that project's title and summary (for link previews), and dist/404.html
- * catches anything else. The app reads the path and opens the project with the fly-in.
+ * is the app with that project's title and summary (for link previews), dist/about/index.html
+ * is the about page, and dist/404.html catches anything else. The app reads the path and opens the project with the fly-in.
  */
 export function projectPages(root: string): Plugin {
   return {
@@ -52,6 +55,11 @@ export function projectPages(root: string): Plugin {
           source: retitle(html, `${p.name} · ${site}`, p.summary, `p/${p.id}/`),
         });
       }
+      this.emitFile({
+        type: 'asset',
+        fileName: 'about/index.html',
+        source: retitle(html, `About · ${site}`, ABOUT_DESCRIPTION, 'about/'),
+      });
       this.emitFile({ type: 'asset', fileName: '404.html', source: html });
     },
   };

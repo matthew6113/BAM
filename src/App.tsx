@@ -15,8 +15,9 @@ import {
   riseMassing,
   type Camera,
 } from './projects/flight';
-import { navigate, projectIdFromPath } from './router';
+import { ABOUT_PATH, isAboutPath, navigate, navigateAbout, projectIdFromPath } from './router';
 import { applyCssVariables, defaultTheme, normalizeTheme, type Theme } from './theme/theme';
+import { AboutPanel } from './ui/AboutPanel';
 import { Controls } from './ui/Controls';
 import { Credits } from './ui/Credits';
 import { ProjectIndex } from './ui/ProjectIndex';
@@ -77,11 +78,15 @@ export function App() {
   const [selection, setSelection] = useState<Selection | null>(null);
   const [openId, setOpenId] = useState<string | null>(null);
   const [filter, setFilter] = useState<ProjectFilter>(NO_FILTER);
+  // The about page needs no map, so a deep link to it shows at once.
+  const [aboutOpen, setAboutOpen] = useState(isAboutPath);
+  const aboutLink = useRef<HTMLAnchorElement>(null);
+  const aboutOpener = useRef<HTMLElement | null>(null);
   const hidden = useMemo(() => MAPPED_PROJECTS.filter((p) => !matchesFilter(p, filter)).map((p) => p.id), [filter]);
   const styleToggle = useRef<HTMLButtonElement>(null);
   const flight = useRef<FlightState>({ token: 0, finishRise: null, returnCamera: null, returnMode: '2d', opener: null });
-  const live = useRef({ theme, mode, openId });
-  live.current = { theme, mode, openId };
+  const live = useRef({ theme, mode, openId, aboutOpen });
+  live.current = { theme, mode, openId, aboutOpen };
 
   const closePanel = useCallback(() => {
     setPanelOpen(false);
@@ -110,6 +115,7 @@ export function App() {
     if (!current()) return;
     if (opts.push !== false) navigate(id);
     document.title = `${project.name} · ${SITE_TITLE}`;
+    setAboutOpen(false);
     setOpenId(id);
 
     const massing = massingOf(id);
@@ -174,10 +180,38 @@ export function App() {
     map.easeTo({ ...camera, duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1200 });
   }, [map, closeProject]);
 
+  /** The about page: a panel like a project's, at /about. An open project flies back first. */
+  const openAbout = useCallback((opts: { push?: boolean; opener?: HTMLElement | null } = {}) => {
+    if (live.current.openId) void closeProject({ push: false });
+    if (opts.push !== false) navigateAbout(true);
+    if (!live.current.aboutOpen) aboutOpener.current = opts.opener ?? (document.activeElement as HTMLElement | null);
+    document.title = `About · ${SITE_TITLE}`;
+    setAboutOpen(true);
+  }, [closeProject]);
+
+  const closeAbout = useCallback((opts: { push?: boolean } = {}) => {
+    if (!live.current.aboutOpen) return;
+    if (opts.push !== false) navigateAbout(false);
+    document.title = SITE_TITLE;
+    setAboutOpen(false);
+    const opener = aboutOpener.current;
+    aboutOpener.current = null;
+    (opener?.isConnected && opener !== document.body ? opener : aboutLink.current)?.focus({ preventScroll: true });
+  }, []);
+
+  useEffect(() => {
+    if (aboutOpen) document.title = `About · ${SITE_TITLE}`;
+  }, []);
+
   // Deep link on load, and the back and forward buttons.
   useEffect(() => {
     if (!map) return;
     const sync = (initial: boolean) => {
+      if (isAboutPath()) {
+        if (!live.current.aboutOpen || live.current.openId) openAbout({ push: false });
+        return;
+      }
+      if (live.current.aboutOpen) closeAbout({ push: false });
       const id = projectIdFromPath();
       if (id && !siteOf(id)) {
         navigate(null, true);
@@ -190,7 +224,7 @@ export function App() {
     const onPop = () => sync(false);
     window.addEventListener('popstate', onPop);
     return () => window.removeEventListener('popstate', onPop);
-  }, [map, openProject, closeProject]);
+  }, [map, openProject, closeProject, openAbout, closeAbout]);
 
   useEffect(() => {
     applyCssVariables(theme);
@@ -213,12 +247,13 @@ export function App() {
       } else if (e.key === 'Escape') {
         // The topmost panel closes first.
         if (panelOpen) closePanel();
+        else if (live.current.aboutOpen) closeAbout();
         else if (live.current.openId) void closeProject();
       }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [closePanel, closeProject, panelOpen]);
+  }, [closePanel, closeProject, closeAbout, panelOpen]);
 
   const onReady = useCallback((m: MapLibreMap) => {
     setMap(m);
@@ -235,11 +270,23 @@ export function App() {
   const next = neighbour(1);
 
   return (
-    <div class={`app ${panelOpen ? 'with-panel' : ''} ${project ? 'with-project' : ''}`}>
+    <div class={`app ${panelOpen ? 'with-panel' : ''} ${project ? 'with-project' : ''} ${aboutOpen ? 'with-about' : ''}`}>
       <a class="skip-link" href="#controls-start">Skip to map controls</a>
       <header class="title">
         <h1>{SITE_TITLE}</h1>
-        <p class="byline">by <a href="https://www.matthewhuguet.com/">Matthew Huguet</a></p>
+        <p class="byline">
+          by <a href="https://www.matthewhuguet.com/">Matthew Huguet</a>
+          <span aria-hidden="true"> · </span>
+          <a ref={aboutLink} href={ABOUT_PATH} aria-current={aboutOpen ? 'page' : undefined}
+            onClick={(e) => {
+              if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+              e.preventDefault();
+              if (aboutOpen) closeAbout();
+              else openAbout({ opener: e.currentTarget });
+            }}>
+            About
+          </a>
+        </p>
         <ProjectIndex openId={openId} onOpen={(id, opener) => void openProject(id, { opener })}
           filter={filter} onFilter={setFilter} />
       </header>
@@ -248,12 +295,13 @@ export function App() {
         onSelectProject={(id) => void openProject(id)} />
       <span id="controls-start" tabIndex={-1} />
       <Controls map={map} mode={mode} onModeChange={setMode} onHome={goHome} />
-      <Credits collapse={interacted || !!project} />
+      <Credits collapse={interacted || !!project || aboutOpen} />
       {project && (
         <ProjectPanel project={project} onClose={() => void closeProject()}
           onPrev={prev && (() => void openProject(prev.id))} prevName={prev?.name}
           onNext={next && (() => void openProject(next.id))} nextName={next?.name} />
       )}
+      {aboutOpen && !project && <AboutPanel onClose={() => closeAbout()} />}
       {STYLE_PANEL_ENABLED && (
         <button ref={styleToggle} type="button" class="style-toggle" hidden={panelOpen}
           onClick={() => setPanelOpen(true)} title="Open the style panel (Alt+Shift+S)">
