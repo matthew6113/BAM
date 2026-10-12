@@ -183,7 +183,7 @@ CC BY-SA photos are shared under the same license as the original.
 | ucsf-parnassus | Alfred Twu | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | 2021-09-21 | [Commons](https://commons.wikimedia.org/wiki/File:University_of_California_San_Francisco_-_Parnassus_campus.jpg) |
 | northgate-san-rafael | Mx. Granger | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) | 2014-07-20 | [Commons](https://commons.wikimedia.org/wiki/File:The_Mall_at_Northgate.jpg) |
 | bart-station-housing | Pi.1415926535 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) | 2025-09-27 | [Commons](https://commons.wikimedia.org/wiki/File:TOD_construction_at_Lake_Merritt_station,_September_2025.jpg) |
-| alameda-point-plan | PH2 Bruce Trombecky, USN | Public domain | 1995-07-30 | [Commons](https://commons.wikimedia.org/wiki/File:NAS_Alameda_aerial_view_in_1995.JPEG) |
+| alameda-point-plan | Bill Abbott | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) | 2018-10-10 | [Commons](https://commons.wikimedia.org/wiki/File:Aerial_view_of_Old_Alameda_Point,_October_2018.jpg) |
 
 Approved but not yet downloaded (Wikimedia rate-limited; `make photos` fetches it):
 the-rise.

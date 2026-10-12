@@ -557,18 +557,18 @@
     },
     {
       "id": "alameda-point-plan",
-      "file": "File:NAS_Alameda_aerial_view_in_1995.JPEG",
-      "caption": "Naval Air Station Alameda from the air.",
-      "note": "Historic photo of the naval air station.",
-      "page": "https://commons.wikimedia.org/wiki/File:NAS_Alameda_aerial_view_in_1995.JPEG",
-      "author": "PH2 Bruce Trombecky, USN",
-      "license": "Public domain",
-      "licenseUrl": null,
-      "taken": "1995-07-30",
+      "file": "File:Aerial view of Old Alameda Point, October 2018.jpg",
+      "caption": "Alameda Point's piers and hangars from the air.",
+      "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Old_Alameda_Point,_October_2018.jpg",
+      "author": "Bill Abbott",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "taken": "2018-10-10",
       "src": "photos/alameda-point-plan.jpg",
       "width": 1200,
-      "height": 795,
-      "sha256": "29985b65c802f7fd99586d58fcfe501a338a4ecf909d00c45971a798acabe491"
+      "height": 693,
+      "sha256": "4d99faea20a0a75d1a7923d2765a69f78b3af02e8c5068a71740cbff52a15183",
+      "modified": "Resized and re-encoded"
     }
   ]
 }
