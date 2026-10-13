@@ -32,7 +32,7 @@ const font = async (file) => {
   if (!res.ok) throw new Error(`font ${file}: HTTP ${res.status}`);
   return `data:font/woff2;base64,${Buffer.from(await res.arrayBuffer()).toString('base64')}`;
 };
-const [franklin, serif] = await Promise.all([font('LibreFranklin-Variable.woff2'), font('SourceSerif4-Variable.woff2')]);
+const [franklin, serif] = await Promise.all([font('LibreFranklin-Variable.woff2'), font('MegaprojectsSerif-Variable.woff2')]);
 
 const browser = await chromium.launch({
   args: ['--use-angle=swiftshader', '--enable-unsafe-swiftshader', '--ignore-gpu-blocklist'],
@@ -60,7 +60,7 @@ await page.close();
 const card = await browser.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
 await card.setContent(`<!doctype html><html><head><style>
   @font-face { font-family: 'Libre Franklin'; src: url(${franklin}) format('woff2'); font-weight: 100 900; }
-  @font-face { font-family: 'Source Serif 4'; src: url(${serif}) format('woff2'); font-weight: 200 900; }
+  @font-face { font-family: 'Megaprojects Serif'; src: url(${serif}) format('woff2'); font-weight: 400 700; }
   html, body { margin: 0; }
   body { width: ${W}px; height: ${H}px; position: relative; overflow: hidden; background: ${c.land}; }
   .map { position: absolute; inset: 0; background: url(data:image/png;base64,${mapPng}) center / cover; }
@@ -68,7 +68,7 @@ await card.setContent(`<!doctype html><html><head><style>
   .text { position: absolute; left: 64px; top: 0; bottom: 0; width: 430px; display: flex; flex-direction: column; justify-content: center; }
   .kicker { font: 600 17px/1 'Libre Franklin'; color: ${accent}; }
   h1 { font: 700 58px/1.02 'Libre Franklin'; letter-spacing: -0.01em; color: ${c.panelText}; margin: 16px 0 20px; }
-  p { font: 400 24px/1.38 'Source Serif 4'; color: ${c.labels}; margin: 0; }
+  p { font: 400 24px/1.38 'Megaprojects Serif'; color: ${c.labels}; margin: 0; }
   .by { margin-top: 30px; font: 600 18px/1.3 'Libre Franklin'; color: ${c.panelText}; }
   .by span { font-weight: 400; color: ${c.labels}; }
   .rule { width: 56px; height: 3px; background: ${accent}; margin-top: 30px; }

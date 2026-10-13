@@ -122,6 +122,14 @@ From google/fonts at commit `9710da1eacb3be272583c3224dcb70f9da6eadbb`:
 - **Libre Franklin**, SIL Open Font License 1.1 (Impallari Type). Used for the interface and map labels.
 - **Source Serif 4**, SIL Open Font License 1.1 (Adobe). Used for summaries and notes.
 
+The web copies are cut to the characters the site shows (Latin, punctuation, arrows), and the serif's
+optical size is fixed at 15.5, the size it's set at, with weights 400 to 700
+(`pipeline/bam_pipeline/fonts.py`). That makes them Modified Versions under the OFL. Source Serif 4's
+name records reserve the name "Source" for Adobe, and a Modified Version can't use a Reserved Font
+Name, so the serif's web copies and map-label instances are named **Megaprojects Serif**. Their
+copyright, trademark and license records are kept as Adobe wrote them. Libre Franklin has no Reserved
+Font Name and keeps its own.
+
 The license texts ship with the fonts in `public/generated/fonts/`.
 
 ## Software

@@ -2,14 +2,17 @@ import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { deflateSync } from 'node:zlib';
 import type { Plugin } from 'vite';
+import { cssVariables, type ThemeVariables } from '../src/theme/variables.ts';
 
 /**
- * Sharing and identity tags for every page:
+ * Sharing and identity tags for every page, and the theme:
  * - link previews: og:image (public/share-card.png, made by `npm run share-card`), og:url and a
  *   canonical link, from SITE_URL (the deploy workflow passes the address GitHub Pages reports, so
  *   it is map.matthewhuguet.com once the custom domain is set, and github.io/BAM before);
  * - the icon: an ink tile with a stage-coloured dot, drawn from src/theme/theme.json at build time,
- *   so swapping the palette updates it too. SVG for browsers, PNGs for Safari and iOS home screens.
+ *   so swapping the palette updates it too. SVG for browsers, PNGs for Safari and iOS home screens;
+ * - the theme's CSS custom properties, so the title and byline written into index.html paint in the
+ *   theme's type and colors before the app's script has loaded (the app then sets them itself).
  * Without SITE_URL (local builds, dev) the absolute tags are left out.
  */
 
@@ -18,6 +21,12 @@ export const SHARE_CARD = { file: 'share-card.png', width: 1200, height: 630 };
 interface ThemeColors {
   colors: Record<string, string>;
   stages: Record<string, string>;
+}
+
+/** The default theme as a :root rule. */
+function themeStyle(root: string): string {
+  const theme = JSON.parse(readFileSync(resolve(root, 'src/theme/theme.json'), 'utf8')) as ThemeVariables;
+  return `<style>:root { ${cssVariables(theme).map(([k, v]) => `${k}: ${v};`).join(' ')} }</style>`;
 }
 
 function iconColors(root: string): { ink: string; dot: string } {
@@ -141,7 +150,7 @@ export function siteMeta(root: string): Plugin {
             ]
           : []),
       ];
-      return html.replace(/\s*<link rel="icon" href="data:," \/>/, () => `\n    ${tags.join('\n    ')}`);
+      return html.replace(/\s*<link rel="icon" href="data:," \/>/, () => `\n    ${[...tags, themeStyle(root)].join('\n    ')}`);
     },
     generateBundle() {
       const { ink, dot } = iconColors(root);

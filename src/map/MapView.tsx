@@ -97,6 +97,8 @@ export function MapView({ theme, mode, selection, hidden, onReady, onFirstIntera
       maxPitch: mode === '3d' ? MAX_PITCH_3D : 0,
       hash: 'map',
       attributionControl: false,
+      // MapLibre makes the canvas itself the focusable map region; this is its name.
+      locale: { 'Map.Title': 'Map of the Bay Area' },
       canvasContextAttributes: { antialias: true },
       pixelRatio: Math.min(window.devicePixelRatio || 1, isTouch ? 2 : 3),
       dragRotate: mode === '3d',
@@ -178,7 +180,7 @@ export function MapView({ theme, mode, selection, hidden, onReady, onFirstIntera
 
   return (
     <>
-      <div ref={container} class="map" role="region" aria-label="Map of the Bay Area" />
+      <div ref={container} class="map" />
       {hover && (
         <div class="map-tooltip" role="presentation" style={{ left: `${hover.x}px`, top: `${hover.y}px` }}>
           <strong>{hover.name}</strong>

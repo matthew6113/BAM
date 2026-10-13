@@ -7,6 +7,8 @@ interface Props {
   onOpen: (id: string, opener: HTMLElement) => void;
   filter: ProjectFilter;
   onFilter: (f: ProjectFilter) => void;
+  /** The list was opened (the credits collapse, as they do once the map is in use). */
+  onExpand?: () => void;
 }
 
 const SUBREGIONS = [...new Set(MAPPED_PROJECTS.map((p) => p.subregion))].sort();
@@ -21,7 +23,7 @@ const TABS = [
  * doubles as a filter, and a subregion filter. The same filter decides which projects the
  * map draws.
  */
-export function ProjectIndex({ openId, onOpen, filter, onFilter }: Props) {
+export function ProjectIndex({ openId, onOpen, filter, onFilter, onExpand }: Props) {
   const [expanded, setExpanded] = useState(false);
   const tabList = useRef<HTMLDivElement>(null);
   const tabIndex = TABS.findIndex((t) => t.key === filter.category);
@@ -48,7 +50,10 @@ export function ProjectIndex({ openId, onOpen, filter, onFilter }: Props) {
   return (
     <nav class="project-index" aria-label="Projects">
       <button type="button" class="index-toggle" aria-expanded={expanded} aria-controls="project-index-body"
-        onClick={() => setExpanded((e) => !e)}>
+        onClick={() => {
+          if (!expanded) onExpand?.();
+          setExpanded(!expanded);
+        }}>
         Projects
         <span class="count">{isFiltered(filter) ? `${shown.length} of ${MAPPED_PROJECTS.length}` : MAPPED_PROJECTS.length}</span>
         <svg viewBox="0 0 12 12" aria-hidden="true"><path d={expanded ? 'M3 7.5 6 4.5l3 3' : 'M3 4.5 6 7.5l3-3'} /></svg>

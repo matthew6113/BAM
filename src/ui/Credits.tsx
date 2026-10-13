@@ -35,8 +35,9 @@ export function Credits({ collapse }: Props) {
     if (collapse) setOpen(false);
   }, [collapse]);
 
+  // A footer, so the attribution sits in a landmark (contentinfo) like the rest of the page.
   return (
-    <div class={`credits ${open ? 'open' : ''}`}>
+    <footer class={`credits ${open ? 'open' : ''}`}>
       <p id="credits-body" class="credits-body" hidden={!open}>
         <MapDataCredits />
       </p>
@@ -44,6 +45,6 @@ export function Credits({ collapse }: Props) {
         onClick={() => setOpen(!open)}>
         {open ? 'Hide credits' : '© OpenStreetMap contributors, Overture Maps · Credits'}
       </button>
-    </div>
+    </footer>
   );
 }

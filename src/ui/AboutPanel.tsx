@@ -95,8 +95,8 @@ export function AboutPanel({ onClose }: Props) {
         <h3 id="about-credits">Credits</h3>
         <p class="small"><MapDataCredits /></p>
         <p class="small">
-          Type in Libre Franklin and Source Serif 4 (SIL Open Font License). Built with MapLibre GL JS,
-          PMTiles, Preact and Vite; tiles made with Tippecanoe.
+          Type in Libre Franklin and Megaprojects Serif, a subset of Source Serif 4 (both SIL Open Font
+          License). Built with MapLibre GL JS, PMTiles, Preact and Vite; tiles made with Tippecanoe.
         </p>
       </section>
 

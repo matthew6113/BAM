@@ -2,6 +2,7 @@
 //   npx playwright test tests/interaction.spec.ts
 
 import { test, expect, type Page } from '@playwright/test';
+import theme from '../src/theme/theme.json' with { type: 'json' };
 
 async function ready(page: Page) {
   await page.waitForFunction(() => document.body.dataset.mapReady === 'true', null, { timeout: 120_000 });
@@ -55,4 +56,26 @@ test('map controls are reachable by keyboard', async ({ page }) => {
     names.push(await page.evaluate(() => document.activeElement?.getAttribute('aria-label') ?? document.activeElement?.textContent ?? ''));
   }
   expect(names).toEqual(expect.arrayContaining(['Zoom in', 'Zoom out', 'Reset north', 'Whole Bay']));
+});
+
+// index.html carries the title, byline and theme variables, so words paint before the script loads.
+test.describe('before the script runs', () => {
+  test.use({ javaScriptEnabled: false });
+
+  test('the page already has the title, the byline and the theme', async ({ page }) => {
+    await page.goto('/');
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText('Bay Area megaprojects');
+    await expect(page.getByRole('link', { name: 'Matthew Huguet' })).toHaveAttribute('href', 'https://www.matthewhuguet.com/');
+    await expect(page.getByRole('link', { name: 'About' })).toHaveAttribute('href', '/about');
+    const land = await page.evaluate(() => getComputedStyle(document.documentElement).getPropertyValue('--color-land').trim());
+    expect(land).toBe(theme.colors.land);
+  });
+});
+
+test('the app draws its own title in place of the static one', async ({ page }) => {
+  await page.goto('/?test=1');
+  await ready(page);
+  await expect(page.getByRole('heading', { level: 1 })).toHaveCount(1);
+  await expect(page.locator('header.title')).toHaveCount(1);
+  await expect(page.getByRole('button', { name: /^Projects/ })).toBeVisible();
 });

@@ -89,7 +89,8 @@ and import the theme as JSON so a finished palette can be committed as the defau
 Suggested starting point (Matthew may change it):
 - Libre Franklin for UI and map labels. It descends from Franklin Gothic, which is close
   to the NYT graphics desk's typeface.
-- Source Serif 4 for the project summaries and stage notes in the panel.
+- Source Serif 4 for the project summaries and stage notes in the panel (shipped as Megaprojects
+  Serif, a renamed subset; see `data/CREDITS.md`).
 - Sentence case throughout. No all-caps labels. Tabular figures for numbers. City labels
   small, water names in italic.
 
