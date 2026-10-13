@@ -28,7 +28,10 @@ const params = new URLSearchParams(location.search);
 /** The style panel is a design tool: on in development, or in any build with ?style=1. */
 const STYLE_PANEL_ENABLED = import.meta.env.DEV || params.get('style') === '1';
 const STORAGE_KEY = 'bam.theme.v1';
-/** The page title on the home view (a deep-linked page starts with its project's title). */
+/**
+ * The page title on the home view (a deep-linked page starts with its project's title). index.html
+ * repeats it and the byline as static markup for the first paint; keep the two the same.
+ */
 const SITE_TITLE = 'Bay Area megaprojects';
 
 function loadTheme(): Theme {

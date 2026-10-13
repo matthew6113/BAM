@@ -1,22 +1,17 @@
 import defaults from './theme.json';
+import { cssVariables, themeColor } from './variables';
 
 export type ColorRole = keyof typeof defaults.colors;
 export type StageKey = keyof typeof defaults.stages;
 export type Theme = typeof defaults;
 
 export const STAGE_KEYS = Object.keys(defaults.stages) as StageKey[];
-export const COLOR_ROLES = Object.keys(defaults.colors) as ColorRole[];
 
 export const defaultTheme: Theme = structuredClone(defaults);
 
 /** Stage colors may point at a color role ("@buildings" = complete matches the city). */
 export function stageColor(theme: Theme, stage: StageKey): string {
-  const value = theme.stages[stage];
-  if (value.startsWith('@')) {
-    const role = value.slice(1) as ColorRole;
-    return theme.colors[role] ?? '#ff00ff';
-  }
-  return value;
+  return themeColor(theme.colors, theme.stages[stage]);
 }
 
 /** Fill in anything an imported or older theme lacks, so the map never sees undefined. */
@@ -73,15 +68,7 @@ function pickNumbers(o: unknown): Record<string, number> {
 
 /** Expose the theme to CSS as custom properties on :root. */
 export function applyCssVariables(theme: Theme, root: HTMLElement = document.documentElement): void {
-  for (const role of COLOR_ROLES) root.style.setProperty(`--color-${kebab(role)}`, theme.colors[role]);
-  for (const stage of STAGE_KEYS) root.style.setProperty(`--stage-${stage}`, stageColor(theme, stage));
-  for (const [cat, color] of Object.entries(theme.landUse.colors)) root.style.setProperty(`--landuse-${cat}`, color);
-  root.style.setProperty('--font-ui', `'${theme.type.ui}', system-ui, sans-serif`);
-  root.style.setProperty('--font-text', `'${theme.type.text}', Georgia, serif`);
-}
-
-function kebab(s: string): string {
-  return s.replace(/[A-Z]/g, (m) => `-${m.toLowerCase()}`);
+  for (const [name, value] of cssVariables(theme)) root.style.setProperty(name, value);
 }
 
 // ---------------------------------------------------------------- contrast checks
