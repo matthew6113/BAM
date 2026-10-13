@@ -19,6 +19,15 @@ that runs about 2.5 miles out into the Bay along the closed pier.
 
 The small separate square for a wayfinding sign is left out.
 
+4. The site is split where the outline itself narrows. Around the new pier and breakwater it is
+   about 300 m wide (north and south of the closed pier); where its southern staging area ends,
+   about 1,600 ft out, it narrows to the strip along the federal navigation channel, which the
+   Draft EIR says is dredged for the ferries (p. 2-28) and its inset labels "Dredging". Nothing is
+   built out there: the pier is at most 1,080 ft long (p. 2-6). So the part beyond the corner is
+   written as a separate "dredging" feature, drawn dotted and unfilled, and the rest stays the
+   "site" that the map fills, flies to and marks (Matthew, 2026-10-13). Together they are the
+   whole project site as drawn in Figure 2-2.
+
     uv run --directory pipeline python -m bam_pipeline.sites.boundary_berkeley_pier_ferry
 """
 
@@ -48,6 +57,7 @@ ANCHOR_UTM = (560593.8, 4191082.4)  # centroid of the roundabout ring, OpenStree
 INSET = (1960, 1390, 3059, 2202)  # x0, y0, x1, y1 of the inset map
 LEGEND = (0, 1745, 600, 2202)
 INSET_M_PER_PX = 1.2 * 1609.344 / 350.5  # inset scale bar: 0 and 1.2 mi ticks
+ABUTMENT_PX = (870.0, 1118.0)  # where the closed pier meets the shore at the plaza; distances out are from here
 
 
 def _image() -> np.ndarray:
@@ -89,6 +99,36 @@ def _main_to_utm(pts: np.ndarray) -> np.ndarray:
 
 def _apply(poly, fn):
     return shapely.transform(poly, lambda xy: fn(xy))
+
+
+def _split_dredging(site) -> tuple[object, object, float]:
+    """The site up to the corner where its southern staging area ends, and the channel strip beyond.
+
+    The width across the closed pier's line is measured out from the abutment; the cut is where it
+    first falls below halfway between the near-shore width and the channel strip's.
+    """
+    abut = _main_to_utm(np.array([ABUTMENT_PX]))[0]
+    pts = np.asarray(site.exterior.coords)
+    far = pts[pts[:, 0] < abut[0] - 2000]  # the channel strip, well past the corner
+    axis = np.linalg.svd(far - far.mean(0))[2][0]
+    axis = axis if axis[0] < 0 else -axis  # pointing out into the Bay
+    normal = np.array([-axis[1], axis[0]])
+
+    def width(d: float) -> float:
+        p = abut + axis * d
+        return site.intersection(shapely.LineString([p - normal * 2000, p + normal * 2000])).length
+
+    half = (width(200) + width(1500)) / 2
+    out = next(d for d in np.arange(200.0, 1500.0, 1.0) if width(d) < half)
+    cut = abut + axis * out
+    beyond = Polygon([cut + normal * 2000, cut - normal * 2000,
+                      cut - normal * 2000 + axis * 10000, cut + normal * 2000 + axis * 10000])
+    inner, channel = site.difference(beyond), site.intersection(beyond)
+    # The staging area's corner isn't square to the pier, so the cut clips a sliver of it: back to the site.
+    pieces = sorted(getattr(channel, "geoms", [channel]), key=lambda g: g.area)
+    channel = pieces.pop()
+    inner = shapely.union_all([inner, *pieces])
+    return inner, channel, out
 
 
 def main() -> None:
@@ -141,8 +181,13 @@ def main() -> None:
     site = shapely.union_all([main_utm, ins_utm.intersection(west)])
     site = site.buffer(8, join_style="mitre").buffer(-8, join_style="mitre").simplify(1.0, preserve_topology=True)
     acres = site.area / tb.ACRE_M2
+    inner, channel, out_m = _split_dredging(site)
+    out_ft = round(out_m / 0.3048 / 50) * 50
+    ring = np.asarray(channel.exterior.coords)
+    axis = np.linalg.svd(ring - ring.mean(0))[2][0]
+    channel_mi = np.ptp(ring @ axis) / 1609.344  # its length along the closed pier
 
-    tb.write(PROJECT, site, {
+    tb.write(PROJECT, inner, {
         "source": ("traced: City of Berkeley, Berkeley Water Transportation Pier Ferry Project Draft EIR (Feb 2026), "
                    "Figure 2-2, Project Site Location (PDF p. 54), main frame and inset"),
         "sourceLabel": "Draft EIR, Figure 2-2 (Feb 2026)",
@@ -155,7 +200,9 @@ def main() -> None:
             "its scale bar and the University Avenue roundabout (OpenStreetMap streets agree to about 5 m); the outer "
             f"2 miles of channel come from the figure's small inset, fitted to the main frame (trimmed RMS "
             f"{rep['rms_m']:.0f} m), so that part is good to a few tens of metres. The CEQAnet filing gives 195.6 "
-            f"total acres. {acres:,.1f} acres as drawn."),
+            f"total acres. {acres:,.1f} acres as drawn: {inner.area / tb.ACRE_M2:,.1f} around the new pier, the plaza "
+            f"and the streets, filled, and {channel.area / tb.ACRE_M2:,.1f} of dredged channel beyond the corner where "
+            f"the site's southern staging area ends, about {out_ft:,} ft out, drawn dotted."),
         "license": ("Traced facts from a public City of Berkeley document (the PDF is not redistributed). "
                     f"Georeference: {tb.OSM_LICENSE}."),
         "georeference": {
@@ -165,7 +212,12 @@ def main() -> None:
                         "utm10n": list(ANCHOR_UTM)},
             "inset": rep,
         },
-    })
+    }, parts=[({
+        "kind": "dredging",
+        "name": "Dredged ferry channel",
+        "note": (f"The dotted outline is the rest of the site: the ferry channel along the closed pier, dredged for "
+                 f"about {channel_mi:.1f} miles further out, with nothing built on it."),
+    }, channel)])
 
 
 if __name__ == "__main__":

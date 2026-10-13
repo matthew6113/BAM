@@ -6,7 +6,7 @@
   "sourceLabel": "Draft EIR, Figure 2-2 (Feb 2026)",
   "sourceUrl": "https://ceqanet.lci.ca.gov/2025040995/2/Attachment/-QKY5z",
   "accuracy": "traced",
-  "accuracyNote": "Traced from the yellow project-site outline in the Draft EIR's Figure 2-2: the new pier, breakwater and ferry floats off the end of University Avenue, the plaza, Seawall Drive and its parking lot, University Avenue to Frontage Road, and the dredged channel along the closed pier. The figure's photo is placed by its scale bar and the University Avenue roundabout (OpenStreetMap streets agree to about 5 m); the outer 2 miles of channel come from the figure's small inset, fitted to the main frame (trimmed RMS 4 m), so that part is good to a few tens of metres. The CEQAnet filing gives 195.6 total acres. 186.2 acres as drawn.",
+  "accuracyNote": "Traced from the yellow project-site outline in the Draft EIR's Figure 2-2: the new pier, breakwater and ferry floats off the end of University Avenue, the plaza, Seawall Drive and its parking lot, University Avenue to Frontage Road, and the dredged channel along the closed pier. The figure's photo is placed by its scale bar and the University Avenue roundabout (OpenStreetMap streets agree to about 5 m); the outer 2 miles of channel come from the figure's small inset, fitted to the main frame (trimmed RMS 4 m), so that part is good to a few tens of metres. The CEQAnet filing gives 195.6 total acres. 186.2 acres as drawn: 53.8 around the new pier, the plaza and the streets, filled, and 132.4 of dredged channel beyond the corner where the site's southern staging area ends, about 1,600 ft out, drawn dotted.",
   "license": "Traced facts from a public City of Berkeley document (the PDF is not redistributed). Georeference: OpenStreetMap contributors (ODbL 1.0), via Overture Maps.",
   "georeference": {
    "method": "north-up, scale from the scale bar, one control point; inset by rigid trimmed ICP at its own scale bar",
@@ -52,144 +52,28 @@
     "coordinates": [
      [
       [
-       -122.3309806,
-       37.8588481
+       -122.3225561,
+       37.8607402
       ],
       [
-       -122.3311623,
-       37.8588329
+       -122.322779,
+       37.861178
       ],
       [
-       -122.3314214,
-       37.8587036
+       -122.3229481,
+       37.8615663
       ],
       [
-       -122.3347512,
-       37.8576771
+       -122.3229773,
+       37.8615625
       ],
       [
-       -122.3425024,
-       37.8551395
+       -122.3229778,
+       37.861502
       ],
       [
-       -122.3434395,
-       37.8548835
-      ],
-      [
-       -122.3436986,
-       37.8547542
-      ],
-      [
-       -122.3472871,
-       37.8535979
-      ],
-      [
-       -122.3477835,
-       37.8534865
-      ],
-      [
-       -122.3480449,
-       37.8533571
-      ],
-      [
-       -122.3489796,
-       37.8531011
-      ],
-      [
-       -122.3504348,
-       37.8525862
-      ],
-      [
-       -122.3513719,
-       37.8523302
-      ],
-      [
-       -122.3516309,
-       37.8522008
-      ],
-      [
-       -122.3518126,
-       37.8521856
-      ],
-      [
-       -122.3547785,
-       37.851189
-      ],
-      [
-       -122.3549601,
-       37.8511737
-      ],
-      [
-       -122.3552192,
-       37.8510443
-      ],
-      [
-       -122.3570376,
-       37.8504989
-      ],
-      [
-       -122.3583667,
-       37.8500324
-      ],
-      [
-       -122.3585483,
-       37.8500172
-      ],
-      [
-       -122.3619547,
-       37.8488757
-      ],
-      [
-       -122.3621219,
-       37.8488954
-      ],
-      [
-       -122.3627265,
-       37.8501386
-      ],
-      [
-       -122.3494241,
-       37.8543641
-      ],
-      [
-       -122.3490569,
-       37.8543775
-      ],
-      [
-       -122.3487895,
-       37.8545616
-      ],
-      [
-       -122.3482303,
-       37.8547496
-      ],
-      [
-       -122.341998,
-       37.8567237
-      ],
-      [
-       -122.3418164,
-       37.8567389
-      ],
-      [
-       -122.331673,
-       37.8599973
-      ],
-      [
-       -122.3305472,
-       37.860301
-      ],
-      [
-       -122.330162,
-       37.8604787
-      ],
-      [
-       -122.32891,
-       37.8608308
-      ],
-      [
-       -122.3283361,
-       37.8610563
+       -122.3235556,
+       37.8625458
       ],
       [
        -122.3232096,
@@ -584,20 +468,175 @@
        37.8600679
       ],
       [
+       -122.3221841,
+       37.8600681
+      ],
+      [
        -122.3222148,
        37.8600696
       ],
       [
-       -122.322779,
-       37.861178
+       -122.3225561,
+       37.8607402
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "dredging",
+    "name": "Dredged ferry channel",
+    "note": "The dotted outline is the rest of the site: the ferry channel along the closed pier, dredged for about 2.3 miles further out, with nothing built on it."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3311623,
+       37.8588329
       ],
       [
-       -122.3229481,
-       37.8615663
+       -122.3314214,
+       37.8587036
       ],
       [
-       -122.3229773,
-       37.8615625
+       -122.3347512,
+       37.8576771
+      ],
+      [
+       -122.3425024,
+       37.8551395
+      ],
+      [
+       -122.3434395,
+       37.8548835
+      ],
+      [
+       -122.3436986,
+       37.8547542
+      ],
+      [
+       -122.3472871,
+       37.8535979
+      ],
+      [
+       -122.3477835,
+       37.8534865
+      ],
+      [
+       -122.3480449,
+       37.8533571
+      ],
+      [
+       -122.3489796,
+       37.8531011
+      ],
+      [
+       -122.3504348,
+       37.8525862
+      ],
+      [
+       -122.3513719,
+       37.8523302
+      ],
+      [
+       -122.3516309,
+       37.8522008
+      ],
+      [
+       -122.3518126,
+       37.8521856
+      ],
+      [
+       -122.3547785,
+       37.851189
+      ],
+      [
+       -122.3549601,
+       37.8511737
+      ],
+      [
+       -122.3552192,
+       37.8510443
+      ],
+      [
+       -122.3570376,
+       37.8504989
+      ],
+      [
+       -122.3583667,
+       37.8500324
+      ],
+      [
+       -122.3585483,
+       37.8500172
+      ],
+      [
+       -122.3619547,
+       37.8488757
+      ],
+      [
+       -122.3621219,
+       37.8488954
+      ],
+      [
+       -122.3627265,
+       37.8501386
+      ],
+      [
+       -122.3494241,
+       37.8543641
+      ],
+      [
+       -122.3490569,
+       37.8543775
+      ],
+      [
+       -122.3487895,
+       37.8545616
+      ],
+      [
+       -122.3482303,
+       37.8547496
+      ],
+      [
+       -122.341998,
+       37.8567237
+      ],
+      [
+       -122.3418164,
+       37.8567389
+      ],
+      [
+       -122.331673,
+       37.8599973
+      ],
+      [
+       -122.3305472,
+       37.860301
+      ],
+      [
+       -122.330162,
+       37.8604787
+      ],
+      [
+       -122.32891,
+       37.8608308
+      ],
+      [
+       -122.3283361,
+       37.8610563
+      ],
+      [
+       -122.3235556,
+       37.8625458
+      ],
+      [
+       -122.3229778,
+       37.861502
       ],
       [
        -122.3229813,
@@ -610,6 +649,10 @@
       [
        -122.3309806,
        37.8588481
+      ],
+      [
+       -122.3311623,
+       37.8588329
       ]
      ]
     ]

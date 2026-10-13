@@ -55,6 +55,7 @@ export function AboutPanel({ onClose }: Props) {
         </ul>
         <ul class="notes">
           <li>A proposed site is a dashed outline with no fill; later stages are filled.</li>
+          <li>A dotted outline on the water is part of a site that is only dredged, with nothing built on it.</li>
           <li>
             Open a project and its buildings rise in place. A faint envelope above a base shows a
             height limit, not a design.

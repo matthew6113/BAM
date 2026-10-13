@@ -3,6 +3,24 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-13 (Berkeley ferry: dredged channel drawn apart)
+
+**berkeley-pier-ferry**: Matthew asked for the site not to run so far into the Bay, so I re-checked it
+against the Draft EIR (CEQAnet SCH 2025040995). The official project site really does run about 3 miles
+from the shoreline (p. 3.4-12), because the existing 100-ft federal navigation channel along the closed
+pier is dredged for the ferries (p. 2-28). Figures 2-2 and 2-3 draw it that way, and the trace matches
+them. What gets built is much shorter: a pier of at most 1,080 by 22 ft, a 400 by 15 ft breakwater and
+two 135 by 42 ft floats (pp. 2-6 and 2-10).
+
+The boundary file now splits the site where its outline narrows, about 1,600 ft out (the end of the
+southern staging area):
+- the 54 acres around the pier, plaza and streets stay the filled site that the fly-in frames and the
+  marker sits on;
+- the 132 acres of channel beyond are a separate "dredging" feature, drawn dotted and unfilled, with a
+  note in the panel.
+
+Together they are the same 186 acres as before. No facts changed and `lastVerified` is unchanged.
+
 ## 2026-10-12 (Alameda Point photo)
 
 **alameda-point-plan**: photo swapped at Matthew's request from the 1995 Navy aerial to Bill Abbott's
