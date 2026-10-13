@@ -6,6 +6,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import type { Theme } from '../theme/theme';
 import { stageLabel } from '../projects/data';
 import { buildStyle, type ViewMode } from './style';
+import { trackHandover } from './handover';
 import type { Selection } from './projectLayers';
 import type { Camera } from '../projects/flight';
 import { HOME_BOUNDS, MAX_BOUNDS, MAX_ZOOM, MIN_ZOOM } from './config';
@@ -57,7 +58,7 @@ export function syncStyle(map: maplibregl.Map, next: StyleInputs) {
 }
 
 /** Layers that open a project when clicked. */
-export const PROJECT_HIT_LAYERS = ['project-site-fill', 'project-line-hit', 'project-markers'];
+export const PROJECT_HIT_LAYERS = ['project-site-fill', 'project-line-hit', 'project-marker-hit', 'project-names'];
 
 interface Hover {
   name: string;
@@ -130,6 +131,8 @@ export function MapView({ theme, mode, selection, hidden, onReady, onFirstIntera
       select.current?.(id);
     });
     map.on('movestart', () => setHover(null));
+    // Each project is a dot until its site is big enough to draw as its own shape.
+    const stopHandover = trackHandover(map);
     map.once('load', () => {
       if (!startsFromHash) map.jumpTo(homeCamera(map));
       onReady(map);
@@ -144,6 +147,7 @@ export function MapView({ theme, mode, selection, hidden, onReady, onFirstIntera
       (window as unknown as { __map: maplibregl.Map }).__map = map;
     }
     return () => {
+      stopHandover();
       map.remove();
       mapRef.current = null;
     };

@@ -6,22 +6,21 @@ import type {
 import type { Feature, FeatureCollection, Geometry, MultiPolygon, Point, Polygon } from 'geojson';
 import { stageColor, STAGE_KEYS, type StageKey, type Theme } from '../theme/theme';
 import {
-  alignmentMidpoint,
   boundaryLine,
-  boundaryOf,
   centroidOf,
   dredgingOf,
   isLineProject,
   lineOf,
   landUseOf,
   MAPPED_PROJECTS,
-  markerPointsOf,
+  markersOf,
   massingOf,
   getProject,
   pointFeature,
   siteOf,
   type Massing,
 } from '../projects/data';
+import { LAST_DOT_ZOOM, siteWidth } from './handover';
 
 export const FT = 0.3048;
 /** Surrounding buildings extrude faintly within this distance of the selected site. */
@@ -39,16 +38,20 @@ const getStage = (id: string) => getProject(id)?.stage;
 
 const EMPTY: FeatureCollection = { type: 'FeatureCollection', features: [] };
 
-/** One point per mapped project (site centroid; one per piece for scattered sites), for the regional markers. */
+/**
+ * One point per mapped site (its centroid; one per piece for a scattered program), for the dots and
+ * names. `size` (how wide the site reads, in metres) puts small sites' dots on top and big sites'
+ * names first; a scattered program is named once.
+ */
 function projectPoints(): FeatureCollection<Point> {
   return {
     type: 'FeatureCollection',
     features: MAPPED_PROJECTS.flatMap((p) => {
-      const parts = (boundaryOf(p.id)?.features ?? []).filter((f) => f.properties.kind === 'sub-area').map((f) => f.geometry);
-      // A line's marker sits on the line, not at the middle of its corridor.
-      const mid = alignmentMidpoint(p.id);
-      const at = mid ? [mid] : markerPointsOf(siteOf(p.id)!.geometry, parts);
-      return at.map((xy) => pointFeature(xy, { id: p.id, name: p.name, stage: p.stage, scattered: at.length > 1 }));
+      const at = markersOf(p.id);
+      const size = Math.round(siteWidth(p.id));
+      return at.map((xy, i) => pointFeature(xy, {
+        id: p.id, name: p.name, stage: p.stage, scattered: at.length > 1, named: i === 0, size,
+      }));
     }),
   };
 }
@@ -122,8 +125,9 @@ export function projectSources(selection: Selection | null): Record<string, Sour
   // A landed line project is drawn by its own layers, so the drawing line clears.
   const drawn = selection?.phase === 'landed' && site && !isLineProject(selection.id) ? boundaryLine(site.geometry) : undefined;
   return {
-    'project-points': { type: 'geojson', data: projectPoints() },
-    'project-sites': { type: 'geojson', data: projectSites() },
+    // Keyed by project id: the handover (handover.ts) is feature state on both.
+    'project-points': { type: 'geojson', data: projectPoints(), promoteId: 'id' },
+    'project-sites': { type: 'geojson', data: projectSites(), promoteId: 'id' },
     'project-dredging': { type: 'geojson', data: projectDredging() },
     'project-lines': { type: 'geojson', data: projectLines() },
     // Filled by the fly-in as the camera approaches; complete once landed.
@@ -167,6 +171,7 @@ export function projectLayers(
   const landed = selection?.phase === 'landed';
   // Line projects draw their alignment instead of a site.
   const othersSites: ExpressionSpecification = ['all', others, ['!', ['get', 'line']]];
+  const markerFilter: ExpressionSpecification = ['any', others, ['all', isSelected, ['==', ['get', 'scattered'], true]]];
   // A proposed site (no approvals yet) is an outline only, dashed, per the stage spec (Matthew, 2026-10-08).
   const proposedSite: ExpressionSpecification = ['==', ['get', 'stage'], 'proposed'];
   const selectedProposed = !!selection && getStage(selection.id) === 'proposed';
@@ -178,47 +183,51 @@ export function projectLayers(
     '*', ['coalesce', ['get', 'podium_ft'], ['get', 'height_ft']], FT * exaggeration,
     ['case', ['==', ['get', 'stage'], 'complete'], 1, rise],
   ];
+  // How far each project has gone from dot to site shape (handover.ts): 0 the dot, 1 the shape.
+  const shown: ExpressionSpecification = ['coalesce', ['feature-state', 'shown'], 0];
+  const dot: ExpressionSpecification = ['-', 1, shown];
+  const siteFill = (opacity: number): ExpressionSpecification => ['case', proposedSite, 0, ['*', opacity, shown]];
   const presentStages = selection
     ? [...new Set((massingOf(selection.id)?.features ?? []).map((f) => f.properties.stage))]
     : [];
 
   const layers: LayerSpecification[] = [
     {
+      // A site draws as its own shape once it is big enough on screen (handover.ts): strongly filled
+      // while it is small, fading to a tint at street level so the buildings on it show.
       // Also the click target for sites (PROJECT_HIT_LAYERS), so a proposed site stays in it, unfilled.
       id: 'project-site-fill',
       type: 'fill',
       source: 'project-sites',
-      minzoom: 11.5,
       filter: othersSites,
       paint: {
         'fill-color': stageCol,
-        'fill-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, ['case', proposedSite, 0, theme.opacity.siteFill]],
+        'fill-opacity': ['interpolate', ['linear'], ['zoom'],
+          10, siteFill(theme.opacity.siteFillRegional), 13.5, siteFill(theme.opacity.siteFill)],
       },
     },
     {
       id: 'project-site-outline',
       type: 'line',
       source: 'project-sites',
-      minzoom: 11.5,
       filter: ['all', othersSites, ['!', proposedSite]],
       layout: { 'line-join': 'round' },
       paint: {
         'line-color': stageCol,
-        'line-width': ['interpolate', ['linear'], ['zoom'], 12, 1, 16, 2],
-        'line-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, 1],
+        'line-width': ['interpolate', ['linear'], ['zoom'], 8, 0.75, 12, 1, 16, 2],
+        'line-opacity': shown,
       },
     },
     {
       id: 'project-site-outline-proposed',
       type: 'line',
       source: 'project-sites',
-      minzoom: 11.5,
       filter: ['all', othersSites, proposedSite],
       layout: { 'line-join': 'round' },
       paint: {
         'line-color': stageCol,
-        'line-width': ['interpolate', ['linear'], ['zoom'], 12, 1, 16, 2],
-        'line-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, 1],
+        'line-width': ['interpolate', ['linear'], ['zoom'], 8, 1, 12, 1.25, 16, 2],
+        'line-opacity': shown,
         'line-dasharray': [3, 2],
       },
     },
@@ -312,51 +321,56 @@ export function projectLayers(
       paint: { 'line-color': stageCol, 'line-width': 1.5, 'line-dasharray': [3, 2] },
     },
     {
-      // A soft land-colored halo that clears the building ink around each dot.
-      id: 'project-marker-halos',
-      type: 'circle',
-      source: 'project-points',
-      maxzoom: 13,
-      filter: ['any', others, ['all', isSelected, ['==', ['get', 'scattered'], true]]],
-      paint: {
-        'circle-color': c.land,
-        'circle-radius': ['interpolate', ['linear'], ['zoom'], 6, 10, 10, 15, 12.5, 17],
-        'circle-blur': 0.35,
-        'circle-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
-      },
-    },
-    {
+      // A dot for a site still too small to draw (handover.ts): small and solid, with a thin, hard
+      // paper ring (Matthew, 2026-10-13: option D). A proposed project is a hollow ring, as its site
+      // is a dashed outline. Small sites' dots sit on top.
       id: 'project-markers',
       type: 'circle',
       source: 'project-points',
-      maxzoom: 13,
-      // A scattered program (BART's station sites) keeps its markers once selected: from its
-      // regional landing view the sites themselves are only a few pixels across.
-      filter: ['any', others, ['all', isSelected, ['==', ['get', 'scattered'], true]]],
+      maxzoom: LAST_DOT_ZOOM,
+      // A scattered program (BART's station sites) keeps its dots once selected: from its regional
+      // landing view the sites themselves are only a few pixels across.
+      filter: markerFilter,
+      layout: { 'circle-sort-key': ['-', 0, ['get', 'size']] },
       paint: {
-        'circle-color': stageCol,
+        'circle-color': ['case', proposedSite, c.land, stageCol],
         'circle-radius': ['interpolate', ['linear'], ['zoom'],
-          6, ['case', isSelected, 6, 5], 10, ['case', isSelected, 9, 7.5], 12.5, ['case', isSelected, 10, 8.5]],
-        'circle-stroke-color': ['case', isSelected, c.labels, c.land],
-        'circle-stroke-width': 2,
-        'circle-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
-        'circle-stroke-opacity': ['interpolate', ['linear'], ['zoom'], 12, 1, 13, 0],
+          6, ['case', isSelected, 3.5, 2.75], 10, ['case', isSelected, 5, 4], 12.5, ['case', isSelected, 6, 5]],
+        'circle-stroke-color': ['case', proposedSite, stageCol, isSelected, c.labels, c.land],
+        'circle-stroke-width': ['case', proposedSite, 1.5, 1],
+        'circle-opacity': dot,
+        'circle-stroke-opacity': dot,
       },
     },
     {
+      // Invisible and wider than the dots: an easy target to hover, click and tap.
+      id: 'project-marker-hit',
+      type: 'circle',
+      source: 'project-points',
+      maxzoom: LAST_DOT_ZOOM,
+      filter: markerFilter,
+      paint: { 'circle-radius': 11, 'circle-color': c.land, 'circle-opacity': 0 },
+    },
+    {
+      // Names beside the dots and sites, the biggest sites placed first; names that would collide
+      // are left out. From the regional view on desktop; a phone's whole-bay view stays unlabelled.
       id: 'project-names',
       type: 'symbol',
       source: 'project-points',
-      minzoom: 12,
+      minzoom: 8.5,
       maxzoom: 15.5,
-      filter: others,
+      filter: ['all', others, ['==', ['get', 'named'], true]],
       layout: {
         'text-field': ['get', 'name'],
         'text-font': fonts.medium,
-        'text-size': 12,
-        'text-max-width': 9,
+        'text-size': ['interpolate', ['linear'], ['zoom'], 8.5, 10.5, 12, 12],
+        'text-max-width': 8,
+        'text-variable-anchor': ['left', 'right', 'top', 'bottom'],
+        'text-radial-offset': 0.7,
+        'text-justify': 'auto',
+        'symbol-sort-key': ['-', 0, ['get', 'size']],
       },
-      paint: { 'text-color': c.labels, 'text-halo-color': c.land, 'text-halo-width': 2, 'text-halo-blur': 0.5 },
+      paint: { 'text-color': c.labels, 'text-halo-color': c.land, 'text-halo-width': 1.5, 'text-halo-blur': 0.5 },
     },
     {
       id: 'project-massing-labels',

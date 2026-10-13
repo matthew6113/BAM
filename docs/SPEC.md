@@ -148,8 +148,9 @@ Massing rules:
 Regional view
 - All project sites are filled and outlined in their stage color, with low extrusions
   once zoomed in past the regional level. Existing buildings are flat ink.
-- Hovering a site shows its name and stage. Labels for projects appear only when zoomed
-  in, or on hover.
+- Hovering a site shows its name and stage. A project too small to draw at the current
+  zoom is a dot; names sit beside dots and sites from the regional view on, the biggest
+  sites first (DECISIONS, 2026-10-13).
 
 Fly-in (the signature moment)
 - Clicking a site, a list entry or a deep link starts a slow flight of about 4 to 5

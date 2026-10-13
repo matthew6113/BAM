@@ -171,16 +171,6 @@ export function alignmentOf(id: string): Feature<MultiLineString> | undefined {
   return { type: 'Feature', properties: {}, geometry: { type: 'MultiLineString', coordinates: parts } };
 }
 
-/** The point halfway along a line project's longest alignment piece (for its regional marker). */
-export function alignmentMidpoint(id: string): [number, number] | undefined {
-  const parts = alignmentOf(id)?.geometry.coordinates as [number, number][][] | undefined;
-  if (!parts?.length) return undefined;
-  const len = (c: [number, number][]) => c.slice(1).reduce((s, p, i) => s + metres(c[i], p), 0);
-  const longest = parts.reduce((a, b) => (len(b) > len(a) ? b : a));
-  const prefix = ringPrefix(longest, 0.5);
-  return prefix[prefix.length - 1];
-}
-
 export function siteOf(id: string): Feature<Polygon | MultiPolygon, BoundaryProps> | undefined {
   return BOUNDARIES.get(id)?.features.find((f) => f.properties.kind === 'site');
 }
@@ -286,6 +276,30 @@ export function markerPointsOf(
   if (gap <= maxGapM) return [c];
   const pieces = parts.length ? parts : g.coordinates.map((p): Polygon => ({ type: 'Polygon', coordinates: p }));
   return pieces.map((p) => centroidOf(p));
+}
+
+/**
+ * Where a mapped project's regional dots go (see markerPointsOf). A line project has none: its
+ * line is its own symbol.
+ */
+export function markersOf(id: string): [number, number][] {
+  const site = siteOf(id);
+  if (!site || isLineProject(id)) return [];
+  const parts = (boundaryOf(id)?.features ?? []).filter((f) => f.properties.kind === 'sub-area').map((f) => f.geometry);
+  return markerPointsOf(site.geometry, parts);
+}
+
+/** Ground area of the outer rings in square metres (equirectangular; fine at site scale). */
+export function areaOf(g: Polygon | MultiPolygon): number {
+  return outerRings(g).reduce((sum, ring) => {
+    const [ox, oy] = ring[0];
+    const kx = Math.cos(oy * (Math.PI / 180)) * 111320;
+    let a = 0;
+    for (let i = 0; i < ring.length - 1; i++) {
+      a += (ring[i][0] - ox) * kx * (ring[i + 1][1] - oy) * 110540 - (ring[i + 1][0] - ox) * kx * (ring[i][1] - oy) * 110540;
+    }
+    return sum + Math.abs(a) / 2;
+  }, 0);
 }
 
 /** Ground distance in metres (equirectangular; fine at site scale). */
