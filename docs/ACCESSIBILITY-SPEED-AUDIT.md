@@ -1,6 +1,6 @@
 # Accessibility and speed check
 
-Oct 12, 2026. This checks the live site (https://matthew6113.github.io/BAM/, built from `main` at
+Oct 12, 2026 (font subsetting added Oct 13). This checks the live site (https://matthew6113.github.io/BAM/, built from `main` at
 `2b121f4`) on desktop and on an iPhone-sized screen. The fixes listed under "Fixed in this branch" are on
 `claude/keen-clarke-vjavvt`, and the rest are open for Matthew's call. map.matthewhuguet.com can't be
 reached from this environment, so the github.io address was tested instead (it's the same build).
@@ -53,11 +53,11 @@ What the first view downloads (cold cache, compressed):
 | Script (one bundle) | 524 KB | 524 KB |
 | Building and base tiles | 1,203 KB | 379 KB |
 | Map label glyphs | 146 KB | 100 KB |
-| UI font (Libre Franklin) | 71 KB | 71 KB |
+| UI font (Libre Franklin) | 71 KB (32 KB on this branch) | 71 KB (32 KB on this branch) |
 | CSS | 14 KB | 14 KB |
 
 Opening a project adds a few KB of massing, its photo (Potrero's is 133 KB), and, the first time, the
-428 KB serif font used for the summary text.
+serif font used for the summary text: 428 KB on the live site, 72 KB on this branch (fix 8).
 
 ## What already works well
 
@@ -122,6 +122,28 @@ Opening a project adds a few KB of massing, its photo (Potrero's is 133 KB), and
    *Opened within the first 5 seconds. After: the credits are out of the way, and the search box and
    Area menu are 16 px.*
 
+8. **Web fonts cut to the characters the site shows.**
+   - Both fonts shipped with every character they have and, for the serif, the full optical-size axis.
+   - The web copies now keep Latin, Latin-1, Latin Extended-A, punctuation, arrows and a few symbols.
+     The serif's optical size is fixed at 15.5, what browsers pick for the 15.5 px summaries, with weights
+     400–700.
+     - Libre Franklin drops from 72 to 32 KB. It loads on every visit.
+     - The serif drops from 428 to 72 KB. It loads the first time a project opens.
+   - The serif ships as **Megaprojects Serif**. Source Serif 4's own name records reserve the name
+     "Source", and the OFL doesn't let a subset keep a Reserved Font Name (OFL FAQ 2.6). Its copyright,
+     trademark and license records are kept, and the credits name Source Serif 4. Matthew chose this on
+     Oct 13.
+   - Compared with the live site, the summary text breaks at the same places and its line boxes are the
+     same size. Pixels differ only in the antialiasing at glyph edges.
+   - `tests/fonts.test.ts` fails if the data or the interface ever uses a character outside the subset.
+   - Two side effects:
+     - The share card's 24 px serif line will use the 15.5 optical size the next time it's redrawn
+       (`npm run share-card`), so it will look a touch sturdier than the card now online.
+     - The serif's map-label glyphs, used only if the style panel switches labels to the serif, are now
+       "Megaprojects Serif Regular", "SemiBold" and "Italic".
+   - Editing `pipeline/` makes CI rebuild all the map data once. Past rebuilds took 8–10 minutes; this one
+     also downloads the Overture extract again, because `fonts.py` is part of that cache key too.
+
 Checks after the fixes: type check, unit tests and the Playwright interaction tests pass; axe finds no
 violations in any of the ten states.
 
@@ -131,22 +153,12 @@ Ranked by payoff, speed first.
 
 ### Speed
 
-1. **Subset the web fonts.**
-   - This is the largest saving that changes nothing on screen. Both fonts ship with every character
-     and, for Source Serif, the optical-size axis.
-   - Cut to Latin, Latin-1, Latin Extended-A, punctuation and arrows:
-     - Libre Franklin drops from 72 to 31 KB. It loads on every visit.
-     - Source Serif 4 drops from 428 to 217 KB. Pinning its optical size at 16 (the summary text is
-       15.5 px) and its weights to 400–700 takes it to 71 KB. It loads on the first project opened.
-   - The text uses only these characters beyond plain ASCII: § © ° ± · é – “ ” … ← →.
-   - The change belongs in `pipeline/bam_pipeline/fonts.py`. Any edit under `pipeline/` changes the CI
-     cache key, so the next deploy rebuilds all the map data, tiles included (a long run).
-2. **A blank page until the script runs.**
+1. **A blank page until the script runs.**
    - The page is empty until the 524 KB bundle has downloaded and run: 4.1 s on slow 4G, 1.3 s on fast
      4G.
    - Writing the title and byline into `index.html` (and the generated project pages) would put words on
      screen in about a second, while the map loads.
-3. **One large bundle.**
+2. **One large bundle.**
    - What's in it: MapLibre is about 300 KB of the 524 KB. The project data is about 220 KB:
      `projects.json` 116 KB, boundaries 82 KB, rail lines 21 KB.
    - Why it hurts repeat visits: GitHub Pages lets browsers cache files for only 10 minutes, and every
@@ -155,22 +167,22 @@ Ranked by payoff, speed first.
    - Splitting MapLibre into its own file keeps that file's name stable between deploys. The browser then
      revalidates it instead of downloading it again.
    - The `reported` records (23 KB, never shown) could also be dropped at build time.
-4. **Regional building tiles.**
+3. **Regional building tiles.**
    - The "all" overview, chosen for the look, is about 1.2 MB for a 1440 × 900 first view and 380 KB on
      a phone.
    - The "light" variant trades density for size. This is a design call; listed only so the cost is known.
-5. **Photo sizes.**
+4. **Photo sizes.**
    - Photos are 1280 px JPEGs shown 380–400 px wide.
    - An 800 px version with `srcset` (and WebP) would save about 95 KB per panel on a phone.
    - Photos are lazy-loaded, so this doesn't touch first load.
-6. **Layout shift.**
+5. **Layout shift.**
    - The credits collapsing after 5 s moves the credits block: 0.18 on a phone, where "good" is under
      0.1.
    - On a deep link, the map buttons and credits jump above the sheet as it opens (0.08).
    - Fixes: lay the credits text out of flow, so collapsing it moves nothing, and move the buttons with
      a transform.
    - This mostly affects the Core Web Vitals score, not what visitors notice.
-7. **First fly-in compiles the 3D shaders.**
+6. **First fly-in compiles the 3D shaders.**
    - Here, 2.9 s of the fly-in's main-thread time is WebGL shader linking, done the first time the 3D
      layers draw.
    - A real GPU is much faster, but it's the likeliest cause of a hitch at the start of the first fly-in
