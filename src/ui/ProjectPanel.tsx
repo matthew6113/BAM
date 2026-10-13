@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'preact/hooks';
-import { boundaryOf, LAND_USE_CATEGORIES, landUseLabel, landUseOf, massingOf, photoOf, STAGES, type Photo, stageLabel, type Project } from '../projects/data';
+import { boundaryOf, dredgingOf, LAND_USE_CATEGORIES, landUseLabel, landUseOf, massingOf, photoOf, STAGES, type Photo, stageLabel, type Project } from '../projects/data';
 import { formatDate, formatInt, formatNumber, formatSqft, sourceText } from './format';
 
 interface Props {
@@ -168,6 +168,7 @@ export function ProjectPanel({ project, onClose, onPrev, onNext, prevName, nextN
           <a href={bMeta.sourceUrl}>{typeof bMeta.sourceLabel === 'string' ? bMeta.sourceLabel : 'the source'}</a>
         )}
         .
+        {dredgingOf(project.id).map((f) => f.properties.note && <> {f.properties.note}</>)}
       </p>
 
       {zoneCategories.length > 0 && (

@@ -54,8 +54,14 @@ export interface MassingProps {
 }
 
 export interface BoundaryProps {
-  kind: 'site' | 'sub-area';
+  /**
+   * 'dredging': part of the official site where the only work is dredging and nothing is built (the
+   * Berkeley ferry's channel). Drawn as a dotted outline, apart from the site, which the map fills.
+   */
+  kind: 'site' | 'sub-area' | 'dredging';
   name: string;
+  /** Shown in the project panel, for parts drawn apart from the site. */
+  note?: string;
 }
 
 /** Land-use categories for plan-scale projects' zones (colors in the theme's landUse). */
@@ -177,6 +183,11 @@ export function alignmentMidpoint(id: string): [number, number] | undefined {
 
 export function siteOf(id: string): Feature<Polygon | MultiPolygon, BoundaryProps> | undefined {
   return BOUNDARIES.get(id)?.features.find((f) => f.properties.kind === 'site');
+}
+
+/** The parts of a project's site that are dredging only (none for most projects). */
+export function dredgingOf(id: string): Feature<Polygon | MultiPolygon, BoundaryProps>[] {
+  return BOUNDARIES.get(id)?.features.filter((f) => f.properties.kind === 'dredging') ?? [];
 }
 
 /** Massing with a numeric feature id per building, for feature-state animation (after loadProjectGeometry). */

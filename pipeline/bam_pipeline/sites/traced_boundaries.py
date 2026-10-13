@@ -183,12 +183,14 @@ def to_wgs(g):
     return gpd.GeoSeries([g], crs=UTM).to_crs(4326).iloc[0]
 
 
-def write(project: str, site_utm, props: dict) -> None:
+def write(project: str, site_utm, props: dict, parts: list[tuple[dict, object]] | None = None) -> None:
+    """The boundary file: the site, then any further parts (properties, UTM geometry), e.g. dredging."""
     fc = {
         "type": "FeatureCollection",
         "properties": {"project": project, **props},
         "features": [{"type": "Feature", "properties": {"kind": "site", "name": "Project site"},
-                      "geometry": mapping(to_wgs(site_utm))}],
+                      "geometry": mapping(to_wgs(site_utm))}]
+        + [{"type": "Feature", "properties": p, "geometry": mapping(to_wgs(g))} for p, g in parts or []],
     }
     OUT.mkdir(parents=True, exist_ok=True)
     path = OUT / f"{project}.geojson"

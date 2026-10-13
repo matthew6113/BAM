@@ -10,6 +10,7 @@ import {
   boundaryLine,
   boundaryOf,
   centroidOf,
+  dredgingOf,
   isLineProject,
   lineOf,
   landUseOf,
@@ -66,6 +67,16 @@ function projectSites(): FeatureCollection<Polygon | MultiPolygon> {
   };
 }
 
+/** The dredging-only parts of sites (the Berkeley ferry's channel), drawn apart from the filled site. */
+function projectDredging(): FeatureCollection<Polygon | MultiPolygon> {
+  return {
+    type: 'FeatureCollection',
+    features: MAPPED_PROJECTS.flatMap((p) =>
+      dredgingOf(p.id).map((f) => ({ type: 'Feature' as const, properties: { id: p.id, stage: p.stage }, geometry: f.geometry })),
+    ),
+  };
+}
+
 /** Every mapped line project's alignment and stations, tagged with the project's id, name and stage. */
 function projectLines(): FeatureCollection<Geometry> {
   return {
@@ -113,6 +124,7 @@ export function projectSources(selection: Selection | null): Record<string, Sour
   return {
     'project-points': { type: 'geojson', data: projectPoints() },
     'project-sites': { type: 'geojson', data: projectSites() },
+    'project-dredging': { type: 'geojson', data: projectDredging() },
     'project-lines': { type: 'geojson', data: projectLines() },
     // Filled by the fly-in as the camera approaches; complete once landed.
     'project-boundary-draw': { type: 'geojson', data: drawn ? { type: 'FeatureCollection', features: [drawn] } : EMPTY },
@@ -208,6 +220,22 @@ export function projectLayers(
         'line-width': ['interpolate', ['linear'], ['zoom'], 12, 1, 16, 2],
         'line-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, 1],
         'line-dasharray': [3, 2],
+      },
+    },
+    {
+      // Dredging only, nothing built: a dotted outline and no fill, so a dredged channel doesn't read as
+      // built ground. Shown for the selected project too.
+      id: 'project-dredging-outline',
+      type: 'line',
+      source: 'project-dredging',
+      minzoom: 11.5,
+      filter: hidden.length ? ['!', ['in', ['get', 'id'], ['literal', hidden]]] : ['has', 'id'],
+      layout: { 'line-join': 'round', 'line-cap': 'round' },
+      paint: {
+        'line-color': stageCol,
+        'line-width': ['interpolate', ['linear'], ['zoom'], 12, 1.2, 16, 2],
+        'line-opacity': ['interpolate', ['linear'], ['zoom'], 11.5, 0, 12.5, 0.85],
+        'line-dasharray': [0, 2],
       },
     },
     {

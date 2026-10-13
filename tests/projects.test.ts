@@ -1,4 +1,5 @@
 import { describe, expect, it } from 'vitest';
+import type { MultiPolygon, Polygon } from 'geojson';
 import {
   alignmentMidpoint,
   alignmentOf,
@@ -20,6 +21,7 @@ import {
   bboxOf,
   markerPointsOf,
   containsPoint,
+  dredgingOf,
 } from '../src/projects/data';
 import { isOfficialSource } from '../src/projects/official';
 import { CATEGORIES, isFiltered, matchesFilter, NO_FILTER } from '../src/projects/filter';
@@ -31,6 +33,8 @@ import { pathForProject, projectIdFromPath } from '../src/router';
 await loadAllGeometry();
 
 const inside = ([x, y]: [number, number], [x0, y0, x1, y1]: number[]) => x >= x0 && x <= x1 && y >= y0 && y <= y1;
+const vertices = (g: Polygon | MultiPolygon) =>
+  (g.type === 'Polygon' ? [g.coordinates] : g.coordinates).flat(2) as [number, number][];
 
 describe('traced project geometry', () => {
   it('maps Potrero Power Station', () => {
@@ -76,6 +80,18 @@ describe('traced project geometry', () => {
         });
       }
 
+      for (const part of dredgingOf(project.id)) {
+        it(`draws its dredging-only part (${part.properties.name}) apart from the site, with a note`, () => {
+          expect(part.properties.name).toMatch(/\S/);
+          expect(part.properties.note).toMatch(/^[A-Z].*\.$/);
+          const site = siteOf(project.id)!.geometry;
+          expect(containsPoint(site, centroidOf(part.geometry))).toBe(false);
+          // The two meet along the cut, so together they are the whole site as traced.
+          const gap = Math.min(...vertices(part.geometry).flatMap((a) => vertices(site).map((b) => metres(a, b))));
+          expect(gap).toBeLessThan(5);
+        });
+      }
+
       const massing = massingOf(project.id);
       if (!massing) return;
 
@@ -116,6 +132,15 @@ describe('traced project geometry', () => {
       });
     });
   }
+
+  it('fills the Berkeley ferry site only near the pier and draws its dredged channel apart', () => {
+    // Where the closed pier meets the shore (Draft EIR, Figure 2-2). The new pier is at most 1,080 ft
+    // (329 m); the filled site ends where the official outline narrows to the channel, about 1,600 ft out.
+    const abutment: [number, number] = [-122.3177, 37.863];
+    const west = vertices(siteOf('berkeley-pier-ferry')!.geometry).reduce((a, b) => (b[0] < a[0] ? b : a));
+    expect(metres(west, abutment)).toBeLessThan(600);
+    expect(dredgingOf('berkeley-pier-ferry')).toHaveLength(1);
+  });
 
   it('keeps the Potrero stack at its sourced 300 ft', () => {
     const stack = massingOf('potrero-power-station')!.features.find((f) => f.properties.kind === 'landmark')!;
