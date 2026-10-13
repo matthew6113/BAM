@@ -238,3 +238,31 @@ The contrast check now measures the selection against this ground (about 13:1).
 - Berkeley keeps its wide landing view with the full dredged channel.
 - Harbor Bay and Larkspur: add once their environmental documents are published (pre-approved in
   `docs/UPKEEP.md`, step 4).
+
+## 2026-10-13: project dots, option D (Matthew)
+
+Matthew wanted the dots to look less like an app and more like a real map. Chosen from four options
+(crisp dots, dots sized by acreage, site shapes once visible, and shapes plus names), drawn on the live
+map: `docs/screenshots/markers/options-*.png`; the result is in `after-*.png`. This replaces the
+"bigger dots with knockout halos" of Oct 7.
+
+- **Site shapes once visible.** A project is a dot until its site is about 18 px across on screen (the
+  side of a square of its area), then its own boundary takes over (`src/map/handover.ts`). Big sites
+  (the Suisun expansion, Mare Island, Concord) are shapes from the whole-bay view; small ones (30 Van
+  Ness) stay dots until zoom 13. The swap happens at one zoom with a 200 ms fade (instant with reduced
+  motion), so a still map never shows a site half drawn. Site fills run from 70% at the regional view
+  (`opacity.siteFillRegional`, new) to the 14% street-level tint (`opacity.siteFill`), so the buildings
+  on a site show once you're close. Both are in the style panel.
+- **Crisp dots.** Solid, 2.75 to 5 px radius, with a 1 px hard paper ring and no soft halo. A proposed
+  project's dot is a hollow ring, as its site is a dashed outline. Small sites' dots sit on top. An
+  invisible 11 px target under each dot keeps it easy to tap.
+- **No dots on lines.** A line project's line is its own symbol at every zoom. The name that sat at
+  its midpoint from zoom 12 goes too; hovering still names it, and the open line names its stations.
+- **Names** from zoom 8.5, beside each dot or site, the biggest sites placed first. Names that would
+  collide are left out, and city names win. A phone's whole-bay view stays unlabelled. A scattered
+  program (BART station-area housing) is named once. Clicking a name opens the project.
+- The link-preview card is redrawn.
+
+Still open: the Suisun expansion's approximate boundary is the biggest shape at the whole-bay view (it
+could be an outline only until zoomed in); whole-bay names could start later (zoom 10) if they feel
+busy.
