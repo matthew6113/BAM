@@ -1,6 +1,6 @@
 # Accessibility and speed check
 
-Oct 12, 2026 (font subsetting added Oct 13). This checks the live site (https://matthew6113.github.io/BAM/, built from `main` at
+Oct 12, 2026 (fixes 8 to 10 added Oct 13). This checks the live site (https://matthew6113.github.io/BAM/, built from `main` at
 `2b121f4`) on desktop and on an iPhone-sized screen. The fixes listed under "Fixed in this branch" are on
 `claude/keen-clarke-vjavvt`, and the rest are open for Matthew's call. map.matthewhuguet.com can't be
 reached from this environment, so the github.io address was tested instead (it's the same build).
@@ -40,7 +40,7 @@ reached from this environment, so the github.io address was tested instead (it's
 | Lighthouse performance (median; see caveat) | 69 home, 66 project | 69 home, 49 project, 57 about |
 | First text on screen | 0.7–0.8 s | 1.3 s on fast 4G, 4.1 s on slow 4G |
 | Map drawn | 3.3–4.2 s | 3.1–4.0 s on fast 4G, 7.9 s on slow 4G |
-| Downloaded for the first view | about 1.96 MB | about 1.09 MB |
+| Downloaded for the first view | about 2.1 MB | about 1.24 MB |
 | Layout shift (CLS) | 0.005 home, 0.03 deep link | 0.18 home (credits collapsing), 0.20 deep link |
 
 On the iPhone, axe couldn't measure the list's contrast because the credits covered it (fix 7), so it
@@ -50,11 +50,15 @@ What the first view downloads (cold cache, compressed):
 
 | | Desktop | iPhone |
 |---|---|---|
-| Script (one bundle) | 524 KB | 524 KB |
+| Script (one bundle; two files on this branch, fix 10) | 524 KB | 524 KB |
+| MapLibre's worker script (already its own file) | 146 KB | 146 KB |
 | Building and base tiles | 1,203 KB | 379 KB |
 | Map label glyphs | 146 KB | 100 KB |
 | UI font (Libre Franklin) | 71 KB (32 KB on this branch) | 71 KB (32 KB on this branch) |
 | CSS | 14 KB | 14 KB |
+
+The first pass of this check left out the worker script: the worker fetches it, and the page-level
+network log doesn't see those requests. The totals above include it.
 
 Opening a project adds a few KB of massing, its photo (Potrero's is 133 KB), and, the first time, the
 serif font used for the summary text: 428 KB on the live site, 72 KB on this branch (fix 8).
@@ -144,6 +148,34 @@ serif font used for the summary text: 428 KB on the live site, 72 KB on this bra
    - Editing `pipeline/` makes CI rebuild all the map data once. Past rebuilds took 8–10 minutes; this one
      also downloads the Overture extract again, because `fonts.py` is part of that cache key too.
 
+9. **The title is in the page itself.**
+   - The page was empty until the 524 KB script had downloaded and run. `index.html` now holds the title
+     and byline as the app draws them, and the build writes the theme's colors and type into the page.
+     So the words paint at once, in their real font on the paper color, and the app draws its own
+     copy in their place on its first render.
+   - Measured on the iPhone profile (4× CPU), built locally, before and after this change:
+
+     | | Before | After |
+     |---|---|---|
+     | First text, slow 4G | 3.5–4.3 s | 0.94–0.99 s |
+     | First text, fast 4G | 0.92–0.94 s | 0.47–0.50 s |
+     | Layout shift by the time the map is ready, fast 4G | 0.131 | 0 |
+     | Map ready | 7.8–9.6 s slow, 3.2 s fast | 7.2–8.0 s slow, 3.3–3.4 s fast |
+
+   - The project pages, About and the 404 page get the same title, since they're built from
+     `index.html`. With JavaScript off, a visitor now sees the title and links instead of a blank page.
+   - The title text is in two places, `index.html` and `src/App.tsx`. A comment in each file says to
+     keep them the same, and an interaction test checks the page before the script runs.
+10. **MapLibre in its own file.**
+    - The single 524 KB script is now two files that load in parallel: MapLibre (275 KB compressed) and
+      the app with its project data (263 KB). Together they're the same size as before.
+    - GitHub Pages lets browsers cache for only 10 minutes, and every deploy used to rename the one script.
+      So after each data update, returning visitors downloaded MapLibre again. Now MapLibre's file name
+      changes only with a new MapLibre version (or the move to the custom domain). Browsers revalidate
+      it with a tiny request instead.
+    - Checked by rebuilding after a data change and an interface change: the app file was renamed, while
+      MapLibre's script, its CSS and the worker kept their names.
+
 Checks after the fixes: type check, unit tests and the Playwright interaction tests pass; axe finds no
 violations in any of the ten states.
 
@@ -153,36 +185,22 @@ Ranked by payoff, speed first.
 
 ### Speed
 
-1. **A blank page until the script runs.**
-   - The page is empty until the 524 KB bundle has downloaded and run: 4.1 s on slow 4G, 1.3 s on fast
-     4G.
-   - Writing the title and byline into `index.html` (and the generated project pages) would put words on
-     screen in about a second, while the map loads.
-2. **One large bundle.**
-   - What's in it: MapLibre is about 300 KB of the 524 KB. The project data is about 220 KB:
-     `projects.json` 116 KB, boundaries 82 KB, rail lines 21 KB.
-   - Why it hurts repeat visits: GitHub Pages lets browsers cache files for only 10 minutes, and every
-     deploy renames the single bundle. So a returning visitor downloads all of it again after each data
-     update.
-   - Splitting MapLibre into its own file keeps that file's name stable between deploys. The browser then
-     revalidates it instead of downloading it again.
-   - The `reported` records (23 KB, never shown) could also be dropped at build time.
-3. **Regional building tiles.**
+1. **Regional building tiles.**
    - The "all" overview, chosen for the look, is about 1.2 MB for a 1440 × 900 first view and 380 KB on
      a phone.
    - The "light" variant trades density for size. This is a design call; listed only so the cost is known.
-4. **Photo sizes.**
+2. **Photo sizes.**
    - Photos are 1280 px JPEGs shown 380–400 px wide.
    - An 800 px version with `srcset` (and WebP) would save about 95 KB per panel on a phone.
    - Photos are lazy-loaded, so this doesn't touch first load.
-5. **Layout shift.**
+3. **Layout shift.**
    - The credits collapsing after 5 s moves the credits block: 0.18 on a phone, where "good" is under
      0.1.
    - On a deep link, the map buttons and credits jump above the sheet as it opens (0.08).
    - Fixes: lay the credits text out of flow, so collapsing it moves nothing, and move the buttons with
      a transform.
    - This mostly affects the Core Web Vitals score, not what visitors notice.
-6. **First fly-in compiles the 3D shaders.**
+4. **First fly-in compiles the 3D shaders.**
    - Here, 2.9 s of the fly-in's main-thread time is WebGL shader linking, done the first time the 3D
      layers draw.
    - A real GPU is much faster, but it's the likeliest cause of a hitch at the start of the first fly-in
