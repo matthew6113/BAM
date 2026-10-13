@@ -14,17 +14,19 @@
   font-style: italic;
   font-display: swap;
 }
+/* Megaprojects Serif is Source Serif 4 cut to the site's characters, renamed because the OFL doesn't
+   let a modified font keep its Reserved Font Name ("Source"). Weights 400-700 (fonts.py, WEB_AXES). */
 @font-face {
-  font-family: 'Source Serif 4';
-  src: url('/generated/fonts/SourceSerif4-Variable.woff2') format('woff2');
-  font-weight: 200 900;
+  font-family: 'Megaprojects Serif';
+  src: url('/generated/fonts/MegaprojectsSerif-Variable.woff2') format('woff2');
+  font-weight: 400 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Source Serif 4';
-  src: url('/generated/fonts/SourceSerif4-Italic-Variable.woff2') format('woff2');
-  font-weight: 200 900;
+  font-family: 'Megaprojects Serif';
+  src: url('/generated/fonts/MegaprojectsSerif-Italic-Variable.woff2') format('woff2');
+  font-weight: 400 700;
   font-style: italic;
   font-display: swap;
 }

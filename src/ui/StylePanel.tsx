@@ -44,7 +44,7 @@ const STAGE_LABELS: Record<StageKey, string> = {
   distressed: 'Distressed',
 };
 
-const FONTS = ['Libre Franklin', 'Source Serif 4'];
+const FONTS = ['Libre Franklin', 'Megaprojects Serif'];
 
 const LAYER_LABELS: Record<Exclude<keyof Theme['layers'], 'overview'>, string> = {
   buildings: 'Buildings',

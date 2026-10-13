@@ -34,6 +34,11 @@ export function normalizeTheme(input: unknown): Theme {
     if (typeof t.landUse.opacity === 'number') merged.landUse.opacity = t.landUse.opacity;
   }
   Object.assign(merged.type, pickStrings(t.type));
+  // Source Serif 4 ships renamed (a subset can't keep its Reserved Font Name); older themes use the
+  // old name.
+  for (const k of Object.keys(merged.type) as (keyof Theme['type'])[]) {
+    if (merged.type[k] === 'Source Serif 4') merged.type[k] = 'Megaprojects Serif';
+  }
   if (t.map) {
     if (typeof t.map.shorelineWidth === 'number') merged.map.shorelineWidth = t.map.shorelineWidth;
     if (typeof t.map.heightExaggeration === 'number') merged.map.heightExaggeration = t.map.heightExaggeration;

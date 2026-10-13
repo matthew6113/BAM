@@ -46,7 +46,7 @@ dependency).
    - `base`: about 6 MB
    - `buildings-overview-all`: zoom 6 to 12, about 80 MB
    - `buildings-z13`, `-z14`, `-z15`: street-level footprints with heights, one archive per zoom (47, 56 and 66 MB) so every file stays under GitHub's 100 MB limit
-5. **fonts / glyphs:** Libre Franklin and Source Serif 4 (OFL) as WOFF2 for the interface and SDF glyph PBFs for map labels.
+5. **fonts / glyphs:** Libre Franklin and Source Serif 4 (OFL), cut to the characters the site shows, as WOFF2 for the interface and SDF glyph PBFs for map labels. The serif's copies are named Megaprojects Serif (see `data/CREDITS.md`).
 6. **manifest:** writes `data/manifest.json` with the row counts, sizes and SHA-256 of every input and output. Compare it after a rebuild.
 
 7. **sites** (`make sites`, not part of `make data`): traces each mapped project's boundary and block massing from its official document into `data/boundaries/{id}.geojson` and `data/massing/{id}.geojson`, which are committed. `pipeline/bam_pipeline/trace.py` has the shared tools: download by checksum, a similarity fit from figure street labels to OpenStreetMap intersections, ICP registration for raster figures, and colour-to-polygon tracing. Each output records its source page, accuracy and residuals.
