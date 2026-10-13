@@ -1,7 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import type { MultiPolygon, Polygon } from 'geojson';
 import {
-  alignmentMidpoint,
   alignmentOf,
   boundaryOf,
   isLineProject,
@@ -20,6 +19,7 @@ import {
   siteOf,
   bboxOf,
   markerPointsOf,
+  markersOf,
   containsPoint,
   dredgingOf,
 } from '../src/projects/data';
@@ -191,8 +191,8 @@ describe('line projects', () => {
         }
       });
 
-      it('puts its marker on the line', () => {
-        expect(alignmentMidpoint(project.id)).toBeDefined();
+      it('has no dot: the line is its own symbol', () => {
+        expect(markersOf(project.id)).toEqual([]);
       });
     });
   }
@@ -283,7 +283,7 @@ describe('geometry helpers', () => {
   });
 
   it('puts a regional marker on each station of a scattered program, and one on every other site', () => {
-    // Line projects put their one marker on the alignment instead (tested under 'line projects').
+    // Line projects have no dot (tested under 'line projects').
     for (const project of MAPPED_PROJECTS.filter((p) => !isLineProject(p.id))) {
       const boundary = boundaryOf(project.id)!;
       const site = siteOf(project.id)!.geometry;

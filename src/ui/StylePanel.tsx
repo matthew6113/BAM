@@ -172,6 +172,10 @@ export function StylePanel({ theme, onChange, onClose }: Props) {
           onInput={(v) => set((t) => { t.opacity.buildingsCity = v; })} />
         <Slider label="Building opacity, regional" min={0.1} max={1} step={0.05} value={theme.opacity.buildingsRegional}
           onInput={(v) => set((t) => { t.opacity.buildingsRegional = v; })} />
+        <Slider label="Site fill, regional" min={0.1} max={1} step={0.05} value={theme.opacity.siteFillRegional}
+          onInput={(v) => set((t) => { t.opacity.siteFillRegional = v; })} />
+        <Slider label="Site fill, street level" min={0} max={0.6} step={0.02} value={theme.opacity.siteFill}
+          onInput={(v) => set((t) => { t.opacity.siteFill = v; })} />
         <Slider label="Shoreline weight" min={0.5} max={3} step={0.25} value={theme.map.shorelineWidth}
           onInput={(v) => set((t) => { t.map.shorelineWidth = v; })} />
       </section>

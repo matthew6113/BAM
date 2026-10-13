@@ -133,6 +133,23 @@ test('the Buildings and Transportation tabs filter the list and the map, and All
   await expect(list).toHaveCount(total);
 });
 
+test('the whole-bay view draws big sites as their shapes and small ones as dots that open them', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto('/?test=1');
+  await ready(page);
+  const shown = (id: string) =>
+    page.evaluate((id) => (window as any).__map.getFeatureState({ source: 'project-sites', id }).shown, id);
+  expect(await shown('suisun-expansion')).toBe(1);
+  expect(await shown('sonoma-developmental-center')).toBe(0);
+  const dot = await page.evaluate(() => {
+    const m = (window as any).__map;
+    const [f] = m.querySourceFeatures('project-points', { filter: ['==', ['get', 'id'], 'sonoma-developmental-center'] });
+    return m.project(f.geometry.coordinates);
+  });
+  await page.mouse.click(dot.x, dot.y);
+  await expect(page.getByRole('complementary', { name: 'Sonoma Developmental Center' })).toBeVisible();
+});
+
 test('the back button closes the project', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/?test=1#map=13.2/37.757/-122.39');

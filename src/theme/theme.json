@@ -33,6 +33,7 @@
     "buildingsCity": 0.45,
     "contextExtrusion": 0.45,
     "siteFill": 0.14,
+    "siteFillRegional": 0.7,
     "massingEnvelope": 0.16
   },
   "massing": {
