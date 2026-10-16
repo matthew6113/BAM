@@ -98,6 +98,10 @@ describe('interface text contrast', () => {
     }
   });
 
+  it('outlines fields and filters at 3:1 on the panel (WCAG 1.4.11)', () => {
+    expect(contrast(defaultTheme.colors.controlBorder, defaultTheme.colors.panelBackground)).toBeGreaterThanOrEqual(3);
+  });
+
   it('gives labels and the byline 4.5:1 on land', () => {
     expect(contrast(defaultTheme.colors.labels, defaultTheme.colors.land)).toBeGreaterThanOrEqual(4.5);
   });

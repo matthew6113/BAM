@@ -30,6 +30,7 @@ const COLOR_LABELS: Record<ColorRole, string> = {
   panelBackground: 'Panel background',
   panelText: 'Panel text',
   panelRule: 'Panel rules',
+  controlBorder: 'Field and filter outlines',
 };
 
 const STAGE_LABELS: Record<StageKey, string> = {
