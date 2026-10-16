@@ -93,7 +93,8 @@ body {
   top: calc(16px + var(--safe-top));
   left: calc(16px + var(--safe-left));
   pointer-events: none;
-  z-index: 2;
+  /* Above the credits (z-index 2), so an open Projects list is never covered by them. */
+  z-index: 3;
 }
 
 .title h1 {
@@ -188,7 +189,7 @@ body {
   border: 0;
   background: transparent;
   color: var(--color-panel-text);
-  font: 600 11px/1 var(--font-ui);
+  font: 600 12px/1 var(--font-ui);
   letter-spacing: 0.02em;
   cursor: pointer;
 }
@@ -242,8 +243,16 @@ body {
   bottom: calc(10px + var(--safe-bottom));
   max-width: min(520px, calc(100% - 140px - var(--safe-left) - var(--safe-right)));
   z-index: 2;
-  font-size: 11px;
+  font-size: 12px;
   color: var(--color-labels);
+}
+
+/* Beside a side panel, the credits keep clear of the controls, which move left of the panel. */
+@media (min-width: 720px) {
+  .with-project .credits,
+  .with-about .credits {
+    max-width: min(520px, calc(100% - min(400px, 45%) - 140px - var(--safe-left)));
+  }
 }
 
 .credits-toggle {
@@ -317,7 +326,8 @@ body {
   border: 1px solid var(--color-panel-rule);
   color: var(--color-panel-text);
   font: 12px/1.3 var(--font-ui);
-  max-height: calc(100dvh - 128px); /* below the title and byline */
+  /* Below the title and byline, and above the credits line at the bottom (two lines on a phone). */
+  max-height: calc(100dvh - 128px - 48px - var(--safe-bottom));
   overflow-y: auto;
   overscroll-behavior: contain;
 }
@@ -418,7 +428,7 @@ body {
 }
 
 .stage-toggle[aria-pressed='false'] {
-  color: color-mix(in srgb, var(--color-panel-text) 45%, transparent);
+  color: color-mix(in srgb, var(--color-panel-text) 62%, transparent);
   text-decoration: line-through;
 }
 
@@ -517,7 +527,7 @@ body {
 .project-index .small {
   margin: 0;
   padding: 6px 10px 7px;
-  font-size: 11.5px;
+  font-size: 12px;
   color: color-mix(in srgb, var(--color-panel-text) 62%, transparent);
   background: var(--color-panel-background);
   border: 1px solid var(--color-panel-rule);
@@ -629,9 +639,10 @@ body {
   flex: none;
   border: 0;
   background: none;
-  width: 32px;
-  height: 32px;
-  margin: -4px -8px 0 0;
+  /* A 44 px target; the negative margins keep the icon where a 32 px button put it. */
+  width: 44px;
+  height: 44px;
+  margin: -10px -14px -6px -6px;
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -699,7 +710,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 4px;
-  font-size: 11px;
+  font-size: 12px;
   color: color-mix(in srgb, var(--color-panel-text) 62%, transparent);
 }
 
@@ -758,7 +769,7 @@ body {
 }
 
 .numbers dt {
-  font-size: 11.5px;
+  font-size: 12px;
   color: color-mix(in srgb, var(--color-panel-text) 66%, transparent);
 }
 
@@ -1045,6 +1056,13 @@ body {
     right: calc(10px + var(--safe-right));
   }
 
+  /* The sheet covers the controls and credits (the credits are on the page itself), so they
+     leave the tab order rather than taking focus out of sight (WCAG 2.4.11). */
+  .with-about .controls,
+  .with-about .credits {
+    visibility: hidden;
+  }
+
   .with-about .style-toggle {
     right: 16px;
   }
@@ -1325,4 +1343,49 @@ body {
   display: block;
   margin-top: 2px;
   color: color-mix(in srgb, var(--color-panel-text) 72%, transparent);
+}
+
+/* ---------------------------------------------------------------- touch targets */
+
+/* On a touchscreen, small controls get a larger invisible hit area (44 px where the space allows),
+   so the look is unchanged. Neighbouring controls are stacked, so the map buttons grow sideways. */
+@media (pointer: coarse) {
+  .controls button,
+  .index-toggle,
+  .credits-toggle,
+  .prev-next button {
+    position: relative;
+  }
+
+  .controls button::after,
+  .index-toggle::after,
+  .credits-toggle::after,
+  .prev-next button::after {
+    content: '';
+    position: absolute;
+  }
+
+  .controls button::after {
+    inset: 0 -6px;
+  }
+
+  .control-group button:first-child::after {
+    top: -4px;
+  }
+
+  .control-group button:last-child::after {
+    bottom: -4px;
+  }
+
+  .index-toggle::after {
+    inset: -9px 0 -4px;
+  }
+
+  .credits-toggle::after {
+    inset: -6px -4px -10px;
+  }
+
+  .prev-next button::after {
+    inset: -7px 0 -7px;
+  }
 }

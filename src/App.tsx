@@ -34,6 +34,10 @@ const STORAGE_KEY = 'bam.theme.v1';
  */
 const SITE_TITLE = 'Bay Area megaprojects';
 
+// A deep link to a project: fetch its massing and land use while the map loads, not after.
+const deepLinked = projectIdFromPath();
+if (deepLinked && siteOf(deepLinked)) void loadProjectGeometry(deepLinked);
+
 function loadTheme(): Theme {
   let theme = structuredClone(defaultTheme);
   if (STYLE_PANEL_ENABLED && !params.has('test')) {
@@ -166,8 +170,9 @@ export function App() {
     f.returnCamera = null;
     f.opener = null;
     // Focus now, not on the next frame: frames can be slow mid-flight, and the opener sits
-    // outside the panel that is about to unmount.
-    (opener?.isConnected ? opener : map.getCanvas()).focus({ preventScroll: true });
+    // outside the panel that is about to unmount. A deep link has no opener (the body had focus),
+    // so focus goes to the map rather than nowhere.
+    (opener?.isConnected && opener !== document.body ? opener : map.getCanvas()).focus({ preventScroll: true });
     if (back) await flyOut(map, back);
     if (flight.current.token !== token) return;
     setSelection(null);
@@ -297,11 +302,14 @@ export function App() {
           filter={filter} onFilter={setFilter} onExpand={() => setInteracted(true)}
           onSuggest={(opener) => openAbout({ opener, suggest: true })} />
       </header>
-      <MapView theme={theme} mode={mode} selection={selection} hidden={hidden} onReady={onReady}
-        onFirstInteraction={() => setInteracted(true)}
-        onSelectProject={(id) => void openProject(id)} />
-      <span id="controls-start" tabIndex={-1} />
-      <Controls map={map} mode={mode} onModeChange={setMode} onHome={goHome} />
+      {/* The map and its controls are the page's main content (a landmark screen readers can jump to). */}
+      <main>
+        <MapView theme={theme} mode={mode} selection={selection} hidden={hidden} onReady={onReady}
+          onFirstInteraction={() => setInteracted(true)}
+          onSelectProject={(id) => void openProject(id)} />
+        <span id="controls-start" tabIndex={-1} />
+        <Controls map={map} mode={mode} onModeChange={setMode} onHome={goHome} />
+      </main>
       <Credits collapse={interacted || !!project || aboutOpen} />
       {project && (
         <ProjectPanel project={project} onClose={() => void closeProject()}
