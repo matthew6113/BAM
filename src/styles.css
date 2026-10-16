@@ -999,9 +999,13 @@ body {
   padding: 8px 14px;
   border: 1px solid var(--color-panel-text);
   border-radius: 2px;
-  background: var(--color-panel-text);
-  color: var(--color-panel-background);
+  background: var(--color-panel-background);
+  color: var(--color-panel-text);
   cursor: pointer;
+}
+
+.suggest-form button:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--color-panel-rule) 45%, transparent);
 }
 
 .suggest-form button:disabled {
