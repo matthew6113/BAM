@@ -28,6 +28,15 @@ const TABS = [
 export function ProjectIndex({ openId, onOpen, filter, onFilter, onExpand, onSuggest }: Props) {
   const [expanded, setExpanded] = useState(false);
   const tabList = useRef<HTMLDivElement>(null);
+  const toggle = useRef<HTMLButtonElement>(null);
+  // Escape inside the open list closes it and returns focus to its toggle. It stops there: the
+  // app's own Escape (close the open project or page) waits for the next press.
+  const onIndexKey = (e: KeyboardEvent) => {
+    if (e.key !== 'Escape' || !expanded) return;
+    e.stopPropagation();
+    setExpanded(false);
+    toggle.current?.focus();
+  };
   const tabIndex = TABS.findIndex((t) => t.key === filter.category);
   // Arrow keys, Home and End move between the tabs (the tab list is one tab stop).
   const onTabKey = (e: KeyboardEvent) => {
@@ -50,8 +59,8 @@ export function ProjectIndex({ openId, onOpen, filter, onFilter, onExpand, onSug
     });
 
   return (
-    <nav class="project-index" aria-label="Projects">
-      <button type="button" class="index-toggle" aria-expanded={expanded} aria-controls="project-index-body"
+    <nav class="project-index" aria-label="Projects" onKeyDown={onIndexKey}>
+      <button ref={toggle} type="button" class="index-toggle" aria-expanded={expanded} aria-controls="project-index-body"
         onClick={() => {
           if (!expanded) onExpand?.();
           setExpanded(!expanded);

@@ -1,3 +1,4 @@
+import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import themeJson from '../src/theme/theme.json';
 import projects from '../data/projects.json';
@@ -62,5 +63,42 @@ describe('normalizeTheme', () => {
     expect(t.colors.water).toBe(defaultTheme.colors.water);
     expect(t.layers.context).toBe(true);
     expect(t.layers.overview).toBe(defaultTheme.layers.overview);
+  });
+});
+
+// The interface's muted text is panel text mixed toward transparent (styles.css). Every such tone, in
+// the index and its tabs, the project and about panels, photo credits and the stage key, must keep
+// 4.5:1 on the panel, as must stage colors used as text (a paused or distressed project's label).
+describe('interface text contrast', () => {
+  const css = readFileSync('src/styles.css', 'utf8');
+  const rules = [...css.matchAll(/([^{}]+)\{([^{}]*)\}/g)].map(([, sel, body]) => ({ sel: sel.trim(), body }));
+  const muted = rules.flatMap(({ sel, body }) =>
+    [...body.matchAll(/(?:^|[;\s])color:\s*color-mix\(in srgb, var\(--color-panel-text\) (\d+(?:\.\d+)?)%, transparent\)/g)]
+      .map((m) => ({ sel, pct: Number(m[1]) })));
+
+  it('finds the muted text tones', () => {
+    expect(muted.length).toBeGreaterThan(10);
+    for (const s of ['.category-tabs button', '.photo .credit', '.about-panel .notes', ".stage-toggle[aria-pressed='false']"]) {
+      expect(muted.some((m) => m.sel.includes(s)), s).toBe(true);
+    }
+  });
+
+  it('gives every muted text tone 4.5:1 on the panel', () => {
+    const { panelText, panelBackground } = defaultTheme.colors;
+    const low = muted
+      .map((m) => ({ ...m, ratio: contrast(over(panelText, m.pct / 100, panelBackground), panelBackground) }))
+      .filter((m) => m.ratio < 4.5)
+      .map((m) => `${m.sel} (${m.pct}%): ${m.ratio.toFixed(2)}:1`);
+    expect(low).toEqual([]);
+  });
+
+  it('gives off-ramp stage colors used as text 4.5:1 on the panel', () => {
+    for (const s of ['paused', 'distressed'] as const) {
+      expect(contrast(stageColor(defaultTheme, s), defaultTheme.colors.panelBackground), s).toBeGreaterThanOrEqual(4.5);
+    }
+  });
+
+  it('gives labels and the byline 4.5:1 on land', () => {
+    expect(contrast(defaultTheme.colors.labels, defaultTheme.colors.land)).toBeGreaterThanOrEqual(4.5);
   });
 });
