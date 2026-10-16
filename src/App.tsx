@@ -83,6 +83,8 @@ export function App() {
   const [filter, setFilter] = useState<ProjectFilter>(NO_FILTER);
   // The about page needs no map, so a deep link to it shows at once.
   const [aboutOpen, setAboutOpen] = useState(isAboutPath);
+  // Counts "Suggest a project" clicks, so each one goes to the form even with the page open.
+  const [toSuggest, setToSuggest] = useState(0);
   const aboutLink = useRef<HTMLAnchorElement>(null);
   const aboutOpener = useRef<HTMLElement | null>(null);
   const hidden = useMemo(() => MAPPED_PROJECTS.filter((p) => !matchesFilter(p, filter)).map((p) => p.id), [filter]);
@@ -184,8 +186,9 @@ export function App() {
   }, [map, closeProject]);
 
   /** The about page: a panel like a project's, at /about. An open project flies back first. */
-  const openAbout = useCallback((opts: { push?: boolean; opener?: HTMLElement | null } = {}) => {
+  const openAbout = useCallback((opts: { push?: boolean; opener?: HTMLElement | null; suggest?: boolean } = {}) => {
     if (live.current.openId) void closeProject({ push: false });
+    setToSuggest((n) => (opts.suggest ? n + 1 : live.current.aboutOpen ? n : 0));
     if (opts.push !== false) navigateAbout(true);
     if (!live.current.aboutOpen) aboutOpener.current = opts.opener ?? (document.activeElement as HTMLElement | null);
     document.title = `About · ${SITE_TITLE}`;
@@ -291,7 +294,8 @@ export function App() {
           </a>
         </p>
         <ProjectIndex openId={openId} onOpen={(id, opener) => void openProject(id, { opener })}
-          filter={filter} onFilter={setFilter} onExpand={() => setInteracted(true)} />
+          filter={filter} onFilter={setFilter} onExpand={() => setInteracted(true)}
+          onSuggest={(opener) => openAbout({ opener, suggest: true })} />
       </header>
       <MapView theme={theme} mode={mode} selection={selection} hidden={hidden} onReady={onReady}
         onFirstInteraction={() => setInteracted(true)}
@@ -304,7 +308,7 @@ export function App() {
           onPrev={prev && (() => void openProject(prev.id))} prevName={prev?.name}
           onNext={next && (() => void openProject(next.id))} nextName={next?.name} />
       )}
-      {aboutOpen && !project && <AboutPanel onClose={() => closeAbout()} />}
+      {aboutOpen && !project && <AboutPanel onClose={() => closeAbout()} toSuggest={toSuggest} />}
       {STYLE_PANEL_ENABLED && (
         <button ref={styleToggle} type="button" class="style-toggle" hidden={panelOpen}
           onClick={() => setPanelOpen(true)} title="Open the style panel (Alt+Shift+S)">

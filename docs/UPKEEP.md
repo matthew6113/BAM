@@ -63,6 +63,10 @@ such as Esmeralda and BART station-area housing). Places to look:
 - state lists: HCD's SB 35 / streamlined approvals, Prohousing designations;
 - agency land programs (BART, Caltrain, VTA, Port of SF, Port of Oakland, state surplus land).
 
+Also read suggestions from the public: open GitHub issues titled "Suggest: …" (from the map's
+suggestion form) and any suggestions Matthew pastes in. Research each like any other lead, and
+don't add one just because it was suggested.
+
 Don't add any of them. Write each lead under "New project leads" in the checklist: name, city,
 size (homes and sq ft as the official source states them), stage, the official source URL, and
 a one-line recommendation (include, exclude or borderline, and why). Also flag projects on the
