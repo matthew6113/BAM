@@ -1,6 +1,7 @@
 /// <reference types="vitest/config" />
 import { defineConfig } from 'vite';
 import preact from '@preact/preset-vite';
+import { clientData } from './scripts/clientData.ts';
 import { projectPages } from './scripts/projectPages.ts';
 import { siteMeta } from './scripts/siteMeta.ts';
 
@@ -8,7 +9,7 @@ export default defineConfig({
   // The deploy workflow sets BASE_PATH (and SITE_URL) to wherever GitHub Pages serves the site:
   // /BAM/ on github.io, / on the custom domain (map.matthewhuguet.com).
   base: process.env.BASE_PATH ?? '/',
-  plugins: [preact(), siteMeta(import.meta.dirname), projectPages(import.meta.dirname)],
+  plugins: [clientData(), preact(), siteMeta(import.meta.dirname), projectPages(import.meta.dirname)],
   server: { port: 5173, strictPort: true },
   preview: { port: 4173, strictPort: true },
   build: {
