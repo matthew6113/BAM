@@ -951,6 +951,81 @@ body {
   margin: 0;
 }
 
+.project-index .clear.suggest {
+  display: block;
+  padding-top: 8px;
+}
+
+.suggest-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.suggest-form label span {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+.suggest-form label em {
+  font-style: normal;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--color-panel-text) 72%, transparent);
+}
+
+.suggest-form input,
+.suggest-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  /* 16px keeps mobile Safari from zooming into the field. */
+  font: 16px/1.35 var(--font-ui);
+  padding: 6px 8px;
+  border: 1px solid var(--color-panel-rule);
+  border-radius: 2px;
+  background: var(--color-panel-background);
+  color: var(--color-panel-text);
+}
+
+.suggest-form textarea {
+  resize: vertical;
+}
+
+.suggest-form button {
+  justify-self: start;
+  appearance: none;
+  font: 600 13px/1.2 var(--font-ui);
+  padding: 8px 14px;
+  border: 1px solid var(--color-panel-text);
+  border-radius: 2px;
+  background: var(--color-panel-text);
+  color: var(--color-panel-background);
+  cursor: pointer;
+}
+
+.suggest-form button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.suggest-form .small:empty {
+  display: none;
+}
+
+.suggest-form .honeypot {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.project-index .clear.suggest:focus-visible {
+  outline: 2px solid var(--color-selection);
+  outline-offset: 1px;
+}
+
 .title .byline a[aria-current='page'] {
   color: var(--color-panel-text);
   text-decoration-color: currentColor;

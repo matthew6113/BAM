@@ -116,6 +116,8 @@ jobs:
         env:
           BASE_PATH: ${{ steps.pages.outputs.base_path }}/
           SITE_URL: https://${{ steps.pages.outputs.host }}${{ steps.pages.outputs.base_path }}
+          # The suggestion form's receiver (scripts/suggest/README.md); unset, it opens a GitHub issue.
+          VITE_SUGGEST_URL: ${{ vars.SUGGEST_URL }}
 
       - name: Show where this build is for
         run: echo "Built for https://${{ steps.pages.outputs.host }}${{ steps.pages.outputs.base_path }} (base path '${{ steps.pages.outputs.base_path }}/')"

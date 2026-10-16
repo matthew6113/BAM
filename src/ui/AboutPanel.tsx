@@ -2,9 +2,12 @@ import { useEffect, useRef } from 'preact/hooks';
 import { DATA_LAST_VERIFIED, MAPPED_PROJECTS, STAGES } from '../projects/data';
 import { MapDataCredits } from './Credits';
 import { formatDate } from './format';
+import { SuggestForm } from './SuggestForm';
 
 interface Props {
   onClose: () => void;
+  /** Above 0, go to the suggestion form rather than the top; each new value goes there again. */
+  toSuggest?: number;
 }
 
 const STAGE_ORDER = [...STAGES].sort((a, b) => a.order - b.order);
@@ -14,9 +17,15 @@ const STAGE_ORDER = [...STAGES].sort((a, b) => a.order - b.order);
  * Every claim here describes what the map actually draws (src/map/projectLayers.ts) or comes from
  * the data (counts, stages, dates), so it stays true when those change.
  */
-export function AboutPanel({ onClose }: Props) {
+export function AboutPanel({ onClose, toSuggest = 0 }: Props) {
   const heading = useRef<HTMLHeadingElement>(null);
-  useEffect(() => heading.current?.focus(), []);
+  const suggestHeading = useRef<HTMLHeadingElement>(null);
+  useEffect(() => {
+    if (toSuggest) {
+      suggestHeading.current?.focus({ preventScroll: true });
+      suggestHeading.current?.scrollIntoView({ block: 'start' });
+    } else heading.current?.focus();
+  }, [toSuggest]);
 
   return (
     <aside class="project-panel about-panel" aria-labelledby="about-title">
@@ -90,6 +99,16 @@ export function AboutPanel({ onClose }: Props) {
           each panel. Renderings appear only with permission; until then, each panel links to the
           official pages.
         </p>
+      </section>
+
+      <section aria-labelledby="about-suggest">
+        <h3 id="about-suggest" ref={suggestHeading} tabIndex={-1}>Suggest a project</h3>
+        <p>
+          Know a large project that should be here? Send its name and, if you have one, a link to the
+          city or agency page. Suggestions go to Matthew, not onto the map: a project is added only once
+          official sources confirm it.
+        </p>
+        <SuggestForm />
       </section>
 
       <section aria-labelledby="about-credits">

@@ -9,6 +9,8 @@ interface Props {
   onFilter: (f: ProjectFilter) => void;
   /** The list was opened (the credits collapse, as they do once the map is in use). */
   onExpand?: () => void;
+  /** Open the suggestion form on the about page. */
+  onSuggest?: (opener: HTMLElement) => void;
 }
 
 const SUBREGIONS = [...new Set(MAPPED_PROJECTS.map((p) => p.subregion))].sort();
@@ -23,7 +25,7 @@ const TABS = [
  * doubles as a filter, and a subregion filter. The same filter decides which projects the
  * map draws.
  */
-export function ProjectIndex({ openId, onOpen, filter, onFilter, onExpand }: Props) {
+export function ProjectIndex({ openId, onOpen, filter, onFilter, onExpand, onSuggest }: Props) {
   const [expanded, setExpanded] = useState(false);
   const tabList = useRef<HTMLDivElement>(null);
   const tabIndex = TABS.findIndex((t) => t.key === filter.category);
@@ -121,6 +123,11 @@ export function ProjectIndex({ openId, onOpen, filter, onFilter, onExpand }: Pro
         )}
         {MAPPED_PROJECTS.length < PROJECTS.length && (
           <p class="small">More projects are being mapped.</p>
+        )}
+        {onSuggest && (
+          <button type="button" class="clear suggest" onClick={(e) => onSuggest(e.currentTarget as HTMLElement)}>
+            Suggest a project
+          </button>
         )}
       </div>
     </nav>
