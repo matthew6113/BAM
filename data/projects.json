@@ -6595,7 +6595,7 @@
         "bearing": -15
       },
       "acres": 244,
-      "acresNote": "The City's Notice of Preparation (June 12, 2026, p. 2) describes the plan area as approximately 244 acres of properties around the Santa Clara Transit Station; CEQAnet gives the same total. It is a plan area of many properties, not one site. The boundary drawn from the notice's vicinity map comes to about 208 acres, streets included.",
+      "acresNote": "The City's Notice of Preparation (June 12, 2026, p. 2) describes the plan area as approximately 244 acres of properties around the Santa Clara Transit Station; CEQAnet gives the same total. It is a plan area of many properties, not one site. The boundary drawn from the County parcels the CEQAnet record lists, joined over the streets between them, comes to about 249 acres, streets included.",
       "program": {
         "homes": 8300,
         "affordableHomes": null,
@@ -6633,7 +6633,7 @@
       ],
       "nextMilestone": "A draft specific plan and Draft Program EIR (no date published).",
       "summary": "A City of Santa Clara specific plan for about 244 acres around the Santa Clara Caltrain station, where BART's Silicon Valley extension is planned to end, to turn a mix of homes, shops and industrial lots into a mixed-use, transit-oriented neighborhood. The plan under study allows up to 8,300 homes, 2.1 million sq ft of offices and 1.7 million sq ft of light industrial space; its environmental review began in June 2026.",
-      "massingNotes": "Plan-scale: boundary only (data/boundaries/santa-clara-station-area.geojson, pipeline/bam_pipeline/sites/boundary_santa_clara_station_area.py), traced from the NOP's Figure 2 vicinity map (PDF p. 4), a small-scale map fitted to OpenStreetMap streets (trimmed ICP, RMS about 13 m); approximate, about 208 acres as drawn against the NOP's 244. The CEQAnet record lists the plan's assessor's parcels, which would give a parcel-exact line once the County parcel service can be reached. No land use: the plan is at the notice-of-preparation stage and no official land-use map has been published. The BART Silicon Valley Phase II surface tracks and Santa Clara station, and the Caltrain corridor that cahsr-sf-sj draws, run through the plan area.",
+      "massingNotes": "Plan-scale: boundary only (data/boundaries/santa-clara-station-area.geojson, pipeline/bam_pipeline/sites/boundary_santa_clara_station_area.py): the Santa Clara County parcels (data.sccgov.org ubcd-cewv) for the APNs on the CEQAnet record, 174 of 185 found plus four re-mapped successors, joined over the streets (25 m closing); about 249 acres against the NOP's 244. Approximate: the parcel list fits the notice's written bounds (De La Cruz, Reed and Martin to the northeast; Franklin and El Camino Real to the southwest) but takes in residential blocks, a Santa Clara University parcel and parcels on De La Cruz Boulevard, Grant Street and Campbell Avenue that the notice's small-scale Figure 2 leaves out or crosses; the outline first traced from Figure 2 (about 208 acres) lies up to about 300 m away at those edges. No land use: the plan is at the notice-of-preparation stage and no official land-use map has been published. The BART Silicon Valley Phase II surface tracks and Santa Clara station, and the Caltrain corridor that cahsr-sf-sj draws, run through the plan area.",
       "officialLinks": [
         "https://ceqanet.lci.ca.gov/2026060462",
         "https://www.santaclaraca.gov/our-city/departments-a-f/community-development/planning-division/specific-plans/santa-clara-station-focus-area-plan"
@@ -6642,10 +6642,11 @@
         "https://ceqanet.lci.ca.gov/2026060462",
         "https://ceqanet.lci.ca.gov/2026060462/Attachment/mtsQbf",
         "https://ceqanet.lci.ca.gov/2026060462/Attachment/M1Z8RU",
-        "https://gis.vta.org/gis/rest/services/Hosted/BSV_Phase_II_Stations/FeatureServer/0"
+        "https://gis.vta.org/gis/rest/services/Hosted/BSV_Phase_II_Stations/FeatureServer/0",
+        "https://data.sccgov.org/d/ubcd-cewv"
       ],
       "verify": [
-        "the plan area's exact line: the boundary is traced from the notice of preparation's small-scale vicinity map (about 208 acres as drawn against 244 stated); the City's GIS or the County parcels the CEQAnet record lists would give the exact area",
+        "the plan area's exact line: drawn from the Santa Clara County parcels the CEQAnet record lists (11 of the 185 APNs aren't in the County's current layer; four re-mapped successors inside the notice's boundary are added), which differ at the edges from the notice of preparation's small-scale Figure 2; check against the City's plan-area map when the draft plan is published",
         "the project web page's documents (santaclaraca.gov blocks scripted access), including any land-use alternatives or task force materials",
         "the Draft Program EIR and draft plan dates",
         "how the plan treats the BART Silicon Valley Phase II station and tracks inside the plan area"
@@ -6679,17 +6680,17 @@
         "bearing": -25
       },
       "acres": 92,
-      "acresNote": "The City gives about 92 acres for the site, one parcel (APN 213-120-008) at 6001 Bollinger Canyon Road (Notice of Exemption, Feb 2026, and the City's project page). The project's overall density is 46.3 homes per net acre (Notice of Exemption).",
+      "acresNote": "The City gives about 92 acres for the site, one parcel (APN 213-120-008) at 6001 Bollinger Canyon Road (Notice of Exemption, Feb 2026, and the City's project page); the approved vesting tentative map labels it Parcel A, 91.55 acres (sheet C3.0). The project's overall density is 46.3 homes per net acre (Notice of Exemption).",
       "program": {
         "homes": 2510,
-        "affordableHomes": null,
-        "affordablePct": null,
+        "affordableHomes": 397,
+        "affordablePct": 16.2,
         "officeLabSqft": null,
-        "commercialSqftTotal": null,
+        "commercialSqftTotal": 125000,
         "retailSqft": null,
         "hotelKeys": null,
         "openSpaceAcres": null,
-        "notes": "Up to 2,510 homes over about 20 years in three districts: Mixed-Use, Multi-Family, and Single Family/Townhomes (the Neighborhood District). The approval covers the Orchards Master Plan, a subdivision into 191 lots, and a development plan for the Neighborhood District: 230 single-family homes, 138 townhomes and 58 optional accessory dwelling units. The roughly 1.3 million sq ft of former Chevron Park office buildings would be demolished. The site is zoned Downtown Mixed Use – South (20–60 homes per acre)."
+        "notes": "Up to 2,510 homes over about 20 years: 2,452 homes plus 58 optional accessory dwelling units (City Council Resolution 2026-040, conditions of approval 1), in three districts: Mixed-Use (619 homes over 125,000 sq ft of ground-floor retail, entertainment and commercial uses), Multi-Family (1,465 homes) and the Neighborhood District (368 single-family homes and townhomes: 230 single-family homes and 138 townhomes, plus the 58 optional ADUs). 397 of the 2,452 homes (16.2%) are to be deed-restricted affordable: 163 very low, 212 low and 22 moderate income (Resolution 2026-040, findings; Affordable Housing Plan, Dec 4, 2025), including a dedicated site for a 100-home affordable community (99 affordable homes and a manager's unit). The approval covers the Orchards Master Plan, Vesting Tentative Map 9693 and a development plan for the Neighborhood District. The roughly 1.3 million sq ft of former Chevron Park office buildings would be demolished. The site is zoned Downtown Mixed Use – South (20–60 homes per acre); buildings are limited to 85 ft."
       },
       "developer": "BR6001, LLC (c/o Sunset Development Company)",
       "publicPartners": [
@@ -6737,7 +6738,7 @@
       ],
       "nextMilestone": null,
       "summary": "The former Chevron Park office campus in Bishop Ranch, south of Bollinger Canyon Road beside I-680, approved to become a neighborhood of up to 2,510 homes built over about 20 years. Its 1.3 million sq ft of office buildings would come down; the land would be divided into mixed-use, multi-family and single-family and townhome districts, with detailed plans approved so far for one of them, 368 houses and townhomes.",
-      "massingNotes": "Boundary: APN 213-120-008, traced from the City's 2040 General Plan Draft EIR Figure 2-4 (PDF p. 67; CEQAnet SCH 2022060549), which draws parcel lines at about 9 m per pixel, georeferenced on I-680, the Iron Horse Trail and Bollinger Canyon Road in OpenStreetMap (trimmed RMS about 4 m); approximate, 88.6 acres as drawn against the official 92. No massing: the approved project plans, design guidelines and staff reports sit on the City's document servers (docs.sanramon.ca.gov, its civiclive file store), which couldn't be reached for this pass. The existing campus buildings are all to be demolished, so none are kept.",
+      "massingNotes": "Boundary (data/boundaries/the-orchards.geojson, traced): the project boundary around Parcel A (91.55 acres) on the approved Vesting Tentative Map 9693, sheet C3.0 (Applicant's Project Plans, Sept 5, 2025, PDF p. 179), a CAD sheet at 1\" = 100' placed on OpenStreetMap building footprints using the existing buildings it draws (trimmed RMS 0.8 m); 91.6 acres. Contra Costa County's parcel service still can't be reached to check it. Illustrative massing (data/massing/the-orchards.geojson): the map's development parcels and lots (sheet C2.0, PDF p. 172) drawn whole and raised to the Orchards Design Guidelines' (Nov 14, 2025) height limits: 85 ft for the Mixed-Use District and the Multi-Family B and C parcels, 65 ft for the E, F, G and H parcels, 40 ft for the attached row townhome lots and 35 ft for the single-family lots. The existing campus buildings are all to be demolished, so none are kept.",
       "officialLinks": [
         "https://www.sanramon.ca.gov/cms/one.aspx?pageId=19165945",
         "https://ceqanet.lci.ca.gov/2026020219"
@@ -6754,12 +6755,16 @@
         "https://ceqanet.lci.ca.gov/2026020219",
         "https://ceqanet.lci.ca.gov/2026020219/Attachment/G7E_Xs",
         "https://ceqanet.lci.ca.gov/2022060549/3",
-        "https://ceqanet.lci.ca.gov/2022060549/2/Attachment/ueWNFZ"
+        "https://ceqanet.lci.ca.gov/2022060549/2/Attachment/ueWNFZ",
+        "https://docs.sanramon.ca.gov/WebLink/DocView.aspx?id=21620060&dbid=0&repo=sanramon",
+        "https://docs.sanramon.ca.gov/WebLink/DocView.aspx?id=20812236&dbid=0&repo=sanramon",
+        "https://docs.sanramon.ca.gov/WebLink/DocView.aspx?id=21620063&dbid=0&repo=sanramon",
+        "https://docs.sanramon.ca.gov/WebLink/DocView.aspx?id=21620068&dbid=0&repo=sanramon"
       ],
       "verify": [
-        "the number and share of affordable homes, and any commercial floor area in the Mixed-Use District (in the staff report and conditions of approval, not reached in this pass)",
-        "block footprints and height limits from the Orchards Master Plan and design guidelines, for massing",
-        "the parcel outline against the County's assessor map (traced here from a General Plan EIR figure: 88.6 acres against 92)"
+        "the parcel outline against Contra Costa County's assessor map (traced from the approved vesting tentative map, sheet C3.0; the County's and the City's GIS servers can't be reached from here)",
+        "the APN: City Council Resolution 2026-040 gives 213-701-002 in its heading and 213-120-008 in its text (the Notice of Exemption and the plans give 213-120-008)",
+        "the single-family height limit: the design guidelines (Nov 14, 2025) give 35 ft, the plan set's DMU-S standards table (sheet SP4) 30 ft"
       ],
       "lastVerified": "2026-10-17"
     },
@@ -6789,7 +6794,7 @@
         "bearing": -20
       },
       "acres": 28.5,
-      "acresNote": "The Revised Southline Specific Plan (Final EIR Appendix 2.1, May 2022, PDF p. 899) and the City's notices of determination (July 2022) describe a 28.5-acre site. The Draft EIR (Sept 2021) studied 26.5 acres; Alternative D in the Final EIR, which the revised plan follows, adds about 2.1 acres at 80 Tanforan Avenue (PDF p. 102). The traced plan-area outline measures 28.4 acres.",
+      "acresNote": "The Revised Southline Specific Plan (Final EIR Appendix 2.1, May 2022, PDF p. 899) and the City's notices of determination (July 2022) describe a 28.5-acre site. The Draft EIR (Sept 2021) studied 26.5 acres; Alternative D in the Final EIR, which the revised plan follows, adds about 2.1 acres at 80 Tanforan Avenue (PDF p. 102). The County of San Mateo's five current parcels inside the plan line, joined over the new Southline Avenue, measure 28.0 acres.",
       "program": {
         "homes": null,
         "affordableHomes": null,
@@ -6832,7 +6837,7 @@
       ],
       "nextMilestone": "Precise Plan approvals for the phases after Phase 1; the Specific Plan says later phases are approved as subsequent Precise Plans.",
       "summary": "A transit-oriented office and research campus of up to 2.8 million sq ft on a former industrial site across Huntington Avenue from San Bruno BART. The plan adds a new east–west street, Southline Avenue, a 1.5-acre central green and buildings of four to seven stories. The City approved the plan and its first phase in July 2022.",
-      "massingNotes": "Boundary traced from the dotted Specific Plan Area line in the Revised Specific Plan's Figure 2-8 (Final EIR, May 2022), its aerial photo fitted to OpenStreetMap building footprints (data/boundaries/southline.geojson, approximate, 28.4 acres as drawn); the County parcel layer could not be reached to check it. Illustrative massing (data/massing/southline.geojson): the plan's conceptual building footprints raised to the heights in Figure 2-8 (80, 105, 115 and 120 ft), phased per Figure 2-9. Nothing is drawn as built.",
+      "massingNotes": "Boundary (data/boundaries/southline.geojson): official, the County of San Mateo's parcels 014-250-110, -120, -130, -150 and -170 (data.smcgov.org nr6j-72z7), which fill the Specific Plan Area line of the revised plan's Figure 2-8, joined over Southline Avenue; 28.0 acres. The six APNs on the CEQA filing are no longer in the County's layer (the site was re-mapped after 2022). The outline first traced from Figure 2-8 (28.4 acres) lay within about 27 m of it. Illustrative massing (data/massing/southline.geojson): the plan's conceptual building footprints raised to the heights in Figure 2-8 (80, 105, 115 and 120 ft), phased per Figure 2-9. Nothing is drawn as built.",
       "officialLinks": [
         "https://ceqanet.lci.ca.gov/Project/2020050452",
         "https://ceqanet.lci.ca.gov/2020050452/4"
@@ -6846,12 +6851,12 @@
         "https://ceqanet.lci.ca.gov/2020050452/5",
         "https://ceqanet.lci.ca.gov/2020050452/5/Attachment/23TQ-d",
         "https://ceqanet.lci.ca.gov/2020050452/6",
-        "https://ceqanet.lci.ca.gov/2020050452/6/Attachment/TVBE3X"
+        "https://ceqanet.lci.ca.gov/2020050452/6/Attachment/TVBE3X",
+        "https://data.smcgov.org/d/nr6j-72z7"
       ],
       "verify": [
         "whether Phase 1 is under construction or complete: the press reports Building 1 rising in 2023, and OpenStreetMap already maps footprints where Buildings 1 and 2 and Parking Structure D are planned, but no City of South San Francisco permit record was reached (ssf.net and its permit and agenda systems refused the connection on Oct 17, 2026)",
         "the adopted Specific Plan text: the City's posted plan (ssf.net) could not be opened, so figures here come from the revised plan in the May 2022 Final EIR; the NOD's 28.5 acres and its listing of 80 Tanforan Avenue match that version",
-        "the boundary against the County of San Mateo parcels for the six APNs on CEQAnet (014-250-090, -080, -050, 014-241-030, -040 and 014-232-030); the Draft EIR speaks of seven parcels",
         "the press date for the Council vote (Sept 2022) is later than the July 13, 2022 approval in the City's notice of determination"
       ],
       "lastVerified": "2026-10-17"
@@ -6931,19 +6936,19 @@
       ],
       "nextMilestone": "The Draft Precise Plan and Draft EIR (no official date published).",
       "summary": "A plan to replace the Redwood LIFE office park in Redwood Shores, 20 two-story buildings on about 84 acres along Belmont Slough, with 11 life science buildings of five to six stories totaling about 2.7 million sq ft, a hotel, four garages and about 42 acres of open space. Redwood City is writing a precise plan for the site and began its environmental review in August 2025.",
-      "massingNotes": "Boundary only (data/boundaries/redwood-life.geojson, pipeline/bam_pipeline/sites/boundary_redwood_life.py): traced from the NOP's Figure 3 aerial (PDF p. 7), fitted to OpenStreetMap building footprints (RMS about 3 m); approximate, about 82 acres as drawn against the NOP's 84. The four APNs in the NOP would give a parcel-exact line once the County parcel service can be reached. No massing yet: the NOP's Figure 4 conceptual site plan (applicant's architect, Aug 5, 2025) shows the 11 buildings, but the precise plan's standards aren't published; draw from the Draft Precise Plan when it is out.",
+      "massingNotes": "Boundary only (data/boundaries/redwood-life.geojson, pipeline/bam_pipeline/sites/boundary_redwood_life.py): official, the County of San Mateo parcels (data.smcgov.org nr6j-72z7) for the four APNs the NOP names, 84.2 acres against the NOP's 84. The outline first traced from the NOP's Figure 3 aerial (81.9 acres) lay within about 35 m of the parcels. No massing yet: the NOP's Figure 4 conceptual site plan (applicant's architect, Aug 5, 2025) shows the 11 buildings, but the precise plan's standards aren't published; draw from the Draft Precise Plan when it is out.",
       "officialLinks": [
         "https://ceqanet.lci.ca.gov/2025081015"
       ],
       "sources": [
         "https://ceqanet.lci.ca.gov/2025081015",
         "https://ceqanet.lci.ca.gov/2025081015/Attachment/yselzM",
-        "https://ceqanet.lci.ca.gov/Project/2025081015"
+        "https://ceqanet.lci.ca.gov/Project/2025081015",
+        "https://data.smcgov.org/d/nr6j-72z7"
       ],
       "verify": [
         "the Draft EIR and Draft Precise Plan release dates (only the notice of preparation is on CEQAnet as of Oct 17, 2026)",
         "the dates the City Council and Planning Commission chose \"Alternative 2\" for study (the press describes a March joint study session and a later Council vote; the notice gives no date)",
-        "the site's exact line: the boundary is traced from the notice's aerial figure; the County parcels for the four APNs would give the exact line",
         "who runs planredwoodlife.org, which the notice names for the current project plans (not reachable from here)"
       ],
       "lastVerified": "2026-10-17"

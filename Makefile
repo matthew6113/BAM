@@ -92,6 +92,7 @@ sites:
 	$(PY) bam_pipeline.sites.lines_smart
 	$(PY) bam_pipeline.sites.bart_station_housing
 	$(PY) bam_pipeline.sites.boundary_the_orchards
+	$(PY) bam_pipeline.sites.massing_the_orchards
 	$(PY) bam_pipeline.sites.boundary_santa_clara_station_area
 	$(PY) bam_pipeline.sites.boundary_redwood_life
 	$(PY) bam_pipeline.sites.boundary_southline

@@ -2,48 +2,47 @@
  "type": "FeatureCollection",
  "properties": {
   "project": "the-orchards",
-  "source": "traced: City of San Ramon, San Ramon 2040 General Plan Draft EIR (Aug 2023, SCH 2022060549), Figure 2-4, Proposed San Ramon Land Use Designations (PDF p. 67): the Chevron Park parcel",
-  "sourceLabel": "General Plan Draft EIR, Figure 2-4 (2023)",
-  "sourceUrl": "https://ceqanet.lci.ca.gov/2022060549/2/Attachment/ueWNFZ",
-  "accuracy": "approximate",
-  "accuracyNote": "The approval names one parcel, APN 213-120-008 at 6001 Bollinger Canyon Road, the \"existing 92-acre site\" (Notice of Exemption, Feb 2026). The County's parcel map can't be reached here, so the parcel is traced from the City's General Plan EIR land-use map, which draws parcel lines at about 9 m per pixel: the large lot of the former Chevron Park between I-680, Bollinger Canyon Road and the Bishop Ranch 1 lots along the Iron Horse Trail. The map is placed on I-680, the trail and Bollinger Canyon Road (trimmed RMS 4 m), so the edge is good to about 10-20 m. 88.6 acres as drawn, against the official 92 acres.",
-  "officialAcres": 92,
-  "officialAcresSource": "https://ceqanet.lci.ca.gov/2026020219/Attachment/G7E_Xs",
-  "license": "Traced facts from a public City of San Ramon document (the PDF is not redistributed). Georeference: OpenStreetMap contributors (ODbL 1.0), via Overture Maps.",
+  "source": "traced: City of San Ramon, Orchards Vesting Tentative Map 9693 (Applicant's Project Plans dated Sept 5, 2025, approved by Planning Commission Resolution 02-26 and City Council Resolution 2026-040), sheet C3.0 Existing Conditions (PDF p. 179): the project boundary around Parcel A (DN 2000-0220096, 91.55 acres), APN 213-120-008",
+  "sourceLabel": "Vesting tentative map, sheet C3.0 (2025)",
+  "sourceUrl": "https://docs.sanramon.ca.gov/WebLink/DocView.aspx?id=20812236&dbid=0&repo=sanramon",
+  "documents": [
+   "https://docs.sanramon.ca.gov/WebLink/DocView.aspx?id=20812236&dbid=0&repo=sanramon",
+   "https://docs.sanramon.ca.gov/WebLink/DocView.aspx?id=21620060&dbid=0&repo=sanramon",
+   "https://ceqanet.lci.ca.gov/2026020219/Attachment/G7E_Xs",
+   "https://ceqanet.lci.ca.gov/2022060549/2/Attachment/ueWNFZ"
+  ],
+  "documentSha256": "afee4df22d3c8d1b9aef8b6c3c56a84c581f08d107c20a0771be2c6ef7140d8b",
+  "accuracy": "traced",
+  "accuracyShort": "RMS 0.8 m",
+  "accuracyNote": "The parcel as the approved vesting tentative map draws it: the project boundary around Parcel A (91.55 acres; the City's approvals say about 92), APN 213-120-008. The CAD sheet's shape is exact at 1\" = 100' (it encloses 91.58 acres at that scale); it is placed on OpenStreetMap building footprints using the existing buildings the sheet draws (trimmed RMS 0.8 m, median 2.9 m), so its position is good to a few metres. Contra Costa County's parcel map couldn't be reached to check it. 91.6 acres as drawn. The outline traced earlier from the 2040 General Plan EIR's land-use map came to 88.6 acres and lies up to 34 m from this one. The Council resolution's heading gives the parcel as APN 213-701-002, its text as 213-120-008.",
+  "officialAcres": 91.55,
+  "officialAcresSource": "https://docs.sanramon.ca.gov/WebLink/DocView.aspx?id=20812236&dbid=0&repo=sanramon",
+  "license": "Traced facts from a public City of San Ramon record (the PDF is not redistributed). Georeference: OpenStreetMap contributors (ODbL 1.0), via Overture Maps.",
   "georeference": {
-   "scale_m_per_unit": 9.3497,
-   "rotation_deg": 1.653,
-   "rms_m": 3.93,
+   "scale_m_per_unit": 0.42333,
+   "rotation_deg": 27.804,
+   "rms_m": 0.8,
    "controls": [
     {
-     "label": "I-680, Iron Horse Trail and Bollinger Canyon Rd bands against OpenStreetMap: trimmed RMS over the closest 80% of 260 points",
-     "residual_m": 3.93
+     "label": "71 building outlines on sheet C3.0 against OpenStreetMap building footprints (rotation and shift; scale held at 1\" = 100'): trimmed RMS over the closest 50% of 14257 points",
+     "residual_m": 0.8
     }
    ],
    "method": "trimmed ICP",
-   "points": 260,
-   "inlier_share": 0.8,
-   "median_m": 3.12,
-   "p90_m": 108.67,
-   "initial_controls": {
-    "scale_m_per_unit": 9.26321,
-    "rotation_deg": 7.52,
-    "rms_m": 16.0,
-    "controls": [
-     {
-      "label": "Bollinger Canyon Rd / I-680",
-      "residual_m": 4.93
-     },
-     {
-      "label": "Bollinger Canyon Rd / Camino Ramon",
-      "residual_m": 21.59
-     },
-     {
-      "label": "Bollinger Canyon Rd / Iron Horse Trail",
-      "residual_m": 16.67
-     }
-    ]
-   }
+   "points": 14257,
+   "inlier_share": 0.5,
+   "median_m": 2.89,
+   "p90_m": 75.91,
+   "start": "cross-correlation of the filled outlines: rotation 27.7 deg, 70% of the drawn outline area on mapped buildings"
+  },
+  "tracedComparison": {
+   "acres": 91.6,
+   "traced_acres": 88.6,
+   "max_deviation_m": 34.5,
+   "only_in_new_acres": 5.8,
+   "only_in_traced_acres": 2.9,
+   "traced_from": "2040 General Plan Draft EIR Figure 2-4 (PDF p. 67), about 9 m per pixel",
+   "traced_fit_rms_m": 3.93
   }
  },
  "features": [
@@ -58,588 +57,84 @@
     "coordinates": [
      [
       [
-       -121.9583309,
-       37.7620665
+       -121.9613603,
+       37.7546434
       ],
       [
-       -121.958373,
-       37.7619817
+       -121.9548228,
+       37.7573021
       ],
       [
-       -121.9585852,
-       37.7619787
+       -121.9555455,
+       37.7584213
       ],
       [
-       -121.9587937,
-       37.7618072
+       -121.9559107,
+       37.7582728
       ],
       [
-       -121.9590059,
-       37.7618042
+       -121.9560055,
+       37.7584194
       ],
       [
-       -121.9593205,
-       37.7616312
+       -121.9560987,
+       37.7584433
       ],
       [
-       -121.9595328,
-       37.7616282
+       -121.9574209,
+       37.7604899
       ],
       [
-       -121.9597413,
-       37.7614568
+       -121.9572648,
+       37.7606601
       ],
       [
-       -121.9598034,
-       37.7614559
+       -121.9581035,
+       37.7619672
       ],
       [
-       -121.9597997,
-       37.7612874
+       -121.9585191,
+       37.7618023
       ],
       [
-       -121.9597375,
-       37.7612883
+       -121.9590801,
+       37.7615938
       ],
       [
-       -121.9598417,
-       37.7612025
+       -121.9595058,
+       37.7614461
       ],
       [
-       -121.9599047,
-       37.7612365
+       -121.9600797,
+       37.7612609
       ],
       [
-       -121.9599103,
-       37.7614893
+       -121.9609527,
+       37.7610086
       ],
       [
-       -121.960162,
-       37.7612823
+       -121.9632413,
+       37.7604173
       ],
       [
-       -121.9603329,
-       37.7613991
+       -121.963442,
+       37.7603177
       ],
       [
-       -121.9604804,
-       37.7612778
+       -121.9636049,
+       37.7587764
       ],
       [
-       -121.9605865,
-       37.7612763
+       -121.9634974,
+       37.7582117
       ],
       [
-       -121.9606907,
-       37.7611906
+       -121.9630392,
+       37.7573098
       ],
       [
-       -121.9610091,
-       37.7611861
-      ],
-      [
-       -121.9611133,
-       37.7611003
-      ],
-      [
-       -121.9613256,
-       37.7610973
-      ],
-      [
-       -121.9614298,
-       37.7610116
-      ],
-      [
-       -121.9617482,
-       37.7610071
-      ],
-      [
-       -121.9618524,
-       37.7609214
-      ],
-      [
-       -121.9620646,
-       37.7609184
-      ],
-      [
-       -121.9621689,
-       37.7608326
-      ],
-      [
-       -121.9624872,
-       37.7608281
-      ],
-      [
-       -121.9625915,
-       37.7607424
-      ],
-      [
-       -121.9628037,
-       37.7607394
-      ],
-      [
-       -121.9629079,
-       37.7606537
-      ],
-      [
-       -121.9631202,
-       37.7606507
-      ],
-      [
-       -121.9633897,
-       37.760429
-      ],
-      [
-       -121.9633841,
-       37.7601762
-      ],
-      [
-       -121.9634883,
-       37.7600905
-      ],
-      [
-       -121.9634638,
-       37.7589952
-      ],
-      [
-       -121.963568,
-       37.7589095
-      ],
-      [
-       -121.9635646,
-       37.7587554
-      ],
-      [
-       -121.9634566,
-       37.7586727
-      ],
-      [
-       -121.9634509,
-       37.7584199
-      ],
-      [
-       -121.9633429,
-       37.7583372
-      ],
-      [
-       -121.9633373,
-       37.7580844
-      ],
-      [
-       -121.9632293,
-       37.7580017
-      ],
-      [
-       -121.9632255,
-       37.7578332
-      ],
-      [
-       -121.9630076,
-       37.7575834
-      ],
-      [
-       -121.9630038,
-       37.7574149
-      ],
-      [
-       -121.9628958,
-       37.7573322
-      ],
-      [
-       -121.9627841,
-       37.7570809
-      ],
-      [
-       -121.9626761,
-       37.7569982
-      ],
-      [
-       -121.9626742,
-       37.7569139
-      ],
-      [
-       -121.9625662,
-       37.7568312
-      ],
-      [
-       -121.9625643,
-       37.7567469
-      ],
-      [
-       -121.9624563,
-       37.7566642
-      ],
-      [
-       -121.9623445,
-       37.7564129
-      ],
-      [
-       -121.9622365,
-       37.7563301
-      ],
-      [
-       -121.9622346,
-       37.7562459
-      ],
-      [
-       -121.9621266,
-       37.7561631
-      ],
-      [
-       -121.9621248,
-       37.7560789
-      ],
-      [
-       -121.9620168,
-       37.7559961
-      ],
-      [
-       -121.9620149,
-       37.7559119
-      ],
-      [
-       -121.961797,
-       37.7556621
-      ],
-      [
-       -121.9617951,
-       37.7555779
-      ],
-      [
-       -121.9616871,
-       37.7554951
-      ],
-      [
-       -121.9616852,
-       37.7554109
-      ],
-      [
-       -121.9615772,
-       37.7553281
-      ],
-      [
-       -121.9615754,
-       37.7552439
-      ],
-      [
-       -121.9614674,
-       37.7551611
-      ],
-      [
-       -121.9614636,
-       37.7549926
-      ],
-      [
-       -121.9611396,
-       37.7547444
-      ],
-      [
-       -121.9611453,
-       37.7549971
-      ],
-      [
-       -121.9609979,
-       37.7551184
-      ],
-      [
-       -121.9607856,
-       37.7551214
-      ],
-      [
-       -121.9606814,
-       37.7552071
-      ],
-      [
-       -121.9605753,
-       37.7552086
-      ],
-      [
-       -121.9602607,
-       37.7553816
-      ],
-      [
-       -121.9600485,
-       37.7553846
-      ],
-      [
-       -121.9599443,
-       37.7554703
-      ],
-      [
-       -121.9596278,
-       37.755559
-      ],
-      [
-       -121.9593151,
-       37.7558163
-      ],
-      [
-       -121.9591029,
-       37.7558193
-      ],
-      [
-       -121.9589986,
-       37.755905
-      ],
-      [
-       -121.9587864,
-       37.755908
-      ],
-      [
-       -121.958578,
-       37.7560795
-      ],
-      [
-       -121.9583036,
-       37.7560833
-      ],
-      [
-       -121.9583065,
-       37.7562169
-      ],
-      [
-       -121.9582634,
-       37.7562524
-      ],
-      [
-       -121.9577768,
-       37.7562593
-      ],
-      [
-       -121.9577797,
-       37.7563929
-      ],
-      [
-       -121.9577366,
-       37.7564284
-      ],
-      [
-       -121.9576304,
-       37.7564299
-      ],
-      [
-       -121.9573159,
-       37.7566029
-      ],
-      [
-       -121.9571036,
-       37.7566058
-      ],
-      [
-       -121.9568952,
-       37.7567773
-      ],
-      [
-       -121.956789,
-       37.7567788
-      ],
-      [
-       -121.9566848,
-       37.7568646
-      ],
-      [
-       -121.9564726,
-       37.7568675
-      ],
-      [
-       -121.9563683,
-       37.7569533
-      ],
-      [
-       -121.956094,
-       37.7569571
-      ],
-      [
-       -121.9560969,
-       37.7570907
-      ],
-      [
-       -121.9559476,
-       37.7571277
-      ],
-      [
-       -121.9558434,
-       37.7572135
-      ],
-      [
-       -121.9556312,
-       37.7572165
-      ],
-      [
-       -121.9553166,
-       37.7573894
-      ],
-      [
-       -121.9552105,
-       37.7573909
-      ],
-      [
-       -121.9551062,
-       37.7574767
-      ],
-      [
-       -121.9547879,
-       37.7574811
-      ],
-      [
-       -121.9550486,
-       37.7576809
-      ],
-      [
-       -121.9551603,
-       37.7579322
-      ],
-      [
-       -121.9552683,
-       37.7580149
-      ],
-      [
-       -121.9552702,
-       37.7580992
-      ],
-      [
-       -121.9554881,
-       37.758349
-      ],
-      [
-       -121.9554899,
-       37.7584332
-      ],
-      [
-       -121.9556612,
-       37.7585645
-      ],
-      [
-       -121.9559613,
-       37.7585602
-      ],
-      [
-       -121.9560224,
-       37.75851
-      ],
-      [
-       -121.9560243,
-       37.7585943
-      ],
-      [
-       -121.9562403,
-       37.7587598
-      ],
-      [
-       -121.9562421,
-       37.758844
-      ],
-      [
-       -121.9563501,
-       37.7589268
-      ],
-      [
-       -121.9564619,
-       37.759178
-      ],
-      [
-       -121.9565699,
-       37.7592608
-      ],
-      [
-       -121.9565718,
-       37.7593451
-      ],
-      [
-       -121.9566798,
-       37.7594278
-      ],
-      [
-       -121.9566816,
-       37.7595121
-      ],
-      [
-       -121.9567896,
-       37.7595948
-      ],
-      [
-       -121.9567915,
-       37.7596791
-      ],
-      [
-       -121.9570094,
-       37.7599288
-      ],
-      [
-       -121.9570113,
-       37.7600131
-      ],
-      [
-       -121.9571193,
-       37.7600958
-      ],
-      [
-       -121.9571211,
-       37.7601801
-      ],
-      [
-       -121.9572291,
-       37.7602629
-      ],
-      [
-       -121.957231,
-       37.7603471
-      ],
-      [
-       -121.9574489,
-       37.7605969
-      ],
-      [
-       -121.9574511,
-       37.7606956
-      ],
-      [
-       -121.9573468,
-       37.7607813
-      ],
-      [
-       -121.9573503,
-       37.7609354
-      ],
-      [
-       -121.9574583,
-       37.7610181
-      ],
-      [
-       -121.95757,
-       37.7612694
-      ],
-      [
-       -121.957678,
-       37.7613521
-      ],
-      [
-       -121.9576799,
-       37.7614364
-      ],
-      [
-       -121.9578978,
-       37.7616861
-      ],
-      [
-       -121.9578997,
-       37.7617704
-      ],
-      [
-       -121.9580077,
-       37.7618532
-      ],
-      [
-       -121.9580095,
-       37.7619374
-      ],
-      [
-       -121.9581175,
-       37.7620202
-      ],
-      [
-       -121.9583309,
-       37.7620665
+       -121.9613603,
+       37.7546434
       ]
      ]
     ]

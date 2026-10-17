@@ -1,25 +1,37 @@
-"""Santa Clara Station Area Specific Plan: the plan area traced from the City's Notice of Preparation.
+"""Santa Clara Station Area Specific Plan: the plan area from the County parcels the City listed.
 
-The City of Santa Clara has published no GIS layer for the plan area. Its Notice of Preparation of a
-Draft Program EIR (June 12, 2026, CEQAnet SCH 2026060462) draws the "Project Boundary" as a black
-dashed line on Figure 2, Vicinity Map (PDF p. 4), a vector map on an Esri street base map at about
-1:30,000 (0-5,000 ft scale bar). The CEQAnet record also lists about 190 assessor's parcels, but the
-county's parcel service isn't reachable from the pipeline's network, so the figure is used.
+The City of Santa Clara's Notice of Preparation of a Draft Program EIR (June 12, 2026, CEQAnet
+SCH 2026060462) describes "approximately 244 acres" of properties "bounded by De La Cruz Boulevard, Reed
+Street, and Martin Avenue to the northeast and Franklin Street and El Camino Real to the southwest", and
+the City's CEQAnet filing lists the plan's 185 assessor's parcels ("Other Location Info"). The boundary
+is the union of those parcels in the Santa Clara County parcel layer (data.sccgov.org ubcd-cewv), closed
+over the streets between them:
 
-1. The page is rendered at 4 px per PDF point. Street pixels (the base map's white streets and
-   yellow arterials) are thinned to centrelines and fitted to OpenStreetMap street centrelines
-   (Overture) by trimmed ICP (line_georef.register_roads), starting from the De La Cruz Boulevard /
-   Coleman Avenue junction and the scale bar.
-2. The dashes are read straight from the PDF (filled shapes in the dash colour, outside the legend),
-   joined across their gaps, and the centre of the dashed stroke is taken as the boundary.
+1. 174 of the 185 APNs are in the County's current (FY 2026) layer. Of the 11 that aren't, 230-59-001,
+   -002, 230-60-009 and 230-61-001 have been re-mapped on the same assessor's pages; their successors
+   that lie inside the notice's Project Boundary and the City of Santa Clara (230-59-008, -009,
+   230-60-010 and 230-61-006) are added. The others (230-05-045, -049, -050, -078, -096 and the condo
+   common-area numbers 269-16-000 and 269-60-000) have no clear successor and are left out.
+2. The parcels are joined over the streets between them by a 25 m closing, which also takes in the
+   plan area's internal streets, as the notice's map does.
 
-At this scale the dashed line is about 18 m wide on the ground and the figure generalises the
-street grid, so the boundary is approximate (the fit RMS is reported); it is not a parcel line.
+The parcel list and the notice's small-scale Figure 2 (PDF p. 4) don't agree everywhere: the listed
+parcels take in residential blocks along Franklin, Benton, Alviso and Fremont streets, a Santa Clara
+University parcel at 514 Franklin Street, parcels on De La Cruz Boulevard and Grant Street and two San
+José parcels on Campbell Avenue that the figure's dashed line leaves out or crosses. The text's bounds
+(De La Cruz, Reed and Martin to the northeast; Franklin and El Camino Real to the southwest) and the
+244-acre total fit the parcels, so they are used, and the boundary stays approximate until the City
+publishes a plan-area map. Figure 2 is still traced here (street pixels fitted to OpenStreetMap by
+trimmed ICP, dashes read from the PDF), only to report how far the two lie apart.
 
     uv run --directory pipeline python -m bam_pipeline.sites.boundary_santa_clara_station_area
 """
 
 from __future__ import annotations
+
+import html
+import re
+import urllib.request
 
 import numpy as np
 import pdfplumber
@@ -29,6 +41,7 @@ from shapely.geometry import Polygon
 
 from .. import trace
 from . import line_georef as lg
+from . import official_boundaries as ob
 from . import traced_boundaries as tb
 
 PROJECT = "santa-clara-station-area"
@@ -45,8 +58,55 @@ ANCHOR_PT = (370.0, 252.0)  # De La Cruz Boulevard meets Coleman Avenue
 SCALE_M_PER_PT = 5000 * 0.3048 / 132.0  # 0-5,000 ft scale bar, about 132 pt long (refined by the fit)
 STATED_ACRES = 244  # NOP p. 2 and CEQAnet "Total Acres"
 BBOX = (-121.975, 37.330, -121.905, 37.375)
+# Re-mapped successors of four listed APNs (see the module docstring).
+SUCCESSORS = ["23059008", "23059009", "23060010", "23061006"]
+CLOSE_M = 25.0
 ROAD_CLASSES = {"motorway", "trunk", "primary", "secondary", "tertiary", "residential", "unclassified",
                 "living_street"}
+
+
+# ---------------------------------------------------------------- parcels (shared with boundary_redwood_life)
+
+def parcel_site(name: str, spec: dict, close_m: float = 0.0):
+    """Union of a parcel query (official_boundaries.fetch spec) in UTM, slivers closed at 0.5 m and, with
+    close_m, joined over the streets between the parcels. Returns (site, number of parcels)."""
+    utm = ob._utm_shapes(ob.fetch(name, spec))
+    site = shapely.union_all(utm.buffer(0.5).to_numpy()).buffer(-0.5)
+    if close_m:
+        site = site.buffer(close_m, join_style="mitre").buffer(-close_m, join_style="mitre")
+    return site.simplify(1.0, preserve_topology=True), len(utm)
+
+
+def compare(site, traced) -> dict:
+    """How far an official outline lies from the traced one it replaces (both UTM)."""
+    return {
+        "acres": round(site.area / tb.ACRE_M2, 1),
+        "traced_acres": round(traced.area / tb.ACRE_M2, 1),
+        "max_deviation_m": round(site.hausdorff_distance(traced), 1),
+        "only_in_official_acres": round(site.difference(traced).area / tb.ACRE_M2, 1),
+        "only_in_traced_acres": round(traced.difference(site).area / tb.ACRE_M2, 1),
+    }
+
+
+def listed_apns() -> list[str]:
+    """The APNs on the CEQAnet record ("Other Location Info"), cached in data/raw/boundaries."""
+    cache = ob.RAW / "santa-clara-station-area-ceqanet.html"
+    if not cache.exists():
+        ob.RAW.mkdir(parents=True, exist_ok=True)
+        req = urllib.request.Request(CEQANET, headers={"User-Agent": "Mozilla/5.0 (bay-area-megaprojects pipeline)"})
+        with urllib.request.urlopen(req, timeout=120) as r:
+            cache.write_bytes(r.read())
+    text = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", cache.read_text(errors="ignore"))))
+    i = text.index("Other Location Info")
+    apns = re.findall(r"\d{3}-\d{2}-\d{3}", text[i:text.index("Notice of Completion", i)])
+    if len(apns) != 185:
+        raise SystemExit(f"expected 185 APNs on the CEQAnet record, found {len(apns)}")
+    return [a.replace("-", "") for a in apns]
+
+
+def parcels_spec(apns: list[str]) -> dict:
+    return {"label": "Santa Clara County parcels",
+            **ob.socrata(*ob.SCC_PARCELS, f"apn in ({ob._sql_list(apns)})")}
 
 
 def _street_pixels(rgb: np.ndarray) -> np.ndarray:
@@ -111,7 +171,8 @@ def _enclosed(dashes, max_gap_m: float = 120.0):
     return site.buffer(-stroke / 2, join_style="mitre").buffer(stroke / 2, join_style="mitre")
 
 
-def build() -> None:
+def traced_outline():
+    """The Figure 2 outline (UTM) and its fit report: kept to compare with the parcels."""
     trace.fetch_document(NOP_URL, NOP, NOP_SHA)
     rgb = np.asarray(pdfium.PdfDocument(str(NOP))[PAGE].render(scale=K).to_pil().convert("RGB"))
     streets = tb.streets("scsa-santa_clara_station", BBOX)
@@ -124,29 +185,52 @@ def build() -> None:
 
     dashes = [sim.geometry(d) for d in _dashes()]
     site = _enclosed(dashes).simplify(1.0, preserve_topology=True)
+    return site, rep
+
+
+def build() -> None:
+    apns = listed_apns()
+    spec = parcels_spec(apns + SUCCESSORS)
+    found = {f["properties"]["apn"] for f in ob.fetch(PROJECT, spec)["features"]}
+    missing = sorted(set(apns) - found)
+    site, n = parcel_site(PROJECT, spec, CLOSE_M)
     acres = site.area / tb.ACRE_M2
+    traced, rep = traced_outline()
+    cmp = compare(site, traced)
+    fmt = lambda a: f"{a[:3]}-{a[3:5]}-{a[5:]}"
     props = {
-        "source": ("Traced from the City of Santa Clara's Notice of Preparation of a Draft Program EIR for the Santa "
-                   "Clara Station Area Specific Plan (June 12, 2026; CEQAnet SCH 2026060462), Figure 2, Vicinity Map, "
-                   "PDF p. 4: the dashed \"Project Boundary\""),
-        "sourceLabel": "Notice of preparation, Figure 2 (PDF)",
-        "sourceUrl": NOP_URL,
-        "documents": [CEQANET, NOP_URL],
+        "source": ("Santa Clara County parcels (data.sccgov.org ubcd-cewv): the assessor's parcels the City of Santa "
+                   "Clara listed for the Santa Clara Station Area Specific Plan on its CEQAnet notice of preparation "
+                   f"record (SCH 2026060462), {len(apns) - len(missing)} of {len(apns)} found in the County's FY 2026 "
+                   f"layer plus {len(SUCCESSORS)} re-mapped successors, joined over the streets between them"),
+        "sourceLabel": "Santa Clara County parcels",
+        "sourceUrl": spec["landing"],
+        "query": spec["url"],
+        "documents": [CEQANET, NOP_URL, spec["landing"]],
         "documentSha256": NOP_SHA,
         "accuracy": "approximate",
         "accuracyNote": (
-            "Approximate boundary: the plan area as the NOP's small-scale vicinity map draws it (about 1:30,000; the "
-            "dashed line is about 18 m wide on the ground), fitted to OpenStreetMap streets. The NOP describes about "
-            f"{STATED_ACRES} acres of properties bounded by De La Cruz Boulevard, Reed Street and Martin Avenue to the "
-            "northeast and Franklin Street and El Camino Real to the southwest. The City has published no plan-area "
-            "layer; the parcels listed on CEQAnet would give a parcel-exact line. "
-            f"{acres:,.1f} acres as drawn, streets included."),
-        "georeference": {**rep, "anchor": "De La Cruz Boulevard / Coleman Avenue (OpenStreetMap via Overture)"},
-        "license": f"Boundary traced from a public CEQA document (City of Santa Clara); fit to {tb.OSM_LICENSE}",
+            "Approximate boundary: the parcels the City listed for the plan on CEQAnet, as the County maps them, "
+            f"joined over the streets between them ({CLOSE_M:.0f} m closing). {acres:,.1f} acres as drawn, streets "
+            f"included, against the notice's approximately {STATED_ACRES} acres. {len(missing)} listed APNs aren't "
+            f"in the County's current layer; the re-mapped successors of four of them that lie inside the notice's "
+            "Project Boundary are drawn. The list and the notice's small-scale Figure 2 differ at the edges: the "
+            "parcels take in residential blocks along Franklin, Benton, Alviso and Fremont streets, a Santa Clara "
+            "University parcel on Franklin Street, parcels on De La Cruz Boulevard and Grant Street and two San José "
+            "parcels on Campbell Avenue that the figure's dashed line leaves out or crosses. The notice's written "
+            "bounds and acreage fit the parcels. The outline traced from Figure 2 came to "
+            f"{cmp['traced_acres']:,.1f} acres; the two lie up to {cmp['max_deviation_m']:.0f} m apart."),
+        "license": "Santa Clara County open data (terms of use)",
+        "features_used": n,
+        "apnsListed": len(apns),
+        "apnsNotInCountyLayer": [fmt(a) for a in missing],
+        "successorsAdded": [fmt(a) for a in SUCCESSORS],
+        "tracedComparison": {**cmp, "traced_from": "NOP Figure 2, Vicinity Map, PDF p. 4 (dashed Project Boundary), "
+                             "fitted to OpenStreetMap streets", "traced_fit_rms_m": rep["rms_m"]},
     }
     tb.write(PROJECT, site, props)
-    print(f"[{PROJECT}] fit: scale {sim.scale:.3f} m/pt, rotation {np.degrees(sim.rotation):.2f} deg, "
-          f"RMS {rep['rms_m']} m, median {rep['median_m']} m; {acres:,.1f} acres vs {STATED_ACRES} stated")
+    print(f"[{PROJECT}] parcels: {n} features ({len(missing)} listed APNs missing), {acres:,.1f} acres vs "
+          f"{STATED_ACRES} stated; traced {cmp['traced_acres']:,.1f} acres, max deviation {cmp['max_deviation_m']} m")
 
 
 def main() -> None:

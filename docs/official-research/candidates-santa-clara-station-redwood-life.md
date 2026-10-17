@@ -72,6 +72,24 @@ so the boundary is `approximate`. A parcel-exact boundary would be the union of 
 Clara County parcel layer (`data.sccgov.org` `ubcd-cewv`, used for `related-santa-clara`), once that host can
 be reached from the pipeline.
 
+**Boundary update (Oct 17, later).** `data.sccgov.org` became reachable. The CEQAnet record's "Other Location
+Info" lists 185 APNs; 174 are in the County's FY 2026 parcel layer (`ubcd-cewv`, updated Aug 26, 2026). The 11
+that aren't: 230-05-045, -049, -050, -078, -096 (no clear successor), 230-59-001, -002, 230-60-009, 230-61-001
+(re-mapped on the same assessor's pages; the successors inside the NOP's Project Boundary and the City of Santa
+Clara, 230-59-008, -009, 230-60-010 and 230-61-006, are added; 230-61-002, 230-59-004, -005 and others lie mostly
+in San José or outside the line and are left out) and 269-16-000, 269-60-000 (condo common-area numbers). The
+boundary is now the union of those 178 parcels joined over the streets by a 25 m closing: **249.4 acres**
+(the listed parcels alone close to 244.1 acres; the parcels without streets are 219.6). Kept `approximate`:
+the list fits the NOP's written bounds ("De La Cruz Boulevard, Reed Street, and Martin Avenue to the northeast
+and Franklin Street and El Camino Real to the southwest") and its 244 acres, but differs from Figure 2 at the
+edges: it takes in residential blocks along Franklin, Benton, Alviso, Fremont and Harrison streets west of the
+dashed line, a Santa Clara University parcel (230-08-079, 514 Franklin Street, 11.7 acres), parcels at
+1775-1885 De La Cruz Boulevard and 1709 Grant Street, and two San José parcels on Campbell Avenue (230-13-011,
+230-14-026) that the line crosses; Figure 2 in turn takes in the street and airport-edge strips beyond Martin
+Avenue. Against the traced outline: 72.6 acres only in the parcels, 31.4 acres only in the trace, up to about
+300 m apart (Hausdorff). An overlay of OpenStreetMap streets on the NOP figure also shows its base map is
+generalised by tens of metres, so the figure can't settle the edges.
+
 **Land use.** None. The plan is at the NOP stage and the NOP maps no land-use concept; the land-use
 alternatives and task force materials are on the City page, which couldn't be read.
 
@@ -130,6 +148,12 @@ rotation 0.48°, RMS 2.77 m over 53 tile control points. The dashes were read fr
 Santa Clara. **81.9 acres as drawn** against the NOP's 84 (the line follows the Belmont Slough levee and
 Marine Parkway). `approximate`. A parcel-exact line would be the County of San Mateo parcels for the four APNs
 (`data.smcgov.org` `nr6j-72z7`, used for `redwood-city-ferry-terminal`), once that host can be reached.
+
+**Boundary update (Oct 17, later).** `data.smcgov.org` became reachable. The four APNs are all in the County
+layer (095-012-150 at 3400, -220 at 800, -450 at 1400 and -460 at 1600 Bridge Parkway); their union is
+**84.2 acres** against the NOP's 84, and is now the boundary (`official`). The traced outline (81.9 acres)
+lies within 34.7 m of it (Hausdorff, at the southern tip by Bridge Parkway); 2.7 acres are only in the
+parcels (mostly along the Marine Parkway edge), 0.4 acres only in the trace.
 
 **Massing / land use.** None for now. Figure 4 (p. 8) is a conceptual site plan of the 11 buildings, garages
 and hotel with floor areas and story counts, by the applicant's architect, but the precise plan's development

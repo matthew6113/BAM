@@ -50,6 +50,48 @@ reach. It stays a lead.
 
 `_meta.lastVerified` is 2026-10-17, the newest record date.
 
+## 2026-10-17 (later: official boundaries for the new projects; the Orchards plans)
+
+The County parcel services (`data.sccgov.org`, `data.smcgov.org`) and the City of San Ramon's document server
+(`docs.sanramon.ca.gov`) became reachable, so the four traced boundaries added earlier today were redone from them.
+Details and quotes are in the same research notes.
+
+**redwood-life**: boundary now `official`, the County of San Mateo parcels (nr6j-72z7) for the four APNs the notice of
+preparation names (095-012-150, -220, -450, -460): 84.2 acres against the notice's 84 (the trace was 81.9; up to 35 m
+apart). Its `verify` item on the exact line is resolved.
+
+**southline**: boundary now `official`. The six APNs on the CEQA filing aren't in the County layer any more (the site was
+re-mapped after 2022); the County's five parcels on the same assessor's page (014-250-110, -120, -130, -150, -170) fill
+the revised Specific Plan's plan line, and are joined over the new Southline Avenue: 28.0 acres against the plan's 28.5
+(the trace was 28.4; up to 27 m apart, at a street corner). The massing was re-run on the new boundary (unchanged
+otherwise). The `verify` item on the County parcels is resolved.
+
+**santa-clara-station-area**: boundary redrawn from the Santa Clara County parcels (ubcd-cewv) for the 185 APNs on the
+City's CEQAnet record (174 found; four re-mapped successors inside the notice's boundary added), joined over the streets:
+about 249 acres against the notice's 244 (the trace from the notice's small-scale Figure 2 was 208). It stays
+`approximate`: the parcel list fits the notice's written bounds and acreage but takes in blocks the figure leaves out
+(residential blocks along Franklin Street, a Santa Clara University parcel, parcels on De La Cruz Boulevard, Grant Street
+and Campbell Avenue), up to about 300 m from the traced line. The `verify` item now asks for the City's plan-area map.
+
+**the-orchards**: from the approved record on `docs.sanramon.ca.gov` (City Council Resolution 2026-040, Apr 7, 2026; the
+Applicant's Project Plans of Sept 5, 2025 with Vesting Tentative Map 9693; the Orchards Design Guidelines of Nov 14,
+2025; the Affordable Housing Plan of Dec 4, 2025):
+- program: 397 affordable homes, 16.2% of the 2,452 homes (163 very low, 212 low and 22 moderate income), and 125,000 sq ft
+  of ground-floor retail, entertainment and commercial uses in the Mixed-Use District (Resolution 2026-040); notes now
+  give the 2,452 homes plus 58 optional ADUs and the 85-ft height limit.
+- boundary: now `traced` from the tentative map's sheet C3.0 (Parcel A, 91.55 acres), a CAD sheet at 1" = 100' placed on
+  OpenStreetMap footprints by the existing buildings it draws (trimmed RMS 0.8 m): 91.6 acres (the General Plan EIR trace
+  was 88.6; up to 35 m apart). Contra Costa County's parcel map still can't be reached, so it isn't `official`.
+- massing (new, illustrative): the tentative map's development parcels and lots (sheet C2.0) raised to the design
+  guidelines' limits: 85 ft in the Mixed-Use District and on the Multi-Family B and C parcels, 65 ft on the E, F, G and H
+  parcels, 40 ft on the attached row townhome lots and 35 ft on the single-family lots.
+- `verify`: the affordable/commercial and massing items are resolved; the County parcel check stays, and two new items
+  record the resolution's two APNs (213-701-002 in its heading, 213-120-008 in its text) and the 30-ft single-family
+  limit in the plan set's standards table against the guidelines' 35 ft.
+
+No new official hosts were needed (`docs.sanramon.ca.gov` is a `.gov` host). `data/CREDITS.md` lists the new geometry;
+the County parcel layers were already credited.
+
 ## 2026-10-13 (Berkeley ferry: dredged channel drawn apart)
 
 **berkeley-pier-ferry**: Matthew asked for the site not to run so far into the Bay, so I re-checked it
