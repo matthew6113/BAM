@@ -2,7 +2,7 @@
   "_meta": {
     "title": "Bay Area megaprojects: researched project list",
     "preparedBy": "Claude (claude.ai chat) for Matthew Huguet",
-    "lastVerified": "2026-10-12",
+    "lastVerified": "2026-10-17",
     "notes": [
       "Every figure here came from the listed sources as of the lastVerified date. Items in each project's 'verify' list are known gaps; do not fill them by guessing.",
       "approxCenter values are rough [lon, lat] points for placing a marker only. Real site boundaries must come from official plan documents or parcel data, saved per project with their source.",
@@ -6569,6 +6569,507 @@
         "the 2024 pilot start date, which comes from WETA's news page title (July 28, 2024)"
       ],
       "lastVerified": "2026-10-12"
+    },
+    {
+      "id": "santa-clara-station-area",
+      "name": "Santa Clara Station Area Specific Plan",
+      "aliases": [
+        "SCSASP",
+        "Santa Clara Station Area"
+      ],
+      "city": "Santa Clara",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -121.9359,
+        37.3552
+      ],
+      "camera": {
+        "center": [
+          -121.9358,
+          37.3543
+        ],
+        "zoom": 14.6,
+        "pitch": 50,
+        "bearing": -15
+      },
+      "acres": 244,
+      "acresNote": "The City's Notice of Preparation (June 12, 2026, p. 2) describes the plan area as approximately 244 acres of properties around the Santa Clara Transit Station; CEQAnet gives the same total. It is a plan area of many properties, not one site. The boundary drawn from the notice's vicinity map comes to about 208 acres, streets included.",
+      "program": {
+        "homes": 8300,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 2100000,
+        "commercialSqftTotal": null,
+        "retailSqft": 134920,
+        "hotelKeys": null,
+        "openSpaceAcres": 19.5,
+        "notes": "Proposed plan totals in the Notice of Preparation, which the Draft EIR will study: up to 8,300 homes, 2.1 million sq ft of commercial office, 1.7 million sq ft of light industrial, 105,060 sq ft of institutional uses, 134,920 sq ft of retail and 19.5 acres of open space. CEQAnet lists 10,800 jobs. These are the plan's capacity, not a building program; no specific development projects are part of it. No affordability requirement has been published yet."
+      },
+      "developer": "City of Santa Clara (City-initiated specific plan; development would be by the area's many property owners)",
+      "publicPartners": [
+        "City of Santa Clara (lead agency)"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In environmental review. The City of Santa Clara issued a notice of preparation of a Draft Program EIR on June 12, 2026, held a virtual scoping meeting on June 29 and took comments until July 13, 2026. No draft plan or Draft EIR has been published yet.",
+      "timeline": [
+        {
+          "date": "2010-11",
+          "event": "Santa Clara adopts its 2010-2035 General Plan, which plans the Santa Clara Station Focus Area for mixed-use, transit-oriented development as a gateway into the city."
+        },
+        {
+          "date": "2026-06-12",
+          "event": "The City of Santa Clara issues a notice of preparation of a Draft Program EIR for the Santa Clara Station Area Specific Plan (SCH 2026060462)."
+        },
+        {
+          "date": "2026-06-29",
+          "event": "The City holds a virtual public scoping meeting."
+        },
+        {
+          "date": "2026-07-13",
+          "event": "The notice of preparation's 30-day comment period closes."
+        }
+      ],
+      "nextMilestone": "A draft specific plan and Draft Program EIR (no date published).",
+      "summary": "A City of Santa Clara specific plan for about 244 acres around the Santa Clara Caltrain station, where BART's Silicon Valley extension is planned to end, to turn a mix of homes, shops and industrial lots into a mixed-use, transit-oriented neighborhood. The plan under study allows up to 8,300 homes, 2.1 million sq ft of offices and 1.7 million sq ft of light industrial space; its environmental review began in June 2026.",
+      "massingNotes": "Plan-scale: boundary only (data/boundaries/santa-clara-station-area.geojson, pipeline/bam_pipeline/sites/boundary_santa_clara_station_area.py), traced from the NOP's Figure 2 vicinity map (PDF p. 4), a small-scale map fitted to OpenStreetMap streets (trimmed ICP, RMS about 13 m); approximate, about 208 acres as drawn against the NOP's 244. The CEQAnet record lists the plan's assessor's parcels, which would give a parcel-exact line once the County parcel service can be reached. No land use: the plan is at the notice-of-preparation stage and no official land-use map has been published. The BART Silicon Valley Phase II surface tracks and Santa Clara station, and the Caltrain corridor that cahsr-sf-sj draws, run through the plan area.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/2026060462",
+        "https://www.santaclaraca.gov/our-city/departments-a-f/community-development/planning-division/specific-plans/santa-clara-station-focus-area-plan"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/2026060462",
+        "https://ceqanet.lci.ca.gov/2026060462/Attachment/mtsQbf",
+        "https://ceqanet.lci.ca.gov/2026060462/Attachment/M1Z8RU",
+        "https://gis.vta.org/gis/rest/services/Hosted/BSV_Phase_II_Stations/FeatureServer/0"
+      ],
+      "verify": [
+        "the plan area's exact line: the boundary is traced from the notice of preparation's small-scale vicinity map (about 208 acres as drawn against 244 stated); the City's GIS or the County parcels the CEQAnet record lists would give the exact area",
+        "the project web page's documents (santaclaraca.gov blocks scripted access), including any land-use alternatives or task force materials",
+        "the Draft Program EIR and draft plan dates",
+        "how the plan treats the BART Silicon Valley Phase II station and tracks inside the plan area"
+      ],
+      "lastVerified": "2026-10-17"
+    },
+    {
+      "id": "the-orchards",
+      "name": "The Orchards",
+      "aliases": [
+        "The Orchards at Bishop Ranch",
+        "Orchards Development Project",
+        "Chevron Park redevelopment",
+        "6001 Bollinger Canyon Road"
+      ],
+      "city": "San Ramon",
+      "county": "Contra Costa",
+      "subregion": "East Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -121.96,
+        37.7585
+      ],
+      "camera": {
+        "center": [
+          -121.9597,
+          37.7582
+        ],
+        "zoom": 15.4,
+        "pitch": 52,
+        "bearing": -25
+      },
+      "acres": 92,
+      "acresNote": "The City gives about 92 acres for the site, one parcel (APN 213-120-008) at 6001 Bollinger Canyon Road (Notice of Exemption, Feb 2026, and the City's project page). The project's overall density is 46.3 homes per net acre (Notice of Exemption).",
+      "program": {
+        "homes": 2510,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Up to 2,510 homes over about 20 years in three districts: Mixed-Use, Multi-Family, and Single Family/Townhomes (the Neighborhood District). The approval covers the Orchards Master Plan, a subdivision into 191 lots, and a development plan for the Neighborhood District: 230 single-family homes, 138 townhomes and 58 optional accessory dwelling units. The roughly 1.3 million sq ft of former Chevron Park office buildings would be demolished. The site is zoned Downtown Mixed Use – South (20–60 homes per acre)."
+      },
+      "developer": "BR6001, LLC (c/o Sunset Development Company)",
+      "publicPartners": [
+        "City of San Ramon (lead agency)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. The Planning Commission approved the project on Feb 3, 2026 (Resolution 02-26); an appeal filed Feb 12 was denied unanimously by the City Council on Apr 7, 2026, upholding the approval. The City found the project exempt from further environmental review as consistent with the 2040 General Plan, whose EIR was certified in 2023.",
+      "timeline": [
+        {
+          "date": "2022-09-28",
+          "event": "Sunset Development announces it has bought Chevron's 92-acre, 1.3 million sq ft Chevron Park campus in Bishop Ranch."
+        },
+        {
+          "date": "2023-12-12",
+          "event": "City Council approves the 2040 General Plan Update, which re-designates and rezones the Chevron Park property to Downtown Mixed Use – South (EIR SCH 2022060549)."
+        },
+        {
+          "date": "2024-11-21",
+          "event": "Sunset Development files formal applications for The Orchards; they are deemed complete on Mar 26, 2025."
+        },
+        {
+          "date": "2025-06-24",
+          "event": "Sunset files a preliminary housing development application and withdraws its requested General Plan and zoning amendments; the 2,510-home plan and site layout stay the same."
+        },
+        {
+          "date": "2025-12-16",
+          "event": "Planning Commission holds the first public hearing and continues it to Jan 20, 2026, and then to Feb 3."
+        },
+        {
+          "date": "2026-02-03",
+          "event": "Planning Commission approves the Orchards Master Plan and Neighborhood District development (Resolution 02-26)."
+        },
+        {
+          "date": "2026-02-06",
+          "event": "The City files a notice of exemption (CEQA Guidelines Section 15183, consistency with the General Plan)."
+        },
+        {
+          "date": "2026-02-12",
+          "event": "The City receives an appeal of the Planning Commission's approval."
+        },
+        {
+          "date": "2026-04-07",
+          "event": "City Council votes unanimously to deny the appeal and uphold the approval."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "The former Chevron Park office campus in Bishop Ranch, south of Bollinger Canyon Road beside I-680, approved to become a neighborhood of up to 2,510 homes built over about 20 years. Its 1.3 million sq ft of office buildings would come down; the land would be divided into mixed-use, multi-family and single-family and townhome districts, with detailed plans approved so far for one of them, 368 houses and townhomes.",
+      "massingNotes": "Boundary: APN 213-120-008, traced from the City's 2040 General Plan Draft EIR Figure 2-4 (PDF p. 67; CEQAnet SCH 2022060549), which draws parcel lines at about 9 m per pixel, georeferenced on I-680, the Iron Horse Trail and Bollinger Canyon Road in OpenStreetMap (trimmed RMS about 4 m); approximate, 88.6 acres as drawn against the official 92. No massing: the approved project plans, design guidelines and staff reports sit on the City's document servers (docs.sanramon.ca.gov, its civiclive file store), which couldn't be reached for this pass. The existing campus buildings are all to be demolished, so none are kept.",
+      "officialLinks": [
+        "https://www.sanramon.ca.gov/cms/one.aspx?pageId=19165945",
+        "https://ceqanet.lci.ca.gov/2026020219"
+      ],
+      "sources": [
+        "https://www.sanramon.ca.gov/cms/one.aspx?pageId=19165945",
+        "https://www.sanramon.ca.gov/news/what_s_new/the_orchards_appeal_denied",
+        "https://www.sanramon.ca.gov/news/what_s_new/orchards_third_public_hearing",
+        "https://www.sanramon.ca.gov/news/what_s_new/the_orchards_appeal_april_7_city_council_meeting",
+        "https://www.sanramon.ca.gov/news/what_s_new/orchards_first_public_hearing",
+        "https://www.sanramon.ca.gov/news/what_s_new/the_orchards_second_public_hearing",
+        "https://www.sanramon.ca.gov/news/what_s_new/orchards_preliminary_application",
+        "https://www.sanramon.ca.gov/news/what_s_new/the_orchards_formal_applications",
+        "https://ceqanet.lci.ca.gov/2026020219",
+        "https://ceqanet.lci.ca.gov/2026020219/Attachment/G7E_Xs",
+        "https://ceqanet.lci.ca.gov/2022060549/3",
+        "https://ceqanet.lci.ca.gov/2022060549/2/Attachment/ueWNFZ"
+      ],
+      "verify": [
+        "the number and share of affordable homes, and any commercial floor area in the Mixed-Use District (in the staff report and conditions of approval, not reached in this pass)",
+        "block footprints and height limits from the Orchards Master Plan and design guidelines, for massing",
+        "the parcel outline against the County's assessor map (traced here from a General Plan EIR figure: 88.6 acres against 92)"
+      ],
+      "lastVerified": "2026-10-17"
+    },
+    {
+      "id": "southline",
+      "name": "Southline",
+      "aliases": [
+        "Southline Specific Plan",
+        "Southline campus",
+        "30 Tanforan Avenue"
+      ],
+      "city": "South San Francisco",
+      "county": "San Mateo",
+      "subregion": "Peninsula",
+      "category": "buildings",
+      "approxCenter": [
+        -122.4156,
+        37.6421
+      ],
+      "camera": {
+        "center": [
+          -122.4153,
+          37.6419
+        ],
+        "zoom": 16.4,
+        "pitch": 56,
+        "bearing": -20
+      },
+      "acres": 28.5,
+      "acresNote": "The Revised Southline Specific Plan (Final EIR Appendix 2.1, May 2022, PDF p. 899) and the City's notices of determination (July 2022) describe a 28.5-acre site. The Draft EIR (Sept 2021) studied 26.5 acres; Alternative D in the Final EIR, which the revised plan follows, adds about 2.1 acres at 80 Tanforan Avenue (PDF p. 102). The traced plan-area outline measures 28.4 acres.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 2730290,
+        "commercialSqftTotal": 2800000,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "The Specific Plan caps total floor area at 2,800,000 sq ft (FAR about 2.4, parking structures excluded). Its conceptual buildout (Table 2-3) is 2,730,290 sq ft of office/R&D, 13,500 sq ft of public amenity space (including ground-floor retail and dining) and 56,210 sq ft of tenant amenities; only the 2.8 million sq ft total is a cap. Phase 1: Buildings 1 and 7 (about 615,000 sq ft of office/R&D), the Building 2 amenities building and a new above-grade Parking Structure D on the 80 Tanforan Avenue property, plus the new Southline Avenue. Buildings are expected to be four to seven stories, with heights set by the FAA and SFO airport land use plan limits, about 120 ft. The Draft EIR studied up to 341,800 sq ft (7.8 acres) of open space, including the 1.5-acre Southline Commons."
+      },
+      "developer": "Lane Partners (project applicant)",
+      "publicPartners": [
+        "City of South San Francisco (lead agency)",
+        "City of San Bruno (off-site street improvements in its jurisdiction)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. On July 13, 2022 the South San Francisco City Council certified the EIR and approved the Specific Plan, General Plan and zoning amendments, development agreement, Phase 1 Precise Plan and vesting tentative map, with a second reading on July 27, 2022. No City permit record of construction was checked.",
+      "timeline": [
+        {
+          "date": "2020-05-20",
+          "event": "The City of South San Francisco issues the notice of preparation for the Southline Specific Plan EIR (SCH 2020050452)."
+        },
+        {
+          "date": "2021-09-28",
+          "event": "The Draft EIR is published, with a program-level review of the Specific Plan and a project-level review of Phase 1."
+        },
+        {
+          "date": "2022-05-18",
+          "event": "The Final EIR is published, with a revised Specific Plan aligned with the Reduced Underground Parking Alternative."
+        },
+        {
+          "date": "2022-07-13",
+          "event": "The City Council certifies the EIR and approves the Specific Plan, development agreement, Phase 1 Precise Plan and related actions."
+        },
+        {
+          "date": "2022-07-27",
+          "event": "The City Council completes the second reading of the ordinances; the notice of determination is filed the next day."
+        }
+      ],
+      "nextMilestone": "Precise Plan approvals for the phases after Phase 1; the Specific Plan says later phases are approved as subsequent Precise Plans.",
+      "summary": "A transit-oriented office and research campus of up to 2.8 million sq ft on a former industrial site across Huntington Avenue from San Bruno BART. The plan adds a new east–west street, Southline Avenue, a 1.5-acre central green and buildings of four to seven stories. The City approved the plan and its first phase in July 2022.",
+      "massingNotes": "Boundary traced from the dotted Specific Plan Area line in the Revised Specific Plan's Figure 2-8 (Final EIR, May 2022), its aerial photo fitted to OpenStreetMap building footprints (data/boundaries/southline.geojson, approximate, 28.4 acres as drawn); the County parcel layer could not be reached to check it. Illustrative massing (data/massing/southline.geojson): the plan's conceptual building footprints raised to the heights in Figure 2-8 (80, 105, 115 and 120 ft), phased per Figure 2-9. Nothing is drawn as built.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/Project/2020050452",
+        "https://ceqanet.lci.ca.gov/2020050452/4"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/Project/2020050452",
+        "https://ceqanet.lci.ca.gov/2020050452/3",
+        "https://ceqanet.lci.ca.gov/2020050452/3/Attachment/jwO0Ib",
+        "https://ceqanet.lci.ca.gov/2020050452/4",
+        "https://ceqanet.lci.ca.gov/2020050452/4/Attachment/i50fMG",
+        "https://ceqanet.lci.ca.gov/2020050452/5",
+        "https://ceqanet.lci.ca.gov/2020050452/5/Attachment/23TQ-d",
+        "https://ceqanet.lci.ca.gov/2020050452/6",
+        "https://ceqanet.lci.ca.gov/2020050452/6/Attachment/TVBE3X"
+      ],
+      "verify": [
+        "whether Phase 1 is under construction or complete: the press reports Building 1 rising in 2023, and OpenStreetMap already maps footprints where Buildings 1 and 2 and Parking Structure D are planned, but no City of South San Francisco permit record was reached (ssf.net and its permit and agenda systems refused the connection on Oct 17, 2026)",
+        "the adopted Specific Plan text: the City's posted plan (ssf.net) could not be opened, so figures here come from the revised plan in the May 2022 Final EIR; the NOD's 28.5 acres and its listing of 80 Tanforan Avenue match that version",
+        "the boundary against the County of San Mateo parcels for the six APNs on CEQAnet (014-250-090, -080, -050, 014-241-030, -040 and 014-232-030); the Draft EIR speaks of seven parcels",
+        "the press date for the Council vote (Sept 2022) is later than the July 13, 2022 approval in the City's notice of determination"
+      ],
+      "lastVerified": "2026-10-17"
+    },
+    {
+      "id": "redwood-life",
+      "name": "Redwood Life Precise Plan",
+      "aliases": [
+        "Redwood LIFE",
+        "Redwood LIFE office park"
+      ],
+      "city": "Redwood City",
+      "county": "San Mateo",
+      "subregion": "Peninsula",
+      "category": "buildings",
+      "approxCenter": [
+        -122.2567,
+        37.5367
+      ],
+      "camera": {
+        "center": [
+          -122.2555,
+          37.5358
+        ],
+        "zoom": 15.3,
+        "pitch": 50,
+        "bearing": 20
+      },
+      "acres": 84,
+      "acresNote": "The Notice of Preparation (Aug 22, 2025, p. 2) gives a project site of approximately 84 acres on four parcels (APNs 095-012-220, -450, -460 and -150) at 800, 1400, 1600 and 3400 Bridge Parkway, between Belmont Slough and Marine Parkway.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 2731000,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": 104,
+        "openSpaceAcres": 42.4,
+        "notes": "The project the EIR studies (Notice of Preparation, p. 3): 11 life science buildings totaling approximately 2.731 million sq ft, a net increase of 1.764 million sq ft over the existing 20 two-story buildings (967,680 sq ft of R&D office and life science), with an approximately 20,000 sq ft community amenity center in one of them, an approximately 104-room hotel and four parking garages. Life science buildings of five to six stories, up to about 100 ft to the roof (about 120 ft to the top of the mechanical screens); a five-story hotel up to about 85 ft (95 ft); garages of five to eight levels, up to about 77 ft. About 42.4 acres of open space, 38.7 acres of it privately owned and publicly accessible. No homes; the community benefits include contributions toward affordable housing, sea-level rise resilience along the Belmont Slough levee, childcare and Bay Trail gap improvements."
+      },
+      "developer": "Longfellow Real Estate Partners (project applicant)",
+      "publicPartners": [
+        "City of Redwood City (lead agency; City-led precise plan)"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In environmental review. The City of Redwood City issued a notice of preparation of an EIR on Aug 22, 2025, held a scoping meeting on Sept 2 and took comments until Sept 22, 2025. The project would repeal the Westport Specific Plan and rezone the site to a new precise plan. No Draft EIR has been posted to CEQAnet as of Oct 17, 2026.",
+      "timeline": [
+        {
+          "date": "2019",
+          "event": "Longfellow Real Estate Partners acquires the Redwood LIFE office park."
+        },
+        {
+          "date": "2021-04",
+          "event": "Longfellow submits a preliminary application to redevelop the site."
+        },
+        {
+          "date": "2022-06",
+          "event": "Longfellow submits a formal planning application to demolish all the existing buildings and redevelop the site."
+        },
+        {
+          "date": "2023-07",
+          "event": "The City Council starts a City-led precise plan, community engagement and a sensitivity analysis to identify an alternative to study in the EIR."
+        },
+        {
+          "date": "2025-08-22",
+          "event": "The City issues a notice of preparation of an EIR for the Redwood Life Precise Plan (SCH 2025081015), studying the resubmitted project consistent with the City's \"Alternative 2\"."
+        },
+        {
+          "date": "2025-09-02",
+          "event": "The City holds the public scoping meeting at City Hall."
+        },
+        {
+          "date": "2025-09-22",
+          "event": "The notice of preparation's comment period closes."
+        }
+      ],
+      "nextMilestone": "The Draft Precise Plan and Draft EIR (no official date published).",
+      "summary": "A plan to replace the Redwood LIFE office park in Redwood Shores, 20 two-story buildings on about 84 acres along Belmont Slough, with 11 life science buildings of five to six stories totaling about 2.7 million sq ft, a hotel, four garages and about 42 acres of open space. Redwood City is writing a precise plan for the site and began its environmental review in August 2025.",
+      "massingNotes": "Boundary only (data/boundaries/redwood-life.geojson, pipeline/bam_pipeline/sites/boundary_redwood_life.py): traced from the NOP's Figure 3 aerial (PDF p. 7), fitted to OpenStreetMap building footprints (RMS about 3 m); approximate, about 82 acres as drawn against the NOP's 84. The four APNs in the NOP would give a parcel-exact line once the County parcel service can be reached. No massing yet: the NOP's Figure 4 conceptual site plan (applicant's architect, Aug 5, 2025) shows the 11 buildings, but the precise plan's standards aren't published; draw from the Draft Precise Plan when it is out.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/2025081015"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/2025081015",
+        "https://ceqanet.lci.ca.gov/2025081015/Attachment/yselzM",
+        "https://ceqanet.lci.ca.gov/Project/2025081015"
+      ],
+      "verify": [
+        "the Draft EIR and Draft Precise Plan release dates (only the notice of preparation is on CEQAnet as of Oct 17, 2026)",
+        "the dates the City Council and Planning Commission chose \"Alternative 2\" for study (the press describes a March joint study session and a later Council vote; the notice gives no date)",
+        "the site's exact line: the boundary is traced from the notice's aerial figure; the County parcels for the four APNs would give the exact line",
+        "who runs planredwoodlife.org, which the notice names for the current project plans (not reachable from here)"
+      ],
+      "lastVerified": "2026-10-17"
+    },
+    {
+      "id": "eastridge-bart-regional-connector",
+      "name": "Eastridge to BART Regional Connector",
+      "aliases": [
+        "EBRC",
+        "Capitol Expressway Light Rail Project",
+        "Eastridge light rail extension"
+      ],
+      "city": "San José",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "category": "transportation",
+      "approxCenter": [
+        -121.821,
+        37.3424
+      ],
+      "camera": {
+        "center": [
+          -121.821,
+          37.3423
+        ],
+        "zoom": 14.2,
+        "pitch": 50,
+        "bearing": -30
+      },
+      "acres": null,
+      "acresNote": "Not applicable: a rail line, not a site. VTA describes a 2.4-mile light rail extension along Capitol Avenue and Capitol Expressway from the Alum Rock light rail station to the Eastridge Transit Center (fact sheet, Sept 30, 2026; CEQA notices of determination).",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Transit infrastructure; the housing and commercial fields don't apply. A 2.4-mile extension of VTA's Orange Line light rail from the Alum Rock station on Capitol Avenue onto an elevated guideway mostly in the Capitol Expressway median, with an elevated Story Road station reached by a pedestrian overcrossing and an at-grade station at the Eastridge Transit Center; traction power substations at Ocala Avenue and Eastridge; the expressway's carpool lanes between Story and Tully roads are removed to make room. VTA's cost: $652.9 million for design, right of way, utilities and construction, funded by 2000 Measure A ($313.6M), RM3 ($130.0M), TIRCP ($46.6M), SB 1 ($25.1M), LCTOP ($14.8M) and $122.8M from other sources still to be secured (fact sheet, Sept 30, 2026). VTA projects 4.5 minutes from Eastridge to Alum Rock and 17.5 minutes to Milpitas BART."
+      },
+      "developer": "Santa Clara Valley Transportation Authority (VTA)",
+      "publicPartners": [
+        "California Transportation Commission (responsible agency; state funding)",
+        "California Public Utilities Commission (rail crossing approvals)",
+        "Santa Clara Valley Water District (easement for relocated transmission towers)",
+        "City of San José"
+      ],
+      "stage": "construction",
+      "stageNote": "Under construction. VTA's Board awarded the $437.2 million construction contract to MCM Railworks Joint Venture on March 7, 2024, and major construction began in spring 2024. VTA reported the project 67% complete as of May 31, 2026, with construction expected to finish in late 2027 and passenger service in early 2028 after testing and safety certification.",
+      "timeline": [
+        {
+          "date": "2001-09",
+          "event": "VTA starts environmental review of light rail in the Capitol Expressway corridor (notice of preparation, SCH 2001092014)."
+        },
+        {
+          "date": "2005-05",
+          "event": "VTA's Board certifies the Final EIR and approves the light rail alternative."
+        },
+        {
+          "date": "2010-06",
+          "event": "After revenue declines, an addendum splits the work into phases: pedestrian and bus improvements first, the light rail extension second."
+        },
+        {
+          "date": "2015",
+          "event": "Phase 1 ends with the rebuilt Eastridge Transit Center, after sidewalk, lighting and landscaping work on the expressway finished in fall 2012."
+        },
+        {
+          "date": "2019-06-06",
+          "event": "VTA's Board certifies the Final Second Supplemental EIR, which extends the aerial guideway over Ocala and Cunningham avenues and revises the stations."
+        },
+        {
+          "date": "2020-04",
+          "event": "The CPUC authorizes eight grade-separated highway crossings and two at-grade pedestrian light rail crossings."
+        },
+        {
+          "date": "2023-08-17",
+          "event": "The California Transportation Commission approves the project as a responsible agency."
+        },
+        {
+          "date": "2024-03-07",
+          "event": "VTA's Board awards the $437,161,464 construction contract to MCM Railworks, Joint Venture."
+        },
+        {
+          "date": "2024-06-08",
+          "event": "VTA holds the groundbreaking at the Eastridge Transit Center, with construction under way since spring."
+        },
+        {
+          "date": "2026-05-31",
+          "event": "VTA reports the project 67% complete, with about 1.5 miles of guideway built and track installation under way."
+        }
+      ],
+      "nextMilestone": "Construction is expected to finish in late 2027, followed by system testing and safety certification, with passenger service anticipated in early 2028 (VTA, Summer 2026 newsletter).",
+      "summary": "A 2.4-mile light rail extension in East San José that carries VTA's Orange Line from the Alum Rock station down Capitol Expressway, mostly on an elevated guideway in the median, to the Eastridge Transit Center, with a new elevated station at Story Road. Riders will be able to ride from Eastridge to BART at Milpitas. It is under construction, with service expected in 2028.",
+      "massingNotes": "Drawn as a line (data/lines/eastridge-bart-regional-connector.geojson, pipeline/bam_pipeline/sites/lines_eastridge_bart_regional_connector.py), traced from VTA's 15 plan-and-profile sheets in the Draft SEIR-2's Attachment C (2018): both track centrelines found by their 50-ft station ticks and drawn as the centreline between them, about 2.5 miles from the conform point at Wilbur Avenue to the bumping posts beyond Eastridge. Sheets fitted to OpenStreetMap streets and tied at their match lines and to the middle of Capitol Avenue and Capitol Expressway; within a few metres of OpenStreetMap's mapping of the tracks under construction (a check, not a source). Stations: the platform middles of Story Road and Eastridge. The existing Alum Rock station is not drawn.",
+      "officialLinks": [
+        "https://www.vta.org/projects/eastridge-bart-regional-connector",
+        "https://ceqanet.lci.ca.gov/Project/2001092014"
+      ],
+      "sources": [
+        "https://www.vta.org/projects/eastridge-bart-regional-connector",
+        "https://www.vta.org/projects/documents?project=966",
+        "https://www.vta.org/sites/default/files/2026-09/FS-EBRC-EN-093026.pdf",
+        "https://www.vta.org/sites/default/files/2026-07/2026EBRC_Summer_Newsletter_ADA_Final.pdf",
+        "https://www.vta.org/sites/default/files/2026-03/2026EBRC_Winter_Newsletter.pdf",
+        "https://www.vta.org/sites/default/files/2026-01/2025EBRC_Fall_Newsletter_SC_adafile.pdf",
+        "https://www.vta.org/sites/default/files/2024-08/FinalEBRC%20Summer%20Newsletter%202024%28web%29.pdf",
+        "https://www.vta.org/sites/default/files/2024-04/UPDATE-EastridgeBART-newsletter-2024.pdf",
+        "https://www.vta.org/sites/default/files/documents/Ch_01_Introduction_FSEIR-2.pdf",
+        "https://www.vta.org/sites/default/files/documents/Att_C_Detailed_Plans_for_the_Proposed_Changes.pdf",
+        "https://www.vta.org/sites/default/files/2021-02/2021%20Third%20Addendum%20to%20the%20Final%20Second%20Supplemental%20Environmental%20Impact%20Report.pdf",
+        "https://ceqanet.lci.ca.gov/Project/2001092014",
+        "https://ceqanet.lci.ca.gov/2001092014/13",
+        "https://ceqanet.lci.ca.gov/2001092014/15",
+        "https://ceqanet.lci.ca.gov/2001092014/18",
+        "https://ceqanet.lci.ca.gov/2001092014/18/Attachment/BPu1pF"
+      ],
+      "verify": [
+        "the construction start month: VTA's Summer 2024 newsletter says construction began in May 2024, its Winter 2026 newsletter says April 2024",
+        "the funding gap: VTA's Sept 2026 fact sheet lists $122.8 million of the $652.9 million cost as other sources still to be secured",
+        "the opening date: VTA's newsletters give construction complete in fall or late 2027 and passenger service in early 2028; the fact sheet says revenue service is expected in 2028",
+        "geometry: the alignment comes from the 2018 environmental plans, not the final construction drawings; check it against VTA's GIS (gis.vta.org, not reachable from this build) or as-built drawings when available",
+        "geometry: the Eastridge end (sheets EX012 to EX015), where the tracks leave the expressway median, is held by the sheet joins and street fit only, so it is less certain than the median section"
+      ],
+      "lastVerified": "2026-10-17"
     }
   ]
 }

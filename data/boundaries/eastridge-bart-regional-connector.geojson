@@ -1,0 +1,672 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "eastridge-bart-regional-connector",
+  "source": "traced: VTA, Eastridge to BART Regional Connector: Capitol Expressway Light Rail Project, Draft Second Supplemental EIR (2018), Attachment C, Detailed Plans for the Proposed Changes (sheets EX001-EX015, July 2018); georeferenced to OpenStreetMap streets",
+  "sourceLabel": "VTA Draft SEIR-2 plans (2018), Attachment C",
+  "sourceUrl": "https://www.vta.org/sites/default/files/documents/Att_C_Detailed_Plans_for_the_Proposed_Changes.pdf",
+  "accuracy": "traced",
+  "accuracyNote": "Track centrelines traced from VTA's 15 plan-and-profile sheets (1\" = 40'), found by their 50-ft station ticks, and drawn as the centreline between the two tracks: 2.5 miles as drawn from the conform point with the existing tracks at Wilbur Avenue to the bumping posts beyond Eastridge (VTA: 2.4 miles). Each sheet is fitted to OpenStreetMap streets at the drawing scale (trimmed RMS 0.7-1.7 m), and the sheets are tied together at their match lines and to the middle of the street along Capitol Avenue (where the plans draw the tracks in its median) and Capitol Expressway (where VTA describes the line 'primarily in the median'). As a check, the result lies a median 2 m (90% within 4 m) from OpenStreetMap's own mapping of the tracks under construction, so the line is good to about 5 m, less certain at the Eastridge end. The plans date from the 2018 environmental review; the 2020 and 2021 addenda did not move the tracks, but the final design may differ in detail. Station points are platform middles, not platform outlines. The existing Alum Rock station, north of the plans, is not drawn. The site shown is a 60 m corridor around the alignment, for selecting it on the map; it is not a property line.",
+  "license": "Traced facts from public VTA documents (the PDFs are not redistributed). Georeference: OpenStreetMap contributors (ODbL 1.0), via Overture Maps.",
+  "lengthMiles": 2.47,
+  "georeference": {
+   "sheets": {
+    "EX001": {
+     "scale_m_per_unit": 0.0815,
+     "rotation_deg": -60.665,
+     "rms_m": 1.37,
+     "controls": [
+      {
+       "label": "grey base-map linework against OpenStreetMap street centrelines: trimmed RMS over the closest 40% of 14297 points",
+       "residual_m": 1.37
+      }
+     ],
+     "method": "trimmed ICP",
+     "points": 14297,
+     "inlier_share": 0.4,
+     "median_m": 3.51,
+     "p90_m": 12.63,
+     "candidates": 4,
+     "chosen": 0,
+     "lateral_start_m": -15,
+     "ticks": {
+      "NB": 11,
+      "SB": 17
+     }
+    },
+    "EX002": {
+     "scale_m_per_unit": 0.0815,
+     "rotation_deg": -47.645,
+     "rms_m": 1.39,
+     "controls": [
+      {
+       "label": "grey base-map linework against OpenStreetMap street centrelines: trimmed RMS over the closest 40% of 13348 points",
+       "residual_m": 1.39
+      }
+     ],
+     "method": "trimmed ICP",
+     "points": 13348,
+     "inlier_share": 0.4,
+     "median_m": 3.42,
+     "p90_m": 9.95,
+     "candidates": 2,
+     "chosen": 1,
+     "lateral_start_m": -15,
+     "ticks": {
+      "NB": 17,
+      "SB": 14
+     }
+    },
+    "EX003": {
+     "scale_m_per_unit": 0.0815,
+     "rotation_deg": -58.834,
+     "rms_m": 0.73,
+     "controls": [
+      {
+       "label": "grey base-map linework against OpenStreetMap street centrelines: trimmed RMS over the closest 40% of 11280 points",
+       "residual_m": 0.73
+      }
+     ],
+     "method": "trimmed ICP",
+     "points": 11280,
+     "inlier_share": 0.4,
+     "median_m": 1.95,
+     "p90_m": 6.01,
+     "candidates": 3,
+     "chosen": 0,
+     "lateral_start_m": -15,
+     "ticks": {
+      "NB": 16,
+      "SB": 17
+     }
+    },
+    "EX004": {
+     "scale_m_per_unit": 0.0815,
+     "rotation_deg": -66.081,
+     "rms_m": 1.16,
+     "controls": [
+      {
+       "label": "grey base-map linework against OpenStreetMap street centrelines: trimmed RMS over the closest 40% of 16062 points",
+       "residual_m": 1.16
+      }
+     ],
+     "method": "trimmed ICP",
+     "points": 16062,
+     "inlier_share": 0.4,
+     "median_m": 2.77,
+     "p90_m": 9.72,
+     "candidates": 1,
+     "chosen": 0,
+     "lateral_start_m": 15,
+     "ticks": {
+      "NB": 14,
+      "SB": 17
+     }
+    },
+    "EX005": {
+     "scale_m_per_unit": 0.0815,
+     "rotation_deg": -59.079,
+     "rms_m": 0.95,
+     "controls": [
+      {
+       "label": "grey base-map linework against OpenStreetMap street centrelines: trimmed RMS over the closest 40% of 13096 points",
+       "residual_m": 0.95
+      }
+     ],
+     "method": "trimmed ICP",
+     "points": 13096,
+     "inlier_share": 0.4,
+     "median_m": 2.99,
+     "p90_m": 11.61,
+     "candidates": 2,
+     "chosen": 0,
+     "lateral_start_m": 0,
+     "ticks": {
+      "NB": 17,
+      "SB": 17
+     }
+    },
+    "EX006": {
+     "scale_m_per_unit": 0.0815,
+     "rotation_deg": -58.874,
+     "rms_m": 0.9,
+     "controls": [
+      {
+       "label": "grey base-map linework against OpenStreetMap street centrelines: trimmed RMS over the closest 40% of 12613 points",
+       "residual_m": 0.9
+      }
+     ],
+     "method": "trimmed ICP",
+     "points": 12613,
+     "inlier_share": 0.4,
+     "median_m": 2.59,
+     "p90_m": 12.24,
+     "candidates": 1,
+     "chosen": 0,
+     "lateral_start_m": 0,
+     "ticks": {
+      "NB": 18,
+      "SB": 15
+     }
+    },
+    "EX007": {
+     "scale_m_per_unit": 0.0815,
+     "rotation_deg": -58.802,
+     "rms_m": 1.18,
+     "controls": [
+      {
+       "label": "grey base-map linework against OpenStreetMap street centrelines: trimmed RMS over the closest 40% of 10592 points",
+       "residual_m": 1.18
+      }
+     ],
+     "method": "trimmed ICP",
+     "points": 10592,
+     "inlier_share": 0.4,
+     "median_m": 3.23,
+     "p90_m": 12.2,
+     "candidates": 2,
+     "chosen": 1,
+     "lateral_start_m": 0,
+     "ticks": {
+      "NB": 16,
+      "SB": 14
+     }
+    },
+    "EX008": {
+     "scale_m_per_unit": 0.0815,
+     "rotation_deg": -61.372,
+     "rms_m": 1.0,
+     "controls": [
+      {
+       "label": "grey base-map linework against OpenStreetMap street centrelines: trimmed RMS over the closest 40% of 11858 points",
+       "residual_m": 1.0
+      }
+     ],
+     "method": "trimmed ICP",
+     "points": 11858,
+     "inlier_share": 0.4,
+     "median_m": 3.18,
+     "p90_m": 20.67,
+     "candidates": 1,
+     "chosen": 0,
+     "lateral_start_m": 30,
+     "ticks": {
+      "NB": 17,
+      "SB": 16
+     }
+    },
+    "EX009": {
+     "scale_m_per_unit": 0.0815,
+     "rotation_deg": -57.206,
+     "rms_m": 1.26,
+     "controls": [
+      {
+       "label": "grey base-map linework against OpenStreetMap street centrelines: trimmed RMS over the closest 40% of 13485 points",
+       "residual_m": 1.26
+      }
+     ],
+     "method": "trimmed ICP",
+     "points": 13485,
+     "inlier_share": 0.4,
+     "median_m": 3.56,
+     "p90_m": 16.17,
+     "candidates": 1,
+     "chosen": 0,
+     "lateral_start_m": 15,
+     "ticks": {
+      "NB": 16,
+      "SB": 16
+     }
+    },
+    "EX010": {
+     "scale_m_per_unit": 0.0815,
+     "rotation_deg": -62.017,
+     "rms_m": 1.29,
+     "controls": [
+      {
+       "label": "grey base-map linework against OpenStreetMap street centrelines: trimmed RMS over the closest 40% of 14693 points",
+       "residual_m": 1.29
+      }
+     ],
+     "method": "trimmed ICP",
+     "points": 14693,
+     "inlier_share": 0.4,
+     "median_m": 3.43,
+     "p90_m": 12.21,
+     "candidates": 2,
+     "chosen": 0,
+     "lateral_start_m": 0,
+     "ticks": {
+      "NB": 16,
+      "SB": 17
+     }
+    },
+    "EX011": {
+     "scale_m_per_unit": 0.0815,
+     "rotation_deg": -60.452,
+     "rms_m": 0.94,
+     "controls": [
+      {
+       "label": "grey base-map linework against OpenStreetMap street centrelines: trimmed RMS over the closest 40% of 15722 points",
+       "residual_m": 0.94
+      }
+     ],
+     "method": "trimmed ICP",
+     "points": 15722,
+     "inlier_share": 0.4,
+     "median_m": 3.26,
+     "p90_m": 20.39,
+     "candidates": 1,
+     "chosen": 0,
+     "lateral_start_m": -15,
+     "ticks": {
+      "NB": 14,
+      "SB": 18
+     }
+    },
+    "EX012": {
+     "scale_m_per_unit": 0.0815,
+     "rotation_deg": -54.951,
+     "rms_m": 1.69,
+     "controls": [
+      {
+       "label": "grey base-map linework against OpenStreetMap street centrelines: trimmed RMS over the closest 40% of 18228 points",
+       "residual_m": 1.69
+      }
+     ],
+     "method": "trimmed ICP",
+     "points": 18228,
+     "inlier_share": 0.4,
+     "median_m": 4.06,
+     "p90_m": 20.5,
+     "candidates": 2,
+     "chosen": 0,
+     "lateral_start_m": -15,
+     "ticks": {
+      "NB": 17,
+      "SB": 18
+     }
+    },
+    "EX013": {
+     "scale_m_per_unit": 0.0815,
+     "rotation_deg": -62.126,
+     "rms_m": 1.24,
+     "controls": [
+      {
+       "label": "grey base-map linework against OpenStreetMap street centrelines: trimmed RMS over the closest 40% of 10959 points",
+       "residual_m": 1.24
+      }
+     ],
+     "method": "trimmed ICP",
+     "points": 10959,
+     "inlier_share": 0.4,
+     "median_m": 3.19,
+     "p90_m": 7.3,
+     "candidates": 2,
+     "chosen": 0,
+     "lateral_start_m": 0,
+     "ticks": {
+      "NB": 17,
+      "SB": 17
+     }
+    },
+    "EX014": {
+     "scale_m_per_unit": 0.0815,
+     "rotation_deg": -60.246,
+     "rms_m": 1.27,
+     "controls": [
+      {
+       "label": "grey base-map linework against OpenStreetMap street centrelines: trimmed RMS over the closest 40% of 13383 points",
+       "residual_m": 1.27
+      }
+     ],
+     "method": "trimmed ICP",
+     "points": 13383,
+     "inlier_share": 0.4,
+     "median_m": 3.54,
+     "p90_m": 10.58,
+     "candidates": 2,
+     "chosen": 0,
+     "lateral_start_m": -45,
+     "ticks": {
+      "NB": 16,
+      "SB": 16
+     }
+    },
+    "EX015": {
+     "scale_m_per_unit": 0.0815,
+     "rotation_deg": -61.841,
+     "rms_m": 1.11,
+     "controls": [
+      {
+       "label": "grey base-map linework against OpenStreetMap street centrelines: trimmed RMS over the closest 40% of 10255 points",
+       "residual_m": 1.11
+      }
+     ],
+     "method": "trimmed ICP",
+     "points": 10255,
+     "inlier_share": 0.4,
+     "median_m": 3.18,
+     "p90_m": 10.04,
+     "candidates": 1,
+     "chosen": 0,
+     "lateral_start_m": -15,
+     "ticks": {
+      "NB": 6,
+      "SB": 11
+     }
+    }
+   },
+   "tie": {
+    "method": "least-squares tie of the sheets: match-line joins closed using the SB control line's stationing, smooth tangents across joins, and on EX001-EX011 the tracks' middle held to the middle of Capitol Avenue / Capitol Expressway (OpenStreetMap carriageways averaged); per-sheet corrections to the street fits, sigmas along_m 10.0, across_m 30.0, turn_deg 5.0, join_m 0.5, join_turn_deg 0.5, median_m 4.0",
+    "corrections": {
+     "EX001": {
+      "along_m": -18.1,
+      "across_m": 8.3,
+      "turn_deg": 1.98
+     },
+     "EX002": {
+      "along_m": -8.0,
+      "across_m": 11.6,
+      "turn_deg": -9.63
+     },
+     "EX003": {
+      "along_m": -3.5,
+      "across_m": 0.5,
+      "turn_deg": 0.95
+     },
+     "EX004": {
+      "along_m": -1.5,
+      "across_m": -16.2,
+      "turn_deg": 2.47
+     },
+     "EX005": {
+      "along_m": 3.7,
+      "across_m": 1.2,
+      "turn_deg": -0.43
+     },
+     "EX006": {
+      "along_m": 3.4,
+      "across_m": -0.7,
+      "turn_deg": -1.84
+     },
+     "EX007": {
+      "along_m": 0.8,
+      "across_m": -2.2,
+      "turn_deg": 0.27
+     },
+     "EX008": {
+      "along_m": 2.1,
+      "across_m": -33.0,
+      "turn_deg": -0.68
+     },
+     "EX009": {
+      "along_m": 6.7,
+      "across_m": -17.5,
+      "turn_deg": -0.58
+     },
+     "EX010": {
+      "along_m": 1.6,
+      "across_m": -0.3,
+      "turn_deg": 3.61
+     },
+     "EX011": {
+      "along_m": -1.3,
+      "across_m": 13.7,
+      "turn_deg": 0.26
+     },
+     "EX012": {
+      "along_m": 0.3,
+      "across_m": 9.1,
+      "turn_deg": -5.11
+     },
+     "EX013": {
+      "along_m": -0.8,
+      "across_m": -32.8,
+      "turn_deg": -0.41
+     },
+     "EX014": {
+      "along_m": 0.6,
+      "across_m": 6.3,
+      "turn_deg": 0.35
+     },
+     "EX015": {
+      "along_m": 3.0,
+      "across_m": -18.0,
+      "turn_deg": 4.42
+     }
+    },
+    "offset_from_street_middle_m": {
+     "EX001": -3.3,
+     "EX002": 9.9,
+     "EX003": -7.9,
+     "EX004": 1.5,
+     "EX005": 4.2,
+     "EX006": 2.8,
+     "EX007": 0.6,
+     "EX008": 1.8,
+     "EX009": -4.9,
+     "EX010": 1.1,
+     "EX011": 0.2,
+     "EX012": -1.2,
+     "EX013": -30.0,
+     "EX014": -34.6,
+     "EX015": -28.6
+    }
+   },
+   "joins": [
+    {
+     "after": "EX001",
+     "gap_m": 30.5,
+     "sideways_m": 0.1
+    },
+    {
+     "after": "EX002",
+     "gap_m": 0.7,
+     "sideways_m": 0.7
+    },
+    {
+     "after": "EX003",
+     "gap_m": 15.4,
+     "sideways_m": 0.4
+    },
+    {
+     "after": "EX004",
+     "gap_m": 15.0,
+     "sideways_m": 0.7
+    },
+    {
+     "after": "EX005",
+     "gap_m": 0.1,
+     "sideways_m": 0.1
+    },
+    {
+     "after": "EX006",
+     "gap_m": 15.3,
+     "sideways_m": 0.4
+    },
+    {
+     "after": "EX007",
+     "gap_m": 0.2,
+     "sideways_m": 0.1
+    },
+    {
+     "after": "EX008",
+     "gap_m": 0.4,
+     "sideways_m": 0.3
+    },
+    {
+     "after": "EX009",
+     "gap_m": 15.2,
+     "sideways_m": 0.1
+    },
+    {
+     "after": "EX010",
+     "gap_m": 15.5,
+     "sideways_m": 0.0
+    },
+    {
+     "after": "EX011",
+     "gap_m": 15.3,
+     "sideways_m": 0.5
+    },
+    {
+     "after": "EX012",
+     "gap_m": 31.0,
+     "sideways_m": 0.3
+    },
+    {
+     "after": "EX013",
+     "gap_m": 15.4,
+     "sideways_m": 0.9
+    },
+    {
+     "after": "EX014",
+     "gap_m": 15.4,
+     "sideways_m": 0.5
+    }
+   ],
+   "scale_m_per_px": 0.0815,
+   "start": "Wilbur Avenue x South Capitol Avenue (OpenStreetMap) at the conform point, sheet EX001"
+  },
+  "check": {
+   "osm_corridor_median_m": 1.8,
+   "osm_corridor_p90_m": 4.2,
+   "osm_corridor_note": "distance from the traced centreline to the nearer of OpenStreetMap's two 'Alum Rock-Eastridge Corridor' tracks; the tracks are about 2-3 m either side of the centreline"
+  },
+  "otherSources": [
+   "https://www.vta.org/projects/eastridge-bart-regional-connector",
+   "https://ceqanet.lci.ca.gov/Project/2001092014"
+  ],
+  "corridor": true,
+  "corridorMetres": 60
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Alignment corridor"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.831515,
+       37.358288
+      ],
+      [
+       -121.827354,
+       37.352701
+      ],
+      [
+       -121.825559,
+       37.34977
+      ],
+      [
+       -121.819363,
+       37.340786
+      ],
+      [
+       -121.818864,
+       37.340158
+      ],
+      [
+       -121.816948,
+       37.338219
+      ],
+      [
+       -121.814209,
+       37.334359
+      ],
+      [
+       -121.813018,
+       37.332186
+      ],
+      [
+       -121.811785,
+       37.330289
+      ],
+      [
+       -121.809366,
+       37.327036
+      ],
+      [
+       -121.809336,
+       37.326623
+      ],
+      [
+       -121.80968,
+       37.326314
+      ],
+      [
+       -121.810134,
+       37.326275
+      ],
+      [
+       -121.810515,
+       37.326474
+      ],
+      [
+       -121.812853,
+       37.329592
+      ],
+      [
+       -121.814243,
+       37.331725
+      ],
+      [
+       -121.815184,
+       37.333497
+      ],
+      [
+       -121.815714,
+       37.334303
+      ],
+      [
+       -121.818079,
+       37.337625
+      ],
+      [
+       -121.819953,
+       37.339514
+      ],
+      [
+       -121.82054,
+       37.340251
+      ],
+      [
+       -121.826738,
+       37.349232
+      ],
+      [
+       -121.828542,
+       37.352181
+      ],
+      [
+       -121.832622,
+       37.357673
+      ],
+      [
+       -121.832698,
+       37.358032
+      ],
+      [
+       -121.832418,
+       37.358381
+      ],
+      [
+       -121.831911,
+       37.358469
+      ],
+      [
+       -121.831515,
+       37.358288
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
