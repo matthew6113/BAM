@@ -95,6 +95,26 @@ body {
   pointer-events: none;
   /* Above the credits (z-index 2), so an open Projects list is never covered by them. */
   z-index: 3;
+  isolation: isolate;
+}
+
+/* With a project open, a soft paper wash from the corner keeps the title and byline readable over
+   its dense 3D buildings (chosen by Matthew, Oct 17, 2026; docs/screenshots/options-cf/). The
+   regional view doesn't need it, and there it would pale the ocean. */
+.with-project .title::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: calc(-16px - var(--safe-left));
+  top: calc(-16px - var(--safe-top));
+  width: 420px;
+  height: 150px;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 100% 100% at 0 0,
+    color-mix(in srgb, var(--color-land) 94%, transparent) 45%,
+    color-mix(in srgb, var(--color-land) 0%, transparent) 100%
+  );
 }
 
 .title h1 {

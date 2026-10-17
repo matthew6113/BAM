@@ -1,6 +1,9 @@
 # Options C and F (October 2026 audit), for Matthew
 
-Both change the look, so neither is applied. Screenshots are from the dev build on Oct 17, 2026
+**Decided Oct 17, 2026: the fade (C2), shown only with a project open, and F kept as is.** The
+`applied-fade-*` shots show the result on the regional and project views.
+
+Both change the look, so neither was applied before Matthew chose. Screenshots are from the dev build on Oct 17, 2026
 (headless Chromium with SwiftShader; iPhone 13 profile for the phone shots).
 
 ## C. The title over dense 3D buildings
