@@ -266,3 +266,18 @@ map: `docs/screenshots/markers/options-*.png`; the result is in `after-*.png`. T
 Still open: the Suisun expansion's approximate boundary is the biggest shape at the whole-bay view (it
 could be an outline only until zoomed in); whole-bay names could start later (zoom 10) if they feel
 busy.
+
+## 2026-10-16/17: phone and accessibility audit (Matthew: "do A, B and D"; "go with the fade, keep F")
+
+From `docs/AUDIT-2026-10.md`:
+- **A.** 44 px map buttons on touch screens.
+- **B.** A `controlBorder` theme role (3:1) outlines the search box, Area menu, stage filters and the
+  suggestion form's fields.
+- **D.** Photos have `alt=""`; the caption names them.
+- **C, the fade.** With a project open, a soft paper wash from the top-left corner sits behind the
+  title and byline, so they read over dense 3D buildings. It isn't shown on the regional view, where
+  it would pale the ocean. Options compared: `docs/screenshots/options-cf/`.
+- **F, kept.** Phones keep the all-buildings overview. The light set is a far smaller download at
+  middle zooms but loses the building print the map is built on.
+- E (street-level tile headers only when zoomed in) was done without a look change; G (800 px photos)
+  was left, since a 3× phone would still pick the 1200 px file.
