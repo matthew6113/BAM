@@ -1,6 +1,7 @@
 # Build spec: Bay Area Megaprojects Map
 
-Owner: Matthew Huguet. Draft 1, October 1, 2026.
+Owner: Matthew Huguet. Draft 1, October 1, 2026; brought up to date October 17, 2026 with what was
+built and decided since (the decisions themselves are in `docs/DECISIONS.md`).
 
 ## 1. What we're building
 
@@ -23,7 +24,8 @@ Design references Matthew chose:
   (https://www.nytimes.com/interactive/2018/10/12/us/map-of-every-building-in-the-united-states.html).
   Monochrome building footprints and almost no labels; the shape of the city comes
   from the buildings alone.
-- Palette: Matthew's own, to be supplied. Ship with the placeholders in section 4.
+- Palette: Matthew's own, to be supplied. Until then the map ships a placeholder palette (warm paper
+  and International orange, chosen Oct 7, 2026; section 4).
 
 ## 2. Visual concept: the present as print, the future in color
 
@@ -58,31 +60,26 @@ distressed appear as a break in the bar at the point where the project stalled.
 
 ## 4. Theme and color roles
 
-All colors live in one theme file (for example `src/theme/theme.json`), exposed as CSS
-variables and map style values. These are placeholders until Matthew supplies his palette.
+All colors live in one theme file, `src/theme/theme.json`, exposed as CSS variables and map style
+values; swapping in Matthew's palette is a one-file change. The current values are placeholders
+(warm paper and International orange, Oct 7, 2026; `docs/DECISIONS.md`), so they aren't repeated
+here. The roles:
 
-| Role | Placeholder |
-|---|---|
-| Land (paper) | #FFFFFF |
-| Water | #ECEFF2 |
-| Shoreline hairline | #A7B0BA |
-| Existing buildings (ink) | #1E1E1E at 85% opacity |
-| Labels | #3B3B3B, halo matching land or water |
-| Stage: proposed | #9DB4E0 (outline only) |
-| Stage: entitlement | #7898D4 |
-| Stage: entitled | #4F78C4 |
-| Stage: site work | #3459A8 |
-| Stage: under construction | #1E3F86 |
-| Stage: complete | Same as existing buildings |
-| Stage: paused | #C08A1E |
-| Stage: distressed | #A3242B |
-| Selection highlight | #000000 |
-| Panel background / text / rules | #FFFFFF / #1E1E1E / #E3E3E3 |
+- Map: land (paper), water, shoreline hairline, land outside the nine counties, existing buildings
+  (ink), building heights in 3D, labels, context lines, selection highlight and selected site ground.
+- Stages: one color per stage in section 3. Complete points at the buildings ink; proposed sites are
+  drawn as a dashed outline with no fill.
+- Land use (plan-scale projects): residential, mixed use, office, industrial and the other zones.
+- Panel: background, text, rules, and field and filter outlines (`controlBorder`, at least 3:1 on the
+  panel; Oct 16, 2026).
+- Opacities and per-stage massing opacity ("the more certain, the more solid").
 
-Style panel: a hidden panel (toggle with the S key or a small control) that lets Matthew
-change any color role, switch presets, try type pairings, adjust building height
-exaggeration and light direction, and toggle layers. It should update live, then export
-and import the theme as JSON so a finished palette can be committed as the default.
+Tests check the palette's contrast (`tests/theme.test.ts`).
+
+Style panel: a hidden panel (Alt+Shift+S, or `?style=1`; always available on the dev server) that
+lets Matthew change any color role, switch presets, try type pairings, adjust building height
+exaggeration and light direction, and toggle layers. It updates live, and exports and imports the
+theme as JSON so a finished palette can be committed as the default.
 
 ## 5. Typography
 
@@ -120,7 +117,12 @@ PMTiles is a good default), runnable with one command. Raw downloads are cached 
 ## 7. Project data model
 
 - `data/projects.json` (provided): facts, stages, timeline, summary, sources, known gaps.
-  Each project's `verify` list names things that still need checking.
+  Each project's `verify` list names things that still need checking. Each has a `category`
+  (buildings or transportation).
+- Official sources only (Matthew, 2026-10-02): every fact shown comes from a public agency or body,
+  its adopted plans, hearing records, permits or GIS (`src/projects/official.ts` lists the hosts).
+  Facts only the press or a developer reports go in the project's `reported` record, which the map
+  never shows.
 - `data/boundaries/{id}.geojson`: the site or plan boundary. Properties: `source`,
   `accuracy` ("official", "traced" or "approximate").
 - `data/massing/{id}.geojson`: one feature per building, with properties `height_ft`,
@@ -185,8 +187,9 @@ Elsewhere
 - Deep links per project (for example `/p/potrero-power-station`) that open with the
   fly-in.
 - Map controls: zoom, reset north, 2D/3D toggle, back to the whole Bay.
-- About page: what the map is, stage definitions, method, data sources and licenses,
-  disclaimers (illustrative massing, approximate boundaries), and credits.
+- About page (`/about`): what the map is, stage definitions, method, data sources and licenses,
+  disclaimers (illustrative massing, approximate boundaries), credits, and a "Suggest a project"
+  form (also linked from the foot of the Projects list; `scripts/suggest/README.md`).
 
 ## 9. Renderings
 
@@ -195,15 +198,21 @@ Elsewhere
   credit and permission note.
 - No permitted renders: show a link to the official project page or gallery, plus the
   map's own view of the massing.
+- Photos: openly licensed or public-domain photos from Wikimedia Commons, approved by Matthew, listed
+  in `data/photos.json` with author and license, resized and stored in `public/photos/`
+  (`make photos`), never hotlinked. The outreach list for render permissions is
+  `docs/images/PERMISSIONS.md`.
 
-## 10. Tech stack (recommended; propose changes with reasons)
+## 10. Tech stack (as built)
 
-- Vite with TypeScript; a light UI layer (vanilla or a small framework).
+- Vite with TypeScript and Preact.
 - MapLibre GL JS for the map and 3D extrusions; PMTiles for the base tiles.
-- Python (geopandas/shapely) or Node for data prep; Tippecanoe for tiling.
-- Playwright for screenshot checks of key views.
-- Static hosting (Vercel, Netlify, Cloudflare Pages or GitHub Pages), with large tile
-  files on object storage if needed. No paid map service is required.
+- A Python pipeline (uv) for data prep, and Tippecanoe for tiling; `make data` runs it all.
+- Vitest for data, provenance, theme and contrast tests; Playwright for interaction, accessibility
+  (axe-core) and screenshot checks.
+- GitHub Pages hosting, deployed on every push to main: map.matthewhuguet.com once the custom domain
+  is set (`docs/share/README.md`), matthew6113.github.io/BAM/ before. Every tile file
+  stays under 100 MB; `VITE_TILE_BASE_URL` can point the tiles at object storage later.
 
 ## 11. Quality bar
 
@@ -214,28 +223,43 @@ Elsewhere
 
 ## 12. Milestones and review checkpoints
 
-- M0, setup: repo scaffold, README, data pipeline skeleton, `CREDITS.md`, `.gitignore`.
+All done. Matthew's reviews and calls along the way are in `docs/DECISIONS.md`.
+
+- M0, setup: repo scaffold, README, data pipeline skeleton, `CREDITS.md`, `.gitignore`. Done.
 - M1, base map: the NYT look with zero projects (footprints, land and water, minimal
-  labels, theme file and style panel). Stop for Matthew's review.
+  labels, theme file and style panel). Done Oct 1, 2026; reviewed by Matthew.
 - M2, vertical slice: Potrero Power Station end to end (boundary, massing by block and
-  stage, fly-in, panel, deep link). Stop for Matthew's review.
-- M3: all 25 projects as boundaries with panels, index, filters and legend.
-- M4: massing for every project in batches of five, plus the plan-scale treatment.
-- M5: about page, credits, performance, mobile, deployment.
-- M6, maintenance: a quarterly status-check checklist (or script) and a changelog.
+  stage, fly-in, panel, deep link). Done Oct 2, 2026; reviewed by Matthew.
+- M3: every project as boundaries with panels, index, filters and legend. Done Oct 3, 2026 with the
+  original 25; the map has since grown to 54.
+- M4: massing for every project in batches of five, plus the plan-scale treatment. Done Oct 3 to 5.
+- M5: about page, credits, performance, mobile, deployment. Done; the phone, accessibility and speed
+  audit is `docs/AUDIT-2026-10.md` (Oct 16, 2026).
+- M6, maintenance: a six-weekly update routine with a checklist script and a changelog (section 13).
+  Done Oct 7, 2026.
 
 ## 13. Maintenance
 
 Statuses change. Keep a `CHANGELOG.md` of data updates. About every six weeks (Matthew,
 2026-10-07), a scheduled routine re-checks every project against official pages, updates
 `lastVerified`, lists new project leads for Matthew, and opens a PR; merging it redeploys.
-The procedure is `docs/UPKEEP.md`; `make upkeep` writes the checklist.
+The procedure is `docs/UPKEEP.md`; `make upkeep` writes the checklist. Suggestions sent through the
+map's form are leads like any other: researched against official sources, and added only if Matthew
+says so.
 
 ## 14. Open questions for Matthew
 
-- Final palette and type choices (or keep the placeholders for now).
-- The map's public title and how he wants to be credited.
-- Domain and hosting preference.
-- Whether to keep Mission Bay as a "completed" reference project.
-- Whether to add candidates not yet researched: Mare Island, the Sonoma Developmental
-  Center, BART station-area housing.
+Settled since the first draft:
+- Title "Bay Area megaprojects", with the byline "by Matthew Huguet" linking to his site.
+- Hosting on GitHub Pages, moving to map.matthewhuguet.com (Oct 9, 2026).
+- Mission Bay stays on the map, as partly built.
+- Mare Island, the Sonoma Developmental Center and BART station-area housing were researched and
+  added.
+
+Still open:
+- The final palette and type (the placeholders ship until then).
+- Renderings: permissions to request (`docs/images/PERMISSIONS.md`); Matthew sends the requests.
+- Oceanwide Center: keep the approved design until a new application is filed, and whether it reads
+  as paused or distressed.
+- Pre-approved additions waiting on environmental documents: the Harbor Bay ferry terminal and the
+  Larkspur ferry expansion (`docs/UPKEEP.md`).
