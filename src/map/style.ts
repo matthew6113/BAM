@@ -6,6 +6,7 @@ import {
   DETAIL_MAX_ZOOM,
   DETAIL_MIN_ZOOM,
   DETAIL_ZOOMS,
+  EXTENT,
   GLYPHS_URL,
   LABELS_URL,
   TILE_BASE_URL,
@@ -289,10 +290,20 @@ export function buildStyle(theme: Theme, opts: StyleOptions): StyleSpecification
         url: `pmtiles://${TILE_BASE_URL}/${overview}.pmtiles`,
         attribution: OSM_CREDIT,
       },
+      // Each detail archive holds one zoom over the region, so its zoom and extent are stated here
+      // rather than read from the archive: its header is then fetched with its first tile, when
+      // the map is zoomed in, not on the first view.
       ...Object.fromEntries(
         DETAIL_ZOOMS.map((z) => [
           `buildings-z${z}`,
-          { type: 'vector' as const, url: `pmtiles://${TILE_BASE_URL}/buildings-z${z}.pmtiles`, attribution: OSM_CREDIT },
+          {
+            type: 'vector' as const,
+            tiles: [`pmtiles://${TILE_BASE_URL}/buildings-z${z}.pmtiles/{z}/{x}/{y}`],
+            minzoom: z,
+            maxzoom: z,
+            bounds: EXTENT,
+            attribution: OSM_CREDIT,
+          },
         ]),
       ),
       labels: { type: 'geojson', data: LABELS_URL },

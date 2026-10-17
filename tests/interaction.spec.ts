@@ -79,3 +79,18 @@ test('the app draws its own title in place of the static one', async ({ page }) 
   await expect(page.locator('header.title')).toHaveCount(1);
   await expect(page.getByRole('button', { name: /^Projects/ })).toBeVisible();
 });
+
+test('street-level building tiles load only once the map is zoomed in', async ({ page }) => {
+  const detail: string[] = [];
+  page.on('request', (r) => {
+    if (/buildings-z1[345]\.pmtiles/.test(r.url())) detail.push(r.url());
+  });
+  await page.goto('/?test=1');
+  await ready(page);
+  expect(detail).toEqual([]);
+  await page.evaluate(() => (window as any).__map.jumpTo({ center: [-122.4, 37.78], zoom: 15.5 }));
+  await expect.poll(() => detail.some((u) => u.includes('buildings-z15'))).toBe(true);
+  // The buildings draw: the street-level layer has features in view.
+  await expect.poll(() => page.evaluate(() =>
+    (window as any).__map.queryRenderedFeatures({ layers: ['buildings-z15'] }).length), { timeout: 60_000 }).toBeGreaterThan(0);
+});
