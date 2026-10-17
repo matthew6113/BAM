@@ -9,7 +9,13 @@ const LIST = /WEB_UNICODES = \(([^)]*)\)/.exec(FONTS_PY)?.[1] ?? '';
 const RANGES = [...LIST.matchAll(/U\+([0-9A-F]+)(?:-([0-9A-F]+))?/g)]
   .map((m) => [parseInt(m[1], 16), parseInt(m[2] ?? m[1], 16)] as const);
 
-const covered = (cp: number) => cp === 0x0a || RANGES.some(([a, b]) => cp >= a && cp <= b);
+const coverage = new Map<number, boolean>();
+// Remembered per code point: the geometry files run to millions of characters, mostly the same few.
+const covered = (cp: number) => {
+  let hit = coverage.get(cp);
+  if (hit === undefined) coverage.set(cp, (hit = cp === 0x0a || RANGES.some(([a, b]) => cp >= a && cp <= b)));
+  return hit;
+};
 
 const files = (dir: string, ext: RegExp): string[] =>
   readdirSync(dir, { recursive: true, encoding: 'utf8' }).filter((f) => ext.test(f)).map((f) => join(dir, f));
