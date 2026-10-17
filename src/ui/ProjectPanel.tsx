@@ -17,7 +17,7 @@ function PhotoFigure({ photo }: { photo: Photo }) {
   return (
     <figure class="photo">
       <img src={`${import.meta.env.BASE_URL}${photo.src}`} width={photo.width} height={photo.height}
-        alt={photo.caption} loading="lazy" decoding="async"
+        alt="" loading="lazy" decoding="async"
         // Low priority: the sheet's lazy-load margin still fetches it during the fly-in, where the
         // map's tiles matter more on a slow connection.
         fetchpriority="low" />

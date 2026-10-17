@@ -96,7 +96,7 @@ test('with reduced motion the fly-in jumps and the panel does not slide', async 
   expect(animation).toBe('none');
 });
 
-test('photos load only for the open project, lazily, with alt text and a credit', async ({ page }) => {
+test('photos load only for the open project, lazily, with its caption and a credit', async ({ page }) => {
   const requested: string[] = [];
   page.on('request', (r) => {
     if (/\/photos\//.test(r.url())) requested.push(new URL(r.url()).pathname);
@@ -110,7 +110,9 @@ test('photos load only for the open project, lazily, with alt text and a credit'
   await page.getByRole('button', { name: /^Potrero Power Station/ }).click();
   const img = page.locator('.project-panel .photo img');
   await expect(img).toHaveAttribute('loading', 'lazy');
-  await expect(img).toHaveAttribute('alt', photo.caption);
+  // The figcaption names the photo, so the image itself is silent (alt="") rather than read twice.
+  await expect(img).toHaveAttribute('alt', '');
+  await expect(page.locator('.project-panel .photo figcaption')).toContainText(photo.caption);
   await expect(page.locator('.project-panel .photo .credit')).toContainText('Wikimedia Commons');
   await img.scrollIntoViewIfNeeded();
   await expect.poll(() => requested).toEqual([`/${photo.src}`]);
