@@ -3,6 +3,53 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-17 (five new projects from the Oct 17 lead scan)
+
+Matthew asked to add the six strong leads in `docs/upkeep/leads-2026-10-17.md`. Five are added; the
+sixth (CityView Plaza) is held back. Research and every figure's source are in
+`docs/official-research/candidates-santa-clara-station-redwood-life.md`,
+`candidates-orchards-cityview.md` and `candidates-southline-eastridge.md`.
+
+**santa-clara-station-area** (new): the City of Santa Clara's Station Area Specific Plan, about
+244 acres around the Santa Clara Caltrain station and planned BART station: up to 8,300 homes,
+2.1 million sq ft of office and 1.7 million sq ft of light industrial (notice of preparation, June 12,
+2026, CEQAnet SCH 2026060462). In entitlement. Boundary approximate, traced from the notice's Figure 2
+and fitted to OpenStreetMap streets; no land use until a plan is published.
+
+**the-orchards** (new): the former Chevron Park campus in San Ramon, approved for up to 2,510 homes on
+about 92 acres: Planning Commission Resolution 02-26 (Feb 3, 2026), appeal denied by the City Council
+on Apr 7, 2026. Sources: the City of San Ramon's project and news pages, the CEQAnet notice of
+exemption (SCH 2026020219) and the 2040 General Plan notice of determination. Entitled. Boundary
+(APN 213-120-008) approximate, traced from the 2040 General Plan Draft EIR's land-use map (88.6 acres
+as drawn, against 92 official). No massing yet: the approved plans are on City hosts this environment
+couldn't reach.
+
+**southline** (new): an office and research campus of up to 2.8 million sq ft on 28.5 acres by San
+Bruno BART in South San Francisco, approved by the City Council on July 13, 2022 (notices of
+determination). Entitled. Boundary and illustrative massing (height envelopes from the revised
+Specific Plan's Figure 2-8) traced from the Final EIR (CEQAnet SCH 2020050452). Press reports of
+Phase 1 construction were found only as search snippets (the press sites were unreachable), so they
+aren't recorded; whether Phase 1 is built is a `verify` item.
+
+**redwood-life** (new): the Redwood LIFE Precise Plan in Redwood Shores, Redwood City: 11 life science
+buildings of about 2.7 million sq ft, a hotel and 42 acres of open space replacing a 20-building office
+park (notice of preparation, Aug 22, 2025, SCH 2025081015). In entitlement. Boundary approximate, traced
+from the notice's Figure 3 and fitted to OpenStreetMap buildings. Two press items seen only in search
+snippets (the study session that chose "Alternative 2", a schedule slip) aren't recorded.
+
+**eastridge-bart-regional-connector** (new, transportation): VTA's 2.4-mile light rail extension from
+Alum Rock to the Eastridge Transit Center, with elevated Story Road and at-grade Eastridge stations.
+Under construction (contract awarded March 7, 2024; VTA reported it 67% complete on May 31, 2026;
+service expected early 2028). Line and stations traced from VTA's 2018 Draft SEIR-2 plan sheets; facts
+from VTA's fact sheet, newsletters and CEQA notices (SCH 2001092014).
+
+**CityView Plaza** (San José, not added): a 2025 amendment (a new eight-story retail and parking
+building, office space converted to 330 homes) may have partly superseded the 2020 three-tower
+approval, and the documents that settle it are on sanjoseca.gov, which this environment couldn't
+reach. It stays a lead.
+
+`_meta.lastVerified` is 2026-10-17, the newest record date.
+
 ## 2026-10-13 (Berkeley ferry: dredged channel drawn apart)
 
 **berkeley-pier-ferry**: Matthew asked for the site not to run so far into the Bay, so I re-checked it
