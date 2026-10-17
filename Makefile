@@ -91,6 +91,12 @@ sites:
 	$(PY) bam_pipeline.sites.lines_valley_link
 	$(PY) bam_pipeline.sites.lines_smart
 	$(PY) bam_pipeline.sites.bart_station_housing
+	$(PY) bam_pipeline.sites.boundary_the_orchards
+	$(PY) bam_pipeline.sites.boundary_santa_clara_station_area
+	$(PY) bam_pipeline.sites.boundary_redwood_life
+	$(PY) bam_pipeline.sites.boundary_southline
+	$(PY) bam_pipeline.sites.massing_southline
+	$(PY) bam_pipeline.sites.lines_eastridge_bart_regional_connector
 	$(PY) bam_pipeline.sites.massing_oceanwide_center
 	$(PY) bam_pipeline.sites.massing_30_van_ness
 	$(PY) bam_pipeline.sites.massing_west_midway_reshap
