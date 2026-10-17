@@ -1,17 +1,14 @@
-"""Redwood LIFE Precise Plan: the project site traced from the City of Redwood City's Notice of Preparation.
+"""Redwood LIFE Precise Plan: the project site as the County of San Mateo's parcels for its four APNs.
 
-The City's Notice of Preparation of an EIR (Aug 22, 2025, CEQAnet SCH 2025081015) names four
-assessor's parcels (095-012-150, -220, -450 and -460; about 84 acres), but the County of San Mateo's
-parcel service isn't reachable from the pipeline's network, so the site is traced from the NOP's
-Figure 3, Aerial Photograph and Surrounding Area (PDF p. 7): a black dashed "Project Boundary" drawn
-in vector over an aerial photo (Google Earth, photo date April 2022; 0-1,400 ft scale bar).
+The City's Notice of Preparation of an EIR (Aug 22, 2025, CEQAnet SCH 2025081015, p. 2) names the site:
+"800, 1400, 1600, and 3400 Bridge Parkway ... approximately 84 acres and consists of four parcels
+(Assessor's Parcel Numbers [APNs]: 095-012-220, -450, -460, and -150)". The boundary is the union of those
+four parcels in the County of San Mateo parcel layer (data.smcgov.org nr6j-72z7, Public Domain).
 
-1. The page is rendered at 2 px per PDF point and the map frame cropped. The photo is fitted to
-   OpenStreetMap building footprints (Overture) with line_georef.register_buildings: a coarse search
-   over scale and rotation around the scale bar, then tile-by-tile control points through a
-   similarity fit (RMS reported).
-2. The dashes are read straight from the PDF and closed into the enclosed area with the helper from
-   the Santa Clara Station Area module (each dash's centre line, joined across the gaps).
+The outline first drawn for the map was traced from the NOP's Figure 3 aerial (PDF p. 7): the photo
+fitted to OpenStreetMap building footprints with line_georef.register_buildings, the dashed "Project
+Boundary" read straight from the PDF and closed with the helper from the Santa Clara Station Area
+module. It is still traced here, only to report how far the parcels lie from it.
 
     uv run --directory pipeline python -m bam_pipeline.sites.boundary_redwood_life
 """
@@ -24,8 +21,9 @@ import pypdfium2 as pdfium
 
 from .. import trace
 from . import line_georef as lg
+from . import official_boundaries as ob
 from . import traced_boundaries as tb
-from .boundary_santa_clara_station_area import _enclosed, dash_shape
+from .boundary_santa_clara_station_area import _enclosed, compare, dash_shape, parcel_site
 
 PROJECT = "redwood-life"
 NOP_URL = "https://ceqanet.lci.ca.gov/2025081015/Attachment/yselzM"
@@ -40,6 +38,14 @@ DASH = (0.695, 0.672, 0.637, 0.738)  # CMYK of the "Project Boundary" dashes
 SCALE_M_PER_PT = 1400 * 0.3048 / 129.7  # 0-1,400 ft scale bar, about 129.7 pt long
 ANCHOR_PT = (390.0, 345.0)  # roughly where Marine Parkway meets Bridge Parkway (a start for the search)
 STATED_ACRES = 84  # NOP and CEQAnet "Total Acres"
+APNS = ["095012150", "095012220", "095012450", "095012460"]  # NOP p. 2
+PARCELS = {
+    "label": "San Mateo County parcels",
+    "url": f"{ob.SMC_PARCELS[0]}/resource/{ob.SMC_PARCELS[1]}.json?"
+           + ob.urllib.parse.urlencode({"$where": f"apn in ({ob._sql_list(APNS)})", "$limit": 5000}),
+    "landing": f"{ob.SMC_PARCELS[0]}/d/{ob.SMC_PARCELS[1]}",
+    "wkt": {"field": "shape", "crs": "EPSG:2227"},
+}
 BBOX = (-122.29, 37.52, -122.23, 37.56)
 
 
@@ -59,7 +65,8 @@ def _dashes() -> list:
     return out
 
 
-def build() -> None:
+def traced_outline():
+    """The NOP Figure 3 outline (UTM) and its fit report: kept to compare with the parcels."""
     trace.fetch_document(NOP_URL, NOP, NOP_SHA)
     page = np.asarray(pdfium.PdfDocument(str(NOP))[PAGE].render(scale=K).to_pil().convert("RGB"))
     fx0, ft, fx1, fb = (round(v * K) for v in FRAME_PT)
@@ -80,28 +87,37 @@ def build() -> None:
 
     dashes = [sim.geometry(d) for d in _dashes()]
     site = _enclosed(dashes).simplify(1.0, preserve_topology=True)
+    return site, rep, sim
+
+
+def build() -> None:
+    site, n = parcel_site("redwood-life", PARCELS)
     acres = site.area / tb.ACRE_M2
+    traced, rep, sim = traced_outline()
+    cmp = compare(site, traced)
     props = {
-        "source": ("Traced from the City of Redwood City's Notice of Preparation of an EIR for the Redwood Life Precise "
-                   "Plan (Aug 22, 2025; CEQAnet SCH 2025081015), Figure 3, Aerial Photograph and Surrounding Area, "
-                   "PDF p. 7: the dashed \"Project Boundary\""),
-        "sourceLabel": "Notice of preparation, Figure 3 (PDF)",
-        "sourceUrl": NOP_URL,
-        "documents": [CEQANET, NOP_URL],
+        "source": ("County of San Mateo parcels (data.smcgov.org nr6j-72z7): APNs 095-012-150, -220, -450 and -460, "
+                   "the four parcels the City of Redwood City's Notice of Preparation (Aug 22, 2025; CEQAnet "
+                   "SCH 2025081015, p. 2) names for the Redwood Life Precise Plan site"),
+        "sourceLabel": "San Mateo County parcels",
+        "sourceUrl": PARCELS["landing"],
+        "query": PARCELS["url"],
+        "documents": [CEQANET, NOP_URL, PARCELS["landing"]],
         "documentSha256": NOP_SHA,
-        "accuracy": "approximate",
+        "accuracy": "official",
         "accuracyNote": (
-            "Approximate boundary: the project site as the NOP's aerial figure draws it, fitted to OpenStreetMap "
-            "building footprints. The NOP gives about 84 acres on four assessor's parcels (095-012-150, -220, -450 "
-            "and -460) at Bridge Parkway, Marine Parkway and Island Drive, along Belmont Slough; the County's parcels "
-            f"would give a parcel-exact line. {acres:,.1f} acres as drawn."),
-        "georeference": {**rep, "scale_m_per_unit": round(sim.scale, 5), "unit": "PDF point",
-                         "start": "scale bar and the Marine Parkway / Bridge Parkway crossing (OpenStreetMap via Overture)"},
-        "license": f"Boundary traced from a public CEQA document (City of Redwood City); fit to {tb.OSM_LICENSE}",
+            "The four parcels the Notice of Preparation names (800, 1400, 1600 and 3400 Bridge Parkway, between "
+            f"Belmont Slough and Marine Parkway; \"approximately 84 acres\"), as the County of San Mateo maps them. "
+            f"{acres:,.1f} acres as drawn. The outline traced earlier from the notice's Figure 3 aerial came to "
+            f"{cmp['traced_acres']:,.1f} acres and lies within {cmp['max_deviation_m']:.0f} m of the parcels."),
+        "license": "Public Domain (County of San Mateo)",
+        "features_used": n,
+        "tracedComparison": {**cmp, "traced_from": "NOP Figure 3, PDF p. 7 (dashed Project Boundary), fitted to "
+                             "OpenStreetMap building footprints", "traced_fit_rms_m": rep["rms_m"]},
     }
     tb.write(PROJECT, site, props)
-    print(f"[{PROJECT}] fit: {sim.scale:.3f} m/pt, rotation {np.degrees(sim.rotation):.2f} deg, RMS {rep['rms_m']} m, "
-          f"{rep['tiles_used']} tiles; {acres:,.1f} acres vs {STATED_ACRES} stated")
+    print(f"[{PROJECT}] parcels: {n} features, {acres:,.1f} acres vs {STATED_ACRES} stated; traced "
+          f"{cmp['traced_acres']:,.1f} acres, max deviation {cmp['max_deviation_m']} m")
 
 
 def main() -> None:

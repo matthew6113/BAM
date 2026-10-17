@@ -101,6 +101,44 @@ reachable, so it isn't drawn or cited.
 - Cross-check: the GP Draft EIR Appendix A2 "City Core" sheet (p. 16) outlines the same block on an aerial
   photo; it agrees by eye. Its APN list includes 213-120-008.
 
+**Update (Oct 17, later): approved plans reached, boundary re-traced.** `docs.sanramon.ca.gov` (Laserfiche
+WebLink) became reachable; the project folder is `\Planning\Projects\The Orchards` (folder 20812232), with
+the Planning Commission packet of Dec 16, 2025 (folder 20812245) and the City Council packet of Apr 7, 2026
+(folder 21619738). Downloaded (sha256 pinned in the modules): D. Applicant's Project Plans, Sept 5, 2025
+(record 20812236, 218 pp.); Orchards Design Guidelines, Nov 14, 2025 (21620063, 224 pp.); City Council
+Resolution 2026-040 with Exhibits A-C (21620060); Planning Commission Resolution 02-26 (21620061); Affordable
+Housing Plan, Dec 4, 2025 (21620068). Contra Costa County's parcel services, `gis.sanramon.ca.gov` and the
+civiclive file store still refuse the connection, so the County parcel couldn't be used.
+
+| field | value | source | quote |
+|---|---|---|---|
+| site | Parcel A, 91.55 acres | Plans sheet C3.0 (PDF p. 179) | "PARCEL A DN 2000-0220096 91.55 AC±" |
+| site | 92 acres, APN 213-120-008 | CC Res. 2026-040 p. 3 | "the Master Plan area encompasses the 92-acre site at 6001 Bollinger Canyon Road (formerly Chevron Office Park, APN: 213-120-008)" |
+| APN conflict | 213-701-002 | CC Res. 2026-040 p. 1 (heading) | "LOCATED AT 6001 BOLLINGER CANYON ROAD (APN: 213-701-002)" |
+| homes | 2,452 + 58 optional ADUs | CC Res. 2026-040, conditions p. 1 | "three Districts totaling up to 2,452 dwelling units and 58 optional accessory dwelling units (ADUs)" |
+| districts | 619 / 1,465 / 368 | CC Res. 2026-040 p. 4 | "up to 619 dwelling units within the Mixed Use District with 125,000 sq. ft. of ground floor retail, entertainment and commercial uses, 2) 1,465 dwelling units within the Multi-Family District ... 368 single-family townhomes and detached homes plus 58 optional Accessory Dwelling Units" |
+| affordable | 397 (16.2%) | CC Res. 2026-040 p. 4 | "commits to 16.2% (397 units) of the 2,452 units as deed restricted units for very low, low, and moderate income households" |
+| affordable mix | 163 / 212 / 22 | CC Res. 2026-040 finding (c); AHP p. 3 table | "163 Very Low-Income, 212 Very-Low Income, and 22 Moderate Income units" (the resolution's second "Very-Low" is the AHP's Low, 80% AMI) |
+| affordable site | 100 homes (99 + manager) | AHP p. 2; CC conditions (Neighborhood) | "an approximately 1.9-acre site ... for the development of a 100-home affordable community by Eden Housing, with 99 affordable homes and one manager's unit" |
+| height | 85 ft max | CC Res. 2026-040 findings | "subject to a maximum height of 85 feet, per Division D2-14 of the San Ramon Zoning Ordinance" |
+| MU heights | 5-7 floors, 85 ft | DG p. 162, Fig. 7.1.2 | "may be developed to between five (5) to seven (7) floors and a maximum height of 85 feet" |
+| MF heights | B, C 85 ft; E, F, G, H 65 ft | DG p. 168, Fig. 7.2.2 | "(B and C parcels) may be developed up to seven (7) floors and a maximum height of 85 feet" / "The E, F, G and H parcels ... four (4) or five (5) floors and a maximum height of 65 feet" |
+| ND heights | 40 / 35 ft | DG p. 175, Fig. 7.3.2 | "Attached Row Townhomes: 40-feet; Single-Family Row Homes: 35-feet; Single-Family Homes: 35-feet; Single-Family Court Homes: 35-feet" |
+| ND heights (older) | 30 ft single-family, 40 ft townhomes | Plans sheet SP4, DMU-S standards table | "Height limit [1] Maximum ... 30 30 30 40 16" |
+| parcels | MU A1-A4, D1 (8.9 ac); MF B1, B2, C1, C2, E1, F1, G1, G2, H1 (16.3 ac); lots 1-103 (27.8 ac) | Plans sheet C2.0 area table (PDF p. 172) | tabled areas in sq ft |
+| phasing | MU and MF districts "future application" | Plans sheet L-200 (PDF p. 166) | "FUTURE APPLICATION MULTI-FAMILY DISTRICT (MFD) FUTURE APPLICATION MIXED-USE ..." |
+
+Boundary now `traced` (was `approximate`): sheet C3.0's project boundary (2.7-pt CAD line) at 1" = 100' encloses
+91.58 acres against the tabled 91.55, which confirms the scale. It is placed by the existing buildings the sheet
+draws (71 closed outlines) on OpenStreetMap building footprints: cross-correlation of filled outlines over
+rotations 24-32° (best 27.7°), then rigid trimmed ICP with the scale held (rotation 27.8°, trimmed RMS 0.8 m over
+the closest 50% of outline points, median 2.9 m). 91.6 acres as drawn. Against the GP-DEIR trace (88.6 acres): up
+to 34.5 m apart. Massing: `massing_the_orchards.py`, the C2.0 development parcels and lots (each checked against its
+tabled area within 1%; lots 1-103 against the 1,210,450 sq ft total) raised to the design guidelines' limits; the
+attached row townhome lots (78-103) identified from DG Figure 7.3.2 and plan sheet SP2. Open-space and street
+parcels are left empty; the 1-story retail pavilion in the Mixed-Use District (DG Fig. 7.1.2) has no stated
+height in feet and isn't drawn.
+
 ### Geometry on the site
 
 None. No massing: the project plans and design guidelines were unreachable, and no official document read

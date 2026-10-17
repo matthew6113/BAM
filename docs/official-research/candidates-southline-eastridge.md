@@ -94,6 +94,15 @@ hand-located street points); the dots are bridged and filled and pulled back to 
 against the plan's 28.5. Preferred official source when reachable: County of San Mateo parcels (`data.smcgov.org`
 `nr6j-72z7`) for the six APNs above (the Draft EIR speaks of seven parcels).
 
+Boundary update (Oct 17, later): `data.smcgov.org` became reachable, but none of the six CEQA APNs is in the County
+layer (`nr6j-72z7`, last updated Aug 2024): the site has been re-mapped since 2022. The County's parcels on the same
+assessor's page now are 014-250-110 (20 Southline Avenue, 2.4 acres), -120 (30 Southline Avenue, 2.1), -130 (40 Dollar
+Avenue, 2.3), -150 and -170 (325 South Maple Avenue, 16.4 and 2.2); each lies 97-100% inside the traced Figure 2-8 plan
+line and together they fill it except for the new Southline Avenue between them. Nothing else in the 014-23x to
+014-25x pages overlaps the line. The boundary is now their union joined over Southline Avenue by a 40 m closing,
+**28.0 acres** against the plan's 28.5 (`official`); the difference is street frontage at the edges. Against the
+traced outline: up to 27 m apart (Hausdorff, at the South Linden Avenue corner). The massing was re-run on it.
+
 Massing: `pipeline/bam_pipeline/sites/massing_southline.py`, illustrative envelopes. Figure 2-8's coloured footprints
 (classified against its legend, with the photo's greys as extra classes) raised to their figure heights: Buildings 4
 and 5 (one touching zone) 120 ft, Building 6 120 ft, Parking Structure C 105 ft, Buildings 1, 3, 7 115 ft, Building 2

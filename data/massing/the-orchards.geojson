@@ -1,0 +1,5681 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "the-orchards",
+  "illustrative": true,
+  "summary": "Illustrative height envelopes: the approved development parcels and lots of Vesting Tentative Map 9693, each drawn whole and raised to the height limit the Orchards Design Guidelines (Nov 2025) set for it: 85 ft in the Mixed-Use District and on the Multi-Family District's B and C parcels, 65 ft on its E, F, G and H parcels, 40 ft on the attached row townhome lots and 35 ft on the single-family lots of the Neighborhood District. They are limits, not building designs; streets, parks and open space parcels are left empty. The existing office campus, to be demolished, isn't drawn.",
+  "note": "Approved parcels raised to the design guidelines' height limits; real buildings will be smaller.",
+  "sourceUrl": "https://docs.sanramon.ca.gov/WebLink/DocView.aspx?id=21620063&dbid=0&repo=sanramon",
+  "sourceLabel": "Orchards Design Guidelines, Nov 2025",
+  "documents": [
+   "https://docs.sanramon.ca.gov/WebLink/DocView.aspx?id=21620063&dbid=0&repo=sanramon",
+   "https://docs.sanramon.ca.gov/WebLink/DocView.aspx?id=20812236&dbid=0&repo=sanramon",
+   "https://docs.sanramon.ca.gov/WebLink/DocView.aspx?id=21620060&dbid=0&repo=sanramon"
+  ],
+  "georeference": {
+   "scale_m_per_unit": 0.42333,
+   "rotation_deg": 27.804,
+   "rms_m": 0.8,
+   "controls": [
+    {
+     "label": "71 building outlines on sheet C3.0 against OpenStreetMap building footprints (rotation and shift; scale held at 1\" = 100'): trimmed RMS over the closest 50% of 14257 points",
+     "residual_m": 0.8
+    }
+   ],
+   "method": "trimmed ICP",
+   "points": 14257,
+   "inlier_share": 0.5,
+   "median_m": 2.89,
+   "p90_m": 75.91,
+   "start": "cross-correlation of the filled outlines: rotation 27.7 deg, 70% of the drawn outline area on mapped buildings"
+  },
+  "license": "Footprints and heights: traced facts from public City of San Ramon records (the PDFs are not redistributed). Georeference: OpenStreetMap contributors (ODbL 1.0), via Overture Maps."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Parcel A1",
+    "label": "Parcel A1",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Mixed-use: homes over ground-floor retail, entertainment and commercial uses",
+    "phase": "Future application (master plan, about 20-year buildout)",
+    "illustrative": true,
+    "source": "illustrative: Parcel A1 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 85-ft limit in the Orchards Design Guidelines (Nov 14, 2025), p. 162, Figure 7.1.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9596101,
+       37.7606499
+      ],
+      [
+       -121.9591489,
+       37.7599364
+      ],
+      [
+       -121.9581669,
+       37.7603364
+      ],
+      [
+       -121.9581579,
+       37.7603586
+      ],
+      [
+       -121.9587171,
+       37.7612238
+      ],
+      [
+       -121.9595752,
+       37.7608742
+      ],
+      [
+       -121.9595876,
+       37.7607534
+      ],
+      [
+       -121.9596101,
+       37.7606499
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Parcel A2",
+    "label": "Parcel A2",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Mixed-use: homes over ground-floor retail, entertainment and commercial uses",
+    "phase": "Future application (master plan, about 20-year buildout)",
+    "illustrative": true,
+    "source": "illustrative: Parcel A2 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 85-ft limit in the Orchards Design Guidelines (Nov 14, 2025), p. 162, Figure 7.1.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9587469,
+       37.761655
+      ],
+      [
+       -121.9579348,
+       37.7603986
+      ],
+      [
+       -121.9576721,
+       37.7605056
+      ],
+      [
+       -121.9576503,
+       37.7604898
+      ],
+      [
+       -121.957637,
+       37.7604952
+      ],
+      [
+       -121.9574709,
+       37.7606081
+      ],
+      [
+       -121.9574464,
+       37.7606353
+      ],
+      [
+       -121.9573148,
+       37.7607381
+      ],
+      [
+       -121.9580722,
+       37.7619183
+      ],
+      [
+       -121.9587469,
+       37.761655
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Parcel A3",
+    "label": "Parcel A3",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Mixed-use: homes over ground-floor retail, entertainment and commercial uses",
+    "phase": "Future application (master plan, about 20-year buildout)",
+    "illustrative": true,
+    "source": "illustrative: Parcel A3 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 85-ft limit in the Orchards Design Guidelines (Nov 14, 2025), p. 162, Figure 7.1.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9595744,
+       37.760882
+      ],
+      [
+       -121.9595752,
+       37.7608742
+      ],
+      [
+       -121.9587171,
+       37.7612238
+      ],
+      [
+       -121.958948,
+       37.761581
+      ],
+      [
+       -121.9593689,
+       37.7614329
+      ],
+      [
+       -121.9597938,
+       37.761292
+      ],
+      [
+       -121.9596628,
+       37.7610894
+      ],
+      [
+       -121.9595744,
+       37.760882
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Parcel A4",
+    "label": "Parcel A4",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Mixed-use: homes over ground-floor retail, entertainment and commercial uses",
+    "phase": "Future application (master plan, about 20-year buildout)",
+    "illustrative": true,
+    "source": "illustrative: Parcel A4 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 85-ft limit in the Orchards Design Guidelines (Nov 14, 2025), p. 162, Figure 7.1.2",
+    "note": "Drawn about 24,508 sq ft against 26,256 sq ft in sheet C2.0's area table, so its edges are approximate."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9596441,
+       37.7605335
+      ],
+      [
+       -121.9597873,
+       37.7601801
+      ],
+      [
+       -121.9596356,
+       37.7599454
+      ],
+      [
+       -121.9595025,
+       37.7599114
+      ],
+      [
+       -121.959218,
+       37.7599298
+      ],
+      [
+       -121.9591599,
+       37.7599535
+      ],
+      [
+       -121.9596101,
+       37.7606499
+      ],
+      [
+       -121.9596441,
+       37.7605335
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Parcel D1",
+    "label": "Parcel D1",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Mixed-use: homes over ground-floor retail, entertainment and commercial uses",
+    "phase": "Future application (master plan, about 20-year buildout)",
+    "illustrative": true,
+    "source": "illustrative: Parcel D1 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 85-ft limit in the Orchards Design Guidelines (Nov 14, 2025), p. 162, Figure 7.1.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9584859,
+       37.7593018
+      ],
+      [
+       -121.958458,
+       37.7592947
+      ],
+      [
+       -121.9572259,
+       37.7597967
+      ],
+      [
+       -121.9575971,
+       37.760371
+      ],
+      [
+       -121.9588292,
+       37.759869
+      ],
+      [
+       -121.9588382,
+       37.7598468
+      ],
+      [
+       -121.9584859,
+       37.7593018
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Parcel B1",
+    "label": "Parcel B1",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Multi-family homes (apartments, condominiums, senior or affordable housing)",
+    "phase": "Future application (master plan, about 20-year buildout)",
+    "illustrative": true,
+    "source": "illustrative: Parcel B1 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 85-ft limit in the Orchards Design Guidelines (Nov 14, 2025), p. 168, Figure 7.2.2",
+    "note": "Drawn about 124,613 sq ft against 127,549 sq ft in sheet C2.0's area table, so its edges are approximate."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9608466,
+       37.7600261
+      ],
+      [
+       -121.9605745,
+       37.7600985
+      ],
+      [
+       -121.9601551,
+       37.7603765
+      ],
+      [
+       -121.9600428,
+       37.7606193
+      ],
+      [
+       -121.9600664,
+       37.7609256
+      ],
+      [
+       -121.9601543,
+       37.7610615
+      ],
+      [
+       -121.9604463,
+       37.7609752
+      ],
+      [
+       -121.9608872,
+       37.7608522
+      ],
+      [
+       -121.9617626,
+       37.7606251
+      ],
+      [
+       -121.961265,
+       37.7598553
+      ],
+      [
+       -121.9608466,
+       37.7600261
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Parcel B2",
+    "label": "Parcel B2",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Multi-family homes (apartments, condominiums, senior or affordable housing)",
+    "phase": "Future application (master plan, about 20-year buildout)",
+    "illustrative": true,
+    "source": "illustrative: Parcel B2 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 85-ft limit in the Orchards Design Guidelines (Nov 14, 2025), p. 168, Figure 7.2.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9617626,
+       37.7606251
+      ],
+      [
+       -121.9626627,
+       37.7603931
+      ],
+      [
+       -121.9620851,
+       37.7594996
+      ],
+      [
+       -121.9612539,
+       37.7598382
+      ],
+      [
+       -121.9617626,
+       37.7606251
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Parcel C1",
+    "label": "Parcel C1",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Multi-family homes (apartments, condominiums, senior or affordable housing)",
+    "phase": "Future application (master plan, about 20-year buildout)",
+    "illustrative": true,
+    "source": "illustrative: Parcel C1 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 85-ft limit in the Orchards Design Guidelines (Nov 14, 2025), p. 168, Figure 7.2.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9623143,
+       37.7593817
+      ],
+      [
+       -121.962169,
+       37.7594407
+      ],
+      [
+       -121.9621253,
+       37.7594834
+      ],
+      [
+       -121.9620851,
+       37.7594996
+      ],
+      [
+       -121.9626627,
+       37.7603931
+      ],
+      [
+       -121.963238,
+       37.7602448
+      ],
+      [
+       -121.963331,
+       37.7593596
+      ],
+      [
+       -121.9623497,
+       37.7592944
+      ],
+      [
+       -121.9623143,
+       37.7593817
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Parcel C2",
+    "label": "Parcel C2",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Multi-family homes (apartments, condominiums, senior or affordable housing)",
+    "phase": "Future application (master plan, about 20-year buildout)",
+    "illustrative": true,
+    "source": "illustrative: Parcel C2 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 85-ft limit in the Orchards Design Guidelines (Nov 14, 2025), p. 168, Figure 7.2.2",
+    "note": "Drawn about 62,321 sq ft against 55,263 sq ft in sheet C2.0's area table, so its edges are approximate."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9633938,
+       37.7587623
+      ],
+      [
+       -121.9633464,
+       37.7585117
+      ],
+      [
+       -121.9626124,
+       37.7588108
+      ],
+      [
+       -121.962538,
+       37.7588297
+      ],
+      [
+       -121.9623497,
+       37.7592944
+      ],
+      [
+       -121.963331,
+       37.7593596
+      ],
+      [
+       -121.9633938,
+       37.7587623
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Parcel E1",
+    "label": "Parcel E1",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Multi-family homes (apartments, condominiums, senior or affordable housing)",
+    "phase": "Future application (master plan, about 20-year buildout)",
+    "illustrative": true,
+    "source": "illustrative: Parcel E1 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 65-ft limit in the Orchards Design Guidelines (Nov 14, 2025), p. 168, Figure 7.2.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9599539,
+       37.7587902
+      ],
+      [
+       -121.9595905,
+       37.7582281
+      ],
+      [
+       -121.9583454,
+       37.7587354
+      ],
+      [
+       -121.9587087,
+       37.7592975
+      ],
+      [
+       -121.9599539,
+       37.7587902
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Parcel F1",
+    "label": "Parcel F1",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Multi-family homes (apartments, condominiums, senior or affordable housing)",
+    "phase": "Future application (master plan, about 20-year buildout)",
+    "illustrative": true,
+    "source": "illustrative: Parcel F1 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 65-ft limit in the Orchards Design Guidelines (Nov 14, 2025), p. 168, Figure 7.2.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9613991,
+       37.7595815
+      ],
+      [
+       -121.9609773,
+       37.758929
+      ],
+      [
+       -121.9604567,
+       37.7591411
+      ],
+      [
+       -121.9604383,
+       37.759169
+      ],
+      [
+       -121.9603994,
+       37.7595137
+      ],
+      [
+       -121.9603243,
+       37.7596985
+      ],
+      [
+       -121.9603494,
+       37.759822
+      ],
+      [
+       -121.9604895,
+       37.7598782
+      ],
+      [
+       -121.9608354,
+       37.7598113
+      ],
+      [
+       -121.9613991,
+       37.7595815
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Parcel G1",
+    "label": "Parcel G1",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Multi-family homes (apartments, condominiums, senior or affordable housing)",
+    "phase": "Future application (master plan, about 20-year buildout)",
+    "illustrative": true,
+    "source": "illustrative: Parcel G1 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 65-ft limit in the Orchards Design Guidelines (Nov 14, 2025), p. 168, Figure 7.2.2",
+    "note": "Drawn about 44,910 sq ft against 48,343 sq ft in sheet C2.0's area table, so its edges are approximate."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9624189,
+       37.7587857
+      ],
+      [
+       -121.9623656,
+       37.7587514
+      ],
+      [
+       -121.9621764,
+       37.7584587
+      ],
+      [
+       -121.9621487,
+       37.7584517
+      ],
+      [
+       -121.9615932,
+       37.758678
+      ],
+      [
+       -121.962015,
+       37.7593305
+      ],
+      [
+       -121.9622257,
+       37.7592447
+      ],
+      [
+       -121.9622934,
+       37.7592378
+      ],
+      [
+       -121.9624272,
+       37.7587986
+      ],
+      [
+       -121.9624189,
+       37.7587857
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Parcel G2",
+    "label": "Parcel G2",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Multi-family homes (apartments, condominiums, senior or affordable housing)",
+    "phase": "Future application (master plan, about 20-year buildout)",
+    "illustrative": true,
+    "source": "illustrative: Parcel G2 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 65-ft limit in the Orchards Design Guidelines (Nov 14, 2025), p. 168, Figure 7.2.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9613991,
+       37.7595815
+      ],
+      [
+       -121.962015,
+       37.7593305
+      ],
+      [
+       -121.9615932,
+       37.758678
+      ],
+      [
+       -121.9609773,
+       37.758929
+      ],
+      [
+       -121.9613991,
+       37.7595815
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Parcel H1",
+    "label": "Parcel H1",
+    "stage": "entitled",
+    "height_ft": 65,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable homes (the multi-family affordable site)",
+    "phase": "Future application (master plan, about 20-year buildout)",
+    "illustrative": true,
+    "source": "illustrative: Parcel H1 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 65-ft limit in the Orchards Design Guidelines (Nov 14, 2025), p. 168, Figure 7.2.2",
+    "note": "The Affordable Housing Plan (Dec 4, 2025) dedicates a site for a 100-home affordable community (99 affordable homes and a manager's unit); plan sheet SP4 marks Parcel H1 as the multi-family affordable site."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9630484,
+       37.7577763
+      ],
+      [
+       -121.9621101,
+       37.7581586
+      ],
+      [
+       -121.9622282,
+       37.7583414
+      ],
+      [
+       -121.9623738,
+       37.7583786
+      ],
+      [
+       -121.9625565,
+       37.7586613
+      ],
+      [
+       -121.9625606,
+       37.7587162
+      ],
+      [
+       -121.9625751,
+       37.7587381
+      ],
+      [
+       -121.962538,
+       37.7588297
+      ],
+      [
+       -121.9626124,
+       37.7588108
+      ],
+      [
+       -121.9633464,
+       37.7585117
+      ],
+      [
+       -121.9633007,
+       37.7582721
+      ],
+      [
+       -121.9630484,
+       37.7577763
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 1",
+    "label": "Lot 1",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 1 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9615521,
+       37.7572312
+      ],
+      [
+       -121.9619861,
+       37.7570544
+      ],
+      [
+       -121.9620071,
+       37.7570026
+      ],
+      [
+       -121.9619028,
+       37.7568413
+      ],
+      [
+       -121.9614257,
+       37.7570357
+      ],
+      [
+       -121.9615521,
+       37.7572312
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 2",
+    "label": "Lot 2",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 2 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9608101,
+       37.7572866
+      ],
+      [
+       -121.9609364,
+       37.7574821
+      ],
+      [
+       -121.9615521,
+       37.7572312
+      ],
+      [
+       -121.9614257,
+       37.7570357
+      ],
+      [
+       -121.9608101,
+       37.7572866
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 3",
+    "label": "Lot 3",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 3 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9609364,
+       37.7574821
+      ],
+      [
+       -121.9608101,
+       37.7572866
+      ],
+      [
+       -121.9603329,
+       37.757481
+      ],
+      [
+       -121.9604372,
+       37.7576423
+      ],
+      [
+       -121.9605024,
+       37.7576589
+      ],
+      [
+       -121.9609364,
+       37.7574821
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 4",
+    "label": "Lot 4",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 4 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9608101,
+       37.7572866
+      ],
+      [
+       -121.9606837,
+       37.757091
+      ],
+      [
+       -121.9602496,
+       37.7572679
+      ],
+      [
+       -121.9602287,
+       37.7573197
+      ],
+      [
+       -121.9603329,
+       37.757481
+      ],
+      [
+       -121.9608101,
+       37.7572866
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 5",
+    "label": "Lot 5",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 5 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9606837,
+       37.757091
+      ],
+      [
+       -121.9608101,
+       37.7572866
+      ],
+      [
+       -121.9614257,
+       37.7570357
+      ],
+      [
+       -121.9612993,
+       37.7568402
+      ],
+      [
+       -121.9606837,
+       37.757091
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 6",
+    "label": "Lot 6",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 6 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9614257,
+       37.7570357
+      ],
+      [
+       -121.9619028,
+       37.7568413
+      ],
+      [
+       -121.9617985,
+       37.75668
+      ],
+      [
+       -121.9617333,
+       37.7566633
+      ],
+      [
+       -121.9612993,
+       37.7568402
+      ],
+      [
+       -121.9614257,
+       37.7570357
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 7",
+    "label": "Lot 7",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 7 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9610538,
+       37.7567612
+      ],
+      [
+       -121.9615155,
+       37.756573
+      ],
+      [
+       -121.9613891,
+       37.7563775
+      ],
+      [
+       -121.9609274,
+       37.7565657
+      ],
+      [
+       -121.9610538,
+       37.7567612
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 8",
+    "label": "Lot 8",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 8 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.960592,
+       37.7569493
+      ],
+      [
+       -121.9610538,
+       37.7567612
+      ],
+      [
+       -121.9609274,
+       37.7565657
+      ],
+      [
+       -121.9604657,
+       37.7567538
+      ],
+      [
+       -121.960592,
+       37.7569493
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 9",
+    "label": "Lot 9",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 9 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9600928,
+       37.7571095
+      ],
+      [
+       -121.960158,
+       37.7571261
+      ],
+      [
+       -121.960592,
+       37.7569493
+      ],
+      [
+       -121.9604657,
+       37.7567538
+      ],
+      [
+       -121.9599885,
+       37.7569482
+      ],
+      [
+       -121.9600928,
+       37.7571095
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 10",
+    "label": "Lot 10",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 10 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9599885,
+       37.7569482
+      ],
+      [
+       -121.9604657,
+       37.7567538
+      ],
+      [
+       -121.9603393,
+       37.7565583
+      ],
+      [
+       -121.9599053,
+       37.7567351
+      ],
+      [
+       -121.9598843,
+       37.7567869
+      ],
+      [
+       -121.9599885,
+       37.7569482
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 11",
+    "label": "Lot 11",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 11 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9604657,
+       37.7567538
+      ],
+      [
+       -121.9609274,
+       37.7565657
+      ],
+      [
+       -121.960801,
+       37.7563701
+      ],
+      [
+       -121.9603393,
+       37.7565583
+      ],
+      [
+       -121.9604657,
+       37.7567538
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 12",
+    "label": "Lot 12",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 12 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9609274,
+       37.7565657
+      ],
+      [
+       -121.9613891,
+       37.7563775
+      ],
+      [
+       -121.9612627,
+       37.756182
+      ],
+      [
+       -121.960801,
+       37.7563701
+      ],
+      [
+       -121.9609274,
+       37.7565657
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 13",
+    "label": "Lot 13",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 13 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.961759,
+       37.7558007
+      ],
+      [
+       -121.96178,
+       37.7557489
+      ],
+      [
+       -121.9616757,
+       37.7555876
+      ],
+      [
+       -121.9611986,
+       37.755782
+      ],
+      [
+       -121.961325,
+       37.7559775
+      ],
+      [
+       -121.961759,
+       37.7558007
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 14",
+    "label": "Lot 14",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 14 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9608633,
+       37.7561657
+      ],
+      [
+       -121.961325,
+       37.7559775
+      ],
+      [
+       -121.9611986,
+       37.755782
+      ],
+      [
+       -121.9607369,
+       37.7559702
+      ],
+      [
+       -121.9608633,
+       37.7561657
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 15",
+    "label": "Lot 15",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 15 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9604016,
+       37.7563538
+      ],
+      [
+       -121.9608633,
+       37.7561657
+      ],
+      [
+       -121.9607369,
+       37.7559702
+      ],
+      [
+       -121.9602752,
+       37.7561583
+      ],
+      [
+       -121.9604016,
+       37.7563538
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 16",
+    "label": "Lot 16",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 16 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9598136,
+       37.7565934
+      ],
+      [
+       -121.9604016,
+       37.7563538
+      ],
+      [
+       -121.9602752,
+       37.7561583
+      ],
+      [
+       -121.9596442,
+       37.7564154
+      ],
+      [
+       -121.9597484,
+       37.7565767
+      ],
+      [
+       -121.9598136,
+       37.7565934
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 17",
+    "label": "Lot 17",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 17 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9596442,
+       37.7564154
+      ],
+      [
+       -121.9602752,
+       37.7561583
+      ],
+      [
+       -121.9601488,
+       37.7559628
+      ],
+      [
+       -121.9595609,
+       37.7562023
+      ],
+      [
+       -121.9595399,
+       37.7562541
+      ],
+      [
+       -121.9596442,
+       37.7564154
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 18",
+    "label": "Lot 18",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 18 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9602752,
+       37.7561583
+      ],
+      [
+       -121.9607369,
+       37.7559702
+      ],
+      [
+       -121.9606105,
+       37.7557747
+      ],
+      [
+       -121.9601488,
+       37.7559628
+      ],
+      [
+       -121.9602752,
+       37.7561583
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 19",
+    "label": "Lot 19",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 19 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9607369,
+       37.7559702
+      ],
+      [
+       -121.9611986,
+       37.755782
+      ],
+      [
+       -121.9610723,
+       37.7555865
+      ],
+      [
+       -121.9606105,
+       37.7557747
+      ],
+      [
+       -121.9607369,
+       37.7559702
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 20",
+    "label": "Lot 20",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 20 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9616757,
+       37.7555876
+      ],
+      [
+       -121.9615715,
+       37.7554263
+      ],
+      [
+       -121.9615063,
+       37.7554097
+      ],
+      [
+       -121.9610723,
+       37.7555865
+      ],
+      [
+       -121.9611986,
+       37.755782
+      ],
+      [
+       -121.9616757,
+       37.7555876
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 21",
+    "label": "Lot 21",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 21 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9586983,
+       37.758394
+      ],
+      [
+       -121.9587193,
+       37.7583422
+      ],
+      [
+       -121.958615,
+       37.7581809
+      ],
+      [
+       -121.9579686,
+       37.7584443
+      ],
+      [
+       -121.958095,
+       37.7586398
+      ],
+      [
+       -121.9586983,
+       37.758394
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 22",
+    "label": "Lot 22",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 22 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9575068,
+       37.7586324
+      ],
+      [
+       -121.9576332,
+       37.7588279
+      ],
+      [
+       -121.958095,
+       37.7586398
+      ],
+      [
+       -121.9579686,
+       37.7584443
+      ],
+      [
+       -121.9575068,
+       37.7586324
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 23",
+    "label": "Lot 23",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 23 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9570328,
+       37.7590726
+      ],
+      [
+       -121.9576332,
+       37.7588279
+      ],
+      [
+       -121.9575068,
+       37.7586324
+      ],
+      [
+       -121.9568604,
+       37.7588958
+      ],
+      [
+       -121.9569631,
+       37.7590548
+      ],
+      [
+       -121.9570328,
+       37.7590726
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 24",
+    "label": "Lot 24",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 24 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9568604,
+       37.7588958
+      ],
+      [
+       -121.9575068,
+       37.7586324
+      ],
+      [
+       -121.9573805,
+       37.7584369
+      ],
+      [
+       -121.9567771,
+       37.7586827
+      ],
+      [
+       -121.9567561,
+       37.7587345
+      ],
+      [
+       -121.9568604,
+       37.7588958
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 25",
+    "label": "Lot 25",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 25 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9573805,
+       37.7584369
+      ],
+      [
+       -121.9575068,
+       37.7586324
+      ],
+      [
+       -121.9579686,
+       37.7584443
+      ],
+      [
+       -121.9578422,
+       37.7582488
+      ],
+      [
+       -121.9573805,
+       37.7584369
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 26",
+    "label": "Lot 26",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 26 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.958615,
+       37.7581809
+      ],
+      [
+       -121.9585108,
+       37.7580196
+      ],
+      [
+       -121.9584455,
+       37.758003
+      ],
+      [
+       -121.9578422,
+       37.7582488
+      ],
+      [
+       -121.9579686,
+       37.7584443
+      ],
+      [
+       -121.958615,
+       37.7581809
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 27",
+    "label": "Lot 27",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 27 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9583539,
+       37.7578612
+      ],
+      [
+       -121.9583749,
+       37.7578094
+      ],
+      [
+       -121.9582706,
+       37.7576481
+      ],
+      [
+       -121.9576242,
+       37.7579115
+      ],
+      [
+       -121.9577506,
+       37.758107
+      ],
+      [
+       -121.9583539,
+       37.7578612
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 28",
+    "label": "Lot 28",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 28 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9571625,
+       37.7580996
+      ],
+      [
+       -121.9572888,
+       37.7582952
+      ],
+      [
+       -121.9577506,
+       37.758107
+      ],
+      [
+       -121.9576242,
+       37.7579115
+      ],
+      [
+       -121.9571625,
+       37.7580996
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 29",
+    "label": "Lot 29",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 29 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9566855,
+       37.758541
+      ],
+      [
+       -121.9572888,
+       37.7582952
+      ],
+      [
+       -121.9571625,
+       37.7580996
+      ],
+      [
+       -121.956516,
+       37.758363
+      ],
+      [
+       -121.9566203,
+       37.7585243
+      ],
+      [
+       -121.9566855,
+       37.758541
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 30",
+    "label": "Lot 30",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 30 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.956516,
+       37.758363
+      ],
+      [
+       -121.9571625,
+       37.7580996
+      ],
+      [
+       -121.9570361,
+       37.7579041
+      ],
+      [
+       -121.9564328,
+       37.7581499
+      ],
+      [
+       -121.9564118,
+       37.7582017
+      ],
+      [
+       -121.956516,
+       37.758363
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 31",
+    "label": "Lot 31",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 31 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9570361,
+       37.7579041
+      ],
+      [
+       -121.9571625,
+       37.7580996
+      ],
+      [
+       -121.9576242,
+       37.7579115
+      ],
+      [
+       -121.9574978,
+       37.757716
+      ],
+      [
+       -121.9570361,
+       37.7579041
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 32",
+    "label": "Lot 32",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 32 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9582706,
+       37.7576481
+      ],
+      [
+       -121.9581664,
+       37.7574868
+      ],
+      [
+       -121.9581012,
+       37.7574702
+      ],
+      [
+       -121.9574978,
+       37.757716
+      ],
+      [
+       -121.9576242,
+       37.7579115
+      ],
+      [
+       -121.9582706,
+       37.7576481
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 33",
+    "label": "Lot 33",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 33 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9580096,
+       37.7573284
+      ],
+      [
+       -121.9580305,
+       37.7572767
+      ],
+      [
+       -121.9579263,
+       37.7571154
+      ],
+      [
+       -121.9572798,
+       37.7573787
+      ],
+      [
+       -121.9574062,
+       37.7575743
+      ],
+      [
+       -121.9580096,
+       37.7573284
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 34",
+    "label": "Lot 34",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 34 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9568181,
+       37.7575669
+      ],
+      [
+       -121.9569445,
+       37.7577624
+      ],
+      [
+       -121.9574062,
+       37.7575743
+      ],
+      [
+       -121.9572798,
+       37.7573787
+      ],
+      [
+       -121.9568181,
+       37.7575669
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 35",
+    "label": "Lot 35",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 35 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9563411,
+       37.7580082
+      ],
+      [
+       -121.9569445,
+       37.7577624
+      ],
+      [
+       -121.9568181,
+       37.7575669
+      ],
+      [
+       -121.9561717,
+       37.7578302
+      ],
+      [
+       -121.9562759,
+       37.7579915
+      ],
+      [
+       -121.9563411,
+       37.7580082
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 36",
+    "label": "Lot 36",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 36 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9561717,
+       37.7578302
+      ],
+      [
+       -121.9568181,
+       37.7575669
+      ],
+      [
+       -121.9566917,
+       37.7573713
+      ],
+      [
+       -121.9560884,
+       37.7576172
+      ],
+      [
+       -121.9560674,
+       37.7576689
+      ],
+      [
+       -121.9561717,
+       37.7578302
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 37",
+    "label": "Lot 37",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 37 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9566917,
+       37.7573713
+      ],
+      [
+       -121.9568181,
+       37.7575669
+      ],
+      [
+       -121.9572798,
+       37.7573787
+      ],
+      [
+       -121.9571535,
+       37.7571832
+      ],
+      [
+       -121.9566917,
+       37.7573713
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 38",
+    "label": "Lot 38",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 38 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9579263,
+       37.7571154
+      ],
+      [
+       -121.957822,
+       37.7569541
+      ],
+      [
+       -121.9577568,
+       37.7569374
+      ],
+      [
+       -121.9571535,
+       37.7571832
+      ],
+      [
+       -121.9572798,
+       37.7573787
+      ],
+      [
+       -121.9579263,
+       37.7571154
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 39",
+    "label": "Lot 39",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 39 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9609687,
+       37.7551316
+      ],
+      [
+       -121.9611315,
+       37.7553833
+      ],
+      [
+       -121.9613777,
+       37.755283
+      ],
+      [
+       -121.9611407,
+       37.7549164
+      ],
+      [
+       -121.9608206,
+       37.7550468
+      ],
+      [
+       -121.9608949,
+       37.7551617
+      ],
+      [
+       -121.9609687,
+       37.7551316
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 40",
+    "label": "Lot 40",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 40 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9605744,
+       37.7551472
+      ],
+      [
+       -121.9608113,
+       37.7555138
+      ],
+      [
+       -121.9610576,
+       37.7554134
+      ],
+      [
+       -121.9608206,
+       37.7550468
+      ],
+      [
+       -121.9605744,
+       37.7551472
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 41",
+    "label": "Lot 41",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 41 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9600022,
+       37.7555255
+      ],
+      [
+       -121.9601649,
+       37.7557771
+      ],
+      [
+       -121.9604112,
+       37.7556768
+      ],
+      [
+       -121.9601742,
+       37.7553102
+      ],
+      [
+       -121.9598541,
+       37.7554407
+      ],
+      [
+       -121.9599283,
+       37.7555555
+      ],
+      [
+       -121.9600022,
+       37.7555255
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 42",
+    "label": "Lot 42",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 42 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9600911,
+       37.7558072
+      ],
+      [
+       -121.9598541,
+       37.7554407
+      ],
+      [
+       -121.9596078,
+       37.755541
+      ],
+      [
+       -121.9598448,
+       37.7559076
+      ],
+      [
+       -121.9600911,
+       37.7558072
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 43",
+    "label": "Lot 43",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 43 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9598448,
+       37.7559076
+      ],
+      [
+       -121.9596078,
+       37.755541
+      ],
+      [
+       -121.9592877,
+       37.7556714
+      ],
+      [
+       -121.959362,
+       37.7557863
+      ],
+      [
+       -121.9594358,
+       37.7557562
+      ],
+      [
+       -121.9595985,
+       37.7560079
+      ],
+      [
+       -121.9598448,
+       37.7559076
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 44",
+    "label": "Lot 44",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 44 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9595247,
+       37.756038
+      ],
+      [
+       -121.9592877,
+       37.7556714
+      ],
+      [
+       -121.9590415,
+       37.7557718
+      ],
+      [
+       -121.9592784,
+       37.7561384
+      ],
+      [
+       -121.9595247,
+       37.756038
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 45",
+    "label": "Lot 45",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 45 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9588695,
+       37.755987
+      ],
+      [
+       -121.9590322,
+       37.7562387
+      ],
+      [
+       -121.9592784,
+       37.7561384
+      ],
+      [
+       -121.9590415,
+       37.7557718
+      ],
+      [
+       -121.9587213,
+       37.7559022
+      ],
+      [
+       -121.9587956,
+       37.7560171
+      ],
+      [
+       -121.9588695,
+       37.755987
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 46",
+    "label": "Lot 46",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 46 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9589583,
+       37.7562688
+      ],
+      [
+       -121.9587213,
+       37.7559022
+      ],
+      [
+       -121.9584748,
+       37.7560026
+      ],
+      [
+       -121.9587118,
+       37.7563692
+      ],
+      [
+       -121.9589583,
+       37.7562688
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 47",
+    "label": "Lot 47",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 47 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9581885,
+       37.7565824
+      ],
+      [
+       -121.9584347,
+       37.7564821
+      ],
+      [
+       -121.9581978,
+       37.7561155
+      ],
+      [
+       -121.9578777,
+       37.756246
+      ],
+      [
+       -121.9579519,
+       37.7563608
+      ],
+      [
+       -121.9580258,
+       37.7563307
+      ],
+      [
+       -121.9581885,
+       37.7565824
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 48",
+    "label": "Lot 48",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 48 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9581146,
+       37.7566125
+      ],
+      [
+       -121.9578777,
+       37.756246
+      ],
+      [
+       -121.9576314,
+       37.7563463
+      ],
+      [
+       -121.9578684,
+       37.7567129
+      ],
+      [
+       -121.9581146,
+       37.7566125
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 49",
+    "label": "Lot 49",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 49 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9576221,
+       37.7568132
+      ],
+      [
+       -121.9578684,
+       37.7567129
+      ],
+      [
+       -121.9576314,
+       37.7563463
+      ],
+      [
+       -121.9573113,
+       37.7564767
+      ],
+      [
+       -121.9573855,
+       37.7565916
+      ],
+      [
+       -121.9574594,
+       37.7565615
+      ],
+      [
+       -121.9576221,
+       37.7568132
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 50",
+    "label": "Lot 50",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 50 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9575482,
+       37.7568433
+      ],
+      [
+       -121.9573113,
+       37.7564767
+      ],
+      [
+       -121.957065,
+       37.7565771
+      ],
+      [
+       -121.957302,
+       37.7569436
+      ],
+      [
+       -121.9575482,
+       37.7568433
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 51",
+    "label": "Lot 51",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 51 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.957302,
+       37.7569436
+      ],
+      [
+       -121.957065,
+       37.7565771
+      ],
+      [
+       -121.9567449,
+       37.7567075
+      ],
+      [
+       -121.9568191,
+       37.7568224
+      ],
+      [
+       -121.956893,
+       37.7567923
+      ],
+      [
+       -121.9570557,
+       37.757044
+      ],
+      [
+       -121.957302,
+       37.7569436
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 52",
+    "label": "Lot 52",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 52 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9569818,
+       37.7570741
+      ],
+      [
+       -121.9567449,
+       37.7567075
+      ],
+      [
+       -121.9564986,
+       37.7568078
+      ],
+      [
+       -121.9567356,
+       37.7571744
+      ],
+      [
+       -121.9569818,
+       37.7570741
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 53",
+    "label": "Lot 53",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 53 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9567356,
+       37.7571744
+      ],
+      [
+       -121.9564986,
+       37.7568078
+      ],
+      [
+       -121.9561785,
+       37.7569382
+      ],
+      [
+       -121.9562527,
+       37.7570531
+      ],
+      [
+       -121.9563266,
+       37.757023
+      ],
+      [
+       -121.9564893,
+       37.7572747
+      ],
+      [
+       -121.9567356,
+       37.7571744
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 54",
+    "label": "Lot 54",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 54 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9564154,
+       37.7573048
+      ],
+      [
+       -121.9561785,
+       37.7569382
+      ],
+      [
+       -121.9559322,
+       37.7570386
+      ],
+      [
+       -121.9561692,
+       37.7574052
+      ],
+      [
+       -121.9564154,
+       37.7573048
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 55",
+    "label": "Lot 55",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 55 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9561692,
+       37.7574052
+      ],
+      [
+       -121.9559322,
+       37.7570386
+      ],
+      [
+       -121.955686,
+       37.7571389
+      ],
+      [
+       -121.9559008,
+       37.7574713
+      ],
+      [
+       -121.9559722,
+       37.7574854
+      ],
+      [
+       -121.9561692,
+       37.7574052
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 56",
+    "label": "Lot 56",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 56 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9553554,
+       37.757536
+      ],
+      [
+       -121.9556725,
+       37.7574068
+      ],
+      [
+       -121.9555382,
+       37.7571991
+      ],
+      [
+       -121.9550765,
+       37.7573872
+      ],
+      [
+       -121.9552486,
+       37.7576536
+      ],
+      [
+       -121.9553933,
+       37.7575947
+      ],
+      [
+       -121.9553554,
+       37.757536
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 57",
+    "label": "Lot 57",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 57 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9557104,
+       37.7574655
+      ],
+      [
+       -121.9552486,
+       37.7576536
+      ],
+      [
+       -121.955375,
+       37.7578491
+      ],
+      [
+       -121.9558367,
+       37.757661
+      ],
+      [
+       -121.9557104,
+       37.7574655
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 58",
+    "label": "Lot 58",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 58 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9556461,
+       37.7579857
+      ],
+      [
+       -121.9559631,
+       37.7578565
+      ],
+      [
+       -121.9558367,
+       37.757661
+      ],
+      [
+       -121.955375,
+       37.7578491
+      ],
+      [
+       -121.9555393,
+       37.7581033
+      ],
+      [
+       -121.955684,
+       37.7580444
+      ],
+      [
+       -121.9556461,
+       37.7579857
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 59",
+    "label": "Lot 59",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 59 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9560748,
+       37.7581136
+      ],
+      [
+       -121.9560974,
+       37.7580643
+      ],
+      [
+       -121.956001,
+       37.7579152
+      ],
+      [
+       -121.9555393,
+       37.7581033
+      ],
+      [
+       -121.9556657,
+       37.7582988
+      ],
+      [
+       -121.9560843,
+       37.7581283
+      ],
+      [
+       -121.9560748,
+       37.7581136
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 60",
+    "label": "Lot 60",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 60 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9599032,
+       37.757619
+      ],
+      [
+       -121.9598964,
+       37.7576358
+      ],
+      [
+       -121.9600345,
+       37.7578496
+      ],
+      [
+       -121.9602377,
+       37.7577668
+      ],
+      [
+       -121.9602587,
+       37.757715
+      ],
+      [
+       -121.9601354,
+       37.7575244
+      ],
+      [
+       -121.9599032,
+       37.757619
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 61",
+    "label": "Lot 61",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 61 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9598723,
+       37.7577489
+      ],
+      [
+       -121.9597016,
+       37.757485
+      ],
+      [
+       -121.9594551,
+       37.7575854
+      ],
+      [
+       -121.9596889,
+       37.7579471
+      ],
+      [
+       -121.9600124,
+       37.7578153
+      ],
+      [
+       -121.9599492,
+       37.7577176
+      ],
+      [
+       -121.9598723,
+       37.7577489
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 62",
+    "label": "Lot 62",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 62 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9594551,
+       37.7575854
+      ],
+      [
+       -121.9597016,
+       37.757485
+      ],
+      [
+       -121.9594678,
+       37.7571233
+      ],
+      [
+       -121.9592213,
+       37.7572237
+      ],
+      [
+       -121.9594551,
+       37.7575854
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 63",
+    "label": "Lot 63",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 63 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9590254,
+       37.7569207
+      ],
+      [
+       -121.9592024,
+       37.7571944
+      ],
+      [
+       -121.9594489,
+       37.757094
+      ],
+      [
+       -121.959272,
+       37.7568203
+      ],
+      [
+       -121.9590254,
+       37.7569207
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 64",
+    "label": "Lot 64",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 64 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9587917,
+       37.756559
+      ],
+      [
+       -121.9590254,
+       37.7569207
+      ],
+      [
+       -121.959272,
+       37.7568203
+      ],
+      [
+       -121.9590382,
+       37.7564586
+      ],
+      [
+       -121.9587917,
+       37.756559
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 65",
+    "label": "Lot 65",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 65 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.959093,
+       37.756393
+      ],
+      [
+       -121.9593489,
+       37.7567889
+      ],
+      [
+       -121.9595952,
+       37.7566886
+      ],
+      [
+       -121.9593614,
+       37.7563269
+      ],
+      [
+       -121.9592962,
+       37.7563102
+      ],
+      [
+       -121.959093,
+       37.756393
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 66",
+    "label": "Lot 66",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 66 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9593489,
+       37.7567889
+      ],
+      [
+       -121.9595258,
+       37.7570626
+      ],
+      [
+       -121.9597721,
+       37.7569623
+      ],
+      [
+       -121.9595952,
+       37.7566886
+      ],
+      [
+       -121.9593489,
+       37.7567889
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 67",
+    "label": "Lot 67",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 67 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9595448,
+       37.757092
+      ],
+      [
+       -121.9596633,
+       37.7572752
+      ],
+      [
+       -121.9599095,
+       37.7571749
+      ],
+      [
+       -121.9597911,
+       37.7569916
+      ],
+      [
+       -121.9595448,
+       37.757092
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 68",
+    "label": "Lot 68",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 68 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9598942,
+       37.7575455
+      ],
+      [
+       -121.9600959,
+       37.7574633
+      ],
+      [
+       -121.9599095,
+       37.7571749
+      ],
+      [
+       -121.9596633,
+       37.7572752
+      ],
+      [
+       -121.9598268,
+       37.7575283
+      ],
+      [
+       -121.9598942,
+       37.7575455
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 69",
+    "label": "Lot 69",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 69 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9587746,
+       37.7580789
+      ],
+      [
+       -121.9588978,
+       37.7582695
+      ],
+      [
+       -121.958963,
+       37.7582861
+      ],
+      [
+       -121.9591662,
+       37.7582034
+      ],
+      [
+       -121.9590279,
+       37.7579894
+      ],
+      [
+       -121.9590071,
+       37.7579841
+      ],
+      [
+       -121.9587746,
+       37.7580789
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 70",
+    "label": "Lot 70",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 70 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9591578,
+       37.75804
+      ],
+      [
+       -121.9590809,
+       37.7580714
+      ],
+      [
+       -121.9591441,
+       37.7581691
+      ],
+      [
+       -121.9594673,
+       37.7580375
+      ],
+      [
+       -121.9592335,
+       37.7576757
+      ],
+      [
+       -121.9589872,
+       37.7577761
+      ],
+      [
+       -121.9591578,
+       37.75804
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 71",
+    "label": "Lot 71",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 71 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9592335,
+       37.7576757
+      ],
+      [
+       -121.9589997,
+       37.757314
+      ],
+      [
+       -121.9587534,
+       37.7574144
+      ],
+      [
+       -121.9589872,
+       37.7577761
+      ],
+      [
+       -121.9592335,
+       37.7576757
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 72",
+    "label": "Lot 72",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 72 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9589807,
+       37.7572847
+      ],
+      [
+       -121.9588038,
+       37.757011
+      ],
+      [
+       -121.9585576,
+       37.7571113
+      ],
+      [
+       -121.9587345,
+       37.7573851
+      ],
+      [
+       -121.9589807,
+       37.7572847
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 73",
+    "label": "Lot 73",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 73 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9588038,
+       37.757011
+      ],
+      [
+       -121.95857,
+       37.7566493
+      ],
+      [
+       -121.9583238,
+       37.7567496
+      ],
+      [
+       -121.9585576,
+       37.7571113
+      ],
+      [
+       -121.9588038,
+       37.757011
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 74",
+    "label": "Lot 74",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 74 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9582343,
+       37.757243
+      ],
+      [
+       -121.9584806,
+       37.7571427
+      ],
+      [
+       -121.9582247,
+       37.7567468
+      ],
+      [
+       -121.9580215,
+       37.7568295
+      ],
+      [
+       -121.9580006,
+       37.7568813
+      ],
+      [
+       -121.9582343,
+       37.757243
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 75",
+    "label": "Lot 75",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 75 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9584806,
+       37.7571427
+      ],
+      [
+       -121.9582343,
+       37.757243
+      ],
+      [
+       -121.9584113,
+       37.7575167
+      ],
+      [
+       -121.9586575,
+       37.7574164
+      ],
+      [
+       -121.9584806,
+       37.7571427
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 76",
+    "label": "Lot 76",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 76 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9584302,
+       37.7575461
+      ],
+      [
+       -121.9585503,
+       37.7577318
+      ],
+      [
+       -121.9587965,
+       37.7576315
+      ],
+      [
+       -121.9586765,
+       37.7574457
+      ],
+      [
+       -121.9584302,
+       37.7575461
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 77",
+    "label": "Lot 77",
+    "stage": "entitled",
+    "height_ft": 35,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Single-family homes (court, detached and row homes)",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 77 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 35-ft limit for single-family homes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2",
+    "note": "The plan set's DMU-S standards table (sheet SP4) gives 30 ft; the newer design guidelines give 35 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9589371,
+       37.7579354
+      ],
+      [
+       -121.9589587,
+       37.7578823
+      ],
+      [
+       -121.9587965,
+       37.7576315
+      ],
+      [
+       -121.9585503,
+       37.7577318
+      ],
+      [
+       -121.9587351,
+       37.7580178
+      ],
+      [
+       -121.9589371,
+       37.7579354
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 78",
+    "label": "Lot 78",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 78 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.962825,
+       37.7576573
+      ],
+      [
+       -121.9623833,
+       37.7578373
+      ],
+      [
+       -121.9624908,
+       37.7580035
+      ],
+      [
+       -121.962994,
+       37.7577984
+      ],
+      [
+       -121.9628669,
+       37.7576017
+      ],
+      [
+       -121.9628053,
+       37.7576268
+      ],
+      [
+       -121.962825,
+       37.7576573
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 79",
+    "label": "Lot 79",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 79 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9627856,
+       37.7575962
+      ],
+      [
+       -121.9628053,
+       37.7576268
+      ],
+      [
+       -121.9628669,
+       37.7576017
+      ],
+      [
+       -121.962746,
+       37.7574147
+      ],
+      [
+       -121.9622427,
+       37.7576198
+      ],
+      [
+       -121.9623438,
+       37.7577762
+      ],
+      [
+       -121.9627856,
+       37.7575962
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 80",
+    "label": "Lot 80",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 80 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9625833,
+       37.7572834
+      ],
+      [
+       -121.9621416,
+       37.7574634
+      ],
+      [
+       -121.9622427,
+       37.7576198
+      ],
+      [
+       -121.962746,
+       37.7574147
+      ],
+      [
+       -121.9626251,
+       37.7572278
+      ],
+      [
+       -121.9625636,
+       37.7572529
+      ],
+      [
+       -121.9625833,
+       37.7572834
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 81",
+    "label": "Lot 81",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 81 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9625439,
+       37.7572224
+      ],
+      [
+       -121.9625636,
+       37.7572529
+      ],
+      [
+       -121.9626251,
+       37.7572278
+      ],
+      [
+       -121.9624948,
+       37.7570262
+      ],
+      [
+       -121.9619915,
+       37.7572312
+      ],
+      [
+       -121.9621021,
+       37.7574023
+      ],
+      [
+       -121.9625439,
+       37.7572224
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 82",
+    "label": "Lot 82",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 82 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9613662,
+       37.7574861
+      ],
+      [
+       -121.9614609,
+       37.7576327
+      ],
+      [
+       -121.9619078,
+       37.7574506
+      ],
+      [
+       -121.961813,
+       37.757304
+      ],
+      [
+       -121.9613662,
+       37.7574861
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 83",
+    "label": "Lot 83",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 83 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9610154,
+       37.7578142
+      ],
+      [
+       -121.9614609,
+       37.7576327
+      ],
+      [
+       -121.9613662,
+       37.7574861
+      ],
+      [
+       -121.9609206,
+       37.7576676
+      ],
+      [
+       -121.9610154,
+       37.7578142
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 84",
+    "label": "Lot 84",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 84 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9610154,
+       37.7578142
+      ],
+      [
+       -121.9609206,
+       37.7576676
+      ],
+      [
+       -121.9605509,
+       37.7578182
+      ],
+      [
+       -121.9606457,
+       37.7579649
+      ],
+      [
+       -121.9610154,
+       37.7578142
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 85",
+    "label": "Lot 85",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 85 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9604672,
+       37.7580376
+      ],
+      [
+       -121.9603724,
+       37.757891
+      ],
+      [
+       -121.9600569,
+       37.7580195
+      ],
+      [
+       -121.9601446,
+       37.7581553
+      ],
+      [
+       -121.9601654,
+       37.7581606
+      ],
+      [
+       -121.9604672,
+       37.7580376
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 86",
+    "label": "Lot 86",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 86 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9601169,
+       37.7581124
+      ],
+      [
+       -121.9600569,
+       37.7580195
+      ],
+      [
+       -121.9598427,
+       37.7581068
+      ],
+      [
+       -121.9598122,
+       37.7581378
+      ],
+      [
+       -121.959968,
+       37.7583789
+      ],
+      [
+       -121.9601453,
+       37.7583067
+      ],
+      [
+       -121.96004,
+       37.7581438
+      ],
+      [
+       -121.9601169,
+       37.7581124
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 87",
+    "label": "Lot 87",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 87 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9601938,
+       37.7587282
+      ],
+      [
+       -121.9603711,
+       37.758656
+      ],
+      [
+       -121.9601453,
+       37.7583067
+      ],
+      [
+       -121.959968,
+       37.7583789
+      ],
+      [
+       -121.9601938,
+       37.7587282
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 88",
+    "label": "Lot 88",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 88 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9604783,
+       37.7588219
+      ],
+      [
+       -121.9603711,
+       37.758656
+      ],
+      [
+       -121.9601938,
+       37.7587282
+      ],
+      [
+       -121.9603493,
+       37.7589687
+      ],
+      [
+       -121.9603988,
+       37.7589671
+      ],
+      [
+       -121.960613,
+       37.7588798
+      ],
+      [
+       -121.9605553,
+       37.7587906
+      ],
+      [
+       -121.9604783,
+       37.7588219
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 89",
+    "label": "Lot 89",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 89 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9609253,
+       37.7585719
+      ],
+      [
+       -121.9605345,
+       37.7587311
+      ],
+      [
+       -121.9605277,
+       37.7587479
+      ],
+      [
+       -121.960613,
+       37.7588798
+      ],
+      [
+       -121.9610178,
+       37.7587149
+      ],
+      [
+       -121.9609253,
+       37.7585719
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 90",
+    "label": "Lot 90",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 90 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.961617,
+       37.7584707
+      ],
+      [
+       -121.9615246,
+       37.7583277
+      ],
+      [
+       -121.9609253,
+       37.7585719
+      ],
+      [
+       -121.9610178,
+       37.7587149
+      ],
+      [
+       -121.961617,
+       37.7584707
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 91",
+    "label": "Lot 91",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 91 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9620745,
+       37.7581036
+      ],
+      [
+       -121.9615246,
+       37.7583277
+      ],
+      [
+       -121.961617,
+       37.7584707
+      ],
+      [
+       -121.9620476,
+       37.7582953
+      ],
+      [
+       -121.9622282,
+       37.7583414
+      ],
+      [
+       -121.9620745,
+       37.7581036
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 92",
+    "label": "Lot 92",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 92 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9617955,
+       37.7581402
+      ],
+      [
+       -121.9622361,
+       37.7579586
+      ],
+      [
+       -121.9621392,
+       37.7578086
+      ],
+      [
+       -121.9616975,
+       37.7579886
+      ],
+      [
+       -121.9617955,
+       37.7581402
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 93",
+    "label": "Lot 93",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 93 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9615056,
+       37.7576917
+      ],
+      [
+       -121.9616035,
+       37.7578432
+      ],
+      [
+       -121.9620452,
+       37.7576632
+      ],
+      [
+       -121.9619473,
+       37.7575117
+      ],
+      [
+       -121.9615056,
+       37.7576917
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 94",
+    "label": "Lot 94",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 94 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9615818,
+       37.7581826
+      ],
+      [
+       -121.9616491,
+       37.7581998
+      ],
+      [
+       -121.9617955,
+       37.7581402
+      ],
+      [
+       -121.9615056,
+       37.7576917
+      ],
+      [
+       -121.9613595,
+       37.7577512
+      ],
+      [
+       -121.9613377,
+       37.757805
+      ],
+      [
+       -121.9615818,
+       37.7581826
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 95",
+    "label": "Lot 95",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 95 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9610469,
+       37.7578786
+      ],
+      [
+       -121.9613368,
+       37.758327
+      ],
+      [
+       -121.9614834,
+       37.7582673
+      ],
+      [
+       -121.9615049,
+       37.7582141
+      ],
+      [
+       -121.9612606,
+       37.7578362
+      ],
+      [
+       -121.9611933,
+       37.757819
+      ],
+      [
+       -121.9610469,
+       37.7578786
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 96",
+    "label": "Lot 96",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 96 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9611449,
+       37.7580301
+      ],
+      [
+       -121.9610469,
+       37.7578786
+      ],
+      [
+       -121.9606852,
+       37.758026
+      ],
+      [
+       -121.9607832,
+       37.7581775
+      ],
+      [
+       -121.9611449,
+       37.7580301
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 97",
+    "label": "Lot 97",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 97 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9613368,
+       37.758327
+      ],
+      [
+       -121.9612389,
+       37.7581755
+      ],
+      [
+       -121.9608772,
+       37.7583229
+      ],
+      [
+       -121.9609751,
+       37.7584744
+      ],
+      [
+       -121.9613368,
+       37.758327
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 98",
+    "label": "Lot 98",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 98 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9604424,
+       37.7586159
+      ],
+      [
+       -121.9605563,
+       37.758645
+      ],
+      [
+       -121.9606765,
+       37.7585961
+      ],
+      [
+       -121.9603866,
+       37.7581476
+      ],
+      [
+       -121.9602667,
+       37.7581965
+      ],
+      [
+       -121.9602299,
+       37.7582872
+      ],
+      [
+       -121.9604424,
+       37.7586159
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 99",
+    "label": "Lot 99",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 99 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.957948,
+       37.7588788
+      ],
+      [
+       -121.9581755,
+       37.7592307
+      ],
+      [
+       -121.958339,
+       37.7591641
+      ],
+      [
+       -121.9583613,
+       37.7591091
+      ],
+      [
+       -121.958181,
+       37.75883
+      ],
+      [
+       -121.9581113,
+       37.7588122
+      ],
+      [
+       -121.957948,
+       37.7588788
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 100",
+    "label": "Lot 100",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 100 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9579423,
+       37.7590204
+      ],
+      [
+       -121.9578711,
+       37.7589101
+      ],
+      [
+       -121.9573957,
+       37.7591038
+      ],
+      [
+       -121.9574897,
+       37.7592492
+      ],
+      [
+       -121.9579208,
+       37.7590736
+      ],
+      [
+       -121.9579423,
+       37.7590204
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 101",
+    "label": "Lot 101",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 101 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9571416,
+       37.759391
+      ],
+      [
+       -121.9574897,
+       37.7592492
+      ],
+      [
+       -121.9573957,
+       37.7591038
+      ],
+      [
+       -121.9570939,
+       37.7592267
+      ],
+      [
+       -121.9570714,
+       37.7592824
+      ],
+      [
+       -121.9571416,
+       37.759391
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 102",
+    "label": "Lot 102",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 102 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9573211,
+       37.7595788
+      ],
+      [
+       -121.9576232,
+       37.7594557
+      ],
+      [
+       -121.9575292,
+       37.7593103
+      ],
+      [
+       -121.9571811,
+       37.7594521
+      ],
+      [
+       -121.9572515,
+       37.759561
+      ],
+      [
+       -121.9573211,
+       37.7595788
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Lot 103",
+    "label": "Lot 103",
+    "stage": "entitled",
+    "height_ft": 40,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Attached row townhomes",
+    "phase": "Neighborhood District (development plan approved)",
+    "illustrative": true,
+    "source": "illustrative: lot 103 from Vesting Tentative Map 9693 sheet C2.0 (plans PDF p. 172), drawn to the 40-ft limit for attached row townhomes in the Orchards Design Guidelines (Nov 14, 2025), p. 175, Figure 7.3.2"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9580701,
+       37.759218
+      ],
+      [
+       -121.9580195,
+       37.7591397
+      ],
+      [
+       -121.9579754,
+       37.7591285
+      ],
+      [
+       -121.9575292,
+       37.7593103
+      ],
+      [
+       -121.9576232,
+       37.7594557
+      ],
+      [
+       -121.9581755,
+       37.7592307
+      ],
+      [
+       -121.9581471,
+       37.7591867
+      ],
+      [
+       -121.9580701,
+       37.759218
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
