@@ -3,6 +3,19 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-18 (Esmeralda: the Oct 7 council hearing)
+
+**esmeralda**: Matthew asked for an update after the City Council hearings. The City's agenda report
+for Oct 14, 2026 (https://www.cloverdale.net/DocumentCenter/View/7092/Agenda-Report) says the Council
+held a public hearing on Oct 7, "decided not to take any action at that meeting, and instead provided
+direction regarding potential changes to the Development Agreement", and that on Oct 14 it would
+consider introducing the zoning and development agreement ordinances, with "a second reading of the
+ordinances" on Nov 11 if the first reading is approved, when it "will also consider action to approve the
+other proposed entitlements and Addendum". The Oct 7 event is added to the timeline, the stage note and
+next milestone now point to Nov 11, and the Oct 14 outcome stays a `verify` item: the minutes of
+neither meeting are posted yet. A press report of a 3–2 vote on Oct 14 was seen only as a search
+snippet and isn't recorded. Stage unchanged (in entitlement).
+
 ## 2026-10-17 (five new projects from the Oct 17 lead scan)
 
 Matthew asked to add the six strong leads in `docs/upkeep/leads-2026-10-17.md`. Five are added; the

@@ -2,7 +2,7 @@
   "_meta": {
     "title": "Bay Area megaprojects: researched project list",
     "preparedBy": "Claude (claude.ai chat) for Matthew Huguet",
-    "lastVerified": "2026-10-17",
+    "lastVerified": "2026-10-18",
     "notes": [
       "Every figure here came from the listed sources as of the lastVerified date. Items in each project's 'verify' list are known gaps; do not fill them by guessing.",
       "approxCenter values are rough [lon, lat] points for placing a marker only. Real site boundaries must come from official plan documents or parcel data, saved per project with their source.",
@@ -3917,7 +3917,7 @@
         "Sonoma County Airport Land Use Commission"
       ],
       "stage": "entitlement",
-      "stageNote": "In public hearings. On Oct 1, 2026 the Planning Commission voted 4–1 to recommend approval. The City Council takes up the zoning and development agreement ordinances on Oct 7 (first reading) and Oct 14, 2026, when it will also consider the other approvals and the CEQA addendum. Environmental review is an addendum to the 2009 Alexander Valley Resort EIR rather than a new EIR.",
+      "stageNote": "In public hearings. On Oct 1, 2026 the Planning Commission voted 4–1 to recommend approval. The City Council held its first hearing on Oct 7 and took no action, giving direction on changes to the development agreement; it met again on Oct 14 to consider introducing the zoning and development agreement ordinances, with their second reading and the other approvals set for Nov 11, 2026. Environmental review is an addendum to the 2009 Alexander Valley Resort EIR rather than a new EIR.",
       "timeline": [
         {
           "date": "2003-07-28",
@@ -3962,9 +3962,13 @@
         {
           "date": "2026-10-01",
           "event": "Planning Commission votes 4–1 to recommend that the City Council approve the project and adopt the addendum."
+        },
+        {
+          "date": "2026-10-07",
+          "event": "The City Council holds its first public hearing, takes no action and gives direction on changes to the development agreement."
         }
       ],
-      "nextMilestone": "City Council hearings on Oct 7 and Oct 14, 2026 (first and second readings of the zoning and development agreement ordinances); the City's schedule also allows the Council to send the approvals to voters.",
+      "nextMilestone": "City Council on Nov 11, 2026: second reading of the zoning and development agreement ordinances and action on the other approvals and the CEQA addendum, if the ordinances were introduced on Oct 14; the City's schedule also allows the Council to send the approvals to voters.",
       "summary": "A former sawmill site on the Russian River at Cloverdale's southern edge, long approved for a golf resort that was never built, now proposed as a walkable village with up to 605 homes, a 160-room hotel, shops and about 162 acres of publicly accessible open space. Building would be concentrated west of the SMART rail line, with the land toward the river kept mostly as parks and habitat.",
       "massingNotes": "Boundary: County of Sonoma parcels (socogis CRAPublic/ParcelsPublicShapeFile, layer 0), the 11 APNs in the Planning Commission staff report (Oct 1, 2026, p. 1); CC BY-SA 3.0 US, attribution \"County of Sonoma\". Drawn as approximate: the parcel shapes come to 265.4 acres against the Plan Area's 261.44 (256.8 assessor acres). They leave out the 80-foot SMART rail corridor, as the plan's land-use districts do, but include about 3.8 acres of parcel 116-310-014 outside Cloverdale's city limits, a narrow strip running northwest from the site's north corner that is the unincorporated Panhandle the plan excludes (checked against Specific Plan Figure 1-5, PDF p. 11, Addendum Exhibit 3, PDF p. 23, and the County's city limits layer). Approximate center from those parcels' centroids. Land use: the draft Specific Plan's districts (Figure 2-1, PDF p. 22; revised Sept 29, 2026), fitted to the parcel outline (RMS 1.9 m) and labelled draft, not yet adopted, with each district's height limit from Table 2-2 in its note (35 ft VMU and VR-1/VR-2, 25 ft VR-3 to VR-5, hotel up to 50 ft, open space 15 ft; airport limits may lower them). The illustrative site plan (Figure 1-2) is not drawn: plan-scale projects get zones, not buildings.",
       "officialLinks": [
@@ -3987,10 +3991,11 @@
         "https://ceqanet.lci.ca.gov/2003072142",
         "https://socogis.sonomacounty.ca.gov/map/rest/services/CRAPublic/ParcelsPublicShapeFile/FeatureServer/0",
         "https://cloverdale.granicus.com/services/legistar/download/pdf/4413447/Agenda_Report.pdf",
-        "https://cloverdale.granicus.com/services/legistar/download/pdf/4407703/Attachment_2_-_Ordinance_Adopting_DA.pdf"
+        "https://cloverdale.granicus.com/services/legistar/download/pdf/4407703/Attachment_2_-_Ordinance_Adopting_DA.pdf",
+        "https://www.cloverdale.net/DocumentCenter/View/7092/Agenda-Report"
       ],
       "verify": [
-        "the City Council's actions on Oct 7 and Oct 14, 2026, and whether it sends the approvals to voters (the City's schedule names March 9, 2027 as the earliest election)"
+        "the City Council's action on Oct 14, 2026 (whether it introduced the ordinances; minutes not yet posted), and whether it sends the approvals to voters (the City's schedule names March 9, 2027 as the earliest election)"
       ],
       "reported": {
         "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city, UC or other public records confirm each one.",
@@ -4001,7 +4006,7 @@
           "https://www.cp-dr.com/post/sonoma-development-hopes-to-break-california-s-new-urbanist-drought"
         ]
       },
-      "lastVerified": "2026-10-06"
+      "lastVerified": "2026-10-18"
     },
     {
       "id": "the-portal",
