@@ -43,5 +43,6 @@ describe('web font subset', () => {
     const hex = (ch: string) => ch.codePointAt(0)!.toString(16).toUpperCase().padStart(4, '0');
     const list = [...missing].map(([ch, file]) => `U+${hex(ch)} ${ch} (${file})`);
     expect(list, 'add these to WEB_UNICODES in pipeline/bam_pipeline/fonts.py').toEqual([]);
-  });
+    // It reads every geometry file in full (several MB), which can pass Vitest's 5 s default on a busy machine.
+  }, 30_000);
 });
