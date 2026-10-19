@@ -9632,6 +9632,320 @@
           "https://www.asce.org/publications-and-news/civil-engineering-source/civil-engineering-magazine/article/2023/12/berkeley-space-center-plans-unveiled-for-silicon-valley"
         ]
       }
+    },
+    {
+      "id": "98-franklin",
+      "name": "98 Franklin Street",
+      "aliases": [
+        "98 Franklin",
+        "International High School of the French American International School (98 Franklin Street)"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.4205,
+        37.775
+      ],
+      "camera": {
+        "center": [
+          -122.4203,
+          37.7748
+        ],
+        "zoom": 16.6,
+        "pitch": 58,
+        "bearing": -30
+      },
+      "acres": 0.55,
+      "acresNote": "The Planning Commission's 2020 approval: \"The Site is 23,750 square feet (0.55 acres) in area\", Assessor's Block 0836, Lots 008, 009 and 013, an L-shaped lot at Franklin and Oak streets with a strip through to Market Street. The City's parcel map gives about 22,380 sq ft (0.51 acres).",
+      "program": {
+        "homes": 345,
+        "affordableHomes": 69,
+        "affordablePct": 20,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": 3229,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "As approved on May 28, 2020 (Planning Commission Motion 20728): a 36-story building of about 524,014 gross sq ft, 365 ft to the roof (396 ft 8 in to the top of the rooftop screen). About 379,003 gross sq ft of housing on floors 7 to 36 holds 345 homes (259 studios or one-bedrooms, 52 two-bedrooms and 35 three-bedrooms), 69 of them (20%) affordable to households at 50% of area median income. A five-story podium, 68 ft tall, holds about 84,815 sq ft for the International High School of the French American International School (the EIR: up to 440 students) and about 3,229 sq ft of ground-floor retail; three basement levels hold up to 111 parking and 3 car-share spaces. A modification heard by the Planning Commission on March 30, 2023 would make it a 38-story building with a 400-ft roof (431 ft 6 in with the rooftop screen), about 560,543 gross sq ft and 385 homes on floors 6 to 38, with about 84,991 sq ft of school and 2,978 sq ft of retail. Its development agreement would let the developer dedicate land at 600 Van Ness Avenue to the City for affordable housing and would waive most of two affordable housing fees; Planning still lists that agreement as under review."
+      },
+      "developer": "Related California and the French American International School (98 Franklin Street, LLC)",
+      "publicPartners": [
+        "San Francisco Planning Commission",
+        "San Francisco Board of Supervisors"
+      ],
+      "stage": "entitled",
+      "stageNote": "The Planning Commission approved the building on May 28, 2020, and the City's development pipeline still lists it as approved (2026 Q2 snapshot). Nothing has been built: the site is still a commercial parking lot (in May 2026 Planning recommended approving its parking lot permit, a referral from the Police Department), and the Department of Building Inspection hasn't issued the site permit applied for in February 2021.",
+      "timeline": [
+        {
+          "date": "2017-10-27",
+          "event": "The developer files an environmental evaluation application for the project (case 2016-014802ENV)."
+        },
+        {
+          "date": "2018-05-23",
+          "event": "Planning issues the notice of preparation of one EIR for the Hub Plan, 30 Van Ness Avenue and 98 Franklin Street."
+        },
+        {
+          "date": "2019-07-24",
+          "event": "Planning publishes the Draft EIR."
+        },
+        {
+          "date": "2020-05-21",
+          "event": "Planning Commission certifies the Hub Plan, 30 Van Ness Avenue Project, 98 Franklin Street Project and Hub Housing Sustainability District Final EIR (Motion 20707)."
+        },
+        {
+          "date": "2020-05-28",
+          "event": "Planning Commission approves a 36-story, 365-ft building with 345 homes over a five-story high school podium: CEQA findings (Motion 20726), shadow findings (Motion 20727) and the Downtown Project Authorization (Motion 20728), each 7-0."
+        },
+        {
+          "date": "2020-08-03",
+          "event": "The City's notice of determination records the approval of the Hub Plan, 30 Van Ness and 98 Franklin Street projects as of this date, the first business day after the mayor signed the Hub Plan legislation on July 31, 2020."
+        },
+        {
+          "date": "2021-02-18",
+          "event": "Site permit application filed with the Department of Building Inspection for 37 stories and 345 homes with a private school (application 202102184905)."
+        },
+        {
+          "date": "2022-11-21",
+          "event": "The developer applies for a development agreement to raise the height limit from 365 to 400 ft and allow up to 385 homes (Board of Supervisors file 221163)."
+        },
+        {
+          "date": "2023-03-30",
+          "event": "Planning Commission hearing on the modification: amendments to the Planning Code and to the zoning map changing the site's height district from 85-X // 120/365-R-2 to 85-X // 120/400-R-2, shadow findings, the development agreement and a revised Downtown Project Authorization for a 38-story, 400-ft building with 385 homes."
+        },
+        {
+          "date": "2023-07-28",
+          "event": "Planning closes its records of the zoning map and Planning Code amendments as approved; the City's height and bulk map now places the site in the 85-X // 120/400-R-2 district."
+        },
+        {
+          "date": "2023-08-15",
+          "event": "Planning closes its records of the revised Downtown Project Authorization and shadow findings for the 400-ft design as approved. Its record of the development agreement is still open (\"Under Review\")."
+        }
+      ],
+      "nextMilestone": "Action on the development agreement (Board of Supervisors file 221163), which Planning still lists as under review, and the Department of Building Inspection's issuance of a site permit.",
+      "summary": "A 36-story, 365-ft tower with 345 homes, 69 of them affordable, over a five-story podium that would house the International High School of the French American International School, on a parking lot at Franklin and Oak streets that reaches through to Market Street, a block from Van Ness Avenue. Approved in 2020; a 2023 modification would raise it to 400 ft and 385 homes, tied to a development agreement that Planning still lists as under review.",
+      "massingNotes": "Added at Matthew's request (2026-10-19); a single-site project below the usual 1,000-home bar. Boundary: DataSF parcels (acdm-wktn), block 0836 lots 008, 009 and 013, the lots the approvals name (about 0.51 acres as drawn, against 23,750 sq ft in the approval); One Oak's site is about 20 m to the east, and the two don't touch. Massing (pipeline/bam_pipeline/sites/massing_98_franklin.py): a 365-ft tower and a 68-ft podium over the rest of the lots, the 2020 approved heights. The tower's faceted outline is the lower tower floor from the approved plans (Skidmore, Owings & Merrill, May 2020), registered to three parcel corners (RMS 0.01 m); the rooftop screen to 396 ft 8 in, the slightly smaller upper floors and the podium's roof terraces aren't drawn. The 400-ft modification isn't drawn: its development agreement is still under review and its plans couldn't be opened. Illustrative, drawn as entitled.",
+      "officialLinks": [
+        "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2016-014802PRJ",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200528_cal_min.pdf",
+        "https://sfplanning.org/sites/default/files/agendas/2023-03/20230330_cal%20%28ID%201361438%29.pdf"
+      ],
+      "sources": [
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2016-014802PRJ.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200528_cal_min.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200521_cal_min.pdf",
+        "https://sfplanning.org/sites/default/files/agendas/2023-03/20230330_cal%20%28ID%201361438%29.pdf",
+        "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2016-014802PRJ",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2016-014802DNX-02",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2016-014802SHD-02",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2016-014802MAP",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2016-014802PCA",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2016-014802DVA",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2026-003860MIS",
+        "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=0836013",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202102184905",
+        "https://data.sf.gov/resource/vckc-dh2h.json?reference_number=202102184905",
+        "https://data.sf.gov/d/h9wh-cg3m",
+        "https://ceqanet.lci.ca.gov/2018052060",
+        "https://ceqanet.lci.ca.gov/2018052060/2/Attachment/je2iTJ",
+        "https://ceqanet.lci.ca.gov/2018052060/3/Attachment/XWsd0-",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "whether the 2023 modification (38 stories, a 400-ft roof, up to 385 homes) is in effect: Planning closed its zoning map, code amendment, shadow and Downtown Project Authorization records as approved in July and August 2023, and the City's height map shows the 400-ft district, but Planning still lists the development agreement (Board of Supervisors file 221163) as under review; the 2023 minutes, motions and ordinance couldn't be opened",
+        "whether the 2020 approval is still valid: its conditions gave three years from approval to obtain a site permit unless extended, and the site permit applied for in 2021 hasn't been issued",
+        "the motion numbers of the 2023 approvals and the number and date of the ordinance that changed the site's height district",
+        "the number of stories: 36 in the 2020 approval, 37 on the 2021 site permit application",
+        "the lot area: about 23,750 sq ft in the approval and the EIR, about 22,380 sq ft in the City's parcel map"
+      ],
+      "lastVerified": "2026-10-19"
+    },
+    {
+      "id": "santana-row",
+      "name": "Santana Row Master Plan Update",
+      "aliases": [
+        "Santana Row",
+        "Santana Row Master Plan Update Project"
+      ],
+      "city": "San José",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -121.9479,
+        37.3205
+      ],
+      "camera": {
+        "center": [
+          -121.9479,
+          37.3205
+        ],
+        "zoom": 16.0,
+        "pitch": 58,
+        "bearing": -75
+      },
+      "acres": 42.53,
+      "acresNote": "The notice of preparation (Feb 2026) gives an approximately 42.53-acre site at the southeast corner of Stevens Creek and Winchester boulevards, the same figure as its 2022 version, before the 0.54-acre Lot 22 was added. It names nine parcels, the lots that would change (APNs 277-33-017, -019 and -020, 277-40-029 and -031, and 277-38-003, -004, -005 and -012; about 5.9 acres). The County parcels inside the project boundary of its Figure 4 come to about 42.8 acres, Lot 22 included.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 1500000,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "As proposed (revised notice of preparation, Feb 2026, Table 4.0-1): four office buildings with 1,500,000 sq ft in all, on Lot 1A/B/C at Stevens Creek and Winchester boulevards (700,000 sq ft, 144 ft tall), Lot 2B on Stevens Creek Boulevard (325,000 sq ft, 144 ft), Lot 10A on Olsen Drive (200,000 sq ft, 139 ft) and Lot 17 on Dudley Avenue (275,000 sq ft, 162 ft). The notice counts this as 1,272,081 sq ft more than the site's existing entitlement (file PDC13-050). The rezoning would allow up to approximately 2,780,000 sq ft of office in all, existing and proposed (the 2022 notice said office and commercial space), set a 150-ft height limit on Lots 1, 2B and 10A and 162 ft on Lot 17 (plus mechanical screening parapets), and add about 2,147 parking spaces, most of them on Lots 1 and 17. Lot 22, a 0.54-acre parcel added in 2026, would be a possible sign location. Table 4.0-1 lists office only. CEQAnet's record of the notice gives 4,240 employees. Santana Row today (the notice's Table 3.0-1): 834 homes built and 258 under construction of 1,229 approved; 214 of 220 approved hotel rooms; 584,395 sq ft of shops and restaurants and 606,535 sq ft of offices built; about 6,231 parking spaces."
+      },
+      "developer": "Federal Realty Investment Trust",
+      "publicPartners": [
+        "City of San José (lead agency; Planned Development rezoning and permits)"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In environmental review. San José issued a notice of preparation of an EIR for the Santana Row Master Plan Update in November 2022 and re-issued it on Feb 13, 2026 after Lot 22 was added, taking scoping comments until Mar 25, 2026. The project would need a new Planned Development rezoning and Planned Development permits. No Draft EIR had been posted to CEQAnet as of Oct 19, 2026.",
+      "timeline": [
+        {
+          "date": "2013-12-23",
+          "event": "San José issues a notice of preparation for the Santana Row Expansion (file PDC13-050): 1.91 acres added as Lot 17, 510,000 sq ft more office space, 55,641 sq ft more retail, 47 more homes and six more hotel rooms."
+        },
+        {
+          "date": "2015-03-23",
+          "event": "The Draft EIR for the Santana Row Expansion is published for comment (to May 6, 2015)."
+        },
+        {
+          "date": "2022-11-09",
+          "event": "San José issues a notice of preparation of an EIR for the Santana Row Master Plan Update (files PDC22-004 and ER22-107): four buildings with 1,500,000 sq ft of office and commercial space."
+        },
+        {
+          "date": "2022-11-17",
+          "event": "Public scoping meeting."
+        },
+        {
+          "date": "2026-02-13",
+          "event": "The City re-issues the notice of preparation, adding the 0.54-acre Lot 22."
+        },
+        {
+          "date": "2026-03-25",
+          "event": "Scoping comments close."
+        }
+      ],
+      "nextMilestone": "A Draft EIR (no date published).",
+      "summary": "A plan to add four office buildings, 1.5 million sq ft in all and 139 to 162 ft tall, to Santana Row, the 42.5-acre district of shops, restaurants, homes, offices and a hotel at Stevens Creek and Winchester boulevards in west San José. Federal Realty's application would rezone the site for about 1.27 million sq ft more office space than it is approved for, with about 2,147 new parking spaces; the City is preparing an EIR.",
+      "massingNotes": "Added at Matthew's request (2026-10-19). Boundary (data/boundaries/santana-row.geojson, approximate; pipeline/bam_pipeline/sites/boundary_santana_row.py): the notice of preparation names only the nine parcels that would change (5.9 acres), so the site is the Santa Clara County parcels (data.sccgov.org ubcd-cewv) inside the dashed project boundary of the notice's Figure 4, Lot Division Diagram (PDF p. 8), with those nine: 605 parcels, including the private streets and the condominium parcels inside the blocks, 42.8 acres against the notice's 42.53. Figure 4 was placed from its lot labels and fitted to the parcels by trimmed ICP of its dashed line (RMS 1.4 m). Illustrative massing (data/massing/santana-row.geojson, massing_santana_row.py): the four lots where Table 4.0-1 puts new offices, each the County parcels for its APNs, drawn as a whole-lot envelope at the table's height: Lot 1A/B/C 144 ft, Lot 2B 144 ft, Lot 10A 139 ft and Lot 17 162 ft. The notice shows no building design, so these are envelopes, not buildings; the parapets the rezoning would allow aren't drawn. The existing Santana Row buildings aren't drawn. All stage entitlement.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/Project/2013122059"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/Project/2013122059",
+        "https://ceqanet.lci.ca.gov/2013122059",
+        "https://ceqanet.lci.ca.gov/2013122059/2",
+        "https://ceqanet.lci.ca.gov/2013122059/3",
+        "https://ceqanet.lci.ca.gov/2013122059/3/Attachment/lrKplZ",
+        "https://ceqanet.lci.ca.gov/2013122059/3/Attachment/TUaXzI",
+        "https://ceqanet.lci.ca.gov/Project/2022110177",
+        "https://ceqanet.lci.ca.gov/2022110177",
+        "https://ceqanet.lci.ca.gov/2022110177/Attachment/TJVTCQ",
+        "https://data.sccgov.org/d/ubcd-cewv"
+      ],
+      "verify": [
+        "when the City approved the 2013 Santana Row Expansion (file PDC13-050) and certified its EIR: the notice of preparation calls PDC13-050 the site's existing zoning and entitlement and refers to a previously certified EIR, but CEQAnet holds no notice of determination for it",
+        "the 2,780,000 sq ft total: the 2026 notice calls it office (existing and proposed), the 2022 notice and Caltrans' 2026 comment letter office and commercial space; it is close to the approved commercial space (1,506,341 sq ft of shops, restaurants and offices) plus the 1,272,081 sq ft proposed",
+        "where each building would stand on its lot: the notice gives only floor area and height for each lot, so the map draws whole-lot envelopes",
+        "what stands on Lots 1A/B/C, 2B and 10A today and whether it would be replaced; the notice doesn't say",
+        "the number of new parking spaces: the notice gives about 2,147, but its lot-by-lot changes (1,460 more on Lot 1 and 831 more on Lot 17, 97 fewer on Lot 2B) come to 2,194",
+        "the site's area: 42.53 acres in both the 2022 and 2026 notices, although Lot 22 (about 0.54 acres) was added in 2026",
+        "the Draft EIR's date (none on CEQAnet as of Oct 19, 2026; the City's active EIR page couldn't be reached)"
+      ],
+      "lastVerified": "2026-10-19"
+    },
+    {
+      "id": "gateway-crossings",
+      "name": "Gateway Crossings",
+      "aliases": [
+        "Gateway Crossings Project",
+        "1205 Coleman Avenue"
+      ],
+      "city": "Santa Clara",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -121.9342,
+        37.3553
+      ],
+      "camera": {
+        "center": [
+          -121.9342,
+          37.3551
+        ],
+        "zoom": 16.2,
+        "pitch": 55,
+        "bearing": -58
+      },
+      "acres": 21.4,
+      "acresNote": "About 21.4 acres at 1205 Coleman Avenue (notice of determination, July 2019); CEQAnet records the site as APNs 230-46-069 and 230-46-070. The County has since replaced those two parcels with new lots and streets; drawn from them, the site comes to about 21.3 acres. A 2021 City study for a neighbouring hotel describes the site as approximately 24 acres.",
+      "program": {
+        "homes": 1565,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": 197000,
+        "retailSqft": 45000,
+        "hotelKeys": 225,
+        "openSpaceAcres": 2.6,
+        "notes": "As approved: 1,565 homes and 197,000 sq ft of commercial uses, including a 225-room hotel and 45,000 sq ft of ancillary retail, with two public parks totaling about 2.6 acres, structured and surface parking, private streets and a new public street (notice of determination, July 9, 2019). A 2021 City study puts the hotel at 152,000 sq ft and describes the project as a phased development. The 2017 notice of preparation studied up to 1,600 homes and 215,000 sq ft of commercial space. The number of affordable homes, the building heights and the site plan are in the April 2018 Draft EIR, which isn't posted on CEQAnet and couldn't be read."
+      },
+      "developer": "Hunter Storm Properties",
+      "publicPartners": [
+        "City of Santa Clara (lead agency)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. The City of Santa Clara approved the project on July 9, 2019, with its EIR, a statement of overriding considerations, a vesting tentative subdivision map and a development agreement. A City study of March 2021 for a hotel across Coleman Avenue described the site as vacant, and VTA's February 2024 fact sheet for its Santa Clara BART station calls Gateway Crossings a future development. The County's parcel map now shows the site divided into new lots and streets, which suggests a final subdivision map has recorded, but that is not evidence of construction, and no building permit or construction record could be checked.",
+      "timeline": [
+        {
+          "date": "2017-02-22",
+          "event": "Santa Clara issues a notice of preparation for an EIR on Gateway Crossings: a General Plan amendment to allow 51 to 100 homes per acre with a minimum commercial floor area ratio of 0.20, and a rezoning. CEQAnet lists up to 1,600 homes and 215,000 sq ft of commercial space."
+        },
+        {
+          "date": "2018-04-10",
+          "event": "The Draft EIR is released for comment, until May 24, 2018."
+        },
+        {
+          "date": "2019-07-09",
+          "event": "The City of Santa Clara approves the project with its EIR, a vesting tentative subdivision map and a development agreement: 1,565 homes and 197,000 sq ft of commercial uses, including a 225-room hotel and 45,000 sq ft of retail, with two public parks of about 2.6 acres."
+        },
+        {
+          "date": "2026-06-12",
+          "event": "Santa Clara issues a notice of preparation for the Santa Clara Station Area Specific Plan, whose plan area takes in the Gateway Crossings lots."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "A 21-acre former industrial site on Coleman Avenue in Santa Clara, beside the Santa Clara Caltrain station where BART's Silicon Valley extension is planned to end, approved in 2019 for 1,565 homes, a 225-room hotel and 45,000 sq ft of shops, with two public parks. Part of the site was a factory that built military tracked vehicles until 1996. It lies inside the area of the City's Santa Clara Station Area Specific Plan, whose environmental review began in 2026.",
+      "massingNotes": "Added at Matthew's request (2026-10-19). The site lies inside the Santa Clara Station Area Specific Plan area (santa-clara-station-area), which is drawn separately; Gateway Crossings is shown as its own project because it has its own approval. Boundary (data/boundaries/gateway-crossings.geojson, official): the Santa Clara County parcels (data.sccgov.org ubcd-cewv) that replaced the approval's two APNs, 230-60-001 to -008 and -010, and the four unnumbered street lots between them; 21.3 acres against the approval's 21.4. No massing: the site plan and building heights are in the April 2018 Draft EIR, which isn't posted on CEQAnet, and the City's site couldn't be reached.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/Project/2017022066"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/Project/2017022066",
+        "https://ceqanet.lci.ca.gov/2017022066",
+        "https://ceqanet.lci.ca.gov/2017022066/2",
+        "https://ceqanet.lci.ca.gov/2017022066/3",
+        "https://ceqanet.lci.ca.gov/2017022066/3/Attachment/d5qjId",
+        "https://ceqanet.lci.ca.gov/2021030592/Attachment/4isyVj",
+        "https://ceqanet.lci.ca.gov/2026060462",
+        "https://ceqanet.lci.ca.gov/2026060462/Attachment/mtsQbf",
+        "https://www.vta.org/sites/default/files/2024-02/bsv_santa-clara-fact-sheet.pdf",
+        "https://data.sccgov.org/d/ubcd-cewv"
+      ],
+      "verify": [
+        "whether construction has started: the County's parcel layer now shows the site as new lots with street addresses (1200 Rickabaugh Way, 330 Chastain Place), which suggests a final map has recorded, but Santa Clara's permit records and project pages (santaclaraca.gov) couldn't be reached; the latest official documents read (March 2021, February 2024) describe the site as vacant or the development as future",
+        "the number of affordable homes, the building heights and the site plan, which are in the April 2018 Draft EIR and the approval's resolutions; neither is posted on CEQAnet and the City's site couldn't be reached",
+        "any change to the approval since July 2019, such as an amendment to the development agreement; no later CEQA document for the project is on CEQAnet",
+        "the site area: the notice of determination says about 21.4 acres and a 2021 City study about 24 acres; the boundary is drawn from the lots that replaced the approval's two APNs and comes to 21.3 acres",
+        "the developer: the 2019 notice names Hunter Storm Properties as applicant; who is building each phase now hasn't been confirmed from an official source"
+      ],
+      "lastVerified": "2026-10-19"
     }
   ]
 }

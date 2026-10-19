@@ -231,7 +231,7 @@ All done. Matthew's reviews and calls along the way are in `docs/DECISIONS.md`.
 - M2, vertical slice: Potrero Power Station end to end (boundary, massing by block and
   stage, fly-in, panel, deep link). Done Oct 2, 2026; reviewed by Matthew.
 - M3: every project as boundaries with panels, index, filters and legend. Done Oct 3, 2026 with the
-  original 25; the map has since grown to 84.
+  original 25; the map has since grown to 87.
 - M4: massing for every project in batches of five, plus the plan-scale treatment. Done Oct 3 to 5.
 - M5: about page, credits, performance, mobile, deployment. Done; the phone, accessibility and speed
   audit is `docs/AUDIT-2026-10.md` (Oct 16, 2026).

@@ -111,6 +111,30 @@ entitlement. Boundary traced from the project's land use plan; nine land-use zon
 the Regents' meeting record and NASA's decision are `verify` items (nasa.gov, the Regents and berkeley.edu weren't
 reachable).
 
+Three of the leads, added the same day at Matthew's request (research in `candidates-98-franklin.md`,
+`candidates-santana-row.md` and `candidates-gateway-crossings.md`):
+
+**98-franklin** (new): a 36-story, 365-ft tower with 345 homes (69 affordable) over a five-story podium for the
+French American International School's high school, at Franklin and Oak streets next to One Oak. Approved May 28,
+2020 (Motions 20726 to 20728; minutes at
+https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200528_cal_min.pdf). A 2023 modification to 400 ft and
+385 homes depends on a development agreement Planning still lists as under review, so the 2020 design is shown and
+drawn. Entitled; the site permit is filed, not issued. Massing traced from the approved floor plans.
+
+**santana-row** (new): Federal Realty's Santana Row Master Plan Update in San José: four office buildings, 1.5
+million sq ft and 139 to 162 ft tall, about 1.27 million sq ft over the existing entitlement, on the 42.53-acre
+site. Notice of preparation re-issued Feb 13, 2026 (https://ceqanet.lci.ca.gov/Project/2013122059); no Draft EIR
+yet. In entitlement. Boundary from the County parcels inside the notice's project boundary; the four lots as
+illustrative envelopes at the notice's heights.
+
+**gateway-crossings** (new): Gateway Crossings at 1205 Coleman Avenue, Santa Clara: 1,565 homes, a 225-room hotel
+and 45,000 sq ft of retail on about 21.4 acres, approved July 9, 2019 (https://ceqanet.lci.ca.gov/Project/2017022066).
+Entitled; construction couldn't be confirmed from an official source. It lies inside the mapped Santa Clara Station
+Area plan. Boundary from the County's successor lots (approximate); no massing.
+
+Also: `official_boundaries.build()` now drops zero-area sliver parts, which left invalid geometry in some parcel
+boundaries; 524 Howard, Transbay Parcel F and Freedom Circle were rebuilt with unchanged areas.
+
 `_meta.lastVerified` is now 2026-10-19.
 
 ## 2026-10-19 (Larkspur ferry expansion added; Harbor Bay held)

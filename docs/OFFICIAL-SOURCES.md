@@ -123,9 +123,10 @@ network access; the "Update with full network access" sections in `docs/official
 supersede it.
 
 ### Next
-- The 2026-10-19 pass added 19 projects: San Francisco towers and sites, four South Bay projects and the
-  Berkeley Space Center (notes `docs/official-research/candidates-sf-*.md`,
-  `candidates-south-bay-2026-10.md`, `candidates-berkeley-space-center.md`; leads not added in
+- The 2026-10-19 pass added 22 projects: San Francisco towers and sites, six South Bay projects and the
+  Berkeley Space Center (notes `docs/official-research/candidates-sf-*.md`, `candidates-98-franklin.md`,
+  `candidates-south-bay-2026-10.md`, `candidates-santana-row.md`, `candidates-gateway-crossings.md`,
+  `candidates-berkeley-space-center.md`; leads not added in
   `docs/upkeep/leads-2026-10-19.md`). That session's network refused sfbos.org, sfgov.legistar.com, sf.gov,
   citypln-m-extnl.sfgov.org (Planning Commission packets and minutes from 2023 on), sfocii.org, nasa.gov,
   the UC Regents, berkeley.edu and the South Bay cities' sites, so Board ordinance numbers, 2023+ motion
