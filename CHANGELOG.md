@@ -113,6 +113,57 @@ reachable).
 
 `_meta.lastVerified` is now 2026-10-19.
 
+## 2026-10-19 (Larkspur ferry expansion added; Harbor Bay held)
+
+**larkspur-ferry-expansion** (new, transportation): Matthew asked to add the proposed ferry projects
+"farther down the line", the two he pre-approved on Oct 12. The Golden Gate Bridge, Highway and
+Transportation District's Larkspur ferry service and parking expansion is added at its current stage,
+in entitlement: notice of preparation of a Draft EIR, Sept 30, 2024 (CEQAnet SCH 2024091190); no Draft
+EIR yet. Service would grow "from 42 daily trips to as many as 76 daily trips through 2050", possibly with
+a new route to the foot of 16th Street, plus more parking and better access to the SMART station. The
+site (terminal, main and overflow lots, SMART station link, 14.5 acres as drawn) is traced from the
+NOP's Figure 2 and drawn as approximate. Facts from CEQAnet, the NOP, the District's study page and Plan
+Bay Area 2050+; research in `docs/official-research/candidates-harbor-bay-larkspur-ferries.md`. The
+District's site, goldengate.org, joins the official hosts.
+
+**Harbor Bay replacement terminal** (WETA, not added): WETA has published no site, CEQA document or
+figure for the new terminal, only that it will be "north of the existing terminal" (FY27 budget, p. 19).
+A boundary around the existing terminal would be the wrong place, and one to the north would be
+invented, so it stays on the pre-approved list until WETA shows a site.
+
+## 2026-10-19 (BART station-area housing split into six station projects)
+
+Matthew asked to separate the BART station housing into each station. `bart-station-housing` is removed
+and replaced by six projects, each built only from the facts, sources and geometry the program record
+already had for that station (nothing re-checked, so `lastVerified` stays 2026-10-07):
+
+- **west-oakland-bart** (West Oakland BART, Mandela Station): under construction (240 affordable homes since
+  Sept 14, 2026); 762 homes (240 affordable, 31% per BART), about 300,000 sq ft of office and 53,000 sq ft of
+  retail (BART's West Oakland page); 5.5 acres.
+- **lake-merritt-bart**: under construction (senior Building B since Oct 2024, completion spring 2027 per
+  BART); 557 homes, 40% affordable (BART Board report, 2022), up to 500,000 sq ft of office; 2.8 acres. The
+  program record's "233 affordable" was a sum of BART's per-building figures and is now stated as those
+  figures in the notes, with the share as the Board report gives it.
+- **north-berkeley-bart**: entitled (City of Berkeley, Dec 11, 2024, under AB 2011); 739 homes, 381
+  affordable; 8.1 acres. Adds the February 2024 AB 2011 application, from the City's 2024 General Plan
+  progress report already cited.
+- **ashby-bart** (Ashby BART, West Lot): proposed (developer selected, negotiating agreement February 2026,
+  no application with the City yet); up to 600 homes, half affordable; 4.5 acres. Adds the Dec 20, 2024
+  exchange agreement from BART's Ashby page, already cited. The envelope's 80-ft R-BMU limit is now cited to
+  the City's Preliminary Objective Design Standards for the Ashby West Lot (Dec 2024, Sec. 1.2, posted on
+  bart.gov) instead of the North Berkeley standards; same limit.
+- **el-cerrito-plaza-bart**: under construction (Parcel A South since Nov 2025); 743 homes, 350 affordable by
+  the City's approvals (BART: 351), stated in the notes; 7.5 acres. Keeps the building-heights `verify` item.
+- **amador-station** (Amador Station, West Dublin/Pleasanton BART): entitled (Dublin Planning Commission,
+  Aug 10, 2021); 300 homes, all affordable; 3.6 acres.
+
+Each gets its own boundary (`data/boundaries/<id>.geojson`, the same BART TOD Work Plan parcels and accuracy
+as its part of the old boundary) and massing (`data/massing/<id>.geojson`, the same features), written by
+`bam_pipeline.sites.bart_stations` (renamed from `bart_station_housing`; `make sites`). Each has its own
+landing camera. The Lake Merritt photo moves to `lake-merritt-bart`. The program's other notes (Walnut
+Creek Phase III, Fremont, Bay Fair, Richmond Phase II) move to `_meta.candidatesNotYetResearched`. The
+program-level facts (3,701 homes in all; 4,232 homes delivered at 15 stations) are no longer shown.
+
 ## 2026-10-18 (Esmeralda: the Oct 7 council hearing)
 
 **esmeralda**: Matthew asked for an update after the City Council hearings. The City's agenda report

@@ -1,5 +1,5 @@
 import type { Map as MapLibreMap } from 'maplibre-gl';
-import { areaOf, centroidOf, isLineProject, MAPPED_PROJECTS, markersOf, siteOf } from '../projects/data';
+import { areaOf, centroidOf, isLineProject, MAPPED_PROJECTS, siteOf } from '../projects/data';
 
 /**
  * Each project is a dot until its site is big enough on screen to draw as its own shape, then the
@@ -14,11 +14,11 @@ export const LAST_DOT_ZOOM = 13;
 /** The swap is a short fade in time (instant with reduced motion), so a still map never shows a site half drawn. */
 const FADE_MS = 200;
 
-/** How wide a site reads, in metres: the side of a square of its area (one piece's, for a scattered program). */
+/** How wide a site reads, in metres: the side of a square of its area. */
 export function siteWidth(id: string): number {
   const site = siteOf(id);
   if (!site) return 0;
-  return Math.sqrt(areaOf(site.geometry) / Math.max(1, markersOf(id).length));
+  return Math.sqrt(areaOf(site.geometry));
 }
 
 /** The zoom at which a project's site is HANDOVER_PX across (512-px tiles), at the latest LAST_DOT_ZOOM. */

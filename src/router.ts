@@ -11,6 +11,21 @@ export function projectIdFromPath(path: string = location.pathname): string | nu
   return m ? m[1] : null;
 }
 
+/**
+ * Project ids that no longer exist, and the index search that lists what replaced them, so old
+ * links still land somewhere useful: the map opens with the index showing those projects.
+ */
+export const RETIRED_IDS: Record<string, string> = {
+  // Split into one project per station (Matthew, 2026-10-19).
+  'bart-station-housing': 'BART TOD',
+};
+
+/** The index search for a link to a retired project id, or null. */
+export function retiredQuery(path: string = location.pathname): string | null {
+  const id = projectIdFromPath(path);
+  return id && Object.prototype.hasOwnProperty.call(RETIRED_IDS, id) ? RETIRED_IDS[id] : null;
+}
+
 export function isAboutPath(path: string = location.pathname): boolean {
   return /^about\/?$/.test(rest(path));
 }

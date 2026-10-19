@@ -90,7 +90,7 @@ sites:
 	$(PY) bam_pipeline.sites.lines_cahsr_sf_sj
 	$(PY) bam_pipeline.sites.lines_valley_link
 	$(PY) bam_pipeline.sites.lines_smart
-	$(PY) bam_pipeline.sites.bart_station_housing
+	$(PY) bam_pipeline.sites.bart_stations
 	$(PY) bam_pipeline.sites.boundary_the_orchards
 	$(PY) bam_pipeline.sites.massing_the_orchards
 	$(PY) bam_pipeline.sites.boundary_santa_clara_station_area
@@ -117,6 +117,7 @@ sites:
 	$(PY) bam_pipeline.sites.massing_sf_gateway
 	$(PY) bam_pipeline.sites.boundary_berkeley_space_center
 	$(PY) bam_pipeline.sites.landuse_berkeley_space_center
+	$(PY) bam_pipeline.sites.boundary_larkspur_ferry_expansion
 
 photos:
 	$(PY) bam_pipeline.photos

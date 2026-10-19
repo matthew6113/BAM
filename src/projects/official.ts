@@ -33,6 +33,7 @@ const OFFICIAL_HOSTS = [
   // Transit and regional agencies' own sites, several on non-government domains
   // (Matthew, 2026-10-07: approved, with the agenda and document stores below)
   'vta.org', // Santa Clara Valley Transportation Authority (www., gis., gtfs. subdomains)
+  'goldengate.org', // Golden Gate Bridge, Highway and Transportation District (Golden Gate Ferry; Matthew, 2026-10-19)
   'vtabart.org', // VTA's BART Silicon Valley Phase II project site (reports, FTA oversight reports)
   'diridonsj.org', // Diridon Station partner agencies' project site, run by the City of San José
   'santaclaravta.iqm2.com', // VTA's agenda system (Board, BSVII Oversight, Diridon Steering Committee)

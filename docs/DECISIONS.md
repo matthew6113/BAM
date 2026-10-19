@@ -281,3 +281,24 @@ From `docs/AUDIT-2026-10.md`:
   middle zooms but loses the building print the map is built on.
 - E (street-level tile headers only when zoomed in) was done without a look change; G (800 px photos)
   was left, since a 3× phone would still pick the 1200 px file.
+
+## 2026-10-19: BART station housing, one project per station (Matthew)
+
+Matthew: "Please separate out the BART station housing to each individual station." This reverses the
+Oct 2026 choice to map BART's station-area housing as one program-level project (`bart-station-housing`,
+added 2026-10-07 and kept as the one program record when the ferry terminals were added as separate
+projects). Each station is now its own project, so each flies in to its own site and states its own stage:
+
+- `west-oakland-bart` (Mandela Station): under construction, 762 homes.
+- `lake-merritt-bart`: under construction, 557 homes.
+- `north-berkeley-bart`: entitled, 739 homes.
+- `ashby-bart` (West Lot): proposed, up to 600 homes. A developer is selected and negotiating, but no
+  application has been filed with the City, so "proposed" rather than "in entitlement".
+- `el-cerrito-plaza-bart`: under construction, 743 homes.
+- `amador-station` (West Dublin/Pleasanton): entitled, 300 homes.
+
+What goes with the program record: the one-dot-per-station handling for a scattered site (each project now
+has one dot like every other), and the program's sums (3,701 homes, 800,000 sq ft of office). The old link
+`/p/bart-station-housing` opens the map with the Projects list showing the six stations (`RETIRED_IDS` in
+`src/router.ts`). Walnut Creek's last phase, Fremont, Bay Fair and Richmond, which the program record named
+but didn't draw, are listed under `_meta.candidatesNotYetResearched`.

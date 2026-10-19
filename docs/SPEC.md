@@ -231,7 +231,7 @@ All done. Matthew's reviews and calls along the way are in `docs/DECISIONS.md`.
 - M2, vertical slice: Potrero Power Station end to end (boundary, massing by block and
   stage, fly-in, panel, deep link). Done Oct 2, 2026; reviewed by Matthew.
 - M3: every project as boundaries with panels, index, filters and legend. Done Oct 3, 2026 with the
-  original 25; the map has since grown to 78.
+  original 25; the map has since grown to 84.
 - M4: massing for every project in batches of five, plus the plan-scale treatment. Done Oct 3 to 5.
 - M5: about page, credits, performance, mobile, deployment. Done; the phone, accessibility and speed
   audit is `docs/AUDIT-2026-10.md` (Oct 16, 2026).
@@ -254,7 +254,8 @@ Settled since the first draft:
 - Hosting on GitHub Pages, moving to map.matthewhuguet.com (Oct 9, 2026).
 - Mission Bay stays on the map, as partly built.
 - Mare Island, the Sonoma Developmental Center and BART station-area housing were researched and
-  added.
+  added. BART station-area housing is one project per station since Oct 19, 2026 (West Oakland, Lake
+  Merritt, North Berkeley, Ashby, El Cerrito Plaza and Amador Station).
 
 Still open:
 - The final palette and type (the placeholders ship until then).

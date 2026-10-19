@@ -11,6 +11,8 @@ interface Props {
   onExpand?: () => void;
   /** Open the suggestion form on the about page. */
   onSuggest?: (opener: HTMLElement) => void;
+  /** Start with the list open (a link to a retired project lists what replaced it). */
+  defaultExpanded?: boolean;
 }
 
 const SUBREGIONS = [...new Set(MAPPED_PROJECTS.map((p) => p.subregion))].sort();
@@ -25,8 +27,8 @@ const TABS = [
  * doubles as a filter, and a subregion filter. The same filter decides which projects the
  * map draws.
  */
-export function ProjectIndex({ openId, onOpen, filter, onFilter, onExpand, onSuggest }: Props) {
-  const [expanded, setExpanded] = useState(false);
+export function ProjectIndex({ openId, onOpen, filter, onFilter, onExpand, onSuggest, defaultExpanded = false }: Props) {
+  const [expanded, setExpanded] = useState(defaultExpanded);
   const tabList = useRef<HTMLDivElement>(null);
   const toggle = useRef<HTMLButtonElement>(null);
   // Escape inside the open list closes it and returns focus to its toggle. It stops there: the

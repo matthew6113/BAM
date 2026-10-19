@@ -226,3 +226,14 @@ test('a project not yet on the map does not open its unchecked record', async ({
   await expect.poll(() => new URL(page.url()).pathname).toBe('/');
   await expect(page.locator('.project-panel')).toHaveCount(0);
 });
+
+test('a link to a retired project lists the projects that replaced it', async ({ page }) => {
+  // BART station-area housing became one project per station (Matthew, 2026-10-19).
+  await page.goto('/p/bart-station-housing?test=1');
+  await ready(page);
+  await expect.poll(() => new URL(page.url()).pathname).toBe('/');
+  await expect(page.locator('.project-panel')).toHaveCount(0);
+  await expect(page.locator('.index-toggle')).toHaveAttribute('aria-expanded', 'true');
+  await expect(page.locator('#project-index-list > li')).toHaveCount(6);
+  await expect(page.locator('#project-index-list')).toContainText('Lake Merritt BART');
+});
