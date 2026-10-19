@@ -1,0 +1,74 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "amador-station",
+  "source": "BART TOD Work Plan layer (BART AB 2923 public service, layer 2): APNs 941-2842-002-00 and 941-2842-004-00, named in the City of Dublin's Notice of Determination for Amador Station (CEQAnet SCH 2010022005, received July 28, 2026)",
+  "sourceLabel": "BART TOD parcels",
+  "sourceUrl": "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
+  "query": "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2/query?where=APN_D+IN+%28%27941-2842-002-00%27%2C+%27941-2842-004-00%27%29&outFields=%2A&outSR=4326&f=geojson",
+  "accuracy": "official",
+  "accuracyNote": "Drawn from BART's own parcel layer: APNs 941-2842-002-00 and 941-2842-004-00, named in the City of Dublin's Notice of Determination for Amador Station (CEQAnet SCH 2010022005, received July 28, 2026). 3.6 acres as drawn.",
+  "license": "BART public ArcGIS Online service (no license stated)",
+  "apns": [
+   "941-2842-004-00",
+   "941-2842-002-00"
+  ],
+  "features_used": 2
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9296713,
+       37.7010014
+      ],
+      [
+       -121.9282777,
+       37.7014427
+      ],
+      [
+       -121.9281105,
+       37.7011094
+      ],
+      [
+       -121.9280891,
+       37.7011112
+      ],
+      [
+       -121.9278544,
+       37.7006433
+      ],
+      [
+       -121.9280941,
+       37.7005836
+      ],
+      [
+       -121.9280233,
+       37.7003954
+      ],
+      [
+       -121.9281668,
+       37.7003548
+      ],
+      [
+       -121.9292189,
+       37.7000997
+      ],
+      [
+       -121.9296713,
+       37.7010014
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

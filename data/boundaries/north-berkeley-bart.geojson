@@ -1,0 +1,68 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "north-berkeley-bart",
+  "source": "BART TOD Work Plan layer (BART AB 2923 public service, layer 2): the four parcels BART's TOD Work Plan layer marks “In Progress” at North Berkeley (BART: “about 8.2 acres of BART-owned land surrounding the station”); they include the station",
+  "sourceLabel": "BART TOD parcels",
+  "sourceUrl": "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
+  "query": "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2/query?where=STATION_AR+%3D+%27North+Berkeley%27+AND+TOD_WKPLAN+%3D+%27In+Progress%27&outFields=%2A&outSR=4326&f=geojson",
+  "accuracy": "approximate",
+  "accuracyNote": "Drawn from BART's own parcel layer: the four parcels BART's TOD Work Plan layer marks “In Progress” at North Berkeley (BART: “about 8.2 acres of BART-owned land surrounding the station”); they include the station. 8.1 acres as drawn. The parcels include station land that won't be built on.",
+  "license": "BART public ArcGIS Online service (no license stated)",
+  "apns": [
+   "058-2146-016-05",
+   "058-2147-018-05",
+   "058-2149-019-04",
+   "058-2148-017-04"
+  ],
+  "features_used": 4
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2846932,
+       37.8744963
+      ],
+      [
+       -122.2826483,
+       37.8747662
+      ],
+      [
+       -122.2825389,
+       37.8739638
+      ],
+      [
+       -122.2824483,
+       37.8731507
+      ],
+      [
+       -122.2845126,
+       37.8728929
+      ],
+      [
+       -122.2846026,
+       37.8737024
+      ],
+      [
+       -122.2846136,
+       37.8737059
+      ],
+      [
+       -122.2846932,
+       37.8744963
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

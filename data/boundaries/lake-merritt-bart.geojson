@@ -1,0 +1,80 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "lake-merritt-bart",
+  "source": "BART TOD Work Plan layer (BART AB 2923 public service, layer 2): APNs 001-0169-001-00 (Block 1) and 001-0171-002-00 (Block 2), named in the Oakland DRC staff report of Apr 14, 2021 (PLN20038), p. 8",
+  "sourceLabel": "BART TOD parcels",
+  "sourceUrl": "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
+  "query": "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2/query?where=APN_D+IN+%28%27001-0169-001-00%27%2C+%27001-0171-002-00%27%29&outFields=%2A&outSR=4326&f=geojson",
+  "accuracy": "official",
+  "accuracyNote": "Drawn from BART's own parcel layer: APNs 001-0169-001-00 (Block 1) and 001-0171-002-00 (Block 2), named in the Oakland DRC staff report of Apr 14, 2021 (PLN20038), p. 8. 2.8 acres as drawn.",
+  "license": "BART public ArcGIS Online service (no license stated)",
+  "apns": [
+   "001-0171-002-00",
+   "001-0169-001-00"
+  ],
+  "features_used": 2
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2652812,
+        37.7969915
+       ],
+       [
+        -122.2649743,
+        37.7974837
+       ],
+       [
+        -122.2640397,
+        37.7971167
+       ],
+       [
+        -122.2643466,
+        37.7966244
+       ],
+       [
+        -122.2652812,
+        37.7969915
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2668905,
+        37.796765
+       ],
+       [
+        -122.2665836,
+        37.7972571
+       ],
+       [
+        -122.2656531,
+        37.7968916
+       ],
+       [
+        -122.26596,
+        37.7963995
+       ],
+       [
+        -122.2668905,
+        37.796765
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

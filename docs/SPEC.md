@@ -254,7 +254,8 @@ Settled since the first draft:
 - Hosting on GitHub Pages, moving to map.matthewhuguet.com (Oct 9, 2026).
 - Mission Bay stays on the map, as partly built.
 - Mare Island, the Sonoma Developmental Center and BART station-area housing were researched and
-  added.
+  added. BART station-area housing is one project per station since Oct 19, 2026 (West Oakland, Lake
+  Merritt, North Berkeley, Ashby, El Cerrito Plaza and Amador Station).
 
 Still open:
 - The final palette and type (the placeholders ship until then).

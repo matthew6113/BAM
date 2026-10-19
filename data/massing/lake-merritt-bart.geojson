@@ -1,0 +1,366 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "lake-merritt-bart",
+  "illustrative": false,
+  "summary": "Lot lines traced from the 2021 vesting tentative tract map, with heights and bases from the City of Oakland's zoning table and tower setbacks from the plan sheets. Building B is drawn as its lot.",
+  "note": "The approved design on both blocks: Buildings A and B on Block 1, C and D on Block 2.",
+  "sourceUrl": "https://www.oaklandca.gov/files/assets/city/v/1/planning-amp-building/documents/dp/lake-merritt-bart/041421_drcstaffreport_lmbart_signed.pdf",
+  "sourceLabel": "Lake Merritt staff report, 2021 (PDF)",
+  "georeference": {
+   "Block 1": {
+    "scale_m_per_unit": 0.06113,
+    "rotation_deg": -25.877,
+    "rms_m": 0.07,
+    "controls": [
+     {
+      "label": "Block 1: 9th St / Oak St block corner",
+      "residual_m": 0.07
+     },
+     {
+      "label": "Block 1: 9th St / Fallon St block corner",
+      "residual_m": 0.07
+     },
+     {
+      "label": "Block 1: 8th St / Fallon St block corner",
+      "residual_m": 0.07
+     },
+     {
+      "label": "Block 1: 8th St / Oak St block corner",
+      "residual_m": 0.07
+     }
+    ],
+    "page": "DRC staff report PDF p. 81 (sheet C4.1)"
+   },
+   "Block 2": {
+    "scale_m_per_unit": 0.06094,
+    "rotation_deg": -25.882,
+    "rms_m": 0.17,
+    "controls": [
+     {
+      "label": "Block 2: 8th St / Madison St block corner",
+      "residual_m": 0.18
+     },
+     {
+      "label": "Block 2: 8th St / Oak St block corner",
+      "residual_m": 0.17
+     },
+     {
+      "label": "Block 2: 7th St / Oak St block corner",
+      "residual_m": 0.17
+     },
+     {
+      "label": "Block 2: 7th St / Madison St block corner",
+      "residual_m": 0.17
+     }
+    ],
+    "page": "DRC staff report PDF p. 82 (sheet C4.2)"
+   }
+  },
+  "license": "Plans: City of Oakland public records; parcels: BART public ArcGIS Online service (no license stated)",
+  "documents": [
+   "https://www.oaklandca.gov/files/assets/city/v/1/planning-amp-building/documents/dp/lake-merritt-bart/041421_drcstaffreport_lmbart_signed.pdf",
+   "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
+   "https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/Lake-Merrit-BART-Transit-Oriented-Development",
+   "https://www.bart.gov/about/business/tod/lakemerritt"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "Lake Merritt Block 1",
+    "label": "Building A tower",
+    "stage": "entitled",
+    "height_ft": 275,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: Lake Merritt BART TOD, City of Oakland Design Review Committee staff report, Apr 14, 2021 (PLN20038), with the Preliminary Development Plan set, sheet C4.1 (Vesting Tentative Tract Map, Block 1), PDF p. 81; tower set back 26'-7\" from the lot's west line per sheet A2.13 (PDF p. 94); height: staff report p. 8, “Building A: 275 ft”",
+    "note": "28 stories; 360 homes in the 2021 plan. BART's upcoming-projects page now lists a 439-home market-rate building here."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2640397,
+       37.7971173
+      ],
+      [
+       -122.2641534,
+       37.7969351
+      ],
+      [
+       -122.2643754,
+       37.7969546
+      ],
+      [
+       -122.2647837,
+       37.7971753
+      ],
+      [
+       -122.2646664,
+       37.7973634
+      ],
+      [
+       -122.2640397,
+       37.7971173
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "Lake Merritt Block 1",
+    "label": "Building A base",
+    "stage": "entitled",
+    "height_ft": 48,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential, retail",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: Lake Merritt BART TOD, City of Oakland Design Review Committee staff report, Apr 14, 2021 (PLN20038), with the Preliminary Development Plan set, sheet C4.1 (Vesting Tentative Tract Map, Block 1), PDF p. 81; height: staff report p. 8, building base “Building A: 48 ft”"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2646669,
+       37.7973636
+      ],
+      [
+       -122.2647842,
+       37.7971755
+      ],
+      [
+       -122.2648607,
+       37.7972169
+      ],
+      [
+       -122.2647491,
+       37.7973959
+      ],
+      [
+       -122.2646669,
+       37.7973636
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "Lake Merritt Block 1",
+    "label": "Building B (Chinatown senior homes)",
+    "stage": "construction",
+    "height_ft": 83,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable senior residential",
+    "phase": "Phase 1",
+    "illustrative": false,
+    "source": "traced: Lake Merritt BART TOD, City of Oakland Design Review Committee staff report, Apr 14, 2021 (PLN20038), with the Preliminary Development Plan set, sheet C4.1 (Vesting Tentative Tract Map, Block 1), PDF p. 81 (Lot 2); height: staff report p. 8, “Building B: 83 ft”; under construction per BART (https://www.bart.gov/about/business/tod/lakemerritt)",
+    "note": "7 stories, 97 affordable senior homes. BART's pages give the construction start as October 2024 (project page) and June 2025 (upcoming-projects page). The lot is drawn; the building is slightly smaller."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2651212,
+       37.796928
+      ],
+      [
+       -122.2650528,
+       37.7970377
+      ],
+      [
+       -122.2650139,
+       37.797083
+      ],
+      [
+       -122.2643021,
+       37.7966966
+      ],
+      [
+       -122.2643473,
+       37.7966241
+      ],
+      [
+       -122.2651212,
+       37.796928
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "Lake Merritt Block 2",
+    "label": "Building C tower (office)",
+    "stage": "entitled",
+    "height_ft": 275,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: Lake Merritt BART TOD, City of Oakland Design Review Committee staff report, Apr 14, 2021 (PLN20038), with the Preliminary Development Plan set, sheet C4.2 (Vesting Tentative Tract Map, Block 2), PDF p. 82; tower set back 22'-8\" from the west lot line and 11'-0\" from Oak Street per sheet A2.33 (floors 4-12, PDF p. 109); height: staff report p. 8, “Building C: 275 ft”",
+    "note": "19 stories, up to 500,000 sq ft of office (City of Oakland). Upper floors may step in further; drawn at the floors 4-12 outline."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2661294,
+       37.7970772
+      ],
+      [
+       -122.265687,
+       37.7969035
+      ],
+      [
+       -122.2659925,
+       37.7964137
+      ],
+      [
+       -122.2664349,
+       37.7965875
+      ],
+      [
+       -122.2661294,
+       37.7970772
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "Lake Merritt Block 2",
+    "label": "Building C base",
+    "stage": "entitled",
+    "height_ft": 45,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, retail",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: Lake Merritt BART TOD, City of Oakland Design Review Committee staff report, Apr 14, 2021 (PLN20038), with the Preliminary Development Plan set, sheet C4.2 (Vesting Tentative Tract Map, Block 2), PDF p. 82; height: staff report p. 8, building base “Building C: 45 ft”"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2661299,
+        37.7970774
+       ],
+       [
+        -122.2664354,
+        37.7965877
+       ],
+       [
+        -122.2665053,
+        37.7966151
+       ],
+       [
+        -122.2661999,
+        37.7971049
+       ],
+       [
+        -122.2661299,
+        37.7970774
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2656528,
+        37.7968901
+       ],
+       [
+        -122.2659583,
+        37.7964003
+       ],
+       [
+        -122.265992,
+        37.7964135
+       ],
+       [
+        -122.2656865,
+        37.7969033
+       ],
+       [
+        -122.2656528,
+        37.7968901
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "Lake Merritt Block 2",
+    "label": "Building D (family homes)",
+    "stage": "entitled",
+    "height_ft": 83,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable residential",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: Lake Merritt BART TOD, City of Oakland Design Review Committee staff report, Apr 14, 2021 (PLN20038), with the Preliminary Development Plan set, sheet C4.2 (Vesting Tentative Tract Map, Block 2), PDF p. 82 (Lot 2, 24,810 sq ft, split from Lot 1 along the 200-ft lot line); height: staff report p. 8, “Building D: 83 ft”",
+    "note": "7 stories, 100 affordable family homes."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2665853,
+       37.7972563
+      ],
+      [
+       -122.2661999,
+       37.7971049
+      ],
+      [
+       -122.2665053,
+       37.7966151
+      ],
+      [
+       -122.2668908,
+       37.7967665
+      ],
+      [
+       -122.2665853,
+       37.7972563
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

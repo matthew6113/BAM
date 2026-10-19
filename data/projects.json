@@ -2,7 +2,7 @@
   "_meta": {
     "title": "Bay Area megaprojects: researched project list",
     "preparedBy": "Claude (claude.ai chat) for Matthew Huguet",
-    "lastVerified": "2026-10-18",
+    "lastVerified": "2026-10-19",
     "notes": [
       "Every figure here came from the listed sources as of the lastVerified date. Items in each project's 'verify' list are known gaps; do not fill them by guessing.",
       "approxCenter values are rough [lon, lat] points for placing a marker only. Real site boundaries must come from official plan documents or parcel data, saved per project with their source.",
@@ -33,7 +33,10 @@
         "reason": "Removed from the map at Matthew's request (2026-10-07). It was researched and drawn on 2026-10-07; the research and draft record stay in docs/official-research/ (candidates-link21-valleylink-waterfront.md, draft-records/sf-waterfront-flood-defense.json)."
       }
     ],
-    "candidatesNotYetResearched": []
+    "candidatesNotYetResearched": [
+      "BART Walnut Creek Transit Village Phase III (about 240 homes, in planning; BART's upcoming TOD page). Probably on APN 174-180-004-7, the only lease-option parcel there without buildings in BART's TOD Work Plan layer; no document ties the phase to it yet.",
+      "BART Fremont TOD first phase (8 acres; RFP released Apr 28, 2026, developer selection expected October 2026), Bay Fair (predevelopment planning, no developer) and Richmond Transit Village Phase II (City of Richmond to solicit a developer). See docs/official-research/update-2026-10-07-east-north.md."
+    ]
   },
   "stages": [
     {
@@ -5066,52 +5069,50 @@
       "lastVerified": "2026-10-07"
     },
     {
-      "id": "bart-station-housing",
-      "name": "BART station-area housing",
+      "id": "west-oakland-bart",
+      "name": "West Oakland BART (Mandela Station)",
       "aliases": [
-        "BART transit-oriented development",
+        "Mandela Station",
+        "West Oakland TOD",
         "BART TOD"
       ],
-      "city": "Oakland, Berkeley, El Cerrito and Dublin",
+      "city": "Oakland",
       "county": "Alameda",
       "subregion": "East Bay",
       "category": "buildings",
       "approxCenter": [
-        -122.26,
-        37.84
+        -122.2951,
+        37.8047
       ],
       "camera": {
         "center": [
-          -122.246,
-          37.8398
+          -122.2951,
+          37.8047
         ],
-        "zoom": 10.35,
-        "pitch": 45,
-        "bearing": 66
+        "zoom": 16.7,
+        "pitch": 58,
+        "bearing": -25
       },
-      "acres": 32,
-      "acresNote": "Sum of the acreages BART's TOD Work Plan GIS layer gives for the parcels drawn at the six sites: West Oakland 5.5, Lake Merritt 2.8, North Berkeley 8.1, Ashby West Lot 4.5, El Cerrito Plaza 7.5 and Amador Station 3.6. At North Berkeley, Ashby and El Cerrito Plaza the parcels include station entrances and track land that won't be built on (El Cerrito's approved master plan site is about 6 acres plus the 0.48-acre Parcel A South).",
+      "acres": 5.5,
+      "acresNote": "The parcels BART's TOD Work Plan GIS layer marks in progress at the station, 5.5 acres as drawn. The City of Oakland describes about 5.58 acres between 7th, 5th and Chester Streets and Mandela Parkway; BART says about five.",
       "program": {
-        "homes": 3701,
-        "affordableHomes": null,
-        "affordablePct": null,
-        "officeLabSqft": 800000,
+        "homes": 762,
+        "affordableHomes": 240,
+        "affordablePct": 31,
+        "officeLabSqft": 300000,
         "commercialSqftTotal": null,
-        "retailSqft": null,
+        "retailSqft": 53000,
         "hotelKeys": null,
         "openSpaceAcres": null,
-        "notes": "Homes are a sum of the official per-site figures: West Oakland 762 (522 market rate, 240 affordable), Lake Merritt 557, North Berkeley 739, Ashby West Lot up to 600, El Cerrito Plaza 743 and Amador Station 300 in two buildings of 136 and 164 (3,701, with Ashby at its upper figure). Office is a sum too: about 300,000 sq ft at West Oakland and up to 500,000 sq ft at Lake Merritt. Affordable homes by site: 240 at West Oakland, 233 at Lake Merritt, 381 at North Berkeley, half of Ashby's, 350 at El Cerrito Plaza and all 300 at Amador Station. Retail: about 53,000 sq ft at West Oakland, up to 16,500 sq ft at Lake Merritt and smaller ground-floor spaces elsewhere. Walnut Creek's last phase (about 240 homes, in planning) isn't counted."
+        "notes": "762 homes: 522 market rate and 240 affordable (City of Oakland; BART's July 2026 Board update gives the same split). About 300,000 sq ft of office and 53,000 sq ft of ground-floor retail, a bike station and a plaza (BART)."
       },
-      "developer": "Six teams selected by BART: Mandela Station Partners and Mandela Station Affordable (West Oakland); Strada Investment Group and East Bay Asian Local Development Corporation (Lake Merritt); North Berkeley Housing Partners (BRIDGE Housing, EBALDC, Insight Housing and AvalonBay Communities); Adeline Alliance Partners with Resources for Community Development (Ashby); Holliday Development, Related California and Satellite Affordable Housing Associates (El Cerrito Plaza); and The Related Companies of California (Amador Station)",
+      "developer": "Mandela Station Partners and Mandela Station Affordable",
       "publicPartners": [
         "BART",
-        "City of Oakland",
-        "City of Berkeley",
-        "City of El Cerrito",
-        "City of Dublin"
+        "City of Oakland"
       ],
       "stage": "construction",
-      "stageNote": "Three sites are under construction: El Cerrito Plaza's first building (since November 2025), Lake Merritt's senior building (since October 2024; BART expects completion in spring 2027) and West Oakland's 240 affordable homes (since September 2026). North Berkeley is entitled (December 2024) and Amador Station, approved in 2021, is waiting for funding, and the City of Dublin is reviewing building permits for its first building. The Ashby West Lot has a developer (negotiating agreement signed February 2026) but no application with the City yet.",
+      "stageNote": "Construction of the first phase, the 240 affordable homes of building T3, began in September 2026. The rest, the 31-story T1 tower with 522 market-rate homes and the T4 office building, is approved under the 2020 revised Preliminary Development Plan.",
       "timeline": [
         {
           "date": "2018-09-30",
@@ -5126,12 +5127,433 @@
           "event": "Oakland Planning Commission approves the revised West Oakland Preliminary Development Plan."
         },
         {
-          "date": "2020-11-19",
-          "event": "BART Board selects Holliday Development, Related California and SAHA for El Cerrito Plaza."
+          "date": "2023-05",
+          "event": "BART and Mandela Station Partners sign a lease option for West Oakland."
+        },
+        {
+          "date": "2026-09-14",
+          "event": "Construction of West Oakland's 240 affordable homes begins."
+        }
+      ],
+      "summary": "BART's parking lots on both sides of West Oakland station, becoming Mandela Station: 762 homes, 240 of them affordable, about 300,000 sq ft of offices and 53,000 sq ft of shops on about five acres. The affordable building is under construction; a 31-story tower and an office building are to follow.",
+      "massingNotes": "Buildings traced from the 2020 revised Preliminary Development Plan (RMS 0.2 m), with heights from its elevations and sections: the T1 tower 320 ft, T3 70 ft and the T4 office building 100 ft. Boundary: the parcels BART's TOD Work Plan GIS layer marks in progress at the station. Split from the program-level BART station-area housing entry at Matthew's request (2026-10-19).",
+      "officialLinks": [
+        "https://www.bart.gov/about/business/tod/westoakland",
+        "https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/West-Oakland-BART-Development-Mandela-Station"
+      ],
+      "sources": [
+        "https://www.bart.gov/about/business/tod/upcoming",
+        "https://www.bart.gov/about/business/tod/westoakland",
+        "https://www.bart.gov/news/articles/2026/news20260901-0",
+        "https://www.bart.gov/about/business/tod/ab2923",
+        "https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/West-Oakland-BART-Development-Mandela-Station",
+        "https://www.oaklandca.gov/files/assets/city/v/1/planning-amp-building/documents/dp/mandela-station-bart/wo-bart-pdp-revised-approval-dated-september-16-2020.pdf",
+        "https://bart.legistar1.com/bart/attachments/08720c9b-3cc2-478d-a267-b29d7dd52f0f.pdf",
+        "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2"
+      ],
+      "verify": [],
+      "lastVerified": "2026-10-07"
+    },
+    {
+      "id": "lake-merritt-bart",
+      "name": "Lake Merritt BART",
+      "aliases": [
+        "Lake Merritt TOD",
+        "Chinatown senior TOD",
+        "BART TOD"
+      ],
+      "city": "Oakland",
+      "county": "Alameda",
+      "subregion": "East Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -122.2655,
+        37.7969
+      ],
+      "camera": {
+        "center": [
+          -122.2655,
+          37.7969
+        ],
+        "zoom": 16.8,
+        "pitch": 58,
+        "bearing": -30
+      },
+      "acres": 2.8,
+      "acresNote": "APNs 001-0169-001-00 (Block 1) and 001-0171-002-00 (Block 2), named by the City of Oakland (Design Review Committee staff report, Apr 14, 2021, p. 8), as drawn in BART's TOD Work Plan GIS layer: 2.8 acres on two blocks across 8th Street.",
+      "program": {
+        "homes": 557,
+        "affordableHomes": null,
+        "affordablePct": 40,
+        "officeLabSqft": 500000,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "557 homes, 40% of them affordable, in the plan the Oakland Planning Commission approved on May 19, 2021 (BART Board report, 2022): Building A with 360 homes (36 affordable), the 97-home senior Building B and the 100-home family Building D. Up to 500,000 sq ft of office in Building C, including about 25,000 sq ft below market rate (BART), and up to 16,500 sq ft of retail. BART's upcoming-projects page lists a 439-home Building A; no approval of a larger Building A was found, and BART's July 2026 Board update still shows 360."
+      },
+      "developer": "Strada Investment Group and East Bay Asian Local Development Corporation",
+      "publicPartners": [
+        "BART",
+        "City of Oakland"
+      ],
+      "stage": "construction",
+      "stageNote": "The 97-home senior building (Building B) and a new paseo have been under construction since October 2024; BART expects completion in spring 2027. The other buildings, a 28-story tower with homes, the office tower and the family building, have no construction date yet (BART: other phases to be determined).",
+      "timeline": [
+        {
+          "date": "2018-09-30",
+          "event": "Governor signs AB 2923, setting zoning standards for BART-owned land near stations in Alameda, Contra Costa and San Francisco counties."
         },
         {
           "date": "2021-05-19",
           "event": "Oakland Planning Commission approves the Lake Merritt Preliminary Development Plan (557 homes) and its CEQA findings."
+        },
+        {
+          "date": "2022-07-20",
+          "event": "City of Oakland approves the final development plan for Lake Merritt's senior building."
+        },
+        {
+          "date": "2024-10-17",
+          "event": "Construction of Lake Merritt's 97-home senior building begins with a groundbreaking."
+        }
+      ],
+      "nextMilestone": "The senior building's completion (BART: spring 2027).",
+      "summary": "Two blocks at Lake Merritt station in Oakland: the former station parking lot and the block of BART's MET building across 8th Street. The approved plan has 557 homes, 40% of them affordable, and up to 500,000 sq ft of offices in two 275-ft towers and two lower buildings. The senior building is under construction.",
+      "massingNotes": "Lot lines traced from the 2021 vesting tentative tract map (RMS under 0.2 m); heights and bases from the City's zoning table (Buildings A and C 275 ft, B and D 83 ft) and tower footprints from the plan sheets. Boundary: the two APNs the City of Oakland names. Split from the program-level BART station-area housing entry at Matthew's request (2026-10-19).",
+      "officialLinks": [
+        "https://www.bart.gov/about/business/tod/lakemerritt",
+        "https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/Lake-Merrit-BART-Transit-Oriented-Development"
+      ],
+      "sources": [
+        "https://www.bart.gov/about/business/tod/upcoming",
+        "https://www.bart.gov/about/business/tod/lakemerritt",
+        "https://www.bart.gov/about/business/tod/ab2923",
+        "https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/Lake-Merrit-BART-Transit-Oriented-Development",
+        "https://www.oaklandca.gov/files/assets/city/v/1/planning-amp-building/documents/dp/lake-merritt-bart/041421_drcstaffreport_lmbart_signed.pdf",
+        "https://abag.ca.gov/news/oakland-celebrates-groundbreaking-new-affordable-housing-seniors",
+        "https://bart.legistar1.com/bart/attachments/16be8698-d087-474d-af27-34a157f46d12.pdf",
+        "https://bart.legistar1.com/bart/attachments/08720c9b-3cc2-478d-a267-b29d7dd52f0f.pdf",
+        "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2"
+      ],
+      "verify": [],
+      "lastVerified": "2026-10-07"
+    },
+    {
+      "id": "north-berkeley-bart",
+      "name": "North Berkeley BART",
+      "aliases": [
+        "North Berkeley TOD",
+        "1750 Sacramento St",
+        "BART TOD"
+      ],
+      "city": "Berkeley",
+      "county": "Alameda",
+      "subregion": "East Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -122.2836,
+        37.8738
+      ],
+      "camera": {
+        "center": [
+          -122.2836,
+          37.8738
+        ],
+        "zoom": 16.75,
+        "pitch": 55,
+        "bearing": -20
+      },
+      "acres": 8.1,
+      "acresNote": "The four parcels BART's TOD Work Plan GIS layer marks in progress at the station: 8.1 acres as drawn (BART: about 8.2 acres). They include the station and paths that won't be built on.",
+      "program": {
+        "homes": 739,
+        "affordableHomes": 381,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "739 homes, 381 of them affordable to lower-income households, in 13 buildings of 3 to 8 stories, with over 6,000 sq ft of community-serving ground-floor space and over 48,000 sq ft of publicly accessible open space, as approved by the City of Berkeley on Dec 11, 2024. BART's own figures vary (about 743 homes, 382 affordable, on its project page)."
+      },
+      "developer": "North Berkeley Housing Partners (BRIDGE Housing, EBALDC, Insight Housing and AvalonBay Communities)",
+      "publicPartners": [
+        "BART",
+        "City of Berkeley"
+      ],
+      "stage": "entitled",
+      "stageNote": "Entitled: the City of Berkeley approved the project under AB 2011 on December 11, 2024. BART and the developer executed the option agreement in June 2026, and BART expects the first phase to start construction in 2027.",
+      "timeline": [
+        {
+          "date": "2018-09-30",
+          "event": "Governor signs AB 2923, setting zoning standards for BART-owned land near stations in Alameda, Contra Costa and San Francisco counties."
+        },
+        {
+          "date": "2022-06",
+          "event": "Berkeley City Council adopts the R-BMU zoning district for the North Berkeley and Ashby BART stations."
+        },
+        {
+          "date": "2024-02",
+          "event": "North Berkeley Housing Partners applies for streamlined approval under AB 2011."
+        },
+        {
+          "date": "2024-12-11",
+          "event": "City of Berkeley approves the North Berkeley project, 739 homes, under AB 2011."
+        },
+        {
+          "date": "2026-06",
+          "event": "BART and North Berkeley Housing Partners execute the option agreement for North Berkeley."
+        }
+      ],
+      "nextMilestone": "First phase to start construction (BART: 2027).",
+      "summary": "BART's main parking lots at North Berkeley station, approved in December 2024 for 739 homes, more than half of them affordable, in buildings of 3 to 8 stories around the station, with improvements to the Ohlone Greenway and new public open space.",
+      "massingNotes": "Illustrative envelope: the approved buildings aren't drawn, so BART's parcels are drawn to the 80-ft height limit of Berkeley's R-BMU zoning (City of Berkeley, North Berkeley BART Objective Design Standards, 2023), with existing buildings cut out. Boundary: the four parcels BART's TOD Work Plan GIS layer marks in progress. Split from the program-level BART station-area housing entry at Matthew's request (2026-10-19).",
+      "officialLinks": [
+        "https://www.bart.gov/about/business/tod/north-berkeley",
+        "https://berkeleyca.gov/construction-development/land-use-development/general-plan-and-area-plans/ashby-and-north-berkeley"
+      ],
+      "sources": [
+        "https://www.bart.gov/about/business/tod/upcoming",
+        "https://www.bart.gov/about/business/tod/north-berkeley",
+        "https://www.bart.gov/about/business/tod/ab2923",
+        "https://berkeleyca.gov/construction-development/land-use-development/general-plan-and-area-plans/ashby-and-north-berkeley",
+        "https://berkeleyca.gov/sites/default/files/documents/Berkeley_City_2024_%20GP%20APR.pdf",
+        "https://berkeleyca.gov/sites/default/files/documents/2023-12-12%20NB%20BART%20ODS_ADOPTED.pdf",
+        "https://bart.legistar1.com/bart/attachments/08720c9b-3cc2-478d-a267-b29d7dd52f0f.pdf",
+        "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2"
+      ],
+      "verify": [],
+      "lastVerified": "2026-10-07"
+    },
+    {
+      "id": "ashby-bart",
+      "name": "Ashby BART (West Lot)",
+      "aliases": [
+        "Ashby West Lot",
+        "Ashby TOD",
+        "BART TOD"
+      ],
+      "city": "Berkeley",
+      "county": "Alameda",
+      "subregion": "East Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -122.2704,
+        37.8535
+      ],
+      "camera": {
+        "center": [
+          -122.2704,
+          37.8535
+        ],
+        "zoom": 16.8,
+        "pitch": 55,
+        "bearing": -15
+      },
+      "acres": 4.5,
+      "acresNote": "APN 053-1597-039-04, the West Lot parcel in BART's TOD Work Plan GIS layer: 4.5 acres as drawn (BART: about 4 acres). It includes the station entrance. The East Lot (about 1.9 acres) goes to the City of Berkeley under the 2024 exchange agreement and isn't part of this project.",
+      "program": {
+        "homes": 600,
+        "affordableHomes": null,
+        "affordablePct": 50,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Up to 600 homes, half of them permanently affordable, in five buildings of 6 to 8 stories, with about 25,000 sq ft of ground-floor retail and non-profit space (BART, describing the developer's preliminary concept). BART's July 2026 Board update says half of the first 602 homes are to be affordable."
+      },
+      "developer": "Adeline Alliance Partners with Resources for Community Development",
+      "publicPartners": [
+        "BART",
+        "City of Berkeley"
+      ],
+      "stage": "proposed",
+      "stageNote": "Proposed: BART selected the developer in July 2025 and executed an exclusive negotiating agreement in February 2026. No application has been filed with the City of Berkeley yet; BART expects one in late 2026.",
+      "timeline": [
+        {
+          "date": "2018-09-30",
+          "event": "Governor signs AB 2923, setting zoning standards for BART-owned land near stations in Alameda, Contra Costa and San Francisco counties."
+        },
+        {
+          "date": "2022-06",
+          "event": "Berkeley City Council adopts the R-BMU zoning district for the North Berkeley and Ashby BART stations."
+        },
+        {
+          "date": "2024-12-03",
+          "event": "Berkeley City Council adopts Ordinance 7,939-N.S., authorizing the Ashby property exchange with BART."
+        },
+        {
+          "date": "2024-12-20",
+          "event": "BART and the City sign the Ashby exchange agreement: the City gives up its air-rights option on the West Lot and takes sole ownership of the East Lot."
+        },
+        {
+          "date": "2025-07-10",
+          "event": "BART Board authorizes an exclusive negotiating agreement with Adeline Alliance Partners for the Ashby West Lot."
+        },
+        {
+          "date": "2026-02",
+          "event": "BART executes the exclusive negotiating agreement for the Ashby West Lot with Adeline Alliance Partners and Resources for Community Development."
+        }
+      ],
+      "nextMilestone": "The developer's application to the City of Berkeley and the City's design standards for the site (BART: late 2026); groundbreaking on the first phase (BART: 2029).",
+      "summary": "The west parking lot at Ashby station in Berkeley, where the Berkeley Flea Market runs on weekends. BART's selected developer proposes up to 600 homes, half of them affordable, in five buildings of 6 to 8 stories, with shops and non-profit space. No application has been filed yet.",
+      "massingNotes": "Illustrative envelope: no design has been filed, so the West Lot is drawn to the 80-ft height limit of Berkeley's R-BMU zoning (City of Berkeley, Preliminary Objective Design Standards for the Ashby West Lot, 2024), with existing buildings cut out. As a proposed project it is drawn as an outline. Boundary: the West Lot parcel in BART's TOD Work Plan GIS layer. Split from the program-level BART station-area housing entry at Matthew's request (2026-10-19).",
+      "officialLinks": [
+        "https://www.bart.gov/about/business/tod/ashby",
+        "https://berkeleyca.gov/construction-development/land-use-development/general-plan-and-area-plans/ashby-and-north-berkeley"
+      ],
+      "sources": [
+        "https://www.bart.gov/about/business/tod/upcoming",
+        "https://www.bart.gov/about/business/tod/ashby",
+        "https://www.bart.gov/about/business/tod/ab2923",
+        "https://berkeleyca.gov/construction-development/land-use-development/general-plan-and-area-plans/ashby-and-north-berkeley",
+        "https://berkeleyca.gov/sites/default/files/documents/Berkeley_City_2024_%20GP%20APR.pdf",
+        "https://www.bart.gov/sites/default/files/2024-12/24_1210_AshbyTODPrelimODS.pdf",
+        "https://bart.legistar1.com/bart/attachments/08720c9b-3cc2-478d-a267-b29d7dd52f0f.pdf",
+        "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2"
+      ],
+      "verify": [],
+      "lastVerified": "2026-10-07"
+    },
+    {
+      "id": "el-cerrito-plaza-bart",
+      "name": "El Cerrito Plaza BART",
+      "aliases": [
+        "El Cerrito Plaza TOD",
+        "BART TOD"
+      ],
+      "city": "El Cerrito",
+      "county": "Contra Costa",
+      "subregion": "East Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -122.2994,
+        37.9028
+      ],
+      "camera": {
+        "center": [
+          -122.2994,
+          37.9028
+        ],
+        "zoom": 16.65,
+        "pitch": 55,
+        "bearing": 25
+      },
+      "acres": 7.5,
+      "acresNote": "The four parcels BART's TOD Work Plan GIS layer marks in progress at the station: 7.5 acres as drawn. They include the station and track right-of-way; the City's approved master plan site is about 6 acres, plus the 0.48-acre Parcel A South.",
+      "program": {
+        "homes": 743,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "743 homes: 673 in the master plan's five buildings, 281 of them affordable, and 70 at Parcel A South, 69 of them affordable plus a manager's unit (City of El Cerrito approvals), so 350 affordable; BART says 351, about half. Space for a possible public library (about 20,000 sq ft) and small ground-floor spaces (BART)."
+      },
+      "developer": "Holliday Development, Related California and Satellite Affordable Housing Associates",
+      "publicPartners": [
+        "BART",
+        "City of El Cerrito"
+      ],
+      "stage": "construction",
+      "stageNote": "The first building, Parcel A South with 70 affordable family homes, has been under construction since November 2025; BART says construction will take about two years. The master plan's other five buildings were approved in July 2024 and are waiting for funding (BART).",
+      "timeline": [
+        {
+          "date": "2018-09-30",
+          "event": "Governor signs AB 2923, setting zoning standards for BART-owned land near stations in Alameda, Contra Costa and San Francisco counties."
+        },
+        {
+          "date": "2020-11-19",
+          "event": "BART Board selects Holliday Development, Related California and SAHA for El Cerrito Plaza."
+        },
+        {
+          "date": "2023-04-03",
+          "event": "City of El Cerrito approves Parcel A South, the first El Cerrito Plaza building (PL22-0150)."
+        },
+        {
+          "date": "2024-07-03",
+          "event": "City of El Cerrito issues the ministerial approval of the El Cerrito Plaza master plan (PL23-0024)."
+        },
+        {
+          "date": "2025-11",
+          "event": "Construction of El Cerrito Plaza's Parcel A South begins."
+        }
+      ],
+      "nextMilestone": "Parcel A South's completion (BART: 2027).",
+      "summary": "BART's parking lots at El Cerrito Plaza station, becoming six buildings with 743 homes, about half of them affordable, new public open space and possibly a public library. The first building, 70 affordable family homes, is under construction.",
+      "massingNotes": "Buildings traced from the approved 2024 master plan (RMS 0.8 m), with heights from its sections; Parcel A South is an outline (its approval gives 6 stories, not feet). El Cerrito Plaza is in Contra Costa County. Boundary: the parcels BART's TOD Work Plan GIS layer marks in progress at the station. Split from the program-level BART station-area housing entry at Matthew's request (2026-10-19).",
+      "officialLinks": [
+        "https://www.bart.gov/about/business/tod/el-cerrito-plaza",
+        "https://elcerrito.gov/1381/Transit-Oriented-Development-TOD"
+      ],
+      "sources": [
+        "https://www.bart.gov/about/business/tod/upcoming",
+        "https://www.bart.gov/about/business/tod/el-cerrito-plaza",
+        "https://www.bart.gov/about/business/tod/ab2923",
+        "https://elcerrito.gov/1381/Transit-Oriented-Development-TOD",
+        "https://www.elcerrito.gov/DocumentCenter/View/20672/PL23-0024_Ministerial-Approval-Letter",
+        "https://www.elcerrito.gov/DocumentCenter/View/20671/Attachment-D_Project-Plans",
+        "https://www.elcerrito.gov/DocumentCenter/View/22554/PL22-0150-Parcel-A-South-Ministerial-Approval-Letter-Including-Conditions",
+        "https://bart.legistar1.com/bart/attachments/08720c9b-3cc2-478d-a267-b29d7dd52f0f.pdf",
+        "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2"
+      ],
+      "verify": [
+        "El Cerrito Plaza building heights in feet for Parcels A-North, B and C-West (the approval letter gives 67–85 ft and stories; the plan sections show only C-East at 76.5 ft and D at 57 ft) and Parcel A-South (6 stories)"
+      ],
+      "lastVerified": "2026-10-07"
+    },
+    {
+      "id": "amador-station",
+      "name": "Amador Station (West Dublin/Pleasanton BART)",
+      "aliases": [
+        "West Dublin/Pleasanton BART",
+        "6501 Golden Gate Drive",
+        "BART TOD"
+      ],
+      "city": "Dublin",
+      "county": "Alameda",
+      "subregion": "East Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -121.9288,
+        37.7008
+      ],
+      "camera": {
+        "center": [
+          -121.9288,
+          37.7008
+        ],
+        "zoom": 16.4,
+        "pitch": 55,
+        "bearing": -10
+      },
+      "acres": 3.6,
+      "acresNote": "APNs 941-2842-002-00 and 941-2842-004-00, named in the City of Dublin's Notice of Determination (July 28, 2026), as drawn in BART's TOD Work Plan GIS layer: 3.6 acres (the City of Dublin gives 3.59 acres).",
+      "program": {
+        "homes": 300,
+        "affordableHomes": 300,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "300 affordable homes in two buildings of 136 and 164 homes, 5 stories and 61 ft tall, with 245 parking spaces (City of Dublin). BART lists four phases and a new plaza."
+      },
+      "developer": "The Related Companies of California",
+      "publicPartners": [
+        "BART",
+        "City of Dublin"
+      ],
+      "stage": "entitled",
+      "stageNote": "Entitled: the Dublin Planning Commission approved the design in August 2021. The City of Dublin is reviewing building permits for the first building, and BART says construction is waiting for funding.",
+      "timeline": [
+        {
+          "date": "2018-09-30",
+          "event": "Governor signs AB 2923, setting zoning standards for BART-owned land near stations in Alameda, Contra Costa and San Francisco counties."
         },
         {
           "date": "2021-08-10",
@@ -5142,106 +5564,28 @@
           "event": "Dublin City Council approves Amador Station's community benefit and affordable housing agreements."
         },
         {
-          "date": "2022-06",
-          "event": "Berkeley City Council adopts the R-BMU zoning district for the North Berkeley and Ashby BART stations."
-        },
-        {
-          "date": "2022-07-20",
-          "event": "City of Oakland approves the final development plan for Lake Merritt's senior building."
-        },
-        {
-          "date": "2023-04-03",
-          "event": "City of El Cerrito approves Parcel A South, the first El Cerrito Plaza building (PL22-0150)."
-        },
-        {
-          "date": "2023-05",
-          "event": "BART and Mandela Station Partners sign a lease option for West Oakland."
-        },
-        {
-          "date": "2024-07-03",
-          "event": "City of El Cerrito issues the ministerial approval of the El Cerrito Plaza master plan (PL23-0024)."
-        },
-        {
-          "date": "2024-10-17",
-          "event": "Construction of Lake Merritt's 97-home senior building begins with a groundbreaking."
-        },
-        {
-          "date": "2024-12-03",
-          "event": "Berkeley City Council adopts Ordinance 7,939-N.S., authorizing the Ashby property exchange with BART."
-        },
-        {
-          "date": "2024-12-11",
-          "event": "City of Berkeley approves the North Berkeley project, 739 homes, under AB 2011."
-        },
-        {
-          "date": "2025-07-10",
-          "event": "BART Board authorizes an exclusive negotiating agreement with Adeline Alliance Partners for the Ashby West Lot."
-        },
-        {
-          "date": "2025-11",
-          "event": "Construction of El Cerrito Plaza's Parcel A South begins."
-        },
-        {
-          "date": "2026-02",
-          "event": "BART executes the exclusive negotiating agreement for the Ashby West Lot with Adeline Alliance Partners and Resources for Community Development."
-        },
-        {
-          "date": "2026-06",
-          "event": "BART and North Berkeley Housing Partners execute the option agreement for North Berkeley."
-        },
-        {
           "date": "2026-07-21",
           "event": "Dublin City Council approves amended agreements with Related for Amador Station."
-        },
-        {
-          "date": "2026-09-14",
-          "event": "Construction of West Oakland's 240 affordable homes begins."
         }
       ],
-      "nextMilestone": "Ashby West Lot application to the City of Berkeley (BART: late 2026); North Berkeley's first phase to start construction (BART: 2027).",
-      "summary": "BART is building housing on its station parking lots. This entry maps the six sites where that work isn't finished: West Oakland, Lake Merritt, North Berkeley, Ashby, El Cerrito Plaza and Amador Station in Dublin. Together they plan about 3,700 homes, about half of them affordable, plus up to 800,000 sq ft of offices in Oakland. BART says the program has already delivered 4,232 homes and 874,000 sq ft of commercial space at 15 stations.",
-      "massingNotes": "A program-level entry added at Matthew's request (2026-10-07): no single site reaches 1,000 homes. The county is Alameda for five sites; El Cerrito Plaza is in Contra Costa County. Boundary: BART's TOD Work Plan GIS layer, one part per site: the parcels BART marks in progress at West Oakland, North Berkeley and El Cerrito Plaza, the APNs named by the City of Oakland for Lake Merritt and by the City of Dublin for Amador Station, and the Ashby West Lot parcel. Massing: West Oakland's towers and buildings traced from the 2020 revised Preliminary Development Plan (RMS 0.2 m), Lake Merritt's four buildings from the 2021 tract map and zoning table (RMS under 0.2 m) and El Cerrito Plaza's six buildings from the approved 2024 master plan (RMS 0.8 m), with heights from the plans. North Berkeley, the Ashby West Lot and Amador Station (whose approved footprints aren't published) are illustrative envelopes (80 ft under Berkeley's R-BMU zoning; at Amador Station the approved 61 ft, under the 90 ft allowed in BART's AB 2923 layer).",
+      "nextMilestone": "Building permits for the first building (under review by the City of Dublin); construction once funded (BART).",
+      "summary": "The last undeveloped part of BART's West Dublin/Pleasanton station area: 300 affordable homes in two five-story buildings, with a new plaza. The City of Dublin approved the design in 2021; construction is waiting for funding.",
+      "massingNotes": "Illustrative envelope at the approved height, 5 stories and 61 ft (the zoning limit is 90 ft, per BART's AB 2923 layer): the approved footprints aren't published, so the parcels are drawn whole. Boundary: the two APNs the City of Dublin names, from BART's TOD Work Plan GIS layer. Split from the program-level BART station-area housing entry at Matthew's request (2026-10-19).",
       "officialLinks": [
         "https://www.bart.gov/about/business/tod/upcoming",
-        "https://www.bart.gov/about/business/tod/completed"
+        "https://dublin-development.icitywork.com/#projectDetail1380"
       ],
       "sources": [
         "https://www.bart.gov/about/business/tod/upcoming",
-        "https://www.bart.gov/about/business/tod/completed",
-        "https://www.bart.gov/about/business/tod/westoakland",
-        "https://www.bart.gov/news/articles/2026/news20260901-0",
-        "https://www.bart.gov/about/business/tod/lakemerritt",
-        "https://www.bart.gov/about/business/tod/north-berkeley",
-        "https://www.bart.gov/about/business/tod/ashby",
-        "https://www.bart.gov/about/business/tod/el-cerrito-plaza",
-        "https://www.bart.gov/about/business/tod/fremont",
-        "https://www.bart.gov/about/business/tod/walnutcreek",
         "https://www.bart.gov/about/business/tod/ab2923",
-        "https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/West-Oakland-BART-Development-Mandela-Station",
-        "https://www.oaklandca.gov/files/assets/city/v/1/planning-amp-building/documents/dp/mandela-station-bart/wo-bart-pdp-revised-approval-dated-september-16-2020.pdf",
-        "https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/Lake-Merrit-BART-Transit-Oriented-Development",
-        "https://www.oaklandca.gov/files/assets/city/v/1/planning-amp-building/documents/dp/lake-merritt-bart/041421_drcstaffreport_lmbart_signed.pdf",
-        "https://berkeleyca.gov/construction-development/land-use-development/general-plan-and-area-plans/ashby-and-north-berkeley",
-        "https://berkeleyca.gov/sites/default/files/documents/Berkeley_City_2024_%20GP%20APR.pdf",
-        "https://berkeleyca.gov/sites/default/files/documents/2023-12-12%20NB%20BART%20ODS_ADOPTED.pdf",
-        "https://elcerrito.gov/1381/Transit-Oriented-Development-TOD",
-        "https://www.elcerrito.gov/DocumentCenter/View/20672/PL23-0024_Ministerial-Approval-Letter",
-        "https://www.elcerrito.gov/DocumentCenter/View/20671/Attachment-D_Project-Plans",
-        "https://www.elcerrito.gov/DocumentCenter/View/22554/PL22-0150-Parcel-A-South-Ministerial-Approval-Letter-Including-Conditions",
         "https://ceqanet.lci.ca.gov/2010022005/8",
-        "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
-        "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/9",
-        "https://abag.ca.gov/news/oakland-celebrates-groundbreaking-new-affordable-housing-seniors",
-        "https://bart.legistar1.com/bart/attachments/08720c9b-3cc2-478d-a267-b29d7dd52f0f.pdf",
-        "https://bart.legistar1.com/bart/attachments/16be8698-d087-474d-af27-34a157f46d12.pdf",
         "https://dublin-development.icitywork.com/#projectDetail1380",
-        "https://granicus_production_attachments.s3.amazonaws.com/dublin/98837e23cc8392d73e6155bda18f2be10.pdf"
+        "https://granicus_production_attachments.s3.amazonaws.com/dublin/98837e23cc8392d73e6155bda18f2be10.pdf",
+        "https://bart.legistar1.com/bart/attachments/08720c9b-3cc2-478d-a267-b29d7dd52f0f.pdf",
+        "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
+        "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/9"
       ],
-      "verify": [
-        "El Cerrito Plaza building heights in feet for Parcels A-North, B and C-West (the approval letter gives 67–85 ft and stories; the plan sections show only C-East at 76.5 ft and D at 57 ft) and Parcel A-South (6 stories)",
-        "whether Walnut Creek Transit Village's last phase (about 240 homes, in planning) is on APN 174-180-004-7, the only lease-option parcel there without buildings in BART's parcel data",
-        "Fremont (BART released an RFP on Apr 28, 2026 for an 8-acre first phase; developer selection expected October 2026), Bay Fair and Richmond Transit Village Phase II, which aren't drawn yet"
-      ],
+      "verify": [],
       "lastVerified": "2026-10-07"
     },
     {
@@ -7080,6 +7424,96 @@
         "geometry: the Eastridge end (sheets EX012 to EX015), where the tracks leave the expressway median, is held by the sheet joins and street fit only, so it is less certain than the median section"
       ],
       "lastVerified": "2026-10-17"
+    },
+    {
+      "id": "larkspur-ferry-expansion",
+      "name": "Larkspur ferry service and parking expansion",
+      "aliases": [
+        "The Larkspur Ferry Service and Parking Expansion Project",
+        "Larkspur Ferry Service Expansion and Parking Study",
+        "Larkspur Ferry Terminal"
+      ],
+      "city": "Larkspur",
+      "county": "Marin",
+      "subregion": "North Bay",
+      "category": "transportation",
+      "approxCenter": [
+        -122.5104,
+        37.9449
+      ],
+      "camera": {
+        "center": [
+          -122.5106,
+          37.9456
+        ],
+        "zoom": 15.7,
+        "pitch": 50,
+        "bearing": -20
+      },
+      "acres": null,
+      "acresNote": "The notice of preparation gives no acreage. Its Figure 2 outlines the ferry terminal, the main parking lot, an overflow lot by Victoria Way and the Larkspur SMART station (about 14.5 acres as traced); the parking could also expand onto the Country Mart's north lot, which the figure doesn't outline.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Transit infrastructure; the housing and commercial fields don't apply. Golden Gate Ferry service from Larkspur would grow with demand from 42 daily trips, the current cap, to as many as 76 through 2050, with more high-speed boats and possibly a new route to the foot of 16th Street near Mission Bay and UCSF. On land: more parking on the main terminal lot and/or the Country Mart's north lot across Sir Francis Drake Boulevard, demand management such as shuttles and parking and ticket pricing, better walking and cycling access, more transit and shuttle service, and a better link to the SMART Larkspur station (CEQAnet; notice of preparation, p. 2). In 2019 the route carried over 8,000 riders on an average weekday, and drivers were turned away for lack of parking several days a week, often before 10 a.m. (District study page). No parking count, design or cost has been published. Plan Bay Area 2050+ includes new Larkspur-Mission Bay ferry service (30-minute peak) and more frequent Larkspur-Ferry Building service (20-minute peak) in a $991 million Golden Gate Transit program for 2036-2050."
+      },
+      "developer": "Golden Gate Bridge, Highway and Transportation District (lead agency and applicant; Golden Gate Ferry)",
+      "publicPartners": [
+        "Golden Gate Bridge, Highway and Transportation District",
+        "Sonoma-Marin Area Rail Transit (SMART) (station connection)",
+        "Metropolitan Transportation Commission (Plan Bay Area 2050+)"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In environmental review. The District issued a notice of preparation of a Draft EIR in fall 2024, took comments from Oct 1 to Oct 30, 2024 and held a scoping meeting on Oct 15, 2024. The Draft EIR hasn't been released; the District gives its date as to be determined.",
+      "timeline": [
+        {
+          "date": "2019",
+          "event": "The District begins the Larkspur Ferry Service Expansion and Parking Study, with the route at its 42-trip cap."
+        },
+        {
+          "date": "2024-05",
+          "event": "The District holds a community open house on the study."
+        },
+        {
+          "date": "2024-09",
+          "event": "The District surveys ferry passengers."
+        },
+        {
+          "date": "2024-09-30",
+          "event": "The District files a notice of preparation of a Draft EIR (SCH 2024091190); comments are taken Oct 1 to Oct 30, 2024."
+        },
+        {
+          "date": "2024-10-15",
+          "event": "The District holds the environmental scoping meeting at the Drakes Landing Community Room in Greenbrae."
+        }
+      ],
+      "nextMilestone": "Release of the Draft EIR, with an open house and comment period; the District hasn't set a date.",
+      "summary": "The Golden Gate Bridge District's plan to grow ferry service from Larkspur, from 42 to as many as 76 daily trips by 2050 and possibly a new route to Mission Bay, with more parking and better bus, rail, bike and walking access at the terminal. An EIR has been in preparation since 2024; the Draft hasn't been released.",
+      "massingNotes": "Added 2026-10-19 (Matthew: \"add the proposed ferries for farther down the line\"). Boundary traced from the notice of preparation's Figure 2, Project Location (PDF p. 5): the four outlined areas (ferry terminal, main parking lot, overflow parking, SMART station), picked by colour and placed by fitting the aerial photo to OpenStreetMap building footprints (pipeline/bam_pipeline/sites/boundary_larkspur_ferry_expansion.py). Approximate: a location map, not a site plan, and the Country Mart lot the text names isn't outlined. No massing: the parking design isn't defined yet.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/Project/2024091190",
+        "https://goldengate.org/district/district-projects/larkspur-ferry-service-parking-expansion-study"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/Project/2024091190",
+        "https://ceqanet.lci.ca.gov/2024091190/2",
+        "https://ceqanet.lci.ca.gov/2024091190/2/Attachment/9FEu4G",
+        "https://goldengate.org/district/district-projects/larkspur-ferry-service-parking-expansion-study",
+        "https://planbayarea.org/sites/default/files/documents/2026-04/Final_Plan_Bay_Area_2050_Plus_Transportation_Project_List_Report.pdf"
+      ],
+      "verify": [
+        "the Draft EIR release date, which the District lists as to be determined",
+        "the parking: how many spaces, and whether on the main lot, the Country Mart's north lot or both",
+        "whether the new Mission Bay route is part of the project the Draft EIR studies",
+        "the District's Nov 20, 2025 contract amendment for the environmental work and its schedule, which couldn't be read on Oct 19 (goldengate.org was unreachable)"
+      ],
+      "lastVerified": "2026-10-19"
     }
   ]
 }

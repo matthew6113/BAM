@@ -64,7 +64,12 @@ for (const [n, id] of [
   ['30', 'mare-island'],
   ['31', 'sonoma-developmental-center'],
   ['32', 'esmeralda'],
-  ['33', 'bart-station-housing'],
+  ['33a', 'west-oakland-bart'],
+  ['33b', 'lake-merritt-bart'],
+  ['33c', 'north-berkeley-bart'],
+  ['33d', 'ashby-bart'],
+  ['33e', 'el-cerrito-plaza-bart'],
+  ['33f', 'amador-station'],
 ] as const) {
   test(`${n} landed: ${id}`, async ({ page }) => {
     const errors = collectErrors(page);

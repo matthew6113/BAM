@@ -1,0 +1,278 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "north-berkeley-bart",
+  "illustrative": true,
+  "summary": "No approved footprints are published, so this is an illustrative envelope: BART's parcels drawn to the 80-ft height limit of Berkeley's R-BMU district. Real buildings will cover less of the land.",
+  "note": "A height-limit envelope, not the approved design.",
+  "sourceUrl": "https://berkeleyca.gov/sites/default/files/documents/2023-12-12%20NB%20BART%20ODS_ADOPTED.pdf",
+  "sourceLabel": "North Berkeley design standards, 2023 (PDF)",
+  "license": "Parcels: BART public ArcGIS Online service (no license stated); existing buildings: OpenStreetMap contributors (ODbL 1.0), via Overture Maps",
+  "documents": [
+   "https://berkeleyca.gov/sites/default/files/documents/2023-12-12%20NB%20BART%20ODS_ADOPTED.pdf",
+   "https://berkeleyca.gov/sites/default/files/documents/Berkeley_City_2024_%20GP%20APR.pdf",
+   "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
+   "https://www.bart.gov/about/business/tod/north-berkeley"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "North Berkeley",
+    "label": "North Berkeley",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential (mixed use)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: BART parcels drawn to the R-BMU zoning district's 80-ft / 7-story maximum (BMC 23.202.150(F)), as stated in the City of Berkeley's adopted North Berkeley BART Objective Design Standards, Dec 2023, Sec. 2.1.1 (https://berkeleyca.gov/sites/default/files/documents/2023-12-12%20NB%20BART%20ODS_ADOPTED.pdf)",
+    "note": "Entitled Dec 11, 2024 for 739 homes in buildings of 3 to 8 stories (City of Berkeley 2024 General Plan progress report); the design isn't drawn. Paths, plazas and the station area will stay open. 3 existing building(s) on the parcels (OpenStreetMap) are cut out."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2826483,
+       37.8747662
+      ],
+      [
+       -122.2825389,
+       37.8739638
+      ],
+      [
+       -122.2824483,
+       37.8731507
+      ],
+      [
+       -122.2845126,
+       37.8728929
+      ],
+      [
+       -122.2846026,
+       37.8737024
+      ],
+      [
+       -122.2846136,
+       37.8737059
+      ],
+      [
+       -122.2846932,
+       37.8744963
+      ],
+      [
+       -122.2826483,
+       37.8747662
+      ]
+     ],
+     [
+      [
+       -122.2836151,
+       37.8740038
+      ],
+      [
+       -122.2836209,
+       37.8739611
+      ],
+      [
+       -122.283613,
+       37.8739258
+      ],
+      [
+       -122.2835941,
+       37.8738913
+      ],
+      [
+       -122.2835643,
+       37.873863
+      ],
+      [
+       -122.2835269,
+       37.8738415
+      ],
+      [
+       -122.2834809,
+       37.8738283
+      ],
+      [
+       -122.2834339,
+       37.8738254
+      ],
+      [
+       -122.2833877,
+       37.8738315
+      ],
+      [
+       -122.2833444,
+       37.873847
+      ],
+      [
+       -122.2833068,
+       37.873872
+      ],
+      [
+       -122.2832684,
+       37.8738561
+      ],
+      [
+       -122.2832598,
+       37.8738561
+      ],
+      [
+       -122.2832225,
+       37.8739072
+      ],
+      [
+       -122.2832273,
+       37.8739165
+      ],
+      [
+       -122.2832671,
+       37.8739331
+      ],
+      [
+       -122.2832625,
+       37.8739728
+      ],
+      [
+       -122.2832681,
+       37.8740076
+      ],
+      [
+       -122.28329,
+       37.8740425
+      ],
+      [
+       -122.2833199,
+       37.8740707
+      ],
+      [
+       -122.2833566,
+       37.874092
+      ],
+      [
+       -122.2834018,
+       37.8741055
+      ],
+      [
+       -122.283449,
+       37.8741089
+      ],
+      [
+       -122.2834934,
+       37.8741018
+      ],
+      [
+       -122.2835345,
+       37.8740872
+      ],
+      [
+       -122.283578,
+       37.8740599
+      ],
+      [
+       -122.2836019,
+       37.8740699
+      ],
+      [
+       -122.2836115,
+       37.8740688
+      ],
+      [
+       -122.2836438,
+       37.8740222
+      ],
+      [
+       -122.2836397,
+       37.8740143
+      ],
+      [
+       -122.2836151,
+       37.8740038
+      ]
+     ],
+     [
+      [
+       -122.2833917,
+       37.8742208
+      ],
+      [
+       -122.2834044,
+       37.8742286
+      ],
+      [
+       -122.2837561,
+       37.8741936
+      ],
+      [
+       -122.2837648,
+       37.8741863
+      ],
+      [
+       -122.2837614,
+       37.874162
+      ],
+      [
+       -122.2837489,
+       37.8741551
+      ],
+      [
+       -122.2833973,
+       37.8741901
+      ],
+      [
+       -122.2833886,
+       37.8741974
+      ],
+      [
+       -122.2833917,
+       37.8742208
+      ]
+     ],
+     [
+      [
+       -122.284327,
+       37.8745099
+      ],
+      [
+       -122.2843398,
+       37.8745176
+      ],
+      [
+       -122.2846712,
+       37.8744815
+      ],
+      [
+       -122.284675,
+       37.8744735
+      ],
+      [
+       -122.2846426,
+       37.8742924
+      ],
+      [
+       -122.2846326,
+       37.8742894
+      ],
+      [
+       -122.2843012,
+       37.8743256
+      ],
+      [
+       -122.2842974,
+       37.8743336
+      ],
+      [
+       -122.284327,
+       37.8745099
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

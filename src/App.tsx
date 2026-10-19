@@ -15,7 +15,7 @@ import {
   riseMassing,
   type Camera,
 } from './projects/flight';
-import { ABOUT_PATH, isAboutPath, navigate, navigateAbout, projectIdFromPath } from './router';
+import { ABOUT_PATH, isAboutPath, navigate, navigateAbout, projectIdFromPath, retiredQuery } from './router';
 import { applyCssVariables, defaultTheme, normalizeTheme, type Theme } from './theme/theme';
 import { AboutPanel } from './ui/AboutPanel';
 import { Controls } from './ui/Controls';
@@ -37,6 +37,8 @@ const SITE_TITLE = 'Bay Area megaprojects';
 // A deep link to a project: fetch its massing and land use while the map loads, not after.
 const deepLinked = projectIdFromPath();
 if (deepLinked && siteOf(deepLinked)) void loadProjectGeometry(deepLinked);
+// A link to a retired project id opens the index on the projects that replaced it.
+const retired = retiredQuery();
 
 function loadTheme(): Theme {
   let theme = structuredClone(defaultTheme);
@@ -84,7 +86,7 @@ export function App() {
   const [interacted, setInteracted] = useState(false);
   const [selection, setSelection] = useState<Selection | null>(null);
   const [openId, setOpenId] = useState<string | null>(null);
-  const [filter, setFilter] = useState<ProjectFilter>(NO_FILTER);
+  const [filter, setFilter] = useState<ProjectFilter>(retired ? { ...NO_FILTER, query: retired } : NO_FILTER);
   // The about page needs no map, so a deep link to it shows at once.
   const [aboutOpen, setAboutOpen] = useState(isAboutPath);
   // Counts "Suggest a project" clicks, so each one goes to the form even with the page open.
@@ -299,7 +301,7 @@ export function App() {
           </a>
         </p>
         <ProjectIndex openId={openId} onOpen={(id, opener) => void openProject(id, { opener })}
-          filter={filter} onFilter={setFilter} onExpand={() => setInteracted(true)}
+          filter={filter} onFilter={setFilter} onExpand={() => setInteracted(true)} defaultExpanded={!!retired}
           onSuggest={(opener) => openAbout({ opener, suggest: true })} />
       </header>
       {/* The map and its controls are the page's main content (a landmark screen readers can jump to). */}

@@ -263,30 +263,13 @@ export function containsPoint(g: Polygon | MultiPolygon, [x, y]: [number, number
 }
 
 /**
- * Where a site's regional markers go: its centroid, unless that falls well off the site (more
- * than `maxGapM` from it), as it does for a program of station sites kilometres apart. Then each
- * part (the boundary's named sub-areas, or else each piece) gets its own marker.
- */
-export function markerPointsOf(
-  g: Polygon | MultiPolygon, parts: (Polygon | MultiPolygon)[] = [], maxGapM = 1000,
-): [number, number][] {
-  const c = centroidOf(g);
-  if (g.type === 'Polygon' || containsPoint(g, c)) return [c];
-  const gap = Math.min(...outerRings(g).flatMap((ring) => ring.map((v) => metres(c, v))));
-  if (gap <= maxGapM) return [c];
-  const pieces = parts.length ? parts : g.coordinates.map((p): Polygon => ({ type: 'Polygon', coordinates: p }));
-  return pieces.map((p) => centroidOf(p));
-}
-
-/**
- * Where a mapped project's regional dots go (see markerPointsOf). A line project has none: its
+ * Where a mapped project's regional dot goes: its site's centroid. A line project has none: its
  * line is its own symbol.
  */
 export function markersOf(id: string): [number, number][] {
   const site = siteOf(id);
   if (!site || isLineProject(id)) return [];
-  const parts = (boundaryOf(id)?.features ?? []).filter((f) => f.properties.kind === 'sub-area').map((f) => f.geometry);
-  return markerPointsOf(site.geometry, parts);
+  return [centroidOf(site.geometry)];
 }
 
 /** Ground area of the outer rings in square metres (equirectangular; fine at site scale). */

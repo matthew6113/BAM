@@ -61,7 +61,7 @@ URL shorthand:
 
 Three terminals mapped (the cap was six); the rest are listed for Matthew below.
 
-**Separate projects, not one program.** The map's one program-level record, `bart-station-housing`, groups
+**Separate projects, not one program.** The map's one program-level record at the time, `bart-station-housing` (split into six station projects on Oct 19, 2026), grouped
 sites that share one agency and one program and are each too small alone. These three terminals have different
 lead agencies (the Port of San Francisco, the City of Berkeley, the Port of Redwood City), different stages
 (site work against two Draft EIRs) and different funding, and each has its own CEQA record and site. As

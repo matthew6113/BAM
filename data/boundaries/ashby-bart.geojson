@@ -1,0 +1,85 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "ashby-bart",
+  "source": "BART TOD Work Plan layer (BART AB 2923 public service, layer 2): APN 053-1597-039-04, the Ashby West Lot parcel in BART's TOD Work Plan layer (BART: “a +/- 4-acre site (West Lot)”); it includes the station entrance",
+  "sourceLabel": "BART TOD parcels",
+  "sourceUrl": "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
+  "query": "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2/query?where=APN_D+%3D+%27053-1597-039-04%27&outFields=%2A&outSR=4326&f=geojson",
+  "accuracy": "approximate",
+  "accuracyNote": "Drawn from BART's own parcel layer: APN 053-1597-039-04, the Ashby West Lot parcel in BART's TOD Work Plan layer (BART: “a +/- 4-acre site (West Lot)”); it includes the station entrance. 4.5 acres as drawn. The parcels include station land that won't be built on.",
+  "license": "BART public ArcGIS Online service (no license stated)",
+  "apns": [
+   "053-1597-039-04"
+  ],
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2709557,
+       37.854263
+      ],
+      [
+       -122.2697349,
+       37.8544235
+      ],
+      [
+       -122.2696915,
+       37.85442
+      ],
+      [
+       -122.2696566,
+       37.8544089
+      ],
+      [
+       -122.2696299,
+       37.8543797
+      ],
+      [
+       -122.2696151,
+       37.8543408
+      ],
+      [
+       -122.2705179,
+       37.8519624
+      ],
+      [
+       -122.2705615,
+       37.8518999
+      ],
+      [
+       -122.2706115,
+       37.8518881
+      ],
+      [
+       -122.2706603,
+       37.8518984
+      ],
+      [
+       -122.2706991,
+       37.8519321
+      ],
+      [
+       -122.2707051,
+       37.8519663
+      ],
+      [
+       -122.2709557,
+       37.854263
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
