@@ -65,6 +65,20 @@ for (const [n, id] of [
   ['31', 'sonoma-developmental-center'],
   ['32', 'esmeralda'],
   ['33', 'bart-station-housing'],
+  ['48', '530-sansome'],
+  ['49', '77-beale'],
+  ['50', '536-mission'],
+  ['51', 'transbay-parcel-f'],
+  ['52', '524-howard'],
+  ['53', '10-south-van-ness'],
+  ['54', 'one-oak'],
+  ['55', 'freedom-west'],
+  ['56', 'sf-gateway'],
+  ['57', 'railyards'],
+  ['58', 'mission-point'],
+  ['59', 'seely-avenue'],
+  ['60', 'freedom-circle'],
+  ['61', 'pleasant-hills'],
 ] as const) {
   test(`${n} landed: ${id}`, async ({ page }) => {
     const errors = collectErrors(page);

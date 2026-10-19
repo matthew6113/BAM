@@ -3,6 +3,83 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-19 (large towers and sites in San Francisco and the South Bay)
+
+Matthew asked for the large towers proposed or being built in San Francisco (naming the one replacing a
+fire station near Jackson Square, one by Salesforce Park and one near Van Ness and Market) "and more", for
+more South Bay projects, and for the UC Berkeley–Moffett Field agreement. Candidates came from SF Planning's
+Development Pipeline (DataSF `6jgi-cpb4`, 2026 Q2) and CEQAnet; each was checked against official
+documents only. Research, verbatim quotes and the leads not added are in `docs/official-research/`:
+`candidates-sf-financial-district.md`, `candidates-sf-transbay.md`, `candidates-sf-van-ness-market.md`,
+`candidates-sf-other-sites.md` and `candidates-south-bay-2026-10.md`. This session couldn't reach the Board
+of Supervisors' sites, Planning Commission packets from 2023 on, or the South Bay cities' own sites; facts
+only those would confirm are in each record's `verify` list.
+
+**530-sansome** (new): the 41-story, about 544-ft office and hotel tower replacing Fire Station 13 at the edge
+of Jackson Square, with a new four-story station at 447 Battery Street. EIR certified July 17, 2025 (Motion
+21773); Board approval Oct 21 and the Mayor's signature Oct 27, 2025, per the notice of determination
+(https://ceqanet.lci.ca.gov/Project/2024110311). Entitled. Massing traced from the Draft EIR's plans and
+section.
+
+**77-beale** (new): Hines' Matson Block Project, a tower of up to 1,225 ft (plus a crown of up to 75 ft) on
+the PG&E block between Market, Main, Mission and Beale streets, with up to 1.9 million sq ft of office. Notice
+of preparation Dec 17, 2025 (https://ceqanet.lci.ca.gov/2025120794). In entitlement. Massing is the notice's
+maximum envelope, against Mission Street; the tower's position isn't set.
+
+**536-mission** (new): a 46-story tower on the Golden Gate University site, approved by the Planning
+Commission on Sept 10, 2026 as a 700-ft office tower or a 649-ft mixed-use tower with up to 385 homes
+(agenda and DataSF records). Entitled. Massing is a labelled whole-lot placeholder at 700 ft.
+
+**transbay-parcel-f** (new): 542–550 Howard Street beside Salesforce Park: 61 stories, 749 ft 10 in to the
+roof (799 ft 9 in to the top), 165 homes, a 189-room hotel and offices, with a bridge to the park. Approved
+Jan 9, 2020, amended Jan 28, 2021 (Planning Commission packet and minutes on SF Planning's S3 store).
+Entitled. Massing traced from the approved floor plans.
+
+**524-howard** (new): 524 and 530 Howard Street, also beside Salesforce Park: 72 stories, about 795 ft,
+672 homes (68 at 50% AMI), approved June 18, 2024 (DataSF pipeline and Planning records). Entitled. Massing is
+a labelled placeholder sized from Planning's floor area.
+
+**10-south-van-ness** (new): a 67-story, 921-home tower at Market Street and South Van Ness Avenue, approved
+under SB 423 (Planning's record closed with an approval letter Aug 18, 2026; DataSF `qvu5-m3a2`). It replaces
+the 55-story, 590-ft design approved in 2020. Entitled. No massing until an official document gives its
+height.
+
+**one-oak** (new): One Oak, 1500–1540 Market Street: a 41-story, 400-ft tower with 541 homes over a 14-story
+podium, approved March 19, 2026 (agenda; DataSF records). Entitled. Illustrative massing uses the 2017 tower
+outline under the 2026 heights.
+
+**freedom-west** (new): Freedom West 2.0 in the Fillmore: 2,291 homes (267 replacing co-op homes) in 15
+buildings of 8 to 32 stories, a 150-room hotel and 1.28 acres of public open space on 10.37 acres. Draft EIR
+Jan 13, 2026 (https://ceqanet.lci.ca.gov/Project/2025050078). In entitlement. Massing is each parcel at its
+proposed height (illustrative).
+
+**sf-gateway** (new): Prologis's San Francisco Gateway in the Bayview: two three-story, 97-ft industrial
+buildings, about 1.65 million gsf enclosed, approved Sept 25, 2025 with a special use district and
+development agreement in effect Dec 12, 2025 (https://ceqanet.lci.ca.gov/Project/2022030286). Entitled.
+
+**railyards** (new): the Railyards Mixed-Use Development at Fourth and King: about 7.8 million sq ft with up
+to 5,834 homes or 5.6 million sq ft of commercial space, height limits of 350 to 855 ft and a new underground
+Caltrain station, on 18.63 acres. Notice of preparation Sept 30, 2026
+(https://ceqanet.lci.ca.gov/Project/2026091295). In entitlement. Boundary only; it overlaps the drawn Mission
+Bay area and The Portal and high-speed rail corridors, as the City's parcels do.
+
+**mission-point** (new): Mission Point in north Santa Clara: up to 2,600 homes and about 2.2 million sq ft of
+office and R&D on 48.6 acres, approved Nov 19 and Dec 3, 2024 (https://ceqanet.lci.ca.gov/Project/2018072068).
+Entitled. Illustrative massing from the approved alternative's site plan.
+
+**seely-avenue** (new): 1,472 homes and a 2.5-acre park on Seely Avenue in North San José, approved Aug 13,
+2024 (https://ceqanet.lci.ca.gov/Project/2022020565). Entitled. Illustrative massing at the EIR's heights.
+
+**freedom-circle** (new): the first two housing projects in Santa Clara's Freedom Circle Focus Area, the
+Irvine Company's 1,792 homes (approved 2025) and Greystar's 1,100 (2022), 39 acres
+(https://ceqanet.lci.ca.gov/Project/2020060425). Entitled. Boundary only.
+
+**pleasant-hills** (new): about 2,000 homes on the former Pleasant Hills golf course in east San José, to be
+annexed from the County. Notice of preparation Oct 14, 2025 (https://ceqanet.lci.ca.gov/Project/2025100897).
+In entitlement. Boundary only.
+
+`_meta.lastVerified` is now 2026-10-19.
+
 ## 2026-10-18 (Esmeralda: the Oct 7 council hearing)
 
 **esmeralda**: Matthew asked for an update after the City Council hearings. The City's agenda report
