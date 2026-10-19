@@ -79,6 +79,10 @@ for (const [n, id] of [
   ['59', 'seely-avenue'],
   ['60', 'freedom-circle'],
   ['61', 'pleasant-hills'],
+  ['62', 'flower-mart'],
+  ['63', '88-bluxome'],
+  ['64', '655-fourth-street'],
+  ['65', 'one-vassar'],
 ] as const) {
   test(`${n} landed: ${id}`, async ({ page }) => {
     const errors = collectErrors(page);

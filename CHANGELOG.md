@@ -11,7 +11,7 @@ more South Bay projects, and for the UC Berkeley–Moffett Field agreement. Cand
 Development Pipeline (DataSF `6jgi-cpb4`, 2026 Q2) and CEQAnet; each was checked against official
 documents only. Research, verbatim quotes and the leads not added are in `docs/official-research/`:
 `candidates-sf-financial-district.md`, `candidates-sf-transbay.md`, `candidates-sf-van-ness-market.md`,
-`candidates-sf-other-sites.md` and `candidates-south-bay-2026-10.md`. This session couldn't reach the Board
+`candidates-sf-central-soma.md`, `candidates-sf-other-sites.md` and `candidates-south-bay-2026-10.md`. This session couldn't reach the Board
 of Supervisors' sites, Planning Commission packets from 2023 on, or the South Bay cities' own sites; facts
 only those would confirm are in each record's `verify` list.
 
@@ -62,6 +62,26 @@ to 5,834 homes or 5.6 million sq ft of commercial space, height limits of 350 to
 Caltrain station, on 18.63 acres. Notice of preparation Sept 30, 2026
 (https://ceqanet.lci.ca.gov/Project/2026091295). In entitlement. Boundary only; it overlaps the drawn Mission
 Bay area and The Portal and high-speed rail corridors, as the City's parcels do.
+
+**flower-mart** (new): the Flower Mart site on Brannan Street between 5th and 6th (Central SoMa Key Site 4,
+6.5 acres): about 2 million sq ft of office in three buildings up to about 236 ft, approved July 18, 2019
+(Motion 20484), with a Development Agreement passed January 2020 (Planning Commission packet and minutes on
+SF Planning's S3 store). The developer has applied to amend it for up to 3,532 homes and height limits of 350
+to 600 ft (Planning Commission agenda, Oct 1, 2026). Entitled. Boundary only while the design is in flux.
+
+**88-bluxome** (new): the former San Francisco Tennis Club site (Central SoMa Key Site 7): two towers of 599
+and 528 ft with 1,500 homes, approved by SF Planning on Dec 12, 2025 (DataSF record 2025-004642PRJ). The 2019
+office approval on the site still holds DBI site permits, amended Oct 9, 2026; which project goes ahead is a
+`verify` item. Entitled. Boundary only.
+
+**655-fourth-street** (new): the Creamery site at 4th and Townsend (Central SoMa Key Site 8): two towers of
+380 and 400 ft with 1,105 homes, approved Dec 14, 2023 (https://ceqanet.lci.ca.gov/2024010421). Entitled.
+Boundary only.
+
+**one-vassar** (new): One Vassar at 2nd and Harrison (Central SoMa Key Site 3): about 1.5 million sq ft in a
+350-ft office tower, a 350-ft residential tower with 489 homes and a 200-ft hotel addition, approved Feb 20,
+2020 (Motions 20665 to 20667; packet on SF Planning's S3 store). Entitled; DBI has issued no site permit.
+Massing traced from the approved site plan.
 
 **mission-point** (new): Mission Point in north Santa Clara: up to 2,600 homes and about 2.2 million sq ft of
 office and R&D on 48.6 acres, approved Nov 19 and Dec 3, 2024 (https://ceqanet.lci.ca.gov/Project/2018072068).
