@@ -128,6 +128,8 @@ def main() -> None:
     ]
     features = []
     for label, geom, h, use, source, note in parts:
+        # The differences leave hairline slivers along the shared Mission Street edge; open them away.
+        geom = geom.buffer(-0.01, join_style="mitre").buffer(0.01, join_style="mitre")
         wgs = gpd.GeoSeries([geom.simplify(0.05)], crs=UTM).to_crs(4326).iloc[0]
         features.append({
             "type": "Feature",

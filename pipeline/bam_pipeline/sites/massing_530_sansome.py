@@ -174,6 +174,8 @@ def main() -> None:
     for label, geom, h, use, source, note in parts:
         if not geom.within(site.buffer(0.1)):
             raise SystemExit(f"530 Sansome: {label} falls outside the site")
+        # The step differences leave hairline slivers along the edges the steps share; open them away.
+        geom = geom.buffer(-0.01, join_style="mitre").buffer(0.01, join_style="mitre")
         wgs = gpd.GeoSeries([geom.simplify(0.05)], crs=UTM).to_crs(4326).iloc[0]
         features.append({
             "type": "Feature",
