@@ -1,9 +1,12 @@
-"""BART station-area housing: one program-level project, with a boundary and massing per station site.
+"""BART station-area housing: six projects, one per station, each with its own boundary and massing.
 
-Added at Matthew's request (2026-10-07). The program is BART's transit-oriented development on its own
-land at the stations where it is not yet complete. Six sites are drawn, each from official sources:
+BART's transit-oriented development on its own land at the stations where it is not yet complete. Added
+as one program-level project at Matthew's request (2026-10-07) and split into one project per station at
+his request (2026-10-19). This module writes data/boundaries/<id>.geojson and data/massing/<id>.geojson
+for each of: west-oakland-bart, lake-merritt-bart, north-berkeley-bart, ashby-bart, el-cerrito-plaza-bart
+and amador-station. Every site is drawn from official sources:
 
-Boundaries (one part per site, all from BART's own GIS unless noted):
+Boundaries (one file per site, all from BART's own GIS unless noted):
 - BART's "BART_AB_2923_Public_Service_20230201" feature service (BART's ArcGIS Online organisation,
   linked from bart.gov/about/business/tod/ab2923 as the "map of AB 2923 Parcels and TOD Work Plan"),
   layer 2 "TOD Work Plan": BART-owned parcels with their station, APN, acreage and TOD status.
@@ -41,13 +44,13 @@ Massing:
   georeferenced by the four corners of the main lot's property line matched to BART's parcels. Heights from
   the A3 section sheets of the same set.
 - North Berkeley and Ashby: illustrative envelopes over the BART parcels at the official height limit
-  (R-BMU 80 ft, per the adopted North Berkeley Objective Design Standards citing BMC 23.202.150(F)), with
-  existing buildings on the parcels cut out.
+  (R-BMU 80 ft, per BMC 23.202.150(F) as stated in the City of Berkeley's adopted North Berkeley and
+  preliminary Ashby Objective Design Standards), with existing buildings on the parcels cut out.
 - Amador Station: an illustrative envelope over the BART parcels at the approved design's height, 5 stories
   and 61 ft (City of Dublin development map; Site Development Review approved Aug 10, 2021). The approved
   footprints aren't published; the zoning limit is 90 ft (BART's AB 2923 rezoned layer).
 
-    uv run --directory pipeline python -m bam_pipeline.sites.bart_station_housing
+    uv run --directory pipeline python -m bam_pipeline.sites.bart_stations
 """
 
 from __future__ import annotations
@@ -66,11 +69,10 @@ from shapely.geometry import Polygon, box, mapping
 from .. import config, trace
 from . import traced_boundaries as tb
 
-PROJECT = "bart-station-housing"
 UTM = "EPSG:26910"
 ACRE_M2 = 4046.8564224
 FT = 0.3048
-RAW = config.ROOT / "data" / "raw" / "bart-station-housing"
+RAW = config.ROOT / "data" / "raw" / "bart-stations"
 
 BART_TOD = ("https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/"
             "BART_AB_2923_Public_Service_20230201/FeatureServer")
@@ -105,7 +107,7 @@ DOCS = {
     },
 }
 
-# Official pages cited for facts on each site (all also in the project's `sources`).
+# Official pages cited for facts on each site (each also in that site's project `sources`).
 WO_PAGE = "https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/West-Oakland-BART-Development-Mandela-Station"
 LM_PAGE = "https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/Lake-Merrit-BART-Transit-Oriented-Development"
 BART_NEWS_WO = "https://www.bart.gov/news/articles/2026/news20260901-0"
@@ -115,6 +117,8 @@ BART_NB = "https://www.bart.gov/about/business/tod/north-berkeley"
 BART_ASHBY = "https://www.bart.gov/about/business/tod/ashby"
 BART_ECP = "https://www.bart.gov/about/business/tod/el-cerrito-plaza"
 NB_ODS = "https://berkeleyca.gov/sites/default/files/documents/2023-12-12%20NB%20BART%20ODS_ADOPTED.pdf"
+# The City of Berkeley's Preliminary Objective Design Standards for the Ashby West Lot (Dec 2024), posted by BART
+ASHBY_ODS = "https://www.bart.gov/sites/default/files/2024-12/24_1210_AshbyTODPrelimODS.pdf"
 BK_APR = "https://berkeleyca.gov/sites/default/files/documents/Berkeley_City_2024_%20GP%20APR.pdf"
 ECP_APPROVAL = "https://www.elcerrito.gov/DocumentCenter/View/20672/PL23-0024_Ministerial-Approval-Letter"
 ECP_AS = ("https://www.elcerrito.gov/DocumentCenter/View/22554/"
@@ -129,7 +133,7 @@ DUBLIN_PC = "https://granicus_production_attachments.s3.amazonaws.com/dublin/988
 
 SITES = [
     {
-        "key": "west-oakland", "name": "West Oakland (Mandela Station)", "station": "West Oakland",
+        "key": "west-oakland", "id": "west-oakland-bart", "name": "West Oakland BART (Mandela Station)", "station": "West Oakland",
         "where": "STATION_AR = 'West Oakland' AND TOD_WKPLAN = 'In Progress'",
         "named_by": "the parcels BART's TOD Work Plan layer marks “In Progress” at West Oakland, which form the "
                     "block the City of Oakland describes (about 5.58 acres between 7th, 5th and Chester Streets "
@@ -137,35 +141,35 @@ SITES = [
         "accuracy": "official",
     },
     {
-        "key": "lake-merritt", "name": "Lake Merritt", "station": "Lake Merritt",
+        "key": "lake-merritt", "id": "lake-merritt-bart", "name": "Lake Merritt BART", "station": "Lake Merritt",
         "where": "APN_D IN ('001-0169-001-00', '001-0171-002-00')",
         "named_by": "APNs 001-0169-001-00 (Block 1) and 001-0171-002-00 (Block 2), named in the Oakland DRC staff "
                     "report of Apr 14, 2021 (PLN20038), p. 8",
         "accuracy": "official",
     },
     {
-        "key": "north-berkeley", "name": "North Berkeley", "station": "North Berkeley",
+        "key": "north-berkeley", "id": "north-berkeley-bart", "name": "North Berkeley BART", "station": "North Berkeley",
         "where": "STATION_AR = 'North Berkeley' AND TOD_WKPLAN = 'In Progress'",
         "named_by": "the four parcels BART's TOD Work Plan layer marks “In Progress” at North Berkeley (BART: "
                     "“about 8.2 acres of BART-owned land surrounding the station”); they include the station",
         "accuracy": "approximate",
     },
     {
-        "key": "ashby", "name": "Ashby (West Lot)", "station": "Ashby",
+        "key": "ashby", "id": "ashby-bart", "name": "Ashby BART (West Lot)", "station": "Ashby",
         "where": "APN_D = '053-1597-039-04'",
         "named_by": "APN 053-1597-039-04, the Ashby West Lot parcel in BART's TOD Work Plan layer (BART: “a +/- "
                     "4-acre site (West Lot)”); it includes the station entrance",
         "accuracy": "approximate",
     },
     {
-        "key": "el-cerrito-plaza", "name": "El Cerrito Plaza", "station": "El Cerrito Plaza",
+        "key": "el-cerrito-plaza", "id": "el-cerrito-plaza-bart", "name": "El Cerrito Plaza BART", "station": "El Cerrito Plaza",
         "where": "STATION_AR = 'El Cerrito Plaza' AND TOD_WKPLAN = 'In Progress'",
         "named_by": "the four parcels BART's TOD Work Plan layer marks “In Progress” at El Cerrito Plaza; they "
                     "include the station and track right-of-way, which the master plan does not build on",
         "accuracy": "approximate",
     },
     {
-        "key": "west-dublin", "name": "West Dublin/Pleasanton (Amador Station)", "station": "West Dublin/Pleasanton",
+        "key": "west-dublin", "id": "amador-station", "name": "Amador Station (West Dublin/Pleasanton BART)", "station": "West Dublin/Pleasanton",
         "where": "APN_D IN ('941-2842-002-00', '941-2842-004-00')",
         "named_by": "APNs 941-2842-002-00 and 941-2842-004-00, named in the City of Dublin's Notice of Determination "
                     "for Amador Station (CEQAnet SCH 2010022005, received July 28, 2026)",
@@ -246,47 +250,33 @@ def site_shapes(g: gpd.GeoDataFrame) -> dict[str, dict]:
 
 # --------------------------------------------------------------------------- boundary
 
-def write_boundary(sites: dict[str, dict]) -> None:
-    whole = shapely.union_all([s["utm"] for s in sites.values()])
-    total = whole.area / ACRE_M2
-    parts = []
+def write_boundaries(sites: dict[str, dict]) -> None:
+    """One boundary file per station project: the site is the BART parcels drawn for it."""
     for s in sites.values():
-        parts.append({
-            "type": "Feature",
+        fc = {
+            "type": "FeatureCollection",
             "properties": {
-                "kind": "sub-area", "name": s["name"], "acres": round(s["acres"], 2),
-                "apns": s["apns"], "accuracy": s["accuracy"],
-                "source": f"BART TOD Work Plan layer: {s['named_by']}",
+                "project": s["id"],
+                "source": f"BART TOD Work Plan layer (BART AB 2923 public service, layer 2): {s['named_by']}",
+                "sourceLabel": "BART TOD parcels",
+                "sourceUrl": BART_WORKPLAN,
+                "query": arcgis_query(BART_WORKPLAN, s["where"]),
+                "accuracy": s["accuracy"],
+                "accuracyNote": (
+                    f"Drawn from BART's own parcel layer: {s['named_by']}. {s['acres']:,.1f} acres as drawn."
+                    + (" The parcels include station land that won't be built on." if s["accuracy"] == "approximate"
+                       else "")
+                ),
+                "license": BART_LICENSE,
+                "apns": s["apns"],
+                "features_used": len(s["apns"]),
             },
-            "geometry": mapping(tb.to_wgs(s["utm"])),
-        })
-    fc = {
-        "type": "FeatureCollection",
-        "properties": {
-            "project": PROJECT,
-            "source": "BART TOD Work Plan layer (BART AB 2923 public service, layer 2): BART-owned parcels at each site",
-            "sourceLabel": "BART TOD parcels",
-            "sourceUrl": BART_WORKPLAN,
-            "query": arcgis_query(BART_WORKPLAN, "STATION_AR IN (...)"),
-            "accuracy": "approximate",
-            "accuracyNote": (
-                "Six BART station sites, each drawn from BART's own parcel layer: West Oakland, Lake Merritt, North "
-                "Berkeley, Ashby (West Lot), El Cerrito Plaza and West Dublin/Pleasanton (Amador Station). The "
-                "parcels at North Berkeley, Ashby and El Cerrito Plaza include station entrances and track "
-                "right-of-way that won't be built on. Walnut Creek, Fremont, Bay Fair and Richmond aren't drawn: "
-                f"no official source places a defined project on a parcel yet. {total:,.1f} acres as drawn."
-            ),
-            "license": BART_LICENSE,
-            "features_used": int(sum(len(s["apns"]) for s in sites.values())),
-        },
-        "features": [{"type": "Feature", "properties": {"kind": "site", "name": "Project site"},
-                      "geometry": mapping(tb.to_wgs(whole))}] + parts,
-    }
-    path = tb.OUT / f"{PROJECT}.geojson"
-    path.write_text(json.dumps(tb._round(fc), indent=1, ensure_ascii=False) + "\n")
-    print(f"[bart] wrote {path.relative_to(config.ROOT)}: {len(parts)} sites, {total:,.1f} acres")
-    for s in sites.values():
-        print(f"    {s['name']}: {s['acres']:.2f} acres, APNs {', '.join(s['apns'])}")
+            "features": [{"type": "Feature", "properties": {"kind": "site", "name": "Project site"},
+                          "geometry": mapping(tb.to_wgs(s["utm"]))}],
+        }
+        path = tb.OUT / f"{s['id']}.geojson"
+        path.write_text(json.dumps(tb._round(fc), indent=1, ensure_ascii=False) + "\n")
+        print(f"[bart] wrote {path.relative_to(config.ROOT)}: {s['acres']:.2f} acres, APNs {', '.join(s['apns'])}")
 
 
 # --------------------------------------------------------------------------- rendering helpers
@@ -580,79 +570,104 @@ def envelope(site: dict, name: str, height_ft: float, stage: str, source: str, n
 
 # --------------------------------------------------------------------------- main
 
+PLANS_LICENSE = "City of Oakland and City of El Cerrito public records"
+
+
+def write_massing(site: dict, feats: list[dict], **props) -> None:
+    fc = {"type": "FeatureCollection", "properties": {"project": site["id"], **props}, "features": feats}
+    out = config.ROOT / "data" / "massing" / f"{site['id']}.geojson"
+    out.write_text(json.dumps(tb._round(fc), indent=1, ensure_ascii=False) + "\n")
+    print(f"[bart] wrote {out.relative_to(config.ROOT)}: {len(feats)} features, {out.stat().st_size / 1024:.0f} KB")
+    geo = props.get("georeference") or {}
+    for k, v in ({"": geo} if "rms_m" in geo else geo).items():
+        print(f"    {k or 'georeference'}: RMS {v['rms_m']} m")
+
+
 def main() -> None:
     parcels = bart_parcels()
     sites = site_shapes(parcels)
-    write_boundary(sites)
+    write_boundaries(sites)
 
-    feats, geo = [], {}
-    f, geo["west_oakland"] = west_oakland(sites["west-oakland"])
-    feats += f
-    f, geo["lake_merritt"] = lake_merritt(sites["lake-merritt"], parcels)
-    feats += f
-    f, geo["el_cerrito_plaza"] = el_cerrito_plaza(sites["el-cerrito-plaza"], parcels)
-    feats += f
+    feats, geo = west_oakland(sites["west-oakland"])
+    write_massing(
+        sites["west-oakland"], feats, illustrative=False,
+        summary=("Traced from the Revised Preliminary Development Plan the Oakland Planning Commission approved on "
+                 "Nov 4, 2020, with heights from its elevations and sections. T3's courtyard is approximate."),
+        note="The approved design: the T1 tower, the T3 affordable building and the T4 office building.",
+        sourceUrl=DOCS["wo_pdp"]["url"], sourceLabel="West Oakland plan, 2020 (PDF)", georeference=geo,
+        license=f"Plans: City of Oakland public records; parcels: {BART_LICENSE}",
+        documents=[DOCS["wo_pdp"]["url"], BART_WORKPLAN, WO_PAGE, BART_NEWS_WO])
 
-    rbmu = (f"the R-BMU zoning district's 80-ft / 7-story maximum (BMC 23.202.150(F)), as stated in the City of "
-            f"Berkeley's adopted North Berkeley BART Objective Design Standards, Dec 2023, Sec. 2.1.1 ({NB_ODS})")
-    feats.append(envelope(
-        sites["north-berkeley"], "North Berkeley", 80, "entitled",
-        f"BART parcels drawn to {rbmu}",
-        "Entitled Dec 11, 2024 for 739 homes in buildings of 3 to 8 stories (City of Berkeley 2024 General Plan "
-        "progress report); the design isn't drawn. Paths, plazas and the station area will stay open."))
-    feats.append(envelope(
-        sites["ashby"], "Ashby West Lot", 80, "proposed",
-        f"the West Lot parcel drawn to {rbmu}",
-        "Developer selected July 2025; BART describes five buildings of 6 to 8 stories with up to 600 homes. No "
-        "design has been filed with the City."))
+    feats, geo = lake_merritt(sites["lake-merritt"], parcels)
+    write_massing(
+        sites["lake-merritt"], feats, illustrative=False,
+        summary=("Lot lines traced from the 2021 vesting tentative tract map, with heights and bases from the City of "
+                 "Oakland's zoning table and tower setbacks from the plan sheets. Building B is drawn as its lot."),
+        note="The approved design on both blocks: Buildings A and B on Block 1, C and D on Block 2.",
+        sourceUrl=DOCS["lm_drc"]["url"], sourceLabel="Lake Merritt staff report, 2021 (PDF)", georeference=geo,
+        license=f"Plans: City of Oakland public records; parcels: {BART_LICENSE}",
+        documents=[DOCS["lm_drc"]["url"], BART_WORKPLAN, LM_PAGE, BART_LM])
+
+    feats, geo = el_cerrito_plaza(sites["el-cerrito-plaza"], parcels)
+    write_massing(
+        sites["el-cerrito-plaza"], feats, illustrative=False,
+        summary=("Building footprints traced from the master plan the City of El Cerrito approved on July 3, 2024, "
+                 "with heights from the plan's sections. Parcel A-South is outlined only: its approval gives stories, "
+                 "not feet."),
+        note="The approved master plan's six buildings.",
+        sourceUrl=DOCS["ecp_plans"]["url"], sourceLabel="El Cerrito Plaza plans, 2024 (PDF)", georeference=geo,
+        license=f"Plans: City of El Cerrito public records; parcels: {BART_LICENSE}",
+        documents=[DOCS["ecp_plans"]["url"], BART_WORKPLAN, ECP_APPROVAL, ECP_AS, EC_TOD, BART_ECP])
+
+    rbmu = "the R-BMU zoning district's 80-ft / 7-story maximum (BMC 23.202.150(F))"
+    envelope_summary = ("No approved footprints are published, so this is an illustrative envelope: BART's parcels "
+                        "drawn to {limit}. Real buildings will cover less of the land.")
+    write_massing(
+        sites["north-berkeley"], [envelope(
+            sites["north-berkeley"], "North Berkeley", 80, "entitled",
+            f"BART parcels drawn to {rbmu}, as stated in the City of Berkeley's adopted North Berkeley BART Objective "
+            f"Design Standards, Dec 2023, Sec. 2.1.1 ({NB_ODS})",
+            "Entitled Dec 11, 2024 for 739 homes in buildings of 3 to 8 stories (City of Berkeley 2024 General Plan "
+            "progress report); the design isn't drawn. Paths, plazas and the station area will stay open.")],
+        illustrative=True, summary=envelope_summary.format(limit="the 80-ft height limit of Berkeley's R-BMU district"),
+        note="A height-limit envelope, not the approved design.",
+        sourceUrl=NB_ODS, sourceLabel="North Berkeley design standards, 2023 (PDF)",
+        license=f"Parcels: {BART_LICENSE}; existing buildings: {OSM}",
+        documents=[NB_ODS, BK_APR, BART_WORKPLAN, BART_NB])
+
+    write_massing(
+        sites["ashby"], [envelope(
+            sites["ashby"], "Ashby West Lot", 80, "proposed",
+            f"the West Lot parcel drawn to {rbmu}, as stated in the City of Berkeley's Preliminary Objective Design "
+            f"Standards for the Ashby West Lot, Dec 2024, Sec. 1.2 ({ASHBY_ODS})",
+            "Developer selected July 2025; BART describes five buildings of 6 to 8 stories with up to 600 homes. No "
+            "design has been filed with the City.")],
+        illustrative=True, summary=envelope_summary.format(limit="the 80-ft height limit of Berkeley's R-BMU district"),
+        note="A height-limit envelope: no design has been filed.",
+        sourceUrl=ASHBY_ODS, sourceLabel="Ashby preliminary design standards, 2024 (PDF)",
+        license=f"Parcels: {BART_LICENSE}; existing buildings: {OSM}",
+        documents=[ASHBY_ODS, BART_WORKPLAN, BART_ASHBY])
+
     rz = bart_rezoned()
     dub = rz[rz["apn"].astype(str).str.contains("941-2842-00[24]", regex=True)]
     dub_h = sorted(set(dub["Building_Height"].astype(str)))
-    feats.append(envelope(
-        sites["west-dublin"], "Amador Station", 61, "entitled",
-        f"BART parcels drawn to the approved height, 5 stories and 61 ft, of the Site Development Review the City of "
-        f"Dublin approved on Aug 10, 2021 ({DUBLIN_MAP}); the zoning limit is 90 ft (BART's AB 2923 rezoned layer, "
-        f"“{'; '.join(dub_h)}”, {BART_REZONED})",
-        "300 affordable homes in two buildings of 136 and 164 (City of Dublin); building permits for the first building "
-        "are under review (City of Dublin) and construction awaits funding (BART). The approved footprints aren't "
-        "published, so the parcels are drawn whole. OpenStreetMap has two footprints here tagged building=construction "
-        "(checked 2023); no official source says work has started, so they aren't treated as buildings.",
-        cut_existing=False))
-
-    srcs = sorted({d["url"] for d in DOCS.values()})
-    fc = {
-        "type": "FeatureCollection",
-        "properties": {
-            "project": PROJECT,
-            "illustrative": True,
-            "summary": (
-                "West Oakland, Lake Merritt and El Cerrito Plaza are traced from their approved plans, with heights "
-                "from the plans' sections and the City's zoning tables. North Berkeley, the Ashby West Lot and "
-                "Amador Station have no published footprints, so they are illustrative envelopes: BART's parcels "
-                "drawn to the height limit (80 ft in Berkeley's R-BMU district) or the approved height (61 ft at "
-                "Amador Station). Real "
-                "buildings there will cover less of the land. Parcel A-South at El Cerrito Plaza is outlined "
-                "only: its approval gives stories, not feet."),
-            "note": "Approved designs at three stations; height-limit envelopes, not designs, at the other three.",
-            "sourceUrl": DOCS["wo_pdp"]["url"],
-            "sourceLabel": "West Oakland plan, 2020 (PDF)",
-            "georeference": geo,
-            "license": f"Plans: City of Oakland and City of El Cerrito public records; parcels: {BART_LICENSE}; "
-                       f"existing buildings: {OSM}",
-            "documents": srcs + [BART_WORKPLAN, BART_REZONED, NB_ODS, BK_APR, ECP_APPROVAL, ECP_AS, EC_TOD,
-                                 DUBLIN_NOD, DUBLIN_MAP, DUBLIN_PC, WO_PAGE, LM_PAGE, BART_LM, BART_NEWS_WO],
-        },
-        "features": feats,
-    }
-    out = config.ROOT / "data" / "massing" / f"{PROJECT}.geojson"
-    out.write_text(json.dumps(tb._round(fc), indent=1, ensure_ascii=False) + "\n")
-    print(f"[bart] wrote {out.relative_to(config.ROOT)}: {len(feats)} features, {out.stat().st_size / 1024:.0f} KB")
-    for k, v in geo.items():
-        if "rms_m" in v:
-            print(f"    {k}: RMS {v['rms_m']} m")
-        else:
-            for kk, vv in v.items():
-                print(f"    {k} {kk}: RMS {vv['rms_m']} m")
+    write_massing(
+        sites["west-dublin"], [envelope(
+            sites["west-dublin"], "Amador Station", 61, "entitled",
+            f"BART parcels drawn to the approved height, 5 stories and 61 ft, of the Site Development Review the City "
+            f"of Dublin approved on Aug 10, 2021 ({DUBLIN_MAP}); the zoning limit is 90 ft (BART's AB 2923 rezoned "
+            f"layer, “{'; '.join(dub_h)}”, {BART_REZONED})",
+            "300 affordable homes in two buildings of 136 and 164 (City of Dublin); building permits for the first "
+            "building are under review (City of Dublin) and construction awaits funding (BART). The approved footprints "
+            "aren't published, so the parcels are drawn whole. OpenStreetMap has two footprints here tagged "
+            "building=construction (checked 2023); no official source says work has started, so they aren't treated "
+            "as buildings.",
+            cut_existing=False)],
+        illustrative=True, summary=envelope_summary.format(limit="the approved height of 61 ft"),
+        note="An envelope at the approved height, not the approved design.",
+        sourceUrl=DUBLIN_MAP, sourceLabel="City of Dublin development map",
+        license=f"Parcels and zoning: {BART_LICENSE}",
+        documents=[DUBLIN_MAP, DUBLIN_PC, DUBLIN_NOD, BART_WORKPLAN, BART_REZONED, BART_UPCOMING])
 
 
 if __name__ == "__main__":

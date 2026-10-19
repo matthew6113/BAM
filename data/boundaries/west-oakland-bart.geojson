@@ -1,0 +1,55 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "west-oakland-bart",
+  "source": "BART TOD Work Plan layer (BART AB 2923 public service, layer 2): the parcels BART's TOD Work Plan layer marks “In Progress” at West Oakland, which form the block the City of Oakland describes (about 5.58 acres between 7th, 5th and Chester Streets and Mandela Parkway)",
+  "sourceLabel": "BART TOD parcels",
+  "sourceUrl": "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
+  "query": "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2/query?where=STATION_AR+%3D+%27West+Oakland%27+AND+TOD_WKPLAN+%3D+%27In+Progress%27&outFields=%2A&outSR=4326&f=geojson",
+  "accuracy": "official",
+  "accuracyNote": "Drawn from BART's own parcel layer: the parcels BART's TOD Work Plan layer marks “In Progress” at West Oakland, which form the block the City of Oakland describes (about 5.58 acres between 7th, 5th and Chester Streets and Mandela Parkway). 5.5 acres as drawn.",
+  "license": "BART public ArcGIS Online service (no license stated)",
+  "apns": [
+   "004-0077-003-00",
+   "004-0071-003-00",
+   "(vacated street, no APN)"
+  ],
+  "features_used": 3
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2963261,
+       37.8044416
+      ],
+      [
+       -122.2959748,
+       37.805413
+      ],
+      [
+       -122.2938082,
+       37.8049344
+      ],
+      [
+       -122.2941618,
+       37.8039491
+      ],
+      [
+       -122.2963261,
+       37.8044416
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

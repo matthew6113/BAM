@@ -39,9 +39,8 @@ const getStage = (id: string) => getProject(id)?.stage;
 const EMPTY: FeatureCollection = { type: 'FeatureCollection', features: [] };
 
 /**
- * One point per mapped site (its centroid; one per piece for a scattered program), for the dots and
- * names. `size` (how wide the site reads, in metres) puts small sites' dots on top and big sites'
- * names first; a scattered program is named once.
+ * One point per mapped site (its centroid), for the dots and names. `size` (how wide the site
+ * reads, in metres) puts small sites' dots on top and big sites' names first.
  */
 function projectPoints(): FeatureCollection<Point> {
   return {
@@ -49,9 +48,7 @@ function projectPoints(): FeatureCollection<Point> {
     features: MAPPED_PROJECTS.flatMap((p) => {
       const at = markersOf(p.id);
       const size = Math.round(siteWidth(p.id));
-      return at.map((xy, i) => pointFeature(xy, {
-        id: p.id, name: p.name, stage: p.stage, scattered: at.length > 1, named: i === 0, size,
-      }));
+      return at.map((xy) => pointFeature(xy, { id: p.id, name: p.name, stage: p.stage, size }));
     }),
   };
 }
@@ -167,11 +164,9 @@ export function projectLayers(
   const others: ExpressionSpecification = hidden.length
     ? ['all', ['!=', ['get', 'id'], selectedId], ['!', ['in', ['get', 'id'], ['literal', hidden]]]]
     : ['!=', ['get', 'id'], selectedId];
-  const isSelected: ExpressionSpecification = ['==', ['get', 'id'], selectedId];
   const landed = selection?.phase === 'landed';
   // Line projects draw their alignment instead of a site.
   const othersSites: ExpressionSpecification = ['all', others, ['!', ['get', 'line']]];
-  const markerFilter: ExpressionSpecification = ['any', others, ['all', isSelected, ['==', ['get', 'scattered'], true]]];
   // A proposed site (no approvals yet) is an outline only, dashed, per the stage spec (Matthew, 2026-10-08).
   const proposedSite: ExpressionSpecification = ['==', ['get', 'stage'], 'proposed'];
   const selectedProposed = !!selection && getStage(selection.id) === 'proposed';
@@ -328,15 +323,13 @@ export function projectLayers(
       type: 'circle',
       source: 'project-points',
       maxzoom: LAST_DOT_ZOOM,
-      // A scattered program (BART's station sites) keeps its dots once selected: from its regional
-      // landing view the sites themselves are only a few pixels across.
-      filter: markerFilter,
+      filter: others,
       layout: { 'circle-sort-key': ['-', 0, ['get', 'size']] },
       paint: {
         'circle-color': ['case', proposedSite, c.land, stageCol],
         'circle-radius': ['interpolate', ['linear'], ['zoom'],
-          6, ['case', isSelected, 3.5, 2.75], 10, ['case', isSelected, 5, 4], 12.5, ['case', isSelected, 6, 5]],
-        'circle-stroke-color': ['case', proposedSite, stageCol, isSelected, c.labels, c.land],
+          6, 2.75, 10, 4, 12.5, 5],
+        'circle-stroke-color': ['case', proposedSite, stageCol, c.land],
         'circle-stroke-width': ['case', proposedSite, 1.5, 1],
         'circle-opacity': dot,
         'circle-stroke-opacity': dot,
@@ -348,7 +341,7 @@ export function projectLayers(
       type: 'circle',
       source: 'project-points',
       maxzoom: LAST_DOT_ZOOM,
-      filter: markerFilter,
+      filter: others,
       paint: { 'circle-radius': 11, 'circle-color': c.land, 'circle-opacity': 0 },
     },
     {
@@ -359,7 +352,7 @@ export function projectLayers(
       source: 'project-points',
       minzoom: 8.5,
       maxzoom: 15.5,
-      filter: ['all', others, ['==', ['get', 'named'], true]],
+      filter: others,
       layout: {
         'text-field': ['get', 'name'],
         'text-font': fonts.medium,

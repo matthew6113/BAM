@@ -18,7 +18,6 @@ import {
   boundaryLine,
   siteOf,
   bboxOf,
-  markerPointsOf,
   markersOf,
   containsPoint,
   dredgingOf,
@@ -27,7 +26,7 @@ import { isOfficialSource } from '../src/projects/official';
 import { CATEGORIES, isFiltered, matchesFilter, NO_FILTER } from '../src/projects/filter';
 import { STAGE_KEYS } from '../src/theme/theme';
 import { formatDate, formatSqft, sourceText } from '../src/ui/format';
-import { pathForProject, projectIdFromPath } from '../src/router';
+import { pathForProject, projectIdFromPath, retiredQuery } from '../src/router';
 
 // Massing and land use load on demand in the app; the checks below need all of it.
 await loadAllGeometry();
@@ -282,24 +281,10 @@ describe('geometry helpers', () => {
     expect(linePrefix(line, 0).geometry.coordinates[0].length).toBeGreaterThanOrEqual(2);
   });
 
-  it('puts a regional marker on each station of a scattered program, and one on every other site', () => {
+  it('puts one regional marker on every site, at its centroid', () => {
     // Line projects have no dot (tested under 'line projects').
     for (const project of MAPPED_PROJECTS.filter((p) => !isLineProject(p.id))) {
-      const boundary = boundaryOf(project.id)!;
-      const site = siteOf(project.id)!.geometry;
-      const parts = boundary.features.filter((f) => f.properties.kind === 'sub-area').map((f) => f.geometry);
-      const markers = markerPointsOf(site, parts);
-      if (project.id === 'bart-station-housing') {
-        expect(markers).toHaveLength(parts.length);
-        // On the station site (Lake Merritt's two blocks face each other across an intersection).
-        markers.forEach((m, i) => {
-          const [x0, y0, x1, y1] = bboxOf(parts[i]);
-          expect(inside(m, [x0, y0, x1, y1]), boundary.features[i + 1].properties.name).toBe(true);
-        });
-        expect(containsPoint(site, centroidOf(site))).toBe(false);
-      } else {
-        expect(markers, project.id).toHaveLength(1);
-      }
+      expect(markersOf(project.id), project.id).toEqual([centroidOf(siteOf(project.id)!.geometry)]);
     }
   });
 
@@ -338,6 +323,16 @@ describe('deep links', () => {
     expect(pathForProject('potrero-power-station')).toBe('/p/potrero-power-station');
     expect(getProject('potrero-power-station')?.name).toBe('Potrero Power Station');
   });
+
+  it('sends a link to a retired project to the projects that replaced it', () => {
+    // BART station-area housing became one project per station (Matthew, 2026-10-19).
+    const query = retiredQuery('/p/bart-station-housing')!;
+    expect(getProject('bart-station-housing')).toBeUndefined();
+    expect(MAPPED_PROJECTS.filter((p) => matchesFilter(p, { ...NO_FILTER, query })).map((p) => p.id).sort()).toEqual(
+      ['amador-station', 'ashby-bart', 'el-cerrito-plaza-bart', 'lake-merritt-bart', 'north-berkeley-bart', 'west-oakland-bart']);
+    expect(retiredQuery('/p/potrero-power-station')).toBeNull();
+    expect(retiredQuery('/p/constructor')).toBeNull();
+  });
 });
 
 describe('buildings and transportation', () => {
@@ -357,7 +352,7 @@ describe('buildings and transportation', () => {
   it('follows the classification Matthew set (2026-10-12)', () => {
     for (const id of ['mission-bay-ferry-landing', 'berkeley-pier-ferry', 'redwood-city-ferry-terminal'])
       expect(ids('transportation'), id).toContain(id);
-    for (const id of ['diridon-station', 'bart-station-housing', 'potrero-power-station'])
+    for (const id of ['diridon-station', 'lake-merritt-bart', 'potrero-power-station'])
       expect(ids('buildings'), id).toContain(id);
   });
 

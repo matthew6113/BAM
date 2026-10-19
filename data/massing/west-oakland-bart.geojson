@@ -1,0 +1,539 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "west-oakland-bart",
+  "illustrative": false,
+  "summary": "Traced from the Revised Preliminary Development Plan the Oakland Planning Commission approved on Nov 4, 2020, with heights from its elevations and sections. T3's courtyard is approximate.",
+  "note": "The approved design: the T1 tower, the T3 affordable building and the T4 office building.",
+  "sourceUrl": "https://www.oaklandca.gov/files/assets/city/v/1/planning-amp-building/documents/dp/mandela-station-bart/wo-bart-pdp-revised-approval-dated-september-16-2020.pdf",
+  "sourceLabel": "West Oakland plan, 2020 (PDF)",
+  "georeference": {
+   "scale_m_per_unit": 0.21282,
+   "rotation_deg": -15.551,
+   "rms_m": 0.17,
+   "controls": [
+    {
+     "label": "7th St / Chester St parcel corner",
+     "residual_m": 0.17
+    },
+    {
+     "label": "7th St / Mandela Pkwy parcel corner",
+     "residual_m": 0.14
+    },
+    {
+     "label": "5th St / Mandela Pkwy parcel corner",
+     "residual_m": 0.17
+    },
+    {
+     "label": "5th St / Chester St parcel corner",
+     "residual_m": 0.19
+    }
+   ],
+   "method": "least-squares similarity on the four corners of the plan's site rectangle (lines fitted to the red site line) matched to the corners of BART's parcels",
+   "page": "Revised PDP, PDF p. 124 (100 dpi); p. 120 shares its frame"
+  },
+  "license": "Plans: City of Oakland public records; parcels: BART public ArcGIS Online service (no license stated)",
+  "documents": [
+   "https://www.oaklandca.gov/files/assets/city/v/1/planning-amp-building/documents/dp/mandela-station-bart/wo-bart-pdp-revised-approval-dated-september-16-2020.pdf",
+   "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
+   "https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/West-Oakland-BART-Development-Mandela-Station",
+   "https://www.bart.gov/news/articles/2026/news20260901-0"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "West Oakland",
+    "label": "T1 tower",
+    "stage": "entitled",
+    "height_ft": 320,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: West Oakland BART TOD Revised Preliminary Development Plan, approved by the Oakland Planning Commission Nov 4, 2020 (PLN18490-R02; plan set dated July 24, 2020), PDF p. 124 (floors 20-31 plan); height: sheet A-20.01, roof 320'-0\"",
+    "note": "31 stories; 522 market-rate homes in T1 (City of Oakland project page)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2943711,
+       37.8050599
+      ],
+      [
+       -122.2938126,
+       37.804935
+      ],
+      [
+       -122.2939431,
+       37.8045736
+      ],
+      [
+       -122.2941552,
+       37.8046617
+      ],
+      [
+       -122.2941073,
+       37.8047944
+      ],
+      [
+       -122.2944396,
+       37.80487
+      ],
+      [
+       -122.2943711,
+       37.8050599
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "West Oakland",
+    "label": "T1 west wing",
+    "stage": "entitled",
+    "height_ft": 189.7,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: West Oakland BART TOD Revised Preliminary Development Plan, approved by the Oakland Planning Commission Nov 4, 2020 (PLN18490-R02; plan set dated July 24, 2020), PDF p. 124 (outline of the floors below the 19th-floor roof terrace); height: sheet A-20.01, 19th-floor level 189'-8\""
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2947838,
+       37.8051497
+      ],
+      [
+       -122.2943717,
+       37.8050581
+      ],
+      [
+       -122.2944396,
+       37.80487
+      ],
+      [
+       -122.2947391,
+       37.804946
+      ],
+      [
+       -122.2947318,
+       37.8049663
+      ],
+      [
+       -122.294841,
+       37.8049911
+      ],
+      [
+       -122.2947838,
+       37.8051497
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "West Oakland",
+    "label": "T1 podium",
+    "stage": "entitled",
+    "height_ft": 39.3,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Retail, parking",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: West Oakland BART TOD Revised Preliminary Development Plan, approved by the Oakland Planning Commission Nov 4, 2020 (PLN18490-R02; plan set dated July 24, 2020), PDF p. 124 (T1 development area line); height: sheet A-20.01, 4th-floor level 39'-4\" (the podium roof terraces are at the 4th floor)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2943718,
+        37.8050595
+       ],
+       [
+        -122.2947838,
+        37.8051501
+       ],
+       [
+        -122.2948416,
+        37.804991
+       ],
+       [
+        -122.2947325,
+        37.804966
+       ],
+       [
+        -122.2947389,
+        37.8049481
+       ],
+       [
+        -122.2949612,
+        37.8050344
+       ],
+       [
+        -122.2949093,
+        37.8051782
+       ],
+       [
+        -122.2943718,
+        37.8050595
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2938083,
+        37.804935
+       ],
+       [
+        -122.29394,
+        37.8045689
+       ],
+       [
+        -122.2944968,
+        37.8047952
+       ],
+       [
+        -122.2944782,
+        37.8048468
+       ],
+       [
+        -122.2947197,
+        37.8049406
+       ],
+       [
+        -122.2944398,
+        37.8048695
+       ],
+       [
+        -122.294108,
+        37.8047941
+       ],
+       [
+        -122.2941557,
+        37.8046615
+       ],
+       [
+        -122.2939431,
+        37.8045731
+       ],
+       [
+        -122.2938121,
+        37.804935
+       ],
+       [
+        -122.2939939,
+        37.804976
+       ],
+       [
+        -122.2938083,
+        37.804935
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "West Oakland",
+    "label": "T3 (affordable homes)",
+    "stage": "construction",
+    "height_ft": 70,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable residential",
+    "phase": "Phase 1",
+    "illustrative": false,
+    "source": "traced: West Oakland BART TOD Revised Preliminary Development Plan, approved by the Oakland Planning Commission Nov 4, 2020 (PLN18490-R02; plan set dated July 24, 2020), PDF p. 120 (typical floor plan); height: sheet A-30.02, roof 70'-0\"; under construction: BART, Sept 1, 2026 (https://www.bart.gov/news/articles/2026/news20260901-0)",
+    "note": "7 stories, 240 affordable homes; BART says construction began September 2026. The courtyard is approximate."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2954678,
+       37.8047525
+      ],
+      [
+       -122.2952872,
+       37.8046885
+      ],
+      [
+       -122.295446,
+       37.8042487
+      ],
+      [
+       -122.2961502,
+       37.8044087
+      ],
+      [
+       -122.2959931,
+       37.8048439
+      ],
+      [
+       -122.2958978,
+       37.8048222
+      ],
+      [
+       -122.2958718,
+       37.8048942
+      ],
+      [
+       -122.2961355,
+       37.804972
+      ],
+      [
+       -122.2961022,
+       37.8050642
+      ],
+      [
+       -122.2958122,
+       37.8049305
+      ],
+      [
+       -122.2954678,
+       37.8047525
+      ]
+     ],
+     [
+      [
+       -122.2956298,
+       37.804478
+      ],
+      [
+       -122.2955592,
+       37.8046735
+      ],
+      [
+       -122.2957693,
+       37.804809
+      ],
+      [
+       -122.2958692,
+       37.8045324
+      ],
+      [
+       -122.2956298,
+       37.804478
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "West Oakland",
+    "label": "T3 ground floor",
+    "stage": "construction",
+    "height_ft": 20,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Retail, parking",
+    "phase": "Phase 1",
+    "illustrative": false,
+    "source": "traced: West Oakland BART TOD Revised Preliminary Development Plan, approved by the Oakland Planning Commission Nov 4, 2020 (PLN18490-R02; plan set dated July 24, 2020), PDF p. 124 (T3 outline); height: sheet A-30.02, 2nd-floor level 20'-0\" (decks and courtyard at the 2nd floor)"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2957513,
+        37.8049286
+       ],
+       [
+        -122.2955199,
+        37.8047823
+       ],
+       [
+        -122.2953415,
+        37.8047082
+       ],
+       [
+        -122.2954676,
+        37.8047529
+       ],
+       [
+        -122.2958119,
+        37.8049309
+       ],
+       [
+        -122.2960317,
+        37.8050322
+       ],
+       [
+        -122.2957513,
+        37.8049286
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2954573,
+        37.8042453
+       ],
+       [
+        -122.2963242,
+        37.8044423
+       ],
+       [
+        -122.2961333,
+        37.8049709
+       ],
+       [
+        -122.2958725,
+        37.8048939
+       ],
+       [
+        -122.2958982,
+        37.8048228
+       ],
+       [
+        -122.2959936,
+        37.8048441
+       ],
+       [
+        -122.2961507,
+        37.8044085
+       ],
+       [
+        -122.2954554,
+        37.8042504
+       ],
+       [
+        -122.2954573,
+        37.8042453
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.2958685,
+        37.8045327
+       ],
+       [
+        -122.295769,
+        37.8048082
+       ],
+       [
+        -122.2955599,
+        37.8046733
+       ],
+       [
+        -122.2956302,
+        37.8044786
+       ],
+       [
+        -122.2958685,
+        37.8045327
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "block": "West Oakland",
+    "label": "T4 (office)",
+    "stage": "entitled",
+    "height_ft": 100,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, retail",
+    "phase": null,
+    "illustrative": false,
+    "source": "traced: West Oakland BART TOD Revised Preliminary Development Plan, approved by the Oakland Planning Commission Nov 4, 2020 (PLN18490-R02; plan set dated July 24, 2020), PDF p. 124 (T4 roof outline); height: sheet A-30.01, roof 100'-0\" (the City describes a “100-ft tall” office building, https://www.oaklandca.gov/Planning-Building/Major-Development-Projects/West-Oakland-BART-Development-Mandela-Station)"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2950712,
+       37.8045207
+      ],
+      [
+       -122.2948365,
+       37.8044673
+      ],
+      [
+       -122.2948411,
+       37.8044544
+      ],
+      [
+       -122.294783,
+       37.8044412
+      ],
+      [
+       -122.2947404,
+       37.8045313
+      ],
+      [
+       -122.2940563,
+       37.8042601
+      ],
+      [
+       -122.2941608,
+       37.8039706
+      ],
+      [
+       -122.2944629,
+       37.8040392
+      ],
+      [
+       -122.2944602,
+       37.8040466
+      ],
+      [
+       -122.2946741,
+       37.8040952
+      ],
+      [
+       -122.2946807,
+       37.8040768
+      ],
+      [
+       -122.2951897,
+       37.8041924
+      ],
+      [
+       -122.2950712,
+       37.8045207
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

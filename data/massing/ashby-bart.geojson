@@ -1,0 +1,95 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "ashby-bart",
+  "illustrative": true,
+  "summary": "No approved footprints are published, so this is an illustrative envelope: BART's parcels drawn to the 80-ft height limit of Berkeley's R-BMU district. Real buildings will cover less of the land.",
+  "note": "A height-limit envelope: no design has been filed.",
+  "sourceUrl": "https://www.bart.gov/sites/default/files/2024-12/24_1210_AshbyTODPrelimODS.pdf",
+  "sourceLabel": "Ashby preliminary design standards, 2024 (PDF)",
+  "license": "Parcels: BART public ArcGIS Online service (no license stated); existing buildings: OpenStreetMap contributors (ODbL 1.0), via Overture Maps",
+  "documents": [
+   "https://www.bart.gov/sites/default/files/2024-12/24_1210_AshbyTODPrelimODS.pdf",
+   "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
+   "https://www.bart.gov/about/business/tod/ashby"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "Ashby West Lot",
+    "label": "Ashby West Lot",
+    "stage": "proposed",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Residential (mixed use)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the West Lot parcel drawn to the R-BMU zoning district's 80-ft / 7-story maximum (BMC 23.202.150(F)), as stated in the City of Berkeley's Preliminary Objective Design Standards for the Ashby West Lot, Dec 2024, Sec. 1.2 (https://www.bart.gov/sites/default/files/2024-12/24_1210_AshbyTODPrelimODS.pdf)",
+    "note": "Developer selected July 2025; BART describes five buildings of 6 to 8 stories with up to 600 homes. No design has been filed with the City."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.2709557,
+       37.854263
+      ],
+      [
+       -122.2697349,
+       37.8544235
+      ],
+      [
+       -122.2696915,
+       37.85442
+      ],
+      [
+       -122.2696566,
+       37.8544089
+      ],
+      [
+       -122.2696299,
+       37.8543797
+      ],
+      [
+       -122.2696151,
+       37.8543408
+      ],
+      [
+       -122.2705179,
+       37.8519624
+      ],
+      [
+       -122.2705615,
+       37.8518999
+      ],
+      [
+       -122.2706115,
+       37.8518881
+      ],
+      [
+       -122.2706603,
+       37.8518984
+      ],
+      [
+       -122.2706991,
+       37.8519321
+      ],
+      [
+       -122.2707051,
+       37.8519663
+      ],
+      [
+       -122.2709557,
+       37.854263
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

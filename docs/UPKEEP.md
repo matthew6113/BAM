@@ -53,7 +53,7 @@ Don't add or replace photos without Matthew's approval.
 Search official sources for large Bay Area projects that aren't on the map or in `_meta.dropped`.
 The bar: a master-planned, multi-building project of roughly 1,000+ homes or 1M+ sq ft of
 commercial space, or a comparably large site (Matthew has also included smaller ones by choice,
-such as Esmeralda and BART station-area housing). Places to look:
+such as Esmeralda and the six BART station projects). Places to look:
 
 - CEQAnet: new notices of preparation and EIRs in the nine counties (Alameda, Contra Costa,
   Marin, Napa, San Francisco, San Mateo, Santa Clara, Solano, Sonoma);
@@ -78,10 +78,10 @@ Matthew has already said yes to these. When the condition is met, add them in th
 usual research and mapping steps; see `docs/official-research/candidates-ferry-terminals.md`) and
 say so under "What changed". Until then, note their status under "New projects for Matthew".
 
-- **Harbor Bay replacement ferry terminal** (Alameda, WETA): add once its CEQA document (initial
-  study, notice of preparation or draft EIR) is published.
-- **Larkspur ferry service and parking expansion** (Golden Gate Bridge District): add once its
-  Draft EIR is published (the notice of preparation was 2024).
+- **Harbor Bay replacement ferry terminal** (Alameda, WETA): add once WETA publishes its site (a CEQA
+  document, site plan or board figure); until then there's nothing official to draw. A draft record
+  is in `docs/official-research/candidates-harbor-bay-larkspur-ferries.md`.
+- Larkspur ferry service and parking expansion: added Oct 19, 2026 (`larkspur-ferry-expansion`).
 
 ## 5. Check and open the PR
 

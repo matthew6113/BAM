@@ -1,0 +1,118 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "el-cerrito-plaza-bart",
+  "source": "BART TOD Work Plan layer (BART AB 2923 public service, layer 2): the four parcels BART's TOD Work Plan layer marks “In Progress” at El Cerrito Plaza; they include the station and track right-of-way, which the master plan does not build on",
+  "sourceLabel": "BART TOD parcels",
+  "sourceUrl": "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2",
+  "query": "https://services.arcgis.com/sqS7RNuF1BQinj5N/arcgis/rest/services/BART_AB_2923_Public_Service_20230201/FeatureServer/2/query?where=STATION_AR+%3D+%27El+Cerrito+Plaza%27+AND+TOD_WKPLAN+%3D+%27In+Progress%27&outFields=%2A&outSR=4326&f=geojson",
+  "accuracy": "approximate",
+  "accuracyNote": "Drawn from BART's own parcel layer: the four parcels BART's TOD Work Plan layer marks “In Progress” at El Cerrito Plaza; they include the station and track right-of-way, which the master plan does not build on. 7.5 acres as drawn. The parcels include station land that won't be built on.",
+  "license": "BART public ArcGIS Online service (no license stated)",
+  "apns": [
+   "504-130-031-9",
+   "504-050-012-5",
+   "504-121-017-9",
+   "504-122-010-3"
+  ],
+  "features_used": 4
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.2993815,
+        37.9032862
+       ],
+       [
+        -122.2987727,
+        37.9034701
+       ],
+       [
+        -122.2981395,
+        37.9021428
+       ],
+       [
+        -122.2983995,
+        37.9020618
+       ],
+       [
+        -122.2993815,
+        37.9032862
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3005642,
+        37.9029089
+       ],
+       [
+        -122.2998752,
+        37.9031133
+       ],
+       [
+        -122.2996635,
+        37.9031993
+       ],
+       [
+        -122.2995438,
+        37.9032372
+       ],
+       [
+        -122.2985607,
+        37.9020115
+       ],
+       [
+        -122.2999375,
+        37.9015823
+       ],
+       [
+        -122.3005642,
+        37.9029089
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3000672,
+        37.9042774
+       ],
+       [
+        -122.2992689,
+        37.9045156
+       ],
+       [
+        -122.2988511,
+        37.9036344
+       ],
+       [
+        -122.2993126,
+        37.9034972
+       ],
+       [
+        -122.2996136,
+        37.9037917
+       ],
+       [
+        -122.3000672,
+        37.9042774
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
