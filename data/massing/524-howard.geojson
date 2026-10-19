@@ -1,0 +1,81 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "524-howard",
+  "illustrative": true,
+  "summary": "Illustrative massing: one simple volume for the approved 72-story tower, the site inset evenly to the building's average floor area (about 12,250 sq ft) and extruded to the 795-ft roof. The approved plans weren't available, so the tower's real outline, its garage podium, the rooftop features to 844 ft and the bridge to Salesforce Park are not drawn.",
+  "note": "A placeholder volume of the approved size, not the design.",
+  "sourceUrl": "https://data.sf.gov/resource/y673-d69b.json?record_id=2023-010883TDM",
+  "sourceLabel": "SF Planning record 2023-010883TDM (DataSF)",
+  "georeference": {
+   "method": "No drawing: the DataSF parcels of the site, inset evenly (mitred) by the distance printed above.",
+   "inset_ft": 10.2
+  },
+  "license": "Figures: SF Planning records on DataSF. Lots: DataSF parcels (ODC-PDDL)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Tower",
+    "stage": "entitled",
+    "height_ft": 795,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (672, 68 of them affordable)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the site (DataSF parcels 3721/013 and 014) inset evenly to the average gross floor area per story in the SF Planning record 2023-010883TDM (524 and 530 Howard Street), DataSF Planning records (about 882,251 sq ft over 72 stories); roof height from the same record",
+    "note": "About 795 ft to the roof, 844 ft with mechanical penthouse levels and screening. The real floor plate, setbacks and garage podium aren't known from the documents read."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.397338,
+       37.7882516
+      ],
+      [
+       -122.397144,
+       37.7884043
+      ],
+      [
+       -122.3969716,
+       37.7882663
+      ],
+      [
+       -122.3969561,
+       37.7882604
+      ],
+      [
+       -122.3969422,
+       37.7882604
+      ],
+      [
+       -122.3969294,
+       37.7882645
+      ],
+      [
+       -122.3969181,
+       37.7882728
+      ],
+      [
+       -122.3967607,
+       37.7881467
+      ],
+      [
+       -122.3969858,
+       37.7879694
+      ],
+      [
+       -122.397338,
+       37.7882516
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

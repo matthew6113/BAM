@@ -173,6 +173,15 @@ FREEDOM_WEST_BLKLOTS = ["0783023", "0783024", "0783025", "0770027"]
 # lots named in the Notice of Preparation of Sept 30, 2026 (case 2026-002123ENV, SCH 2026091295).
 RAILYARDS_BLKLOTS = ["8701003", "8701004", "8700001", "8703005"]
 
+# Transbay Parcel F (542-550 Howard Street): Assessor's Block 3721, Lots 016, 135, 136 and 138, as listed in the
+# Planning Commission's approvals of Jan 9, 2020 (Motions 20615-20618, case 2016-013312) and their Jan 28, 2021
+# amendments (Motions 20843-20845).
+TRANSBAY_PARCEL_F_BLKLOTS = ["3721016", "3721135", "3721136", "3721138"]
+
+# 524 and 530 Howard Street: Block 3721, Lots 013 (524 Howard, parking lot) and 014 (530 Howard, office building),
+# the two lots of DBI site permit application 202311170986 and Planning record 2023-010883PRJ.
+HOWARD_524_BLKLOTS = ["3721013", "3721014"]
+
 
 def _sql_list(values) -> str:
     return ", ".join(f"'{v}'" for v in values)
@@ -688,6 +697,28 @@ SPECS: dict[str, dict] = {
                  "2026-002123ENV): the Caltrain station and railyard between Townsend, Fourth, King and Seventh "
                  "streets, against its 18.63 acres. The offsite train storage and maintenance facility, whose location "
                  "isn't chosen yet, isn't drawn."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "transbay-parcel-f": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(TRANSBAY_PARCEL_F_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3721 lots 016, 135, 136 and 138",
+        "accuracy": "official",
+        "note": ("The four lots of Transbay Parcel F named in the Planning Commission's approvals (Jan 9, 2020), "
+                 "against the 32,229 sq ft (0.74 acres) in Motion 20616. The west edge follows the curved line of "
+                 "the Transit Center's bus ramp property (lots 134 and 137), which isn't part of the site; the strip "
+                 "of lot 136 along Natoma Street reaches east behind 540 Howard Street (lot 015) to 530 Howard Street."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "524-howard": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(HOWARD_524_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3721 lots 013 and 014",
+        "accuracy": "official",
+        "note": ("The parking lot at 524 Howard Street (lot 013) and the office building at 530 Howard Street (lot "
+                 "014), the two lots of DBI site permit application 202311170986, running through from Howard Street "
+                 "to Natoma Street. Transbay Parcel F's strip along Natoma Street adjoins lot 014 on the west; the "
+                 "two sites share that line and don't overlap."),
         "license": "ODC Public Domain Dedication and License (DataSF)",
     },
 }
