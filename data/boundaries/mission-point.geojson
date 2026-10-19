@@ -1,0 +1,154 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "mission-point",
+  "source": "Santa Clara County parcels, the nine APNs in Santa Clara's notice of determination for Mission Point (Dec 3, 2024)",
+  "sourceLabel": "Santa Clara County parcels",
+  "sourceUrl": "https://data.sccgov.org/d/ubcd-cewv",
+  "query": "https://data.sccgov.org/resource/ubcd-cewv.geojson?%24where=apn+in+%28%2710404150%27%2C+%2710404142%27%2C+%2710404143%27%2C+%2710404151%27%2C+%2710404112%27%2C+%2710404113%27%2C+%2710404065%27%2C+%2710404111%27%2C+%2710404064%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The nine parcels the City's approval names for the Mission Point Project, joined over the Democracy Way right-of-way that the project takes in, against the approval's approximately 48.6 acres (Draft EIR Table 2-1: 46.0 acres of parcels plus 2.6 acres of right-of-way). 48.4 acres as drawn.",
+  "license": "Santa Clara County open data (terms of use)",
+  "features_used": 9
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9849192,
+       37.3986552
+      ],
+      [
+       -121.9849161,
+       37.4012012
+      ],
+      [
+       -121.9848868,
+       37.4015101
+      ],
+      [
+       -121.9848031,
+       37.4018088
+      ],
+      [
+       -121.9847013,
+       37.4020204
+      ],
+      [
+       -121.984632,
+       37.40207
+      ],
+      [
+       -121.9843507,
+       37.4021499
+      ],
+      [
+       -121.9844995,
+       37.402359
+      ],
+      [
+       -121.9845172,
+       37.4024484
+      ],
+      [
+       -121.9843142,
+       37.4029303
+      ],
+      [
+       -121.9842304,
+       37.4032049
+      ],
+      [
+       -121.9841984,
+       37.403256
+      ],
+      [
+       -121.9840762,
+       37.4032931
+      ],
+      [
+       -121.9837069,
+       37.4032528
+      ],
+      [
+       -121.9829367,
+       37.4032203
+      ],
+      [
+       -121.9812391,
+       37.4032088
+      ],
+      [
+       -121.9804297,
+       37.4031596
+      ],
+      [
+       -121.9803716,
+       37.4031366
+      ],
+      [
+       -121.9803229,
+       37.4030697
+      ],
+      [
+       -121.9803064,
+       37.4028555
+      ],
+      [
+       -121.9802347,
+       37.4025001
+      ],
+      [
+       -121.9802528,
+       37.4024419
+      ],
+      [
+       -121.9803987,
+       37.4022365
+      ],
+      [
+       -121.9801263,
+       37.4021582
+      ],
+      [
+       -121.980072,
+       37.402126
+      ],
+      [
+       -121.9800317,
+       37.4020773
+      ],
+      [
+       -121.9798004,
+       37.4015465
+      ],
+      [
+       -121.9797188,
+       37.4012519
+      ],
+      [
+       -121.9796911,
+       37.4009475
+      ],
+      [
+       -121.9796931,
+       37.3995763
+      ],
+      [
+       -121.9849192,
+       37.3986552
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

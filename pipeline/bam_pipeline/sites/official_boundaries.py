@@ -140,6 +140,30 @@ SOUTH_VAN_NESS_10_BLKLOTS = ["3506003A", "3506004"]
 # Commission agenda of March 19, 2026 (case 2024-005509) and Motion 19943 (June 15, 2017) name the site.
 ONE_OAK_BLKLOTS = ["0836001", "0836002", "0836003", "0836004", "0836005"]
 
+# Mission Point (Santa Clara): the nine APNs in the City's notice of determination of Dec 3, 2024 (CEQAnet SCH
+# 2018072068, document 7) and Draft EIR Table 2-1; the Democracy Way right-of-way between them is closed over.
+MISSION_POINT_APNS = [
+    "10404150", "10404142", "10404143", "10404151", "10404112", "10404113", "10404065", "10404111", "10404064",
+]
+
+# Seely Avenue Mixed-Use (San José): the approval (NOD of Aug 13, 2024, SCH 2022020565) names APNs 097-15-033,
+# 097-15-034 and part of 097-66-004, which the County has since retired. Their successors are the project's own
+# lots, matching Draft EIR Table 2-1: 097-15-042 (Building A), -045 (B), -046 (affordable), -047 (well), -048
+# (park), -049 (C), the 26 townhome lots 097-23-141 to -166, and the unnumbered private-street and common lots.
+SEELY_AVENUE_APNS = (
+    ["09715042", "09715045", "09715046", "09715047", "09715048", "09715049"]
+    + [f"09723{n}" for n in range(141, 167)]
+)
+SEELY_AVENUE_COMMON_BOX = "37.4012, -121.9195, 37.3955, -121.9145"  # unnumbered lots inside the subdivision
+
+# Freedom Circle (Santa Clara): 104-40-019, 2518 Mission College Blvd (Irvine Company; NODs of Mar 25 and May 14,
+# 2025, SCH 2020060425) and the Greystar site, 104-40-021 and 104-40-036 (NOD of June 7, 2022; Draft EIR).
+FREEDOM_CIRCLE_APNS = ["10440019", "10440021", "10440036"]
+
+# Pleasant Hills Golf Course redevelopment (San José): the two APNs of the project site in the NOP of Oct 14, 2025
+# (SCH 2025100897). The 0.6-acre parcel at 2079 Flint Avenue is annexed but "not part of the project".
+PLEASANT_HILLS_APNS = ["64923001", "64924013"]
+
 
 def _sql_list(values) -> str:
     return ", ".join(f"'{v}'" for v in values)
@@ -574,6 +598,52 @@ SPECS: dict[str, dict] = {
                  "ft lot area in Motion 19943. The public plaza the project would build in the Oak Street roadway (Oak "
                  "Plaza) is off the lots and isn't drawn."),
         "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "mission-point": {
+        "label": "Santa Clara County parcels",
+        **socrata(*SCC_PARCELS, f"apn in ({_sql_list(MISSION_POINT_APNS)})"),
+        "layer": "Santa Clara County parcels, the nine APNs in Santa Clara's notice of determination for Mission Point (Dec 3, 2024)",
+        "accuracy": "official",
+        "close_m": 20,  # takes in the Democracy Way right-of-way between the parcels
+        "note": ("The nine parcels the City's approval names for the Mission Point Project, joined over the Democracy Way "
+                 "right-of-way that the project takes in, against the approval's approximately 48.6 acres (Draft EIR "
+                 "Table 2-1: 46.0 acres of parcels plus 2.6 acres of right-of-way)."),
+        "license": "Santa Clara County open data (terms of use)",
+    },
+    "seely-avenue": {
+        "label": "Santa Clara County parcels",
+        **socrata(*SCC_PARCELS, f"apn in ({_sql_list(SEELY_AVENUE_APNS)}) or "
+                                f"(apn is null and within_box(the_geom, {SEELY_AVENUE_COMMON_BOX}))"),
+        "layer": ("Santa Clara County parcels: the Seely Avenue project's lots (097-15-042 to -049, 097-23-141 to -166) "
+                  "and the unnumbered street and common lots between them"),
+        "accuracy": "approximate",
+        "note": ("The approval names APNs 097-15-033, 097-15-034 and part of 097-66-004, which are no longer in the "
+                 "County's layer. Drawn instead from the parcels that replaced them, which are the project's own lots: "
+                 "Buildings A, B and C, the affordable building, the park and the well site match the Draft EIR's lot "
+                 "areas (Table 2-1) within 2%, against the approval's approximately 22 acres. The Seely Avenue frontage "
+                 "dedication isn't a parcel and isn't drawn."),
+        "license": "Santa Clara County open data (terms of use)",
+    },
+    "freedom-circle": {
+        "label": "Santa Clara County parcels",
+        **socrata(*SCC_PARCELS, f"apn in ({_sql_list(FREEDOM_CIRCLE_APNS)})"),
+        "layer": ("Santa Clara County parcels 104-40-019 (2518 Mission College Boulevard) and 104-40-021 and 104-40-036 "
+                  "(the Greystar site), named in Santa Clara's approvals"),
+        "accuracy": "official",
+        "note": ("The two sites with approvals in the Freedom Circle Focus Area: the Irvine Company's 25.7-acre site at "
+                 "2518 Mission College Boulevard and Greystar's 13.3-acre site on Freedom Circle, separated by Freedom "
+                 "Circle itself. The rest of the 108-acre focus area, which awaits a future planning study, isn't drawn."),
+        "license": "Santa Clara County open data (terms of use)",
+    },
+    "pleasant-hills": {
+        "label": "Santa Clara County parcels",
+        **socrata(*SCC_PARCELS, f"apn in ({_sql_list(PLEASANT_HILLS_APNS)})"),
+        "layer": "Santa Clara County parcels 649-23-001 and 649-24-013, the project site in San José's notice of preparation (Oct 2025)",
+        "accuracy": "official",
+        "note": ("The former Pleasant Hills and Cypress Greens golf courses, the two parcels the notice of preparation "
+                 "names, against its approximately 113.5 gross acres. The 0.6-acre house lot at 2079 Flint Avenue, which "
+                 "would be annexed with them but isn't part of the project, isn't drawn."),
+        "license": "Santa Clara County open data (terms of use)",
     },
 }
 

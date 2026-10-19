@@ -1,0 +1,2246 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "seely-avenue",
+  "illustrative": true,
+  "summary": "Illustrative massing: each building's lot, as the County now maps the project's subdivision, raised to the building's height in the Draft EIR (Building A 69 ft, Buildings B and C 79 ft, the affordable building 82 ft, the 26 townhome lots 30 ft). The lots also hold the garages and courtyards, so the volumes are envelopes, not the buildings' footprints.",
+  "note": "Envelopes on the approved lots, not the final building designs.",
+  "sourceUrl": "https://ceqanet.lci.ca.gov/2022020565/4/Attachment/O2WLAL",
+  "sourceLabel": "Seely Avenue Mixed-Use Project Draft EIR, 2024 (PDF)",
+  "approvalSourceUrl": "https://ceqanet.lci.ca.gov/2022020565/5",
+  "georeference": {
+   "method": "No georeferencing: the lots are Santa Clara County parcels, each matched to Draft EIR Table 2-1 by area and to Figure 2-4 by position.",
+   "lot_area_checks": {
+    "Building A": {
+     "apn": "09715042",
+     "drawn_sqft": 150006,
+     "table_sqft": 152096,
+     "diff_pct": -1.4
+    },
+    "Building B": {
+     "apn": "09715045",
+     "drawn_sqft": 127123,
+     "table_sqft": 126318,
+     "diff_pct": 0.6
+    },
+    "Building C": {
+     "apn": "09715049",
+     "drawn_sqft": 127313,
+     "table_sqft": 127323,
+     "diff_pct": -0.0
+    },
+    "Affordable apartment building": {
+     "apn": "09715046",
+     "drawn_sqft": 54508,
+     "table_sqft": 53825,
+     "diff_pct": 1.3
+    },
+    "townhome lots": {
+     "count": 26,
+     "drawn_sqft": 222993
+    }
+   }
+  },
+  "license": "Heights and program: from a public City of San Jos\u00e9 document. Lots: Santa Clara County open data (terms of use)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building A",
+    "stage": "entitled",
+    "height_ft": 69,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (397 market-rate apartments) over 6,427 sq ft of ground-floor retail",
+    "phase": "Phase 3 (Draft EIR schedule: Oct 2024 to Oct 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-15-042 (Building A's lot, Draft EIR Table 2-1 and Figure 2-4) raised to the 69-ft height in Draft EIR Table 2-2",
+    "note": "6 stories, 69 ft from ground to roof (Draft EIR Table 2-2). The whole lot is drawn, so the envelope also covers the building's parking garage and courtyards."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9167792,
+       37.3966119
+      ],
+      [
+       -121.9158804,
+       37.3959565
+      ],
+      [
+       -121.9158642,
+       37.3959707
+      ],
+      [
+       -121.9157921,
+       37.3959181
+      ],
+      [
+       -121.9161963,
+       37.3955656
+      ],
+      [
+       -121.9162553,
+       37.3955318
+      ],
+      [
+       -121.9163556,
+       37.3954839
+      ],
+      [
+       -121.9164107,
+       37.3954512
+      ],
+      [
+       -121.9167572,
+       37.3951819
+      ],
+      [
+       -121.9167673,
+       37.3951894
+      ],
+      [
+       -121.9168082,
+       37.3951651
+      ],
+      [
+       -121.9168478,
+       37.3951551
+      ],
+      [
+       -121.917129,
+       37.3953604
+      ],
+      [
+       -121.9172228,
+       37.3954402
+      ],
+      [
+       -121.9173018,
+       37.3955346
+      ],
+      [
+       -121.917396,
+       37.3956791
+      ],
+      [
+       -121.9174444,
+       37.3957385
+      ],
+      [
+       -121.9175539,
+       37.3958456
+      ],
+      [
+       -121.9176843,
+       37.3959436
+      ],
+      [
+       -121.9175785,
+       37.3960363
+      ],
+      [
+       -121.9175633,
+       37.3960251
+      ],
+      [
+       -121.9175401,
+       37.3960454
+      ],
+      [
+       -121.9175096,
+       37.3960232
+      ],
+      [
+       -121.9168848,
+       37.3965685
+      ],
+      [
+       -121.9169305,
+       37.3966019
+      ],
+      [
+       -121.9169251,
+       37.3966067
+      ],
+      [
+       -121.9168912,
+       37.3966258
+      ],
+      [
+       -121.916853,
+       37.3966334
+      ],
+      [
+       -121.9168144,
+       37.3966286
+      ],
+      [
+       -121.9167792,
+       37.3966119
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building B",
+    "stage": "entitled",
+    "height_ft": 79,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (372 market-rate apartments) over 5,578 sq ft of ground-floor retail",
+    "phase": "Phase 5 (Draft EIR schedule: Oct 2025 to Oct 2027)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-15-045 (Building B's lot, Draft EIR Table 2-1 and Figure 2-4) raised to the 79-ft height in Draft EIR Table 2-2",
+    "note": "7 stories, 79 ft from ground to roof (Draft EIR Table 2-2). The whole lot is drawn, so the envelope also covers the building's parking garage and courtyards."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9165957,
+       37.3981683
+      ],
+      [
+       -121.916404,
+       37.3976395
+      ],
+      [
+       -121.9161448,
+       37.3972186
+      ],
+      [
+       -121.9167519,
+       37.3966887
+      ],
+      [
+       -121.9174126,
+       37.3971704
+      ],
+      [
+       -121.9173708,
+       37.3972069
+      ],
+      [
+       -121.9176817,
+       37.3974336
+      ],
+      [
+       -121.9176623,
+       37.3974492
+      ],
+      [
+       -121.9176433,
+       37.397437
+      ],
+      [
+       -121.9175388,
+       37.3975283
+      ],
+      [
+       -121.917555,
+       37.3975402
+      ],
+      [
+       -121.9175544,
+       37.3975452
+      ],
+      [
+       -121.9174839,
+       37.3976066
+      ],
+      [
+       -121.9174622,
+       37.3975952
+      ],
+      [
+       -121.9173577,
+       37.3976864
+      ],
+      [
+       -121.9173739,
+       37.3976983
+      ],
+      [
+       -121.9173733,
+       37.3977034
+      ],
+      [
+       -121.9173251,
+       37.3977449
+      ],
+      [
+       -121.9173043,
+       37.397733
+      ],
+      [
+       -121.9171998,
+       37.3978243
+      ],
+      [
+       -121.9172159,
+       37.3978362
+      ],
+      [
+       -121.9172153,
+       37.3978412
+      ],
+      [
+       -121.9171672,
+       37.3978827
+      ],
+      [
+       -121.9171463,
+       37.3978709
+      ],
+      [
+       -121.9170418,
+       37.3979621
+      ],
+      [
+       -121.9170582,
+       37.3979782
+      ],
+      [
+       -121.9170102,
+       37.3980202
+      ],
+      [
+       -121.9169884,
+       37.3980088
+      ],
+      [
+       -121.9168811,
+       37.3981024
+      ],
+      [
+       -121.9165957,
+       37.3981683
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building C",
+    "stage": "entitled",
+    "height_ft": 79,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (371 market-rate apartments) over 6,960 sq ft of ground-floor retail",
+    "phase": "Phase 6 (Draft EIR schedule: Oct 2026 to Oct 2028)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-15-049 (Building C's lot, Draft EIR Table 2-1 and Figure 2-4) raised to the 79-ft height in Draft EIR Table 2-2",
+    "note": "7 stories, 79 ft from ground to roof (Draft EIR Table 2-2). The whole lot is drawn, so the envelope also covers the building's parking garage and courtyards."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9184839,
+       37.3980411
+      ],
+      [
+       -121.9184676,
+       37.3980061
+      ],
+      [
+       -121.91844,
+       37.397976
+      ],
+      [
+       -121.9178219,
+       37.3975245
+      ],
+      [
+       -121.9178022,
+       37.3974937
+      ],
+      [
+       -121.9178004,
+       37.3974572
+      ],
+      [
+       -121.9178095,
+       37.3974345
+      ],
+      [
+       -121.9178258,
+       37.3974161
+      ],
+      [
+       -121.9183925,
+       37.3969215
+      ],
+      [
+       -121.9184383,
+       37.3969548
+      ],
+      [
+       -121.9185196,
+       37.3968839
+      ],
+      [
+       -121.9184891,
+       37.3968617
+      ],
+      [
+       -121.9185077,
+       37.3968454
+      ],
+      [
+       -121.9184924,
+       37.3968343
+      ],
+      [
+       -121.9186805,
+       37.3966701
+      ],
+      [
+       -121.919337,
+       37.3971488
+      ],
+      [
+       -121.9195038,
+       37.3972595
+      ],
+      [
+       -121.9185511,
+       37.3980901
+      ],
+      [
+       -121.9184839,
+       37.3980411
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Affordable apartment building",
+    "stage": "entitled",
+    "height_ft": 82,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Affordable homes (178 apartments)",
+    "phase": "Phase 4 (Draft EIR schedule: Apr 2025 to Oct 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-15-046 (Affordable apartment building's lot, Draft EIR Table 2-1 and Figure 2-4) raised to the 82-ft height in Draft EIR Table 2-2",
+    "note": "6 stories, 82 ft from ground to roof (Draft EIR Table 2-2). The whole lot is drawn, so the envelope also covers the building's parking garage and courtyards."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9158726,
+       37.3967769
+      ],
+      [
+       -121.9158042,
+       37.3962557
+      ],
+      [
+       -121.91585,
+       37.3962282
+      ],
+      [
+       -121.9159008,
+       37.3962653
+      ],
+      [
+       -121.9159704,
+       37.3962077
+      ],
+      [
+       -121.9160069,
+       37.3961942
+      ],
+      [
+       -121.9160263,
+       37.3961919
+      ],
+      [
+       -121.9160649,
+       37.3961967
+      ],
+      [
+       -121.9161001,
+       37.3962134
+      ],
+      [
+       -121.9161572,
+       37.3962553
+      ],
+      [
+       -121.9161571,
+       37.3962614
+      ],
+      [
+       -121.9161425,
+       37.3962741
+      ],
+      [
+       -121.9163966,
+       37.3964594
+      ],
+      [
+       -121.9164152,
+       37.3964432
+      ],
+      [
+       -121.9165067,
+       37.3965099
+      ],
+      [
+       -121.9164881,
+       37.3965261
+      ],
+      [
+       -121.9165897,
+       37.3966002
+      ],
+      [
+       -121.9166083,
+       37.396584
+      ],
+      [
+       -121.9167519,
+       37.3966887
+      ],
+      [
+       -121.9161448,
+       37.3972186
+      ],
+      [
+       -121.9158726,
+       37.3967769
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 1",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-141, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9175955,
+       37.3976498
+      ],
+      [
+       -121.9176466,
+       37.3976052
+      ],
+      [
+       -121.9176292,
+       37.3975891
+      ],
+      [
+       -121.9176561,
+       37.3975669
+      ],
+      [
+       -121.9176981,
+       37.3975527
+      ],
+      [
+       -121.9177246,
+       37.3975516
+      ],
+      [
+       -121.9177536,
+       37.3975569
+      ],
+      [
+       -121.9177861,
+       37.397573
+      ],
+      [
+       -121.9181316,
+       37.397825
+      ],
+      [
+       -121.9179969,
+       37.3979426
+      ],
+      [
+       -121.9175955,
+       37.3976498
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 2",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-142, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9179969,
+       37.3979426
+      ],
+      [
+       -121.9181316,
+       37.397825
+      ],
+      [
+       -121.9183956,
+       37.3980178
+      ],
+      [
+       -121.9184108,
+       37.3980373
+      ],
+      [
+       -121.9184185,
+       37.3980607
+      ],
+      [
+       -121.9184177,
+       37.3980854
+      ],
+      [
+       -121.9184086,
+       37.3981083
+      ],
+      [
+       -121.9183271,
+       37.3981835
+      ],
+      [
+       -121.9179969,
+       37.3979426
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 3",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-143, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9175101,
+       37.3976917
+      ],
+      [
+       -121.9175255,
+       37.3976819
+      ],
+      [
+       -121.9175444,
+       37.3976943
+      ],
+      [
+       -121.9175955,
+       37.3976498
+      ],
+      [
+       -121.9179969,
+       37.3979426
+      ],
+      [
+       -121.9178621,
+       37.3980601
+      ],
+      [
+       -121.9175073,
+       37.397801
+      ],
+      [
+       -121.9174878,
+       37.3977721
+      ],
+      [
+       -121.9174834,
+       37.3977491
+      ],
+      [
+       -121.9174907,
+       37.3977163
+      ],
+      [
+       -121.9175101,
+       37.3976917
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 4",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-144, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9178621,
+       37.3980601
+      ],
+      [
+       -121.9179969,
+       37.3979426
+      ],
+      [
+       -121.9183271,
+       37.3981835
+      ],
+      [
+       -121.9182621,
+       37.3982403
+      ],
+      [
+       -121.9182382,
+       37.3982557
+      ],
+      [
+       -121.9181884,
+       37.398267
+      ],
+      [
+       -121.9181498,
+       37.3982618
+      ],
+      [
+       -121.9181162,
+       37.3982455
+      ],
+      [
+       -121.9178621,
+       37.3980601
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 5",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-145, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9172795,
+       37.3979254
+      ],
+      [
+       -121.9173307,
+       37.3978808
+      ],
+      [
+       -121.9173133,
+       37.3978647
+      ],
+      [
+       -121.9173419,
+       37.3978416
+      ],
+      [
+       -121.9173646,
+       37.3978322
+      ],
+      [
+       -121.9173937,
+       37.3978272
+      ],
+      [
+       -121.9174417,
+       37.3978339
+      ],
+      [
+       -121.9174702,
+       37.3978486
+      ],
+      [
+       -121.9178182,
+       37.3981025
+      ],
+      [
+       -121.9176835,
+       37.3982201
+      ],
+      [
+       -121.9172795,
+       37.3979254
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 6",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-146, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9176835,
+       37.3982201
+      ],
+      [
+       -121.9178182,
+       37.3981025
+      ],
+      [
+       -121.9182093,
+       37.3983879
+      ],
+      [
+       -121.9180745,
+       37.3985054
+      ],
+      [
+       -121.9176835,
+       37.3982201
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 7",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-147, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9171778,
+       37.3979858
+      ],
+      [
+       -121.9172096,
+       37.3979575
+      ],
+      [
+       -121.9172284,
+       37.39797
+      ],
+      [
+       -121.9172795,
+       37.3979254
+      ],
+      [
+       -121.9176835,
+       37.3982201
+      ],
+      [
+       -121.9175488,
+       37.3983377
+      ],
+      [
+       -121.9171908,
+       37.3980763
+      ],
+      [
+       -121.9171707,
+       37.3980455
+      ],
+      [
+       -121.9171672,
+       37.398021
+      ],
+      [
+       -121.9171778,
+       37.3979858
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 8",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-148, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9178716,
+       37.3986104
+      ],
+      [
+       -121.9178948,
+       37.3985901
+      ],
+      [
+       -121.9175488,
+       37.3983377
+      ],
+      [
+       -121.9176835,
+       37.3982201
+      ],
+      [
+       -121.9180745,
+       37.3985054
+      ],
+      [
+       -121.9179164,
+       37.3986431
+      ],
+      [
+       -121.9178716,
+       37.3986104
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 9",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-149, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9173915,
+       37.3985074
+      ],
+      [
+       -121.9170725,
+       37.3982747
+      ],
+      [
+       -121.9170042,
+       37.3982904
+      ],
+      [
+       -121.9169976,
+       37.3982875
+      ],
+      [
+       -121.9169725,
+       37.3982191
+      ],
+      [
+       -121.9169693,
+       37.3981869
+      ],
+      [
+       -121.9169754,
+       37.398166
+      ],
+      [
+       -121.9169875,
+       37.398148
+      ],
+      [
+       -121.9170315,
+       37.3981144
+      ],
+      [
+       -121.9170609,
+       37.3981049
+      ],
+      [
+       -121.9170842,
+       37.3981027
+      ],
+      [
+       -121.9171177,
+       37.3981071
+      ],
+      [
+       -121.9171441,
+       37.3981178
+      ],
+      [
+       -121.9175226,
+       37.398393
+      ],
+      [
+       -121.9173915,
+       37.3985074
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 10",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-150, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9170584,
+       37.398278
+      ],
+      [
+       -121.9170725,
+       37.3982747
+      ],
+      [
+       -121.9172286,
+       37.3983886
+      ],
+      [
+       -121.9173004,
+       37.3985869
+      ],
+      [
+       -121.9171648,
+       37.3987052
+      ],
+      [
+       -121.9171453,
+       37.3986883
+      ],
+      [
+       -121.9171372,
+       37.3986723
+      ],
+      [
+       -121.9171412,
+       37.3986676
+      ],
+      [
+       -121.917195,
+       37.3986552
+      ],
+      [
+       -121.9171778,
+       37.3986077
+      ],
+      [
+       -121.9171236,
+       37.3986202
+      ],
+      [
+       -121.917117,
+       37.3986172
+      ],
+      [
+       -121.9170437,
+       37.3984157
+      ],
+      [
+       -121.9170475,
+       37.3984091
+      ],
+      [
+       -121.9171014,
+       37.3983967
+      ],
+      [
+       -121.9170584,
+       37.398278
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 11",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-151, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9172436,
+       37.3987626
+      ],
+      [
+       -121.9171648,
+       37.3987052
+      ],
+      [
+       -121.9175226,
+       37.398393
+      ],
+      [
+       -121.9176113,
+       37.3984579
+      ],
+      [
+       -121.9176265,
+       37.3984774
+      ],
+      [
+       -121.9176349,
+       37.3985132
+      ],
+      [
+       -121.9176298,
+       37.3985374
+      ],
+      [
+       -121.9176169,
+       37.3985584
+      ],
+      [
+       -121.9173736,
+       37.3987687
+      ],
+      [
+       -121.9173399,
+       37.3987814
+      ],
+      [
+       -121.9173115,
+       37.3987842
+      ],
+      [
+       -121.9172741,
+       37.398778
+      ],
+      [
+       -121.9172436,
+       37.3987626
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 12",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-152, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9174468,
+       37.3989109
+      ],
+      [
+       -121.9174259,
+       37.3988895
+      ],
+      [
+       -121.9174151,
+       37.3988656
+      ],
+      [
+       -121.9174146,
+       37.3988368
+      ],
+      [
+       -121.9174246,
+       37.3988126
+      ],
+      [
+       -121.917672,
+       37.3985911
+      ],
+      [
+       -121.9176924,
+       37.3985601
+      ],
+      [
+       -121.917703,
+       37.3985246
+      ],
+      [
+       -121.9178483,
+       37.3986306
+      ],
+      [
+       -121.9178716,
+       37.3986104
+      ],
+      [
+       -121.9179164,
+       37.3986431
+      ],
+      [
+       -121.9175353,
+       37.3989754
+      ],
+      [
+       -121.9174468,
+       37.3989109
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 13",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-153, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9175353,
+       37.3989754
+      ],
+      [
+       -121.9176837,
+       37.3988458
+      ],
+      [
+       -121.9181667,
+       37.3991995
+      ],
+      [
+       -121.918019,
+       37.3993283
+      ],
+      [
+       -121.9175353,
+       37.3989754
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 14",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-154, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.918019,
+       37.3993283
+      ],
+      [
+       -121.9181667,
+       37.3991995
+      ],
+      [
+       -121.9185359,
+       37.3994698
+      ],
+      [
+       -121.9183889,
+       37.3995981
+      ],
+      [
+       -121.918019,
+       37.3993283
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 15",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-155, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9183889,
+       37.3995981
+      ],
+      [
+       -121.9185359,
+       37.3994698
+      ],
+      [
+       -121.9189113,
+       37.3997446
+      ],
+      [
+       -121.9187648,
+       37.3998723
+      ],
+      [
+       -121.9183889,
+       37.3995981
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 16",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-156, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.918007,
+       37.4001791
+      ],
+      [
+       -121.9180408,
+       37.4001849
+      ],
+      [
+       -121.9180889,
+       37.4001837
+      ],
+      [
+       -121.9181182,
+       37.4001774
+      ],
+      [
+       -121.9181656,
+       37.4001564
+      ],
+      [
+       -121.918489,
+       37.3998772
+      ],
+      [
+       -121.9185219,
+       37.3998587
+      ],
+      [
+       -121.9185655,
+       37.3998516
+      ],
+      [
+       -121.9186126,
+       37.3998614
+      ],
+      [
+       -121.9187044,
+       37.399925
+      ],
+      [
+       -121.9184847,
+       37.4001164
+      ],
+      [
+       -121.9184602,
+       37.4001427
+      ],
+      [
+       -121.9184404,
+       37.4001728
+      ],
+      [
+       -121.9184169,
+       37.4002405
+      ],
+      [
+       -121.9183874,
+       37.4002669
+      ],
+      [
+       -121.9183417,
+       37.4002335
+      ],
+      [
+       -121.9182232,
+       37.4003369
+      ],
+      [
+       -121.918007,
+       37.4001791
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 17",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-157, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9179302,
+       37.4000458
+      ],
+      [
+       -121.9183164,
+       37.3997089
+      ],
+      [
+       -121.9183867,
+       37.3997602
+      ],
+      [
+       -121.918426,
+       37.3997263
+      ],
+      [
+       -121.9184418,
+       37.3997348
+      ],
+      [
+       -121.9184566,
+       37.3997554
+      ],
+      [
+       -121.9184636,
+       37.3997802
+      ],
+      [
+       -121.9184596,
+       37.3998089
+      ],
+      [
+       -121.918446,
+       37.3998319
+      ],
+      [
+       -121.9181195,
+       37.400115
+      ],
+      [
+       -121.918083,
+       37.4001285
+      ],
+      [
+       -121.918044,
+       37.4001297
+      ],
+      [
+       -121.9180249,
+       37.4001256
+      ],
+      [
+       -121.9179899,
+       37.4001083
+      ],
+      [
+       -121.9179302,
+       37.4000458
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 18",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-158, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.918214,
+       37.3995983
+      ],
+      [
+       -121.9182523,
+       37.3996034
+      ],
+      [
+       -121.9182874,
+       37.399621
+      ],
+      [
+       -121.9182872,
+       37.3996271
+      ],
+      [
+       -121.9182495,
+       37.3996601
+      ],
+      [
+       -121.9183164,
+       37.3997089
+      ],
+      [
+       -121.9179302,
+       37.4000458
+      ],
+      [
+       -121.9178456,
+       37.3999519
+      ],
+      [
+       -121.9178383,
+       37.3999169
+      ],
+      [
+       -121.9178491,
+       37.3998828
+      ],
+      [
+       -121.9181448,
+       37.3996214
+      ],
+      [
+       -121.9181707,
+       37.399607
+      ],
+      [
+       -121.918214,
+       37.3995983
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 19",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-159, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9176323,
+       37.3997495
+      ],
+      [
+       -121.9179692,
+       37.3994556
+      ],
+      [
+       -121.918052,
+       37.399516
+      ],
+      [
+       -121.9180931,
+       37.3994802
+      ],
+      [
+       -121.9181008,
+       37.3994883
+      ],
+      [
+       -121.9181119,
+       37.3995075
+      ],
+      [
+       -121.9181165,
+       37.3995294
+      ],
+      [
+       -121.918114,
+       37.3995515
+      ],
+      [
+       -121.9180977,
+       37.3995805
+      ],
+      [
+       -121.9178144,
+       37.3998281
+      ],
+      [
+       -121.917786,
+       37.3998617
+      ],
+      [
+       -121.9176323,
+       37.3997495
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 20",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-160, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9174911,
+       37.3996353
+      ],
+      [
+       -121.917836,
+       37.399336
+      ],
+      [
+       -121.9178543,
+       37.3993292
+      ],
+      [
+       -121.9178833,
+       37.3993305
+      ],
+      [
+       -121.9179319,
+       37.3993614
+      ],
+      [
+       -121.9179322,
+       37.3993681
+      ],
+      [
+       -121.9178945,
+       37.3994011
+      ],
+      [
+       -121.9179692,
+       37.3994556
+      ],
+      [
+       -121.9176393,
+       37.3997435
+      ],
+      [
+       -121.9174911,
+       37.3996353
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 21",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-161, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9173374,
+       37.3994507
+      ],
+      [
+       -121.917622,
+       37.3992024
+      ],
+      [
+       -121.9177249,
+       37.3992774
+      ],
+      [
+       -121.9177643,
+       37.3992437
+      ],
+      [
+       -121.9177707,
+       37.399244
+      ],
+      [
+       -121.9177831,
+       37.3992544
+      ],
+      [
+       -121.9177906,
+       37.3992775
+      ],
+      [
+       -121.9177817,
+       37.3993001
+      ],
+      [
+       -121.9174856,
+       37.3995588
+      ],
+      [
+       -121.9173374,
+       37.3994507
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 22",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-162, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9172357,
+       37.399302
+      ],
+      [
+       -121.9174889,
+       37.3990827
+      ],
+      [
+       -121.9175071,
+       37.3990759
+      ],
+      [
+       -121.9175361,
+       37.3990772
+      ],
+      [
+       -121.9175799,
+       37.3991049
+      ],
+      [
+       -121.9175797,
+       37.399111
+      ],
+      [
+       -121.917542,
+       37.399144
+      ],
+      [
+       -121.917622,
+       37.3992024
+      ],
+      [
+       -121.9173374,
+       37.3994507
+      ],
+      [
+       -121.9173247,
+       37.3994414
+      ],
+      [
+       -121.9173712,
+       37.3994008
+      ],
+      [
+       -121.9172357,
+       37.399302
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 23",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-163, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9170913,
+       37.3991092
+      ],
+      [
+       -121.9172794,
+       37.398945
+      ],
+      [
+       -121.9173844,
+       37.3990216
+      ],
+      [
+       -121.9174212,
+       37.3989915
+      ],
+      [
+       -121.9174337,
+       37.3989992
+      ],
+      [
+       -121.9174423,
+       37.3990147
+      ],
+      [
+       -121.9174423,
+       37.3990322
+      ],
+      [
+       -121.9174328,
+       37.3990484
+      ],
+      [
+       -121.9172395,
+       37.3992173
+      ],
+      [
+       -121.9170913,
+       37.3991092
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 24",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-164, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.916983,
+       37.3989533
+      ],
+      [
+       -121.9171255,
+       37.398829
+      ],
+      [
+       -121.9171426,
+       37.3988194
+      ],
+      [
+       -121.9171619,
+       37.3988156
+      ],
+      [
+       -121.9171841,
+       37.398819
+      ],
+      [
+       -121.9171985,
+       37.3988264
+      ],
+      [
+       -121.9173273,
+       37.3989221
+      ],
+      [
+       -121.917293,
+       37.3989549
+      ],
+      [
+       -121.9172794,
+       37.398945
+      ],
+      [
+       -121.9171393,
+       37.3990673
+      ],
+      [
+       -121.916983,
+       37.3989533
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 25",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-165, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9167884,
+       37.3984923
+      ],
+      [
+       -121.9169637,
+       37.3984518
+      ],
+      [
+       -121.9170795,
+       37.3987724
+      ],
+      [
+       -121.9170744,
+       37.3987917
+      ],
+      [
+       -121.9170249,
+       37.3988348
+      ],
+      [
+       -121.9170174,
+       37.3988338
+      ],
+      [
+       -121.9169767,
+       37.3988042
+      ],
+      [
+       -121.9169195,
+       37.3988541
+      ],
+      [
+       -121.9167884,
+       37.3984923
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Townhomes 26",
+    "stage": "entitled",
+    "height_ft": 30,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "For-sale townhomes (154 in all)",
+    "phase": "Phase 2 (Draft EIR schedule: Sept 2024 to Jan 2026)",
+    "illustrative": true,
+    "source": "illustrative: County parcel 097-23-166, one of the 26 townhome lots (Figure 2-4 Lots 7 to 32), raised to the 30-ft townhome height in Draft EIR Table 2-2",
+    "note": "Three-story townhomes, 30 ft from ground to roof (Draft EIR Table 2-2)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9168811,
+       37.3981024
+      ],
+      [
+       -121.9169349,
+       37.3980555
+      ],
+      [
+       -121.9169512,
+       37.3980676
+      ],
+      [
+       -121.916951,
+       37.3980737
+      ],
+      [
+       -121.9169146,
+       37.3981063
+      ],
+      [
+       -121.9168919,
+       37.3981399
+      ],
+      [
+       -121.9168794,
+       37.3981991
+      ],
+      [
+       -121.9168866,
+       37.398239
+      ],
+      [
+       -121.9169637,
+       37.3984518
+      ],
+      [
+       -121.9167884,
+       37.3984923
+      ],
+      [
+       -121.9166652,
+       37.3981523
+      ],
+      [
+       -121.9168811,
+       37.3981024
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

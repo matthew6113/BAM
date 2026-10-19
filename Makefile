@@ -108,6 +108,8 @@ sites:
 	$(PY) bam_pipeline.sites.landuse_alameda_point_plan
 	$(PY) bam_pipeline.sites.massing_alameda_marina
 	$(PY) bam_pipeline.sites.boundary_berkeley_pier_ferry
+	$(PY) bam_pipeline.sites.massing_mission_point
+	$(PY) bam_pipeline.sites.massing_seely_avenue
 
 photos:
 	$(PY) bam_pipeline.photos
