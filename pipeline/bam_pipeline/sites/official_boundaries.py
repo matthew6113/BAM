@@ -132,6 +132,14 @@ MATSON_BLOCK_BLKLOTS = [f"3711{n:03d}" for n in range(5, 15)] + ["3711019"]
 # agenda of Sept 10, 2026).
 MISSION_536_BLKLOTS = ["3708098"]
 
+# 10 South Van Ness: "Lots 003A and 004 in Assessor's Block 3506", as the Planning Commission's minutes of June 11,
+# 2020 (case 2015-004568) and its agenda of Nov 7, 2024 (case 2024-008986PPS) name the site.
+SOUTH_VAN_NESS_10_BLKLOTS = ["3506003A", "3506004"]
+
+# One Oak (1500-1540 Market Street): "Lots 001, 002, 003, 004, and 005 in Assessor's Block 0836", as the Planning
+# Commission agenda of March 19, 2026 (case 2024-005509) and Motion 19943 (June 15, 2017) name the site.
+ONE_OAK_BLKLOTS = ["0836001", "0836002", "0836003", "0836004", "0836005"]
+
 
 def _sql_list(values) -> str:
     return ", ".join(f"'{v}'" for v in values)
@@ -544,6 +552,27 @@ SPECS: dict[str, dict] = {
         "note": ("The Golden Gate University lot between Mission and Jessie streets at Ecker Place, the single lot "
                  "of the Planning Commission's Sept 10, 2026 approvals. Oceanwide Center's site is across Ecker "
                  "Place, about 25 ft away; the two don't touch."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "10-south-van-ness": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(SOUTH_VAN_NESS_10_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3506 lots 003A and 004",
+        "accuracy": "official",
+        "note": ("Lots 003A and 004 in Assessor's Block 3506, the triangular site at Market Street, South Van Ness "
+                 "Avenue and 12th Street that the Planning Commission's 2020 minutes and 2024 agenda name, against the "
+                 "1.17 acres in the project's CEQA filings. The project would merge the two lots."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "one-oak": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(ONE_OAK_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 0836 lots 001 to 005",
+        "accuracy": "official",
+        "note": ("Lots 001 to 005 in Assessor's Block 0836, on Market Street between Van Ness Avenue and Oak Street, "
+                 "as the Planning Commission's 2017 approval and March 19, 2026 agenda name them, against the 18,219 sq "
+                 "ft lot area in Motion 19943. The public plaza the project would build in the Oak Street roadway (Oak "
+                 "Plaza) is off the lots and isn't drawn."),
         "license": "ODC Public Domain Dedication and License (DataSF)",
     },
 }

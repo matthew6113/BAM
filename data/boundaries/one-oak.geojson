@@ -1,0 +1,50 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "one-oak",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 0836 lots 001 to 005",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%270836001%27%2C+%270836002%27%2C+%270836003%27%2C+%270836004%27%2C+%270836005%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "Lots 001 to 005 in Assessor's Block 0836, on Market Street between Van Ness Avenue and Oak Street, as the Planning Commission's 2017 approval and March 19, 2026 agenda name them, against the 18,219 sq ft lot area in Motion 19943. The public plaza the project would build in the Oak Street roadway (Oak Plaza) is off the lots and isn't drawn. 0.4 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 5
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.420112,
+       37.7752413
+      ],
+      [
+       -122.4195093,
+       37.775318
+      ],
+      [
+       -122.4194871,
+       37.7752075
+      ],
+      [
+       -122.4200204,
+       37.7747861
+      ],
+      [
+       -122.420112,
+       37.7752413
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,97 @@
+{
+ "id": "one-oak",
+ "name": "One Oak",
+ "aliases": [
+  "1500-1540 Market Street",
+  "1540 Market Street",
+  "One Oak Street"
+ ],
+ "city": "San Francisco",
+ "county": "San Francisco",
+ "subregion": "San Francisco",
+ "category": "buildings",
+ "approxCenter": [
+  -122.4198,
+  37.7751
+ ],
+ "camera": {
+  "center": [
+   -122.4196,
+   37.7748
+  ],
+  "zoom": 16.6,
+  "pitch": 58,
+  "bearing": -40
+ },
+ "acres": 0.42,
+ "acresNote": "Planning Commission Motion 19943 (2017): a lot area of about 18,219 sq ft (0.42 acres), Assessor's Block 0836, Lots 001 to 005, on Market Street between Van Ness Avenue and Oak Street.",
+ "program": {
+  "homes": 541,
+  "affordableHomes": null,
+  "affordablePct": null,
+  "officeLabSqft": null,
+  "commercialSqftTotal": null,
+  "retailSqft": null,
+  "hotelKeys": null,
+  "openSpaceAcres": null,
+  "notes": "As approved in 2026 (Planning Commission agenda of March 19, 2026; Planning record 2024-005509PRJ): an approximately 508,000 sq ft residential building with 541 homes, a 41-story tower reaching a 400-ft roof (about 416 ft with mechanical equipment and 436 ft with the elevator overrun and rooftop screening) over a 14-story podium about 139 ft tall. 135 parking spaces, three car-share spaces and 210 Class 1 bicycle spaces in three basement levels, plus 27 Class 2 bicycle spaces; a community room, leasing office and lobby on the ground floor. The project would also build a public plaza in part of the Oak Street roadway (Oak Plaza) and enclose the existing Muni station elevator on the site. Planning's record lists all 541 homes as market rate; how the project meets its affordable housing requirement isn't stated in the records read."
+ },
+ "developer": "Emerald Fund, Inc.",
+ "publicPartners": [
+  "San Francisco Planning Commission",
+  "San Francisco Board of Supervisors"
+ ],
+ "stage": "entitled",
+ "stageNote": "The Planning Commission approved the current design on March 19, 2026, and the City's height and bulk map now shows the 140-ft podium height limit it needed. No construction permit has been issued; the site permit application on file (2016) is for the 2017 design.",
+ "timeline": [
+  {
+   "date": "2017-06-15",
+   "event": "Planning Commission certifies the One Oak EIR (Motion 19938) and approves a 40-story, 400-ft tower with 304 homes (Motions 19943 and 19944)."
+  },
+  {
+   "date": "2022-07-14",
+   "event": "Planning Commission approves a revised 40-story design, still 400 ft to the roof, with 460 homes (Motions 21139, 21140 and 21141)."
+  },
+  {
+   "date": "2026-03-04",
+   "event": "Planning publishes an addendum to the 2017 EIR for a further-modified project, finding no new environmental review needed."
+  },
+  {
+   "date": "2026-03-19",
+   "event": "Planning Commission approves the modified project: a 41-story tower with a 400-ft roof over a 14-story podium, 541 homes. It also considers the zoning map amendment raising the podium height limit from 120 to 140 ft (Board of Supervisors file 260083)."
+  },
+  {
+   "date": "2026-06-15",
+   "event": "Planning closes its record of the zoning map amendment as approved; the City's height and bulk map now places the site in the 140/400//140/450-R-4 district."
+  }
+ ],
+ "nextMilestone": "A site permit from the Department of Building Inspection for the 2026 design.",
+ "summary": "A 41-story, 400-ft residential tower with 541 homes on the north side of Market Street at Van Ness Avenue and Oak Street, over a 14-story podium, with a public plaza in the Oak Street roadway. First approved in 2017 and revised in 2022, it was approved in its current, larger form in March 2026.",
+ "massingNotes": "Added at Matthew's request (2026-10-19); a single-site project below the usual 1,000-home bar. Boundary: DataSF parcels (acdm-wktn), block 0836 lots 001 to 005, the lots the approvals name (about 0.42 acres as drawn). Massing (pipeline/bam_pipeline/sites/massing_one_oak.py): a 400-ft tower and a 139-ft podium on the rest of the lots, the 2026 heights. The tower's outline is the level-14 floor from the plans approved in 2017, registered to the parcel corners (RMS 0.2 m); the 2026 plans couldn't be opened and the 2026 approval enlarged the tower's footprint, so the real tower is wider than drawn. Illustrative, drawn as entitled.",
+ "officialLinks": [
+  "https://sfplanning.org/sites/default/files/agendas/2026-03/20260319_cpc%20%28ID%201559820%29.pdf",
+  "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2024-005509PRJ"
+ ],
+ "sources": [
+  "https://sfplanning.org/sites/default/files/agendas/2026-03/20260319_cpc%20%28ID%201559820%29.pdf",
+  "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2024-005509PRJ",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2024-005509DNX",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2024-005509ENV",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2024-005509MAP",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2024-005509PRV",
+  "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=0836001",
+  "https://data.sf.gov/d/h9wh-cg3m",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20220714_cal_min.pdf",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2009.0159DNXCUA-02.pdf",
+  "https://ceqanet.lci.ca.gov/2012102025",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201612094535",
+  "https://data.sf.gov/d/acdm-wktn"
+ ],
+ "verify": [
+  "the motion numbers of the March 19, 2026 approvals",
+  "the number and date of the ordinance that changed the site's height and bulk district (Board of Supervisors file 260083)",
+  "the 2026 design's floor plans and tower footprint",
+  "how the project meets its affordable housing requirement (Planning's record lists all 541 homes as market rate)"
+ ],
+ "lastVerified": "2026-10-19"
+}

@@ -1,0 +1,373 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "one-oak",
+  "illustrative": true,
+  "summary": "Illustrative massing: the 400-ft tower and 139-ft podium approved in 2026, as two simple volumes. The tower is placed and shaped from the plans approved in 2017 (the 2026 plans couldn't be opened); the 2026 approval enlarged the tower's footprint, so the real tower is wider than drawn. The crown and screening to 436 ft aren't drawn.",
+  "note": "The approved heights on simple volumes; the tower outline is from the earlier, smaller design.",
+  "sourceUrl": "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2009.0159DNXCUA-02.pdf",
+  "sourceLabel": "Planning Commission packet, 2020: plans approved in 2017 (PDF)",
+  "heightSourceUrl": "https://sfplanning.org/sites/default/files/agendas/2026-03/20260319_cpc%20%28ID%201559820%29.pdf",
+  "georeference": {
+   "plan": {
+    "scale_m_per_unit": 0.08455,
+    "rotation_deg": 9.456,
+    "rms_m": 0.22,
+    "controls": [
+     {
+      "label": "Oak Street, west end of the site (lot 005)",
+      "residual_m": 0.23
+     },
+     {
+      "label": "Oak Street and Van Ness Avenue (lot 001)",
+      "residual_m": 0.21
+     },
+     {
+      "label": "Van Ness Avenue and Market Street (lot 001)",
+      "residual_m": 0.27
+     },
+     {
+      "label": "Market Street, west end of the site (lot 005)",
+      "residual_m": 0.17
+     }
+    ]
+   },
+   "method": "The plan's four property-line corners matched to the DataSF parcel corners (least-squares similarity)."
+  },
+  "license": "Tower outline: traced from a public SF Planning document. Lots: DataSF parcels (ODC-PDDL)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Podium",
+    "stage": "entitled",
+    "height_ft": 139,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes, lobby, leasing office and community room, parking entry",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the lots (DataSF parcels, block 0836 lots 001-005) less the tower, at the podium height on the Planning Commission agenda of March 19, 2026 (case 2024-005509, PDF p. 4)",
+    "note": "A 14-story podium about 139 ft tall (2026 approval). Its real outline, terraces and setbacks aren't drawn."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4201119,
+       37.7752414
+      ],
+      [
+       -122.4195093,
+       37.775318
+      ],
+      [
+       -122.4194871,
+       37.7752075
+      ],
+      [
+       -122.4200204,
+       37.7747861
+      ],
+      [
+       -122.4201119,
+       37.7752414
+      ]
+     ],
+     [
+      [
+       -122.419959,
+       37.7750326
+      ],
+      [
+       -122.4199473,
+       37.7750131
+      ],
+      [
+       -122.4199348,
+       37.7750002
+      ],
+      [
+       -122.4199157,
+       37.7749871
+      ],
+      [
+       -122.419895,
+       37.7749782
+      ],
+      [
+       -122.4198698,
+       37.7749725
+      ],
+      [
+       -122.4198457,
+       37.7749715
+      ],
+      [
+       -122.4198022,
+       37.7749797
+      ],
+      [
+       -122.4197326,
+       37.7750206
+      ],
+      [
+       -122.4197354,
+       37.7750233
+      ],
+      [
+       -122.4197297,
+       37.7750281
+      ],
+      [
+       -122.419725,
+       37.775026
+      ],
+      [
+       -122.4197058,
+       37.7750396
+      ],
+      [
+       -122.4196504,
+       37.7750855
+      ],
+      [
+       -122.4195976,
+       37.7751415
+      ],
+      [
+       -122.41955,
+       37.7752082
+      ],
+      [
+       -122.4195931,
+       37.7752376
+      ],
+      [
+       -122.419627,
+       37.7752535
+      ],
+      [
+       -122.4196704,
+       37.7752671
+      ],
+      [
+       -122.4197366,
+       37.7752775
+      ],
+      [
+       -122.4197705,
+       37.7752771
+      ],
+      [
+       -122.4198044,
+       37.7752727
+      ],
+      [
+       -122.41987,
+       37.7752491
+      ],
+      [
+       -122.4199085,
+       37.7752235
+      ],
+      [
+       -122.419936,
+       37.7751992
+      ],
+      [
+       -122.4199361,
+       37.7751938
+      ],
+      [
+       -122.4199395,
+       37.7751897
+      ],
+      [
+       -122.4199427,
+       37.7751911
+      ],
+      [
+       -122.4199558,
+       37.7751708
+      ],
+      [
+       -122.4199694,
+       37.7751276
+      ],
+      [
+       -122.4199721,
+       37.7750965
+      ],
+      [
+       -122.4199679,
+       37.7750612
+      ],
+      [
+       -122.419959,
+       37.7750326
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Tower",
+    "stage": "entitled",
+    "height_ft": 400,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (541 in the building)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the level-14 floor outline of the 2017 plans, from the Planning Commission packet, Record No. 2009.0159PRJ (1540 Market Street, aka One Oak), hearing Jan 16, 2020, Exhibit B (plans approved in 2017), PDF p. 52 (amenity plan level 14), registered to the parcel corners; roof height from the Planning Commission agenda of March 19, 2026 (PDF p. 4)",
+    "note": "Roof at 400 ft, 41 stories; about 416 ft with mechanical equipment and 436 ft with the elevator overrun and rooftop screening (2026 approval). The outline is the 2017 design's; the 2026 approval enlarged the tower's footprint, so the real tower is wider than drawn."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.419959,
+       37.7750326
+      ],
+      [
+       -122.4199679,
+       37.7750612
+      ],
+      [
+       -122.4199721,
+       37.7750965
+      ],
+      [
+       -122.4199694,
+       37.7751276
+      ],
+      [
+       -122.4199558,
+       37.7751708
+      ],
+      [
+       -122.4199427,
+       37.7751911
+      ],
+      [
+       -122.4199395,
+       37.7751897
+      ],
+      [
+       -122.4199361,
+       37.7751938
+      ],
+      [
+       -122.419936,
+       37.7751992
+      ],
+      [
+       -122.4199085,
+       37.7752235
+      ],
+      [
+       -122.41987,
+       37.7752491
+      ],
+      [
+       -122.4198044,
+       37.7752727
+      ],
+      [
+       -122.4197705,
+       37.7752771
+      ],
+      [
+       -122.4197366,
+       37.7752775
+      ],
+      [
+       -122.4196704,
+       37.7752671
+      ],
+      [
+       -122.419627,
+       37.7752535
+      ],
+      [
+       -122.4195931,
+       37.7752376
+      ],
+      [
+       -122.41955,
+       37.7752082
+      ],
+      [
+       -122.4195976,
+       37.7751415
+      ],
+      [
+       -122.4196504,
+       37.7750855
+      ],
+      [
+       -122.4197058,
+       37.7750396
+      ],
+      [
+       -122.419725,
+       37.775026
+      ],
+      [
+       -122.4197297,
+       37.7750281
+      ],
+      [
+       -122.4197354,
+       37.7750233
+      ],
+      [
+       -122.4197326,
+       37.7750206
+      ],
+      [
+       -122.4198022,
+       37.7749797
+      ],
+      [
+       -122.4198457,
+       37.7749715
+      ],
+      [
+       -122.4198698,
+       37.7749725
+      ],
+      [
+       -122.419895,
+       37.7749782
+      ],
+      [
+       -122.4199157,
+       37.7749871
+      ],
+      [
+       -122.4199348,
+       37.7750002
+      ],
+      [
+       -122.4199473,
+       37.7750131
+      ],
+      [
+       -122.419959,
+       37.7750326
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
