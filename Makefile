@@ -115,6 +115,8 @@ sites:
 	$(PY) bam_pipeline.sites.massing_seely_avenue
 	$(PY) bam_pipeline.sites.massing_freedom_west
 	$(PY) bam_pipeline.sites.massing_sf_gateway
+	$(PY) bam_pipeline.sites.boundary_berkeley_space_center
+	$(PY) bam_pipeline.sites.landuse_berkeley_space_center
 
 photos:
 	$(PY) bam_pipeline.photos
