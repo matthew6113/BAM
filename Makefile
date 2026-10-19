@@ -110,6 +110,8 @@ sites:
 	$(PY) bam_pipeline.sites.boundary_berkeley_pier_ferry
 	$(PY) bam_pipeline.sites.massing_mission_point
 	$(PY) bam_pipeline.sites.massing_seely_avenue
+	$(PY) bam_pipeline.sites.massing_freedom_west
+	$(PY) bam_pipeline.sites.massing_sf_gateway
 
 photos:
 	$(PY) bam_pipeline.photos

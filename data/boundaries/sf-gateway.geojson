@@ -1,0 +1,50 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "sf-gateway",
+  "source": "DataSF Zoning Map \u2013 Special Use Districts, \u201cSan Francisco Gateway SUD\u201d",
+  "sourceLabel": "DataSF special use districts",
+  "sourceUrl": "https://data.sf.gov/d/5yf5-ms5f",
+  "query": "https://data.sf.gov/resource/5yf5-ms5f.geojson?%24where=name+%3D+%27San+Francisco+Gateway+SUD%27&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The San Francisco Gateway Special Use District (Board File 250426, in effect Dec 12, 2025): Lot 008 in Block 5284A and Lot 002 in Block 5287 with the portions of the surrounding streets and Selby Street in the project, against the approvals' 743,800 sq ft (about 17.1 acres). Interstate 280 crosses the site overhead between the two buildings. 17.2 acres as drawn.",
+  "license": "Public Domain U.S. Government (DataSF)",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4004267,
+       37.7421972
+      ],
+      [
+       -122.3993031,
+       37.7434674
+      ],
+      [
+       -122.3955744,
+       37.7413462
+      ],
+      [
+       -122.3967089,
+       37.7400784
+      ],
+      [
+       -122.4004267,
+       37.7421972
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

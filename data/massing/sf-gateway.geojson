@@ -1,0 +1,295 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "sf-gateway",
+  "illustrative": true,
+  "summary": "Illustrative massing: the two approved three-story PDR buildings, each drawn over its whole lot at 97 ft (115 ft with rooftop structures). The buildings nearly fill their lots; their edges and rounded ramp corners aren't traced. Interstate 280 passes overhead between them.",
+  "note": "The approved buildings as simple volumes on their lots, not the final design.",
+  "sourceUrl": "https://ceqanet.lci.ca.gov/2022030286/2/Attachment/fYSuZM",
+  "sourceLabel": "San Francisco Gateway Draft EIR, 2023 (PDF)",
+  "georeference": {
+   "method": "DataSF parcels 5284A/008 and 5287/002 (no figure tracing)."
+  },
+  "license": "Heights: from a public SF Planning document. Lots: DataSF parcels (ODC-PDDL)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building A",
+    "stage": "entitled",
+    "height_ft": 97,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Production, distribution and repair (PDR) space on three levels, with ground-floor retail and maker space, a logistics yard and an active roof for parking and vehicle staging",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the DataSF lot (5284A/008) at the 97-ft height in the San Francisco Gateway Project Draft EIR (Case No. 2015-012491ENV, August 2, 2023), Section 2.D.1 and Table 2.D-1 (PDF pp. 90-91)",
+    "note": "Building A (749 Toland Street): about 1,080,000 gsf including its active roof (Table 2.D-1). Drawn over the whole lot; the building nearly fills it (Figures 2.D-1 and 2.D-3). Rooftop solar, stair and elevator structures reach 115 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3994179,
+       37.7417552
+      ],
+      [
+       -122.3994139,
+       37.7417596
+      ],
+      [
+       -122.3999367,
+       37.7420572
+      ],
+      [
+       -122.3999408,
+       37.7420527
+      ],
+      [
+       -122.3999604,
+       37.7420639
+      ],
+      [
+       -122.3999564,
+       37.7420684
+      ],
+      [
+       -122.4002551,
+       37.7422383
+      ],
+      [
+       -122.3992896,
+       37.7433209
+      ],
+      [
+       -122.3989927,
+       37.7431529
+      ],
+      [
+       -122.3989882,
+       37.7431578
+      ],
+      [
+       -122.3989685,
+       37.7431467
+      ],
+      [
+       -122.3989729,
+       37.7431418
+      ],
+      [
+       -122.398449,
+       37.7428454
+      ],
+      [
+       -122.3984446,
+       37.7428503
+      ],
+      [
+       -122.3984249,
+       37.7428391
+      ],
+      [
+       -122.3984293,
+       37.7428342
+      ],
+      [
+       -122.3978857,
+       37.7425266
+      ],
+      [
+       -122.3978813,
+       37.7425316
+      ],
+      [
+       -122.3978616,
+       37.7425204
+      ],
+      [
+       -122.397866,
+       37.7425155
+      ],
+      [
+       -122.3975835,
+       37.7423556
+      ],
+      [
+       -122.3985528,
+       37.7412696
+      ],
+      [
+       -122.398832,
+       37.7414285
+      ],
+      [
+       -122.398836,
+       37.741424
+      ],
+      [
+       -122.3988557,
+       37.7414352
+      ],
+      [
+       -122.3988516,
+       37.7414397
+      ],
+      [
+       -122.3993942,
+       37.7417484
+      ],
+      [
+       -122.3993982,
+       37.741744
+      ],
+      [
+       -122.3994179,
+       37.7417552
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building B",
+    "stage": "entitled",
+    "height_ft": 97,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Production, distribution and repair (PDR) space on three levels, with ground-floor retail and maker space, a logistics yard and an active roof for parking and vehicle staging",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the DataSF lot (5287/002) at the 97-ft height in the San Francisco Gateway Project Draft EIR (Case No. 2015-012491ENV, August 2, 2023), Section 2.D.1 and Table 2.D-1 (PDF pp. 90-91)",
+    "note": "Building B (2000 McKinnon Avenue): about 1,080,000 gsf including its active roof (Table 2.D-1). Drawn over the whole lot; the building nearly fills it (Figures 2.D-1 and 2.D-3). Rooftop solar, stair and elevator structures reach 115 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3975621,
+       37.7406991
+      ],
+      [
+       -122.397558,
+       37.7407035
+      ],
+      [
+       -122.3981006,
+       37.7410123
+      ],
+      [
+       -122.3981046,
+       37.7410078
+      ],
+      [
+       -122.3981243,
+       37.741019
+      ],
+      [
+       -122.3981203,
+       37.7410235
+      ],
+      [
+       -122.3983729,
+       37.7411672
+      ],
+      [
+       -122.3974032,
+       37.7422537
+      ],
+      [
+       -122.3971352,
+       37.7421011
+      ],
+      [
+       -122.3971307,
+       37.742106
+      ],
+      [
+       -122.397111,
+       37.7420948
+      ],
+      [
+       -122.3971155,
+       37.7420899
+      ],
+      [
+       -122.396573,
+       37.741781
+      ],
+      [
+       -122.3965686,
+       37.7417859
+      ],
+      [
+       -122.3965489,
+       37.7417747
+      ],
+      [
+       -122.3965533,
+       37.7417698
+      ],
+      [
+       -122.3960306,
+       37.7414722
+      ],
+      [
+       -122.3960261,
+       37.7414771
+      ],
+      [
+       -122.3960065,
+       37.7414659
+      ],
+      [
+       -122.3960109,
+       37.741461
+      ],
+      [
+       -122.3957276,
+       37.7412997
+      ],
+      [
+       -122.3967147,
+       37.7402236
+      ],
+      [
+       -122.3969958,
+       37.7403836
+      ],
+      [
+       -122.3969999,
+       37.7403791
+      ],
+      [
+       -122.3970195,
+       37.7403903
+      ],
+      [
+       -122.3970155,
+       37.7403948
+      ],
+      [
+       -122.3975384,
+       37.7406923
+      ],
+      [
+       -122.3975424,
+       37.7406879
+      ],
+      [
+       -122.3975621,
+       37.7406991
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

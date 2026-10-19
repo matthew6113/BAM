@@ -164,6 +164,15 @@ FREEDOM_CIRCLE_APNS = ["10440019", "10440021", "10440036"]
 # (SCH 2025100897). The 0.6-acre parcel at 2079 Flint Avenue is annexed but "not part of the project".
 PLEASANT_HILLS_APNS = ["64923001", "64924013"]
 
+# Freedom West 2.0: Block 0783, Lots 023, 024 and 025, and Block 0770, Lot 027, the four lots named in the Notice of
+# Preparation (Apr 30, 2025) and Draft EIR (Jan 13, 2026) for case 2020-006887ENV (SCH 2025050078). Lot 0770/027 also
+# holds the separate 870-880 McAllister senior housing site (case 2024-003742PRJ), which the project leaves out.
+FREEDOM_WEST_BLKLOTS = ["0783023", "0783024", "0783025", "0770027"]
+
+# Railyards Mixed-Use Development (700 4th Street): Blocks/Lots 8701/003, 8701/004, 8700/001 and 8703/005, the four
+# lots named in the Notice of Preparation of Sept 30, 2026 (case 2026-002123ENV, SCH 2026091295).
+RAILYARDS_BLKLOTS = ["8701003", "8701004", "8700001", "8703005"]
+
 
 def _sql_list(values) -> str:
     return ", ".join(f"'{v}'" for v in values)
@@ -644,6 +653,42 @@ SPECS: dict[str, dict] = {
                  "names, against its approximately 113.5 gross acres. The 0.6-acre house lot at 2079 Flint Avenue, which "
                  "would be annexed with them but isn't part of the project, isn't drawn."),
         "license": "Santa Clara County open data (terms of use)",
+    },
+    "freedom-west": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(FREEDOM_WEST_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 0783 lots 023, 024 and 025 and block 0770 lot 027",
+        "accuracy": "approximate",
+        "note": ("The four lots the Notice of Preparation and Draft EIR name for Freedom West 2.0 (case 2020-006887ENV), "
+                 "against the Draft EIR's 451,500 sq ft (10.37 acres): the whole block between McAllister and Fulton "
+                 "streets and most of the block to the north. Lot 0770/027 also takes in the corner of McAllister and "
+                 "Laguna streets at 870-880 McAllister Street, a separate 115-home senior housing project (case "
+                 "2024-003742PRJ) that the Draft EIR leaves out of the site; the lot split approved in 2024 (case "
+                 "2024-008030SUB) isn't in the parcel layer yet, so that corner, about 0.4 acres, is drawn as part of "
+                 "the site. Bethel A.M.E. Church and 967-973 Golden Gate Avenue are on their own lots and aren't drawn."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "sf-gateway": {
+        "label": "DataSF special use districts",
+        **socrata(DATASF, SF_SUD, "name = 'San Francisco Gateway SUD'"),
+        "layer": "DataSF Zoning Map – Special Use Districts, “San Francisco Gateway SUD”",
+        "accuracy": "official",
+        "note": ("The San Francisco Gateway Special Use District (Board File 250426, in effect Dec 12, 2025): Lot 008 in "
+                 "Block 5284A and Lot 002 in Block 5287 with the portions of the surrounding streets and Selby Street "
+                 "in the project, against the approvals' 743,800 sq ft (about 17.1 acres). Interstate 280 crosses the "
+                 "site overhead between the two buildings."),
+        "license": "Public Domain U.S. Government (DataSF)",
+    },
+    "railyards": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(RAILYARDS_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 8701 lots 003 and 004, block 8700 lot 001 and block 8703 lot 005",
+        "accuracy": "official",
+        "note": ("The four lots the Notice of Preparation names for the Railyards Mixed-Use Development Project (case "
+                 "2026-002123ENV): the Caltrain station and railyard between Townsend, Fourth, King and Seventh "
+                 "streets, against its 18.63 acres. The offsite train storage and maintenance facility, whose location "
+                 "isn't chosen yet, isn't drawn."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
     },
 }
 

@@ -1,0 +1,85 @@
+{
+ "id": "railyards",
+ "name": "Railyards (Fourth and King)",
+ "aliases": [
+  "Railyards Mixed-Use Development Project",
+  "700 4th Street",
+  "Fourth and King Railyards"
+ ],
+ "city": "San Francisco",
+ "county": "San Francisco",
+ "subregion": "San Francisco",
+ "category": "buildings",
+ "approxCenter": [
+  -122.3981,
+  37.7738
+ ],
+ "camera": {
+  "center": [
+   -122.3981,
+   37.7739
+  ],
+  "zoom": 15.4,
+  "pitch": 55,
+  "bearing": -45
+ },
+ "acres": 18.63,
+ "acresNote": "Notice of preparation (Sept 30, 2026): 18.63 acres on Blocks/Lots 8701/003, 8701/004, 8700/001 and 8703/005, the Caltrain station and railyard bounded by Townsend, Fourth, King and Seventh streets. An offsite train storage and maintenance facility, somewhere along the Caltrain corridor between Fourth and King and SFO, is also part of the project but its site isn't chosen.",
+ "program": {
+  "homes": 5834,
+  "affordableHomes": null,
+  "affordablePct": null,
+  "officeLabSqft": null,
+  "commercialSqftTotal": 5638120,
+  "retailSqft": 172660,
+  "hotelKeys": null,
+  "openSpaceAcres": 3.73,
+  "notes": "The notice of preparation describes two scenarios, each about 7.8 million sq ft above grade; the homes and commercial figures above are each scenario's maximum and can't both happen. Maximum Commercial Scenario: up to 1,765 homes (1,765,910 sq ft), about 5,638,120 sq ft of commercial space (office, hotel, laboratory and life science) and 172,660 sq ft of retail. Maximum Residential Scenario: up to 5,834 homes (5,834,800 sq ft), about 1,589,980 sq ft of commercial space and 159,970 sq ft of retail. Both include a new 19,560 sq ft Caltrain Station Hall on Block 1 and about 3.73 acres of publicly accessible open space. The Caltrain terminal would move into a new tunnel with two tracks and a service platform, ending at a new station about 60 ft below grade, next to the tracks and platform The Portal is to build for its Fourth and Townsend station. Proposed height limits range from 350 to 855 ft: 855 ft on Block 1 (with a second tower up to 575 ft), 625 ft on Block 2B, 550 ft on 3C, 500 ft on 2A and 3A, 450 ft on 5, 400 ft on 3B and 350 ft on 4."
+ },
+ "developer": "Prologis 4th & King LLC (project sponsor), in coordination with Caltrain",
+ "publicPartners": [
+  "San Francisco Planning Department (lead agency)",
+  "Peninsula Corridor Joint Powers Board (Caltrain)",
+  "Transbay Joint Powers Authority (The Portal, a coordinated project)"
+ ],
+ "stage": "entitlement",
+ "stageNote": "In formal review. The Planning Department issued the notice of preparation of an EIR on Sept 30, 2026; a development agreement application and the rezoning to a new Railyards special use district are under review. No approvals yet.",
+ "timeline": [
+  {
+   "date": "2026-03-11",
+   "event": "The project application is filed with the Planning Department (case 2026-002123): up to 7.8 million sq ft above grade on the Caltrain station and railyard, subject to a development agreement."
+  },
+  {
+   "date": "2026-04-15",
+   "event": "The development agreement application is submitted."
+  },
+  {
+   "date": "2026-09-30",
+   "event": "The Planning Department issues the notice of preparation of an EIR, with a scoping meeting on Oct 14, 2026."
+  }
+ ],
+ "nextMilestone": "Comments on the EIR's scope close on Oct 30, 2026; then the Draft EIR. The EIR assumes construction over about 13 years, from 2029 to 2042, with the station's tunnel built after The Portal.",
+ "summary": "A plan to rebuild the Caltrain terminal at Fourth and King streets, moving its tracks into a new tunnel and underground station, and to build about 7.8 million sq ft on the railyard above: up to 5,834 homes or up to 5.6 million sq ft of offices and labs, depending on the mix, in towers of 350 to 855 ft. The EIR is just starting; the notice of preparation came out in September 2026.",
+ "massingNotes": "Added at Matthew's request (2026-10-19). Boundary: DataSF parcels (acdm-wktn), the four lots the notice of preparation names (about 18.6 acres). No massing: the notice gives only maximum heights by development block (Figure 3) and building designs aren't public. The site overlaps the mapped Mission Bay plan area (its western parcels are in the Mission Bay North redevelopment plan) and The Portal's alignment under Townsend Street.",
+ "officialLinks": [
+  "https://ceqanet.lci.ca.gov/Project/2026091295",
+  "https://ceqanet.lci.ca.gov/2026091295/1/Attachment/tPsmWg"
+ ],
+ "sources": [
+  "https://ceqanet.lci.ca.gov/2026091295/1/Attachment/tPsmWg",
+  "https://ceqanet.lci.ca.gov/2026091295/1/Attachment/6PpGFT",
+  "https://ceqanet.lci.ca.gov/2026091295/1",
+  "https://ceqanet.lci.ca.gov/Project/2026091295",
+  "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2026-002123PRJ",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2026-002123ENV",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2026-002123DVA",
+  "https://data.sf.gov/d/acdm-wktn"
+ ],
+ "verify": [
+  "which scenario, or what mix of homes and commercial space, the City studies as preferred in the Draft EIR",
+  "affordable housing terms, which the notice of preparation doesn't give",
+  "the location of the offsite train storage and maintenance facility",
+  "Caltrain's role and any agreement between Caltrain and Prologis (the notice says only that the sponsor proposes the project in coordination with the Peninsula Corridor Joint Powers Board)"
+ ],
+ "lastVerified": "2026-10-19"
+}
