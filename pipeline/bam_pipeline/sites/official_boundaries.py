@@ -203,6 +203,14 @@ ONE_VASSAR_BLKLOTS = [
     "3763113", "3763125",
 ]
 
+# Gateway Crossings (1205 Coleman Avenue, Santa Clara): the approval (NOD of July 9, 2019, SCH 2017022066) covers about
+# 21.4 acres; CEQAnet's records of the 2017 NOP and 2018 Draft EIR give APNs 230-46-069 and -070, which the County has
+# since retired. Their successors are the lots on assessor's page 230-60 (230-60-001 to -008, and -010, re-mapped from
+# the -009 that the City's 2026 station-area plan record still lists) and the unnumbered street lots inside
+# GATEWAY_CROSSINGS_COMMON_BOX: about 21.35 acres together.
+GATEWAY_CROSSINGS_APNS = [f"23060{n:03d}" for n in (1, 2, 3, 4, 5, 6, 7, 8, 10)]
+GATEWAY_CROSSINGS_COMMON_BOX = "37.3568, -121.9367, 37.3535, -121.9318"  # unnumbered street lots inside the subdivision
+
 
 def _sql_list(values) -> str:
     return ", ".join(f"'{v}'" for v in values)
@@ -786,6 +794,20 @@ SPECS: dict[str, dict] = {
                  "and the rest of it, the AC Transit bus yard (lot 126), isn't. Vassar Place, a public street, "
                  "separates 400 2nd Street from the rest of the site."),
         "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "gateway-crossings": {
+        "label": "Santa Clara County parcels",
+        **socrata(*SCC_PARCELS, f"apn in ({_sql_list(GATEWAY_CROSSINGS_APNS)}) or "
+                                f"(apn is null and within_box(the_geom, {GATEWAY_CROSSINGS_COMMON_BOX}))"),
+        "layer": ("Santa Clara County parcels: the lots that replaced the Gateway Crossings site (230-60-001 to -008 and "
+                  "-010) and the unnumbered street lots between them"),
+        "accuracy": "approximate",
+        "note": ("The approval's site at 1205 Coleman Avenue, which CEQAnet records as APNs 230-46-069 and -070. The "
+                 "County has since retired those two parcels and mapped the site as new lots on assessor's page 230-60 "
+                 "(addressed on Rickabaugh Way, Chastain Place and Brokaw Road) with unnumbered street lots between "
+                 "them; those lots and streets are drawn, and together they match the approval's approximately 21.4 "
+                 "acres. The site lies inside the Santa Clara Station Area Specific Plan area."),
+        "license": "Santa Clara County open data (terms of use)",
     },
 }
 

@@ -1,0 +1,88 @@
+{
+  "id": "gateway-crossings",
+  "name": "Gateway Crossings",
+  "aliases": [
+    "Gateway Crossings Project",
+    "1205 Coleman Avenue"
+  ],
+  "city": "Santa Clara",
+  "county": "Santa Clara",
+  "subregion": "South Bay",
+  "category": "buildings",
+  "approxCenter": [
+    -121.9342,
+    37.3553
+  ],
+  "camera": {
+    "center": [
+      -121.9342,
+      37.3551
+    ],
+    "zoom": 16.2,
+    "pitch": 55,
+    "bearing": -58
+  },
+  "acres": 21.4,
+  "acresNote": "About 21.4 acres at 1205 Coleman Avenue (notice of determination, July 2019); CEQAnet records the site as APNs 230-46-069 and 230-46-070. The County has since replaced those two parcels with new lots and streets; drawn from them, the site comes to about 21.3 acres. A 2021 City study for a neighbouring hotel describes the site as approximately 24 acres.",
+  "program": {
+    "homes": 1565,
+    "affordableHomes": null,
+    "affordablePct": null,
+    "officeLabSqft": null,
+    "commercialSqftTotal": 197000,
+    "retailSqft": 45000,
+    "hotelKeys": 225,
+    "openSpaceAcres": 2.6,
+    "notes": "As approved: 1,565 homes and 197,000 sq ft of commercial uses, including a 225-room hotel and 45,000 sq ft of ancillary retail, with two public parks totaling about 2.6 acres, structured and surface parking, private streets and a new public street (notice of determination, July 9, 2019). A 2021 City study puts the hotel at 152,000 sq ft and describes the project as a phased development. The 2017 notice of preparation studied up to 1,600 homes and 215,000 sq ft of commercial space. The number of affordable homes, the building heights and the site plan are in the April 2018 Draft EIR, which isn't posted on CEQAnet and couldn't be read."
+  },
+  "developer": "Hunter Storm Properties",
+  "publicPartners": [
+    "City of Santa Clara (lead agency)"
+  ],
+  "stage": "entitled",
+  "stageNote": "Approved. The City of Santa Clara approved the project on July 9, 2019, with its EIR, a statement of overriding considerations, a vesting tentative subdivision map and a development agreement. A City study of March 2021 for a hotel across Coleman Avenue described the site as vacant, and VTA's February 2024 fact sheet for its Santa Clara BART station calls Gateway Crossings a future development. The County's parcel map now shows the site divided into new lots and streets, which suggests a final subdivision map has recorded, but that is not evidence of construction, and no building permit or construction record could be checked.",
+  "timeline": [
+    {
+      "date": "2017-02-22",
+      "event": "Santa Clara issues a notice of preparation for an EIR on Gateway Crossings: a General Plan amendment to allow 51 to 100 homes per acre with a minimum commercial floor area ratio of 0.20, and a rezoning. CEQAnet lists up to 1,600 homes and 215,000 sq ft of commercial space."
+    },
+    {
+      "date": "2018-04-10",
+      "event": "The Draft EIR is released for comment, until May 24, 2018."
+    },
+    {
+      "date": "2019-07-09",
+      "event": "The City of Santa Clara approves the project with its EIR, a vesting tentative subdivision map and a development agreement: 1,565 homes and 197,000 sq ft of commercial uses, including a 225-room hotel and 45,000 sq ft of retail, with two public parks of about 2.6 acres."
+    },
+    {
+      "date": "2026-06-12",
+      "event": "Santa Clara issues a notice of preparation for the Santa Clara Station Area Specific Plan, whose plan area takes in the Gateway Crossings lots."
+    }
+  ],
+  "nextMilestone": null,
+  "summary": "A 21-acre former industrial site on Coleman Avenue in Santa Clara, beside the Santa Clara Caltrain station where BART's Silicon Valley extension is planned to end, approved in 2019 for 1,565 homes, a 225-room hotel and 45,000 sq ft of shops, with two public parks. Part of the site was a factory that built military tracked vehicles until 1996. It lies inside the area of the City's Santa Clara Station Area Specific Plan, whose environmental review began in 2026.",
+  "massingNotes": "Added at Matthew's request (2026-10-19). The site lies inside the Santa Clara Station Area Specific Plan area (santa-clara-station-area), which is drawn separately; Gateway Crossings is shown as its own project because it has its own approval. Boundary (data/boundaries/gateway-crossings.geojson, official): the Santa Clara County parcels (data.sccgov.org ubcd-cewv) that replaced the approval's two APNs, 230-60-001 to -008 and -010, and the four unnumbered street lots between them; 21.3 acres against the approval's 21.4. No massing: the site plan and building heights are in the April 2018 Draft EIR, which isn't posted on CEQAnet, and the City's site couldn't be reached.",
+  "officialLinks": [
+    "https://ceqanet.lci.ca.gov/Project/2017022066"
+  ],
+  "sources": [
+    "https://ceqanet.lci.ca.gov/Project/2017022066",
+    "https://ceqanet.lci.ca.gov/2017022066",
+    "https://ceqanet.lci.ca.gov/2017022066/2",
+    "https://ceqanet.lci.ca.gov/2017022066/3",
+    "https://ceqanet.lci.ca.gov/2017022066/3/Attachment/d5qjId",
+    "https://ceqanet.lci.ca.gov/2021030592/Attachment/4isyVj",
+    "https://ceqanet.lci.ca.gov/2026060462",
+    "https://ceqanet.lci.ca.gov/2026060462/Attachment/mtsQbf",
+    "https://www.vta.org/sites/default/files/2024-02/bsv_santa-clara-fact-sheet.pdf",
+    "https://data.sccgov.org/d/ubcd-cewv"
+  ],
+  "verify": [
+    "whether construction has started: the County's parcel layer now shows the site as new lots with street addresses (1200 Rickabaugh Way, 330 Chastain Place), which suggests a final map has recorded, but Santa Clara's permit records and project pages (santaclaraca.gov) couldn't be reached; the latest official documents read (March 2021, February 2024) describe the site as vacant or the development as future",
+    "the number of affordable homes, the building heights and the site plan, which are in the April 2018 Draft EIR and the approval's resolutions; neither is posted on CEQAnet and the City's site couldn't be reached",
+    "any change to the approval since July 2019, such as an amendment to the development agreement; no later CEQA document for the project is on CEQAnet",
+    "the site area: the notice of determination says about 21.4 acres and a 2021 City study about 24 acres; the boundary is drawn from the lots that replaced the approval's two APNs and comes to 21.3 acres",
+    "the developer: the 2019 notice names Hunter Storm Properties as applicant; who is building each phase now hasn't been confirmed from an official source"
+  ],
+  "lastVerified": "2026-10-19"
+}
