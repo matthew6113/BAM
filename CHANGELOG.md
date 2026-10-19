@@ -11,7 +11,8 @@ more South Bay projects, and for the UC Berkeley–Moffett Field agreement. Cand
 Development Pipeline (DataSF `6jgi-cpb4`, 2026 Q2) and CEQAnet; each was checked against official
 documents only. Research, verbatim quotes and the leads not added are in `docs/official-research/`:
 `candidates-sf-financial-district.md`, `candidates-sf-transbay.md`, `candidates-sf-van-ness-market.md`,
-`candidates-sf-central-soma.md`, `candidates-sf-other-sites.md` and `candidates-south-bay-2026-10.md`. This session couldn't reach the Board
+`candidates-sf-central-soma.md`, `candidates-sf-other-sites.md`, `candidates-south-bay-2026-10.md` and
+`candidates-berkeley-space-center.md`; the leads not added are summarized in `docs/upkeep/leads-2026-10-19.md`. This session couldn't reach the Board
 of Supervisors' sites, Planning Commission packets from 2023 on, or the South Bay cities' own sites; facts
 only those would confirm are in each record's `verify` list.
 
@@ -97,6 +98,18 @@ Irvine Company's 1,792 homes (approved 2025) and Greystar's 1,100 (2022), 39 acr
 **pleasant-hills** (new): about 2,000 homes on the former Pleasant Hills golf course in east San José, to be
 annexed from the County. Notice of preparation Oct 14, 2025 (https://ceqanet.lci.ca.gov/Project/2025100897).
 In entitlement. Boundary only.
+
+**berkeley-space-center** (new): the UC Berkeley and NASA project at Moffett Field, now called the Berkeley Air
+& Space Center. From the joint Final EIR/EIS (Aug 2026) and the University's notice of determination
+(https://ceqanet.lci.ca.gov/Project/2024060942): the UC Regents and NASA signed an Enhanced Use Lease for about
+36 acres of the NASA Research Park on Nov 1, 2020; the Regents formed Moffett Partners, LLC with SKSP NRP in 2021
+and the lease was assigned to its affiliate in 2022; the project is up to 2.32 million sq ft (2 million of
+research and office, a conference center, about 145 student and faculty housing units and 100 short-term lodging
+units) on about 39 acres, with a 1.4 million sq ft alternative that could also be approved. On Sept 16, 2026 the
+University authorized submitting the project to NASA, which still has to issue its Record of Decision. In
+entitlement. Boundary traced from the project's land use plan; nine land-use zones; no massing. The lease's term,
+the Regents' meeting record and NASA's decision are `verify` items (nasa.gov, the Regents and berkeley.edu weren't
+reachable).
 
 `_meta.lastVerified` is now 2026-10-19.
 

@@ -9070,6 +9070,134 @@
           "https://therealdeal.com/san-francisco/2024/01/17/cresleigh-management-moves-ahead-with-triple-towers-in-sf/"
         ]
       }
+    },
+    {
+      "id": "berkeley-space-center",
+      "name": "Berkeley Space Center",
+      "aliases": [
+        "Berkeley Air & Space Center at NASA Research Park",
+        "Berkeley Space Center at NASA Research Park",
+        "UC Berkeley at NASA Ames"
+      ],
+      "city": "Moffett Field",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -122.0547,
+        37.4091
+      ],
+      "camera": {
+        "center": [
+          -122.0547,
+          37.4088
+        ],
+        "zoom": 15.9,
+        "pitch": 58,
+        "bearing": -20
+      },
+      "acres": 39,
+      "acresNote": "The joint Final EIR/EIS (Aug 2026, p. 2-4) gives an approximately 39-acre Project Site, plus about 6 acres of off-site utility and demolition work (45 acres in all). The 2024 notice of preparation described a 36-acre site, the size of the 2020 Enhanced Use Lease (p. 2-3); the leased parcel boundary measures 34.92 acres (p. 2-28). The site line traced from the project's land use plan measures 39.3 acres.",
+      "program": {
+        "homes": 145,
+        "affordableHomes": null,
+        "affordablePct": 10,
+        "officeLabSqft": 2000000,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": 100,
+        "openSpaceAcres": 10,
+        "notes": "Maximums for the CEQA Proposed Project (NEPA Build Alternative 1), about 2.32 million sq ft in all (Final EIR/EIS Table 2-3): 2,000,000 sq ft of research and office uses (350,000 office, 1,390,000 lab and R&D, 260,000 academic), a 25,000 sq ft conference center, 90,000 sq ft of publicly accessible active uses (retail, food, maker space and similar), 130,000 sq ft of student and faculty housing (about 145 units, used by UC students and faculty for a semester to an academic year; at least 10 percent affordable at 80 percent of area median income) and 75,000 sq ft of short-term lodging (about 100 units), plus two parking garages. At least 10 acres of publicly accessible open space, around a Central Green. Buildings up to 80 ft (30 ft in the Central Green), with up to 25 ft more for mechanical screens. The Reduced Density Alternative (NEPA Build Alternative 2) has 1.08 million sq ft of research and office uses (1.4 million sq ft in all) and could also be approved; a variant would replace the housing with 130,000 sq ft of research space."
+      },
+      "developer": "Moffett Partners, LLC (a joint venture of the UC Regents and SKSP NRP, LLC; SKS Partners is its development manager)",
+      "publicPartners": [
+        "NASA Ames Research Center (landowner under an Enhanced Use Lease; NEPA lead agency and final decision-maker)",
+        "The Regents of the University of California (CEQA lead agency; joint venture partner)"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In review. On Sept 16, 2026 the University of California, as CEQA lead agency, authorized Moffett Partners to submit the project to NASA, adopting CEQA findings, a statement of overriding considerations and a mitigation monitoring and reporting program. NASA, which owns the land, is the final decision-maker: it must still issue a Record of Decision under NEPA and approve the project before it issues construction permits. No NASA decision could be checked as of Oct 19, 2026.",
+      "timeline": [
+        {
+          "date": "2002",
+          "event": "NASA completes a programmatic environmental impact statement and Record of Decision for the NASA Ames Development Plan, which includes the NASA Research Park where the site lies."
+        },
+        {
+          "date": "2019",
+          "event": "NASA invites the UC Regents to explore developing the site for research, professional education and housing."
+        },
+        {
+          "date": "2020-11-01",
+          "event": "The UC Regents and NASA enter into an Enhanced Use Lease for about 36 acres in the NASA Research Park."
+        },
+        {
+          "date": "2021-05",
+          "event": "The UC Regents authorize UC Berkeley to form a joint venture with SKSP NRP, LLC, creating Moffett Partners, LLC, for the project."
+        },
+        {
+          "date": "2022-12",
+          "event": "The Enhanced Use Lease is assigned to an affiliate of Moffett Partners, LLC."
+        },
+        {
+          "date": "2024-06-21",
+          "event": "UC Berkeley issues the notice of preparation for a joint EIR/EIS with NASA (SCH 2024060942); NASA's notice of intent follows on June 26, 2024."
+        },
+        {
+          "date": "2026-04-24",
+          "event": "UC Berkeley and NASA release the joint Draft EIR/EIS for public review through June 10, 2026."
+        },
+        {
+          "date": "2026-08-28",
+          "event": "UC Berkeley and NASA publish the joint Final EIR/EIS."
+        },
+        {
+          "date": "2026-09-16",
+          "event": "The University of California authorizes submittal of the project to NASA for its review and approval, with CEQA findings, a statement of overriding considerations and a mitigation program; the notice of determination is filed the next day."
+        }
+      ],
+      "nextMilestone": "NASA's Record of Decision on the project. The Final EIR/EIS plans construction in four phases from 2027 to 2040, with the first buildings occupied in 2032.",
+      "summary": "A research campus planned by Moffett Partners, a joint venture of the UC Regents and SKSP NRP, on about 39 acres of federal land at NASA Ames Research Center beside Hangar One, under a 2020 lease from NASA. It would add up to 2.3 million sq ft, mostly labs and offices, with a conference center, about 145 student and faculty housing units, about 100 short-term lodging units and a Central Green. The University approved sending the project to NASA in September 2026; NASA makes the final decision.",
+      "massingNotes": "Added at Matthew's request (2026-10-19). Boundary (data/boundaries/berkeley-space-center.geojson): traced, the Project Site line of the Land Use Plan in the project's Development Guidelines (Spring 2026, p. 29; Appendix 2-1 to the joint Final EIR/EIS, the same plan as its Figure 2-6), fitted to OpenStreetMap building footprints (median 0.7 m) and checked against the plan's scale bar (within 0.3%); 39.3 acres as drawn against about 39. It includes the realigned Wescoat, Cody and Girard roads along the edges; the 6 acres of off-site work are not drawn. No county parcel draws the site: APN 116-18-012 is all of NASA Ames. Land use (data/landuse/berkeley-space-center.geojson): the plan's Subareas traced from the same plan (Subareas 1 to 6 measure 20.8 acres against the Master Plan's 20.84), with the Central Green and other open space. No buildings are drawn: the EIR/EIS studies a development envelope (80 ft, 30 ft in the Central Green), not a building design.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/Project/2024060942",
+        "https://ceqanet.lci.ca.gov/2024060942/3"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/Project/2024060942",
+        "https://ceqanet.lci.ca.gov/2024060942/1",
+        "https://ceqanet.lci.ca.gov/2024060942/1/Attachment/S_oNVj",
+        "https://ceqanet.lci.ca.gov/2024060942/2",
+        "https://ceqanet.lci.ca.gov/2024060942/3",
+        "https://ceqanet.lci.ca.gov/2024060942/3/Attachment/G8IBj9",
+        "https://ceqanet.lci.ca.gov/2024060942/3/Attachment/YBGZ4B",
+        "https://ceqanet.lci.ca.gov/2024060942/3/Attachment/fMsT4z",
+        "https://ceqanet.lci.ca.gov/2024060942/4",
+        "https://ceqanet.lci.ca.gov/2024060942/4/Attachment/jfwLes"
+      ],
+      "verify": [
+        "whether NASA has issued its Record of Decision and approved the project: the Final EIR/EIS says NASA will decide after the University's action and a 30-day waiting period, but NASA's site and the Federal Register could not be reached on Oct 19, 2026",
+        "which alternative NASA approves: the 2.3 million sq ft Proposed Project or the 1.4 million sq ft Reduced Density Alternative, which the EIR/EIS names the environmentally superior alternative; it says either could be approved",
+        "the length and terms of the 2020 Enhanced Use Lease: the Final EIR/EIS gives its date, its size (about 36 acres) and its 2022 assignment, but not its term",
+        "who took the Sept 16, 2026 action and in what form: the notice of determination names the University of California, is signed by UC's Director of Physical and Environmental Planning, and says it 'authorized submittal' to NASA; the Regents' agenda and minutes could not be opened, and the notice doesn't say in so many words that the EIR was certified",
+        "the housing count: the Final EIR/EIS gives about 145 student and faculty units and about 100 short-term lodging units; the notice of determination says 'up to 300 units of student/faculty housing and short-term lodging'",
+        "the EPA Settlement Agreement and Covenant Not to Sue for the contaminated site, still in draft in August 2026, which the lease requires"
+      ],
+      "lastVerified": "2026-10-19",
+      "reported": {
+        "note": "Reported by the press or UC Berkeley's news office but not confirmed by an official source opened for this record (Matthew, 2026-10-02: official sources only). These come from web search summaries; none of the articles could be opened from this session on Oct 19, 2026, so each needs reading before use.",
+        "timeline": [
+          {
+            "date": "2023-10-16",
+            "event": "UC Berkeley, NASA Ames and SKS Partners announce the Berkeley Space Center: 36 acres leased from NASA, up to 1.4 million sq ft of research space, first buildings possibly ready in 2027."
+          }
+        ],
+        "program.notes": "A budget of about $2 billion; roughly 10 percent of the space for UC Berkeley and about 1 million sq ft for private tenants; CBRE as leasing agent (Bisnow, Oct 2023).",
+        "sources": [
+          "https://news.berkeley.edu/?p=120022",
+          "https://www.kqed.org/science/1984704/a-new-berkeley-space-center-is-coming-to-silicon-valley",
+          "https://www.bisnow.com/san-francisco/news/construction-development/sks-partners-uc-berkeley-and-nasa-to-bring-2b-rd-center-to-silicon-valley-121131",
+          "https://www.asce.org/publications-and-news/civil-engineering-source/civil-engineering-magazine/article/2023/12/berkeley-space-center-plans-unveiled-for-silicon-valley"
+        ]
+      }
     }
   ]
 }
