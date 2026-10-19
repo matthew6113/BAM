@@ -1,0 +1,73 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "536-mission",
+  "illustrative": true,
+  "summary": "Illustrative massing: a simple volume over the whole Golden Gate University lot at 700 ft, the roof of the approved office variant (752 ft to its parapet). The tower's real footprint is smaller in places; the approved mixed-use variant would be 649 ft.",
+  "note": "A placeholder volume at the approved height, not the design.",
+  "sourceUrl": "https://sfplanning.org/sites/default/files/agendas/2026-09/20260910_cpc%20%28ID%201586266%29.pdf",
+  "sourceLabel": "Planning Commission agenda, Sept 10, 2026 (PDF)",
+  "envelopeSourceUrl": "https://data.sf.gov/resource/y673-d69b.json?record_id=2025-007507DNX",
+  "georeference": {
+   "method": "The DataSF parcel, as in the boundary file."
+  },
+  "license": "Height: from public SF Planning documents. Lot: DataSF parcels (ODC-PDDL)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Tower (office variant)",
+    "stage": "entitled",
+    "height_ft": 700.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office and laboratory, with ground-floor retail",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the whole lot (DataSF parcel 3708/098) at the office variant's 700-ft roof in the San Francisco Planning Commission agenda, Sept 10, 2026, PDF p. 4, and Planning record 2025-007507DNX",
+    "note": "46 stories, 700 ft to the roof and 752 ft to the top of the parapet. The approval also allows a mixed-use variant, 649 ft (698 ft to the parapet) with up to 385 homes. Drawn over the whole lot: the tower's footprint wasn't in a document we could open."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3993558,
+       37.7892381
+      ],
+      [
+       -122.3989006,
+       37.7895979
+      ],
+      [
+       -122.3984396,
+       37.7892356
+      ],
+      [
+       -122.3988556,
+       37.7889067
+      ],
+      [
+       -122.3990966,
+       37.7890982
+      ],
+      [
+       -122.3991038,
+       37.7890982
+      ],
+      [
+       -122.3991419,
+       37.7890681
+      ],
+      [
+       -122.3993558,
+       37.7892381
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

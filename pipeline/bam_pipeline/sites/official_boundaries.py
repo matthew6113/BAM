@@ -120,6 +120,18 @@ NORTHGATE_APNS = [  # San Rafael Resolution 15360 and Ordinance 2043 (Dec 2024)
     "175-060-12", "175-060-40", "175-060-59", "175-060-61", "175-060-66", "175-060-67",
 ]
 
+# 530 Sansome Mixed-Use Tower and Fire Station 13: Block 0206, Lots 002 (447 Battery, the new fire station), 013,
+# 014 and 017 (the tower), the four lots of the EIR (case 2024-007066ENV) and its Notice of Determination (Oct 2025).
+SANSOME_530_BLKLOTS = ["0206002", "0206013", "0206014", "0206017"]
+
+# Matson Block (77 Beale / 50 Main): the whole of Block 3711, Lots 005-014 and 019, as listed in the Notice of
+# Preparation of an EIR of Dec 17, 2025 (case 2021-012562ENV, SCH 2025120794).
+MATSON_BLOCK_BLKLOTS = [f"3711{n:03d}" for n in range(5, 15)] + ["3711019"]
+
+# 536 Mission Street: Block 3708, Lot 098, the single lot of Planning record 2025-007507 (Planning Commission
+# agenda of Sept 10, 2026).
+MISSION_536_BLKLOTS = ["3708098"]
+
 
 def _sql_list(values) -> str:
     return ", ".join(f"'{v}'" for v in values)
@@ -502,6 +514,37 @@ SPECS: dict[str, dict] = {
                  "approximately 207 acres. The narrow strip along the rail line north of Tulane Avenue, which the "
                  "plan includes, is too thin to keep."),
         "license": "City of East Palo Alto ArcGIS (no license stated; terms to confirm)",
+    },
+    "530-sansome": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(SANSOME_530_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 0206 lots 002, 013, 014 and 017",
+        "accuracy": "official",
+        "note": ("The four lots the EIR and its Notice of Determination name (24,830 sq ft): Fire Station 13 at 530 "
+                 "Sansome Street and 425 and 439-445 Washington Street (lots 017, 014 and 013) for the tower, and 447 "
+                 "Battery Street (lot 002) for the new fire station. The office condominiums at 423 Washington Street, "
+                 "on the corner of Washington and Battery, aren't part of the site. The 530 Sansome special use "
+                 "district polygon in DataSF's zoning layer doesn't match these lots, so the parcels are used."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "77-beale": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(MATSON_BLOCK_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3711 lots 005 to 014 and 019",
+        "accuracy": "official",
+        "note": ("The whole block bounded by Market, Main, Mission and Beale streets, the eleven lots the Notice of "
+                 "Preparation names, against its 151,390 sq ft (3.47 acres)."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "536-mission": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(MISSION_536_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3708 lot 098",
+        "accuracy": "official",
+        "note": ("The Golden Gate University lot between Mission and Jessie streets at Ecker Place, the single lot "
+                 "of the Planning Commission's Sept 10, 2026 approvals. Oceanwide Center's site is across Ecker "
+                 "Place, about 25 ft away; the two don't touch."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
     },
 }
 
