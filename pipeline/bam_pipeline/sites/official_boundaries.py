@@ -211,6 +211,10 @@ ONE_VASSAR_BLKLOTS = [
 GATEWAY_CROSSINGS_APNS = [f"23060{n:03d}" for n in (1, 2, 3, 4, 5, 6, 7, 8, 10)]
 GATEWAY_CROSSINGS_COMMON_BOX = "37.3568, -121.9367, 37.3535, -121.9318"  # unnumbered street lots inside the subdivision
 
+# 98 Franklin Street: "Lots 008, 009, & 013 in Assessor's Block 0836", as the Planning Commission's minutes of May 28,
+# 2020 (Motions 20726-20728, case 2016-014802) and its agenda of March 30, 2023 name the site.
+FRANKLIN_98_BLKLOTS = ["0836008", "0836009", "0836013"]
+
 
 def _sql_list(values) -> str:
     return ", ".join(f"'{v}'" for v in values)
@@ -808,6 +812,17 @@ SPECS: dict[str, dict] = {
                  "them; those lots and streets are drawn, and together they match the approval's approximately 21.4 "
                  "acres. The site lies inside the Santa Clara Station Area Specific Plan area."),
         "license": "Santa Clara County open data (terms of use)",
+    },
+    "98-franklin": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(FRANKLIN_98_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 0836 lots 008, 009 and 013",
+        "accuracy": "official",
+        "note": ("Lots 008, 009 and 013 in Assessor's Block 0836, the L-shaped parking lot at Franklin and Oak streets "
+                 "with a strip through to Market Street that the Planning Commission's May 28, 2020 approvals name, "
+                 "against the approximately 23,750 sq ft in the approval and the Hub Plan EIR. One Oak's site (lots "
+                 "001 to 005) is to the east, beyond 1546-1564 Market Street (lot 007); the two don't touch."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
     },
 }
 
