@@ -852,6 +852,9 @@ def build(project: str) -> None:
         site = site.difference(hole).buffer(-cut["open_m"]).buffer(cut["open_m"])
     # 1 m is well inside map precision and keeps the bundled files small.
     site = site.simplify(1.0, preserve_topology=True)
+    if site.geom_type == "MultiPolygon":  # drop slivers between parcels, which round away to degenerate rings
+        parts = [p for p in site.geoms if p.area > 1.0]
+        site = parts[0] if len(parts) == 1 else shapely.MultiPolygon(parts)
     acres = site.area / ACRE_M2
     wgs = gpd.GeoSeries([site], crs=UTM).to_crs(4326).iloc[0]
     out = {
