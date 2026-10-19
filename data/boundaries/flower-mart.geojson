@@ -1,0 +1,78 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "flower-mart",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 3778 lots 001B, 002B, 004, 005, 047 and 048",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273778001B%27%2C+%273778002B%27%2C+%273778004%27%2C+%273778005%27%2C+%273778047%27%2C+%273778048%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The six lots of the Flower Mart site on the north side of Brannan Street between 5th and 6th streets, as the 2019 approvals and the Oct 1, 2026 Planning Commission agenda name them, against the approximately 6.5 acres in the Development Agreement. The rest of the block, north of the site's service drive, isn't part of it. 6.8 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 6
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.401477,
+       37.7761427
+      ],
+      [
+       -122.401298,
+       37.7762862
+      ],
+      [
+       -122.4013164,
+       37.7763068
+      ],
+      [
+       -122.4000486,
+       37.7773229
+      ],
+      [
+       -122.3999355,
+       37.7773493
+      ],
+      [
+       -122.3989563,
+       37.776568
+      ],
+      [
+       -122.4009788,
+       37.7749675
+      ],
+      [
+       -122.4014213,
+       37.7753212
+      ],
+      [
+       -122.4011309,
+       37.7755511
+      ],
+      [
+       -122.4011937,
+       37.775607
+      ],
+      [
+       -122.4010018,
+       37.7757621
+      ],
+      [
+       -122.401477,
+       37.7761427
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

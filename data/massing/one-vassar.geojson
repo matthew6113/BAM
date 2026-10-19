@@ -1,0 +1,443 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "one-vassar",
+  "illustrative": true,
+  "summary": "Illustrative massing: the three approved buildings traced from the 2020 plan set's typical tower plans and drawn to the roof heights in the approval: a 350-ft office tower on an 85-ft podium at 2nd and Harrison streets, a 200-ft hotel addition on the existing four-story building at 645 Harrison Street, and a 350-ft residential tower on an 85-ft podium at 657 Harrison Street. Rooftop screens, podium setbacks and the existing building are not drawn.",
+  "note": "The approved buildings as simple volumes at their roof heights, not the final designs.",
+  "sourceUrl": "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2012.1384PRJ.pdf",
+  "sourceLabel": "Planning Commission packet, 2020 (PDF)",
+  "approvalSourceUrl": "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200220_cal_min.pdf",
+  "georeference": {
+   "page_159": {
+    "scale_m_per_unit": 0.21267,
+    "rotation_deg": 45.265,
+    "rms_m": 0.22,
+    "controls": [
+     {
+      "label": "645 Harrison: Harrison St / west lot line (lot 105)",
+      "residual_m": 0.18
+     },
+     {
+      "label": "645 Harrison: Harrison St / Vassar Place (lot 105)",
+      "residual_m": 0.2
+     },
+     {
+      "label": "645 Harrison: west lot line / rear (lot 105)",
+      "residual_m": 0.22
+     },
+     {
+      "label": "400 2nd: Harrison St / Vassar Place (lot 001)",
+      "residual_m": 0.02
+     },
+     {
+      "label": "657 Harrison: Harrison St / west lot line (lot 099)",
+      "residual_m": 0.33
+     },
+     {
+      "label": "657 Harrison: Perry St / west lot line (lot 081)",
+      "residual_m": 0.27
+     }
+    ]
+   },
+   "feet_per_point": 0.6977,
+   "method": "Six lot corners drawn on the plan (lots 105, 001, 099 and 081) matched to DataSF parcel vertices by a least-squares similarity."
+  },
+  "license": "Footprints: traced from a public SF Planning document. Georeference: DataSF parcels (ODC-PDDL)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "400 2nd Street tower",
+    "stage": "entitled",
+    "height_ft": 350,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office (about 430,000 gross sq ft)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the typical office floor traced from the Planning Commission packet, Record No. 2012.1384 (One Vassar), hearing Feb 20, 2020, PDF p. 159 (typical tower plans); roof height from the Planning Commission packet, Record No. 2012.1384 (One Vassar), hearing Feb 20, 2020, draft Large Project Authorization (PDF pp. 19-20, 70-71), approved as Motion 20665",
+    "note": "Building 1: a 27-story office building, 350 ft to the roof and 385 ft with the rooftop mechanical equipment. Typical tower floor about 14,935 sq ft (packet p. 160)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3952892,
+       37.7839814
+      ],
+      [
+       -122.3951733,
+       37.784073
+      ],
+      [
+       -122.3948217,
+       37.7837929
+      ],
+      [
+       -122.3949375,
+       37.7837013
+      ],
+      [
+       -122.3949452,
+       37.7837074
+      ],
+      [
+       -122.3949517,
+       37.7837022
+      ],
+      [
+       -122.394944,
+       37.7836961
+      ],
+      [
+       -122.395073,
+       37.7835942
+      ],
+      [
+       -122.3954247,
+       37.7838743
+      ],
+      [
+       -122.3952957,
+       37.7839763
+      ],
+      [
+       -122.3952878,
+       37.78397
+      ],
+      [
+       -122.3952813,
+       37.7839751
+      ],
+      [
+       -122.3952892,
+       37.7839814
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "400 2nd Street podium",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, with shops and an indoor public open space",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the ground-level outline traced from the Planning Commission packet, Record No. 2012.1384 (One Vassar), hearing Feb 20, 2020, PDF p. 159 (typical tower plans), less the tower, at the 85-ft podium height in the Planning Commission packet, Record No. 2012.1384 (One Vassar), hearing Feb 20, 2020, draft Large Project Authorization (PDF pp. 19-20, 70-71), approved as Motion 20665",
+    "note": "The 85-ft podium of Building 1, set back 15 ft at the corner of 2nd and Harrison streets."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3948212,
+        37.7837932
+       ],
+       [
+        -122.3951731,
+        37.7840734
+       ],
+       [
+        -122.3951319,
+        37.7841061
+       ],
+       [
+        -122.39478,
+        37.7838258
+       ],
+       [
+        -122.3948212,
+        37.7837932
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3949436,
+        37.7836964
+       ],
+       [
+        -122.3949509,
+        37.7837022
+       ],
+       [
+        -122.3949452,
+        37.7837067
+       ],
+       [
+        -122.3949379,
+        37.7837009
+       ],
+       [
+        -122.3949436,
+        37.7836964
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3951587,
+        37.7835264
+       ],
+       [
+        -122.3955467,
+        37.7838355
+       ],
+       [
+        -122.3953306,
+        37.7840063
+       ],
+       [
+        -122.3952944,
+        37.7839773
+       ],
+       [
+        -122.3952896,
+        37.7839811
+       ],
+       [
+        -122.3952821,
+        37.7839751
+       ],
+       [
+        -122.3952878,
+        37.7839706
+       ],
+       [
+        -122.395296,
+        37.7839766
+       ],
+       [
+        -122.3954252,
+        37.7838742
+       ],
+       [
+        -122.3950734,
+        37.7835938
+       ],
+       [
+        -122.3951587,
+        37.7835264
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "645 Harrison Street hotel addition",
+    "stage": "entitled",
+    "height_ft": 200,
+    "podium_ft": null,
+    "base_ft": 55,
+    "use": "Hotel (468 rooms)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the typical hotel floor traced from the Planning Commission packet, Record No. 2012.1384 (One Vassar), hearing Feb 20, 2020, PDF p. 159 (typical tower plans); heights from the Planning Commission packet, Record No. 2012.1384 (One Vassar), hearing Feb 20, 2020, draft Large Project Authorization (PDF pp. 19-20, 70-71), approved as Motion 20665",
+    "note": "Building 2: a 15-story hotel addition on the existing four-story building at 645 Harrison Street, which the project keeps (its 55-ft roof is the addition's base); 200 ft to the roof, 215 ft with the mechanical screen. The existing building, with office, PDR and new retail space, is not drawn."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3959815,
+       37.7831895
+      ],
+      [
+       -122.3954796,
+       37.7835862
+      ],
+      [
+       -122.3954698,
+       37.7835864
+      ],
+      [
+       -122.3952899,
+       37.7834432
+      ],
+      [
+       -122.3952896,
+       37.7834355
+      ],
+      [
+       -122.3957916,
+       37.7830388
+      ],
+      [
+       -122.3958016,
+       37.7830385
+      ],
+      [
+       -122.3959812,
+       37.7831818
+      ],
+      [
+       -122.3959815,
+       37.7831895
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "657 Harrison Street tower",
+    "stage": "entitled",
+    "height_ft": 350,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (489)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the rectangle of the typical residential floor traced from the Planning Commission packet, Record No. 2012.1384 (One Vassar), hearing Feb 20, 2020, PDF p. 159 (typical tower plans); roof height from the Planning Commission packet, Record No. 2012.1384 (One Vassar), hearing Feb 20, 2020, draft Large Project Authorization (PDF pp. 19-20, 70-71), approved as Motion 20665",
+    "note": "Building 3: a 35-story residential building, 350 ft to the roof and 385 ft with the rooftop mechanical equipment. Typical tower floor about 12,000 sq ft (packet p. 160)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3963206,
+       37.7831627
+      ],
+      [
+       -122.3960088,
+       37.7829144
+      ],
+      [
+       -122.3962356,
+       37.782735
+      ],
+      [
+       -122.3965474,
+       37.7829834
+      ],
+      [
+       -122.3963206,
+       37.7831627
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "657 Harrison Street podium",
+    "stage": "entitled",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes, child care and shops",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the ground-level outline traced from the Planning Commission packet, Record No. 2012.1384 (One Vassar), hearing Feb 20, 2020, PDF p. 159 (typical tower plans), less the tower, at the 85-ft podium height in the Planning Commission packet, Record No. 2012.1384 (One Vassar), hearing Feb 20, 2020, draft Large Project Authorization (PDF pp. 19-20, 70-71), approved as Motion 20665",
+    "note": "The 85-ft podium of Building 3, with a 14,000 sq ft child care center, beside the new Hawthorne Street Plaza."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3966388,
+       37.782972
+      ],
+      [
+       -122.3966353,
+       37.7829693
+      ],
+      [
+       -122.3965927,
+       37.7830032
+      ],
+      [
+       -122.3965961,
+       37.7830058
+      ],
+      [
+       -122.3964095,
+       37.7831512
+      ],
+      [
+       -122.3963728,
+       37.7831221
+      ],
+      [
+       -122.3965479,
+       37.7829833
+      ],
+      [
+       -122.3962356,
+       37.7827346
+      ],
+      [
+       -122.3960083,
+       37.7829145
+      ],
+      [
+       -122.396319,
+       37.7831621
+      ],
+      [
+       -122.3963152,
+       37.7831651
+      ],
+      [
+       -122.3962258,
+       37.7830939
+      ],
+      [
+       -122.3961922,
+       37.7831205
+      ],
+      [
+       -122.3960392,
+       37.7829986
+      ],
+      [
+       -122.3959995,
+       37.7830299
+      ],
+      [
+       -122.3958915,
+       37.7829439
+      ],
+      [
+       -122.3962543,
+       37.782657
+      ],
+      [
+       -122.3966447,
+       37.7829674
+      ],
+      [
+       -122.3966388,
+       37.782972
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

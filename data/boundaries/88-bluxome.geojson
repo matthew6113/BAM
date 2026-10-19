@@ -1,0 +1,54 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "88-bluxome",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 3786 lot 037",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273786037%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "Lot 037 in Assessor's Block 3786, the former San Francisco Tennis Club site on Brannan, 5th and Bluxome streets, against the 114,048 sq ft (2.61 acres) in Motion 20493. The 2025 project would split it into three parcels (43,670, 47,580 and 22,690 sq ft, west to east), the eastern one for City affordable housing; that split isn't in the parcel layer, so the whole lot is drawn. 2.7 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3985483,
+       37.7765638
+      ],
+      [
+       -122.3973787,
+       37.7774879
+      ],
+      [
+       -122.3968243,
+       37.7770465
+      ],
+      [
+       -122.3968152,
+       37.7769909
+      ],
+      [
+       -122.3979574,
+       37.7760922
+      ],
+      [
+       -122.3985483,
+       37.7765638
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -106,6 +106,7 @@ sites:
 	$(PY) bam_pipeline.sites.massing_one_oak
 	$(PY) bam_pipeline.sites.massing_transbay_parcel_f
 	$(PY) bam_pipeline.sites.massing_524_howard
+	$(PY) bam_pipeline.sites.massing_one_vassar
 	$(PY) bam_pipeline.sites.massing_west_midway_reshap
 	$(PY) bam_pipeline.sites.landuse_alameda_point_plan
 	$(PY) bam_pipeline.sites.massing_alameda_marina

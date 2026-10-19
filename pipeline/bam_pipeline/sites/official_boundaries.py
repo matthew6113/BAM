@@ -182,6 +182,27 @@ TRANSBAY_PARCEL_F_BLKLOTS = ["3721016", "3721135", "3721136", "3721138"]
 # the two lots of DBI site permit application 202311170986 and Planning record 2023-010883PRJ.
 HOWARD_524_BLKLOTS = ["3721013", "3721014"]
 
+# Flower Mart (610-698 Brannan Street): Block 3778, Lots 001B, 002B, 004, 005, 047 and 048, the six lots of the
+# Planning Commission's July 18, 2019 approvals (Motion 20484, case 2017-000663) and of the 2026 Development Agreement
+# amendment (Planning Commission agenda of Oct 1, 2026, record 2025-008569PRJ).
+FLOWER_MART_BLKLOTS = ["3778001B", "3778002B", "3778004", "3778005", "3778047", "3778048"]
+
+# 88 Bluxome Street: Block 3786, Lot 037, the single lot of Motion 20493 (July 25, 2019) and of Planning record
+# 2025-004642PRJ (approved Dec 12, 2025).
+BLUXOME_88_BLKLOTS = ["3786037"]
+
+# 655 4th Street: Block 3787, Lots 026, 028, 050 and 161-164, the seven lots of Motions 20470 and 20471 (June 20,
+# 2019) and of the Dec 14, 2023 Planning Commission agenda (record 2022-011490).
+FOURTH_655_BLKLOTS = ["3787026", "3787028", "3787050", "3787161", "3787162", "3787163", "3787164"]
+
+# One Vassar (400 2nd, 645 and 657 Harrison Streets): Block 3763, Lots 001, 078, 079, 080, 080A, 081, 099, 100, 101,
+# 105, 112 and 113 in Motions 20665-20667 (Feb 20, 2020, case 2012.1384). Lot 112 was retired in 2019; its piece at
+# 416 2nd Street, between lot 113 and the AC Transit yard (lot 126), is now lot 125, which is drawn in its place.
+ONE_VASSAR_BLKLOTS = [
+    "3763001", "3763078", "3763079", "3763080", "3763080A", "3763081", "3763099", "3763100", "3763101", "3763105",
+    "3763113", "3763125",
+]
+
 
 def _sql_list(values) -> str:
     return ", ".join(f"'{v}'" for v in values)
@@ -719,6 +740,51 @@ SPECS: dict[str, dict] = {
                  "014), the two lots of DBI site permit application 202311170986, running through from Howard Street "
                  "to Natoma Street. Transbay Parcel F's strip along Natoma Street adjoins lot 014 on the west; the "
                  "two sites share that line and don't overlap."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "flower-mart": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(FLOWER_MART_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3778 lots 001B, 002B, 004, 005, 047 and 048",
+        "accuracy": "official",
+        "note": ("The six lots of the Flower Mart site on the north side of Brannan Street between 5th and 6th streets, "
+                 "as the 2019 approvals and the Oct 1, 2026 Planning Commission agenda name them, against the "
+                 "approximately 6.5 acres in the Development Agreement. The rest of the block, north of the site's "
+                 "service drive, isn't part of it."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "88-bluxome": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(BLUXOME_88_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3786 lot 037",
+        "accuracy": "official",
+        "note": ("Lot 037 in Assessor's Block 3786, the former San Francisco Tennis Club site on Brannan, 5th and "
+                 "Bluxome streets, against the 114,048 sq ft (2.61 acres) in Motion 20493. The 2025 project would "
+                 "split it into three parcels (43,670, 47,580 and 22,690 sq ft, west to east), the eastern one for "
+                 "City affordable housing; that split isn't in the parcel layer, so the whole lot is drawn."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "655-fourth-street": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(FOURTH_655_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3787 lots 026, 028, 050 and 161 to 164",
+        "accuracy": "official",
+        "note": ("The seven lots at the northeast corner of 4th and Townsend streets that the 2019 approvals and the "
+                 "Dec 14, 2023 Planning Commission agenda name, against the 71,290 sq ft development lot in the "
+                 "Planning Department's record of the modified project."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "one-vassar": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(ONE_VASSAR_BLKLOTS)})"),
+        "layer": ("DataSF Parcels – Active and Retired, block 3763 lots 001, 078, 079, 080, 080A, 081, 099, 100, 101, "
+                  "105, 113 and 125"),
+        "accuracy": "approximate",
+        "note": ("The lots on Harrison Street between 2nd Street and the AC Transit yard that the Planning Commission's "
+                 "Feb 20, 2020 approvals name, against their 102,694 sq ft (2.36 acres). One of the approval's twelve "
+                 "lots, 112, has since been retired; its piece at 416 2nd Street, now lot 125, is drawn in its place, "
+                 "and the rest of it, the AC Transit bus yard (lot 126), isn't. Vassar Place, a public street, "
+                 "separates 400 2nd Street from the rest of the site."),
         "license": "ODC Public Domain Dedication and License (DataSF)",
     },
 }

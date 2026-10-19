@@ -1,0 +1,123 @@
+{
+ "id": "flower-mart",
+ "name": "Flower Mart",
+ "aliases": [
+  "610-698 Brannan Street",
+  "San Francisco Flower Mart site",
+  "Flower Mart Development Agreement",
+  "Central SoMa Key Development Site 4"
+ ],
+ "city": "San Francisco",
+ "county": "San Francisco",
+ "subregion": "San Francisco",
+ "category": "buildings",
+ "approxCenter": [
+  -122.4003,
+  37.7762
+ ],
+ "camera": {
+  "center": [
+   -122.4003,
+   37.776
+  ],
+  "zoom": 15.9,
+  "pitch": 55,
+  "bearing": -40
+ },
+ "acres": 6.5,
+ "acresNote": "The Development Agreement (Planning Commission packet for July 18, 2019, case 2017-000663) and the Oct 1, 2026 Planning Commission agenda: the approximately 6.5-acre Flower Mart site, Assessor's Block 3778, Lots 001B, 002B, 004, 005, 047 and 048. The parcels drawn come to about 6.8 acres.",
+ "program": {
+  "homes": null,
+  "affordableHomes": null,
+  "affordablePct": null,
+  "officeLabSqft": 2032165,
+  "commercialSqftTotal": null,
+  "retailSqft": 83459,
+  "hotelKeys": null,
+  "openSpaceAcres": null,
+  "notes": "Approved in 2019 (Motion 20484): three office buildings of 8 to 18 stories, up to about 236 ft, with 2,032,165 sq ft of office, a new wholesale flower market of 113,036 sq ft, 83,459 sq ft of retail and 35,450 sq ft of public open space, built in three phases; a variant without the flower market had 2,061,380 sq ft of office, 90,976 sq ft of retail, a 22,690 sq ft child care center and a 950 sq ft community room. No homes. Under the 2019 Development Agreement the developer builds a new flower market on the site or pays for one elsewhere in San Francisco, moves the vendors to an interim site at 2000 Marin Street, dedicates a site of at least 14,000 sq ft for affordable housing and gives $5 million to the Sunnydale Hub project. Proposed (2025-26): an amended Development Agreement, a new Flower Mart Special Use District and height limits raised from 160 and 270 ft to between 350 and 600 ft; depending on the scenario the project could include up to 3,532 homes with office, retail and cultural, institutional and educational uses (Oct 1, 2026 agenda). The 2025 application describes a base scheme of five buildings up to 270 ft with 2,660,700 sq ft of office/lab, and residential (about 3,500 homes), mixed-use (about 1,242 homes and 1,493,600 sq ft of office/lab) and institutional variants."
+ },
+ "developer": "KR Flower Mart, LLC",
+ "publicPartners": [
+  "San Francisco Planning Commission",
+  "San Francisco Board of Supervisors (Development Agreement)"
+ ],
+ "stage": "entitled",
+ "stageNote": "The Planning Commission approved the office project in July 2019 and the Board of Supervisors passed its Development Agreement in January 2020. No building permit has been issued; the five site permit applications filed in 2019 are still pending. The developer has since applied to amend the Development Agreement and rezone the site for a revised project with up to 3,532 homes, which is under environmental review. Planning's 2026 development pipeline data describe the former Flower Mart buildings as vacant.",
+ "timeline": [
+  {
+   "date": "2017-01-17",
+   "event": "SF Planning opens case 2017-000663 for the redevelopment of the Flower Mart site."
+  },
+  {
+   "date": "2018-05-10",
+   "event": "Planning Commission certifies the Central SoMa Plan EIR (Motion 20182); the plan names the Flower Mart a key development site."
+  },
+  {
+   "date": "2019-06-13",
+   "event": "Planning Commission holds an informational hearing on the project."
+  },
+  {
+   "date": "2019-07-03",
+   "event": "Planning Department finds the project covered by the Central SoMa Plan EIR (community plan evaluation)."
+  },
+  {
+   "date": "2019-07-18",
+   "event": "Planning Commission approves the project: Large Project Authorization (Motion 20484) and office allocation for its first phase (Motion 20485), and recommends the code and zoning changes (Resolution 20483) and the Development Agreement (Resolution 20486)."
+  },
+  {
+   "date": "2019-08-06",
+   "event": "Site permit applications for the garage and four buildings are filed with DBI; none has been issued."
+  },
+  {
+   "date": "2020-01",
+   "event": "Board of Supervisors passes the Development Agreement with KR Flower Mart, LLC (Board File 190682) and the related code changes (Board File 190681) on second reading."
+  },
+  {
+   "date": "2025-09-12",
+   "event": "The developer files a revised project (record 2025-008569) with office/lab, residential, mixed-use and institutional scenarios; its environmental review opens on Sept 24, 2025."
+  },
+  {
+   "date": "2026-05-06",
+   "event": "Applications to amend the Development Agreement, the Planning Code and the Zoning Map are filed."
+  },
+  {
+   "date": "2026-10-01",
+   "event": "Planning Commission holds an informational hearing on the Development Agreement amendment: up to 3,532 homes, a new Flower Mart Special Use District, and height limits raised to between 350 and 600 ft."
+  }
+ ],
+ "nextMilestone": "Environmental review of the revised project, then Planning Commission and Board of Supervisors hearings on the Development Agreement amendment, the rezoning and the Flower Mart Special Use District.",
+ "summary": "A 6.5-acre site on Brannan Street between 5th and 6th streets, long home to the San Francisco Flower Mart. The City approved about 2 million sq ft of office and a new flower market here in 2019, but nothing was built; the developer now proposes to amend the deal for a mix that could include up to 3,532 homes, with height limits raised to between 350 and 600 ft.",
+ "massingNotes": "Added at Matthew's request (2026-10-19). Boundary: DataSF parcels (acdm-wktn), block 3778 lots 001B, 002B, 004, 005, 047 and 048, the lots the approvals name (about 6.8 acres as drawn against the Development Agreement's 6.5). No massing: the 2019 office design is being replaced, and the 2026 proposal sets out several scenarios rather than one design, so no buildings are drawn.",
+ "officialLinks": [
+  "https://sfplanning.org/sites/default/files/agendas/2026-09/20261001_cpc%20%28ID%201589032%29.pdf",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2017-000663ENXOFAPCADVA_amended_combined.pdf"
+ ],
+ "sources": [
+  "https://sfplanning.org/sites/default/files/agendas/2026-09/20261001_cpc%20%28ID%201589032%29.pdf",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2017-000663ENXOFAPCADVA_amended_combined.pdf",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20190613_cal_min.pdf",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20190718_cal_min.pdf",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200109_cal_min.pdf",
+  "https://sfplanning.org/sites/default/files/documents/citywide/Central_Corridor/2018CentralSoMaPlan.pdf",
+  "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2017-000663PRJ",
+  "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2025-008569PRJ",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2025-008569ENV",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2017-000663DVA-02",
+  "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=3778047",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201908068051",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201908068052",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201908068053",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201908068054",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201908068055",
+  "https://data.sf.gov/d/acdm-wktn"
+ ],
+ "verify": [
+  "the ordinance numbers and effective dates of the Development Agreement and code changes (Board Files 190681 and 190682, passed on second reading in January 2020)",
+  "the kind of environmental review under way for the revised project (record 2025-008569ENV) and its schedule",
+  "whether the wholesale flower market has moved off the site, and where (Planning's 2026 pipeline data call the buildings vacant)",
+  "which development scenario the developer intends to build, and the building heights and footprints in each",
+  "the number of homes: up to 3,532 in the 2026 agenda against about 3,500 in the 2025 application's residential variant"
+ ],
+ "lastVerified": "2026-10-19"
+}
