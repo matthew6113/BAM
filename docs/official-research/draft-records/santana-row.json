@@ -1,0 +1,98 @@
+{
+  "id": "santana-row",
+  "name": "Santana Row Master Plan Update",
+  "aliases": [
+    "Santana Row",
+    "Santana Row Master Plan Update Project"
+  ],
+  "city": "San José",
+  "county": "Santa Clara",
+  "subregion": "South Bay",
+  "category": "buildings",
+  "approxCenter": [
+    -121.9479,
+    37.3205
+  ],
+  "camera": {
+    "center": [
+      -121.9479,
+      37.3205
+    ],
+    "zoom": 16.0,
+    "pitch": 58,
+    "bearing": -75
+  },
+  "acres": 42.53,
+  "acresNote": "The notice of preparation (Feb 2026) gives an approximately 42.53-acre site at the southeast corner of Stevens Creek and Winchester boulevards, the same figure as its 2022 version, before the 0.54-acre Lot 22 was added. It names nine parcels, the lots that would change (APNs 277-33-017, -019 and -020, 277-40-029 and -031, and 277-38-003, -004, -005 and -012; about 5.9 acres). The County parcels inside the project boundary of its Figure 4 come to about 42.8 acres, Lot 22 included.",
+  "program": {
+    "homes": null,
+    "affordableHomes": null,
+    "affordablePct": null,
+    "officeLabSqft": 1500000,
+    "commercialSqftTotal": null,
+    "retailSqft": null,
+    "hotelKeys": null,
+    "openSpaceAcres": null,
+    "notes": "As proposed (revised notice of preparation, Feb 2026, Table 4.0-1): four office buildings with 1,500,000 sq ft in all, on Lot 1A/B/C at Stevens Creek and Winchester boulevards (700,000 sq ft, 144 ft tall), Lot 2B on Stevens Creek Boulevard (325,000 sq ft, 144 ft), Lot 10A on Olsen Drive (200,000 sq ft, 139 ft) and Lot 17 on Dudley Avenue (275,000 sq ft, 162 ft). The notice counts this as 1,272,081 sq ft more than the site's existing entitlement (file PDC13-050). The rezoning would allow up to approximately 2,780,000 sq ft of office in all, existing and proposed (the 2022 notice said office and commercial space), set a 150-ft height limit on Lots 1, 2B and 10A and 162 ft on Lot 17 (plus mechanical screening parapets), and add about 2,147 parking spaces, most of them on Lots 1 and 17. Lot 22, a 0.54-acre parcel added in 2026, would be a possible sign location. Table 4.0-1 lists office only. CEQAnet's record of the notice gives 4,240 employees. Santana Row today (the notice's Table 3.0-1): 834 homes built and 258 under construction of 1,229 approved; 214 of 220 approved hotel rooms; 584,395 sq ft of shops and restaurants and 606,535 sq ft of offices built; about 6,231 parking spaces."
+  },
+  "developer": "Federal Realty Investment Trust",
+  "publicPartners": [
+    "City of San José (lead agency; Planned Development rezoning and permits)"
+  ],
+  "stage": "entitlement",
+  "stageNote": "In environmental review. San José issued a notice of preparation of an EIR for the Santana Row Master Plan Update in November 2022 and re-issued it on Feb 13, 2026 after Lot 22 was added, taking scoping comments until Mar 25, 2026. The project would need a new Planned Development rezoning and Planned Development permits. No Draft EIR had been posted to CEQAnet as of Oct 19, 2026.",
+  "timeline": [
+    {
+      "date": "2013-12-23",
+      "event": "San José issues a notice of preparation for the Santana Row Expansion (file PDC13-050): 1.91 acres added as Lot 17, 510,000 sq ft more office space, 55,641 sq ft more retail, 47 more homes and six more hotel rooms."
+    },
+    {
+      "date": "2015-03-23",
+      "event": "The Draft EIR for the Santana Row Expansion is published for comment (to May 6, 2015)."
+    },
+    {
+      "date": "2022-11-09",
+      "event": "San José issues a notice of preparation of an EIR for the Santana Row Master Plan Update (files PDC22-004 and ER22-107): four buildings with 1,500,000 sq ft of office and commercial space."
+    },
+    {
+      "date": "2022-11-17",
+      "event": "Public scoping meeting."
+    },
+    {
+      "date": "2026-02-13",
+      "event": "The City re-issues the notice of preparation, adding the 0.54-acre Lot 22."
+    },
+    {
+      "date": "2026-03-25",
+      "event": "Scoping comments close."
+    }
+  ],
+  "nextMilestone": "A Draft EIR (no date published).",
+  "summary": "A plan to add four office buildings, 1.5 million sq ft in all and 139 to 162 ft tall, to Santana Row, the 42.5-acre district of shops, restaurants, homes, offices and a hotel at Stevens Creek and Winchester boulevards in west San José. Federal Realty's application would rezone the site for about 1.27 million sq ft more office space than it is approved for, with about 2,147 new parking spaces; the City is preparing an EIR.",
+  "massingNotes": "Added at Matthew's request (2026-10-19). Boundary (data/boundaries/santana-row.geojson, approximate; pipeline/bam_pipeline/sites/boundary_santana_row.py): the notice of preparation names only the nine parcels that would change (5.9 acres), so the site is the Santa Clara County parcels (data.sccgov.org ubcd-cewv) inside the dashed project boundary of the notice's Figure 4, Lot Division Diagram (PDF p. 8), with those nine: 605 parcels, including the private streets and the condominium parcels inside the blocks, 42.8 acres against the notice's 42.53. Figure 4 was placed from its lot labels and fitted to the parcels by trimmed ICP of its dashed line (RMS 1.4 m). Illustrative massing (data/massing/santana-row.geojson, massing_santana_row.py): the four lots where Table 4.0-1 puts new offices, each the County parcels for its APNs, drawn as a whole-lot envelope at the table's height: Lot 1A/B/C 144 ft, Lot 2B 144 ft, Lot 10A 139 ft and Lot 17 162 ft. The notice shows no building design, so these are envelopes, not buildings; the parapets the rezoning would allow aren't drawn. The existing Santana Row buildings aren't drawn. All stage entitlement.",
+  "officialLinks": [
+    "https://ceqanet.lci.ca.gov/Project/2013122059"
+  ],
+  "sources": [
+    "https://ceqanet.lci.ca.gov/Project/2013122059",
+    "https://ceqanet.lci.ca.gov/2013122059",
+    "https://ceqanet.lci.ca.gov/2013122059/2",
+    "https://ceqanet.lci.ca.gov/2013122059/3",
+    "https://ceqanet.lci.ca.gov/2013122059/3/Attachment/lrKplZ",
+    "https://ceqanet.lci.ca.gov/2013122059/3/Attachment/TUaXzI",
+    "https://ceqanet.lci.ca.gov/Project/2022110177",
+    "https://ceqanet.lci.ca.gov/2022110177",
+    "https://ceqanet.lci.ca.gov/2022110177/Attachment/TJVTCQ",
+    "https://data.sccgov.org/d/ubcd-cewv"
+  ],
+  "verify": [
+    "when the City approved the 2013 Santana Row Expansion (file PDC13-050) and certified its EIR: the notice of preparation calls PDC13-050 the site's existing zoning and entitlement and refers to a previously certified EIR, but CEQAnet holds no notice of determination for it",
+    "the 2,780,000 sq ft total: the 2026 notice calls it office (existing and proposed), the 2022 notice and Caltrans' 2026 comment letter office and commercial space; it is close to the approved commercial space (1,506,341 sq ft of shops, restaurants and offices) plus the 1,272,081 sq ft proposed",
+    "where each building would stand on its lot: the notice gives only floor area and height for each lot, so the map draws whole-lot envelopes",
+    "what stands on Lots 1A/B/C, 2B and 10A today and whether it would be replaced; the notice doesn't say",
+    "the number of new parking spaces: the notice gives about 2,147, but its lot-by-lot changes (1,460 more on Lot 1 and 831 more on Lot 17, 97 fewer on Lot 2B) come to 2,194",
+    "the site's area: 42.53 acres in both the 2022 and 2026 notices, although Lot 22 (about 0.54 acres) was added in 2026",
+    "the Draft EIR's date (none on CEQAnet as of Oct 19, 2026; the City's active EIR page couldn't be reached)"
+  ],
+  "lastVerified": "2026-10-19"
+}

@@ -117,6 +117,8 @@ sites:
 	$(PY) bam_pipeline.sites.massing_sf_gateway
 	$(PY) bam_pipeline.sites.boundary_berkeley_space_center
 	$(PY) bam_pipeline.sites.landuse_berkeley_space_center
+	$(PY) bam_pipeline.sites.boundary_santana_row
+	$(PY) bam_pipeline.sites.massing_santana_row
 	$(PY) bam_pipeline.sites.boundary_larkspur_ferry_expansion
 
 photos:
