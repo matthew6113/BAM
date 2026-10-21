@@ -105,6 +105,8 @@ sites:
 	$(PY) bam_pipeline.sites.massing_alameda_marina
 	$(PY) bam_pipeline.sites.boundary_berkeley_pier_ferry
 	$(PY) bam_pipeline.sites.boundary_larkspur_ferry_expansion
+	$(PY) bam_pipeline.sites.boundary_sf_railyards
+	$(PY) bam_pipeline.sites.massing_sf_railyards
 
 photos:
 	$(PY) bam_pipeline.photos

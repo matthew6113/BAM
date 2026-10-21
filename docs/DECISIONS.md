@@ -302,3 +302,9 @@ has one dot like every other), and the program's sums (3,701 homes, 800,000 sq f
 `/p/bart-station-housing` opens the map with the Projects list showing the six stations (`RETIRED_IDS` in
 `src/router.ts`). Walnut Creek's last phase, Fremont, Bay Fair and Richmond, which the program record named
 but didn't draw, are listed under `_meta.candidatesNotYetResearched`.
+
+## 2026-10-21: Caltrain's Fourth and King railyards (Matthew)
+
+- Matthew: "I want to include the potential redevelopment of Caltrain's railyards near Mission Bay as
+  well." Added as `sf-railyards`, in entitlement (application filed March 2026; EIR notice of preparation
+  Sept 30, 2026), with its proposed height districts drawn as illustrative envelopes.
