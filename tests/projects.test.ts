@@ -356,31 +356,26 @@ describe('buildings and transportation', () => {
       expect(ids('buildings'), id).toContain(id);
   });
 
-  it('filters by tab, alone and with the other filters', () => {
-    const shown = (f: typeof NO_FILTER) => MAPPED_PROJECTS.filter((p) => matchesFilter(p, f));
-    const all = shown(NO_FILTER);
-    const transport = shown({ ...NO_FILTER, category: 'transportation' });
-    const buildings = shown({ ...NO_FILTER, category: 'buildings' });
-    expect(all).toHaveLength(MAPPED_PROJECTS.length);
+  it('splits the mapped projects between the two tabs, and the filters narrow either one', () => {
+    expect(CATEGORIES.map((c) => c.label)).toEqual(['Buildings', 'Transit']);
+    const tab = (cat: string, f = NO_FILTER) => MAPPED_PROJECTS.filter((p) => p.category === cat && matchesFilter(p, f));
+    const transport = tab('transportation');
+    const buildings = tab('buildings');
     expect(transport.length).toBeGreaterThan(0);
     expect(buildings.length).toBeGreaterThan(0);
-    expect(transport.length + buildings.length).toBe(all.length);
-    expect(transport.every((p) => p.category === 'transportation')).toBe(true);
-    expect(buildings.every((p) => p.category === 'buildings')).toBe(true);
+    expect(transport.length + buildings.length).toBe(MAPPED_PROJECTS.length);
 
-    // Combines with search, stage and area: a SMART extension is transportation in the North Bay.
+    // Search, stage and area narrow a tab: a SMART extension is transit in the North Bay.
     const smart = { ...NO_FILTER, query: 'smart', subregion: 'North Bay' };
-    expect(shown({ ...smart, category: 'transportation' }).map((p) => p.id)).toEqual(
-      shown(smart).filter((p) => p.category === 'transportation').map((p) => p.id),
-    );
-    expect(shown({ ...smart, category: 'buildings' }).some((p) => p.id.startsWith('smart-'))).toBe(false);
+    expect(tab('transportation', smart).length).toBeGreaterThan(0);
+    expect(tab('buildings', smart).some((p) => p.id.startsWith('smart-'))).toBe(false);
     const stage = transport[0].stage;
-    expect(shown({ ...NO_FILTER, category: 'transportation', hiddenStages: [stage] }).some((p) => p.stage === stage)).toBe(false);
+    expect(tab('transportation', { ...NO_FILTER, hiddenStages: [stage] }).some((p) => p.stage === stage)).toBe(false);
   });
 
-  it('counts a tab as a filter, and clearing filters returns to All', () => {
+  it('does not count the tab as a filter: one is always open', () => {
     expect(isFiltered(NO_FILTER)).toBe(false);
-    expect(isFiltered({ ...NO_FILTER, category: 'buildings' })).toBe(true);
-    expect(NO_FILTER.category).toBe('');
+    expect(isFiltered({ ...NO_FILTER, subregion: 'North Bay' })).toBe(true);
+    expect(NO_FILTER).not.toHaveProperty('category');
   });
 });

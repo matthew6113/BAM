@@ -179,10 +179,14 @@ Project panel (right side on desktop, bottom sheet on mobile), in this order:
 9. Previous and next project.
 
 Elsewhere
-- Project index: a searchable list grouped by subregion, with filters by stage and size.
-  Tabs at the top divide it into All, Buildings and Transportation (transportation and
-  infrastructure: rail lines and ferry terminals), set by each record's `category`
-  (Matthew, 2026-10-12). The tab filters the map too.
+- Buildings and Transit: two tabs under the title, always in view, set by each record's
+  `category` (buildings, or `transportation`: rail lines and ferry terminals; Matthew,
+  2026-10-12). One is always open, Buildings by default, and the list and the map show only its
+  projects (Matthew, 2026-10-21). Opening a project from the other tab, by link or the back
+  button, switches to it; switching tabs with a project open closes it and flies back. Previous
+  and next stay within the tab.
+- Project index: a searchable list of the open tab's projects, with filters by stage and area.
+  "Clear filters" keeps the tab.
 - Legend that doubles as a stage filter, with a count per stage.
 - Deep links per project (for example `/p/potrero-power-station`) that open with the
   fly-in.

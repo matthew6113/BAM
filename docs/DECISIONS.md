@@ -308,3 +308,14 @@ but didn't draw, are listed under `_meta.candidatesNotYetResearched`.
 - Matthew: "I want to include the potential redevelopment of Caltrain's railyards near Mission Bay as
   well." Added as `sf-railyards`, in entitlement (application filed March 2026; EIR notice of preparation
   Sept 30, 2026), with its proposed height districts drawn as illustrative envelopes.
+
+## 2026-10-21: Buildings and Transit as two tabs (Matthew)
+
+Matthew: "Can you make the split between transit and building more explicit, two tabs, and they only
+show each's projects on the map". The tabs, which sat inside the collapsed Projects list as All,
+Buildings and Transportation, now sit under the title as two tabs, Buildings and Transit, with the
+open one in ink. There is no All: the page opens on Buildings, and the map draws only the open tab's
+projects. A link to a transit project opens on Transit. The data's `transportation` category is
+unchanged; only its label is now "Transit", the word Matthew used (every project under it is a rail
+line or a ferry terminal). Still open: the label, and whether the tab belongs in the page's address
+so a link can open on Transit without naming a project.
