@@ -1,4 +1,4 @@
-// The Projects index with each tab (All, Buildings, Transportation), desktop and phone.
+// The Buildings and Transit tabs, with the Projects list open, desktop and phone.
 //   npx playwright test tests/screenshots-categories.spec.ts   -> docs/screenshots/categories/
 
 import { test, expect, type Page } from '@playwright/test';
@@ -29,7 +29,7 @@ for (const [size, viewport] of [
     await page.goto('/?test=1');
     await waitForMap(page);
     await page.getByRole('button', { name: /^Projects/ }).click();
-    for (const tab of ['All', 'Buildings', 'Transportation']) {
+    for (const tab of ['Buildings', 'Transit']) {
       await page.getByRole('tab', { name: new RegExp(`^${tab}`) }).click();
       await waitForMap(page);
       await page.screenshot({ path: `${DIR}/${size}-${tab.toLowerCase()}.png`, timeout: 180_000 });

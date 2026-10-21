@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'preact/hooks';
-import { matchesFilter, NO_FILTER, type ProjectFilter } from './projects/filter';
+import { matchesFilter, NO_FILTER, type Category, type ProjectFilter } from './projects/filter';
 import type { Map as MapLibreMap } from 'maplibre-gl';
 import { homeCamera, MapView, MAX_PITCH_3D, syncStyle } from './map/MapView';
 import type { Selection } from './map/projectLayers';
@@ -39,6 +39,14 @@ const deepLinked = projectIdFromPath();
 if (deepLinked && siteOf(deepLinked)) void loadProjectGeometry(deepLinked);
 // A link to a retired project id opens the index on the projects that replaced it.
 const retired = retiredQuery();
+
+/** The tab the page opens on: the linked project's, or that of the projects replacing a retired id. */
+function initialCategory(): Category {
+  const linked = retired
+    ? MAPPED_PROJECTS.find((p) => matchesFilter(p, { ...NO_FILTER, query: retired }))
+    : deepLinked ? getProject(deepLinked) : undefined;
+  return (linked?.category as Category | undefined) ?? 'buildings';
+}
 
 function loadTheme(): Theme {
   let theme = structuredClone(defaultTheme);
@@ -87,13 +95,19 @@ export function App() {
   const [selection, setSelection] = useState<Selection | null>(null);
   const [openId, setOpenId] = useState<string | null>(null);
   const [filter, setFilter] = useState<ProjectFilter>(retired ? { ...NO_FILTER, query: retired } : NO_FILTER);
+  // Buildings or transit: the map draws only the open tab's projects.
+  const [category, setCategory] = useState<Category>(initialCategory);
   // The about page needs no map, so a deep link to it shows at once.
   const [aboutOpen, setAboutOpen] = useState(isAboutPath);
   // Counts "Suggest a project" clicks, so each one goes to the form even with the page open.
   const [toSuggest, setToSuggest] = useState(0);
   const aboutLink = useRef<HTMLAnchorElement>(null);
   const aboutOpener = useRef<HTMLElement | null>(null);
-  const hidden = useMemo(() => MAPPED_PROJECTS.filter((p) => !matchesFilter(p, filter)).map((p) => p.id), [filter]);
+  const hidden = useMemo(
+    () => MAPPED_PROJECTS.filter((p) => p.category !== category || !matchesFilter(p, filter)).map((p) => p.id),
+    [category, filter],
+  );
+  const inCategory = useMemo(() => MAPPED_PROJECTS.filter((p) => p.category === category), [category]);
   const styleToggle = useRef<HTMLButtonElement>(null);
   const flight = useRef<FlightState>({ token: 0, finishRise: null, returnCamera: null, returnMode: '2d', opener: null });
   const live = useRef({ theme, mode, openId, aboutOpen });
@@ -128,6 +142,8 @@ export function App() {
     document.title = `${project.name} · ${SITE_TITLE}`;
     setAboutOpen(false);
     setOpenId(id);
+    // A link or the back button can open a project from the other tab: the tab follows it.
+    setCategory(project.category as Category);
 
     const massing = massingOf(id);
     setMode('3d');
@@ -157,7 +173,7 @@ export function App() {
   }, [map]);
 
   /** Close the panel and fly back to where the viewer was (or to `to`). */
-  const closeProject = useCallback(async (opts: { push?: boolean; to?: Camera } = {}) => {
+  const closeProject = useCallback(async (opts: { push?: boolean; to?: Camera; keepFocus?: boolean } = {}) => {
     if (!map || !live.current.openId) return;
     const f = flight.current;
     const token = ++f.token;
@@ -173,8 +189,10 @@ export function App() {
     f.opener = null;
     // Focus now, not on the next frame: frames can be slow mid-flight, and the opener sits
     // outside the panel that is about to unmount. A deep link has no opener (the body had focus),
-    // so focus goes to the map rather than nowhere.
-    (opener?.isConnected && opener !== document.body ? opener : map.getCanvas()).focus({ preventScroll: true });
+    // so focus goes to the map rather than nowhere. Switching tabs keeps it on the tabs.
+    if (!opts.keepFocus) {
+      (opener?.isConnected && opener !== document.body ? opener : map.getCanvas()).focus({ preventScroll: true });
+    }
     if (back) await flyOut(map, back);
     if (flight.current.token !== token) return;
     setSelection(null);
@@ -191,6 +209,13 @@ export function App() {
     }
     map.easeTo({ ...camera, duration: matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 1200 });
   }, [map, closeProject]);
+
+  /** Switch tabs. A project open from the other tab closes and flies back; focus stays on the tabs. */
+  const chooseCategory = useCallback((c: Category) => {
+    const open = live.current.openId;
+    if (open && getProject(open)?.category !== c) void closeProject({ keepFocus: true });
+    setCategory(c);
+  }, [closeProject]);
 
   /** The about page: a panel like a project's, at /about. An open project flies back first. */
   const openAbout = useCallback((opts: { push?: boolean; opener?: HTMLElement | null; suggest?: boolean } = {}) => {
@@ -274,11 +299,12 @@ export function App() {
   }, []);
 
   const project = openId ? getProject(openId) : undefined;
-  const mappedIndex = MAPPED_PROJECTS.findIndex((p) => p.id === openId);
+  // Previous and next stay within the open tab.
+  const mappedIndex = inCategory.findIndex((p) => p.id === openId);
   const neighbour = (step: number) =>
-    mappedIndex < 0 || MAPPED_PROJECTS.length < 2
+    mappedIndex < 0 || inCategory.length < 2
       ? undefined
-      : MAPPED_PROJECTS[(mappedIndex + step + MAPPED_PROJECTS.length) % MAPPED_PROJECTS.length];
+      : inCategory[(mappedIndex + step + inCategory.length) % inCategory.length];
   const prev = neighbour(-1);
   const next = neighbour(1);
 
@@ -301,6 +327,7 @@ export function App() {
           </a>
         </p>
         <ProjectIndex openId={openId} onOpen={(id, opener) => void openProject(id, { opener })}
+          category={category} onCategory={chooseCategory}
           filter={filter} onFilter={setFilter} onExpand={() => setInteracted(true)} defaultExpanded={!!retired}
           onSuggest={(opener) => openAbout({ opener, suggest: true })} />
       </header>
