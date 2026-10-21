@@ -11,13 +11,26 @@ export interface ProjectFilter {
 
 /**
  * The two tabs, buildings and transit (`category` in data/projects.json). One is always open, and
- * the list and the map show only its projects (Matthew, 2026-10-21).
+ * the list and the map show only its projects (Matthew, 2026-10-21). `slug` names the tab in the
+ * address: ?tab=transit.
  */
 export type Category = 'buildings' | 'transportation';
-export const CATEGORIES: { key: Category; label: string }[] = [
-  { key: 'buildings', label: 'Buildings' },
-  { key: 'transportation', label: 'Transit' },
+export const CATEGORIES: { key: Category; label: string; slug: string }[] = [
+  { key: 'buildings', label: 'Buildings', slug: 'buildings' },
+  { key: 'transportation', label: 'Transit', slug: 'transit' },
 ];
+/** The tab the page opens on. The address leaves it out. */
+export const DEFAULT_CATEGORY: Category = 'buildings';
+
+/** The tab an address names (?tab=transit), if it names one. */
+export function categoryFromSlug(slug: string | null): Category | undefined {
+  return CATEGORIES.find((c) => c.slug === slug)?.key;
+}
+
+/** How the address names a tab: its slug, or null for the default tab. */
+export function slugOf(category: Category): string | null {
+  return category === DEFAULT_CATEGORY ? null : CATEGORIES.find((c) => c.key === category)!.slug;
+}
 
 export const NO_FILTER: ProjectFilter = { query: '', hiddenStages: [], subregion: '' };
 
