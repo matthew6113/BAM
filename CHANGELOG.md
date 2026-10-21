@@ -3,6 +3,25 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-21 (SF Railyards added)
+
+**sf-railyards** (new, buildings): Matthew asked to include "the potential redevelopment of Caltrain's
+railyards near Mission Bay". The Railyards Mixed-Use Development Project at 700 4th Street is added in
+entitlement: Prologis 4th & King LLC filed its application with the Planning Department on Mar 11, 2026
+(record 2026-002123PRJ) and a development agreement application on Apr 15, and the Department issued a
+notice of preparation of an EIR on Sept 30, 2026 (Case 2026-002123ENV, CEQAnet SCH 2026091295; comments to
+Oct 30). The NOP studies two scenarios on the 18.63-acre station and yard between Townsend, Fourth, King and
+Seventh streets: up to 1,765 homes with 5.64 million sq ft of commercial space, or up to 5,834 homes with
+1.59 million sq ft, about 7.8 million sq ft above grade either way, with the terminal tracks moved into a new
+tunnel next to The Portal's, a 19,560-sq-ft station hall, 3.73 acres of open space, an offsite train yard
+not yet sited, and proposed height limits of 350 to 855 ft; construction is assumed from 2029 to 2042. The
+boundary is the four lots the NOP names, from DataSF parcels (official, 18.6 acres). Illustrative height
+envelopes for the eight blocks are traced from the NOP's Figure 3, Height District Plan, and labelled
+proposed. Facts from CEQAnet, the NOP, DataSF's Planning Department records and SF Planning's program, RAB
+and environmental review pages; research in `docs/official-research/candidates-4th-king-railyards.md`.
+Caltrain's Board packets and press pages couldn't be reached, so nothing is recorded as reported.
+`_meta.lastVerified` moves to 2026-10-21.
+
 ## 2026-10-19 (Larkspur ferry expansion added; Harbor Bay held)
 
 **larkspur-ferry-expansion** (new, transportation): Matthew asked to add the proposed ferry projects

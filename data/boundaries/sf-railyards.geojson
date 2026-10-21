@@ -1,0 +1,102 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "sf-railyards",
+  "source": "DataSF Parcels \u2013 Active and Retired, blocks/lots 8701/003, 8701/004, 8700/001 and 8703/005",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%278701003%27%2C+%278701004%27%2C+%278700001%27%2C+%278703005%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The four lots the Planning Department's Notice of Preparation names as the project site (Case No. 2026-002123ENV, Sept 30, 2026, p. 1: 18.63 acres, bounded by Townsend, Fourth, King and Seventh streets): the Caltrain station and railyard at Fourth and King. The project's offsite train storage and maintenance facility has no site yet and isn't drawn. 18.6 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 4
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4014521,
+       37.7718193
+      ],
+      [
+       -122.3949756,
+       37.776935
+      ],
+      [
+       -122.3943045,
+       37.7763996
+      ],
+      [
+       -122.3966904,
+       37.7745151
+      ],
+      [
+       -122.3974287,
+       37.7740359
+      ],
+      [
+       -122.3975845,
+       37.773913
+      ],
+      [
+       -122.3978034,
+       37.7737133
+      ],
+      [
+       -122.3979802,
+       37.7734964
+      ],
+      [
+       -122.3987576,
+       37.7728823
+      ],
+      [
+       -122.399629,
+       37.7719227
+      ],
+      [
+       -122.3997291,
+       37.7717761
+      ],
+      [
+       -122.3998204,
+       37.7715526
+      ],
+      [
+       -122.3998497,
+       37.7713187
+      ],
+      [
+       -122.3998129,
+       37.7710757
+      ],
+      [
+       -122.3997584,
+       37.7709351
+      ],
+      [
+       -122.3997216,
+       37.7708867
+      ],
+      [
+       -122.4000036,
+       37.770664
+      ],
+      [
+       -122.4014521,
+       37.7718193
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
