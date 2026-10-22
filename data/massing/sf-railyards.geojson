@@ -1,0 +1,588 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "sf-railyards",
+  "illustrative": true,
+  "summary": "Illustrative height envelopes: the eight development blocks of the sponsor's proposed height district plan in the Planning Department's September 2026 notice of preparation (Figure 3), each drawn whole and raised to its proposed limit, 350 to 855 ft. The heights are proposed, not adopted, and are limits, not building designs: Block 1 would have one 855-ft tower and a second of 575 ft, not an 855-ft block. Streets, parks, the station plazas and the rail corridor are left empty.",
+  "note": "Proposed height limits from the 2026 notice of preparation; limits, not buildings, and not yet adopted.",
+  "sourceUrl": "https://ceqanet.lci.ca.gov/2026091295/Attachment/tPsmWg",
+  "sourceLabel": "Notice of preparation, Figure 3, 2026 (PDF)",
+  "georeference": {
+   "figure_3": {
+    "scale_m_per_unit": 0.50447,
+    "rotation_deg": 45.209,
+    "rms_m": 0.14,
+    "controls": [
+     {
+      "label": "Townsend Street at Seventh Street",
+      "residual_m": 0.13
+     },
+     {
+      "label": "Townsend Street at Fourth Street",
+      "residual_m": 0.15
+     },
+     {
+      "label": "King Street at Fourth Street",
+      "residual_m": 0.16
+     },
+     {
+      "label": "Seventh Street at the site's southern tip",
+      "residual_m": 0.14
+     }
+    ]
+   },
+   "check": [
+    {
+     "label": "Townsend Street / 4th Street (along Townsend)",
+     "residual_m": 1.7
+    },
+    {
+     "label": "Townsend Street / 5th Street (along Townsend)",
+     "residual_m": 2.4
+    }
+   ],
+   "method": "similarity fit on the dashed project boundary's four corners to the DataSF parcel union, then clipped to the parcels"
+  },
+  "license": "Zones traced from a public City document; site: DataSF parcels (ODC-PDDL)",
+  "documents": [
+   "https://ceqanet.lci.ca.gov/2026091295/Attachment/tPsmWg",
+   "https://ceqanet.lci.ca.gov/2026091295",
+   "https://data.sf.gov/d/acdm-wktn"
+  ]
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "1",
+    "label": "Block 1 (1A and 1B)",
+    "stage": "entitlement",
+    "height_ft": 855,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Development Phase 1 (Phase 1.1)",
+    "illustrative": true,
+    "source": "illustrative: drawn to the proposed height limit traced from San Francisco Planning, Notice of Preparation of an EIR, Railyards Mixed-Use Development Project (Case No. 2026-002123ENV, Sept 30, 2026), Figure 3, Height District Plan, p. 13; phases from NOP pp. 23-26",
+    "note": "The figure limits Block 1 to one tower of 855 ft and a second tower of 575 ft (marked on 1A); the block also holds the new Caltrain Station Hall. The rest of the block would be lower."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3943241,
+        37.776415
+       ],
+       [
+        -122.3951446,
+        37.7757674
+       ],
+       [
+        -122.3956899,
+        37.7762026
+       ],
+       [
+        -122.3948734,
+        37.7768535
+       ],
+       [
+        -122.3943241,
+        37.776415
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "2B",
+    "label": "Block 2B",
+    "stage": "entitlement",
+    "height_ft": 625,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Development Phase 2 (Phase 2.1)",
+    "illustrative": true,
+    "source": "illustrative: drawn to the proposed height limit traced from San Francisco Planning, Notice of Preparation of an EIR, Railyards Mixed-Use Development Project (Case No. 2026-002123ENV, Sept 30, 2026), Figure 3, Height District Plan, p. 13; phases from NOP pp. 23-26"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3963601,
+        37.7756736
+       ],
+       [
+        -122.3958148,
+        37.7752384
+       ],
+       [
+        -122.3963428,
+        37.7748216
+       ],
+       [
+        -122.3968881,
+        37.7752569
+       ],
+       [
+        -122.3963601,
+        37.7756736
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "3C",
+    "label": "Block 3C",
+    "stage": "entitlement",
+    "height_ft": 550,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Development Phase 2 (Phase 2.2)",
+    "illustrative": true,
+    "source": "illustrative: drawn to the proposed height limit traced from San Francisco Planning, Notice of Preparation of an EIR, Railyards Mixed-Use Development Project (Case No. 2026-002123ENV, Sept 30, 2026), Figure 3, Height District Plan, p. 13; phases from NOP pp. 23-26"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3983828,
+        37.774077
+       ],
+       [
+        -122.3979305,
+        37.7737095
+       ],
+       [
+        -122.3986535,
+        37.7731324
+       ],
+       [
+        -122.399118,
+        37.7734967
+       ],
+       [
+        -122.3983828,
+        37.774077
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "2A",
+    "label": "Block 2A",
+    "stage": "entitlement",
+    "height_ft": 500,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Development Phase 2 (Phase 2.1)",
+    "illustrative": true,
+    "source": "illustrative: drawn to the proposed height limit traced from San Francisco Planning, Notice of Preparation of an EIR, Railyards Mixed-Use Development Project (Case No. 2026-002123ENV, Sept 30, 2026), Figure 3, Height District Plan, p. 13; phases from NOP pp. 23-26"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3958605,
+        37.776068
+       ],
+       [
+        -122.3953192,
+        37.775636
+       ],
+       [
+        -122.3957986,
+        37.7752512
+       ],
+       [
+        -122.3963479,
+        37.7756897
+       ],
+       [
+        -122.3958605,
+        37.776068
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "3A",
+    "label": "Block 3A",
+    "stage": "entitlement",
+    "height_ft": 500,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Development Phase 2 (Phase 2.2)",
+    "illustrative": true,
+    "source": "illustrative: drawn to the proposed height limit traced from San Francisco Planning, Notice of Preparation of an EIR, Railyards Mixed-Use Development Project (Case No. 2026-002123ENV, Sept 30, 2026), Figure 3, Height District Plan, p. 13; phases from NOP pp. 23-26"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3971075,
+        37.7750837
+       ],
+       [
+        -122.3965501,
+        37.7746388
+       ],
+       [
+        -122.3967531,
+        37.7744849
+       ],
+       [
+        -122.3968911,
+        37.7744081
+       ],
+       [
+        -122.3971834,
+        37.7742094
+       ],
+       [
+        -122.3972198,
+        37.7742256
+       ],
+       [
+        -122.3977005,
+        37.7746157
+       ],
+       [
+        -122.3971075,
+        37.7750837
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "5",
+    "label": "Block 5",
+    "stage": "entitlement",
+    "height_ft": 450,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Development Phase 1 (Phase 1.2)",
+    "illustrative": true,
+    "source": "illustrative: drawn to the proposed height limit traced from San Francisco Planning, Notice of Preparation of an EIR, Railyards Mixed-Use Development Project (Case No. 2026-002123ENV, Sept 30, 2026), Figure 3, Height District Plan, p. 13; phases from NOP pp. 23-26"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4001207,
+        37.7728398
+       ],
+       [
+        -122.4001777,
+        37.7727757
+       ],
+       [
+        -122.4002876,
+        37.7726119
+       ],
+       [
+        -122.4004222,
+        37.7723261
+       ],
+       [
+        -122.4004837,
+        37.7721108
+       ],
+       [
+        -122.4005129,
+        37.7718826
+       ],
+       [
+        -122.4005097,
+        37.771635
+       ],
+       [
+        -122.400462,
+        37.7713777
+       ],
+       [
+        -122.4003617,
+        37.7711107
+       ],
+       [
+        -122.4002772,
+        37.7709529
+       ],
+       [
+        -122.4002127,
+        37.7708628
+       ],
+       [
+        -122.4002328,
+        37.7708468
+       ],
+       [
+        -122.4014518,
+        37.7718196
+       ],
+       [
+        -122.4001404,
+        37.7728555
+       ],
+       [
+        -122.4001207,
+        37.7728398
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "3B",
+    "label": "Block 3B",
+    "stage": "entitlement",
+    "height_ft": 400,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Development Phase 2 (Phase 2.2)",
+    "illustrative": true,
+    "source": "illustrative: drawn to the proposed height limit traced from San Francisco Planning, Notice of Preparation of an EIR, Railyards Mixed-Use Development Project (Case No. 2026-002123ENV, Sept 30, 2026), Figure 3, Height District Plan, p. 13; phases from NOP pp. 23-26"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3977127,
+        37.774606
+       ],
+       [
+        -122.3972078,
+        37.774203
+       ],
+       [
+        -122.397289,
+        37.7741389
+       ],
+       [
+        -122.3973052,
+        37.7741389
+       ],
+       [
+        -122.3973824,
+        37.774078
+       ],
+       [
+        -122.3974026,
+        37.7740749
+       ],
+       [
+        -122.3975245,
+        37.7739851
+       ],
+       [
+        -122.3977599,
+        37.7738377
+       ],
+       [
+        -122.3979142,
+        37.7737223
+       ],
+       [
+        -122.3983747,
+        37.7740834
+       ],
+       [
+        -122.3977127,
+        37.774606
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "block": "4",
+    "label": "Block 4",
+    "stage": "entitlement",
+    "height_ft": 350,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": null,
+    "phase": "Development Phase 2 (Phase 2.3)",
+    "illustrative": true,
+    "source": "illustrative: drawn to the proposed height limit traced from San Francisco Planning, Notice of Preparation of an EIR, Railyards Mixed-Use Development Project (Case No. 2026-002123ENV, Sept 30, 2026), Figure 3, Height District Plan, p. 13; phases from NOP pp. 23-26"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3998724,
+        37.7708749
+       ],
+       [
+        -122.399953,
+        37.7710037
+       ],
+       [
+        -122.4000695,
+        37.7712643
+       ],
+       [
+        -122.4001294,
+        37.7715249
+       ],
+       [
+        -122.400141,
+        37.7716567
+       ],
+       [
+        -122.4001364,
+        37.7718336
+       ],
+       [
+        -122.4001198,
+        37.7719557
+       ],
+       [
+        -122.4000705,
+        37.7721485
+       ],
+       [
+        -122.399948,
+        37.7724247
+       ],
+       [
+        -122.3998462,
+        37.772582
+       ],
+       [
+        -122.3997445,
+        37.7727072
+       ],
+       [
+        -122.3996104,
+        37.7728451
+       ],
+       [
+        -122.3994763,
+        37.772951
+       ],
+       [
+        -122.3997465,
+        37.7731666
+       ],
+       [
+        -122.3995963,
+        37.7732853
+       ],
+       [
+        -122.3989948,
+        37.7728052
+       ],
+       [
+        -122.3997349,
+        37.7719774
+       ],
+       [
+        -122.3998364,
+        37.7718972
+       ],
+       [
+        -122.3998284,
+        37.7718715
+       ],
+       [
+        -122.3998935,
+        37.771788
+       ],
+       [
+        -122.3999547,
+        37.7716628
+       ],
+       [
+        -122.4000041,
+        37.7714314
+       ],
+       [
+        -122.3999966,
+        37.771277
+       ],
+       [
+        -122.3999726,
+        37.7711677
+       ],
+       [
+        -122.3999004,
+        37.7709746
+       ],
+       [
+        -122.3998441,
+        37.7708652
+       ],
+       [
+        -122.3997967,
+        37.7708274
+       ],
+       [
+        -122.3998168,
+        37.7708115
+       ],
+       [
+        -122.3998724,
+        37.7708749
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

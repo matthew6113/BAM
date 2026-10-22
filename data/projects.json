@@ -2,7 +2,7 @@
   "_meta": {
     "title": "Bay Area megaprojects: researched project list",
     "preparedBy": "Claude (claude.ai chat) for Matthew Huguet",
-    "lastVerified": "2026-10-19",
+    "lastVerified": "2026-10-21",
     "notes": [
       "Every figure here came from the listed sources as of the lastVerified date. Items in each project's 'verify' list are known gaps; do not fill them by guessing.",
       "approxCenter values are rough [lon, lat] points for placing a marker only. Real site boundaries must come from official plan documents or parcel data, saved per project with their source.",
@@ -7514,6 +7514,115 @@
         "the District's Nov 20, 2025 contract amendment for the environmental work and its schedule, which couldn't be read on Oct 19 (goldengate.org was unreachable)"
       ],
       "lastVerified": "2026-10-19"
+    },
+    {
+      "id": "sf-railyards",
+      "name": "SF Railyards",
+      "aliases": [
+        "Railyards Mixed-Use Development Project",
+        "700 4th Street",
+        "4th and King Railyards",
+        "Caltrain Fourth and King railyard"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.3981,
+        37.7738
+      ],
+      "camera": {
+        "center": [
+          -122.3978,
+          37.7741
+        ],
+        "zoom": 15.6,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 18.63,
+      "acresNote": "The Planning Department's notice of preparation (Sept 30, 2026, p. 1) gives the site as 18.63 acres: Blocks/Lots 8701/003, 8701/004, 8700/001 and 8703/005, the Caltrain station and railyard between Townsend, Fourth, King and Seventh streets. The four lots in DataSF's parcel map come to 18.6 acres. The project's offsite train storage and maintenance facility has no site yet and isn't included.",
+      "program": {
+        "homes": 5834,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": 5638120,
+        "retailSqft": 172660,
+        "hotelKeys": null,
+        "openSpaceAcres": 3.73,
+        "notes": "Two scenarios in the notice of preparation (Sept 30, 2026, pp. 2 and 8–10), which the EIR will study; buildout could fall anywhere between them. Maximum Commercial: up to 1,765 homes, about 5,638,120 sq ft of commercial space (office, hotel, laboratory and life science) and 172,660 sq ft of retail, 7,820,390 sq ft above grade. Maximum Residential: up to 5,834 homes, about 1,589,980 sq ft of commercial space and 159,970 sq ft of retail, 7,839,210 sq ft above grade. The figures shown are each scenario's maximum and can't be added together. Both include a 19,560-sq-ft Caltrain Station Hall and about 3.73 acres of publicly accessible open space (3.5 or 4.3 acres under the two variants). Proposed height limits run from 350 to 855 ft. No affordable housing figure has been published."
+      },
+      "developer": "Prologis 4th & King LLC (Prologis), the site's owner, in coordination with the Peninsula Corridor Joint Powers Board (Caltrain), which holds a perpetual easement to run trains on the site",
+      "publicPartners": [
+        "San Francisco Planning Department (lead agency)",
+        "Peninsula Corridor Joint Powers Board (Caltrain)",
+        "Transbay Joint Powers Authority (The Portal, a coordinated project)"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In environmental review. Prologis filed its application with the Planning Department in March 2026 (record 2026-002123PRJ) and a development agreement application in April; the Department issued a notice of preparation of an EIR on Sept 30, 2026, held a scoping meeting on Oct 14 and takes comments until Oct 30, 2026. No approvals yet: the project needs general plan, planning code and Mission Bay North Redevelopment Plan amendments and a development agreement from the Board of Supervisors.",
+      "timeline": [
+        {
+          "date": "2018-09",
+          "event": "The Planning Department's Rail Alignment and Benefits Study, which included options for reconfiguring or relocating the Fourth and King railyard, publishes its final report."
+        },
+        {
+          "date": "2022-10-05",
+          "event": "Caltrain, Prologis and the Planning Department hold an SF Railyards community meeting on the preliminary business case for the site."
+        },
+        {
+          "date": "2025-01-09",
+          "event": "The Planning Commission hears an informational presentation on the SF Railyards Planning Program."
+        },
+        {
+          "date": "2026-03-11",
+          "event": "The project application for the Railyards Project at 700 4th Street is filed with the Planning Department (record 2026-002123PRJ): up to 7.8 million sq ft of development and a modernized rail station, under a development agreement."
+        },
+        {
+          "date": "2026-04-15",
+          "event": "Prologis 4th & King LLC files a development agreement application (2026-002123DVA)."
+        },
+        {
+          "date": "2026-09-30",
+          "event": "The Planning Department issues a notice of preparation of an EIR for the Railyards Mixed-Use Development Project (Case 2026-002123ENV, SCH 2026091295)."
+        },
+        {
+          "date": "2026-10-14",
+          "event": "The Department holds a public scoping meeting at 49 South Van Ness Avenue."
+        }
+      ],
+      "nextMilestone": "The scoping comment period closes Oct 30, 2026; then a Draft EIR (no date published). The EIR assumes construction from 2029 to 2042.",
+      "summary": "Prologis's plan, with Caltrain, to rebuild the Caltrain terminal and railyard at Fourth and King, an 18.6-acre strip between Townsend and King streets from Fourth to Seventh, as a new underground station beneath a neighborhood of towers. It would put up about 7.8 million sq ft of buildings, with between 1,765 and 5,834 homes depending on how much is offices, under proposed height limits of 350 to 855 ft. The terminal tracks would move into a new tunnel beside The Portal's, and train storage to a yard elsewhere on the line. Environmental review began in Sept 2026.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), the four lots the notice of preparation names (8701/003, 8701/004, 8700/001, 8703/005), 18.6 acres; official (pipeline/bam_pipeline/sites/boundary_sf_railyards.py). Massing: illustrative height envelopes for the eight development blocks traced from the notice's Figure 3, Height District Plan (p. 13, sourced to Prologis 4th and King LLC), registered on the dashed site boundary's corners (RMS 0.1 m; 4th and 5th Street crossings within about 2.5 m) and clipped to the parcels (pipeline/bam_pipeline/sites/massing_sf_railyards.py): Block 1 855 ft (one tower of 855 ft and a second of 575 ft), 2A 500, 2B 625, 3A 500, 3B 400, 3C 550, 4 350 and 5 450. They are proposed limits, not adopted and not buildings. The existing station and yard aren't drawn as buildings. How it relates to nearby projects. The Portal (the-portal): TJPA's tunnel to the Salesforce Transit Center, with its Fourth and Townsend station under Townsend Street, is a separate project the railyards are coordinated with; the notice says part of its infrastructure would be built within and under the site, with no buildings above it, and that the railyards' second rail phase and Blocks 2–4 can only follow The Portal's construction. High-speed rail (cahsr-sf-sj) shares the Caltrain corridor that ends here; its line on this map ends at Fourth and King. Mission Bay (mission-bay): the two western lots (8700/001 and 8703/005) are in the Mission Bay North Redevelopment Plan area, so the two outlines overlap by about 8 acres there, and the project would amend that plan. Mission Rock and the Mission Bay ferry landing are separate sites farther east and south; they don't overlap.",
+      "officialLinks": [
+        "https://sfplanning.org/project/sf-railyards-planning-program",
+        "https://ceqanet.lci.ca.gov/2026091295"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/2026091295",
+        "https://ceqanet.lci.ca.gov/2026091295/Attachment/tPsmWg",
+        "https://ceqanet.lci.ca.gov/2026091295/Attachment/urQr08",
+        "https://sfplanning.org/environmental-review-documents?title=railyards",
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2026-002123PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2026-002123DVA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2026-002123ENV",
+        "https://sfplanning.org/project/sf-railyards-planning-program",
+        "https://sfplanning.org/sites/default/files/documents/citywide/railyardsprojects/railyardsprojects_factsheet.pdf",
+        "https://sfplanning.org/sites/default/files/documents/citywide/railyardsprojects/railyardsproject-community-mtg-presentation-100522.pdf",
+        "https://sfplanning.org/rab",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the Caltrain Board's actions on the railyards (agreements with Prologis and any real estate terms): caltrain.com couldn't be reached on Oct 21",
+        "the Planning Commission's Jan 9, 2025 informational staff report and slides (citypln-m-extnl.sfgov.org couldn't be reached on Oct 21)",
+        "where the offsite train storage and maintenance facility would go (the notice says only between Fourth and King and San Francisco International Airport, near the Caltrain corridor)",
+        "the affordable housing share, which the notice doesn't give",
+        "the Draft EIR date",
+        "how the earlier Railyards Area Design and Development planning record (2023-000384PRJ, CWP and DVA) relates to the 2026 application",
+        "which block holds the 855-ft tower: Figure 3 marks only the second (575-ft) tower, on 1A; it also labels Sixth Street as \"8th Street\""
+      ],
+      "lastVerified": "2026-10-21"
     }
   ]
 }
