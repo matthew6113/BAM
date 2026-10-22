@@ -189,6 +189,9 @@ pipeline description.
 
 ## railyards
 
+Superseded (2026-10-22): the same project reached the map on Oct 21 as `sf-railyards`
+(`candidates-4th-king-railyards.md`), with massing, so this record wasn't added. The findings below agree with it.
+
 Recommendation: **INCLUDE** (stage `entitlement`), boundary only. A ~7.8 million sq ft, 18.6-acre redevelopment of
 the Caltrain terminal and railyard at Fourth and King with towers of 350–855 ft (the 855 ft limit is on Block 1 at
 Fourth and King). It clears every bar (homes, sq ft, tower height). Filed Mar 11, 2026, so it isn't in the 2026 Q2

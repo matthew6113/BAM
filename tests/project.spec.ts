@@ -81,56 +81,92 @@ test('the Projects list is a keyboard route in and focus comes back out', async 
   await expect(item).toBeFocused();
 });
 
-test('the Buildings and Transportation tabs filter the list and the map, and All restores both', async ({ page }) => {
+// Ids the map leaves out: the literal list in the site layer's filter.
+const mapHidden = (page: Page) =>
+  page.evaluate(() => {
+    const find = (e: unknown): string[] =>
+      !Array.isArray(e) ? [] : e[0] === 'literal' && Array.isArray(e[1]) ? e[1] : e.flatMap(find);
+    return find((window as any).__map.getFilter('project-site-fill')).sort();
+  });
+const mapped = data.projects.filter((p) => existsSync(`data/boundaries/${p.id}.geojson`));
+const idsIn = (category: string) => mapped.filter((p) => p.category === category).map((p) => p.id).sort();
+
+test('the Buildings and Transit tabs are always in view, and each shows only its projects in the list and on the map', async ({ page }) => {
   await page.goto('/?test=1');
   await ready(page);
-  // Ids the map leaves out: the literal list in the site layer's filter.
-  const mapHidden = () =>
-    page.evaluate(() => {
-      const find = (e: unknown): string[] =>
-        !Array.isArray(e) ? [] : e[0] === 'literal' && Array.isArray(e[1]) ? e[1] : e.flatMap(find);
-      return find((window as any).__map.getFilter('project-site-fill')).sort();
-    });
-  await page.getByRole('button', { name: /^Projects/ }).click();
-  const list = page.locator('#project-index-list > li');
   const tabs = page.getByRole('tablist', { name: 'Project type' });
   const tab = (name: RegExp) => tabs.getByRole('tab', { name });
-  const total = await list.count();
-  await expect(tab(/^All/)).toHaveAttribute('aria-selected', 'true');
-  expect(await mapHidden()).toEqual([]);
+  const list = page.locator('#project-index-list > li');
+  const buildings = idsIn('buildings');
+  const transit = idsIn('transportation');
 
-  const nTransport = Number(await tab(/^Transportation/).locator('.n').textContent());
-  const nBuildings = Number(await tab(/^Buildings/).locator('.n').textContent());
-  expect(nTransport).toBeGreaterThan(0);
-  expect(nTransport + nBuildings).toBe(total);
+  // Two tabs, no All, in view before the list is opened; the page opens on buildings.
+  await expect(tabs.getByRole('tab')).toHaveCount(2);
+  await expect(tab(/^Buildings/)).toBeVisible();
+  await expect(tab(/^Buildings/)).toHaveAttribute('aria-selected', 'true');
+  await expect(tab(/^Buildings/).locator('.n')).toHaveText(String(buildings.length));
+  await expect(tab(/^Transit/).locator('.n')).toHaveText(String(transit.length));
+  await expect.poll(() => mapHidden(page)).toEqual(transit);
 
-  await tab(/^Transportation/).click();
-  await expect(tab(/^Transportation/)).toHaveAttribute('aria-selected', 'true');
-  await expect(list).toHaveCount(nTransport);
+  await page.getByRole('button', { name: /^Projects/ }).click();
+  await expect(list).toHaveCount(buildings.length);
+  await expect(page.locator('#project-index-list')).not.toContainText('The Portal');
+
+  await tab(/^Transit/).click();
+  await expect(tab(/^Transit/)).toHaveAttribute('aria-selected', 'true');
+  await expect(list).toHaveCount(transit.length);
   await expect(page.locator('#project-index-list')).toContainText('The Portal');
   await expect(page.locator('#project-index-list')).toContainText('Mission Bay Ferry Landing');
   await expect(page.locator('#project-index-list')).not.toContainText('Potrero Power Station');
-  await expect(page.locator('.index-toggle .count')).toHaveText(`${nTransport} of ${total}`);
-  await expect.poll(mapHidden).toHaveLength(nBuildings);
-  expect(await mapHidden()).toContain('potrero-power-station');
+  await expect.poll(() => mapHidden(page)).toEqual(buildings);
 
-  // Arrow keys move between tabs; the selected tab combines with search.
+  // Arrow keys move between the tabs; search, stage and area narrow the open tab.
   await page.keyboard.press('ArrowLeft');
   await expect(tab(/^Buildings/)).toBeFocused();
-  await expect(list).toHaveCount(nBuildings);
+  await expect(list).toHaveCount(buildings.length);
   await page.getByRole('searchbox', { name: 'Search projects' }).fill('potrero');
   await expect(list).toHaveCount(2); // Potrero Power Station and Potrero HOPE SF
+  await expect(page.locator('.index-toggle .count')).toHaveText(`2 of ${buildings.length}`);
+  await expect.poll(async () => (await mapHidden(page)).length).toBe(mapped.length - 2);
 
-  await tab(/^All/).click();
-  await page.getByRole('searchbox', { name: 'Search projects' }).fill('');
-  await expect(list).toHaveCount(total);
-  await expect.poll(mapHidden).toEqual([]);
+  // Clearing the filters keeps the tab.
+  await page.getByRole('button', { name: 'Clear filters' }).click();
+  await expect(tab(/^Buildings/)).toHaveAttribute('aria-selected', 'true');
+  await expect(list).toHaveCount(buildings.length);
+  await expect(page.locator('.index-toggle .count')).toHaveCount(0);
+  await expect.poll(() => mapHidden(page)).toEqual(transit);
+});
 
-  // Show all projects clears the tab too.
-  await tab(/^Transportation/).click();
-  await page.getByRole('button', { name: 'Show all projects' }).click();
-  await expect(tab(/^All/)).toHaveAttribute('aria-selected', 'true');
-  await expect(list).toHaveCount(total);
+test('a link to a transit project opens on the Transit tab, and next stays within it', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto('/p/the-portal?test=1');
+  await ready(page);
+  await expect(page.getByRole('complementary', { name: /^The Portal/ })).toBeVisible();
+  await expect(page.getByRole('tab', { name: /^Transit/ })).toHaveAttribute('aria-selected', 'true');
+  await expect.poll(() => mapHidden(page)).toEqual(idsIn('buildings'));
+  const transit = new Set(idsIn('transportation'));
+  const next = page.getByRole('navigation', { name: 'Other projects' }).getByRole('button').last();
+  let path = '/p/the-portal';
+  for (let i = 0; i < 3; i++) {
+    await next.click();
+    await expect.poll(() => new URL(page.url()).pathname).not.toBe(path);
+    path = new URL(page.url()).pathname;
+    expect(transit.has(path.replace('/p/', '')), path).toBe(true);
+  }
+});
+
+test('switching tabs with a project open closes it, flies back and keeps focus on the tabs', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto('/?test=1#map=13.2/37.757/-122.39');
+  await ready(page);
+  await clickSite(page);
+  await expect(page.getByRole('complementary', { name: 'Potrero Power Station' })).toBeVisible();
+  await page.getByRole('tab', { name: /^Transit/ }).click();
+  await expect(page.getByRole('complementary', { name: 'Potrero Power Station' })).toHaveCount(0);
+  await expect.poll(() => phase(page), { timeout: 30_000 }).toBeNull();
+  expect(new URL(page.url()).pathname).toBe('/');
+  await expect(page.getByRole('tab', { name: /^Transit/ })).toBeFocused();
+  await expect.poll(() => mapHidden(page)).toEqual(idsIn('buildings'));
 });
 
 test('the whole-bay view draws big sites as their shapes and small ones as dots that open them', async ({ page }) => {

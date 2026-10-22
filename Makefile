@@ -121,6 +121,8 @@ sites:
 	$(PY) bam_pipeline.sites.boundary_santana_row
 	$(PY) bam_pipeline.sites.massing_santana_row
 	$(PY) bam_pipeline.sites.boundary_larkspur_ferry_expansion
+	$(PY) bam_pipeline.sites.boundary_sf_railyards
+	$(PY) bam_pipeline.sites.massing_sf_railyards
 
 photos:
 	$(PY) bam_pipeline.photos

@@ -29,7 +29,7 @@ for (const [name, viewport] of [['desktop', { width: 1280, height: 800 }], ['pho
       expect(await axe(page)).toEqual([]);
       await page.getByRole('button', { name: /^Projects/ }).click();
       expect(await axe(page)).toEqual([]);
-      await page.getByRole('tab', { name: /^Transportation/ }).click();
+      await page.getByRole('tab', { name: /^Transit/ }).click();
       expect(await axe(page)).toEqual([]);
     });
 

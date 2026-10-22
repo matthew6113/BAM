@@ -1,13 +1,13 @@
 {
  "type": "FeatureCollection",
  "properties": {
-  "project": "railyards",
-  "source": "DataSF Parcels \u2013 Active and Retired, block 8701 lots 003 and 004, block 8700 lot 001 and block 8703 lot 005",
+  "project": "sf-railyards",
+  "source": "DataSF Parcels \u2013 Active and Retired, blocks/lots 8701/003, 8701/004, 8700/001 and 8703/005",
   "sourceLabel": "DataSF parcels",
   "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
   "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%278701003%27%2C+%278701004%27%2C+%278700001%27%2C+%278703005%27%29&%24limit=5000",
   "accuracy": "official",
-  "accuracyNote": "The four lots the Notice of Preparation names for the Railyards Mixed-Use Development Project (case 2026-002123ENV): the Caltrain station and railyard between Townsend, Fourth, King and Seventh streets, against its 18.63 acres. The offsite train storage and maintenance facility, whose location isn't chosen yet, isn't drawn. 18.6 acres as drawn.",
+  "accuracyNote": "The four lots the Planning Department's Notice of Preparation names as the project site (Case No. 2026-002123ENV, Sept 30, 2026, p. 1: 18.63 acres, bounded by Townsend, Fourth, King and Seventh streets): the Caltrain station and railyard at Fourth and King. The project's offsite train storage and maintenance facility has no site yet and isn't drawn. 18.6 acres as drawn.",
   "license": "ODC Public Domain Dedication and License (DataSF)",
   "features_used": 4
  },

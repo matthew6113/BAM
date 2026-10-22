@@ -123,7 +123,7 @@ network access; the "Update with full network access" sections in `docs/official
 supersede it.
 
 ### Next
-- The 2026-10-19 pass added 22 projects: San Francisco towers and sites, six South Bay projects and the
+- The 2026-10-19 pass added 21 projects: San Francisco towers and sites, six South Bay projects and the
   Berkeley Space Center (notes `docs/official-research/candidates-sf-*.md`, `candidates-98-franklin.md`,
   `candidates-south-bay-2026-10.md`, `candidates-santana-row.md`, `candidates-gateway-crossings.md`,
   `candidates-berkeley-space-center.md`; leads not added in

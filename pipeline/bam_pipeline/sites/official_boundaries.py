@@ -169,9 +169,6 @@ PLEASANT_HILLS_APNS = ["64923001", "64924013"]
 # holds the separate 870-880 McAllister senior housing site (case 2024-003742PRJ), which the project leaves out.
 FREEDOM_WEST_BLKLOTS = ["0783023", "0783024", "0783025", "0770027"]
 
-# Railyards Mixed-Use Development (700 4th Street): Blocks/Lots 8701/003, 8701/004, 8700/001 and 8703/005, the four
-# lots named in the Notice of Preparation of Sept 30, 2026 (case 2026-002123ENV, SCH 2026091295).
-RAILYARDS_BLKLOTS = ["8701003", "8701004", "8700001", "8703005"]
 
 # Transbay Parcel F (542-550 Howard Street): Assessor's Block 3721, Lots 016, 135, 136 and 138, as listed in the
 # Planning Commission's approvals of Jan 9, 2020 (Motions 20615-20618, case 2016-013312) and their Jan 28, 2021
@@ -720,17 +717,6 @@ SPECS: dict[str, dict] = {
                  "in the project, against the approvals' 743,800 sq ft (about 17.1 acres). Interstate 280 crosses the "
                  "site overhead between the two buildings."),
         "license": "Public Domain U.S. Government (DataSF)",
-    },
-    "railyards": {
-        "label": "DataSF parcels",
-        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(RAILYARDS_BLKLOTS)})"),
-        "layer": "DataSF Parcels – Active and Retired, block 8701 lots 003 and 004, block 8700 lot 001 and block 8703 lot 005",
-        "accuracy": "official",
-        "note": ("The four lots the Notice of Preparation names for the Railyards Mixed-Use Development Project (case "
-                 "2026-002123ENV): the Caltrain station and railyard between Townsend, Fourth, King and Seventh "
-                 "streets, against its 18.63 acres. The offsite train storage and maintenance facility, whose location "
-                 "isn't chosen yet, isn't drawn."),
-        "license": "ODC Public Domain Dedication and License (DataSF)",
     },
     "transbay-parcel-f": {
         "label": "DataSF parcels",
