@@ -1,6 +1,7 @@
 /**
  * Deep links: /p/{project-id} and /about under the site's base path (/BAM/ on github.io, / on
  * map.matthewhuguet.com). Query and hash are kept, so view options and the camera survive navigation.
+ * The open tab rides in the query (?tab=transit) except on a project's own page, which implies it.
  */
 const BASE = import.meta.env.BASE_URL;
 
@@ -36,8 +37,27 @@ export function pathForProject(id: string | null): string {
 
 export const ABOUT_PATH = `${BASE}about`;
 
-function go(path: string, state: Record<string, unknown>, replace: boolean) {
-  const url = path + location.search + location.hash;
+/** The open tab's slug, or null for the default tab. */
+let tab: string | null = null;
+
+/** The tab named in the address (?tab=transit), or null. */
+export function tabFromQuery(search: string = location.search): string | null {
+  return new URLSearchParams(search).get('tab');
+}
+
+/** The current query with the tab set, or left out on a project's page and for the default tab. */
+function queryFor(path: string): string {
+  const want = tab && !projectIdFromPath(path) ? tab : null;
+  const q = new URLSearchParams(location.search);
+  if (q.get('tab') === want) return location.search;
+  if (want) q.set('tab', want);
+  else q.delete('tab');
+  const s = q.toString();
+  return s ? `?${s}` : '';
+}
+
+function go(path: string, state: unknown, replace: boolean) {
+  const url = path + queryFor(path) + location.hash;
   if (url === location.pathname + location.search + location.hash) return;
   if (replace) history.replaceState(state, '', url);
   else history.pushState(state, '', url);
@@ -50,4 +70,10 @@ export function navigate(id: string | null, replace = false) {
 /** Open (or, with false, leave) the about page. */
 export function navigateAbout(open: boolean, replace = false) {
   go(open ? ABOUT_PATH : BASE, { about: open }, replace);
+}
+
+/** Put the open tab in the address (null for the default tab), in place: no new history entry. */
+export function setTab(slug: string | null) {
+  tab = slug;
+  go(location.pathname, history.state, true);
 }

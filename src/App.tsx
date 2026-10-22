@@ -1,5 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'preact/hooks';
-import { matchesFilter, NO_FILTER, type Category, type ProjectFilter } from './projects/filter';
+import {
+  categoryFromSlug, DEFAULT_CATEGORY, matchesFilter, NO_FILTER, slugOf, type Category, type ProjectFilter,
+} from './projects/filter';
 import type { Map as MapLibreMap } from 'maplibre-gl';
 import { homeCamera, MapView, MAX_PITCH_3D, syncStyle } from './map/MapView';
 import type { Selection } from './map/projectLayers';
@@ -15,7 +17,9 @@ import {
   riseMassing,
   type Camera,
 } from './projects/flight';
-import { ABOUT_PATH, isAboutPath, navigate, navigateAbout, projectIdFromPath, retiredQuery } from './router';
+import {
+  ABOUT_PATH, isAboutPath, navigate, navigateAbout, projectIdFromPath, retiredQuery, setTab, tabFromQuery,
+} from './router';
 import { applyCssVariables, defaultTheme, normalizeTheme, type Theme } from './theme/theme';
 import { AboutPanel } from './ui/AboutPanel';
 import { Controls } from './ui/Controls';
@@ -40,12 +44,18 @@ if (deepLinked && siteOf(deepLinked)) void loadProjectGeometry(deepLinked);
 // A link to a retired project id opens the index on the projects that replaced it.
 const retired = retiredQuery();
 
-/** The tab the page opens on: the linked project's, or that of the projects replacing a retired id. */
+/** The tab the address names (?tab=transit), or the default. */
+const categoryFromQuery = () => categoryFromSlug(tabFromQuery()) ?? DEFAULT_CATEGORY;
+
+/**
+ * The tab the page opens on: the linked project's, that of the projects replacing a retired id, or
+ * the one the address names.
+ */
 function initialCategory(): Category {
   const linked = retired
     ? MAPPED_PROJECTS.find((p) => matchesFilter(p, { ...NO_FILTER, query: retired }))
     : deepLinked ? getProject(deepLinked) : undefined;
-  return (linked?.category as Category | undefined) ?? 'buildings';
+  return (linked?.category as Category | undefined) ?? categoryFromQuery();
 }
 
 function loadTheme(): Theme {
@@ -241,16 +251,21 @@ export function App() {
     if (aboutOpen) document.title = `About · ${SITE_TITLE}`;
   }, []);
 
+  // The open tab in the address, so a link or a reload opens on it: ?tab=transit.
+  useEffect(() => setTab(slugOf(category)), [category]);
+
   // Deep link on load, and the back and forward buttons.
   useEffect(() => {
     if (!map) return;
     const sync = (initial: boolean) => {
+      const id = projectIdFromPath();
+      // Away from a project's page the address names the tab; a project's page opens its own.
+      if (!id) setCategory(categoryFromQuery());
       if (isAboutPath()) {
         if (!live.current.aboutOpen || live.current.openId) openAbout({ push: false });
         return;
       }
       if (live.current.aboutOpen) closeAbout({ push: false });
-      const id = projectIdFromPath();
       if (id && !siteOf(id)) {
         navigate(null, true);
         return;

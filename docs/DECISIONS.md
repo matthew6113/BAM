@@ -319,3 +319,11 @@ projects. A link to a transit project opens on Transit. The data's `transportati
 unchanged; only its label is now "Transit", the word Matthew used (every project under it is a rail
 line or a ferry terminal). Still open: the label, and whether the tab belongs in the page's address
 so a link can open on Transit without naming a project.
+
+## 2026-10-21: the tab in the address (Matthew)
+
+Matthew: "add ?tab=transit to the URL". The open tab is now in the address, so a link or a reload opens
+on it: `/?tab=transit`. Buildings, the default, adds nothing, and a project's page (`/p/the-portal`)
+leaves it out because the project already says which tab it's in; closing the project puts it back.
+Switching tabs replaces the current history entry instead of adding one, and the back and forward
+buttons bring back the tab each page had. This settles the address question left open above.

@@ -184,7 +184,9 @@ Elsewhere
   2026-10-12). One is always open, Buildings by default, and the list and the map show only its
   projects (Matthew, 2026-10-21). Opening a project from the other tab, by link or the back
   button, switches to it; switching tabs with a project open closes it and flies back. Previous
-  and next stay within the tab.
+  and next stay within the tab. The address names the open tab, `?tab=transit`, so a link or a
+  reload opens on it; Buildings, the default, and a project's own page, which implies its tab,
+  leave it out. A tab switch replaces the history entry rather than adding one.
 - Project index: a searchable list of the open tab's projects, with filters by stage and area.
   "Clear filters" keeps the tab.
 - Legend that doubles as a stage filter, with a count per stage.

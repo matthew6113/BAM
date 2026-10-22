@@ -23,10 +23,12 @@ import {
   dredgingOf,
 } from '../src/projects/data';
 import { isOfficialSource } from '../src/projects/official';
-import { CATEGORIES, isFiltered, matchesFilter, NO_FILTER } from '../src/projects/filter';
+import {
+  CATEGORIES, categoryFromSlug, DEFAULT_CATEGORY, isFiltered, matchesFilter, NO_FILTER, slugOf,
+} from '../src/projects/filter';
 import { STAGE_KEYS } from '../src/theme/theme';
 import { formatDate, formatSqft, sourceText } from '../src/ui/format';
-import { pathForProject, projectIdFromPath, retiredQuery } from '../src/router';
+import { pathForProject, projectIdFromPath, retiredQuery, tabFromQuery } from '../src/router';
 
 // Massing and land use load on demand in the app; the checks below need all of it.
 await loadAllGeometry();
@@ -371,6 +373,17 @@ describe('buildings and transportation', () => {
     expect(tab('buildings', smart).some((p) => p.id.startsWith('smart-'))).toBe(false);
     const stage = transport[0].stage;
     expect(tab('transportation', { ...NO_FILTER, hiddenStages: [stage] }).some((p) => p.stage === stage)).toBe(false);
+  });
+
+  it('names the transit tab in the address, and leaves out the default', () => {
+    expect(DEFAULT_CATEGORY).toBe('buildings');
+    expect(slugOf('transportation')).toBe('transit');
+    expect(slugOf('buildings')).toBeNull();
+    expect(categoryFromSlug(tabFromQuery('?test=1&tab=transit'))).toBe('transportation');
+    expect(categoryFromSlug(tabFromQuery('?tab=buildings'))).toBe('buildings');
+    expect(categoryFromSlug(tabFromQuery('?tab=transportation'))).toBeUndefined();
+    expect(categoryFromSlug(tabFromQuery(''))).toBeUndefined();
+    for (const c of CATEGORIES) expect(categoryFromSlug(c.slug)).toBe(c.key);
   });
 
   it('does not count the tab as a filter: one is always open', () => {

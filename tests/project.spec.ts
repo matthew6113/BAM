@@ -169,6 +169,47 @@ test('switching tabs with a project open closes it, flies back and keeps focus o
   await expect.poll(() => mapHidden(page)).toEqual(idsIn('buildings'));
 });
 
+test('the open tab rides in the address: ?tab=transit, left out on a project page and for buildings', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto('/?test=1&tab=transit');
+  await ready(page);
+  const tab = (name: RegExp) => page.getByRole('tab', { name });
+  const path = () => new URL(page.url()).pathname;
+  const query = () => new URL(page.url()).search;
+  await expect(tab(/^Transit/)).toHaveAttribute('aria-selected', 'true');
+  await expect.poll(() => mapHidden(page)).toEqual(idsIn('buildings'));
+
+  // Buildings, the default, leaves the tab out; the other options stay.
+  await tab(/^Buildings/).click();
+  await expect.poll(query).toBe('?test=1');
+  await tab(/^Transit/).click();
+  await expect.poll(query).toBe('?test=1&tab=transit');
+  await page.reload();
+  await ready(page);
+  await expect(tab(/^Transit/)).toHaveAttribute('aria-selected', 'true');
+
+  // A project's page implies its tab; closing it puts the tab back.
+  await page.getByRole('button', { name: /^Projects/ }).click();
+  await page.locator('#project-index-list').getByRole('button', { name: /^The Portal/ }).click();
+  await expect.poll(path).toBe('/p/the-portal');
+  expect(query()).toBe('?test=1');
+  await page.getByRole('button', { name: 'Close and fly back' }).click();
+  await expect.poll(path).toBe('/');
+  expect(query()).toBe('?test=1&tab=transit');
+
+  // Back and forward bring back the tab each page had.
+  await tab(/^Buildings/).click();
+  await expect.poll(query).toBe('?test=1');
+  await page.goBack();
+  await expect.poll(path).toBe('/p/the-portal');
+  await expect(tab(/^Transit/)).toHaveAttribute('aria-selected', 'true');
+  await page.goForward();
+  await expect.poll(path).toBe('/');
+  await expect(tab(/^Buildings/)).toHaveAttribute('aria-selected', 'true');
+  await expect.poll(() => mapHidden(page)).toEqual(idsIn('transportation'));
+  expect(query()).toBe('?test=1');
+});
+
 test('the whole-bay view draws big sites as their shapes and small ones as dots that open them', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto('/?test=1');
