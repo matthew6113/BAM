@@ -1,0 +1,1175 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "725-harrison",
+  "illustrative": true,
+  "summary": "Illustrative massing: the approved 14-story, 185-ft office building traced from the floor plates of the December 2019 plan set, in four tiers that step back from Harrison Street, its western (Phase I) and eastern (Phase II) parts split at 759 Harrison Street. The 2022 modification takes in that lot, which these 2019 plans leave out; its plans weren't available. Terraces, open spaces and mechanical screens are not drawn, and nothing is drawn on the affordable housing lot.",
+  "note": "The approved building as simple volumes at its floor and roof heights, not the final design.",
+  "sourceUrl": "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2005.0759ENXOFAVAR.pdf",
+  "sourceLabel": "Planning Commission packet, 2019 (PDF)",
+  "approvalSourceUrl": "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20220616_cal_min.pdf",
+  "georeference": {
+   "floor_plans": {
+    "scale_m_per_unit": 0.04512,
+    "rotation_deg": 45.211,
+    "rms_m": 0.12,
+    "controls": [
+     {
+      "label": "4th and Harrison streets (lot 152)",
+      "residual_m": 0.14
+     },
+     {
+      "label": "4th and Perry streets (lot 152)",
+      "residual_m": 0.13
+     },
+     {
+      "label": "Harrison Street frontage of lot 113, midpoint",
+      "residual_m": 0.06
+     }
+    ]
+   },
+   "feet_per_px": 0.148,
+   "render_dpi": 144,
+   "method": "The 4th Street, Harrison Street and Perry Street property lines of the plans and the notch around lot 113 matched to DataSF parcel vertices (lot 152, and lot 113 before its 2022 merger) by a least-squares similarity."
+  },
+  "license": "Footprints: traced from a public SF Planning document. Georeference: DataSF parcels (ODC-PDDL)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Western building, floors 1 to 6",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, with PDR space, shops and an indoor public open space",
+    "phase": "Phase I",
+    "illustrative": true,
+    "source": "illustrative: the level 3 (floors 2 to 6 are the same) floor plate traced from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, PDF pp. 361-367 (floor plans, sheets A20-A26); heights from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, draft Large Project Authorization (PDF pp. 242-243) and building section (PDF p. 356), approved Dec 12, 2019 and modified June 16, 2022 (Motion 21128)",
+    "note": "The western part of the 14-story, 185-ft office building (Phase I), floors 1 to 6, drawn as the level 3 (floors 2 to 6 are the same) plate up to 80 ft."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3990199,
+        37.7810548
+       ],
+       [
+        -122.3991271,
+        37.780991
+       ],
+       [
+        -122.3991361,
+        37.7809987
+       ],
+       [
+        -122.3991365,
+        37.7810041
+       ],
+       [
+        -122.3986235,
+        37.781409
+       ],
+       [
+        -122.3984082,
+        37.7812406
+       ],
+       [
+        -122.3983697,
+        37.7812713
+       ],
+       [
+        -122.3983388,
+        37.7812467
+       ],
+       [
+        -122.3983786,
+        37.7812152
+       ],
+       [
+        -122.3983691,
+        37.7812067
+       ],
+       [
+        -122.3983834,
+        37.7811954
+       ],
+       [
+        -122.3984411,
+        37.7812115
+       ],
+       [
+        -122.3985233,
+        37.7812177
+       ],
+       [
+        -122.398602,
+        37.781211
+       ],
+       [
+        -122.3987374,
+        37.7811807
+       ],
+       [
+        -122.3988035,
+        37.7811577
+       ],
+       [
+        -122.3988946,
+        37.7811181
+       ],
+       [
+        -122.3990199,
+        37.7810548
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3988155,
+        37.7807005
+       ],
+       [
+        -122.3988193,
+        37.7807032
+       ],
+       [
+        -122.3987144,
+        37.7807982
+       ],
+       [
+        -122.3985974,
+        37.7808781
+       ],
+       [
+        -122.398594,
+        37.7808752
+       ],
+       [
+        -122.3988155,
+        37.7807005
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3992568,
+        37.7807167
+       ],
+       [
+        -122.3991451,
+        37.7805815
+       ],
+       [
+        -122.3991482,
+        37.7805794
+       ],
+       [
+        -122.3993665,
+        37.7807535
+       ],
+       [
+        -122.3993665,
+        37.7807536
+       ],
+       [
+        -122.3993008,
+        37.7807273
+       ],
+       [
+        -122.3992568,
+        37.7807167
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Eastern building, floors 1 to 6",
+    "stage": "entitled",
+    "height_ft": 80,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, with PDR space and a child care center",
+    "phase": "Phase II",
+    "illustrative": true,
+    "source": "illustrative: the level 3 (floors 2 to 6 are the same) floor plate traced from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, PDF pp. 361-367 (floor plans, sheets A20-A26); heights from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, draft Large Project Authorization (PDF pp. 242-243) and building section (PDF p. 356), approved Dec 12, 2019 and modified June 16, 2022 (Motion 21128)",
+    "note": "The eastern part of the 14-story, 185-ft office building (Phase II), floors 1 to 6, drawn as the level 3 (floors 2 to 6 are the same) plate up to 80 ft."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3982945,
+        37.7816122
+       ],
+       [
+        -122.398362,
+        37.7815883
+       ],
+       [
+        -122.3983936,
+        37.7815721
+       ],
+       [
+        -122.3984016,
+        37.7815785
+       ],
+       [
+        -122.398403,
+        37.7815836
+       ],
+       [
+        -122.3981437,
+        37.7817861
+       ],
+       [
+        -122.3978519,
+        37.7815532
+       ],
+       [
+        -122.3978544,
+        37.7815508
+       ],
+       [
+        -122.3979075,
+        37.7815784
+       ],
+       [
+        -122.3979859,
+        37.7816068
+       ],
+       [
+        -122.398081,
+        37.7816264
+       ],
+       [
+        -122.3981913,
+        37.7816296
+       ],
+       [
+        -122.3982945,
+        37.7816122
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3979902,
+        37.781356
+       ],
+       [
+        -122.3979546,
+        37.7814018
+       ],
+       [
+        -122.3978846,
+        37.7814387
+       ],
+       [
+        -122.3978824,
+        37.7814366
+       ],
+       [
+        -122.3979872,
+        37.7813539
+       ],
+       [
+        -122.3979902,
+        37.781356
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3982957,
+        37.7812807
+       ],
+       [
+        -122.3983388,
+        37.7812467
+       ],
+       [
+        -122.3983697,
+        37.7812713
+       ],
+       [
+        -122.3983305,
+        37.7813026
+       ],
+       [
+        -122.3984821,
+        37.7814271
+       ],
+       [
+        -122.3984821,
+        37.7814271
+       ],
+       [
+        -122.3984021,
+        37.7813928
+       ],
+       [
+        -122.3983072,
+        37.7813214
+       ],
+       [
+        -122.3982741,
+        37.7813448
+       ],
+       [
+        -122.3982608,
+        37.7813478
+       ],
+       [
+        -122.3981844,
+        37.7814098
+       ],
+       [
+        -122.3981303,
+        37.7813677
+       ],
+       [
+        -122.39824,
+        37.7812799
+       ],
+       [
+        -122.3982599,
+        37.7812942
+       ],
+       [
+        -122.3982858,
+        37.7812737
+       ],
+       [
+        -122.3982957,
+        37.7812807
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.398175,
+        37.7812108
+       ],
+       [
+        -122.3982315,
+        37.781161
+       ],
+       [
+        -122.3982445,
+        37.7811714
+       ],
+       [
+        -122.3982011,
+        37.7812057
+       ],
+       [
+        -122.3982113,
+        37.7812131
+       ],
+       [
+        -122.3981944,
+        37.7812265
+       ],
+       [
+        -122.398175,
+        37.7812108
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Western building, floors 7 to 10",
+    "stage": "entitled",
+    "height_ft": 132,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, with PDR space, shops and an indoor public open space",
+    "phase": "Phase I",
+    "illustrative": true,
+    "source": "illustrative: the level 7 floor plate traced from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, PDF pp. 361-367 (floor plans, sheets A20-A26); heights from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, draft Large Project Authorization (PDF pp. 242-243) and building section (PDF p. 356), approved Dec 12, 2019 and modified June 16, 2022 (Motion 21128)",
+    "note": "The western part of the 14-story, 185-ft office building (Phase I), floors 7 to 10, drawn as the level 7 plate up to 132 ft."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3987415,
+        37.7807816
+       ],
+       [
+        -122.398739,
+        37.7807796
+       ],
+       [
+        -122.3988496,
+        37.7806829
+       ],
+       [
+        -122.3988525,
+        37.7806851
+       ],
+       [
+        -122.3987853,
+        37.7807554
+       ],
+       [
+        -122.3987415,
+        37.7807816
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3991797,
+        37.7806539
+       ],
+       [
+        -122.3991316,
+        37.7805772
+       ],
+       [
+        -122.3991352,
+        37.7805753
+       ],
+       [
+        -122.3992087,
+        37.780657
+       ],
+       [
+        -122.39925,
+        37.780715
+       ],
+       [
+        -122.3991985,
+        37.7807097
+       ],
+       [
+        -122.3991797,
+        37.7806539
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Eastern building, floors 7 to 10",
+    "stage": "entitled",
+    "height_ft": 132,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, with PDR space and a child care center",
+    "phase": "Phase II",
+    "illustrative": true,
+    "source": "illustrative: the level 7 floor plate traced from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, PDF pp. 361-367 (floor plans, sheets A20-A26); heights from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, draft Large Project Authorization (PDF pp. 242-243) and building section (PDF p. 356), approved Dec 12, 2019 and modified June 16, 2022 (Motion 21128)",
+    "note": "The eastern part of the 14-story, 185-ft office building (Phase II), floors 7 to 10, drawn as the level 7 plate up to 132 ft."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3979599,
+        37.7813979
+       ],
+       [
+        -122.3980166,
+        37.7813324
+       ],
+       [
+        -122.3980485,
+        37.7813055
+       ],
+       [
+        -122.3980514,
+        37.7813075
+       ],
+       [
+        -122.3980049,
+        37.7813776
+       ],
+       [
+        -122.3979599,
+        37.7813979
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3984117,
+        37.7813988
+       ],
+       [
+        -122.3984117,
+        37.7813988
+       ],
+       [
+        -122.3984731,
+        37.7814257
+       ],
+       [
+        -122.3985433,
+        37.7814724
+       ],
+       [
+        -122.3984583,
+        37.781532
+       ],
+       [
+        -122.3983606,
+        37.7815861
+       ],
+       [
+        -122.3982772,
+        37.7816141
+       ],
+       [
+        -122.3981823,
+        37.7816277
+       ],
+       [
+        -122.3980885,
+        37.7816249
+       ],
+       [
+        -122.397996,
+        37.7816071
+       ],
+       [
+        -122.3979972,
+        37.7816034
+       ],
+       [
+        -122.3980505,
+        37.7816112
+       ],
+       [
+        -122.3981102,
+        37.7816136
+       ],
+       [
+        -122.3981947,
+        37.781606
+       ],
+       [
+        -122.3982894,
+        37.7815808
+       ],
+       [
+        -122.3983729,
+        37.7815431
+       ],
+       [
+        -122.3984107,
+        37.781522
+       ],
+       [
+        -122.3984905,
+        37.7814658
+       ],
+       [
+        -122.3984117,
+        37.7813988
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Western building, floors 11 to 13",
+    "stage": "entitled",
+    "height_ft": 171,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, with PDR space, shops and an indoor public open space",
+    "phase": "Phase I",
+    "illustrative": true,
+    "source": "illustrative: the level 11 floor plate traced from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, PDF pp. 361-367 (floor plans, sheets A20-A26); heights from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, draft Large Project Authorization (PDF pp. 242-243) and building section (PDF p. 356), approved Dec 12, 2019 and modified June 16, 2022 (Motion 21128)",
+    "note": "The western part of the 14-story, 185-ft office building (Phase I), floors 11 to 13, drawn as the level 11 plate up to 171 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3991142,
+       37.7809922
+      ],
+      [
+       -122.3991167,
+       37.7809951
+      ],
+      [
+       -122.3990218,
+       37.7810511
+      ],
+      [
+       -122.3988886,
+       37.7811183
+      ],
+      [
+       -122.3987551,
+       37.7811727
+      ],
+      [
+       -122.3986594,
+       37.7811983
+      ],
+      [
+       -122.3985666,
+       37.7812131
+      ],
+      [
+       -122.398501,
+       37.7812155
+      ],
+      [
+       -122.3984275,
+       37.7812065
+      ],
+      [
+       -122.398383,
+       37.7811923
+      ],
+      [
+       -122.3983652,
+       37.7812063
+      ],
+      [
+       -122.3983746,
+       37.781215
+      ],
+      [
+       -122.3983367,
+       37.7812449
+      ],
+      [
+       -122.3982471,
+       37.7811734
+      ],
+      [
+       -122.3982621,
+       37.7811616
+      ],
+      [
+       -122.3982733,
+       37.7811693
+      ],
+      [
+       -122.3982951,
+       37.7811521
+      ],
+      [
+       -122.398268,
+       37.7811328
+      ],
+      [
+       -122.3984137,
+       37.7810178
+      ],
+      [
+       -122.3985606,
+       37.7809085
+      ],
+      [
+       -122.3985691,
+       37.7809141
+      ],
+      [
+       -122.3985746,
+       37.7809086
+      ],
+      [
+       -122.39857,
+       37.780905
+      ],
+      [
+       -122.3985848,
+       37.7808908
+      ],
+      [
+       -122.3987693,
+       37.7807669
+      ],
+      [
+       -122.3987694,
+       37.7807669
+      ],
+      [
+       -122.3987383,
+       37.7808034
+      ],
+      [
+       -122.3986483,
+       37.7808584
+      ],
+      [
+       -122.3986067,
+       37.7808907
+      ],
+      [
+       -122.3985447,
+       37.7809512
+      ],
+      [
+       -122.3984804,
+       37.7810399
+      ],
+      [
+       -122.3984448,
+       37.7811175
+      ],
+      [
+       -122.398448,
+       37.781123
+      ],
+      [
+       -122.3985075,
+       37.7811406
+      ],
+      [
+       -122.3985868,
+       37.7811503
+      ],
+      [
+       -122.3986698,
+       37.7811447
+      ],
+      [
+       -122.3987281,
+       37.7811339
+      ],
+      [
+       -122.3988227,
+       37.7811104
+      ],
+      [
+       -122.3989204,
+       37.7810787
+      ],
+      [
+       -122.3990346,
+       37.7810311
+      ],
+      [
+       -122.3991142,
+       37.7809922
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Eastern building, floors 11 to 13",
+    "stage": "entitled",
+    "height_ft": 171,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, with PDR space and a child care center",
+    "phase": "Phase II",
+    "illustrative": true,
+    "source": "illustrative: the level 11 floor plate traced from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, PDF pp. 361-367 (floor plans, sheets A20-A26); heights from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, draft Large Project Authorization (PDF pp. 242-243) and building section (PDF p. 356), approved Dec 12, 2019 and modified June 16, 2022 (Motion 21128)",
+    "note": "The eastern part of the 14-story, 185-ft office building (Phase II), floors 11 to 13, drawn as the level 11 plate up to 171 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3982066,
+       37.7812054
+      ],
+      [
+       -122.3982471,
+       37.7811734
+      ],
+      [
+       -122.3983367,
+       37.7812449
+      ],
+      [
+       -122.3982954,
+       37.7812775
+      ],
+      [
+       -122.3982849,
+       37.7812685
+      ],
+      [
+       -122.3982599,
+       37.7812918
+      ],
+      [
+       -122.3982404,
+       37.7812768
+      ],
+      [
+       -122.398129,
+       37.7813655
+      ],
+      [
+       -122.3981147,
+       37.7813541
+      ],
+      [
+       -122.3981236,
+       37.7813478
+      ],
+      [
+       -122.398119,
+       37.7813417
+      ],
+      [
+       -122.3980448,
+       37.7813609
+      ],
+      [
+       -122.3980081,
+       37.7813759
+      ],
+      [
+       -122.3980446,
+       37.7813189
+      ],
+      [
+       -122.3980908,
+       37.7812727
+      ],
+      [
+       -122.3981699,
+       37.7812102
+      ],
+      [
+       -122.3981927,
+       37.7812318
+      ],
+      [
+       -122.3982156,
+       37.7812132
+      ],
+      [
+       -122.3982066,
+       37.7812054
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Western building, floor 14",
+    "stage": "entitled",
+    "height_ft": 185,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, with PDR space, shops and an indoor public open space",
+    "phase": "Phase I",
+    "illustrative": true,
+    "source": "illustrative: the level 14 floor plate traced from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, PDF pp. 361-367 (floor plans, sheets A20-A26); heights from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, draft Large Project Authorization (PDF pp. 242-243) and building section (PDF p. 356), approved Dec 12, 2019 and modified June 16, 2022 (Motion 21128)",
+    "note": "The top floor of the western part of the building (Phase I), up to the 185-ft roof; the mechanical screen above it rises to 205 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3989658,
+       37.7805843
+      ],
+      [
+       -122.3990599,
+       37.7805089
+      ],
+      [
+       -122.3991022,
+       37.7805472
+      ],
+      [
+       -122.3991426,
+       37.7805956
+      ],
+      [
+       -122.3991696,
+       37.7806402
+      ],
+      [
+       -122.3991951,
+       37.7807096
+      ],
+      [
+       -122.399257,
+       37.7807186
+      ],
+      [
+       -122.3993153,
+       37.7807351
+      ],
+      [
+       -122.3993616,
+       37.7807559
+      ],
+      [
+       -122.3994082,
+       37.7807897
+      ],
+      [
+       -122.3992654,
+       37.7808966
+      ],
+      [
+       -122.3991714,
+       37.7809571
+      ],
+      [
+       -122.3990331,
+       37.7810289
+      ],
+      [
+       -122.3988993,
+       37.7810836
+      ],
+      [
+       -122.3987618,
+       37.7811238
+      ],
+      [
+       -122.3986302,
+       37.7811468
+      ],
+      [
+       -122.3985868,
+       37.7811479
+      ],
+      [
+       -122.3985263,
+       37.7811417
+      ],
+      [
+       -122.3984499,
+       37.7811211
+      ],
+      [
+       -122.3984832,
+       37.781041
+      ],
+      [
+       -122.3985472,
+       37.7809525
+      ],
+      [
+       -122.3985785,
+       37.7809204
+      ],
+      [
+       -122.3985857,
+       37.7809199
+      ],
+      [
+       -122.3985824,
+       37.7809165
+      ],
+      [
+       -122.398609,
+       37.7808923
+      ],
+      [
+       -122.3986504,
+       37.7808602
+      ],
+      [
+       -122.3987405,
+       37.7808052
+      ],
+      [
+       -122.3988826,
+       37.7806591
+      ],
+      [
+       -122.3989658,
+       37.7805843
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Eastern building, floor 14",
+    "stage": "entitled",
+    "height_ft": 185,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, with PDR space and a child care center",
+    "phase": "Phase II",
+    "illustrative": true,
+    "source": "illustrative: the level 14 floor plate traced from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, PDF pp. 361-367 (floor plans, sheets A20-A26); heights from the Planning Commission packet, Record No. 2005.0759ENX/OFA/VAR-02 (725 Harrison Street), hearing Dec 12, 2019, draft Large Project Authorization (PDF pp. 242-243) and building section (PDF p. 356), approved Dec 12, 2019 and modified June 16, 2022 (Motion 21128)",
+    "note": "The top floor of the eastern part of the building (Phase II), up to the 185-ft roof; the mechanical screen above it rises to 196.5 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3983246,
+       37.7813365
+      ],
+      [
+       -122.3984883,
+       37.7814642
+      ],
+      [
+       -122.3984131,
+       37.7815167
+      ],
+      [
+       -122.3983611,
+       37.7815456
+      ],
+      [
+       -122.3982741,
+       37.7815834
+      ],
+      [
+       -122.3982026,
+       37.7816019
+      ],
+      [
+       -122.3981389,
+       37.7816098
+      ],
+      [
+       -122.3980584,
+       37.781609
+      ],
+      [
+       -122.3980121,
+       37.7816032
+      ],
+      [
+       -122.3979433,
+       37.7815864
+      ],
+      [
+       -122.3979499,
+       37.7815806
+      ],
+      [
+       -122.3979423,
+       37.7815746
+      ],
+      [
+       -122.3979303,
+       37.7815823
+      ],
+      [
+       -122.3979039,
+       37.7815722
+      ],
+      [
+       -122.3978316,
+       37.7815341
+      ],
+      [
+       -122.3977947,
+       37.7815076
+      ],
+      [
+       -122.3978365,
+       37.781474
+      ],
+      [
+       -122.3979084,
+       37.7814282
+      ],
+      [
+       -122.3979915,
+       37.7813855
+      ],
+      [
+       -122.3980459,
+       37.7813632
+      ],
+      [
+       -122.398123,
+       37.7813434
+      ],
+      [
+       -122.3981104,
+       37.7813541
+      ],
+      [
+       -122.3981841,
+       37.7814129
+      ],
+      [
+       -122.3982626,
+       37.7813493
+      ],
+      [
+       -122.3982698,
+       37.7813453
+      ],
+      [
+       -122.3982738,
+       37.7813479
+      ],
+      [
+       -122.3983054,
+       37.7813235
+      ],
+      [
+       -122.3983191,
+       37.7813385
+      ],
+      [
+       -122.3983246,
+       37.7813365
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

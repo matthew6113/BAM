@@ -1,0 +1,66 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "598-brannan",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 3777 lots 045, 050, 051, 176 and 177",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273777045%27%2C+%273777050%27%2C+%273777051%27%2C+%273777176%27%2C+%273777177%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The four lots that the Planning Commission's June 6, 2019 approvals name (045, 050, 051 and 052), against their 195,467 sq ft (about 4.5 acres): the corner of 5th and Brannan streets and three lots on Bryant Street. Lot 052 has since been split into lots 176, the affordable housing site at 160 Freelon Street, and 177, which are drawn in its place. The Flower Mart is across 5th Street. 4.5 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 5
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3996187,
+       37.7774178
+      ],
+      [
+       -122.3989468,
+       37.7779498
+      ],
+      [
+       -122.3994231,
+       37.7783326
+      ],
+      [
+       -122.3987434,
+       37.7788662
+      ],
+      [
+       -122.3978755,
+       37.7781752
+      ],
+      [
+       -122.3985496,
+       37.7776385
+      ],
+      [
+       -122.3980753,
+       37.7772572
+      ],
+      [
+       -122.3987497,
+       37.7767244
+      ],
+      [
+       -122.3996187,
+       37.7774178
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

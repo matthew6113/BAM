@@ -212,6 +212,16 @@ GATEWAY_CROSSINGS_COMMON_BOX = "37.3568, -121.9367, 37.3535, -121.9318"  # unnum
 # 2020 (Motions 20726-20728, case 2016-014802) and its agenda of March 30, 2023 name the site.
 FRANKLIN_98_BLKLOTS = ["0836008", "0836009", "0836013"]
 
+# 598 Brannan Street: "Lots 045, 050, 051 & 052 on Assessor's Block 3777", as the Planning Commission's minutes of
+# June 6, 2019 (Motions 20459 and 20460, case 2012.0640) and of Dec 3, 2020 (Motion 20816) name the site. Lot 052 was
+# retired in 2025 and split into lots 176 (160 Freelon Street, the affordable housing site) and 177; both are drawn.
+BRANNAN_598_BLKLOTS = ["3777045", "3777050", "3777051", "3777176", "3777177"]
+
+# 725-765 Harrison Street: "Lots 117, 148, 149, and 152 in Assessor's Block 3762" (Planning Commission agenda of
+# Sept 24, 2026, case 2005.0759). The approvals' lots (106, 108, 109, 112, 116 and 117 in Motion 20597, Dec 12, 2019;
+# 148, 149 and 113 in Motion 21128, June 16, 2022) have since been merged into lots 149 and 152, which are drawn.
+HARRISON_725_BLKLOTS = ["3762149", "3762152"]
+
 
 def _sql_list(values) -> str:
     return ", ".join(f"'{v}'" for v in values)
@@ -808,6 +818,28 @@ SPECS: dict[str, dict] = {
                  "with a strip through to Market Street that the Planning Commission's May 28, 2020 approvals name, "
                  "against the approximately 23,750 sq ft in the approval and the Hub Plan EIR. One Oak's site (lots "
                  "001 to 005) is to the east, beyond 1546-1564 Market Street (lot 007); the two don't touch."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "598-brannan": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(BRANNAN_598_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3777 lots 045, 050, 051, 176 and 177",
+        "accuracy": "official",
+        "note": ("The four lots that the Planning Commission's June 6, 2019 approvals name (045, 050, 051 and 052), "
+                 "against their 195,467 sq ft (about 4.5 acres): the corner of 5th and Brannan streets and three lots "
+                 "on Bryant Street. Lot 052 has since been split into lots 176, the affordable housing site at 160 "
+                 "Freelon Street, and 177, which are drawn in its place. The Flower Mart is across 5th Street."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "725-harrison": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(HARRISON_725_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3762 lots 149 and 152",
+        "accuracy": "official",
+        "note": ("The site between Harrison and Perry streets, from 4th Street most of the way to 3rd Street, against the "
+                 "104,188 sq ft of the 2022 modified project: the office site (lot 152, which merged the lots of the "
+                 "2019 approval with lot 113 at 759 Harrison Street) and the lot to be given to the City for "
+                 "affordable housing (lot 149)."),
         "license": "ODC Public Domain Dedication and License (DataSF)",
     },
 }
