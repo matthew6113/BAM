@@ -1,0 +1,92 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "freedom-west",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 0783 lots 023, 024 and 025 and block 0770 lot 027",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%270783023%27%2C+%270783024%27%2C+%270783025%27%2C+%270770027%27%29&%24limit=5000",
+  "accuracy": "approximate",
+  "accuracyNote": "The four lots the Notice of Preparation and Draft EIR name for Freedom West 2.0 (case 2020-006887ENV), against the Draft EIR's 451,500 sq ft (10.37 acres): the whole block between McAllister and Fulton streets and most of the block to the north. Lot 0770/027 also takes in the corner of McAllister and Laguna streets at 870-880 McAllister Street, a separate 115-home senior housing project (case 2024-003742PRJ) that the Draft EIR leaves out of the site; the lot split approved in 2024 (case 2024-008030SUB) isn't in the parcel layer yet, so that corner, about 0.4 acres, is drawn as part of the site. Bethel A.M.E. Church and 967-973 Golden Gate Avenue are on their own lots and aren't drawn. 10.8 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 4
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4266945,
+        37.7791823
+       ],
+       [
+        -122.4236411,
+        37.7795713
+       ],
+       [
+        -122.4234903,
+        37.7788256
+       ],
+       [
+        -122.4265437,
+        37.7784366
+       ],
+       [
+        -122.4266945,
+        37.7791823
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.4267991,
+        37.7796996
+       ],
+       [
+        -122.4264455,
+        37.7797447
+       ],
+       [
+        -122.4264489,
+        37.7797873
+       ],
+       [
+        -122.4263227,
+        37.7798047
+       ],
+       [
+        -122.4263962,
+        37.7801765
+       ],
+       [
+        -122.4238296,
+        37.7805034
+       ],
+       [
+        -122.4236788,
+        37.7797578
+       ],
+       [
+        -122.4267322,
+        37.7793688
+       ],
+       [
+        -122.4267991,
+        37.7796996
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

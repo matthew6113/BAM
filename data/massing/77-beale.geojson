@@ -1,0 +1,193 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "77-beale",
+  "illustrative": true,
+  "summary": "Illustrative massing: the maximum envelope the EIR will study for the new tower, in one of its three positions (against Mission Street, the one the Notice of Preparation draws in 3D): a base up to 125 ft over the Tower Location Zone, a lower tower of 230 by 135 ft to 679 ft and an upper tower of 210 by 135 ft to 1,225 ft. The tower could instead stand against Main or Beale Street; its design isn't set. The historic Matson and PG&E buildings and 25 Beale Street are kept and not drawn.",
+  "note": "Maximum envelopes for environmental review, not a design.",
+  "sourceUrl": "https://ceqanet.lci.ca.gov/2025120794/Attachment/gufVD2",
+  "sourceLabel": "Notice of Preparation, 2025 (PDF)",
+  "georeference": {
+   "method": "Figure dimensions laid out from the Mission Street / Beale Street corner of the DataSF parcels, along Mission and Beale streets; towers centred between Beale and Main.",
+   "frontages_as_mapped": {
+    "mission_frontage_ft": 274.9,
+    "beale_frontage_ft": 552.9,
+    "corner_angle_deg": 89.66
+   }
+  },
+  "license": "Dimensions: from a public SF Planning document. Block: DataSF parcels (ODC-PDDL)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Tower base (maximum envelope)",
+    "stage": "entitlement",
+    "height_ft": 125.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, retail and lobbies (program not yet set)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the Tower Location Zone (the block's width by 229 ft 3 in from Mission Street) in the Notice of Preparation of an EIR, Matson Block Project (case 2021-012562ENV, Dec 17, 2025), Figure 4 (PDF p. 17), at the 125-ft maximum base height in Notice of Preparation of an EIR, Matson Block Project (case 2021-012562ENV, Dec 17, 2025), Figure 6 (PDF p. 23)",
+    "note": "The largest base the EIR will study (275 ft 6 in by 229 ft 3 in, up to 125 ft), not a design."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3957486,
+       37.7913496
+      ],
+      [
+       -122.3958033,
+       37.7913059
+      ],
+      [
+       -122.3963631,
+       37.7917523
+      ],
+      [
+       -122.3956925,
+       37.7922882
+      ],
+      [
+       -122.3951328,
+       37.7918417
+      ],
+      [
+       -122.3951875,
+       37.7917979
+      ],
+      [
+       -122.3955172,
+       37.7920609
+      ],
+      [
+       -122.3960782,
+       37.7916125
+      ],
+      [
+       -122.3957486,
+       37.7913496
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Lower tower (maximum envelope)",
+    "stage": "entitlement",
+    "height_ft": 679.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, possibly with institutional, hotel or residential floors",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: 230 by 135 ft, against Mission Street and centred between Beale and Main streets, up to 679 ft, from Notice of Preparation of an EIR, Matson Block Project (case 2021-012562ENV, Dec 17, 2025), Figure 6 (PDF p. 23) (\u201cjustified on Mission Street\u201d)",
+    "note": "The widest the tower's lower floors could be (230 by 135 ft), to 679 ft."
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3955416,
+        37.7920414
+       ],
+       [
+        -122.3955172,
+        37.7920609
+       ],
+       [
+        -122.3951875,
+        37.7917979
+       ],
+       [
+        -122.3952119,
+        37.7917785
+       ],
+       [
+        -122.3955416,
+        37.7920414
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3957486,
+        37.7913496
+       ],
+       [
+        -122.3960782,
+        37.7916125
+       ],
+       [
+        -122.3960538,
+        37.791632
+       ],
+       [
+        -122.3957242,
+        37.7913691
+       ],
+       [
+        -122.3957486,
+        37.7913496
+       ]
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Upper tower (maximum envelope)",
+    "stage": "entitlement",
+    "height_ft": 1225.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, possibly with institutional, hotel or residential floors and an observation deck near the top",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: 210 by 135 ft, against Mission Street and centred between Beale and Main streets, up to 1,225 ft, from Notice of Preparation of an EIR, Matson Block Project (case 2021-012562ENV, Dec 17, 2025), Figure 6 (PDF p. 23) (\u201cjustified on Mission Street\u201d)",
+    "note": "Up to 1,225 ft, with an architectural crown of up to 75 ft (Notice of Preparation). The EIR will study the tower against Mission, Main or Beale Street; its final position and shape aren't set."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3957242,
+       37.7913691
+      ],
+      [
+       -122.3960538,
+       37.791632
+      ],
+      [
+       -122.3955416,
+       37.7920414
+      ],
+      [
+       -122.3952119,
+       37.7917785
+      ],
+      [
+       -122.3957242,
+       37.7913691
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

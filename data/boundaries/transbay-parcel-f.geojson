@@ -1,0 +1,62 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "transbay-parcel-f",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 3721 lots 016, 135, 136 and 138",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273721016%27%2C+%273721135%27%2C+%273721136%27%2C+%273721138%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The four lots of Transbay Parcel F named in the Planning Commission's approvals (Jan 9, 2020), against the 32,229 sq ft (0.74 acres) in Motion 20616. The west edge follows the curved line of the Transit Center's bus ramp property (lots 134 and 137), which isn't part of the site; the strip of lot 136 along Natoma Street reaches east behind 540 Howard Street (lot 015) to 530 Howard Street. 0.7 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 4
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3980946,
+       37.7876951
+      ],
+      [
+       -122.3973878,
+       37.7882518
+      ],
+      [
+       -122.3972661,
+       37.7881542
+      ],
+      [
+       -122.3974847,
+       37.7879797
+      ],
+      [
+       -122.397207,
+       37.7877557
+      ],
+      [
+       -122.3975243,
+       37.7875059
+      ],
+      [
+       -122.3979473,
+       37.7876299
+      ],
+      [
+       -122.3980946,
+       37.7876951
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

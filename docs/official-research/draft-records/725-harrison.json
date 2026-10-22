@@ -1,0 +1,136 @@
+{
+ "id": "725-harrison",
+ "name": "725-765 Harrison Street",
+ "aliases": [
+  "725 Harrison Street",
+  "4th and Harrison",
+  "Central SoMa Key Development Site 2"
+ ],
+ "city": "San Francisco",
+ "county": "San Francisco",
+ "subregion": "San Francisco",
+ "category": "buildings",
+ "approxCenter": [
+  -122.3984,
+  37.7813
+ ],
+ "camera": {
+  "center": [
+   -122.3986,
+   37.7812
+  ],
+  "zoom": 16.5,
+  "pitch": 58,
+  "bearing": 135
+ },
+ "acres": 2.39,
+ "acresNote": "Planning's record of the 2022 modification (2005.0759ENV-02): seven lots on Assessor's Block 3762 \"totaling 104,188 square feet (formerly 102,067 square feet)\", including the 15,000 sq ft lot to be given to the City for affordable housing. The 2019 approval's six lots came to 102,067 sq ft (2.34 acres). The parcels drawn, lots 152 and 149, come to about 2.4 acres.",
+ "program": {
+  "homes": null,
+  "affordableHomes": null,
+  "affordablePct": null,
+  "officeLabSqft": 810000,
+  "commercialSqftTotal": null,
+  "retailSqft": 3900,
+  "hotelKeys": null,
+  "openSpaceAcres": null,
+  "notes": "As modified on June 16, 2022 (Motion 21128): a 14-story, 185-ft building of about 981,000 gross sq ft with 810,000 sq ft of office, 3,900 sq ft of retail in four micro-retail spaces, 29,300 sq ft of PDR space in two spaces, a 3,000 sq ft child care center, 16,700 sq ft of indoor and outdoor privately owned public open space including a mid-block alley, 116 underground parking spaces and 300 bicycle parking spaces. It is one structure with two parts: a larger oval-shaped western part on Harrison and 4th streets (Phase I, 505,000 sq ft of office allocated in 2019) and a smaller eastern part along the mid-block alley (Phase II, 305,000 sq ft allocated in 2022), over a six-story, 80-ft podium; mechanical screens rise to 205 and 196.5 ft. In 2019 the Commission approved 770,000 sq ft of office in about 935,000 gross sq ft; the 2022 modification added lot 113 at 759 Harrison Street, a four-story building with three unauthorized homes that it allowed to be demolished. The developer is to give the City a 15,000 sq ft lot (lot 149) for affordable housing, which the Mayor's Office of Housing will develop later; the 2019 approval anticipated an 85-ft building with up to 144 homes there, its final design to be decided by that office."
+ },
+ "developer": "Boston Properties, LP (the project sponsor named in the 2019 approval and later Planning records)",
+ "publicPartners": [
+  "San Francisco Planning Commission",
+  "San Francisco Zoning Administrator (variances)",
+  "Mayor's Office of Housing and Community Development (affordable housing site)",
+  "San Francisco Department of Building Inspection"
+ ],
+ "stage": "entitled",
+ "stageNote": "The Planning Commission approved the project on Dec 12, 2019 and approved a modified project on June 16, 2022. Their three-year terms ran out on June 16, 2025; the Commission's Sept 24, 2026 agenda included an 18-month extension to March 24, 2028, and Planning closed the extension record as approved on Sept 29, 2026. The sponsor's application for it said it was processing the site permit in 2026. DBI has issued none of the site or demolition permits filed in 2019 and 2020, and Planning records describe part of the site as a parking lot in 2025.",
+ "timeline": [
+  {
+   "date": "2005-08-12",
+   "event": "SF Planning opens case 2005.0759; an early proposal for 572 homes in six buildings of up to 85 ft is dropped in 2013."
+  },
+  {
+   "date": "2017-12-12",
+   "event": "Boston Properties applies for a Large Project Authorization for an office building and an affordable housing site."
+  },
+  {
+   "date": "2018-05-10",
+   "event": "Planning Commission certifies the Central SoMa Plan EIR (Motion 20182); the plan names the site Key Development Site 2, \"4th and Harrison\"."
+  },
+  {
+   "date": "2019-11-15",
+   "event": "Site permit applications for the western and eastern buildings and their basements are filed with DBI; none has been issued."
+  },
+  {
+   "date": "2019-12-02",
+   "event": "The Mayor's Office of Housing and Community Development conditionally accepts the 15,000 sq ft affordable housing land dedication."
+  },
+  {
+   "date": "2019-12-04",
+   "event": "Planning Department finds the project covered by the Central SoMa Plan EIR (community plan evaluation)."
+  },
+  {
+   "date": "2019-12-12",
+   "event": "Planning Commission approves the project (20597, Large Project Authorization) and 505,000 sq ft of office allocation for Phase I (20598); the Zoning Administrator indicates intent to grant the variances."
+  },
+  {
+   "date": "2022-06-16",
+   "event": "Planning Commission approves the modified project taking in 759 Harrison Street (Motion 21128), 305,000 sq ft of office allocation for Phase II, for 810,000 sq ft in all (Motion 21129), and demolition of three unauthorized homes at 759 Harrison Street (Motion 21130)."
+  },
+  {
+   "date": "2022-12-19",
+   "event": "The office site's lots are merged into one parcel, lot 152."
+  },
+  {
+   "date": "2023-04-03",
+   "event": "The sponsor applies to move the affordable housing land dedication to 560 Brannan Street; the application is withdrawn on April 22, 2026."
+  },
+  {
+   "date": "2026-04-06",
+   "event": "The sponsor applies to extend the approvals, whose three-year terms ended on June 16, 2025."
+  },
+  {
+   "date": "2026-09-24",
+   "event": "The Planning Commission's agenda includes an 18-month extension of the approvals to March 24, 2028; Planning closes the record as approved on Sept 29, 2026."
+  }
+ ],
+ "nextMilestone": "DBI issuing the site permit; the extended approvals run to March 24, 2028.",
+ "summary": "A 14-story, 185-ft office building of about 981,000 sq ft at 4th and Harrison streets, Central SoMa's \"4th and Harrison\" key site, with 810,000 sq ft of office space, PDR space, shops and a child care center, and a lot given to the City for affordable housing. Approved in 2019 and modified in 2022, its approvals were extended in September 2026 to March 2028; no permit has been issued.",
+ "massingNotes": "Added at Matthew's request (2026-10-19). Boundary: DataSF parcels (acdm-wktn), block 3762 lots 152 (the office site) and 149 (the affordable housing lot), which replaced the approvals' lots after mergers in 2021 and 2022; 2.4 acres as drawn; official. Massing (pipeline/bam_pipeline/sites/massing_725_harrison.py): the office floor plates traced from the December 2019 plan set (packet pp. 361-367, scanned floor plans, blue floor fill traced from a 144-dpi render), registered to the 4th Street, Harrison Street and Perry Street property lines and the notch around 759 Harrison Street (RMS 0.1 m), and drawn in four tiers to the floor levels in the building section: level 3 to 80 ft, level 7 to 132 ft, level 11 to 171 ft and level 14 to the 185-ft roof, each split into the western (Phase I) and eastern (Phase II) parts. The 2022 modification, whose plans weren't available, takes in 759 Harrison Street, which the 2019 plans leave out; the volumes don't include that change. Illustrative, drawn as entitled. Nothing is drawn on the affordable housing lot.",
+ "officialLinks": [
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2005.0759ENXOFAVAR.pdf",
+  "https://sfplanning.org/sites/default/files/agendas/2026-09/20260924_cpc%20%28ID%201588046%29.pdf"
+ ],
+ "sources": [
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2005.0759ENXOFAVAR.pdf",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20191212_cal_min.pdf",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20220616_cal_min.pdf",
+  "https://sfplanning.org/sites/default/files/agendas/2022-06/20220616_cal.pdf",
+  "https://sfplanning.org/sites/default/files/agendas/2026-09/20260924_cpc%20%28ID%201588046%29.pdf",
+  "https://sfplanning.org/sites/default/files/documents/citywide/Central_Corridor/2018CentralSoMaPlan.pdf",
+  "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2005.0759",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2005.0759ENV-02",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2005.0759ENX-02",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2005.0759ENX-03",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2005.0759CUA-03",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2023-002967ENX",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2025-005002MIS",
+  "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=3762117",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201911157378",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201911157381",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201911157380",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201911157382",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202001313234",
+  "https://data.sf.gov/d/acdm-wktn"
+ ],
+ "verify": [
+  "the June 2022 plans: the massing is traced from the December 2019 plans, which leave out 759 Harrison Street, now part of the site (the 2022 packet is on a host that couldn't be opened here)",
+  "the motion number of the Sept 24, 2026 extension, and the extensions of the office allocation and variances (Planning's records OFA-03 \"Accepted\" and VAR-04 \"Action Pending\" in Oct 2026)",
+  "the Dec 12, 2019 minutes record the approvals as Resolutions 20597 and 20598; the 2022 and 2026 agendas call 20597 a motion",
+  "DBI's 2019 site permit applications describe 15-story buildings; the approvals say 14 stories",
+  "when the affordable housing lot (lot 149) goes to the City and what the Mayor's Office of Housing will build on it (2019: an 85-ft building with up to 144 homes, anticipated)",
+  "the current owner (Barrett Block Partners in the 2019 approval)"
+ ],
+ "lastVerified": "2026-10-22"
+}

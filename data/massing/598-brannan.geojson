@@ -1,0 +1,583 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "598-brannan",
+  "illustrative": true,
+  "summary": "Illustrative massing: the three approved office buildings traced from the 2019 plan set's site and roof plans and drawn to the roof heights in the approval: Building 1 at 160 ft on 5th and Brannan streets, Building 2 at 185 ft on 5th and Welsh streets and Building 3 at 150 ft on Bryant Street, each with its lower floors to where it steps back. The affordable housing site at 160 Freelon Street, under construction, is outlined. Terraces, mechanical screens and the public park are not drawn.",
+  "note": "The approved buildings as simple volumes at their roof heights, not the final designs.",
+  "sourceUrl": "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2012.0640ENX.pdf",
+  "sourceLabel": "Planning Commission packet, 2019 (PDF)",
+  "approvalSourceUrl": "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20190606_cal_min.pdf",
+  "georeference": {
+   "page_115": {
+    "scale_m_per_unit": 0.33976,
+    "rotation_deg": 45.276,
+    "rms_m": 0.19,
+    "controls": [
+     {
+      "label": "5th and Brannan streets (lot 045)",
+      "residual_m": 0.25
+     },
+     {
+      "label": "5th Street at Welsh Street (lot 045)",
+      "residual_m": 0.21
+     },
+     {
+      "label": "Brannan Street, east corner of lot 045",
+      "residual_m": 0.23
+     },
+     {
+      "label": "Bryant Street, west corner of lot 050",
+      "residual_m": 0.2
+     },
+     {
+      "label": "lot 050, 160 ft from Bryant Street",
+      "residual_m": 0.17
+     },
+     {
+      "label": "Bryant Street, east corner of former lot 052 (lot 177)",
+      "residual_m": 0.13
+     },
+     {
+      "label": "east corner of former lot 052 at Freelon Street (lot 176)",
+      "residual_m": 0.13
+     }
+    ]
+   },
+   "page_116": {
+    "scale_m_per_unit": 0.34096,
+    "rotation_deg": 45.249,
+    "rms_m": 0.16,
+    "controls": [
+     {
+      "label": "5th and Brannan streets (lot 045)",
+      "residual_m": 0.12
+     },
+     {
+      "label": "Brannan Street, east corner of lot 045",
+      "residual_m": 0.15
+     },
+     {
+      "label": "Bryant Street, west corner of lot 050",
+      "residual_m": 0.18
+     },
+     {
+      "label": "lot 050, 160 ft from Bryant Street",
+      "residual_m": 0.2
+     },
+     {
+      "label": "Bryant Street, east corner of former lot 052 (lot 177)",
+      "residual_m": 0.12
+     },
+     {
+      "label": "east corner of former lot 052 at Freelon Street (lot 176)",
+      "residual_m": 0.15
+     }
+    ]
+   },
+   "method": "Lot corners drawn on each plan (lots 045, 050 and the former 052, now 176 and 177) matched to DataSF parcel vertices by a least-squares similarity."
+  },
+  "license": "Footprints: traced from a public SF Planning document. Georeference and the affordable housing lot: DataSF parcels (ODC-PDDL)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building 1",
+    "stage": "entitled",
+    "height_ft": 160,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office (289,087 sq ft)",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: the roof outline traced from the Planning Commission packet, Record No. 2012.0640B/ENX (598 Brannan Street), hearing June 6, 2019, PDF p. 116 (roof plan); roof height from the Planning Commission packet, Record No. 2012.0640B/ENX (598 Brannan Street), hearing June 6, 2019, draft Large Project Authorization (PDF p. 9), approved as Motion 20459",
+    "note": "Building 1, at 5th and Brannan streets: an 11-story office building, 160 ft to the roof (180 ft with the rooftop mechanical screen), with 289,087 sq ft of office and 22,831 sq ft of retail and PDR space. Its upper floors are drawn as the roof outline, down to the ground; their terraces and the mechanical screen are not."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3987502,
+       37.776782
+      ],
+      [
+       -122.3990883,
+       37.7770515
+      ],
+      [
+       -122.3985224,
+       37.7774987
+      ],
+      [
+       -122.3981843,
+       37.7772292
+      ],
+      [
+       -122.3987502,
+       37.776782
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building 1 base",
+    "stage": "entitled",
+    "height_ft": 31,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, with shops and PDR space on the ground floor",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: the ground-floor outline traced from the Planning Commission packet, Record No. 2012.0640B/ENX (598 Brannan Street), hearing June 6, 2019, PDF p. 115 (site plan), less the upper floors, up to level 3 (31 ft) in the elevations of the same packet",
+    "note": "The lower floors of Building 1 where they reach beyond its upper floors, up to level 3 (about 31 ft)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3990625,
+       37.7770973
+      ],
+      [
+       -122.399053,
+       37.7770898
+      ],
+      [
+       -122.3989817,
+       37.7771618
+      ],
+      [
+       -122.3989719,
+       37.7771539
+      ],
+      [
+       -122.3989078,
+       37.7772201
+      ],
+      [
+       -122.3988982,
+       37.7772122
+      ],
+      [
+       -122.3988363,
+       37.7772764
+      ],
+      [
+       -122.3988267,
+       37.7772688
+      ],
+      [
+       -122.3987608,
+       37.7773365
+      ],
+      [
+       -122.3987509,
+       37.7773288
+      ],
+      [
+       -122.3986484,
+       37.7774099
+      ],
+      [
+       -122.3986359,
+       37.7774097
+      ],
+      [
+       -122.3990889,
+       37.7770515
+      ],
+      [
+       -122.3987501,
+       37.7767815
+      ],
+      [
+       -122.3982216,
+       37.7771992
+      ],
+      [
+       -122.3982007,
+       37.7771765
+      ],
+      [
+       -122.3982977,
+       37.7770849
+      ],
+      [
+       -122.3987522,
+       37.7767254
+      ],
+      [
+       -122.3991306,
+       37.7770271
+      ],
+      [
+       -122.3990625,
+       37.7770973
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building 2",
+    "stage": "entitled",
+    "height_ft": 185,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office (422,049 sq ft)",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: the roof outline traced from the Planning Commission packet, Record No. 2012.0640B/ENX (598 Brannan Street), hearing June 6, 2019, PDF p. 116 (roof plan); roof height from the Planning Commission packet, Record No. 2012.0640B/ENX (598 Brannan Street), hearing June 6, 2019, draft Large Project Authorization (PDF p. 9), approved as Motion 20459",
+    "note": "Building 2, at 5th and Welsh streets: a 13-story office building, 185 ft to the roof (205 ft with the rooftop mechanical screen), using the 25-ft height bonus for the affordable housing site and the park, with 422,049 sq ft of office and 27,036 sq ft of retail and PDR space. Its upper floors are drawn as the roof outline, down to the ground; their terraces and the mechanical screen are not."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3987607,
+       37.7779793
+      ],
+      [
+       -122.3984789,
+       37.7777547
+      ],
+      [
+       -122.3991862,
+       37.7771957
+      ],
+      [
+       -122.399468,
+       37.7774202
+      ],
+      [
+       -122.3987607,
+       37.7779793
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building 2 base",
+    "stage": "entitled",
+    "height_ft": 73,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, with shops and PDR space on the ground floor",
+    "phase": "Phase 1",
+    "illustrative": true,
+    "source": "illustrative: the ground-floor outline traced from the Planning Commission packet, Record No. 2012.0640B/ENX (598 Brannan Street), hearing June 6, 2019, PDF p. 115 (site plan), less the upper floors, up to level 6 (73 ft) in the elevations of the same packet",
+    "note": "The lower floors of Building 2 where they reach beyond its upper floors, up to level 6 (about 73 ft)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3988909,
+       37.7779918
+      ],
+      [
+       -122.3988638,
+       37.7779702
+      ],
+      [
+       -122.3988372,
+       37.7779913
+      ],
+      [
+       -122.3987856,
+       37.7779602
+      ],
+      [
+       -122.3994685,
+       37.77742
+      ],
+      [
+       -122.3991861,
+       37.7771952
+      ],
+      [
+       -122.3986153,
+       37.7776463
+      ],
+      [
+       -122.3986151,
+       37.7776242
+      ],
+      [
+       -122.3987621,
+       37.7775063
+      ],
+      [
+       -122.3987497,
+       37.7774965
+      ],
+      [
+       -122.3988141,
+       37.7774313
+      ],
+      [
+       -122.3988234,
+       37.7774387
+      ],
+      [
+       -122.3988905,
+       37.77737
+      ],
+      [
+       -122.3989003,
+       37.7773778
+      ],
+      [
+       -122.3989678,
+       37.7773117
+      ],
+      [
+       -122.3989765,
+       37.7773185
+      ],
+      [
+       -122.3990381,
+       37.7772533
+      ],
+      [
+       -122.3990479,
+       37.7772611
+      ],
+      [
+       -122.3991125,
+       37.7771926
+      ],
+      [
+       -122.3991234,
+       37.7772013
+      ],
+      [
+       -122.399187,
+       37.7771355
+      ],
+      [
+       -122.3992148,
+       37.7771576
+      ],
+      [
+       -122.3992549,
+       37.7771258
+      ],
+      [
+       -122.399619,
+       37.7774157
+      ],
+      [
+       -122.3988909,
+       37.7779918
+      ]
+     ],
+     [
+      [
+       -122.3987621,
+       37.7775063
+      ],
+      [
+       -122.3987635,
+       37.7775074
+      ],
+      [
+       -122.3987644,
+       37.7775045
+      ],
+      [
+       -122.3987621,
+       37.7775063
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building 3",
+    "stage": "entitled",
+    "height_ft": 150,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office (211,601 sq ft)",
+    "phase": "Phase 2",
+    "illustrative": true,
+    "source": "illustrative: the roof outline traced from the Planning Commission packet, Record No. 2012.0640B/ENX (598 Brannan Street), hearing June 6, 2019, PDF p. 116 (roof plan); roof height from the Planning Commission packet, Record No. 2012.0640B/ENX (598 Brannan Street), hearing June 6, 2019, draft Large Project Authorization (PDF p. 9), approved as Motion 20459",
+    "note": "Building 3, mid-block on Bryant Street: a 10-story office building, 150 ft to the roof (170 ft with the rooftop mechanical screen), with 211,601 sq ft of office, 11,054 sq ft of retail and PDR space and a 5,546 sq ft child care center. Its upper floors are drawn as the roof outline, down to the ground; their terraces and the mechanical screen are not."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3985626,
+       37.7786688
+      ],
+      [
+       -122.3991455,
+       37.7782081
+      ],
+      [
+       -122.3993257,
+       37.778348
+      ],
+      [
+       -122.3987427,
+       37.7788088
+      ],
+      [
+       -122.3985626,
+       37.7786688
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building 3 base",
+    "stage": "entitled",
+    "height_ft": 76,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office, with PDR space and a child care center on the ground floor",
+    "phase": "Phase 2",
+    "illustrative": true,
+    "source": "illustrative: the ground-floor outline traced from the Planning Commission packet, Record No. 2012.0640B/ENX (598 Brannan Street), hearing June 6, 2019, PDF p. 115 (site plan), less the upper floors, up to level 6 (76 ft) in the elevations of the same packet",
+    "note": "The lower floors of Building 3 where they reach beyond its upper floors, up to level 6 (about 76 ft)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3991434,
+       37.7782091
+      ],
+      [
+       -122.3985622,
+       37.7786691
+      ],
+      [
+       -122.398743,
+       37.7788092
+      ],
+      [
+       -122.3993225,
+       37.7783512
+      ],
+      [
+       -122.3993595,
+       37.7783805
+      ],
+      [
+       -122.3987547,
+       37.778859
+      ],
+      [
+       -122.398454,
+       37.7786196
+      ],
+      [
+       -122.3985766,
+       37.7785226
+      ],
+      [
+       -122.3985553,
+       37.7785056
+      ],
+      [
+       -122.3987102,
+       37.7783831
+      ],
+      [
+       -122.3987261,
+       37.7783958
+      ],
+      [
+       -122.3988017,
+       37.7783354
+      ],
+      [
+       -122.3988221,
+       37.7783519
+      ],
+      [
+       -122.399074,
+       37.778154
+      ],
+      [
+       -122.3991434,
+       37.7782091
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "block",
+    "label": "160 Freelon Street (affordable housing)",
+    "stage": "construction",
+    "height_ft": null,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (85, all affordable)",
+    "phase": null,
+    "illustrative": false,
+    "source": "DataSF Parcels \u2013 Active and Retired, block 3777 lot 176 (the dedicated affordable housing site)",
+    "note": "The lot the project dedicated to the City for affordable housing, where a nine-story building with 85 affordable homes has been under construction since July 2025 (DBI permit 202209283327). Its height in feet isn't in the records read, so the lot is outlined, not raised."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3982723,
+       37.7784911
+      ],
+      [
+       -122.3978755,
+       37.7781752
+      ],
+      [
+       -122.3980762,
+       37.7780166
+      ],
+      [
+       -122.3984734,
+       37.7783332
+      ],
+      [
+       -122.3982723,
+       37.7784911
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

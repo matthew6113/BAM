@@ -1,0 +1,50 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "77-beale",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 3711 lots 005 to 014 and 019",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273711005%27%2C+%273711006%27%2C+%273711007%27%2C+%273711008%27%2C+%273711009%27%2C+%273711010%27%2C+%273711011%27%2C+%273711012%27%2C+%273711013%27%2C+%273711014%27%2C+%273711019%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The whole block bounded by Market, Main, Mission and Beale streets, the eleven lots the Notice of Preparation names, against its 151,390 sq ft (3.47 acres). 3.5 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 11
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3971534,
+       37.7923827
+      ],
+      [
+       -122.3964727,
+       37.7929105
+      ],
+      [
+       -122.3951327,
+       37.7918418
+      ],
+      [
+       -122.3958033,
+       37.7913059
+      ],
+      [
+       -122.3971534,
+       37.7923827
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

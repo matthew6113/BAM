@@ -1,0 +1,109 @@
+{
+ "id": "sf-gateway",
+ "name": "San Francisco Gateway",
+ "aliases": [
+  "SF Gateway",
+  "San Francisco Gateway Project",
+  "749 Toland Street and 2000 McKinnon Avenue"
+ ],
+ "city": "San Francisco",
+ "county": "San Francisco",
+ "subregion": "San Francisco",
+ "category": "buildings",
+ "approxCenter": [
+  -122.398,
+  37.7418
+ ],
+ "camera": {
+  "center": [
+   -122.398,
+   37.7418
+  ],
+  "zoom": 15.7,
+  "pitch": 55,
+  "bearing": 35
+ },
+ "acres": 17.1,
+ "acresNote": "About 743,800 sq ft (17.1 acres): Assessor's Block 5284A, Lot 008, and Block 5287, Lot 002, with Selby Street and portions of the surrounding streets (Draft EIR; Planning Commission agenda, Sept 25, 2025). The San Francisco Gateway Special Use District, drawn as the boundary, measures about 17.2 acres. The approval includes a lot line adjustment dedicating about 3.9 acres to the City for streets.",
+ "program": {
+  "homes": null,
+  "affordableHomes": null,
+  "affordablePct": null,
+  "officeLabSqft": null,
+  "commercialSqftTotal": 1646000,
+  "retailSqft": 8400,
+  "hotelKeys": null,
+  "openSpaceAcres": null,
+  "notes": "As approved (Planning Commission, Sept 25, 2025): two buildings up to 97 ft (115 ft with rooftop structures), three stories plus an active roof, totaling 1,646,000 gross sq ft of enclosed floor area, or 2,160,000 sq ft with the active roofs. Up to 1,637,600 sq ft of production, distribution and repair (PDR) and other uses allowed in the PDR-2 district and the special use district, and about 8,400 sq ft of retail. Each building has a one-way ramp system that brings trucks as large as tractor-trailers to every floor, 36 loading docks at ground level, a logistics yard and roof-level parking and staging under a solar array; up to 1,125 parking spaces in all. No housing and no public open space. The four existing one-story warehouses (about 448,000 sq ft, built for the military around 1943) would be demolished."
+ },
+ "developer": "Prologis, L.P.",
+ "publicPartners": [
+  "San Francisco Planning Commission",
+  "San Francisco Board of Supervisors",
+  "City and County of San Francisco (development agreement)"
+ ],
+ "stage": "entitled",
+ "stageNote": "Approved. The Planning Commission certified the Final EIR and approved the conditional use authorization on Sept 25, 2025; the approval became final on Oct 28, 2025 with no appeal of the EIR, and the ordinances creating the San Francisco Gateway Special Use District and approving the development agreement took effect on Dec 12, 2025. The site's height district is now 97-X. No building permit for the new buildings appears in DBI's records as of Oct 19, 2026.",
+ "timeline": [
+  {
+   "date": "2015-09-18",
+   "event": "The project application is filed with the Planning Department (case 2015-012491)."
+  },
+  {
+   "date": "2022-03-09",
+   "event": "The notice of preparation of an EIR and the initial study are published."
+  },
+  {
+   "date": "2023-08-02",
+   "event": "The Draft EIR is published: two three-story PDR buildings, 97 ft tall, about 2,160,000 sq ft including active roofs."
+  },
+  {
+   "date": "2025-05-07",
+   "event": "The Responses to Comments are published, completing the Final EIR; they give the enclosed floor area as about 1,646,000 sq ft."
+  },
+  {
+   "date": "2025-09-25",
+   "event": "The Planning Commission certifies the Final EIR and approves the conditional use authorization; the same hearing takes up the special use district and height change to 97-X (Board File 250426), the development agreement (Board File 250427) and the design standards and guidelines."
+  },
+  {
+   "date": "2025-10-28",
+   "event": "The approval becomes final with no appeal of the EIR."
+  },
+  {
+   "date": "2025-12-12",
+   "event": "The ordinances creating the San Francisco Gateway Special Use District and approving the development agreement with Prologis take effect."
+  }
+ ],
+ "nextMilestone": "Building permits and demolition of the existing warehouses. The Draft EIR estimates about 31 months of construction, with Building A starting about four months before Building B.",
+ "summary": "Two three-story industrial buildings for production, distribution and repair businesses on a 17-acre Bayview site split by the Interstate 280 viaduct. Truck ramps reach every floor, and the roofs hold parking, staging and solar panels. About 1.65 million sq ft of enclosed space, approved in 2025; construction hasn't started.",
+ "massingNotes": "Added at Matthew's request (2026-10-19). Boundary: the San Francisco Gateway Special Use District in DataSF's zoning layer (5yf5-ms5f), about 17.2 acres, which takes in the two lots, Selby Street and parts of the surrounding streets. Massing (pipeline/bam_pipeline/sites/massing_sf_gateway.py): each building drawn over its whole lot (DataSF parcels 5284A/008 and 5287/002) at 97 ft, from the Draft EIR (Section 2.D.1, Table 2.D-1). The site plan and floor plans show each building nearly filling its lot, with sidewalks at the edges and rounded ramp corners; those edges aren't traced. Rooftop structures to 115 ft aren't drawn. Illustrative, drawn as entitled.",
+ "officialLinks": [
+  "https://ceqanet.lci.ca.gov/Project/2022030286",
+  "https://ceqanet.lci.ca.gov/2022030286/5/Attachment/rlRYl2"
+ ],
+ "sources": [
+  "https://ceqanet.lci.ca.gov/2022030286/2/Attachment/fYSuZM",
+  "https://ceqanet.lci.ca.gov/2022030286/2",
+  "https://ceqanet.lci.ca.gov/2022030286/1",
+  "https://ceqanet.lci.ca.gov/2022030286/3/Attachment/hJS7Ux",
+  "https://ceqanet.lci.ca.gov/2022030286/4/Attachment/k7ZK1B",
+  "https://ceqanet.lci.ca.gov/2022030286/5/Attachment/rlRYl2",
+  "https://ceqanet.lci.ca.gov/Project/2022030286",
+  "https://sfplanning.org/sites/default/files/agendas/2025-09/20250925_cpc%20%28ID%201533917%29.pdf",
+  "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2015-012491PRJ",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2015-012491CUA",
+  "https://data.sf.gov/resource/i98e-djp9.json?block=5287&lot=002",
+  "https://data.sf.gov/resource/i98e-djp9.json?block=5284A&lot=008",
+  "https://data.sf.gov/d/h9wh-cg3m",
+  "https://data.sf.gov/d/5yf5-ms5f",
+  "https://data.sf.gov/d/acdm-wktn"
+ ],
+ "verify": [
+  "the Planning Commission's motion numbers and votes of Sept 25, 2025, and the Board's ordinance numbers (the minutes and Board files are on City sites this research couldn't reach)",
+  "the development agreement's public benefits and term (Board File 250427; the agenda mentions workforce, street improvements and Bayview small businesses)",
+  "the building footprints in the adopted design standards and guidelines, which weren't available; the map draws each building over its whole lot",
+  "the tenants, which the EIR doesn't name",
+  "the City's development pipeline (2026 Q2) still describes the 2015 application's four buildings and 1,091,790 sq ft"
+ ],
+ "lastVerified": "2026-10-19"
+}

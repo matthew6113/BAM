@@ -1,0 +1,112 @@
+{
+  "id": "transbay-parcel-f",
+  "name": "Transbay Parcel F",
+  "aliases": [
+    "542-550 Howard Street",
+    "542-550 Howard Street (Transbay Parcel F)",
+    "Parcel F Tower"
+  ],
+  "city": "San Francisco",
+  "county": "San Francisco",
+  "subregion": "San Francisco",
+  "category": "buildings",
+  "approxCenter": [-122.3976, 37.7878],
+  "camera": {
+    "center": [-122.3974, 37.7876],
+    "zoom": 16.5,
+    "pitch": 58,
+    "bearing": -45
+  },
+  "acres": 0.74,
+  "acresNote": "Planning Commission Motion 20616 (2020): four lots on Assessor's Block 3721 between Howard and Natoma streets (Lots 016, 135, 136 and 138), 32,229 sq ft (0.74 acres).",
+  "program": {
+    "homes": 165,
+    "affordableHomes": null,
+    "affordablePct": null,
+    "officeLabSqft": 275674,
+    "commercialSqftTotal": null,
+    "retailSqft": 9000,
+    "hotelKeys": 189,
+    "openSpaceAcres": null,
+    "notes": "As approved (Motion 20616, Jan 9, 2020): a 61-story tower 749 ft 10 in to the roof (799 ft 9 in with rooftop screening and mechanical equipment), about 957,000 gross sq ft, with a 189-room hotel on levels 8 to 16, 275,674 sq ft of office on levels 17 to 31 and 165 homes on levels 34 to 61 (21 one-bedroom, 92 two-bedroom and 52 three-bedroom), about 9,000 sq ft of retail, about 20,000 sq ft of open space and up to 183 parking spaces on four basement levels. A pedestrian bridge from level 5 crosses Natoma Street to Salesforce Park on the Transit Center's roof. A two-story rail “train box” under the site's northwest corner (about 12,000 sq ft) can carry little weight, so the tower sits toward Howard Street and its lower floors cantilever over the box. Affordable housing: approved with the required affordable homes built off site in the Transbay Redevelopment Project Area; in January 2021 the Planning Commission recommended a development agreement and amended the approvals so the project instead pays an in-lieu fee to the Office of Community Investment and Infrastructure for use in that area."
+  },
+  "developer": "F4 Transbay Partners, LLC (Hines); site owner Parcel F Owner, LLC",
+  "publicPartners": [
+    "San Francisco Planning Commission",
+    "San Francisco Board of Supervisors",
+    "Transbay Joint Powers Authority (seller of the site; Salesforce Transit Center)",
+    "Office of Community Investment and Infrastructure (affordable housing fee)",
+    "San Francisco Recreation and Park Commission (shadow findings)"
+  ],
+  "stage": "entitled",
+  "stageNote": "The Planning Commission approved the tower on Jan 9, 2020 and amended the approvals on Jan 28, 2021 for the affordable housing fee. DBI issued permits for archaeological test trenches (2020) and two test drilled shafts (2020, revised 2021), but the site permit applied for in March 2019 and a December 2021 application for shoring and excavation haven't been issued. Planning's development pipeline still lists the project as approved (2026).",
+  "timeline": [
+    {
+      "date": "2016-10-13",
+      "event": "Hines, for F4 Transbay Partners, asks SF Planning for a preliminary project assessment of a mixed-use tower on Transbay Parcel F (case 2016-013312)."
+    },
+    {
+      "date": "2019-03-21",
+      "event": "Site permit application filed with DBI for a 62-story tower with 165 homes, a hotel, office and retail (application 201903215849)."
+    },
+    {
+      "date": "2019-08-27",
+      "event": "Planning determines that the project needs no further environmental review: it is covered by the Transit Center District Plan EIR (community plan evaluation)."
+    },
+    {
+      "date": "2019-09-19",
+      "event": "Recreation and Park Commission recommends that the Planning Commission find the tower's new shadow on Union Square and Willie “Woo Woo” Wong Playground not adverse to their use (Resolution 1909-016)."
+    },
+    {
+      "date": "2020-01-09",
+      "event": "Planning Commission approves the tower: shadow findings (Motion 20615), Downtown Project Authorization with exceptions (Motion 20616), office allocation (Motion 20617) and hotel conditional use (Motion 20618), and recommends General Plan and zoning changes that swap height limits within the site (Resolutions 20613 and 20614)."
+    },
+    {
+      "date": "2020-09-14",
+      "event": "DBI issues a permit to install two test drilled shafts and test one (permit 202006259099; revised in November 2021)."
+    },
+    {
+      "date": "2021-01-28",
+      "event": "Planning Commission recommends a development agreement with Parcel F Owner, LLC (Motion 20841) and revised code changes (Resolution 20842), and amends the 2020 approvals so the project pays an in-lieu affordable housing fee to OCII (Motions 20843 to 20845)."
+    },
+    {
+      "date": "2021-12-08",
+      "event": "Permit application filed with DBI for a masonry wall, shoring wall and excavation (application 202112083939); not issued."
+    }
+  ],
+  "nextMilestone": "DBI's issuance of the site permit (application 201903215849, filed March 2019). No construction date is on record.",
+  "summary": "A 61-story tower approved in 2020 for Transbay Parcel F, the lot the Transbay Joint Powers Authority sold between Howard Street and Salesforce Park: 749 ft 10 in to the roof (about 800 ft with its crown), with a 189-room hotel, about 276,000 sq ft of office, 165 homes and a bridge to the park. Test shafts were permitted in 2020, but DBI hasn't issued the site permit.",
+  "massingNotes": "Added at Matthew's request (2026-10-19). Boundary: DataSF parcels (acdm-wktn), block 3721 lots 016, 135, 136 and 138, the lots the 2020 and 2021 approvals name (about 0.73 acres as drawn, against 0.74 in Motion 20616); it shares a line with the 524 and 530 Howard Street site to the east and doesn't overlap it, and its northwest part lies inside the map's 40-m corridor for The Portal, whose rail train box runs under the site. Massing (pipeline/bam_pipeline/sites/massing_transbay_parcel_f.py): four volumes traced from the floor plans in the January 2020 Planning Commission packet (levels 2, 7, 17-30 and 34-61), registered on the site's property-line corners (RMS 0.06 m) and extruded to the level heights in the tower section: 64 ft, 108 ft, 429 ft 10 in and the 749 ft 10 in roof. The crown to 799 ft 9 in and the bridge are not drawn. Illustrative, drawn as entitled.",
+  "officialLinks": [
+    "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2016-013312DNXCUAOFAVARSHDPCAMAPGPA_DRAFT.pdf",
+    "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20210128_cal_min.pdf"
+  ],
+  "sources": [
+    "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2016-013312DNXCUAOFAVARSHDPCAMAPGPA_DRAFT.pdf",
+    "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200109_cal_min.pdf",
+    "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20210128_cal_min.pdf",
+    "https://sfplanning.org/sites/default/files/agendas/2020-01/20200109_cal.pdf",
+    "https://sfplanning.org/sites/default/files/agendas/2021-01/20210128_cal.pdf",
+    "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2016-013312PRJ",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2016-013312ENV",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2016-013312DVA",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2016-013312MAP",
+    "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=3721016",
+    "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201903215849",
+    "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202002053600",
+    "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202006259099",
+    "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202109158507",
+    "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202112083939",
+    "https://data.sf.gov/d/h9wh-cg3m",
+    "https://data.sf.gov/d/acdm-wktn"
+  ],
+  "verify": [
+    "whether the 2020 approvals are still in force: Motion 20616 is valid for three years from when the zoning changes took effect unless DBI issues a site permit, and the development agreement (Board of Supervisors File 201386), which may extend it, wasn't read",
+    "the Board of Supervisors' ordinances for the zoning changes (Files 191259 and 201385) and the development agreement: numbers and dates (the City's height map shows the height swap within the site in place, and Planning's records for both are closed as approved)",
+    "whether the two test shafts permitted in 2020 were drilled (DBI's data shows the permits issued, with no inspections listed)",
+    "the story count: 61 in the approvals, 62 on the DBI site permit application",
+    "the site description in Motion 20616 lists lot 137 instead of 138; the rest of the approvals name 138",
+    "the amount of the in-lieu affordable housing fee"
+  ],
+  "lastVerified": "2026-10-19"
+}

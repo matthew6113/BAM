@@ -1,0 +1,713 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "freedom-west",
+  "illustrative": true,
+  "summary": "Illustrative massing: the 15 building parcels of the Draft EIR's site plan (Figure 2-9), each drawn whole at its proposed height limit (Figure 2-8): 85 ft on most parcels, 105 ft for the hotel, 165 ft on SW-A and SW-F, 185 ft on NE-D, 225 ft on SE-D and 335 ft on SE-A. These are envelopes, not building designs, which aren't final; the real buildings have courtyards and setbacks. Octavia Green isn't drawn.",
+  "note": "Proposed height limits over each building parcel, not buildings.",
+  "sourceUrl": "https://ceqanet.lci.ca.gov/2025050078/2/Attachment/wdfI_L",
+  "sourceLabel": "Freedom West 2.0 Draft EIR, January 2026 (PDF)",
+  "georeference": {
+   "method": "Figure 2-9 (250-dpi render) fitted to the DataSF parcel corners of Block 0783 and the Gough Street corners of lot 0770/027 (least-squares similarity).",
+   "fit": {
+    "scale_m_per_unit": 0.19468,
+    "rotation_deg": 9.464,
+    "rms_m": 0.1,
+    "controls": [
+     {
+      "label": "Laguna/McAllister (Block 0783)",
+      "residual_m": 0.05
+     },
+     {
+      "label": "Gough/McAllister (Block 0783)",
+      "residual_m": 0.08
+     },
+     {
+      "label": "Gough/Fulton",
+      "residual_m": 0.0
+     },
+     {
+      "label": "Laguna/Fulton",
+      "residual_m": 0.04
+     },
+     {
+      "label": "Gough/Golden Gate (lot 0770/027)",
+      "residual_m": 0.09
+     },
+     {
+      "label": "Gough/McAllister (lot 0770/027)",
+      "residual_m": 0.19
+     }
+    ]
+   }
+  },
+  "license": "Parcel lines and heights: from a public SF Planning document. Lots: DataSF parcels (ODC-PDDL)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building NW-CO-OP",
+    "stage": "proposed",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (267 replacement co-op homes), an innovation center, a community event space and shops",
+    "phase": "Phase 1A",
+    "illustrative": true,
+    "source": "illustrative: parcel traced from Freedom West 2.0 Draft EIR, Volume 1 (Case No. 2020-006887ENV, January 13, 2026), Figure 2-9 (PDF p. 147); height from Figure 2-8 (PDF p. 145) and Figure 2-10 (PDF p. 148)",
+    "note": "Parcel NW-CO-OP drawn whole at its proposed 85-ft height limit (Figure 2-8), an envelope rather than a building: the real building has courtyards, setbacks or a lower podium. The 267 replacement homes for Freedom West's co-op shareholders, built first (Phase 1A)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4255427,
+       37.7802846
+      ],
+      [
+       -122.4253925,
+       37.7795413
+      ],
+      [
+       -122.4262481,
+       37.7794324
+      ],
+      [
+       -122.4262856,
+       37.7796178
+      ],
+      [
+       -122.4262485,
+       37.7796225
+      ],
+      [
+       -122.426286,
+       37.7798079
+      ],
+      [
+       -122.4263231,
+       37.7798031
+      ],
+      [
+       -122.4263217,
+       37.7798081
+      ],
+      [
+       -122.4263961,
+       37.7801759
+      ],
+      [
+       -122.4255427,
+       37.7802846
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building NE-A",
+    "stage": "proposed",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (133), a childcare center and shops",
+    "phase": "Phase 1C",
+    "illustrative": true,
+    "source": "illustrative: parcel traced from Freedom West 2.0 Draft EIR, Volume 1 (Case No. 2020-006887ENV, January 13, 2026), Figure 2-9 (PDF p. 147); height from Figure 2-8 (PDF p. 145) and Figure 2-10 (PDF p. 148)",
+    "note": "Parcel NE-A drawn whole at its proposed 85-ft height limit (Figure 2-8), an envelope rather than a building: the real building has courtyards, setbacks or a lower podium."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4246154,
+       37.7796402
+      ],
+      [
+       -122.4250847,
+       37.7795805
+      ],
+      [
+       -122.4252349,
+       37.7803237
+      ],
+      [
+       -122.4247656,
+       37.7803835
+      ],
+      [
+       -122.4246154,
+       37.7796402
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building NE-B",
+    "stage": "proposed",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (176) and shops",
+    "phase": "Phase 1B",
+    "illustrative": true,
+    "source": "illustrative: parcel traced from Freedom West 2.0 Draft EIR, Volume 1 (Case No. 2020-006887ENV, January 13, 2026), Figure 2-9 (PDF p. 147); height from Figure 2-8 (PDF p. 145) and Figure 2-10 (PDF p. 148)",
+    "note": "Parcel NE-B drawn whole at its proposed 85-ft height limit (Figure 2-8), an envelope rather than a building: the real building has courtyards, setbacks or a lower podium."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4242138,
+       37.7796914
+      ],
+      [
+       -122.4246154,
+       37.7796402
+      ],
+      [
+       -122.4247656,
+       37.7803835
+      ],
+      [
+       -122.424364,
+       37.7804346
+      ],
+      [
+       -122.4242138,
+       37.7796914
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building NE-C",
+    "stage": "proposed",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (135)",
+    "phase": "Phase 1B",
+    "illustrative": true,
+    "source": "illustrative: parcel traced from Freedom West 2.0 Draft EIR, Volume 1 (Case No. 2020-006887ENV, January 13, 2026), Figure 2-9 (PDF p. 147); height from Figure 2-8 (PDF p. 145) and Figure 2-10 (PDF p. 148)",
+    "note": "Parcel NE-C drawn whole at its proposed 85-ft height limit (Figure 2-8), an envelope rather than a building: the real building has courtyards, setbacks or a lower podium."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4242772,
+       37.7800049
+      ],
+      [
+       -122.424364,
+       37.7804346
+      ],
+      [
+       -122.4238294,
+       37.7805026
+      ],
+      [
+       -122.4237425,
+       37.780073
+      ],
+      [
+       -122.4242772,
+       37.7800049
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building NE-D",
+    "stage": "proposed",
+    "height_ft": 185,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (224) and shops",
+    "phase": "Phase 1B",
+    "illustrative": true,
+    "source": "illustrative: parcel traced from Freedom West 2.0 Draft EIR, Volume 1 (Case No. 2020-006887ENV, January 13, 2026), Figure 2-9 (PDF p. 147); height from Figure 2-8 (PDF p. 145) and Figure 2-10 (PDF p. 148)",
+    "note": "Parcel NE-D drawn whole at its proposed 185-ft height limit (Figure 2-8), an envelope rather than a building: the real building has courtyards, setbacks or a lower podium."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4242138,
+       37.7796914
+      ],
+      [
+       -122.4242772,
+       37.7800049
+      ],
+      [
+       -122.4237425,
+       37.780073
+      ],
+      [
+       -122.4236791,
+       37.7797594
+      ],
+      [
+       -122.4242138,
+       37.7796914
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building SW-A",
+    "stage": "proposed",
+    "height_ft": 165,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (166)",
+    "phase": "Phase 2B",
+    "illustrative": true,
+    "source": "illustrative: parcel traced from Freedom West 2.0 Draft EIR, Volume 1 (Case No. 2020-006887ENV, January 13, 2026), Figure 2-9 (PDF p. 147); height from Figure 2-8 (PDF p. 145) and Figure 2-10 (PDF p. 148)",
+    "note": "Parcel SW-A drawn whole at its proposed 165-ft height limit (Figure 2-8), an envelope rather than a building: the real building has courtyards, setbacks or a lower podium."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4261347,
+       37.7788711
+      ],
+      [
+       -122.4266191,
+       37.7788094
+      ],
+      [
+       -122.4266944,
+       37.7791819
+      ],
+      [
+       -122.42621,
+       37.7792436
+      ],
+      [
+       -122.4261347,
+       37.7788711
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building SW-B",
+    "stage": "proposed",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (74) and shops",
+    "phase": "Phase 2B",
+    "illustrative": true,
+    "source": "illustrative: parcel traced from Freedom West 2.0 Draft EIR, Volume 1 (Case No. 2020-006887ENV, January 13, 2026), Figure 2-9 (PDF p. 147); height from Figure 2-8 (PDF p. 145) and Figure 2-10 (PDF p. 148)",
+    "note": "Parcel SW-B drawn whole at its proposed 85-ft height limit (Figure 2-8), an envelope rather than a building: the real building has courtyards, setbacks or a lower podium."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4260594,
+       37.7784986
+      ],
+      [
+       -122.4265438,
+       37.7784369
+      ],
+      [
+       -122.4266191,
+       37.7788094
+      ],
+      [
+       -122.4261347,
+       37.7788711
+      ],
+      [
+       -122.4260594,
+       37.7784986
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building SW-C",
+    "stage": "proposed",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (72) and shops",
+    "phase": "Phase 2B",
+    "illustrative": true,
+    "source": "illustrative: parcel traced from Freedom West 2.0 Draft EIR, Volume 1 (Case No. 2020-006887ENV, January 13, 2026), Figure 2-9 (PDF p. 147); height from Figure 2-8 (PDF p. 145) and Figure 2-10 (PDF p. 148)",
+    "note": "Parcel SW-C drawn whole at its proposed 85-ft height limit (Figure 2-8), an envelope rather than a building: the real building has courtyards, setbacks or a lower podium."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4257047,
+       37.7789258
+      ],
+      [
+       -122.4261347,
+       37.7788711
+      ],
+      [
+       -122.42621,
+       37.7792436
+      ],
+      [
+       -122.42578,
+       37.7792983
+      ],
+      [
+       -122.4257047,
+       37.7789258
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building SW-D",
+    "stage": "proposed",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (74) and shops",
+    "phase": "Phase 2B",
+    "illustrative": true,
+    "source": "illustrative: parcel traced from Freedom West 2.0 Draft EIR, Volume 1 (Case No. 2020-006887ENV, January 13, 2026), Figure 2-9 (PDF p. 147); height from Figure 2-8 (PDF p. 145) and Figure 2-10 (PDF p. 148)",
+    "note": "Parcel SW-D drawn whole at its proposed 85-ft height limit (Figure 2-8), an envelope rather than a building: the real building has courtyards, setbacks or a lower podium."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4256294,
+       37.7785533
+      ],
+      [
+       -122.4260594,
+       37.7784986
+      ],
+      [
+       -122.4261347,
+       37.7788711
+      ],
+      [
+       -122.4257047,
+       37.7789258
+      ],
+      [
+       -122.4256294,
+       37.7785533
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building SW-E",
+    "stage": "proposed",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (81) and shops",
+    "phase": "Phase 2A",
+    "illustrative": true,
+    "source": "illustrative: parcel traced from Freedom West 2.0 Draft EIR, Volume 1 (Case No. 2020-006887ENV, January 13, 2026), Figure 2-9 (PDF p. 147); height from Figure 2-8 (PDF p. 145) and Figure 2-10 (PDF p. 148)",
+    "note": "Parcel SW-E drawn whole at its proposed 85-ft height limit (Figure 2-8), an envelope rather than a building: the real building has courtyards, setbacks or a lower podium."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4252114,
+       37.7789886
+      ],
+      [
+       -122.4257047,
+       37.7789258
+      ],
+      [
+       -122.42578,
+       37.7792983
+      ],
+      [
+       -122.4252867,
+       37.7793611
+      ],
+      [
+       -122.4252114,
+       37.7789886
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building SW-F",
+    "stage": "proposed",
+    "height_ft": 165,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (140) and shops",
+    "phase": "Phase 2A",
+    "illustrative": true,
+    "source": "illustrative: parcel traced from Freedom West 2.0 Draft EIR, Volume 1 (Case No. 2020-006887ENV, January 13, 2026), Figure 2-9 (PDF p. 147); height from Figure 2-8 (PDF p. 145) and Figure 2-10 (PDF p. 148)",
+    "note": "Parcel SW-F drawn whole at its proposed 165-ft height limit (Figure 2-8), an envelope rather than a building: the real building has courtyards, setbacks or a lower podium."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4251361,
+       37.7786161
+      ],
+      [
+       -122.4256294,
+       37.7785533
+      ],
+      [
+       -122.4257047,
+       37.7789258
+      ],
+      [
+       -122.4252114,
+       37.7789886
+      ],
+      [
+       -122.4251361,
+       37.7786161
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building SE-A",
+    "stage": "proposed",
+    "height_ft": 335,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (311) and shops",
+    "phase": "Phase 3B",
+    "illustrative": true,
+    "source": "illustrative: parcel traced from Freedom West 2.0 Draft EIR, Volume 1 (Case No. 2020-006887ENV, January 13, 2026), Figure 2-9 (PDF p. 147); height from Figure 2-8 (PDF p. 145) and Figure 2-10 (PDF p. 148)",
+    "note": "Parcel SE-A drawn whole at its proposed 335-ft height limit (Figure 2-8), an envelope rather than a building: the real building has courtyards, setbacks or a lower podium. The tallest building, up to 335 ft and 32 stories (Table 2-1 gives 8 to 32 stories). Under the Draft EIR's land use variant the 150-room hotel could be here instead of on SE-C."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4243432,
+       37.7790796
+      ],
+      [
+       -122.4248998,
+       37.7790087
+      ],
+      [
+       -122.4249789,
+       37.7794003
+      ],
+      [
+       -122.4244223,
+       37.7794711
+      ],
+      [
+       -122.4243432,
+       37.7790796
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building SE-C",
+    "stage": "proposed",
+    "height_ft": 105,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Hotel (150 rooms) and shops",
+    "phase": "Phase 3B",
+    "illustrative": true,
+    "source": "illustrative: parcel traced from Freedom West 2.0 Draft EIR, Volume 1 (Case No. 2020-006887ENV, January 13, 2026), Figure 2-9 (PDF p. 147); height from Figure 2-8 (PDF p. 145) and Figure 2-10 (PDF p. 148)",
+    "note": "Parcel SE-C drawn whole at its proposed 105-ft height limit (Figure 2-8), an envelope rather than a building: the real building has courtyards, setbacks or a lower podium. A 105-ft, 108,000 gsf, 150-room hotel with its entrance on Fulton Street (p. 2-24)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4242718,
+       37.7787262
+      ],
+      [
+       -122.4248284,
+       37.7786553
+      ],
+      [
+       -122.4248998,
+       37.7790087
+      ],
+      [
+       -122.4243432,
+       37.7790796
+      ],
+      [
+       -122.4242718,
+       37.7787262
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building SE-B",
+    "stage": "proposed",
+    "height_ft": 85,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (151) and shops",
+    "phase": "Phase 3A",
+    "illustrative": true,
+    "source": "illustrative: parcel traced from Freedom West 2.0 Draft EIR, Volume 1 (Case No. 2020-006887ENV, January 13, 2026), Figure 2-9 (PDF p. 147); height from Figure 2-8 (PDF p. 145) and Figure 2-10 (PDF p. 148)",
+    "note": "Parcel SE-B drawn whole at its proposed 85-ft height limit (Figure 2-8), an envelope rather than a building: the real building has courtyards, setbacks or a lower podium."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4238592,
+       37.7787787
+      ],
+      [
+       -122.4242718,
+       37.7787262
+      ],
+      [
+       -122.4244223,
+       37.7794711
+      ],
+      [
+       -122.4240098,
+       37.7795236
+      ],
+      [
+       -122.4238592,
+       37.7787787
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Building SE-D",
+    "stage": "proposed",
+    "height_ft": 225,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (287) and shops",
+    "phase": "Phase 3A",
+    "illustrative": true,
+    "source": "illustrative: parcel traced from Freedom West 2.0 Draft EIR, Volume 1 (Case No. 2020-006887ENV, January 13, 2026), Figure 2-9 (PDF p. 147); height from Figure 2-8 (PDF p. 145) and Figure 2-10 (PDF p. 148)",
+    "note": "Parcel SE-D drawn whole at its proposed 225-ft height limit (Figure 2-8), an envelope rather than a building: the real building has courtyards, setbacks or a lower podium."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4234904,
+       37.7788256
+      ],
+      [
+       -122.4238592,
+       37.7787787
+      ],
+      [
+       -122.4240098,
+       37.7795236
+      ],
+      [
+       -122.4236409,
+       37.7795706
+      ],
+      [
+       -122.4234904,
+       37.7788256
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

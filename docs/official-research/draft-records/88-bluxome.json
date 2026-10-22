@@ -1,0 +1,126 @@
+{
+ "id": "88-bluxome",
+ "name": "88 Bluxome Street",
+ "aliases": [
+  "88 Bluxome",
+  "San Francisco Tennis Club site",
+  "645 5th Street",
+  "Central SoMa Key Development Site 7"
+ ],
+ "city": "San Francisco",
+ "county": "San Francisco",
+ "subregion": "San Francisco",
+ "category": "buildings",
+ "approxCenter": [
+  -122.3977,
+  37.7768
+ ],
+ "camera": {
+  "center": [
+   -122.3978,
+   37.7766
+  ],
+  "zoom": 16.4,
+  "pitch": 57,
+  "bearing": -40
+ },
+ "acres": 2.61,
+ "acresNote": "Planning Commission Motion 20493 (2019): a 114,048 sq ft (2.61-acre) lot, Assessor's Block 3786, Lot 037, with frontages on Brannan, 5th and Bluxome streets. Planning's 2025 record: an approximately 2.6-acre development lot to be split into parcels of 43,670, 47,580 and 22,690 sq ft.",
+ "program": {
+  "homes": 1500,
+  "affordableHomes": 150,
+  "affordablePct": 10,
+  "officeLabSqft": null,
+  "commercialSqftTotal": null,
+  "retailSqft": 2035,
+  "hotelKeys": null,
+  "openSpaceAcres": null,
+  "notes": "As approved on Dec 12, 2025 (Planning record 2025-004642PRJ): the lot is split into three parcels. Two high-rise residential buildings, about 1,777,000 sq ft in all, go on the western (43,670 sq ft) and central (47,580 sq ft) parcels: the western one 599 ft tall with 785 homes in about 914,000 sq ft, including a 2,035 sq ft ground-floor commercial space; the eastern one 528 ft tall with 715 homes in about 863,000 sq ft. 1,500 rental homes in all (459 studios, 655 one-bedroom, 343 two-bedroom, 33 three-bedroom), 150 of them affordable to low-income households per Planning's record, which lists the project as using the State Density Bonus. Each building has four levels of parking (465 spaces in all) and there are 450 bike spaces. The easternmost parcel (22,690 sq ft) is to be dedicated to the City for future affordable housing, and the project builds the Bluxome Linear Park along the north side of Bluxome Street between 4th and 5th streets. The site's earlier approval (Motion 20493, 2019, modified in 2023) is for an office project of about 1.2 million sq ft with 775,000 sq ft of office."
+ },
+ "developer": "Not named in Planning's 2025 record; Alexandria Real Estate Equities, Inc. owned the site and sponsored the 2019 office project",
+ "publicPartners": [
+  "San Francisco Planning Department",
+  "San Francisco Planning Commission (2019 office approval)",
+  "City and County of San Francisco (affordable housing parcel)"
+ ],
+ "stage": "entitled",
+ "stageNote": "SF Planning approved the residential towers on Dec 12, 2025 with an approval letter; DBI's permit data show no application for them yet. The 2019 approval for an office project on the site also still stands: DBI issued its site permits in 2020 and amended them on Oct 9, 2026, and issued a permit to demolish the tennis club building in 2020.",
+ "timeline": [
+  {
+   "date": "2016-05-06",
+   "event": "SF Planning opens case 2015-012490 for an office project on the San Francisco Tennis Club site."
+  },
+  {
+   "date": "2019-07-25",
+   "event": "Planning Commission approves the office project (Motions 20493 and 20494): 775,000 sq ft of office, the tennis club rebuilt below ground, a public recreation center, an affordable housing site for the City and a new park on Bluxome Street."
+  },
+  {
+   "date": "2020-06-16",
+   "event": "DBI issues the site permits for the office project's three buildings."
+  },
+  {
+   "date": "2020-07-14",
+   "event": "DBI issues a permit to demolish the three-story tennis club building."
+  },
+  {
+   "date": "2023-08-21",
+   "event": "SF Planning closes as approved its record of a change to the office project that removes the tennis club (2015-012490ENX-02)."
+  },
+  {
+   "date": "2025-05-27",
+   "event": "A preliminary application and a project application are filed for two residential towers with 1,500 homes (record 2025-004642)."
+  },
+  {
+   "date": "2025-12-12",
+   "event": "SF Planning approves the residential project: towers of 599 and 528 ft with 1,500 homes, a parcel for City affordable housing and the Bluxome Linear Park."
+  },
+  {
+   "date": "2026-10-09",
+   "event": "DBI issues amendments to the 2019 office project's site permits that remove basement levels."
+  }
+ ],
+ "nextMilestone": "Building permit applications for the residential towers; none was on file as of Oct 19, 2026.",
+ "summary": "The former San Francisco Tennis Club site at 5th and Brannan streets, a key site in the Central SoMa Plan. In December 2025 SF Planning approved two residential towers, 599 and 528 ft tall, with 1,500 rental homes, a parcel given to the City for affordable housing, and a linear park on Bluxome Street. An office project approved here in 2019 still holds its permits.",
+ "massingNotes": "Added at Matthew's request (2026-10-19). Boundary: DataSF parcels (acdm-wktn), block 3786 lot 037 (about 2.65 acres as drawn; Motion 20493: 2.61 acres); the 2025 three-parcel split isn't in the parcel layer. No massing: the 2025 record gives the towers' heights and floor areas but no footprints, and the plans couldn't be opened, so the towers aren't drawn.",
+ "officialLinks": [
+  "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2025-004642PRJ",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2015-012490ENXOFAVARc1.pdf"
+ ],
+ "sources": [
+  "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2025-004642PRJ",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2025-004642PPS",
+  "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=3786037",
+  "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2015-012490PRJ",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2015-012490ENX-02",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2023-009587GPR",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2015-012490ENXOFAVARc1.pdf",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20190725_cal_min.pdf",
+  "https://sfplanning.org/sites/default/files/documents/citywide/Central_Corridor/2018CentralSoMaPlan.pdf",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201903215872",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201903215873",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201903215884",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201909131588",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202107265067",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202107265087",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202107265105",
+  "https://data.sf.gov/d/acdm-wktn"
+ ],
+ "verify": [
+  "the 2025 approval itself: Planning's record says an approval letter was issued on Dec 12, 2025, but the letter wasn't found on a reachable official site, and Planning's pipeline data flag the project as not yet having an approved entitlement",
+  "the environmental review for the 2025 project",
+  "the developer and current owner of the site",
+  "which project will go ahead: DBI amended the 2019 office project's site permits on Oct 9, 2026, after the residential approval",
+  "whether the tennis club building has been demolished (DBI issued the permit in 2020 but records no completion)",
+  "the towers' story counts and footprints",
+  "the transfer of the 22,690 sq ft parcel to the City and the affordable housing planned there"
+ ],
+ "lastVerified": "2026-10-19",
+ "reported": {
+  "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Found through a web search on 2026-10-19; the articles themselves couldn't be opened from this session, so these are leads to check, held out of the map until city or other public records confirm them.",
+  "developer": "Strada Investment Group (sponsor of the residential towers); Alexandria Real Estate Equities is reported to be selling the site",
+  "program.notes": "The towers are reported as 58 and 51 stories.",
+  "sources": [
+   "https://sfyimby.com/2025/12/plans-approved-for-58-story-88-bluxome-street-promptly-hits-market-in-san-francisco.html"
+  ]
+ }
+}

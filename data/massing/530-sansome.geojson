@@ -1,0 +1,367 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "530-sansome",
+  "illustrative": true,
+  "summary": "Illustrative massing: the approved 41-story tower as six steps, set out from the dimensioned floor plans in the 2025 Draft EIR (165 ft wide, narrowing from 96 ft 6 in deep at the hotel floors to 60 ft at the top), to its roof at about 544 ft, with the east end of its three-story base; and the four-story, 55-ft Fire Station 13 on the 447 Battery Street lot. The rooftop screen to 574 ft is not drawn.",
+  "note": "The approved buildings as simple stepped volumes, not the final design.",
+  "sourceUrl": "https://ceqanet.lci.ca.gov/2024110311/2/Attachment/NHEHNp",
+  "sourceLabel": "Draft EIR, 2025 (PDF)",
+  "envelopeSourceUrl": "https://ceqanet.lci.ca.gov/2024110311/4/Attachment/BML5I0",
+  "georeference": {
+   "method": "Plan offsets laid out from the Sansome Street / Washington Street corner of the DataSF parcels for the tower (0206/013, 014, 017), along their two frontages.",
+   "frontages_as_mapped": {
+    "washington_frontage_ft": 178.2,
+    "sansome_frontage_ft": 100.8,
+    "corner_angle_deg": 90.41
+   }
+  },
+  "license": "Dimensions: from a public SF Planning document. Lots: DataSF parcels (ODC-PDDL)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Base, levels 1 to 3 (east end)",
+    "stage": "entitled",
+    "height_ft": 63.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Lobbies, drop-off and loading, ballroom and meeting rooms",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the levels 2-3 plan (174 ft 3 in by 92 ft 8 1/2 in) in the 447 Battery and 530 Sansome Street Project Draft EIR (case 2024-007066ENV, March 2025), Chapter 2, Figure 2-15 (PDF p. 115), less the tower; height to the level 4 floor (+63 ft) in Figure 2-8 (PDF p. 106)",
+    "note": "The east end of the three-story base, which reaches farther east than the tower above it, over the drive-through drop-off and the loading dock off Washington Street."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4009208,
+       37.7957038
+      ],
+      [
+       -122.4008719,
+       37.7954521
+      ],
+      [
+       -122.4009075,
+       37.7954475
+      ],
+      [
+       -122.4009564,
+       37.7956992
+      ],
+      [
+       -122.4009208,
+       37.7957038
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Tower, levels 4 to 23",
+    "stage": "entitled",
+    "height_ft": 304.3,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Hotel (levels 4 to 14), office amenities (16 and 17) and office",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: 165 ft wide at the offsets in the 447 Battery and 530 Sansome Street Project Draft EIR (case 2024-007066ENV, March 2025), Chapter 2, Figures 2-16 and 2-17 (levels 8, 14, 16-17); step heights from the level elevations in Figure 2-8 (PDF p. 106)",
+    "note": "Steps in above +304 ft. Each step is 165 ft east to west; the tower narrows from north to south as it rises."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4009577,
+       37.7957058
+      ],
+      [
+       -122.400954,
+       37.7956868
+      ],
+      [
+       -122.4015179,
+       37.7956146
+      ],
+      [
+       -122.4015216,
+       37.7956336
+      ],
+      [
+       -122.4009577,
+       37.7957058
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Tower, levels 24 to 27",
+    "stage": "entitled",
+    "height_ft": 357.3,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: 165 ft wide at the offsets in the 447 Battery and 530 Sansome Street Project Draft EIR (case 2024-007066ENV, March 2025), Chapter 2, Figure 2-18 (level 25); step heights from the level elevations in Figure 2-8 (PDF p. 106)",
+    "note": "Steps in above +357 ft. Each step is 165 ft east to west; the tower narrows from north to south as it rises."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4009105,
+       37.7954628
+      ],
+      [
+       -122.4009068,
+       37.7954438
+      ],
+      [
+       -122.4014707,
+       37.7953716
+      ],
+      [
+       -122.4014744,
+       37.7953906
+      ],
+      [
+       -122.4009105,
+       37.7954628
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Tower, levels 28 to 31",
+    "stage": "entitled",
+    "height_ft": 410.3,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: 165 ft wide at the offsets in the 447 Battery and 530 Sansome Street Project Draft EIR (case 2024-007066ENV, March 2025), Chapter 2, Figure 2-8 (section) with Figure 2-18; step heights from the level elevations in Figure 2-8 (PDF p. 106)",
+    "note": "Steps in above +410 ft. Each step is 165 ft east to west; the tower narrows from north to south as it rises."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.401514,
+       37.7955942
+      ],
+      [
+       -122.4015179,
+       37.7956146
+      ],
+      [
+       -122.400954,
+       37.7956868
+      ],
+      [
+       -122.40095,
+       37.7956664
+      ],
+      [
+       -122.401514,
+       37.7955942
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Tower, levels 32 to 35",
+    "stage": "entitled",
+    "height_ft": 463.3,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: 165 ft wide at the offsets in the 447 Battery and 530 Sansome Street Project Draft EIR (case 2024-007066ENV, March 2025), Chapter 2, Figure 2-8 (section) with Figure 2-18; step heights from the level elevations in Figure 2-8 (PDF p. 106)",
+    "note": "Steps in above +463 ft. Each step is 165 ft east to west; the tower narrows from north to south as it rises."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4014784,
+       37.7954109
+      ],
+      [
+       -122.4009145,
+       37.7954832
+      ],
+      [
+       -122.4009105,
+       37.7954628
+      ],
+      [
+       -122.4014744,
+       37.7953906
+      ],
+      [
+       -122.4014784,
+       37.7954109
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Tower, levels 36 to 39",
+    "stage": "entitled",
+    "height_ft": 516.3,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: 165 ft wide at the offsets in the 447 Battery and 530 Sansome Street Project Draft EIR (case 2024-007066ENV, March 2025), Chapter 2, Figure 2-18 (level 37); step heights from the level elevations in Figure 2-8 (PDF p. 106)",
+    "note": "Steps in above +516 ft. Each step is 165 ft east to west; the tower narrows from north to south as it rises."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.40151,
+       37.7955738
+      ],
+      [
+       -122.401514,
+       37.7955942
+      ],
+      [
+       -122.40095,
+       37.7956664
+      ],
+      [
+       -122.4009461,
+       37.7956461
+      ],
+      [
+       -122.40151,
+       37.7955738
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Tower, levels 40 and 41",
+    "stage": "entitled",
+    "height_ft": 544.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: 165 ft wide at the offsets in the 447 Battery and 530 Sansome Street Project Draft EIR (case 2024-007066ENV, March 2025), Chapter 2, Figure 2-19 (roof level); step heights from the level elevations in Figure 2-8 (PDF p. 106)",
+    "note": "Roof at about 544 ft (lower roof +543 ft 4 in in the section); the upper roof is at 555 ft and the rooftop mechanical screen reaches about 574 ft (Notice of Determination: \u201c574 feet total, including rooftop mechanical equipment\u201d). 165 by 60 ft."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.40151,
+       37.7955738
+      ],
+      [
+       -122.4009461,
+       37.7956461
+      ],
+      [
+       -122.4009145,
+       37.7954832
+      ],
+      [
+       -122.4014784,
+       37.7954109
+      ],
+      [
+       -122.40151,
+       37.7955738
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Fire Station 13",
+    "stage": "entitled",
+    "height_ft": 55.0,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Fire station (San Francisco Fire Department)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: the 447 Battery Street lot (DataSF parcel 0206/002) at the height in the 447 Battery and 530 Sansome Street Project Draft EIR (case 2024-007066ENV, March 2025), Chapter 2, p. 2-7 (PDF p. 99) and Figure 2-10 (PDF p. 109)",
+    "note": "A four-story replacement for Fire Station 13, about 55 ft tall (60 ft to the top of its rooftop amenity space and equipment), with one basement level. The developer builds it for the City; the existing station at 530 Sansome Street stays in service until it's done."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.400868,
+       37.7954362
+      ],
+      [
+       -122.4009061,
+       37.7956324
+      ],
+      [
+       -122.4005892,
+       37.795673
+      ],
+      [
+       -122.4005525,
+       37.7954746
+      ],
+      [
+       -122.400868,
+       37.7954362
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

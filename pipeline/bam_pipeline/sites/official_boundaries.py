@@ -120,6 +120,108 @@ NORTHGATE_APNS = [  # San Rafael Resolution 15360 and Ordinance 2043 (Dec 2024)
     "175-060-12", "175-060-40", "175-060-59", "175-060-61", "175-060-66", "175-060-67",
 ]
 
+# 530 Sansome Mixed-Use Tower and Fire Station 13: Block 0206, Lots 002 (447 Battery, the new fire station), 013,
+# 014 and 017 (the tower), the four lots of the EIR (case 2024-007066ENV) and its Notice of Determination (Oct 2025).
+SANSOME_530_BLKLOTS = ["0206002", "0206013", "0206014", "0206017"]
+
+# Matson Block (77 Beale / 50 Main): the whole of Block 3711, Lots 005-014 and 019, as listed in the Notice of
+# Preparation of an EIR of Dec 17, 2025 (case 2021-012562ENV, SCH 2025120794).
+MATSON_BLOCK_BLKLOTS = [f"3711{n:03d}" for n in range(5, 15)] + ["3711019"]
+
+# 536 Mission Street: Block 3708, Lot 098, the single lot of Planning record 2025-007507 (Planning Commission
+# agenda of Sept 10, 2026).
+MISSION_536_BLKLOTS = ["3708098"]
+
+# 10 South Van Ness: "Lots 003A and 004 in Assessor's Block 3506", as the Planning Commission's minutes of June 11,
+# 2020 (case 2015-004568) and its agenda of Nov 7, 2024 (case 2024-008986PPS) name the site.
+SOUTH_VAN_NESS_10_BLKLOTS = ["3506003A", "3506004"]
+
+# One Oak (1500-1540 Market Street): "Lots 001, 002, 003, 004, and 005 in Assessor's Block 0836", as the Planning
+# Commission agenda of March 19, 2026 (case 2024-005509) and Motion 19943 (June 15, 2017) name the site.
+ONE_OAK_BLKLOTS = ["0836001", "0836002", "0836003", "0836004", "0836005"]
+
+# Mission Point (Santa Clara): the nine APNs in the City's notice of determination of Dec 3, 2024 (CEQAnet SCH
+# 2018072068, document 7) and Draft EIR Table 2-1; the Democracy Way right-of-way between them is closed over.
+MISSION_POINT_APNS = [
+    "10404150", "10404142", "10404143", "10404151", "10404112", "10404113", "10404065", "10404111", "10404064",
+]
+
+# Seely Avenue Mixed-Use (San José): the approval (NOD of Aug 13, 2024, SCH 2022020565) names APNs 097-15-033,
+# 097-15-034 and part of 097-66-004, which the County has since retired. Their successors are the project's own
+# lots, matching Draft EIR Table 2-1: 097-15-042 (Building A), -045 (B), -046 (affordable), -047 (well), -048
+# (park), -049 (C), the 26 townhome lots 097-23-141 to -166, and the unnumbered private-street and common lots.
+SEELY_AVENUE_APNS = (
+    ["09715042", "09715045", "09715046", "09715047", "09715048", "09715049"]
+    + [f"09723{n}" for n in range(141, 167)]
+)
+SEELY_AVENUE_COMMON_BOX = "37.4012, -121.9195, 37.3955, -121.9145"  # unnumbered lots inside the subdivision
+
+# Freedom Circle (Santa Clara): 104-40-019, 2518 Mission College Blvd (Irvine Company; NODs of Mar 25 and May 14,
+# 2025, SCH 2020060425) and the Greystar site, 104-40-021 and 104-40-036 (NOD of June 7, 2022; Draft EIR).
+FREEDOM_CIRCLE_APNS = ["10440019", "10440021", "10440036"]
+
+# Pleasant Hills Golf Course redevelopment (San José): the two APNs of the project site in the NOP of Oct 14, 2025
+# (SCH 2025100897). The 0.6-acre parcel at 2079 Flint Avenue is annexed but "not part of the project".
+PLEASANT_HILLS_APNS = ["64923001", "64924013"]
+
+# Freedom West 2.0: Block 0783, Lots 023, 024 and 025, and Block 0770, Lot 027, the four lots named in the Notice of
+# Preparation (Apr 30, 2025) and Draft EIR (Jan 13, 2026) for case 2020-006887ENV (SCH 2025050078). Lot 0770/027 also
+# holds the separate 870-880 McAllister senior housing site (case 2024-003742PRJ), which the project leaves out.
+FREEDOM_WEST_BLKLOTS = ["0783023", "0783024", "0783025", "0770027"]
+
+
+# Transbay Parcel F (542-550 Howard Street): Assessor's Block 3721, Lots 016, 135, 136 and 138, as listed in the
+# Planning Commission's approvals of Jan 9, 2020 (Motions 20615-20618, case 2016-013312) and their Jan 28, 2021
+# amendments (Motions 20843-20845).
+TRANSBAY_PARCEL_F_BLKLOTS = ["3721016", "3721135", "3721136", "3721138"]
+
+# 524 and 530 Howard Street: Block 3721, Lots 013 (524 Howard, parking lot) and 014 (530 Howard, office building),
+# the two lots of DBI site permit application 202311170986 and Planning record 2023-010883PRJ.
+HOWARD_524_BLKLOTS = ["3721013", "3721014"]
+
+# Flower Mart (610-698 Brannan Street): Block 3778, Lots 001B, 002B, 004, 005, 047 and 048, the six lots of the
+# Planning Commission's July 18, 2019 approvals (Motion 20484, case 2017-000663) and of the 2026 Development Agreement
+# amendment (Planning Commission agenda of Oct 1, 2026, record 2025-008569PRJ).
+FLOWER_MART_BLKLOTS = ["3778001B", "3778002B", "3778004", "3778005", "3778047", "3778048"]
+
+# 88 Bluxome Street: Block 3786, Lot 037, the single lot of Motion 20493 (July 25, 2019) and of Planning record
+# 2025-004642PRJ (approved Dec 12, 2025).
+BLUXOME_88_BLKLOTS = ["3786037"]
+
+# 655 4th Street: Block 3787, Lots 026, 028, 050 and 161-164, the seven lots of Motions 20470 and 20471 (June 20,
+# 2019) and of the Dec 14, 2023 Planning Commission agenda (record 2022-011490).
+FOURTH_655_BLKLOTS = ["3787026", "3787028", "3787050", "3787161", "3787162", "3787163", "3787164"]
+
+# One Vassar (400 2nd, 645 and 657 Harrison Streets): Block 3763, Lots 001, 078, 079, 080, 080A, 081, 099, 100, 101,
+# 105, 112 and 113 in Motions 20665-20667 (Feb 20, 2020, case 2012.1384). Lot 112 was retired in 2019; its piece at
+# 416 2nd Street, between lot 113 and the AC Transit yard (lot 126), is now lot 125, which is drawn in its place.
+ONE_VASSAR_BLKLOTS = [
+    "3763001", "3763078", "3763079", "3763080", "3763080A", "3763081", "3763099", "3763100", "3763101", "3763105",
+    "3763113", "3763125",
+]
+
+# Gateway Crossings (1205 Coleman Avenue, Santa Clara): the approval (NOD of July 9, 2019, SCH 2017022066) covers about
+# 21.4 acres; CEQAnet's records of the 2017 NOP and 2018 Draft EIR give APNs 230-46-069 and -070, which the County has
+# since retired. Their successors are the lots on assessor's page 230-60 (230-60-001 to -008, and -010, re-mapped from
+# the -009 that the City's 2026 station-area plan record still lists) and the unnumbered street lots inside
+# GATEWAY_CROSSINGS_COMMON_BOX: about 21.35 acres together.
+GATEWAY_CROSSINGS_APNS = [f"23060{n:03d}" for n in (1, 2, 3, 4, 5, 6, 7, 8, 10)]
+GATEWAY_CROSSINGS_COMMON_BOX = "37.3568, -121.9367, 37.3535, -121.9318"  # unnumbered street lots inside the subdivision
+
+# 98 Franklin Street: "Lots 008, 009, & 013 in Assessor's Block 0836", as the Planning Commission's minutes of May 28,
+# 2020 (Motions 20726-20728, case 2016-014802) and its agenda of March 30, 2023 name the site.
+FRANKLIN_98_BLKLOTS = ["0836008", "0836009", "0836013"]
+
+# 598 Brannan Street: "Lots 045, 050, 051 & 052 on Assessor's Block 3777", as the Planning Commission's minutes of
+# June 6, 2019 (Motions 20459 and 20460, case 2012.0640) and of Dec 3, 2020 (Motion 20816) name the site. Lot 052 was
+# retired in 2025 and split into lots 176 (160 Freelon Street, the affordable housing site) and 177; both are drawn.
+BRANNAN_598_BLKLOTS = ["3777045", "3777050", "3777051", "3777176", "3777177"]
+
+# 725-765 Harrison Street: "Lots 117, 148, 149, and 152 in Assessor's Block 3762" (Planning Commission agenda of
+# Sept 24, 2026, case 2005.0759). The approvals' lots (106, 108, 109, 112, 116 and 117 in Motion 20597, Dec 12, 2019;
+# 148, 149 and 113 in Motion 21128, June 16, 2022) have since been merged into lots 149 and 152, which are drawn.
+HARRISON_725_BLKLOTS = ["3762149", "3762152"]
+
 
 def _sql_list(values) -> str:
     return ", ".join(f"'{v}'" for v in values)
@@ -503,6 +605,243 @@ SPECS: dict[str, dict] = {
                  "plan includes, is too thin to keep."),
         "license": "City of East Palo Alto ArcGIS (no license stated; terms to confirm)",
     },
+    "530-sansome": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(SANSOME_530_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 0206 lots 002, 013, 014 and 017",
+        "accuracy": "official",
+        "note": ("The four lots the EIR and its Notice of Determination name (24,830 sq ft): Fire Station 13 at 530 "
+                 "Sansome Street and 425 and 439-445 Washington Street (lots 017, 014 and 013) for the tower, and 447 "
+                 "Battery Street (lot 002) for the new fire station. The office condominiums at 423 Washington Street, "
+                 "on the corner of Washington and Battery, aren't part of the site. The 530 Sansome special use "
+                 "district polygon in DataSF's zoning layer doesn't match these lots, so the parcels are used."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "77-beale": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(MATSON_BLOCK_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3711 lots 005 to 014 and 019",
+        "accuracy": "official",
+        "note": ("The whole block bounded by Market, Main, Mission and Beale streets, the eleven lots the Notice of "
+                 "Preparation names, against its 151,390 sq ft (3.47 acres)."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "536-mission": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(MISSION_536_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3708 lot 098",
+        "accuracy": "official",
+        "note": ("The Golden Gate University lot between Mission and Jessie streets at Ecker Place, the single lot "
+                 "of the Planning Commission's Sept 10, 2026 approvals. Oceanwide Center's site is across Ecker "
+                 "Place, about 25 ft away; the two don't touch."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "10-south-van-ness": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(SOUTH_VAN_NESS_10_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3506 lots 003A and 004",
+        "accuracy": "official",
+        "note": ("Lots 003A and 004 in Assessor's Block 3506, the triangular site at Market Street, South Van Ness "
+                 "Avenue and 12th Street that the Planning Commission's 2020 minutes and 2024 agenda name, against the "
+                 "1.17 acres in the project's CEQA filings. The project would merge the two lots."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "one-oak": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(ONE_OAK_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 0836 lots 001 to 005",
+        "accuracy": "official",
+        "note": ("Lots 001 to 005 in Assessor's Block 0836, on Market Street between Van Ness Avenue and Oak Street, "
+                 "as the Planning Commission's 2017 approval and March 19, 2026 agenda name them, against the 18,219 sq "
+                 "ft lot area in Motion 19943. The public plaza the project would build in the Oak Street roadway (Oak "
+                 "Plaza) is off the lots and isn't drawn."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "mission-point": {
+        "label": "Santa Clara County parcels",
+        **socrata(*SCC_PARCELS, f"apn in ({_sql_list(MISSION_POINT_APNS)})"),
+        "layer": "Santa Clara County parcels, the nine APNs in Santa Clara's notice of determination for Mission Point (Dec 3, 2024)",
+        "accuracy": "official",
+        "close_m": 20,  # takes in the Democracy Way right-of-way between the parcels
+        "note": ("The nine parcels the City's approval names for the Mission Point Project, joined over the Democracy Way "
+                 "right-of-way that the project takes in, against the approval's approximately 48.6 acres (Draft EIR "
+                 "Table 2-1: 46.0 acres of parcels plus 2.6 acres of right-of-way)."),
+        "license": "Santa Clara County open data (terms of use)",
+    },
+    "seely-avenue": {
+        "label": "Santa Clara County parcels",
+        **socrata(*SCC_PARCELS, f"apn in ({_sql_list(SEELY_AVENUE_APNS)}) or "
+                                f"(apn is null and within_box(the_geom, {SEELY_AVENUE_COMMON_BOX}))"),
+        "layer": ("Santa Clara County parcels: the Seely Avenue project's lots (097-15-042 to -049, 097-23-141 to -166) "
+                  "and the unnumbered street and common lots between them"),
+        "accuracy": "approximate",
+        "note": ("The approval names APNs 097-15-033, 097-15-034 and part of 097-66-004, which are no longer in the "
+                 "County's layer. Drawn instead from the parcels that replaced them, which are the project's own lots: "
+                 "Buildings A, B and C, the affordable building, the park and the well site match the Draft EIR's lot "
+                 "areas (Table 2-1) within 2%, against the approval's approximately 22 acres. The Seely Avenue frontage "
+                 "dedication isn't a parcel and isn't drawn."),
+        "license": "Santa Clara County open data (terms of use)",
+    },
+    "freedom-circle": {
+        "label": "Santa Clara County parcels",
+        **socrata(*SCC_PARCELS, f"apn in ({_sql_list(FREEDOM_CIRCLE_APNS)})"),
+        "layer": ("Santa Clara County parcels 104-40-019 (2518 Mission College Boulevard) and 104-40-021 and 104-40-036 "
+                  "(the Greystar site), named in Santa Clara's approvals"),
+        "accuracy": "official",
+        "note": ("The two sites with approvals in the Freedom Circle Focus Area: the Irvine Company's 25.7-acre site at "
+                 "2518 Mission College Boulevard and Greystar's 13.3-acre site on Freedom Circle, separated by Freedom "
+                 "Circle itself. The rest of the 108-acre focus area, which awaits a future planning study, isn't drawn."),
+        "license": "Santa Clara County open data (terms of use)",
+    },
+    "pleasant-hills": {
+        "label": "Santa Clara County parcels",
+        **socrata(*SCC_PARCELS, f"apn in ({_sql_list(PLEASANT_HILLS_APNS)})"),
+        "layer": "Santa Clara County parcels 649-23-001 and 649-24-013, the project site in San José's notice of preparation (Oct 2025)",
+        "accuracy": "official",
+        "note": ("The former Pleasant Hills and Cypress Greens golf courses, the two parcels the notice of preparation "
+                 "names, against its approximately 113.5 gross acres. The 0.6-acre house lot at 2079 Flint Avenue, which "
+                 "would be annexed with them but isn't part of the project, isn't drawn."),
+        "license": "Santa Clara County open data (terms of use)",
+    },
+    "freedom-west": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(FREEDOM_WEST_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 0783 lots 023, 024 and 025 and block 0770 lot 027",
+        "accuracy": "approximate",
+        "note": ("The four lots the Notice of Preparation and Draft EIR name for Freedom West 2.0 (case 2020-006887ENV), "
+                 "against the Draft EIR's 451,500 sq ft (10.37 acres): the whole block between McAllister and Fulton "
+                 "streets and most of the block to the north. Lot 0770/027 also takes in the corner of McAllister and "
+                 "Laguna streets at 870-880 McAllister Street, a separate 115-home senior housing project (case "
+                 "2024-003742PRJ) that the Draft EIR leaves out of the site; the lot split approved in 2024 (case "
+                 "2024-008030SUB) isn't in the parcel layer yet, so that corner, about 0.4 acres, is drawn as part of "
+                 "the site. Bethel A.M.E. Church and 967-973 Golden Gate Avenue are on their own lots and aren't drawn."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "sf-gateway": {
+        "label": "DataSF special use districts",
+        **socrata(DATASF, SF_SUD, "name = 'San Francisco Gateway SUD'"),
+        "layer": "DataSF Zoning Map – Special Use Districts, “San Francisco Gateway SUD”",
+        "accuracy": "official",
+        "note": ("The San Francisco Gateway Special Use District (Board File 250426, in effect Dec 12, 2025): Lot 008 in "
+                 "Block 5284A and Lot 002 in Block 5287 with the portions of the surrounding streets and Selby Street "
+                 "in the project, against the approvals' 743,800 sq ft (about 17.1 acres). Interstate 280 crosses the "
+                 "site overhead between the two buildings."),
+        "license": "Public Domain U.S. Government (DataSF)",
+    },
+    "transbay-parcel-f": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(TRANSBAY_PARCEL_F_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3721 lots 016, 135, 136 and 138",
+        "accuracy": "official",
+        "note": ("The four lots of Transbay Parcel F named in the Planning Commission's approvals (Jan 9, 2020), "
+                 "against the 32,229 sq ft (0.74 acres) in Motion 20616. The west edge follows the curved line of "
+                 "the Transit Center's bus ramp property (lots 134 and 137), which isn't part of the site; the strip "
+                 "of lot 136 along Natoma Street reaches east behind 540 Howard Street (lot 015) to 530 Howard Street."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "524-howard": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(HOWARD_524_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3721 lots 013 and 014",
+        "accuracy": "official",
+        "note": ("The parking lot at 524 Howard Street (lot 013) and the office building at 530 Howard Street (lot "
+                 "014), the two lots of DBI site permit application 202311170986, running through from Howard Street "
+                 "to Natoma Street. Transbay Parcel F's strip along Natoma Street adjoins lot 014 on the west; the "
+                 "two sites share that line and don't overlap."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "flower-mart": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(FLOWER_MART_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3778 lots 001B, 002B, 004, 005, 047 and 048",
+        "accuracy": "official",
+        "note": ("The six lots of the Flower Mart site on the north side of Brannan Street between 5th and 6th streets, "
+                 "as the 2019 approvals and the Oct 1, 2026 Planning Commission agenda name them, against the "
+                 "approximately 6.5 acres in the Development Agreement. The rest of the block, north of the site's "
+                 "service drive, isn't part of it."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "88-bluxome": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(BLUXOME_88_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3786 lot 037",
+        "accuracy": "official",
+        "note": ("Lot 037 in Assessor's Block 3786, the former San Francisco Tennis Club site on Brannan, 5th and "
+                 "Bluxome streets, against the 114,048 sq ft (2.61 acres) in Motion 20493. The 2025 project would "
+                 "split it into three parcels (43,670, 47,580 and 22,690 sq ft, west to east), the eastern one for "
+                 "City affordable housing; that split isn't in the parcel layer, so the whole lot is drawn."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "655-fourth-street": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(FOURTH_655_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3787 lots 026, 028, 050 and 161 to 164",
+        "accuracy": "official",
+        "note": ("The seven lots at the northeast corner of 4th and Townsend streets that the 2019 approvals and the "
+                 "Dec 14, 2023 Planning Commission agenda name, against the 71,290 sq ft development lot in the "
+                 "Planning Department's record of the modified project."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "one-vassar": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(ONE_VASSAR_BLKLOTS)})"),
+        "layer": ("DataSF Parcels – Active and Retired, block 3763 lots 001, 078, 079, 080, 080A, 081, 099, 100, 101, "
+                  "105, 113 and 125"),
+        "accuracy": "approximate",
+        "note": ("The lots on Harrison Street between 2nd Street and the AC Transit yard that the Planning Commission's "
+                 "Feb 20, 2020 approvals name, against their 102,694 sq ft (2.36 acres). One of the approval's twelve "
+                 "lots, 112, has since been retired; its piece at 416 2nd Street, now lot 125, is drawn in its place, "
+                 "and the rest of it, the AC Transit bus yard (lot 126), isn't. Vassar Place, a public street, "
+                 "separates 400 2nd Street from the rest of the site."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "gateway-crossings": {
+        "label": "Santa Clara County parcels",
+        **socrata(*SCC_PARCELS, f"apn in ({_sql_list(GATEWAY_CROSSINGS_APNS)}) or "
+                                f"(apn is null and within_box(the_geom, {GATEWAY_CROSSINGS_COMMON_BOX}))"),
+        "layer": ("Santa Clara County parcels: the lots that replaced the Gateway Crossings site (230-60-001 to -008 and "
+                  "-010) and the unnumbered street lots between them"),
+        "accuracy": "approximate",
+        "note": ("The approval's site at 1205 Coleman Avenue, which CEQAnet records as APNs 230-46-069 and -070. The "
+                 "County has since retired those two parcels and mapped the site as new lots on assessor's page 230-60 "
+                 "(addressed on Rickabaugh Way, Chastain Place and Brokaw Road) with unnumbered street lots between "
+                 "them; those lots and streets are drawn, and together they match the approval's approximately 21.4 "
+                 "acres. The site lies inside the Santa Clara Station Area Specific Plan area."),
+        "license": "Santa Clara County open data (terms of use)",
+    },
+    "98-franklin": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(FRANKLIN_98_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 0836 lots 008, 009 and 013",
+        "accuracy": "official",
+        "note": ("Lots 008, 009 and 013 in Assessor's Block 0836, the L-shaped parking lot at Franklin and Oak streets "
+                 "with a strip through to Market Street that the Planning Commission's May 28, 2020 approvals name, "
+                 "against the approximately 23,750 sq ft in the approval and the Hub Plan EIR. One Oak's site (lots "
+                 "001 to 005) is to the east, beyond 1546-1564 Market Street (lot 007); the two don't touch."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "598-brannan": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(BRANNAN_598_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3777 lots 045, 050, 051, 176 and 177",
+        "accuracy": "official",
+        "note": ("The four lots that the Planning Commission's June 6, 2019 approvals name (045, 050, 051 and 052), "
+                 "against their 195,467 sq ft (about 4.5 acres): the corner of 5th and Brannan streets and three lots "
+                 "on Bryant Street. Lot 052 has since been split into lots 176, the affordable housing site at 160 "
+                 "Freelon Street, and 177, which are drawn in its place. The Flower Mart is across 5th Street."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "725-harrison": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(HARRISON_725_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3762 lots 149 and 152",
+        "accuracy": "official",
+        "note": ("The site between Harrison and Perry streets, from 4th Street most of the way to 3rd Street, against the "
+                 "104,188 sq ft of the 2022 modified project: the office site (lot 152, which merged the lots of the "
+                 "2019 approval with lot 113 at 759 Harrison Street) and the lot to be given to the City for "
+                 "affordable housing (lot 149)."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
 }
 
 
@@ -546,6 +885,9 @@ def build(project: str) -> None:
         site = site.difference(hole).buffer(-cut["open_m"]).buffer(cut["open_m"])
     # 1 m is well inside map precision and keeps the bundled files small.
     site = site.simplify(1.0, preserve_topology=True)
+    if site.geom_type == "MultiPolygon":  # drop slivers between parcels, which round away to degenerate rings
+        parts = [p for p in site.geoms if p.area > 1.0]
+        site = parts[0] if len(parts) == 1 else shapely.MultiPolygon(parts)
     acres = site.area / ACRE_M2
     wgs = gpd.GeoSeries([site], crs=UTM).to_crs(4326).iloc[0]
     out = {

@@ -1,0 +1,105 @@
+{
+  "id": "mission-point",
+  "name": "Mission Point",
+  "aliases": [
+    "Mission Point Project",
+    "3005 Democracy Way Mixed-Use Development Project"
+  ],
+  "city": "Santa Clara",
+  "county": "Santa Clara",
+  "subregion": "South Bay",
+  "category": "buildings",
+  "approxCenter": [
+    -121.9824,
+    37.4011
+  ],
+  "camera": {
+    "center": [
+      -121.9826,
+      37.4004
+    ],
+    "zoom": 15.8,
+    "pitch": 58,
+    "bearing": 20
+  },
+  "acres": 48.6,
+  "acresNote": "The approval gives about 48.6 acres: nine parcels (APNs 104-04-150, -142, -143, -151, -112, -113, -065, -111 and -064) and the Democracy Way right-of-way between them (notice of determination, Dec 3, 2024). The Draft EIR's Table 2-1 splits it into 46.0 acres of parcels and 2.6 acres of right-of-way, and its Table 2-3 into four development areas: A (13.3 acres), B (8.9), C (12.7) and D (13.7).",
+  "program": {
+    "homes": 2600,
+    "affordableHomes": null,
+    "affordablePct": null,
+    "officeLabSqft": 2211000,
+    "commercialSqftTotal": 2300000,
+    "retailSqft": 100000,
+    "hotelKeys": null,
+    "openSpaceAcres": null,
+    "notes": "As approved (notice of determination, Nov 19, 2024): up to 4,915,000 gross sq ft of new development, including up to about 2,600 homes, 2,211,000 gross sq ft of office/R&D space, about 100,000 gross sq ft of neighborhood retail, about 10,000 gross sq ft of childcare and 3,000 gross sq ft of community space. This is the Draft EIR's Reduced Office/Increased Housing Alternative, which replaced the 789,000 gross sq ft of offices planned for Area C with about 800 homes (Draft EIR Table 5-4: up to 2,600 homes and 2,300,000 gross sq ft of commercial space). Offices and R&D would fill Areas A and B north of a realigned Democracy Way; homes, Areas C and D to the south. Affordable housing is to comply with the City's inclusionary housing policy (the approval states no number; the Draft EIR's proposed project said at least 15 percent). Open space: the approval describes up to 24 acres of publicly accessible open space and up to 13 acres of private open space, while Draft EIR Table 5-4 gives up to 16.2 acres publicly accessible (about 10 acres of City parkland). Also an 18,000 sq ft Silicon Valley Power substation and about 9,400 parking spaces, mostly underground or in garages."
+  },
+  "developer": "Kylli, Inc.",
+  "publicPartners": [
+    "City of Santa Clara (lead agency)",
+    "Silicon Valley Power (the City's electric utility; new substation)"
+  ],
+  "stage": "entitled",
+  "stageNote": "Approved. The City of Santa Clara approved the project on Nov 19, 2024, with a Final EIR, a statement of overriding considerations and a mitigation monitoring program, and took a further approval on Dec 3, 2024. No building permit or construction record was found; the County's parcel map still shows the site's nine original parcels.",
+  "timeline": [
+    {
+      "date": "2018-07-27",
+      "event": "Santa Clara issues a notice of preparation for the 3005 Democracy Way Mixed-Use Development Project: up to 10.61 million gross sq ft, including 6.15 million of residential and 3.65 million of offices."
+    },
+    {
+      "date": "2018-10-01",
+      "event": "A recirculated notice describes 6,000 homes in buildings 240 to 450 ft tall and a tower of up to 600 ft."
+    },
+    {
+      "date": "2022-04-18",
+      "event": "A new notice of preparation describes the smaller Mission Point Project: 1,800 homes and 3 million gross sq ft of offices."
+    },
+    {
+      "date": "2023-11-17",
+      "event": "The Draft EIR is published for comment (to Jan 2, 2024)."
+    },
+    {
+      "date": "2024-04",
+      "event": "The Final EIR (responses to comments) is completed."
+    },
+    {
+      "date": "2024-11-19",
+      "event": "The City approves the project in its Reduced Office/Increased Housing form: up to 2,600 homes and 2,211,000 gross sq ft of office/R&D."
+    },
+    {
+      "date": "2024-12-03",
+      "event": "The City takes a further approval for the project (second notice of determination)."
+    }
+  ],
+  "nextMilestone": null,
+  "summary": "A plan to replace four vacant light-industrial buildings and a parking lot used for Levi's Stadium events, south of Tasman Drive in north Santa Clara with a mixed-use neighborhood of up to 2,600 homes and about 2.2 million sq ft of offices and R&D space. The City approved it in late 2024 in a version that turned one of the four planned office areas into housing; the buildings are still conceptual.",
+  "massingNotes": "Added at Matthew's request (2026-10-19). Boundary (data/boundaries/mission-point.geojson, official): the nine Santa Clara County parcels (data.sccgov.org ubcd-cewv) named in the approval, joined over the Democracy Way right-of-way (20 m closing); 48.4 acres against the approval's 48.6. Illustrative massing (data/massing/mission-point.geojson, pipeline/bam_pipeline/sites/massing_mission_point.py): the 25 conceptual building outlines of Draft EIR Figure 5-3, the site plan of the approved Reduced Office/Increased Housing Alternative (PDF p. 621), traced from the figure's vector outlines and classed office or residential by its colour fill, placed by fitting the figure's dash-dot project boundary to the County parcels (trimmed ICP, RMS 0.3 m). The figure gives each area an approximate height range: Area A 63 to 138 ft, B 108 to 153 ft, C 72 to 108 ft and D 72 to 202 ft, with the maximum pointed at one building. That building is drawn at the maximum and the others at the area's minimum, so this is a low reading of an approximate range, not a design. All stage entitled.",
+  "officialLinks": [
+    "https://ceqanet.lci.ca.gov/Project/2018072068"
+  ],
+  "sources": [
+    "https://ceqanet.lci.ca.gov/Project/2018072068",
+    "https://ceqanet.lci.ca.gov/2018072068",
+    "https://ceqanet.lci.ca.gov/2018072068/2",
+    "https://ceqanet.lci.ca.gov/2018072068/3",
+    "https://ceqanet.lci.ca.gov/2018072068/4",
+    "https://ceqanet.lci.ca.gov/2018072068/4/Attachment/Nn5ZMq",
+    "https://ceqanet.lci.ca.gov/2018072068/5",
+    "https://ceqanet.lci.ca.gov/2018072068/5/Attachment/nzGYrG",
+    "https://ceqanet.lci.ca.gov/2018072068/6",
+    "https://ceqanet.lci.ca.gov/2018072068/6/Attachment/WU7KF1",
+    "https://ceqanet.lci.ca.gov/2018072068/7",
+    "https://ceqanet.lci.ca.gov/2018072068/7/Attachment/l2As6p",
+    "https://data.sccgov.org/d/ubcd-cewv"
+  ],
+  "verify": [
+    "what the City approved on Dec 3, 2024: the notice of determination's file name refers to a development agreement; the Council's agenda and ordinance (santaclara.legistar.com) couldn't be reached",
+    "the approval's exact actions on Nov 19, 2024 (the Draft EIR describes a General Plan amendment to a new Urban Center Mixed Use designation and a rezoning to Planned Development); the resolutions weren't reachable",
+    "open space: the notices of determination say up to 24 acres publicly accessible and 13 acres private; Draft EIR Table 5-4 says up to 16.2 acres publicly accessible",
+    "the number of affordable homes, which the approval leaves to the City's inclusionary housing policy",
+    "the heights drawn: Figure 5-3 (the approved alternative) gives Area A up to 138 ft and Area C up to 108 ft, while Table 2-3 (the proposed project, which Table 5-1 says the alternative matches) gives 123 ft and 132 ft",
+    "whether any permit, demolition or construction has started (Santa Clara's permit records couldn't be reached)"
+  ],
+  "lastVerified": "2026-10-19"
+}

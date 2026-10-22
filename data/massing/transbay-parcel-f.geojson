@@ -1,0 +1,466 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "transbay-parcel-f",
+  "illustrative": true,
+  "summary": "Illustrative massing: the approved 61-story tower in four volumes, their outlines traced from the floor plans in the 2020 Planning Commission packet (levels 2, 7, 17-30 and 34-61) and registered on the site's property-line corners: a base to 64 ft, levels 5-7 cantilevered over the rail train box to 108 ft, the hotel and office floors to 429 ft 10 in and the residential floors to the roof at 749 ft 10 in. The crown to 799 ft 9 in and the bridge to Salesforce Park are not drawn.",
+  "note": "The approved tower as simple volumes, not the final design.",
+  "sourceUrl": "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2016-013312DNXCUAOFAVARSHDPCAMAPGPA_DRAFT.pdf",
+  "sourceLabel": "Planning Commission packet, 2020 (PDF)",
+  "approvalSourceUrl": "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200109_cal_min.pdf",
+  "georeference": {
+   "method": "Each plan's property-line corners matched to the DataSF parcel corners of block 3721 lots 016, 135, 136 and 138 (least-squares similarity).",
+   "p387": {
+    "plan": "Plan - Level 2",
+    "scale_m_per_unit": 0.16225,
+    "rotation_deg": 45.122,
+    "rms_m": 0.06,
+    "controls": [
+     {
+      "label": "Howard Street, west end of the frontage (lot 135 at the bus ramp property)",
+      "residual_m": 0.08
+     },
+     {
+      "label": "Howard Street, east end of the frontage (lot 016 at 540 Howard Street)",
+      "residual_m": 0.08
+     },
+     {
+      "label": "rear corner of 540 Howard Street (lot 136)",
+      "residual_m": 0.06
+     },
+     {
+      "label": "east corner of the Natoma Street strip (lot 136 at 530 Howard Street)",
+      "residual_m": 0.01
+     },
+     {
+      "label": "Natoma Street, east end of the frontage (lot 136)",
+      "residual_m": 0.03
+     },
+     {
+      "label": "Natoma Street, west end of the frontage (lot 138 at the bus ramp property)",
+      "residual_m": 0.07
+     }
+    ]
+   },
+   "p390": {
+    "plan": "Plan - Level 7",
+    "scale_m_per_unit": 0.16225,
+    "rotation_deg": 45.122,
+    "rms_m": 0.06,
+    "controls": [
+     {
+      "label": "Howard Street, west end of the frontage (lot 135 at the bus ramp property)",
+      "residual_m": 0.08
+     },
+     {
+      "label": "Howard Street, east end of the frontage (lot 016 at 540 Howard Street)",
+      "residual_m": 0.08
+     },
+     {
+      "label": "rear corner of 540 Howard Street (lot 136)",
+      "residual_m": 0.06
+     },
+     {
+      "label": "east corner of the Natoma Street strip (lot 136 at 530 Howard Street)",
+      "residual_m": 0.01
+     },
+     {
+      "label": "Natoma Street, east end of the frontage (lot 136)",
+      "residual_m": 0.03
+     },
+     {
+      "label": "Natoma Street, west end of the frontage (lot 138 at the bus ramp property)",
+      "residual_m": 0.07
+     }
+    ]
+   },
+   "p391": {
+    "plan": "Plan - Level 17 to 30 - Typical office floor",
+    "scale_m_per_unit": 0.16225,
+    "rotation_deg": 45.122,
+    "rms_m": 0.06,
+    "controls": [
+     {
+      "label": "Howard Street, west end of the frontage (lot 135 at the bus ramp property)",
+      "residual_m": 0.08
+     },
+     {
+      "label": "Howard Street, east end of the frontage (lot 016 at 540 Howard Street)",
+      "residual_m": 0.08
+     },
+     {
+      "label": "rear corner of 540 Howard Street (lot 136)",
+      "residual_m": 0.06
+     },
+     {
+      "label": "east corner of the Natoma Street strip (lot 136 at 530 Howard Street)",
+      "residual_m": 0.01
+     },
+     {
+      "label": "Natoma Street, east end of the frontage (lot 136)",
+      "residual_m": 0.03
+     },
+     {
+      "label": "Natoma Street, west end of the frontage (lot 138 at the bus ramp property)",
+      "residual_m": 0.07
+     }
+    ]
+   },
+   "p393": {
+    "plan": "Plan - Level 34 to 61 - Typical residential floor",
+    "scale_m_per_unit": 0.16225,
+    "rotation_deg": 45.122,
+    "rms_m": 0.06,
+    "controls": [
+     {
+      "label": "Howard Street, west end of the frontage (lot 135 at the bus ramp property)",
+      "residual_m": 0.08
+     },
+     {
+      "label": "Howard Street, east end of the frontage (lot 016 at 540 Howard Street)",
+      "residual_m": 0.08
+     },
+     {
+      "label": "rear corner of 540 Howard Street (lot 136)",
+      "residual_m": 0.06
+     },
+     {
+      "label": "east corner of the Natoma Street strip (lot 136 at 530 Howard Street)",
+      "residual_m": 0.01
+     },
+     {
+      "label": "Natoma Street, east end of the frontage (lot 136)",
+      "residual_m": 0.03
+     },
+     {
+      "label": "Natoma Street, west end of the frontage (lot 138 at the bus ramp property)",
+      "residual_m": 0.07
+     }
+    ]
+   }
+  },
+  "license": "Outlines: traced from a public SF Planning document. Lots: DataSF parcels (ODC-PDDL)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Levels 1-4",
+    "stage": "entitled",
+    "height_ft": 64,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Lobbies and shops on the ground floor, hotel amenities, bike parking and building services",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: outline traced from the Planning Commission packet, Record No. 2016-013312PRJ (542-550 Howard Street, Transbay Parcel F), hearing Jan 9, 2020, Exhibit B, PDF p. 387 (Plan - Level 2), registered on the property line's corners; heights from the tower section, PDF p. 395",
+    "note": "Levels 1 to 4, drawn at the level 2 outline up to level 5 (+64 ft). The ground floor is smaller."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3975991,
+       37.7879827
+      ],
+      [
+       -122.3975457,
+       37.7880208
+      ],
+      [
+       -122.3972118,
+       37.7877536
+      ],
+      [
+       -122.3974621,
+       37.7875567
+      ],
+      [
+       -122.3975094,
+       37.787548
+      ],
+      [
+       -122.397636,
+       37.7875819
+      ],
+      [
+       -122.3978307,
+       37.7877378
+      ],
+      [
+       -122.3977449,
+       37.7879638
+      ],
+      [
+       -122.3977234,
+       37.7879805
+      ],
+      [
+       -122.3976415,
+       37.7879986
+      ],
+      [
+       -122.397611,
+       37.7879922
+      ],
+      [
+       -122.3975991,
+       37.7879827
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Levels 5-7",
+    "stage": "entitled",
+    "height_ft": 108,
+    "podium_ft": null,
+    "base_ft": 64,
+    "use": "Shops and office lobby at the Salesforce Park bridge (level 5), hotel amenities",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: outline traced from the Planning Commission packet, Record No. 2016-013312PRJ (542-550 Howard Street, Transbay Parcel F), hearing Jan 9, 2020, Exhibit B, PDF p. 390 (Plan - Level 7), registered on the property line's corners; heights from the tower section, PDF p. 395",
+    "note": "Levels 5 to 7, drawn at the level 7 outline up to level 8 (+108 ft); levels 5 and 6 leave open terraces at the bridge to Salesforce Park. They cantilever over the rail train box under the site's northwest corner."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3972803,
+       37.7877194
+      ],
+      [
+       -122.3975178,
+       37.7875325
+      ],
+      [
+       -122.3975292,
+       37.7875416
+      ],
+      [
+       -122.3975592,
+       37.787518
+      ],
+      [
+       -122.3976652,
+       37.7875471
+      ],
+      [
+       -122.3978475,
+       37.7876929
+      ],
+      [
+       -122.3977446,
+       37.7879637
+      ],
+      [
+       -122.3977233,
+       37.7879803
+      ],
+      [
+       -122.3976414,
+       37.7879984
+      ],
+      [
+       -122.3976112,
+       37.787992
+      ],
+      [
+       -122.3975991,
+       37.7879823
+      ],
+      [
+       -122.3975831,
+       37.7879949
+      ],
+      [
+       -122.3972708,
+       37.7877449
+      ],
+      [
+       -122.3972917,
+       37.7877285
+      ],
+      [
+       -122.3972803,
+       37.7877194
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Hotel and office floors",
+    "stage": "entitled",
+    "height_ft": 429.83,
+    "podium_ft": null,
+    "base_ft": 108,
+    "use": "Hotel (189 rooms, levels 8-16), office (about 276,000 sq ft, levels 17-31), mechanical (level 32)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: outline traced from the Planning Commission packet, Record No. 2016-013312PRJ (542-550 Howard Street, Transbay Parcel F), hearing Jan 9, 2020, Exhibit B, PDF p. 391 (Plan - Level 17 to 30 - Typical office floor), registered on the property line's corners; heights from the tower section, PDF p. 395",
+    "note": "Levels 8 to 32, drawn at the typical office outline (the hotel floors share it) up to level 33 (+429 ft 10 in)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3978116,
+       37.7877596
+      ],
+      [
+       -122.3978162,
+       37.7877759
+      ],
+      [
+       -122.3977449,
+       37.7879638
+      ],
+      [
+       -122.3977234,
+       37.7879805
+      ],
+      [
+       -122.3976415,
+       37.7879986
+      ],
+      [
+       -122.397611,
+       37.7879922
+      ],
+      [
+       -122.3975991,
+       37.7879827
+      ],
+      [
+       -122.3975831,
+       37.7879952
+      ],
+      [
+       -122.3972704,
+       37.7877449
+      ],
+      [
+       -122.3972864,
+       37.7877324
+      ],
+      [
+       -122.3972758,
+       37.7877239
+      ],
+      [
+       -122.3972759,
+       37.7877031
+      ],
+      [
+       -122.3974974,
+       37.7875289
+      ],
+      [
+       -122.3975235,
+       37.787529
+      ],
+      [
+       -122.3975341,
+       37.7875375
+      ],
+      [
+       -122.3975592,
+       37.7875177
+      ],
+      [
+       -122.3976654,
+       37.7875469
+      ],
+      [
+       -122.3978395,
+       37.7876862
+      ],
+      [
+       -122.3978116,
+       37.7877596
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Residential floors",
+    "stage": "entitled",
+    "height_ft": 749.83,
+    "podium_ft": null,
+    "base_ft": 429.83,
+    "use": "Homes (165), with residential amenities on level 33",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: outline traced from the Planning Commission packet, Record No. 2016-013312PRJ (542-550 Howard Street, Transbay Parcel F), hearing Jan 9, 2020, Exhibit B, PDF p. 393 (Plan - Level 34 to 61 - Typical residential floor), registered on the property line's corners; heights from the tower section, PDF p. 395",
+    "note": "Levels 33 to 61, drawn at the typical residential outline up to the roof at 749 ft 10 in; the rooftop screen and mechanical equipment reach 799 ft 9 in (Motion 20616)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3972758,
+       37.7877239
+      ],
+      [
+       -122.3972759,
+       37.7877031
+      ],
+      [
+       -122.3974974,
+       37.7875289
+      ],
+      [
+       -122.3975235,
+       37.787529
+      ],
+      [
+       -122.397811,
+       37.7877591
+      ],
+      [
+       -122.3978162,
+       37.7877759
+      ],
+      [
+       -122.3977449,
+       37.7879638
+      ],
+      [
+       -122.3977234,
+       37.7879805
+      ],
+      [
+       -122.3976415,
+       37.7879986
+      ],
+      [
+       -122.397611,
+       37.7879922
+      ],
+      [
+       -122.3972758,
+       37.7877239
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

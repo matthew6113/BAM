@@ -1,0 +1,4241 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "mission-point",
+  "illustrative": true,
+  "summary": "Illustrative massing from the conceptual site plan of the approved alternative (Draft EIR Figure 5-3): offices in Areas A and B north of the realigned Democracy Way, homes in Areas C and D to the south. The figure gives each area an approximate height range; the building its maximum points at is drawn at that height (138, 153, 108 and 202 ft) and the others at the area's minimum (63, 108, 72 and 72 ft). Buildings will be designed later.",
+  "note": "Conceptual footprints and approximate heights, not building designs.",
+  "sourceUrl": "https://ceqanet.lci.ca.gov/2018072068/4/Attachment/Nn5ZMq",
+  "sourceLabel": "Mission Point Project Draft EIR, 2023 (PDF), Figure 5-3",
+  "approvalSourceUrl": "https://ceqanet.lci.ca.gov/2018072068/5",
+  "georeference": {
+   "method": "Figure 5-3's dash-dot project boundary (base raster) fitted by trimmed ICP to the County parcels of the site, from the four corners; the vector outlines share the page's coordinates.",
+   "scale_m_per_unit": 1.53331,
+   "rotation_deg": 0.557,
+   "rms_m": 0.29,
+   "controls": [
+    {
+     "label": "outline inliers (5049 of 6312 pixels)",
+     "residual_m": 0.29
+    }
+   ],
+   "corner_start": {
+    "scale_m_per_unit": 1.52988,
+    "rotation_deg": 0.69,
+    "rms_m": 2.05,
+    "controls": [
+     {
+      "label": "NW",
+      "residual_m": 2.37
+     },
+     {
+      "label": "NE",
+      "residual_m": 2.98
+     },
+     {
+      "label": "SE",
+      "residual_m": 1.46
+     },
+     {
+      "label": "SW",
+      "residual_m": 0.45
+     }
+    ]
+   }
+  },
+  "license": "Footprints and heights: from a public City of Santa Clara document. Site: Santa Clara County open data (terms of use)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area A building 1",
+    "stage": "entitled",
+    "height_ft": 63,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office/R&D (Area A and B: about 2.2 million gsf of office/R&D in all)",
+    "phase": "Area A",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 63 ft is the figure's minimum height for Area A",
+    "note": "Figure 5-3 gives Area A 63 to 138 ft (5 to 10 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 123 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9836527,
+       37.4017286
+      ],
+      [
+       -121.9833794,
+       37.4017349
+      ],
+      [
+       -121.9834073,
+       37.4014526
+      ],
+      [
+       -121.9834045,
+       37.4013555
+      ],
+      [
+       -121.9835591,
+       37.4013407
+      ],
+      [
+       -121.9836922,
+       37.4013437
+      ],
+      [
+       -121.9837944,
+       37.4013369
+      ],
+      [
+       -121.9839397,
+       37.4013462
+      ],
+      [
+       -121.984067,
+       37.4013428
+      ],
+      [
+       -121.9841215,
+       37.4013337
+      ],
+      [
+       -121.9841812,
+       37.4013402
+      ],
+      [
+       -121.9843295,
+       37.4013367
+      ],
+      [
+       -121.9844186,
+       37.4013253
+      ],
+      [
+       -121.9844862,
+       37.4013418
+      ],
+      [
+       -121.984586,
+       37.4013374
+      ],
+      [
+       -121.9846612,
+       37.4013442
+      ],
+      [
+       -121.9846591,
+       37.401753
+      ],
+      [
+       -121.9845039,
+       37.4017338
+      ],
+      [
+       -121.9844165,
+       37.4017381
+      ],
+      [
+       -121.984368,
+       37.4017313
+      ],
+      [
+       -121.9842707,
+       37.4017429
+      ],
+      [
+       -121.9841775,
+       37.4017438
+      ],
+      [
+       -121.9841308,
+       37.4017319
+      ],
+      [
+       -121.9840717,
+       37.4017352
+      ],
+      [
+       -121.9840091,
+       37.401726
+      ],
+      [
+       -121.9839473,
+       37.4017338
+      ],
+      [
+       -121.9838842,
+       37.4017284
+      ],
+      [
+       -121.983821,
+       37.4017373
+      ],
+      [
+       -121.9837769,
+       37.4017283
+      ],
+      [
+       -121.983713,
+       37.4017372
+      ],
+      [
+       -121.9836527,
+       37.4017286
+      ]
+     ],
+     [
+      [
+       -121.984264,
+       37.4015596
+      ],
+      [
+       -121.984267,
+       37.4015203
+      ],
+      [
+       -121.9842462,
+       37.401511
+      ],
+      [
+       -121.9839873,
+       37.4015117
+      ],
+      [
+       -121.9837808,
+       37.4014974
+      ],
+      [
+       -121.9837586,
+       37.4015087
+      ],
+      [
+       -121.9837598,
+       37.4015477
+      ],
+      [
+       -121.9837687,
+       37.4015492
+      ],
+      [
+       -121.9838865,
+       37.4015472
+      ],
+      [
+       -121.9839889,
+       37.4015565
+      ],
+      [
+       -121.9840456,
+       37.4015524
+      ],
+      [
+       -121.984264,
+       37.4015596
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area A building 2",
+    "stage": "entitled",
+    "height_ft": 63,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office/R&D (Area A and B: about 2.2 million gsf of office/R&D in all)",
+    "phase": "Area A",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 63 ft is the figure's minimum height for Area A",
+    "note": "Figure 5-3 gives Area A 63 to 138 ft (5 to 10 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 123 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9831636,
+       37.401393
+      ],
+      [
+       -121.9831578,
+       37.4014771
+      ],
+      [
+       -121.983163,
+       37.4015774
+      ],
+      [
+       -121.9831529,
+       37.4016219
+      ],
+      [
+       -121.9831663,
+       37.4016891
+      ],
+      [
+       -121.9831538,
+       37.4016985
+      ],
+      [
+       -121.9831526,
+       37.4017319
+      ],
+      [
+       -121.9830295,
+       37.4017394
+      ],
+      [
+       -121.9828751,
+       37.4017249
+      ],
+      [
+       -121.9827619,
+       37.4017347
+      ],
+      [
+       -121.9827476,
+       37.4016898
+      ],
+      [
+       -121.9827563,
+       37.4015672
+      ],
+      [
+       -121.9827447,
+       37.4015342
+      ],
+      [
+       -121.9827597,
+       37.4014743
+      ],
+      [
+       -121.9827681,
+       37.4013555
+      ],
+      [
+       -121.9828387,
+       37.4013473
+      ],
+      [
+       -121.9829874,
+       37.4013495
+      ],
+      [
+       -121.9831761,
+       37.4013379
+      ],
+      [
+       -121.9831636,
+       37.401393
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area A building 3",
+    "stage": "entitled",
+    "height_ft": 63,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office/R&D (Area A and B: about 2.2 million gsf of office/R&D in all)",
+    "phase": "Area A",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 63 ft is the figure's minimum height for Area A",
+    "note": "Figure 5-3 gives Area A 63 to 138 ft (5 to 10 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 123 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9837256,
+       37.4017169
+      ],
+      [
+       -121.9838211,
+       37.4017027
+      ],
+      [
+       -121.9838185,
+       37.4018881
+      ],
+      [
+       -121.9836246,
+       37.4018856
+      ],
+      [
+       -121.9834722,
+       37.4018927
+      ],
+      [
+       -121.9834355,
+       37.4018879
+      ],
+      [
+       -121.9833768,
+       37.4018943
+      ],
+      [
+       -121.9833817,
+       37.4017303
+      ],
+      [
+       -121.983426,
+       37.4017166
+      ],
+      [
+       -121.9834784,
+       37.4017113
+      ],
+      [
+       -121.9835367,
+       37.4017161
+      ],
+      [
+       -121.983652,
+       37.4017101
+      ],
+      [
+       -121.9837256,
+       37.4017169
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area A building 4",
+    "stage": "entitled",
+    "height_ft": 63,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office/R&D (Area A and B: about 2.2 million gsf of office/R&D in all)",
+    "phase": "Area A",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 63 ft is the figure's minimum height for Area A",
+    "note": "Figure 5-3 gives Area A 63 to 138 ft (5 to 10 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 123 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9844839,
+       37.402075
+      ],
+      [
+       -121.9843088,
+       37.4020748
+      ],
+      [
+       -121.9842128,
+       37.4020837
+      ],
+      [
+       -121.9841909,
+       37.4020746
+      ],
+      [
+       -121.9841307,
+       37.4020789
+      ],
+      [
+       -121.9841202,
+       37.4020104
+      ],
+      [
+       -121.9841172,
+       37.4017171
+      ],
+      [
+       -121.9841935,
+       37.4017255
+      ],
+      [
+       -121.9842703,
+       37.4017245
+      ],
+      [
+       -121.9843687,
+       37.4017128
+      ],
+      [
+       -121.9844185,
+       37.4017197
+      ],
+      [
+       -121.9845044,
+       37.4017154
+      ],
+      [
+       -121.9845905,
+       37.4017286
+      ],
+      [
+       -121.9846808,
+       37.4017306
+      ],
+      [
+       -121.9845941,
+       37.4019277
+      ],
+      [
+       -121.9845376,
+       37.4020812
+      ],
+      [
+       -121.9844839,
+       37.402075
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area A building 5",
+    "stage": "entitled",
+    "height_ft": 63,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office/R&D (Area A and B: about 2.2 million gsf of office/R&D in all)",
+    "phase": "Area A",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 63 ft is the figure's minimum height for Area A",
+    "note": "Figure 5-3 gives Area A 63 to 138 ft (5 to 10 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 123 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9831522,
+       37.4020834
+      ],
+      [
+       -121.9829682,
+       37.4020989
+      ],
+      [
+       -121.9828848,
+       37.4020929
+      ],
+      [
+       -121.9828046,
+       37.4020975
+      ],
+      [
+       -121.9827118,
+       37.402088
+      ],
+      [
+       -121.9826325,
+       37.4020925
+      ],
+      [
+       -121.9825673,
+       37.4020829
+      ],
+      [
+       -121.9824295,
+       37.4020905
+      ],
+      [
+       -121.9822579,
+       37.4020825
+      ],
+      [
+       -121.9821486,
+       37.4020967
+      ],
+      [
+       -121.9821023,
+       37.4020571
+      ],
+      [
+       -121.9821332,
+       37.4019687
+      ],
+      [
+       -121.9821089,
+       37.4019021
+      ],
+      [
+       -121.9821162,
+       37.4017253
+      ],
+      [
+       -121.9822893,
+       37.4017158
+      ],
+      [
+       -121.9823938,
+       37.4017255
+      ],
+      [
+       -121.9824461,
+       37.4017184
+      ],
+      [
+       -121.9825497,
+       37.4017206
+      ],
+      [
+       -121.9826187,
+       37.4017112
+      ],
+      [
+       -121.9827557,
+       37.4017156
+      ],
+      [
+       -121.9828565,
+       37.4017066
+      ],
+      [
+       -121.9830308,
+       37.401721
+      ],
+      [
+       -121.983158,
+       37.401713
+      ],
+      [
+       -121.9831624,
+       37.4018044
+      ],
+      [
+       -121.9831531,
+       37.4018755
+      ],
+      [
+       -121.9831522,
+       37.4020834
+      ]
+     ],
+     [
+      [
+       -121.9829029,
+       37.4019433
+      ],
+      [
+       -121.9829103,
+       37.4018868
+      ],
+      [
+       -121.9828931,
+       37.4018736
+      ],
+      [
+       -121.9825511,
+       37.4018805
+      ],
+      [
+       -121.9824551,
+       37.4018757
+      ],
+      [
+       -121.982398,
+       37.4018832
+      ],
+      [
+       -121.982398,
+       37.4019373
+      ],
+      [
+       -121.9824054,
+       37.4019388
+      ],
+      [
+       -121.9824981,
+       37.4019322
+      ],
+      [
+       -121.9827049,
+       37.4019373
+      ],
+      [
+       -121.9827466,
+       37.4019444
+      ],
+      [
+       -121.9829029,
+       37.4019433
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area A building 6",
+    "stage": "entitled",
+    "height_ft": 63,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office/R&D (Area A and B: about 2.2 million gsf of office/R&D in all)",
+    "phase": "Area A",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 63 ft is the figure's minimum height for Area A",
+    "note": "Figure 5-3 gives Area A 63 to 138 ft (5 to 10 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 123 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9844964,
+       37.4022634
+      ],
+      [
+       -121.9844102,
+       37.4024318
+      ],
+      [
+       -121.9843542,
+       37.4026049
+      ],
+      [
+       -121.9842762,
+       37.4025953
+      ],
+      [
+       -121.984189,
+       37.4026049
+      ],
+      [
+       -121.9839919,
+       37.4025978
+      ],
+      [
+       -121.9838561,
+       37.4026144
+      ],
+      [
+       -121.9838783,
+       37.4025037
+      ],
+      [
+       -121.9838696,
+       37.402469
+      ],
+      [
+       -121.9838789,
+       37.4024009
+      ],
+      [
+       -121.9838736,
+       37.4022351
+      ],
+      [
+       -121.9839582,
+       37.4022187
+      ],
+      [
+       -121.9839778,
+       37.4022266
+      ],
+      [
+       -121.9840095,
+       37.402222
+      ],
+      [
+       -121.9841735,
+       37.4022391
+      ],
+      [
+       -121.9843447,
+       37.4022372
+      ],
+      [
+       -121.9843652,
+       37.4022512
+      ],
+      [
+       -121.9844692,
+       37.4022251
+      ],
+      [
+       -121.9844964,
+       37.4022634
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area A building 7",
+    "stage": "entitled",
+    "height_ft": 63,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office/R&D (Area A and B: about 2.2 million gsf of office/R&D in all)",
+    "phase": "Area A",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 63 ft is the figure's minimum height for Area A",
+    "note": "Figure 5-3 gives Area A 63 to 138 ft (5 to 10 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 123 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.982186,
+       37.4022392
+      ],
+      [
+       -121.9823136,
+       37.402233
+      ],
+      [
+       -121.9823654,
+       37.402237
+      ],
+      [
+       -121.9824314,
+       37.4022299
+      ],
+      [
+       -121.9824874,
+       37.402242
+      ],
+      [
+       -121.9826121,
+       37.4022377
+      ],
+      [
+       -121.9826241,
+       37.402327
+      ],
+      [
+       -121.982615,
+       37.4024194
+      ],
+      [
+       -121.9826243,
+       37.4024417
+      ],
+      [
+       -121.9826118,
+       37.4024983
+      ],
+      [
+       -121.9826189,
+       37.4025966
+      ],
+      [
+       -121.9826077,
+       37.4026885
+      ],
+      [
+       -121.9824325,
+       37.4026812
+      ],
+      [
+       -121.9823693,
+       37.4026881
+      ],
+      [
+       -121.9821127,
+       37.4026881
+      ],
+      [
+       -121.9821292,
+       37.4026288
+      ],
+      [
+       -121.9821237,
+       37.4025869
+      ],
+      [
+       -121.9821297,
+       37.4025377
+      ],
+      [
+       -121.9821205,
+       37.4025168
+      ],
+      [
+       -121.9821293,
+       37.4024733
+      ],
+      [
+       -121.9821173,
+       37.4024567
+      ],
+      [
+       -121.9821267,
+       37.4024306
+      ],
+      [
+       -121.9821208,
+       37.4023642
+      ],
+      [
+       -121.9821269,
+       37.4023083
+      ],
+      [
+       -121.9821131,
+       37.402293
+      ],
+      [
+       -121.9821308,
+       37.4022293
+      ],
+      [
+       -121.982186,
+       37.4022392
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area A building 8",
+    "stage": "entitled",
+    "height_ft": 63,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office/R&D (Area A and B: about 2.2 million gsf of office/R&D in all)",
+    "phase": "Area A",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 63 ft is the figure's minimum height for Area A",
+    "note": "Figure 5-3 gives Area A 63 to 138 ft (5 to 10 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 123 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9839036,
+       37.4022733
+      ],
+      [
+       -121.9839017,
+       37.4024072
+      ],
+      [
+       -121.9838926,
+       37.4024694
+      ],
+      [
+       -121.9839013,
+       37.4025063
+      ],
+      [
+       -121.9838869,
+       37.4025647
+      ],
+      [
+       -121.9838778,
+       37.4027876
+      ],
+      [
+       -121.9838142,
+       37.4027955
+      ],
+      [
+       -121.9837295,
+       37.4027855
+      ],
+      [
+       -121.9836641,
+       37.4028008
+      ],
+      [
+       -121.983581,
+       37.4027928
+      ],
+      [
+       -121.9835028,
+       37.4028041
+      ],
+      [
+       -121.9833769,
+       37.402809
+      ],
+      [
+       -121.9833871,
+       37.402714
+      ],
+      [
+       -121.9833783,
+       37.4025538
+      ],
+      [
+       -121.9833903,
+       37.4024564
+      ],
+      [
+       -121.9833783,
+       37.4024023
+      ],
+      [
+       -121.9833876,
+       37.4023362
+      ],
+      [
+       -121.9833847,
+       37.402208
+      ],
+      [
+       -121.9834592,
+       37.4022168
+      ],
+      [
+       -121.9835242,
+       37.4022067
+      ],
+      [
+       -121.9835912,
+       37.4022165
+      ],
+      [
+       -121.9836283,
+       37.4022115
+      ],
+      [
+       -121.9836735,
+       37.4022239
+      ],
+      [
+       -121.9837508,
+       37.4022186
+      ],
+      [
+       -121.9838889,
+       37.4022307
+      ],
+      [
+       -121.9839036,
+       37.4022733
+      ]
+     ],
+     [
+      [
+       -121.9836646,
+       37.4026611
+      ],
+      [
+       -121.9836814,
+       37.4026389
+      ],
+      [
+       -121.9836832,
+       37.4026137
+      ],
+      [
+       -121.9836809,
+       37.4024023
+      ],
+      [
+       -121.9836731,
+       37.4024106
+      ],
+      [
+       -121.9836404,
+       37.402403
+      ],
+      [
+       -121.9835951,
+       37.4024138
+      ],
+      [
+       -121.9836041,
+       37.4026574
+      ],
+      [
+       -121.9836646,
+       37.4026611
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area A building 9",
+    "stage": "entitled",
+    "height_ft": 138,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office/R&D (Area A and B: about 2.2 million gsf of office/R&D in all)",
+    "phase": "Area A",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 138 ft is the figure's maximum height for Area A",
+    "note": "Figure 5-3 gives Area A 63 to 138 ft (5 to 10 levels), \"approximate\", subject to FAA limits; its Max leader points at this building. Draft EIR Table 2-3 gives the area's anticipated maximum as 123 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.983154,
+       37.402716
+      ],
+      [
+       -121.9831688,
+       37.4028272
+      ],
+      [
+       -121.9831657,
+       37.4029316
+      ],
+      [
+       -121.9831787,
+       37.4029709
+      ],
+      [
+       -121.9831657,
+       37.4030197
+      ],
+      [
+       -121.9831696,
+       37.4030604
+      ],
+      [
+       -121.9831465,
+       37.403095
+      ],
+      [
+       -121.983081,
+       37.403098
+      ],
+      [
+       -121.9829562,
+       37.4030859
+      ],
+      [
+       -121.9828315,
+       37.4030953
+      ],
+      [
+       -121.9827319,
+       37.4030833
+      ],
+      [
+       -121.9826208,
+       37.403093
+      ],
+      [
+       -121.9825784,
+       37.4030807
+      ],
+      [
+       -121.9825282,
+       37.4030805
+      ],
+      [
+       -121.9823597,
+       37.403083
+      ],
+      [
+       -121.9823038,
+       37.4030898
+      ],
+      [
+       -121.9822221,
+       37.4030853
+      ],
+      [
+       -121.9821106,
+       37.4030942
+      ],
+      [
+       -121.9821226,
+       37.402995
+      ],
+      [
+       -121.9821082,
+       37.4029287
+      ],
+      [
+       -121.9821153,
+       37.4028724
+      ],
+      [
+       -121.9821102,
+       37.4028287
+      ],
+      [
+       -121.9821226,
+       37.4027779
+      ],
+      [
+       -121.9821085,
+       37.4027223
+      ],
+      [
+       -121.9821267,
+       37.4026644
+      ],
+      [
+       -121.9821724,
+       37.4026698
+      ],
+      [
+       -121.9823669,
+       37.4026698
+      ],
+      [
+       -121.9824307,
+       37.4026628
+      ],
+      [
+       -121.9825227,
+       37.4026699
+      ],
+      [
+       -121.982778,
+       37.4026699
+      ],
+      [
+       -121.9829454,
+       37.4026606
+      ],
+      [
+       -121.9830376,
+       37.4026701
+      ],
+      [
+       -121.98317,
+       37.4026599
+      ],
+      [
+       -121.983154,
+       37.402716
+      ]
+     ],
+     [
+      [
+       -121.9828942,
+       37.4028481
+      ],
+      [
+       -121.9828807,
+       37.4028299
+      ],
+      [
+       -121.9827489,
+       37.4028388
+      ],
+      [
+       -121.982562,
+       37.4028316
+      ],
+      [
+       -121.9824274,
+       37.402835
+      ],
+      [
+       -121.9824019,
+       37.4028468
+      ],
+      [
+       -121.9824077,
+       37.4028989
+      ],
+      [
+       -121.9825829,
+       37.4028942
+      ],
+      [
+       -121.9828897,
+       37.4029015
+      ],
+      [
+       -121.9828957,
+       37.4028599
+      ],
+      [
+       -121.9828942,
+       37.4028481
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area A building 10",
+    "stage": "entitled",
+    "height_ft": 63,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office/R&D (Area A and B: about 2.2 million gsf of office/R&D in all)",
+    "phase": "Area A",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 63 ft is the figure's minimum height for Area A",
+    "note": "Figure 5-3 gives Area A 63 to 138 ft (5 to 10 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 123 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9841386,
+       37.4028167
+      ],
+      [
+       -121.9842778,
+       37.4027938
+      ],
+      [
+       -121.9841298,
+       37.4030777
+      ],
+      [
+       -121.98409,
+       37.4031387
+      ],
+      [
+       -121.9839691,
+       37.4031325
+      ],
+      [
+       -121.9839088,
+       37.4031397
+      ],
+      [
+       -121.9837505,
+       37.4031399
+      ],
+      [
+       -121.9836827,
+       37.4031491
+      ],
+      [
+       -121.9836326,
+       37.4031423
+      ],
+      [
+       -121.9834479,
+       37.4031446
+      ],
+      [
+       -121.9833689,
+       37.4031593
+      ],
+      [
+       -121.9833834,
+       37.4030248
+      ],
+      [
+       -121.9833687,
+       37.4029599
+      ],
+      [
+       -121.9833775,
+       37.4028644
+      ],
+      [
+       -121.9833673,
+       37.4027979
+      ],
+      [
+       -121.9835782,
+       37.4027745
+      ],
+      [
+       -121.9836659,
+       37.4027814
+      ],
+      [
+       -121.9837368,
+       37.4027668
+      ],
+      [
+       -121.9838152,
+       37.4027765
+      ],
+      [
+       -121.9838851,
+       37.4027715
+      ],
+      [
+       -121.9838916,
+       37.402807
+      ],
+      [
+       -121.9840235,
+       37.4027986
+      ],
+      [
+       -121.984052,
+       37.4028082
+      ],
+      [
+       -121.9841186,
+       37.4028098
+      ],
+      [
+       -121.9841386,
+       37.4028167
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area B building 1",
+    "stage": "entitled",
+    "height_ft": 108,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office/R&D (Area A and B: about 2.2 million gsf of office/R&D in all)",
+    "phase": "Area B",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 108 ft is the figure's minimum height for Area B",
+    "note": "Figure 5-3 gives Area B 108 to 153 ft (8 to 10 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 153 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9809347,
+       37.4014207
+      ],
+      [
+       -121.9809099,
+       37.401725
+      ],
+      [
+       -121.9808481,
+       37.4017192
+      ],
+      [
+       -121.9807722,
+       37.4017287
+      ],
+      [
+       -121.9805724,
+       37.4017295
+      ],
+      [
+       -121.9804446,
+       37.4017383
+      ],
+      [
+       -121.9803667,
+       37.4017254
+      ],
+      [
+       -121.9802877,
+       37.4017379
+      ],
+      [
+       -121.9801247,
+       37.401727
+      ],
+      [
+       -121.9800473,
+       37.4017425
+      ],
+      [
+       -121.9800287,
+       37.4015882
+      ],
+      [
+       -121.9800038,
+       37.4014919
+      ],
+      [
+       -121.9799908,
+       37.4014754
+      ],
+      [
+       -121.9799987,
+       37.4014446
+      ],
+      [
+       -121.9799882,
+       37.4014291
+      ],
+      [
+       -121.9800131,
+       37.4013467
+      ],
+      [
+       -121.9800926,
+       37.401337
+      ],
+      [
+       -121.980154,
+       37.401347
+      ],
+      [
+       -121.9802119,
+       37.4013373
+      ],
+      [
+       -121.9804738,
+       37.4013437
+      ],
+      [
+       -121.9806915,
+       37.4013374
+      ],
+      [
+       -121.9808642,
+       37.4013202
+      ],
+      [
+       -121.980932,
+       37.4013254
+      ],
+      [
+       -121.9809347,
+       37.4014207
+      ]
+     ],
+     [
+      [
+       -121.9806576,
+       37.4015589
+      ],
+      [
+       -121.9806403,
+       37.401493
+      ],
+      [
+       -121.9802369,
+       37.4014929
+      ],
+      [
+       -121.9802144,
+       37.4014944
+      ],
+      [
+       -121.9802255,
+       37.4015118
+      ],
+      [
+       -121.9802043,
+       37.4015617
+      ],
+      [
+       -121.9805016,
+       37.4015679
+      ],
+      [
+       -121.9806244,
+       37.4015613
+      ],
+      [
+       -121.9806576,
+       37.4015589
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area B building 2",
+    "stage": "entitled",
+    "height_ft": 108,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office/R&D (Area A and B: about 2.2 million gsf of office/R&D in all)",
+    "phase": "Area B",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 108 ft is the figure's minimum height for Area B",
+    "note": "Figure 5-3 gives Area B 108 to 153 ft (8 to 10 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 153 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9817331,
+       37.4013564
+      ],
+      [
+       -121.9817324,
+       37.4015813
+      ],
+      [
+       -121.981721,
+       37.4016305
+      ],
+      [
+       -121.981728,
+       37.4016567
+      ],
+      [
+       -121.9817168,
+       37.4017115
+      ],
+      [
+       -121.9817325,
+       37.4017553
+      ],
+      [
+       -121.9817223,
+       37.4018858
+      ],
+      [
+       -121.9817296,
+       37.4019387
+      ],
+      [
+       -121.9817161,
+       37.4019952
+      ],
+      [
+       -121.9817156,
+       37.4020584
+      ],
+      [
+       -121.9814878,
+       37.4020648
+      ],
+      [
+       -121.9814589,
+       37.4020643
+      ],
+      [
+       -121.9814333,
+       37.4020518
+      ],
+      [
+       -121.9811685,
+       37.4020513
+      ],
+      [
+       -121.9811775,
+       37.4019579
+      ],
+      [
+       -121.9811704,
+       37.4018854
+      ],
+      [
+       -121.981186,
+       37.4017959
+      ],
+      [
+       -121.9811791,
+       37.4016799
+      ],
+      [
+       -121.9811908,
+       37.4016327
+      ],
+      [
+       -121.9811914,
+       37.4013339
+      ],
+      [
+       -121.9814974,
+       37.4013533
+      ],
+      [
+       -121.9816104,
+       37.4013475
+      ],
+      [
+       -121.9817331,
+       37.4013564
+      ]
+     ],
+     [
+      [
+       -121.981493,
+       37.4018629
+      ],
+      [
+       -121.9815012,
+       37.4015518
+      ],
+      [
+       -121.9814917,
+       37.4015064
+      ],
+      [
+       -121.9814436,
+       37.4015179
+      ],
+      [
+       -121.9814289,
+       37.4015144
+      ],
+      [
+       -121.981424,
+       37.4017732
+      ],
+      [
+       -121.9814111,
+       37.4018662
+      ],
+      [
+       -121.9814477,
+       37.4018488
+      ],
+      [
+       -121.981493,
+       37.4018629
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area B building 3",
+    "stage": "entitled",
+    "height_ft": 108,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office/R&D (Area A and B: about 2.2 million gsf of office/R&D in all)",
+    "phase": "Area B",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 108 ft is the figure's minimum height for Area B",
+    "note": "Figure 5-3 gives Area B 108 to 153 ft (8 to 10 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 153 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9815848,
+       37.4022235
+      ],
+      [
+       -121.9815727,
+       37.402315
+      ],
+      [
+       -121.9815876,
+       37.4023938
+      ],
+      [
+       -121.9815875,
+       37.4024503
+      ],
+      [
+       -121.9815649,
+       37.4025245
+      ],
+      [
+       -121.9813507,
+       37.4025309
+      ],
+      [
+       -121.9813066,
+       37.4025165
+      ],
+      [
+       -121.9812024,
+       37.4025104
+      ],
+      [
+       -121.981128,
+       37.4025218
+      ],
+      [
+       -121.9810506,
+       37.4025217
+      ],
+      [
+       -121.9810789,
+       37.4024322
+      ],
+      [
+       -121.9810704,
+       37.4024132
+      ],
+      [
+       -121.9810701,
+       37.4023647
+      ],
+      [
+       -121.9810853,
+       37.4022613
+      ],
+      [
+       -121.9810813,
+       37.402194
+      ],
+      [
+       -121.9811555,
+       37.4022163
+      ],
+      [
+       -121.9812442,
+       37.4022081
+      ],
+      [
+       -121.9815848,
+       37.4022235
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area B building 4",
+    "stage": "entitled",
+    "height_ft": 153,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office/R&D (Area A and B: about 2.2 million gsf of office/R&D in all)",
+    "phase": "Area B",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 153 ft is the figure's maximum height for Area B",
+    "note": "Figure 5-3 gives Area B 108 to 153 ft (8 to 10 levels), \"approximate\", subject to FAA limits; its Max leader points at this building. Draft EIR Table 2-3 gives the area's anticipated maximum as 153 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.980253,
+       37.402211
+      ],
+      [
+       -121.9802842,
+       37.4022228
+      ],
+      [
+       -121.9804222,
+       37.4022129
+      ],
+      [
+       -121.9804743,
+       37.4022276
+      ],
+      [
+       -121.980539,
+       37.4022189
+      ],
+      [
+       -121.9806244,
+       37.40222
+      ],
+      [
+       -121.9806562,
+       37.4023122
+      ],
+      [
+       -121.9806583,
+       37.402347
+      ],
+      [
+       -121.980686,
+       37.4023841
+      ],
+      [
+       -121.9807131,
+       37.4024496
+      ],
+      [
+       -121.9807217,
+       37.4024944
+      ],
+      [
+       -121.9808213,
+       37.4024852
+      ],
+      [
+       -121.9809448,
+       37.402488
+      ],
+      [
+       -121.9810164,
+       37.4024795
+      ],
+      [
+       -121.9811171,
+       37.4025034
+      ],
+      [
+       -121.9812021,
+       37.4024919
+      ],
+      [
+       -121.9813104,
+       37.4024982
+      ],
+      [
+       -121.9813545,
+       37.4025127
+      ],
+      [
+       -121.9814817,
+       37.402513
+      ],
+      [
+       -121.9815824,
+       37.4025045
+      ],
+      [
+       -121.9815835,
+       37.4025776
+      ],
+      [
+       -121.9815729,
+       37.4026157
+      ],
+      [
+       -121.9815834,
+       37.4026683
+      ],
+      [
+       -121.9815569,
+       37.4027359
+      ],
+      [
+       -121.9815735,
+       37.4028372
+      ],
+      [
+       -121.9815734,
+       37.4028899
+      ],
+      [
+       -121.981397,
+       37.4028763
+      ],
+      [
+       -121.9812814,
+       37.4028818
+      ],
+      [
+       -121.9811652,
+       37.4028666
+      ],
+      [
+       -121.9810538,
+       37.4028786
+      ],
+      [
+       -121.9809874,
+       37.4028731
+      ],
+      [
+       -121.9807786,
+       37.4028796
+      ],
+      [
+       -121.9807257,
+       37.4028668
+      ],
+      [
+       -121.9806409,
+       37.4028843
+      ],
+      [
+       -121.9805645,
+       37.4028784
+      ],
+      [
+       -121.9804748,
+       37.4028813
+      ],
+      [
+       -121.9804532,
+       37.4028724
+      ],
+      [
+       -121.9803725,
+       37.4028808
+      ],
+      [
+       -121.980308,
+       37.4026817
+      ],
+      [
+       -121.980269,
+       37.4024649
+      ],
+      [
+       -121.9802294,
+       37.4023834
+      ],
+      [
+       -121.9803165,
+       37.4022608
+      ],
+      [
+       -121.9801728,
+       37.4022195
+      ],
+      [
+       -121.980253,
+       37.402211
+      ]
+     ],
+     [
+      [
+       -121.9811204,
+       37.4027065
+      ],
+      [
+       -121.9811227,
+       37.4026601
+      ],
+      [
+       -121.9810908,
+       37.4026544
+      ],
+      [
+       -121.9808483,
+       37.4026628
+      ],
+      [
+       -121.9807893,
+       37.4026484
+      ],
+      [
+       -121.9807148,
+       37.4026519
+      ],
+      [
+       -121.9807148,
+       37.4026935
+      ],
+      [
+       -121.9807322,
+       37.4026877
+      ],
+      [
+       -121.9807539,
+       37.4027034
+      ],
+      [
+       -121.9807775,
+       37.4026966
+      ],
+      [
+       -121.9807986,
+       37.4027034
+      ],
+      [
+       -121.9809061,
+       37.4026992
+      ],
+      [
+       -121.9811204,
+       37.4027065
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area C building 1",
+    "stage": "entitled",
+    "height_ft": 72,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (2,600 in Areas C and D)",
+    "phase": "Area C",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 72 ft is the figure's minimum height for Area C",
+    "note": "Figure 5-3 gives Area C 72 to 108 ft (7 to 10 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 132 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9816413,
+       37.4000255
+      ],
+      [
+       -121.981578,
+       37.400028
+      ],
+      [
+       -121.981587,
+       37.4000394
+      ],
+      [
+       -121.9816014,
+       37.4001627
+      ],
+      [
+       -121.9814816,
+       37.4001742
+      ],
+      [
+       -121.9813396,
+       37.4001761
+      ],
+      [
+       -121.9811859,
+       37.400162
+      ],
+      [
+       -121.9811422,
+       37.4001723
+      ],
+      [
+       -121.9810019,
+       37.4001649
+      ],
+      [
+       -121.9810109,
+       37.4000571
+      ],
+      [
+       -121.9809877,
+       37.4000012
+      ],
+      [
+       -121.9811515,
+       37.3999917
+      ],
+      [
+       -121.9811688,
+       37.4000019
+      ],
+      [
+       -121.9811739,
+       37.3999886
+      ],
+      [
+       -121.9811636,
+       37.3999759
+      ],
+      [
+       -121.9811685,
+       37.3999506
+      ],
+      [
+       -121.9811594,
+       37.3999168
+      ],
+      [
+       -121.9811701,
+       37.3998573
+      ],
+      [
+       -121.9813609,
+       37.3998507
+      ],
+      [
+       -121.9814206,
+       37.3998642
+      ],
+      [
+       -121.9815902,
+       37.3998506
+      ],
+      [
+       -121.9816842,
+       37.3998729
+      ],
+      [
+       -121.9817018,
+       37.3999021
+      ],
+      [
+       -121.9817141,
+       37.4000373
+      ],
+      [
+       -121.9816413,
+       37.4000255
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area C building 2",
+    "stage": "entitled",
+    "height_ft": 108,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (2,600 in Areas C and D)",
+    "phase": "Area C",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 108 ft is the figure's maximum height for Area C",
+    "note": "Figure 5-3 gives Area C 72 to 108 ft (7 to 10 levels), \"approximate\", subject to FAA limits; its Max leader points at this building. Draft EIR Table 2-3 gives the area's anticipated maximum as 132 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9804876,
+       37.4001358
+      ],
+      [
+       -121.9803746,
+       37.4001247
+      ],
+      [
+       -121.9802081,
+       37.4001431
+      ],
+      [
+       -121.9801852,
+       37.4001395
+      ],
+      [
+       -121.9801047,
+       37.4001602
+      ],
+      [
+       -121.9800326,
+       37.4001338
+      ],
+      [
+       -121.9799725,
+       37.4001494
+      ],
+      [
+       -121.9797572,
+       37.4001459
+      ],
+      [
+       -121.9798141,
+       37.4000358
+      ],
+      [
+       -121.9797998,
+       37.400011
+      ],
+      [
+       -121.97981,
+       37.399956
+      ],
+      [
+       -121.9797972,
+       37.3999081
+      ],
+      [
+       -121.9798764,
+       37.3998979
+      ],
+      [
+       -121.9799416,
+       37.3999105
+      ],
+      [
+       -121.9799935,
+       37.3999056
+      ],
+      [
+       -121.9800592,
+       37.3999127
+      ],
+      [
+       -121.9801689,
+       37.3999094
+      ],
+      [
+       -121.9802137,
+       37.3999281
+      ],
+      [
+       -121.9802398,
+       37.3999285
+      ],
+      [
+       -121.9803443,
+       37.3999064
+      ],
+      [
+       -121.9805393,
+       37.3999273
+      ],
+      [
+       -121.9806019,
+       37.3999275
+      ],
+      [
+       -121.9806021,
+       37.4000476
+      ],
+      [
+       -121.9806149,
+       37.4000758
+      ],
+      [
+       -121.9806153,
+       37.4001378
+      ],
+      [
+       -121.9804876,
+       37.4001358
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area C building 3",
+    "stage": "entitled",
+    "height_ft": 72,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (2,600 in Areas C and D)",
+    "phase": "Area C",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 72 ft is the figure's minimum height for Area C",
+    "note": "Figure 5-3 gives Area C 72 to 108 ft (7 to 10 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 132 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9809136,
+       37.4008591
+      ],
+      [
+       -121.9809133,
+       37.4010761
+      ],
+      [
+       -121.9808613,
+       37.4010934
+      ],
+      [
+       -121.9807257,
+       37.401072
+      ],
+      [
+       -121.9805761,
+       37.4010889
+      ],
+      [
+       -121.9804501,
+       37.4010754
+      ],
+      [
+       -121.9803907,
+       37.4010815
+      ],
+      [
+       -121.9803226,
+       37.4010712
+      ],
+      [
+       -121.9802704,
+       37.4010782
+      ],
+      [
+       -121.9802174,
+       37.4010675
+      ],
+      [
+       -121.9801024,
+       37.4010678
+      ],
+      [
+       -121.9800442,
+       37.4010827
+      ],
+      [
+       -121.9800181,
+       37.4010747
+      ],
+      [
+       -121.9799677,
+       37.4010814
+      ],
+      [
+       -121.9798962,
+       37.40107
+      ],
+      [
+       -121.9798781,
+       37.4010368
+      ],
+      [
+       -121.9798822,
+       37.4009605
+      ],
+      [
+       -121.979869,
+       37.4007877
+      ],
+      [
+       -121.9798825,
+       37.4006948
+      ],
+      [
+       -121.9798742,
+       37.4006304
+      ],
+      [
+       -121.9798918,
+       37.4005743
+      ],
+      [
+       -121.9798821,
+       37.4005466
+      ],
+      [
+       -121.9798915,
+       37.400518
+      ],
+      [
+       -121.9798581,
+       37.4003914
+      ],
+      [
+       -121.9800669,
+       37.4003989
+      ],
+      [
+       -121.9800979,
+       37.4003899
+      ],
+      [
+       -121.980128,
+       37.4003987
+      ],
+      [
+       -121.9802692,
+       37.4003957
+      ],
+      [
+       -121.9803367,
+       37.4004028
+      ],
+      [
+       -121.9804547,
+       37.4003833
+      ],
+      [
+       -121.9804952,
+       37.400395
+      ],
+      [
+       -121.9807368,
+       37.4003888
+      ],
+      [
+       -121.9807913,
+       37.400398
+      ],
+      [
+       -121.9808276,
+       37.4004135
+      ],
+      [
+       -121.9808757,
+       37.4004174
+      ],
+      [
+       -121.9808847,
+       37.4005868
+      ],
+      [
+       -121.9807888,
+       37.4006032
+      ],
+      [
+       -121.9807336,
+       37.4006075
+      ],
+      [
+       -121.9807029,
+       37.4006003
+      ],
+      [
+       -121.9806785,
+       37.4006056
+      ],
+      [
+       -121.9806745,
+       37.4006765
+      ],
+      [
+       -121.9806828,
+       37.4007349
+      ],
+      [
+       -121.980674,
+       37.4007649
+      ],
+      [
+       -121.9806824,
+       37.4007997
+      ],
+      [
+       -121.9806778,
+       37.400852
+      ],
+      [
+       -121.9806692,
+       37.4008612
+      ],
+      [
+       -121.9808365,
+       37.4008718
+      ],
+      [
+       -121.9809136,
+       37.4008591
+      ]
+     ],
+     [
+      [
+       -121.9804752,
+       37.4008203
+      ],
+      [
+       -121.9804841,
+       37.4007054
+      ],
+      [
+       -121.9804747,
+       37.4006722
+      ],
+      [
+       -121.9804794,
+       37.4006485
+      ],
+      [
+       -121.9804526,
+       37.4006035
+      ],
+      [
+       -121.9803752,
+       37.4005985
+      ],
+      [
+       -121.9802712,
+       37.4006142
+      ],
+      [
+       -121.9802159,
+       37.4006111
+      ],
+      [
+       -121.9801608,
+       37.4006214
+      ],
+      [
+       -121.980131,
+       37.4006104
+      ],
+      [
+       -121.980078,
+       37.4006084
+      ],
+      [
+       -121.9800638,
+       37.4005843
+      ],
+      [
+       -121.9800607,
+       37.4006428
+      ],
+      [
+       -121.9800737,
+       37.4006765
+      ],
+      [
+       -121.9800824,
+       37.4007736
+      ],
+      [
+       -121.9800791,
+       37.4008522
+      ],
+      [
+       -121.9800692,
+       37.4008636
+      ],
+      [
+       -121.9801395,
+       37.4008549
+      ],
+      [
+       -121.9801651,
+       37.4008632
+      ],
+      [
+       -121.9802072,
+       37.4008599
+      ],
+      [
+       -121.9802299,
+       37.4008653
+      ],
+      [
+       -121.9803919,
+       37.4008465
+      ],
+      [
+       -121.9804552,
+       37.4008633
+      ],
+      [
+       -121.9804811,
+       37.4008567
+      ],
+      [
+       -121.9804885,
+       37.400832
+      ],
+      [
+       -121.9804752,
+       37.4008203
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area C building 4",
+    "stage": "entitled",
+    "height_ft": 72,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (2,600 in Areas C and D)",
+    "phase": "Area C",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 72 ft is the figure's minimum height for Area C",
+    "note": "Figure 5-3 gives Area C 72 to 108 ft (7 to 10 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 132 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9821959,
+       37.4004332
+      ],
+      [
+       -121.982209,
+       37.400672
+      ],
+      [
+       -121.9821962,
+       37.400749
+      ],
+      [
+       -121.9822042,
+       37.4007986
+      ],
+      [
+       -121.982196,
+       37.4008659
+      ],
+      [
+       -121.9822044,
+       37.4009409
+      ],
+      [
+       -121.9821917,
+       37.4010939
+      ],
+      [
+       -121.9820899,
+       37.4010763
+      ],
+      [
+       -121.9818214,
+       37.4010865
+      ],
+      [
+       -121.9816614,
+       37.4010763
+      ],
+      [
+       -121.9815898,
+       37.4010943
+      ],
+      [
+       -121.9815403,
+       37.4010775
+      ],
+      [
+       -121.9814648,
+       37.4010652
+      ],
+      [
+       -121.9813307,
+       37.4010863
+      ],
+      [
+       -121.9813092,
+       37.4010794
+      ],
+      [
+       -121.9812818,
+       37.4010864
+      ],
+      [
+       -121.9811822,
+       37.4010863
+      ],
+      [
+       -121.9811778,
+       37.4009603
+      ],
+      [
+       -121.9811929,
+       37.4009193
+      ],
+      [
+       -121.9811846,
+       37.4008653
+      ],
+      [
+       -121.9813728,
+       37.4008631
+      ],
+      [
+       -121.981388,
+       37.400869
+      ],
+      [
+       -121.9813744,
+       37.4008441
+      ],
+      [
+       -121.9813698,
+       37.4007726
+      ],
+      [
+       -121.9813787,
+       37.4006715
+      ],
+      [
+       -121.981375,
+       37.4005936
+      ],
+      [
+       -121.9814,
+       37.4005781
+      ],
+      [
+       -121.9813653,
+       37.4005509
+      ],
+      [
+       -121.9813547,
+       37.4005845
+      ],
+      [
+       -121.9812315,
+       37.4005921
+      ],
+      [
+       -121.9811513,
+       37.4005847
+      ],
+      [
+       -121.9811718,
+       37.4004617
+      ],
+      [
+       -121.9811688,
+       37.4004088
+      ],
+      [
+       -121.9812463,
+       37.4004101
+      ],
+      [
+       -121.9812622,
+       37.4004187
+      ],
+      [
+       -121.9812956,
+       37.400403
+      ],
+      [
+       -121.9813851,
+       37.4004139
+      ],
+      [
+       -121.981439,
+       37.4004066
+      ],
+      [
+       -121.9814761,
+       37.4004133
+      ],
+      [
+       -121.9815266,
+       37.4004031
+      ],
+      [
+       -121.9815546,
+       37.4004192
+      ],
+      [
+       -121.9815837,
+       37.4004211
+      ],
+      [
+       -121.9816913,
+       37.4004035
+      ],
+      [
+       -121.9819201,
+       37.4004107
+      ],
+      [
+       -121.9821036,
+       37.4003995
+      ],
+      [
+       -121.982139,
+       37.4004266
+      ],
+      [
+       -121.9821959,
+       37.4004332
+      ]
+     ],
+     [
+      [
+       -121.9820053,
+       37.4005583
+      ],
+      [
+       -121.9819309,
+       37.4005506
+      ],
+      [
+       -121.9817843,
+       37.4005661
+      ],
+      [
+       -121.9817366,
+       37.4005524
+      ],
+      [
+       -121.9816861,
+       37.4005608
+      ],
+      [
+       -121.9816217,
+       37.4005431
+      ],
+      [
+       -121.9815536,
+       37.400548
+      ],
+      [
+       -121.9815759,
+       37.4005599
+      ],
+      [
+       -121.9815903,
+       37.4006573
+      ],
+      [
+       -121.9815852,
+       37.4006828
+      ],
+      [
+       -121.9815936,
+       37.4007145
+      ],
+      [
+       -121.9815935,
+       37.4008043
+      ],
+      [
+       -121.9815847,
+       37.4008734
+      ],
+      [
+       -121.9815934,
+       37.400878
+      ],
+      [
+       -121.9817071,
+       37.4008624
+      ],
+      [
+       -121.9819896,
+       37.4008672
+      ],
+      [
+       -121.9819771,
+       37.4008529
+      ],
+      [
+       -121.9819834,
+       37.4008321
+      ],
+      [
+       -121.9819772,
+       37.400775
+      ],
+      [
+       -121.9819923,
+       37.4007223
+      ],
+      [
+       -121.9819837,
+       37.4005688
+      ],
+      [
+       -121.9820205,
+       37.4005521
+      ],
+      [
+       -121.9820053,
+       37.4005583
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area D building 1",
+    "stage": "entitled",
+    "height_ft": 202,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (2,600 in Areas C and D)",
+    "phase": "Area D",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 202 ft is the figure's maximum height for Area D",
+    "note": "Figure 5-3 gives Area D 72 to 202 ft (7 to 20 levels), \"approximate\", subject to FAA limits; its Max leader points at this building. Draft EIR Table 2-3 gives the area's anticipated maximum as 202 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9848237,
+       37.3993186
+      ],
+      [
+       -121.9848282,
+       37.399428
+      ],
+      [
+       -121.9848147,
+       37.3994758
+      ],
+      [
+       -121.9847812,
+       37.3994771
+      ],
+      [
+       -121.9847645,
+       37.3994918
+      ],
+      [
+       -121.9847468,
+       37.3994896
+      ],
+      [
+       -121.9847534,
+       37.3995364
+      ],
+      [
+       -121.9847482,
+       37.3996178
+      ],
+      [
+       -121.9846786,
+       37.3996121
+      ],
+      [
+       -121.9845686,
+       37.399617
+      ],
+      [
+       -121.9844965,
+       37.3996078
+      ],
+      [
+       -121.9843949,
+       37.399619
+      ],
+      [
+       -121.9843264,
+       37.3996119
+      ],
+      [
+       -121.9842385,
+       37.3996237
+      ],
+      [
+       -121.9842406,
+       37.3995412
+      ],
+      [
+       -121.9842311,
+       37.3995256
+      ],
+      [
+       -121.9842472,
+       37.3994463
+      ],
+      [
+       -121.9843111,
+       37.3994406
+      ],
+      [
+       -121.9843148,
+       37.3993884
+      ],
+      [
+       -121.9843006,
+       37.3993309
+      ],
+      [
+       -121.9843907,
+       37.3993125
+      ],
+      [
+       -121.9844456,
+       37.399325
+      ],
+      [
+       -121.9845423,
+       37.3993128
+      ],
+      [
+       -121.9845835,
+       37.3993165
+      ],
+      [
+       -121.98464,
+       37.3993097
+      ],
+      [
+       -121.9847113,
+       37.3993167
+      ],
+      [
+       -121.9847675,
+       37.3993101
+      ],
+      [
+       -121.9848237,
+       37.3993186
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area D building 2",
+    "stage": "entitled",
+    "height_ft": 72,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (2,600 in Areas C and D)",
+    "phase": "Area D",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 72 ft is the figure's minimum height for Area D",
+    "note": "Figure 5-3 gives Area D 72 to 202 ft (7 to 20 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 202 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9841624,
+       37.3993902
+      ],
+      [
+       -121.984153,
+       37.3994959
+      ],
+      [
+       -121.9841574,
+       37.3995523
+      ],
+      [
+       -121.9841473,
+       37.3995944
+      ],
+      [
+       -121.9841641,
+       37.3996206
+      ],
+      [
+       -121.9841445,
+       37.3996811
+      ],
+      [
+       -121.984159,
+       37.3997243
+      ],
+      [
+       -121.984143,
+       37.3997631
+      ],
+      [
+       -121.9841417,
+       37.3998121
+      ],
+      [
+       -121.984173,
+       37.3998966
+      ],
+      [
+       -121.983978,
+       37.3998985
+      ],
+      [
+       -121.9839497,
+       37.3999055
+      ],
+      [
+       -121.9839265,
+       37.3999007
+      ],
+      [
+       -121.9838501,
+       37.3999115
+      ],
+      [
+       -121.9838679,
+       37.3998194
+      ],
+      [
+       -121.9838607,
+       37.3997251
+      ],
+      [
+       -121.9838704,
+       37.3996819
+      ],
+      [
+       -121.9838634,
+       37.3996147
+      ],
+      [
+       -121.983871,
+       37.3995745
+      ],
+      [
+       -121.9838632,
+       37.3995346
+      ],
+      [
+       -121.9838736,
+       37.3994817
+      ],
+      [
+       -121.9838581,
+       37.399441
+      ],
+      [
+       -121.9838685,
+       37.3994082
+      ],
+      [
+       -121.9838722,
+       37.3993227
+      ],
+      [
+       -121.9839874,
+       37.3993141
+      ],
+      [
+       -121.9840296,
+       37.3993231
+      ],
+      [
+       -121.984072,
+       37.3993144
+      ],
+      [
+       -121.9841553,
+       37.3993331
+      ],
+      [
+       -121.9841624,
+       37.3993902
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area D building 3",
+    "stage": "entitled",
+    "height_ft": 72,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (2,600 in Areas C and D)",
+    "phase": "Area D",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 72 ft is the figure's minimum height for Area D",
+    "note": "Figure 5-3 gives Area D 72 to 202 ft (7 to 20 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 202 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9837076,
+       37.3996408
+      ],
+      [
+       -121.9837003,
+       37.3997511
+      ],
+      [
+       -121.98366,
+       37.3997689
+      ],
+      [
+       -121.9836179,
+       37.3997749
+      ],
+      [
+       -121.9836182,
+       37.3998515
+      ],
+      [
+       -121.9836287,
+       37.3998993
+      ],
+      [
+       -121.9836246,
+       37.3999816
+      ],
+      [
+       -121.9836157,
+       37.3999995
+      ],
+      [
+       -121.9836293,
+       37.4000176
+      ],
+      [
+       -121.9836091,
+       37.4002386
+      ],
+      [
+       -121.9834625,
+       37.4002443
+      ],
+      [
+       -121.9834267,
+       37.4002386
+      ],
+      [
+       -121.983361,
+       37.4002452
+      ],
+      [
+       -121.9832722,
+       37.4002353
+      ],
+      [
+       -121.9831473,
+       37.4002419
+      ],
+      [
+       -121.9830769,
+       37.4002341
+      ],
+      [
+       -121.9829904,
+       37.40024
+      ],
+      [
+       -121.9829284,
+       37.4002337
+      ],
+      [
+       -121.9827703,
+       37.4002368
+      ],
+      [
+       -121.9827704,
+       37.4001853
+      ],
+      [
+       -121.9827492,
+       37.4000901
+      ],
+      [
+       -121.98276,
+       37.4000477
+      ],
+      [
+       -121.98275,
+       37.4000266
+      ],
+      [
+       -121.9827618,
+       37.3999938
+      ],
+      [
+       -121.9827521,
+       37.3999736
+      ],
+      [
+       -121.9827605,
+       37.399938
+      ],
+      [
+       -121.9827566,
+       37.3998973
+      ],
+      [
+       -121.9827449,
+       37.3998805
+      ],
+      [
+       -121.9827579,
+       37.3997991
+      ],
+      [
+       -121.9827432,
+       37.399765
+      ],
+      [
+       -121.9827619,
+       37.3996893
+      ],
+      [
+       -121.9827537,
+       37.3996575
+      ],
+      [
+       -121.982762,
+       37.3996243
+      ],
+      [
+       -121.982756,
+       37.3995996
+      ],
+      [
+       -121.9827704,
+       37.3995583
+      ],
+      [
+       -121.98282,
+       37.3995571
+      ],
+      [
+       -121.9828483,
+       37.3995487
+      ],
+      [
+       -121.9829239,
+       37.399553
+      ],
+      [
+       -121.9829735,
+       37.3995448
+      ],
+      [
+       -121.9830551,
+       37.3995554
+      ],
+      [
+       -121.9831334,
+       37.3995451
+      ],
+      [
+       -121.983222,
+       37.3995534
+      ],
+      [
+       -121.9833933,
+       37.3995488
+      ],
+      [
+       -121.9834084,
+       37.3995571
+      ],
+      [
+       -121.983527,
+       37.3995433
+      ],
+      [
+       -121.9836395,
+       37.3995487
+      ],
+      [
+       -121.9837019,
+       37.3995627
+      ],
+      [
+       -121.9837076,
+       37.3996408
+      ]
+     ],
+     [
+      [
+       -121.9834008,
+       37.3997685
+      ],
+      [
+       -121.9833663,
+       37.3997585
+      ],
+      [
+       -121.9831579,
+       37.3997653
+      ],
+      [
+       -121.9831133,
+       37.3997605
+      ],
+      [
+       -121.9830233,
+       37.3997677
+      ],
+      [
+       -121.9830315,
+       37.3998425
+      ],
+      [
+       -121.9830197,
+       37.3999111
+      ],
+      [
+       -121.9830334,
+       37.3999792
+      ],
+      [
+       -121.9830286,
+       37.4000387
+      ],
+      [
+       -121.9831502,
+       37.4000371
+      ],
+      [
+       -121.9831995,
+       37.4000293
+      ],
+      [
+       -121.9833133,
+       37.4000353
+      ],
+      [
+       -121.9834032,
+       37.4000239
+      ],
+      [
+       -121.983404,
+       37.3998958
+      ],
+      [
+       -121.983393,
+       37.3998578
+      ],
+      [
+       -121.9834107,
+       37.399785
+      ],
+      [
+       -121.9834008,
+       37.3997685
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area D building 4",
+    "stage": "entitled",
+    "height_ft": 72,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (2,600 in Areas C and D)",
+    "phase": "Area D",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 72 ft is the figure's minimum height for Area D",
+    "note": "Figure 5-3 gives Area D 72 to 202 ft (7 to 20 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 202 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.984823,
+       37.39965
+      ],
+      [
+       -121.9848217,
+       37.3998027
+      ],
+      [
+       -121.9848306,
+       37.3998428
+      ],
+      [
+       -121.9848228,
+       37.3999002
+      ],
+      [
+       -121.9848344,
+       37.3999225
+      ],
+      [
+       -121.9848278,
+       37.4000046
+      ],
+      [
+       -121.9848354,
+       37.400031
+      ],
+      [
+       -121.9848366,
+       37.4001482
+      ],
+      [
+       -121.9848119,
+       37.4002127
+      ],
+      [
+       -121.9848174,
+       37.4003241
+      ],
+      [
+       -121.9847994,
+       37.4003556
+      ],
+      [
+       -121.9846924,
+       37.4003618
+      ],
+      [
+       -121.9846248,
+       37.4003562
+      ],
+      [
+       -121.9845324,
+       37.4003812
+      ],
+      [
+       -121.9845471,
+       37.4003057
+      ],
+      [
+       -121.9845245,
+       37.4002618
+      ],
+      [
+       -121.9845362,
+       37.4002168
+      ],
+      [
+       -121.9845394,
+       37.4000841
+      ],
+      [
+       -121.9845374,
+       37.399715
+      ],
+      [
+       -121.9845506,
+       37.3996681
+      ],
+      [
+       -121.9845914,
+       37.3996668
+      ],
+      [
+       -121.9846246,
+       37.3996565
+      ],
+      [
+       -121.9846439,
+       37.3996628
+      ],
+      [
+       -121.9846689,
+       37.3996568
+      ],
+      [
+       -121.9847515,
+       37.3996628
+      ],
+      [
+       -121.984823,
+       37.39965
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area D building 5",
+    "stage": "entitled",
+    "height_ft": 72,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (2,600 in Areas C and D)",
+    "phase": "Area D",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 72 ft is the figure's minimum height for Area D",
+    "note": "Figure 5-3 gives Area D 72 to 202 ft (7 to 20 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 202 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.98443,
+       37.4002072
+      ],
+      [
+       -121.9844371,
+       37.4002279
+      ],
+      [
+       -121.9844071,
+       37.4002653
+      ],
+      [
+       -121.9844202,
+       37.4002999
+      ],
+      [
+       -121.9843862,
+       37.4003181
+      ],
+      [
+       -121.9843685,
+       37.4003476
+      ],
+      [
+       -121.9843237,
+       37.4003453
+      ],
+      [
+       -121.984249,
+       37.4003563
+      ],
+      [
+       -121.9841097,
+       37.4003472
+      ],
+      [
+       -121.9840524,
+       37.4003552
+      ],
+      [
+       -121.9839985,
+       37.4003438
+      ],
+      [
+       -121.9839527,
+       37.4003557
+      ],
+      [
+       -121.9839315,
+       37.4003469
+      ],
+      [
+       -121.9838717,
+       37.4003538
+      ],
+      [
+       -121.98387,
+       37.4002997
+      ],
+      [
+       -121.9838561,
+       37.4002781
+      ],
+      [
+       -121.9838634,
+       37.4002509
+      ],
+      [
+       -121.9838492,
+       37.4001956
+      ],
+      [
+       -121.983913,
+       37.4001958
+      ],
+      [
+       -121.9839338,
+       37.4001879
+      ],
+      [
+       -121.9839252,
+       37.4000542
+      ],
+      [
+       -121.9840092,
+       37.4000589
+      ],
+      [
+       -121.9841138,
+       37.4000507
+      ],
+      [
+       -121.9842418,
+       37.4000599
+      ],
+      [
+       -121.9843027,
+       37.4000542
+      ],
+      [
+       -121.9843407,
+       37.4000672
+      ],
+      [
+       -121.9844195,
+       37.400053
+      ],
+      [
+       -121.9844304,
+       37.4001142
+      ],
+      [
+       -121.9844214,
+       37.4001352
+      ],
+      [
+       -121.9844344,
+       37.4001835
+      ],
+      [
+       -121.98443,
+       37.4002072
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area D building 6",
+    "stage": "entitled",
+    "height_ft": 72,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (2,600 in Areas C and D)",
+    "phase": "Area D",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 72 ft is the figure's minimum height for Area D",
+    "note": "Figure 5-3 gives Area D 72 to 202 ft (7 to 20 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 202 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9836952,
+       37.4008907
+      ],
+      [
+       -121.9836983,
+       37.4010544
+      ],
+      [
+       -121.9833082,
+       37.4010652
+      ],
+      [
+       -121.983154,
+       37.4010547
+      ],
+      [
+       -121.9830743,
+       37.4010629
+      ],
+      [
+       -121.9830261,
+       37.4010527
+      ],
+      [
+       -121.9829608,
+       37.4010638
+      ],
+      [
+       -121.9828934,
+       37.4010587
+      ],
+      [
+       -121.9828583,
+       37.401065
+      ],
+      [
+       -121.9827685,
+       37.4010628
+      ],
+      [
+       -121.9827569,
+       37.4009721
+      ],
+      [
+       -121.9827592,
+       37.4008342
+      ],
+      [
+       -121.9827515,
+       37.4008185
+      ],
+      [
+       -121.9827695,
+       37.4007007
+      ],
+      [
+       -121.982765,
+       37.4005601
+      ],
+      [
+       -121.9827572,
+       37.4005479
+      ],
+      [
+       -121.9827649,
+       37.4005039
+      ],
+      [
+       -121.9827587,
+       37.4004787
+      ],
+      [
+       -121.9827643,
+       37.400372
+      ],
+      [
+       -121.9828699,
+       37.4003778
+      ],
+      [
+       -121.982923,
+       37.4003739
+      ],
+      [
+       -121.982963,
+       37.4003819
+      ],
+      [
+       -121.9830673,
+       37.4003741
+      ],
+      [
+       -121.9831067,
+       37.4003851
+      ],
+      [
+       -121.9833914,
+       37.4003744
+      ],
+      [
+       -121.9835279,
+       37.4003833
+      ],
+      [
+       -121.9836132,
+       37.4003722
+      ],
+      [
+       -121.9836058,
+       37.4006156
+      ],
+      [
+       -121.9836215,
+       37.4006433
+      ],
+      [
+       -121.9836116,
+       37.4007114
+      ],
+      [
+       -121.9836219,
+       37.4007287
+      ],
+      [
+       -121.9836212,
+       37.4008435
+      ],
+      [
+       -121.9836299,
+       37.4008532
+      ],
+      [
+       -121.983682,
+       37.4008551
+      ],
+      [
+       -121.9836952,
+       37.4008907
+      ]
+     ],
+     [
+      [
+       -121.9834027,
+       37.4008516
+      ],
+      [
+       -121.983396,
+       37.4007725
+      ],
+      [
+       -121.9834022,
+       37.4006397
+      ],
+      [
+       -121.9833905,
+       37.400592
+      ],
+      [
+       -121.9833327,
+       37.4005981
+      ],
+      [
+       -121.9831399,
+       37.4005909
+      ],
+      [
+       -121.983087,
+       37.4006019
+      ],
+      [
+       -121.9830143,
+       37.4006012
+      ],
+      [
+       -121.9830111,
+       37.4006743
+      ],
+      [
+       -121.9830235,
+       37.4007873
+      ],
+      [
+       -121.9830122,
+       37.4008487
+      ],
+      [
+       -121.9830444,
+       37.4008609
+      ],
+      [
+       -121.9831176,
+       37.4008609
+      ],
+      [
+       -121.9832716,
+       37.4008569
+      ],
+      [
+       -121.9833156,
+       37.4008498
+      ],
+      [
+       -121.9834027,
+       37.4008516
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Area D building 7",
+    "stage": "entitled",
+    "height_ft": 72,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Homes (2,600 in Areas C and D)",
+    "phase": "Area D",
+    "illustrative": true,
+    "source": "illustrative: outline traced from Draft EIR Figure 5-3 (Reduced Office/Increased Housing Alternative, PDF p. 621); 72 ft is the figure's minimum height for Area D",
+    "note": "Figure 5-3 gives Area D 72 to 202 ft (7 to 20 levels), \"approximate\", subject to FAA limits; drawn at the minimum: the figure gives no height for the buildings between. Draft EIR Table 2-3 gives the area's anticipated maximum as 202 ft (proposed project)."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9848161,
+       37.4007311
+      ],
+      [
+       -121.9848269,
+       37.4007453
+      ],
+      [
+       -121.9848247,
+       37.4008461
+      ],
+      [
+       -121.9848355,
+       37.4009271
+      ],
+      [
+       -121.9847563,
+       37.4009116
+      ],
+      [
+       -121.9847092,
+       37.400925
+      ],
+      [
+       -121.9846129,
+       37.4009242
+      ],
+      [
+       -121.9846147,
+       37.4010508
+      ],
+      [
+       -121.9844315,
+       37.4010667
+      ],
+      [
+       -121.9842845,
+       37.4010664
+      ],
+      [
+       -121.9842427,
+       37.4010553
+      ],
+      [
+       -121.9841442,
+       37.4010693
+      ],
+      [
+       -121.9841211,
+       37.4010624
+      ],
+      [
+       -121.9840209,
+       37.4010661
+      ],
+      [
+       -121.9838634,
+       37.4010599
+      ],
+      [
+       -121.9838624,
+       37.4008492
+      ],
+      [
+       -121.9839487,
+       37.400837
+      ],
+      [
+       -121.9839478,
+       37.4007333
+      ],
+      [
+       -121.9839617,
+       37.4006618
+      ],
+      [
+       -121.9839617,
+       37.4006266
+      ],
+      [
+       -121.9839518,
+       37.4006132
+      ],
+      [
+       -121.9839503,
+       37.4005055
+      ],
+      [
+       -121.9841149,
+       37.4004986
+      ],
+      [
+       -121.9842998,
+       37.4005065
+      ],
+      [
+       -121.9843828,
+       37.4005007
+      ],
+      [
+       -121.9844479,
+       37.4005108
+      ],
+      [
+       -121.9845046,
+       37.4004988
+      ],
+      [
+       -121.984568,
+       37.4005014
+      ],
+      [
+       -121.9845935,
+       37.4005133
+      ],
+      [
+       -121.984649,
+       37.4005052
+      ],
+      [
+       -121.9847138,
+       37.4005112
+      ],
+      [
+       -121.9848171,
+       37.4004981
+      ],
+      [
+       -121.9848119,
+       37.4005731
+      ],
+      [
+       -121.9848222,
+       37.4006891
+      ],
+      [
+       -121.9848161,
+       37.4007311
+      ]
+     ],
+     [
+      [
+       -121.9845279,
+       37.4008529
+      ],
+      [
+       -121.9845217,
+       37.4007006
+      ],
+      [
+       -121.9844522,
+       37.4007085
+      ],
+      [
+       -121.9843791,
+       37.4006983
+      ],
+      [
+       -121.9843038,
+       37.4007093
+      ],
+      [
+       -121.9842867,
+       37.4007004
+      ],
+      [
+       -121.9842251,
+       37.4007065
+      ],
+      [
+       -121.9841471,
+       37.4007022
+      ],
+      [
+       -121.984138,
+       37.4007166
+      ],
+      [
+       -121.9841507,
+       37.4007551
+      ],
+      [
+       -121.9841462,
+       37.4007816
+      ],
+      [
+       -121.9841551,
+       37.4007954
+      ],
+      [
+       -121.9841482,
+       37.4008559
+      ],
+      [
+       -121.9843108,
+       37.4008597
+      ],
+      [
+       -121.9844256,
+       37.4008536
+      ],
+      [
+       -121.9844419,
+       37.4008598
+      ],
+      [
+       -121.9845279,
+       37.4008529
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

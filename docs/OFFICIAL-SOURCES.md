@@ -123,6 +123,16 @@ network access; the "Update with full network access" sections in `docs/official
 supersede it.
 
 ### Next
+- The 2026-10-19 pass added 21 projects: San Francisco towers and sites, six South Bay projects and the
+  Berkeley Space Center (notes `docs/official-research/candidates-sf-*.md`, `candidates-98-franklin.md`,
+  `candidates-south-bay-2026-10.md`, `candidates-santana-row.md`, `candidates-gateway-crossings.md`,
+  `candidates-berkeley-space-center.md`; leads not added in
+  `docs/upkeep/leads-2026-10-19.md`), and 598 Brannan and 725-765 Harrison followed on 2026-10-22
+  (`candidates-sf-central-soma-2.md`). Those sessions' network refused sfbos.org, sfgov.legistar.com, sf.gov,
+  citypln-m-extnl.sfgov.org (Planning Commission packets and minutes from 2023 on), sfocii.org, nasa.gov,
+  the UC Regents, berkeley.edu and the South Bay cities' sites, so Board ordinance numbers, 2023+ motion
+  numbers, NASA's Record of Decision for the Berkeley Space Center and the South Bay projects' permits are
+  open `verify` items; check them when those hosts are reachable.
 - The 2026-10-07 pass covered every project then mapped (findings in
   `docs/official-research/update-2026-10-07-*.md`, changes in `CHANGELOG.md`). Still open
   from it: Potrero's ordinance numbers once the Mayor signs; Esmeralda after the Council's

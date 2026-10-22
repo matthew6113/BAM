@@ -1,0 +1,58 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "524-howard",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 3721 lots 013 and 014",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273721013%27%2C+%273721014%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The parking lot at 524 Howard Street (lot 013) and the office building at 530 Howard Street (lot 014), the two lots of DBI site permit application 202311170986, running through from Howard Street to Natoma Street. Transbay Parcel F's strip along Natoma Street adjoins lot 014 on the west; the two sites share that line and don't overlap. 0.4 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 2
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3973878,
+       37.7882518
+      ],
+      [
+       -122.3971438,
+       37.7884439
+      ],
+      [
+       -122.3969521,
+       37.7882905
+      ],
+      [
+       -122.3969179,
+       37.7883123
+      ],
+      [
+       -122.3967109,
+       37.7881465
+      ],
+      [
+       -122.396986,
+       37.7879298
+      ],
+      [
+       -122.3973878,
+       37.7882518
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

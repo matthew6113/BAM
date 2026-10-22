@@ -1,0 +1,58 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "98-franklin",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 0836 lots 008, 009 and 013",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%270836008%27%2C+%270836009%27%2C+%270836013%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "Lots 008, 009 and 013 in Assessor's Block 0836, the L-shaped parking lot at Franklin and Oak streets with a strip through to Market Street that the Planning Commission's May 28, 2020 approvals name, against the approximately 23,750 sq ft in the approval and the Hub Plan EIR. One Oak's site (lots 001 to 005) is to the east, beyond 1546-1564 Market Street (lot 007); the two don't touch. 0.5 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 3
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4208218,
+       37.775151
+      ],
+      [
+       -122.4203375,
+       37.7752126
+      ],
+      [
+       -122.4202199,
+       37.7746285
+      ],
+      [
+       -122.4203529,
+       37.7745234
+      ],
+      [
+       -122.4204206,
+       37.7748527
+      ],
+      [
+       -122.4207535,
+       37.774812
+      ],
+      [
+       -122.4208218,
+       37.775151
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

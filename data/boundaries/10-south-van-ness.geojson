@@ -1,0 +1,58 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "10-south-van-ness",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 3506 lots 003A and 004",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273506003A%27%2C+%273506004%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "Lots 003A and 004 in Assessor's Block 3506, the triangular site at Market Street, South Van Ness Avenue and 12th Street that the Planning Commission's 2020 minutes and 2024 agenda name, against the 1.17 acres in the project's CEQA filings. The project would merge the two lots. 1.2 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 2
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4200073,
+       37.7743315
+      ],
+      [
+       -122.4193918,
+       37.7748177
+      ],
+      [
+       -122.4190322,
+       37.7736666
+      ],
+      [
+       -122.4190446,
+       37.7736286
+      ],
+      [
+       -122.4190807,
+       37.7736155
+      ],
+      [
+       -122.4191179,
+       37.7736265
+      ],
+      [
+       -122.4200073,
+       37.7743315
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

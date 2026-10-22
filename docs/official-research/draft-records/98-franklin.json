@@ -1,0 +1,128 @@
+{
+ "id": "98-franklin",
+ "name": "98 Franklin Street",
+ "aliases": [
+  "98 Franklin",
+  "International High School of the French American International School (98 Franklin Street)"
+ ],
+ "city": "San Francisco",
+ "county": "San Francisco",
+ "subregion": "San Francisco",
+ "category": "buildings",
+ "approxCenter": [
+  -122.4205,
+  37.775
+ ],
+ "camera": {
+  "center": [
+   -122.4203,
+   37.7748
+  ],
+  "zoom": 16.6,
+  "pitch": 58,
+  "bearing": -30
+ },
+ "acres": 0.55,
+ "acresNote": "The Planning Commission's 2020 approval: \"The Site is 23,750 square feet (0.55 acres) in area\", Assessor's Block 0836, Lots 008, 009 and 013, an L-shaped lot at Franklin and Oak streets with a strip through to Market Street. The City's parcel map gives about 22,380 sq ft (0.51 acres).",
+ "program": {
+  "homes": 345,
+  "affordableHomes": 69,
+  "affordablePct": 20,
+  "officeLabSqft": null,
+  "commercialSqftTotal": null,
+  "retailSqft": 3229,
+  "hotelKeys": null,
+  "openSpaceAcres": null,
+  "notes": "As approved on May 28, 2020 (Planning Commission Motion 20728): a 36-story building of about 524,014 gross sq ft, 365 ft to the roof (396 ft 8 in to the top of the rooftop screen). About 379,003 gross sq ft of housing on floors 7 to 36 holds 345 homes (259 studios or one-bedrooms, 52 two-bedrooms and 35 three-bedrooms), 69 of them (20%) affordable to households at 50% of area median income. A five-story podium, 68 ft tall, holds about 84,815 sq ft for the International High School of the French American International School (the EIR: up to 440 students) and about 3,229 sq ft of ground-floor retail; three basement levels hold up to 111 parking and 3 car-share spaces. A modification heard by the Planning Commission on March 30, 2023 would make it a 38-story building with a 400-ft roof (431 ft 6 in with the rooftop screen), about 560,543 gross sq ft and 385 homes on floors 6 to 38, with about 84,991 sq ft of school and 2,978 sq ft of retail. Its development agreement would let the developer dedicate land at 600 Van Ness Avenue to the City for affordable housing and would waive most of two affordable housing fees; Planning still lists that agreement as under review."
+ },
+ "developer": "Related California and the French American International School (98 Franklin Street, LLC)",
+ "publicPartners": [
+  "San Francisco Planning Commission",
+  "San Francisco Board of Supervisors"
+ ],
+ "stage": "entitled",
+ "stageNote": "The Planning Commission approved the building on May 28, 2020, and the City's development pipeline still lists it as approved (2026 Q2 snapshot). Nothing has been built: the site is still a commercial parking lot (in May 2026 Planning recommended approving its parking lot permit, a referral from the Police Department), and the Department of Building Inspection hasn't issued the site permit applied for in February 2021.",
+ "timeline": [
+  {
+   "date": "2017-10-27",
+   "event": "The developer files an environmental evaluation application for the project (case 2016-014802ENV)."
+  },
+  {
+   "date": "2018-05-23",
+   "event": "Planning issues the notice of preparation of one EIR for the Hub Plan, 30 Van Ness Avenue and 98 Franklin Street."
+  },
+  {
+   "date": "2019-07-24",
+   "event": "Planning publishes the Draft EIR."
+  },
+  {
+   "date": "2020-05-21",
+   "event": "Planning Commission certifies the Hub Plan, 30 Van Ness Avenue Project, 98 Franklin Street Project and Hub Housing Sustainability District Final EIR (Motion 20707)."
+  },
+  {
+   "date": "2020-05-28",
+   "event": "Planning Commission approves a 36-story, 365-ft building with 345 homes over a five-story high school podium: CEQA findings (Motion 20726), shadow findings (Motion 20727) and the Downtown Project Authorization (Motion 20728), each 7-0."
+  },
+  {
+   "date": "2020-08-03",
+   "event": "The City's notice of determination records the approval of the Hub Plan, 30 Van Ness and 98 Franklin Street projects as of this date, the first business day after the mayor signed the Hub Plan legislation on July 31, 2020."
+  },
+  {
+   "date": "2021-02-18",
+   "event": "Site permit application filed with the Department of Building Inspection for 37 stories and 345 homes with a private school (application 202102184905)."
+  },
+  {
+   "date": "2022-11-21",
+   "event": "The developer applies for a development agreement to raise the height limit from 365 to 400 ft and allow up to 385 homes (Board of Supervisors file 221163)."
+  },
+  {
+   "date": "2023-03-30",
+   "event": "Planning Commission hearing on the modification: amendments to the Planning Code and to the zoning map changing the site's height district from 85-X // 120/365-R-2 to 85-X // 120/400-R-2, shadow findings, the development agreement and a revised Downtown Project Authorization for a 38-story, 400-ft building with 385 homes."
+  },
+  {
+   "date": "2023-07-28",
+   "event": "Planning closes its records of the zoning map and Planning Code amendments as approved; the City's height and bulk map now places the site in the 85-X // 120/400-R-2 district."
+  },
+  {
+   "date": "2023-08-15",
+   "event": "Planning closes its records of the revised Downtown Project Authorization and shadow findings for the 400-ft design as approved. Its record of the development agreement is still open (\"Under Review\")."
+  }
+ ],
+ "nextMilestone": "Action on the development agreement (Board of Supervisors file 221163), which Planning still lists as under review, and the Department of Building Inspection's issuance of a site permit.",
+ "summary": "A 36-story, 365-ft tower with 345 homes, 69 of them affordable, over a five-story podium that would house the International High School of the French American International School, on a parking lot at Franklin and Oak streets that reaches through to Market Street, a block from Van Ness Avenue. Approved in 2020; a 2023 modification would raise it to 400 ft and 385 homes, tied to a development agreement that Planning still lists as under review.",
+ "massingNotes": "Added at Matthew's request (2026-10-19); a single-site project below the usual 1,000-home bar. Boundary: DataSF parcels (acdm-wktn), block 0836 lots 008, 009 and 013, the lots the approvals name (about 0.51 acres as drawn, against 23,750 sq ft in the approval); One Oak's site is about 20 m to the east, and the two don't touch. Massing (pipeline/bam_pipeline/sites/massing_98_franklin.py): a 365-ft tower and a 68-ft podium over the rest of the lots, the 2020 approved heights. The tower's faceted outline is the lower tower floor from the approved plans (Skidmore, Owings & Merrill, May 2020), registered to three parcel corners (RMS 0.01 m); the rooftop screen to 396 ft 8 in, the slightly smaller upper floors and the podium's roof terraces aren't drawn. The 400-ft modification isn't drawn: its development agreement is still under review and its plans couldn't be opened. Illustrative, drawn as entitled.",
+ "officialLinks": [
+  "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2016-014802PRJ",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200528_cal_min.pdf",
+  "https://sfplanning.org/sites/default/files/agendas/2023-03/20230330_cal%20%28ID%201361438%29.pdf"
+ ],
+ "sources": [
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2016-014802PRJ.pdf",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200528_cal_min.pdf",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200521_cal_min.pdf",
+  "https://sfplanning.org/sites/default/files/agendas/2023-03/20230330_cal%20%28ID%201361438%29.pdf",
+  "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2016-014802PRJ",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2016-014802DNX-02",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2016-014802SHD-02",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2016-014802MAP",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2016-014802PCA",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2016-014802DVA",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2026-003860MIS",
+  "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=0836013",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202102184905",
+  "https://data.sf.gov/resource/vckc-dh2h.json?reference_number=202102184905",
+  "https://data.sf.gov/d/h9wh-cg3m",
+  "https://ceqanet.lci.ca.gov/2018052060",
+  "https://ceqanet.lci.ca.gov/2018052060/2/Attachment/je2iTJ",
+  "https://ceqanet.lci.ca.gov/2018052060/3/Attachment/XWsd0-",
+  "https://data.sf.gov/d/acdm-wktn"
+ ],
+ "verify": [
+  "whether the 2023 modification (38 stories, a 400-ft roof, up to 385 homes) is in effect: Planning closed its zoning map, code amendment, shadow and Downtown Project Authorization records as approved in July and August 2023, and the City's height map shows the 400-ft district, but Planning still lists the development agreement (Board of Supervisors file 221163) as under review; the 2023 minutes, motions and ordinance couldn't be opened",
+  "whether the 2020 approval is still valid: its conditions gave three years from approval to obtain a site permit unless extended, and the site permit applied for in 2021 hasn't been issued",
+  "the motion numbers of the 2023 approvals and the number and date of the ordinance that changed the site's height district",
+  "the number of stories: 36 in the 2020 approval, 37 on the 2021 site permit application",
+  "the lot area: about 23,750 sq ft in the approval and the EIR, about 22,380 sq ft in the City's parcel map"
+ ],
+ "lastVerified": "2026-10-19"
+}

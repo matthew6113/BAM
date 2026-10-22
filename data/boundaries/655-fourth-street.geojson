@@ -1,0 +1,58 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "655-fourth-street",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 3787 lots 026, 028, 050 and 161 to 164",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273787026%27%2C+%273787028%27%2C+%273787050%27%2C+%273787161%27%2C+%273787162%27%2C+%273787163%27%2C+%273787164%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The seven lots at the northeast corner of 4th and Townsend streets that the 2019 approvals and the Dec 14, 2023 Planning Commission agenda name, against the 71,290 sq ft development lot in the Planning Department's record of the modified project. 1.7 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 7
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3955721,
+       37.7777319
+      ],
+      [
+       -122.3952382,
+       37.7779958
+      ],
+      [
+       -122.3953119,
+       37.7780596
+      ],
+      [
+       -122.3949715,
+       37.7783235
+      ],
+      [
+       -122.3942961,
+       37.7777856
+      ],
+      [
+       -122.3949687,
+       37.7772515
+      ],
+      [
+       -122.3955721,
+       37.7777319
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

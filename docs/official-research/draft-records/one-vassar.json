@@ -1,0 +1,139 @@
+{
+ "id": "one-vassar",
+ "name": "One Vassar",
+ "aliases": [
+  "400 2nd Street",
+  "645 Harrison Street",
+  "657 Harrison Street",
+  "2nd and Harrison",
+  "Central SoMa Key Development Site 3"
+ ],
+ "city": "San Francisco",
+ "county": "San Francisco",
+ "subregion": "San Francisco",
+ "category": "buildings",
+ "approxCenter": [
+  -122.3957,
+  37.7834
+ ],
+ "camera": {
+  "center": [
+   -122.3955,
+   37.7832
+  ],
+  "zoom": 16.3,
+  "pitch": 58,
+  "bearing": -45
+ },
+ "acres": 2.36,
+ "acresNote": "Planning Commission packet for the Feb 20, 2020 approval (case 2012.1384): twelve lots on Assessor's Block 3763 with a lot area of about 102,694 sq ft (2.36 acres). One of them, lot 112, has since been retired and split; the parcels drawn come to about 2.2 acres.",
+ "program": {
+  "homes": 489,
+  "affordableHomes": null,
+  "affordablePct": null,
+  "officeLabSqft": 493115,
+  "commercialSqftTotal": null,
+  "retailSqft": 37551,
+  "hotelKeys": 468,
+  "openSpaceAcres": null,
+  "notes": "As approved on Feb 20, 2020: three buildings of about 1.5 million gross sq ft in all. 400 2nd Street (Building 1) is a 27-story office building, 350 ft to the roof (385 ft with rooftop equipment), with about 430,000 sq ft of new office over an 85-ft podium. At 645 Harrison Street (Building 2) the existing four-story, 55-ft building is kept, with 63,115 sq ft of its office and 42,013 sq ft of PDR space, and a 15-story hotel addition with 468 rooms (221,965 sq ft) rises to 200 ft. 657 Harrison Street (Building 3) is a 35-story residential building, 350 ft to the roof (385 ft), with up to 489 homes and a 14,000 sq ft child care center over an 85-ft podium. The office figure (493,115 sq ft) counts the new and the retained office. Also 37,551 sq ft of retail, about 14,655 sq ft of public open space including a new Hawthorne Street Plaza between the buildings, an extension of Perry Street to 2nd Street, and 322 underground parking spaces. Affordable housing is met by a fee at 33%, 110% of the otherwise required 30%; no affordable homes are built on site."
+ },
+ "developer": "One Vassar (the property owner and applicant named in the 2020 approval and CEQA notice)",
+ "publicPartners": [
+  "San Francisco Planning Commission",
+  "San Francisco Zoning Administrator (variances)",
+  "San Francisco Department of Building Inspection",
+  "Caltrans (land for the Perry Street extension)"
+ ],
+ "stage": "entitled",
+ "stageNote": "The Planning Commission approved the project on Feb 20, 2020. DBI approved the site permits for the office building (June 23, 2023) and the residential building (Nov 13, 2023) but has issued none of the project's site or demolition permits, so construction hasn't started.",
+ "timeline": [
+  {
+   "date": "2012-10-31",
+   "event": "SF Planning opens case 2012.1384 for the redevelopment of 400 2nd Street and its neighbors on Harrison Street."
+  },
+  {
+   "date": "2018-05-10",
+   "event": "Planning Commission certifies the Central SoMa Plan EIR (Motion 20182); the plan names 2nd and Harrison a key development site."
+  },
+  {
+   "date": "2019-12-06",
+   "event": "Site permit applications for the three buildings are filed with DBI."
+  },
+  {
+   "date": "2020-01-30",
+   "event": "Planning Commission holds an informational hearing on the project."
+  },
+  {
+   "date": "2020-02-05",
+   "event": "Planning Department finds the project covered by the Central SoMa Plan EIR (community plan evaluation)."
+  },
+  {
+   "date": "2020-02-20",
+   "event": "Planning Commission approves the project: Large Project Authorization (Motion 20665), 430,000 sq ft of office allocation (Motion 20666) and the hotel (Motion 20667); the Zoning Administrator indicates intent to grant the variances."
+  },
+  {
+   "date": "2020-05-07",
+   "event": "The City files a notice of exemption for the project with the State (SCH 2020050176)."
+  },
+  {
+   "date": "2023-06-23",
+   "event": "DBI approves the site permit for the 27-story office building at 400 2nd Street (permit 201912068928); it has not been issued."
+  },
+  {
+   "date": "2023-11-13",
+   "event": "DBI approves the site permit for the 35-story residential building at 657 Harrison Street (permit 201912068933); it has not been issued."
+  },
+  {
+   "date": "2023-12-22",
+   "event": "Applications to demolish the buildings at 653, 657 and 665 Harrison Street are filed with DBI (an application for 400 2nd Street followed in April 2023); none has been issued."
+  }
+ ],
+ "nextMilestone": "DBI issuing the site and demolition permits; none was issued as of Oct 19, 2026.",
+ "summary": "Three buildings at 2nd and Harrison streets: a 350-ft office tower at 400 2nd Street, a 200-ft, 468-room hotel addition on the historic 645 Harrison Street building, and a 350-ft residential tower with 489 homes, about 1.5 million sq ft in all. Approved in 2020; DBI has approved two of its site permits but has issued none.",
+ "massingNotes": "Added at Matthew's request (2026-10-19). Boundary: DataSF parcels (acdm-wktn), block 3763 lots 001, 078, 079, 080, 080A, 081, 099, 100, 101, 105 and 113, and lot 125, the 2nd Street piece of the approval's retired lot 112 (about 2.2 acres as drawn against the approval's 2.36); approximate. Massing (pipeline/bam_pipeline/sites/massing_one_vassar.py): the three towers' typical floors and the ground-level outlines of 400 2nd and 657 Harrison traced from the 2020 plan set's typical tower plans (packet p. 159), registered to six lot corners (RMS 0.2 m), and drawn to the approved roof heights: 350-ft towers over 85-ft podiums, and the hotel addition from the existing building's 55-ft roof to 200 ft. The existing building at 645 Harrison is left to the base map. Illustrative, drawn as entitled.",
+ "officialLinks": [
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2012.1384PRJ.pdf",
+  "https://ceqanet.lci.ca.gov/Project/2020050176"
+ ],
+ "sources": [
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2012.1384PRJ.pdf",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200220_cal_min.pdf",
+  "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200130_cal_min.pdf",
+  "https://ceqanet.lci.ca.gov/Project/2020050176",
+  "https://ceqanet.lci.ca.gov/2020050176/2",
+  "https://sfplanning.org/sites/default/files/documents/citywide/Central_Corridor/2018CentralSoMaPlan.pdf",
+  "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2012.1384",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2012.1384VAR",
+  "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=3763001",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201912068928",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201912068933",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201912068937",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202304206081",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202312223008",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202312223010",
+  "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202312223011",
+  "https://data.sf.gov/d/acdm-wktn"
+ ],
+ "verify": [
+  "whether the 2020 approvals were extended or modified later (the press reports a three-year extension, lower affordable housing fees and changes to the residential tower in January 2024; no Planning record of it was found)",
+  "the current owner and developer",
+  "the approval's twelve lots: lot 112 has been retired, and the parcels drawn total about 95,000 sq ft against the approval's 102,694 sq ft",
+  "the status of the Perry Street extension on Caltrans land",
+  "why the hotel addition's site permit (201912068937) is still only filed while the other two were approved in 2023"
+ ],
+ "lastVerified": "2026-10-19",
+ "reported": {
+  "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Found through a web search on 2026-10-19; the article itself couldn't be opened from this session, so these are leads to check, held out of the map until city or other public records confirm them.",
+  "developer": "Cresleigh Management, with Stanford Hotels",
+  "timeline": [
+   {
+    "date": "2024-01",
+    "event": "The project wins a three-year extension of its approvals, lower affordable housing fees and changes to the residential tower."
+   }
+  ],
+  "sources": [
+   "https://therealdeal.com/san-francisco/2024/01/17/cresleigh-management-moves-ahead-with-triple-towers-in-sf/"
+  ]
+ }
+}

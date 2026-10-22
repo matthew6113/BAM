@@ -100,10 +100,28 @@ sites:
 	$(PY) bam_pipeline.sites.lines_eastridge_bart_regional_connector
 	$(PY) bam_pipeline.sites.massing_oceanwide_center
 	$(PY) bam_pipeline.sites.massing_30_van_ness
+	$(PY) bam_pipeline.sites.massing_530_sansome
+	$(PY) bam_pipeline.sites.massing_77_beale
+	$(PY) bam_pipeline.sites.massing_536_mission
+	$(PY) bam_pipeline.sites.massing_one_oak
+	$(PY) bam_pipeline.sites.massing_98_franklin
+	$(PY) bam_pipeline.sites.massing_transbay_parcel_f
+	$(PY) bam_pipeline.sites.massing_524_howard
+	$(PY) bam_pipeline.sites.massing_one_vassar
+	$(PY) bam_pipeline.sites.massing_598_brannan
+	$(PY) bam_pipeline.sites.massing_725_harrison
 	$(PY) bam_pipeline.sites.massing_west_midway_reshap
 	$(PY) bam_pipeline.sites.landuse_alameda_point_plan
 	$(PY) bam_pipeline.sites.massing_alameda_marina
 	$(PY) bam_pipeline.sites.boundary_berkeley_pier_ferry
+	$(PY) bam_pipeline.sites.massing_mission_point
+	$(PY) bam_pipeline.sites.massing_seely_avenue
+	$(PY) bam_pipeline.sites.massing_freedom_west
+	$(PY) bam_pipeline.sites.massing_sf_gateway
+	$(PY) bam_pipeline.sites.boundary_berkeley_space_center
+	$(PY) bam_pipeline.sites.landuse_berkeley_space_center
+	$(PY) bam_pipeline.sites.boundary_santana_row
+	$(PY) bam_pipeline.sites.massing_santana_row
 	$(PY) bam_pipeline.sites.boundary_larkspur_ferry_expansion
 	$(PY) bam_pipeline.sites.boundary_sf_railyards
 	$(PY) bam_pipeline.sites.massing_sf_railyards

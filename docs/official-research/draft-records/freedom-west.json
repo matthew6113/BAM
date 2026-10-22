@@ -1,0 +1,116 @@
+{
+ "id": "freedom-west",
+ "name": "Freedom West",
+ "aliases": [
+  "Freedom West 2.0",
+  "710 McAllister Street",
+  "Freedom West Homes"
+ ],
+ "city": "San Francisco",
+ "county": "San Francisco",
+ "subregion": "San Francisco",
+ "category": "buildings",
+ "approxCenter": [
+  -122.4251,
+  37.7795
+ ],
+ "camera": {
+  "center": [
+   -122.4249,
+   37.7798
+  ],
+  "zoom": 16.1,
+  "pitch": 58,
+  "bearing": 155
+ },
+ "acres": 10.37,
+ "acresNote": "Draft EIR (Jan 2026): 451,500 sq ft (10.37 acres) on Assessor's Block 0783, Lots 023, 024 and 025, and Block 0770, Lot 027, bounded by Golden Gate Avenue, Gough Street, Fulton Street and Laguna Street. Bethel A.M.E. Church, 967-973 Golden Gate Avenue and the separate 870-880 McAllister Street senior housing site are not part of it. The boundary drawn from the four lots is about 10.8 acres because lot 0770/027 still includes the 870-880 McAllister corner.",
+ "program": {
+  "homes": 2291,
+  "affordableHomes": null,
+  "affordablePct": null,
+  "officeLabSqft": null,
+  "commercialSqftTotal": 68600,
+  "retailSqft": null,
+  "hotelKeys": 150,
+  "openSpaceAcres": 1.28,
+  "notes": "As studied in the Draft EIR (Jan 13, 2026): 15 new buildings of 8 to 32 stories, 85 to 335 ft, with about 3,673,200 gross sq ft in all: 2,614,700 sq ft of housing with 2,291 homes (267 replacement homes for the Freedom West co-op's shareholders and 2,024 more), a 108,000 sq ft, 150-room hotel (Building SE-C, 105 ft), 68,600 sq ft of commercial space, 14,800 sq ft of cultural, institutional and educational space (an innovation center, a community event space and a childcare center) and 867,000 sq ft of parking for 1,640 cars. 1.28 acres of privately owned public open space at grade, mostly the new Octavia Green on the line of Octavia Street. The 22 existing buildings, with 358 co-op homes, would be demolished; a separate 115-home affordable senior building at 870-880 McAllister Street (case 2024-003742PRJ) makes up the difference to the co-op's 382 homes. The 2025 notice of preparation listed 133 affordable homes in Building NE-A and 1,891 market-rate homes; the Draft EIR doesn't split the 2,024 new homes by affordability."
+ },
+ "developer": "MacFarlane Partners (project sponsor), for the Freedom West Homes Corporation",
+ "publicPartners": [
+  "San Francisco Planning Department (lead agency)",
+  "San Francisco Planning Commission",
+  "San Francisco Board of Supervisors",
+  "San Francisco Office of Economic and Workforce Development"
+ ],
+ "stage": "entitlement",
+ "stageNote": "In formal review. The Draft EIR was published on Jan 13, 2026 and its comment period closed on Feb 27, 2026; the responses to comments aren't out yet. The rezoning to a Freedom West special use district, General Plan and Planning Code amendments and a development agreement are under review, and an update and the proposed initiation of the General Plan amendments were on the Planning Commission's Sept 3, 2026 agenda. No approvals yet.",
+ "timeline": [
+  {
+   "date": "1973",
+   "event": "Construction of the Freedom West co-op begins, in two phases through 1975, sponsored by Bethel A.M.E. Church with federal housing subsidies."
+  },
+  {
+   "date": "2020-07-24",
+   "event": "MacFarlane Partners files the project application with the Planning Department (case 2020-006887)."
+  },
+  {
+   "date": "2024-07-25",
+   "event": "Informational presentation to the Planning Commission on the Freedom West development project."
+  },
+  {
+   "date": "2025-04-30",
+   "event": "The Planning Department issues the notice of preparation of an EIR for Freedom West 2.0; the scoping meeting is held May 21, 2025."
+  },
+  {
+   "date": "2026-01-13",
+   "event": "The Draft EIR is published: 15 buildings of 85 to 335 ft with 2,291 homes and a 150-room hotel. Comments close Feb 27, 2026."
+  },
+  {
+   "date": "2026-02-12",
+   "event": "Planning Commission public hearing on the Draft EIR (the Historic Preservation Commission heard it on Feb 4)."
+  },
+  {
+   "date": "2026-05-05",
+   "event": "Planning opens the development agreement, General Plan amendment, Planning Code amendment and zoning map amendment records."
+  },
+  {
+   "date": "2026-09-03",
+   "event": "Planning Commission agenda: an informational update and the proposed initiation of General Plan amendments, describing up to 2,393 homes and an optional 150-room hotel."
+  }
+ ],
+ "nextMilestone": "The Responses to Comments (Final EIR), then approval hearings at the Planning Commission and the Board of Supervisors; Planning lists these as upcoming without dates.",
+ "summary": "A plan to rebuild the Freedom West housing co-op, built in the 1970s on two Western Addition blocks between Golden Gate Avenue and Fulton Street. Its 22 low-rise buildings would give way to 15 buildings of 85 to 335 ft with 2,291 homes, including 267 new homes for the co-op's members, plus a hotel, shops and a new Octavia Green. The Draft EIR came out in January 2026; the rezoning and development agreement still need City approval.",
+ "massingNotes": "Added at Matthew's request (2026-10-19). Boundary: DataSF parcels (acdm-wktn), the four lots named in the notice of preparation and Draft EIR; approximate, because lot 0770/027 also takes in the separate 870-880 McAllister corner (about 0.4 acres), which the parcel layer hasn't split off yet. Massing (pipeline/bam_pipeline/sites/massing_freedom_west.py): the 15 building parcels traced from Draft EIR Figure 2-9 (fitted to the parcel corners, RMS 0.1 m), each drawn whole at its proposed height limit from Figure 2-8 and the labels in Figure 2-10: 85 ft for most, 105 ft for the hotel (SE-C), 165 ft for SW-A and SW-F, 185 ft for NE-D, 225 ft for SE-D and 335 ft for SE-A. These are height envelopes, not building designs, which aren't final; the real buildings have courtyards and setbacks. Illustrative, drawn as proposed, with the Draft EIR's preliminary construction phases (1A to 3B).",
+ "officialLinks": [
+  "https://sfplanning.org/project/freedom-west",
+  "https://ceqanet.lci.ca.gov/Project/2025050078"
+ ],
+ "sources": [
+  "https://ceqanet.lci.ca.gov/2025050078/2/Attachment/wdfI_L",
+  "https://ceqanet.lci.ca.gov/2025050078/2",
+  "https://ceqanet.lci.ca.gov/2025050078/1/Attachment/SYErkB",
+  "https://ceqanet.lci.ca.gov/2025050078/1",
+  "https://ceqanet.lci.ca.gov/Project/2025050078",
+  "https://sfplanning.org/project/freedom-west",
+  "https://sfplanning.org/sites/default/files/agendas/2026-08/20260903_cpc%20%28ID%201585209%29_0.pdf",
+  "https://sfplanning.org/sites/default/files/agendas/2026-02/20260212_cpc%20%28ID%201554963%29.pdf",
+  "https://sfplanning.org/sites/default/files/agendas/2024-07/20240725_cpc%20%28ID%201450244%29.pdf",
+  "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2020-006887PRJ",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2020-006887DVA",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2020-006887GPA",
+  "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2024-003742PRJ",
+  "https://data.sf.gov/resource/y673-d69b.json?record_id=2024-008030SUB",
+  "https://data.sf.gov/resource/6jgi-cpb4.json?case_no=2023-007911PRX",
+  "https://data.sf.gov/d/acdm-wktn"
+ ],
+ "verify": [
+  "the number of homes: the Draft EIR studies 2,291; the Planning Commission agenda of Sept 3, 2026 and Planning's project page say up to 2,393, and the City's development pipeline (2026 Q2) lists 2,537",
+  "how many of the 2,024 new homes would be affordable: the 2025 notice of preparation listed 133 affordable homes in Building NE-A; the Draft EIR doesn't say",
+  "whether the Planning Commission initiated the General Plan amendments on Sept 3, 2026 (the minutes are on a City site this research couldn't reach)",
+  "the site area: 10.37 acres in the Draft EIR, 10.8 acres in the Planning Commission agenda of July 25, 2024 (the four lots as mapped), and 10.37 and 10.73 acres in the two Sept 3, 2026 agenda items",
+  "building footprints and podium heights from the design standards and guidelines, which weren't available; the map shows height limits over whole parcels",
+  "the construction schedule: the Draft EIR assumes construction from late 2026 to early 2034, which depends on approvals"
+ ],
+ "lastVerified": "2026-10-19"
+}

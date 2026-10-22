@@ -3,6 +3,32 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-22 (598 Brannan and 725-765 Harrison added)
+
+Matthew asked to add the two Central SoMa key sites the Oct 19 pass had held as just under the bar. Research and
+every figure's source are in `docs/official-research/candidates-sf-central-soma-2.md`.
+
+**598-brannan** (new): 598 Brannan Street, Central SoMa Key Site 5 ("Park Block"): three office buildings of 150
+to 185 ft with 922,737 sq ft of office around a new public park of about 39,661 sq ft, on 4.5 acres at 5th and
+Brannan. The Planning Commission approved it on June 6, 2019 (Motions 20459 and 20460) and allocated the second
+phase's office space on Dec 3, 2020 (Motion 20816); minutes and the case packet are on SF Planning's S3 store
+(https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2012.0640ENX.pdf). DBI issued site permits for two of
+the office buildings in March 2021 and the old buildings were demolished that year, but the office buildings
+haven't started and Planning's record reads "On Hold". The project's affordable housing, a nine-story building
+with 85 homes at 160 Freelon Street on land it gave the City, has been under construction since July 15, 2025
+(DBI permit 202209283327), so the stage is under construction; the status note says only that building is rising.
+Massing traced from the approved site and roof plans.
+
+**725-harrison** (new): 725-765 Harrison Street, Central SoMa Key Site 2: a 14-story, 185-ft building of about
+981,000 sq ft (810,000 office, PDR, retail and child care) at 4th and Harrison. Approved Dec 12, 2019 and modified
+June 16, 2022 (Motion 21128); after its approvals ran out on June 16, 2025, an 18-month extension to March 24, 2028
+was on the Planning Commission's Sept 24, 2026 agenda and Planning closed it approved on Sept 29, 2026
+(https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2005.0759ENXOFAVAR.pdf; DataSF record
+2005.0759ENX-03). Entitled; no DBI permit issued. Massing traced from the 2019 floor plans; the 2022 design adds a
+lot (759 Harrison) that the drawn floors don't cover.
+
+`_meta.lastVerified` is now 2026-10-22.
+
 ## 2026-10-21 (SF Railyards added)
 
 **sf-railyards** (new, buildings): Matthew asked to include "the potential redevelopment of Caltrain's
@@ -22,6 +48,137 @@ and environmental review pages; research in `docs/official-research/candidates-4
 Caltrain's Board packets and press pages couldn't be reached, so nothing is recorded as reported.
 `_meta.lastVerified` moves to 2026-10-21.
 
+## 2026-10-19 (large towers and sites in San Francisco and the South Bay)
+
+Matthew asked for the large towers proposed or being built in San Francisco (naming the one replacing a
+fire station near Jackson Square, one by Salesforce Park and one near Van Ness and Market) "and more", for
+more South Bay projects, and for the UC Berkeley–Moffett Field agreement. Candidates came from SF Planning's
+Development Pipeline (DataSF `6jgi-cpb4`, 2026 Q2) and CEQAnet; each was checked against official
+documents only. Research, verbatim quotes and the leads not added are in `docs/official-research/`:
+`candidates-sf-financial-district.md`, `candidates-sf-transbay.md`, `candidates-sf-van-ness-market.md`,
+`candidates-sf-central-soma.md`, `candidates-sf-other-sites.md`, `candidates-south-bay-2026-10.md` and
+`candidates-berkeley-space-center.md`; the leads not added are summarized in `docs/upkeep/leads-2026-10-19.md`. This session couldn't reach the Board
+of Supervisors' sites, Planning Commission packets from 2023 on, or the South Bay cities' own sites; facts
+only those would confirm are in each record's `verify` list.
+
+**530-sansome** (new): the 41-story, about 544-ft office and hotel tower replacing Fire Station 13 at the edge
+of Jackson Square, with a new four-story station at 447 Battery Street. EIR certified July 17, 2025 (Motion
+21773); Board approval Oct 21 and the Mayor's signature Oct 27, 2025, per the notice of determination
+(https://ceqanet.lci.ca.gov/Project/2024110311). Entitled. Massing traced from the Draft EIR's plans and
+section.
+
+**77-beale** (new): Hines' Matson Block Project, a tower of up to 1,225 ft (plus a crown of up to 75 ft) on
+the PG&E block between Market, Main, Mission and Beale streets, with up to 1.9 million sq ft of office. Notice
+of preparation Dec 17, 2025 (https://ceqanet.lci.ca.gov/2025120794). In entitlement. Massing is the notice's
+maximum envelope, against Mission Street; the tower's position isn't set.
+
+**536-mission** (new): a 46-story tower on the Golden Gate University site, approved by the Planning
+Commission on Sept 10, 2026 as a 700-ft office tower or a 649-ft mixed-use tower with up to 385 homes
+(agenda and DataSF records). Entitled. Massing is a labelled whole-lot placeholder at 700 ft.
+
+**transbay-parcel-f** (new): 542–550 Howard Street beside Salesforce Park: 61 stories, 749 ft 10 in to the
+roof (799 ft 9 in to the top), 165 homes, a 189-room hotel and offices, with a bridge to the park. Approved
+Jan 9, 2020, amended Jan 28, 2021 (Planning Commission packet and minutes on SF Planning's S3 store).
+Entitled. Massing traced from the approved floor plans.
+
+**524-howard** (new): 524 and 530 Howard Street, also beside Salesforce Park: 72 stories, about 795 ft,
+672 homes (68 at 50% AMI), approved June 18, 2024 (DataSF pipeline and Planning records). Entitled. Massing is
+a labelled placeholder sized from Planning's floor area.
+
+**10-south-van-ness** (new): a 67-story, 921-home tower at Market Street and South Van Ness Avenue, approved
+under SB 423 (Planning's record closed with an approval letter Aug 18, 2026; DataSF `qvu5-m3a2`). It replaces
+the 55-story, 590-ft design approved in 2020. Entitled. No massing until an official document gives its
+height.
+
+**one-oak** (new): One Oak, 1500–1540 Market Street: a 41-story, 400-ft tower with 541 homes over a 14-story
+podium, approved March 19, 2026 (agenda; DataSF records). Entitled. Illustrative massing uses the 2017 tower
+outline under the 2026 heights.
+
+**freedom-west** (new): Freedom West 2.0 in the Fillmore: 2,291 homes (267 replacing co-op homes) in 15
+buildings of 8 to 32 stories, a 150-room hotel and 1.28 acres of public open space on 10.37 acres. Draft EIR
+Jan 13, 2026 (https://ceqanet.lci.ca.gov/Project/2025050078). In entitlement. Massing is each parcel at its
+proposed height (illustrative).
+
+**sf-gateway** (new): Prologis's San Francisco Gateway in the Bayview: two three-story, 97-ft industrial
+buildings, about 1.65 million gsf enclosed, approved Sept 25, 2025 with a special use district and
+development agreement in effect Dec 12, 2025 (https://ceqanet.lci.ca.gov/Project/2022030286). Entitled.
+
+**railyards**: the Railyards Mixed-Use Development at Fourth and King was researched in this pass too
+(`candidates-sf-other-sites.md`), but the same project reached the map on Oct 21 as `sf-railyards` (above),
+with massing and a later check, so this pass's duplicate record was dropped when the two branches merged.
+
+**flower-mart** (new): the Flower Mart site on Brannan Street between 5th and 6th (Central SoMa Key Site 4,
+6.5 acres): about 2 million sq ft of office in three buildings up to about 236 ft, approved July 18, 2019
+(Motion 20484), with a Development Agreement passed January 2020 (Planning Commission packet and minutes on
+SF Planning's S3 store). The developer has applied to amend it for up to 3,532 homes and height limits of 350
+to 600 ft (Planning Commission agenda, Oct 1, 2026). Entitled. Boundary only while the design is in flux.
+
+**88-bluxome** (new): the former San Francisco Tennis Club site (Central SoMa Key Site 7): two towers of 599
+and 528 ft with 1,500 homes, approved by SF Planning on Dec 12, 2025 (DataSF record 2025-004642PRJ). The 2019
+office approval on the site still holds DBI site permits, amended Oct 9, 2026; which project goes ahead is a
+`verify` item. Entitled. Boundary only.
+
+**655-fourth-street** (new): the Creamery site at 4th and Townsend (Central SoMa Key Site 8): two towers of
+380 and 400 ft with 1,105 homes, approved Dec 14, 2023 (https://ceqanet.lci.ca.gov/2024010421). Entitled.
+Boundary only.
+
+**one-vassar** (new): One Vassar at 2nd and Harrison (Central SoMa Key Site 3): about 1.5 million sq ft in a
+350-ft office tower, a 350-ft residential tower with 489 homes and a 200-ft hotel addition, approved Feb 20,
+2020 (Motions 20665 to 20667; packet on SF Planning's S3 store). Entitled; DBI has issued no site permit.
+Massing traced from the approved site plan.
+
+**mission-point** (new): Mission Point in north Santa Clara: up to 2,600 homes and about 2.2 million sq ft of
+office and R&D on 48.6 acres, approved Nov 19 and Dec 3, 2024 (https://ceqanet.lci.ca.gov/Project/2018072068).
+Entitled. Illustrative massing from the approved alternative's site plan.
+
+**seely-avenue** (new): 1,472 homes and a 2.5-acre park on Seely Avenue in North San José, approved Aug 13,
+2024 (https://ceqanet.lci.ca.gov/Project/2022020565). Entitled. Illustrative massing at the EIR's heights.
+
+**freedom-circle** (new): the first two housing projects in Santa Clara's Freedom Circle Focus Area, the
+Irvine Company's 1,792 homes (approved 2025) and Greystar's 1,100 (2022), 39 acres
+(https://ceqanet.lci.ca.gov/Project/2020060425). Entitled. Boundary only.
+
+**pleasant-hills** (new): about 2,000 homes on the former Pleasant Hills golf course in east San José, to be
+annexed from the County. Notice of preparation Oct 14, 2025 (https://ceqanet.lci.ca.gov/Project/2025100897).
+In entitlement. Boundary only.
+
+**berkeley-space-center** (new): the UC Berkeley and NASA project at Moffett Field, now called the Berkeley Air
+& Space Center. From the joint Final EIR/EIS (Aug 2026) and the University's notice of determination
+(https://ceqanet.lci.ca.gov/Project/2024060942): the UC Regents and NASA signed an Enhanced Use Lease for about
+36 acres of the NASA Research Park on Nov 1, 2020; the Regents formed Moffett Partners, LLC with SKSP NRP in 2021
+and the lease was assigned to its affiliate in 2022; the project is up to 2.32 million sq ft (2 million of
+research and office, a conference center, about 145 student and faculty housing units and 100 short-term lodging
+units) on about 39 acres, with a 1.4 million sq ft alternative that could also be approved. On Sept 16, 2026 the
+University authorized submitting the project to NASA, which still has to issue its Record of Decision. In
+entitlement. Boundary traced from the project's land use plan; nine land-use zones; no massing. The lease's term,
+the Regents' meeting record and NASA's decision are `verify` items (nasa.gov, the Regents and berkeley.edu weren't
+reachable).
+
+Three of the leads, added the same day at Matthew's request (research in `candidates-98-franklin.md`,
+`candidates-santana-row.md` and `candidates-gateway-crossings.md`):
+
+**98-franklin** (new): a 36-story, 365-ft tower with 345 homes (69 affordable) over a five-story podium for the
+French American International School's high school, at Franklin and Oak streets next to One Oak. Approved May 28,
+2020 (Motions 20726 to 20728; minutes at
+https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200528_cal_min.pdf). A 2023 modification to 400 ft and
+385 homes depends on a development agreement Planning still lists as under review, so the 2020 design is shown and
+drawn. Entitled; the site permit is filed, not issued. Massing traced from the approved floor plans.
+
+**santana-row** (new): Federal Realty's Santana Row Master Plan Update in San José: four office buildings, 1.5
+million sq ft and 139 to 162 ft tall, about 1.27 million sq ft over the existing entitlement, on the 42.53-acre
+site. Notice of preparation re-issued Feb 13, 2026 (https://ceqanet.lci.ca.gov/Project/2013122059); no Draft EIR
+yet. In entitlement. Boundary from the County parcels inside the notice's project boundary; the four lots as
+illustrative envelopes at the notice's heights.
+
+**gateway-crossings** (new): Gateway Crossings at 1205 Coleman Avenue, Santa Clara: 1,565 homes, a 225-room hotel
+and 45,000 sq ft of retail on about 21.4 acres, approved July 9, 2019 (https://ceqanet.lci.ca.gov/Project/2017022066).
+Entitled; construction couldn't be confirmed from an official source. It lies inside the mapped Santa Clara Station
+Area plan. Boundary from the County's successor lots (approximate); no massing.
+
+Also: `official_boundaries.build()` now drops zero-area sliver parts, which left invalid geometry in some parcel
+boundaries; 524 Howard, Transbay Parcel F and Freedom Circle were rebuilt with unchanged areas.
+
+`_meta.lastVerified` is now 2026-10-19.
 ## 2026-10-19 (Larkspur ferry expansion added; Harbor Bay held)
 
 **larkspur-ferry-expansion** (new, transportation): Matthew asked to add the proposed ferry projects

@@ -1,0 +1,95 @@
+{
+  "id": "77-beale",
+  "name": "Matson Block Project",
+  "aliases": [
+    "77 Beale Street",
+    "77 Beale St / 50 Main St",
+    "Matson/PG&E Block",
+    "PG&E headquarters block"
+  ],
+  "city": "San Francisco",
+  "county": "San Francisco",
+  "subregion": "San Francisco",
+  "category": "buildings",
+  "approxCenter": [-122.3961, 37.7921],
+  "camera": {
+    "center": [-122.3962, 37.7922],
+    "zoom": 15.6,
+    "pitch": 58,
+    "bearing": 135
+  },
+  "acres": 3.47,
+  "acresNote": "Notice of Preparation: the whole block bounded by Market, Main, Mission and Beale streets, eleven lots on Assessor's Block 3711 (Lots 005 to 014 and 019), about 151,390 sq ft (3.47 acres).",
+  "program": {
+    "homes": 437,
+    "affordableHomes": null,
+    "affordablePct": null,
+    "officeLabSqft": 1919847,
+    "commercialSqftTotal": null,
+    "retailSqft": 250000,
+    "hotelKeys": 350,
+    "openSpaceAcres": null,
+    "notes": "Maximums in the Notice of Preparation (Dec 2025); figures shown are the most the EIR will study. Up to 1,919,847 gross sq ft of office on the block (350,000 more than today), of which up to 250,000 could be institutional uses instead. The new tower would be up to 1,816,711 gross sq ft, with up to 1,580,211 sq ft of office, retail and an observation deck of up to 75,000 sq ft near the top. Up to 250,000 sq ft of retail, including up to 100,000 sq ft of entertainment. 44 to 120 homes from converting the 200-ft office building at 25 Beale Street; up to 317 more homes or a 350-room hotel could go in an optional 400-ft building on Main Street or in the tower (361 to 437 homes at most). The historic Matson (215 Market) and PG&E (245 Market) buildings are renovated and kept; 77 Beale Street, 45 Beale Street, the 215 Market Street Annex and the 50 Main Street garage are demolished for the tower and a public courtyard, the “Urban Village”. Parking for 277 to 480 cars below grade."
+  },
+  "developer": "Hines",
+  "publicPartners": [
+    "San Francisco Planning Department",
+    "San Francisco Planning Commission",
+    "San Francisco Board of Supervisors"
+  ],
+  "stage": "entitlement",
+  "stageNote": "In environmental review. Planning issued the notice of preparation of an EIR on Dec 17, 2025, with a scoping meeting set for Jan 7, 2026 and comments taken until Jan 20, 2026. No Draft EIR had been published as of Oct 19, 2026, and Planning's records list the environmental review as on hold. Approval would need a new Matson/PG&E Block special use district, a height change from 400 ft to 1,225 ft on the south part of the block and a development agreement.",
+  "timeline": [
+    {
+      "date": "2021-12-15",
+      "event": "Planning application filed for the block (record 2021-012562PRJ), then for an 85-story, 808-unit residential tower at 50 Main Street and an altered and enlarged 77 Beale Street."
+    },
+    {
+      "date": "2022-09-08",
+      "event": "Building permit application filed for an 88-story building with 808 homes (DBI 202209082126)."
+    },
+    {
+      "date": "2025-07-14",
+      "event": "Revised application: Planning opens a zoning map amendment for a new special use district on the block (record 2021-012562MAP)."
+    },
+    {
+      "date": "2025-09-08",
+      "event": "DBI records the 88-story building permit application as withdrawn."
+    },
+    {
+      "date": "2025-12-17",
+      "event": "Planning issues the notice of preparation of an EIR for the Matson Block Project: 77 Beale Street demolished for a tower of up to 1,225 ft."
+    },
+    {
+      "date": "2026-01-20",
+      "event": "Comment period on the scope of the EIR closes."
+    }
+  ],
+  "nextMilestone": "Draft EIR, not yet published as of Oct 19, 2026. The notice of preparation's schedule had demolition beginning at the end of 2026 and all construction done by the end of 2032.",
+  "summary": "Hines plans to rebuild PG&E's former headquarters block between Market, Main, Mission and Beale streets: the 1971 office tower at 77 Beale Street would make way for a tower of up to 1,225 ft, about 200 ft taller than Salesforce Tower, mainly offices with a possible observation deck. The historic Matson and PG&E buildings on Market Street would be renovated, 25 Beale Street converted to 44 to 120 homes, and the middle of the block opened up as a public courtyard. The project is at the start of environmental review.",
+  "massingNotes": "Added at Matthew's request (2026-10-19); the notice of preparation places the site within 300 ft of Salesforce Park. Boundary: DataSF parcels (acdm-wktn), block 3711 lots 005 to 014 and 019, the whole block the notice of preparation names (about 3.48 acres as drawn; 3.47 in the notice). Massing (pipeline/bam_pipeline/sites/massing_77_beale.py): the maximum envelopes in the notice's Figure 6 for the tower in the position it draws in 3D, against Mission Street and centred between Beale and Main: a base up to 125 ft over the 229-ft-deep Tower Location Zone, a 230 by 135 ft lower tower to 679 ft and a 210 by 135 ft upper tower to 1,225 ft. The EIR will also study the tower against Main or Beale Street, and its design isn't set. The kept buildings, the 75-ft crown and the optional 400-ft variant building aren't drawn. Illustrative, drawn as in entitlement.",
+  "officialLinks": [
+    "https://sfplanning.org/environmental-review-documents?title=Matson",
+    "https://ceqanet.lci.ca.gov/2025120794"
+  ],
+  "sources": [
+    "https://ceqanet.lci.ca.gov/2025120794",
+    "https://ceqanet.lci.ca.gov/2025120794/Attachment/gufVD2",
+    "https://sfplanning.org/environmental-review-documents?title=Matson",
+    "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2021-012562PRJ",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2021-012562ENV",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2021-012562MAP",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2021-012562DNX",
+    "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=3711013",
+    "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202209082126",
+    "https://data.sf.gov/d/acdm-wktn"
+  ],
+  "verify": [
+    "the tower's final position (against Mission, Main or Beale Street) and design, which the project's design guidelines would set",
+    "whether the 1,225-ft height includes the architectural crown of up to 75 ft",
+    "why Planning's records list the environmental review as on hold, and when a Draft EIR will be published",
+    "the number of homes: 44 to 120 at 25 Beale Street, plus up to 317 only if the residential variant is built",
+    "whether the Jan 7, 2026 scoping meeting was held as scheduled"
+  ],
+  "lastVerified": "2026-10-19"
+}

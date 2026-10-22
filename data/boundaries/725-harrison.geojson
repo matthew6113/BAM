@@ -1,0 +1,58 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "725-harrison",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 3762 lots 149 and 152",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273762149%27%2C+%273762152%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The site between Harrison and Perry streets, from 4th Street most of the way to 3rd Street, against the 104,188 sq ft of the 2022 modified project: the office site (lot 152, which merged the lots of the 2019 approval with lot 113 at 759 Harrison Street) and the lot to be given to the City for affordable housing (lot 149). 2.4 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 2
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3994132,
+       37.7807889
+      ],
+      [
+       -122.3978651,
+       37.782007
+      ],
+      [
+       -122.3976714,
+       37.7818534
+      ],
+      [
+       -122.3975714,
+       37.7819287
+      ],
+      [
+       -122.3973748,
+       37.781772
+      ],
+      [
+       -122.3990212,
+       37.7804765
+      ],
+      [
+       -122.3994132,
+       37.7807889
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

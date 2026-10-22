@@ -1,0 +1,316 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "santana-row",
+  "source": "Santa Clara County parcels (data.sccgov.org ubcd-cewv) inside the project boundary of Figure 4, Lot Division Diagram, of San Jos\u00e9's Revised Notice of Preparation for the Santana Row Master Plan Update (February 2026; CEQAnet SCH 2013122059), with the nine parcels the notice names (277-33-020, 277-33-019, 277-33-017, 277-40-029, 277-40-031, 277-38-003, 277-38-004, 277-38-005, 277-38-012)",
+  "sourceLabel": "Santa Clara County parcels",
+  "sourceUrl": "https://data.sccgov.org/d/ubcd-cewv",
+  "query": "https://data.sccgov.org/resource/ubcd-cewv.geojson?%24where=within_box%28the_geom%2C+37.3245%2C+-121.9535%2C+37.3150%2C+-121.9425%29&%24limit=5000",
+  "documents": [
+   "https://ceqanet.lci.ca.gov/2013122059/3",
+   "https://ceqanet.lci.ca.gov/2013122059/3/Attachment/lrKplZ",
+   "https://data.sccgov.org/d/ubcd-cewv"
+  ],
+  "documentSha256": "7710e9c5f61258d22ea82bdacba605f385157fd66c20b8d1777f873e14f874f9",
+  "accuracy": "approximate",
+  "accuracyNote": "Approximate boundary: the notice of preparation names only the nine parcels that would change (Lots 1A/B/C, 2B, 10A, 17 and 22; 5.9 acres), so the rest of the approximately 42.53-acre site is the County parcels inside the dashed project boundary of the notice's Figure 4, including the private streets and the condominium parcels inside the blocks. 42.8 acres as drawn, of which Lot 22 (added in 2026, after the 42.53-acre figure was first published in 2022) is 0.54. The figure's outline, fitted to the parcels (RMS 1.4 m), lies up to 17 m from them, the most at Lot 22, which the figure draws smaller than the County's parcel.",
+  "license": "Santa Clara County open data (terms of use)",
+  "features_used": 605,
+  "parcelsWithoutApn": 8,
+  "apnsNamed": [
+   "277-33-020",
+   "277-33-019",
+   "277-33-017",
+   "277-40-029",
+   "277-40-031",
+   "277-38-003",
+   "277-38-004",
+   "277-38-005",
+   "277-38-012"
+  ],
+  "georeference": {
+   "method": "Figure 4 (PDF p. 8): a similarity from the five lot labels to the NOP's parcels, refined by trimmed ICP of the blue dashed-line pixels to the selected parcels' outline.",
+   "scale_m_per_unit": 1.13158,
+   "rotation_deg": 91.007,
+   "rms_m": 1.39,
+   "controls": [
+    {
+     "label": "outline inliers (11856 of 14820 pixels)",
+     "residual_m": 1.39
+    }
+   ],
+   "label_start": {
+    "scale_m_per_unit": 1.1364,
+    "rotation_deg": 90.394,
+    "rms_m": 4.76,
+    "controls": [
+     {
+      "label": "Lot 1A/B/C",
+      "residual_m": 5.23
+     },
+     {
+      "label": "Lot 2B",
+      "residual_m": 7.35
+     },
+     {
+      "label": "Lot 10A",
+      "residual_m": 4.16
+     },
+     {
+      "label": "Lot 17",
+      "residual_m": 1.48
+     },
+     {
+      "label": "Lot 22",
+      "residual_m": 3.5
+     }
+    ]
+   },
+   "label_distance_to_lot_m": {
+    "Lot 1A/B/C": 0.0,
+    "Lot 2B": 0.0,
+    "Lot 10A": 0.0,
+    "Lot 17": 0.0,
+    "Lot 22": 0.0
+   }
+  },
+  "tracedComparison": {
+   "acres": 42.8,
+   "traced_acres": 42.7,
+   "max_deviation_m": 17.2,
+   "only_in_official_acres": 0.7,
+   "only_in_traced_acres": 0.5,
+   "traced_from": "NOP Figure 4, Lot Division Diagram, PDF p. 8 (blue dashed project boundary)"
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -121.946103,
+        37.3177086
+       ],
+       [
+        -121.9455238,
+        37.3177104
+       ],
+       [
+        -121.9455222,
+        37.3173903
+       ],
+       [
+        -121.9456907,
+        37.3173896
+       ],
+       [
+        -121.9457048,
+        37.3173395
+       ],
+       [
+        -121.945741,
+        37.3173154
+       ],
+       [
+        -121.9460641,
+        37.3172847
+       ],
+       [
+        -121.9461012,
+        37.3173342
+       ],
+       [
+        -121.946103,
+        37.3177086
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -121.949958,
+        37.3212414
+       ],
+       [
+        -121.949184,
+        37.3212466
+       ],
+       [
+        -121.9491883,
+        37.3217205
+       ],
+       [
+        -121.9499473,
+        37.3217206
+       ],
+       [
+        -121.9499192,
+        37.3221215
+       ],
+       [
+        -121.9499216,
+        37.3230341
+       ],
+       [
+        -121.9498943,
+        37.3231062
+       ],
+       [
+        -121.9498356,
+        37.3231562
+       ],
+       [
+        -121.9497857,
+        37.3231708
+       ],
+       [
+        -121.9491525,
+        37.3231955
+       ],
+       [
+        -121.9473088,
+        37.3231982
+       ],
+       [
+        -121.9473046,
+        37.322957
+       ],
+       [
+        -121.9469,
+        37.3229565
+       ],
+       [
+        -121.9468959,
+        37.3225034
+       ],
+       [
+        -121.9473024,
+        37.3224992
+       ],
+       [
+        -121.9472916,
+        37.3213926
+       ],
+       [
+        -121.9468859,
+        37.3213896
+       ],
+       [
+        -121.9468828,
+        37.321363
+       ],
+       [
+        -121.94681,
+        37.3213637
+       ],
+       [
+        -121.9467436,
+        37.3213275
+       ],
+       [
+        -121.9466695,
+        37.32131
+       ],
+       [
+        -121.9459815,
+        37.3213086
+       ],
+       [
+        -121.9458969,
+        37.3213205
+       ],
+       [
+        -121.9458191,
+        37.3213566
+       ],
+       [
+        -121.9457888,
+        37.3213025
+       ],
+       [
+        -121.9457356,
+        37.3212696
+       ],
+       [
+        -121.9456547,
+        37.3212723
+       ],
+       [
+        -121.9456038,
+        37.3213086
+       ],
+       [
+        -121.9455942,
+        37.3192361
+       ],
+       [
+        -121.946177,
+        37.319232
+       ],
+       [
+        -121.9461737,
+        37.318466
+       ],
+       [
+        -121.9463227,
+        37.3184613
+       ],
+       [
+        -121.9462968,
+        37.3179534
+       ],
+       [
+        -121.9462796,
+        37.3179493
+       ],
+       [
+        -121.9462762,
+        37.3172491
+       ],
+       [
+        -121.9468575,
+        37.3172464
+       ],
+       [
+        -121.9468654,
+        37.3182151
+       ],
+       [
+        -121.946801,
+        37.3182992
+       ],
+       [
+        -121.9467867,
+        37.318354
+       ],
+       [
+        -121.9468104,
+        37.3184238
+       ],
+       [
+        -121.9468718,
+        37.3184644
+       ],
+       [
+        -121.9499278,
+        37.3184599
+       ],
+       [
+        -121.949958,
+        37.3212414
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

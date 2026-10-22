@@ -1,0 +1,118 @@
+{
+  "id": "524-howard",
+  "name": "524 and 530 Howard Street",
+  "aliases": [
+    "524 & 530 Howard Street",
+    "524 Howard Street",
+    "530 Howard Street"
+  ],
+  "city": "San Francisco",
+  "county": "San Francisco",
+  "subregion": "San Francisco",
+  "category": "buildings",
+  "approxCenter": [
+    -122.3971,
+    37.7882
+  ],
+  "camera": {
+    "center": [
+      -122.3969,
+      37.788
+    ],
+    "zoom": 16.6,
+    "pitch": 58,
+    "bearing": -45
+  },
+  "acres": 0.4,
+  "acresNote": "DataSF parcels 3721/013 (524 Howard Street, a parking lot) and 3721/014 (530 Howard Street, a four-story office building) as mapped, about 17,460 sq ft (0.40 acres), running from Howard Street through to Natoma Street. No lot area was found in a document that could be opened.",
+  "program": {
+    "homes": 672,
+    "affordableHomes": 68,
+    "affordablePct": null,
+    "officeLabSqft": null,
+    "commercialSqftTotal": null,
+    "retailSqft": null,
+    "hotelKeys": null,
+    "openSpaceAcres": null,
+    "notes": "As approved (Planning Department, 2024): a 72-story residential tower about 795 ft to the roof (about 844 ft with permitted rooftop features), with 818,922 gross sq ft of residential use and 672 homes (424 one-bedroom, 180 two-bedroom and 68 three-bedroom), 68 of them for households earning 50% of area median income. Levels 2 to 4 hold a garage for 149 cars, with 422 bike spaces. A publicly accessible deck on the fifth floor, reached by elevators from Natoma Street, connects by a bridge over Natoma Street to Salesforce Park. The project uses the state density bonus law, with concessions (affordable homes consolidated as 15% of the base project at 50% of median income, above-grade parking, a relocated Howard Street curb cut) and waivers of the height, bulk and setback limits and of the lot coverage, open space, exposure, active-use and garage-entrance rules. It replaces a surface parking lot and the four-story, 29,955-sq-ft commercial building at 530 Howard Street."
+  },
+  "developer": "524 Howard Street, LLC",
+  "publicPartners": [
+    "San Francisco Planning Department",
+    "San Francisco Planning Commission",
+    "San Francisco Board of Supervisors"
+  ],
+  "stage": "entitled",
+  "stageNote": "Planning approved the tower in 2024; its development pipeline records the approval on June 18, 2024. DBI hasn't issued the site permit applied for in November 2023. The office building at 530 Howard Street still stands (a permit converting part of it to a parcel delivery business was completed in September 2025), and in April 2025 the Planning Commission let the parking lot at 524 Howard Street run for two more years.",
+  "timeline": [
+    {
+      "date": "2023-11-17",
+      "event": "Site permit application filed with DBI for a 72-story residential tower with 672 homes and a bridge from level 5 to Salesforce Park (application 202311170986)."
+    },
+    {
+      "date": "2023-11-22",
+      "event": "Planning application filed for the tower under the state density bonus law (record 2023-010883PRJ)."
+    },
+    {
+      "date": "2024-03-04",
+      "event": "Planning completes the General Plan referral for the pedestrian bridge over Natoma Street to Salesforce Park (2023-010883GPR, approved)."
+    },
+    {
+      "date": "2024-06-18",
+      "event": "Planning Department approval of the 72-story, 672-home tower, as recorded in its development pipeline."
+    },
+    {
+      "date": "2024-10-24",
+      "event": "Planning Commission hears an ordinance (Board of Supervisors File 240879) waiving the project's Transit Center District open space impact fee in recognition of its bridge to Salesforce Park."
+    },
+    {
+      "date": "2025-04-10",
+      "event": "Planning Commission approves a two-year extension of the temporary public parking lot at 524 Howard Street (2025-000685CUA)."
+    }
+  ],
+  "nextMilestone": "DBI's issuance of the site permit (application 202311170986, filed November 2023). No construction date is on record.",
+  "summary": "A 72-story, 795-ft residential tower approved in 2024 for a parking lot and a four-story office building on Howard Street, across Natoma Street from Salesforce Park: 672 homes, 68 of them for households earning 50% of area median income, with a public fifth-floor deck and a bridge to the park. It uses the state density bonus law to exceed the site's 450-ft height limit; no building permit has been issued.",
+  "massingNotes": "Added at Matthew's request (2026-10-19). Boundary: DataSF parcels (acdm-wktn), block 3721 lots 013 and 014, the lots of DBI site permit application 202311170986 (about 0.40 acres as drawn); it shares a line with Transbay Parcel F to the west and doesn't overlap it. Massing (pipeline/bam_pipeline/sites/massing_524_howard.py): a placeholder volume, the site inset evenly to the building's average floor area (about 882,251 gross sq ft over 72 stories, some 12,250 sq ft) at the 795-ft roof. The approved plans are on a Planning server that couldn't be reached, so the real footprint, the garage podium and the rooftop features to 844 ft are not drawn. Illustrative, drawn as entitled.",
+  "officialLinks": [
+    "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=3721013",
+    "https://sfplanning.org/sites/default/files/agendas/2024-10/20241024_cpc%20%28ID%201476978%29.pdf"
+  ],
+  "sources": [
+    "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=3721013",
+    "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2023-010883PRJ",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2023-010883TDM",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2023-010883GPR",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2024-008633PCA",
+    "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2025-000685PRJ",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2025-000685CUA",
+    "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202311170986",
+    "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202407096030",
+    "https://sfplanning.org/sites/default/files/agendas/2024-10/20241024_cpc%20%28ID%201476978%29.pdf",
+    "https://sfplanning.org/sites/default/files/agendas/2025-04/20250410_cpc%20%28ID%201504528%29.pdf",
+    "https://data.sf.gov/d/h9wh-cg3m",
+    "https://data.sf.gov/d/acdm-wktn"
+  ],
+  "verify": [
+    "the approval itself: the Planning Department's approval letter, its date and legal pathway (Planning's pipeline gives June 18, 2024; its project record was closed with the letter issued on Sept 17, 2024) weren't opened",
+    "the tower's footprint, setbacks and podium, which are in the approved plans (not opened)",
+    "the outcome of the open space impact fee waiver ordinance (Board of Supervisors File 240879; Planning's record is closed as approved on March 27, 2025)",
+    "the floor area: 818,922 gross sq ft of residential use in Planning's project description, 818,275 sq ft of residential gross floor area and about 882,251 gross sq ft of building in its TDM record, 882,899 sq ft in its project record",
+    "the story count above grade: 72 in Planning's records and on the DBI application's story field, 71 in the application's description",
+    "the developer behind 524 Howard Street, LLC"
+  ],
+  "lastVerified": "2026-10-19",
+  "reported": {
+    "note": "Found by web search but not opened (the press sites couldn't be reached from this session) and not confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until an official source confirms it.",
+    "developer": "Bayhill Ventures",
+    "timeline": [
+      {
+        "date": "2024-09",
+        "event": "Approved ministerially under state law AB 2011, using the state density bonus law (KTVU gives the date as Sept 25)."
+      }
+    ],
+    "sources": [
+      "https://www.ktvu.com/news/approved-residential-high-rise-would-change-san-francisco-skyline",
+      "https://sfyimby.com/2024/10/city-approval-for-72-story-residential-tower-at-530-howard-street-in-san-francisco.html"
+    ]
+  }
+}

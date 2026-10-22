@@ -1,0 +1,84 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "one-vassar",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 3763 lots 001, 078, 079, 080, 080A, 081, 099, 100, 101, 105, 113 and 125",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273763001%27%2C+%273763078%27%2C+%273763079%27%2C+%273763080%27%2C+%273763080A%27%2C+%273763081%27%2C+%273763099%27%2C+%273763100%27%2C+%273763101%27%2C+%273763105%27%2C+%273763113%27%2C+%273763125%27%29&%24limit=5000",
+  "accuracy": "approximate",
+  "accuracyNote": "The lots on Harrison Street between 2nd Street and the AC Transit yard that the Planning Commission's Feb 20, 2020 approvals name, against their 102,694 sq ft (2.36 acres). One of the approval's twelve lots, 112, has since been retired; its piece at 416 2nd Street, now lot 125, is drawn in its place, and the rest of it, the AC Transit bus yard (lot 126), isn't. Vassar Place, a public street, separates 400 2nd Street from the rest of the site. 2.2 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 12
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3955466,
+        37.7838353
+       ],
+       [
+        -122.3951534,
+        37.7841447
+       ],
+       [
+        -122.3947266,
+        37.7838046
+       ],
+       [
+        -122.3951193,
+        37.7834948
+       ],
+       [
+        -122.3955466,
+        37.7838353
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3966462,
+        37.7829701
+       ],
+       [
+        -122.3956449,
+        37.783758
+       ],
+       [
+        -122.3952176,
+        37.7834175
+       ],
+       [
+        -122.3954009,
+        37.7832732
+       ],
+       [
+        -122.3954376,
+        37.783296
+       ],
+       [
+        -122.3962516,
+        37.7826556
+       ],
+       [
+        -122.3966462,
+        37.7829701
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
