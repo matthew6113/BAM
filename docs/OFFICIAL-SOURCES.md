@@ -127,7 +127,8 @@ supersede it.
   Berkeley Space Center (notes `docs/official-research/candidates-sf-*.md`, `candidates-98-franklin.md`,
   `candidates-south-bay-2026-10.md`, `candidates-santana-row.md`, `candidates-gateway-crossings.md`,
   `candidates-berkeley-space-center.md`; leads not added in
-  `docs/upkeep/leads-2026-10-19.md`). That session's network refused sfbos.org, sfgov.legistar.com, sf.gov,
+  `docs/upkeep/leads-2026-10-19.md`), and 598 Brannan and 725-765 Harrison followed on 2026-10-22
+  (`candidates-sf-central-soma-2.md`). Those sessions' network refused sfbos.org, sfgov.legistar.com, sf.gov,
   citypln-m-extnl.sfgov.org (Planning Commission packets and minutes from 2023 on), sfocii.org, nasa.gov,
   the UC Regents, berkeley.edu and the South Bay cities' sites, so Board ordinance numbers, 2023+ motion
   numbers, NASA's Record of Decision for the Berkeley Space Center and the South Bay projects' permits are

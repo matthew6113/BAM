@@ -2,7 +2,7 @@
   "_meta": {
     "title": "Bay Area megaprojects: researched project list",
     "preparedBy": "Claude (claude.ai chat) for Matthew Huguet",
-    "lastVerified": "2026-10-21",
+    "lastVerified": "2026-10-22",
     "notes": [
       "Every figure here came from the listed sources as of the lastVerified date. Items in each project's 'verify' list are known gaps; do not fill them by guessing.",
       "approxCenter values are rough [lon, lat] points for placing a marker only. Real site boundaries must come from official plan documents or parcel data, saved per project with their source.",
@@ -9970,6 +9970,286 @@
         "the developer: the 2019 notice names Hunter Storm Properties as applicant; who is building each phase now hasn't been confirmed from an official source"
       ],
       "lastVerified": "2026-10-19"
+    },
+    {
+      "id": "598-brannan",
+      "name": "598 Brannan Street",
+      "aliases": [
+        "Park Block",
+        "Central SoMa Key Development Site 5",
+        "639, 645 and 649-651 Bryant Street",
+        "160 Freelon Street (affordable housing site)"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.3988,
+        37.7778
+      ],
+      "camera": {
+        "center": [
+          -122.3986,
+          37.7779
+        ],
+        "zoom": 16.3,
+        "pitch": 58,
+        "bearing": 135
+      },
+      "acres": 4.5,
+      "acresNote": "Planning Commission packet for the June 6, 2019 approval (case 2012.0640): four lots on Assessor's Block 3777 (045, 050, 051 and 052) \"collectively encompassing approximately 4.5 acres\", with a total area of 195,467 sq ft. Lot 052 has since been split into lots 176 and 177; the parcels drawn come to about 4.5 acres.",
+      "program": {
+        "homes": 85,
+        "affordableHomes": 84,
+        "affordablePct": null,
+        "officeLabSqft": 922737,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": 0.91,
+        "notes": "As approved on June 6, 2019: three office buildings with about 922,737 gross sq ft of office, about 60,471 sq ft of ground-floor retail and PDR space and a 5,546 sq ft child care center, built in two phases. Building 1, at 5th and Brannan streets, is 11 stories and 160 ft (180 ft with the rooftop mechanical screen), with 289,087 sq ft of office; Building 2, at 5th and Welsh streets, is 13 stories and 185 ft (205 ft), using a 25-ft height bonus for providing the affordable housing site and the park, with 422,049 sq ft of office; Building 3, on Bryant Street, is 10 stories and 150 ft (170 ft), with 211,601 sq ft of office and the child care center. Also a public park of about 39,661 sq ft (0.91 acres) at the center of the site, given to the City and built by the developer, about 19,336 sq ft of privately owned public open space and 200 underground parking spaces. In place of building affordable homes, the developer gave the City a 12,800 sq ft site at 160 Freelon Street; the 2019 approval expected a building of up to 72 affordable homes there. The building now under construction on it has 85 homes: 84 affordable to extremely low- and low-income households (25% set aside as supportive housing) and a manager's unit, in 15 studios, 24 one-bedrooms, 22 two-bedrooms and 23 three-bedrooms. Planning's project record counts all 85 as affordable."
+      },
+      "developer": "Brannan & Bryant Street, LLC, an affiliate of Tishman Speyer (the office buildings; named in the 2019 approval and the Mayor's Office of Housing's land dedication letter); 160 Freelon Housing Partners, L.P. (the affordable housing building)",
+      "publicPartners": [
+        "San Francisco Planning Commission",
+        "Mayor's Office of Housing and Community Development (affordable housing site)",
+        "San Francisco Public Utilities Commission (exchange of 639 Bryant Street for 2000 Marin Street)",
+        "San Francisco Board of Supervisors (land exchange, Board File 180550)",
+        "San Francisco Department of Building Inspection"
+      ],
+      "stage": "construction",
+      "stageNote": "Only the affordable housing is being built. The nine-story building with 85 affordable homes at 160 Freelon Street, on the land the project gave the City, has been under construction since July 15, 2025 (DBI permit 202209283327); DBI passed a partial rough-frame inspection on Sept 24, 2026. The three office buildings haven't started: DBI issued the site permits for Buildings 1 and 2 on March 17, 2021 and the existing buildings at 590-598 Brannan and 645 Bryant streets were demolished that year, but no construction on them is recorded, a 2021 shoring permit was cancelled in 2024, Building 3's site permit has been pending since 2019, and Planning's project record reads \"On Hold\". Planning records from 2025 and 2026 concern a parking lot on the site.",
+      "timeline": [
+        {
+          "date": "2012-05-15",
+          "event": "SF Planning opens case 2012.0640 for the redevelopment of 598 Brannan Street."
+        },
+        {
+          "date": "2017-12-18",
+          "event": "Brannan & Bryant Street, LLC applies for a Large Project Authorization for three office buildings."
+        },
+        {
+          "date": "2018-05-10",
+          "event": "Planning Commission certifies the Central SoMa Plan EIR (Motion 20182); the plan names the site Key Development Site 5, the \"Park Block\"."
+        },
+        {
+          "date": "2019-05-20",
+          "event": "The Mayor's Office of Housing and Community Development conditionally accepts 160 Freelon Street as the project's affordable housing land dedication."
+        },
+        {
+          "date": "2019-05-29",
+          "event": "Planning Department finds the project covered by the Central SoMa Plan EIR (community plan evaluation)."
+        },
+        {
+          "date": "2019-06-06",
+          "event": "Planning Commission approves the project: Large Project Authorization (Motion 20459), 711,136 sq ft of office allocation for Phase 1 (Motion 20460) and a fee waiver agreement for the public park (Resolution 20461)."
+        },
+        {
+          "date": "2019-09-06",
+          "event": "Site permit applications for Buildings 1 and 2 are filed with DBI; Building 3's follows on Dec 13, 2019."
+        },
+        {
+          "date": "2020-12-03",
+          "event": "Planning Commission approves 211,601 sq ft of office allocation for Phase 2, Building 3 (Motion 20816)."
+        },
+        {
+          "date": "2021-03-17",
+          "event": "DBI issues the site permits for Buildings 1 (11 stories) and 2 (13 stories)."
+        },
+        {
+          "date": "2021-06-25",
+          "event": "Demolition of the buildings at 590-598 Brannan Street and 645 Bryant Street passes final inspection."
+        },
+        {
+          "date": "2023-02-21",
+          "event": "Planning approves the 85-home affordable housing building at 160 Freelon Street (record 2022-008873PRJ, filed for the state's streamlined approval of supportive housing, AB 2162)."
+        },
+        {
+          "date": "2024-05-13",
+          "event": "DBI issues the building permit for 160 Freelon Street (permit 202209283327)."
+        },
+        {
+          "date": "2025-07-15",
+          "event": "Construction of the affordable housing building at 160 Freelon Street begins (DBI first construction document)."
+        }
+      ],
+      "nextMilestone": "Completion of the affordable housing at 160 Freelon Street; for the office buildings, a start of construction, for which no date is on record.",
+      "summary": "Three office buildings of 150 to 185 ft, with about 923,000 sq ft of office space, around a new one-acre public park at 5th and Brannan streets, Central SoMa's \"Park Block\" key site. Approved in 2019; the old buildings were demolished in 2021, but the office buildings haven't started. On land the project gave the City, a nine-story building with 85 affordable homes at 160 Freelon Street is under construction.",
+      "massingNotes": "Added at Matthew's request (2026-10-19). Boundary: DataSF parcels (acdm-wktn), block 3777 lots 045, 050 and 051 and lots 176 and 177, which replaced the approval's lot 052 in 2025; 4.5 acres as drawn; official. Massing (pipeline/bam_pipeline/sites/massing_598_brannan.py): the three office buildings' roof outlines and ground-floor outlines traced from the 2019 plan set's roof plan and site plan (packet pp. 116 and 115, vector drawings), each registered to six or seven lot corners (RMS 0.2 m), drawn as the roof outline at the approved roof height (160, 185 and 150 ft) and the rest of the ground floor up to where each building steps back (31, 73 and 76 ft). Upper floors that overhang are drawn to the ground; terraces, mechanical screens and the park are not drawn. Illustrative, drawn as entitled. The affordable housing lot at 160 Freelon Street (lot 176) is outlined as under construction; its building's height in feet isn't in the records read.",
+      "officialLinks": [
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2012.0640ENX.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20190606_cal_min.pdf"
+      ],
+      "sources": [
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2012.0640ENX.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20190606_cal_min.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20201203_cal_min.pdf",
+        "https://sfplanning.org/sites/default/files/documents/citywide/Central_Corridor/2018CentralSoMaPlan.pdf",
+        "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2012.0640",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2012.0640OFA-02",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2019-022611GPR",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2023-000990GPR",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2025-006139MIS",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2026-008242GEN",
+        "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2022-008873PRJ",
+        "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=3777045",
+        "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=3777052",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201909060913",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201909060914",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201912139477",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202002114084",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202005187585",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202107194611",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202209283327",
+        "https://data.sf.gov/resource/vckc-dh2h.json?reference_number=202209283327",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "whether the office buildings will go ahead: Planning's project record reads \"On Hold\", the 2021 shoring permit was cancelled in 2024, and the 2019 approval's three-year validity has passed (the site permits for Buildings 1 and 2 were issued within it, in March 2021); no extension was found in Planning Commission agendas and minutes from 2020 to Oct 2026",
+        "the public park (about 39,661 sq ft): when the land goes to the City and when the developer builds it",
+        "the exchange of the City's 639 Bryant Street lot for 2000 Marin Street (Board File 180550; the Board's records couldn't be opened here)",
+        "the height in feet of the affordable housing building at 160 Freelon Street, and when it opens",
+        "the 2024 in-kind agreement record (2012.0640IKA) and what it covers",
+        "the 2019 executive summary lists lot 026 (146-150 Freelon Street) with the site; the motions and minutes list only lots 045 and 050 to 052"
+      ],
+      "lastVerified": "2026-10-22"
+    },
+    {
+      "id": "725-harrison",
+      "name": "725-765 Harrison Street",
+      "aliases": [
+        "725 Harrison Street",
+        "4th and Harrison",
+        "Central SoMa Key Development Site 2"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.3984,
+        37.7813
+      ],
+      "camera": {
+        "center": [
+          -122.3986,
+          37.7812
+        ],
+        "zoom": 16.5,
+        "pitch": 58,
+        "bearing": 135
+      },
+      "acres": 2.39,
+      "acresNote": "Planning's record of the 2022 modification (2005.0759ENV-02): seven lots on Assessor's Block 3762 \"totaling 104,188 square feet (formerly 102,067 square feet)\", including the 15,000 sq ft lot to be given to the City for affordable housing. The 2019 approval's six lots came to 102,067 sq ft (2.34 acres). The parcels drawn, lots 152 and 149, come to about 2.4 acres.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 810000,
+        "commercialSqftTotal": null,
+        "retailSqft": 3900,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "As modified on June 16, 2022 (Motion 21128): a 14-story, 185-ft building of about 981,000 gross sq ft with 810,000 sq ft of office, 3,900 sq ft of retail in four micro-retail spaces, 29,300 sq ft of PDR space in two spaces, a 3,000 sq ft child care center, 16,700 sq ft of indoor and outdoor privately owned public open space including a mid-block alley, 116 underground parking spaces and 300 bicycle parking spaces. It is one structure with two parts: a larger oval-shaped western part on Harrison and 4th streets (Phase I, 505,000 sq ft of office allocated in 2019) and a smaller eastern part along the mid-block alley (Phase II, 305,000 sq ft allocated in 2022), over a six-story, 80-ft podium; mechanical screens rise to 205 and 196.5 ft. In 2019 the Commission approved 770,000 sq ft of office in about 935,000 gross sq ft; the 2022 modification added lot 113 at 759 Harrison Street, a four-story building with three unauthorized homes that it allowed to be demolished. The developer is to give the City a 15,000 sq ft lot (lot 149) for affordable housing, which the Mayor's Office of Housing will develop later; the 2019 approval anticipated an 85-ft building with up to 144 homes there, its final design to be decided by that office."
+      },
+      "developer": "Boston Properties, LP (the project sponsor named in the 2019 approval and later Planning records)",
+      "publicPartners": [
+        "San Francisco Planning Commission",
+        "San Francisco Zoning Administrator (variances)",
+        "Mayor's Office of Housing and Community Development (affordable housing site)",
+        "San Francisco Department of Building Inspection"
+      ],
+      "stage": "entitled",
+      "stageNote": "The Planning Commission approved the project on Dec 12, 2019 and approved a modified project on June 16, 2022. Their three-year terms ran out on June 16, 2025; the Commission's Sept 24, 2026 agenda included an 18-month extension to March 24, 2028, and Planning closed the extension record as approved on Sept 29, 2026. The sponsor's application for it said it was processing the site permit in 2026. DBI has issued none of the site or demolition permits filed in 2019 and 2020, and Planning records describe part of the site as a parking lot in 2025.",
+      "timeline": [
+        {
+          "date": "2005-08-12",
+          "event": "SF Planning opens case 2005.0759; an early proposal for 572 homes in six buildings of up to 85 ft is dropped in 2013."
+        },
+        {
+          "date": "2017-12-12",
+          "event": "Boston Properties applies for a Large Project Authorization for an office building and an affordable housing site."
+        },
+        {
+          "date": "2018-05-10",
+          "event": "Planning Commission certifies the Central SoMa Plan EIR (Motion 20182); the plan names the site Key Development Site 2, \"4th and Harrison\"."
+        },
+        {
+          "date": "2019-11-15",
+          "event": "Site permit applications for the western and eastern buildings and their basements are filed with DBI; none has been issued."
+        },
+        {
+          "date": "2019-12-02",
+          "event": "The Mayor's Office of Housing and Community Development conditionally accepts the 15,000 sq ft affordable housing land dedication."
+        },
+        {
+          "date": "2019-12-04",
+          "event": "Planning Department finds the project covered by the Central SoMa Plan EIR (community plan evaluation)."
+        },
+        {
+          "date": "2019-12-12",
+          "event": "Planning Commission approves the project (20597, Large Project Authorization) and 505,000 sq ft of office allocation for Phase I (20598); the Zoning Administrator indicates intent to grant the variances."
+        },
+        {
+          "date": "2022-06-16",
+          "event": "Planning Commission approves the modified project taking in 759 Harrison Street (Motion 21128), 305,000 sq ft of office allocation for Phase II, for 810,000 sq ft in all (Motion 21129), and demolition of three unauthorized homes at 759 Harrison Street (Motion 21130)."
+        },
+        {
+          "date": "2022-12-19",
+          "event": "The office site's lots are merged into one parcel, lot 152."
+        },
+        {
+          "date": "2023-04-03",
+          "event": "The sponsor applies to move the affordable housing land dedication to 560 Brannan Street; the application is withdrawn on April 22, 2026."
+        },
+        {
+          "date": "2026-04-06",
+          "event": "The sponsor applies to extend the approvals, whose three-year terms ended on June 16, 2025."
+        },
+        {
+          "date": "2026-09-24",
+          "event": "The Planning Commission's agenda includes an 18-month extension of the approvals to March 24, 2028; Planning closes the record as approved on Sept 29, 2026."
+        }
+      ],
+      "nextMilestone": "DBI issuing the site permit; the extended approvals run to March 24, 2028.",
+      "summary": "A 14-story, 185-ft office building of about 981,000 sq ft at 4th and Harrison streets, Central SoMa's \"4th and Harrison\" key site, with 810,000 sq ft of office space, PDR space, shops and a child care center, and a lot given to the City for affordable housing. Approved in 2019 and modified in 2022, its approvals were extended in September 2026 to March 2028; no permit has been issued.",
+      "massingNotes": "Added at Matthew's request (2026-10-19). Boundary: DataSF parcels (acdm-wktn), block 3762 lots 152 (the office site) and 149 (the affordable housing lot), which replaced the approvals' lots after mergers in 2021 and 2022; 2.4 acres as drawn; official. Massing (pipeline/bam_pipeline/sites/massing_725_harrison.py): the office floor plates traced from the December 2019 plan set (packet pp. 361-367, scanned floor plans, blue floor fill traced from a 144-dpi render), registered to the 4th Street, Harrison Street and Perry Street property lines and the notch around 759 Harrison Street (RMS 0.1 m), and drawn in four tiers to the floor levels in the building section: level 3 to 80 ft, level 7 to 132 ft, level 11 to 171 ft and level 14 to the 185-ft roof, each split into the western (Phase I) and eastern (Phase II) parts. The 2022 modification, whose plans weren't available, takes in 759 Harrison Street, which the 2019 plans leave out; the volumes don't include that change. Illustrative, drawn as entitled. Nothing is drawn on the affordable housing lot.",
+      "officialLinks": [
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2005.0759ENXOFAVAR.pdf",
+        "https://sfplanning.org/sites/default/files/agendas/2026-09/20260924_cpc%20%28ID%201588046%29.pdf"
+      ],
+      "sources": [
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2005.0759ENXOFAVAR.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20191212_cal_min.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20220616_cal_min.pdf",
+        "https://sfplanning.org/sites/default/files/agendas/2022-06/20220616_cal.pdf",
+        "https://sfplanning.org/sites/default/files/agendas/2026-09/20260924_cpc%20%28ID%201588046%29.pdf",
+        "https://sfplanning.org/sites/default/files/documents/citywide/Central_Corridor/2018CentralSoMaPlan.pdf",
+        "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2005.0759",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2005.0759ENV-02",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2005.0759ENX-02",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2005.0759ENX-03",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2005.0759CUA-03",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2023-002967ENX",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2025-005002MIS",
+        "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=3762117",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201911157378",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201911157381",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201911157380",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=201911157382",
+        "https://data.sf.gov/resource/i98e-djp9.json?permit_number=202001313234",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the June 2022 plans: the massing is traced from the December 2019 plans, which leave out 759 Harrison Street, now part of the site (the 2022 packet is on a host that couldn't be opened here)",
+        "the motion number of the Sept 24, 2026 extension, and the extensions of the office allocation and variances (Planning's records OFA-03 \"Accepted\" and VAR-04 \"Action Pending\" in Oct 2026)",
+        "the Dec 12, 2019 minutes record the approvals as Resolutions 20597 and 20598; the 2022 and 2026 agendas call 20597 a motion",
+        "DBI's 2019 site permit applications describe 15-story buildings; the approvals say 14 stories",
+        "when the affordable housing lot (lot 149) goes to the City and what the Mayor's Office of Housing will build on it (2019: an 85-ft building with up to 144 homes, anticipated)",
+        "the current owner (Barrett Block Partners in the 2019 approval)"
+      ],
+      "lastVerified": "2026-10-22"
     }
   ]
 }

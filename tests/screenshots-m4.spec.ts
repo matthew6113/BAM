@@ -91,6 +91,8 @@ for (const [n, id] of [
   ['68', '98-franklin'],
   ['69', 'santana-row'],
   ['70', 'gateway-crossings'],
+  ['71', '598-brannan'],
+  ['72', '725-harrison'],
 ] as const) {
   test(`${n} landed: ${id}`, async ({ page }) => {
     const errors = collectErrors(page);

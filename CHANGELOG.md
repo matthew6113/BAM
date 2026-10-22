@@ -3,6 +3,32 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-22 (598 Brannan and 725-765 Harrison added)
+
+Matthew asked to add the two Central SoMa key sites the Oct 19 pass had held as just under the bar. Research and
+every figure's source are in `docs/official-research/candidates-sf-central-soma-2.md`.
+
+**598-brannan** (new): 598 Brannan Street, Central SoMa Key Site 5 ("Park Block"): three office buildings of 150
+to 185 ft with 922,737 sq ft of office around a new public park of about 39,661 sq ft, on 4.5 acres at 5th and
+Brannan. The Planning Commission approved it on June 6, 2019 (Motions 20459 and 20460) and allocated the second
+phase's office space on Dec 3, 2020 (Motion 20816); minutes and the case packet are on SF Planning's S3 store
+(https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2012.0640ENX.pdf). DBI issued site permits for two of
+the office buildings in March 2021 and the old buildings were demolished that year, but the office buildings
+haven't started and Planning's record reads "On Hold". The project's affordable housing, a nine-story building
+with 85 homes at 160 Freelon Street on land it gave the City, has been under construction since July 15, 2025
+(DBI permit 202209283327), so the stage is under construction; the status note says only that building is rising.
+Massing traced from the approved site and roof plans.
+
+**725-harrison** (new): 725-765 Harrison Street, Central SoMa Key Site 2: a 14-story, 185-ft building of about
+981,000 sq ft (810,000 office, PDR, retail and child care) at 4th and Harrison. Approved Dec 12, 2019 and modified
+June 16, 2022 (Motion 21128); after its approvals ran out on June 16, 2025, an 18-month extension to March 24, 2028
+was on the Planning Commission's Sept 24, 2026 agenda and Planning closed it approved on Sept 29, 2026
+(https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/2005.0759ENXOFAVAR.pdf; DataSF record
+2005.0759ENX-03). Entitled; no DBI permit issued. Massing traced from the 2019 floor plans; the 2022 design adds a
+lot (759 Harrison) that the drawn floors don't cover.
+
+`_meta.lastVerified` is now 2026-10-22.
+
 ## 2026-10-21 (SF Railyards added)
 
 **sf-railyards** (new, buildings): Matthew asked to include "the potential redevelopment of Caltrain's
