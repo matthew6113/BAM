@@ -327,3 +327,11 @@ on it: `/?tab=transit`. Buildings, the default, adds nothing, and a project's pa
 leaves it out because the project already says which tab it's in; closing the project puts it back.
 Switching tabs replaces the current history entry instead of adding one, and the back and forward
 buttons bring back the tab each page had. This settles the address question left open above.
+
+## 2026-10-27: three Central SoMa key sites beside the railyards (Matthew)
+
+Matthew asked to locate the projects around the Caltrain railyard (`docs/official-research/candidates-around-railyards.md`),
+then "yes add all three": `655-4th-street`, `88-bluxome` and `flower-mart`, all entitled. Where a site holds
+an approval and a revision is under review (the Flower Mart), the stage and the program's figures follow the
+approved project and the revision goes in the notes, as for `related-santa-clara` and `schlage-lock`. None has
+massing: their plan sets are on the Planning Department's document server, which this session couldn't reach.

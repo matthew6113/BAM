@@ -2,7 +2,7 @@
   "_meta": {
     "title": "Bay Area megaprojects: researched project list",
     "preparedBy": "Claude (claude.ai chat) for Matthew Huguet",
-    "lastVerified": "2026-10-21",
+    "lastVerified": "2026-10-27",
     "notes": [
       "Every figure here came from the listed sources as of the lastVerified date. Items in each project's 'verify' list are known gaps; do not fill them by guessing.",
       "approxCenter values are rough [lon, lat] points for placing a marker only. Real site boundaries must come from official plan documents or parcel data, saved per project with their source.",
@@ -7623,6 +7623,314 @@
         "which block holds the 855-ft tower: Figure 3 marks only the second (575-ft) tower, on 1A; it also labels Sixth Street as \"8th Street\""
       ],
       "lastVerified": "2026-10-21"
+    },
+    {
+      "id": "655-4th-street",
+      "name": "655 4th Street",
+      "aliases": [
+        "280 Townsend Street",
+        "Fourth and Townsend",
+        "4th and Townsend key site",
+        "Central SoMa key site 8"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.3949,
+        37.7778
+      ],
+      "camera": {
+        "center": [
+          -122.3949,
+          37.7778
+        ],
+        "zoom": 16.6,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 1.64,
+      "acresNote": "The Planning Department's record for the project (2022-011490PRJ) gives \"a 71,290 square foot development lot\" (1.64 acres). The lots the Central SoMa Plan maps as this key site (block 3787, lots 026, 028, 050 and 161-164) come to 1.66 acres in DataSF's parcel map.",
+      "program": {
+        "homes": 1096,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": 9857,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "One residential rental building rising as two towers over a shared podium, about 380 and 400 ft to the roof (405 and 435 ft to the top of the mechanical screens), about 1,042,451 gross sq ft, with about 9,857 sq ft of ground-floor retail, a 9,153-sq-ft privately owned public open space and 271 parking spaces below grade (2022-011490PRJ). The Planning records give 1,096 homes (the project record's unit count, the environmental and transportation records and the pipeline); the project description gives 1,105. The pipeline lists the project's affordability type as \"Fee\", with no affordable homes on site."
+      },
+      "developer": "655 4th Owner, L.L.C.",
+      "publicPartners": [
+        "San Francisco Planning Department"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. The Planning Commission approved an earlier mixed-use project with offices, a hotel, retail and housing on June 20, 2019; the Planning Department's record shows the modified, residential project approved on Dec 14, 2023, after a community plan evaluation (CEQA) dated Nov 30, 2023, and a conditional use authorization to demolish the site's two existing homes was later approved. The city's pipeline (end of June 2026) shows no building permit application.",
+      "timeline": [
+        {
+          "date": "2018",
+          "event": "The Central SoMa Plan names the corner a key development site, \"4th and Townsend\", where Caltrain meets the Central Subway, and gives it the plan area's highest height limits."
+        },
+        {
+          "date": "2019-06-20",
+          "event": "The Planning Commission approves a mixed-use development with office, hotel, retail and residential uses (Motions 20470 and 20471)."
+        },
+        {
+          "date": "2022-06-02",
+          "event": "655 4th Owner, L.L.C. seeks a preliminary project assessment for 1,148 rental homes, ground-floor retail and a public gathering place at Fourth and Townsend (2022-005317PPA)."
+        },
+        {
+          "date": "2022-11-22",
+          "event": "The modified, residential project is filed with the Planning Department (2022-011490PRJ)."
+        },
+        {
+          "date": "2023-11-30",
+          "event": "The Planning Department issues a community plan evaluation, the project's environmental review."
+        },
+        {
+          "date": "2023-12-14",
+          "event": "The modified project is approved: two towers of about 380 and 400 ft with 1,096 homes."
+        }
+      ],
+      "nextMilestone": "A building permit application; none was on file in the city's pipeline at the end of June 2026.",
+      "summary": "Two residential towers planned for the corner of Fourth and Townsend streets, across Townsend from the Caltrain station and the SF Railyards site. The 1.6-acre site would get one building rising as towers of about 380 and 400 ft over a shared podium, with about 1,100 rental homes and ground-floor retail. The Central SoMa Plan made the corner a key development site with the plan area's highest height limits, to mark where Caltrain meets the Central Subway. First approved in 2019 with offices and a hotel, the project was approved again as housing in December 2023.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), the lots the Central SoMa Plan maps as key site 8, \"4th and Townsend\" (block 3787, lots 026, 028, 050 and 161-164; 162-164 are condominium lots sharing one footprint), 1.66 acres against the record's 71,290-sq-ft development lot; official (pipeline/bam_pipeline/sites/boundary_central_soma_key_sites.py). No massing is drawn: the approved plans weren't reachable, and the Planning records give only the towers' heights. How it relates to nearby projects. SF Railyards (sf-railyards) is across Townsend Street, about 35 m away. The Portal (the-portal): its tunnel runs under Townsend Street about 13 m from the site; the corridor outline drawn for it overlaps the site's edge by about half an acre. 88 Bluxome (88-bluxome) is a block west.",
+      "officialLinks": [
+        "https://sfplanning.org/central-soma-plan"
+      ],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2022-011490PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2022-011490ENV",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2022-011490ENX",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2022-011490CUA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2022-011490TDM",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2022-005317PPA",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2022-011490PRJ",
+        "https://sfplanning.org/sites/default/files/documents/citywide/Central_Corridor/2018CentralSoMaPlan.pdf",
+        "https://sfplanning.org/central-soma-plan",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the Dec 2023 approval's motion numbers, conditions and staff report (the Planning Department's document server, citypln-m-extnl.sfgov.org, couldn't be reached on Oct 27)",
+        "the home count: 1,096 in the structured records and the pipeline, 1,105 in the project description",
+        "the 2019 project's program (offices, hotel rooms and homes), for the timeline",
+        "whether a building permit has been filed since June 2026"
+      ],
+      "lastVerified": "2026-10-27"
+    },
+    {
+      "id": "88-bluxome",
+      "name": "88 Bluxome",
+      "aliases": [
+        "88 Bluxome Street",
+        "645 5th Street",
+        "Bay Club SF Tennis site",
+        "88 Bluxome/Tennis Club",
+        "Central SoMa key site 7"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.3977,
+        37.7768
+      ],
+      "camera": {
+        "center": [
+          -122.3977,
+          37.7768
+        ],
+        "zoom": 16.5,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 2.6,
+      "acresNote": "The Planning Department's record (2025-004642PRJ) gives \"an approximately 2.6-acre development lot\", to be split into three parcels of 43,670, 47,580 and 22,690 sq ft. The lot (block 3786, lot 037) is 2.66 acres in DataSF's parcel map.",
+      "program": {
+        "homes": 1500,
+        "affordableHomes": 150,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": 2035,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Two residential high-rises, about 1,777,000 sq ft in all: a 599-ft western building with 785 homes and a 2,035-sq-ft ground-floor commercial space, and a 528-ft eastern building with 715 homes, over four levels of parking with 465 spaces (2025-004642PRJ). The homes are rentals (2025-004642TDM). The pipeline counts 150 of them as affordable. The easternmost parcel, 22,690 sq ft, would be dedicated to the City for future affordable housing, and the project would build Bluxome Linear Park along the north side of Bluxome Street from Fourth to Fifth."
+      },
+      "developer": "Not named in the 2025 Planning records, which were filed by Reuben, Junius & Rose, LLP. The site's 2019 office project was Alexandria Real Estate's.",
+      "publicPartners": [
+        "San Francisco Planning Department"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved, per the Planning Department's record: the application filed May 27, 2025 was closed on Dec 12, 2025 with an approval letter issued and a decision of Approved. The city's pipeline (end of June 2026) lists it as approved but doesn't mark it as holding an approved entitlement, its transportation demand management plan was still under review, and no building permit application was on file. The site also holds a 2019 approval for an office project, modified in 2023.",
+      "timeline": [
+        {
+          "date": "2018",
+          "event": "The Central SoMa Plan names the site a key development site, \"88 Bluxome/Tennis Club\", with room for about a million sq ft and the potential for an affordable housing site, a public recreation center and a linear park on Bluxome Street."
+        },
+        {
+          "date": "2019",
+          "event": "The city approves an office project for the site (Large Project Authorization, Motion 20493, with an office allocation and a variance): office towers of 225 and 185 ft with about 840,000 sq ft of offices, and a community center and affordable housing building, replacing the Bay Club SF Tennis building. Its environmental review closed in September 2019."
+        },
+        {
+          "date": "2023-08",
+          "event": "A modification removing the 134,460-sq-ft tennis facility from the office project's sub-basement is approved."
+        },
+        {
+          "date": "2025-05-27",
+          "event": "A preliminary application and a project application are filed for two residential towers with 1,500 homes (2025-004642PPS and PRJ)."
+        },
+        {
+          "date": "2025-12-12",
+          "event": "The Planning Department closes the application with an approval letter."
+        }
+      ],
+      "nextMilestone": "A building permit application; none was on file in the city's pipeline at the end of June 2026.",
+      "summary": "Two residential towers, 599 and 528 ft, on the 2.6-acre Bay Club tennis site at Fifth Street between Brannan and Bluxome, a block from the Caltrain station: 1,500 rental homes, a parcel given to the City for future affordable housing, and a new linear park along Bluxome Street from Fourth to Fifth. The Central SoMa Plan named it a key development site. An office project was approved there in 2019; the housing plan was approved in December 2025.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), the lot the Central SoMa Plan maps as key site 7, \"88 Bluxome/Tennis Club\" (block 3786, lot 037), 2.66 acres against the record's \"approximately 2.6-acre\" lot; official (pipeline/bam_pipeline/sites/boundary_central_soma_key_sites.py). No massing is drawn: the approved plans weren't reachable, and the Planning record gives only the two buildings' heights. How it relates to nearby projects: the Flower Mart (flower-mart) is across Fifth Street, 655 4th Street (655-4th-street) a block east, and SF Railyards (sf-railyards) about 150 m south across Townsend.",
+      "officialLinks": [
+        "https://sfplanning.org/central-soma-plan"
+      ],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2025-004642PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2025-004642PPS",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2025-004642TDM",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2025-004642PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-012490ENX",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-012490ENX-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-012490ENV",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-012490OFA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-012490VAR",
+        "https://sfplanning.org/environmental-review-documents?title=bluxome",
+        "https://sfplanning.org/sites/default/files/documents/citywide/Central_Corridor/2018CentralSoMaPlan.pdf",
+        "https://sfplanning.org/central-soma-plan",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "who the developer is (the 2025 records name only the applicant's attorneys)",
+        "what the Dec 12, 2025 approval letter approves and under which law: the pipeline lists the project as approved but doesn't mark it as holding an approved entitlement, and no environmental record is listed for it",
+        "the 2019 office project's approval date (Motion 20493)",
+        "how many homes the parcel dedicated to the City could hold, and when",
+        "Bluxome Linear Park's size and schedule",
+        "whether a building permit has been filed since June 2026"
+      ],
+      "lastVerified": "2026-10-27"
+    },
+    {
+      "id": "flower-mart",
+      "name": "Flower Mart",
+      "aliases": [
+        "San Francisco Flower Mart",
+        "610-698 Brannan Street",
+        "Revised Flower Mart Project",
+        "Central SoMa key site 4"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.4003,
+        37.7762
+      ],
+      "camera": {
+        "center": [
+          -122.4003,
+          37.7762
+        ],
+        "zoom": 16.2,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 6.78,
+      "acresNote": "A 2016 Planning record (2015-004256PPA-04) gives the site as 295,144 sq ft (6.78 acres) after KR Flower Mart, LLC bought lots 47 and 48. The six lots the approved project names (block 3778, lots 1B, 2B, 4, 5, 47 and 48) come to 6.84 acres in DataSF's parcel map.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 2061380,
+        "commercialSqftTotal": null,
+        "retailSqft": 47586,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "The figures are the approved 2019 project: three mixed-use buildings with 2,061,380 sq ft of office space, 47,586 sq ft of retail and restaurant space, a 22,690-sq-ft child care facility, a 950-sq-ft community facility and 41,229 sq ft of privately owned public open space (2017-000663PRJ), with a replacement wholesale flower market (2017-000663SHD). The revised project filed in 2025 (2025-008569PRJ), not approved, would build five buildings of up to 270 ft with 2,660,700 sq ft of office and laboratory space, 100,000 sq ft of retail and 300,000 sq ft of cultural, institutional and educational space. Its three variants: Residential, seven buildings of up to 500 ft with about 3,500 homes in 3,214,000 sq ft and no office; Mixed-Use, five buildings of up to 480 ft with about 1,242 homes and 1,493,600 sq ft of office and laboratory space; Institutional, five buildings of up to 270 ft with 1,273,600 sq ft of office and laboratory space and 1,387,200 sq ft of institutional or medical space. Each variant includes the 100,000 sq ft of retail."
+      },
+      "developer": "KR Flower Mart, LLC, the site's owner (Planning Department record, 2016)",
+      "publicPartners": [
+        "San Francisco Planning Department"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved in 2019 for offices over a replacement wholesale flower market: the office allocation, large project authorization, development agreement and Planning Code and zoning map amendments all show as approved in the Planning Department's records, and the environmental document (a community plan evaluation and addendum) is dated Sept 17, 2019. Not built; the pipeline describes the market's old buildings as now vacant. A revised project with residential, mixed-use and institutional variants was filed Sept 12, 2025 and is in environmental review, with amendments to the development agreement, zoning map and Planning Code filed in May 2026. None of the revision is approved.",
+      "timeline": [
+        {
+          "date": "2015-04-03",
+          "event": "A preliminary project assessment is filed for redeveloping the Flower Mart site (2015-004256PPA)."
+        },
+        {
+          "date": "2016-03-11",
+          "event": "KR Flower Mart, LLC acquires the adjacent lots 47 and 48, bringing the site to 295,144 sq ft."
+        },
+        {
+          "date": "2017-01-17",
+          "event": "The office allocation application is filed for three new mixed-use buildings, mainly offices, with a replacement Flower Mart (2017-000663)."
+        },
+        {
+          "date": "2018",
+          "event": "The Central SoMa Plan names the site a key development site, \"Flower Mart\", with room for at least 2.4 million sq ft and a replacement Flower Mart at subsidized rents among its public benefits."
+        },
+        {
+          "date": "2019",
+          "event": "The city approves the project: office allocation, large project authorization, a development agreement and Planning Code and zoning map amendments. Its community plan evaluation and addendum is dated Sept 17, 2019."
+        },
+        {
+          "date": "2025-09-12",
+          "event": "A revised project is filed: offices and labs, with residential, mixed-use and institutional variants (2025-008569PRJ). Its environmental review record is opened Sept 24."
+        },
+        {
+          "date": "2026-05-06",
+          "event": "Applications to amend the development agreement, the zoning map and the Planning Code for the revised project are filed."
+        }
+      ],
+      "nextMilestone": "Environmental review of the revised project, then decisions on the amendments; no dates published.",
+      "summary": "The 6.8-acre site of San Francisco's wholesale Flower Mart, on Brannan Street between Fifth and Sixth, two blocks from the Caltrain station. It was approved in 2019 for about 2.1 million sq ft of offices in three buildings with a replacement flower market, but hasn't been built, and the market's old buildings are now vacant. A revised plan filed in 2025 would build five buildings of up to 270 ft with 2.66 million sq ft of offices and labs, or, in alternatives under review, up to about 3,500 homes in seven buildings of up to 500 ft.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), the six lots the approved project names (block 3778, lots 1B, 2B, 4, 5, 47 and 48), which the Central SoMa Plan maps as key site 4, 6.84 acres against the 295,144 sq ft in the Planning record; official (pipeline/bam_pipeline/sites/boundary_central_soma_key_sites.py). The revised project's record doesn't list its lots. No massing is drawn: neither the approved nor the revised project's plans were reachable. How it relates to nearby projects: 88 Bluxome (88-bluxome) is across Fifth Street, and SF Railyards (sf-railyards) about 250 m south.",
+      "officialLinks": [
+        "https://sfplanning.org/central-soma-plan",
+        "https://sfplanning.org/environmental-review-documents?title=flower"
+      ],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2017-000663PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2017-000663OFA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2017-000663ENX",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2017-000663DVA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2017-000663PCA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2017-000663MAP",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2017-000663SHD",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-004256PPA-04",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-004256ENV",
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2025-008569PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2025-008569ENV",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2017-000663DVA-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2017-000663MAP-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2017-000663PCA-02",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2026-000246PRX",
+        "https://sfplanning.org/environmental-review-documents?title=flower",
+        "https://sfplanning.org/sites/default/files/documents/citywide/Central_Corridor/2018CentralSoMaPlan.pdf",
+        "https://sfplanning.org/central-soma-plan",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the dates of the 2019 approvals (Planning Commission motions and the development agreement's adoption): sfgov.legistar.com and the Planning Department's document server couldn't be reached on Oct 27",
+        "the size of the replacement wholesale flower market in the approved project",
+        "the revised project's lots: its record says ten buildings would be demolished, against four in the approved project",
+        "which variant the sponsor is pursuing, and the revised project's environmental document type and dates",
+        "who is behind KR Flower Mart, LLC"
+      ],
+      "lastVerified": "2026-10-27"
     }
   ]
 }
