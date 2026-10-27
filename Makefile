@@ -107,6 +107,7 @@ sites:
 	$(PY) bam_pipeline.sites.boundary_larkspur_ferry_expansion
 	$(PY) bam_pipeline.sites.boundary_sf_railyards
 	$(PY) bam_pipeline.sites.massing_sf_railyards
+	$(PY) bam_pipeline.sites.boundary_central_soma_key_sites
 
 photos:
 	$(PY) bam_pipeline.photos

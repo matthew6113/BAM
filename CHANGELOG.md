@@ -3,6 +3,36 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-10-27 (three Central SoMa key sites beside the railyards added)
+
+Matthew asked to "locate all the projects happening around the cal train railyard" and then to add the
+three largest. All three are Central SoMa Plan key development sites within about 250 m of `sf-railyards`.
+Facts from DataSF's Planning Department records and Development Pipeline (Q2 2026), the 2018 Central SoMa
+Plan and SF Planning's environmental review listing; research in
+`docs/official-research/candidates-around-railyards.md`. No press was read, so nothing is recorded as
+reported. Boundaries are the sites' lots from DataSF parcels (official). No massing: no approved plan set
+could be reached. `_meta.lastVerified` moves to 2026-10-27.
+
+- **655-4th-street** (new, buildings): entitled. The Planning Commission approved a mixed-use project on
+  June 20, 2019 (Motions 20470 and 20471); the modified, residential project (2022-011490PRJ, sponsor 655 4th
+  Owner, L.L.C.) was approved Dec 14, 2023 after a community plan evaluation dated Nov 30, 2023. Two towers
+  of about 380 and 400 ft with 1,096 homes (1,105 in the project description) and 9,857 sq ft of retail, on
+  a 71,290-sq-ft lot at Fourth and Townsend (lots 3787/026, 028, 050, 161-164; 1.66 acres as drawn).
+- **88-bluxome** (new, buildings): entitled. Filed May 27, 2025 (2025-004642PRJ) and closed Dec 12, 2025 with
+  an approval letter and a decision of Approved. The pipeline doesn't mark it as holding an approved
+  entitlement, so the approval's basis is in `verify`. Two towers of 599 and 528 ft with 1,500 rental homes
+  (150 affordable in the pipeline), a 22,690-sq-ft parcel for the City's future affordable housing and
+  Bluxome Linear Park, on the 2.6-acre Bay Club tennis lot (3786/037). The site's 2019 office project
+  (Alexandria Real Estate; Motion 20493, modified 2023) is in the timeline.
+- **flower-mart** (new, buildings): entitled. Approved in 2019 (office allocation, large project
+  authorization, development agreement, Planning Code and zoning map amendments; community plan evaluation
+  and addendum dated Sept 17, 2019) for three buildings with 2,061,380 sq ft of offices, 47,586 sq ft of retail
+  and a replacement wholesale flower market; owner KR Flower Mart, LLC. The program shows the approved
+  project. The revised project filed Sept 12, 2025 (2025-008569PRJ, in environmental review; amendment
+  applications May 6, 2026) is in the notes: offices and labs, or variants with up to about 3,500 homes in
+  buildings of up to 500 ft. Boundary: block 3778 lots 1B, 2B, 4, 5, 47 and 48 (6.84 acres as drawn; 295,144 sq
+  ft in a 2016 record).
+
 ## 2026-10-21 (SF Railyards added)
 
 **sf-railyards** (new, buildings): Matthew asked to include "the potential redevelopment of Caltrain's
