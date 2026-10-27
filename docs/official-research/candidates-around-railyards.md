@@ -47,8 +47,12 @@ Mission Bay's remaining blocks are inside `mission-bay`, not new projects: Missi
 | **Flower Mart** (610–698 Brannan; block 3778) | about 250 m, Fifth to Sixth | 2019 entitlements (`2017-000663PRJ`, "On Hold"); a revised project filed Sept 12, 2025, "Under Review" (`2025-008569PRJ`, with an environmental record); a development agreement record `2026-000246PRX` "PL Filed" | Revised: five buildings up to 270 ft, 2,660,700 sq ft office/lab, 100,000 sq ft retail, 300,000 sq ft cultural, institutional and educational space. Variants: Residential, seven buildings up to 500 ft, about 3,500 homes; Mixed-Use, up to 480 ft, about 1,242 homes and 1,493,600 sq ft office/lab; Institutional, up to 270 ft | `PRJ:2025-008569PRJ`, `PRJ:2017-000663PRJ`, `PIPE` ("amend the 2019 entitlements to provide for four revised development scenarios") |
 | **490 Brannan Street** (block 3776) | 252 m | Approved Sept 9, 2021; building permit filed Nov 22, 2022 | 12 stories, 185 ft, 355,630 sq ft: 269,296 sq ft office, PDR, retail and a childcare facility | `PRJ:2020-005610PRJ`, `PIPE` |
 
-The pipeline also lists the Flower Mart's 2019 office project as **598 Brannan** (`2012.0640`, permit filed
-Dec 13, 2019, 993,605 sq ft). It's the same site as the Flower Mart, not a separate project.
+**598 Brannan** (`2012.0640`, block 3777, about 240 m) is a separate project, not the Flower Mart (block
+3778): the Central SoMa Plan's Site 5, "Park Block", across Fifth Street. Its record describes four buildings
+with about 922,737 sq ft of offices, 48,581 sq ft of PDR and retail, a child care facility and a building of up
+to 72 affordable homes; the pipeline counts 993,605 sq ft of non-residential space, with a site permit filed
+Dec 13, 2019. Its Planning record is "On Hold". (Corrected on Oct 27; an earlier
+version of this note called it the Flower Mart's 2019 project.)
 
 ## Within about 1 km
 
@@ -78,6 +82,26 @@ listed.
   other than Mission Rock, and infrastructure. The Pennsylvania Avenue Extension (SFCTA) and the I-280
   boulevard study are separate studies named in `candidates-4th-king-railyards.md`; their hosts were
   unreachable, so nothing about them was checked.
+
+## Added to the map (Oct 27)
+
+Matthew: "yes add all three". `655-4th-street`, `88-bluxome` and `flower-mart` are now mapped, all
+entitled. Their boundaries are the key sites' lots from DataSF parcels
+(`pipeline/bam_pipeline/sites/boundary_central_soma_key_sites.py`), checked against each record's site area.
+More was read for the records than is listed above:
+- 655 4th Street: sponsor 655 4th Owner, L.L.C. (`2022-005317PPA`, a June 2022 preliminary project
+  assessment for 1,148 rental homes); environmental clearance closed Jan 22, 2024 (`2022-011490ENV`); a
+  conditional use authorization to demolish two homes approved (`2022-011490CUA`). The structured records
+  and the pipeline give 1,096 homes and the description 1,105.
+- 88 Bluxome: the 2019 office project (`2015-012490`, Alexandria Real Estate): Motion 20493, office towers of
+  225 and 185 ft with 839,860 gsf of offices, environmental review closed Sept 18, 2019, modified in 2023 to
+  drop the tennis facility. The 2025 application had a preliminary application (`2025-004642PPS`), no
+  environmental record, and a transportation plan still under review. The pipeline marks it "PL Approved"
+  but not as holding an approved entitlement.
+- Flower Mart: owner KR Flower Mart, LLC (`2015-004256PPA-04`); the 2019 approvals (`2017-000663` OFA, ENX,
+  DVA, PCA and MAP, all approved); its community plan evaluation and addendum dated Sept 17, 2019 (`ERD`);
+  the revised project's environmental record opened Sept 24, 2025 (`2025-008569ENV`), and amendment
+  applications filed May 6, 2026 (`2017-000663DVA-02`, `MAP-02`, `PCA-02`).
 
 ## Which could be megaprojects
 
