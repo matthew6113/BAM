@@ -1,0 +1,90 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "5m",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 3725, the 16 active lots inside the Fifth and Mission Special Use District",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273725042%27%2C+%273725076%27%2C+%273725093%27%2C+%273725094%27%2C+%273725099%27%2C+%273725100%27%2C+%273725124%27%2C+%273725125%27%2C+%273725126%27%2C+%273725127%27%2C+%273725128%27%2C+%273725129%27%2C+%273725130%27%2C+%273725131%27%2C+%273725133%27%2C+%273725134%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The active lots inside DataSF's Fifth and Mission Special Use District (5yf5-ms5f), the zoning district created for the 5M project, joined across the alleys between them (Minna, Natoma and Mary streets). The Planning Department describes an approximately 4-acre site of 23 parcels at Fifth Street between Mission and Howard streets (2011.0409B); several have since been merged and renumbered. The district itself extends into the surrounding streets and isn't used as the outline. 4.4 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 16
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4074628,
+       37.7817879
+      ],
+      [
+       -122.406474,
+       37.7825693
+      ],
+      [
+       -122.4052065,
+       37.7815562
+      ],
+      [
+       -122.4053811,
+       37.7814182
+      ],
+      [
+       -122.405308,
+       37.7813597
+      ],
+      [
+       -122.4057862,
+       37.7809818
+      ],
+      [
+       -122.4062638,
+       37.7813643
+      ],
+      [
+       -122.406565,
+       37.7811216
+      ],
+      [
+       -122.4067603,
+       37.7812773
+      ],
+      [
+       -122.4068414,
+       37.7812129
+      ],
+      [
+       -122.4070221,
+       37.7813569
+      ],
+      [
+       -122.4069235,
+       37.781434
+      ],
+      [
+       -122.4070209,
+       37.7815121
+      ],
+      [
+       -122.4070702,
+       37.7814735
+      ],
+      [
+       -122.4074628,
+       37.7817879
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

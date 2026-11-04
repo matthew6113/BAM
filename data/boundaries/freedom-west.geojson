@@ -1,0 +1,92 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "freedom-west",
+  "source": "DataSF Parcels \u2013 Active and Retired, lots 0770/027 and 0783/023, 024 and 025",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%270770027%27%2C+%270783023%27%2C+%270783024%27%2C+%270783025%27%29&%24limit=5000",
+  "accuracy": "approximate",
+  "accuracyNote": "The Freedom West lots on the two blocks the Planning Department's project page describes (bounded by Gough Street, Golden Gate Avenue, Laguna Street and Fulton Street, bisected by McAllister Street; a 10.37-acre site). No official lot list was reachable; the lots are those carrying the project's addresses in the Planning records (710 and 867 McAllister Street; 0770/027) and the rest of the block south of McAllister. Lot 0770/027 also holds the adjacent 880 McAllister Street senior housing site, a separate project, which is drawn inside. 10.8 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 4
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.4266945,
+        37.7791823
+       ],
+       [
+        -122.4236411,
+        37.7795713
+       ],
+       [
+        -122.4234903,
+        37.7788256
+       ],
+       [
+        -122.4265437,
+        37.7784366
+       ],
+       [
+        -122.4266945,
+        37.7791823
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.4267991,
+        37.7796996
+       ],
+       [
+        -122.4264455,
+        37.7797447
+       ],
+       [
+        -122.4264489,
+        37.7797873
+       ],
+       [
+        -122.4263227,
+        37.7798047
+       ],
+       [
+        -122.4263962,
+        37.7801765
+       ],
+       [
+        -122.4238296,
+        37.7805034
+       ],
+       [
+        -122.4236788,
+        37.7797578
+       ],
+       [
+        -122.4267322,
+        37.7793688
+       ],
+       [
+        -122.4267991,
+        37.7796996
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

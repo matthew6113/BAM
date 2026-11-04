@@ -64,3 +64,26 @@ Stevenson St (495 homes, approved).
   Change Adaptation (like the removed waterfront flood defenses), Pier 92 and the Islais Creek works.
 - **The Housing Element's Family Zoning Plan** (EIR Dec 2025): a citywide rezoning, not a site.
 - **555 Beale St (Seawall Lot 330)**: in `_meta.dropped` at Matthew's request.
+
+## Added to the map (Nov 4)
+
+Matthew: "add all six and the towers", then "add the projects near van ness and market, like the one at van ness and mission".
+All fourteen above (the six and the eight single large buildings) are mapped, with One Oak (`one-oak`, 2024-005509PRJ) and 98
+Franklin Street (`98-franklin`, 2016-014802PRJ) from Van Ness and Market. Their boundaries are in
+`pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py`. Reading each project's records more closely corrected several
+figures in the tables above:
+- 10 South Van Ness: the Aug 2026 approval is for 67 stories and 921 homes; other records give 952, 1,019 and 1,104, so the
+  count is in `verify`. The 2020 approval was 55 stories, 590 ft, 966 homes.
+- Transbay Block 4: no approval is recorded (environmental review cleared Jan 2023; the 2022 height and zoning map
+  amendments were withdrawn in 2025), so it is mapped in entitlement.
+- San Francisco Gateway: the approved project (Sept 25, 2025) is two buildings up to 97 ft with 1,637,600 sq ft of PDR, not
+  the pipeline's four buildings of 1,091,790 sq ft; its 17.1-acre site includes street portions not drawn.
+- Freedom West 2.0: up to 2,393 homes per the project page; the co-op has 382 homes (the records also say 267 replaced).
+- 725 Harrison: its approvals, expired June 2025, were extended in 2026 (Large Project Authorization, Sept 29, 2026).
+- 598 Brannan: permits for two office buildings were issued in 2021 and the site cleared; the affordable building on its
+  dedicated land (160 Freelon Street, 85 homes) is under construction separately.
+
+Considered at Van Ness and Market and not added: 1338 Mission Street (30 stories, 287 homes; environmental review cancelled
+Mar 2024, authorization withdrawn 2023), the Davies Symphony Hall expansion (201 Van Ness, a preliminary application, on hold)
+and 50 8th Street (a hotel-to-housing conversion with no construction).
+

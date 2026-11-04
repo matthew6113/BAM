@@ -2,7 +2,7 @@
   "_meta": {
     "title": "Bay Area megaprojects: researched project list",
     "preparedBy": "Claude (claude.ai chat) for Matthew Huguet",
-    "lastVerified": "2026-10-27",
+    "lastVerified": "2026-11-04",
     "notes": [
       "Every figure here came from the listed sources as of the lastVerified date. Items in each project's 'verify' list are known gaps; do not fill them by guessing.",
       "approxCenter values are rough [lon, lat] points for placing a marker only. Real site boundaries must come from official plan documents or parcel data, saved per project with their source.",
@@ -7931,6 +7931,1616 @@
         "who is behind KR Flower Mart, LLC"
       ],
       "lastVerified": "2026-10-27"
+    },
+    {
+      "id": "freedom-west",
+      "name": "Freedom West 2.0",
+      "aliases": [
+        "Freedom West",
+        "Freedom West Homes",
+        "710 McAllister Street",
+        "Freedom West 2.0 Project"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.4251,
+        37.7794
+      ],
+      "camera": {
+        "center": [
+          -122.4251,
+          37.7794
+        ],
+        "zoom": 15.8,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 10.37,
+      "acresNote": "The Planning Department's project record and project page give a 10.37-acre, privately owned site on two city blocks bounded by Gough Street, Golden Gate Avenue, Laguna Street and Fulton Street and bisected by McAllister Street. No lot list was reachable. The outline is the Freedom West lots on those two blocks in DataSF's parcel map (0770/027 and 0783/023, 024 and 025), 10.8 acres; it also takes in the adjacent 880 McAllister Street senior housing site, a separate project on lot 0770/027.",
+      "program": {
+        "homes": 2393,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": 68600,
+        "hotelKeys": 150,
+        "openSpaceAcres": null,
+        "notes": "Up to 2,393 homes in 15 new buildings of 85 to 335 ft replacing the co-op's 22 low-rise buildings, with an option for a 150-room hotel, 68,600 gross sq ft of commercial space, 14,800 gross sq ft of cultural, institutional and educational space (childcare, community events space and a STEM training center), up to 1,640 parking spaces and 1,732 bicycle spaces (project page); about 3.7 million gross sq ft in all, built in three overlapping phases over about seven years (2020-006887PRJ). The co-op's homes would be replaced: the project page gives 382 co-op units in one place and \"the replacement of 267 co-op units\" in another, and the project record says 267 replaced plus 2,024 more. The pipeline counts 2,537 proposed homes against 382 existing (2,155 net), 597 of them affordable."
+      },
+      "developer": "MacFarlane Partners (project sponsor), with the Freedom West Homes Corporation, the nonprofit limited-equity housing cooperative on the site",
+      "publicPartners": [
+        "San Francisco Planning Department (lead agency)"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In environmental review. MacFarlane Partners filed the application in July 2020 (2020-006887PRJ); the Planning Department issued a notice of preparation of an EIR on April 30, 2025, held a scoping meeting on May 21, 2025 and published the Draft EIR on Jan 13, 2026, with responses to comments listed as upcoming. Applications for a general plan amendment, zoning map and Planning Code amendments (a new special use district) and a development agreement were filed May 5, 2026. No approvals yet.",
+      "timeline": [
+        {
+          "date": "1966",
+          "event": "Freedom West is created as a nonprofit limited-equity housing cooperative, led by Reverend J. Austell Hall of Bethel AME Church, after urban renewal displaced thousands of Fillmore residents."
+        },
+        {
+          "date": "2020-07-24",
+          "event": "MacFarlane Partners files the project with the Planning Department (2020-006887PRJ)."
+        },
+        {
+          "date": "2021-03-05",
+          "event": "A preliminary project assessment describes 382 replacement co-op homes, 133 more affordable homes and up to 1,790 apartments, a 150-room hotel and about 10 new buildings."
+        },
+        {
+          "date": "2025-04-30",
+          "event": "The Planning Department issues a notice of preparation of an EIR; the scoping meeting follows on May 21."
+        },
+        {
+          "date": "2026-01-13",
+          "event": "The Draft EIR is published: 15 buildings of 85 to 335 ft, about 3.7 million gross sq ft."
+        },
+        {
+          "date": "2026-05-05",
+          "event": "Applications for a general plan amendment, a new special use district and a development agreement are filed."
+        }
+      ],
+      "nextMilestone": "Responses to comments on the Draft EIR (listed as upcoming), then hearings on the EIR, the rezoning and the development agreement; no dates published.",
+      "summary": "The rebuilding of Freedom West, a housing cooperative of 382 homes founded in the 1960s on two Fillmore blocks between Golden Gate Avenue and Fulton Street, into 15 buildings of 85 to 335 ft with up to about 2,400 homes. The co-op's homes would be replaced and cooperative ownership kept, alongside new apartments, an optional 150-room hotel, shops and community space including a STEM training center: about 3.7 million sq ft in three phases over about seven years. The Draft EIR was published in January 2026, and the rezoning and development agreement applications followed in May.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), lots 0770/027 and 0783/023, 024 and 025 on the two blocks the project page describes, 10.8 acres against the stated 10.37; approximate (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). No official lot list was reachable (the Draft EIR is on the Planning Department's document server), and lot 0770/027 also holds the adjacent 880 McAllister Street senior housing site, a separate project (115 homes, building permit issued July 1, 2026), which is drawn inside. The outline is in two parts, split by McAllister Street. No massing is drawn: no plans were reachable, and the records give only the 85-to-335-ft height range. Nearby mapped projects: 30 Van Ness (30-van-ness) is about 470 m away.",
+      "officialLinks": [
+        "https://sfplanning.org/project/freedom-west"
+      ],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2020-006887PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2020-006887ENV",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2020-006887PPA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2020-006887DVA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2020-006887GPA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2020-006887MAP",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2020-006887PCA",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2023-007911PRX",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2024-003742PRJ",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202505156557",
+        "https://sfplanning.org/project/freedom-west",
+        "https://sfplanning.org/environmental-review-documents?title=freedom",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the site's lot list, and how the 10.37 acres relate to the 880 McAllister Street senior housing site on the same lot (the Draft EIR is on citypln-m-extnl.sfgov.org, which couldn't be reached on Oct 28)",
+        "the home count: up to 2,393 on the project page, 267 replaced plus 2,024 new in the project record, 2,537 proposed in the pipeline; and whether 267 or all 382 co-op homes are replaced",
+        "the affordable share (the pipeline counts 597 affordable homes)",
+        "the dates of the responses to comments and of the hearings"
+      ],
+      "lastVerified": "2026-10-28"
+    },
+    {
+      "id": "matson-block",
+      "name": "Matson Block",
+      "aliases": [
+        "Matson Block Project",
+        "77 Beale Street",
+        "50 Main Street",
+        "Matson/PG&E Block",
+        "215 Market Street",
+        "245 Market Street"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.3961,
+        37.7921
+      ],
+      "camera": {
+        "center": [
+          -122.3961,
+          37.7921
+        ],
+        "zoom": 16.4,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 3.47,
+      "acresNote": "CEQAnet's record of the notice of preparation (SCH 2025120794) gives 3.47 acres and the parcels \"3711/005-014 and 019\": the whole block bounded by Market, Main, Mission and Beale streets. Those eleven lots come to 3.48 acres in DataSF's parcel map.",
+      "program": {
+        "homes": 437,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 1919847,
+        "commercialSqftTotal": null,
+        "retailSqft": 250000,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Up to 1,919,847 gross sq ft of office (up to 250,000 sq ft of which could be institutional instead), 250,000 sq ft of retail (including up to 100,000 sq ft of entertainment and up to 75,000 sq ft near the top of the tower for a possible observation deck) and 90,000 sq ft of residential space, 44 to 120 homes in 25 Beale Street converted from offices: 2,402,347 gross sq ft in all, including 135,000 sq ft of below-grade parking for 277 to 480 cars (notice of preparation, CEQAnet). The historic 215 and 245 Market Street buildings would be renovated (up to 340,000 gross sq ft of office or institutional space), and the 45 Beale Street and 215 Market Street Annex buildings and the 50 Main Street garage demolished for a courtyard called the \"Urban Village\" (2021-012562PRJ). The EIR will also study variants with a second, 400-ft building on Main Street holding up to 317 homes or up to 350 hotel rooms; the homes shown are the pipeline's count of 437, which includes that residential variant."
+      },
+      "developer": "Hines (the project applicant named in the notice of preparation)",
+      "publicPartners": [
+        "San Francisco Planning Department (lead agency)"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In environmental review. The Planning Department issued a notice of preparation of an EIR on Dec 17, 2025 (CEQAnet SCH 2025120794; state review to Jan 20, 2026) and held a scoping meeting on Jan 7, 2026. The project needs Planning Code and zoning, height and bulk and special use district map amendments, including a new Matson/PG&E Block Special Use District. No approvals yet; the department's environmental record shows as on hold.",
+      "timeline": [
+        {
+          "date": "2021-12-15",
+          "event": "The project is filed with the Planning Department (2021-012562PRJ), then as an 85-story residential tower of 808 homes on the 50 Main Street garage site, with an office addition to 77 Beale Street."
+        },
+        {
+          "date": "2022-09-08",
+          "event": "Building permit applications are filed for an 88-story, 808-home building at 50 Main Street and for demolishing the garage; they were withdrawn in September 2025 and May 2026."
+        },
+        {
+          "date": "2025-07-14",
+          "event": "A zoning map amendment application to create a new special use district for the block is filed."
+        },
+        {
+          "date": "2025-12-17",
+          "event": "The Planning Department issues a notice of preparation of an EIR for the revised project: an office tower of up to 1,225 ft replacing 77 Beale Street."
+        },
+        {
+          "date": "2026-01-07",
+          "event": "The Department holds a public scoping meeting."
+        }
+      ],
+      "nextMilestone": "A Draft EIR; no date published.",
+      "summary": "A plan for the whole Financial District block bounded by Market, Main, Mission and Beale streets. The 474-ft office tower at 77 Beale Street would be replaced by a mostly office tower of up to 1,225 ft with a 75-ft crown, which the city's notice says would exceed the Salesforce Tower, now the city's tallest building, by about 200 ft. The historic 215 and 245 Market Street buildings would be renovated, 25 Beale Street converted to up to 120 homes, and a courtyard opened in the middle of the block: about 2.4 million gross sq ft in all. Environmental review began in December 2025.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), the eleven lots CEQAnet lists for the project (3711/005-014 and 019), the whole block, 3.48 acres against 3.47; official (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). No massing is drawn: no plans were read (the notice of preparation's PDF on CEQAnet wasn't opened). Nearby mapped projects: the corridor outline drawn for The Portal (the-portal) is about 80 m away, and Oceanwide Center (oceanwide-center) about 240 m.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/2025120794"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/2025120794",
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2021-012562PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2021-012562ENV",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2021-012562MAP",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2021-012562DNX",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2021-012562PRJ",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202209082126",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202209082124",
+        "https://sfplanning.org/environmental-review-documents?title=matson",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the Draft EIR date",
+        "which variant, if either, is pursued: a second 400-ft building with homes or a hotel, or the extra space in the main tower",
+        "the figures in the notice of preparation itself (the facts here are CEQAnet's summary and the Planning record; the NOP PDF wasn't opened)",
+        "the existing buildings' tenants and owner"
+      ],
+      "lastVerified": "2026-10-28"
+    },
+    {
+      "id": "3333-california",
+      "name": "3333 California Street",
+      "aliases": [
+        "3333 California Street Mixed-Use Project",
+        "3333 California Street Special Use District"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.4484,
+        37.7861
+      ],
+      "camera": {
+        "center": [
+          -122.4484,
+          37.7861
+        ],
+        "zoom": 15.9,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 10.25,
+      "acresNote": "The development agreement ordinance (2015-014028DVA) describes \"an approximately 10.25-acre site located at California Street at Presidio Avenue\"; the 2017 conditional use record says 10.2 acres. The 3333 California Street Special Use District in DataSF, the zoning district created for the project, is the single lot 1032/003 and measures 10.26 acres.",
+      "program": {
+        "homes": 744,
+        "affordableHomes": 185,
+        "affordablePct": 25,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": 35000,
+        "hotelKeys": null,
+        "openSpaceAcres": 4.47,
+        "notes": "The existing 455,000-gross-sq-ft office building would be partly demolished and reused as two residential buildings with up to three floors added, and 13 new buildings built, from 4-story duplex townhouses to 6-story apartment and mixed-use buildings: about 1,428,000 gross sq ft in all, with 744 homes in about 978,000 sq ft, about 35,000 sq ft of retail, a childcare center of about 15,000 sq ft for about 175 children, and 857 parking spaces in about 400,000 sq ft (2015-014028DVA-02). The development agreement provides 25% affordable housing, a 14,665-sq-ft child care center and about 4.47 acres of open space (2015-014028DVA); the pipeline counts 185 affordable homes. An amendment under review since 2024 would reduce the affordable housing (2015-014028ENV-02)."
+      },
+      "developer": "Prado Group, Inc. (applicant); the development agreement is with Laurel Heights Partners, LLC",
+      "publicPartners": [
+        "San Francisco Planning Department"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. The environmental review closed on Sept 5, 2019, the date of the Planning Commission hearing on the project's EIR, and appeals were denied (records closed Dec 2019 and Feb 2020). The conditional use authorization closed as approved Jan 8, 2020, and the development agreement, the 3333 California Street Special Use District and the zoning map changes are recorded as approved (closed Apr 14, 2022). An amendment to the development agreement, filed Sept 2024 by Laurel Heights Partners, LLC, would reduce the affordable housing and add an enhanced infrastructure financing district; it is under review, with an addendum to the EIR. Building permit applications for five of the buildings were filed between Feb and Aug 2026; none had been issued.",
+      "timeline": [
+        {
+          "date": "2015-10-20",
+          "event": "Prado Group files the project with the Planning Department (2015-014028PRJ)."
+        },
+        {
+          "date": "2017-07-21",
+          "event": "A conditional use application describes 15 buildings with 558 homes, 49,999 sq ft of office, 54,117 sq ft of retail and a childcare center."
+        },
+        {
+          "date": "2019-09-05",
+          "event": "The Planning Commission holds its hearing on the project's EIR, and the environmental review closes."
+        },
+        {
+          "date": "2020-01-08",
+          "event": "The conditional use authorization closes as approved."
+        },
+        {
+          "date": "2022-04-14",
+          "event": "The development agreement with Laurel Heights Partners, LLC, the 3333 California Street Special Use District and the zoning map amendments are recorded as approved."
+        },
+        {
+          "date": "2024-09-04",
+          "event": "An amendment to the development agreement is filed, reducing the affordable housing and adding an enhanced infrastructure financing district; an addendum to the EIR follows (listed Oct 10, 2024)."
+        },
+        {
+          "date": "2026-02-06",
+          "event": "The first building permit applications are filed, for the Plaza A and B buildings; the Mayfair building follows Feb 10 and two more in June."
+        }
+      ],
+      "nextMilestone": "Decisions on the development agreement amendment and the building permits; no dates published.",
+      "summary": "The redevelopment of a 10.25-acre office campus at California Street and Presidio Avenue into a neighborhood of 15 buildings with 744 homes. The existing 455,000-sq-ft office building would be split into two residential buildings with floors added, and 13 new buildings built, from townhouses to 6-story apartments, along two public open space corridors, with shops, a childcare center and about 4.47 acres of open space. Approved with a development agreement; an amendment that would reduce its affordable housing has been under review since 2024, and building permits for the first buildings were filed in 2026.",
+      "massingNotes": "Boundary: DataSF Special Use Districts (5yf5-ms5f, public domain), the 3333 California Street Special Use District created for the project, which is the single lot 1032/003, 10.26 acres against 10.25; official (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). No massing is drawn: plans weren't reachable, and the records give the buildings' heights only as 4 to 6 stories, with the reused office building up to 92 ft in the 2017 version. No mapped project is within 900 m.",
+      "officialLinks": [
+        "https://sfplanning.org/environmental-review-documents?title=3333+california"
+      ],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2015-014028PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-014028DVA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-014028DVA-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-014028ENV",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-014028ENV-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-014028CUA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-014028MAP",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-014028PCA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-014028APL",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-014028APL-02",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2023-007909PRX",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202512111587",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202512121640",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202512121641",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202606123167",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202606123168",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202608046019",
+        "https://sfplanning.org/environmental-review-documents?title=3333+california",
+        "https://data.sf.gov/d/5yf5-ms5f"
+      ],
+      "verify": [
+        "the dates the Planning Commission and Board of Supervisors approved the project and the development agreement (the records give only closing dates)",
+        "the outcome of the 2024 development agreement amendment and how much affordable housing it would remove",
+        "whether the building permits have been issued and construction has started",
+        "the open space figure (about 4.47 acres in the development agreement ordinance)"
+      ],
+      "lastVerified": "2026-10-28"
+    },
+    {
+      "id": "5m",
+      "name": "5M",
+      "aliases": [
+        "5M Project",
+        "Fifth and Mission",
+        "925 Mission Street",
+        "Fifth and Mission Special Use District"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.4063,
+        37.7817
+      ],
+      "camera": {
+        "center": [
+          -122.4063,
+          37.7817
+        ],
+        "zoom": 16.3,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 4,
+      "acresNote": "The Planning Department describes an approximately 4-acre site of 23 parcels at Fifth Street between Mission and Howard streets (2011.0409B; the development agreement ordinance; the archived 5M project page). The 16 active lots inside DataSF's Fifth and Mission Special Use District, the zoning district created for the project, come to 4.26 acres; joined across the alleys between them, 4.4 acres.",
+      "program": {
+        "homes": 688,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 676000,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "The figures are the city's pipeline (end of June 2026): 688 homes, 302 of them completed and 386 still to build, and 676,000 sq ft of office. The 2015 project, as the Planning Department's archived page describes it: three new buildings, a 288-unit residential building on Mission Street (57 of the homes below market rate), a 400-unit residential building on Natoma Street and a 630,000-sq-ft office building on Howard Street, of roughly 200 to 450 ft, keeping the Chronicle building at Fifth and Mission and the historic Dempster and Camelline buildings; 35% of the site existing and historic buildings, 48% new construction and 16% ground-level open space. The page counts 631 market-rate homes and 221 affordable ones (33%) on and off the site, within District 6."
+      },
+      "developer": "Forest City Residential Development, Inc. (applicant); the development agreement is with 5M Project, LLC",
+      "publicPartners": [
+        "San Francisco Planning Department"
+      ],
+      "stage": "partial",
+      "stageNote": "Partly built. The development agreement with 5M Project, LLC and the Fifth and Mission Special Use District are recorded as approved on Dec 2, 2015, and the buildings' conditional use and office approvals in January 2016; the agreement was amended in February 2020 and December 2021. Two towers are finished: a 25-story office building at 415 Natoma Street (completed April 1, 2022) and a 21-story building of 302 homes at 434 Minna Street (completed Sept 29, 2022). The pipeline counts 386 homes still to build.",
+      "timeline": [
+        {
+          "date": "2013-01-30",
+          "event": "The Planning Department issues a notice of preparation of an EIR and an initial study."
+        },
+        {
+          "date": "2014-10-15",
+          "event": "The Draft EIR is published."
+        },
+        {
+          "date": "2015-08-13",
+          "event": "Comments and responses on the Draft EIR are published."
+        },
+        {
+          "date": "2015-09-17",
+          "event": "The Planning Commission hears the project."
+        },
+        {
+          "date": "2015-12-02",
+          "event": "The development agreement with 5M Project, LLC and the Fifth and Mission Special Use District are recorded as approved."
+        },
+        {
+          "date": "2016-01-04",
+          "event": "The conditional use and office allocation approvals for the project's buildings close as approved."
+        },
+        {
+          "date": "2020-02",
+          "event": "First amendment to the development agreement; the second follows in December 2021."
+        },
+        {
+          "date": "2022-04-01",
+          "event": "The 25-story office building at 415 Natoma Street is completed."
+        },
+        {
+          "date": "2022-09-29",
+          "event": "The 21-story building of 302 homes at 434 Minna Street is completed."
+        }
+      ],
+      "nextMilestone": "The remaining buildings, with 386 homes in the pipeline; no building permit application for them was found in DataSF's permit records.",
+      "summary": "A four-acre district at Fifth and Mission streets in SoMa, around the Chronicle building, planned in 2015 with new towers of roughly 200 to 450 ft for homes and offices, kept historic buildings and a new open space, Mary Court. Two towers are finished: a 25-story office building on Natoma Street and a 21-story building of 302 homes on Minna Street, both completed in 2022. The city's pipeline still counts 386 homes to come.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), the 16 active lots inside DataSF's Fifth and Mission Special Use District (5yf5-ms5f), joined across the alleys between them, 4.4 acres against the stated 4; official (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). The district itself runs about 1.2 acres into the surrounding streets, so it isn't drawn as the site. The development agreement authorized acquiring 967 Mission Street for affordable housing; that lot is outside the district and isn't drawn. No massing is drawn: the design document and plans are on the Planning Department's document servers, which couldn't be reached. Nearby mapped projects: the Flower Mart (flower-mart) is about 640 m away.",
+      "officialLinks": [
+        "https://sfplanning.org/5m-project"
+      ],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2011.0409",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2011.0409B",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2011.0409DVA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2011.0409MAP",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2011.0409PCA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2011.0409CUA-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2011.0409CUA-03",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2011.0409CUA-05",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2011.0409OFA-02",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2018-011363PRX",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201806293425",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201808066535",
+        "https://sfplanning.org/5m-project",
+        "https://data.sf.gov/d/5yf5-ms5f",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "what remains to be built and when: the annual compliance reports (2019–2024) and the 2020 and 2021 development agreement amendments are on citypln-m-extnl.sfgov.org, which couldn't be reached on Oct 28",
+        "the project's total program after the amendments (the archived page's 2015 figures differ from the pipeline's 688 homes and 676,000 sq ft of office)",
+        "the affordable homes delivered and planned (33% on and off site in 2015; the pipeline counts 38)",
+        "the current developer (the 2015 applicant was Forest City)"
+      ],
+      "lastVerified": "2026-10-28"
+    },
+    {
+      "id": "san-francisco-gateway",
+      "name": "San Francisco Gateway",
+      "aliases": [
+        "SF Gateway",
+        "San Francisco Gateway Project",
+        "749 Toland Street and 2000 McKinnon Avenue"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.398,
+        37.7418
+      ],
+      "camera": {
+        "center": [
+          -122.398,
+          37.7418
+        ],
+        "zoom": 15.8,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 17.1,
+      "acresNote": "The Planning Commission's agenda for Sept 25, 2025 gives an approximately 17.1-acre site bounded by Kirkwood Avenue, Rankin Street, McKinnon Avenue and Toland Street: Lot 008 in Assessor's Block 5284A and Lot 002 in Block 5287, as well as portions of the surrounding streets and Selby Street, with an elevated stretch of Interstate 280 crossing it. The two lots come to 13.33 acres in DataSF's parcel map; the streets aren't drawn. About 3.9 acres would be dedicated to the City for street improvements.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": 1637600,
+        "retailSqft": 8400,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Two mixed-use buildings up to 97 ft tall totaling 1,646,000 gross sq ft: up to 1,637,600 sq ft of production, distribution and repair (PDR), non-retail sales and service and automotive uses, about 8,400 sq ft of retail, and up to 1,125 parking spaces (Planning Commission agenda, Sept 25, 2025, items 15a and 15e). They replace four existing single-story PDR buildings. The EIR described two buildings totaling 2,160,000 gross sq ft, about 97 ft tall and up to 115 ft with rooftop appurtenances (same agenda, item 15). The city's pipeline still lists the 2015 application's four buildings and 1,091,790 sq ft."
+      },
+      "developer": "Prologis, L.P. (party to the development agreement, per the Planning Commission's Sept 25, 2025 agenda)",
+      "publicPartners": [
+        "San Francisco Planning Department",
+        "San Francisco Board of Supervisors (special use district and development agreement ordinances, Board Files 250426 and 250427)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved by the city in 2025. On Sept 25, 2025 the Planning Commission heard the certification of the Final EIR, CEQA findings, the San Francisco Gateway Special Use District and a height change from 65-J to 97-X, the development agreement with Prologis, L.P., the design standards and a conditional use authorization (agenda). The Planning Department's record shows the project approved that day; the environmental review closed Oct 2, the conditional use authorization Oct 14 and the design standards Dec 2, 2025, all as approved, and notices of determination are dated Oct 28 and Dec 17, 2025. The Board of Supervisors' adoption of the special use district and development agreement isn't in the records read. No building permit for the new buildings was found.",
+      "timeline": [
+        {
+          "date": "2015-09-18",
+          "event": "The application for 749 Toland Street and 2000 McKinnon Avenue is filed with the Planning Department (2015-012491)."
+        },
+        {
+          "date": "2016-12",
+          "event": "A preliminary project assessment describes a new multi-level, multi-building PDR facility on two city blocks, \"to serve as a new industrial center for the City\"."
+        },
+        {
+          "date": "2022-03-09",
+          "event": "Notice of preparation of an EIR is published, with a public scoping meeting."
+        },
+        {
+          "date": "2023-09-07",
+          "event": "The Planning Commission holds its public hearing on the Draft EIR; comments are accepted until Oct 16, 2023."
+        },
+        {
+          "date": "2025-09-25",
+          "event": "The Planning Commission takes up the Final EIR, the special use district, height change, development agreement, design standards and conditional use authorization; the Planning Department records the project as approved."
+        },
+        {
+          "date": "2025-12-17",
+          "event": "A second notice of determination is filed (the first is dated Oct 28, 2025)."
+        }
+      ],
+      "nextMilestone": "Building permits for the two buildings; none were found in DataSF's permit records as of October 2026.",
+      "summary": "Prologis's plan to replace four single-story industrial buildings on two Bayview blocks at Toland Street and McKinnon Avenue, crossed by an elevated stretch of Interstate 280, with two multi-story industrial buildings up to 97 ft tall. The approved project has about 1.6 million sq ft of production, distribution and repair space, some retail and up to 1,125 parking spaces, under a new special use district and a development agreement. It went through a full EIR and was approved in September 2025.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), the two lots the Planning Commission's agendas name (Block 5284A Lot 008 and Block 5287 Lot 002), 13.33 acres in two parts on either side of Selby Street; official (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). The portions of the surrounding streets in the 17.1-acre site aren't drawn. No massing is drawn: the design standards and plans weren't reachable, and the agendas give only the buildings' 97-ft height. How it relates to nearby projects: the Caltrain corridor drawn for high-speed rail (cahsr-sf-sj) runs about 120 m east; no other mapped project is within 700 m.",
+      "officialLinks": [
+        "https://sfplanning.org/environmental-review-documents?title=gateway"
+      ],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2015-012491PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-012491ENV",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-012491DVA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-012491CUA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-012491CWP",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-012491MAP",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-012491PCA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-012491PPA",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2015-012491PRJ",
+        "https://sfplanning.org/sites/default/files/agendas/2023-09/20230907_cpc%20%28ID%201387285%29.pdf",
+        "https://sfplanning.org/sites/default/files/agendas/2025-09/20250925_cpc%20%28ID%201533917%29.pdf",
+        "https://sfplanning.org/environmental-review-documents?title=gateway",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the Board of Supervisors' adoption of the special use district and development agreement (Board Files 250426 and 250427; sfgov.legistar.com couldn't be reached on Oct 28)",
+        "the Planning Commission's motions and votes on Sept 25, 2025 (the minutes are on citypln-m-extnl.sfgov.org, which couldn't be reached)",
+        "the approved floor area: 1,646,000 gross sq ft in the conditional use item against 2,160,000 in the EIR item of the same agenda",
+        "the zoning map and Planning Code amendment records show as closed and approved on Jan 12, 2025, before the hearings",
+        "building permits and a construction schedule"
+      ],
+      "lastVerified": "2026-10-28"
+    },
+    {
+      "id": "400-2nd-street",
+      "name": "400 2nd Street",
+      "aliases": [
+        "One Vassar",
+        "645 Harrison Street",
+        "657 Harrison Street",
+        "2nd and Harrison key site",
+        "Central SoMa key site 3"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.3958,
+        37.7834
+      ],
+      "camera": {
+        "center": [
+          -122.3958,
+          37.7834
+        ],
+        "zoom": 16.3,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 2.01,
+      "acresNote": "The approvals don't state a site area. The eleven lots the Planning Commission's Feb 20, 2020 agenda lists that are still active (Block 3763, lots 001, 078, 079, 080, 080A, 081, 099, 100, 101, 105 and 113), which the Central SoMa Plan maps as key site 3, come to 2.01 acres in DataSF's parcel map, on both sides of Vassar Place.",
+      "program": {
+        "homes": 489,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 493115,
+        "commercialSqftTotal": null,
+        "retailSqft": 37551,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Three buildings, about 1.5 million gross sq ft in all (Planning Commission, Feb 20, 2020): a 35-story, 350-ft residential tower with 489 homes, child care and ground-floor retail at 657 Harrison Street; a 15-story addition over the existing four-story building at 645 Harrison Street, making a 200-ft hotel building; and a 27-story, 350-ft office tower with ground-floor retail. In all about 493,115 gross sq ft of office (existing and proposed), up to 42,013 of PDR, 37,551 of retail, 221,965 of hotel and 14,000 of child care, about 322 parking spaces below grade, and about 14,655 sq ft of privately owned public open space including a mid-block alley, Hawthorne Street Plaza. The hearing describes inclusionary affordable housing beyond Planning Code Section 415's requirement without giving a number, and no hotel room count."
+      },
+      "developer": "One Vassar, LLC (Planning Department records)",
+      "publicPartners": [
+        "San Francisco Planning Department"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. The Planning Commission approved the project on Feb 20, 2020 (Large Project Authorization, Motion 20665, 6–0) and its office development authorization the same day; the hotel's conditional use authorization and a variance also show as approved in the Planning Department's records, and its community plan evaluation is listed May 7, 2020. DataSF's permit records show the 27-story office building's permit approved June 23, 2023 but not issued, and a demolition permit filed Apr 20, 2023 not issued. The Department's project record was closed Sept 19, 2024.",
+      "timeline": [
+        {
+          "date": "2012-10-31",
+          "event": "A project assessment is requested for demolishing the one- to four-story buildings at 400 2nd Street and building three new ones (2012.1384)."
+        },
+        {
+          "date": "2016-04-29",
+          "event": "An office allocation application is filed for about 421,000 sq ft in a new 350-ft building, one component of One Vassar."
+        },
+        {
+          "date": "2018",
+          "event": "The Central SoMa Plan names the site a key development site, \"2nd and Harrison\"."
+        },
+        {
+          "date": "2020-02-20",
+          "event": "The Planning Commission approves One Vassar: residential and office towers of 350 ft and a 200-ft hotel building (Motion 20665)."
+        },
+        {
+          "date": "2023-06-23",
+          "event": "The building permit for the 27-story office building is approved, but not issued."
+        }
+      ],
+      "nextMilestone": "Issuance of the building and demolition permits; none had been issued as of October 2026 (DataSF permits).",
+      "summary": "One Vassar: three buildings planned on the block at Second and Harrison streets in Central SoMa, on both sides of Vassar Place, a Central SoMa Plan key site. A 350-ft residential tower with 489 homes, a 350-ft office tower and a 15-story hotel addition over an existing building at 645 Harrison, about 1.5 million sq ft in all, with child care and a new mid-block plaza. Approved in February 2020; its building permits haven't been issued.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), the eleven still-active lots the Planning Commission's Feb 20, 2020 agenda lists (Block 3763, lots 001, 078, 079, 080, 080A, 081, 099, 100, 101, 105 and 113), the same lots the Central SoMa Plan maps as key site 3, 2.01 acres in two parts on either side of Vassar Place; official (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). The agenda also lists lot 112, which the assessor split in 2017 into lot 125 (416 2nd Street) and lot 126 (452 2nd Street, where a Transbay Transit Center bus storage facility was approved in 2017); neither is drawn. No massing is drawn: the approved plans weren't reachable. How it relates to nearby projects: The Portal's tunnel (the-portal) runs about 8 m from the site, and the corridor outline drawn for it overlaps the site's edge by about a quarter acre; 725 Harrison Street (725-harrison) is about 200 m west along Harrison.",
+      "officialLinks": [
+        "https://sfplanning.org/central-soma-plan",
+        "https://sfplanning.org/environmental-review-documents?title=vassar"
+      ],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2012.1384",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2012.1384ENX",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2012.1384OFA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2012.1384CUA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2012.1384VAR",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2012.1384ENV",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2012.1384U",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2012.1384",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201912068928",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202304206081",
+        "https://sfplanning.org/sites/default/files/agendas/2020-02/20200220_cal.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20200220_cal_min.pdf",
+        "https://sfplanning.org/environmental-review-documents?title=vassar",
+        "https://sfplanning.org/sites/default/files/documents/citywide/Central_Corridor/2018CentralSoMaPlan.pdf",
+        "https://sfplanning.org/central-soma-plan",
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2017-014481GPR",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "whether lot 125 (416 2nd Street), split from the listed lot 112 in 2017, is part of the site",
+        "the number of affordable homes and hotel rooms",
+        "why the Planning Department's project record was closed on Sept 19, 2024, and whether the approvals remain in force",
+        "the pipeline's figures differ from the hearing's: 237,750 sq ft of visitor space against 221,965 of hotel",
+        "permit issuance and a construction schedule"
+      ],
+      "lastVerified": "2026-10-28"
+    },
+    {
+      "id": "transbay-parcel-f",
+      "name": "Transbay Parcel F",
+      "aliases": [
+        "542-550 Howard Street",
+        "546 Howard Street"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.3975,
+        37.7879
+      ],
+      "camera": {
+        "center": [
+          -122.3975,
+          37.7879
+        ],
+        "zoom": 16.7,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 0.5,
+      "acresNote": "No site area is given in the records read. The two lots drawn (block 3721, lots 016 and 136) come to about 0.50 acres in DataSF's parcel map.",
+      "program": {
+        "homes": 165,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 275674,
+        "commercialSqftTotal": null,
+        "retailSqft": 9000,
+        "hotelKeys": 189,
+        "openSpaceAcres": null,
+        "notes": "As approved on Jan 9, 2020: a 61-story mixed-use building about 750 ft tall (about 800 ft including the rooftop screen and mechanical equipment) with 165 homes, 189 hotel rooms, 275,674 gross sq ft of office space, about 9,000 sq ft of retail, about 20,000 sq ft of open space and four below-grade levels with up to 183 parking spaces, plus a bridge to the park on top of the Transbay Transit Center (2016-013312CUA-02). The approvals first had the affordable housing built off site; the sponsor then sought a development agreement to pay a fee instead (2016-013312DVA, closed as approved Nov 8, 2021). The pipeline lists the affordability type as \"Fee\" and counts 42 affordable homes."
+      },
+      "developer": "Parcel F Owner LLC",
+      "publicPartners": [
+        "San Francisco Planning Department"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. The Planning Commission approved the tower on Jan 9, 2020 (Resolutions 20613 and 20614, Motions 20615–20618) and the Zoning Administrator granted a variance on June 5, 2020; a development agreement and General Plan and zoning map amendments closed as approved in 2021. The site permit (filed March 21, 2019) and a shoring and excavation permit (filed Dec 8, 2021) hadn't been issued as of Oct 2026; an archaeological exploration permit was issued in 2020.",
+      "timeline": [
+        {
+          "date": "2016-10-13",
+          "event": "Parcel F Owner LLC files the project with the Planning Department (2016-013312PRJ)."
+        },
+        {
+          "date": "2019-03-21",
+          "event": "The site permit application for a 62-story mixed-use building with 165 homes, a hotel, offices and retail is filed (201903215849)."
+        },
+        {
+          "date": "2019-08-27",
+          "event": "The Planning Department issues the community plan evaluation, the project's environmental review."
+        },
+        {
+          "date": "2020-01-09",
+          "event": "The Planning Commission approves the tower (Resolutions 20613 and 20614, Motions 20615–20618)."
+        },
+        {
+          "date": "2020-06-05",
+          "event": "The Zoning Administrator issues the variance decision."
+        },
+        {
+          "date": "2021-11-08",
+          "event": "The development agreement letting the project pay an affordable housing fee, and the zoning map amendment, close as approved."
+        },
+        {
+          "date": "2021-12-08",
+          "event": "A permit application for the shoring wall and excavation is filed (202112083939)."
+        }
+      ],
+      "nextMilestone": "Issuance of the site permit; none had been issued as of Oct 2026.",
+      "summary": "An approved 61-story tower on Howard Street beside the Salesforce Transit Center, about 750 ft to the roof and 800 ft with its rooftop screen. It would hold 165 homes, a 189-room hotel and about 276,000 sq ft of offices, with a bridge to the park on the transit center's roof. The Planning Commission approved it in January 2020, and a 2021 development agreement lets it pay an affordable housing fee. Its building permits haven't been issued.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), block 3721 lots 016 (546 Howard Street) and 136. The Planning records name lots 015A and 016; DataSF's parcel history shows lot 015A retired on May 22, 2017, the day lot 136 was added in its place (they differ by about 4,250 sq ft), so lot 136 is drawn for it. About 0.50 acres as drawn; official (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). No massing is drawn: the approved plans weren't reachable, and the records give only the height and story count. How it relates to nearby projects: 524 Howard Street (524-howard) is next door; The Portal (the-portal): the corridor outline drawn for it overlaps the site by about 0.17 acres, as it does other lots along the transit center; Oceanwide Center (oceanwide-center) is about 144 m away.",
+      "officialLinks": [
+        "https://sfplanning.org/environmental-review-documents?title=542"
+      ],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2016-013312PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2016-013312CUA-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2016-013312DNX-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2016-013312DVA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2016-013312GPA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2016-013312MAP",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2016-013312ENV",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2016-013312PRJ",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201903215849",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202112083939",
+        "https://sfplanning.org/environmental-review-documents?title=542",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the lots: the records name lot 015A, which DataSF's parcel map replaced with lot 136 in 2017 (not an exact match)",
+        "the affordable housing fee's amount and the development agreement's terms (the ordinance wasn't reachable)",
+        "whether any construction has started beyond the 2020 archaeological exploration"
+      ],
+      "lastVerified": "2026-10-28"
+    },
+    {
+      "id": "524-howard",
+      "name": "524 Howard Street",
+      "aliases": [
+        "524 & 530 Howard Street",
+        "530 Howard Street"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.3971,
+        37.7882
+      ],
+      "camera": {
+        "center": [
+          -122.3971,
+          37.7882
+        ],
+        "zoom": 16.7,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 0.4,
+      "acresNote": "No site area is given in the records read. The two lots (block 3721, lots 013 and 014, at 524 and 530 Howard Street) come to about 0.40 acres in DataSF's parcel map.",
+      "program": {
+        "homes": 672,
+        "affordableHomes": 68,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "A 72-story residential building about 795 ft tall (about 844 ft with permitted rooftop appurtenances), 818,922 gross sq ft, with 672 homes (424 one-bedroom, 180 two-bedroom and 68 three-bedroom), 68 of them for households earning 50% of area median income; three above-grade parking levels with 149 spaces; and a public fifth-floor deck with a walkway to Salesforce Park (2023-010883PRJ). It replaces a surface parking lot at 524 Howard and a four-story, 29,955-sq-ft commercial building at 530 Howard."
+      },
+      "developer": "Not named in the Planning records, which were filed by J. Abrams Law, P.C.",
+      "publicPartners": [
+        "San Francisco Planning Department"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. The city's pipeline gives June 18, 2024 as the planning approval date, and the Planning Department's record was closed on Sept 17, 2024 with an approval letter issued; the bridge to Salesforce Park cleared a General Plan referral in March 2024. The site permit, filed Nov 17, 2023, hadn't been issued as of Oct 2026.",
+      "timeline": [
+        {
+          "date": "2023-11-17",
+          "event": "The site permit application for a 72-story residential building with 672 homes is filed (202311170986)."
+        },
+        {
+          "date": "2023-11-22",
+          "event": "The project is filed with the Planning Department (2023-010883PRJ)."
+        },
+        {
+          "date": "2024-03-04",
+          "event": "The General Plan referral for the pedestrian bridge over Natoma Street to Salesforce Park closes as approved."
+        },
+        {
+          "date": "2024-06-18",
+          "event": "Planning approval, per the city's development pipeline."
+        },
+        {
+          "date": "2024-09-17",
+          "event": "The Planning Department closes the record with an approval letter."
+        }
+      ],
+      "nextMilestone": "Issuance of the site permit; it was still filed, not issued, in Oct 2026.",
+      "summary": "A 72-story residential tower planned on Howard Street beside the Salesforce Transit Center, about 795 ft tall, with 672 homes, 68 of them affordable. It would replace a parking lot and a four-story building at 524 and 530 Howard and connect to Salesforce Park by a bridge from a public fifth-floor deck. Approved in 2024, it hasn't received its building permit.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), block 3721 lots 013 and 014, the two lots of the site permit (202311170986), at the record's two addresses, 524 and 530 Howard Street; about 0.40 acres as drawn; official (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). No massing is drawn: the approved plans weren't reachable, and the record gives only the height and story count. How it relates to nearby projects: Transbay Parcel F (transbay-parcel-f) is next door; The Portal (the-portal): the corridor outline drawn for it overlaps the site by about 0.08 acres; Oceanwide Center (oceanwide-center) is about 143 m away.",
+      "officialLinks": [],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2023-010883PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2023-010883GPR",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2023-010883TDM",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2023-010883PRJ",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202311170986",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the approving body and law for the 2024 approval (the record shows an approval letter; the pipeline doesn't mark it as holding an approved entitlement)",
+        "who the developer is",
+        "whether the site permit has been issued"
+      ],
+      "lastVerified": "2026-10-28"
+    },
+    {
+      "id": "transbay-block-4",
+      "name": "Transbay Block 4",
+      "aliases": [
+        "200 Main Street",
+        "200 Folsom Street/200 Main Street"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.3935,
+        37.79
+      ],
+      "camera": {
+        "center": [
+          -122.3935,
+          37.79
+        ],
+        "zoom": 16.5,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 1.04,
+      "acresNote": "No site area is given in the records read. The lot the Planning record and the pipeline name (block 3739, lot 010) is about 1.04 acres in DataSF's parcel map.",
+      "program": {
+        "homes": 683,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": 8339,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "The Planning record describes \"a 47-story, 501-foot-tall building containing a total of 683 dwelling units, ground-floor-retail, and an underground garage with 327 parking spaces\" (2018-015785PRJ). The two site permit applications filed Dec 20, 2019 split that total into a 47-story building with 491 homes and a 16-story building with 192 homes. The pipeline counts 8,339 sq ft of retail and 307 affordable homes, with the affordability type given as \"100%\", which doesn't match the 683 total; the affordable count is left out until confirmed."
+      },
+      "developer": "The Office of Community Investment and Infrastructure (OCII) is the sponsor in the city's pipeline; F4 Transbay Partners LLC applied for the project's General Plan referral in 2020",
+      "publicPartners": [
+        "Office of Community Investment and Infrastructure (OCII)",
+        "San Francisco Planning Department"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In review, with no approval recorded in the sources read. The application (2018-015785PRJ) has been open since 2018 and its environmental review closed with CEQA clearance on Jan 31, 2023; a General Plan referral for the project's driveways and curbs closed as approved in July 2022. Amendments to the Transit Center District Plan height map and the zoning map, filed in 2022 to match a proposed redevelopment plan amendment, were withdrawn in January and September 2025. The two site permits filed in December 2019 hadn't been issued as of Oct 2026.",
+      "timeline": [
+        {
+          "date": "2018-11-19",
+          "event": "OCII files the project with the Planning Department (2018-015785PRJ)."
+        },
+        {
+          "date": "2019-12-20",
+          "event": "Site permit applications are filed for a 47-story building with 491 homes and a 16-story building with 192 homes (201912200133 and 201912200111)."
+        },
+        {
+          "date": "2022-07-28",
+          "event": "A General Plan referral for the project's driveways and curb loading closes as approved."
+        },
+        {
+          "date": "2023-01-31",
+          "event": "The environmental review record closes with CEQA clearance issued."
+        },
+        {
+          "date": "2025-09-23",
+          "event": "The last of the 2022 applications to amend the Transit Center District Plan height map and the zoning map is withdrawn."
+        }
+      ],
+      "nextMilestone": "OCII's approval of the project and the site permits; no dates published.",
+      "summary": "The Transbay redevelopment area's Block 4, at Howard and Main streets a block from the Salesforce Transit Center, where OCII plans housing: a 47-story, 501-ft building and a 16-story building with 683 homes in all, over ground-floor retail. Environmental review is done, but the height map and zoning changes filed in 2022 were withdrawn in 2025, and no approval is recorded in the sources read.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), block 3739 lot 010, the lot the Planning record (2018-015785PRJ) and the pipeline name; it was created in 2021 from the larger lot 008 on which the 2019 site permits were filed. About 1.04 acres as drawn; official (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). No massing is drawn: no plans were reachable. How it relates to nearby projects: The Portal (the-portal) passes about 76 m away; Oceanwide Center (oceanwide-center) is about 330 m away.",
+      "officialLinks": [],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2018-015785PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2018-015785ENV",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2018-015785GPR",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2018-015785GPA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2018-015785MAP",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2018-015785PRJ",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201912200133",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201912200111",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "OCII's approvals for Block 4 (sfocii.org couldn't be reached on Oct 28)",
+        "why the 2022 height and zoning map amendments were withdrawn, and whether the 501-ft design still stands",
+        "the affordable home count: the pipeline gives 307 and \"100%\"",
+        "whether lot 010 is the whole of Block 4"
+      ],
+      "lastVerified": "2026-10-28"
+    },
+    {
+      "id": "10-south-van-ness",
+      "name": "10 South Van Ness",
+      "aliases": [
+        "10 South Van Ness Avenue",
+        "10 SVN",
+        "80 South Van Ness Avenue"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.4195,
+        37.7742
+      ],
+      "camera": {
+        "center": [
+          -122.4195,
+          37.7742
+        ],
+        "zoom": 16.6,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 1.19,
+      "acresNote": "No site area is given in the records read. The two lots the project merges (block 3506, lots 003A and 004) come to about 1.19 acres in DataSF's parcel map.",
+      "program": {
+        "homes": 921,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": 2360,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "As approved in 2026 (2024-008986PRJ): a 67-story residential building with 921 homes, 2,360 sq ft of ground-floor retail, 38,282 sq ft of common open space on several roof decks, and a two-level basement garage with 105 parking spaces. Its height isn't given in the record. The project was filed under the state's streamlined approval law (a preliminary application under Government Code section 65913.4, October 2024). The counts differ between records: 921 homes in the project description, 1,019 in the record's unit field, 952 in the preliminary application, and 1,104 homes in 65 stories in the pipeline's description. The earlier, 2020 approval was a 55-story, 590-ft building (610 ft with penthouses) with 966 homes and about 29,443 sq ft of retail."
+      },
+      "developer": "Crescent Heights (the applicant, \"c/o Crescent Heights\", in the Planning records)",
+      "publicPartners": [
+        "San Francisco Planning Department"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. The Planning Department closed the 2024 application on Aug 18, 2026 with an approval letter, for a 67-story building with 921 homes. An earlier design, a 55-story, 590-ft building with 966 homes, was approved by the Planning Commission in 2020 (Motions 20743 and 20744) after an EIR, and its permit deadline was extended to March 15, 2026. The building permit filed in 2022 for that design hasn't been issued; a permit to demolish the existing two-story building was filed on Oct 23, 2026.",
+      "timeline": [
+        {
+          "date": "2015-04-14",
+          "event": "The project and its environmental review are filed with the Planning Department (2015-004568)."
+        },
+        {
+          "date": "2020-06-11",
+          "event": "The Planning Commission approves a 55-story, 590-ft building with 966 homes (Motions 20743 and 20744), per the pipeline's approval date."
+        },
+        {
+          "date": "2022-06-17",
+          "event": "The building permit application for the 55-story design is filed (202206176565)."
+        },
+        {
+          "date": "2023-01-19",
+          "event": "An extension of the permit deadline to March 15, 2026 is approved."
+        },
+        {
+          "date": "2024-10-03",
+          "event": "A preliminary application under the state's streamlined approval law is filed for a 65-story building (2024-008986PPS)."
+        },
+        {
+          "date": "2026-08-18",
+          "event": "The Planning Department closes the new application with an approval letter: 67 stories, 921 homes."
+        },
+        {
+          "date": "2026-10-23",
+          "event": "A permit to demolish the existing two-story commercial building is filed (202609047753)."
+        }
+      ],
+      "nextMilestone": "The demolition permit and a building permit for the approved 67-story design.",
+      "summary": "A residential tower at Market Street and South Van Ness Avenue, next to the 30 Van Ness site, replacing a two-story commercial building last used for auto sales and repair. The current approval, an August 2026 letter for an application filed under the state's streamlined approval law, is for a 67-story building with 921 homes; an earlier 55-story, 590-ft design with 966 homes was approved in 2020, with a new entrance to the Van Ness Muni station. A demolition permit was filed in October 2026.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), block 3506 lots 003A and 004, the two lots the project merges (2015-004568ENV; building permit 202206176565); about 1.19 acres as drawn; official (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). No massing is drawn: the 2026 design's plans and height weren't reachable. How it relates to nearby projects: One Oak (one-oak) and 98 Franklin Street (98-franklin) are about 37 m away across Market Street, and 30 Van Ness (30-van-ness) about 83 m away.",
+      "officialLinks": [
+        "https://sfplanning.org/environmental-review-documents?title=10+south+van+ness"
+      ],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2024-008986PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2024-008986PPS",
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2015-004568PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-004568ENV",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-004568CUA-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-004568DNX-02",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2024-008986PRJ",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202206176565",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202609047753",
+        "https://sfplanning.org/environmental-review-documents?title=10+south+van+ness",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the approved home count (921, 952, 1,019 and 1,104 appear in different records) and the 2026 design's height",
+        "the affordable homes in the 2026 approval",
+        "whether the 2026 design keeps the 2020 design's new Van Ness Muni station entrance",
+        "whether the demolition permit has been issued",
+        "the law the 2026 approval was granted under (the preliminary application cites Government Code section 65913.4)"
+      ],
+      "lastVerified": "2026-10-28"
+    },
+    {
+      "id": "one-oak",
+      "name": "One Oak",
+      "aliases": [
+        "1500-1540 Market Street",
+        "1500 Market Street",
+        "One Oak Street"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.4198,
+        37.7751
+      ],
+      "camera": {
+        "center": [
+          -122.4198,
+          37.7751
+        ],
+        "zoom": 16.8,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 0.42,
+      "acresNote": "No site area is given in the records read. The five lots (block 0836, lots 001-005: 1500, 1510, 1520 and 1540 Market Street and 11 Oak Street) come to about 18,400 sq ft (0.42 acres) in DataSF's parcel map.",
+      "program": {
+        "homes": 541,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "As modified and approved in 2026 (2024-005509PRJ): one residential building of about 508,000 sq ft with 541 homes, a 14-story podium (roof about 139 ft) and a 41-story tower with a roof height of 400 ft (about 416 ft with mechanical equipment and 436 ft with the elevator overrun and rooftop screening), three underground levels with 135 parking spaces, and a public plaza and shared public right-of-way in part of Oak Street. It was first approved in 2017 as a 40-story, 400-ft tower with 304 homes (2009.0159) and modified in July 2022 for 460 homes (2024-005509ENV). The pipeline estimates 91 affordable homes; the project record lists none."
+      },
+      "developer": "Emerald Fund, Inc. (One Oak Owner, LLC)",
+      "publicPartners": [
+        "San Francisco Planning Department"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. The Planning Commission first approved One Oak on June 15, 2017, as a 40-story tower with 304 homes, and it was modified in July 2022 for 460 homes. The current modification, 541 homes in 41 stories, was approved on Mar 19, 2026 per the Planning Department's record, after an addendum to its environmental review dated Mar 4, 2026; its downtown project authorization and variance closed as approved in April and May 2026, and a zoning map amendment raising the podium height limit from 120 to 140 ft in June 2026. The building permit application filed in 2016 hasn't been issued.",
+      "timeline": [
+        {
+          "date": "2009-02-27",
+          "event": "The project is filed with the Planning Department (2009.0159)."
+        },
+        {
+          "date": "2017-06-15",
+          "event": "The Planning Commission approves a 40-story, 400-ft tower with 304 homes and a public plaza in Oak Street."
+        },
+        {
+          "date": "2022-07",
+          "event": "The project is modified for 460 homes in a 40-story building."
+        },
+        {
+          "date": "2024-06-14",
+          "event": "Emerald Fund files a further modification (2024-005509PRJ)."
+        },
+        {
+          "date": "2026-03-04",
+          "event": "The Planning Department issues an addendum to the project's environmental review."
+        },
+        {
+          "date": "2026-03-19",
+          "event": "The modified project is approved: 541 homes in a 41-story tower, still 400 ft to the roof."
+        }
+      ],
+      "nextMilestone": "A building permit for the 541-home design and the start of construction; the 2016 permit application hasn't been issued.",
+      "summary": "A 41-story, 400-ft residential tower at the corner of Market Street, Van Ness Avenue and Oak Street, near 30 Van Ness and 10 South Van Ness. It would have 541 homes over a 14-story podium, replacing two commercial buildings and a parking lot, with a public plaza in part of Oak Street. First approved in 2017 with 304 homes, it was approved again at its larger size in March 2026; construction hasn't started.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), block 0836, lots 001-005: the project record's lot (1500 Market Street) and the four the Planning Department's project review names (1510-1540 Market Street and 11 Oak Street), about 0.42 acres; official (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). No massing is drawn: the approved plans weren't reachable, and the records give only the podium and tower heights. How it relates to nearby projects: 98 Franklin Street (98-franklin) is on the same block, about 20 m west; 10 South Van Ness (10-south-van-ness) is about 37 m away across Market Street, and 30 Van Ness (30-van-ness) about 42 m away.",
+      "officialLinks": [
+        "https://sfplanning.org/environmental-review-documents?title=one+oak"
+      ],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2024-005509PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2024-005509ENV",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2024-005509DNX",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2024-005509VAR",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2024-005509MAP",
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2009.0159",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2009.0159GPA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=10833PRV",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2024-005509PRJ",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201612094535",
+        "https://sfplanning.org/environmental-review-documents?title=one+oak",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the affordable homes in the 2026 approval (the pipeline estimates 91; the project record lists none)",
+        "the approval record for the July 2022 modification",
+        "whether a building permit for the 541-home design has been filed"
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "98-franklin",
+      "name": "98 Franklin Street",
+      "aliases": [
+        "98 Franklin",
+        "French American International School",
+        "International High School"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.4205,
+        37.775
+      ],
+      "camera": {
+        "center": [
+          -122.4205,
+          37.775
+        ],
+        "zoom": 16.8,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 0.51,
+      "acresNote": "No site area is given in the records read. The three lots the project record names (block 0836, lots 008, 009 and 013) come to about 22,400 sq ft (0.51 acres) in DataSF's parcel map.",
+      "program": {
+        "homes": 345,
+        "affordableHomes": 69,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": 2978,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "As approved in 2020: a 36-story mixed-use building with 345 homes over secondary school facilities for the International High School of the French American International School, ground-floor retail and a below-grade garage (2016-014802PRJ); the building permit application describes 37 stories. A 2022 revision would raise the height limit from 365 to 400 ft and allow up to 385 homes, under a development agreement still under review. The pipeline counts 69 affordable homes on site and 2,978 sq ft of retail."
+      },
+      "developer": "Not named in the Planning records, which were filed by J. Abrams Law, P.C. The building would house the International High School of the French American International School.",
+      "publicPartners": [
+        "San Francisco Planning Department"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. The Planning Department's record shows the project approved on May 28, 2020 (its downtown project authorization, Planning Commission Motion 20728), after environmental review closed May 21, 2020. A revision raising the height limit from 365 to 400 ft for up to 385 homes came with a development agreement application in November 2022: its Planning Code and zoning map amendments closed as approved in July 2023, the revised downtown project authorization in August 2023, and an addendum to the environmental review on Jan 30, 2025, but the development agreement is still under review. The building permit application filed Feb 18, 2021 hasn't been issued.",
+      "timeline": [
+        {
+          "date": "2016-11-09",
+          "event": "A preliminary project assessment is filed for 98 Franklin Street (2016-014802PPA)."
+        },
+        {
+          "date": "2017-10-26",
+          "event": "The project is filed with the Planning Department, with its environmental review (2016-014802)."
+        },
+        {
+          "date": "2020-05-28",
+          "event": "The project is approved: a 36-story building with 345 homes over the International High School's classrooms (Motion 20728)."
+        },
+        {
+          "date": "2021-02-18",
+          "event": "The building permit application is filed: 37 stories, 345 homes (202102184905)."
+        },
+        {
+          "date": "2022-11-21",
+          "event": "A development agreement is requested to raise the height limit from 365 to 400 ft for up to 385 homes (Board of Supervisors file 221163)."
+        },
+        {
+          "date": "2023-08-15",
+          "event": "The revised downtown project authorization closes as approved, after the Planning Code and zoning map amendments in July."
+        },
+        {
+          "date": "2025-01-30",
+          "event": "The addendum to the environmental review for the 400-ft building is cleared."
+        }
+      ],
+      "nextMilestone": "A decision on the development agreement, then a building permit; neither had happened by Nov 4, 2026.",
+      "summary": "A 36-story tower on Franklin Street between Market and Oak, half a block from Van Ness Avenue, with 345 homes above new classrooms for the International High School of the French American International School and ground-floor retail. It was approved in 2020 and studied in the Hub Plan's environmental review with 30 Van Ness. A revision would let it rise from 365 to 400 ft with up to 385 homes, under a development agreement still under review. Construction hasn't started.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), the three lots the project record names (block 0836, lots 008, 009 and 013), about 0.51 acres; official (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). No massing is drawn: the approved plans weren't reachable. How it relates to nearby projects: One Oak (one-oak) is on the same block, about 20 m east; 10 South Van Ness (10-south-van-ness) is about 37 m away across Market Street, and 30 Van Ness (30-van-ness) about 114 m away.",
+      "officialLinks": [],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2016-014802PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2016-014802ENV",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2016-014802ENV-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2016-014802DNX",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2016-014802DNX-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2016-014802DVA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2016-014802MAP",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2016-014802PCA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2016-014802PPA",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2016-014802PRJ",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202102184905",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the approved building's height in feet (the records give the 365-ft height limit and, for the revision, 400 ft)",
+        "the development agreement's status and date before the Board of Supervisors",
+        "the size of the school's classroom space",
+        "who the developer is"
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "potrero-yard",
+      "name": "Potrero Yard Modernization",
+      "aliases": [
+        "Potrero Yard",
+        "2500 Mariposa Street",
+        "Potrero Trolley Coach Division"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "transportation",
+      "approxCenter": [
+        -122.4093,
+        37.7637
+      ],
+      "camera": {
+        "center": [
+          -122.4093,
+          37.7637
+        ],
+        "zoom": 16.2,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 4.45,
+      "acresNote": "The site is the whole block bounded by 17th, Hampshire, Mariposa and Bryant streets, Assessor's Block 3971 Lot 001 (Planning Commission agenda, Jan 11, 2024); the approvals don't state its area. The lot is 4.45 acres in DataSF's parcel map.",
+      "program": {
+        "homes": 513,
+        "affordableHomes": 513,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": 3000,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "One building of about 1,250,000 gross sq ft rising from 70 to 150 ft (Planning Commission agenda, Jan 11, 2024): a four-level, about 70-ft replacement transit facility (700,000 gross sq ft) with parking and circulation for up to 213 buses and SFMTA maintenance, operations and administration, and a joint development of up to 530,000 gross sq ft of housing (513 homes), mostly on floors seven through 13 above the bus facility, with 3,000 sq ft of commercial space. A Paratransit Variant would build only the Bryant Street family housing (103 homes) and put SFMTA's paratransit operations in the rest of the podium. The project record gives 1,243,000 sq ft (708,000 public facility, 532,000 residential). The pipeline counts all 513 homes as affordable."
+      },
+      "developer": "SFMTA, with a private joint development co-sponsor, Potrero Neighborhood Collective LLC (Planning Department records; later records name Plenary Americas)",
+      "publicPartners": [
+        "San Francisco Municipal Transportation Agency (SFMTA)",
+        "San Francisco Planning Department"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. On Jan 11, 2024 the Planning Commission took up certification of the Final EIR, CEQA findings and a General Plan amendment, and the environmental review closed that day; the conditional use authorization closed as approved Jan 22, 2024, the zoning map amendment Apr 4, 2024, and the General Plan and Planning Code amendments Mar 10, 2026. The Planning Department's project record closed with an approval letter on Nov 26, 2024. Demolition is being prepared: a permit to remove asbestos from the building to be demolished was issued Oct 7, 2026; the demolition permit (filed Sept 8, 2026) and the new bus facility's building permit (filed Nov 8, 2024) haven't been issued.",
+      "timeline": [
+        {
+          "date": "2019-11-20",
+          "event": "SFMTA files the Potrero Yard Modernization Project with the Planning Department (2019-021884)."
+        },
+        {
+          "date": "2020-09-02",
+          "event": "A virtual public scoping meeting is held on the project's EIR."
+        },
+        {
+          "date": "2024-01-11",
+          "event": "The Planning Commission takes up certification of the Final EIR and the project's approvals."
+        },
+        {
+          "date": "2024-11-08",
+          "event": "The building permit application for the four-story bus maintenance facility is filed."
+        },
+        {
+          "date": "2024-11-26",
+          "event": "The Planning Department closes the project record with an approval letter."
+        },
+        {
+          "date": "2026-03-10",
+          "event": "The General Plan and Planning Code amendments for the project close as approved."
+        },
+        {
+          "date": "2026-10-07",
+          "event": "A permit for asbestos removal from the building to be demolished is issued; the demolition permit was filed Sept 8."
+        }
+      ],
+      "nextMilestone": "Demolition of the existing yard (permit filed Sept 8, 2026) and the building permit for the new facility.",
+      "summary": "SFMTA's rebuild of the Potrero Yard bus garage, a full block at Mariposa and Bryant streets in the Mission, as one building of about 1.25 million sq ft: a modern four-level bus facility for up to 213 buses with up to 513 homes on top, built with a private joint development partner. It rises from about 70 to 150 ft. Approved in 2024; demolition of the old yard is being prepared.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), Block 3971 Lot 001, the whole block the Planning Commission's Jan 11, 2024 agenda gives as the site, 4.45 acres; official (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). No massing is drawn: the approved plans weren't reachable, and the agenda gives only the 70- to 150-ft height range. How it relates to nearby projects: no mapped project is within 700 m.",
+      "officialLinks": [
+        "https://sfplanning.org/environmental-review-documents?title=potrero+yard"
+      ],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2019-021884PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2019-021884ENV",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2019-021884CUA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2019-021884MAP",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2019-021884GPA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2019-021884PCA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2019-021884MCM",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2019-021884PRJ",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202411084679",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202608196855",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202608257106",
+        "https://sfplanning.org/sites/default/files/agendas/2024-01/20240111_cpc%20%28ID%201413440%29.pdf",
+        "https://sfplanning.org/environmental-review-documents?title=potrero+yard",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the project record's decision date, which reads 2027-03-22 (a date in the future)",
+        "the Planning Commission's actions and votes on Jan 11, 2024, and the Board of Supervisors' adoption of the amendments (the minutes and Board files couldn't be reached)",
+        "which option is being built: the full joint development (513 homes) or the Paratransit Variant (103 homes)",
+        "the affordable home count, which comes only from the pipeline",
+        "the demolition and construction schedule"
+      ],
+      "lastVerified": "2026-10-28"
+    },
+    {
+      "id": "598-brannan",
+      "name": "598 Brannan Street",
+      "aliases": [
+        "Park Block",
+        "Central SoMa key site 5",
+        "639 Bryant Street"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.3987,
+        37.7778
+      ],
+      "camera": {
+        "center": [
+          -122.3987,
+          37.7778
+        ],
+        "zoom": 16.3,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 4.51,
+      "acresNote": "The approvals don't state a site area. The lots the Planning Commission's June 6, 2019 agenda lists (Block 3777, lots 045, 050, 051 and 052), which the Central SoMa Plan maps as key site 5, come to 4.51 acres in DataSF's parcel map. Lot 052 was split in January 2025 into lot 176 (160 Freelon Street, the affordable housing parcel) and lot 177; both are included.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 922737,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Approved June 6, 2019: three mixed-use office buildings and one residential building with 922,737 sq ft of office, about 65,322 sq ft of PDR and retail (the project record gives 48,581), 5,546 sq ft of child care, 63,824 sq ft of residential use, about 200 parking spaces below grade and about 19,336 sq ft of privately owned public open space, plus a new public park on about 40,000 sq ft of the block and a land dedication of about 12,800 sq ft to the Mayor's Office of Housing and Community Development (Planning Commission agenda). The project record describes the residential building as up to 72 affordable homes. On the dedicated parcel, 160 Freelon Street, 160 Freelon Housing Partners, L.P. is building a separate 9-story, 85-home affordable building (2022-008873PRJ), whose record describes 598 Brannan as \"three mixed-use buildings up to 185 feet tall\". Building permits: Building 1 (11 stories) and Building 2 (13 stories) issued Mar 17, 2021; Building 3 (10 stories) filed Dec 13, 2019."
+      },
+      "developer": "Brannan & Bryant Street LLC (applicant for the approved project, Planning Department records)",
+      "publicPartners": [
+        "San Francisco Planning Department",
+        "Mayor's Office of Housing and Community Development (the dedicated affordable housing parcel)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved June 6, 2019 (Large Project Authorization, Motion 20459, and office development authorization, Motion 20460, 5–0), with a second office allocation of 211,601 sq ft for Phase 2 approved in December 2020. Building permits for two of the office buildings were issued Mar 17, 2021 and the existing buildings were demolished in 2021, but no further construction is recorded: a shoring permit was cancelled in 2024 and the Planning Department's project record is \"On Hold\". On the parcel the project dedicated for affordable housing, a separate 85-home building (160 Freelon Street) is under construction.",
+      "timeline": [
+        {
+          "date": "2012-05-15",
+          "event": "Tishman Speyer Development Corp. seeks a preliminary project assessment for a two-building office project at 598 Brannan Street (2012.0640)."
+        },
+        {
+          "date": "2018",
+          "event": "The Central SoMa Plan names the block a key development site, \"Park Block\"."
+        },
+        {
+          "date": "2019-05-09",
+          "event": "The Planning Commission hears an informational presentation on the project, with a new public park of about 39,661 sq ft."
+        },
+        {
+          "date": "2019-06-06",
+          "event": "The Planning Commission approves the project (Motions 20459 and 20460) and directs a fee waiver agreement for the public park."
+        },
+        {
+          "date": "2020-12",
+          "event": "A second office allocation, 211,601 sq ft for Phase 2, is approved."
+        },
+        {
+          "date": "2021-03-17",
+          "event": "Building permits for Building 1 (11 stories) and Building 2 (13 stories) are issued."
+        },
+        {
+          "date": "2021-06-25",
+          "event": "Demolition of the site's existing buildings is complete."
+        },
+        {
+          "date": "2024-05-13",
+          "event": "The building permit for the 85-home affordable building on the dedicated parcel, 160 Freelon Street, is issued."
+        }
+      ],
+      "nextMilestone": "Construction of the office buildings; no date. The Planning Department's project record is on hold.",
+      "summary": "The Central SoMa Plan's \"Park Block\" at Fifth and Brannan streets, across Fifth Street from the Flower Mart. It was approved in 2019 for about 923,000 sq ft of offices in three buildings up to 185 ft, with a new public park of about 40,000 sq ft and land given to the city for affordable housing. Permits for two of the office buildings were issued in 2021 and the site was cleared, but the offices haven't been built; the affordable building on the dedicated land, 160 Freelon Street, is under construction.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), the lots the Planning Commission's June 6, 2019 agenda lists (Block 3777, lots 045, 050, 051 and 052), the same lots the Central SoMa Plan maps as key site 5, with lot 052 drawn as its 2025 successors, lots 176 (160 Freelon Street) and 177; 4.51 acres; official (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). No massing is drawn: the approved plans weren't reachable. How it relates to nearby projects: the Flower Mart (flower-mart) is about 25 m away across Fifth Street and 88 Bluxome (88-bluxome) about 25 m away across Brannan Street; 655 4th Street (655-4th-street) and SF Railyards (sf-railyards) are about 210 and 220 m away.",
+      "officialLinks": [
+        "https://sfplanning.org/central-soma-plan",
+        "https://sfplanning.org/environmental-review-documents?title=598+brannan"
+      ],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2012.0640",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2012.0640ENX",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2012.0640B",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2012.0640OFA-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2012.0640U",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2012.0640TDU",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2012.0640",
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2022-008873PRJ",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2022-008873PRJ",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201909060913",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201909060914",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201912139477",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202107194611",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=202209283327",
+        "https://sfplanning.org/sites/default/files/agendas/2019-05/20190509_cpc.pdf",
+        "https://sfplanning.org/sites/default/files/agendas/2019-06/20190606_cpc.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20190606_cal_min.pdf",
+        "https://sfplanning.org/environmental-review-documents?title=598+brannan",
+        "https://sfplanning.org/sites/default/files/documents/citywide/Central_Corridor/2018CentralSoMaPlan.pdf",
+        "https://sfplanning.org/central-soma-plan",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "who now owns the site and whether the office project is going ahead (the Planning record is \"On Hold\"; a shoring permit was cancelled in 2024)",
+        "whether the 85-home building at 160 Freelon Street fulfills the approved project's residential building of up to 72 affordable homes",
+        "the PDR and retail area: about 65,322 sq ft in the June 2019 agenda against 48,581 in the project record",
+        "the public park's status",
+        "whether the 2019 approvals have been extended"
+      ],
+      "lastVerified": "2026-10-28"
+    },
+    {
+      "id": "725-harrison",
+      "name": "725 Harrison Street",
+      "aliases": [
+        "725-765 Harrison Street",
+        "759 Harrison Street",
+        "4th and Harrison key site",
+        "Central SoMa key site 2"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.3984,
+        37.7813
+      ],
+      "camera": {
+        "center": [
+          -122.3984,
+          37.7813
+        ],
+        "zoom": 16.4,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 2.39,
+      "acresNote": "The Planning Department's 2020 environmental record (2005.0759ENV-02) gives the site as \"seven (was six) lots totaling 104,188 square feet\" (2.39 acres). The June 16, 2022 agenda lists lots 148, 149 and 113 in Block 3762; lots 148 and 113 were merged into lot 152 in December 2022. Lots 152 and 149 come to 2.40 acres in DataSF's parcel map.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 810000,
+        "commercialSqftTotal": null,
+        "retailSqft": 3900,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "One 14-story, 185-ft building of about 981,000 gross sq ft: 810,000 sq ft of office, 3,900 of retail, 29,300 of PDR, 3,000 of child care and 16,700 of indoor and outdoor privately owned public open space, with 116 parking spaces below grade (Planning Commission, June 16, 2022). Lot 149, about 15,000 sq ft, is to be dedicated to the Mayor's Office of Housing and Community Development for affordable housing, described in a later Planning record as an 8-story, 85-ft building of up to 144 homes. The building permits filed in November 2019 describe a 15-story west building (Phase 1) and a 15-story east building (Phase 2) over a shared podium."
+      },
+      "developer": "Boston Properties, LP (applicant for the 2020 and 2023 revisions, Planning Department records)",
+      "publicPartners": [
+        "San Francisco Planning Department",
+        "Mayor's Office of Housing and Community Development (the dedicated affordable housing lot)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. The Planning Commission approved the project on Dec 12, 2019 (Motions 20597 and 20598) and the revised project, adding 759 Harrison Street, on June 16, 2022 (Motions 21128, 21129 and 21130, 7–0). Those approvals' three-year term ran out on June 16, 2025; in April 2026 the sponsor applied to extend them, saying it is processing the site permit in 2026, and the Large Project Authorization extension closed as approved on Sept 29, 2026. A 2023 application to move the affordable housing land dedication to 560 Brannan Street was withdrawn in April 2026. The building permits filed in November 2019 haven't been issued.",
+      "timeline": [
+        {
+          "date": "2005-08-12",
+          "event": "An application for 725-765 Harrison Street is filed (2005.0759); the earlier proposal is cancelled in 2013."
+        },
+        {
+          "date": "2015-10",
+          "event": "A preliminary project assessment describes a new office building with a 240-ft tower and a 130-ft mid-rise over a 65-ft podium."
+        },
+        {
+          "date": "2018",
+          "event": "The Central SoMa Plan names the site a key development site, \"4th and Harrison\"."
+        },
+        {
+          "date": "2019-11-15",
+          "event": "Building permits are filed for the west and east buildings and their basements."
+        },
+        {
+          "date": "2019-12-12",
+          "event": "The Planning Commission approves the project (Motions 20597 and 20598)."
+        },
+        {
+          "date": "2022-06-16",
+          "event": "The Planning Commission approves the revised project with 759 Harrison Street: one 14-story, 185-ft building of about 981,000 sq ft (Motions 21128, 21129 and 21130)."
+        },
+        {
+          "date": "2026-04-06",
+          "event": "The sponsor applies to extend the approvals, which expired June 16, 2025; the Large Project Authorization extension closes as approved Sept 29, 2026."
+        }
+      ],
+      "nextMilestone": "The site permit, which the sponsor says it is processing in 2026, and the remaining extensions (office allocation and variance).",
+      "summary": "A 14-story, 185-ft office building of about 981,000 sq ft on Harrison Street between Third and Fourth, a Central SoMa Plan key site, with PDR space, child care, public open space and a lot given to the city for affordable housing. Boston Properties' project was approved in 2019 and revised in 2022; its approvals were extended in 2026 while the site permit is processed.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), the lots the Planning Commission's June 16, 2022 agenda lists (Block 3762, lots 148, 149 and 113), drawn as lot 152 (lots 148 and 113, merged December 2022) and lot 149, 2.40 acres in two parts; official (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). The Central SoMa Plan maps the site as key site 2. No massing is drawn: the approved plans weren't reachable. How it relates to nearby projects: 400 2nd Street (400-2nd-street) is about 200 m east along Harrison; the Flower Mart (flower-mart) and 88 Bluxome (88-bluxome) are about 360 m south, and the corridor drawn for The Portal (the-portal) about 300 m away.",
+      "officialLinks": [
+        "https://sfplanning.org/central-soma-plan",
+        "https://sfplanning.org/environmental-review-documents?title=725+harrison"
+      ],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2005.0759",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2005.0759ENX",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2005.0759OFA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2005.0759ENX-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2005.0759OFA-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2005.0759CUA-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2005.0759ENV-02",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2005.0759ENX-03",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2005.0759CUA-03",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2005.0759OFA-03",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2005.0759VAR-04",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2005.0759PPA",
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2023-002967PRJ",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2005.0759",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201911157378",
+        "https://data.sfgov.org/resource/i98e-djp9.json?permit_number=201911157381",
+        "https://sfplanning.org/sites/default/files/agendas/2019-12/20191212_cal_corr.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20191212_cal_min.pdf",
+        "https://sfplanning.org/sites/default/files/agendas/2022-06/20220616_cal.pdf",
+        "https://sfplanning.s3.amazonaws.com/commissions/cpcpackets/20220616_cal_min.pdf",
+        "https://sfplanning.org/environmental-review-documents?title=725+harrison",
+        "https://sfplanning.org/sites/default/files/documents/citywide/Central_Corridor/2018CentralSoMaPlan.pdf",
+        "https://sfplanning.org/central-soma-plan",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the building's height in stories: 14 in the 2022 approval, 15 in the 2019 building permit applications",
+        "the office allocation and variance extensions (filed April 2026, still open)",
+        "the affordable housing building on lot 149: its sponsor, size and schedule",
+        "site permit issuance and a construction schedule"
+      ],
+      "lastVerified": "2026-10-28"
+    },
+    {
+      "id": "kaiser-2190-ofarrell",
+      "name": "Kaiser 2190 O'Farrell",
+      "aliases": [
+        "2190 O'Farrell Street",
+        "Kaiser Permanente Replacement Hospital Project"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.4409,
+        37.7827
+      ],
+      "camera": {
+        "center": [
+          -122.4409,
+          37.7827
+        ],
+        "zoom": 16.3,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 3.16,
+      "acresNote": "No site area or lot list is given in the records read. The two lots drawn (block 1098, lots 009 and 050), the ones the Planning record and the pipeline name, come to about 3.2 acres in DataSF's parcel map; lot 038 (2201 Geary Boulevard), on the same block, isn't named and isn't drawn.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "A replacement hospital building of 694,012 sq ft of gross floor area, about 266 ft tall with 14 floors, and a parking garage of 534,274 sq ft, about 100 ft tall with 12 floors (7 above grade, 5 below) and 1,003 parking spaces, after demolishing three existing buildings on the site (2026-004681PRJ). The pipeline counts 694,012 sq ft of medical space and 1,253 sq ft of retail."
+      },
+      "developer": "Kaiser Permanente",
+      "publicPartners": [
+        "San Francisco Planning Department"
+      ],
+      "stage": "proposed",
+      "stageNote": "Filed, with no approvals. Kaiser Permanente filed the project on May 29, 2026 and, on June 12, applications for environmental review, a conditional use authorization, historic resource review and zoning map and Planning Code amendments; the project record is on hold. No environmental document has been published.",
+      "timeline": [
+        {
+          "date": "2026-05-29",
+          "event": "Kaiser Permanente files the Replacement Hospital Project at 2190 O'Farrell Street (2026-004681PRJ)."
+        },
+        {
+          "date": "2026-06-12",
+          "event": "Applications for environmental review, a conditional use authorization, historic resource review and zoning map and Planning Code amendments are filed."
+        }
+      ],
+      "nextMilestone": "The Planning Department's environmental document for the project; no date published.",
+      "summary": "Kaiser Permanente's Replacement Hospital Project on the block of Geary Boulevard, O'Farrell Street and Divisadero Street: a new 14-story, 266-ft hospital of about 694,000 sq ft and a 12-level garage with 1,003 parking spaces, after three existing buildings come down. Filed in mid-2026, it seeks zoning map and Planning Code amendments and a conditional use authorization, and hasn't been approved.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), block 1098 lots 009 and 050, the lots the Planning record (2026-004681PRJ, lot 009) and the pipeline (lot 050) name; lot 050 holds Kaiser Foundation Hospital's garages at 2130 and 2190 O'Farrell Street (earlier Planning records). About 3.2 acres as drawn; approximate, because the records don't list the site's lots (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). No massing is drawn: no plans were reachable. No mapped project is within 400 m.",
+      "officialLinks": [],
+      "sources": [
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?record_id=2026-004681PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2026-004681ENV",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2026-004681CUA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2026-004681MAP",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2026-004681PCA",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2026-004681HRR",
+        "https://data.sfgov.org/resource/6jgi-cpb4.json?case_no=2026-004681PRJ",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2015-003372MIS",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the site's lots and area, and whether lot 038 (2201 Geary Boulevard) is part of it",
+        "whether the replacement hospital replaces Kaiser's existing San Francisco hospital and what happens to it",
+        "the environmental document type and schedule (the record lists a negative declaration as its document type)",
+        "bed count and cost, which the records don't give"
+      ],
+      "lastVerified": "2026-10-28"
     }
   ]
 }

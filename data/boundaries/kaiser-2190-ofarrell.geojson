@@ -1,0 +1,90 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "kaiser-2190-ofarrell",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 1098, lots 009 and 050",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%271098009%27%2C+%271098050%27%29&%24limit=5000",
+  "accuracy": "approximate",
+  "accuracyNote": "The two lots the Planning Department's record (2026-004681PRJ, lot 009) and the city's pipeline (lot 050) name for the Replacement Hospital Project; the records don't list the site's lots or area. Lot 050 holds Kaiser Foundation Hospital's garages at 2130 and 2190 O'Farrell Street (2015-003372MIS). Lot 038 (2201 Geary Boulevard) on the same block isn't named and isn't drawn. 3.2 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 2
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.440028,
+       37.7830667
+      ],
+      [
+       -122.4399695,
+       37.782781
+      ],
+      [
+       -122.4398843,
+       37.7827895
+      ],
+      [
+       -122.4398661,
+       37.7827223
+      ],
+      [
+       -122.4398649,
+       37.7827224
+      ],
+      [
+       -122.4395118,
+       37.7827674
+      ],
+      [
+       -122.4394641,
+       37.7825318
+      ],
+      [
+       -122.4407825,
+       37.7823738
+      ],
+      [
+       -122.4410536,
+       37.782357
+      ],
+      [
+       -122.4415288,
+       37.7823757
+      ],
+      [
+       -122.4417486,
+       37.7824165
+      ],
+      [
+       -122.4425376,
+       37.7826959
+      ],
+      [
+       -122.442557,
+       37.782716
+      ],
+      [
+       -122.4425284,
+       37.7827479
+      ],
+      [
+       -122.440028,
+       37.7830667
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

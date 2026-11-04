@@ -1,0 +1,88 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "400-2nd-street",
+  "source": "DataSF Parcels \u2013 Active and Retired, Block 3763, lots 001, 078, 079, 080, 080A, 081, 099, 100, 101, 105 and 113",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273763001%27%2C+%273763078%27%2C+%273763079%27%2C+%273763080%27%2C+%273763080A%27%2C+%273763081%27%2C+%273763099%27%2C+%273763100%27%2C+%273763101%27%2C+%273763105%27%2C+%273763113%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The still-active lots of those the Planning Commission's Feb 20, 2020 agenda lists for One Vassar (Block 3763, lots 001, 078, 079, 080, 080A, 081, 099, 100, 101, 105, 112 and 113), which the Central SoMa Plan maps as key site 3, \"2nd and Harrison\". Lot 112 was split in 2017 into lot 125 (416 2nd Street) and lot 126 (452 2nd Street, a Transbay bus storage facility); neither is drawn. The approvals don't state a site area. 2.0 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 11
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3955466,
+        37.7838353
+       ],
+       [
+        -122.3951534,
+        37.7841447
+       ],
+       [
+        -122.394915,
+        37.7839548
+       ],
+       [
+        -122.3950292,
+        37.7837411
+       ],
+       [
+        -122.3951756,
+        37.7835397
+       ],
+       [
+        -122.3955466,
+        37.7838353
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.3966462,
+        37.7829701
+       ],
+       [
+        -122.3956449,
+        37.783758
+       ],
+       [
+        -122.3952176,
+        37.7834175
+       ],
+       [
+        -122.3954009,
+        37.7832732
+       ],
+       [
+        -122.3954376,
+        37.783296
+       ],
+       [
+        -122.3962516,
+        37.7826556
+       ],
+       [
+        -122.3966462,
+        37.7829701
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

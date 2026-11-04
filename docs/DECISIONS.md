@@ -335,3 +335,14 @@ then "yes add all three": `655-4th-street`, `88-bluxome` and `flower-mart`, all 
 an approval and a revision is under review (the Flower Mart), the stage and the program's figures follow the
 approved project and the revision goes in the notes, as for `related-santa-clara` and `schlage-lock`. None has
 massing: their plan sets are on the Planning Department's document server, which this session couldn't reach.
+
+## 2026-11-04: sixteen more San Francisco projects (Matthew)
+
+After the Oct 28 citywide scan, Matthew asked to "add all six and the towers", then "the projects near van ness and market,
+like the one at van ness and mission". Added: the six over the bar (Freedom West 2.0, the Matson Block, 3333 California, 5M,
+San Francisco Gateway, 400 2nd Street), the eight single large buildings (Transbay Parcel F, 524 Howard, Transbay Block 4,
+10 South Van Ness, Potrero Yard, 598 Brannan, 725 Harrison and Kaiser's 2190 O'Farrell hospital, which aren't all towers),
+and One Oak and 98 Franklin at Van Ness and Market. Potrero Yard, an SFMTA bus garage with homes above, is under Transit;
+it can move to Buildings if Matthew prefers. 1338 Mission Street wasn't added: its environmental review was cancelled and its
+authorization withdrawn. None has massing.
+
