@@ -1,0 +1,50 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "transbay-block-4",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 3739, lot 010",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273739010%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The lot the Planning Department's record (2018-015785PRJ) and the city's pipeline name, created in DataSF's parcel map in 2021 from lot 008, on which the 2019 site permits were filed. No site area is given in the records read. 1.0 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3940651,
+       37.7899159
+      ],
+      [
+       -122.3933942,
+       37.7904517
+      ],
+      [
+       -122.3929921,
+       37.79013
+      ],
+      [
+       -122.3936623,
+       37.7895947
+      ],
+      [
+       -122.3940651,
+       37.7899159
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

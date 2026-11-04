@@ -1,0 +1,58 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "725-harrison",
+  "source": "DataSF Parcels \u2013 Active and Retired, Block 3762, lots 152 and 149",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273762152%27%2C+%273762149%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The lots the Planning Commission's June 16, 2022 agenda lists for 725-765 Harrison Street (Block 3762, lots 148, 149 and 113); lots 148 and 113 were merged into lot 152 in December 2022. The Planning Department's environmental record gives \"seven (was six) lots totaling 104,188 square feet\". Lot 149 is the lot to be dedicated for affordable housing. 2.4 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 2
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3994132,
+       37.7807889
+      ],
+      [
+       -122.3978651,
+       37.782007
+      ],
+      [
+       -122.3976714,
+       37.7818534
+      ],
+      [
+       -122.3975714,
+       37.7819287
+      ],
+      [
+       -122.3973748,
+       37.781772
+      ],
+      [
+       -122.3990212,
+       37.7804765
+      ],
+      [
+       -122.3994132,
+       37.7807889
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

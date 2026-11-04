@@ -1,0 +1,50 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "potrero-yard",
+  "source": "DataSF Parcels \u2013 Active and Retired, Block 3971, Lot 001",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273971001%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "Assessor's Block 3971 Lot 001, the whole block bounded by 17th, Hampshire, Mariposa and Bryant streets, which the Planning Commission's Jan 11, 2024 agenda gives as the Potrero Yard site. The approvals don't state its area. 4.4 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4102174,
+       37.7642304
+      ],
+      [
+       -122.4085532,
+       37.7643245
+      ],
+      [
+       -122.4084512,
+       37.7632256
+      ],
+      [
+       -122.4101128,
+       37.7631279
+      ],
+      [
+       -122.4102174,
+       37.7642304
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

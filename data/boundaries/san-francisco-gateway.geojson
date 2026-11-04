@@ -1,0 +1,76 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "san-francisco-gateway",
+  "source": "DataSF Parcels \u2013 Active and Retired, Block 5284A Lot 008 and Block 5287 Lot 002",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%275284A008%27%2C+%275287002%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The two lots the Planning Commission's agendas (Sept 7, 2023; Sept 25, 2025) give as the San Francisco Gateway site, bounded by Kirkwood Avenue, Rankin Street, McKinnon Avenue and Toland Street (749 Toland Street and 2000 McKinnon Avenue). The agendas' approximately 17.1-acre site also includes portions of the surrounding streets and Selby Street, which aren't drawn. 13.3 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 2
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+     [
+      [
+       [
+        -122.3983729,
+        37.7411672
+       ],
+       [
+        -122.3974032,
+        37.7422537
+       ],
+       [
+        -122.3957276,
+        37.7412997
+       ],
+       [
+        -122.3967147,
+        37.7402236
+       ],
+       [
+        -122.3983729,
+        37.7411672
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -122.4002551,
+        37.7422383
+       ],
+       [
+        -122.3992896,
+        37.7433209
+       ],
+       [
+        -122.3975835,
+        37.7423556
+       ],
+       [
+        -122.3985528,
+        37.7412696
+       ],
+       [
+        -122.4002551,
+        37.7422383
+       ]
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "3333-california",
+  "source": "DataSF Zoning Map \u2013 Special Use Districts, 3333 California Street Special Use District",
+  "sourceLabel": "DataSF special use districts",
+  "sourceUrl": "https://data.sf.gov/d/5yf5-ms5f",
+  "query": "https://data.sf.gov/resource/5yf5-ms5f.geojson?%24where=name+%3D+%273333+California+Street+SUD%27&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The 3333 California Street Special Use District (Planning Code Section 249.86), created for the project; it is the single lot 1032/003. The development agreement ordinance (2015-014028DVA) describes an approximately 10.25-acre site at California Street and Presidio Avenue. 10.2 acres as drawn.",
+  "license": "Public Domain U.S. Government (DataSF)",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4479691,
+       37.7851163
+      ],
+      [
+       -122.4491007,
+       37.7848427
+      ],
+      [
+       -122.4491515,
+       37.7848535
+      ],
+      [
+       -122.4492792,
+       37.7855277
+      ],
+      [
+       -122.4493865,
+       37.7859818
+      ],
+      [
+       -122.4494485,
+       37.7860766
+      ],
+      [
+       -122.4495365,
+       37.7861493
+      ],
+      [
+       -122.4496532,
+       37.786202
+      ],
+      [
+       -122.4498071,
+       37.7862323
+      ],
+      [
+       -122.4498836,
+       37.7862882
+      ],
+      [
+       -122.4499093,
+       37.7863406
+      ],
+      [
+       -122.4499802,
+       37.7866929
+      ],
+      [
+       -122.4499651,
+       37.7867289
+      ],
+      [
+       -122.4475248,
+       37.7870468
+      ],
+      [
+       -122.4468709,
+       37.7866539
+      ],
+      [
+       -122.4469204,
+       37.7863904
+      ],
+      [
+       -122.4470454,
+       37.7861359
+      ],
+      [
+       -122.4479691,
+       37.7851163
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

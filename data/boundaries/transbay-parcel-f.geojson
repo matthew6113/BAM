@@ -1,0 +1,66 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "transbay-parcel-f",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 3721, lots 016 and 136",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273721016%27%2C+%273721136%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The lots of the Planning Department's records for 542-550 Howard Street (2016-013312): lot 016 (546 Howard Street), named in the conditional use record and the site permit, and lot 136, which replaced the records' lot 015A in DataSF's parcel map on May 22, 2017. No site area is given in the records read. 0.5 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 2
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3978262,
+       37.7879065
+      ],
+      [
+       -122.3973878,
+       37.7882518
+      ],
+      [
+       -122.3972661,
+       37.7881542
+      ],
+      [
+       -122.3974845,
+       37.7879788
+      ],
+      [
+       -122.397207,
+       37.7877557
+      ],
+      [
+       -122.3974537,
+       37.7875615
+      ],
+      [
+       -122.3976583,
+       37.7877247
+      ],
+      [
+       -122.3977305,
+       37.7876723
+      ],
+      [
+       -122.3978262,
+       37.7879065
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
