@@ -1,0 +1,84 @@
+{
+  "id": "seely-avenue",
+  "name": "Seely Avenue Mixed-Use",
+  "aliases": [
+    "0 Seely Avenue Mixed-Use Project",
+    "Seely Avenue Mixed-Use Project"
+  ],
+  "city": "San José",
+  "county": "Santa Clara",
+  "subregion": "South Bay",
+  "category": "buildings",
+  "approxCenter": [
+    -121.9175,
+    37.3975
+  ],
+  "camera": {
+    "center": [
+      -121.9172,
+      37.3968
+    ],
+    "zoom": 16.2,
+    "pitch": 58,
+    "bearing": -40
+  },
+  "acres": 22,
+  "acresNote": "About 22 acres (notice of determination, Aug 2024; Draft EIR p. 8): APNs 097-15-033 and 097-15-034 and part of 097-66-004, bounded by Seely Avenue, Montague Expressway, Coyote Creek and Epic Way. The County has since replaced those parcels with the project's own lots; drawn from them, the site comes to about 22.2 acres.",
+  "program": {
+    "homes": 1472,
+    "affordableHomes": 178,
+    "affordablePct": null,
+    "officeLabSqft": null,
+    "commercialSqftTotal": null,
+    "retailSqft": 18965,
+    "hotelKeys": null,
+    "openSpaceAcres": 2.5,
+    "notes": "As approved: 1,472 homes in three-story townhomes and six- to seven-story apartment buildings, 18,965 sq ft of neighborhood retail and a 2.5-acre public park, plus about 0.11 acre dedicated to the San José Municipal Water System for a new well (notice of determination, Aug 13, 2024). The Draft EIR splits the homes into 154 for-sale townhomes; Buildings A, B and C with 397, 372 and 371 market-rate apartments over ground-floor retail; and a 178-home affordable apartment building (Tables 2-1 and 2-3; Table 2-4 gives Building A 399). Heights: Building A 69 ft (six stories), Buildings B and C 79 ft (seven stories), the affordable building 82 ft and the townhomes 30 ft (Table 2-2). The park is 2.51 acres in the Draft EIR. Parking is in garages beside the apartment buildings, not underground."
+  },
+  "developer": "The Hanover Company",
+  "publicPartners": [
+    "City of San José (lead agency)",
+    "San José Municipal Water System (well site)"
+  ],
+  "stage": "entitled",
+  "stageNote": "Approved. The San José City Council approved the Planned Development rezoning and permit on Aug 13, 2024, finding the Final EIR complete and adopting a statement of overriding considerations for the impacts on historical resources. The County's parcel map now shows the project's lots, but no building permit or construction record could be checked.",
+  "timeline": [
+    {
+      "date": "2022-02-23",
+      "event": "San José circulates a notice of preparation for an EIR: 1,470 homes, about 52,000 sq ft of retail and a 2.5-acre park on about 22 acres."
+    },
+    {
+      "date": "2024-01-16",
+      "event": "The Draft EIR is released for comment; it is recirculated from Mar 19 to May 3, 2024 because some appendices hadn't been posted correctly."
+    },
+    {
+      "date": "2024-08-13",
+      "event": "The City Council approves the project with its Final EIR: 1,472 homes, 18,965 sq ft of retail and a 2.5-acre public park."
+    }
+  ],
+  "nextMilestone": null,
+  "summary": "About 22 acres of farmland on Seely Avenue in North San José, beside Coyote Creek and Montague Expressway, approved in 2024 for 1,472 homes: three six- and seven-story apartment buildings with shops facing a new 2.5-acre public park, a 178-home affordable building and 154 townhomes. The farm's buildings, including the Sakauye house, form a potential historic district associated with Japanese farming in the Santa Clara Valley, which the project would remove.",
+  "massingNotes": "Added at Matthew's request (2026-10-19). Boundary (data/boundaries/seely-avenue.geojson, approximate): the approval's APNs are no longer in the County's layer, so the site is drawn from the Santa Clara County parcels (data.sccgov.org ubcd-cewv) that replaced them, which are the project's own lots (Buildings A, B and C, the affordable building, the park and the well site match the Draft EIR's lot areas within 2%), with the 26 townhome lots and the unnumbered street and common lots; 22.2 acres. Illustrative massing (data/massing/seely-avenue.geojson, pipeline/bam_pipeline/sites/massing_seely_avenue.py): each building's lot raised to its Draft EIR height (Table 2-2): Building A 69 ft, Buildings B and C 79 ft, the affordable building 82 ft and the 26 townhome lots 30 ft, matched to the lots by area (Table 2-1) and by position on the conceptual site plan (Figure 2-4). The lots also hold each building's garage and courtyards, so these are envelopes, not footprints. All stage entitled.",
+  "officialLinks": [
+    "https://ceqanet.lci.ca.gov/Project/2022020565"
+  ],
+  "sources": [
+    "https://ceqanet.lci.ca.gov/Project/2022020565",
+    "https://ceqanet.lci.ca.gov/2022020565",
+    "https://ceqanet.lci.ca.gov/2022020565/Attachment/6aoaJZ",
+    "https://ceqanet.lci.ca.gov/2022020565/2",
+    "https://ceqanet.lci.ca.gov/2022020565/4",
+    "https://ceqanet.lci.ca.gov/2022020565/4/Attachment/O2WLAL",
+    "https://ceqanet.lci.ca.gov/2022020565/5",
+    "https://ceqanet.lci.ca.gov/2022020565/5/Attachment/Yi9Zn9",
+    "https://ceqanet.lci.ca.gov/2022020565/5/Attachment/4SIxme",
+    "https://data.sccgov.org/d/ubcd-cewv"
+  ],
+  "verify": [
+    "whether construction has started: the County's parcel layer shows the project's subdivision lots (new APNs), which suggests a final map has recorded, but San José's permit records (sjpermits.org) and the City's site couldn't be reached",
+    "Building A's home count: Draft EIR Table 2-1 gives 397 and Table 2-4 gives 399",
+    "the boundary: drawn from the lots that replaced the approval's three APNs; the Seely Avenue frontage is not a parcel and isn't drawn",
+    "the final architecture: the heights are the Draft EIR's (2024); the Planned Development permit's approved plans weren't reachable"
+  ],
+  "lastVerified": "2026-10-19"
+}
