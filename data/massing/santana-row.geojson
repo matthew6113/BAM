@@ -1,0 +1,341 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "santana-row",
+  "illustrative": true,
+  "summary": "Illustrative massing: the four lots where the plan would add office buildings, each drawn as a whole-lot envelope at the height the notice of preparation gives it: Lot 1A/B/C at Stevens Creek and Winchester boulevards (700,000 sq ft, 144 ft), Lot 2B on Stevens Creek Boulevard (325,000 sq ft, 144 ft), Lot 10A on Olsen Drive (200,000 sq ft, 139 ft) and Lot 17 on Dudley Avenue (275,000 sq ft, 162 ft). The buildings aren't designed yet; the existing Santana Row buildings are left as they are.",
+  "note": "Whole-lot envelopes at the stated heights, not building designs.",
+  "sourceUrl": "https://ceqanet.lci.ca.gov/2013122059/3/Attachment/lrKplZ",
+  "sourceLabel": "Santana Row Master Plan Update, revised notice of preparation, 2026 (PDF), Table 4.0-1",
+  "lotsSourceUrl": "https://data.sccgov.org/d/ubcd-cewv",
+  "georeference": {
+   "method": "Lots are the Santa Clara County parcels for the APNs the notice names; Figure 4 (PDF p. 8), fitted to the parcels in boundary_santana_row, puts each lot's label inside them.",
+   "label_distance_to_lot_m": {
+    "Lot 1A/B/C": 0.0,
+    "Lot 2B": 0.0,
+    "Lot 10A": 0.0,
+    "Lot 17": 0.0,
+    "Lot 22": 0.0
+   }
+  },
+  "license": "Heights and floor areas: from a public City of San Jos\u00e9 document. Lots: Santa Clara County open data (terms of use)."
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Lot 1A/B/C office building (envelope)",
+    "stage": "entitlement",
+    "height_ft": 144,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office (700,000 sq ft)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: Lot 1A/B/C (Santa Clara County parcels 277-33-020, 277-33-019, 277-33-017, named in the revised notice of preparation and placed by its Figure 4, PDF p. 8) at the 144 ft in its Table 4.0-1 (PDF p. 9)",
+    "note": "Table 4.0-1 gives Lot 1A/B/C 700,000 sq ft of office, 144 feet tall (+ 579,629 sf over the existing entitlement). The description sets 150 feet (plus allowable mechanical screening parapet) for Lot 1 and 1,460 new parking spaces on Lot 1. Lots 1A, 1B and 1C would be merged into one parcel. The notice shows no building design: the whole lot is drawn as an envelope."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9499198,
+       37.3226414
+      ],
+      [
+       -121.9499216,
+       37.323034
+      ],
+      [
+       -121.9499166,
+       37.3230594
+      ],
+      [
+       -121.9499073,
+       37.323084
+      ],
+      [
+       -121.9498776,
+       37.3231261
+      ],
+      [
+       -121.9498356,
+       37.3231562
+      ],
+      [
+       -121.9498113,
+       37.3231656
+      ],
+      [
+       -121.9497857,
+       37.3231708
+      ],
+      [
+       -121.9494094,
+       37.3231883
+      ],
+      [
+       -121.9491524,
+       37.3231955
+      ],
+      [
+       -121.9480117,
+       37.3231973
+      ],
+      [
+       -121.947987,
+       37.3231757
+      ],
+      [
+       -121.9479706,
+       37.3231475
+      ],
+      [
+       -121.947964,
+       37.3231152
+      ],
+      [
+       -121.9479617,
+       37.3226123
+      ],
+      [
+       -121.9485566,
+       37.3226106
+      ],
+      [
+       -121.9485568,
+       37.322645
+      ],
+      [
+       -121.9485619,
+       37.322649
+      ],
+      [
+       -121.9490436,
+       37.3226474
+      ],
+      [
+       -121.9490648,
+       37.3226526
+      ],
+      [
+       -121.9490898,
+       37.3226725
+      ],
+      [
+       -121.9491019,
+       37.3227023
+      ],
+      [
+       -121.9491043,
+       37.3231775
+      ],
+      [
+       -121.9491099,
+       37.323182
+      ],
+      [
+       -121.9492133,
+       37.3231817
+      ],
+      [
+       -121.9492188,
+       37.323178
+      ],
+      [
+       -121.9492168,
+       37.3227353
+      ],
+      [
+       -121.9492084,
+       37.3227225
+      ],
+      [
+       -121.9492083,
+       37.3227091
+      ],
+      [
+       -121.9492423,
+       37.3226644
+      ],
+      [
+       -121.9492639,
+       37.3226457
+      ],
+      [
+       -121.9492875,
+       37.3226303
+      ],
+      [
+       -121.9496428,
+       37.3226293
+      ],
+      [
+       -121.9499198,
+       37.3226414
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Lot 2B office building (envelope)",
+    "stage": "entitlement",
+    "height_ft": 144,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office (325,000 sq ft)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: Lot 2B (Santa Clara County parcels 277-40-029, named in the revised notice of preparation and placed by its Figure 4, PDF p. 8) at the 144 ft in its Table 4.0-1 (PDF p. 9)",
+    "note": "Table 4.0-1 gives Lot 2B 325,000 sq ft of office, 144 feet tall (+ 245,797 sf over the existing entitlement). The description sets 150 feet (plus allowable mechanical screening parapet) for Lot 2B and a loss of 97 parking spaces on Lot 2B. The notice shows no building design: the whole lot is drawn as an envelope."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9477502,
+       37.322613
+      ],
+      [
+       -121.9476606,
+       37.3231313
+      ],
+      [
+       -121.9476401,
+       37.3231755
+      ],
+      [
+       -121.9476157,
+       37.3231978
+      ],
+      [
+       -121.9473088,
+       37.3231982
+      ],
+      [
+       -121.9473067,
+       37.3229605
+      ],
+      [
+       -121.9473032,
+       37.3229563
+      ],
+      [
+       -121.9469,
+       37.3229565
+      ],
+      [
+       -121.9468959,
+       37.3225034
+      ],
+      [
+       -121.9473026,
+       37.3225029
+      ],
+      [
+       -121.9473554,
+       37.3226139
+      ],
+      [
+       -121.9477502,
+       37.322613
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Lot 10A office building (envelope)",
+    "stage": "entitlement",
+    "height_ft": 139,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office (200,000 sq ft)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: Lot 10A (Santa Clara County parcels 277-40-031, named in the revised notice of preparation and placed by its Figure 4, PDF p. 8) at the 139 ft in its Table 4.0-1 (PDF p. 9)",
+    "note": "Table 4.0-1 gives Lot 10A 200,000 sq ft of office, 139 feet tall (+ 171,655 sf over the existing entitlement). The description sets 150 feet (plus allowable mechanical screening parapet) for Lot 10A. The notice shows no building design: the whole lot is drawn as an envelope."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9487351,
+       37.319145
+      ],
+      [
+       -121.9482134,
+       37.3191469
+      ],
+      [
+       -121.9482102,
+       37.3184627
+      ],
+      [
+       -121.9487319,
+       37.3184619
+      ],
+      [
+       -121.9487351,
+       37.319145
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "building",
+    "label": "Lot 17 office building (envelope)",
+    "stage": "entitlement",
+    "height_ft": 162,
+    "podium_ft": null,
+    "base_ft": 0,
+    "use": "Office (275,000 sq ft)",
+    "phase": null,
+    "illustrative": true,
+    "source": "illustrative: Lot 17 (Santa Clara County parcels 277-38-003, 277-38-004, 277-38-005, named in the revised notice of preparation and placed by its Figure 4, PDF p. 8) at the 162 ft in its Table 4.0-1 (PDF p. 9)",
+    "note": "Table 4.0-1 gives Lot 17 275,000 sq ft of office, 162 feet tall (+ 275,000 sf over the existing entitlement). The description sets a maximum height limit of 162 feet (plus allowable mechanical screening parapet) and 831 new parking spaces on Lot 17. 524, 534 and 544 Dudley Avenue would be merged into one parcel. The notice shows no building design: the whole lot is drawn as an envelope."
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9468641,
+       37.3179467
+      ],
+      [
+       -121.9462796,
+       37.3179494
+      ],
+      [
+       -121.9462762,
+       37.3172491
+      ],
+      [
+       -121.9468575,
+       37.3172464
+      ],
+      [
+       -121.9468641,
+       37.3179467
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

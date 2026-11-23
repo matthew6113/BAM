@@ -1,0 +1,101 @@
+{
+  "id": "freedom-circle",
+  "name": "Freedom Circle",
+  "aliases": [
+    "Freedom Circle Focus Area",
+    "Freedom Circle Focus Area and Greystar General Plan Amendment",
+    "2518 Mission College Boulevard",
+    "3925 and 3935 Freedom Circle"
+  ],
+  "city": "Santa Clara",
+  "county": "Santa Clara",
+  "subregion": "South Bay",
+  "category": "buildings",
+  "approxCenter": [
+    -121.971,
+    37.3873
+  ],
+  "camera": {
+    "center": [
+      -121.9712,
+      37.3866
+    ],
+    "zoom": 15.4,
+    "pitch": 55,
+    "bearing": -10
+  },
+  "acres": 39,
+  "acresNote": "The two sites with approvals: 25.7 acres at 2518 Mission College Boulevard (APN 104-40-019; notices of determination, Mar and May 2025) and Greystar's 13.3-acre site at 3925 and 3935 Freedom Circle (APNs 104-40-021 and 104-40-036; notice of determination, June 2022, and Draft EIR). Both lie in the City's Freedom Circle Focus Area, about 108 gross acres between Great America Parkway, California's Great America, San Tomas Aquino Creek and US 101 (CEQAnet lists 121 acres). The rest of the focus area isn't drawn.",
+  "program": {
+    "homes": 2892,
+    "affordableHomes": null,
+    "affordablePct": null,
+    "officeLabSqft": null,
+    "commercialSqftTotal": null,
+    "retailSqft": null,
+    "hotelKeys": null,
+    "openSpaceAcres": null,
+    "notes": "Two projects: 1,792 homes at 2518 Mission College Boulevard (Irvine Company), approved in 2025 with a General Plan amendment, rezoning, vesting tentative map and architectural review; and 1,100 homes proposed by Greystar in three seven-story buildings of up to 100 ft with a 2-acre public park and a connection to the San Tomas Aquino Creek Trail, on a site the City re-designated from High Intensity Office to Very High Density Residential (51 to 100 homes per acre) in 2022 (the Draft EIR studied 1,075 homes and about 2,000 sq ft of ground-floor space). The total is the two projects together. The Focus Area Plan, adopted with the Greystar amendment in 2022, allows, subject to a future planning study, 2,500 homes beyond Greystar's and 2 million sq ft of office space beyond what the current High Intensity Office designation allows."
+  },
+  "developer": "Irvine Company (2518 Mission College Boulevard); Greystar (3925 and 3935 Freedom Circle, through CRE-GS Freedom Circle Phase I Owner, LLC)",
+  "publicPartners": [
+    "City of Santa Clara (lead agency)",
+    "California Department of Toxic Substances Control (site cleanup)"
+  ],
+  "stage": "entitled",
+  "stageNote": "Approved. Santa Clara certified the EIR and approved the Focus Area Plan and Greystar's General Plan amendment on June 7, 2022, and approved the Irvine Company's 1,792 homes on Mar 25, 2025 (General Plan amendment, rezoning and vesting tentative map, with an EIR addendum) and their architectural review on May 14, 2025. On Aug 20, 2025 the state Department of Toxic Substances Control approved a cleanup plan for Greystar's site. No construction record was found, and the later approvals for Greystar's buildings (zoning and architecture) couldn't be checked.",
+  "timeline": [
+    {
+      "date": "2020-06-19",
+      "event": "Santa Clara issues a notice of preparation for an EIR on the Freedom Circle Focus Area and the Greystar General Plan amendment."
+    },
+    {
+      "date": "2021-11-08",
+      "event": "The Draft EIR is published."
+    },
+    {
+      "date": "2022-06-07",
+      "event": "The City certifies the EIR and approves the Focus Area Plan and the Greystar General Plan amendment, re-designating the 13.3-acre site for housing."
+    },
+    {
+      "date": "2025-03-25",
+      "event": "The City adopts an EIR addendum and approves a General Plan amendment, rezoning and vesting tentative map for 1,792 homes at 2518 Mission College Boulevard (Irvine Company)."
+    },
+    {
+      "date": "2025-05-14",
+      "event": "The City approves the architectural review for the 1,792 homes."
+    },
+    {
+      "date": "2025-08-20",
+      "event": "The Department of Toxic Substances Control approves a remedial action plan for Greystar's site: excavating and removing about 100,000 cubic yards of soil with metals and pesticides."
+    }
+  ],
+  "nextMilestone": null,
+  "summary": "The first two housing projects in the Freedom Circle Focus Area, an office and hotel district between Great America Parkway and San Tomas Aquino Creek, north of US 101 in Santa Clara: 1,792 homes by the Irvine Company at 2518 Mission College Boulevard, approved in 2025, and 1,100 homes planned by Greystar in three seven-story buildings beside San Tomas Aquino Creek, with a 2-acre public park. The City's 2022 plan for the area allows, after a further planning study, 2,500 homes beyond Greystar's and 2 million sq ft more office space.",
+  "massingNotes": "Added at Matthew's request (2026-10-19). Boundary (data/boundaries/freedom-circle.geojson, official): the three Santa Clara County parcels (data.sccgov.org ubcd-cewv) named in the approvals, 104-40-019 (the Irvine Company's site) and 104-40-021 and 104-40-036 (Greystar's), in two pieces either side of Freedom Circle; 39.0 acres. No massing: the Irvine Company's approved plans and the EIR addendum are on the City's site, which couldn't be reached, and Greystar's building approvals weren't found; the 2021 Draft EIR's description (three seven-story buildings up to 100 ft) has no dimensioned site plan to place them. The rest of the 108-acre focus area isn't drawn.",
+  "officialLinks": [
+    "https://ceqanet.lci.ca.gov/Project/2020060425"
+  ],
+  "sources": [
+    "https://ceqanet.lci.ca.gov/Project/2020060425",
+    "https://ceqanet.lci.ca.gov/2020060425/2",
+    "https://ceqanet.lci.ca.gov/2020060425/3",
+    "https://ceqanet.lci.ca.gov/2020060425/3/Attachment/d6319_",
+    "https://ceqanet.lci.ca.gov/2020060425/4",
+    "https://ceqanet.lci.ca.gov/2020060425/4/Attachment/SZMFf1",
+    "https://ceqanet.lci.ca.gov/2020060425/5",
+    "https://ceqanet.lci.ca.gov/2020060425/5/Attachment/CJkIqW",
+    "https://ceqanet.lci.ca.gov/2020060425/6",
+    "https://ceqanet.lci.ca.gov/2020060425/6/Attachment/LrIjgg",
+    "https://ceqanet.lci.ca.gov/2020060425/7",
+    "https://data.sccgov.org/d/ubcd-cewv"
+  ],
+  "verify": [
+    "Greystar's project approvals after the 2022 General Plan amendment (rezoning, architectural review, final home count); only the amendment and the 2025 cleanup plan were found",
+    "the Irvine Company project's design, heights, affordable homes and open space (in the EIR addendum and plans on santaclaraca.gov, which couldn't be reached)",
+    "whether the 1,792 homes count against the focus area's 2,500 additional homes",
+    "the focus area's size: 108 gross acres in the 2022 notice of determination and the Draft EIR, 121 acres on CEQAnet",
+    "whether site cleanup or construction has started on either site"
+  ],
+  "lastVerified": "2026-10-19"
+}

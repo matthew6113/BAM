@@ -1,0 +1,91 @@
+{
+  "id": "536-mission",
+  "name": "536 Mission Street",
+  "aliases": [
+    "536 Mission St",
+    "Golden Gate University site"
+  ],
+  "city": "San Francisco",
+  "county": "San Francisco",
+  "subregion": "San Francisco",
+  "category": "buildings",
+  "approxCenter": [-122.3989, 37.7892],
+  "camera": {
+    "center": [-122.3990, 37.7891],
+    "zoom": 16.4,
+    "pitch": 58,
+    "bearing": 20
+  },
+  "acres": 0.76,
+  "acresNote": "DataSF parcel 3708/098 as mapped, about 33,190 sq ft (0.76 acres), between Mission and Jessie streets west of Ecker Place. No lot area was found in a document that could be opened.",
+  "program": {
+    "homes": null,
+    "affordableHomes": null,
+    "affordablePct": null,
+    "officeLabSqft": null,
+    "commercialSqftTotal": null,
+    "retailSqft": null,
+    "hotelKeys": null,
+    "openSpaceAcres": null,
+    "notes": "Approved in two variants, either of which may be built (Planning Commission, Sept 10, 2026): an office variant, 700 ft to the roof and 752 ft to the top of the parapet, of about 1.22 million sq ft with retail, office and laboratory uses; or a mixed-use variant, 649 ft (698 ft to the parapet), of about 991,000 sq ft with retail, office and up to 385 homes. Planning's records give 46 stories, larger gross figures (1,357,551 and 1,181,781 gross sq ft) and 370 homes for the mixed-use variant. The office allocation is for up to 555,390 sq ft of new office space. The seven-story, 236,680-sq-ft Golden Gate University building would be demolished."
+  },
+  "developer": null,
+  "publicPartners": [
+    "San Francisco Planning Commission"
+  ],
+  "stage": "entitled",
+  "stageNote": "The Planning Commission approved the project on Sept 10, 2026 (Downtown Project Authorization with exceptions, office allocation and shadow findings), allowing either variant, after Planning cleared it under CEQA with a general plan evaluation in July 2026. A variance for its parking and loading entrances on Jessie Street was still under review, and no building permit had been filed, as of Oct 19, 2026.",
+  "timeline": [
+    {
+      "date": "2025-08-14",
+      "event": "Planning application filed to replace the Golden Gate University building with a 46-story tower in one of two variants (record 2025-007507PRJ)."
+    },
+    {
+      "date": "2026-07-16",
+      "event": "Planning issues the project's CEQA clearance, a general plan evaluation."
+    },
+    {
+      "date": "2026-08-26",
+      "event": "Variance application filed for the tower's parking and loading entrances on Jessie Street."
+    },
+    {
+      "date": "2026-09-10",
+      "event": "Planning Commission approves the project: Downtown Project Authorization with exceptions, office allocation of up to 555,390 sq ft and shadow findings."
+    }
+  ],
+  "nextMilestone": "The Zoning Administrator's decision on the Jessie Street variance, then building permits. No construction schedule was found in an official source.",
+  "summary": "A 46-story tower to replace Golden Gate University's seven-story building on Mission Street between First and Second streets, across Ecker Place from the stalled Oceanwide Center site. The Planning Commission approved it in September 2026 in two versions: an office and lab tower 700 ft to the roof (752 ft to its parapet), or a 649-ft tower with offices and up to 385 homes.",
+  "massingNotes": "Added at Matthew's request (2026-10-19). Boundary: DataSF parcels (acdm-wktn), block 3708 lot 098, the single lot of Planning record 2025-007507 (about 0.76 acres as drawn); it sits across Ecker Place from Oceanwide Center's site and doesn't overlap it. Massing (pipeline/bam_pipeline/sites/massing_536_mission.py): a placeholder volume, the whole lot at 700 ft, the approved office variant's roof. The tower's plans are in the Planning Commission packet and the CEQA document, which couldn't be opened, so the real footprint is smaller in places. Illustrative, drawn as entitled.",
+  "officialLinks": [
+    "https://sfplanning.org/sites/default/files/agendas/2026-09/20260910_cpc%20%28ID%201586266%29.pdf",
+    "https://sfplanning.org/environmental-review-documents?title=536%20Mission"
+  ],
+  "sources": [
+    "https://sfplanning.org/sites/default/files/agendas/2026-09/20260910_cpc%20%28ID%201586266%29.pdf",
+    "https://sfplanning.org/environmental-review-documents?title=536%20Mission",
+    "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2025-007507PRJ",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2025-007507DNX",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2025-007507OFA",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2025-007507ENV",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2025-007507VAR",
+    "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=3708098",
+    "https://data.sf.gov/resource/i98e-djp9.json?block=3708&lot=098",
+    "https://data.sf.gov/d/acdm-wktn"
+  ],
+  "verify": [
+    "the tower's footprint and setbacks, which are in the Planning Commission packet (not opened)",
+    "which of the two approved variants will be built",
+    "the Planning Commission's motion numbers and vote on Sept 10, 2026, and whether the approvals were appealed",
+    "the floor areas, which differ between the hearing agenda (about 1.22 million and 991,000 sq ft) and Planning's records (1,357,551 and 1,181,781 gross sq ft)",
+    "the mixed-use variant's homes (up to 385 on the hearing agenda, 370 in Planning's records)",
+    "the lot area (0.76 acres as mapped)"
+  ],
+  "lastVerified": "2026-10-19",
+  "reported": {
+    "note": "Found by web search but not opened (the press sites couldn't be reached from this session) and not confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until an official source confirms it.",
+    "developer": "McCourt Partners and Lincoln Property Company",
+    "sources": [
+      "https://www.multifamilydive.com/news/536-mission-high-rise-downtown-san-francisco/831288/"
+    ]
+  }
+}

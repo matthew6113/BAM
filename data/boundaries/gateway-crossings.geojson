@@ -1,0 +1,94 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "gateway-crossings",
+  "source": "Santa Clara County parcels: the lots that replaced the Gateway Crossings site (230-60-001 to -008 and -010) and the unnumbered street lots between them",
+  "sourceLabel": "Santa Clara County parcels",
+  "sourceUrl": "https://data.sccgov.org/d/ubcd-cewv",
+  "query": "https://data.sccgov.org/resource/ubcd-cewv.geojson?%24where=apn+in+%28%2723060001%27%2C+%2723060002%27%2C+%2723060003%27%2C+%2723060004%27%2C+%2723060005%27%2C+%2723060006%27%2C+%2723060007%27%2C+%2723060008%27%2C+%2723060010%27%29+or+%28apn+is+null+and+within_box%28the_geom%2C+37.3568%2C+-121.9367%2C+37.3535%2C+-121.9318%29%29&%24limit=5000",
+  "accuracy": "approximate",
+  "accuracyNote": "The approval's site at 1205 Coleman Avenue, which CEQAnet records as APNs 230-46-069 and -070. The County has since retired those two parcels and mapped the site as new lots on assessor's page 230-60 (addressed on Rickabaugh Way, Chastain Place and Brokaw Road) with unnumbered street lots between them; those lots and streets are drawn, and together they match the approval's approximately 21.4 acres. The site lies inside the Santa Clara Station Area Specific Plan area. 21.3 acres as drawn.",
+  "license": "Santa Clara County open data (terms of use)",
+  "features_used": 13
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9365869,
+       37.3547584
+      ],
+      [
+       -121.9347821,
+       37.3566695
+      ],
+      [
+       -121.9347131,
+       37.3567095
+      ],
+      [
+       -121.933542,
+       37.3566799
+      ],
+      [
+       -121.9332461,
+       37.3566558
+      ],
+      [
+       -121.9329716,
+       37.3566097
+      ],
+      [
+       -121.9325819,
+       37.3565015
+      ],
+      [
+       -121.9323268,
+       37.3563996
+      ],
+      [
+       -121.9321287,
+       37.3563023
+      ],
+      [
+       -121.9321264,
+       37.3562863
+      ],
+      [
+       -121.9318443,
+       37.3561423
+      ],
+      [
+       -121.9318251,
+       37.3561193
+      ],
+      [
+       -121.9318262,
+       37.3560725
+      ],
+      [
+       -121.9337942,
+       37.3536211
+      ],
+      [
+       -121.9346746,
+       37.3537811
+      ],
+      [
+       -121.9365869,
+       37.3547584
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

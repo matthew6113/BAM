@@ -1,0 +1,79 @@
+{
+  "id": "pleasant-hills",
+  "name": "Pleasant Hills Golf Course redevelopment",
+  "aliases": [
+    "Pleasant Hills Golf Course Redevelopment Project",
+    "Pleasant Hills",
+    "2050-2079 South White Road"
+  ],
+  "city": "San José (proposed annexation from unincorporated Santa Clara County)",
+  "county": "Santa Clara",
+  "subregion": "South Bay",
+  "category": "buildings",
+  "approxCenter": [
+    -121.7996,
+    37.3398
+  ],
+  "camera": {
+    "center": [
+      -121.7998,
+      37.3388
+    ],
+    "zoom": 15.1,
+    "pitch": 55,
+    "bearing": -30
+  },
+  "acres": 113.5,
+  "acresNote": "About 113.5 gross acres: two parcels (APNs 649-23-001 and 649-24-013) at 2050-2079 South White Road in unincorporated east San José, the former Pleasant Hills and Cypress Greens golf courses (notice of preparation, Oct 2025). The County's parcels come to about 113.1 acres. A 0.6-acre house lot at 2079 Flint Avenue would be annexed with them but isn't part of the project.",
+  "program": {
+    "homes": 2000,
+    "affordableHomes": 321,
+    "affordablePct": null,
+    "officeLabSqft": null,
+    "commercialSqftTotal": null,
+    "retailSqft": 50000,
+    "hotelKeys": null,
+    "openSpaceAcres": 13.8,
+    "notes": "As proposed (notice of preparation, Oct 2025): around 2,000 homes, about 362 market-rate single-family houses (up to two stories, 30 ft), 1,017 market-rate townhouses (up to four stories, 55 ft), 300 market-rate apartments and 321 affordable apartments, the affordable ones in two seven-story mixed-use buildings up to 120 ft over up to 50,000 sq ft of ground-floor commercial space and parking. Up to 13.8 acres of open space: Park 1 (up to 5 acres), Park 2 (up to 3.4 acres) and about 5.4 acres along South White Road that may be set aside. The EIR is also to study a City-requested alternative with 2,850 homes."
+  },
+  "developer": "Lakeside Communities, LLC",
+  "publicPartners": [
+    "City of San José (lead agency; annexation, General Plan amendment and prezoning)",
+    "County of Santa Clara (current land use jurisdiction)"
+  ],
+  "stage": "entitlement",
+  "stageNote": "In environmental review. San José issued a notice of preparation of an EIR on Oct 14, 2025 and took scoping comments until Nov 14, 2025. The applications ask for annexation into the City, a General Plan amendment, prezoning to Planned Development, a vesting tentative map and a Planned Development permit. No Draft EIR has been posted to CEQAnet as of Oct 19, 2026.",
+  "timeline": [
+    {
+      "date": "2025-10-14",
+      "event": "San José issues a notice of preparation of an EIR for the Pleasant Hills Golf Course Redevelopment Project (files GP22-010, Evergreen 204, PDC25-015, PD25-007, T25-004, ER23-050)."
+    },
+    {
+      "date": "2025-10-29",
+      "event": "Public scoping meeting at August Boeger Middle School."
+    },
+    {
+      "date": "2025-11-14",
+      "event": "Scoping comments close."
+    }
+  ],
+  "nextMilestone": "A Draft EIR (no date published).",
+  "summary": "The former Pleasant Hills and Cypress Greens golf courses in east San José, closed since 2004, proposed for about 2,000 homes: single-family houses and townhouses, plus two seven-story mixed-use buildings of affordable apartments over shops, around new parks. The 113.5-acre site is in unincorporated Santa Clara County and would be annexed to San José; its environmental review began in October 2025.",
+  "massingNotes": "Added at Matthew's request (2026-10-19). Boundary only (data/boundaries/pleasant-hills.geojson, official): the two Santa Clara County parcels (data.sccgov.org ubcd-cewv) the notice of preparation names, 649-23-001 and 649-24-013; 113.1 acres against its 113.5 gross acres. No massing: the design is a proposal at the notice-of-preparation stage; the notice's conceptual site plan (Figure 4) shows neighborhoods, not buildings.",
+  "officialLinks": [
+    "https://ceqanet.lci.ca.gov/Project/2025100897"
+  ],
+  "sources": [
+    "https://ceqanet.lci.ca.gov/Project/2025100897",
+    "https://ceqanet.lci.ca.gov/2025100897",
+    "https://ceqanet.lci.ca.gov/2025100897/Attachment/Vo2HGJ",
+    "https://ceqanet.lci.ca.gov/2025100897/Attachment/lpp9sF",
+    "https://data.sccgov.org/d/ubcd-cewv"
+  ],
+  "verify": [
+    "the Draft EIR's date and project description (none on CEQAnet as of Oct 19, 2026; the City's active EIR page couldn't be reached)",
+    "the APN of the 0.6-acre parcel at 2079 Flint Avenue: the notice of preparation gives 649-21-014; its notice of completion, CEQAnet and the County's layer give 649-24-014",
+    "the annexation's progress with Santa Clara County LAFCO"
+  ],
+  "lastVerified": "2026-10-19"
+}
