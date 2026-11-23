@@ -109,6 +109,14 @@ sites:
 	$(PY) bam_pipeline.sites.massing_sf_railyards
 	$(PY) bam_pipeline.sites.boundary_central_soma_key_sites
 	$(PY) bam_pipeline.sites.boundary_sf_scan_sites
+	$(PY) bam_pipeline.sites.massing_530_sansome
+	$(PY) bam_pipeline.sites.massing_536_mission
+	$(PY) bam_pipeline.sites.massing_mission_point
+	$(PY) bam_pipeline.sites.massing_seely_avenue
+	$(PY) bam_pipeline.sites.boundary_santana_row
+	$(PY) bam_pipeline.sites.massing_santana_row
+	$(PY) bam_pipeline.sites.boundary_berkeley_space_center
+	$(PY) bam_pipeline.sites.landuse_berkeley_space_center
 
 photos:
 	$(PY) bam_pipeline.photos

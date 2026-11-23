@@ -9543,6 +9543,930 @@
       "lastVerified": "2026-10-28"
     },
     {
+      "id": "530-sansome",
+      "name": "530 Sansome Mixed-Use Tower and Fire Station 13",
+      "aliases": [
+        "447 Battery and 530 Sansome Street Project",
+        "447 Battery/530 Sansome",
+        "530 Sansome Street",
+        "Fire Station 13"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.4011,
+        37.7955
+      ],
+      "camera": {
+        "center": [
+          -122.401,
+          37.7953
+        ],
+        "zoom": 16.5,
+        "pitch": 58,
+        "bearing": -40
+      },
+      "acres": 0.57,
+      "acresNote": "Draft EIR and Notice of Determination: four lots on Assessor's Block 0206 (Lots 002, 013, 014 and 017), 24,830 sq ft, about 0.57 acres, on the block bounded by Sansome, Washington, Battery and Merchant streets.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 417770,
+        "commercialSqftTotal": null,
+        "retailSqft": 27030,
+        "hotelKeys": 200,
+        "openSpaceAcres": null,
+        "notes": "As approved in 2025 (Notice of Determination): a 41-story tower about 544 ft tall (574 ft with its rooftop mechanical equipment) with between 372,580 and 417,770 sq ft of office and between 128,010 and 189,130 sq ft of hotel (about 100 to 200 rooms), as five middle floors may be either; about 27,030 sq ft of café, restaurant, ballroom and meeting space on levels 1 to 3; and 74 parking spaces in three basement levels. Figures shown are the maximums. No homes. A separate four-story, 55-ft Fire Station 13 of about 31,200 sq ft (with its basement) replaces the 1974 station at 530 Sansome Street. Merchant Street between Sansome and Battery becomes a shared street with about 10,364 sq ft of privately maintained public open space."
+      },
+      "developer": "EQX Jackson SQ Holdco LLC",
+      "publicPartners": [
+        "San Francisco Planning Commission",
+        "San Francisco Recreation and Park Commission",
+        "San Francisco Board of Supervisors",
+        "San Francisco Fire Department",
+        "San Francisco Real Estate Division"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved in 2025: the Planning Commission certified the EIR on July 17, 2025, and the Board of Supervisors approved the project's legislation (general plan, zoning and Planning Code amendments, development agreement, land exchange and hotel incentive agreement) on Oct 21; the Mayor signed it on Oct 27, 2025. The City's fire station lot is to be exchanged for 447 Battery Street before construction begins. No building permit for this design had been filed as of Nov 23, 2026.",
+      "timeline": [
+        {
+          "date": "2021-07-29",
+          "event": "Planning Commission approves an earlier, 19-story hotel project with a replacement fire station on the Sansome and Washington Street lots (Motions 20955 to 20958, Resolution 20954)."
+        },
+        {
+          "date": "2024-03-21",
+          "event": "Planning Commission takes up extending the 2021 approvals; the EIR's responses to comments say the extensions were approved in early 2024."
+        },
+        {
+          "date": "2024-08-05",
+          "event": "Planning application for the current project, a 41-story tower and a new Fire Station 13 at 447 Battery Street (record 2024-007066PRJ)."
+        },
+        {
+          "date": "2024-11-08",
+          "event": "Planning issues the notice of preparation of an EIR."
+        },
+        {
+          "date": "2025-03-12",
+          "event": "Draft EIR published; comments taken until April 28, 2025."
+        },
+        {
+          "date": "2025-04-17",
+          "event": "Planning Commission hearing on the Draft EIR."
+        },
+        {
+          "date": "2025-05-15",
+          "event": "Planning Commission hears an informational presentation and a request to initiate the General Plan amendments."
+        },
+        {
+          "date": "2025-07-03",
+          "event": "Responses to comments on the Draft EIR published."
+        },
+        {
+          "date": "2025-07-17",
+          "event": "At a joint hearing with the Recreation and Park Commission, the Planning Commission certifies the Final EIR (Motion 21773) and recommends the project's legislation to the Board of Supervisors."
+        },
+        {
+          "date": "2025-10-21",
+          "event": "Board of Supervisors approves the project's legislation, including the development agreement and the 530 Sansome special use district."
+        },
+        {
+          "date": "2025-10-27",
+          "event": "The Mayor signs the legislation, the project's final approval."
+        }
+      ],
+      "nextMilestone": "Building permits and the land exchange. The EIR's preliminary schedule had about 39 months of construction starting in 2027.",
+      "summary": "A 41-story office and hotel tower about 544 ft tall on the block of Sansome, Washington, Battery and Merchant streets at the edge of Jackson Square, with a new four-story Fire Station 13 that the developer builds for the City on the 447 Battery Street lot. It replaces the 1974 fire station at 530 Sansome Street and three commercial buildings, among them the landmark Jones-Thierbach Coffee Company building, whose designation the approved legislation conditionally rescinds. The City approved it in 2025.",
+      "massingNotes": "Added at Matthew's request (2026-10-19): the tower near Jackson Square that replaces a fire station. Boundary: DataSF parcels (acdm-wktn), block 0206 lots 002, 013, 014 and 017, the four lots the EIR and the Notice of Determination name (about 0.57 acres as drawn; 24,830 sq ft in the EIR). Massing (pipeline/bam_pipeline/sites/massing_530_sansome.py): the tower as six steps 165 ft wide, set out from the Draft EIR's dimensioned floor plans (Figures 2-15 to 2-19) from the Sansome and Washington corner, narrowing from 96 ft 6 in to 60 ft deep at the levels in the building section (Figure 2-8), to the roof at about 544 ft; the east end of its three-story base at 63 ft; and the fire station over the 447 Battery Street lot at 55 ft. Illustrative, drawn as entitled.",
+      "officialLinks": [
+        "https://sfplanning.org/environmental-review-documents?title=530%20Sansome",
+        "https://ceqanet.lci.ca.gov/Project/2024110311"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/Project/2024110311",
+        "https://ceqanet.lci.ca.gov/2024110311/1",
+        "https://ceqanet.lci.ca.gov/2024110311/2/Attachment/NHEHNp",
+        "https://ceqanet.lci.ca.gov/2024110311/3/Attachment/dFOxC_",
+        "https://ceqanet.lci.ca.gov/2024110311/4/Attachment/BML5I0",
+        "https://sfplanning.org/environmental-review-documents?title=530%20Sansome",
+        "https://sfplanning.org/sites/default/files/agendas/2024-03/20240321_cpc%20%28ID%201425983%29.pdf",
+        "https://sfplanning.org/sites/default/files/agendas/2025-04/20250417_cpc%20%28ID%201505632%29.pdf",
+        "https://sfplanning.org/sites/default/files/agendas/2025-05/20250515_cpc%20%28ID%201511160%29.pdf",
+        "https://sfplanning.org/sites/default/files/agendas/2025-07/20250717_cpc_jnt_RecPark%20%28ID%201522127%29.pdf",
+        "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2024-007066PRJ",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2024-007066PCA",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2024-007066GPR",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2024-007066OFA",
+        "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=0206017",
+        "https://data.sf.gov/resource/5yf5-ms5f.json?name=530%20Sansome%20Mixed-Use%20Tower%20and%20Fire%20Station%20SUD",
+        "https://data.sf.gov/resource/h9wh-cg3m.json?height=555-X",
+        "https://data.sf.gov/resource/i98e-djp9.json?block=0206&lot=017",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the ordinance numbers of the Board's October 2025 legislation (files 250697, 250698, 250764, 250802, 250803 and 250804), which are on a site this research couldn't open",
+        "the Planning Commission's motion numbers for its other July 17, 2025 actions (only the EIR certification, Motion 21773, was confirmed)",
+        "the final split between office and hotel floors, and the hotel's room count (100 to 200)",
+        "when construction starts: no building permit for this design had been filed as of Nov 23, 2026",
+        "the 530 Sansome special use district's polygon in the City's zoning layer, which doesn't match the four lots the EIR names"
+      ],
+      "lastVerified": "2026-11-23",
+      "reported": {
+        "note": "Found by web search but not opened (the press sites couldn't be reached from this session) and not confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until an official source confirms it.",
+        "developer": "Related California, through its affiliate EQX Jackson SQ Holdco LLC",
+        "sources": [
+          "https://sfyimby.com/2025/10/41-story-office-tower-approved-for-530-sansome-street-san-francisco.html"
+        ]
+      }
+    },
+    {
+      "id": "536-mission",
+      "name": "536 Mission Street",
+      "aliases": [
+        "536 Mission St",
+        "Golden Gate University site"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.3989,
+        37.7892
+      ],
+      "camera": {
+        "center": [
+          -122.399,
+          37.7891
+        ],
+        "zoom": 16.4,
+        "pitch": 58,
+        "bearing": 20
+      },
+      "acres": 0.76,
+      "acresNote": "DataSF parcel 3708/098 as mapped, about 33,190 sq ft (0.76 acres), between Mission and Jessie streets west of Ecker Place. No lot area was found in a document that could be opened.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Approved in two variants, either of which may be built (Planning Commission, Sept 10, 2026): an office variant, 700 ft to the roof and 752 ft to the top of the parapet, of about 1.22 million sq ft with retail, office and laboratory uses; or a mixed-use variant, 649 ft (698 ft to the parapet), of about 991,000 sq ft with retail, office and up to 385 homes. Planning's records give 46 stories, larger gross figures (1,357,551 and 1,181,781 gross sq ft) and 370 homes for the mixed-use variant. The office allocation is for up to 555,390 sq ft of new office space. The seven-story, 236,680-sq-ft Golden Gate University building would be demolished."
+      },
+      "developer": null,
+      "publicPartners": [
+        "San Francisco Planning Commission"
+      ],
+      "stage": "entitled",
+      "stageNote": "The Planning Commission approved the project on Sept 10, 2026 (Downtown Project Authorization with exceptions, office allocation and shadow findings), allowing either variant, after Planning cleared it under CEQA with a general plan evaluation in July 2026. Planning's record of the variance for its parking and loading entrances on Jessie Street closed as approved on Nov 20, 2026. No building permit had been filed as of Nov 23, 2026.",
+      "timeline": [
+        {
+          "date": "2025-08-14",
+          "event": "Planning application filed to replace the Golden Gate University building with a 46-story tower in one of two variants (record 2025-007507PRJ)."
+        },
+        {
+          "date": "2026-07-16",
+          "event": "Planning issues the project's CEQA clearance, a general plan evaluation."
+        },
+        {
+          "date": "2026-08-26",
+          "event": "Variance application filed for the tower's parking and loading entrances on Jessie Street."
+        },
+        {
+          "date": "2026-09-10",
+          "event": "Planning Commission approves the project: Downtown Project Authorization with exceptions, office allocation of up to 555,390 sq ft and shadow findings."
+        },
+        {
+          "date": "2026-11-20",
+          "event": "Planning closes its record of the variance for the Jessie Street parking and loading entrances as approved."
+        }
+      ],
+      "nextMilestone": "Building permits. No construction schedule was found in an official source.",
+      "summary": "A 46-story tower to replace Golden Gate University's seven-story building on Mission Street between First and Second streets, across Ecker Place from the stalled Oceanwide Center site. The Planning Commission approved it in September 2026 in two versions: an office and lab tower 700 ft to the roof (752 ft to its parapet), or a 649-ft tower with offices and up to 385 homes.",
+      "massingNotes": "Added at Matthew's request (2026-10-19). Boundary: DataSF parcels (acdm-wktn), block 3708 lot 098, the single lot of Planning record 2025-007507 (about 0.76 acres as drawn); it sits across Ecker Place from Oceanwide Center's site and doesn't overlap it. Massing (pipeline/bam_pipeline/sites/massing_536_mission.py): a placeholder volume, the whole lot at 700 ft, the approved office variant's roof. The tower's plans are in the Planning Commission packet and the CEQA document, which couldn't be opened, so the real footprint is smaller in places. Illustrative, drawn as entitled.",
+      "officialLinks": [
+        "https://sfplanning.org/sites/default/files/agendas/2026-09/20260910_cpc%20%28ID%201586266%29.pdf",
+        "https://sfplanning.org/environmental-review-documents?title=536%20Mission"
+      ],
+      "sources": [
+        "https://sfplanning.org/sites/default/files/agendas/2026-09/20260910_cpc%20%28ID%201586266%29.pdf",
+        "https://sfplanning.org/environmental-review-documents?title=536%20Mission",
+        "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2025-007507PRJ",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2025-007507DNX",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2025-007507OFA",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2025-007507ENV",
+        "https://data.sf.gov/resource/y673-d69b.json?record_id=2025-007507VAR",
+        "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=3708098",
+        "https://data.sf.gov/resource/i98e-djp9.json?block=3708&lot=098",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the tower's footprint and setbacks, which are in the Planning Commission packet (not opened)",
+        "which of the two approved variants will be built",
+        "the Planning Commission's motion numbers and vote on Sept 10, 2026, and whether the approvals were appealed",
+        "the floor areas, which differ between the hearing agenda (about 1.22 million and 991,000 sq ft) and Planning's records (1,357,551 and 1,181,781 gross sq ft)",
+        "the mixed-use variant's homes (up to 385 on the hearing agenda, 370 in Planning's records)",
+        "the lot area (0.76 acres as mapped)",
+        "the Zoning Administrator's decision letter on the Jessie Street variance and whether it was appealed (Planning's record closed as approved on Nov 20, 2026; the letter wasn't opened)"
+      ],
+      "lastVerified": "2026-11-23",
+      "reported": {
+        "note": "Found by web search but not opened (the press sites couldn't be reached from this session) and not confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until an official source confirms it.",
+        "developer": "McCourt Partners and Lincoln Property Company",
+        "sources": [
+          "https://www.multifamilydive.com/news/536-mission-high-rise-downtown-san-francisco/831288/"
+        ]
+      }
+    },
+    {
+      "id": "mission-point",
+      "name": "Mission Point",
+      "aliases": [
+        "Mission Point Project",
+        "3005 Democracy Way Mixed-Use Development Project"
+      ],
+      "city": "Santa Clara",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -121.9824,
+        37.4011
+      ],
+      "camera": {
+        "center": [
+          -121.9826,
+          37.4004
+        ],
+        "zoom": 15.8,
+        "pitch": 58,
+        "bearing": 20
+      },
+      "acres": 48.6,
+      "acresNote": "The approval gives about 48.6 acres: nine parcels (APNs 104-04-150, -142, -143, -151, -112, -113, -065, -111 and -064) and the Democracy Way right-of-way between them (notice of determination, Dec 3, 2024). The Draft EIR's Table 2-1 splits it into 46.0 acres of parcels and 2.6 acres of right-of-way, and its Table 2-3 into four development areas: A (13.3 acres), B (8.9), C (12.7) and D (13.7).",
+      "program": {
+        "homes": 2600,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 2211000,
+        "commercialSqftTotal": 2300000,
+        "retailSqft": 100000,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "As approved (notice of determination, Nov 19, 2024): up to 4,915,000 gross sq ft of new development, including up to about 2,600 homes, 2,211,000 gross sq ft of office/R&D space, about 100,000 gross sq ft of neighborhood retail, about 10,000 gross sq ft of childcare and 3,000 gross sq ft of community space. This is the Draft EIR's Reduced Office/Increased Housing Alternative, which replaced the 789,000 gross sq ft of offices planned for Area C with about 800 homes (Draft EIR Table 5-4: up to 2,600 homes and 2,300,000 gross sq ft of commercial space). Offices and R&D would fill Areas A and B north of a realigned Democracy Way; homes, Areas C and D to the south. Affordable housing is to comply with the City's inclusionary housing policy (the approval states no number; the Draft EIR's proposed project said at least 15 percent). Open space: the approval describes up to 24 acres of publicly accessible open space and up to 13 acres of private open space, while Draft EIR Table 5-4 gives up to 16.2 acres publicly accessible (about 10 acres of City parkland). Also an 18,000 sq ft Silicon Valley Power substation and about 9,400 parking spaces, mostly underground or in garages."
+      },
+      "developer": "Kylli, Inc.",
+      "publicPartners": [
+        "City of Santa Clara (lead agency)",
+        "Silicon Valley Power (the City's electric utility; new substation)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. The City of Santa Clara approved the project on Nov 19, 2024, with a Final EIR, a statement of overriding considerations and a mitigation monitoring program, and took a further approval on Dec 3, 2024. No building permit or construction record was found; the County's parcel map still shows the site's nine original parcels.",
+      "timeline": [
+        {
+          "date": "2018-07-27",
+          "event": "Santa Clara issues a notice of preparation for the 3005 Democracy Way Mixed-Use Development Project: up to 10.61 million gross sq ft, including 6.15 million of residential and 3.65 million of offices."
+        },
+        {
+          "date": "2018-10-01",
+          "event": "A recirculated notice describes 6,000 homes in buildings 240 to 450 ft tall and a tower of up to 600 ft."
+        },
+        {
+          "date": "2022-04-18",
+          "event": "A new notice of preparation describes the smaller Mission Point Project: 1,800 homes and 3 million gross sq ft of offices."
+        },
+        {
+          "date": "2023-11-17",
+          "event": "The Draft EIR is published for comment (to Jan 2, 2024)."
+        },
+        {
+          "date": "2024-04",
+          "event": "The Final EIR (responses to comments) is completed."
+        },
+        {
+          "date": "2024-11-19",
+          "event": "The City approves the project in its Reduced Office/Increased Housing form: up to 2,600 homes and 2,211,000 gross sq ft of office/R&D."
+        },
+        {
+          "date": "2024-12-03",
+          "event": "The City takes a further approval for the project (second notice of determination)."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "A plan to replace four vacant light-industrial buildings and a parking lot used for Levi's Stadium events, south of Tasman Drive in north Santa Clara with a mixed-use neighborhood of up to 2,600 homes and about 2.2 million sq ft of offices and R&D space. The City approved it in late 2024 in a version that turned one of the four planned office areas into housing; the buildings are still conceptual.",
+      "massingNotes": "Added at Matthew's request (2026-10-19). Boundary (data/boundaries/mission-point.geojson, official): the nine Santa Clara County parcels (data.sccgov.org ubcd-cewv) named in the approval, joined over the Democracy Way right-of-way (20 m closing); 48.4 acres against the approval's 48.6. Illustrative massing (data/massing/mission-point.geojson, pipeline/bam_pipeline/sites/massing_mission_point.py): the 25 conceptual building outlines of Draft EIR Figure 5-3, the site plan of the approved Reduced Office/Increased Housing Alternative (PDF p. 621), traced from the figure's vector outlines and classed office or residential by its colour fill, placed by fitting the figure's dash-dot project boundary to the County parcels (trimmed ICP, RMS 0.3 m). The figure gives each area an approximate height range: Area A 63 to 138 ft, B 108 to 153 ft, C 72 to 108 ft and D 72 to 202 ft, with the maximum pointed at one building. That building is drawn at the maximum and the others at the area's minimum, so this is a low reading of an approximate range, not a design. All stage entitled.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/Project/2018072068"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/Project/2018072068",
+        "https://ceqanet.lci.ca.gov/2018072068",
+        "https://ceqanet.lci.ca.gov/2018072068/2",
+        "https://ceqanet.lci.ca.gov/2018072068/3",
+        "https://ceqanet.lci.ca.gov/2018072068/4",
+        "https://ceqanet.lci.ca.gov/2018072068/4/Attachment/Nn5ZMq",
+        "https://ceqanet.lci.ca.gov/2018072068/5",
+        "https://ceqanet.lci.ca.gov/2018072068/5/Attachment/nzGYrG",
+        "https://ceqanet.lci.ca.gov/2018072068/6",
+        "https://ceqanet.lci.ca.gov/2018072068/6/Attachment/WU7KF1",
+        "https://ceqanet.lci.ca.gov/2018072068/7",
+        "https://ceqanet.lci.ca.gov/2018072068/7/Attachment/l2As6p",
+        "https://data.sccgov.org/d/ubcd-cewv"
+      ],
+      "verify": [
+        "what the City approved on Dec 3, 2024: the notice of determination's file name refers to a development agreement; the Council's agenda and ordinance (santaclara.legistar.com) couldn't be reached",
+        "the approval's exact actions on Nov 19, 2024 (the Draft EIR describes a General Plan amendment to a new Urban Center Mixed Use designation and a rezoning to Planned Development); the resolutions weren't reachable",
+        "open space: the notices of determination say up to 24 acres publicly accessible and 13 acres private; Draft EIR Table 5-4 says up to 16.2 acres publicly accessible",
+        "the number of affordable homes, which the approval leaves to the City's inclusionary housing policy",
+        "the heights drawn: Figure 5-3 (the approved alternative) gives Area A up to 138 ft and Area C up to 108 ft, while Table 2-3 (the proposed project, which Table 5-1 says the alternative matches) gives 123 ft and 132 ft",
+        "whether any permit, demolition or construction has started (Santa Clara's permit records couldn't be reached)"
+      ],
+      "lastVerified": "2026-10-19"
+    },
+    {
+      "id": "seely-avenue",
+      "name": "Seely Avenue Mixed-Use",
+      "aliases": [
+        "0 Seely Avenue Mixed-Use Project",
+        "Seely Avenue Mixed-Use Project"
+      ],
+      "city": "San José",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -121.9175,
+        37.3975
+      ],
+      "camera": {
+        "center": [
+          -121.9172,
+          37.3968
+        ],
+        "zoom": 16.2,
+        "pitch": 58,
+        "bearing": -40
+      },
+      "acres": 22,
+      "acresNote": "About 22 acres (notice of determination, Aug 2024; Draft EIR p. 8): APNs 097-15-033 and 097-15-034 and part of 097-66-004, bounded by Seely Avenue, Montague Expressway, Coyote Creek and Epic Way. The County has since replaced those parcels with the project's own lots; drawn from them, the site comes to about 22.2 acres.",
+      "program": {
+        "homes": 1472,
+        "affordableHomes": 178,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": 18965,
+        "hotelKeys": null,
+        "openSpaceAcres": 2.5,
+        "notes": "As approved: 1,472 homes in three-story townhomes and six- to seven-story apartment buildings, 18,965 sq ft of neighborhood retail and a 2.5-acre public park, plus about 0.11 acre dedicated to the San José Municipal Water System for a new well (notice of determination, Aug 13, 2024). The Draft EIR splits the homes into 154 for-sale townhomes; Buildings A, B and C with 397, 372 and 371 market-rate apartments over ground-floor retail; and a 178-home affordable apartment building (Tables 2-1 and 2-3; Table 2-4 gives Building A 399). Heights: Building A 69 ft (six stories), Buildings B and C 79 ft (seven stories), the affordable building 82 ft and the townhomes 30 ft (Table 2-2). The park is 2.51 acres in the Draft EIR. Parking is in garages beside the apartment buildings, not underground."
+      },
+      "developer": "The Hanover Company",
+      "publicPartners": [
+        "City of San José (lead agency)",
+        "San José Municipal Water System (well site)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. The San José City Council approved the Planned Development rezoning and permit on Aug 13, 2024, finding the Final EIR complete and adopting a statement of overriding considerations for the impacts on historical resources. The County's parcel map now shows the project's lots, but no building permit or construction record could be checked.",
+      "timeline": [
+        {
+          "date": "2022-02-23",
+          "event": "San José circulates a notice of preparation for an EIR: 1,470 homes, about 52,000 sq ft of retail and a 2.5-acre park on about 22 acres."
+        },
+        {
+          "date": "2024-01-16",
+          "event": "The Draft EIR is released for comment; it is recirculated from Mar 19 to May 3, 2024 because some appendices hadn't been posted correctly."
+        },
+        {
+          "date": "2024-08-13",
+          "event": "The City Council approves the project with its Final EIR: 1,472 homes, 18,965 sq ft of retail and a 2.5-acre public park."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "About 22 acres of farmland on Seely Avenue in North San José, beside Coyote Creek and Montague Expressway, approved in 2024 for 1,472 homes: three six- and seven-story apartment buildings with shops facing a new 2.5-acre public park, a 178-home affordable building and 154 townhomes. The farm's buildings, including the Sakauye house, form a potential historic district associated with Japanese farming in the Santa Clara Valley, which the project would remove.",
+      "massingNotes": "Added at Matthew's request (2026-10-19). Boundary (data/boundaries/seely-avenue.geojson, approximate): the approval's APNs are no longer in the County's layer, so the site is drawn from the Santa Clara County parcels (data.sccgov.org ubcd-cewv) that replaced them, which are the project's own lots (Buildings A, B and C, the affordable building, the park and the well site match the Draft EIR's lot areas within 2%), with the 26 townhome lots and the unnumbered street and common lots; 22.2 acres. Illustrative massing (data/massing/seely-avenue.geojson, pipeline/bam_pipeline/sites/massing_seely_avenue.py): each building's lot raised to its Draft EIR height (Table 2-2): Building A 69 ft, Buildings B and C 79 ft, the affordable building 82 ft and the 26 townhome lots 30 ft, matched to the lots by area (Table 2-1) and by position on the conceptual site plan (Figure 2-4). The lots also hold each building's garage and courtyards, so these are envelopes, not footprints. All stage entitled.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/Project/2022020565"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/Project/2022020565",
+        "https://ceqanet.lci.ca.gov/2022020565",
+        "https://ceqanet.lci.ca.gov/2022020565/Attachment/6aoaJZ",
+        "https://ceqanet.lci.ca.gov/2022020565/2",
+        "https://ceqanet.lci.ca.gov/2022020565/4",
+        "https://ceqanet.lci.ca.gov/2022020565/4/Attachment/O2WLAL",
+        "https://ceqanet.lci.ca.gov/2022020565/5",
+        "https://ceqanet.lci.ca.gov/2022020565/5/Attachment/Yi9Zn9",
+        "https://ceqanet.lci.ca.gov/2022020565/5/Attachment/4SIxme",
+        "https://data.sccgov.org/d/ubcd-cewv"
+      ],
+      "verify": [
+        "whether construction has started: the County's parcel layer shows the project's subdivision lots (new APNs), which suggests a final map has recorded, but San José's permit records (sjpermits.org) and the City's site couldn't be reached",
+        "Building A's home count: Draft EIR Table 2-1 gives 397 and Table 2-4 gives 399",
+        "the boundary: drawn from the lots that replaced the approval's three APNs; the Seely Avenue frontage is not a parcel and isn't drawn",
+        "the final architecture: the heights are the Draft EIR's (2024); the Planned Development permit's approved plans weren't reachable"
+      ],
+      "lastVerified": "2026-10-19"
+    },
+    {
+      "id": "freedom-circle",
+      "name": "Freedom Circle",
+      "aliases": [
+        "Freedom Circle Focus Area",
+        "Freedom Circle Focus Area and Greystar General Plan Amendment",
+        "2518 Mission College Boulevard",
+        "3925 and 3935 Freedom Circle"
+      ],
+      "city": "Santa Clara",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -121.971,
+        37.3873
+      ],
+      "camera": {
+        "center": [
+          -121.9712,
+          37.3866
+        ],
+        "zoom": 15.4,
+        "pitch": 55,
+        "bearing": -10
+      },
+      "acres": 39,
+      "acresNote": "The two sites with approvals: 25.7 acres at 2518 Mission College Boulevard (APN 104-40-019; notices of determination, Mar and May 2025) and Greystar's 13.3-acre site at 3925 and 3935 Freedom Circle (APNs 104-40-021 and 104-40-036; notice of determination, June 2022, and Draft EIR). Both lie in the City's Freedom Circle Focus Area, about 108 gross acres between Great America Parkway, California's Great America, San Tomas Aquino Creek and US 101 (CEQAnet lists 121 acres). The rest of the focus area isn't drawn.",
+      "program": {
+        "homes": 2892,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "Two projects: 1,792 homes at 2518 Mission College Boulevard (Irvine Company), approved in 2025 with a General Plan amendment, rezoning, vesting tentative map and architectural review; and 1,100 homes proposed by Greystar in three seven-story buildings of up to 100 ft with a 2-acre public park and a connection to the San Tomas Aquino Creek Trail, on a site the City re-designated from High Intensity Office to Very High Density Residential (51 to 100 homes per acre) in 2022 (the Draft EIR studied 1,075 homes and about 2,000 sq ft of ground-floor space). The total is the two projects together. The Focus Area Plan, adopted with the Greystar amendment in 2022, allows, subject to a future planning study, 2,500 homes beyond Greystar's and 2 million sq ft of office space beyond what the current High Intensity Office designation allows."
+      },
+      "developer": "Irvine Company (2518 Mission College Boulevard); Greystar (3925 and 3935 Freedom Circle, through CRE-GS Freedom Circle Phase I Owner, LLC)",
+      "publicPartners": [
+        "City of Santa Clara (lead agency)",
+        "California Department of Toxic Substances Control (site cleanup)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. Santa Clara certified the EIR and approved the Focus Area Plan and Greystar's General Plan amendment on June 7, 2022, and approved the Irvine Company's 1,792 homes on Mar 25, 2025 (General Plan amendment, rezoning and vesting tentative map, with an EIR addendum) and their architectural review on May 14, 2025. On Aug 20, 2025 the state Department of Toxic Substances Control approved a cleanup plan for Greystar's site. No construction record was found, and the later approvals for Greystar's buildings (zoning and architecture) couldn't be checked.",
+      "timeline": [
+        {
+          "date": "2020-06-19",
+          "event": "Santa Clara issues a notice of preparation for an EIR on the Freedom Circle Focus Area and the Greystar General Plan amendment."
+        },
+        {
+          "date": "2021-11-08",
+          "event": "The Draft EIR is published."
+        },
+        {
+          "date": "2022-06-07",
+          "event": "The City certifies the EIR and approves the Focus Area Plan and the Greystar General Plan amendment, re-designating the 13.3-acre site for housing."
+        },
+        {
+          "date": "2025-03-25",
+          "event": "The City adopts an EIR addendum and approves a General Plan amendment, rezoning and vesting tentative map for 1,792 homes at 2518 Mission College Boulevard (Irvine Company)."
+        },
+        {
+          "date": "2025-05-14",
+          "event": "The City approves the architectural review for the 1,792 homes."
+        },
+        {
+          "date": "2025-08-20",
+          "event": "The Department of Toxic Substances Control approves a remedial action plan for Greystar's site: excavating and removing about 100,000 cubic yards of soil with metals and pesticides."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "The first two housing projects in the Freedom Circle Focus Area, an office and hotel district between Great America Parkway and San Tomas Aquino Creek, north of US 101 in Santa Clara: 1,792 homes by the Irvine Company at 2518 Mission College Boulevard, approved in 2025, and 1,100 homes planned by Greystar in three seven-story buildings beside San Tomas Aquino Creek, with a 2-acre public park. The City's 2022 plan for the area allows, after a further planning study, 2,500 homes beyond Greystar's and 2 million sq ft more office space.",
+      "massingNotes": "Added at Matthew's request (2026-10-19). Boundary (data/boundaries/freedom-circle.geojson, official): the three Santa Clara County parcels (data.sccgov.org ubcd-cewv) named in the approvals, 104-40-019 (the Irvine Company's site) and 104-40-021 and 104-40-036 (Greystar's), in two pieces either side of Freedom Circle; 39.0 acres. No massing: the Irvine Company's approved plans and the EIR addendum are on the City's site, which couldn't be reached, and Greystar's building approvals weren't found; the 2021 Draft EIR's description (three seven-story buildings up to 100 ft) has no dimensioned site plan to place them. The rest of the 108-acre focus area isn't drawn.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/Project/2020060425"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/Project/2020060425",
+        "https://ceqanet.lci.ca.gov/2020060425/2",
+        "https://ceqanet.lci.ca.gov/2020060425/3",
+        "https://ceqanet.lci.ca.gov/2020060425/3/Attachment/d6319_",
+        "https://ceqanet.lci.ca.gov/2020060425/4",
+        "https://ceqanet.lci.ca.gov/2020060425/4/Attachment/SZMFf1",
+        "https://ceqanet.lci.ca.gov/2020060425/5",
+        "https://ceqanet.lci.ca.gov/2020060425/5/Attachment/CJkIqW",
+        "https://ceqanet.lci.ca.gov/2020060425/6",
+        "https://ceqanet.lci.ca.gov/2020060425/6/Attachment/LrIjgg",
+        "https://ceqanet.lci.ca.gov/2020060425/7",
+        "https://data.sccgov.org/d/ubcd-cewv"
+      ],
+      "verify": [
+        "Greystar's project approvals after the 2022 General Plan amendment (rezoning, architectural review, final home count); only the amendment and the 2025 cleanup plan were found",
+        "the Irvine Company project's design, heights, affordable homes and open space (in the EIR addendum and plans on santaclaraca.gov, which couldn't be reached)",
+        "whether the 1,792 homes count against the focus area's 2,500 additional homes",
+        "the focus area's size: 108 gross acres in the 2022 notice of determination and the Draft EIR, 121 acres on CEQAnet",
+        "whether site cleanup or construction has started on either site"
+      ],
+      "lastVerified": "2026-10-19"
+    },
+    {
+      "id": "pleasant-hills",
+      "name": "Pleasant Hills Golf Course redevelopment",
+      "aliases": [
+        "Pleasant Hills Golf Course Redevelopment Project",
+        "Pleasant Hills",
+        "2050-2079 South White Road"
+      ],
+      "city": "San José (proposed annexation from unincorporated Santa Clara County)",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -121.7996,
+        37.3398
+      ],
+      "camera": {
+        "center": [
+          -121.7998,
+          37.3388
+        ],
+        "zoom": 15.1,
+        "pitch": 55,
+        "bearing": -30
+      },
+      "acres": 113.5,
+      "acresNote": "About 113.5 gross acres: two parcels (APNs 649-23-001 and 649-24-013) at 2050-2079 South White Road in unincorporated east San José, the former Pleasant Hills and Cypress Greens golf courses (notice of preparation, Oct 2025). The County's parcels come to about 113.1 acres. A 0.6-acre house lot at 2079 Flint Avenue would be annexed with them but isn't part of the project.",
+      "program": {
+        "homes": 2000,
+        "affordableHomes": 321,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": 50000,
+        "hotelKeys": null,
+        "openSpaceAcres": 13.8,
+        "notes": "As proposed (notice of preparation, Oct 2025): around 2,000 homes, about 362 market-rate single-family houses (up to two stories, 30 ft), 1,017 market-rate townhouses (up to four stories, 55 ft), 300 market-rate apartments and 321 affordable apartments, the affordable ones in two seven-story mixed-use buildings up to 120 ft over up to 50,000 sq ft of ground-floor commercial space and parking. Up to 13.8 acres of open space: Park 1 (up to 5 acres), Park 2 (up to 3.4 acres) and about 5.4 acres along South White Road that may be set aside. The EIR is also to study a City-requested alternative with 2,850 homes."
+      },
+      "developer": "Lakeside Communities, LLC",
+      "publicPartners": [
+        "City of San José (lead agency; annexation, General Plan amendment and prezoning)",
+        "County of Santa Clara (current land use jurisdiction)"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In environmental review. San José issued a notice of preparation of an EIR on Oct 14, 2025 and took scoping comments until Nov 14, 2025. The applications ask for annexation into the City, a General Plan amendment, prezoning to Planned Development, a vesting tentative map and a Planned Development permit. No Draft EIR has been posted to CEQAnet as of Oct 19, 2026.",
+      "timeline": [
+        {
+          "date": "2025-10-14",
+          "event": "San José issues a notice of preparation of an EIR for the Pleasant Hills Golf Course Redevelopment Project (files GP22-010, Evergreen 204, PDC25-015, PD25-007, T25-004, ER23-050)."
+        },
+        {
+          "date": "2025-10-29",
+          "event": "Public scoping meeting at August Boeger Middle School."
+        },
+        {
+          "date": "2025-11-14",
+          "event": "Scoping comments close."
+        }
+      ],
+      "nextMilestone": "A Draft EIR (no date published).",
+      "summary": "The former Pleasant Hills and Cypress Greens golf courses in east San José, closed since 2004, proposed for about 2,000 homes: single-family houses and townhouses, plus two seven-story mixed-use buildings of affordable apartments over shops, around new parks. The 113.5-acre site is in unincorporated Santa Clara County and would be annexed to San José; its environmental review began in October 2025.",
+      "massingNotes": "Added at Matthew's request (2026-10-19). Boundary only (data/boundaries/pleasant-hills.geojson, official): the two Santa Clara County parcels (data.sccgov.org ubcd-cewv) the notice of preparation names, 649-23-001 and 649-24-013; 113.1 acres against its 113.5 gross acres. No massing: the design is a proposal at the notice-of-preparation stage; the notice's conceptual site plan (Figure 4) shows neighborhoods, not buildings.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/Project/2025100897"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/Project/2025100897",
+        "https://ceqanet.lci.ca.gov/2025100897",
+        "https://ceqanet.lci.ca.gov/2025100897/Attachment/Vo2HGJ",
+        "https://ceqanet.lci.ca.gov/2025100897/Attachment/lpp9sF",
+        "https://data.sccgov.org/d/ubcd-cewv"
+      ],
+      "verify": [
+        "the Draft EIR's date and project description (none on CEQAnet as of Oct 19, 2026; the City's active EIR page couldn't be reached)",
+        "the APN of the 0.6-acre parcel at 2079 Flint Avenue: the notice of preparation gives 649-21-014; its notice of completion, CEQAnet and the County's layer give 649-24-014",
+        "the annexation's progress with Santa Clara County LAFCO"
+      ],
+      "lastVerified": "2026-10-19"
+    },
+    {
+      "id": "santana-row",
+      "name": "Santana Row Master Plan Update",
+      "aliases": [
+        "Santana Row",
+        "Santana Row Master Plan Update Project"
+      ],
+      "city": "San José",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -121.9479,
+        37.3205
+      ],
+      "camera": {
+        "center": [
+          -121.9479,
+          37.3205
+        ],
+        "zoom": 16.0,
+        "pitch": 58,
+        "bearing": -75
+      },
+      "acres": 42.53,
+      "acresNote": "The notice of preparation (Feb 2026) gives an approximately 42.53-acre site at the southeast corner of Stevens Creek and Winchester boulevards, the same figure as its 2022 version, before the 0.54-acre Lot 22 was added. It names nine parcels, the lots that would change (APNs 277-33-017, -019 and -020, 277-40-029 and -031, and 277-38-003, -004, -005 and -012; about 5.9 acres). The County parcels inside the project boundary of its Figure 4 come to about 42.8 acres, Lot 22 included.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": 1500000,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "As proposed (revised notice of preparation, Feb 2026, Table 4.0-1): four office buildings with 1,500,000 sq ft in all, on Lot 1A/B/C at Stevens Creek and Winchester boulevards (700,000 sq ft, 144 ft tall), Lot 2B on Stevens Creek Boulevard (325,000 sq ft, 144 ft), Lot 10A on Olsen Drive (200,000 sq ft, 139 ft) and Lot 17 on Dudley Avenue (275,000 sq ft, 162 ft). The notice counts this as 1,272,081 sq ft more than the site's existing entitlement (file PDC13-050). The rezoning would allow up to approximately 2,780,000 sq ft of office in all, existing and proposed (the 2022 notice said office and commercial space), set a 150-ft height limit on Lots 1, 2B and 10A and 162 ft on Lot 17 (plus mechanical screening parapets), and add about 2,147 parking spaces, most of them on Lots 1 and 17. Lot 22, a 0.54-acre parcel added in 2026, would be a possible sign location. Table 4.0-1 lists office only. CEQAnet's record of the notice gives 4,240 employees. Santana Row today (the notice's Table 3.0-1): 834 homes built and 258 under construction of 1,229 approved; 214 of 220 approved hotel rooms; 584,395 sq ft of shops and restaurants and 606,535 sq ft of offices built; about 6,231 parking spaces."
+      },
+      "developer": "Federal Realty Investment Trust",
+      "publicPartners": [
+        "City of San José (lead agency; Planned Development rezoning and permits)"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In environmental review. San José issued a notice of preparation of an EIR for the Santana Row Master Plan Update in November 2022 and re-issued it on Feb 13, 2026 after Lot 22 was added, taking scoping comments until Mar 25, 2026. The project would need a new Planned Development rezoning and Planned Development permits. No Draft EIR had been posted to CEQAnet as of Oct 19, 2026.",
+      "timeline": [
+        {
+          "date": "2013-12-23",
+          "event": "San José issues a notice of preparation for the Santana Row Expansion (file PDC13-050): 1.91 acres added as Lot 17, 510,000 sq ft more office space, 55,641 sq ft more retail, 47 more homes and six more hotel rooms."
+        },
+        {
+          "date": "2015-03-23",
+          "event": "The Draft EIR for the Santana Row Expansion is published for comment (to May 6, 2015)."
+        },
+        {
+          "date": "2022-11-09",
+          "event": "San José issues a notice of preparation of an EIR for the Santana Row Master Plan Update (files PDC22-004 and ER22-107): four buildings with 1,500,000 sq ft of office and commercial space."
+        },
+        {
+          "date": "2022-11-17",
+          "event": "Public scoping meeting."
+        },
+        {
+          "date": "2026-02-13",
+          "event": "The City re-issues the notice of preparation, adding the 0.54-acre Lot 22."
+        },
+        {
+          "date": "2026-03-25",
+          "event": "Scoping comments close."
+        }
+      ],
+      "nextMilestone": "A Draft EIR (no date published).",
+      "summary": "A plan to add four office buildings, 1.5 million sq ft in all and 139 to 162 ft tall, to Santana Row, the 42.5-acre district of shops, restaurants, homes, offices and a hotel at Stevens Creek and Winchester boulevards in west San José. Federal Realty's application would rezone the site for about 1.27 million sq ft more office space than it is approved for, with about 2,147 new parking spaces; the City is preparing an EIR.",
+      "massingNotes": "Added at Matthew's request (2026-10-19). Boundary (data/boundaries/santana-row.geojson, approximate; pipeline/bam_pipeline/sites/boundary_santana_row.py): the notice of preparation names only the nine parcels that would change (5.9 acres), so the site is the Santa Clara County parcels (data.sccgov.org ubcd-cewv) inside the dashed project boundary of the notice's Figure 4, Lot Division Diagram (PDF p. 8), with those nine: 605 parcels, including the private streets and the condominium parcels inside the blocks, 42.8 acres against the notice's 42.53. Figure 4 was placed from its lot labels and fitted to the parcels by trimmed ICP of its dashed line (RMS 1.4 m). Illustrative massing (data/massing/santana-row.geojson, massing_santana_row.py): the four lots where Table 4.0-1 puts new offices, each the County parcels for its APNs, drawn as a whole-lot envelope at the table's height: Lot 1A/B/C 144 ft, Lot 2B 144 ft, Lot 10A 139 ft and Lot 17 162 ft. The notice shows no building design, so these are envelopes, not buildings; the parapets the rezoning would allow aren't drawn. The existing Santana Row buildings aren't drawn. All stage entitlement.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/Project/2013122059"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/Project/2013122059",
+        "https://ceqanet.lci.ca.gov/2013122059",
+        "https://ceqanet.lci.ca.gov/2013122059/2",
+        "https://ceqanet.lci.ca.gov/2013122059/3",
+        "https://ceqanet.lci.ca.gov/2013122059/3/Attachment/lrKplZ",
+        "https://ceqanet.lci.ca.gov/2013122059/3/Attachment/TUaXzI",
+        "https://ceqanet.lci.ca.gov/Project/2022110177",
+        "https://ceqanet.lci.ca.gov/2022110177",
+        "https://ceqanet.lci.ca.gov/2022110177/Attachment/TJVTCQ",
+        "https://data.sccgov.org/d/ubcd-cewv"
+      ],
+      "verify": [
+        "when the City approved the 2013 Santana Row Expansion (file PDC13-050) and certified its EIR: the notice of preparation calls PDC13-050 the site's existing zoning and entitlement and refers to a previously certified EIR, but CEQAnet holds no notice of determination for it",
+        "the 2,780,000 sq ft total: the 2026 notice calls it office (existing and proposed), the 2022 notice and Caltrans' 2026 comment letter office and commercial space; it is close to the approved commercial space (1,506,341 sq ft of shops, restaurants and offices) plus the 1,272,081 sq ft proposed",
+        "where each building would stand on its lot: the notice gives only floor area and height for each lot, so the map draws whole-lot envelopes",
+        "what stands on Lots 1A/B/C, 2B and 10A today and whether it would be replaced; the notice doesn't say",
+        "the number of new parking spaces: the notice gives about 2,147, but its lot-by-lot changes (1,460 more on Lot 1 and 831 more on Lot 17, 97 fewer on Lot 2B) come to 2,194",
+        "the site's area: 42.53 acres in both the 2022 and 2026 notices, although Lot 22 (about 0.54 acres) was added in 2026",
+        "the Draft EIR's date (none on CEQAnet as of Oct 19, 2026; the City's active EIR page couldn't be reached)"
+      ],
+      "lastVerified": "2026-10-19"
+    },
+    {
+      "id": "gateway-crossings",
+      "name": "Gateway Crossings",
+      "aliases": [
+        "Gateway Crossings Project",
+        "1205 Coleman Avenue"
+      ],
+      "city": "Santa Clara",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -121.9342,
+        37.3553
+      ],
+      "camera": {
+        "center": [
+          -121.9342,
+          37.3551
+        ],
+        "zoom": 16.2,
+        "pitch": 55,
+        "bearing": -58
+      },
+      "acres": 21.4,
+      "acresNote": "About 21.4 acres at 1205 Coleman Avenue (notice of determination, July 2019); CEQAnet records the site as APNs 230-46-069 and 230-46-070. The County has since replaced those two parcels with new lots and streets; drawn from them, the site comes to about 21.3 acres. A 2021 City study for a neighbouring hotel describes the site as approximately 24 acres.",
+      "program": {
+        "homes": 1565,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": 197000,
+        "retailSqft": 45000,
+        "hotelKeys": 225,
+        "openSpaceAcres": 2.6,
+        "notes": "As approved: 1,565 homes and 197,000 sq ft of commercial uses, including a 225-room hotel and 45,000 sq ft of ancillary retail, with two public parks totaling about 2.6 acres, structured and surface parking, private streets and a new public street (notice of determination, July 9, 2019). A 2021 City study puts the hotel at 152,000 sq ft and describes the project as a phased development. The 2017 notice of preparation studied up to 1,600 homes and 215,000 sq ft of commercial space. The number of affordable homes, the building heights and the site plan are in the April 2018 Draft EIR, which isn't posted on CEQAnet and couldn't be read."
+      },
+      "developer": "Hunter Storm Properties",
+      "publicPartners": [
+        "City of Santa Clara (lead agency)"
+      ],
+      "stage": "entitled",
+      "stageNote": "Approved. The City of Santa Clara approved the project on July 9, 2019, with its EIR, a statement of overriding considerations, a vesting tentative subdivision map and a development agreement. A City study of March 2021 for a hotel across Coleman Avenue described the site as vacant, and VTA's February 2024 fact sheet for its Santa Clara BART station calls Gateway Crossings a future development. The County's parcel map now shows the site divided into new lots and streets, which suggests a final subdivision map has recorded, but that is not evidence of construction, and no building permit or construction record could be checked.",
+      "timeline": [
+        {
+          "date": "2017-02-22",
+          "event": "Santa Clara issues a notice of preparation for an EIR on Gateway Crossings: a General Plan amendment to allow 51 to 100 homes per acre with a minimum commercial floor area ratio of 0.20, and a rezoning. CEQAnet lists up to 1,600 homes and 215,000 sq ft of commercial space."
+        },
+        {
+          "date": "2018-04-10",
+          "event": "The Draft EIR is released for comment, until May 24, 2018."
+        },
+        {
+          "date": "2019-07-09",
+          "event": "The City of Santa Clara approves the project with its EIR, a vesting tentative subdivision map and a development agreement: 1,565 homes and 197,000 sq ft of commercial uses, including a 225-room hotel and 45,000 sq ft of retail, with two public parks of about 2.6 acres."
+        },
+        {
+          "date": "2026-06-12",
+          "event": "Santa Clara issues a notice of preparation for the Santa Clara Station Area Specific Plan, whose plan area takes in the Gateway Crossings lots."
+        }
+      ],
+      "nextMilestone": null,
+      "summary": "A 21-acre former industrial site on Coleman Avenue in Santa Clara, beside the Santa Clara Caltrain station where BART's Silicon Valley extension is planned to end, approved in 2019 for 1,565 homes, a 225-room hotel and 45,000 sq ft of shops, with two public parks. Part of the site was a factory that built military tracked vehicles until 1996. It lies inside the area of the City's Santa Clara Station Area Specific Plan, whose environmental review began in 2026.",
+      "massingNotes": "Added at Matthew's request (2026-10-19). The site lies inside the Santa Clara Station Area Specific Plan area (santa-clara-station-area), which is drawn separately; Gateway Crossings is shown as its own project because it has its own approval. Boundary (data/boundaries/gateway-crossings.geojson, official): the Santa Clara County parcels (data.sccgov.org ubcd-cewv) that replaced the approval's two APNs, 230-60-001 to -008 and -010, and the four unnumbered street lots between them; 21.3 acres against the approval's 21.4. No massing: the site plan and building heights are in the April 2018 Draft EIR, which isn't posted on CEQAnet, and the City's site couldn't be reached.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/Project/2017022066"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/Project/2017022066",
+        "https://ceqanet.lci.ca.gov/2017022066",
+        "https://ceqanet.lci.ca.gov/2017022066/2",
+        "https://ceqanet.lci.ca.gov/2017022066/3",
+        "https://ceqanet.lci.ca.gov/2017022066/3/Attachment/d5qjId",
+        "https://ceqanet.lci.ca.gov/2021030592/Attachment/4isyVj",
+        "https://ceqanet.lci.ca.gov/2026060462",
+        "https://ceqanet.lci.ca.gov/2026060462/Attachment/mtsQbf",
+        "https://www.vta.org/sites/default/files/2024-02/bsv_santa-clara-fact-sheet.pdf",
+        "https://data.sccgov.org/d/ubcd-cewv"
+      ],
+      "verify": [
+        "whether construction has started: the County's parcel layer now shows the site as new lots with street addresses (1200 Rickabaugh Way, 330 Chastain Place), which suggests a final map has recorded, but Santa Clara's permit records and project pages (santaclaraca.gov) couldn't be reached; the latest official documents read (March 2021, February 2024) describe the site as vacant or the development as future",
+        "the number of affordable homes, the building heights and the site plan, which are in the April 2018 Draft EIR and the approval's resolutions; neither is posted on CEQAnet and the City's site couldn't be reached",
+        "any change to the approval since July 2019, such as an amendment to the development agreement; no later CEQA document for the project is on CEQAnet",
+        "the site area: the notice of determination says about 21.4 acres and a 2021 City study about 24 acres; the boundary is drawn from the lots that replaced the approval's two APNs and comes to 21.3 acres",
+        "the developer: the 2019 notice names Hunter Storm Properties as applicant; who is building each phase now hasn't been confirmed from an official source"
+      ],
+      "lastVerified": "2026-10-19"
+    },
+    {
+      "id": "berkeley-space-center",
+      "name": "Berkeley Space Center",
+      "aliases": [
+        "Berkeley Air & Space Center at NASA Research Park",
+        "Berkeley Space Center at NASA Research Park",
+        "UC Berkeley at NASA Ames"
+      ],
+      "city": "Moffett Field",
+      "county": "Santa Clara",
+      "subregion": "South Bay",
+      "category": "buildings",
+      "approxCenter": [
+        -122.0547,
+        37.4091
+      ],
+      "camera": {
+        "center": [
+          -122.0547,
+          37.4088
+        ],
+        "zoom": 15.9,
+        "pitch": 58,
+        "bearing": -20
+      },
+      "acres": 39,
+      "acresNote": "The joint Final EIR/EIS (Aug 2026, p. 2-4) gives an approximately 39-acre Project Site, plus about 6 acres of off-site utility and demolition work (45 acres in all). The 2024 notice of preparation described a 36-acre site, the size of the 2020 Enhanced Use Lease (p. 2-3); the leased parcel boundary measures 34.92 acres (p. 2-28). The site line traced from the project's land use plan measures 39.3 acres.",
+      "program": {
+        "homes": 145,
+        "affordableHomes": null,
+        "affordablePct": 10,
+        "officeLabSqft": 2000000,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": 100,
+        "openSpaceAcres": 10,
+        "notes": "Maximums for the CEQA Proposed Project (NEPA Build Alternative 1), about 2.32 million sq ft in all (Final EIR/EIS Table 2-3): 2,000,000 sq ft of research and office uses (350,000 office, 1,390,000 lab and R&D, 260,000 academic), a 25,000 sq ft conference center, 90,000 sq ft of publicly accessible active uses (retail, food, maker space and similar), 130,000 sq ft of student and faculty housing (about 145 units, used by UC students and faculty for a semester to an academic year; at least 10 percent affordable at 80 percent of area median income) and 75,000 sq ft of short-term lodging (about 100 units), plus two parking garages. At least 10 acres of publicly accessible open space, around a Central Green. Buildings up to 80 ft (30 ft in the Central Green), with up to 25 ft more for mechanical screens. The Reduced Density Alternative (NEPA Build Alternative 2) has 1.08 million sq ft of research and office uses (1.4 million sq ft in all) and could also be approved; a variant would replace the housing with 130,000 sq ft of research space."
+      },
+      "developer": "Moffett Partners, LLC (a joint venture of the UC Regents and SKSP NRP, LLC; SKS Partners is its development manager)",
+      "publicPartners": [
+        "NASA Ames Research Center (landowner under an Enhanced Use Lease; NEPA lead agency and final decision-maker)",
+        "The Regents of the University of California (CEQA lead agency; joint venture partner)"
+      ],
+      "stage": "entitlement",
+      "stageNote": "In review. On Sept 16, 2026 the University of California, as CEQA lead agency, authorized Moffett Partners to submit the project to NASA, adopting CEQA findings, a statement of overriding considerations and a mitigation monitoring and reporting program. NASA, which owns the land, is the final decision-maker: it must still issue a Record of Decision under NEPA and approve the project before it issues construction permits. No NASA decision could be checked as of Oct 19, 2026.",
+      "timeline": [
+        {
+          "date": "2002",
+          "event": "NASA completes a programmatic environmental impact statement and Record of Decision for the NASA Ames Development Plan, which includes the NASA Research Park where the site lies."
+        },
+        {
+          "date": "2019",
+          "event": "NASA invites the UC Regents to explore developing the site for research, professional education and housing."
+        },
+        {
+          "date": "2020-11-01",
+          "event": "The UC Regents and NASA enter into an Enhanced Use Lease for about 36 acres in the NASA Research Park."
+        },
+        {
+          "date": "2021-05",
+          "event": "The UC Regents authorize UC Berkeley to form a joint venture with SKSP NRP, LLC, creating Moffett Partners, LLC, for the project."
+        },
+        {
+          "date": "2022-12",
+          "event": "The Enhanced Use Lease is assigned to an affiliate of Moffett Partners, LLC."
+        },
+        {
+          "date": "2024-06-21",
+          "event": "UC Berkeley issues the notice of preparation for a joint EIR/EIS with NASA (SCH 2024060942); NASA's notice of intent follows on June 26, 2024."
+        },
+        {
+          "date": "2026-04-24",
+          "event": "UC Berkeley and NASA release the joint Draft EIR/EIS for public review through June 10, 2026."
+        },
+        {
+          "date": "2026-08-28",
+          "event": "UC Berkeley and NASA publish the joint Final EIR/EIS."
+        },
+        {
+          "date": "2026-09-16",
+          "event": "The University of California authorizes submittal of the project to NASA for its review and approval, with CEQA findings, a statement of overriding considerations and a mitigation program; the notice of determination is filed the next day."
+        }
+      ],
+      "nextMilestone": "NASA's Record of Decision on the project. The Final EIR/EIS plans construction in four phases from 2027 to 2040, with the first buildings occupied in 2032.",
+      "summary": "A research campus planned by Moffett Partners, a joint venture of the UC Regents and SKSP NRP, on about 39 acres of federal land at NASA Ames Research Center beside Hangar One, under a 2020 lease from NASA. It would add up to 2.3 million sq ft, mostly labs and offices, with a conference center, about 145 student and faculty housing units, about 100 short-term lodging units and a Central Green. The University approved sending the project to NASA in September 2026; NASA makes the final decision.",
+      "massingNotes": "Added at Matthew's request (2026-10-19). Boundary (data/boundaries/berkeley-space-center.geojson): traced, the Project Site line of the Land Use Plan in the project's Development Guidelines (Spring 2026, p. 29; Appendix 2-1 to the joint Final EIR/EIS, the same plan as its Figure 2-6), fitted to OpenStreetMap building footprints (median 0.7 m) and checked against the plan's scale bar (within 0.3%); 39.3 acres as drawn against about 39. It includes the realigned Wescoat, Cody and Girard roads along the edges; the 6 acres of off-site work are not drawn. No county parcel draws the site: APN 116-18-012 is all of NASA Ames. Land use (data/landuse/berkeley-space-center.geojson): the plan's Subareas traced from the same plan (Subareas 1 to 6 measure 20.8 acres against the Master Plan's 20.84), with the Central Green and other open space. No buildings are drawn: the EIR/EIS studies a development envelope (80 ft, 30 ft in the Central Green), not a building design.",
+      "officialLinks": [
+        "https://ceqanet.lci.ca.gov/Project/2024060942",
+        "https://ceqanet.lci.ca.gov/2024060942/3"
+      ],
+      "sources": [
+        "https://ceqanet.lci.ca.gov/Project/2024060942",
+        "https://ceqanet.lci.ca.gov/2024060942/1",
+        "https://ceqanet.lci.ca.gov/2024060942/1/Attachment/S_oNVj",
+        "https://ceqanet.lci.ca.gov/2024060942/2",
+        "https://ceqanet.lci.ca.gov/2024060942/3",
+        "https://ceqanet.lci.ca.gov/2024060942/3/Attachment/G8IBj9",
+        "https://ceqanet.lci.ca.gov/2024060942/3/Attachment/YBGZ4B",
+        "https://ceqanet.lci.ca.gov/2024060942/3/Attachment/fMsT4z",
+        "https://ceqanet.lci.ca.gov/2024060942/4",
+        "https://ceqanet.lci.ca.gov/2024060942/4/Attachment/jfwLes"
+      ],
+      "verify": [
+        "whether NASA has issued its Record of Decision and approved the project: the Final EIR/EIS says NASA will decide after the University's action and a 30-day waiting period, but NASA's site and the Federal Register could not be reached on Oct 19, 2026",
+        "which alternative NASA approves: the 2.3 million sq ft Proposed Project or the 1.4 million sq ft Reduced Density Alternative, which the EIR/EIS names the environmentally superior alternative; it says either could be approved",
+        "the length and terms of the 2020 Enhanced Use Lease: the Final EIR/EIS gives its date, its size (about 36 acres) and its 2022 assignment, but not its term",
+        "who took the Sept 16, 2026 action and in what form: the notice of determination names the University of California, is signed by UC's Director of Physical and Environmental Planning, and says it 'authorized submittal' to NASA; the Regents' agenda and minutes could not be opened, and the notice doesn't say in so many words that the EIR was certified",
+        "the housing count: the Final EIR/EIS gives about 145 student and faculty units and about 100 short-term lodging units; the notice of determination says 'up to 300 units of student/faculty housing and short-term lodging'",
+        "the EPA Settlement Agreement and Covenant Not to Sue for the contaminated site, still in draft in August 2026, which the lease requires"
+      ],
+      "lastVerified": "2026-10-19",
+      "reported": {
+        "note": "Reported by the press or UC Berkeley's news office but not confirmed by an official source opened for this record (Matthew, 2026-10-02: official sources only). These come from web search summaries; none of the articles could be opened from this session on Oct 19, 2026, so each needs reading before use.",
+        "timeline": [
+          {
+            "date": "2023-10-16",
+            "event": "UC Berkeley, NASA Ames and SKS Partners announce the Berkeley Space Center: 36 acres leased from NASA, up to 1.4 million sq ft of research space, first buildings possibly ready in 2027."
+          }
+        ],
+        "program.notes": "A budget of about $2 billion; roughly 10 percent of the space for UC Berkeley and about 1 million sq ft for private tenants; CBRE as leasing agent (Bisnow, Oct 2023).",
+        "sources": [
+          "https://news.berkeley.edu/?p=120022",
+          "https://www.kqed.org/science/1984704/a-new-berkeley-space-center-is-coming-to-silicon-valley",
+          "https://www.bisnow.com/san-francisco/news/construction-development/sks-partners-uc-berkeley-and-nasa-to-bring-2b-rd-center-to-silicon-valley-121131",
+          "https://www.asce.org/publications-and-news/civil-engineering-source/civil-engineering-magazine/article/2023/12/berkeley-space-center-plans-unveiled-for-silicon-valley"
+        ]
+      }
+    },
+    {
       "id": "300-lake-street",
       "name": "300 Lake Street",
       "aliases": [

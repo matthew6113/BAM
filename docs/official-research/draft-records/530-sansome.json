@@ -1,0 +1,133 @@
+{
+  "id": "530-sansome",
+  "name": "530 Sansome Mixed-Use Tower and Fire Station 13",
+  "aliases": [
+    "447 Battery and 530 Sansome Street Project",
+    "447 Battery/530 Sansome",
+    "530 Sansome Street",
+    "Fire Station 13"
+  ],
+  "city": "San Francisco",
+  "county": "San Francisco",
+  "subregion": "San Francisco",
+  "category": "buildings",
+  "approxCenter": [-122.4011, 37.7955],
+  "camera": {
+    "center": [-122.4010, 37.7953],
+    "zoom": 16.5,
+    "pitch": 58,
+    "bearing": -40
+  },
+  "acres": 0.57,
+  "acresNote": "Draft EIR and Notice of Determination: four lots on Assessor's Block 0206 (Lots 002, 013, 014 and 017), 24,830 sq ft, about 0.57 acres, on the block bounded by Sansome, Washington, Battery and Merchant streets.",
+  "program": {
+    "homes": null,
+    "affordableHomes": null,
+    "affordablePct": null,
+    "officeLabSqft": 417770,
+    "commercialSqftTotal": null,
+    "retailSqft": 27030,
+    "hotelKeys": 200,
+    "openSpaceAcres": null,
+    "notes": "As approved in 2025 (Notice of Determination): a 41-story tower about 544 ft tall (574 ft with its rooftop mechanical equipment) with between 372,580 and 417,770 sq ft of office and between 128,010 and 189,130 sq ft of hotel (about 100 to 200 rooms), as five middle floors may be either; about 27,030 sq ft of café, restaurant, ballroom and meeting space on levels 1 to 3; and 74 parking spaces in three basement levels. Figures shown are the maximums. No homes. A separate four-story, 55-ft Fire Station 13 of about 31,200 sq ft (with its basement) replaces the 1974 station at 530 Sansome Street. Merchant Street between Sansome and Battery becomes a shared street with about 10,364 sq ft of privately maintained public open space."
+  },
+  "developer": "EQX Jackson SQ Holdco LLC",
+  "publicPartners": [
+    "San Francisco Planning Commission",
+    "San Francisco Recreation and Park Commission",
+    "San Francisco Board of Supervisors",
+    "San Francisco Fire Department",
+    "San Francisco Real Estate Division"
+  ],
+  "stage": "entitled",
+  "stageNote": "Approved in 2025: the Planning Commission certified the EIR on July 17, 2025, and the Board of Supervisors approved the project's legislation (general plan, zoning and Planning Code amendments, development agreement, land exchange and hotel incentive agreement) on Oct 21; the Mayor signed it on Oct 27, 2025. The City's fire station lot is to be exchanged for 447 Battery Street before construction begins. No building permit for this design had been filed as of Oct 19, 2026.",
+  "timeline": [
+    {
+      "date": "2021-07-29",
+      "event": "Planning Commission approves an earlier, 19-story hotel project with a replacement fire station on the Sansome and Washington Street lots (Motions 20955 to 20958, Resolution 20954)."
+    },
+    {
+      "date": "2024-03-21",
+      "event": "Planning Commission takes up extending the 2021 approvals; the EIR's responses to comments say the extensions were approved in early 2024."
+    },
+    {
+      "date": "2024-08-05",
+      "event": "Planning application for the current project, a 41-story tower and a new Fire Station 13 at 447 Battery Street (record 2024-007066PRJ)."
+    },
+    {
+      "date": "2024-11-08",
+      "event": "Planning issues the notice of preparation of an EIR."
+    },
+    {
+      "date": "2025-03-12",
+      "event": "Draft EIR published; comments taken until April 28, 2025."
+    },
+    {
+      "date": "2025-04-17",
+      "event": "Planning Commission hearing on the Draft EIR."
+    },
+    {
+      "date": "2025-05-15",
+      "event": "Planning Commission hears an informational presentation and a request to initiate the General Plan amendments."
+    },
+    {
+      "date": "2025-07-03",
+      "event": "Responses to comments on the Draft EIR published."
+    },
+    {
+      "date": "2025-07-17",
+      "event": "At a joint hearing with the Recreation and Park Commission, the Planning Commission certifies the Final EIR (Motion 21773) and recommends the project's legislation to the Board of Supervisors."
+    },
+    {
+      "date": "2025-10-21",
+      "event": "Board of Supervisors approves the project's legislation, including the development agreement and the 530 Sansome special use district."
+    },
+    {
+      "date": "2025-10-27",
+      "event": "The Mayor signs the legislation, the project's final approval."
+    }
+  ],
+  "nextMilestone": "Building permits and the land exchange. The EIR's preliminary schedule had about 39 months of construction starting in 2027.",
+  "summary": "A 41-story office and hotel tower about 544 ft tall on the block of Sansome, Washington, Battery and Merchant streets at the edge of Jackson Square, with a new four-story Fire Station 13 that the developer builds for the City on the 447 Battery Street lot. It replaces the 1974 fire station at 530 Sansome Street and three commercial buildings, among them the landmark Jones-Thierbach Coffee Company building, whose designation the approved legislation conditionally rescinds. The City approved it in 2025.",
+  "massingNotes": "Added at Matthew's request (2026-10-19): the tower near Jackson Square that replaces a fire station. Boundary: DataSF parcels (acdm-wktn), block 0206 lots 002, 013, 014 and 017, the four lots the EIR and the Notice of Determination name (about 0.57 acres as drawn; 24,830 sq ft in the EIR). Massing (pipeline/bam_pipeline/sites/massing_530_sansome.py): the tower as six steps 165 ft wide, set out from the Draft EIR's dimensioned floor plans (Figures 2-15 to 2-19) from the Sansome and Washington corner, narrowing from 96 ft 6 in to 60 ft deep at the levels in the building section (Figure 2-8), to the roof at about 544 ft; the east end of its three-story base at 63 ft; and the fire station over the 447 Battery Street lot at 55 ft. Illustrative, drawn as entitled.",
+  "officialLinks": [
+    "https://sfplanning.org/environmental-review-documents?title=530%20Sansome",
+    "https://ceqanet.lci.ca.gov/Project/2024110311"
+  ],
+  "sources": [
+    "https://ceqanet.lci.ca.gov/Project/2024110311",
+    "https://ceqanet.lci.ca.gov/2024110311/1",
+    "https://ceqanet.lci.ca.gov/2024110311/2/Attachment/NHEHNp",
+    "https://ceqanet.lci.ca.gov/2024110311/3/Attachment/dFOxC_",
+    "https://ceqanet.lci.ca.gov/2024110311/4/Attachment/BML5I0",
+    "https://sfplanning.org/environmental-review-documents?title=530%20Sansome",
+    "https://sfplanning.org/sites/default/files/agendas/2024-03/20240321_cpc%20%28ID%201425983%29.pdf",
+    "https://sfplanning.org/sites/default/files/agendas/2025-04/20250417_cpc%20%28ID%201505632%29.pdf",
+    "https://sfplanning.org/sites/default/files/agendas/2025-05/20250515_cpc%20%28ID%201511160%29.pdf",
+    "https://sfplanning.org/sites/default/files/agendas/2025-07/20250717_cpc_jnt_RecPark%20%28ID%201522127%29.pdf",
+    "https://data.sf.gov/resource/qvu5-m3a2.json?record_id=2024-007066PRJ",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2024-007066PCA",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2024-007066GPR",
+    "https://data.sf.gov/resource/y673-d69b.json?record_id=2024-007066OFA",
+    "https://data.sf.gov/resource/6jgi-cpb4.json?blklot=0206017",
+    "https://data.sf.gov/resource/5yf5-ms5f.json?name=530%20Sansome%20Mixed-Use%20Tower%20and%20Fire%20Station%20SUD",
+    "https://data.sf.gov/resource/h9wh-cg3m.json?height=555-X",
+    "https://data.sf.gov/resource/i98e-djp9.json?block=0206&lot=017",
+    "https://data.sf.gov/d/acdm-wktn"
+  ],
+  "verify": [
+    "the ordinance numbers of the Board's October 2025 legislation (files 250697, 250698, 250764, 250802, 250803 and 250804), which are on a site this research couldn't open",
+    "the Planning Commission's motion numbers for its other July 17, 2025 actions (only the EIR certification, Motion 21773, was confirmed)",
+    "the final split between office and hotel floors, and the hotel's room count (100 to 200)",
+    "when construction starts: no building permit for this design had been filed as of Oct 19, 2026",
+    "the 530 Sansome special use district's polygon in the City's zoning layer, which doesn't match the four lots the EIR names"
+  ],
+  "lastVerified": "2026-10-19",
+  "reported": {
+    "note": "Found by web search but not opened (the press sites couldn't be reached from this session) and not confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until an official source confirms it.",
+    "developer": "Related California, through its affiliate EQX Jackson SQ Holdco LLC",
+    "sources": [
+      "https://sfyimby.com/2025/10/41-story-office-tower-approved-for-530-sansome-street-san-francisco.html"
+    ]
+  }
+}

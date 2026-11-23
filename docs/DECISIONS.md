@@ -346,3 +346,18 @@ and One Oak and 98 Franklin at Van Ness and Market. Potrero Yard, an SFMTA bus g
 it can move to Buildings if Matthew prefers. 1338 Mission Street wasn't added: its environmental review was cancelled and its
 authorization withdrawn. None has massing.
 
+
+## 2026-11-23: the Oct 19 pull request closed, its last nine projects added (Matthew)
+
+Matthew: "close #42 and add those nine projects". Pull request #42 (Oct 19, 23 projects) had sat open while most of its
+San Francisco projects reached the map from later research (Oct 21 to Nov 4). It is closed without merging, and the nine
+it alone held are added from a fresh branch: `530-sansome`, `536-mission`, `mission-point`, `seely-avenue`,
+`freedom-circle`, `pleasant-hills`, `santana-row`, `gateway-crossings` and `berkeley-space-center`, with the records,
+boundaries, massing and research notes of the Oct 19 pass. `gateway-crossings` sits inside the mapped
+`santa-clara-station-area` plan; Matthew chose on Oct 19 to draw it as its own project.
+
+Left on the closed branch (`claude/pensive-wozniak-ymmb75`), not carried over: its records, research notes and massing
+for the projects the map already has from the later research (traced or placeholder massing for One Oak, 98 Franklin,
+Transbay Parcel F, 524 Howard, 598 Brannan, 725 Harrison, Freedom West, the Matson Block, 400 2nd Street and San
+Francisco Gateway, none of which has massing on the map). Using that massing means reconciling each with the mapped
+record and boundary first; it is Matthew's call.
