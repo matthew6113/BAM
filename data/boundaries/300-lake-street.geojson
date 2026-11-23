@@ -1,0 +1,50 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "300-lake-street",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 1354, lot 001",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%271354001%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The lot the Planning Department's preliminary project submittals for 300 Lake Street name (2026-010218PPS and 2026-010219PPS, parcel 1354001), which describe an approximately 6.14-acre site. Added Nov 23, 2026, after the citywide scan. 6.2 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4632302,
+       37.7887936
+      ],
+      [
+       -122.4618932,
+       37.7890589
+      ],
+      [
+       -122.4619112,
+       37.7869094
+      ],
+      [
+       -122.4630901,
+       37.7868561
+      ],
+      [
+       -122.4632302,
+       37.7887936
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -3,11 +3,11 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
-## 2026-11-23 (300 Lake Street added, unmapped)
+## 2026-11-23 (300 Lake Street added)
 
-Matthew sent a Chronicle article on a 307-home proposal for the Little Sisters of the Poor property by the Presidio and asked for it on the map; with no official record yet, he chose to add it unmapped. The article could not be opened (the host is not reachable from the session), so only its headline was read. The Planning Department's records on DataSF (project and case records, current through Nov 20, 2026) and the Development Pipeline hold no housing application on the lot; Matthew notes the filing was posted Nov 23. `_meta.lastVerified` moves to 2026-11-23 for this record only; no other project was re-checked.
+Matthew sent a Chronicle article on a 307-home proposal for the Little Sisters of the Poor property by the Presidio and asked for it on the map. The article could not be opened (the host is not reachable from the session) and nothing from it is used. DataSF's copy of the Planning Department's records ran only to Nov 20, so the project was first added unmapped; Matthew then asked for a direct search, and the two filings were read in the city's Accela public portal (`aca-prod.accela.com/ccsf/`, now listed in `src/projects/official.ts` as the city's own path on a shared vendor host). `_meta.lastVerified` moves to 2026-11-23 for this record only; no other project was re-checked.
 
-- **300-lake-street** (new, buildings, not mapped): proposed. Official facts only: the Little Sisters' home at 300 Lake Street, lot 1354/001, about 6.2 acres, zoned RH-3 (DataSF parcels), with a 1977 conditional use for the care home's reconstruction (CU77.056). The 307 homes are in `reported`, from the Chronicle headline. No boundary file, so it stays off the map; the site, home count, developer, pathway and the application itself are in `verify`.
+- **300-lake-street** (new, buildings): proposed. 307 homes on the approximately 6.14-acre Little Sisters of the Poor site at 300 Lake Street after demolition of the existing structures: a 262-unit rental building fronting Lake Street with below-grade parking and 45 for-sale detached townhomes, 10% (about 31) affordable at 50% AMI; 438,925 sq ft residential, up to 8 stories, 352 parking spaces. Two preliminary project submittals, both "Submitted": 2026-010218PPS (Government Code 65941.1, standards fixed as of Nov 23, 2026) and 2026-010219PPS (notice of intent under 65913.4). Neither is a development application. Applicant not shown on the public pages, so `developer` is empty and in `verify`. Boundary: lot 1354/001 from DataSF parcels, official (6.2 acres as drawn; 6.14 stated). No massing: no plans.
 
 ## 2026-11-04 (sixteen San Francisco projects added)
 
