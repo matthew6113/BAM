@@ -142,6 +142,14 @@ SPECS = {
         "note": "The two lots the Planning Department's record (2026-004681PRJ, lot 009) and the city's pipeline (lot 050) name for the Replacement Hospital Project; the records don't list the site's lots or area. Lot 050 holds Kaiser Foundation Hospital's garages at 2130 and 2190 O'Farrell Street (2015-003372MIS). Lot 038 (2201 Geary Boulevard) on the same block isn't named and isn't drawn.",
         "license": 'ODC Public Domain Dedication and License (DataSF)',
     },
+    '300-lake-street': {
+        "label": 'DataSF parcels',
+        **ob.socrata(ob.DATASF, ob.SF_PARCELS, "blklot in ('1354001')"),
+        "layer": 'DataSF Parcels – Active and Retired, block 1354, lot 001',
+        "accuracy": 'official',
+        "note": "The lot the Planning Department's preliminary project submittals for 300 Lake Street name (2026-010218PPS and 2026-010219PPS, parcel 1354001), which describe an approximately 6.14-acre site. Added Nov 23, 2026, after the citywide scan.",
+        "license": 'ODC Public Domain Dedication and License (DataSF)',
+    },
 }
 
 

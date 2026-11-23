@@ -10465,6 +10465,80 @@
           "https://www.asce.org/publications-and-news/civil-engineering-source/civil-engineering-magazine/article/2023/12/berkeley-space-center-plans-unveiled-for-silicon-valley"
         ]
       }
+    },
+    {
+      "id": "300-lake-street",
+      "name": "300 Lake Street",
+      "aliases": [
+        "Little Sisters of the Poor",
+        "St. Anne's Home"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.4625,
+        37.7879
+      ],
+      "camera": {
+        "center": [
+          -122.4625,
+          37.7879
+        ],
+        "zoom": 16.3,
+        "pitch": 55,
+        "bearing": -45
+      },
+      "acres": 6.14,
+      "acresNote": "The preliminary project submittals describe an \"approximately 6.14-acre site\". Lot 1354/001, the parcel they name, comes to about 6.2 acres in DataSF's parcel map.",
+      "program": {
+        "homes": 307,
+        "affordableHomes": 31,
+        "affordablePct": 10,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "307 homes after demolishing the existing structures: a 262-unit multifamily rental building fronting Lake Street with below-grade parking, and 45 for-sale detached townhomes on the rest of the site. Ten percent of the homes (about 31) would be affordable to very low-income households (50% of area median income). The submittals list 438,925 sq ft of residential space, up to 8 stories, 352 parking spaces, and 40 studios, 126 one-bedroom, 84 two-bedroom and 57 three-bedroom or larger homes; the 127,000 sq ft of institutional space on the site would be removed (2026-010218PPS, 2026-010219PPS)."
+      },
+      "developer": null,
+      "publicPartners": [
+        "San Francisco Planning Department"
+      ],
+      "stage": "proposed",
+      "stageNote": "Preliminary filings only, with no development application yet. Two preliminary project submittals are on file with the Planning Department, both marked submitted: one to fix the planning standards that apply as of Nov 23, 2026 (Government Code section 65941.1), and one as notice of intent to apply under the state's streamlined approval law (section 65913.4). Each says it \"is not a development application\".",
+      "timeline": [
+        {
+          "date": "1977-12-01",
+          "event": "A conditional use for reconstruction of the Little Sisters care home at 300 Lake Street is approved (CU77.056)."
+        },
+        {
+          "date": "2026-11-23",
+          "event": "Preliminary project submittals for 307 homes are on file with the Planning Department, fixing the applicable standards as of this date (2026-010218PPS) and giving notice of intent to apply under the state's streamlined approval law (2026-010219PPS)."
+        }
+      ],
+      "nextMilestone": "A development application to the Planning Department; no date published.",
+      "summary": "A proposal for 307 homes on the Little Sisters of the Poor's 6.14-acre property at 300 Lake Street, on the block south of the Presidio: a 262-unit rental building fronting Lake Street and 45 for-sale townhomes, with about 31 homes affordable to very low-income households, after the existing structures come down. Only preliminary filings have been made, in November 2026, signalling an application under the state's streamlined approval law.",
+      "massingNotes": "Boundary: DataSF parcels (acdm-wktn, ODC-PDDL), block 1354 lot 001, the parcel the preliminary project submittals name; about 6.2 acres as drawn against the 6.14 they state (pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py). No massing is drawn: the records read carry no plans.",
+      "officialLinks": [],
+      "sources": [
+        "https://aca-prod.accela.com/ccsf/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00BJ3&agencyCode=CCSF",
+        "https://aca-prod.accela.com/ccsf/Cap/CapDetail.aspx?Module=Planning&TabName=Planning&capID1=26CAP&capID2=00000&capID3=00BJ4&agencyCode=CCSF",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=CU77.056",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2022-010510PRL",
+        "https://data.sf.gov/d/acdm-wktn"
+      ],
+      "verify": [
+        "the applicant and developer, which the public record pages don't show",
+        "the date the submittals were filed (the records fix standards as of Nov 23, 2026; DataSF's copy of Planning's records ran only to Nov 20 when checked)",
+        "building heights in feet (the submittals give 8 stories) and the plans",
+        "car share spaces: one submittal lists 200, the other 2",
+        "what happens to the Little Sisters' existing home and its residents",
+        "the Chronicle article that prompted the record (sfchronicle.com, article 22535887), which could not be opened; nothing from it is used"
+      ],
+      "lastVerified": "2026-11-23"
     }
   ]
 }

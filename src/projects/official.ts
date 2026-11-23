@@ -100,6 +100,9 @@ const OFFICIAL_PREFIXES = [
   'webapi.legistar.com/v1/solano/', // Solano County
   'granicus_production_attachments.s3.amazonaws.com/dublin/', // City of Dublin agendas and staff reports
   'storage.googleapis.com/proudcity/solanocountylafcoca/', // Solano LAFCo's file store (linked from solanolafco.gov)
+  // The City and County of San Francisco's Accela public portal, where the Planning Department's records are
+  // filed and which its Property Information Map links for each record (added 2026-11-23)
+  'aca-prod.accela.com/ccsf/',
   // ArcGIS Online organisations
   'services9.arcgis.com/ugpgsv1ugl0phsgx/', // City of Brisbane
   'services7.arcgis.com/urrq0o3z2aaiiwyu/', // City of Menlo Park
