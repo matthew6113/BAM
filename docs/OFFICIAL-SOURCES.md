@@ -123,6 +123,15 @@ network access; the "Update with full network access" sections in `docs/official
 supersede it.
 
 ### Next
+- The nine projects carried over on 2026-11-23 from the Oct 19 pass (`530-sansome`, `536-mission`, `mission-point`,
+  `seely-avenue`, `freedom-circle`, `pleasant-hills`, `santana-row`, `gateway-crossings`, `berkeley-space-center`;
+  notes `docs/official-research/candidates-sf-financial-district.md`, `candidates-south-bay-2026-10.md`,
+  `candidates-santana-row.md`, `candidates-gateway-crossings.md`, `candidates-berkeley-space-center.md`; leads not
+  added in `docs/upkeep/leads-2026-10-19.md`). Neither session could open sfbos.org, sfgov.legistar.com, sf.gov,
+  nasa.gov, the UC Regents or the South Bay cities' sites, so the Board's ordinance numbers for 530 Sansome, the
+  Planning Commission's 2026 motion numbers and the variance decision letter for 536 Mission, NASA's Record of
+  Decision for the Berkeley Space Center and the South Bay projects' permits are open `verify` items; check them when
+  those hosts are reachable. Seven of the nine were last fully checked on 2026-10-19.
 - The 2026-10-07 pass covered every project then mapped (findings in
   `docs/official-research/update-2026-10-07-*.md`, changes in `CHANGELOG.md`). Still open
   from it: Potrero's ordinance numbers once the Mayor signs; Esmeralda after the Council's
