@@ -1,0 +1,90 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "river-oaks-station",
+  "source": "Santa Clara County parcels (data.sccgov.org ubcd-cewv): APN 097-06-032, the parcel with the situs address 3331 N 1st Street, the address VTA gives for its River Oaks campus",
+  "sourceLabel": "Santa Clara County parcels",
+  "sourceUrl": "https://data.sccgov.org/d/ubcd-cewv",
+  "query": "https://data.sccgov.org/resource/ubcd-cewv.geojson?%24where=apn+in+%28%2709706032%27%29&%24limit=5000",
+  "accuracy": "approximate",
+  "accuracyNote": "Approximate boundary: the County parcel at 3331 North First Street, the address VTA's fact sheet gives for its River Oaks headquarters and park-and-ride site. VTA's documents don't name the parcel or publish a surveyed site map; the parcel lies between North First Street and the Guadalupe River south of River Oaks Parkway, as the developer concept in the River Oaks Station Access Study (Figure 9) shows the site. VTA gives the site as 17 acres (access study and fact sheet) and as 18 acres (project page). Against those: 17.5 acres as drawn.",
+  "license": "Santa Clara County open data (terms of use)",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9417813,
+       37.400979
+      ],
+      [
+       -121.9397329,
+       37.4019344
+      ],
+      [
+       -121.9380129,
+       37.3995871
+      ],
+      [
+       -121.9411759,
+       37.3981118
+      ],
+      [
+       -121.9411609,
+       37.3983881
+      ],
+      [
+       -121.9411202,
+       37.3986619
+      ],
+      [
+       -121.9409837,
+       37.3991649
+      ],
+      [
+       -121.9409476,
+       37.3993745
+      ],
+      [
+       -121.940939,
+       37.3995872
+      ],
+      [
+       -121.9409777,
+       37.3999034
+      ],
+      [
+       -121.941077,
+       37.4002062
+      ],
+      [
+       -121.9412332,
+       37.4004843
+      ],
+      [
+       -121.9413658,
+       37.4006503
+      ],
+      [
+       -121.9415189,
+       37.4007978
+      ],
+      [
+       -121.9417813,
+       37.400979
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
