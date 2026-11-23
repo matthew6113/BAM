@@ -2,7 +2,7 @@
   "_meta": {
     "title": "Bay Area megaprojects: researched project list",
     "preparedBy": "Claude (claude.ai chat) for Matthew Huguet",
-    "lastVerified": "2026-11-04",
+    "lastVerified": "2026-11-23",
     "notes": [
       "Every figure here came from the listed sources as of the lastVerified date. Items in each project's 'verify' list are known gaps; do not fill them by guessing.",
       "approxCenter values are rough [lon, lat] points for placing a marker only. Real site boundaries must come from official plan documents or parcel data, saved per project with their source.",
@@ -9541,6 +9541,74 @@
         "bed count and cost, which the records don't give"
       ],
       "lastVerified": "2026-10-28"
+    },
+    {
+      "id": "300-lake-street",
+      "name": "300 Lake Street",
+      "aliases": [
+        "Little Sisters of the Poor",
+        "St. Anne's Home"
+      ],
+      "city": "San Francisco",
+      "county": "San Francisco",
+      "subregion": "San Francisco",
+      "category": "buildings",
+      "approxCenter": [
+        -122.4625,
+        37.7879
+      ],
+      "acres": 6.2,
+      "acresNote": "The area of lot 1354/001 (300 Lake Street) in DataSF's parcel map, about 6.2 acres. No project record gives a site area, and the lot is assumed to be the site, not confirmed.",
+      "program": {
+        "homes": null,
+        "affordableHomes": null,
+        "affordablePct": null,
+        "officeLabSqft": null,
+        "commercialSqftTotal": null,
+        "retailSqft": null,
+        "hotelKeys": null,
+        "openSpaceAcres": null,
+        "notes": "No program is on the public record yet. The Planning Department's records on DataSF, current through Nov 20, 2026, hold no housing application for the lot."
+      },
+      "developer": null,
+      "publicPartners": [
+        "San Francisco Planning Department"
+      ],
+      "stage": "proposed",
+      "stageNote": "Not yet in the official record. A housing proposal for the Little Sisters of the Poor property was reported in the press on Nov 23, 2026; the Planning Department's records on DataSF, current through Nov 20, show no application on the lot. Held off the map until the filing can be read.",
+      "timeline": [
+        {
+          "date": "1977-12-01",
+          "event": "A conditional use for reconstruction of the Little Sisters care home at 300 Lake Street is approved (CU77.056)."
+        }
+      ],
+      "nextMilestone": "The project application appearing in the Planning Department's records.",
+      "summary": "The Little Sisters of the Poor's home for the aged at 300 Lake Street, a lot of about 6.2 acres in the Inner Richmond zoned RH-3, on the block south of the Presidio. A housing proposal for the property was reported in November 2026; no application appears in the Planning Department's published records yet, so nothing about it is shown.",
+      "massingNotes": "Not mapped: no boundary file, so the project stays off the map. When the filing is confirmed, the site would be DataSF parcels (acdm-wktn, ODC-PDDL), block 1354 lot 001, if the application names that lot; add it to pipeline/bam_pipeline/sites/boundary_sf_scan_sites.py. No massing: no plans read.",
+      "officialLinks": [],
+      "sources": [
+        "https://data.sfgov.org/resource/acdm-wktn.json?blklot=1354001",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=CU77.056",
+        "https://data.sfgov.org/resource/y673-d69b.json?record_id=2022-010510PRL",
+        "https://data.sfgov.org/resource/qvu5-m3a2.json?block=1354&lot=001"
+      ],
+      "verify": [
+        "the project application: record number, filing date, applicant and approval pathway (reported as posted Nov 23, 2026; not yet on DataSF)",
+        "that the site is 300 Lake Street, lot 1354/001, and whether it takes in the whole lot",
+        "the home count (307, from the Chronicle headline), affordable share, heights and developer",
+        "what happens to the Little Sisters' existing home",
+        "the Chronicle article itself, which could not be opened when this record was written"
+      ],
+      "reported": {
+        "note": "Reported by the press but not yet confirmed by an official source (Matthew, 2026-10-02: official sources only). Held out of the map until city records confirm each one. Only the article's web address was read (the page could not be opened on 2026-11-23), so the single figure here comes from its headline.",
+        "program": {
+          "homes": 307
+        },
+        "sources": [
+          "https://www.sfchronicle.com/sf/article/presidio-san-francisco-307-homes-little-sisters-22535887.php"
+        ]
+      },
+      "lastVerified": "2026-11-23"
     }
   ]
 }

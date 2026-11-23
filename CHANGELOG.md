@@ -3,6 +3,12 @@
 Data changes to `data/projects.json` and other project facts, newest first. Each entry
 says what changed, why and against which source. Code changes live in git history.
 
+## 2026-11-23 (300 Lake Street added, unmapped)
+
+Matthew sent a Chronicle article on a 307-home proposal for the Little Sisters of the Poor property by the Presidio and asked for it on the map; with no official record yet, he chose to add it unmapped. The article could not be opened (the host is not reachable from the session), so only its headline was read. The Planning Department's records on DataSF (project and case records, current through Nov 20, 2026) and the Development Pipeline hold no housing application on the lot; Matthew notes the filing was posted Nov 23. `_meta.lastVerified` moves to 2026-11-23 for this record only; no other project was re-checked.
+
+- **300-lake-street** (new, buildings, not mapped): proposed. Official facts only: the Little Sisters' home at 300 Lake Street, lot 1354/001, about 6.2 acres, zoned RH-3 (DataSF parcels), with a 1977 conditional use for the care home's reconstruction (CU77.056). The 307 homes are in `reported`, from the Chronicle headline. No boundary file, so it stays off the map; the site, home count, developer, pathway and the application itself are in `verify`.
+
 ## 2026-11-04 (sixteen San Francisco projects added)
 
 Matthew asked for "any final projects that you think I should add, focus on san francisco", then "add all six and the towers" from the Oct 28 scan (`docs/official-research/candidates-sf-scan-2026-10-28.md`), and then "the projects near van ness and market". Fourteen come from the scan (researched and checked Oct 28; their records were re-checked for changes Nov 4 and keep `lastVerified` 2026-10-28) and two from Van Ness and Market (checked Nov 4). Facts from DataSF's Planning Department records, Development Pipeline (Q2 2026) and building permits, SF Planning's environmental review listing, project pages and Planning Commission agendas and minutes, and CEQAnet. No press was read, so nothing is recorded as reported. Boundaries are each site's lots from DataSF parcels (for 3333 California, its special use district), official except where no lot list could be reached (Freedom West, Kaiser), which are marked approximate. No massing: no plan set could be reached. `_meta.lastVerified` moves to 2026-11-04. Not added: 1338 Mission Street (a 30-story, 287-home tower near Van Ness), whose environmental review was cancelled in March 2024 and project authorization withdrawn in 2023.
