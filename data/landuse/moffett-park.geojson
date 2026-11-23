@@ -14,7 +14,7 @@
    "https://gis.sunnyvale.ca.gov/arcgis/rest/services/ZoningLegend/MapServer/1",
    "https://gis.sunnyvale.ca.gov/arcgis/rest/services/ZoningLegend/MapServer/1/query?where=CombiningD+%3D+%27ECD%27&outFields=OBJECTID%2CCombiningD&orderByFields=OBJECTID&outSR=4326&f=geojson",
    "https://legistar.granicus.com/Sunnyvale/attachments/898afbde-8963-4d24-bc5c-90e388ebed42.PDF",
-   "https://sunnyvaleca.legistar.com/LegislationDetail.aspx?ID=13874&GUID=69D247EA-029D-4192-99E3-DA5579E0A8EF",
+   "https://sunnyvaleca.legistar.com/LegislationDetail.aspx?ID=6295721&GUID=47A18B74-19BA-426E-BEF4-27499DD5822B",
    "https://legistar.granicus.com/Sunnyvale/meetings/2023/7/3762_M_City_Council_23-07-11_Meeting_Minutes.pdf",
    "https://gis.sunnyvale.ca.gov/arcgis/rest/services/GeneralPlan/MapServer/8/query?where=SP_Code+%3D+%27LCC%27&outFields=%2A&outSR=4326&f=geojson"
   ]

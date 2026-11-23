@@ -61,7 +61,7 @@ REPORT = {
               "(Berryessa BART Urban Village Plan), May 5, 2021"),
     "url": "https://legistar.granicus.com/sanjose/attachments/afe4bc58-e013-42b2-870b-ccdbfd873751.pdf",
     # Council file 21-1626 (BBUV Plan adoption), which lists the report as Attachment 1.
-    "file_url": "https://sanjose.legistar.com/LegislationDetail.aspx?ID=9320&GUID=52462B47-4D5A-4FEE-9F38-A2588DDC1C50",
+    "file_url": "https://sanjose.legistar.com/LegislationDetail.aspx?ID=4994842&GUID=0406B7EA-EE4D-4FFA-BA01-C3871EE4AF9B",
     "sha256": "e4a894921ae55938f462bbdcf4106814dac97f53b1fea82bf55d347089862e59",
     "file": "bfm-bbuv-pc-supplemental-2021-05-05.pdf",
 }

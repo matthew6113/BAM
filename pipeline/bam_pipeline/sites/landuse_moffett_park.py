@@ -84,7 +84,7 @@ ORDINANCE = {
     "file": "mp-ordinance-3218-23.pdf",
     "sha256": "86f8d13ff4e628c380c933850d13fb1c64b42d003fca57e210c1244a7b721329",
 }
-MATTER = "https://sunnyvaleca.legistar.com/LegislationDetail.aspx?ID=13874&GUID=69D247EA-029D-4192-99E3-DA5579E0A8EF"
+MATTER = "https://sunnyvaleca.legistar.com/LegislationDetail.aspx?ID=6295721&GUID=47A18B74-19BA-426E-BEF4-27499DD5822B"
 MINUTES = {
     "title": "City Council minutes, July 11, 2023 (plan adopted as amended)",
     "url": "https://legistar.granicus.com/Sunnyvale/meetings/2023/7/3762_M_City_Council_23-07-11_Meeting_Minutes.pdf",
