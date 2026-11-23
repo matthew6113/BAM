@@ -1,0 +1,78 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "pleasant-hills",
+  "source": "Santa Clara County parcels 649-23-001 and 649-24-013, the project site in San Jos\u00e9's notice of preparation (Oct 2025)",
+  "sourceLabel": "Santa Clara County parcels",
+  "sourceUrl": "https://data.sccgov.org/d/ubcd-cewv",
+  "query": "https://data.sccgov.org/resource/ubcd-cewv.geojson?%24where=apn+in+%28%2764923001%27%2C+%2764924013%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The former Pleasant Hills and Cypress Greens golf courses, the two parcels the notice of preparation names, against its approximately 113.5 gross acres. The 0.6-acre house lot at 2079 Flint Avenue, which would be annexed with them but isn't part of the project, isn't drawn. 113.1 acres as drawn.",
+  "license": "Santa Clara County open data (terms of use)",
+  "features_used": 2
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.8049269,
+       37.3406676
+      ],
+      [
+       -121.8005047,
+       37.3429489
+      ],
+      [
+       -121.7983708,
+       37.3440257
+      ],
+      [
+       -121.7982305,
+       37.3439303
+      ],
+      [
+       -121.798012,
+       37.3440466
+      ],
+      [
+       -121.797702,
+       37.3437553
+      ],
+      [
+       -121.79715,
+       37.3440446
+      ],
+      [
+       -121.7950744,
+       37.3426392
+      ],
+      [
+       -121.7985279,
+       37.3413699
+      ],
+      [
+       -121.7944879,
+       37.3369391
+      ],
+      [
+       -121.800443,
+       37.3357602
+      ],
+      [
+       -121.8049269,
+       37.3406676
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

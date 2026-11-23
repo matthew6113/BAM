@@ -1,0 +1,58 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "536-mission",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 3708 lot 098",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%273708098%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The Golden Gate University lot between Mission and Jessie streets at Ecker Place, the single lot of the Planning Commission's Sept 10, 2026 approvals. Oceanwide Center's site is across Ecker Place, about 25 ft away; the two don't touch. 0.8 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 1
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.3993558,
+       37.7892381
+      ],
+      [
+       -122.3989006,
+       37.7895979
+      ],
+      [
+       -122.3984396,
+       37.7892356
+      ],
+      [
+       -122.3988556,
+       37.7889067
+      ],
+      [
+       -122.3990966,
+       37.7890982
+      ],
+      [
+       -122.3991419,
+       37.7890681
+      ],
+      [
+       -122.3993558,
+       37.7892381
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

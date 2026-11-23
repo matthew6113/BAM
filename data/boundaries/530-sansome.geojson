@@ -1,0 +1,58 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "530-sansome",
+  "source": "DataSF Parcels \u2013 Active and Retired, block 0206 lots 002, 013, 014 and 017",
+  "sourceLabel": "DataSF parcels",
+  "sourceUrl": "https://data.sf.gov/d/acdm-wktn",
+  "query": "https://data.sf.gov/resource/acdm-wktn.geojson?%24where=blklot+in+%28%270206002%27%2C+%270206013%27%2C+%270206014%27%2C+%270206017%27%29&%24limit=5000",
+  "accuracy": "official",
+  "accuracyNote": "The four lots the EIR and its Notice of Determination name (24,830 sq ft): Fire Station 13 at 530 Sansome Street and 425 and 439-445 Washington Street (lots 017, 014 and 013) for the tower, and 447 Battery Street (lot 002) for the new fire station. The office condominiums at 423 Washington Street, on the corner of Washington and Battery, aren't part of the site. The 530 Sansome special use district polygon in DataSF's zoning layer doesn't match these lots, so the parcels are used. 0.6 acres as drawn.",
+  "license": "ODC Public Domain Dedication and License (DataSF)",
+  "features_used": 4
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -122.4015311,
+       37.7956359
+      ],
+      [
+       -122.4009219,
+       37.7957139
+      ],
+      [
+       -122.4009021,
+       37.7956331
+      ],
+      [
+       -122.4005892,
+       37.795673
+      ],
+      [
+       -122.4005525,
+       37.7954746
+      ],
+      [
+       -122.4014779,
+       37.7953621
+      ],
+      [
+       -122.4015311,
+       37.7956359
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

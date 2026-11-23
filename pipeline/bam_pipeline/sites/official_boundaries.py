@@ -120,6 +120,46 @@ NORTHGATE_APNS = [  # San Rafael Resolution 15360 and Ordinance 2043 (Dec 2024)
     "175-060-12", "175-060-40", "175-060-59", "175-060-61", "175-060-66", "175-060-67",
 ]
 
+# 530 Sansome Mixed-Use Tower and Fire Station 13: Block 0206, Lots 002 (447 Battery, the new fire station), 013,
+# 014 and 017 (the tower), the four lots of the EIR (case 2024-007066ENV) and its Notice of Determination (Oct 2025).
+SANSOME_530_BLKLOTS = ["0206002", "0206013", "0206014", "0206017"]
+
+# 536 Mission Street: Block 3708, Lot 098, the single lot of Planning record 2025-007507 (Planning Commission
+# agenda of Sept 10, 2026).
+MISSION_536_BLKLOTS = ["3708098"]
+
+# Mission Point (Santa Clara): the nine APNs in the City's notice of determination of Dec 3, 2024 (CEQAnet SCH
+# 2018072068, document 7) and Draft EIR Table 2-1; the Democracy Way right-of-way between them is closed over.
+MISSION_POINT_APNS = [
+    "10404150", "10404142", "10404143", "10404151", "10404112", "10404113", "10404065", "10404111", "10404064",
+]
+
+# Seely Avenue Mixed-Use (San José): the approval (NOD of Aug 13, 2024, SCH 2022020565) names APNs 097-15-033,
+# 097-15-034 and part of 097-66-004, which the County has since retired. Their successors are the project's own
+# lots, matching Draft EIR Table 2-1: 097-15-042 (Building A), -045 (B), -046 (affordable), -047 (well), -048
+# (park), -049 (C), the 26 townhome lots 097-23-141 to -166, and the unnumbered private-street and common lots.
+SEELY_AVENUE_APNS = (
+    ["09715042", "09715045", "09715046", "09715047", "09715048", "09715049"]
+    + [f"09723{n}" for n in range(141, 167)]
+)
+SEELY_AVENUE_COMMON_BOX = "37.4012, -121.9195, 37.3955, -121.9145"  # unnumbered lots inside the subdivision
+
+# Freedom Circle (Santa Clara): 104-40-019, 2518 Mission College Blvd (Irvine Company; NODs of Mar 25 and May 14,
+# 2025, SCH 2020060425) and the Greystar site, 104-40-021 and 104-40-036 (NOD of June 7, 2022; Draft EIR).
+FREEDOM_CIRCLE_APNS = ["10440019", "10440021", "10440036"]
+
+# Pleasant Hills Golf Course redevelopment (San José): the two APNs of the project site in the NOP of Oct 14, 2025
+# (SCH 2025100897). The 0.6-acre parcel at 2079 Flint Avenue is annexed but "not part of the project".
+PLEASANT_HILLS_APNS = ["64923001", "64924013"]
+
+# Gateway Crossings (1205 Coleman Avenue, Santa Clara): the approval (NOD of July 9, 2019, SCH 2017022066) covers about
+# 21.4 acres; CEQAnet's records of the 2017 NOP and 2018 Draft EIR give APNs 230-46-069 and -070, which the County has
+# since retired. Their successors are the lots on assessor's page 230-60 (230-60-001 to -008, and -010, re-mapped from
+# the -009 that the City's 2026 station-area plan record still lists) and the unnumbered street lots inside
+# GATEWAY_CROSSINGS_COMMON_BOX: about 21.35 acres together.
+GATEWAY_CROSSINGS_APNS = [f"23060{n:03d}" for n in (1, 2, 3, 4, 5, 6, 7, 8, 10)]
+GATEWAY_CROSSINGS_COMMON_BOX = "37.3568, -121.9367, 37.3535, -121.9318"  # unnumbered street lots inside the subdivision
+
 
 def _sql_list(values) -> str:
     return ", ".join(f"'{v}'" for v in values)
@@ -502,6 +542,88 @@ SPECS: dict[str, dict] = {
                  "approximately 207 acres. The narrow strip along the rail line north of Tulane Avenue, which the "
                  "plan includes, is too thin to keep."),
         "license": "City of East Palo Alto ArcGIS (no license stated; terms to confirm)",
+    },
+    "530-sansome": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(SANSOME_530_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 0206 lots 002, 013, 014 and 017",
+        "accuracy": "official",
+        "note": ("The four lots the EIR and its Notice of Determination name (24,830 sq ft): Fire Station 13 at 530 "
+                 "Sansome Street and 425 and 439-445 Washington Street (lots 017, 014 and 013) for the tower, and 447 "
+                 "Battery Street (lot 002) for the new fire station. The office condominiums at 423 Washington Street, "
+                 "on the corner of Washington and Battery, aren't part of the site. The 530 Sansome special use "
+                 "district polygon in DataSF's zoning layer doesn't match these lots, so the parcels are used."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "536-mission": {
+        "label": "DataSF parcels",
+        **socrata(DATASF, SF_PARCELS, f"blklot in ({_sql_list(MISSION_536_BLKLOTS)})"),
+        "layer": "DataSF Parcels – Active and Retired, block 3708 lot 098",
+        "accuracy": "official",
+        "note": ("The Golden Gate University lot between Mission and Jessie streets at Ecker Place, the single lot "
+                 "of the Planning Commission's Sept 10, 2026 approvals. Oceanwide Center's site is across Ecker "
+                 "Place, about 25 ft away; the two don't touch."),
+        "license": "ODC Public Domain Dedication and License (DataSF)",
+    },
+    "mission-point": {
+        "label": "Santa Clara County parcels",
+        **socrata(*SCC_PARCELS, f"apn in ({_sql_list(MISSION_POINT_APNS)})"),
+        "layer": "Santa Clara County parcels, the nine APNs in Santa Clara's notice of determination for Mission Point (Dec 3, 2024)",
+        "accuracy": "official",
+        "close_m": 20,  # takes in the Democracy Way right-of-way between the parcels
+        "note": ("The nine parcels the City's approval names for the Mission Point Project, joined over the Democracy Way "
+                 "right-of-way that the project takes in, against the approval's approximately 48.6 acres (Draft EIR "
+                 "Table 2-1: 46.0 acres of parcels plus 2.6 acres of right-of-way)."),
+        "license": "Santa Clara County open data (terms of use)",
+    },
+    "seely-avenue": {
+        "label": "Santa Clara County parcels",
+        **socrata(*SCC_PARCELS, f"apn in ({_sql_list(SEELY_AVENUE_APNS)}) or "
+                                f"(apn is null and within_box(the_geom, {SEELY_AVENUE_COMMON_BOX}))"),
+        "layer": ("Santa Clara County parcels: the Seely Avenue project's lots (097-15-042 to -049, 097-23-141 to -166) "
+                  "and the unnumbered street and common lots between them"),
+        "accuracy": "approximate",
+        "note": ("The approval names APNs 097-15-033, 097-15-034 and part of 097-66-004, which are no longer in the "
+                 "County's layer. Drawn instead from the parcels that replaced them, which are the project's own lots: "
+                 "Buildings A, B and C, the affordable building, the park and the well site match the Draft EIR's lot "
+                 "areas (Table 2-1) within 2%, against the approval's approximately 22 acres. The Seely Avenue frontage "
+                 "dedication isn't a parcel and isn't drawn."),
+        "license": "Santa Clara County open data (terms of use)",
+    },
+    "freedom-circle": {
+        "label": "Santa Clara County parcels",
+        **socrata(*SCC_PARCELS, f"apn in ({_sql_list(FREEDOM_CIRCLE_APNS)})"),
+        "layer": ("Santa Clara County parcels 104-40-019 (2518 Mission College Boulevard) and 104-40-021 and 104-40-036 "
+                  "(the Greystar site), named in Santa Clara's approvals"),
+        "accuracy": "official",
+        "note": ("The two sites with approvals in the Freedom Circle Focus Area: the Irvine Company's 25.7-acre site at "
+                 "2518 Mission College Boulevard and Greystar's 13.3-acre site on Freedom Circle, separated by Freedom "
+                 "Circle itself. The rest of the 108-acre focus area, which awaits a future planning study, isn't drawn."),
+        "license": "Santa Clara County open data (terms of use)",
+    },
+    "pleasant-hills": {
+        "label": "Santa Clara County parcels",
+        **socrata(*SCC_PARCELS, f"apn in ({_sql_list(PLEASANT_HILLS_APNS)})"),
+        "layer": "Santa Clara County parcels 649-23-001 and 649-24-013, the project site in San José's notice of preparation (Oct 2025)",
+        "accuracy": "official",
+        "note": ("The former Pleasant Hills and Cypress Greens golf courses, the two parcels the notice of preparation "
+                 "names, against its approximately 113.5 gross acres. The 0.6-acre house lot at 2079 Flint Avenue, which "
+                 "would be annexed with them but isn't part of the project, isn't drawn."),
+        "license": "Santa Clara County open data (terms of use)",
+    },
+    "gateway-crossings": {
+        "label": "Santa Clara County parcels",
+        **socrata(*SCC_PARCELS, f"apn in ({_sql_list(GATEWAY_CROSSINGS_APNS)}) or "
+                                f"(apn is null and within_box(the_geom, {GATEWAY_CROSSINGS_COMMON_BOX}))"),
+        "layer": ("Santa Clara County parcels: the lots that replaced the Gateway Crossings site (230-60-001 to -008 and "
+                  "-010) and the unnumbered street lots between them"),
+        "accuracy": "approximate",
+        "note": ("The approval's site at 1205 Coleman Avenue, which CEQAnet records as APNs 230-46-069 and -070. The "
+                 "County has since retired those two parcels and mapped the site as new lots on assessor's page 230-60 "
+                 "(addressed on Rickabaugh Way, Chastain Place and Brokaw Road) with unnumbered street lots between "
+                 "them; those lots and streets are drawn, and together they match the approval's approximately 21.4 "
+                 "acres. The site lies inside the Santa Clara Station Area Specific Plan area."),
+        "license": "Santa Clara County open data (terms of use)",
     },
 }
 

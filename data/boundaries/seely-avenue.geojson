@@ -1,0 +1,122 @@
+{
+ "type": "FeatureCollection",
+ "properties": {
+  "project": "seely-avenue",
+  "source": "Santa Clara County parcels: the Seely Avenue project's lots (097-15-042 to -049, 097-23-141 to -166) and the unnumbered street and common lots between them",
+  "sourceLabel": "Santa Clara County parcels",
+  "sourceUrl": "https://data.sccgov.org/d/ubcd-cewv",
+  "query": "https://data.sccgov.org/resource/ubcd-cewv.geojson?%24where=apn+in+%28%2709715042%27%2C+%2709715045%27%2C+%2709715046%27%2C+%2709715047%27%2C+%2709715048%27%2C+%2709715049%27%2C+%2709723141%27%2C+%2709723142%27%2C+%2709723143%27%2C+%2709723144%27%2C+%2709723145%27%2C+%2709723146%27%2C+%2709723147%27%2C+%2709723148%27%2C+%2709723149%27%2C+%2709723150%27%2C+%2709723151%27%2C+%2709723152%27%2C+%2709723153%27%2C+%2709723154%27%2C+%2709723155%27%2C+%2709723156%27%2C+%2709723157%27%2C+%2709723158%27%2C+%2709723159%27%2C+%2709723160%27%2C+%2709723161%27%2C+%2709723162%27%2C+%2709723163%27%2C+%2709723164%27%2C+%2709723165%27%2C+%2709723166%27%29+or+%28apn+is+null+and+within_box%28the_geom%2C+37.4012%2C+-121.9195%2C+37.3955%2C+-121.9145%29%29&%24limit=5000",
+  "accuracy": "approximate",
+  "accuracyNote": "The approval names APNs 097-15-033, 097-15-034 and part of 097-66-004, which are no longer in the County's layer. Drawn instead from the parcels that replaced them, which are the project's own lots: Buildings A, B and C, the affordable building, the park and the well site match the Draft EIR's lot areas (Table 2-1) within 2%, against the approval's approximately 22 acres. The Seely Avenue frontage dedication isn't a parcel and isn't drawn. 22.2 acres as drawn.",
+  "license": "Santa Clara County open data (terms of use)",
+  "features_used": 42
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kind": "site",
+    "name": "Project site"
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -121.9195038,
+       37.3972595
+      ],
+      [
+       -121.9176864,
+       37.398844
+      ],
+      [
+       -121.9189113,
+       37.3997446
+      ],
+      [
+       -121.9184849,
+       37.4001162
+      ],
+      [
+       -121.9184403,
+       37.4001731
+      ],
+      [
+       -121.9184169,
+       37.4002405
+      ],
+      [
+       -121.9181667,
+       37.4004593
+      ],
+      [
+       -121.9178554,
+       37.4000687
+      ],
+      [
+       -121.9176663,
+       37.3998794
+      ],
+      [
+       -121.9174454,
+       37.399689
+      ],
+      [
+       -121.9168529,
+       37.3988775
+      ],
+      [
+       -121.916404,
+       37.3976395
+      ],
+      [
+       -121.9158726,
+       37.3967769
+      ],
+      [
+       -121.9158042,
+       37.3962557
+      ],
+      [
+       -121.9157043,
+       37.3959946
+      ],
+      [
+       -121.9161963,
+       37.3955656
+      ],
+      [
+       -121.9164109,
+       37.3954511
+      ],
+      [
+       -121.9167572,
+       37.395182
+      ],
+      [
+       -121.9168478,
+       37.3951551
+      ],
+      [
+       -121.9172227,
+       37.3954402
+      ],
+      [
+       -121.9174443,
+       37.3957384
+      ],
+      [
+       -121.917554,
+       37.3958457
+      ],
+      [
+       -121.9195038,
+       37.3972595
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}
